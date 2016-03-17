@@ -11,7 +11,10 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * Jonathan Boulle
 * Bryan Cantrill
 * Camille Fournier
+* Solomon Hykes
+* Brian Grant
 * Benjamin Hindman
+* Elissa Murphy
 * Ken Owens
 * Alexis Richardson
 
