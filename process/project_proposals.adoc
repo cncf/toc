@@ -1,0 +1,26 @@
+*CNCF Project Proposal Process v1.0*
+
+ . *Introduction*. This governance policy sets forth the proposal process for projects to be accepted into the Cloud Native Computing Foundation (“CNCF”). The process is the same for both existing projects which seek to move into the CNCF, and new projects to be formed within the CNCF.
+ . *Project Proposal Requirements*. Projects must be proposed via email to the +++<u>+++cncf-proposals@lists.cncf.io+++</u>+++ mailing list, with the subject “[PROPOSAL] project name”. Project proposals submitted to the CNCF (see https://docs.google.com/document/d/1AgoEf4Wdshcn2ttlGRVQLciLJe6liV_ZiGocRg9JxJE/edit#[examples]) must provide the following information to the best of your ability:
+
+ .. name of project (must be unique within CNCF)
+ .. project description (what it does, why it is valuable, origin and history)
+ .. statement on alignment with CNCF charter mission
+ .. sponsor from TOC (sponsor helps mentor projects)
+ .. license (charter dictates ASLv2 by default)
+ .. source control (GitHub by default)
+ .. external dependencies (including licenses)
+ .. initial committers (how long working on project)
+ .. infrastructure requests (CI / CNCF Cluster)
+ .. mailing lists (CNCF by default)
+ .. issue tracker (GitHub by default)
+ .. website (current version will move to project.cncf.io)
+ .. release methodology and mechanics
+ .. social media accounts
+ .. existing sponsorship, if any
+
+. *Project Acceptance Process*.
+ .. Projects are required to present their proposal at a TOC meeting
+ .. Projects get accepted via a 2/3 supermajority vote of the TOC
+ .. All projects start in the incubator TLP
+ .. Graduating from the incubator requires a 2/3 vote from the TOC
