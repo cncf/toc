@@ -17,7 +17,7 @@
  .. website (current version will move to project.cncf.io)
  .. release methodology and mechanics
  .. social media accounts
- .. existing sponsorship, if any
+ .. community size and any existing sponsorship
 
 . *Project Acceptance Process*.
  .. Projects are required to present their proposal at a TOC meeting
