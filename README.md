@@ -35,3 +35,4 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 * [April 13th, 2016](https://docs.google.com/presentation/d/1LvMHQn2MYapjMrjNHw6tWbxOnYFNrqvigZfVt1YkTFU/edit#slide=id.gd5ae4e962_2_136)
 * [April 20th, 2016](https://docs.google.com/presentation/d/1LvMHQn2MYapjMrjNHw6tWbxOnYFNrqvigZfVt1YkTFU/edit#slide=id.gd5ae4e962_2_136)
 * [May 4th, 2016](https://docs.google.com/presentation/d/11jk9t_oRovx0fNoRnGInVeNn3PsaOKIb5K_c704Zwhs/edit?usp=sharing)
+* [May 25th, 2016](https://docs.google.com/presentation/d/1q_N23ucJ460D20vW7QHZCvjUxsfrmDxShjd9LYVJVH4/edit#slide=id.g118c2199ab_0_44)
