@@ -29,10 +29,15 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 ## Scheduled Community Presentations
 
 * August 3rd, 2016
- * [Minio](https://minio.io/): Anand Babu Periasamy 
+ * [Heron](https://github.com/twitter/heron): Karthik Ramasamy
+ * [Minio](https://minio.io/): Anand Babu Periasamy
 * August 17th, 2016
  * [CoreDNS](https://github.com/miekg/coredns): Miek Gieben 
  * [OpenTracing](http://opentracing.io/): Ben Sigelman
+* September 7th, 2016
+ * TODO 
+* September 21st, 2016
+ * TODO 
 
 ## Meeting Minutes
 
