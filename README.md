@@ -29,8 +29,8 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 ## Scheduled Community Presentations
 
 * August 3rd, 2016
- * [Heron](https://github.com/twitter/heron): Karthik Ramasamy
  * [Fluentd](http://www.fluentd.org/): Kiyoto Tamura
+ * [Heron](https://github.com/twitter/heron): Karthik Ramasamy
  * [Minio](https://minio.io/): Anand Babu Periasamy
 * August 17th, 2016
  * [CoreDNS](https://github.com/miekg/coredns): Miek Gieben 
