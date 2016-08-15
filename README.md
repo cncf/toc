@@ -36,7 +36,7 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
  * [CoreDNS](https://github.com/miekg/coredns): Miek Gieben 
  * [OpenTracing](http://opentracing.io/): Ben Sigelman
 * September 7th, 2016
- * TODO 
+ * [CockroachDB](https://github.com/cockroachdb/cockroach): Spencer Kimball 
 * September 21st, 2016
  * TODO 
 
