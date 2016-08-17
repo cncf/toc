@@ -29,9 +29,9 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 ## Scheduled Community Presentations
 
 * August 3rd, 2016
- * [Fluentd](http://www.fluentd.org/): Kiyoto Tamura
- * [Heron](https://github.com/twitter/heron): Karthik Ramasamy
- * [Minio](https://minio.io/): Anand Babu Periasamy
+ * [Fluentd](http://www.fluentd.org/) ([overview](https://docs.google.com/presentation/d/1S79MNv3E2aG8nuZJFJ0XMSumf7jnKozN3vdrivCH77U/edit?usp=sharing)): Kiyoto Tamura
+ * [Heron](https://github.com/twitter/heron) ([overview](https://docs.google.com/presentation/d/1pKwNO2V3VScjD1JxJ0gEgFTwAOccJgaJxHWgwcyczec/edit?usp=sharing)): Karthik Ramasamy
+ * [Minio](https://minio.io/) ([overview](https://docs.google.com/presentation/d/1DGm_Zwq7qYHaXm6ZH26RAQeyBAKF1FOCLlEZQNTMJYE/edit?usp=sharing)): Anand Babu Periasamy
 * August 17th, 2016
  * [CoreDNS](https://github.com/miekg/coredns) ([overview](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)) ([proposal](https://docs.google.com/document/d/1Wt9nrD6siNe7oMmvJbEHf6Ns2-bbmgdinxX_mX0K2D0/edit?usp=sharing)): Miek Gieben 
  * [OpenTracing](http://opentracing.io/) ([overview](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165)): Ben Sigelman
