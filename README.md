@@ -34,7 +34,7 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
  * [Minio](https://minio.io/): Anand Babu Periasamy
 * August 17th, 2016
  * [CoreDNS](https://github.com/miekg/coredns) ([overview](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)) ([proposal](https://docs.google.com/document/d/1Wt9nrD6siNe7oMmvJbEHf6Ns2-bbmgdinxX_mX0K2D0/edit?usp=sharing)): Miek Gieben 
- * [OpenTracing](http://opentracing.io/): Ben Sigelman ([overview](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165))
+ * [OpenTracing](http://opentracing.io/) ([overview](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165)): Ben Sigelman
 * September 7th, 2016
  * [CockroachDB](https://github.com/cockroachdb/cockroach): Spencer Kimball 
 * September 21st, 2016
@@ -54,3 +54,5 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 * [June 21st, 2016](https://docs.google.com/presentation/d/1VJi3mXaYJgDICC7PIMaJnsJgY5LXwO56JZi8u1huOdc/edit?usp=sharing)
 * [July 6th, 2016](https://docs.google.com/presentation/d/16oNakrb9tz8ND3K3WTkW4nEqM-CJOlLTnP2z6rVAVog/edit?usp=sharing)
 * [July 20th, 2016](https://docs.google.com/presentation/d/1h8HFOAVLrJTvjUPP6ZHG2SzVKsTaMLvbiqjzUj4vml8/edit?usp=sharing)
+* [August 3rd, 2016](https://docs.google.com/presentation/d/1ZZFn7EfySQuAFBOH_EWGKifzXTWSSqpnFNuJLAXVBmk/edit#slide=id.g1424cc439e_3_0)
+* [August 17th, 2016](https://docs.google.com/presentation/d/1MkxZkzuYeMBGxQ4jUg4xQSE4uA3HNim8jPdelHEGrgo/edit#slide=id.g7460a6112_0_0)
