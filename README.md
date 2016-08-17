@@ -34,7 +34,7 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
  * [Minio](https://minio.io/): Anand Babu Periasamy
 * August 17th, 2016
  * [CoreDNS](https://github.com/miekg/coredns) ([overview](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)) ([proposal](https://docs.google.com/document/d/1Wt9nrD6siNe7oMmvJbEHf6Ns2-bbmgdinxX_mX0K2D0/edit?usp=sharing)): Miek Gieben 
- * [OpenTracing](http://opentracing.io/): Ben Sigelman
+ * [OpenTracing](http://opentracing.io/): Ben Sigelman ([overview](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165))
 * September 7th, 2016
  * [CockroachDB](https://github.com/cockroachdb/cockroach): Spencer Kimball 
 * September 21st, 2016
