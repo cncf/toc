@@ -1,0 +1,217 @@
+=== Prometheus Proposal
+
+ * *name of project:* Prometheus
+ * *description*
+ ** Prometheus is an open source time series/metrics monitoring system. It features ingestion of samples via an open specification, service discovery, a powerful processing language for calculation and alerting, an alertmanager for alerting deduplication, notification dispatching and silencing, and a myriad of integrations including Kubernetes (which also supports Prometheus natively). Prometheus is designed to run in an isolated fashion with no hard network dependencies, so that it can be relied upon even in worst-case emergencies likely to happen in a complex cloud environment.
+ * *sponsor / advisor from TOC*: Alexis Richardson
+ * *unique identifier*: prometheus
+ * *license*: Apache License v2.0
+ ** Our documentation is also Apache 2.0
+ * *source control repositories: *https://github.com/prometheus/prometheus[https://github.com/prometheus] (everything in the org). We also have https://github.com/prometheus-junkyard[https://github.com/prometheus-junkyard] for obsolete code and https://github.com/promcon[https://github.com/promcon] for the Prometheus conference (PromCon) website
+ * *issue tracker*: GitHub
+ * *initial **committers**: *
+ ** Core:** **brian-brazil, beorn7, fabxc, juliusv. All have made sustained significant contributions for 1-3 years across multiple parts of the project.
+ ** matttproud was an active core contributor in the first 1.5 years of the project and is now an alumnus.
+ ** Additionally there are developers who are lead maintainers for a limited number of special-purpose repositories: grobie for client_ruby, consul_exporter, and procfs; superq for mysqld_exporter; stuartnelson3 for promdash; sdurrheimer for promu and golang_builder (both concerned with building Prometheus components).
+ ** Github organisation and permissions need cleanup.
+ * *infrastructure requirements (CI / CNCF Cluster)*
+ ** A partial list follows - project team is not 100% sure what is best / possible.
+ ** Website hosting for prometheus.io.  Could move this off GitHub. Would be handy for SSL (currently using free Cloudflare account for that).
+ ** CI - currently using free online services
+ ** Infrastructure to allow integration testing of various components would be good. 
+ *** Other CNCF projects could test on their own infra, or Prometheus could test against CNCF projects using some shared infra (eg CNCF Cluster?).
+ *** Access to 10-20 largeish machines for load-testing and large-scale tests would be useful. (Thinking more ambitiously: having the node exporter installed on every node in the Cluster would enable gathering of overall stats for utilisation).
+ *** Some place to store sample data sets for benchmarking etc. We currently have one 200MB dataset and no good place to store it
+
+
+ * *external dependencies*
+ ** We strongly believe resilience and isolation is essential for a critical monitoring system, so we have no hard dependencies for any component beyond local disk and network access. We also believe in ease of use, openness, clear boundaries and being platform agnostic so will not accept any dependencies (CNCF supported or otherwise) that’d require setup of additional systems or use of non-standard software in arbitrary non-cloud or cloud environments. For example for service discovery we currently offer Kubernetes, AWS, Azure (pending), Consul, Marathon, DNS, and two Zookeeper integrations, but you’re not required to use any of these.
+ ** In practice this means for an end user that the only software or systems dependency they are required to encounter is our standardisation on YAML for configuration.
+ ** We recommend Grafana for visualisation for new users, Apache 2.0 license, requires a SQL database (sqlite by default, postgres and mysql supported). PromDash (our own deprecated equivalent) has similar dependencies. There are other dashboarding options with no such dependencies (console templates or build your own on our APIs).
+ ** Building binaries/libraries locally requires only standard tools for that language (e.g. Python requires distutils, Java/JVM requires Maven, Go requires Git and make, Ruby requires bundler). The exceptions are protoc for changing the protobufs (happens extremely rarely), govendor for updating go vendoring (happens often, a clear winner has yet to emerge in this space).
+ ** prometheus, core binary - Go with some JS
+ *** Includes transitive Go dependencies
+ *** govendor used for vendoring (release/dependency changes)
+ *** github.com/jteeuwen/go-bindata (asset updates): CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+ *** golang.org/x/net/context: BSD 3-clause
+ *** gopkg.in/fsnotify.v1: BSD 3-clause
+ *** gopkg.in/yaml.v2/: LGPLv3 and MIT
+ *** github.com/vaughan0/go-ini: MIT
+ *** github.com/aws/aws-sdk-go: Apache 2.0
+ *** github.com/syndtr/goleveldb: BSD 2-clause
+ *** github.com/samuel/go-zookeeper: BSD 3-clause
+ *** github.com/miekg/dns: BSD 3-clause
+ *** github.com/matttproud/golang_protobuf_extensions: Apache 2.0
+ *** github.com/julienschmidt/httprouter: BSD 3-clause
+ *** github.com/influxdb/influxdb: MIT
+ *** github.com/hashicorp/consul: Mozilla Public License 2.0
+ *** github.com/golang/: BSD 3-clause
+ *** github.com/beorn7/perks: MIT
+ *** github.com/asaskevich/govalidator: MIT
+ *** github.com/Sirupsen/logrus: MIT
+ *** bitbucket.org/ww/goautoneg: BSD 3-clause - old dep still in use by some repos, should be removed from vendoring
+ *** bootstrap: MIT
+ *** bootstrap-datetimepicker: Apache 2.0
+ *** bootstrap3-typeahead: Apache 2.0
+ *** rickshaw: MIT
+ *** jquery: MIT
+ ** prometheus_cli, deprecated CLI tool, Go
+ *** No dependencies
+ ** alertmanager, Go
+ *** Dependencies relative to prometheus
+ *** github.com/cenkalti/backoff: MIT
+ *** github.com/mattn/go-sqlite3: MIT - cgo, so may have build challenges
+ *** angular: MIT
+ *** Kube CSS: MIT
+ *** Moment CSS: MIT
+ ** pushgateway, batch job interface, Go
+ *** Dependencies relative to prometheus
+ *** github.com/elazarl/go-bindata-assetfs: BSD 2-clause
+ ** client_golang, Go client
+ *** No dependencies relative to prometheus
+ *** Note that Go instrumentation will pull in protobuf and beorn7/perks
+ ** common, internal library, Go
+ *** No dependencies relative to prometheus
+ ** procfs, internal library, Go
+ *** No dependencies
+ ** log, internal library, Go
+ *** No dependencies relative to prometheus
+ ** client_model, library for client libraries, Go, Python, Ruby, Java (only used by client_golang?)
+ *** Dependencies relative to prometheus, client_golang, client_ruby
+ *** protoc: BSD 3-clause
+ ** migrate, migration tools, Go
+ *** No dependencies relative to prometheus
+ ** promu, new build infrastructure, WIP
+ *** TODO
+ ** golang-builder, new build infrastructure, WIP
+ *** TODO
+ ** utils, build infrastructure, make/bash
+ *** No dependencies
+ ** busybox, build infrastructure for producing Docker images, make/bash
+ *** No dependencies
+ ** distro-pkgs, packaging experiment, bash  - can we delete this?
+ *** fpm: MIT
+ ** nagios_plugins, alerts prometheus -> nagios, bash
+ *** No dependencies
+ ** blackbox_exporter: Go
+ *** Dependencies relative to prometheus
+ *** golang.org/x/sys: BSD 3-clause
+ ** node_exporter, Go
+ *** Dependencies relative to prometheus
+ *** golang.org/x/sys: BSD 3-clause
+ *** github.com/soundcloud/go-runit: MIT
+ *** github.com/kolo/xmlrpc: MIT
+ *** github.com/godbus/dbus: BSD 2-clause
+ *** github.com/coreos/go-systemd: Apache 2.0
+ *** Depends on FreeBSD/OpenBSD specific headers+libraries on those platforms. Cross-building with all modules is difficult due to this.
+ ** host_exporter
+ *** Just a README pointing to node_exporter
+ ** haproxy_exporter, Go
+ *** No dependencies relative to prometheus
+ ** mysqld_exporter, Go
+ *** Dependencies relative to prometheus
+ *** golang.org/x/sys: BSD 3-clause
+ *** gopkg.in/DATA-DOG/go-sqlmock.v1: BSD 3-clause
+ *** github.com/go-sql-driver/mysql: Mozilla Public License Version 2.0
+ ** consul_exporter, Go
+ *** Dependencies relative to prometheus
+ *** github.com/hashicorp/consul: Mozilla Public License Version 2.0
+ ** statsd_exporter, Go
+ *** Dependencies relative to prometheus
+ *** golang.org/x/sys: BSD 3-clause
+ *** github.com/howeyc/fsnotify: BSD 3-clause
+ *** github.com/stretchr/testify: MIT
+ *** github.com/davecgh/go-spew/: ISC
+ *** github.com/pmezard/go-difflib: BSD 3-clause
+ ** influxdb_exporter, Go
+ *** Dependencies relative to prometheus
+ *** golang.org/x/sys: BSD 3-clause
+ *** (influxdb vs influxdata due to github organization rename)
+ ** graphite_exporter, Go
+ *** No dependencies relative to prometheus and statsd_exporter
+ ** collectd_exporter, Go
+ *** Dependencies relative to prometheus and statsd_exporter
+ *** collectd.org/{api, cdtime, format, network}: ISC
+ ** client_java, Java
+ *** maven (build/release): Apache 2.0
+ *** jetty (testing/optional): Dual Apache 2.0/Eclipse Public License 1.0
+ *** log4j (optional): Apache 2.0
+ *** logback (optional): Dual LGPL 2.1/Eclipse Public License 1.0
+ *** dropwizard/codahale metrics (optional, benchmarks): Apache 2.0
+ *** junit (testing): Eclipse Public License 1.0
+ *** mockito (testing): MIT
+ *** mockserver-netty (testing): Apache 2.0
+ *** jmh (benchmarks): GPLv2
+ ** jmx_exporter, Java
+ *** Deps relative to client_java
+ *** jetty: Dual Apache 2/Eclipse Public License 1.0
+ *** snakeyaml: Apache 2.0
+ *** jdeb (release): Apache 2.0
+ ** cloudwatch_exporter, Java
+ *** Deps relative to client_java
+ *** snakeyaml: Apache 2.0
+ *** AWS SDK: Apache 2.0
+ ** client_python, Python
+ *** twisted (optional): MIT
+ ** snmp_exporter, Python
+ *** netsnmp: BSD 3-clause/BSD-like: http://www.net-snmp.org/about/license.html[http://www.net-snmp.org/about/license.html]
+ **** This requires manual installation of the netsnmp python bindings (available via apt/rpm)
+ ** client_ruby
+ *** various Ruby gem dependencies
+ ** promdash, deprecated dashboard, Ruby/JS
+ *** Requires sqlite or mysql or postgres database
+ *** various Ruby gem dependencies
+ ** docs, website source, Markdown/Ruby/JS
+ *** Includes logos of companies using Prometheus, with permission
+ *** various Ruby gem dependencies
+ ** prometheus.github.io:
+ *** Website deployment
+
+ * **S***tatement on alignment with CNCF mission*
+ ** Prometheus was created to monitor microservices-oriented, containerized dynamic environments. The Prometheus community is looking forward to putting the project on a more formal footing and fostering growth of its ecosystem.
+ * *Communication channels*
+ ** #prometheus on freenode
+ ** prometheus-developers google group, primary mailing list discussion
+ ** prometheus-team google group, internal non-technical discussion (rarely used)
+ ** /r/prometheusmonitoring subreddit, not quite official. We post all articles we know about here, and there’s the odd user question
+ ** There’s a ‘prometheus’ tag on StackOverflow
+ ** prometheus-users Google group - held by Brian for future use
+ * *Website*
+ ** prometheus.io, hosted on GitHub with CloudFlare in front
+ *** We wish to keep this served at this location
+ ** promcon.io, for the conference. Also on GitHub.
+ * *Release methodology and mechanics*
+ ** For Prometheus itself this is currently being defined, releases every few months with RC process.
+ ** For all other components, releases performed on demand. For a handful of repos with non-trivial levels of contributions (e.g. node exporter), we’ll usually ask other devs if there’s anything they want to get in.
+ ** Website is automatically pushed.
+ * *Social media accounts*
+ ** @PrometheusIO Twitter account, password shared via LastPass
+ ** @PromConIO Twitter account, password shared via LastPass (still unused)
+ ** There’s a Prometheus LinkedIn project with the core developers.
+ * *Community size and any existing **sponsorship*
+ ** 200+ contributors, 250+ people on mailing list, 50+ third party integrations.
+ ** Estimated low hundreds of production users.
+ ** More stats at http://prometheus.io/blog/2016/01/26/one-year-of-open-prometheus-development/#after-the-first-wave[http://prometheus.io/blog/2016/01/26/one-year-of-open-prometheus-development/#after-the-first-wave].
+ ** One company offering commercial services.
+ ** The only expense we have is DNS registration, which is paid out of developer’s pockets.
+ ** DigitalOcean offered us a chunk of free credit, we use it on occasion.
+ ** We are soliciting sponsors for PromCon 2016.
+ * *What Prometheus is looking for in a Foundation*
+ ** Key Goals
+ *** Driving adoption and investment in it - being “blessed” as neutral and not a one-company project - “a clear signal that the project is truly independent”.
+ *** Quality and brand - The companies involved into the CNCF are simply a good match and I'm sure the peer projects will be as well. Prometheus is a large ecosystem. For new users who are not monitoring experts it’s not always easy to evaluate whether it's what they need. Being part of the CNCF gives (especially new) users a good signal that Prometheus has its place in modern infrastructure stacks.
+ ** Marketing
+ *** Active "marketing" by the foundation for its projects.
+ *** Sponsorship of events or hosting could also be nice, although that can also be provided by various companies.
+ ** Core Project Governance 
+ *** Prometheus is not a single-company project.
+ *** The direction of the project should still be in the hands of the original developers rather than being steered by a foundation.
+ *** Help to establish and enforce clear rules for project governance (who can decide what, team membership, etc.). Not a priority initially, but will become more important later on.
+ *** We’d hope to be with a foundation for a long period, however if the worst happened that we could split out from the foundation.
+ ** Help & TOC Oversight
+ *** Getting more people involved on a deeper technical level beyond the current community input. Particularly for new users, lots of them are used to different paradigms and end up trying fit a square peg into a round hole or are lacking basic infrastructure and want to add a bandaid in Prometheus for that. Being able to have insight that helps separate those ideas from changes that are worthwhile would be beneficial.
+ *** Where the core developers cannot agree among themselves, we’d actually appreciate a TOC giving us advice from the perspective of the general industry.
+ ** Legal
+ *** Assistance in any legal things, such as trademark registration
+ *** At some point, once enough trust is established, ownership/stewardship of most/all of the project's assets (domain, GitHub, etc.).
+
