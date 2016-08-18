@@ -1,0 +1,82 @@
+== CoreDNS Proposal
+
+*Name of project:* CoreDNS
+
+*Description*
+
+CoreDNS is a fast, flexible DNS server that is designed to be performant with a flexible implementation. This flexibility allows CoreDNS to be easily extended to support various data sources and to implement rich DNS service behaviors. For example, response caching, query rewrite, load-balancing, zone transfer and signing.
+CoreDNS is the successor of SkyDNS.
+
+*Sponsor / Advisor from TOC*: Jonathan Boulle
+
+*Unique Identifier*: coredns
+
+*License*: Apache License v2.0
+
+*Source control repositories*: https://github.com/miekg/coredns
+
+*Initial Committers*:
+
+* Michael Richmond github: mrichmon
+* github: splack
+* Felix Cantournet github: fcantournet
+* github: leelynne
+* Matt Layher github: mdlayher
+* Vasily Vailyev github: pixelbender
+
+*Infrastructure requirements (CI / CNCF Cluster)*: N/A
+
+*Issue tracker*: https://github.com/miekg/coredns
+
+*Website*:	https://miek.nl/tags/coredns/
+
+*Release methodology and mechanics*:	github master
+
+*Social media accounts*:	Twitter: @coredns
+
+*Existing sponsorship*: Infoblox contributing developer time to implement CoreDNS->Kubernetes integration component.
+
+*External Dependencies*
+
+* Go package: beorn7/perks (MIT https://github.com/beorn7/perks/blob/master/LICENSE)
+* Go package: coreos/etcd (ASLv2 https://github.com/coreos/etcd/blob/master/LICENSE)
+* Go package: flynn/go-shlex (ASLv2 https://github.com/flynn-archive/go-shlex/blob/master/COPYING)
+* Go package: fsnotify/fsnotify (BSD https://github.com/fsnotify/fsnotify/blob/master/LICENSE)
+* Go package: golang/protobuf (BSD https://github.com/golang/protobuf/blob/master/LICENSE)
+* Go package: hashicorp/go-syslog (MIT https://github.com/hashicorp/go-syslog/blob/master/LICENSE)
+* Go package: matttproud/golang_protobuf_extensions (ASLv2 https://github.com/matttproud/golang_protobuf_extensions/blob/master/LICENSE 
+* Go package: miekg/dns (BSD https://github.com/miekg/dns/blob/master/LICENSE)
+* Go package: patrickmn/go-cache (MIT https://github.com/patrickmn/go-cache/blob/master/LICENSE)
+* Go package: prometheus/client_golang (ASLv2 https://github.com/prometheus/client_golang/blob/master/LICENSE)
+* Go package: prometheus/client_model (ASLv2 https://github.com/prometheus/client_model/blob/master/LICENSE)
+* Go package: prometheus/common (ASLv2 https://github.com/prometheus/common/blob/master/LICENSE)
+* Go package: prometheus/procfs (ASLv2 https://github.com/prometheus/procfs/blob/master/LICENSE)
+* Go package: ugorji/go (MIT https://github.com/ugorji/go/blob/master/LICENSE)
+* Go package: xenolf/lego (MIT https://github.com/xenolf/lego/blob/master/LICENSE)
+* Go package: golang/x/crypto (BSD https://github.com/golang/crypto/blob/master/LICENSE)
+* Go package: golang/x/net (BSD https://github.com/golang/net/blob/master/LICENSE)
+* Go package: golang/x/sys (BSD https://github.com/golang/sys/blob/master/LICENSE) 
+* Go package: natefinch/lumberjack.v2 (MIT https://github.com/natefinch/lumberjack/blob/v2.0/LICENSE) 
+* Go package: square/go-jose.v1 (ASLv2 https://github.com/square/go-jose/blob/master/LICENSE)
+* Kubernetes (for CoreDNS -> kubernetes integration) (ASLv2 https://github.com/kubernetes/kubernetes/blob/master/LICENSE) 
+
+*Statement on alignment with CNCF mission*:
+ 
+CoreDNS is a focused lightweight DNS server. A microservice philosophy guides the internal design of CoreDNS. Individual DNS functions are provided by discrete, composable plugins that are enabled via runtime configuration.
+CoreDNS can be thought of as a DNS protocol head that can be configured to front various backend data sources. A flexible DNS server is a necessary component to provide “Naming and Discovery” services to containers running in the CNCF distributed system services environment.
+
+*Comparison with KubeDNS*:
+
+The incumbent DNS service for kubernetes, “kubedns”, consists of four components:
+* etcd provides a DNS data cache,
+* kube2sky provides the mechanism for updating the etcd data cache,
+* skydns provides the DNS service based on the data cached in etcd,
+* exechealthz provides health-check status.
+
+Running CoreDNS with kubernetes only requires the coredns component. CoreDNS does not require a separate data cache or update service. CoreDNS includes an optional health-check “middleware” component that can be used for service monitoring.
+
+CoreDNS provides a cleaner, more extensible codebase as compared to SkyDNS. (Both SkyDNS and CoreDNS were authored by Miek Gieben.)
+
+CoreDNS is currently being extended to operate directly with kubernetes to access the service data. This “middleware” implementation for CoreDNS provides the same client-facing behavior as KubeDNS. The pipeline-based design of CoreDNS allows easy extension to use any container orchestrator as a DNS data source.
+
+With the kubernetes middleware, CoreDNS can be considered as an alternative to SkyDNS with lower runtime complexity. Performance testing to compare against SkyDNS is pending.
