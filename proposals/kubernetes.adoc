@@ -1,33 +1,43 @@
- Kubernetes Proposal
+== Kubernetes Proposal
 
- * *name of project:* Kubernetes
- * *description*
- ** Kubernetes is an open source system for managing https://github.com/kubernetes/kubernetes/wiki/Why-Kubernetes%3F#why-containers[containerized applications] across multiple hosts, providing basic mechanisms for deployment, maintenance, and scaling of applications. Kubernetes will serve as a cluster manager for the CNCF ecosystem.
- * *sponsor / advisor from TOC*: Alexis Richardson
- * *unique identifier*: kubernetes
- * *license*: Apache License v2.0
- * *source control repositories:* https://github.com/kubernetes/kubernetes[https://github.com/kubernetes] (everything in the org)
- * *initial committers:* https://github.com/orgs/kubernetes/teams/kubernetes-maintainers
- * *infrastructure requirements (CI / CNCF Cluster)*
- ** Cluster time for Openstack and other self hosted testing
- ** GCE testing
- ** AWS testing 
- ** Jenkins infrastructure (future)
- ** Azure testing (future)
- * *external dependencies*
- ** Godeps - various https://raw.githubusercontent.com/kubernetes/kubernetes/master/Godeps/LICENSES[https://raw.githubusercontent.com/kubernetes/kubernetes/master/Godeps/LICENSES]
- ** third_party - https://github.com/kubernetes/kubernetes/tree/master/third_party/[https://github.com/kubernetes/kubernetes/tree/master/third_party/]
- *** forked
- **** Etcd - Apache v 2.0 https://github.com/coreos/go-etcd/blob/master/LICENSE[https://github.com/coreos/go-etcd/blob/master/LICENSE]
- **** JSON - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE]
- **** Reflect - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE]
- *** Golang - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/golang/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/golang/LICENSE]
- *** htpasswd - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/htpasswd/COPYING[+++<s>+++https://github.com/kubernetes/kubernetes/blob/master/third_party/htpasswd/COPYING]+++</s>+++
- *** intemp - Apache v2.0 https://github.com/kubernetes/kubernetes/blob/master/third_party/intemp/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/intemp/LICENSE]
- *** pause - MIT https://github.com/kubernetes/kubernetes/blob/master/third_party/pause/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/pause/LICENSE]
- *** Protobuf -  MIT https://github.com/google/protobuf/blob/master/LICENSE
- *** Swagger-ui - Apache v2.0 https://github.com/kubernetes/kubernetes/blob/master/third_party/swagger-ui/LICENSE
- * *statement on alignment with CNCF mission*
- ** Kubernetes has been offered as a seed technology to the CNCF and meets the criteria of a cloud native system (container packaged, dynamically managed and micro-services oriented). The Kubernetes community is looking forward joining the foundation to help establish neutral governance and foster the growth of its ecosystem. Currently, the Kubernetes community is growing with over 70 committers, nearly 700 contributors and 18 releases.  Release 1.2 is expected in mid March. 
+*Name of project:* Kubernetes
 
+*Description*
 
+Kubernetes is an open source system for managing https://github.com/kubernetes/kubernetes/wiki/Why-Kubernetes%3F#why-containers[containerized applications] across multiple hosts, providing basic mechanisms for deployment, maintenance, and scaling of applications. Kubernetes will serve as a cluster manager for the CNCF ecosystem.
+
+*Sponsor / Advisor from TOC*: Alexis Richardson
+
+*Unique Identifier*: kubernetes
+
+*License*: Apache License v2.0
+
+*Source control repositories*: https://github.com/kubernetes/kubernetes[https://github.com/kubernetes] (everything in the org)
+
+*Initial Committers*: https://github.com/orgs/kubernetes/teams/kubernetes-maintainers
+
+*Infrastructure requirements (CI / CNCF Cluster)*:
+* Cluster time for Openstack and other self hosted testing
+* GCE testing
+* AWS testing 
+* Jenkins infrastructure (future)
+* Azure testing (future)
+
+*External Dependencies*
+
+* Godeps - various https://raw.githubusercontent.com/kubernetes/kubernetes/master/Godeps/LICENSES[https://raw.githubusercontent.com/kubernetes/kubernetes/master/Godeps/LICENSES]
+* third_party - https://github.com/kubernetes/kubernetes/tree/master/third_party/[https://github.com/kubernetes/kubernetes/tree/master/third_party/]
+* forked
+ ** Etcd - Apache v 2.0 https://github.com/coreos/go-etcd/blob/master/LICENSE[https://github.com/coreos/go-etcd/blob/master/LICENSE]
+ ** JSON - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE]
+ ** Reflect - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE]
+* Golang - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/golang/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/golang/LICENSE]
+* htpasswd - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/htpasswd/COPYING[https://github.com/kubernetes/kubernetes/blob/master/third_party/htpasswd/COPYING]
+* intemp - Apache v2.0 https://github.com/kubernetes/kubernetes/blob/master/third_party/intemp/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/intemp/LICENSE]
+* pause - MIT https://github.com/kubernetes/kubernetes/blob/master/third_party/pause/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/pause/LICENSE]
+* Protobuf -  MIT https://github.com/google/protobuf/blob/master/LICENSE
+* Swagger-ui - Apache v2.0 https://github.com/kubernetes/kubernetes/blob/master/third_party/swagger-ui/LICENSE
+ 
+*Statement on alignment with CNCF mission*:
+ 
+Kubernetes has been offered as a seed technology to the CNCF and meets the criteria of a cloud native system (container packaged, dynamically managed and micro-services oriented). The Kubernetes community is looking forward joining the foundation to help establish neutral governance and foster the growth of its ecosystem. Currently, the Kubernetes community is growing with over 70 committers, nearly 700 contributors and 18 releases.  Release 1.2 is expected in mid March. 
