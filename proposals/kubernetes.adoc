@@ -6,8 +6,8 @@
  * *sponsor / advisor from TOC*: Alexis Richardson
  * *unique identifier*: kubernetes
  * *license*: Apache License v2.0
- * *source control repositories: *https://github.com/kubernetes/kubernetes[https://github.com/kubernetes] (everything in the org)
- * *initial committers: *https://github.com/orgs/kubernetes/teams/kubernetes-maintainers[https://github.com/orgs/kubernetes/teams/kubernetes-maintainers] (or https://drive.google.com/file/d/0B4rxQZmNuYvZLWVRckx4R2gzR0E/view?usp=sharing[as a PDF])
+ * *source control repositories:* https://github.com/kubernetes/kubernetes[https://github.com/kubernetes] (everything in the org)
+ * *initial committers:* https://github.com/orgs/kubernetes/teams/kubernetes-maintainers
  * *infrastructure requirements (CI / CNCF Cluster)*
  ** Cluster time for Openstack and other self hosted testing
  ** GCE testing
@@ -22,7 +22,7 @@
  **** JSON - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE]
  **** Reflect - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/forked/json/LICENSE]
  *** Golang - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/golang/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/golang/LICENSE]
- *** +++<s>+++htpasswd - BSD +++</s>+++https://github.com/kubernetes/kubernetes/blob/master/third_party/htpasswd/COPYING[+++<s>+++https://github.com/kubernetes/kubernetes/blob/master/third_party/htpasswd/COPYING]+++</s>+++
+ *** htpasswd - BSD https://github.com/kubernetes/kubernetes/blob/master/third_party/htpasswd/COPYING[+++<s>+++https://github.com/kubernetes/kubernetes/blob/master/third_party/htpasswd/COPYING]+++</s>+++
  *** intemp - Apache v2.0 https://github.com/kubernetes/kubernetes/blob/master/third_party/intemp/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/intemp/LICENSE]
  *** pause - MIT https://github.com/kubernetes/kubernetes/blob/master/third_party/pause/LICENSE[https://github.com/kubernetes/kubernetes/blob/master/third_party/pause/LICENSE]
  *** Protobuf -  MIT https://github.com/google/protobuf/blob/master/LICENSE
