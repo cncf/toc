@@ -17,6 +17,7 @@ Kubernetes is an open source system for managing https://github.com/kubernetes/k
 *Initial Committers*: https://github.com/orgs/kubernetes/teams/kubernetes-maintainers
 
 *Infrastructure requirements (CI / CNCF Cluster)*:
+
 * Cluster time for Openstack and other self hosted testing
 * GCE testing
 * AWS testing 
