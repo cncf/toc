@@ -28,11 +28,11 @@ CoreDNS is the successor of SkyDNS.
 
 *Issue tracker*: https://github.com/miekg/coredns
 
-*Website*:	https://miek.nl/tags/coredns/
+*Website*: https://coredns.io
 
-*Release methodology and mechanics*:	github master
+*Release methodology and mechanics*: github master
 
-*Social media accounts*:	Twitter: @coredns
+*Social media accounts*: Twitter: @corednsio
 
 *Existing sponsorship*: Infoblox contributing developer time to implement CoreDNS->Kubernetes integration component.
 
