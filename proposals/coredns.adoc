@@ -5,7 +5,8 @@
 *Description*
 
 CoreDNS is a fast, flexible DNS server that is designed to be performant with a flexible implementation. This flexibility allows CoreDNS to be easily extended to support various data sources and to implement rich DNS service behaviors. For example, response caching, query rewrite, load-balancing, zone transfer and signing.
-CoreDNS is the successor of SkyDNS.
+CoreDNS is the successor of SkyDNS. SkyDNS is a DNS server that has etcd as the datastore backend. It is widely
+used in cloud deployments, but lacks the flexibility we envision for CoreDNS.
 
 *Sponsor / Advisor from TOC*: Jonathan Boulle
 
@@ -38,13 +39,18 @@ CoreDNS is the successor of SkyDNS.
 
 *External Dependencies*
 
+CoreDNS has a hard dependency on Caddy (mholt/caddy), as CoreDNS is a servertype-plugin to it. Technically this
+means we need to patch one source file in the caddy tree, before CoreDNS can be build. Other than that it is
+similar to a normal Go dependency.
+
+* Go package: mholt/caddy (ASLV2 https://github.com/mholt/caddy/blob/master/LICENSE.txt)
 * Go package: beorn7/perks (MIT https://github.com/beorn7/perks/blob/master/LICENSE)
 * Go package: coreos/etcd (ASLv2 https://github.com/coreos/etcd/blob/master/LICENSE)
 * Go package: flynn/go-shlex (ASLv2 https://github.com/flynn-archive/go-shlex/blob/master/COPYING)
 * Go package: fsnotify/fsnotify (BSD https://github.com/fsnotify/fsnotify/blob/master/LICENSE)
 * Go package: golang/protobuf (BSD https://github.com/golang/protobuf/blob/master/LICENSE)
 * Go package: hashicorp/go-syslog (MIT https://github.com/hashicorp/go-syslog/blob/master/LICENSE)
-* Go package: matttproud/golang_protobuf_extensions (ASLv2 https://github.com/matttproud/golang_protobuf_extensions/blob/master/LICENSE 
+* Go package: matttproud/golang_protobuf_extensions (ASLv2 https://github.com/matttproud/golang_protobuf_extensions/blob/master/LICENSE
 * Go package: miekg/dns (BSD https://github.com/miekg/dns/blob/master/LICENSE)
 * Go package: patrickmn/go-cache (MIT https://github.com/patrickmn/go-cache/blob/master/LICENSE)
 * Go package: prometheus/client_golang (ASLv2 https://github.com/prometheus/client_golang/blob/master/LICENSE)
@@ -55,13 +61,13 @@ CoreDNS is the successor of SkyDNS.
 * Go package: xenolf/lego (MIT https://github.com/xenolf/lego/blob/master/LICENSE)
 * Go package: golang/x/crypto (BSD https://github.com/golang/crypto/blob/master/LICENSE)
 * Go package: golang/x/net (BSD https://github.com/golang/net/blob/master/LICENSE)
-* Go package: golang/x/sys (BSD https://github.com/golang/sys/blob/master/LICENSE) 
-* Go package: natefinch/lumberjack.v2 (MIT https://github.com/natefinch/lumberjack/blob/v2.0/LICENSE) 
+* Go package: golang/x/sys (BSD https://github.com/golang/sys/blob/master/LICENSE)
+* Go package: natefinch/lumberjack.v2 (MIT https://github.com/natefinch/lumberjack/blob/v2.0/LICENSE)
 * Go package: square/go-jose.v1 (ASLv2 https://github.com/square/go-jose/blob/master/LICENSE)
-* Kubernetes (for CoreDNS -> kubernetes integration) (ASLv2 https://github.com/kubernetes/kubernetes/blob/master/LICENSE) 
+* Kubernetes (for CoreDNS -> kubernetes integration) (ASLv2 https://github.com/kubernetes/kubernetes/blob/master/LICENSE)
 
 *Statement on alignment with CNCF mission*:
- 
+
 CoreDNS is a focused lightweight DNS server. A microservice philosophy guides the internal design of CoreDNS. Individual DNS functions are provided by discrete, composable plugins that are enabled via runtime configuration.
 CoreDNS can be thought of as a DNS protocol head that can be configured to front various backend data sources. A flexible DNS server is a necessary component to provide “Naming and Discovery” services to containers running in the CNCF distributed system services environment.
 
