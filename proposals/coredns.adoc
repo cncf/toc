@@ -4,7 +4,7 @@
 
 *Description*
 
-CoreDNS is a fast, flexible DNS server that is designed to be performant with a flexible implementation. This flexibility allows CoreDNS to be easily extended to support various data sources and to implement rich DNS service behaviors. For example, response caching, query rewrite, load-balancing, zone transfer and signing.
+CoreDNS is a fast, flexible DNS server that is designed to be performant with a flexible implementation. This flexibility allows CoreDNS to be easily extended to support various data sources and to implement rich DNS service behaviors: for example, response caching, query rewrite, load-balancing, zone transfer and signing.
 CoreDNS is the successor of SkyDNS. SkyDNS is a DNS server that has etcd as the datastore backend. It is widely
 used in cloud deployments, but lacks the flexibility we envision for CoreDNS.
 
@@ -31,11 +31,19 @@ used in cloud deployments, but lacks the flexibility we envision for CoreDNS.
 
 *Website*: https://coredns.io
 
-*Release methodology and mechanics*: github master
+*Release methodology and mechanics*: github master. As as young project no method for official releases has been
+established. The current rule is: the master branch is production ready at all times. A more formal release
+process is on its way, the choice to use semver versioning has not yet been made. Precompiled binaries will be
+created by hooking into Caddy's website: https://caddyservers.com where "DNS" will be a download option.
 
 *Social media accounts*: Twitter: @corednsio
 
 *Existing sponsorship*: Infoblox contributing developer time to implement CoreDNS->Kubernetes integration component.
+
+*Existing community*: The community is small, but growing. Current number of twitter following is 100+ (after a
+week of having the twitter account). By aligning ourselves with the Caddy community we hope to leverage Caddy's
+popularity for CoreDNS. By positioning CoreDNS as a better SkyDNS we hope to entice user of SkyDNS to embrace
+CoreDNS.
 
 *External Dependencies*
 
