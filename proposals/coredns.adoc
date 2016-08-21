@@ -18,6 +18,7 @@ used in cloud deployments, but lacks the flexibility we envision for CoreDNS.
 
 *Initial Committers*:
 
+* Miek Gieben github: miekg
 * Michael Richmond github: mrichmon
 * github: splack
 * Felix Cantournet github: fcantournet
