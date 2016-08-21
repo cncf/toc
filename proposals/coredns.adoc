@@ -48,9 +48,12 @@ CoreDNS.
 
 *External Dependencies*
 
-CoreDNS has a hard dependency on Caddy (mholt/caddy), as CoreDNS is a servertype-plugin to it. Technically this
-means we need to patch one source file in the caddy tree, before CoreDNS can be build. Other than that it is
-similar to a normal Go dependency.
+CoreDNS depends on Caddy. Caddy is a framework that coredns uses in two ways:
+
+1. much of the CoreDNS code plugs into the framework to add DNS behavior.
+2. CoreDNS provides a wrapper around the framework to provide a DNS-tuned command-line interface.
+
+Go dependencies:
 
 * Go package: mholt/caddy (ASLV2 https://github.com/mholt/caddy/blob/master/LICENSE.txt)
 * Go package: beorn7/perks (MIT https://github.com/beorn7/perks/blob/master/LICENSE)
