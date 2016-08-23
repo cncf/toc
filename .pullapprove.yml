@@ -1,0 +1,14 @@
+approve_by_comment: true
+approve_regex: '^(Approved|lgtm|LGTM|:shipit:|:star:|:\+1:|:ship:)'
+reject_regex: '^(Rejected|:-1:)'
+reset_on_push: true
+reviewers:
+  teams:
+  - toc
+  name: default
+  required: 6
+  conditions:
+    files:
+    - "proposals/*"  # review if edited docs
+    branches:
+    - master
