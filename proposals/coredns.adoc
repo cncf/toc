@@ -4,8 +4,8 @@
 
 *Description*
 
-CoreDNS is a fast, flexible DNS server that is designed to be performant with a flexible implementation. This flexibility allows CoreDNS to be easily extended to support various data sources and to implement rich DNS service behaviors: for example, response caching, query rewrite, load-balancing, zone transfer and signing.
-CoreDNS is the successor of SkyDNS. SkyDNS is a DNS server that has etcd as the datastore backend. It is widely
+CoreDNS is a fast, flexible and modern DNS server. Its performant and flexible implementation allows CoreDNS to be easily extended to support various data sources and to implement rich DNS service behaviors: for example, response caching, query rewrite, load-balancing, zone transfer and signing.
+CoreDNS is the successor of SkyDNS (https://github.com/skynetservices/skydns), a DNS server that uses etcd as its datastore backend. SkyDNS is widely
 used in cloud deployments, but lacks the flexibility we envision for CoreDNS.
 
 *Sponsor / Advisor from TOC*: Jonathan Boulle
@@ -32,23 +32,22 @@ used in cloud deployments, but lacks the flexibility we envision for CoreDNS.
 
 *Website*: https://coredns.io
 
-*Release methodology and mechanics*: github master. As as young project no method for official releases has been
-established. The current rule is: the master branch is production ready at all times. A more formal release
-process is on its way, the choice to use semver versioning has not yet been made. Precompiled binaries will be
-created by hooking into Caddy's website: https://caddyservers.com where "DNS" will be a download option.
+*Release methodology and mechanics*: As a young project, no method for official releases has been
+established, and no official releases have been made; the current rule is that the master branch is production-ready at all times. A more formal release
+process is on its way, and may introduce semantic versioning, but a final decision has not yet been made. Precompiled binaries will be
+distributed by hooking into Caddy's download website (https://caddyserver.com/download), where "DNS" will be a Server Type option.
 
 *Social media accounts*: Twitter: @corednsio
 
 *Existing sponsorship*: Infoblox contributing developer time to implement CoreDNS->Kubernetes integration component.
 
-*Existing community*: The community is small, but growing. Current number of twitter following is 100+ (after a
-week of having the twitter account). By aligning ourselves with the Caddy community we hope to leverage Caddy's
-popularity for CoreDNS. By positioning CoreDNS as a better SkyDNS we hope to entice user of SkyDNS to embrace
-CoreDNS.
+*Existing community*: The community is small, but growing. Current number of Twitter followers is 100+ (after a
+week of having the Twitter account). By aligning ourselves with the Caddy community, we hope to leverage Caddy's
+popularity for CoreDNS. By positioning CoreDNS as a better SkyDNS, we hope to entice existing users of SkyDNS to migrate to and embrace CoreDNS.
 
 *External Dependencies*
 
-CoreDNS depends on Caddy. Caddy is a framework that coredns uses in two ways:
+CoreDNS depends on Caddy (https://caddyserver.com/). Caddy is a framework that CoreDNS uses in two ways:
 
 1. much of the CoreDNS code plugs into the framework to add DNS behavior.
 2. CoreDNS provides a wrapper around the framework to provide a DNS-tuned command-line interface.
@@ -76,25 +75,25 @@ Go dependencies:
 * Go package: golang/x/sys (BSD https://github.com/golang/sys/blob/master/LICENSE)
 * Go package: natefinch/lumberjack.v2 (MIT https://github.com/natefinch/lumberjack/blob/v2.0/LICENSE)
 * Go package: square/go-jose.v1 (ASLv2 https://github.com/square/go-jose/blob/master/LICENSE)
-* Kubernetes (for CoreDNS -> kubernetes integration) (ASLv2 https://github.com/kubernetes/kubernetes/blob/master/LICENSE)
+* Kubernetes (for CoreDNS -> Kubernetes integration) (ASLv2 https://github.com/kubernetes/kubernetes/blob/master/LICENSE)
 
 *Statement on alignment with CNCF mission*:
 
-CoreDNS is a focused lightweight DNS server. A microservice philosophy guides the internal design of CoreDNS. Individual DNS functions are provided by discrete, composable plugins that are enabled via runtime configuration.
+CoreDNS is a focused, lightweight DNS server. A microservice philosophy guides the internal design of CoreDNS. Individual DNS functions are provided by discrete, composable plugins that are enabled via runtime configuration.
 CoreDNS can be thought of as a DNS protocol head that can be configured to front various backend data sources. A flexible DNS server is a necessary component to provide “Naming and Discovery” services to containers running in the CNCF distributed system services environment.
 
 *Comparison with KubeDNS*:
 
-The incumbent DNS service for kubernetes, “kubedns”, consists of four components:
+The incumbent DNS service for Kubernetes, “kubedns”, consists of four components:
 * etcd provides a DNS data cache,
 * kube2sky provides the mechanism for updating the etcd data cache,
 * skydns provides the DNS service based on the data cached in etcd,
 * exechealthz provides health-check status.
 
-Running CoreDNS with kubernetes only requires the coredns component. CoreDNS does not require a separate data cache or update service. CoreDNS includes an optional health-check “middleware” component that can be used for service monitoring.
+Running CoreDNS with Kubernetes requires only the coredns component. CoreDNS does not require a separate data cache or update service. CoreDNS includes an optional health-check “middleware” component that can be used for service monitoring.
 
-CoreDNS provides a cleaner, more extensible codebase as compared to SkyDNS. (Both SkyDNS and CoreDNS were authored by Miek Gieben.)
+CoreDNS provides a cleaner, more extensible codebase as compared to SkyDNS. (Both SkyDNS and CoreDNS were authored primarily by Miek Gieben.)
 
-CoreDNS is currently being extended to operate directly with kubernetes to access the service data. This “middleware” implementation for CoreDNS provides the same client-facing behavior as KubeDNS. The pipeline-based design of CoreDNS allows easy extension to use any container orchestrator as a DNS data source.
+CoreDNS is currently being extended to operate directly with Kubernetes to access the service data. This “middleware” implementation for CoreDNS provides the same client-facing behavior as KubeDNS. The pipeline-based design of CoreDNS allows easy extension to use any container orchestrator as a DNS data source.
 
-With the kubernetes middleware, CoreDNS can be considered as an alternative to SkyDNS with lower runtime complexity. Performance testing to compare against SkyDNS is pending.
+With the Kubernetes middleware, CoreDNS can be considered as an alternative to SkyDNS with lower runtime complexity. Performance testing to compare against SkyDNS is pending.
