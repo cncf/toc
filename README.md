@@ -38,6 +38,8 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 * September 7th, 2016
  * [CockroachDB](https://github.com/cockroachdb/cockroach): Spencer Kimball 
 * September 21st, 2016
+ * [NATS](http://nats.io/): Larry McQueary 
+* October 5th, 2016
  * TODO 
 
 ## Meeting Minutes
