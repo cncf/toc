@@ -36,7 +36,7 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
  * [CoreDNS](https://github.com/miekg/coredns) ([overview](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)) ([proposal](https://docs.google.com/document/d/1Wt9nrD6siNe7oMmvJbEHf6Ns2-bbmgdinxX_mX0K2D0/edit?usp=sharing)): Miek Gieben 
  * [OpenTracing](http://opentracing.io/) ([overview](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165)): Ben Sigelman
 * September 7th, 2016
- * [CockroachDB](https://github.com/cockroachdb/cockroach): Spencer Kimball 
+ * [CockroachDB](https://github.com/cockroachdb/cockroach) ([overview](https://docs.google.com/presentation/d/1_kmax5ESAIjtuRZGl8nF6k1W3qlLgZsq2T8qzHYC6o0/edit?usp=sharing)): Spencer Kimball 
 * September 21st, 2016
  * [NATS](http://nats.io/): Larry McQueary 
 * October 5th, 2016
