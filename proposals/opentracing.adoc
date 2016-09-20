@@ -1,0 +1,145 @@
+== OpenTracing Proposal
+
+*Name of project:* OpenTracing
+
+*Description:* A set of consistent, expressive, vendor-neutral APIs for distributed tracing and context propagation, see https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g163fafe96a_3_0[slides] for the content we presented to the CNCF TOC.
+
+*Sponsor / Advisor from TOC*: Bryan Cantrill <bryan@joyent.com>
+
+*Unique Identifier*: opentracing
+
+*License*: Apache License v2.0 
+
+*Source control repositories*: 
+
+* https://github.com/opentracing
+* https://github.com/opentracing-contrib
+
+*Initial Committers*:
+
+* Ben Sigelman (@bensigelman)
+* Yuri Shkuro (@yurishkuro)
+* see the Contributors section for more information
+
+*Infrastructure requirements*: CI and potentially CNCF Community Cluster access
+
+*Issue tracker*: global - https://github.com/opentracing/opentracing.github.io/issues and per-platform issues are raised on the per-platform repository’s issues area
+
+*Mailing lists*
+
+* Active: https://gitter.im/opentracing/public
+* Placeholder: https://groups.google.com/forum/#!forum/opentracing
+* Related: https://groups.google.com/forum/#!forum/distributed-tracing
+
+*Website*: http://opentracing.io
+
+*Release methodology and mechanics*: Various across platforms
+
+*Social media accounts*: Twitter: @opentracing
+
+*Existing sponsorship*: Nothing formal; LightStep occasionally spends small amounts of money (hosting events, etc) on behalf of OpenTracing tech talks and so forth.
+
+*External Dependencies*
+
+Really very little. The core OpenTracing libraries are facade APIs and thus only bring in dependencies that are needed to describe various function parameters and return values. In some cases there are test harnesses that bring in ubiquitous testing packages. OpenTracing is willing to go through and formally enumerate all of these dependencies, but suffice to say there’s nothing interesting to see and everything is permissively licensed.
+
+*Statement on alignment with CNCF mission*:
+
+OpenTracing is an open API standard for distributed tracing in applications and OSS packages. Developers with experience building microservices at scale understand the role and importance of distributed tracing: per-process logging and metric monitoring have their place, but neither can reconstruct the elaborate journeys that transactions take as they propagate across a distributed system. Distributed traces are these journeys.
+
+So if distributed tracing is so valuable, why doesn’t everyone do it already? Because tracing instrumentation has been fragmented, syntactically inconsistent, and thus excessively expensive to deploy end-to-end across most cloud-native stacks.
+
+Distributed tracing is challenging because the instrumentation must propagate the tracing context both within and between processes. Accomplishing this involves many distinct pieces in a (micro-)service stack. In particular, tracing context must be passed through:
+
+* Self-contained OSS services (e.g., NGINX, Cassandra, Redis, etc)
+* OSS packages linked into custom services (e.g., grpc, ORMs, etc)
+* Arbitrary application glue and business logic built around the above
+
+And there’s the rub: It is not reasonable to ask all OSS services and all OSS packages and all application-specific code to use a single tracing vendor; yet, if they don’t share a mechanism for trace description and propagation, the causal chain is broken and the traces are truncated, often to the point of uselessness. We need a single, standard mechanism to describe the behavior of our systems. OpenTracing is that single, standard mechanism.
+
+Regarding CNCF’s charter mission, OpenTracing is specifically concerned with making loosely-coupled [micro]services easier to manage. As such, it is strongly aligned with CNCF and its goal to “significantly increase the overall agility and maintainability of applications” by “[making] technology ubiquitous and easily available through reliable interfaces.” Indeed, OpenTracing and CNCF as a whole mutually benefit one another. (It should be noted that, as it is focused on standard instrumentation more than standard encoding formats, OpenTracing today is most relevant at the application layer; it has few specific opinions about — or strong dependencies on — the container layer or orchestration systems more generally, though service discovery and high-quality tracing are symbiotic.)
+
+See also: the https://medium.com/opentracing/towards-turnkey-distributed-tracing-5f4297d1736[OpenTracing raison d'être on Medium]
+
+*Other Contributors:*
+
+OpenTracing Semantics Repo (formally the opentracing.github.io docs repo)
+
+* Ben Sigelman (bensigelman) LightStep
+* Yuri Shkuro (yurishkuro) Uber
+* Dan Kuebrich (dkuebric) AppNeta
+* Ben Cronin (bcronin) LightStep
+* Priyanka Sharma (pritianka) LightStep
+* Dimitrios Kouzis-Loukas (lookfwd) Bloomberg
+* Mck (michaelsembwever) Apache
+* Ivan Fraixedes (ifraixedes)
+
+Github issue/discussion participation:
+
+* Rodrigo Fonseca (rfonseca) Brown University
+* Colin Patrick McCabe (cmccabe) Cloudera
+* Cagatay Kavukcuoglu (tinkerware) Base60Labs
+* Benjamin Eberlei (beberlei) Qafoo
+* Władysław Bodzek (wladekb)
+* Bogdan Drutu (bogdandrutu) Google
+* Grayson Koonce (breerly) Uber
+* Marcin Grzejszczak (marcingrzejszczak) Zipkin
+* Fabian Lange (CodingFabian) Instana
+* Paul Caporn (drpacman) BBC
+
+https://github.com/opentracing/opentracing-go
+
+* Ben Sigelman (bensigelman) LightStep
+* Tobias Schottdorf (tschottdorf) Cockroach Labs
+* Yuri Shkuro (yurishkuro) Uber
+* Brandon Gonzales (bg451) Student
+* Josh MacDonald (jmacd)
+* Bas van Beek (basvanbeek)
+* Stephen Gutekanst (slimsag) Sourcegraph
+* Richard Scothern (RichardScothern) Docker
+* Tamir Duberstein (tamird) Cockroach Labs
+* Kris Kowal (kriskowal) (I think Uber)
+* Aleksey (IncSW)
+* Kyle Conroy (kyleconroy) Stripe
+* Blake Mizerany (bmizerany) Life360
+* Sebastián Vera (sebastianvera)
+
+https://github.com/opentracing/opentracing-javascript
+
+* Ben Cronin (bcronin) LightStep
+* Ben Sigelman (bensigelman) LightStep
+* Onwukike Ibe (oike) Uber
+* Alexander Sorokin (syrnick)
+* Yuri Shkuro (yurishkuro) Uber
+
+https://github.com/opentracing/opentracing-python
+
+* Yuri Shkuro (yurishkuro) Uber
+* Ben Sigelman (bensigelman) LightStep
+* Brandon Gonzales (bg451)
+* Dan Kuebrich (dkuebric) AppNeta
+
+https://github.com/opentracing/opentracing-java
+
+* Ben Sigelman (bensigelman) LightStep
+* Adrian Cole (adriancole) Pivotal / Zipkin
+* Mck (michaelsembwever) Apache / Cassandra
+* Onwukike Ibe (oike) Uber
+* Yuri Shkuro (yurishkuro) Uber
+* Mohamed Ezzat (m-ezzat)
+
+https://github.com/opentracing/opentracing-csharp
+
+* Christian Weiss (cwe1ss) Consultant
+* Daniel Wallin (dawallin) Frontwalker
+* Ben Sigelman (bensigelman)
+
+https://github.com/opentracing/opentracing-objc
+
+* Ben Sigelman (bensigelman) LightStep
+
+https://github.com/opentracing/opentracing-cpp
+
+* Josh MacDonald (jmacd) LightStep
+* Dimitrios Kouzis-Loukas (lookfwd) Bloomberg
+* Ben Sigelman (bensigelman) LightStep
