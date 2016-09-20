@@ -40,7 +40,7 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 * September 21st, 2016
  * [NATS](http://nats.io/): Larry McQueary 
 * October 5th, 2016
- * TODO 
+ * [linkerd](https://linkerd.io/): Oliver Gould
 
 ## Meeting Minutes
 
