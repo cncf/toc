@@ -38,9 +38,11 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 * September 7th, 2016
  * [CockroachDB](https://github.com/cockroachdb/cockroach) ([overview](https://docs.google.com/presentation/d/1_kmax5ESAIjtuRZGl8nF6k1W3qlLgZsq2T8qzHYC6o0/edit?usp=sharing)): Spencer Kimball 
 * September 21st, 2016
- * [NATS](http://nats.io/): Larry McQueary 
+ * [NATS](http://nats.io/) ([overview](https://docs.google.com/presentation/d/1LZtbV7xArLi3b1C3eh4ZlipyhPEk9iMS6YVzvLOmbpc/edit?usp=sharing)): Larry McQueary and Brian Flannery
 * October 5th, 2016
  * [linkerd](https://linkerd.io/): Oliver Gould
+* October 19th, 2016
+ * TODO (interested presenters contact cra@linuxfoundation.org)
 
 ## Meeting Minutes
 
@@ -59,3 +61,4 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 * [August 3rd, 2016](https://docs.google.com/presentation/d/1ZZFn7EfySQuAFBOH_EWGKifzXTWSSqpnFNuJLAXVBmk/edit#slide=id.g1424cc439e_3_0)
 * [August 17th, 2016](https://docs.google.com/presentation/d/1MkxZkzuYeMBGxQ4jUg4xQSE4uA3HNim8jPdelHEGrgo/edit#slide=id.g7460a6112_0_0)
 * [September 7th, 2016](https://docs.google.com/presentation/d/1PF_01_EKApXnq_jmtQw1h-axx_MonBvprD1LlZHm5Q8/edit?ts=57d00b46#slide=id.gd5ae4e962_2_136)
+* [September 21st, 2016](https://docs.google.com/presentation/d/1T29kNMvfNPNUX-MWjld08c---1Yi2PH8YvXPs8ez5wg/edit?usp=sharing)
