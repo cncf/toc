@@ -20,7 +20,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 
 ## Mailing List
 
-cncf-toc@lists.cncf.io: https://lists.cncf.io/mailman/listinfo/cncf-toc
+cncf-toc@lists.cncf.io: https://ponymail.cncf.io/list.html?cncf-toc@lists.cncf.io
 
 ## Voting
 
