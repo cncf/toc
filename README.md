@@ -26,6 +26,13 @@ cncf-toc@lists.cncf.io: https://ponymail.cncf.io/list.html?cncf-toc@lists.cncf.i
 
 In various situations the CNCF TOC shall hold a vote. These votes can happen on the phone, email, or via a voting service, when appropriate. TOC members can either respond "agree, yes, +1", "disagree, no, -1", or "abstain". A vote passes with two-thirds vote of votes cast based on the charter (see [6(c)(viii)](https://cncf.io/governance)). An abstain vote equals not voting at all.
 
+## Meeting Time
+
+The TOC meets on the 1st and 3rd Wednesday of every month at 8AM PT (USA Pacific):
+
+http://uberconference.com/cloudnative 
+Conference Number: +1-415-579-0198 No Pin Needed
+
 ## Scheduled Community Presentations
 
 * May 4th, 2016
