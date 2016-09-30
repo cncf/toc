@@ -28,6 +28,8 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 
 ## Scheduled Community Presentations
 
+* May 4th, 2016
+ * [Prometheus](https://prometheus.io/) ([overview](https://docs.google.com/presentation/d/1GtVX-ppI95LhrijprGENsrpq78-I1ttcSWLzMVk5d8M/edit?usp=sharing)): Fabian Reinartz, Julius Volz
 * August 3rd, 2016
  * [Fluentd](http://www.fluentd.org/) ([overview](https://docs.google.com/presentation/d/1S79MNv3E2aG8nuZJFJ0XMSumf7jnKozN3vdrivCH77U/edit?usp=sharing)): Kiyoto Tamura
  * [Heron](https://github.com/twitter/heron) ([overview](https://docs.google.com/presentation/d/1pKwNO2V3VScjD1JxJ0gEgFTwAOccJgaJxHWgwcyczec/edit?usp=sharing)): Karthik Ramasamy
