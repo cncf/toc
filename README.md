@@ -8,15 +8,15 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 
 ## Members
 
-* Jonathan Boulle
-* Bryan Cantrill
-* Camille Fournier
-* Brian Grant
-* Benjamin Hindman
-* Solomon Hykes
-* Elissa Murphy
-* Ken Owens
-* Alexis Richardson
+* **Jonathan Boulle** (term: 3 years - start date: 1/29/2016)
+* **Bryan Cantrill** (term: 3 years - start date: 1/29/2016)
+* **Camille Fournier** (term: 3 years - start date: 1/29/2016)
+* **Brian Grant** (term: 2 years - start date: 3/17/2016)
+* **Benjamin Hindman** (term: 3 years - start date: 1/29/2016)
+* **Solomon Hykes** (term: 2 years - start date: 3/17/2016)
+* **Elissa Murphy** (term: 2 years - start date: 3/11/2016)
+* **Ken Owens** (term: 3 years - start date: 1/29/2016)
+* **Alexis Richardson** (term: 3 years - start date: 1/29/2016)
 
 ## Mailing List
 
