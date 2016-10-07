@@ -49,9 +49,11 @@ Conference Number: +1-415-579-0198 No Pin Needed
 * September 21st, 2016
  * [NATS](http://nats.io/) ([overview](https://docs.google.com/presentation/d/1LZtbV7xArLi3b1C3eh4ZlipyhPEk9iMS6YVzvLOmbpc/edit?usp=sharing)): Larry McQueary and Brian Flannery
 * October 5th, 2016
- * [Zipkin](https://github.com/openzipkin/zipkin): Adrian Cole
- * [linkerd](https://linkerd.io/): Oliver Gould and William Morgan
+ * [Zipkin](https://github.com/openzipkin/zipkin) ([overview](https://docs.google.com/presentation/d/1w3WVP_rgmxDjLCEC2JInFz1tsqRP61EHfMswbApZXKw/edit#slide=id.g181ddbc52d_0_0)): Adrian Cole
+ * [linkerd](https://linkerd.io/) ([overview](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)): Oliver Gould and William Morgan
 * October 19th, 2016
+ * TODO (interested presenters contact cra@linuxfoundation.org)
+* November 2nd, 2016
  * TODO (interested presenters contact cra@linuxfoundation.org)
 
 ## Meeting Minutes
