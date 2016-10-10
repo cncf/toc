@@ -52,7 +52,7 @@ Conference Number: +1-415-579-0198 No Pin Needed
  * [Zipkin](https://github.com/openzipkin/zipkin) ([overview](https://docs.google.com/presentation/d/1w3WVP_rgmxDjLCEC2JInFz1tsqRP61EHfMswbApZXKw/edit#slide=id.g181ddbc52d_0_0)): Adrian Cole
  * [linkerd](https://linkerd.io/) ([overview](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)): Oliver Gould and William Morgan
 * October 19th, 2016
- * TODO (interested presenters contact cra@linuxfoundation.org)
+ * [gRPC](http://www.grpc.io/): Varun Talwar
 * November 2nd, 2016
  * TODO (interested presenters contact cra@linuxfoundation.org)
 
