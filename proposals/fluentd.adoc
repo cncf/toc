@@ -1,0 +1,89 @@
+== fluentd Proposal
+
+*Name of project:* fluentd
+
+*Description:* Fluentd is an open source data collector for unified logging layer. Fluentd's 600+ plugins connect it to many data sources and data outputs. Fluentd has a large adopter community consisting of Atlassian, LINE, Microsoft, Nintendo, GREE (and more).
+
+*Sponsor / Advisor from TOC*: Brian Grant <briangrant@google.com>
+
+*Unique Identifier*: fluentd
+
+*License*: Apache License v2.0 
+
+*Source control repositories*: 
+
+The donation includes all repositories on the GitHub fluent organization (https://github.com/fluent/):
+
+* fluent/fluentd
+* fluent/fluent-plugin-mongo
+* fluent/fluent-plugin-s3
+* fluent/fluent-plugin-kafka
+* fluent/fluent-bit
+* fluent/fluent-logger-ruby
+* fluent/fluent-logger-python
+* fluent/fluent-plugin-sql
+* fluent/fluent-logger-golang
+* fluent/fluentd-docker-image
+* fluent/fluent-bit-docs
+* fluent/fluent-plugin-flume
+* fluent/fluentd-website
+* fluent/fluentd-docs
+* fluent/fluent-plugin-multiprocess
+* fluent/fluent-plugin-webhdfs
+* fluent/fluent-logger-java
+* fluent/fluentd-benchmark
+
+*Initial Committers*:
+
+* Sadayuki "Sada" Furuhashi
+
+*Infrastructure requirements*: CI and potentially CNCF Community Cluster access
+
+We currently have several unit tests for all components of Fluentd, the tests can be found in the source code here:
+
+https://github.com/fluent/fluentd/tree/master/test
+
+With CNCF infrastructure, we aim to improve our testing with real deployments and critical loads over different connectors that we provide.
+
+*Issue tracker*: https://github.com/fluent/fluentd/issues and respective github issues for each repository.
+
+*Mailing lists:* https://groups.google.com/forum/#!forum/fluentd
+
+*Website*: http://opentracing.io
+
+*Release methodology and mechanics*: The latest release is found at: https://rubygems.org/gems/fluentd
+
+* Generally the last major version and one branch of the old major version are actively supported
+* Changes are included in a minor version if they don’t contain backward incompatibility, otherwise they’re included only in a branch of the next major version
+* The current latest major version is 0.14 and the last major version is 0.12. 
+* Releases are created by the Fluentd Core Team as a tag on the git repository and a new release on rubygems.org. 
+
+*Social media accounts*: Twitter (https://twitter.com/fluentd) and Facebook (https://www.facebook.com/Fluentd-196064987183037/)
+
+*Existing sponsorship*: Treasure Data is a primary sponsor of Fluentd.
+
+*External Dependencies:* The dependencies can be found in the main gemspec for fluentd but are listed below: https://github.com/fluent/fluentd/blob/master/fluentd.gemspec
+
+* https://github.com/msgpack/msgpack-ruby (ASLv2)
+* https://github.com/frsyuki/sigdump (MIT)
+* https://github.com/tarcieri/cool.io (MIT)
+* https://github.com/tmm1/http_parser.rb (MIT)
+* https://github.com/nurse/strptime (BSD 2-clause)
+* http://tzinfo.github.io/ (MIT)
+* https://github.com/brianmario/yajl-ruby (MIT)
+* https://github.com/ruby-concurrency/thread_safe (ASLv2)
+
+*Other Contributors:*
+
+90 Contributors. 5 of the Top 10 committers are from Treasure Data
+				
+Non Treasure Data committers (with direct write access):
+
+* Naotoshi Seo (https://github.com/sonots)
+* Nobuyuki Kubota (https://github.com/nobu-k)
+* Kosaki (https://github.com/kosaki)
+* Yuichi Tateno (https://github.com/hotchpotch)
+
+*Statement on alignment with CNCF mission*:
+
+Logging is a crucial part of cloud native architectures. Fluentd allows you to unify data collection and consumption for a better use and understanding of data.
