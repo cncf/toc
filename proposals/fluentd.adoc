@@ -49,7 +49,7 @@ With CNCF infrastructure, we aim to improve our testing with real deployments an
 
 *Mailing lists:* https://groups.google.com/forum/#!forum/fluentd
 
-*Website*: http://opentracing.io
+*Website*: http://www.fluentd.org/
 
 *Release methodology and mechanics*: The latest release is found at: https://rubygems.org/gems/fluentd
 
