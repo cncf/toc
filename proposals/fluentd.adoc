@@ -1,6 +1,6 @@
-== fluentd Proposal
+== Fluentd Proposal
 
-*Name of project:* fluentd
+*Name of project:* Fluentd
 
 *Description:* Fluentd is an open source data collector for unified logging layer. Fluentd's 600+ plugins connect it to many data sources and data outputs. Fluentd has a large adopter community consisting of Atlassian, LINE, Microsoft, Nintendo, GREE (and more).
 
@@ -8,30 +8,52 @@
 
 *Unique Identifier*: fluentd
 
-*License*: Apache License v2.0 
+*License*: Apache License v2.0
 
-*Source control repositories*: 
+*Source control repositories*:
 
 The donation includes all repositories on the GitHub fluent organization (https://github.com/fluent/):
 
-* fluent/fluentd
-* fluent/fluent-plugin-mongo
-* fluent/fluent-plugin-s3
-* fluent/fluent-plugin-kafka
-* fluent/fluent-bit
-* fluent/fluent-logger-ruby
-* fluent/fluent-logger-python
-* fluent/fluent-plugin-sql
-* fluent/fluent-logger-golang
-* fluent/fluentd-docker-image
-* fluent/fluent-bit-docs
-* fluent/fluent-plugin-flume
-* fluent/fluentd-website
-* fluent/fluentd-docs
-* fluent/fluent-plugin-multiprocess
-* fluent/fluent-plugin-webhdfs
-* fluent/fluent-logger-java
-* fluent/fluentd-benchmark
+- [fluent/fluentd](http://github.com/fluent/fluentd)
+- [fluent/fluent-plugin-mongo](http://github.com/fluent/fluent-plugin-mongo)
+- [fluent/fluent-plugin-s3](http://github.com/fluent/fluent-plugin-s3)
+- [fluent/fluent-plugin-kafka](http://github.com/fluent/fluent-plugin-kafka)
+- [fluent/fluent-bit](http://github.com/fluent/fluent-bit)
+- [fluent/fluent-logger-ruby](http://github.com/fluent/fluent-logger-ruby)
+- [fluent/fluent-logger-python](http://github.com/fluent/fluent-logger-python)
+- [fluent/fluent-plugin-sql](http://github.com/fluent/fluent-plugin-sql)
+- [fluent/fluent-logger-golang](http://github.com/fluent/fluent-logger-golang)
+- [fluent/fluentd-docker-image](http://github.com/fluent/fluentd-docker-image)
+- [fluent/fluent-bit-docs](http://github.com/fluent/fluent-bit-docs)
+- [fluent/fluent-plugin-flume](http://github.com/fluent/fluent-plugin-flume)
+- [fluent/fluentd-website](http://github.com/fluent/fluentd-website)
+- [fluent/fluentd-docs](http://github.com/fluent/fluentd-docs)
+- [fluent/fluent-plugin-multiprocess](http://github.com/fluent/fluent-plugin-multiprocess)
+- [fluent/fluent-plugin-webhdfs](http://github.com/fluent/fluent-plugin-webhdfs)
+- [fluent/fluent-logger-java](http://github.com/fluent/fluent-logger-java)
+- [fluent/fluentd-benchmark](http://github.com/fluent/fluentd-benchmark)
+- [fluent/fluentd-forwarder](http://github.com/fluent/fluentd-forwarder)
+- [fluent/fluentd-ui](http://github.com/fluent/fluentd-ui)
+- [fluent/fluent-bit-demo](http://github.com/fluent/fluent-bit-demo)
+- [fluent/fluent-bit-dashboard](http://github.com/fluent/fluent-bit-dashboard)
+- [fluent/fluent-plugin-scribe](http://github.com/fluent/fluent-plugin-scribe)
+- [fluent/data-collection](http://github.com/fluent/data-collection)
+- [fluent/fluent-logger-d](http://github.com/fluent/fluent-logger-d)
+- [fluent/fluent-logger-ocaml](http://github.com/fluent/fluent-logger-ocaml)
+- [fluent/fluent-plugin-msgpack-rpc](http://github.com/fluent/fluent-plugin-msgpack-rpc)
+- [fluent/fluent-plugin-hoop](http://github.com/fluent/fluent-plugin-hoop)
+- [fluent/fluent-plugins](http://github.com/fluent/fluent-plugins)
+- [fluent/fluent.github.com](http://github.com/fluent/fluent.github.com)
+
+FIXME: The following repositories are not owned by Treasure Data. TD is contacting the authors so the repos can be included in the donation (we have a close relationship with them):
+
+- [fluent/Nlog.Targets.Fluentd](http://github.com/fluent/Nlog.Targets.Fluentd)
+- [fluent/fluent-logger-scala](http://github.com/fluent/fluent-logger-scala)
+- [fluent/fluent-logger-node](http://github.com/fluent/fluent-logger-node)
+- [fluent/fluent-plugin-rewrite-tag-filter](http://github.com/fluent/fluent-plugin-rewrite-tag-filter)
+- [fluent/nginx-fluentd-module](http://github.com/fluent/nginx-fluentd-module)
+- [fluent/fluent-logger-perl](http://github.com/fluent/fluent-logger-perl)
+- [fluent/fluent-logger-erlang](http://github.com/fluent/fluent-logger-erlang)
 
 *Initial Committers*:
 
@@ -55,8 +77,8 @@ With CNCF infrastructure, we aim to improve our testing with real deployments an
 
 * Generally the last major version and one branch of the old major version are actively supported
 * Changes are included in a minor version if they don’t contain backward incompatibility, otherwise they’re included only in a branch of the next major version
-* The current latest major version is 0.14 and the last major version is 0.12. 
-* Releases are created by the Fluentd Core Team as a tag on the git repository and a new release on rubygems.org. 
+* The current latest major version is 0.14 and the last major version is 0.12.
+* Releases are created by the Fluentd Core Team as a tag on the git repository and a new release on rubygems.org.
 
 *Social media accounts*: Twitter (https://twitter.com/fluentd) and Facebook (https://www.facebook.com/Fluentd-196064987183037/)
 
@@ -76,7 +98,7 @@ With CNCF infrastructure, we aim to improve our testing with real deployments an
 *Other Contributors:*
 
 90 Contributors. 5 of the Top 10 committers are from Treasure Data
-				
+
 Non Treasure Data committers (with direct write access):
 
 * Naotoshi Seo (https://github.com/sonots)
