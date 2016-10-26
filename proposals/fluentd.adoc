@@ -44,16 +44,17 @@ The donation includes all repositories on the GitHub fluent organization (https:
 - [fluent/fluent-plugin-hoop](http://github.com/fluent/fluent-plugin-hoop)
 - [fluent/fluent-plugins](http://github.com/fluent/fluent-plugins)
 - [fluent/fluent.github.com](http://github.com/fluent/fluent.github.com)
-
-FIXME: The following repositories are not owned by Treasure Data. TD is contacting the authors so the repos can be included in the donation (we have a close relationship with them):
-
 - [fluent/Nlog.Targets.Fluentd](http://github.com/fluent/Nlog.Targets.Fluentd)
 - [fluent/fluent-logger-scala](http://github.com/fluent/fluent-logger-scala)
 - [fluent/fluent-logger-node](http://github.com/fluent/fluent-logger-node)
-- [fluent/fluent-plugin-rewrite-tag-filter](http://github.com/fluent/fluent-plugin-rewrite-tag-filter)
-- [fluent/nginx-fluentd-module](http://github.com/fluent/nginx-fluentd-module)
-- [fluent/fluent-logger-perl](http://github.com/fluent/fluent-logger-perl)
 - [fluent/fluent-logger-erlang](http://github.com/fluent/fluent-logger-erlang)
+
+
+The following repositories cannot be contemplated in the donation as they are not owned by Treasure Data:
+
+- [fluent/nginx-fluentd-module](http://github.com/fluent/nginx-fluentd-module)
+- [fluent/fluent-plugin-rewrite-tag-filter](http://github.com/fluent/fluent-plugin-rewrite-tag-filter)
+- [fluent/fluent-logger-perl](http://github.com/fluent/fluent-logger-perl)
 
 *Initial Committers*:
 
@@ -80,7 +81,7 @@ With CNCF infrastructure, we aim to improve our testing with real deployments an
 * The current latest major version is 0.14 and the last major version is 0.12.
 * Releases are created by the Fluentd Core Team as a tag on the git repository and a new release on rubygems.org.
 
-*Social media accounts*: Twitter (https://twitter.com/fluentd) and Facebook (https://www.facebook.com/Fluentd-196064987183037/)
+*Social media accounts*: Slack (http://slack.fluentd.org), Twitter (https://twitter.com/fluentd) and Facebook (https://www.facebook.com/Fluentd-196064987183037/)
 
 *Existing sponsorship*: Treasure Data is a primary sponsor of Fluentd.
 
@@ -108,4 +109,4 @@ Non Treasure Data committers (with direct write access):
 
 *Statement on alignment with CNCF mission*:
 
-Logging is a crucial part of cloud native architectures. Fluentd allows you to unify data collection and consumption for a better use and understanding of data.
+Logging is a crucial part of cloud native architectures. Fluentd offers comprehensive log collection for microservices and cloud monitoring (http://thenewstack.io/fluentd-offers-comprehensive-log-collection-cloud-microservices-world/).
