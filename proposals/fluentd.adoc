@@ -48,11 +48,6 @@ The donation includes all repositories on the GitHub fluent organization (https:
 - [fluent/fluent-logger-scala](http://github.com/fluent/fluent-logger-scala)
 - [fluent/fluent-logger-node](http://github.com/fluent/fluent-logger-node)
 - [fluent/fluent-logger-erlang](http://github.com/fluent/fluent-logger-erlang)
-
-
-The following repositories cannot be contemplated in the donation as they are not owned by Treasure Data:
-
-- [fluent/nginx-fluentd-module](http://github.com/fluent/nginx-fluentd-module)
 - [fluent/fluent-plugin-rewrite-tag-filter](http://github.com/fluent/fluent-plugin-rewrite-tag-filter)
 - [fluent/fluent-logger-perl](http://github.com/fluent/fluent-logger-perl)
 
