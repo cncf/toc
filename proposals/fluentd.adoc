@@ -1,0 +1,127 @@
+== Fluentd Proposal
+
+*Name of project*: Fluentd
+
+*Description*: Fluentd is an open source data collector that allows to implement an unified logging layer. Fluentd's 600+ plugins connect it to many data sources and data outputs. Fluentd has a large adopter community consisting of Atlassian, LINE, Microsoft, Nintendo and GREE within others.
+
+Contributions to Fluentd through plugins made by companies and individuals can be seen in the following link:
+
+  http://www.fluentd.org/plugins
+
+*Sponsor / Advisor from TOC*: Brian Grant <briangrant@google.com>
+
+*Unique Identifier*: fluentd
+
+*License*: Apache License v2.0
+
+*Source control repositories*:
+
+The donation includes all repositories on the GitHub fluent organization (https://github.com/fluent/).
+
+Fluentd core service and it assets:
+
+- [fluent/fluentd](http://github.com/fluent/fluentd)
+- [fluent/fluentd-website](http://github.com/fluent/fluentd-website)
+- [fluent/fluentd-docs](http://github.com/fluent/fluentd-docs)
+- [fluent/fluentd-ui](http://github.com/fluent/fluentd-ui)
+- [fluent/fluentd-benchmark](http://github.com/fluent/fluentd-benchmark)
+- [fluent/fluent.github.com](http://github.com/fluent/fluent.github.com)
+
+Fluentd plugins/extensions:
+
+- [fluent/fluent-plugin-mongo](http://github.com/fluent/fluent-plugin-mongo)
+- [fluent/fluent-plugin-s3](http://github.com/fluent/fluent-plugin-s3)
+- [fluent/fluent-plugin-kafka](http://github.com/fluent/fluent-plugin-kafka)
+- [fluent/fluent-plugin-sql](http://github.com/fluent/fluent-plugin-sql)
+- [fluent/fluent-plugin-flume](http://github.com/fluent/fluent-plugin-flume)
+- [fluent/fluent-plugin-multiprocess](http://github.com/fluent/fluent-plugin-multiprocess)
+- [fluent/fluent-plugin-webhdfs](http://github.com/fluent/fluent-plugin-webhdfs)
+- [fluent/fluent-plugin-scribe](http://github.com/fluent/fluent-plugin-scribe)
+- [fluent/fluent-plugin-msgpack-rpc](http://github.com/fluent/fluent-plugin-msgpack-rpc)
+- [fluent/fluent-plugin-hoop](http://github.com/fluent/fluent-plugin-hoop)
+- [fluent/fluent-plugin-rewrite-tag-filter](http://github.com/fluent/fluent-plugin-rewrite-tag-filter)
+- [fluent/fluent-plugins](http://github.com/fluent/fluent-plugins)
+
+Fluentd loggers for different languages:
+
+- [fluent/fluent-logger-java](http://github.com/fluent/fluent-logger-java)
+- [fluent/fluent-logger-scala](http://github.com/fluent/fluent-logger-scala)
+- [fluent/fluent-logger-node](http://github.com/fluent/fluent-logger-node)
+- [fluent/fluent-logger-erlang](http://github.com/fluent/fluent-logger-erlang)
+- [fluent/fluent-logger-perl](http://github.com/fluent/fluent-logger-perl)
+- [fluent/fluent-logger-golang](http://github.com/fluent/fluent-logger-golang)
+- [fluent/fluent-logger-ruby](http://github.com/fluent/fluent-logger-ruby)
+- [fluent/fluent-logger-python](http://github.com/fluent/fluent-logger-python)
+- [fluent/fluent-logger-d](http://github.com/fluent/fluent-logger-d)
+- [fluent/fluent-logger-ocaml](http://github.com/fluent/fluent-logger-ocaml)
+
+
+Miscellaneous: related projects to Fluentd
+
+- [fluent/fluent-bit](http://github.com/fluent/fluent-bit)
+- [fluent/fluent-bit-docs](http://github.com/fluent/fluent-bit-docs)
+- [fluent/fluent-bit-demo](http://github.com/fluent/fluent-bit-demo)
+- [fluent/fluent-bit-dashboard](http://github.com/fluent/fluent-bit-dashboard)
+- [fluent/fluentd-docker-image](http://github.com/fluent/fluentd-docker-image)
+- [fluent/fluentd-forwarder](http://github.com/fluent/fluentd-forwarder)
+- [fluent/data-collection](http://github.com/fluent/data-collection)
+- [fluent/Nlog.Targets.Fluentd](http://github.com/fluent/Nlog.Targets.Fluentd)
+
+*Initial Committers*:
+
+* Sadayuki "Sada" Furuhashi
+
+*Infrastructure requirements*: CI and potentially CNCF Community Cluster access
+
+We currently have several unit tests for all components of Fluentd, the tests can be found in the source code here:
+
+https://github.com/fluent/fluentd/tree/master/test
+
+With CNCF infrastructure, we aim to improve our testing with real deployments and critical loads over different connectors that we provide.
+
+*Issue tracker*: https://github.com/fluent/fluentd/issues and respective GitHub issues for each repository.
+
+*Mailing lists*: https://groups.google.com/forum/#!forum/fluentd
+
+*Website*: http://www.fluentd.org/
+
+*Release methodology and mechanics*: The latest release is found at: https://rubygems.org/gems/fluentd
+
+* Generally the last major version and one branch of the old major version are actively supported
+* Changes are included in a minor version if they don’t contain backward incompatibility, otherwise they’re included only in a branch of the next major version
+* The current latest major version is 0.14 and the old major version is 0.12.
+* Releases are created by the Fluentd Core Team as a tag on the git repository and a new release on rubygems.org.
+
+*Social media accounts*: Slack (http://slack.fluentd.org), Twitter (https://twitter.com/fluentd) and Facebook (https://www.facebook.com/Fluentd-196064987183037/)
+
+*Existing sponsorship*: Treasure Data is a primary sponsor of Fluentd.
+
+*External Dependencies*: The dependencies can be found in the main gemspec for fluentd but are listed below: https://github.com/fluent/fluentd/blob/master/fluentd.gemspec
+
+* https://github.com/msgpack/msgpack-ruby (ASLv2)
+* https://github.com/frsyuki/sigdump (MIT)
+* https://github.com/tarcieri/cool.io (MIT)
+* https://github.com/tmm1/http_parser.rb (MIT)
+* https://github.com/nurse/strptime (BSD 2-clause)
+* http://tzinfo.github.io/ (MIT)
+* https://github.com/brianmario/yajl-ruby (MIT)
+* https://github.com/ruby-concurrency/thread_safe (ASLv2)
+
+*Other Contributors*:
+
+90 Contributors. 5 of the Top 10 committers are from Treasure Data
+
+Non Treasure Data committers (with direct write access):
+
+* Naotoshi Seo (https://github.com/sonots)
+* Nobuyuki Kubota (https://github.com/nobu-k)
+* Kosaki (https://github.com/kosaki)
+* Yuichi Tateno (https://github.com/hotchpotch)
+
+*Statement on alignment with CNCF mission*:
+
+Logging is a crucial part of cloud native architectures. Fluentd was created to solve log/data collection and distribution needs at scale, offering a comprehensive and reliable service to be implemented in conjunction with microservices and generic cloud monitoring tools.
+
+For more technical details about how Fluentd solves logging challenges, please refer to the following article:
+
+http://thenewstack.io/fluentd-offers-comprehensive-log-collection-cloud-microservices-world
