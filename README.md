@@ -53,9 +53,8 @@ Conference Number: +1-415-579-0198 No Pin Needed
  * [linkerd](https://linkerd.io/) ([overview](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)): Oliver Gould and William Morgan
 * October 19th, 2016
  * [gRPC](http://www.grpc.io/) ([overview](https://docs.google.com/presentation/d/16mNYaqgd7BaV50OnbcuQ1zRHpWoUKhL3XHvCJwEm8CE/edit#slide=id.g185c09339a_23_106)): Varun Talwar
-* November 16th, 2016
- * [Pachyderm](http://www.pachyderm.io/) by Joe Doliner
 * December 7th, 2016
+ * [Pachyderm](http://www.pachyderm.io/) by Joe Doliner
  * TODO (interested presenters contact cra@linuxfoundation.org)
 
 ## Meeting Minutes
@@ -79,3 +78,4 @@ Conference Number: +1-415-579-0198 No Pin Needed
 * [October 5th, 2016](https://docs.google.com/presentation/d/17UEN7nz-BVSkzrdWqM2-DDMxrPzheZotTLJgbzzMk1k/edit?usp=sharing)
 * [October 19th, 2016](https://docs.google.com/presentation/d/1xbMsdJdLZzokm8Lf4-S4lr5HauOWOs46V9XSbh011ig/edit?usp=sharing)
 * [November 2nd, 2016](https://docs.google.com/presentation/d/1QVF84vF1wo3NiA5VtreaHy5EyLOY4pG1DQdiM2Exb_w/edit#slide=id.gd5ae4e962_2_136)
+* [November 16, 2016](https://docs.google.com/presentation/d/124ouW9yzJHukNbYa1-orQP2O0EjQHQmiU7yGHw0FkRY/edit?usp=sharing)
