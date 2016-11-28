@@ -55,7 +55,9 @@ Conference Number: +1-415-579-0198 No Pin Needed
  * [gRPC](http://www.grpc.io/) ([overview](https://docs.google.com/presentation/d/16mNYaqgd7BaV50OnbcuQ1zRHpWoUKhL3XHvCJwEm8CE/edit#slide=id.g185c09339a_23_106)): Varun Talwar
 * December 7th, 2016
  * [Pachyderm](http://www.pachyderm.io/) by Joe Doliner
- * TODO (interested presenters contact cra@linuxfoundation.org)
+* January 4th, 2017
+ * [Traefik](https://traefik.io/) by Emile Vauge
+* TODO (interested presenters contact cra@linuxfoundation.org)
 
 ## Meeting Minutes
 
