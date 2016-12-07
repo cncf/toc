@@ -80,4 +80,5 @@ Conference Number: +1-415-579-0198 No Pin Needed
 * [October 5th, 2016](https://docs.google.com/presentation/d/17UEN7nz-BVSkzrdWqM2-DDMxrPzheZotTLJgbzzMk1k/edit?usp=sharing)
 * [October 19th, 2016](https://docs.google.com/presentation/d/1xbMsdJdLZzokm8Lf4-S4lr5HauOWOs46V9XSbh011ig/edit?usp=sharing)
 * [November 2nd, 2016](https://docs.google.com/presentation/d/1QVF84vF1wo3NiA5VtreaHy5EyLOY4pG1DQdiM2Exb_w/edit#slide=id.gd5ae4e962_2_136)
-* [November 16, 2016](https://docs.google.com/presentation/d/124ouW9yzJHukNbYa1-orQP2O0EjQHQmiU7yGHw0FkRY/edit?usp=sharing)
+* [November 16th, 2016](https://docs.google.com/presentation/d/124ouW9yzJHukNbYa1-orQP2O0EjQHQmiU7yGHw0FkRY/edit?usp=sharing)
+* [December 7th, 2016](https://docs.google.com/presentation/d/1pArH2wd0O065ueHEbUofJ0Ng0i3XWtyHXL7KioFfoZI/edit?usp=sharing)
