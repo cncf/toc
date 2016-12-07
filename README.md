@@ -57,6 +57,7 @@ Conference Number: +1-415-579-0198 No Pin Needed
  * [Pachyderm](http://www.pachyderm.io/) by Joe Doliner
 * January 4th, 2017
  * [Traefik](https://traefik.io/) by Emile Vauge
+ * [fission](https://github.com/platform9/fission) by Soam Vasani
 * TODO (interested presenters contact cra@linuxfoundation.org)
 
 ## Meeting Minutes
