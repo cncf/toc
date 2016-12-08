@@ -54,7 +54,8 @@ Conference Number: +1-415-579-0198 No Pin Needed
 * October 19th, 2016
  * [gRPC](http://www.grpc.io/) ([overview](https://docs.google.com/presentation/d/16mNYaqgd7BaV50OnbcuQ1zRHpWoUKhL3XHvCJwEm8CE/edit#slide=id.g185c09339a_23_106)): Varun Talwar
 * December 7th, 2016
- * [Pachyderm](http://www.pachyderm.io/) by Joe Doliner
+ * [Pachyderm](http://www.pachyderm.io/) ([overview](https://docs.google.com/presentation/d/1sy4CAdiBEu_kTV3kKFwd78JekhhdSbXaY3sthOfjKS4/edit?usp=sharing)) by Joe Doliner
+ * [rexray/libstorage](https://github.com/codedellemc/rexray) ([overview](https://docs.google.com/presentation/d/1w_X7Qao1SCw8Nggl2B-qKk7z7OJpv0Z90B_YFR5jWts/edit?usp=sharing))
 * January 4th, 2017
  * [Traefik](https://traefik.io/) by Emile Vauge
  * [fission](https://github.com/platform9/fission) by Soam Vasani
