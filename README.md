@@ -59,7 +59,8 @@ Conference Number: +1-415-579-0198 No Pin Needed
 * January 4th, 2017
  * [Traefik](https://traefik.io/) by Emile Vauge
  * [fission](https://github.com/platform9/fission) by Soam Vasani
-* TODO (interested presenters contact cra@linuxfoundation.org)
+* January 18th, 2017
+ * TODO (interested presenters contact cra@linuxfoundation.org)
 
 ## Meeting Minutes
 
@@ -84,3 +85,4 @@ Conference Number: +1-415-579-0198 No Pin Needed
 * [November 2nd, 2016](https://docs.google.com/presentation/d/1QVF84vF1wo3NiA5VtreaHy5EyLOY4pG1DQdiM2Exb_w/edit#slide=id.gd5ae4e962_2_136)
 * [November 16th, 2016](https://docs.google.com/presentation/d/124ouW9yzJHukNbYa1-orQP2O0EjQHQmiU7yGHw0FkRY/edit?usp=sharing)
 * [December 7th, 2016](https://docs.google.com/presentation/d/1pArH2wd0O065ueHEbUofJ0Ng0i3XWtyHXL7KioFfoZI/edit?usp=sharing)
+* [January 4th, 2017](https://docs.google.com/presentation/d/1zKkgzqO6M2JfGBgXvyyBpQph3Xu_GtpnT7MDdeXGvZE/edit?usp=sharing)
