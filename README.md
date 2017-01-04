@@ -57,9 +57,10 @@ Conference Number: +1-415-579-0198 No Pin Needed
  * [Pachyderm](http://www.pachyderm.io/) ([overview](https://docs.google.com/presentation/d/1sy4CAdiBEu_kTV3kKFwd78JekhhdSbXaY3sthOfjKS4/edit?usp=sharing)) by Joe Doliner
  * [rexray/libstorage](https://github.com/codedellemc/rexray) ([overview](https://docs.google.com/presentation/d/1w_X7Qao1SCw8Nggl2B-qKk7z7OJpv0Z90B_YFR5jWts/edit?usp=sharing))
 * January 4th, 2017
- * [Traefik](https://traefik.io/) by Emile Vauge
- * [fission](https://github.com/platform9/fission) by Soam Vasani
+ * [Traefik](https://traefik.io/) ([overview](https://docs.google.com/presentation/d/1mKnzRz4ekDcyRPYNDxceSr_psF5Txv-cRLSDiRAlmuE/edit?usp=sharing)) by Emile Vauge
+ * [fission](https://github.com/platform9/fission) ([overview](https://docs.google.com/presentation/d/1MmMOJT4Y2YJWLfJiDNMmqMGyZLg5569YVbJ690ReQO0/edit?usp=sharing)) by Soam Vasani
 * January 18th, 2017
+* Feb 1st, 2017
  * TODO (interested presenters contact cra@linuxfoundation.org)
 
 ## Meeting Minutes
