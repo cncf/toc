@@ -60,6 +60,7 @@ Conference Number: +1-415-579-0198 No Pin Needed
  * [Traefik](https://traefik.io/) ([overview](https://docs.google.com/presentation/d/1mKnzRz4ekDcyRPYNDxceSr_psF5Txv-cRLSDiRAlmuE/edit?usp=sharing)) by Emile Vauge
  * [fission](https://github.com/platform9/fission) ([overview](https://docs.google.com/presentation/d/1MmMOJT4Y2YJWLfJiDNMmqMGyZLg5569YVbJ690ReQO0/edit?usp=sharing)) by Soam Vasani
 * January 18th, 2017
+ * [CoreDNS](https://github.com/miekg/coredns) Redux by Miek Gieben 
 * Feb 1st, 2017
  * TODO (interested presenters contact cra@linuxfoundation.org)
 
