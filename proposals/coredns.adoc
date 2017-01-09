@@ -6,9 +6,11 @@
 
 CoreDNS is a fast, flexible and modern DNS server. Its performant and flexible implementation allows CoreDNS to be easily extended to support various data sources and to implement rich DNS service behaviors: for example, response caching, query rewrite, load-balancing, zone transfer and signing.
 CoreDNS is the successor of SkyDNS (https://github.com/skynetservices/skydns), a DNS server that uses etcd as its datastore backend. SkyDNS is widely
-used in cloud deployments, but lacks the flexibility we envision for CoreDNS.
+used in cloud deployments, but lacks the flexibility of CoreDNS.
 
 *Sponsor / Advisor from TOC*: Jonathan Boulle
+
+*Preferred Maturity Level*: Inception
 
 *Unique Identifier*: coredns
 
@@ -25,6 +27,9 @@ used in cloud deployments, but lacks the flexibility we envision for CoreDNS.
 * github: leelynne
 * Matt Layher github: mdlayher
 * Vasily Vailyev github: pixelbender
+* John Belamaric github: johnbelamaric
+* Chris O'Haver github: chrisohaver
+* Yong Tang github: yongtang
 
 *Infrastructure requirements (CI / CNCF Cluster)*: N/A
 
@@ -32,24 +37,24 @@ used in cloud deployments, but lacks the flexibility we envision for CoreDNS.
 
 *Website*: https://coredns.io
 
-*Release methodology and mechanics*: As a young project, no method for official releases has been
-established, and no official releases have been made; the current rule is that the master branch is production-ready at all times. A more formal release
-process is on its way, and may introduce semantic versioning, but a final decision has not yet been made. Precompiled binaries will be
-distributed by hooking into Caddy's download website (https://caddyserver.com/download), where "DNS" will be a Server Type option.
+*Release methodology and mechanics*: The current version is v004; there have been four official releases. Releases are not on a specific schedule
+but are coordinated by the community via the issue tracker. Additionally, the rule is that the master branch is production-ready at all times.
+A more formal release process is on its way, and may introduce semantic versioning, but a final decision has not yet been made. Precompiled binaries are
+distributed via GitHub and Caddy's download website (https://caddyserver.com/download), where "DNS" will be a Server Type option.
 
 *Social media accounts*: Twitter: @corednsio
 
-*Existing sponsorship*: Infoblox contributing developer time to implement CoreDNS->Kubernetes integration component.
+*Existing sponsorship*: Infoblox contributing developer time to implement CoreDNS->Kubernetes integration component and other enhancements.
 
-*Existing community*: The community is small, but growing. Current number of Twitter followers is 100+ (after a
-week of having the Twitter account). By aligning ourselves with the Caddy community, we hope to leverage Caddy's
+*Existing community*: The community is small, but growing. On GitHub, we have 50+ forks, 550+ stars, and 24 contributors (5 with merge privileges).
+Current number of Twitter followers is 180+. By aligning ourselves with the Caddy community, we hope to leverage Caddy's
 popularity for CoreDNS. By positioning CoreDNS as a better SkyDNS, we hope to entice existing users of SkyDNS to migrate to and embrace CoreDNS.
 
 *External Dependencies*
 
-CoreDNS depends on Caddy (https://caddyserver.com/). Caddy is a framework that CoreDNS uses in two ways:
+CoreDNS depends on Caddy (https://caddyserver.com/) as a standard Go dependency. Caddy is a framework that CoreDNS uses in two ways:
 
-1. much of the CoreDNS code plugs into the framework to add DNS behavior.
+1. Much of the CoreDNS code plugs into the framework to add DNS behavior.
 2. CoreDNS provides a wrapper around the framework to provide a DNS-tuned command-line interface.
 
 Go dependencies:
@@ -75,7 +80,7 @@ Go dependencies:
 * Go package: golang/x/sys (BSD https://github.com/golang/sys/blob/master/LICENSE)
 * Go package: natefinch/lumberjack.v2 (MIT https://github.com/natefinch/lumberjack/blob/v2.0/LICENSE)
 * Go package: square/go-jose.v1 (ASLv2 https://github.com/square/go-jose/blob/master/LICENSE)
-* Kubernetes (for CoreDNS -> Kubernetes integration) (ASLv2 https://github.com/kubernetes/kubernetes/blob/master/LICENSE)
+* Go packege: kubernetes/client-go (for CoreDNS -> Kubernetes integration) (ASLv2 https://github.com/kubernetes/client-go/blob/master/LICENSE)
 
 *Statement on alignment with CNCF mission*:
 
@@ -84,16 +89,15 @@ CoreDNS can be thought of as a DNS protocol head that can be configured to front
 
 *Comparison with KubeDNS*:
 
-The incumbent DNS service for Kubernetes, “kubedns”, consists of four components:
-* etcd provides a DNS data cache,
-* kube2sky provides the mechanism for updating the etcd data cache,
-* skydns provides the DNS service based on the data cached in etcd,
-* exechealthz provides health-check status.
+The incumbent DNS service for Kubernetes, “kubedns”, consists of three components:
+* kube-dns which uses SkyDNS as a library provides the DNS service based on the Kubernetes API
+* dnsmasq which acts as a caching server in front of kube-dns
+* sidecar provides metrics and health-check status.
 
-Running CoreDNS with Kubernetes requires only the coredns component. CoreDNS does not require a separate data cache or update service. CoreDNS includes an optional health-check “middleware” component that can be used for service monitoring.
+Running CoreDNS with Kubernetes requires only the coredns component. CoreDNS does not require a separate data cache or health service. CoreDNS includes an optional health-check “middleware” component that can be used for service monitoring.
 
 CoreDNS provides a cleaner, more extensible codebase as compared to SkyDNS. (Both SkyDNS and CoreDNS were authored primarily by Miek Gieben.)
 
 CoreDNS is currently being extended to operate directly with Kubernetes to access the service data. This “middleware” implementation for CoreDNS provides the same client-facing behavior as KubeDNS. The pipeline-based design of CoreDNS allows easy extension to use any container orchestrator as a DNS data source.
 
-With the Kubernetes middleware, CoreDNS can be considered as an alternative to SkyDNS with lower runtime complexity. Performance testing to compare against SkyDNS is pending.
+With the Kubernetes middleware, CoreDNS can be considered as an alternative to KubeDNS with lower runtime complexity. Performance testing to compare against KubeDNS is pending.
