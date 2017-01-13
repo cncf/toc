@@ -10,9 +10,11 @@ Linkerd is built on top of Finagle (https://twitter.github.io/finagle/), the hig
 
 *Sponsor / Advisor from TOC*: Jonathan Boulle <jonathan.boulle@coreos.com>
 
-*Unique Identifier*: linkerkd
+*Unique Identifier*: linkerd
 
 *License*: Apache License v2.0
+
+*Maturity Level*: Inception
 
 *Source control repositories*:
 
