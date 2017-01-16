@@ -62,6 +62,9 @@ Conference Number: +1-415-579-0198 No Pin Needed
 * January 18th, 2017
  * [CoreDNS](https://github.com/miekg/coredns) Redux by Miek Gieben 
 * Feb 1st, 2017
+ * [libStorage](https://github.com/codedellemc/libstorage) Redux by Clinton Kitson
+ * GitLab by Sid Sijbrandij
+* Feb 15, 2017
  * TODO (interested presenters contact cra@linuxfoundation.org)
 
 ## Meeting Minutes
