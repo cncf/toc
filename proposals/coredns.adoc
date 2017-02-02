@@ -16,6 +16,8 @@ used in cloud deployments, but lacks the flexibility of CoreDNS.
 
 *License*: Apache License v2.0
 
+*Maturity Level*: Inception
+
 *Source control repositories*: https://github.com/miekg/coredns
 
 *Initial Committers*:
