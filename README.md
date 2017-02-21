@@ -26,6 +26,16 @@ cncf-toc@lists.cncf.io: https://ponymail.cncf.io/list.html?cncf-toc@lists.cncf.i
 
 In various situations the CNCF TOC shall hold a vote. These votes can happen on the phone, email, or via a voting service, when appropriate. TOC members can either respond "agree, yes, +1", "disagree, no, -1", or "abstain". A vote passes with two-thirds vote of votes cast based on the charter (see [6(c)(viii)](https://www.cncf.io/about/charter)). An abstain vote equals not voting at all.
 
+## Working Groups
+
+The TOC has created the following working groups to investigate and discuss the following topics:
+
+* Storage WG chaired by Ben Hindman
+* CI WG chaired by Camille Fournier
+* Cluster WG chaired by Bryan Cantrill
+
+Feel free to contact the chair for more information or to join the discussion.
+
 ## Meeting Time
 
 The TOC meets on the 1st and 3rd Wednesday of every month at 8AM PT (USA Pacific):
