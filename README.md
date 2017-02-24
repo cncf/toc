@@ -30,9 +30,9 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 
 The TOC has created the following working groups to investigate and discuss the following topics:
 
-* Storage WG chaired by Ben Hindman
-* CI WG chaired by Camille Fournier
+* CI WG chaired by Camille Fournier (https://github.com/cncf/wg-ci)
 * Cluster WG chaired by Bryan Cantrill
+* Storage WG chaired by Ben Hindman
 
 Feel free to contact the chair for more information or to join the discussion.
 
