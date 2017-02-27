@@ -77,6 +77,8 @@ Conference Number: +1-415-579-0198 No Pin Needed
  * [GitLab](https://gitlab.com/groups/gitlab-org) ([overview](https://docs.google.com/presentation/d/1I2YF_oHd6kXmh2hDO_tsAgrlpAdyk3RWvKQmaB8Nu9M/edit?usp=sharing)) by Sid Sijbrandij
 * Feb 15, 2017 (F2F at Open Source Leadership Summit 2017)
 * March 1, 2017
+ * [Zuul v3](https://github.com/openstack-infra/zuul) by Clint Byrum
+* March 15, 2017
  * TODO (interested presenters contact cra@linuxfoundation.org)
 
 ## Meeting Minutes
