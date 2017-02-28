@@ -32,7 +32,7 @@ The TOC has created the following working groups to investigate and discuss the 
 
 * CI WG chaired by Camille Fournier (https://github.com/cncf/wg-ci)
 * Cluster WG chaired by Bryan Cantrill
-* Storage WG chaired by Ben Hindman
+* Storage WG chaired by Ben Hindman (https://github.com/cncf/wg-storage)
 
 Feel free to contact the chair for more information or to join the discussion.
 
