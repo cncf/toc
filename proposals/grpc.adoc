@@ -1,0 +1,210 @@
+== gRPC
+
+*Name of project:* gRPC
+
+*Description:*
+
+Google has been using a single general-purpose RPC infrastructure called Stubby to connect the large number of microservices running within and across our data centers for over a decade. Our internal systems have long embraced the microservice architecture gaining popularity today. Stubby has powered all of Google’s microservices interconnect for over a decade and is the RPC backbone behind every Google service that you use today. Having a uniform, cross-platform RPC infrastructure has allowed for the rollout of fleet-wide improvements in efficiency, security, reliability and behavioral analysis critical to supporting the incredible growth seen in that period.
+
+In March 2015, Google decided to build the next version of Stubby in the open to share their learnings with the industry and collaborate with them to build the next version of Stubby. gRPC is a modern open-source high-performance RPC framework that can run in any environment. It can efficiently connect services in multiple languages in and across data centers with pluggable support for service discovery, load balancing, monitoring, tracing, health checking and authentication. It is also applicable in last mile of distributed computing to connect devices, mobile applications and browsers to backend services.
+
+*Sponsor / Advisor from TOC*: Brian Grant <briangrant@google.com>
+
+*Unique Identifier*: grpc
+
+*License*: ALv2 (https://groups.google.com/forum/#!msg/grpc-io/AWCJlR-MA9k/N-EKJtQPAwAJ)
+
+*Maturity Level:* Incubating
+
+*Source control repositories*:
+
+* https://github.com/grpc
+
+*Initial Committers*:
+
+* Abhishek Kumar
+* Louis Ryan
+* Craig Tiller
+* Eric Anderson
+* Jayant Kolhe
+
+*Infrastructure requirements*: CI and potentially CNCF Community Cluster access
+
+*Issue tracker*: Per-platform issues are raised on the per-platform repository’s issues area (i.e., https://github.com/grpc/grpc-java/issues and https://github.com/grpc/grpc-go/issues)
+
+*Mailing lists*
+
+* Mailing List: https://groups.google.com/forum/#!forum/grpc-io
+* Gitter: https://gitter.im/grpc/grpc
+
+*Website*: http://www.grpc.io/
+
+*Release methodology and mechanics*: Various across platforms
+
+*Social media accounts*: https://twitter.com/grpcio
+
+*Existing sponsorship*: Google
+
+*Adopters*: Cisco, CoreOS, Square, Netflix and more (see http://www.grpc.io/about/)
+
+*Statement on alignment with CNCF mission*:
+
+Microservices are a critical part of the cloud-native story. An open-source polyglot RPC framework like gRPC helps you define, build, and connect high-performance microservices.
+
+*External Dependencies*
+
+grpc (c/c++):  https://github.com/grpc/grpc
+
+* BoringSSL: https://boringssl.googlesource.com/boringssl
+* Zlib: http://www.zlib.net/zlib_license.html
+* Gflags: https://github.com/gflags/gflags
+* Google Benchmark: https://github.com/google/benchmark
+* Googletest: https://github.com/google/googletest
+* Nanopb: https://github.com/nanopb/nanopb
+* Thrift (experimental thrift support): http://thrift.apache.org/
+* Protobuf (for protobuf support): https://github.com/google/protobuf
+
+grpc-java: https://github.com/grpc/grpc-java
+
+* Build:
+** errorprone: "com.google.errorprone:error_prone_annotations:2.0.11",
+** jsr305: 'com.google.code.findbugs:jsr305:3.0.0',
+* Compile:
+** guava: "com.google.guava:guava:${guavaVersion}",
+** hpack: 'com.twitter:hpack:0.10.1',
+** oauth_client: 'com.google.auth:google-auth-library-oauth2-http:0.4.0',
+** google_auth_credentials: 'com.google.auth:google-auth-library-credentials:0.4.0',
+** okhttp: 'com.squareup.okhttp:okhttp:2.5.0',
+** okio: 'com.squareup.okio:okio:1.6.0',
+** census_api: 'com.google.census:census-api:0.2.0',
+** protobuf: "com.google.protobuf:protobuf-java:${protobufVersion}",
+** protobuf_lite: "com.google.protobuf:protobuf-lite:3.0.1",
+** protoc_lite: "com.google.protobuf:protoc-gen-javalite:3.0.0",
+** Protobuf_nano: "com.google.protobuf.nano:protobuf-javanano:${protobufNanoVersion}",
+** protobuf_plugin: 'com.google.protobuf:protobuf-gradle-plugin:0.8.0',
+** protobuf_util: "com.google.protobuf:protobuf-java-util:${protobufVersion}",
+** netty: 'io.netty:netty-codec-http2:[4.1.6.Final]',
+** netty_epoll: 'io.netty:netty-transport-native-epoll:4.1.6.Final' + epoll_suffix,
+** netty_tcnative: 'io.netty:netty-tcnative-boringssl-static:1.1.33.Fork23',
+* Test dependencies:
+** junit: 'junit:junit:4.11',
+** mockito: 'org.mockito:mockito-core:1.9.5',
+** truth: 'com.google.truth:truth:0.28',
+* Benchmark:
+** hdrhistogram: 'org.hdrhistogram:HdrHistogram:2.1.8',
+** math: 'org.apache.commons:commons-math3:3.6',
+* Jetty ALPN dependencies:
+** jetty_alpn_agent: 'org.mortbay.jetty.alpn:jetty-alpn-agent:2.0.3'
+
+grpc-go: https://github.com/grpc/grpc-go
+
+* https://godoc.org/bytes
+* https://godoc.org/compress/gzip
+* https://godoc.org/encoding/binary
+* https://godoc.org/errors
+* https://godoc.org/fmt
+* https://godoc.org/github.com/golang/protobuf/proto
+* https://godoc.org/golang.org/x/net/context
+* https://godoc.org/golang.org/x/net/http2
+* https://godoc.org/golang.org/x/net/trace
+* https://godoc.org/io
+* https://godoc.org/io/ioutil
+* https://godoc.org/math
+* https://godoc.org/math/rand
+* https://godoc.org/net
+* https://godoc.org/net/http
+* https://godoc.org/os
+* https://godoc.org/reflect
+* https://godoc.org/runtime
+* https://godoc.org/strings
+* https://godoc.org/sync
+* https://godoc.org/time
+
+*Other Contributors:*
+
+grpc (c/c++): https://github.com/grpc/grpc/graphs/contributors
+
+grpc-java: https://github.com/grpc/grpc-java/graphs/contributors
+
+grpc-go: https://github.com/grpc/grpc-go/graphs/contributors
+
+All contributors: 77 total, 49 Google, 29 external contributors
+
+@a11r
+@adewale
+@adriancole
+@apolcyn
+@arteam
+@a-veitc
+@awpr
+@bogdandrutu
+@bradfitz
+@broady
+@buchgr
+@carl-mastrangelo
+@ctiller
+@danruehle
+@dapengzhang0
+@dgquintas
+@dklempner
+@dsymonds
+@ejona86
+@elandau
+@ericgribkoff
+@gxb5443
+@gyuho
+@heyitsanthony
+@hongweiwang
+@iamqizhao
+@JakeWharton
+@jayantkolhe
+@jboeuf
+@jcanizales
+@jhspaybar
+@johnbcoughlin
+@jtattermusch
+@kpayson64
+@LisaFC
+@louiscryan
+@lukaszx0
+@madongfly
+@makdharma
+@MakMukhi
+@markdroth
+@matthild
+@matttproud
+@menghanl
+@mfcripps
+@mugurm
+@murgatroid99
+@muxi
+@mwitkow
+@nathanielmanistaatgoogle
+@ncteisen
+@nicolasnoble
+@nmittler
+@nobutaka
+@nuss-justin
+@oaktowner
+@peter-edge
+@petermattis
+@philips
+@rjshade
+@Sajmani
+@skyao
+@soltanmm
+@soltanmm-google
+@sreecha
+@stanley-cheung
+@stevvooe
+@tamird
+@tbetbetbe
+@thagikura
+@thinkerou
+@vjpai
+@wonderfly
+@yang-g
+@yangzhouhan
+@y-zeng
+@zhangkun83
+@zsurocking
