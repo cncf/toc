@@ -44,6 +44,18 @@ The TOC meets on the 1st and 3rd Wednesday of every month at 8AM PT (USA Pacific
 http://uberconference.com/cloudnative 
 Conference Number: +1-415-579-0198 No Pin Needed
 
+## Projects
+
+**Project**|**Sponsor**|**TOC Deck**|**Accepted**|**Maturity Level**
+:-----:|:-----:|:-----:|:-----:|:-----:
+[Kubernetes](https://kubernetes.io/)|Alexis Richardson|N/A|[3/10/16](https://cncf.io/news/news/2015/07/techcrunch-kubernetes-hits-10-google-donates-technology-newly-formed-cloud-native)|Incubating
+[Prometheus](https://prometheus.io/)|Alexis Richardson|[3/4/16](https://docs.google.com/presentation/d/1GtVX-ppI95LhrijprGENsrpq78-I1ttcSWLzMVk5d8M/edit?usp=sharing)|[5/9/16](https://cncf.io/news/announcement/2016/05/cloud-native-computing-foundation-accepts-prometheus-second-hosted-project)|Incubating
+[OpenTracing](http://opentracing.io/)|Bryan Cantrill|[8/17/16](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165)|[10/11/16](https://cncf.io/news/blogs/2016/10/opentracing-joins-cloud-native-computing-foundation)|Incubating
+[Fluentd](http://www.fluentd.org/)|Brian Grant|[8/3/16](https://docs.google.com/presentation/d/1S79MNv3E2aG8nuZJFJ0XMSumf7jnKozN3vdrivCH77U/edit?usp=sharing)|[11/8/16](https://www.cncf.io/blog/2016/12/08/fluentd-cloud-native-logging)|Incubating
+[Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[1/23/17](https://www.cncf.io/blog/2017/01/23/linkerd-project-joins-cloud-native-computing-foundation)|Inception
+[gRPC](http://www.grpc.io/)|Brian Grant|[10/19/2016](https://docs.google.com/presentation/d/16mNYaqgd7BaV50OnbcuQ1zRHpWoUKhL3XHvCJwEm8CE/edit#slide=id.g185c09339a_23_106)|[2/16/17](https://www.cncf.io/blog/2017/03/01/cloud-native-computing-foundation-host-grpc-google)|Incubating
+[CoreDNS](https://coredns.io/)|Jonathan Boulle|[8/17/2016](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)|[2/27/17](https://www.cncf.io/blog/2017/03/02/cloud-native-computing-foundation-becomes-steward-service-naming-discovery-project-coredns)|Inception
+
 ## Scheduled Community Presentations
 
 If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. We can schedule a maximum of two community presentations per TOC meeting.
