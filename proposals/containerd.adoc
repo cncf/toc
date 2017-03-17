@@ -1,0 +1,55 @@
+== containerd Proposal
+
+*Name of project:* containerd
+
+*Description*
+
+containerd is an industry-standard container runtime with an emphasis on simplicity, robustness and portability. It is available as a daemon for Linux and Windows, which can manage the complete container lifecycle of its host system: image transfer and storage, container execution and supervision, and low-level storage, etc..
+
+containerd is designed to be embedded into a larger system, rather than being used directly by developers or end-users. containerd will serve as a core container runtime for the CNCF ecosystem.
+
+*Sponsor / Advisor from TOC*: Brian Grant
+
+*Unique Identifier*: containerd
+
+*License*: Apache License v2.0
+
+*Source control repositories*: https://github.com/docker/containerd
+
+*Initial Committers*: https://github.com/docker/containerd/blob/master/MAINTAINERS
+
+*Infrastructure requirements (CI / CNCF Cluster)*:
+
+* TravisCI
+* Codecov
+
+*Issue tracker*: https://github.com/docker/containerd/issues
+
+*Mailing lists*
+
+* Slack: https://dockercommunity.slack.com/messages/containerd
+
+*Website*: https://containerd.io/
+
+*Release methodology and mechanics*: 
+
+* 1 Year LTS releases for major versions
+* https://github.com/docker/containerd#releases
+
+*Social media accounts*: https://twitter.com/containerd
+
+*Existing sponsorship*: Docker
+
+*Adopters*: Docker, and any system using Docker
+
+*External Dependencies*
+
+* vendor - https://github.com/docker/containerd/tree/master/vendor
+* Protobuf 
+* GRPC
+* Prometheus
+* OCI Runtime and Image Specifications
+ 
+*Statement on alignment with CNCF mission*:
+
+containerd is built to address the issues of having a standard runtime the implements the OCI specifications on both the runtime and image side to offer an end to end solution for container based platforms.  containerd focuses on providing a runtime for projects like Docker and Kubernetes that promote cloud native systems.  The containerd community is growing with 70 contributors overall and an active contributor base with 17 unique contributors a month(average) and 7 new contributors in the past 30 days.
