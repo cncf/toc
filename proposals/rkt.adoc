@@ -72,7 +72,7 @@ The rkt project has a proven track record of innovation and open source collabor
 
 *External Dependencies*:
 
-The rkt project uses [glide](https://github.com/Masterminds/glide) to maintain dependencie - an up-to-date manifest can be found in the [glide.lock file in the repository](https://github.com/coreos/rkt/blob/master/glide.lock).
+The rkt project uses [glide](https://github.com/Masterminds/glide) to maintain dependencies - an up-to-date manifest can be found in the [glide.lock file in the repository](https://github.com/coreos/rkt/blob/master/glide.lock).
 
 *Other Contributors*:
 
