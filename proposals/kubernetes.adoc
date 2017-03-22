@@ -4,7 +4,7 @@
 
 *Description*
 
-Kubernetes is an open source system for managing https://github.com/kubernetes/kubernetes/wiki/Why-Kubernetes%3F#why-containers[containerized applications] across multiple hosts, providing basic mechanisms for deployment, maintenance, and scaling of applications. Kubernetes will serve as a cluster manager for the CNCF ecosystem.
+Kubernetes is an open source system for managing https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers[containerized applications] across multiple hosts, providing basic mechanisms for deployment, maintenance, and scaling of applications. Kubernetes will serve as a cluster manager for the CNCF ecosystem.
 
 *Sponsor / Advisor from TOC*: Alexis Richardson
 
