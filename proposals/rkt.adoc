@@ -50,7 +50,7 @@ Core: @alban, @philips, @squeed, @dgonyeo, @euank, @iaguis, @jonboulle, @krnowak
 
 **Orchestration Integrations**
 
-* [Kubernetes](https://kubernetes.io/docs/getting-started-guides/rkt/): an enterprise-grade container orchestration solution. Kubernetes offers rkt support, including via [minikube](https://github.com/kubernetes/minikube#using-rkt-container-engine) which makes it easy to test and run locally. The new rkt integration via Kubernetes's CRI (Container Runtime Interface) is currently passing 84/89 conformance tests; the hope would be to get this to 100% as Kubernetes 1.7 work begins and CRI stabilizes to beta. 
+* [Kubernetes](https://kubernetes.io/docs/getting-started-guides/rkt/): an enterprise-grade container orchestration solution. Kubernetes offers rkt support, including via [minikube](https://github.com/kubernetes/minikube#using-rkt-container-engine) which makes it easy to test and run locally. The new rkt integration via Kubernetes's CRI (Container Runtime Interface) is currently passing 89/94 conformance tests; the hope would be to get this to 100% as Kubernetes 1.7 work begins and CRI stabilizes to beta. 
 
 * [Nomad](https://www.nomadproject.io/docs/drivers/rkt.html): a container orchestration platform focused on ease of use. Nomad supports rkt through the rkt driver.
 
