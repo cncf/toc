@@ -1,0 +1,62 @@
+== containerd Proposal
+
+*Name of project:* containerd
+
+*Description*
+
+containerd is a widely used container runtime with an emphasis on simplicity, robustness and portability. It is available as a daemon for Linux and Windows, which can manage the complete container lifecycle of its host system: image transfer and storage, container execution and supervision, and low-level storage, etc..
+
+containerd is designed to be embedded into a larger system, rather than being used directly by developers or end-users. containerd will serve as a core container runtime for the CNCF ecosystem.
+
+*Sponsor / Advisor from TOC*: Brian Grant
+
+*Preferred maturity level*: incubating
+
+*Unique Identifier*: containerd
+
+*License*: Apache License v2.0
+
+*Source control repositories*: https://github.com/docker/containerd
+
+*Initial Committers*: https://github.com/docker/containerd/blob/master/MAINTAINERS
+
+*Infrastructure requirements (CI / CNCF Cluster)*:
+
+* TravisCI
+* Codecov
+
+*Issue tracker*: https://github.com/docker/containerd/issues
+
+*Mailing lists*
+
+* Slack: https://dockercommunity.slack.com/messages/containerd would be moved to https://containerd.slack.com/
+
+*Website*: https://containerd.io/
+
+*Release methodology and mechanics*: 
+
+* 1 Year LTS releases for major versions
+* https://github.com/docker/containerd#releases
+
+*Social media accounts*: https://twitter.com/containerd
+
+*Existing sponsorship*: Docker
+
+*Contributor statistics*
+
+The containerd community is growing with 70 contributors overall and an active contributor base with 17 unique contributors a month(average) and 7 new contributors in the past 30 days, as of 3/15/2017.
+
+*Adopters*: Docker, and any system using Docker
+
+*External Dependencies*
+
+* vendor - https://github.com/docker/containerd/blob/master/vendor.conf (exact version at time of this PR https://github.com/docker/containerd/blob/6089c1525b665876307d43fb94f9e8ed76eb40a1/vendor.conf)
+* Protobuf 
+* GRPC
+* Prometheus
+* OCI Runtime and Image Specifications
+ 
+*Statement on alignment with CNCF mission*:
+
+containerd is the most widely used container runtime, which is a critical building-block for cloud-native computing and is highlighted in the [CNCF charter](https://www.cncf.io/about/charter/). It intends to provide a container runtime for projects like Docker and Kubernetes that provide execution platforms for cloud-native applications.
+
