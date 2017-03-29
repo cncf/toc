@@ -1,0 +1,81 @@
+## rkt
+
+*Name of project*: rkt
+
+*Description*:
+
+rkt is an application container engine developed for modern production cloud-native environments. It features a pod-native approach, a pluggable execution architecture, and a well-defined surface area that makes it ideal for integration with other systems.
+
+The core execution unit of rkt is the _pod_, a collection of one or more applications executing in a shared context. (rkt's pods are synoymous with [the concept in the Kubernetes orchestration system](https://kubernetes.io/docs/user-guide/pods/#what-is-a-pod)). rkt allows users to apply different configurations (like isolation parameters) at both pod-level and at the more granular per-application level. rkt's architecture means that each pod executes directly in the classic Unix process model (i.e. there is no central daemon), in a self-contained, isolated environment.
+
+rkt's daemonless model makes it highly suitable for integration with process managers like systemd, or for embedding in agents like the kubelet or Mesos agent. Its "staged" architecture - separating the user interface from its containerisation phase - allows it to support different isolation technologies: the mainstream rkt project includes implementations like QEMU and LKVM, as well as the default "classic" Linux containers implementation of cgroups and namespaces. Furthermore, while rkt development is currently targeted primarily at GNU/Linux distributions, the staged architecture makes it possible to extend support to other platforms without fundamentally changing rkt's external interfaces.
+
+rkt strives for broad compatibility with existing container images: as well as being able to execute images conforming to the appc specification (ACIs), it also supports running Docker images natively, including Docker registry support. rkt developers closely follow the evolution of the Open Container Initiative (OCI) project, with the intent of [full native support](https://github.com/coreos/rkt/blob/v1.25.0/Documentation/proposals/oci.md#oci-image-format-roadmap) of the OCI runtime and image specifications as they reach their respective stable (1.0) milestones. rkt already includes preliminary support for working with the runtime candidate releases of both specifications. In keeping with the opinionated and scoped nature of the project, rkt does not include any native workflows for building container images, but is rather expected to be used in conjunction with build systems such as the [Dockerfile](https://docs.docker.com/engine/reference/builder/), [acbuild](https://github.com/containers/build), or [box](https://github.com/erikh/box) projects.
+
+Since its introduction by CoreOS in December 2014, the rkt project has greatly matured and is widely used.
+
+
+*Sponsor / Advisor from TOC*: Brian Grant
+
+*Proposed Maturity Level*: Incubating
+
+*Unique Identifier*: rkt
+
+*License*: Apache License v2
+
+*Source control repositories*:
+
+* https://github.com/coreos/rkt (hoping to move to github.com/rkt/rkt, pending availability of that GH organisation)
+
+*Initial Committers*:
+
+Core: @alban, @philips, @squeed, @dgonyeo, @euank, @iaguis, @jonboulle, @krnowak, @lucab, @s-urbaniak, @steveeJ, @yifan-gu
+
+*Infrastructure requirements*: CI might be useful; currently CI is sponsored by CoreOS <https://jenkins-rkt-public.prod.coreos.systems/#>
+
+*Issue tracker*: https://github.com/coreos/rkt/issues
+
+*Mailing lists*
+
+* Mailing List: https://groups.google.com/forum/#!forum/rkt-dev
+* IRC: #rkt-dev on freenode 
+
+*Website*: CoreOS currently maintains a rendering of all of the [upstream rkt documentation](https://github.com/coreos/rkt/tree/master/Documentation) at https://coreos.com/rkt
+
+*Release methodology and mechanics*: rkt has a mature and regular release process that is [documented and automated](https://github.com/coreos/rkt/blob/4573a6bb93945ddb12891c667f57f650f867f9b3/Documentation/devel/release.md). It is available for most major Linux distributions and every rkt release builds self-contained RPM/deb packages that users can install. Further, these packages are available as part of the Kubernetes repos to enable testing of the rkt + Kubernetes integration. 
+
+*Social media accounts*: None
+
+*Existing sponsorship*: CoreOS
+
+**Orchestration Integrations**
+
+* [Kubernetes](https://kubernetes.io/docs/getting-started-guides/rkt/): an enterprise-grade container orchestration solution. Kubernetes offers rkt support, including via [minikube](https://github.com/kubernetes/minikube#using-rkt-container-engine) which makes it easy to test and run locally. The new rkt integration via Kubernetes's CRI (Container Runtime Interface) is currently passing 89/94 conformance tests; the hope would be to get this to 100% as Kubernetes 1.7 work begins and CRI stabilizes to beta. 
+
+* [Nomad](https://www.nomadproject.io/docs/drivers/rkt.html): a container orchestration platform focused on ease of use. Nomad supports rkt through the rkt driver.
+
+* [Apache Mesos](http://mesos.apache.org/): There are Mesos frameworks that have native containerization, such as Marathon, but users have been using Marathon and Aurora to execute rkt containers directly via fork/exec. This gives an easy onramp to users without changes to the underlying Mesos infrastructure.
+
+*Other Resources*
+
+Packages of rkt are available for [many popular Linux distributions](https://coreos.com/rkt/docs/latest/distributions.html) including Arch, CentOS, CoreOS Container Linux, Debian, Fedora, Gentoo, NixOS, openSUSE, Ubuntu, and Void.
+
+rkt also plays a central role in [CoreOS Container Linux](https://coreos.com/kubernetes/docs/latest/kubelet-wrapper.html) as an instrumental part of how Kubernetes is run.
+
+More [integrations](https://github.com/coreos/rkt/blob/master/Documentation/integrations.md) and [users](https://github.com/coreos/rkt/blob/master/Documentation/production-users.md) are documented in the rkt repo.
+
+*Statement on alignment with CNCF mission*:
+
+A pillar of Cloud Native is packaging and distributing applications as container images, and a container runtime is hence a critical building block for Cloud Native computing. rkt provides a tightly-scoped tool for this purpose, leading to various integrations in Cloud Native orchestration systems like Kubernetes, Mesos, Nomad, and many organization's bespoke systems.
+
+The rkt project has a proven track record of innovation and open source collaboration. The container engine has differentiated itself via a pod-native approach to process management, which integrates into existing management paradigms; reuse of existing components whenever possible; and a focus on simplicity. Many projects, individuals, and organizations have chosen rkt to run their container-packaged applications, both alone and through its integration with Kubernetes. All of this is directly inline with the CNCF's container-packaged mission.
+
+*External Dependencies*:
+
+The rkt project uses [glide](https://github.com/Masterminds/glide) to maintain dependencies - an up-to-date manifest can be found in the [glide.lock file in the repository](https://github.com/coreos/rkt/blob/master/glide.lock).
+
+*Other Contributors*:
+
+All contributors: 177 total, 24 CoreOS
+
+0xAX, 0xbzho, BenjaminHerbert, ChengTiesheng, Crosse, DTadrzak, DanLipsitt, ElijahCaine, GrappigPanda, HuKeping, Infra-Red, KarlHerler, MarkKropf, PrFalken, TheMRod, aaronjwood, aaronlevy, achanda, adfernandes, akermu, akshaydixi, akshaykarle, alban, alepuccetti, andir, anguslees, ankushagarwal, antoinerg, artem-sidorenko, astrieanna, azu, bb4242, bcwaldon, beadon, bison, bketelsen, blakelapierre, blixtra, bwalex, castillobgr, cdrage, ceh, cespare, chancez, chrisseto, crawford, crquan, deepak1556, derekparker, dfarrell07, dghubble, dgonyeo, dkrzyszczyk, dm0-, dmarcoux, dongsupark, emil2k, ericchiang, errordeveloper, euank, evverx, eyakubovich, farazfazli, filippog, fiorix, fourcube, gdi2290, genedna, ghigt, glevand, gosharplite, gprggr, gyuho, hamhut1066, iaguis, il9ue, jakon89, jellonek, jesperfj, jjlakis, jodh-intel, john-pettigrew, jonasrosland, jonboulle, joshix, jvns, jzelinskie, kbeecher, kbrownlees, kbrwn, kdomanski, kelseyhightower, kibra, klizhentas, krnowak, kurojishi, lamielle, leitao, levigross, lsm5, lucab, lucasallan, luebken, lukasredynk, marekbiskup, marineam, markllama, martinp, matthaias, mblair, mboersma, mcuadros, mike1729, mischief, mjg59, mjibson, monstermunchkin, mpasternacki, mpatelcz, mxinden, mzylowski, nak3, nhlfr, pbx0, pcx, penberg, peterbourgon, philhug, philips, pierrebeaucamp, plietar, pmorie, polvi, ppalucki, pskrzyns, rahulgopan, rakyll, rckclmbr, rhatdan, robphoenix, robszumski, runcom, s-urbaniak, samarvin, sbevington, schu, sengaya, sgotti, silenteh, sjackman, sjpotter, so0k, spoonben, squall0gd, squeed, steveeJ, sym3tri, tauren, tcyrus, techtonik, tixxdz, tjdett, tmrts, tomdee, vCloudernBeer, vbatts, vcaputo, vreon, woodbor, xelatex, xiang90, xnox, ybubnov, yifan-gu, ykomatsu, yoshuawuyts, zmedico
