@@ -76,7 +76,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Feb 15, 2017**: (F2F at Open Source Leadership Summit 2017)
 * **March 1, 2017**: [Zuul v3](https://github.com/openstack-infra/zuul) ([overview](https://docs.google.com/presentation/d/1xNPAaJfkLqKU4Z5v1Tw-HNte1TAOGIm5J52IqnEF0l8/edit#slide=id.gd5ae4e962_2_136)) by Clint Byrum
 * **March 15, 2017**: [Heron](https://github.com/twitter/heron) Redux ([overview](https://docs.google.com/presentation/d/10sxu-N_E4zFjG17i3u6-5O7-Rto8-WYc2QNCZrnC9bo/edit?usp=sharing)) by Karthik Ramasamy / [containerd](https://github.com/docker/containerd) ([overview](https://docs.google.com/presentation/d/1qmGsmARyMhRLwbFWG7LXJSsDHm45nqZ_QtBv5SnQL54/edit?usp=sharing)) by Michael Crosby / [rkt](https://github.com/coreos/rkt) ([overview](https://docs.google.com/presentation/d/1KzA58_Zz30mKKzeLuSvXLh63aIC75KRdAOTw4PJ_10g/edit?usp=sharing)) by Jon Boulle
-* **April 5, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **April 19, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
 
@@ -107,3 +107,4 @@ If you're interested in presenting at a TOC call about your project, please open
 * [Feb 15th, 2017](https://docs.google.com/presentation/d/1vdEY_ynoID5sSmXMDppuqtMi1_Wvx0MvCkgUsryiTJ8/edit?usp=sharing)
 * [March 1st, 2017](https://docs.google.com/presentation/d/1fOrZNcQpm8C1CghcK8bowyEWrIidrBL4lMi9OByNr6g/edit?usp=sharing)
 * [March 15th, 2017](https://docs.google.com/presentation/d/1ZazSXwYWp_DVNjOArbvtSKj0qwtP16z0NgtmtiH4Nt8/edit?usp=sharing)
+* [April 4th, 2017](https://docs.google.com/presentation/d/1EbZEvW7zlXS7DhNnL2GkWN8H5P3uz5DvBSXMcE4sE7U/edit#slide=id.gd5ae4e962_2_136)
