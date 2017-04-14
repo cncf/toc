@@ -1,0 +1,56 @@
+== CNCF Working Groups v1.0
+=== Purpose
+The purpose of working groups are to study and report on a particular question and make recommendations based on its findings, along with providing an avenue for non-members to participate. The end result of a working group may be a new project proposal or a report detailing their findings. The intention of working groups is not to host a full project or specification. Working Groups can be formed at any time but must be ratified by the CNCF TOC. Once formed the work defined in the Working Group charter is the responsibility of the WG rather than the CNCF TOC. Working Groups are also expected to adhere to the CNCF IP Policy and Code of Conduct (https://cncf.io/governance).
+
+Working Groups are meant to be focused on a specific deliverable or question.  The charter, as approved by the TOC should be _crisp_ and focused.  There should also be an expected delivery date in the charter (possibly 3 to 6 months, possibly longer, but any Working Group that is envisioned to last longer than a year should be most carefully considered).
+
+The TOC can, with the agreement of the Working Group update the charter if necessary, but major shifts should trigger the creation of a new Working Group, rather than a retasking of an existing one.
+
+The Working Group, or the TOC, may dissolve a Working Group if they determine that the Working Group will be unable to meet the deliverable within the timeline defined in the charter.
+
+=== Process
+ * Starting a Working Group
+ * Working Group Governance
+
+=== Current Working Groups
+ * Service Broker: https://github.com/cncf/wg-servicebroker
+
+=== Starting a WG
+A Working Group is established by first defining a charter that can be ratified by the TOC. A charter is a statement of purpose, a list of responsibilities and a list of initial membership. A working group needs 3 initial members. These should be individuals already undertaking the work described in the charter. The list of responsibilities should be specific. Once established, these responsibilities are no longer governed by the TOC and therefore should not be broad or subjective. The only recourse the TOC has over the working group is to revoke the entire charter, take on the work previously done by the working group themselves or decide the work is no longer necessary.
+
+If the responsibilities described in the charter are currently undertaken by another WG then the charter will additionally have to be ratified by that WG. You can submit the WG charter for ratification by sending a pull request to this document, which adds it to the list of current Working Groups. Once ratified the list of members should be maintained in the Working Group's README.
+
+=== WG Governance
+Once the TOC ratifies a charter the WG inherits the following documentation for governance, contribution, conduct and an Apache v2 LICENSE. The WG is free to change these documents through their own governance process.
+
+==== [insert WG name] Working Group
+The CNCF [insert WG name] is jointly governed by a Working Group (WG) that is responsible for high-level guidance of the working group.
+For the current list of WG members, see the working group README.md.
+
+==== Collaborators
+The [insert WG name] GitHub repository is maintained by the WG and additional Collaborators who are added by the WG on an ongoing basis.
+Individuals making significant and valuable contributions are made Collaborators and given commit-access to the working group. These individuals are identified by the WG and their addition as Collaborators is discussed during a WG meeting.
+
+Modifications of the contents of the [insert WG repo] repository are made on a collaborative basis. Anyone with a GitHub account may propose a modification via pull request and it will be considered by the working group Collaborators. All pull requests must be reviewed and accepted by a Collaborator with sufficient expertise who is able to take full responsibility for the change. In the case of pull requests proposed by an existing Collaborator, an additional Collaborator is required for sign-off. Consensus should be sought if additional Collaborators participate and there is disagreement around a particular modification. See Consensus Seeking Process below for further detail on the consensus model used for governance.
+
+Collaborators may opt to elevate significant or controversial modifications, or modifications that have not found consensus to the WG for discussion by assigning the WG-agenda tag to a pull request or issue. The WG should serve as the final arbiter where required. For the current list of Collaborators, see the project README.md.
+
+==== WG Membership
+WG seats are not time-limited. There is no fixed size of the WG. However, the expected target is between 6 and 12, to ensure adequate coverage of important areas of expertise, balanced with the ability to make decisions efficiently.
+
+There is no specific set of requirements or qualifications for WG membership beyond these rules. The WG may add additional members to the WG by supermajority two-thirds consensus. +
+A WG member may be removed from the WG by voluntary resignation, or by supermajority two-thirds consensus of all other WG members. Changes to WG membership should be posted in the agenda, and may be suggested as any other agenda item (see "WG Meetings" below).
+
+If an addition or removal is proposed during a meeting, and the full WG is not in attendance to participate, then the addition or removal is added to the agenda for the subsequent meeting at least 3 days before the meeting. This is to ensure that all members are given the opportunity to participate in all membership decisions. If a WG member is unable to attend a meeting where a planned membership decision is being made, then their consent is assumed.
+
+No more than 1/3 of the WG members may be affiliated with the same employer. If removal or resignation of a WG member, or a change of employment by a WG member, creates a situation where more than 1/3 of the WG membership shares an employer, then the situation must be remedied by the resignation or removal of one or more WG members affiliated with the over-represented employer(s) or the addition of other (qualified) member(s) to return the ratio to acceptable limits.  Until such a change is made, the over-represented entity must limit their ‘votes’ (i.e. by having some number of their members abstain) to maintain the desired ratio.
+
+==== WG Meetings
+The WG meets on a regular basis. A designated chair approved by the WG runs the meeting. Each meeting should be published to a video service such as YouTube. Any community member or contributor can ask that something be added to the next meeting's agenda by logging a GitHub Issue. Any Collaborator, WG member or the moderator can add the item to the agenda by adding the WG-agenda tag to the issue.
+
+Prior to each WG meeting the moderator will share the Agenda with members of the WG. WG members can add any items they like to the agenda at the beginning of each meeting. The moderator and the WG cannot veto or remove items.
+
+The WG may invite persons or representatives from certain projects to participate in a non-voting capacity. The chair is responsible for summarizing the discussion of each agenda item and sends it as a pull request after the meeting.
+
+==== Consensus Seeking Process
+The WG follows a +++<u>+++Consensus Seeking+++</u>+++ decision-making model. When an agenda item has appeared to reach a consensus the moderator will ask "Does anyone object?" as a final call for dissent from the consensus. If an agenda item cannot reach a consensus a WG member can call for either a closing vote or a vote to table the issue to the next meeting. The call for a vote must be seconded by a simple majority of the WG or else the discussion will continue. Note that changes to WG membership require supermajority two-thirds consensus. See "WG Membership" above.
