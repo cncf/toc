@@ -77,7 +77,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **March 1, 2017**: [Zuul v3](https://github.com/openstack-infra/zuul) ([overview](https://docs.google.com/presentation/d/1xNPAaJfkLqKU4Z5v1Tw-HNte1TAOGIm5J52IqnEF0l8/edit#slide=id.gd5ae4e962_2_136)) by Clint Byrum
 * **March 15, 2017**: [Heron](https://github.com/twitter/heron) Redux ([overview](https://docs.google.com/presentation/d/10sxu-N_E4zFjG17i3u6-5O7-Rto8-WYc2QNCZrnC9bo/edit?usp=sharing)) by Karthik Ramasamy / [containerd](https://github.com/docker/containerd) ([overview](https://docs.google.com/presentation/d/1qmGsmARyMhRLwbFWG7LXJSsDHm45nqZ_QtBv5SnQL54/edit?usp=sharing)) by Michael Crosby / [rkt](https://github.com/coreos/rkt) ([overview](https://docs.google.com/presentation/d/1KzA58_Zz30mKKzeLuSvXLh63aIC75KRdAOTw4PJ_10g/edit?usp=sharing)) by Jon Boulle
 * **April 19, 2017**: [Vitess](https://github.com/youtube/vitess) and [wg-networking](https://github.com/cncf/wg-networking) update
-* **May 3, 2017**: [Hyperd](https://github.com/hyperhq/hyperd) + [runv](https://github.com/hyperhq/runv) by Harry Zhang
+* **May 3, 2017**: [CNI](https://github.com/containernetworking/cni) / [Hyperd](https://github.com/hyperhq/hyperd) + [runv](https://github.com/hyperhq/runv) by Harry Zhang
 * **May 17, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 * **June 7, 2017**: [rook](https://github.com/rook/rook) by Bassam Tabbara
 * **June 21, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
