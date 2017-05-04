@@ -1,0 +1,79 @@
+# Container Networking Interface (CNI)
+
+**Project Name:** cni
+
+**Description**
+
+The CNI (Container Network Interface) project consists of a specification and libraries for writing plugins to configure network interfaces
+in Linux containers, along with a number of supported plugins. CNI concerns itself only with network connectivity of containers and removing
+allocated resources when the container is deleted. Because of this focus, CNI has a wide range of support and the specification is simple to
+implement. CNI consists of 3 separate comonents:
+
+*  CNI Specification: defines an straightforward API between runtimes and network plugins for container network setup/teardown.  No more, no less.
+*  Plugins: provide network setup for a variety of use-cases and serve as reference examples of plugins conforming to the CNI specification
+*  Library: provide a Go implementation of the CNI specification that runtimes can use to more easily consume CNI
+
+NOTE: CNI Specification is independently versioned from the CNI library and plugins in the repository (e.g. the versions of releases). The plugins are being pulled out into a separate repository
+
+**Sponsor/Advisor from TOC:** Ken Owens
+
+**Preferred maturity level:** Incubating
+
+**License:** Apache License v2.0
+
+**Source control repositories:** https://github.com/containernetworking/cni
+
+**external dependencies:** None
+
+**Initial Committers:** https://github.com/containernetworking/cni/blob/master/MAINTAINERS
+
+**Infrastructure requests (CI / CNCF Cluster):** None
+
+**Communication channels (slack, irc, mailing lists):**
+
+* Email: [cni-dev](https://groups.google.com/forum/#!forum/cni-dev)
+* IRC: #containernetworking channel on freenode.org
+* Slack: https://containernetworking.slack.com
+
+**Issue tracker (GitHub by default):** Github - https://github.com/containernetworking/cni/issues
+
+**Website:** https://github.com/containernetworking
+
+**Release methodology and mechanics:**
+
+https://github.com/containernetworking/cni/blob/master/ROADMAP.md
+
+**Social media accounts:** N/A
+
+**Community size and any existing sponsorship**
+
+*  56 Contributors
+*  591 Stars
+*  17 releases
+
+**Adopters:**
+
+* rkt - container engine
+* Kurma - container runtime
+* Kubernetes - a system to simplify container operations
+* Cloud Foundry - a platform for cloud applications
+* Mesos - a distributed systems kernel
+
+There is also a large ecosystem of third party plug-ins:
+
+* Project Calico - a layer 3 virtual network
+* Weave - a multi-host Docker network
+* Contiv Networking - policy networking for various use cases
+* SR-IOV
+* Cilium - BPF & XDP for containers
+* Infoblox - enterprise IP address management for containers
+* Multus - a Multi plugin
+* Romana - Layer 3 CNI plugin supporting network policy for Kubernetes
+* CNI-Genie - generic CNI network plugin
+
+**Statement on alignment with CNCF mission**:
+
+CNI defines initial guidelines for a network interface specification focused on
+connectivity and portability of cloud native application patterns.
+It is already supported by many cloud native and container runtimes discussed
+in the adopters section of this document.
