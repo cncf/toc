@@ -39,10 +39,12 @@ Feel free to contact the chair for more information or to join the discussion.
 
 ## Meeting Time
 
-The TOC meets on the 1st and 3rd Wednesday of every month at 8AM PT (USA Pacific):
+The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific):
 
 http://uberconference.com/cloudnative 
 Conference Number: +1-415-579-0198 No Pin Needed
+
+Here is a public Google calendar you can add the meetings to your calendar: https://goo.gl/eyutah
 
 ## Projects
 
