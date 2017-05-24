@@ -83,7 +83,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **April 19, 2017**: [Vitess](https://github.com/youtube/vitess) and [wg-networking](https://github.com/cncf/wg-networking) update
 * **May 3, 2017**: [CNI](https://github.com/containernetworking/cni) / [Hyperd](https://github.com/hyperhq/hyperd) + [runv](https://github.com/hyperhq/runv) by Harry Zhang
 * **May 16, 2017**: Serverless WG Proposal
-* **June 6, 2017**: [rook](https://github.com/rook/rook) by Bassam Tabbara
+* **June 6, 2017**: [rook](https://github.com/rook/rook) by Bassam Tabbara and [InfraKit](https://github.com/docker/infrakit)
 * **June 20, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 
