@@ -1,0 +1,37 @@
+## Introduction
+
+The process is the same for both existing projects which seek to move into the CNCF, and new projects to be formed within the CNCF.
+
+Project Proposal Requirements. Projects must be proposed via GitHub. Project proposals submitted to the CNCF (see example) must provide the following information to the best of your ability:
+
+name of project (must be unique within CNCF)
+
+## Project description (what it does, why it is valuable, origin and history)
+
+* statement on alignment with CNCF charter mission
+
+* sponsor from TOC - Ken Owens
+
+* preferred maturity level - Incubator
+
+* license - Apache 2
+
+* source control - GitHub
+
+* external dependencies (including licenses)
+
+* initial committers (how long working on project)
+
+* infrastructure requests (CI / CNCF Cluster)
+
+* communication channels (slack, irc, mailing lists)
+
+* issue tracker (GitHub by default)
+
+* website (current version will move to project.cncf.io)
+
+* release methodology and mechanics
+
+* social media accounts
+
+* community size and any existing sponsorship
