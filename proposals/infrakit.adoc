@@ -1,0 +1,165 @@
+== InfraKit Proposal
+
+*Name of project:* InfraKit
+
+*Description*
+
+InfraKit provides a common, portable workflow for automating management of infrastructure.  As a toolkit, it provides abstractions and primitives for managing infrastructure -- from scaling groups to rolling updates.  It automates management tasks such as scaling of groups of compute instances and rolling updates.  Using a declarative specification of desired infrastructure state, InfraKit actively monitors and ensures that infrastructure state conforms to this specification.  As a result, the underlying infrastructure environment running your container orchestration system and workloads is itself dynamic and resilient.  
+While InfraKit is designed to be embedded into a larger system, its tooling and interfaces target operators and administrators.
+Infrakit will serve as core infrastructure Provisioning Layer in the [Cloud Native End User Reference Architecture v1.0](https://docs.google.com/presentation/d/1uMw2wkK0ubmc3khxqIuxK_rLK_wN89tNCnK7gDmTGR8/edit#slide=id.g15843037bc_2_6).
+
+*Sponsor / Advisor from TOC*: Solomon Hykes
+
+*Preferred Maturity Level*: Inception
+
+*Unique Identifier*: infrakit
+
+*License*: Apache License v2.0
+
+*Maturity Level*: Inception
+
+*Source control repositories*: https://github.com/docker/infrakit
+
+*Initial Committers*:
+
+* David Chung, github: chungers
+* Nicolas Degory, github: ndegory
+* Vincent Demeester, github: vdemeester
+* Bill Farner, github: wfarner
+* David Gageot, github: dgageot
+* Steven Kaufer, github: kaufers
+* Yuji Oshima, github: YujiOshima
+
+*Infrastructure requirements (CI / CNCF Cluster)*: CI, Codecov
+
+*Communication channels (slack, irc, mailing lists)*: Slack: https://dockercommunity.slack.com/messages/C2M1HQ1AA
+
+*Issue tracker*: https://github.com/docker/infrakit/issues
+
+*Website*: https://github.com/docker/infrakit
+
+*Release methodology and mechanics*:
+
+The current version is v0.5; there have been seven releases.
+Releases are not on a specific schedule but are coordinated by the community via the issue tracker. At each release, a branch is cut while
+master branch contains the latest, possibly breaking changes.
+
+Precompiled binaries are distributed as Docker images at Docker Hub under the infrakit/ organization.
+We are looking at other means of distribution such as Homebrew on Mac OSX and other platform-specific packages.
+
+*Social media accounts*: none
+
+*Existing sponsorship*: Docker, Inc.
+
+*Existing community*:
+
+We have a growing community. On GitHub, we have 150+ forks, 1500+ stars, and 26 contributors (4 with merge privileges).
+The community meets online and in-person. Online, Docker-sponsored meetups and blogs provide forum for interactions, as
+is the dockercommunity.slack.com Slack channel.  In-person meetups are primarily through Docker-organized Moby Project Summits
+which frequently see 100+ attendees.  The first InfraKit meetup was in April 20, 2017, after DockerCon in Austin, Texas, USA,
+and the most current meetup took place on June 19, 2017 in San Francisco, CA.
+
+*External Dependencies*
+
+InfraKit is written in Go, and all Go depencies have been vendored into the main repo.  For a complete list of dependencies,
+please see `vendor.conf` at https://github.com/docker/infrakit/blob/master/vendor.conf.
+
+*Statement on alignment with CNCF mission*:
+
+InfraKit is well-aligned with CNCF goals and mission of promoting the cloud-native
+computing paradigm by providing tooling for infrastructure provisioning and
+integration.  In terms of architecture, InfraKit has the same defining properties
+of a cloud-native system: container packaged, micro-services oriented; systems
+built with InfraKit are dynamic and self-healing.
+
+Further, as the provider of tooling for infrastructure provisioning and integration
+and as a toolkit meant to be embedded into higher order systems such as Kubernetes
+and Docker Swarm, InfraKit as a project is enhancing and complementary to other CNCF
+projects.  For example, InfraKit can provide bootstrapping and infrastructure management
+capabilities for Kubernetes and can enhance a Kubernetes cluster as a cluster autoscaler
+even outside of public clouds.  InfraKit also complements Prometheus monitoring
+by enabling automation driven by infrastructure and application metrics.
+
+*Comparison with Terraform*:
+
+Terraform and InfraKit share the features of declarative infrastructure.
+Terraform can provision infrastructure resources and reconcile differences
+between infrastructure and user specification.  InfraKit builds on the same
+concepts and adds continuously running microservices or controllers, so
+that the reconciliation is continuous rather than on-demand.  InfraKit also
+provides features such as node scaling group so that cluster capacity
+scaling can be triggered directly from higher-level orchestration systems.
+  In this use case, InfraKit and terraform can be complementary, with
+terraform being the ‘execution backend’ for InfraKit.  As an example, there
+is a terraform plugin in the project which can be leveraged to provision
+resource types currently not natively supported by InfraKit.
+
+Terraform and InfraKit differ in terms of state management and deployment.
+InfraKit can leverage the system it is embedded into, such as Docker Swarm
+or etcd, for leader election and persistence of user specs.  Unlike
+Terraform which has its own schema and different backend plugins for
+storing infrastructure state, InfraKit derives the infrastructure state via
+introspection and queries supported by the lower-level platform (tags and
+metadata).  The infrastructure itself is the master of records, rather than
+a representation of it which can be corrupted or go out of sync. InfraKit
+can be a part of the control plane of a higher-level orchestration system
+without additional resource requirements.  In this use case, InfraKit also
+readily integrates with the higher level system as service containers,
+while Terraform is primarily a CLI tool for ops and not meant to be run as
+a service for higher level systems.
+
+InfraKit is designed as an active system continuously monitoring your
+infrastructure and reconciling its reality with a specification provided
+either by a user or a higher level orchestration system, with an immutable
+infrastructure approach, while Terraform is designed as a tool to automate
+existing ops workflows using a declarative description of infrastructure,
+without the active monitoring and reconciliation approach.
+
+*Comparison with BOSH*:
+
+BOSH is much more vertically integrated than InfraKit in that it is itself
+a full-fledged distributed application with its own datastore (Postgres)
+and server components.  In terms of workflow, BOSH also covers areas
+outside of infrastructure provisioning and management -- it has opinionated
+workflows for application definition and software releases which reaches
+into the upper layers of the CNCF model.  The full system serves as part of
+control plane of a much larger platform and thus requires its own
+provisioning and management.
+
+InfraKit takes a lighter weight approach.  As a set of pluggable
+microservices, it is meant to be embedded into a larger system to minimize
+additional operational burdens.  With InfraKit embedded in the same control
+plane, these systems can self-install and self-manage.  InfraKit also does
+not require a database such as Postgres to store state.  Instead, InfraKit
+inspects the infrastructure and reconstructs what is in the environment for
+reconciliation with user specification.  This means the only thing that can
+diverge from user spec is the true infrastructure state.  If divergence is
+detected, InfraKit will attempt to correct it.   InfraKit also can play the
+role of a cloud-provider for a node group autoscaler for a container
+orchestrator like k8s or Docker Swarm, thereby bringing the elasticity
+common in the public cloud to on-prem bare-metal or virtualized
+environments.
+
+
+*Comparison with Digital Rebar*:
+
+Digital Rebar compares similarly to RackHD (https://rackhd.github.io) or
+MaaS (https://maas.io).  Currently there is community integration with
+RackHD via a plugin (https://github.com/codedellemc/infrakit.rackhd), and there is a
+MaaS plugin in the InfraKit repo.  At a high-level, Digital Rebar and
+InfraKit are complementary in that InfraKit can leverage Digital Rebar for
+bare-metal provisioning via DR’s PXE/DHCP/TFTP infrastructure, while
+InfraKit provides the orchestration capabilities such as scaling up/down
+clusters and rolling updates.
+
+Digital Rebar is itself a full-fledged distributed application of many
+components, including a Postgres database where it stores infrastructure
+state. In terms of deployment, it has its own control plane that needs to
+be provisioned and maintained.  InfraKit can be embedded inside the control
+plane of a higher-level orchestration system such as Kubernetes and Docker
+Swarm.  InfraKit leverages these systems for persistence of user
+infrastructure specification and for leader election (to provide high
+availability), and infrastructure state is reconstructed by introspecting
+the infrastructure.  This means that InfraKit is more a ‘kit’ then another
+platform and higher-level systems can incorporate InfraKit to provide
+self-managing and self-provisioning capabilities.
