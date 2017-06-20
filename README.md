@@ -42,8 +42,17 @@ Feel free to contact the chair for more information or to join the discussion.
 
 The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific):
 
-http://uberconference.com/cloudnative 
-Conference Number: +1-415-579-0198 No Pin Needed
+https://zoom.us/j/263858603
+
+Or Telephone:
+
+Dial: +1 646 558 8656 (US Toll) or +1 408 638 0968 (US Toll)
+
++1 855 880 1246 (US Toll Free)
++1 877 369 0926 (US Toll Free)
+
+Meeting ID: 263 858 603
+International numbers available: https://zoom.us/zoomconference?m=ddKUsXGa2tGOHvCl4ccI0juqU7TZaCov
 
 Here is a public Google calendar you can add the meetings to your calendar: https://goo.gl/eyutah
 
