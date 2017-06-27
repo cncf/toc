@@ -93,8 +93,8 @@ If you're interested in presenting at a TOC call about your project, please open
 * **May 3, 2017**: [CNI](https://github.com/containernetworking/cni) / [Hyperd](https://github.com/hyperhq/hyperd) + [runv](https://github.com/hyperhq/runv) by Harry Zhang
 * **May 16, 2017**: Serverless WG Proposal
 * **June 6, 2017**: [rook](https://github.com/rook/rook) by Bassam Tabbara and [InfraKit](https://github.com/docker/infrakit)
-* **June 20, 2017**: OpenMetrics by Richard Hartmann
-* **July 4, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **June 20, 2017**: OpenMetrics by Richard Hartmann and [Notary/TUF](https://github.com/docker/notary)
+* **July 11, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 * **July 18, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 * **August 1, 2017**: [Envoy](https://github.com/lyft/envoy) by Matt Klein
 
