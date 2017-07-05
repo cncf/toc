@@ -30,13 +30,14 @@ In various situations the CNCF TOC shall hold a vote. These votes can happen on 
 
 The TOC has created the following working groups to investigate and discuss the following topics:
 
-* CI WG chaired by Camille Fournier (https://github.com/cncf/wg-ci)
-* Cluster WG chaired by Bryan Cantrill
-* Networking WG chaired by Ken Owens (https://github.com/cncf/wg-networking)
-* Serverless WG chaired by Ken Owens (https://github.com/cncf/wg-serverless)
-* Storage WG chaired by Ben Hindman (https://github.com/cncf/wg-storage)
+| Working Group | Chair            | Meeting Time                          | Minutes/Recordings |
+|---------------|------------------|---------------------------------------|--------------------|
+| [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [2nd and 4th Tue every month at 8AM PT](https://zoom.us/j/199346891) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
+| [Networking](https://github.com/cncf/wg-networking) | Ken Owens        |  [1st and 3rd Tue every month at 8AM PT](https://zoom.us/j/175547218)                                      | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2M_-K5n67_zTdrPh_PtTKFC)
+| [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [1st and 3rd Thu of every month at 9AM PT](https://zoom.us/j/893315636)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
+| [Storage](https://github.com/cncf/wg-storage)    | Ben Hindman      |  [1st and 3rd Fri of every month at 8AM PT](https://zoom.us/j/158580155)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2NoiNaLVZxr-ERc1ifKP7n6)
 
-Feel free to contact the chair for more information or to join the discussion.
+All meetings are on the public CNCF calendar: https://goo.gl/eyutah
 
 ## Meeting Time
 
