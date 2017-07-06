@@ -4,6 +4,8 @@ Every CNCF project has an associated maturity level. Proposed CNCF projects shou
 
 Projects of all maturities have access to all resources listed at https://cncf.io/projects[https://cncf.io/projects] but if there is contention, more mature projects will generally have priority.
 
+=== Inception Stage
+
 To be accepted to the inception stage, a project must:
 
  * Add value to cloud native computing (i.e., containerization, orchestration, microservices, or some combination) and be aligned with the CNCF https://cncf.io/about/charter[charter].
@@ -12,12 +14,16 @@ To be accepted to the inception stage, a project must:
  * Every 12 months, each inception stage project will come to a vote with the TOC. A supermajority vote is required to renew a project at inception stage for another 12 months or move it to incubating or graduated stage. If there is not a supermajority for any of these options, using the fallback voting process defined above, the project is not renewed.
  * In the case of an inception stage project that is not renewed with CNCF, the trademark will be returned to the project maintainers or an organization they designate.
 
+=== Incubating Stage
+
 To be accepted to incubating stage, a project must meet the inception stage requirements plus:
 
  * Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
  * Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
  * Demonstrate a substantial ongoing flow of commits and merged contributions.
  * Since these metrics can vary significantly depending on the type, scope and size of a project, the TOC has final judgement over the level of activity that is adequate to meet these criteria
+
+=== Graduation Stage
 
 To graduate from inception or incubating status, or for a new project to join as a graduated project, a project must meet the incubating stage criteria plus:
 
