@@ -102,7 +102,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **June 6, 2017**: [rook](https://github.com/rook/rook) by Bassam Tabbara and [InfraKit](https://github.com/docker/infrakit)
 * **June 20, 2017**: OpenMetrics by Richard Hartmann and [Notary/TUF](https://github.com/docker/notary)
 * **July 11, 2017**: [CNCF TOC Backlog Review](https://goo.gl/kyagzj)
-* **August 1, 2017**: [Jaegar](https://github.com/uber/jaeger) and Serverless WG Readout
+* **August 1, 2017**: [Jaeger](https://github.com/uber/jaeger) and Serverless WG Readout
 * **August 15, 2017**: [Envoy](https://github.com/lyft/envoy) by Matt Klein
 * **September 5, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
