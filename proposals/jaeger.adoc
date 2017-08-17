@@ -1,0 +1,125 @@
+== Jaeger
+
+*Name of project:* Jaeger
+
+*Description:*
+
+Jaeger, inspired by Dapper (https://research.google.com/pubs/pub36356.html) and OpenZipkin (http://zipkin.io/),
+is a distributed tracing system that can be used for monitoring microservice-based architectures, including
+distributed context propagation, distributed transaction monitoring, root cause analysis, service dependency
+analysis and performance / latency optimization.
+
+*Sponsor / Advisor from TOC:* Bryan Cantrill
+
+*Preferred maturity level:* incubating
+
+*Unique identifier:* jaeger
+
+*License:* Apache 2.0 (tentative)
+
+*Source control repositories:*
+
+  * https://github.com/uber/jaeger
+  * https://github.com/jaegertracing
+  * https://github.com/uber/jaeger-lib
+  * https://github.com/uber/jaeger-ui
+  * https://github.com/uber/jaeger-client-go
+  * https://github.com/uber/jaeger-client-java
+  * https://github.com/uber/jaeger-client-node
+  * https://github.com/uber/jaeger-client-python
+
+*Initial Committers:* https://github.com/uber/jaeger/blob/master/CODEOWNERS
+
+*Infrastructure requirements (CI / CNCF Cluster):* https://travis-ci.org/uber/jaeger
+
+*Issue tracker:* https://github.com/uber/jaeger/issues
+
+*Mailing lists:*
+
+  * Mailing list: https://groups.google.com/forum/#!forum/jaeger-tracing
+  * Gitter: https://gitter.im/jaegertracing/Lobby
+
+*Website:* https://uber.github.io/jaeger/ (soon jaegertracing.io)
+
+*Release methodology and mechanics:*
+
+At the moment, releases happen in an ad hoc fashion, when the maintainers and core contributors think
+there are sufficient number of features or bug fixes to warrant a new release. For the main repo (Jaeger backend),
+the release is tagged on GitHub and it triggers a build of docker images that are auto-uploaded to Docker Hub.
+The releases for instrumentation libraries follow a similar process, and the artifacts are pushed to respective
+repositories for the language, i.e. Maven Central, npm, and pypi.
+
+*Social media accounts:*
+
+  * Blog: https://medium.com/jaegertracing/
+  * Twitter: https://twitter.com/JaegerTracing
+
+*Existing sponsorship:* Uber has 7 full time maintainers and Red Hat has 4 full time maintainers
+
+*Contributor statistics:* 1000+ stars and 30+ contributors https://github.com/uber/jaeger/graphs/contributors
+
+*Adopters:* https://github.com/uber/jaeger/blob/master/ADOPTERS.md
+
+*External Dependencies:*
+
+  * https://github.com/uber/jaeger
+    * https://github.com/pkg/errors - BSD-2
+    * https://github.com/uber-go/zap - MIT
+    * https://github.com/apache/thrift - AL2
+    * https://github.com/opentracing/opentracing-go - MIT
+    * golang.org/x/net - BSD-3
+    * https://github.com/uber/tchannel-go - MIT
+    * https://github.com/gorilla/ - BSD-3
+    * https://github.com/kr/pretty - MIT
+    * https://github.com/go-kit/kit - MIT
+    * http://github.com/olivere/elastic - MIT
+  * https://github.com/jaegertracing
+    * Apache-2.0
+  * https://github.com/uber/jaeger-lib
+    * https://github.com/codahale/hdrhistogram - MIT
+    * https://github.com/go-kit/kit - MIT
+    * https://github.com/uber-go/tally - MIT
+    * https://github.com/prometheus/client_golang - AL2
+  * https://github.com/uber/jaeger-ui
+    * Many (see full list - https://gist.github.com/yurishkuro/273b5c0ed3556dfb84a095002f7dc40c)
+    * "(GPL-2.0 OR MIT)"
+    * "Apache-2.0"
+    * "BSD"
+    * "BSD*"
+    * "BSD-2-Clause"
+    * "BSD-3-Clause"
+    * "ISC"
+    * "MIT"
+    * "MIT*"
+  * https://github.com/uber/jaeger-client-go
+    * https://github.com/apache/thrift - AL2
+    * https://github.com/opentracing/opentracing-go - MIT
+    * golang.org/x/net - BSD-3
+    * https://github.com/uber/tchannel-go - MIT
+  * https://github.com/uber/jaeger-client-java
+    * https://mvnrepository.com/artifact/org.apache.thrift/libthrift - AL2
+    * https://mvnrepository.com/artifact/io.opentracing/opentracing-api - AL2
+    * https://mvnrepository.com/artifact/com.google.code.gson/gson - AL2
+    * https://mvnrepository.com/artifact/org.slf4j/slf4j-api - MIT
+  * https://github.com/uber/jaeger-client-node
+    * https://www.npmjs.com/package/node-int64 - MIT
+    * https://www.npmjs.com/package/thriftrw - MIT
+    * https://www.npmjs.com/package/xorshift - MIT
+    * https://www.npmjs.com/package/opentracing - MIT
+  * https://github.com/uber/jaeger-client-python
+    * https://pypi.python.org/pypi/futures - PSF
+    * https://pypi.python.org/pypi/threadloop - MIT
+    * https://pypi.python.org/pypi/thrift - AL2
+    * https://pypi.python.org/pypi/tornado - AL2
+    * https://pypi.python.org/pypi/opentracing - MIT
+    * https://pypi.python.org/pypi/future - MIT
+
+*Statement on alignment with CNCF mission:*
+
+A challenging part of cloud native computing is managing microservices and especially debugging the situation
+when things go awry. Furthermore, distributed tracing instrumentation has been fragmented traditionally until
+CNCF efforts like the OpenTracing specification came to existence to help unify existing tracing implementations
+out there.
+
+Jaeger is a battle tested distributing system that takes advantage of OpenTracing and advances the state
+of open source distributed tracing.
