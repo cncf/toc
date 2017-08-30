@@ -34,12 +34,13 @@ analysis and performance / latency optimization.
 
 *Issue tracker:* https://github.com/uber/jaeger/issues
 
-*Mailing lists:*
+*Mailing list:*  https://groups.google.com/forum/#!forum/jaeger-tracing
 
-* Mailing list: https://groups.google.com/forum/#!forum/jaeger-tracing
-* Gitter: https://gitter.im/jaegertracing/Lobby
+*Online chat:* https://gitter.im/jaegertracing/
 
 *Website:* https://uber.github.io/jaeger/ (soon jaegertracing.io)
+
+*Documentation:* http://jaeger.readthedocs.io/
 
 *Release methodology and mechanics:*
 
@@ -126,10 +127,10 @@ of open source distributed tracing.
 
 *Comparison with Zipkin*
 
-Zipkin is another popular open source distributed tracing system originally
-[released by Twitter in 2012](https://blog.twitter.com/engineering/en_us/a/2012/distributed-systems-tracing-with-zipkin.html).
+Zipkin is another popular open source distributed tracing system originally released by Twitter in 2012
+(https://blog.twitter.com/engineering/en_us/a/2012/distributed-systems-tracing-with-zipkin.html).
 Jaeger and Zipkin provide roughly similar functionality today; in fact the earlier versions of Jaeger relied on some of Zipkin
-components as explained in the [Uber Eng blog post] (https://eng.uber.com/distributed-tracing/). Listed below are some differences
+components as explained in the Uber Eng blog post (https://eng.uber.com/distributed-tracing/). Listed below are some differences
 between Jaeger and Zipkin, along with how they can interoperate:
 
 * *OpenTracing Instrumentation Libraries*. All Jaeger instrumentation libraries are built to support the OpenTracing standard.
