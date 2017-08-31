@@ -1,0 +1,32 @@
+== ContainerFS Proposal
+
+*Name of project:* ContainerFS
+
+*Description*
+
+ContainerFS is an open source file system for containers across multiple hosts, providing exclusive/shared volumes for container cluster,best fit Kubernetes pv mechanism. ContainerFS will serve as a cluster file system for the CNCF ecosystem.
+
+*Sponsor / Advisor from TOC*: Alexis Richardson
+
+*Unique Identifier*: ContainerFS
+
+*License*: Apache License v2.0 https://github.com/ipdcode/containerfs/blob/master/LICENSE[https://github.com/ipdcode/containerfs/blob/master/LICENSE]
+
+*Source control repositories*: https://github.com/ipdcode/containerfs[https://github.com/ipdcode/containerfs] (everything in the org)
+
+*Initial Committers*: bladehliu jsonkey zhengxiaochuan-3 jls502
+
+*Infrastructure requirements (CI / CNCF Cluster)*:
+
+* Travis https://travis-ci.org/ipdcode/containerfs[https://travis-ci.org/ipdcode/containerfs]
+
+
+*External Dependencies*
+
+* Fuse - https://github.com/bazil/fuse/blob/master/LICENSE[https://github.com/bazil/fuse/blob/master/LICENSE]
+* Protobuf - MIT https://github.com/google/protobuf/blob/master/LICENSE[https://github.com/google/protobuf/blob/master/LICENSE]
+* Grpc - Apache v 2.0 https://github.com/grpc/grpc-go/blob/master/LICENSE[https://github.com/grpc/grpc-go/blob/master/LICENSE]
+ 
+*Statement on alignment with CNCF mission*:
+ 
+proposing
