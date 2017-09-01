@@ -50,6 +50,8 @@ the release is tagged on GitHub and it triggers a build of docker images that ar
 The releases for instrumentation libraries follow a similar process, and the artifacts are pushed to respective
 repositories for the language, i.e. Maven Central, npm, and pypi.
 
+*Roadmap:* http://jaeger.readthedocs.io/en/latest/roadmap/
+
 *Social media accounts:*
 
 * Blog: https://medium.com/jaegertracing/
