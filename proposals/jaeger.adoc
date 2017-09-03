@@ -52,16 +52,27 @@ repositories for the language, i.e. Maven Central, npm, and pypi.
 
 *Roadmap:* http://jaeger.readthedocs.io/en/latest/roadmap/
 
-*Social media accounts:*
-
-* Blog: https://medium.com/jaegertracing/
-* Twitter: https://twitter.com/JaegerTracing
-
 *Existing sponsorship:* Uber has 7 full time maintainers and Red Hat has 4 full time maintainers
 
 *Contributor statistics:* 1000+ stars and 30+ contributors https://github.com/uber/jaeger/graphs/contributors
 
 *Adopters:* https://github.com/uber/jaeger/blob/master/ADOPTERS.md
+
+*Community involvement:*
+
+Some features added recently in response to community requests or as community contributions:
+
+* Support Elasticsearch as a storage backend - https://github.com/uber/jaeger/issues/140
+* Deployment templates for Kubernetes - https://github.com/jaegertracing/jaeger-kubernetes
+* Jaeger as a drop-in replacement for Zipkin - https://github.com/uber/jaeger/milestone/2
+* Allow Istio/Envoy to report span data to Jaeger - https://github.com/uber/jaeger/issues/225
+* Add health checks for better intergation with Kubernetes - https://github.com/uber/jaeger/pull/280
+* Use cpf13/cobra for flexible configuration under Kubernetes - https://github.com/uber/jaeger/issues/233
+
+*Social media accounts:*
+
+* Blog: https://medium.com/jaegertracing/
+* Twitter: https://twitter.com/JaegerTracing
 
 *External Dependencies:*
 
