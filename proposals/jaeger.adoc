@@ -68,6 +68,7 @@ Some features added recently in response to community requests or as community c
 * Allow Istio/Envoy to report span data to Jaeger - https://github.com/uber/jaeger/issues/225
 * Add health checks for better intergation with Kubernetes - https://github.com/uber/jaeger/pull/280
 * Use cpf13/cobra for flexible configuration under Kubernetes - https://github.com/uber/jaeger/issues/233
+* Instrumentation libraries in more languages - https://github.com/uber/jaeger/issues/366
 
 *Social media accounts:*
 
