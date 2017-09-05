@@ -105,8 +105,9 @@ If you're interested in presenting at a TOC call about your project, please open
 * **August 1, 2017**: [Jaeger](https://github.com/uber/jaeger) and Serverless WG Readout
 * **August 15, 2017**: [Envoy](https://github.com/lyft/envoy) by Matt Klein and CI WG Readout
 * **September 5, 2017**: gluster-kubernetes and Storage WG readout
-* **September 19, 2017**: TODO (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
-
+* **September 19, 2017**: TBD
+* **October 3, 2017**: NATS revisited
+* **October 17, 2017**: TBD (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
 
@@ -146,3 +147,4 @@ If you're interested in presenting at a TOC call about your project, please open
 * [July 11th, 2017](https://docs.google.com/presentation/d/1bSP9UmxLP4gBu9kzxrqZCahDGS8JcsHFh1CawVtZOTY/edit#slide=id.gd5ae4e962_2_136)
 * [August 1st, 2017](https://goo.gl/ehtgts)
 * [August 15th, 2017](https://goo.gl/iSP394)
+* [September 5th, 2017](https://goo.gl/WbKUmd)
