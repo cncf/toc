@@ -2,15 +2,15 @@
 
 This page looks at the elections for the CNCF’s Technical Oversight Committee (TOC) over the next several years. There are no policy changes proposed, but a specific schedule is suggested to implement the staggered elections required by the charter.
 
-The key sections of the [charter](https://www.cncf.io/about/charter/ ) are:
+The key sections of the [charter](https://www.cncf.io/about/charter/) are:
 
-6(b)(iii) The Governing Board shall elect six (6) TOC members, the End User TAB shall elect one (1) TOC member and the initial seven TOC members shall elect an additional two (2) TOC members.
+>6(b)(iii) The Governing Board shall elect six (6) TOC members, the End User TAB shall elect one (1) TOC member and the initial seven TOC members shall elect an additional two (2) TOC members.
 
-6(c)(i) The TOC shall select a Chair of the TOC to set agendas and call meetings of the TOC.
+>6(c)(i) The TOC shall select a Chair of the TOC to set agendas and call meetings of the TOC.
 
-6(e)(ii) Nominations: Each individual (entity or member) eligible to nominate a TOC member may nominate up to two (2) technical representatives, (from vendors, end users or any other fields), at most one of which may be from their respective company.
+>6(e)(ii) Nominations: Each individual (entity or member) eligible to nominate a TOC member may nominate up to two (2) technical representatives, (from vendors, end users or any other fields), at most one of which may be from their respective company.
 
-6(f)(i) TOC Members shall serve two-year, staggered terms. The initial six elected TOC members from the Governing Board election shall serve an initial term of three (3) years. The TOC members initially elected by the End User TAB and TOC shall serve an initial term of two (2) years.
+>6(f)(i) TOC Members shall serve two-year, staggered terms. The initial six elected TOC members from the Governing Board election shall serve an initial term of three (3) years. The TOC members initially elected by the End User TAB and TOC shall serve an initial term of two (2) years.
 
 Current TOC [Members](https://github.com/cncf/toc#members) and their terms are:
 
