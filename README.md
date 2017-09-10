@@ -18,6 +18,8 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * **Ken Owens** (term: 3 years - start date: 1/29/2016)
 * **Alexis Richardson** (term: 3 years - start date: 1/29/2016)
 
+Election [schedule](process/election-schedule.md)
+
 ## Mailing List
 
 cncf-toc@lists.cncf.io: https://ponymail.cncf.io/list.html?cncf-toc@lists.cncf.io
