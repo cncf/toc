@@ -108,8 +108,9 @@ If you're interested in presenting at a TOC call about your project, please open
 * **August 15, 2017**: [Envoy](https://github.com/lyft/envoy) by Matt Klein and CI WG Readout
 * **September 5, 2017**: gluster-kubernetes and Storage WG readout
 * **September 19, 2017**: TBD
-* **October 3, 2017**: NATS revisited
+* **October 3, 2017**: NATS.io revisited
 * **October 17, 2017**: TBD (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **November 7, 2017**: SPIFFE.io
 
 ## Meeting Minutes
 
