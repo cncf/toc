@@ -1,0 +1,169 @@
+== Jaeger
+
+*Name of project:* Jaeger
+
+*Description:*
+
+Jaeger, inspired by Dapper (https://research.google.com/pubs/pub36356.html) and OpenZipkin (http://zipkin.io/),
+is a distributed tracing system that can be used for monitoring microservice-based architectures, including
+distributed context propagation, distributed transaction monitoring, root cause analysis, service dependency
+analysis and performance / latency optimization.
+
+*Sponsor / Advisor from TOC:* Bryan Cantrill
+
+*Preferred maturity level:* incubating
+
+*Unique identifier:* jaeger
+
+*License:* Apache 2.0 (tentative)
+
+*Source control repositories:*
+
+* https://github.com/uber/jaeger
+* https://github.com/jaegertracing
+* https://github.com/uber/jaeger-lib
+* https://github.com/uber/jaeger-ui
+* https://github.com/uber/jaeger-client-go
+* https://github.com/uber/jaeger-client-java
+* https://github.com/uber/jaeger-client-node
+* https://github.com/uber/jaeger-client-python
+
+*Initial Committers:* https://github.com/uber/jaeger/blob/master/CODEOWNERS
+
+*Infrastructure requirements (CI / CNCF Cluster):* https://travis-ci.org/uber/jaeger
+
+*Issue tracker:* https://github.com/uber/jaeger/issues
+
+*Mailing list:*  https://groups.google.com/forum/#!forum/jaeger-tracing
+
+*Online chat:* https://gitter.im/jaegertracing/
+
+*Website:* https://uber.github.io/jaeger/ (soon jaegertracing.io)
+
+*Documentation:* http://jaeger.readthedocs.io/
+
+*Release methodology and mechanics:*
+
+At the moment, releases happen in an ad hoc fashion, when the maintainers and core contributors think
+there are sufficient number of features or bug fixes to warrant a new release. For the main repo (Jaeger backend),
+the release is tagged on GitHub and it triggers a build of docker images that are auto-uploaded to Docker Hub.
+The releases for instrumentation libraries follow a similar process, and the artifacts are pushed to respective
+repositories for the language, i.e. Maven Central, npm, and pypi.
+
+*Roadmap:* http://jaeger.readthedocs.io/en/latest/roadmap/
+
+*Existing sponsorship:* Uber has 7 full time maintainers and Red Hat has 4 full time maintainers
+
+*Contributor statistics:* 1000+ stars and 30+ contributors https://github.com/uber/jaeger/graphs/contributors
+
+*Adopters:* https://github.com/uber/jaeger/blob/master/ADOPTERS.md
+
+*Community involvement:*
+
+Some features added recently in response to community requests or as community contributions:
+
+* Support Elasticsearch as a storage backend - https://github.com/uber/jaeger/issues/140
+* Deployment templates for Kubernetes - https://github.com/jaegertracing/jaeger-kubernetes
+* Jaeger as a drop-in replacement for Zipkin - https://github.com/uber/jaeger/milestone/2
+* Allow Istio/Envoy to report span data to Jaeger - https://github.com/uber/jaeger/issues/225
+* Add health checks for better intergation with Kubernetes - https://github.com/uber/jaeger/pull/280
+* Use cpf13/cobra for flexible configuration under Kubernetes - https://github.com/uber/jaeger/issues/233
+* Instrumentation libraries in more languages - https://github.com/uber/jaeger/issues/366
+
+*Social media accounts:*
+
+* Blog: https://medium.com/jaegertracing/
+* Twitter: https://twitter.com/JaegerTracing
+
+*External Dependencies:*
+
+* https://github.com/uber/jaeger
+** https://github.com/pkg/errors - BSD-2
+** https://github.com/uber-go/zap - MIT
+** https://github.com/apache/thrift - AL2
+** https://github.com/opentracing/opentracing-go - MIT
+** golang.org/x/net - BSD-3
+** https://github.com/uber/tchannel-go - MIT
+** https://github.com/gorilla/ - BSD-3
+** https://github.com/kr/pretty - MIT
+** https://github.com/go-kit/kit - MIT
+** http://github.com/olivere/elastic - MIT
+* https://github.com/jaegertracing
+** Apache-2.0
+* https://github.com/uber/jaeger-lib
+** https://github.com/codahale/hdrhistogram - MIT
+** https://github.com/go-kit/kit - MIT
+** https://github.com/uber-go/tally - MIT
+** https://github.com/prometheus/client_golang - AL2
+* https://github.com/uber/jaeger-ui
+** Many (see full list - https://gist.github.com/yurishkuro/273b5c0ed3556dfb84a095002f7dc40c)
+** "(GPL-2.0 OR MIT)"
+** "Apache-2.0"
+** "BSD"
+** "BSD*"
+** "BSD-2-Clause"
+** "BSD-3-Clause"
+** "ISC"
+** "MIT"
+** "MIT*"
+* https://github.com/uber/jaeger-client-go
+** https://github.com/apache/thrift - AL2
+** https://github.com/opentracing/opentracing-go - MIT
+** golang.org/x/net - BSD-3
+** https://github.com/uber/tchannel-go - MIT
+* https://github.com/uber/jaeger-client-java
+** https://mvnrepository.com/artifact/org.apache.thrift/libthrift - AL2
+** https://mvnrepository.com/artifact/io.opentracing/opentracing-api - AL2
+** https://mvnrepository.com/artifact/com.google.code.gson/gson - AL2
+** https://mvnrepository.com/artifact/org.slf4j/slf4j-api - MIT
+* https://github.com/uber/jaeger-client-node
+** https://www.npmjs.com/package/node-int64 - MIT
+** https://www.npmjs.com/package/thriftrw - MIT
+** https://www.npmjs.com/package/xorshift - MIT
+** https://www.npmjs.com/package/opentracing - MIT
+* https://github.com/uber/jaeger-client-python
+** https://pypi.python.org/pypi/futures - PSF
+** https://pypi.python.org/pypi/threadloop - MIT
+** https://pypi.python.org/pypi/thrift - AL2
+** https://pypi.python.org/pypi/tornado - AL2
+** https://pypi.python.org/pypi/opentracing - MIT
+** https://pypi.python.org/pypi/future - MIT
+
+*Statement on alignment with CNCF mission:*
+
+A challenging part of cloud native computing is managing microservices and especially debugging the situation
+when things go awry. Furthermore, distributed tracing instrumentation has been fragmented traditionally until
+CNCF efforts like the OpenTracing specification came to existence to help unify existing tracing implementations
+out there.
+
+Jaeger is a battle tested distributing system that takes advantage of OpenTracing and advances the state
+of open source distributed tracing.
+
+*Comparison with Zipkin*
+
+Zipkin is another popular open source distributed tracing system originally released by Twitter in 2012
+(https://blog.twitter.com/engineering/en_us/a/2012/distributed-systems-tracing-with-zipkin.html).
+Jaeger and Zipkin provide roughly similar functionality today; in fact the earlier versions of Jaeger relied on some of Zipkin
+components as explained in the Uber Eng blog post (https://eng.uber.com/distributed-tracing/). Listed below are some differences
+between Jaeger and Zipkin, along with how they can interoperate:
+
+* *OpenTracing Instrumentation Libraries*. All Jaeger instrumentation libraries are built to support the OpenTracing standard.
+  Zipkin ecosystem has a couple of OpenTracing compatible libraries, but most of them do not support it, instead requiring the
+  applications to use bespoke APIs and Zipkin-only semantic annotations.
+* *OpenTracing Compatible Backend and UI*. Jaeger is built with OpenTracing standard in mind from the ground up, including the
+  backend, the data models, and the UI. Zipkin backend does not support all of the features of OpenTracing, specifically
+  structured k-v span logs and multi-parent spans / DAGs (which are possible in OpenTracing via span references).
+* *Instrumentation Libraries Maintenance*. Jaeger instrumentation libraries are officially part of the project and undergo
+  continuous integration testing against each other and against the backend. Zipkin instrumentation libraries are not officially
+  part of the project, often not even located in the openzipkin Github org, and rarely integration-tested against each other.
+  On the other hand, Zipkin libraries exist in more languages. Today Jaeger supports Go, Java, Python, and Javascript,
+  with Ruby and C++ implementation on the way.
+* *Distributed Context Propagation*. General purpose context propagation is extremely useful in microservices based systems.
+  In addition to tracing it can support many other applications, including resource attribution / chargebacks, capacity planning,
+  chaos engineering, security. All Jaeger libraries support context propagation via OpenTracing feature called “baggage”.
+  Most Zipkin libraries do not support propagation of custom context metadata.
+* *Storage Backends*. Zipkin supports more storage backends since it has been around a lot longer. Jaeger currently supports
+  Cassandra and Elasticsearch as production quality storage backends.
+* *Interoperability*. Jaeger backend can be used as a replacement for Zipkin backend in organizations that already invested
+  in Zipkin instrumentation. Jaeger instrumentation libraries can also be configured to interoperate with Zipkin libraries
+  via Zipkin wire format (B3 headers), that allows new services to be instrumented with OpenTracing.
