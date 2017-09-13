@@ -1,0 +1,115 @@
+== envoy
+
+*Name of project*: Envoy
+
+*Description*: 
+
+As on the ground microservice practitioners quickly realize, the majority of operational problems that arise when moving to a distributed architecture are ultimately grounded in two areas: networking and observability. It is simply an orders of magnitude larger problem to network and debug a set of intertwined distributed services versus a single monolithic application.  +
+
+Over the last few years, a new paradigm has emerged most commonly known as the "service mesh." The service mesh offers a reprieve for those attempting to build and operate microservice architectures by creating a generic substrate on which applications communicate. Traditionally, organizations have had to implement complicated distributed systems concepts in every language and framework they use. This means that if they have five supported languages, they need five different libraries to implement a large set of complex features such as load balancing, circuit breaking, stats, tracing, logging, timeouts, retries, service discovery, etc. Additionally, deploying new features and security fixes typically requires deploying every service. The existence of the generic substrate with all of these features means that developers can write applications in any language largely unaware of how the distributed network is implemented, instrumented, and operated.  +
+
+Envoy is a high performance C++ distributed proxy, communication bus, and “universal data plane” designed for large microservice “service mesh” architectures. Envoy runs alongside every application and abstracts the network by providing common features in a platform-agnostic manner. When all service traffic in an infrastructure flows via an Envoy mesh, it becomes easy to visualize problem areas via consistent observability, tune overall performance, and add substrate features in a single place. +
+
+Additionally, Envoy provides a robust set of APIs that allow complex mesh configuration to be controlled by centralized management servers. This cleanly separates the “data plane” from the “control plane” and enables extremely flexible global load balancing and management scenarios. +
+
+In terms of comparable systems, Envoy builds on top of the learnings from existing high performance load balancing solutions such as NGINX and HAProxy, proprietary hardware load balancers from companies like F5 and Juniper, and cloud load balancing solutions from AWS, GCP, and Azure. Envoy combines a level of performance, dynamic configuration flexibility via management APIs, programmatic extension via filters, and industry leading observability output not seen in any other solution. +
+
+Envoy’s roadmap over the next six to twelve months is exciting and includes additional protocol support (Redis), rollout of our v2 gRPC management APIs to enable more flexible global load balancing, enhanced rate limiting and IP tagging support, enhanced TLS (SNI and different key delivery options), Windows support, HTTP/2 prefetch and link following, and UDP/QUIC. +
+
+In summary: Envoy is a high performance universal dataplane for modern SoA/microservice architectures. The goal is to make the network completely transparent to application programmers; when the network cannot be transparent due to extreme failure, Envoy should make failures easy to debug and reason about. Long term with the right protocol support, hardening, and dynamic configuration APIs, our goal is to see Envoy running beneath a large percentage of the world's Internet traffic. +
+
+For more information please see: https://github.com/lyft/envoy#documentation +
+
+*Sponsor / Advisor from TOC*: Alexis Richardson +
+
+*Preferred maturity level*: incubating +
+
+*Unique identifier*: envoy +
+
+*License*: Apache 2.0 +
+
+*Source control repositories*: 
+All will move into the envoyproxy GH organization: https://github.com/envoyproxy
+
+ * https://github.com/lyft/envoy[https://github.com/lyft/envoy]
+ * https://github.com/lyft/envoy-api[https://github.com/lyft/envoy-api]
+ * https://github.com/lyft/envoy-filter-example[https://github.com/lyft/envoy-filter-example]
+ * https://github.com/lyft/envoy-perf[https://github.com/lyft/envoy-perf]
+
+*Initial Committers*: https://github.com/lyft/envoy/blob/master/OWNERS.md[ https://github.com/lyft/envoy/blob/master/OWNERS.md]
+
+*Infrastructure requirements (CI / CNCF Cluster)*: None currently. Our CI is currently hosted by Travis and paid for by Lyft. We plan on moving to Google provided CI by the end of the year. It’s unclear whether Google will cover the cost for this or we might ask for some help from CNCF. Longer term, we would potentially like access to the CNCF test cluster for running performance tests on bare metal.
+
+*Issue tracker*: https://github.com/lyft/envoy/issues[https://github.com/lyft/envoy/issues]. 
+
+Ultimately we would like to figure out a better way of doing project management than using GH directly (users opening issues in GH works well). Some suggestions have included Trello, Waffle.io, and potentially JIRA. These need more investigation.
+
+*Mailing lists*: https://github.com/lyft/envoy#contact[https://github.com/lyft/envoy#contact] (note that we also have envoyproxy.slack.com which has been upgraded to premium for free by Slack. We would like to switch to this, but we need to solve the automated signup problem first. It is unclear who will work on that).
+
+*Website*: https://lyft.github.io/envoy/[https://lyft.github.io/envoy/] (switching to envoyproxy.io)
+
+*Release methodology and mechanics*: +
+We currently do numbered releases approximately every 3 months kicked off by maintainers and loosely guided on feature boundaries. The general goal however is to keep master RC quality at all times. We expect many large organizations to run master in production.
+
+*Social media accounts*:  https://twitter.com/EnvoyProxy[https://twitter.com/EnvoyProxy]
+
+*Existing sponsorship*: Lyft/Google
+
+*Contributor statistics*: 70 contributors across many companies (most activity from Lyft/Google). 2 orgs with commit access (Lyft/Google).
+
+*Adopters*: 
+
+ * Lyft
+ * Google
+ * IBM
+ * Verizon
+ * EBay
+ * Apple
+ * Microsoft
+ * Pivotal
+ * Red Hat
+ * Stripe
+ * VSCO
+ * Tencent QQ
+ * Twilio
+ * Yelp
+
+Integrators:
+
+ * Istio (Google/IBM)
+ * Nomad (Verizon)
+ * Tigera
+ * Covalent
+ * Turbine Labs
+ * Datawire
+
+ Note: This is a partial list as organizations are at different stages of deployment.
+
+*External Dependencies:*
+
+ * https://lyft.github.io/envoy/docs/install/requirements.html[https://lyft.github.io/envoy/docs/install/requirements.html]
+ ** spdlog (MIT)
+ ** http-parser (MIT/NGINX)
+ ** nghttp2 (MIT)
+ ** Libevent (modified BSD)
+ ** tclap (MIT)
+ ** gperftools (modified BSD)
+ ** BoringSSL (OpenSSL/ISC).
+ ** protobuf (BSD)
+ ** lightstep-tracer-cpp (MIT)
+ ** rapidjson (MIT)
+ ** c-ares (MIT)
+ ** backward (MIT)
+ ** zlib (https://www.zlib.net/zlib_license.html)
+
+*Statement on alignment with CNCF mission*: +
+In our opinion Envoy is a fantastic fit for CNCF. Networking and observability are arguably the most difficult problems that practitioners face when they attempt to deploy microservice architectures. Envoy enables a substrate that aims to make the network transparent. When failures do occur, Envoy aims to make the failures easy to debug, workaround, and fix via consistent stats, logging, and tracing. Beyond an excellent ecosystem component, Envoy has great synergies with existing CNCF projects such as k8s, OT, Prometheus, gRPC, and Fluentd. Closer alignment would be extremely beneficial to the larger community in terms of eventually offering a seamless cloud native experience. One could further argue that Envoy is a vehicle by which some of these technologies will be more quickly adopted and put into the hands of users. +
+
+*Additional CNCF asks:*
+
+* *Governance advice*: General access to staff to provide advice and help optimize and document our governance process. 
+* *Security processes*: Envoy does not currently have any kind of CVE process. Would like help formalizing this process, figuring out pre-announce lists, etc.
+* *CLA bot tooling / moving away from CLA*: General help with managing the CLA including GH tooling, CLA management, working with Lyft lawyers to potentially move away from CLA usage to DCO.
+
+
+
