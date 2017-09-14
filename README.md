@@ -74,11 +74,13 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [OpenTracing](http://opentracing.io/)|Bryan Cantrill|[8/17/16](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165)|[10/11/16](https://cncf.io/news/blogs/2016/10/opentracing-joins-cloud-native-computing-foundation)|Incubating
 [Fluentd](http://www.fluentd.org/)|Brian Grant|[8/3/16](https://docs.google.com/presentation/d/1S79MNv3E2aG8nuZJFJ0XMSumf7jnKozN3vdrivCH77U/edit?usp=sharing)|[11/8/16](https://www.cncf.io/blog/2016/12/08/fluentd-cloud-native-logging)|Incubating
 [Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[1/23/17](https://www.cncf.io/blog/2017/01/23/linkerd-project-joins-cloud-native-computing-foundation)|Inception
-[gRPC](http://www.grpc.io/)|Brian Grant|[10/19/2016](https://docs.google.com/presentation/d/16mNYaqgd7BaV50OnbcuQ1zRHpWoUKhL3XHvCJwEm8CE/edit#slide=id.g185c09339a_23_106)|[2/16/17](https://www.cncf.io/blog/2017/03/01/cloud-native-computing-foundation-host-grpc-google)|Incubating
-[CoreDNS](https://coredns.io/)|Jonathan Boulle|[8/17/2016](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)|[2/27/17](https://www.cncf.io/blog/2017/03/02/cloud-native-computing-foundation-becomes-steward-service-naming-discovery-project-coredns)|Inception
-[containerd](https://containerd.io/)|Brian Grant|[3/15/2017](https://docs.google.com/presentation/d/1qmGsmARyMhRLwbFWG7LXJSsDHm45nqZ_QtBv5SnQL54/edit?usp=sharing)|[3/29/17](https://www.cncf.io/announcement/2017/03/29/containerd-joins-cloud-native-computing-foundation/)|Incubation
-[rkt](http://rkt.io)|Brian Grant|[3/15/2017](https://docs.google.com/presentation/d/1KzA58_Zz30mKKzeLuSvXLh63aIC75KRdAOTw4PJ_10g/edit?usp=sharing)|[3/29/17](https://www.cncf.io/announcement/2017/03/29/cloud-native-computing-foundation-becomes-home-pod-native-container-engine-project-rkt/)|Incubation
-[CNI](https://github.com/containernetworking/cni)|Ken Owens|[5/3/2017](https://docs.google.com/presentation/d/1flQXWp1NQg_FdiLQ0MzKw5QACIwR1i939a-FD74imxk/edit#slide=id.g217fd51990_0_140)|[5/23/17](https://www.cncf.io/blog/2017/05/23/cncf-hosts-container-networking-interface-cni/)|Incubation
+[gRPC](http://www.grpc.io/)|Brian Grant|[10/19/16](https://docs.google.com/presentation/d/16mNYaqgd7BaV50OnbcuQ1zRHpWoUKhL3XHvCJwEm8CE/edit#slide=id.g185c09339a_23_106)|[2/16/17](https://www.cncf.io/blog/2017/03/01/cloud-native-computing-foundation-host-grpc-google)|Incubating
+[CoreDNS](https://coredns.io/)|Jonathan Boulle|[8/17/16](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)|[2/27/17](https://www.cncf.io/blog/2017/03/02/cloud-native-computing-foundation-becomes-steward-service-naming-discovery-project-coredns)|Inception
+[containerd](https://containerd.io/)|Brian Grant|[3/15/17](https://docs.google.com/presentation/d/1qmGsmARyMhRLwbFWG7LXJSsDHm45nqZ_QtBv5SnQL54/edit?usp=sharing)|[3/29/17](https://www.cncf.io/announcement/2017/03/29/containerd-joins-cloud-native-computing-foundation/)|Incubation
+[rkt](http://rkt.io)|Brian Grant|[3/15/17](https://docs.google.com/presentation/d/1KzA58_Zz30mKKzeLuSvXLh63aIC75KRdAOTw4PJ_10g/edit?usp=sharing)|[3/29/17](https://www.cncf.io/announcement/2017/03/29/cloud-native-computing-foundation-becomes-home-pod-native-container-engine-project-rkt/)|Incubation
+[CNI](https://github.com/containernetworking/cni)|Ken Owens|[5/3/17](https://docs.google.com/presentation/d/1flQXWp1NQg_FdiLQ0MzKw5QACIwR1i939a-FD74imxk/edit#slide=id.g217fd51990_0_140)|[5/23/17](https://www.cncf.io/blog/2017/05/23/cncf-hosts-container-networking-interface-cni/)|Incubation
+[Envoy](https://github.com/envoyproxy/envoy)|Alexis Richardson|[8/15/17](https://goo.gl/iSP394)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-envoy/)|Incubation
+[Jaeger](https://github.com/jagertracing/jaeger)|Bryan Cantrill|[8/1/17](https://goo.gl/ehtgts)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-jaeger/)|Incubation
 
 ## Scheduled Community Presentations
 
@@ -111,6 +113,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **October 3, 2017**: NATS.io revisited
 * **October 17, 2017**: TBD (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 * **November 7, 2017**: SPIFFE.io
+* **November 21, 2017**: Project Graduation Reviews (Kubernetes, Prometheus)
 
 ## Meeting Minutes
 
