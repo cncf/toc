@@ -1,9 +1,9 @@
 # CNCF TOC Goals and Principles
-​
+
 _Version 0.9, September 17, 2017  
 Approved by TOC on: TBD  
 Approved by GB on: TBD_  
-​
+
 [TOC Operating Principles](#toc-operating-principles)  
 [We Are Project-Centric](#we-are-project-centric)  
 [Projects Are Self-Governing](#projects-are-self-governing)  
