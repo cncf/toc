@@ -90,7 +90,7 @@ The CNCF is a badge of quality and velocity. CNCF projects should be on a path t
 _Principle: CNCF promotes interoperability via interfaces that get real-world use_
 ​
 Users and vendors both want as little friction as possible when it comes to integration. Taking any two projects and putting them into a larger stack, product, platform, solution, etc., is always easier when this is the case. For example, cloud native storage vendors want as few moving parts as possible when it comes to making their products and services work with the various emerging container platforms. At the same time, the world is littered with the untouchable remains of failed ‘standards’ that promised to provide interoperability but did not get traction.
-​
+​ 
 In the CNCF we like projects that are getting traction and may go on to become widespread and popular with end users and the ecosystem. We apply this thinking to the area normally covered by ‘standards’ including specifications for APIs, SPIs, protocols, etc. Where a good interface exists we are happy to use it if our users like it, but we are not compelled to do so. 
 ​
 We want markets and users to drive interop, not committees. We want to help real-world use happen faster, and foster collaboration. We do not wish to become gated on committees.
@@ -127,13 +127,13 @@ CNI fits all of the above requirements. There is 1) a specification and it is co
 CNI is a software project, but the centerpiece of that project is the set of interfaces documented in the specification. Those interfaces live in the CNI Project. By the principle of interoperability, the existence of multiple CNI implementations is encouraged. Those implementations will use the interface definition from CNI as the source of truth. 
 ​
 ### Example: OCI
-​
+​ 
 OCI is not in the CNCF. The OCI project operates according to the norms of international standards bodies and has a clear primary goal: to provide a document that describes a standard set of interfaces for a container runtime and label this as 1.0. Nothing else is required.
 ​
 ## We Want a Comprehensive Toolchain
 ​
 _Principle: users don’t need to look beyond the CNCF for cloud native app tooling_
-​
+​ 
 Grand vision: CNCF should identify, facilitate and promote a *complete toolset* for cloud native applications and stacks at scales from small to large. This enables customers to adopt good tools faster, and be less at risk of confusion and doubt.
 ​
 We need to flesh out the portfolio of projects needed by users to succeed with cloud-native computing. It's pretty clear where remaining gaps in the project portfolio are. We should try to fill some of those, and at least document the rest. We can make more WGs to help with a few of those. (Note that “detailed architecture and stack” can be a Project)
