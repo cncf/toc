@@ -144,6 +144,4 @@ _Principle: Our top priority is helping high-quality high-velocity cloud native 
  
 We want to be able to say that CNCF is a net positive for big & small projects. Doing so requires more coordination with project leads. 
 ​
-Projects needs include test automation and CI, cloud resources to test on, clear documentation, per-project marketing & evangelism, roadmaps for interop, advice from experts on governance and scalability. And we need to make sure project contributors see what value they are getting & are not afraid to ask for help!
-​
-Prose
+Project needs may include test automation and CI, cloud resources to test on, clear documentation, per-project marketing & evangelism, roadmaps for interop, and advice from experts on governance and scalability. And we need to make sure project contributors see what value they are getting & are not afraid to ask for help!
