@@ -39,7 +39,7 @@ The TOC has created the following working groups to investigate and discuss the 
 | [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [2nd and 4th Tue every month at 8AM PT](https://zoom.us/j/199346891) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
 | [Networking](https://github.com/cncf/wg-networking) | Ken Owens        |  [1st and 3rd Tue every month at 9AM PT](https://zoom.us/j/999936723)                                      | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2M_-K5n67_zTdrPh_PtTKFC)
 | [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/j/893315636)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
-| [Storage](https://github.com/cncf/wg-storage)    | Ben Hindman      |  [3rd Wed of every month at 8AM PT](https://zoom.us/j/158580155)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2NoiNaLVZxr-ERc1ifKP7n6)
+| [Storage](https://github.com/cncf/wg-storage)    | Ben Hindman      |  [1st and 3rd Wed every month at 8AM PT](https://zoom.us/j/158580155)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2NoiNaLVZxr-ERc1ifKP7n6)
 
 All meetings are on the public CNCF calendar: https://goo.gl/eyutah
 
