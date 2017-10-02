@@ -20,7 +20,7 @@ Current TOC [Members](https://github.com/cncf/toc#members) and their terms are:
 * Brian Grant (term: 2 years - start date: 3/17/2016)
 * Benjamin Hindman (term: 3 years - start date: 1/29/2016)
 * Solomon Hykes (term: 2 years - start date: 3/17/2016)
-* Elissa Murphy (term: 2 years - start date: 3/11/2016)
+* Sam Lambert (term: 16 months - start date: 10/2/2017)
 * Ken Owens (term: 3 years - start date: 1/29/2016)
 * Alexis Richardson (term: 3 years - start date: 1/29/2016)
 
