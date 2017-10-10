@@ -21,7 +21,7 @@ Now that CNCF has been active for over a year we want to start writing down what
 
 _Principle: If it can be on a modern public source code control system, then it can be a project. And we put projects front and center._
 
-CNCF is a home for several kinds of “project” where community collaboration furthers the goals of the CNCF community:
+CNCF is a home for several kinds of “projects” where community collaboration furthers the goals of the CNCF community:
 1. Open source software projects, e.g., Prometheus.
 1. Projects that develop interface and/or schema specifications (e.g., [CNI](https://github.com/containernetworking/cni), reference implementations, conformance tests, adaptors, etc., in order to facilitate interoperability.
 1. Reference materials, such as architectures, stacks, guides, docs.
