@@ -81,6 +81,8 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [CNI](https://github.com/containernetworking/cni)|Ken Owens|[5/3/17](https://docs.google.com/presentation/d/1flQXWp1NQg_FdiLQ0MzKw5QACIwR1i939a-FD74imxk/edit#slide=id.g217fd51990_0_140)|[5/23/17](https://www.cncf.io/blog/2017/05/23/cncf-hosts-container-networking-interface-cni/)|Incubating
 [Envoy](https://github.com/envoyproxy/envoy)|Alexis Richardson|[8/15/17](https://goo.gl/iSP394)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-envoy/)|Incubating
 [Jaeger](https://github.com/jaegertracing/jaeger)|Bryan Cantrill|[8/1/17](https://goo.gl/ehtgts)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-jaeger/)|Incubating
+[Notary](https://github.com/docker/notary)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
+[TUF](https://github.com/theupdateframework)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 
 ## Scheduled Community Presentations
 
@@ -150,7 +152,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * [May 3rd, 2017](https://docs.google.com/presentation/d/1flQXWp1NQg_FdiLQ0MzKw5QACIwR1i939a-FD74imxk/edit#slide=id.g217fd51990_0_140)
 * [May 16th, 2017](https://docs.google.com/presentation/d/1SHfBDI3YeyCTJ3ZrGoc0S4EmfHsUVW2jMmXmcYQe96E/edit?usp=sharing)
 * [June 6th, 2017](https://docs.google.com/presentation/d/1Lzy94UNzdSXkqZCvrwjkcChKpU8u2waDqGx_Sjy5eJ8/edit?usp=sharing)
-* [June 20th, 2017](https://docs.google.com/presentation/d/1MvCZytMQpTgGW4IvJ1cM0hvnIr8IowH7hFaeXJZ6cp4/edit#slide=id.gd5ae4e962_2_136)
+* [June 20th, 2017](https://goo.gl/6nmyDn)
 * [July 11th, 2017](https://docs.google.com/presentation/d/1bSP9UmxLP4gBu9kzxrqZCahDGS8JcsHFh1CawVtZOTY/edit#slide=id.gd5ae4e962_2_136)
 * [August 1st, 2017](https://goo.gl/ehtgts)
 * [August 15th, 2017](https://goo.gl/iSP394)
