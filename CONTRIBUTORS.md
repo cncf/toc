@@ -35,6 +35,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Dustin Kirkland, Canonical (kirkland@canonical.com)
 * Clinton	Kitson, Dell (Clinton.Kitson@dell.com)
 * Christopher Liljenstople, Tigera (cdl@asgaard.org)
+* Philip Lombardi, Datawire.io (plombardi@datawire.io)
 * Mark Peek, VMware	(markpeek@vmware.com)
 * Chase	Pettet, Wikimedia	(cpettet@wikimedia.org)
 * Ara	Pulido, Bitnami	(ara@bitnami.com)
