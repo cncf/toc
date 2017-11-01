@@ -49,6 +49,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Bassam Tabbara, Quantum	(bassam@tabbara.com)
 * Yong Tang, Infoblox (ytang@infoblox.com)
 * Xu Wang, Hyper (xu@hyper.sh)
+* Dan	Wilson, Concur	(danw@concur.com)
 * Bob	Wise, Samsung SDS	(bob@bobsplanet.com)
 * Lei	Zhang, HyperHQ (harryzhang@zju.edu.cn)
 * Cathy	Zhang, Huawei (cathy.h.zhang@huawei.com)
