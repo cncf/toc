@@ -36,7 +36,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Clinton	Kitson, Dell (Clinton.Kitson@dell.com)
 * Christopher Liljenstople, Tigera (cdl@asgaard.org)
 * Mark Peek, VMware	(markpeek@vmware.com)
-* Chase	Pettet, Wikimedia	(cpettet@wikimedia.org)
+* Chase	Pettet, Wikimedia	Foundation (cpettet@wikimedia.org)
 * Ara	Pulido, Bitnami	(ara@bitnami.com)
 * Gou	Rao, Portworx (gou@portworx.com)
 * Drew Rapenchuk, Bloomberg	(drapenchuk@bloomberg.net)
