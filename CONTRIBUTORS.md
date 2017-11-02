@@ -27,6 +27,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Gergely Csatari, Nokia (gergely.csatari@nokia.com)
 * Doug Davis, IBM (dug@us.ibm.com)
 * Lachlan	Evenson, Microsoft (lachlan.evenson@microsoft.com)
+* Louis Fourie, Huawei (louis.fourie@huawei.com)
 * Yaron Haviv, iguazio (yaronh@iguaz.io)
 * Quinton Hoole, Huawei (quinton.hoole@huawei.com)
 * Joseph Jacks, Independent	(jacks.joe@gmail.com)
