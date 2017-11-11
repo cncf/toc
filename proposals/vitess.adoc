@@ -1,0 +1,109 @@
+== Vitess
+
+*Name of project*: Vitess
+
+*Description*:
+
+Vitess is a database clustering system for horizontal scaling of MySQL. Using the terminology from the link:http://db.cs.cmu.edu/papers/2016/pavlo-newsql-sigmodrec2016.pdf[Pavlo and Aslett NewSQL survey article], Vitess is “sharding middleware”.  By encapsulating shard-routing logic, Vitess allows application code and database queries to remain agnostic to the distribution of data onto multiple shards. You can split and merge shards as your needs change, with an atomic cutover step that is performed in seconds. Vitess has been serving all YouTube database traffic since 2011, and has grown to encompass tens of thousands of MySQL nodes. It has also gained increasing adoption in the community with about fifteen companies currently in the pipeline, some of whom have already gone into production. For more details, see the link:http://vitess.io/overview/[Vitess overview].
+
+*Sponsor / Advisor from TOC*: Brian Grant <briangrant@google.com>
+
+*Unique Identifier*: vitess
+
+*License*: ALv2
+
+*Maturity Level:* Incubating
+
+*Source control repositories*: https://github.com/youtube/vitess
+
+*Initial Committers*:
+
+* Sugu Sougoumarane
+* Mike Solomon
+* Alain Jobart
+* Anthony Yeh
+* Michael Berlin
+
+*Infrastructure requirements*: CI, CNCF Cluster
+
+*Issue tracker*: https://github.com/youtube/vitess/issues
+
+*Mailing lists*
+
+* https://vitess.slack.com (see https://vitess.slackarchive.io)
+* https://groups.google.com/forum/#!forum/vitess
+
+*Website*: http://vitess.io
+
+*Release methodology and mechanics*
+
+The current release is v2.1.1. We use the link:http://semver.org/[semantic versioning] numbering system. The releases are announced using link:https://github.com/youtube/vitess/releases[github’s releases] feature and link:http://blog.vitess.io/2017/04/vitess-releases-version-21.html[through a blog post]. Additionally, a release involves tagging of a docker image and a Maven release of the Java client. The next major release changes the client protocols, and will be tagged 3.0.
+
+The master branch is kept strictly stable, and we encourage users to regularly pull and deploy from it, as YouTube does. Many users have adopted this approach.
+
+*Social media accounts*: N/A
+
+*Existing sponsorship*:
+
+* Google (lead)
+* Hubspot (many core contributions)
+* Slack (many core contributions)
+* Flipkart (Java client)
+* BetterCloud (TLS support)
+* Pixel Federation (PHP client)
+
+*Adopters*: Source: https://github.com/youtube/vitess/blob/master/ADOPTERS.md
+
+* Axon
+* BetterCloud
+* FlipKart
+* HubSpot
+* Nozzle
+* Pixel Federation
+* Quiz of Kings
+* Slack
+* Square
+* Stitch Labs
+* YouTube
+
+*Statement on alignment with CNCF mission*:
+
+NoSQL storage systems were designed to scale out, but focus on unstructured and non-transactional data. However, it is complex to migrate or build applications that truly need transactions, indexes, and joins over structured data using NoSQL. NewSQL storage systems such as Vitess fill that gap, and enable more applications to migrate to cloud-native architectures and to scale out. Vitess was built to be cloud-native for use within Google, and can link:http://vitess.io/getting-started/[run on Kubernetes].
+
+*External Dependencies*: Full list: https://github.com/youtube/vitess/blob/master/vendor/vendor.json. Top level orgs:
+
+* cloud.google.com/
+* github.com/aws/aws-sdk-go/
+* github.com/beorn7/perks/quantile
+* github.com/coreos/
+* github.com/davecgh/go-spew
+* github.com/ghodss/yaml
+* github.com/go-ini/ini
+* github.com/golang
+* github.com/googleapis/gax-go
+* github.com/gopherjs/gopherjs/js
+* github.com/gorilla/websocket
+* github.com/grpc-ecosystem
+* github.com/hashicorp/
+* github.com/influxdb/influxdb/client
+* github.com/jmespath/go-jmespath
+* github.com/jtolds/gls
+* github.com/mattn/go-runewidth
+* github.com/matttproud/golang_protobuf_extensions
+* github.com/minio/minio-go
+* github.com/olekukonko/tablewriter
+* github.com/pborman/uuid
+* github.com/pmezard/go-difflib
+* github.com/prometheus
+* github.com/samuel/go-zookeeper/zk
+* github.com/satori/go.uuid
+* github.com/sergi/go-diff
+* github.com/smartystreets
+* github.com/stretchr/testify
+* github.com/tchap/go-patricia
+* github.com/yudai/gojsondiff
+* github.com/yudai/golcs
+* golang.org/x
+* google.golang.org/
+
+*Other Contributors*: https://github.com/youtube/vitess/graphs/contributors
