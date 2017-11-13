@@ -1,0 +1,90 @@
+== istio
+
+*Name of project*: Istio +
+
+*Description*: +
+
+As monolithic applications are decomposed into microservices, software
+teams have to worry about the challenges inherent in integrating services
+in distributed systems: they must account for service discovery, load
+balancing, fault tolerance, end-to-end monitoring, dynamic routing for
+feature experimentation, and perhaps most important of all, compliance and
+security. +
+
+Istio eases the monolith to microservice transformation and the
+microservice application architecture by systemically injecting proxies
+into the network paths between services. The proxies form a service mesh
+that is dynamically configured and managed by the Istio control
+plane. Istio adds traffic management to microservices and creates a basis
+for value-add capabilities like security, monitoring, routing, connectivity
+management and policy. +
+
+Using the Istio control plane, developers can experiment with different
+features in production, deploy canary releases, and improve the reliability
+of their services without impacting the system as a whole. Operators gain
+fleet-wide visibility through extensive metrics and traces without having
+to rely on developers to emit metrics in their application code. They can
+improve end-to-end security, compliance, and the availability of services
+with minimal disruption to the development process. +
+
+The control plane is agnostic of the underlying orchestration platform
+(e.g., Kubernetes, Mesos, Cloud Foundry, Nomad, or even just VMs and bare
+metal), as well as the proxy (e.g., Envoy, Linkerd, Nginx, etc.). The
+control plane thus creates a basis for platform independent value-add
+capabilities like security, monitoring, routing, connectivity management
+and policy enforcement, in addition to easing migration across cloud
+providers and orchestration platforms. +
+
+In summary, the service mesh weaved and managed by Istio provides a uniform
+platform-independent way to connect, manage, and secure microservices. +
+
+*Sponsor / Advisor from TOC*: Brian Grant +
+*Preferred maturity level*: incubating +
+*Unique identifier*: Istio +
+*License*: Apache 2.0 +
+*Source control repositories*:
+
+  * https://github.com/istio/istio[https://github.com/istio/istio] +
+  * https://github.com/istio/api[https://github.com/istio/api] +
+  * https://github.com/istio/proxy[https://github.com/istio/proxy] +
+
+*Infrastructure requirements (CI / CNCF Cluster)*: Circle CI. We would like to have access to a paid Circle CI cluster. +
+*Issue tracker*: https://github.com/istio/istio/issues[https://github.com/istio/istio/issues] +
+*Mailing lists*: istio-users@googlegroups.com, istio-dev@googlegroups.com +
+*Website*: https://istio.io[https://istio.io] +
+
+*Release methodology and mechanics*: We currently follow quarterly minor releases with intermediate patch
+releases. We are moving to monthly minor releases. +
+
+*Social media accounts*: +
+
+ * Twitter: @IstioMesh
+ * YouTube: https://www.youtube.com/channel/UC-zVlo1F3mUbExQ96fABWcQ[https://www.youtube.com/channel/UC-zVlo1F3mUbExQ96fABWcQ]
+ * Google Analytics for www.Isito.io[www.Isito.io]
+
+ Please take over all of these.
+
+*Original contributors*: IBM & Google
+
+*Contributor statistics*: 71 contributors (most activity from IBM/Google).
+2 orgs with commit access (IBM/Google). Other contributors include
+
+ * RedHat
+ * Tigera
+ * Yahoo!
+ * Apprenda
+ * Concur
+ * AT&T
+
+*External Dependencies*: https://app.fossa.io/reports/b63a43e7-4dac-49ae-ae8f-589ecc73355b[https://app.fossa.io/reports/b63a43e7-4dac-49ae-ae8f-589ecc73355b] +
+In addition to Envoyproxy[https://github.com/envoyproxy/envoy/blob/master/LICENSE] +
+
+*Statement on alignment with CNCF mission*: Istio feature set is essential to a
+cloud-native containerized microservice application running on multiple platforms.
+
+*Additional CNCF asks*:
+
+ * _Governance advice_: General access to staff to provide advice and help
+   optimize and document our governance process.
+ * _Security processes_: Istio does not currently have any kind of CVE process.
+   Would like help formalizing this process, figuring out pre-announce lists, etc.
