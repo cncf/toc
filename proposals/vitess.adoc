@@ -72,38 +72,38 @@ NoSQL storage systems were designed to scale out, but focus on unstructured and 
 
 *External Dependencies*: Full list: https://github.com/youtube/vitess/blob/master/vendor/vendor.json. Top level orgs:
 
-* cloud.google.com/
-* github.com/aws/aws-sdk-go/
-* github.com/beorn7/perks/quantile
-* github.com/coreos/
-* github.com/davecgh/go-spew
-* github.com/ghodss/yaml
-* github.com/go-ini/ini
-* github.com/golang
-* github.com/googleapis/gax-go
-* github.com/gopherjs/gopherjs/js
-* github.com/gorilla/websocket
-* github.com/grpc-ecosystem
-* github.com/hashicorp/
-* github.com/influxdb/influxdb/client
-* github.com/jmespath/go-jmespath
-* github.com/jtolds/gls
-* github.com/mattn/go-runewidth
-* github.com/matttproud/golang_protobuf_extensions
-* github.com/minio/minio-go
-* github.com/olekukonko/tablewriter
-* github.com/pborman/uuid
-* github.com/pmezard/go-difflib
-* github.com/prometheus
-* github.com/samuel/go-zookeeper/zk
-* github.com/satori/go.uuid
-* github.com/sergi/go-diff
-* github.com/smartystreets
-* github.com/stretchr/testify
-* github.com/tchap/go-patricia
-* github.com/yudai/gojsondiff
-* github.com/yudai/golcs
-* golang.org/x
-* google.golang.org/
+* cloud.google.com/ - ALv2
+* github.com/aws/aws-sdk-go/ - ALv2
+* github.com/beorn7/perks - MIT
+* github.com/coreos/ - ALv2
+* github.com/davecgh/go-spew - ISC (https://github.com/davecgh/go-spew/blob/master/LICENSE)
+* github.com/ghodss/yaml - MIT
+* github.com/go-ini/ini - ALv2
+* github.com/golang - ALv2
+* github.com/googleapis/gax-go - BSD3
+* github.com/gopherjs/gopherjs - BSD2
+* github.com/gorilla/websocket - BSD2
+* github.com/grpc-ecosystem - ALv2
+* github.com/hashicorp/ - MPL2 (https://github.com/hashicorp/consul/blob/master/LICENSE)
+* github.com/influxdb/influxdb - MIT
+* github.com/jmespath/go-jmespath - ALv2
+* github.com/jtolds/gls - MIT
+* github.com/mattn/go-runewidth - MIT
+* github.com/matttproud/golang_protobuf_extensions - ALv2
+* github.com/minio/minio-go - ALv2
+* github.com/olekukonko/tablewriter - MIT
+* github.com/pborman/uuid - BSD3
+* github.com/pmezard/go-difflib - BSD3
+* github.com/prometheus - ALv2
+* github.com/samuel/go-zookeeper - BSD3
+* github.com/satori/go.uuid - MIT
+* github.com/sergi/go-diff - MIT
+* github.com/smartystreets - MIT with addendum (https://github.com/smartystreets/assertions/blob/master/LICENSE.md)
+* github.com/stretchr/testify - MIT
+* github.com/tchap/go-patricia - MIT
+* github.com/yudai/gojsondiff - MIT with addendum (https://github.com/yudai/gojsondiff/blob/master/LICENSE)
+* github.com/yudai/golcs - MIT
+* golang.org/x - BSD3
+* google.golang.org/ - BSD3
 
 *Other Contributors*: https://github.com/youtube/vitess/graphs/contributors
