@@ -161,3 +161,5 @@ If you're interested in presenting at a TOC call about your project, please open
 * [Setember 19th, 2017](https://goo.gl/cgx9j2)
 * [October 3rd, 2017](https://goo.gl/nsYz4j)
 * [October 17th, 2017](https://goo.gl/hH6fS4)
+* [November 7th, 2017](https://goo.gl/LoKyV5)
+* [November 14th, 2017](https://goo.gl/vKbawR)
