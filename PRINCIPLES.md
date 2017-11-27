@@ -1,7 +1,7 @@
-# CNCF TOC Goals and Principles
+# CNCF TOC Principles
 
-_Version 0.9, September 17, 2017  
-Approved by TOC on: TBD  
+_Version 1.0, Nov 27, 2017  
+Approved by TOC on: Nov 27, 2017
 Approved by GB on: TBD_  
 
 [TOC Operating Principles](#toc-operating-principles)  
