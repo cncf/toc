@@ -116,7 +116,8 @@ If you're interested in presenting at a TOC call about your project, please open
 * **October 17, 2017**: TOC Principles / GB (Todd Moore) and OpenMetrics Update
 * **November 7, 2017**: Istio, SPIFFE.io and Serverless WG
 * **November 14, 2017**: [OPA](http://www.openpolicyagent.org/) and Storage WG/CSI and Project Graduation/Health Reviews (Kubernetes, Prometheus)
-* **December 5, 2017**: Rook
+* **December 5, 2017**: Rook, OpenOverlay
+* **December 7, 2017**: KubeCon/CloudNativeCon F2F
 * **January 16, 2017**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
@@ -163,3 +164,5 @@ If you're interested in presenting at a TOC call about your project, please open
 * [October 17th, 2017](https://goo.gl/hH6fS4)
 * [November 7th, 2017](https://goo.gl/LoKyV5)
 * [November 14th, 2017](https://goo.gl/vKbawR)
+* [December 5th, 2017](https://goo.gl/77pMFY)
+* [December 7th, 2017](https://goo.gl/Ugo7F9)
