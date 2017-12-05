@@ -2,7 +2,7 @@
 
 _Version 1.0, Nov 27, 2017  
 Approved by TOC on: Nov 27, 2017
-Approved by GB on: TBD_  
+Approved by GB on: Dec 5, 2017  
 
 [TOC Operating Principles](#toc-operating-principles)  
 [We Are Project-Centric](#we-are-project-centric)  
