@@ -21,7 +21,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Alex Chircop, StorageOS (alex.chircop@storageos.com)
 * Andy Santosa, Ebay (asantosa@ebay.com)
 * Ara	Pulido, Bitnami	(ara@bitnami.com)
-* Bassam Tabbara, Quantum	(bassam@tabbara.com)
+* Bassam Tabbara, Upbound	(bassam@upbound.io)
 * Bob	Wise, Samsung SDS	(bob@bobsplanet.com)
 * Cathy	Zhang, Huawei (cathy.h.zhang@huawei.com)
 * Chase	Pettet, Wikimedia	Foundation (cpettet@wikimedia.org)
