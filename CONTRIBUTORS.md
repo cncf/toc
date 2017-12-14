@@ -29,6 +29,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Clinton	Kitson, Dell (Clinton.Kitson@dell.com)
 * Dan	Wilson, Concur	(danw@concur.com)
 * Darren Ratcliffe, Atos (darren.ratcliffe@atos.net)
+* Deyuan Deng, Caicloud (deyuan@caicloud.io)
 * Doug Davis, IBM (dug@us.ibm.com)
 * Drew Rapenchuk, Bloomberg	(drapenchuk@bloomberg.net)
 * Dustin Kirkland, Canonical (kirkland@canonical.com)
