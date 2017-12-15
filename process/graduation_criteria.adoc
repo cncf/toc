@@ -13,6 +13,7 @@ To be accepted to the inception stage, a project must:
  * Agree to transfer any relevant trademarks to CNCF and to assist in filing for any relevant unregistered ones. This means, for example, that Example, Inc. would need to call their microservices tool OpenExample (or similar) and support CNCF receiving a trademark for OpenExample, while Example could remain a trademark of Example, Inc. This assignment will be reversed if the project does not remain in the CNCF, as described below. Note that no patent or copyright assignment is necessary because the ASL 2.0 license provides sufficient protections for other developers and users.
  * Every 12 months, each inception stage project will come to a vote with the TOC. A supermajority vote is required to renew a project at inception stage for another 12 months or move it to incubating or graduated stage. If there is not a supermajority for any of these options, using the fallback voting process defined above, the project is not renewed.
  * In the case of an inception stage project that is not renewed with CNCF, the trademark will be returned to the project maintainers or an organization they designate.
+ * Already have a user base, size negotiable, that was grown organically.
 
 === Incubating Stage
 
