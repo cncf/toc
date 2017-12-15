@@ -118,7 +118,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **November 14, 2017**: [OPA](http://www.openpolicyagent.org/) and Storage WG/CSI and Project Graduation/Health Reviews (Kubernetes, Prometheus)
 * **December 5, 2017**: Rook, OpenOverlay
 * **December 7, 2017**: KubeCon/CloudNativeCon F2F
-* **January 16, 2017**: CSI/Storage WG Readout
+* **January 16, 2018**: CSI/Storage WG Readout
 * **Feb 6, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
