@@ -33,7 +33,7 @@ validity are ideally resolved, helps to foster this consensus.
 
 ### Where to start
 
-* make sure you're clear on the [TOC Principles](https://github.com/cncf/toc/blob/toc-principles/principles.md),
+* make sure you're clear on the [TOC Principles](https://github.com/cncf/toc/blob/master/PRINCIPLES.md),
   the [project proposal process](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc),
   the [graduation criteria](https://www.cncf.io/projects/graduation-criteria/)
   and [desired cloud native properties](https://www.cncf.io/about/charter/) are.  The project sponsor (a member
