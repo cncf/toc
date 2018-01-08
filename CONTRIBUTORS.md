@@ -52,6 +52,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Philip Lombardi, Datawire.io (plombardi@datawire.io)
 * Quinton Hoole, Huawei (quinton.hoole@huawei.com)
 * Randy	Abernethy, RX-M LLC (randy.abernethy@rx-m.com)
+* Reinaldo Penno, Cisco Systems (repenno@cisco.com)
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
 * Timothy Chen, Hyperpilot (tim@hyperpilot.io)
 * Xu Wang, Hyper (xu@hyper.sh)
