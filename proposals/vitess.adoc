@@ -68,7 +68,7 @@ The master branch is kept strictly stable, and we encourage users to regularly p
 
 *Statement on alignment with CNCF mission*:
 
-NoSQL storage systems were designed to scale out, but focus on unstructured and non-transactional data. However, it is complex to migrate or build applications that truly need transactions, indexes, and joins over structured data using NoSQL. NewSQL storage systems such as Vitess fill that gap, and enable more applications to migrate to cloud-native architectures and to scale out. Vitess was built to be cloud-native for use within Google, and can link:http://vitess.io/getting-started/[run on Kubernetes].
+NoSQL storage systems were designed to scale out, but focus on unstructured and non-transactional data. However, it is complex to migrate or build applications that truly need transactions, indexes, and joins over structured data using NoSQL. Database orchestration systems such as Vitess fill that gap, and enable more applications to migrate to cloud-native architectures and to scale out. Vitess was built to be cloud-native for use within Google, and can link:http://vitess.io/getting-started/[run on Kubernetes].
 
 *External Dependencies*: Full list: https://github.com/youtube/vitess/blob/master/vendor/vendor.json. Top level orgs:
 
