@@ -119,7 +119,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **December 5, 2017**: Rook, OpenOverlay
 * **December 7, 2017**: KubeCon/CloudNativeCon F2F
 * **January 16, 2018**: CSI/Storage WG Readout
-* **Feb 6, 2018**: TBD
+* **Feb 6, 2018**: NATS
 * **Feb 20, 2018**: CoreDNS Inception Project Review
 * **Mar 6, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
