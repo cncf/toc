@@ -84,6 +84,10 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [Notary](https://github.com/docker/notary)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 [TUF](https://github.com/theupdateframework)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 
+## Website Guidelines
+
+CNCF has the following [guidelines](https://www.cncf.io/projects/website-guidelines/) for the websites of our projects.
+
 ## Scheduled Community Presentations
 
 If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. We can schedule a maximum of two community presentations per TOC meeting.
