@@ -53,6 +53,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Quinton Hoole, Huawei (quinton.hoole@huawei.com)
 * Randy	Abernethy, RX-M LLC (randy.abernethy@rx-m.com)
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
+* Sarah Allen, Google (sarahallen@google.com)
 * Timothy Chen, Hyperpilot (tim@hyperpilot.io)
 * Xu Wang, Hyper (xu@hyper.sh)
 * Yaron Haviv, iguazio (yaronh@iguaz.io)
