@@ -38,6 +38,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Gergely Csatari, Nokia (gergely.csatari@nokia.com)
 * Ghe	Rivero, Independent (ghe.rivero@gmail.com)
 * Gou	Rao, Portworx (gou@portworx.com)
+* Jeyappragash JJ, Independent	(pragashjj@gmail.com)
 * Jonghyuk Jong Choi, NCSoft (jongchoi@ncsoft.com)
 * Joseph Jacks, Independent	(jacks.joe@gmail.com)
 * Josh Bernstein, Dell (Joshua.Bernstein@dell.com)
@@ -59,5 +60,4 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Yaron Haviv, iguazio (yaronh@iguaz.io)
 * Yong Tang, Infoblox (ytang@infoblox.com)
 * Yuri Shkuro, Uber	(ys@uber.com)
-* Jeyappragash JJ, Independent	(pragashjj@gmail.com)
 
