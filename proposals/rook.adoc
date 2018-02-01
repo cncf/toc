@@ -1,0 +1,155 @@
+== Rook
+
+*Name of project:* Rook
+
+*Description:*
+
+Rook is an open source orchestrator for distributed storage systems running in cloud native environments.
+
+Distributed storage systems are inherently complex -- they define strong consistency and durability guarantees that must hold even when scaling, upgrading, and running maintenance operations. They require careful provisioning and balancing of resources to optimize access to data and maintain durability. It's common for such systems to require dedicated administrators.
+
+Rook turns distributed storage systems into self-managing, self-scaling, and self-healing storage services. It does this by automating the tasks of a storage administrator including deployment, bootstrapping, configuration, provisioning, scaling, upgrading, migration, disaster recovery, monitoring, and resource management. Rook leverages the power of the underlying cloud-native container management, scheduling, and orchestration platform to perform its duties.
+
+Rook integrates deeply into cloud native environments leveraging extension points and providing a seamless experience for scheduling, lifecycle management, resource management, security, monitoring, and user experience.
+
+Rook is currently in alpha state and has focused initially on orchestrating Ceph on-top of Kubernetes. Ceph is a distributed storage system that provides file, block and object storage and is deployed in large scale production clusters. Rook is planning to be production ready by Dec'17 for block storage deployments on-top of Kubernetes.
+
+With community participation, Rook plans to add support for other storage systems beyond Ceph and other cloud native environments beyond Kubernetes. The logic for orchestrating storage systems can be reused across storage backends. Also having common abstractions, packaging, and integrations reduces the burden of introducing storage back-ends and improves the overall experience.
+
+*Statement on alignment with CNCF mission:*
+
+Rook is well-aligned with CNCF's goals and mission of promoting cloud-native computing. Rook adheres to the core principles of cloud-native systems: container packaged, micro-services oriented, and dynamically managed.
+
+Rook is complimentary to other CNCF projects like Kubernetes and Prometheus. It integrates and extends Kubernetes and has a strong alignment on design and architecture. Rook is itself implemented as a controller (reconciling desired and actual state), and uses the Kubernetes API extensively to perform its functions. Rook exposes monitoring and instrumentation via Prometheus.
+
+Rook brings distributed storage services into cloud-native environments beyond what has been done to date with plugins (including CSI). We believe that by running storage systems on-top of cloud-native environments we will be a step closer to the multi-cloud vision.
+
+*Sponsor / Advisor from TOC:* Benjamin Hindman
+
+*Unique identifier:* rook
+
+*Preferred maturity level:* inception
+
+*License:* Apache License v2.0
+
+*Source control repositories:* https://github.com/rook/rook
+
+*External Dependencies:*
+
+Golang package dependencies:
+
+* https://github.com/coreos/pkg (Apache v2.0)
+* https://github.com/go-ini/ini (Apache v2.0)
+* https://github.com/google/uuid (BSD 3-Clause)
+* https://github.com/gorilla/mux (Apache v2.0)
+* https://github.com/jbw976/go-ps (Apache v2.0)
+* https://github.com/kubernetes/api (Apache v2.0)
+* https://github.com/kubernetes/apiextensions-apiserver (Apache v2.0)
+* https://github.com/kubernetes/apimachinery (Apache v2.0)
+* https://github.com/kubernetes/apiserver (Apache v2.0)
+* https://github.com/kubernetes/client-go (Apache v2.0)
+* https://github.com/kubernetes/code-generator (Apache v2.0)
+* https://github.com/kubernetes/kubernetes (Apache v2.0)
+* https://github.com/kubernetes/utils (Apache v2.0)
+* https://github.com/prometheus/client_golang (Apache v2.0)
+* https://github.com/rook/operator-kit (Apache v2.0)
+* https://github.com/spf13/cobra (Apache v2.0)
+* https://github.com/spf13/pflag (BSD 3-Clause)
+
+Binary dependencies packaged into Rook containers:
+
+* Ceph (mostly LGPL 2.0) - https://github.com/ceph/ceph
+
+*Initial Committers:*
+
+* Bassam Tabbara (Upbound)
+* Jared Watts (Quantum)
+* Travis Nielsen (Quantum)
+
+Current list is on https://github.com/rook/rook/blob/master/MAINTAINERS. Maintainers are updated according to the following rules https://github.com/rook/rook/blob/master/MAINTAINERS_RULES.md
+
+*Infrastructure requests (CI / CNCF Cluster):*
+
+CI currently at https://jenkins.rook.io but could move to CNCF CI.
+
+Planning to use CNCF cluster for integration and performance testing at scale.
+
+*Communication Channels:*
+
+* Slack: https://rook-slackin.herokuapp.com
+* Gitter: https://gitter.im/rook/rook (deprecated)
+* Google Groups: https://groups.google.com/forum/#!forum/rook-dev
+* Email: mailto:info@rook.io[info@rook.io]
+
+*Issue tracker:* https://github.com/rook/rook/issues
+
+*Website:* https://rook.io
+
+*Release methodology and mechanics:*
+
+Major releases roughly every two months, minor releases as needed.
+
+*Social media accounts:*
+
+* Twitter: @rook_io
+
+*Existing sponsorship*: Quantum and Upbound
+
+Statement from Quantum: In 2016 as part of ongoing product development work we identified the need for richer implementations of storage technologies in Cloud Native systems. As this work progressed we felt that it was evolving into a core component of the platform architecture and chose to open-source our work. Since then Quantum has continued to invest in both the Rook technologies and launching Rook as a vibrant open source project. Internally we are utilizing Rook as well as many other Cloud Native technologies to build systems relevant to our businesses. We firmly believe that a vibrant Rook project and ecosystem is in our and the community’s best interests. As the project continues to grow our role will become less significant in terms of strategy and direction and we think this evolution and adopting well established governance principles will strengthen the project.
+
+*Community size:*
+
+* Rook was open sourced Nov'2016
+* 1785+ stars
+* 40+ contributors
+* 155+ forks
+* 135+ on slack
+* 600K+ container pulls (quay.io), 50K+ container pulls (docker)
+
+*Comparison with gluster-kubernetes and ceph-container*:
+
+Existing approaches to running distributed storage systems like Ceph and Gluster focus primarily on packaging in containers, initial deployment, and bootstrapping. There is no central controller that is responsible for ongoing operations, dynamic management and maintenance of such storage systems. While some of these operations can be handled by the orchestration platform itself (for example, scaling through stateful-sets in Kubernetes) the approach only covers a small subset of the administration tasks and does not take into account the inherent constraints and guarantees of the backend storage system. For example, growing a cluster in Ceph not only requires scheduling more storage nodes but also updating the storage topology to optimize data access and improve durability all without breaking consistency guarantees. Rook's storage controller is responsible for ongoing and dynamic management of the storage system and it does so in a storage backend specific way.
+
+Rook introduces new abstractions for storage clusters, pools, volumes, volume-attachements, snapshots and others that are extension points of the cloud-native environment. This leads to a deeper integration into cloud-native environments. Other approaches like gluster-kubernetes and ceph-container rely on their own storage API for management and integrate primarily at the volume plugin level, and not the storage service level.
+
+Finally Rook is designed to run primarily as an application of cloud-native systems minimizing (and eventually eliminating all dependencies) on the host platform. For example, Rook runs using the Kubernetes networking, whereas other approach like ceph-container require host networking.
+
+*Comparison with minio*:
+
+Minio is a distributed object store that is designed for cloud applications. Minio focuses on simplicity of deployment and operations. Rook could orchestrate Minio just like it does with Ceph's object store (rgw). Some of the operation tasks that Rook would perform include initial deployment, dealing with erasure-coding and multi-tenancy constraints, locking and dsync quorum, topology, and healing storage nodes on loss events. Also Rook exposes object store abstractions that could be used by minio for a deeper integration into cloud-native environments like Kubernetes.
+
+*Production usage*:
+
+Rook is in alpha and has little production usage. The first stable release of Rook is expected in Dec'2017. Ceph is production ready and is deployed in large-scale production environments. There are a number of companies and users that have deployed Rook in testing and staging environments (on-premise and public cloud), and a few that have deployed it in production (see quotes below). Quantum Corp. (the current sponsor of the Rook project) plans to deploy Rook within commercial enterprise storage appliances early next year.
+
+
+[quote, Brandon Philips, CTO - CoreOS]
+CoreOS helps companies ensure their critical application infrastructure is able to run free from cloud lock-in with CoreOS Tectonic and Kubernetes APIs. We are encouraged to see storage systems, like Rook, emerging that build directly upon those APIs to deliver a flexible cloud-agnostic storage solution.
+
+
+[quote, Sasha Klizhentas, CTO - Gravitational]
+Gravitational team is excited to be early adopters of Rook. Rook's solid foundation makes it the leader among emerging cloud-native storage solutions.
+
+
+[quote, Hunter Nield, CTO - Acaleph]
+At Acaleph, we're excited for a true cloud-native storage platform. Having experienced the complexity of running Ceph on Kubernetes, Rook provides the stability and power of an established software-defined storage solution with ease of use of native Kubernetes integration. With the latest release of Rook, we're looking to implement as a core part of our storage platform.
+
+
+[quote, Matt Baldwin, CTO - StackPointCloud]
+I have been watching adoption of Rook grow within our 6,000+ base of Kubernetes users. We have worked with users to prototype Rook in their Deployments. As it approaches a production release, I have plans to include and support it as a part of the official Stackpoint.io offering.
+
+
+[quote, Bryan Zubrod, Founder - Zubrod Farms]
+On my farm it's important to make efficient use of resources I already have. With Rook's Kubernetes-native design I am able to use commodity hardware without sacrificing redundancy for my storage or availability of my services. That's why Rook fits perfectly in my farm's metrics and automation systems, and I follow its development closely.
+
+
+[quote, Jason Vigil, Software Engineer - Dell/EMC]
+Rook looks like a simple and easy solution for persistent storage in a Kubernetes environment. I plan to use it for upcoming projects.
+
+
+[quote, Lucas Käldström, Founder - luxas labs]
+I'm really excited to see Rook evolve to a fully production-grade system. I've used and contributed to it from an early stage and can't wait to use it in even more prod systems
+
+
+[quote, Patrick Stadler, Software Engineer - Liip]
+Utilizing hyper-converged systems with storage tightly coupled to computational resources reduces cost and operational complexity of infrastructure. This is especially true for small scale cluster deployments. The biggest challenge with Kubernetes on bare metal is providing distributed block storage. Although proprietary solutions exist, there's been a lack of well-backed open source solutions. Rook has the potential to fill this void.

@@ -36,10 +36,10 @@ The TOC has created the following working groups to investigate and discuss the 
 
 | Working Group | Chair            | Meeting Time                          | Minutes/Recordings |
 |---------------|------------------|---------------------------------------|--------------------|
-| [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [2nd and 4th Tue every month at 8AM PT](https://zoom.us/j/199346891) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
-| [Networking](https://github.com/cncf/wg-networking) | Ken Owens        |  [1st and 3rd Tue every month at 9AM PT](https://zoom.us/j/999936723)                                      | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2M_-K5n67_zTdrPh_PtTKFC)
-| [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/j/893315636)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
-| [Storage](https://github.com/cncf/wg-storage)    | Ben Hindman      |  [2nd and 4th Wed every month at 8AM PT](https://zoom.us/j/158580155)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2NoiNaLVZxr-ERc1ifKP7n6)
+| [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [2nd and 4th Tue every month at 8AM PT](https://zoom.us/my/cncfciwg) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
+| [Networking](https://github.com/cncf/wg-networking) | Ken Owens        |  [1st and 3rd Tue every month at 9AM PT](https://zoom.us/my/cncfnetworkingwg)                                      | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2M_-K5n67_zTdrPh_PtTKFC)
+| [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/my/cncfserverlesswg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
+| [Storage](https://github.com/cncf/wg-storage)    | Ben Hindman      |  [2nd and 4th Wed every month at 8AM PT](https://zoom.us/my/cncfstoragewg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2NoiNaLVZxr-ERc1ifKP7n6)
 
 All meetings are on the public CNCF calendar: https://goo.gl/eyutah
 
@@ -83,6 +83,11 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [Jaeger](https://github.com/jaegertracing/jaeger)|Bryan Cantrill|[8/1/17](https://goo.gl/ehtgts)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-jaeger/)|Incubating
 [Notary](https://github.com/docker/notary)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 [TUF](https://github.com/theupdateframework)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
+[rook](https://github.com/rook)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[1/29/18](https://www.cncf.io/blog/2018/01/29/cncf-host-rook-project-cloud-native-storage-capabilities)|Inception
+
+## Website Guidelines
+
+CNCF has the following [guidelines](https://www.cncf.io/projects/website-guidelines/) for the websites of our projects.
 
 ## Scheduled Community Presentations
 
@@ -116,8 +121,12 @@ If you're interested in presenting at a TOC call about your project, please open
 * **October 17, 2017**: TOC Principles / GB (Todd Moore) and OpenMetrics Update
 * **November 7, 2017**: Istio, SPIFFE.io and Serverless WG
 * **November 14, 2017**: [OPA](http://www.openpolicyagent.org/) and Storage WG/CSI and Project Graduation/Health Reviews (Kubernetes, Prometheus)
-* **December 5, 2017**: Rook
-* **January 16, 2017**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **December 5, 2017**: Rook, OpenOverlay
+* **December 7, 2017**: KubeCon/CloudNativeCon F2F
+* **January 16, 2018**: CSI/Storage WG Readout
+* **Feb 6, 2018**: NATS
+* **Feb 20, 2018**: CoreDNS Inception Project Review
+* **Mar 6, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
 
@@ -163,3 +172,6 @@ If you're interested in presenting at a TOC call about your project, please open
 * [October 17th, 2017](https://goo.gl/hH6fS4)
 * [November 7th, 2017](https://goo.gl/LoKyV5)
 * [November 14th, 2017](https://goo.gl/vKbawR)
+* [December 5th, 2017](https://goo.gl/77pMFY)
+* [December 7th, 2017](https://goo.gl/Ugo7F9)
+* [January 16th, 2018](https://goo.gl/5wBe3d)
