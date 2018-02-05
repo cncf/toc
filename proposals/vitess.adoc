@@ -1,0 +1,109 @@
+== Vitess
+
+*Name of project*: Vitess
+
+*Description*:
+
+Vitess is a database clustering system for horizontal scaling of MySQL. It orchestrates management of MySQL instances and intermediates requests to the cluster. Using the terminology from the link:http://db.cs.cmu.edu/papers/2016/pavlo-newsql-sigmodrec2016.pdf[Pavlo and Aslett NewSQL survey article], Vitess is “sharding middleware”. By encapsulating shard-routing logic, Vitess allows application code and database queries to remain agnostic to the distribution of data onto multiple shards. You can split and merge shards as your needs change, with an atomic cutover step that is performed in seconds. Vitess also supports and automatically handles various scenarios, including master failover and data backups. Vitess has been serving all YouTube database traffic since 2011, and has grown to encompass tens of thousands of MySQL nodes. It has also gained increasing adoption in the community with about fifteen companies currently in the pipeline, some of whom have already gone into production. For more details, see the link:http://vitess.io/overview/[Vitess overview].
+
+*Sponsor / Advisor from TOC*: Brian Grant <briangrant@google.com>
+
+*Unique Identifier*: vitess
+
+*License*: ALv2
+
+*Maturity Level:* Incubating
+
+*Source control repositories*: https://github.com/youtube/vitess
+
+*Initial Committers*:
+
+* Sugu Sougoumarane
+* Mike Solomon
+* Alain Jobart
+* Anthony Yeh
+* Michael Berlin
+
+*Infrastructure requirements*: CI, CNCF Cluster
+
+*Issue tracker*: https://github.com/youtube/vitess/issues
+
+*Mailing lists*
+
+* https://vitess.slack.com (see https://vitess.slackarchive.io)
+* https://groups.google.com/forum/#!forum/vitess
+
+*Website*: http://vitess.io
+
+*Release methodology and mechanics*
+
+The current release is v2.1.1. We use the link:http://semver.org/[semantic versioning] numbering system. The releases are announced using link:https://github.com/youtube/vitess/releases[github’s releases] feature and link:http://blog.vitess.io/2017/04/vitess-releases-version-21.html[through a blog post]. Additionally, a release involves tagging of a docker image and a Maven release of the Java client. The next major release changes the client protocols, and will be tagged 3.0.
+
+The master branch is kept strictly stable, and we encourage users to regularly pull and deploy from it, as YouTube does. Many users have adopted this approach.
+
+*Social media accounts*: N/A
+
+*Existing sponsorship*:
+
+* Google (lead)
+* Hubspot (many core contributions)
+* Slack (many core contributions)
+* Flipkart (Java client)
+* BetterCloud (TLS support)
+* Pixel Federation (PHP client)
+
+*Adopters*: Source: https://github.com/youtube/vitess/blob/master/ADOPTERS.md
+
+* Axon
+* BetterCloud
+* FlipKart
+* HubSpot
+* Nozzle
+* Pixel Federation
+* Quiz of Kings
+* Slack
+* Square
+* Stitch Labs
+* YouTube
+
+*Statement on alignment with CNCF mission*:
+
+NoSQL storage systems were designed to scale out, but focus on unstructured and non-transactional data. However, it is complex to migrate or build applications that truly need transactions, indexes, and joins over structured data using NoSQL. Database orchestration systems such as Vitess fill that gap, and enable more applications to migrate to cloud-native architectures and to scale out. Vitess was built to be cloud-native for use within Google, and can link:http://vitess.io/getting-started/[run on Kubernetes].
+
+*External Dependencies*: Full list: https://github.com/youtube/vitess/blob/master/vendor/vendor.json. Top level orgs:
+
+* cloud.google.com/ - ALv2
+* github.com/aws/aws-sdk-go/ - ALv2
+* github.com/beorn7/perks - MIT
+* github.com/coreos/ - ALv2
+* github.com/davecgh/go-spew - ISC (https://github.com/davecgh/go-spew/blob/master/LICENSE)
+* github.com/ghodss/yaml - MIT
+* github.com/go-ini/ini - ALv2
+* github.com/golang - ALv2
+* github.com/googleapis/gax-go - BSD3
+* github.com/gopherjs/gopherjs - BSD2
+* github.com/gorilla/websocket - BSD2
+* github.com/grpc-ecosystem - ALv2
+* github.com/hashicorp/ - MPL2 (https://github.com/hashicorp/consul/blob/master/LICENSE)
+* github.com/influxdb/influxdb - MIT
+* github.com/jmespath/go-jmespath - ALv2
+* github.com/jtolds/gls - MIT
+* github.com/mattn/go-runewidth - MIT
+* github.com/matttproud/golang_protobuf_extensions - ALv2
+* github.com/minio/minio-go - ALv2
+* github.com/olekukonko/tablewriter - MIT
+* github.com/pborman/uuid - BSD3
+* github.com/pmezard/go-difflib - BSD3
+* github.com/prometheus - ALv2
+* github.com/samuel/go-zookeeper - BSD3
+* github.com/satori/go.uuid - MIT
+* github.com/sergi/go-diff - MIT
+* github.com/smartystreets - MIT with addendum (https://github.com/smartystreets/assertions/blob/master/LICENSE.md)
+* github.com/stretchr/testify - MIT
+* github.com/tchap/go-patricia - MIT
+* github.com/yudai/gojsondiff - MIT with addendum (https://github.com/yudai/gojsondiff/blob/master/LICENSE)
+* github.com/yudai/golcs - MIT
+* golang.org/x - BSD3
+* google.golang.org/ - BSD3
+
+*Other Contributors*: https://github.com/youtube/vitess/graphs/contributors
