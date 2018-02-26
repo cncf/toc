@@ -75,7 +75,7 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [Fluentd](http://www.fluentd.org/)|Brian Grant|[8/3/16](https://docs.google.com/presentation/d/1S79MNv3E2aG8nuZJFJ0XMSumf7jnKozN3vdrivCH77U/edit?usp=sharing)|[11/8/16](https://www.cncf.io/blog/2016/12/08/fluentd-cloud-native-logging)|Incubating
 [Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[1/23/17](https://www.cncf.io/blog/2017/01/23/linkerd-project-joins-cloud-native-computing-foundation)|Inception
 [gRPC](http://www.grpc.io/)|Brian Grant|[10/19/16](https://docs.google.com/presentation/d/16mNYaqgd7BaV50OnbcuQ1zRHpWoUKhL3XHvCJwEm8CE/edit#slide=id.g185c09339a_23_106)|[2/16/17](https://www.cncf.io/blog/2017/03/01/cloud-native-computing-foundation-host-grpc-google)|Incubating
-[CoreDNS](https://coredns.io/)|Jonathan Boulle|[8/17/16](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)|[2/27/17](https://www.cncf.io/blog/2017/03/02/cloud-native-computing-foundation-becomes-steward-service-naming-discovery-project-coredns)|Inception
+[CoreDNS](https://coredns.io/)|Jonathan Boulle|[8/17/16](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)|[2/27/17](https://www.cncf.io/blog/2017/03/02/cloud-native-computing-foundation-becomes-steward-service-naming-discovery-project-coredns)|Incubating
 [containerd](https://containerd.io/)|Brian Grant|[3/15/17](https://docs.google.com/presentation/d/1qmGsmARyMhRLwbFWG7LXJSsDHm45nqZ_QtBv5SnQL54/edit?usp=sharing)|[3/29/17](https://www.cncf.io/announcement/2017/03/29/containerd-joins-cloud-native-computing-foundation/)|Incubating
 [rkt](http://rkt.io)|Brian Grant|[3/15/17](https://docs.google.com/presentation/d/1KzA58_Zz30mKKzeLuSvXLh63aIC75KRdAOTw4PJ_10g/edit?usp=sharing)|[3/29/17](https://www.cncf.io/announcement/2017/03/29/cloud-native-computing-foundation-becomes-home-pod-native-container-engine-project-rkt/)|Incubating
 [CNI](https://github.com/containernetworking/cni)|Ken Owens|[5/3/17](https://docs.google.com/presentation/d/1flQXWp1NQg_FdiLQ0MzKw5QACIwR1i939a-FD74imxk/edit#slide=id.g217fd51990_0_140)|[5/23/17](https://www.cncf.io/blog/2017/05/23/cncf-hosts-container-networking-interface-cni/)|Incubating
@@ -84,7 +84,7 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [Notary](https://github.com/docker/notary)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 [TUF](https://github.com/theupdateframework)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 [rook](https://github.com/rook)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[1/29/18](https://www.cncf.io/blog/2018/01/29/cncf-host-rook-project-cloud-native-storage-capabilities)|Inception
-[Vitess](https://github.com/vitess)|Brian Grant|[4/19/17](https://goo.gl/6nmyDn)|[2/5/18](https://www.cncf.io/blog/2018/02/05/cncf-host-vitess/)|Incubation
+[Vitess](https://github.com/vitess)|Brian Grant|[4/19/17](https://goo.gl/6nmyDn)|[2/5/18](https://www.cncf.io/blog/2018/02/05/cncf-host-vitess/)|Incubating
 
 ## Website Guidelines
 
