@@ -12,7 +12,7 @@ This proposal is to move all Inception level projects to the Sandbox and provide
 
 ## What is the CNCF Sandbox
 
-There’s been a desire within the CNCF TOC and community to provide further clarity around project maturity levels in CNCF. 
+There’s been a desire within the CNCF TOC and community to provide further clarity around project maturity levels in CNCF.
 
 When we initially created the Inception project level, it was intended to provide an avenue for technically interesting early-stage projects that were beneficial to the cloud-native community.  We are transitioning Inception projects to the Sandbox. Sandbox projects should be early-stage projects that the CNCF TOC believes warrant experimentation. The Sandbox should provide a beneficial, neutral home for such projects, in order to foster collaborative development. We aspire to make the Sandbox the preferred path for early-stage projects to enter the CNCF. More mature projects can continue to jump directly to incubation, but as the cloud-native ecosystem grows, we expect to see proportionally more early-stage projects.
 
@@ -20,12 +20,9 @@ When we initially created the Inception project level, it was intended to provid
 
 When we say that Sandbox projects are "early stage" this covers the following examples:
 
-1. New projects that are designed to extend one or more CNCF projects with functionality or interoperability libraries.  Eg. in the case of Kubernetes, the Sandbox is intended as a home for projects that would previously have [started in the Kubernetes Incubator](https://github.com/kubernetes/community/blob/master/incubator.md).
-
-2. Independent projects that fit the CNCF mission and provide potential for a novel approach to existing functional areas, or are an attempt to meet an unfulfilled need
-
+1. New projects that are designed to extend one or more CNCF projects with functionality or interoperability libraries. In the case of Kubernetes, the Sandbox is intended as a home for projects that would previously have [started in the Kubernetes Incubator](https://github.com/kubernetes/community/blob/master/incubator.md).
+2. Independent projects that fit the CNCF mission and provide potential for a novel approach to existing functional areas (or are an attempt to meet an unfulfilled need)
 3. Projects commissioned or sanctioned by the CNCF, including initial code for CNCF WG collaborations, and "experimental" projects
-
 4. Any project that realistically intends to join CNCF Incubation in future and wishes to lay the foundations for that
 
 ## Roadmap for Sandbox Projects
@@ -48,36 +45,34 @@ Therefore the advantages of being in the Sandbox apply prior to application for 
 
 1. That a project has a legally neutral home that is stable and known
 
-2. And that a project *may *attain Incubation-level success faster: 
+2. And that a project may attain Incubation-level success faster:
 
     1. Due to public visibility and association with the CNCF mission
-
     2. Through alignment with other CNCF projects (if and only if desired)
-
     3. Via CNCF Service Desk etc.
 
 3. The CNCF will help projects adopt good principles of governance
 
 ### Neutral Home
 
-A neutral home for your project increases the willingness of developers from other companies and independent developers to collaborate, contribute, and become committers. Neutrality requires that projects contribute their trademark to CNCF so that: 
+A neutral home for your project increases the willingness of developers from other companies and independent developers to collaborate, contribute, and become committers. Neutrality requires that projects contribute their trademark to CNCF so that:
 
-* no company is favored over any other
+* No company is favored over any other
 * CNCF ensures project governance is transparent and fair for everyone.
 
 ### Clarifying Marketing Expectations
 
-To date the CNCF has invested in marketing to educate users and grow awareness of cloud native purpose and benefits, to foster community, and to accelerate production use of projects.  
+All open source projects in some sense enjoy a level of promotion from community, user enthusiasm, sponsoring organisations and so on. Please note that in this section we discuss marketing as a measurable financial investment into CNCF projects from the CNCF marketing budget and staff.
 
-Investments fall into at least three types: 
+To date the CNCF has invested in marketing to educate users and grow awareness of cloud native purpose and benefits, to foster community, and to accelerate production use of projects.  These investments fall into at least three types:
 
 * Developer community support: hangouts, meetups, events and (some) conferences
 * Digital marketing: help with online content, interactive tutorials, webinars, and social
-* Product marketing: conference promotion, certification, case studies, AR/PR  
+* Product marketing: conference promotion, landscape, certification, case studies, AR/PR
 
 Since the Sandbox is for early stage, sandbox projects will receive minimal marketing support from the foundation.  The Sandbox group as a whole may be promoted from time to time.
 
-The CNCF will lean towards developer community support and the CNCF service desk, to help discovery and initial steps towards CNCF Incubation.  There will only be limited CNCF investment in Digital and Product marketing for individual Sandbox projects, and these should be factual and informative.  
+The CNCF will lean towards developer community support and the CNCF service desk, to help discovery and initial steps towards CNCF Incubation.  There will only be limited CNCF investment in Digital and Product marketing for individual Sandbox projects, and CNCF-funded content should be factual and informative.
 
 Some key points:
 
