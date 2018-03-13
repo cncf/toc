@@ -42,6 +42,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Ian Crosby, Container Solutions (ian.crosby@container-solutions.com)
 * Jeyappragash JJ, Independent (pragashjj@gmail.com)
 * Jonghyuk Jong Choi, NCSoft (jongchoi@ncsoft.com)
+* Joe Beda, Heptio (joe@heptio.com)
 * Joseph Jacks, Independent	(jacks.joe@gmail.com)
 * Josh Bernstein, Dell (Joshua.Bernstein@dell.com)
 * Justin Cormack, Docker (justin.cormack@docker.com)
