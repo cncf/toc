@@ -32,7 +32,7 @@ Since the initial release in July 2016, OPA’s mission has been to provide a po
 across the stack. OPA’s roadmap for the next 12 months includes improvements to the language, integration with Google’s CEL, expansion 
 of the standard policy library, as well as continued hardening and performance optimization.
 
-**Sponsor from TOC:** Ken Owens
+**Sponsor from TOC:** Ken Owens, Brian Grant
 
 **Preferred Maturity Level:** Inception
 
