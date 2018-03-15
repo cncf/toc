@@ -1,0 +1,405 @@
+== NATS Proposal
+
+*Name of project:* NATS
+
+*Description:* As developers and operators of modern cloud native
+infrastructure have come to realize, there are limitations to using
+traditional forms of systems communications (eg. REST, legacy
+messaging, or traditional enterprise messaging) and applying these to
+a cloud native environment.
+
+=== Why does CNCF need messaging?
+
+Software has matured from large monolith applications to event driven
+distributed applications and microservices comprised of many
+components that need to communicate.  Messaging
+(https://en.wikipedia.org/wiki/Message-oriented_middleware[message oriented middleware]) 
+has evolved to meet these communication needs, and NATS was created
+specifically for next generation cloud native applications.
+
+=== NATS Overview
+
+NATS is a mature, seven year old messaging technology, built from the
+ground up to be cloud native, implementing the publish/subscribe,
+request/reply and distributed queue patterns to help create a
+performant and secure method of InterProcess Communication (IPC).
+Simplicity, performance, scalability, and security constitute the core
+tenets of NATS.  For more detail of how these values inform the design
+of NATS, including features that are intentionally absent, refer to
+https://github.com/nats-io/roadmap/blob/master/architecture/DESIGN.md[“NATS Design Considerations”].
+
+NATS is based on a client-server architecture with servers that can be
+clustered to operate as a single entity. Clients connect to these
+clusters to exchange data encapsulated in messages.  An overview of
+the NATS architecture can be found in
+https://github.com/nats-io/roadmap/blob/master/architecture/ARCHITECTURE.md[“Understanding NATS Architecture”].
+
+Core NATS was designed around fire and forget, or *at-most-once*
+semantics, similar to how neurons fire in the brain.  However, some
+use cases may require a guarantee of delivery, and *at-least-once*
+pattern utilizing storage and replay of data. In this case the
+optional streaming component of NATS can be deployed and utilized.
+
+Most messaging systems do provide a mechanism to persist messages and
+ensure message delivery.  NATS does this through log based streaming;
+a way to store and replay messages. Streaming subscribers can retrieve
+messages published when they were offline, or replay a series of
+messages.  Streaming inherently provides a buffer in the distributed
+application ecosystem, increasing stability and matching consumer
+ability to receive messages.  This allows applications to offload
+local message caching and buffering logic into NATS Streaming, and
+ensures a message will be delivered.
+
+NATS supports both of these modes of delivery, *at-most-once*, and
+*at-least-once*.  At-most-once means that a message will be sent to a
+subscriber only one time, and can be lost in flight.  It is up to the
+application, or the system, to ensure data has been delivered,
+resending messages as necessary.  This is sufficient for most modern
+cloud native applications since for example NATS based Request/Response 
+can be used to ensure that a message has been delivered and processed,
+thus providing an end-to-end delivery guarantee. At-least-once
+delivery, provided through NATS Streaming, means a message will always
+be delivered, but may be delivered more than once.  It is worth noting
+that there is another delivery mode, *exactly-once*, which guarantees
+a message will always be delivered once and only once. This mode is
+not supported by NATS.
+
+==== Trade-offs
+
+As stated, NATS' design goals include simplicity and performance.  In
+order to achieve this, there are a number of notable features NATS
+does not provide.  Some of these include:
+ 
+ * Message transactions
+ * Message schemas
+ * Last will and testament messages
+ * Message groups (e.g. JMSXGroupID)
+ * Exactly once delivery
+ * https://github.com/nats-io/roadmap/blob/master/architecture/DESIGN.md#minimizing-state[Cluster consistency]
+
+While features like these are valuable to users, they add complexity,
+and thus overhead.  A simpler feature set ultimately translates into a
+simple and direct fastpath that a message takes, allowing NATS to
+optimize for raw performance, availability to all users, and to
+maintain a small memory footprint.
+
+=== Messaging Patterns
+
+Messaging systems typically provide a number of usage patterns. The
+major patterns NATS provides includes publish/subscribe, queue
+subscriptions, and request/reply.  These basic patterns supported by
+NATS provide a foundation to build a scalable and resilient
+application ecosystem in a cloud environment.  NATS goes further,
+providing additional features facilitating cloud based deployments.
+More information about this can be found in <<Appendix A>>.
+
+=== The NATS Protocol
+
+Core NATS has a lightweight plain text protocol with a handful of
+verbs.  The protocol is easy to learn - plain text simplifies
+development and debugging and facilitates contributions of new client
+libraries.  Being very terse, there are only a few extra bytes of
+overhead per message found when compared to binary protocols.
+
+The NATS Streaming protocol, being more complex, is a binary protocol
+implemented through protobuf, layered above the NATS protocol.
+
+NATS has a versioning plan in place for handling both breaking and 
+non-breaking changes in protocol, described 
+https://github.com/nats-io/roadmap/blob/master/VERSIONING.md[here].
+
+=== Cloud-Native Features of NATS
+Being built from the ground up to be cloud-native, NATS has a number of 
+cloud-friendly features.  
+
+==== High Availability and Scalability augmented with Auto-Discovery
+NATS allows users to dynamically scale server cluster sizes with zero
+downtime and no configuration changes.  Updated cluster topology
+information is propagated in real time throughout the NATS server
+nodes and clients, allowing existing servers to automatically route
+with new servers and clients to automatically update their list of
+available NATS servers.  This means you cluster a few seed servers in
+your cloud, then add additional NATS servers (referencing the seed
+servers) as needed - no downtime or reconfiguration of existing
+servers or clients is needed.
+
+==== Resiliency
+NATS prioritizes the health and availability of the system as a whole
+rather than attempting to service an individual client or server,
+creating a foundation for stable and resilient systems.  In
+traditional messaging systems, when a consumer is slow to process
+messages, resources can be used trying to accommodate it at the
+expense of the entire system, potentially leading to instability and
+errors.  Core NATS identifies a slow consumer and drops messages, or
+the consumer's connection entirely, to prevent back-pressure affecting
+the entire system and other users.
+
+NATS Streaming, built upon NATS, has this same resiliency but takes it
+a step further to avoid the problem of slow consumers entirely in that
+it is self-metering to the throughput rate of each consumer.
+
+==== No Dependencies and Low Overhead
+
+NATS servers are extremely lightweight, with very low configuration
+needs, making them ideal for use in cloud environments.  The server
+operates as a single binary with no prerequisites or runtime
+dependencies. The NATS server docker image is less than 10MB, utilizes
+little memory, and spins up very quickly allowing NATS to work well in
+container orchestration systems.
+
+=== Messaging Alternatives
+
+Messaging is simply a form of IPC - there are other ways to transfer
+information, for example using a coordination mechanism such as a
+distributed hash table or a database - these may be more appropriate
+depending on the use case.  Generally though, messaging provides
+better features in terms of diverse messaging patterns, scalability
+and throughput when compared to other forms of IPC, and does not
+require as much additional custom tooling and error handling.  We
+address a specific question asked of us,
+"Why not use etcd?" in <<Appendix B>>.
+
+=== NATS Feature Comparison
+
+This comparison is intended simply to compare features of NATS with
+Apache Kafka and RabbitMQ, two other messaging projects.  It is not
+intended to favor or position one project over another.  Any
+corrections are welcome.
+
+.Feature Comparison
+|===
+|Area |NATS |Apache Kafka |RabbitMQ
+
+|Language & Platform Coverage
+|Core NATS:  48 known client types, 11 supported by maintainers, 18 contributed by the community. NATS Streaming: 6 client types supported by maintainers, 3 contributed by the community. NATS servers can be compiled on architectures supported by golang.  NATS provides binary distributions for darwin-amd64, linux-306, linux-amd64, linux-arm6, linux-arm64, linux-arm7, windows-386, and windows-amd6, and server  installations through homebrew, chocolatey, and go.
+|18 client types supported across the community and by confluent. Kafka servers can run on platforms supporting java - very wide support.
+|At least 10 client platforms footnote:[http://www.rabbitmq.com/devtools.html] that are maintainer supported with over 50 community supported client types. Servers are supported on the following platforms: Linux Windows, NT through 10 Windows Server 2003 through 201, Mac OS X, Solaris, FreeBSD, TRU64, VxWorks The server may be run on many other platforms where erlang can run, but may not officially supported.
+
+|Delivery Guarantees
+|At most once, at least once
+|At most once, at least once, exactly once footnote:[https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/]
+|At most once, at least once
+
+|Operational Complexity
+|Little configuration for both server and clients, easy to install, auto discovery reduces configuration.
+|Requires several configured components, zookeeper, brokers, clients must maintain some state.
+|Should work out of the box.
+
+|Security
+|TLS, Authentication and Subject based Authorization in a reloadable configuration file.
+|Supports Kerberos and TLS.  Supports JAAS and an out-of-box authorizer implementation that uses ZooKeeper to store connection and subject. 
+|TLS, SASL, and Pluggable authentication.
+
+|HA/FT
+|Core NATS supports full mesh clustering to provide high availability to clients.  NATS streaming has warm failover backup servers.  Full data replication is in progress.
+|Fully replicated cluster members coordinated via zookeeper.
+|Clustering Support with full data replication via mirrors.
+
+|Monitoring
+|Configuration is command line and configuration file, which can be reloaded with changes at runtime
+|Kafka has a number of managements tools and consoles including Confluent Control Center, Kafkat, Kafka Web Console, Kafka Offset Monitor.
+|CLI tools, a plugin-based management system with dashboards and third party tools.
+
+|Management
+|Configuration is command line and configuration file, which can be reloaded with changes at runtime.
+|Kafka has a number of managements tools and consoles including Confluent Control Center, Kafkat, Kafka Web Console, Kafka Offset Monitor.
+|CLI tools, a plugin-based management system with dashboards and third party tools.
+
+|Integrations
+|NATS supports a NATS Connector Framework with a Redis Connector, Apache Spark, Apache Flink, CoreOS, Elasticsearch, Prometheus, Telegraf, Logrus, Fluent Bit, Fluentd
+|Kafka has a large number of integrations in their ecosystem, including stream processing (Storm, Samza, Flink), Hadoop, database (JDBC, Oracle Golden Gate), Search and Query (ElasticSearch, Hive), and a variety of logging and other integrations.
+|RabbitMQ has a rich set of plugins, including protocols (MQTT, STOMP), websockets, and various authorization and authentication plugins.
+
+|===
+
+==== Performance
+We feel NATS performance is industry leading. However, to our knowledge there 
+has not been a third party benchmark made public that includes NATS, Kafka, 
+and RabbitMQ. We feel strongly that benchmarks by third party are unbiased 
+and widely accepted.
+
+Here are two third party benchmarks to reference:
+
+** http://bravenewgeek.com/dissecting-message-queues/[Dissecting Message Queues] comparing NATS and Kafka.
+** https://cloudplatform.googleblog.com/2014/06/rabbitmq-on-google-compute-engine.html[RabbitMQ on Google Compute Engine].
+
+=== Notable Use Cases
+NATS, being as flexible as it is, covers a variety of use cases, from
+acting as a microservices control plane to publishing events on
+devices in IoT solutions.
+
+A few use cases include:
+
+* http://nats.io/blog/rapidloop-monitoring-with-opsdash-built-on-nats/[Rapidloop]: NATS as a microservices backplane, service discovery, and service orchestration.
+* http://nats.io/blog/how-clarifai-uses-nats-and-kubernetes-for-machine-learning/[Clarifai]: NATS as a microservices control plane in Kubernetes
+* http://nats.io/blog/nats-good-gotchas-awesome-features/[StorageOS]: NATS enabling a system event notification system.
+* http://nats.io/blog/serverless-functions-and-workflows-with-kubernetes-and-nats/[Fission.io]: Event sourcing for serverless functions implemented through NATS streaming.
+* http://nats.io/blog/nats-for-the-marionette-collective/[Choria/MCollective]:  Server orchestration implemented over NATS.
+* https://nats.io/blog/earthquakewarningnats/[A Circular World]: An early earthquake detection system utilizing NATS as the communications system with back end servers. 
+* http://nats.io/blog/nats-on-autopilot/[Joyent]: Sensor data aggregation implemented through NATS streaming.
+* http://weave.works[Weaveworks]: General Pub/Sub and simple queue based routing within Weave Cloud SaaS, alongside K8s.
+
+
+=== Roadmap
+NATS intends to deliver some compelling additional functionality in the future,
+refer to our https://github.com/nats-io/roadmap[roadmap].
+
+=== Additional Resources
+For additional information about NATS, please visit
+http://nats.io/documentation/, and a good slideshow about NATS
+messaging and the problems it can solve can be found in
+https://www.slideshare.net/Apcera/simple-solutions-for-complex-problems[“Simple Solutions for Complex Problems”].
+
+
+*Sponsor / Advisor from the TOC:* Alexis Richardson
+
+*Preferred Maturity Level:* Incubating
+
+*License:* MIT (Intend to change to Apache 2.0 in the near future)
+
+*Source control repositories:* https://github.com/nats-io
+
+*Issue Tracker:* These are currently tracked via the various server and client
+repositories for NATS Server and NATS Streaming. For example, 
+https://github.com/nats-io/gnatsd/issues for NATS Server. This has currently 
+served us very well, although if there is a preferred tracking system CNCF use, 
+we would be interested in discussing.
+
+*Website:* https://NATS.io
+
+*Release Methodology and Mechanics:*  We currently do numbered releases for
+major updates 3-4 times per year. We include the highest priority items from
+our roadmap as well as the user community’s wishlist and strive for code
+coverage of >80% for client APIs, and >90% for server code.
+
+*Social Media Accounts:*
+
+* Twitter: https://twitter.com/nats_io
+* Google Groups: https://groups.google.com/forum/#!forum/natsio
+* Slideshare: https://www.slideshare.net/nats_io/presentations
+* Reddit: https://www.reddit.com/r/NATS_io/
+* Slack: (currently by invite, with ~550 members: http://bit.ly/2DMdR6G)
+
+*Existing project sponsorship:* Synadia
+
+*Contributor Statistics:*
+
+* NATS Server and NATS Streaming: 43 external contributors distributed across dozens of companies, spanning a variety of industry segments.
+* NATS Server and NATS Streaming Clients: Over 100 contributors distributed across dozens of companies
+
+*Sample Adopters:* Apcera, Apporeto, Clarifai, Comcast, General Electric (GE),
+Greta.io, CloudFoundry, HTC, Samsung, Netlify, Pivotal, Platform9, Sensay,
+Workiva, VMware.
+
+*Sample Integrators:*
+
+* *Functions as a Service:* OpenFaaS, Fission.io, Storage, Minio, StorageOS
+* *Cloud Computing, Monitoring and Tooling:* Pivotal, VMware, Hemera, RapidLoop, Spindoc
+* *Event Gateways:* Apache Camel
+
+*Statement on Alignment with CNCF mission:* Our team believes NATS to be a
+great fit for the CNCF. We believe that the CNCF also recognizes this, having
+been in discussions for some time for NATS to be contributed, and we are
+interested in making that a reality. As the CNCF’s mission is to “create and
+drive the adoption of a new computing paradigm that is optimized for modern
+distributed systems environments capable of scaling to tens of thousands of
+self healing multi-tenant nodes,” we believe NATS to be a core enabling
+technology for this. This has also been validated by developers working on
+cloud native systems already, as NATS has been widely chosen over traditional
+communication methods and protocols for distributed systems.
+
+Moreover, NATS has very strong existing synergy and inertia with other CNCF
+projects, and is used heavily in conjunction with projects like: Kubernetes,
+Prometheus, gRPC, Fluentd, Linkerd, and Containerd to name a few. The broad
+client coverage, and simplicity of the protocol will make supporting and
+integrating with future cloud native systems and paradigms straight forward
+as well.
+
+*Additional CNCF asks:*
+
+. *Governance advice:* General access to staff to provide advice and help
+optimize and document our governance process
+. *General help managing contribution process going forward:* We do not 
+currently have a CLA, nor do we require developers making contributions 
+to sign anything. We would like to find a straightforward process that 
+meets the CNCF’s requirements - but also that is not overly burdensome 
+for developers to interact with.
+
+=== Appendices
+
+=== Appendix A
+
+*Messaging Patterns in NATS*
+
+Messaging systems typically provide a number of usage patterns. The major
+patterns NATS provides include the following:
+
+===== Publish/Subscribe
+Messaging systems that support the publish/subscribe paradigm offer a
+key benefit: decoupling of applications through subjects (also called
+topics).  Applications establish a connection to the broker, then
+subscribe to various topics and begin receiving messages on that topic
+regardless of the location or number of publishers producing data.
+Any interested subscriber receives messages published on that topic.
+This allows scalability and a loose coupling of publishers and
+subscribers.  With this dynamic topology, any publisher or subscriber
+can move across network nodes without affecting the rest of the
+system - a boon to microservices in the cloud.
+
+===== Queue Subscribers (Load Balancing)
+NATS can be described as a layer 7 load balancer - it routes
+application data based on message data, the subject, which is provided
+by the producing application.  In discussing load balancing specific
+to NATS we are referring to the competing consumer pattern in the form
+of queue subscribers.  In this pattern, the NATS server distributes
+messages randomly amongst multiple subscribers working together to
+each individually process messages from a single virtual “queue”. For
+example, one might run several identical applications queue subscribed
+on the same subject.  The NATS server (or streaming server) will
+distribute this message to one subscriber in the group, allowing for
+distribution of workload amongst multiple instances of the
+application.  In some cases this can be preferable to layer 4 load
+balancing because network traffic can be directed through use of the
+subject namespace - applications balancing the workload can move or
+scale with no additional configuration, although it may not be as
+performant as level 4 load balancing.
+
+===== Request / Reply Pattern Support
+NATS supports request/reply through use of unique subjects, still allowing for
+a loose coupling of a requestor and replier(s).  The request reply pattern
+involves sending a request message, and expecting a reply.  Often times the
+application will block until the reply is received.
+
+=== Appendix B
+
+==== Why not use etcd?
+
+NATS is designed to deliver application data in a distributed system.
+NATS does this by packaging application data in a message and sending
+it to endpoints.  Various messaging patterns (request reply,
+publish/subscribe, distributed queues) are supported to communicate
+with individual consumers or to fan out and send one message to many
+consumers.  It is up to the application to consider messages as atomic
+units of data, or as elements of a stream - real-time with Core NATS,
+or as a historical log of messages NATS streaming.
+
+Etcd was designed to solve the problem of distributed system
+coordination and metadata storage.  It persists data in a key value
+store, and supports many concurrency primitives including distributed
+locking and leadership election.  There are recipes for queueing using
+unique keys, as well as a gRpc API to stream updates - this is where
+we begin to see overlap.
+
+The fundamental decision of whether to use NATS or etcd can be based
+on a few factors.  One factor is the structure of data - whether your
+distributed application can benefit most from data structured as a
+key-value store versus a stream.  If your application benefits from
+key/value data storage, etcd is a better choice.  The second being the
+frequency of the updates.  Any update to a value in etcd is more
+expensive than a message sent in NATS due to the consistency
+guarantees etcd provides. If you have frequently updating values, or
+require an extremely high frequency of update, NATS is a better
+choice.
+
+NATS and etcd can also complement each other, with etcd for
+coordination and NATS for data distribution.
