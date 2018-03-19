@@ -129,7 +129,11 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Feb 6, 2018**: NATS
 * **Feb 20, 2018**: Sandbox + CoreDNS Inception Project Review
 * **Mar 6, 2018**: Sandbox + Graduation Reviews + Working Group Process
-* **Mar 20, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **Mar 20, 2018**: New Sandbox Projects + Working Group Process
+* **Apr 3, 2018**: Working Group Process
+* **Apr 17, 2018**: [Telepresence](https://github.com/cncf/toc/issues/99) + SAFE Working Group Proposal
+* **May 1, 2018**: CloudNativeCon/KubeCon Copenhagen (may skip)
+* **May 15, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
 
@@ -181,3 +185,4 @@ If you're interested in presenting at a TOC call about your project, please open
 * [February 6th, 2018](https://goo.gl/5WWA2Q)
 * [February 20th, 2018](https://goo.gl/Z5ytqu)
 * [March 6th, 2018](https://goo.gl/LcE3TC)
+* [March 20th, 2018](https://goo.gl/PpznT7)
