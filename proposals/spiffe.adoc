@@ -40,7 +40,7 @@ SPIRE’s 12-month roadmap is exciting and will deliver multiple features:
 
 *Sponsor / Advisor from TOC*: Brian Grant <briangrant@google.com>, Sam Lambert <samlambert@github.com>, Ken Owens <ken.owens@mastercard.com>
 
-*Preferred maturity level*: Inception
+*Preferred maturity level*: Sandbox
 
 *Unique Identifier*: spiffe
 
