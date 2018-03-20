@@ -34,7 +34,7 @@ of the standard policy library, as well as continued hardening and performance o
 
 **Sponsor from TOC:** Ken Owens, Brian Grant
 
-**Preferred Maturity Level:** Inception
+**Preferred Maturity Level:** Sandbox
 
 **License:** Apache License v2
 
