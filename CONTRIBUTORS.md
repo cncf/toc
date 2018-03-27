@@ -43,6 +43,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Jeyappragash JJ, Independent (pragashjj@gmail.com)
 * Joe Beda, Heptio (joe@heptio.com)
 * Jonghyuk Jong Choi, NCSoft (jongchoi@ncsoft.com)
+* Josef Adersberger, QAware (josef.adersberger@qaware.de)
 * Joseph Jacks, Independent	(jacks.joe@gmail.com)
 * Josh Bernstein, Dell (Joshua.Bernstein@dell.com)
 * Justin Cormack, Docker (justin.cormack@docker.com)
