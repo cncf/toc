@@ -1,0 +1,140 @@
+== SPIFFE
+
+*Name of project*: SPIFFE
+
+*Description*:
+
+With microservices, container orchestrators, and cloud computing leading to the deployment of increasingly dynamic and heterogeneous production environments, conventional network and application security practices struggle to scale under such distributed design patterns.
+
+Further, engineers must be involved in how applications are deployed and managed in such environments; and operations teams require deeper visibility into managed applications.
+
+As we move to a more evolved security stance, we must create technology frameworks that enable the aforementioned to play active roles in easily building secure, distributed applications. **SPIFFE (aka the “Secure Production Identity Framework for Everyone”)** is one such framework.
+
+SPIFFE comprises three (3) components:
+
+1. **SPIFFE ID**: A specification defining how workloads identify themselves to each other; such an ID is implemented as a Uniform Resource Identifier (URI).
+1. **SPIFFE Verifiable Identity Document (SVID)**: a specification for encoding SPIFFE IDs in a cryptographically-verifiable document.
+1. **SPIFFE Workload API**: An API specification to issue and/or retrieve SVIDs.
+
+The SPIFFE Workload API does not require a calling workload to 1) have a priori knowledge of its identity; or 2) possess authentication token(s) when calling the API.
+
+Implementations of the SPIFFE Workload API can 1) run on and across multiple platforms; and 2) identify running workloads at a process “and” kernel level, making it suitable for use with container schedulers like Kubernetes.
+
+Building upon work done at Bell Labs (Plan 9), Google (LOAS), and others, **SPIRE (aka the “SPIFFE Runtime Environment”)** is an open-source software implementation of SPIFFE that can bootstrap and issue cryptographically verifiable identity to workloads running on heterogeneous environments and organizational boundaries. SPIRE consists of two (2) components:
+
+1. **SPIRE Server**: provides a central registry of SPIFFE IDs, and the attestation policies describing which workloads can assume said identities. Attestation policies describe the properties a workload must exhibit to be assigned a SPIFFE ID, and are described as a mix of process attributes (such as a Linux UID, or Kubernetes service account) and infrastructure attributes (such as running in a Amazon EC2 instance with a particular tag).
+
+1. **SPIRE Agent**: runs on any kernel and exposes the local workload API to any process that needs a SPIFFE ID, key, and/or trust bundle. On *nix systems, this API is exposed locally through a Unix domain socket. By verifying the attributes of a calling workload, the workload API avoids requiring the workload to supply a secret in order to authenticate.
+
+SPIRE’s 12-month roadmap is exciting and will deliver multiple features:
+
+* Production readiness, including HA mode, versioned APIs, documented SLOs, >80% test coverage, and functional testing in release train.
+* Support for automatic bootstrapping and node attestation on public cloud platforms (Amazon Web Services, Microsoft Azure, and Google Cloud Platform).
+* Support for automatic bootstrapping and node attestation on virtualization platforms (VMWare and OpenStack).
+* Support for Microsoft Windows-based workloads.
+* SPIFFE Workload API client libraries in Go, C, Java, and Javascript, with support for TLS negotiation and JWT signing.
+* gRPC support for the SPIFFE Workload API.
+* SPIFFE Workload API certificate helpers for Linux and Windows.
+* A standards conformance test suite.
+* Secure introduction to popular products, including Lyft Envoy and Hashicorp Vault.
+
+*Sponsor / Advisor from TOC*: Brian Grant <briangrant@google.com>, Sam Lambert <samlambert@github.com>, Ken Owens <ken.owens@mastercard.com>
+
+*Preferred maturity level*: Sandbox
+
+*Unique Identifier*: spiffe
+
+*License*: ALv2
+
+*Source control repositories*: 
+
+SPIFFE has its own “top-level” link:https://github.com/spiffe[GitHub organization], within which resides the link:https://github.com/spiffe/spiffe[SPIFFE] and link:https://github.com/spiffe/spire[SPIRE] repositories.
+
+*Initial Committers*:
+
+This link:https://github.com/spiffe/spiffe/blob/master/CODEOWNERS[document] captures SPIFFE’s current committers, while this link:https://github.com/spiffe/spire/blob/master/CODEOWNERS[document] captures SPIRE’s current committers.
+
+*Infrastructure requirements*:
+
+SPIFFE's test suite and SPIRE’s continuous integration (CI) tests are currently executed on Travis-CI.org. Longer term, we seek access to the CNCF test cluster to automatically run functional, integration, and performance tests.
+
+*Issue tracker*:
+
+Issues are tracked with GitHub Issues feature link:https://github.com/spiffe/spiffe/issues[here].
+
+*Mailing lists*
+
+SPIFFE has the following primary mailing lists, nearly all of which were used primarily for ACLing meeting documents and calendar invites. The lists do have some activity, but the overwhelming activity occurs in SPIFFE’s link:https://spiffe.slack.com/[Slack] channel. More details can be found link:https://github.com/spiffe/spiffe#communications[here].
+
+* [Discussions] Developers & Contributors (link:https://groups.google.com/a/spiffe.io/forum/#!forum/dev-discussion[website]): used by The purpose of this Google Group is for SPIFFE developers and contributors to discuss design and implementation issues.
+
+* [Discussions] Users (link:https://groups.google.com/a/spiffe.io/forum/#!forum/user-discussion[website]): The purpose of this Groogle Group is to give feedback, ask questions, and interact with the SPIFFE community. You can also check out SPIFFE on GitHub.
+
+* [SIG] Components (link:https://groups.google.com/a/spiffe.io/forum/#!forum/sig-components[website]): The purpose of this Google Group is to discuss items related to the components and APIs tied to SPIFFE's reference implementation (SPIRE) and its architecture. Topics such as role of Node Agent vs. Cluster CA, API semantics, and others serve as good examples of what's to be discussed.
+
+* [SIG] Specification (link:https://groups.google.com/a/spiffe.io/forum/#!forum/sig-specification[website]): The purpose of this Google Group is to discuss items related to the SPIFFE specifications.
+
+* SPIFFE Announce (link:https://groups.google.com/a/spiffe.io/forum/#!forum/announce[website]): The purpose of this Google Group is to share community-wide announcements about SPIFFE and SPIRE.
+
+* Technical Steering Committee (link:https://groups.google.com/a/spiffe.io/forum/#!forum/tsc[website]): This is an ACLd distribution group for communications amongst members of the SPIFFE’s Technical Steering Committee.
+
+*Website*:
+
+SPIFFE’s link:https://www.spiffe.io/[website] is based on GitHub Pages. It primarily serves as a landing page for the project’s primary documents, and mostly redirects to the GitHub repositories.
+
+*Release methodology and mechanics*
+
+SPIRE operates on a 30 to 60-day release cadence, with releases marked with versioned git tags. RC-quality code is periodically tagged off of the master branch before the final release. RC and final releases include binaries for glibc-based Linux platforms. The SPIFFE standards themselves are currently unversioned.
+
+*Social media accounts*:
+
+SPIFFE’s only social media account is on link:https://twitter.com/spiffeio[Twitter].
+
+*Existing sponsorship*:
+
+link:https://www.scytale.io[Scytale, Inc.] and link:https://www.google.com[Google] currently serves as SPIFFE’s primary sponsors.
+
+*Contributor statistics*:
+
+The various SPIFFE projects currently have 16 active contributors from 8 organizations, including Scytale, Twilio, Square, Buoyant.io, and OvrClk. 11 contributors are granted the ability to commit changes across some or all of the codebase.
+
+*External Dependencies*: 
+
+SPIRE has the following build-time dependencies:
+
+* golang (BSD 3-clause)
+* go.uuid (MIT)
+* golang/protobuf (BSD 3-clause)
+* logrus (MIT)
+* go-grpc (Apache 2.0)
+* go-plugin (MPL-2.0)
+* hcl (MPL-2.0)
+* gorm (MIT)
+* gopsutil (BSD 3-clause)
+* go-hclog (MIT)
+* grpc-gateway (BSD 3-clause, Apache 2.0)
+* inflection (MIT)
+* go-bindata (CC0 1.0)
+* go-sqlite3 (MIT)
+* sqlite (public domain) 
+
+As a golang project, SPIRE has no special runtime dependencies.
+
+*Statement on alignment with CNCF mission*:
+
+We believe aligning on a common representation of workload identity, and proscribing best practices for identity issuance and delivery are critical for widespread adoption of cloud-native architectures. SPIFFE provides exactly this capability.
+
+We see organizations adopting SPIFFE in conjunction with other CNCF-sponsored projects to deliver robust and secure production systems. Concrete examples include:
+
+* Providing the basis for authentication between Kubernetes-hosted workloads, between workloads hosted across multiple Kubernetes clusters, and workloads hosted outside of Kubernetes.
+* Providing the basis of identity and establishing TLS between endpoints of a service mesh implemented with Envoy and/or Linkerd.
+* Authentication and TLS between gRPC servers and clients.
+* Identifying workloads when exporting telemetry to systems such as Prometheus, Jaeger, and fluentd, and establishing mTLS to the same.
+* Enforcing that only Notary-signed images be issued valid identities in production environments.
+
+*Additional CNCF asks*:
+
+* Public relations (including analyst relations and social media management)
+* Marketing (case studies, store)
+* Certification (expert certification, software conformance, training)
+* Legal (trademark, copyright, patents, licenses)
