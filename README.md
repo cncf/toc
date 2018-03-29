@@ -73,7 +73,7 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [Prometheus](https://prometheus.io/)|Alexis Richardson|[3/4/16](https://docs.google.com/presentation/d/1GtVX-ppI95LhrijprGENsrpq78-I1ttcSWLzMVk5d8M/edit?usp=sharing)|[5/9/16](https://cncf.io/news/announcement/2016/05/cloud-native-computing-foundation-accepts-prometheus-second-hosted-project)|Incubating
 [OpenTracing](http://opentracing.io/)|Bryan Cantrill|[8/17/16](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165)|[10/11/16](https://cncf.io/news/blogs/2016/10/opentracing-joins-cloud-native-computing-foundation)|Incubating
 [Fluentd](http://www.fluentd.org/)|Brian Grant|[8/3/16](https://docs.google.com/presentation/d/1S79MNv3E2aG8nuZJFJ0XMSumf7jnKozN3vdrivCH77U/edit?usp=sharing)|[11/8/16](https://www.cncf.io/blog/2016/12/08/fluentd-cloud-native-logging)|Incubating
-[Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[1/23/17](https://www.cncf.io/blog/2017/01/23/linkerd-project-joins-cloud-native-computing-foundation)|Inception
+[Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[1/23/17](https://www.cncf.io/blog/2017/01/23/linkerd-project-joins-cloud-native-computing-foundation)|Sandbox
 [gRPC](http://www.grpc.io/)|Brian Grant|[10/19/16](https://docs.google.com/presentation/d/16mNYaqgd7BaV50OnbcuQ1zRHpWoUKhL3XHvCJwEm8CE/edit#slide=id.g185c09339a_23_106)|[2/16/17](https://www.cncf.io/blog/2017/03/01/cloud-native-computing-foundation-host-grpc-google)|Incubating
 [CoreDNS](https://coredns.io/)|Jonathan Boulle|[8/17/16](https://docs.google.com/presentation/d/1LPvM44Pi7gletiDs40P7XmTKJLez5nz88ObYCHrHal8/edit?usp=sharing)|[2/27/17](https://www.cncf.io/blog/2017/03/02/cloud-native-computing-foundation-becomes-steward-service-naming-discovery-project-coredns)|Incubating
 [containerd](https://containerd.io/)|Brian Grant|[3/15/17](https://docs.google.com/presentation/d/1qmGsmARyMhRLwbFWG7LXJSsDHm45nqZ_QtBv5SnQL54/edit?usp=sharing)|[3/29/17](https://www.cncf.io/announcement/2017/03/29/containerd-joins-cloud-native-computing-foundation/)|Incubating
@@ -83,9 +83,11 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [Jaeger](https://github.com/jaegertracing/jaeger)|Bryan Cantrill|[8/1/17](https://goo.gl/ehtgts)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-jaeger/)|Incubating
 [Notary](https://github.com/docker/notary)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 [TUF](https://github.com/theupdateframework)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
-[rook](https://github.com/rook)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[1/29/18](https://www.cncf.io/blog/2018/01/29/cncf-host-rook-project-cloud-native-storage-capabilities)|Inception
+[rook](https://github.com/rook)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[1/29/18](https://www.cncf.io/blog/2018/01/29/cncf-host-rook-project-cloud-native-storage-capabilities)|Sandbox
 [Vitess](https://github.com/vitessio/vitess)|Brian Grant|[4/19/17](https://goo.gl/6nmyDn)|[2/5/18](https://www.cncf.io/blog/2018/02/05/cncf-host-vitess/)|Incubating
 [NATS](https://github.com/nats-io/gnatsd)|Alexis Richardson|[9/21/16](https://goo.gl/6nmyDn)|[3/15/18](https://www.cncf.io/blog/2018/03/15/cncf-to-host-nats/)|Incubating
+[SPIFFE](https://github.com/spiffe)|Brian Grant, Sam Lambert, Ken Owens|[11/7/17](https://goo.gl/6nmyDn)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-the-spiffe-project/)|Sandbox
+[OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/6nmyDn)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-open-policy-agent-opa/)|Sandbox
 
 ## Website Guidelines
 
@@ -127,13 +129,14 @@ If you're interested in presenting at a TOC call about your project, please open
 * **December 7, 2017**: KubeCon/CloudNativeCon F2F
 * **January 16, 2018**: CSI/Storage WG Readout
 * **Feb 6, 2018**: NATS
-* **Feb 20, 2018**: Sandbox + CoreDNS Inception Project Review
+* **Feb 20, 2018**: Sandbox + CoreDNS Project Review
 * **Mar 6, 2018**: Sandbox + Graduation Reviews + Working Group Process
 * **Mar 20, 2018**: New Sandbox Projects + Working Group Process
 * **Apr 3, 2018**: CNCF CI WG: [Cross Cloud CI](https://github.com/crosscloudci) + Working Group Process
 * **Apr 17, 2018**: [Telepresence](https://github.com/cncf/toc/issues/99) + SAFE Working Group Proposal
 * **May 1, 2018**: CloudNativeCon/KubeCon Copenhagen (may skip)
-* **May 15, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **May 15, 2018**: OpenMessaging
+* **June 5, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
 
