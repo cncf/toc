@@ -8,15 +8,15 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 
 ## Members
 
-* **Jonathan Boulle** (term: 3 years - start date: 1/29/2016)
-* **Bryan Cantrill** (term: 3 years - start date: 1/29/2016)
-* **Camille Fournier** (term: 3 years - start date: 1/29/2016)
-* **Brian Grant** (term: 2 years - start date: 3/17/2016)
-* **Benjamin Hindman** (term: 3 years - start date: 1/29/2016)
-* **Solomon Hykes** (term: 2 years - start date: 3/17/2016)
-* **Sam Lambert** (term: 16 months - start date: 10/2/2017)
-* **Ken Owens** (term: 3 years - start date: 1/29/2016)
-* **Alexis Richardson** (term: 3 years - start date: 1/29/2016)
+* **Jonathan Boulle** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
+* **Bryan Cantrill** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
+* **Camille Fournier** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
+* **Brian Grant** (term: 2 years - start date: 3/17/2018 - 3/17/2020)
+* **Benjamin Hindman** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
+* **Quinton Hoole** (term: 1 years - start date: 3/17/2018 - 3/17/2019)
+* **Sam Lambert** (term: 16 months - start date: 10/2/2017 - 1/29/2019)
+* **Ken Owens** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
+* **Alexis Richardson** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
 
 Election [schedule](process/election-schedule.md)
 
@@ -134,7 +134,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Mar 20, 2018**: New Sandbox Projects + Working Group Process
 * **Apr 3, 2018**: CNCF CI WG: [Cross Cloud CI](https://github.com/crosscloudci) + Working Group Process
 * **Apr 17, 2018**: [Telepresence](https://github.com/cncf/toc/issues/99) + SAFE Working Group Proposal
-* **May 1, 2018**: CloudNativeCon/KubeCon Copenhagen (may skip)
+* **May 1, 2018**: CANCELLED: CloudNativeCon/KubeCon Copenhagen Office Hours at CNCF Booth
 * **May 15, 2018**: OpenMessaging
 * **June 5, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
