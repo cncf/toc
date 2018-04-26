@@ -136,7 +136,8 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Apr 17, 2018**: [Telepresence](https://github.com/cncf/toc/issues/99) + SAFE Working Group Proposal
 * **May 1, 2018**: CANCELLED: CloudNativeCon/KubeCon Copenhagen Office Hours at CNCF Booth
 * **May 15, 2018**: OpenMessaging
-* **June 5, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **June 5, 2018**: CloudEvents
+* **June 14, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
 
