@@ -137,7 +137,8 @@ If you're interested in presenting at a TOC call about your project, please open
 * **May 1, 2018**: CANCELLED: CloudNativeCon/KubeCon Copenhagen Office Hours at CNCF Booth
 * **May 15, 2018**: OpenMessaging
 * **June 5, 2018**: CloudEvents
-* **June 14, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **June 19, 2018**: OpenMetrics and Harbor
+* **July 3, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
 
