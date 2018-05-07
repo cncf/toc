@@ -135,8 +135,8 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Apr 3, 2018**: CNCF CI WG: [Cross Cloud CI](https://github.com/crosscloudci) + Working Group Process
 * **Apr 17, 2018**: [Telepresence](https://github.com/cncf/toc/issues/99) + SAFE Working Group Proposal
 * **May 1, 2018**: CANCELLED: CloudNativeCon/KubeCon Copenhagen Office Hours at CNCF Booth
-* **May 15, 2018**: OpenMessaging
-* **June 5, 2018**: CloudEvents
+* **May 15, 2018**: CloudEvents/ServerlessWG and OpenMessaging
+* **June 5, 2018**: TBD
 * **June 19, 2018**: OpenMetrics and Harbor
 * **July 3, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
