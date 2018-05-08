@@ -72,10 +72,9 @@ None
 *Community size:*
 
 * 700+ stars
-* 40+ contributors
-* 155+ forks
-* 135+ on slack
-* 600K+ container pulls (quay.io), 50K+ container pulls (docker)
+* 50+ forks
+* 100K+ container pulls
+* 90+ people on Gitter
 
 *Production usage*:
 
