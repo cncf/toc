@@ -135,7 +135,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Apr 3, 2018**: CNCF CI WG: [Cross Cloud CI](https://github.com/crosscloudci) + Working Group Process
 * **Apr 17, 2018**: [Telepresence](https://github.com/cncf/toc/issues/99) + SAFE Working Group Proposal
 * **May 1, 2018**: CANCELLED: CloudNativeCon/KubeCon Copenhagen Office Hours at CNCF Booth
-* **May 15, 2018**: CloudEvents/ServerlessWG Update
+* **May 15, 2018**: CloudEvents/ServerlessWG Update + Helm
 * **June 5, 2018**: Cortex
 * **June 19, 2018**: OpenMetrics and Harbor
 * **July 3, 2018**: TiKV
@@ -195,3 +195,4 @@ If you're interested in presenting at a TOC call about your project, please open
 * [March 20th, 2018](https://goo.gl/PpznT7)
 * [April 3rd, 2018](https://goo.gl/FnpaEA)
 * [April 17th, 2018](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)
+* [May 15th, 2018](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)
