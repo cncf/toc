@@ -139,7 +139,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **June 5, 2018**: Cortex
 * **June 19, 2018**: OpenMetrics and Harbor
 * **July 3, 2018**: TiKV
-* **July 14, 2018**: Falco
+* **July 17, 2018**: Falco
 * **Aug 7, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
