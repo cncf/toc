@@ -88,7 +88,8 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [NATS](https://github.com/nats-io/gnatsd)|Alexis Richardson|[9/21/16](https://goo.gl/6nmyDn)|[3/15/18](https://www.cncf.io/blog/2018/03/15/cncf-to-host-nats/)|Incubating
 [SPIFFE](https://github.com/spiffe)|Brian Grant, Sam Lambert, Ken Owens|[11/7/17](https://goo.gl/6nmyDn)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-the-spiffe-project/)|Sandbox
 [OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-open-policy-agent-opa/)|Sandbox
-[CloudEvents](https://github.com/cloudevents)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[5/15/18](https://cloudevents.io/)|Sandbox
+[CloudEvents](https://github.com/cloudevents)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[5/22/18](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/)|Sandbox
+[Telepresence](https://github.com/telepresence)|Alexis Richardson, Camille Fournier|[4/17/18](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)|[5/22/18](https://www.cncf.io/blog/2018/05/22/telepresence-in-the-sandbox/)|Sandbox
 
 ## Website Guidelines
 
