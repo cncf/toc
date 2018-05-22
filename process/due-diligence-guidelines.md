@@ -20,7 +20,7 @@ To enable the voting TOC members to cast an informed vote about a
 project, it is crucial that each member is able to form their own
 opinion as to whether and to what extent the project meets the agreed
 upon [criteria](https://www.cncf.io/projects/graduation-criteria/) for
-inception, incubation or graduation. As the leader of a DD, your job
+sandbox, incubation or graduation. As the leader of a DD, your job
 is to make sure that they have whatever information they need,
 succinctly and readily available, to form that opinion.
 
@@ -96,7 +96,7 @@ The key high-level questions that the voting TOC members will be looking to have
 * Do we believe this is a growing, thriving project with committed contributors?
 * Is it aligned with CNCF's values and mission?
 * Do we believe it could eventually meet the graduation criteria?
-* Should it start at the inception level or incubation level?
+* Should it start at the sandbox level or incubation level?
 
 Some details that might inform the above include:
 
