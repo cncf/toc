@@ -1,0 +1,87 @@
+== Telepresence
+
+*Name of project:* Telepresence
+
+*Description:*
+
+Telepresence enables software engineers using Kubernetes to develop services locally, while proxying their local services to a remote Kubernetes clusters.
+
+As cloud-native applications grow in complexity, running the entire application locally is no longer practical. The entire application frequently consumes more memory and CPU than is available locally. Moreover, many applications rely on cloud-native services such as cloud databases (e.g., Amazon RDS) or cloud messaging (e.g., Google Pub/Sub). Thus, developers need to develop using a remote Kubernetes cluster.
+
+However, moving development to a remote Kubernetes cluster has tradeoffs. Remote development requires containers to be pushed to a remote registry, does not permit auto-reloading of code, and generally increases the overall latency in the code/test/debug cycle. In addition, developers are unable to use their complete suite of development tools, eg., IDE, debugger, profiler, and so forth.
+
+Telepresence enables a hybrid model for development. Services are developed locally, while the rest of the application runs in the cloud. Telepresence deploys a bi-directional proxy to the remote Kubernetes cluster, connecting the local development machine to the cloud.
+
+Telepresence is currently used by dozens of organizations in their daily development process. These organizations range in size from Fortune 50 companies to small startups. 
+
+Telepresence was presented at the https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit#slide=id.g380c8a0114_0_178[CNCF TOC meeting on 4/17/2018].
+
+*Statement on alignment with CNCF mission:*
+
+Given the CNCF's stated role in "fostering the growth and evolution of the cosystem" and "making the technology accessible and reliable", we believe Telepresence helps with both of these goals. In particular, we have heard repeatedly from Kubernetes users that one of the major barriers to adoption is the developer experience. Telepresence's goal is to reduce the friction of developing cloud-native applications, for developers. We think that expanding the portfolio of CNCF projects beyond operational infrastructure (e.g., Kubernetes, Prometheus, Envoy) to software for developers will help further the ubiquity of cloud-native technologies.
+
+*Sponsor / Advisor from TOC:* Alexis Richardson, Camille Fournier
+
+*Unique identifier:* telepresence
+
+*Preferred maturity level:* sandbox
+
+*License:* Apache License v2.0
+
+*Source control repositories:* https://github.com/datawire/telepresence
+
+*External Dependencies:*
+
+Teepresence depends on the following external software components:
+
+* `kubectl` (Apache Software License 2.0)
+* OpenSSH (BSD 2 clause)
+* `sshfs` (GPL 2.0)
+* `conntrack` (GPL 2.0)
+* `torsocks` (GPL 2.0)
+* `socat` (GPL 2.0)
+* Docker (Apache Software License 2.0)
+
+*Initial Committers (leads):*
+
+* Rafael Schloming (Datawire)
+* Abhay Saxena (Datawire)
+
+*Infrastructure requests (CI / CNCF Cluster):*
+
+CI (currently using the CircleCI free plan), and possibly the CNCF Community cluster for regression testing.
+
+*Communication Channels:*
+
+* Gitter: https://gitter.im/datawire/telepresence
+
+*Issue tracker:* https://github.com/datawire/telepresence/issues
+
+*Website:* https://www.telepresence.io
+
+*Release methodology and mechanics:*
+
+We release rapidly and frequently. Generally this varies from weekly to monthly. 
+
+*Social media accounts:*
+
+None
+
+*Existing sponsorship*: https://www.datawire.io[Datawire]
+
+*Community size:*
+
+* 700+ stars
+* 50+ forks
+* 100K+ container pulls
+* 90+ people on Gitter
+
+*Production usage*:
+
+Telepresence is being actively used by a number of organizations for active development. Telepresence is not designed for use in production. Some of these users include:
+
+* Bitnami https://youtu.be/8Dl8U-AbJN0([KubeCon EU talk]
+* Namely https://www.youtube.com/watch?v=xIOkbu0sUi4[Kubernetes NYC meetup talk]
+* Sight Machine
+* Shopify
+* Verloop
