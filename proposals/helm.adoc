@@ -33,7 +33,7 @@ Helm not only provides a simple out-of-the-box experience for those installing a
 
 A goal is to consolidate all repositories under the link:https://github.com/helm[helm] GitHub org.
 
-link:https://github.com/kubernetes/community/blob/6c3b1a6f0c1152f5e35a53ea93e692ed501abf7a/governance.md#subprojects[Kubernetes, where Helm grew up, has the concept of sub-projects]. For Kubernetes these can be ways the core Kubernetes codebase is organized as well as separate codebases, some with their own release schedules, that support Kubernetes as a whole. Under Kuberentes, Helm and its supporting projects were organized as several sub-projects. This proposal groups those supporting projects of Helm, coming from Kubernetes, as sub-projects of Helm. Sub-projects may have their own maintainers and release schedules.
+link:https://github.com/kubernetes/community/blob/6c3b1a6f0c1152f5e35a53ea93e692ed501abf7a/governance.md#subprojects[Kubernetes, where Helm grew up, has the concept of sub-projects]. For Kubernetes these can be ways the core Kubernetes codebase is organized as well as separate codebases, some with their own release schedules, that support Kubernetes as a whole. Under Kubernetes, Helm and its supporting projects were organized as several sub-projects. This proposal groups those supporting projects of Helm, coming from Kubernetes, as sub-projects of Helm. Sub-projects may have their own maintainers and release schedules.
 
 *Current Core Maintainers*:
 
@@ -105,11 +105,13 @@ Many Kubernetes users depend on Helm to configure and deploy their applications.
 * Microsoft
 * Nike
 * Oteemo
-* Reddit
+* Reddit †
 * Samsung SDS
 * SUSE
-* Ubisoft
-* WP Engine
+* Ubisoft †
+* WP Engine †
+
+† These companies shared, at the conference, how they use Helm in production.
 
 In addition to these we have measured downloads of Helm. A sample of that for the month of April 2018 shows 59,050 downloads from unique IPs from the Helm distribution channel along with 11,618 installations via Homebrew for MacOS.
 
