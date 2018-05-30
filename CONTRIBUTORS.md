@@ -19,6 +19,7 @@ If you are interested in engaging in this way, we would encourage you to issue a
 List below is the official list of TOC contributors, in alphabetical order:
 
 * Alex Chircop, StorageOS (alex.chircop@storageos.com)
+* Allen Sun, Alibaba (allensun.shl@alibaba-inc.com)
 * Andy Santosa, Ebay (asantosa@ebay.com)
 * Ara	Pulido, Bitnami	(ara@bitnami.com)
 * Bassam Tabbara, Upbound	(bassam@upbound.io)
