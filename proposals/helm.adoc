@@ -1,0 +1,124 @@
+== Helm
+
+*Name of project*: Helm
+
+*Description*:
+
+link:http://helm.sh[Helm] is a package manager, like Debian Apt for Kubernetes, that enables you to define, install, and upgrade container based applications including those with dependencies. Dependencies can be held in distributed repositories including those in public and private locations.
+
+Those who develop packages, known as charts, have the full power of Kubernetes objects and the ability to depend on other charts. Depending on other charts allows individual services to be defined separately while also allowing an application to launch using a microservice architecture.
+
+Helm not only provides a simple out-of-the-box experience for those installing applications, but also simplifies deployment automation by enabling configuration reuse, enabling multiple components to be managed as a single entity, and facilitating observability of overall application health.
+
+*Sponsor / Advisor from TOC*: Brian Grant <briangrant@google.com>
+
+*Unique Identifier*: helm
+
+*License*: ALv2
+
+*Maturity Level:* Incubating
+
+*Source control repositories*:
+
+* https://github.com/kubernetes/helm
+* https://github.com/kubernetes/charts
+* https://github.com/kubernetes-helm/community
+* https://github.com/kubernetes-helm/monocular
+* https://github.com/kubernetes-helm/helm-summit-notes
+* https://github.com/kubernetes-helm/chart-testing
+* https://github.com/kubernetes-helm/charts-tooling
+* https://github.com/kubernetes-helm/rudder-federation
+* https://github.com/kubernetes-helm/chartmuseum
+* https://github.com/helm/helm-www
+
+A goal is to consolidate all repositories under the link:https://github.com/helm[helm] GitHub org.
+
+link:https://github.com/kubernetes/community/blob/6c3b1a6f0c1152f5e35a53ea93e692ed501abf7a/governance.md#subprojects[Kubernetes, where Helm grew up, has the concept of sub-projects]. For Kubernetes these can be ways the core Kubernetes codebase is organized as well as separate codebases, some with their own release schedules, that support Kubernetes as a whole. Under Kubernetes, Helm and its supporting projects were organized as several sub-projects. This proposal groups those supporting projects of Helm, coming from Kubernetes, as sub-projects of Helm. Sub-projects may have their own maintainers and release schedules.
+
+*Current Core Maintainers*:
+
+* Adam Reese
+* Adnan Abdulhussein
+* Justin Scott
+* Maciej Kwiek
+* Matt Butcher
+* Matt Farina
+* Matt Fisher
+* Michelle Noorali
+* Nikhil Manchanda
+* Taylor Thomas
+* Vic Iglesias
+
+_Note, the current core maintainers represent 5 different companies._
+
+Sub-projects of Helm have their own maintainers. For example, you can read about the Charts maintainers in the link:https://github.com/kubernetes/charts/blob/master/OWNERS[OWNERS file].
+
+*Infrastructure requirements*: CI, CNCF Cluster, Object Storage
+
+*Issue tracker*: https://github.com/kubernetes/helm/issues
+
+Sub-projects each have their own issue queue.
+
+*Mailing lists*
+
+* Slack:
+** Helm Dev room https://kubernetes.slack.com/messages/helm-dev
+** Helm Users room https://kubernetes.slack.com/messages/helm-users (see https://kubernetes.slackarchive.io/helm-users/page-100)
+** Charts room https://kubernetes.slack.com/messages/charts
+** Chartmuseum room https://kubernetes.slack.com/messages/chartmuseum
+* https://lists.cncf.io/g/cncf-kubernetes-helm
+
+*Website*: http://helm.sh
+
+*Release methodology and mechanics*
+
+Helm uses link:http://semver.org/[semantic versioning] for releases. Releases are announced using GitHub releases while the release artifacts are placed into object storage for later download. The continuous integration systems, currently CircleCI, automatically places releases and development builds into object storage.
+
+Helm is currently releases stable releases with a major version of 2. When a minor version comes out containing new features a release branch is created where release candidates, final releases, and patch releases are created from. Anything to be added to these releases is cherry-picked into the branch prior to releases.
+
+The Helm release process is documented in the link:https://github.com/kubernetes/helm/blob/master/docs/release_checklist.md[release checklist].
+
+Sub-projects have their own releases processes. For example, the Helm Community Charts repository uses continuous deployments. All changes to individual charts increment the chart versions. A sync job runs every 15 minutes to pickup changes, builds the chart packages, and places them into object storage to be retrieved by Helm clients.
+
+*Social media accounts*:
+
+* https://twitter.com/helmpack
+* link:https://www.youtube.com/channel/UC_kvCKc5EHNomq64f8C4sfA[YouTube]
+
+*Existing sponsorship*:
+
+* Microsoft
+* Google
+* Codefresh
+* Bitnami
+* Ticketmaster
+* Codecentric
+
+_Note, these companies and their logos are listed on the link:https://helm.sh[Helm website]._
+
+*Adopters*:
+
+Many Kubernetes users depend on Helm to configure and deploy their applications. The following is a partial list of those who have said they are using Helm at the Helm Summit, a conference held earlier this year that focused solely on the development of and use of Helm. The list is in alphabetical order.
+
+* IBM
+* jFrog
+* Microsoft
+* Nike
+* Oteemo
+* Reddit †
+* Samsung SDS
+* SUSE
+* Ubisoft †
+* WP Engine †
+
+† These companies shared, at the conference, how they use Helm in production.
+
+In addition to these we have measured downloads of Helm. A sample of that for the month of April 2018 shows 59,050 downloads from unique IPs from the Helm distribution channel along with 11,618 installations via Homebrew for MacOS.
+
+*Statement on alignment with CNCF mission*:
+
+Helm joined the CNCF at the same time Kubernetes did as it was a sub-project of Kubernetes at that time. Helm is seeking to become a top-level project within the CNCF because Helm has grown up and is taking on a life of it's own. This can be seen in the over 300 contributors to Helm, the over 800 contributors to the community charts, a successful conference based solely on Helm, and the unique culture forming around Helm compared to core Kubernetes.
+
+*External Dependencies*: A full list of dependencies can be found at https://github.com/kubernetes/helm/blob/master/glide.lock.
+
+*Other Contributors*: https://github.com/kubernetes/helm/graphs/contributors
