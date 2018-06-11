@@ -1,6 +1,6 @@
-# CNCF Cloud Native Definition #
+# CNCF Cloud Native Definition v1.0 #
 
-*Approved by TOC: [TBD]*
+*Approved by TOC: 6/11/2018*
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
