@@ -204,3 +204,4 @@ If you're interested in presenting at a TOC call about your project, please open
 * [April 17th, 2018](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)
 * [May 15th, 2018](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)
 * [June 5th, 2018](https://docs.google.com/presentation/d/190oIFgujktVYxWZLhLYN4q8p9dtQYoe4sxHgn4deBSI/edit#slide=id.g25ca91f87f_0_0)
+* [June 19th, 2018](https://docs.google.com/presentation/d/1Ym8fLRCaX43uHPHBRyuRXM62U8m4vXaBXkuUp6tt3js/edit?usp=sharing)
