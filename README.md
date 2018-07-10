@@ -145,9 +145,10 @@ If you're interested in presenting at a TOC call about your project, please open
 * **July 17, 2018**: Falco
 * **Aug 7, 2018**: RSocket
 * **Aug 21, 2018**: Buildpacks
-* **Sep 4, 2018**: OpenMessaging
+* **Sep 4, 2018**: OpenMessaging/Dragonfly
 * **Sep 18, 2018**: netdata
-* **Oct 2, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **Oct 2, 2018**: keycloak
+* **Oct 16, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
 
