@@ -86,7 +86,7 @@ The following is a list of common use-cases for Harbor users:
  * *Twitter:* https://twitter.com/project_harbor
  * *Users Google Groups:* harbor-users@googlegroups.com
  * *Developer Google Groups:* harbor-dev@googlegroups.com
- * *Slack:* #harbor on https://code.vmware.com/join/
+ * *Slack:* https://goharbor.slack.com
 
 == Contributor Statistics
 There have been 23 non-VMware committers with non-trivial (50+ LoC) contributions since the project's inception.
@@ -106,7 +106,7 @@ Our team believes Harbor to be a great fit for the CNCF. Harbor's core mission a
 == Appendices
 
 === Architecture
-Harbor is cleanly architected and includes both third-party components – notably Clair, Notary and Nginx – and various Harbor-specific components. Harbor leverages Kubernetes to manage the runtimes of the various components.
+Harbor is cleanly architected and includes both third-party components – notably Docker registry, Clair, Notary and Nginx – and various Harbor-specific components. Harbor leverages Kubernetes to manage the runtimes of the various components.
 
 An architectural diagram can be found on https://github.com/vmware/harbor/blob/master/docs/img/harbor-arch.png[GitHub] and shows various components: red 3rd party components which Harbor leverages for functionality (e.g., nginx, Notary, etc.); green components to denote a persistence layer; and blue Harbor-specific components.
 
