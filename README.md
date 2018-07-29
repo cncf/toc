@@ -143,7 +143,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **June 19, 2018**: OpenMetrics and Harbor
 * **July 3, 2018**: TiKV
 * **July 17, 2018**: Falco
-* **Aug 7, 2018**: RSocket
+* **Aug 7, 2018**: RSocket / etcd
 * **Aug 21, 2018**: Buildpacks
 * **Sep 4, 2018**: OpenMessaging/Dragonfly
 * **Sep 18, 2018**: netdata
