@@ -92,7 +92,7 @@ https://github.com/pingcap/tikv/blob/master/docs/ROADMAP.md
 
 _TOC Presentation Date_: July 3, 2018
 
-_Current TOC Sponsor_: Bryan Cantrill
+_Current TOC Sponsor_: Bryan Cantrill and Ben Hindman
 
 _Preferred Maturity Level_: Sandbox
 
