@@ -6,7 +6,7 @@ Projects of all maturities have access to all resources listed at https://cncf.i
 
 === Sandbox Stage
 
-To be accepted in the sandbox a project must have at least 2 TOC sponsors. See the [CNCF Sandbox Guidelines v1.0](https://github.com/cncf/toc/blob/master/process/sandbox.md) for the detailed process.
+To be accepted in the sandbox a project must have at least 2 TOC sponsors. See the https://github.com/cncf/toc/blob/master/process/sandbox.md[CNCF Sandbox Guidelines v1.0] for the detailed process.
 
 === Incubating Stage
 
