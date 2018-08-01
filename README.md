@@ -91,6 +91,7 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [CloudEvents](https://github.com/cloudevents)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[5/22/18](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/)|Sandbox
 [Telepresence](https://github.com/telepresenceio)|Alexis Richardson, Camille Fournier|[4/17/18](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)|[5/22/18](https://www.cncf.io/blog/2018/05/22/telepresence-in-the-sandbox/)|Sandbox
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/1/18](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Incubating
+[Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[7/31/18](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/)|Sandbox
 
 ## Website Guidelines
 
@@ -149,6 +150,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Sep 18, 2018**: netdata
 * **Oct 2, 2018**: keycloak
 * **Oct 16, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **Nov 6, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
 
 ## Meeting Minutes
 
