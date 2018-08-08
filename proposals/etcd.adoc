@@ -1,0 +1,106 @@
+== etcd Project Proposal
+
+*Name of Project*: etcd
+
+*Description*:
+
+etcd is a consistent distributed key-value store, designed to hold small
+amounts of data that can fit entirely in memory (although etcd still writes
+to disk for durability) and mainly used as a separate coordination service
+for other distributed systems like Kubernetes. A typical etcd cluster is
+distributed over 3 to 5 nodes for high availability, while it prioritizes
+consistency and partition tolerance. Which means, it provides one logical
+cluster view of many physical servers. So long as a majority of cluster is up,
+etcd continues to work even under machine failures. This redundancy provides
+fault tolerance.
+
+etcd server implements Raft consensus algorithm for data replication. Raft is
+a leader-based protocol. Data is replicated from leader to follower; follower
+forwards proposals to leader, and leader decides what to commit or not. Leader
+persists and replicates an entry once it has been agreed by the quorum of
+cluster. Therefore, adding more members to cluster would lead to more
+communication overhead and limited write scalability. Write (and consistent
+read) throughput is limited to durable write throughput of a single leader
+node.
+
+The underlying storage layer for Raft log is write-ahead log (WAL).
+Committed entries are written out to disk, so they can be replayed on restart.
+etcd uses gRPC for transport layer. Client employs HTTP/2 Ping for server
+health checking, and implements automatic failover under faulty networks.
+
+*Sponsor / Advisor from TOC*: Brian Grant <briangrant@google.com>
+
+*Unique Identifier*: etcd
+
+*License*: https://github.com/coreos/etcd/blob/master/LICENSE[Apache License 2.0]
+
+*Maturity Level*: Incubating
+
+*Source control repositories*: https://github.com/etcd-io (to be moved
+from https://github.com/coreos/etcd/issues/9965[August 27, 2018])
+
+*Issue tracker*: https://github.com/coreos/etcd/issues
+
+*Initial committers*: See https://github.com/coreos/etcd/blob/master/MAINTAINERS[MAINTAINERS].
+
+*Infrastructure requirements (CI / CNCF Cluster)*: N/A
+
+*External dependencies*: https://github.com/coreos/etcd/blob/master/bill-of-materials.json
+
+*Statement on alignment with CNCF mission*: A consistent and partition
+tolerant datastore, like etcd, is a base dependency for many cloud native
+architectures. They hold on to critical cluster configuration and locks
+while providing guarantees against individual machine failure, network
+partitions, or data center power loss. In the literature and ecosystem
+etcd, or similar systems (e.g. Chubby, Zookeeper, etc.), provide the
+persistence layer for applications like Kubernetes, CoreDNS, Vitess, Borg,
+Mesos, and countless others.
+
+*Communication channels*: Google Groups https://groups.google.com/forum/#!forum/etcd-dev[etcd-dev],
+Kubernetes slack https://kubernetes.slack.com/messages/C3HD8ARJ5/[#etcd]
+channel.
+
+*Website*: http://etcd.io
+
+*Release methodology and mechanics*: etcd employs semantic version to name
+each release, with detailed https://github.com/coreos/etcd/blob/master/CHANGELOG-3.2.md[changelog]
+and compiled https://github.com/coreos/etcd/releases[release] binaries hosted
+on GitHub and Google Cloud Storage. Each release file is cryptographically
+signed using Yubikey. Released container images are hosted on
+gcr.io/etcd-development and quay.io/coreos/etcd. The release process is https://github.com/coreos/etcd/blob/master/scripts/release[partially automated].
+Typically, we release new minor version every 6-month, and patch version every
+month or whenever critical fixes are backported.
+
+*Social media accounts*: None
+
+*Community size and any existing sponsorship*:
+
+Adopters: Alibaba, Amazon, Baidu, Cisco, CoreOS (now Red Hat), EMC, Google,
+Huawei, IBM, NTT, Uber, Verizon, Yandex, etc.
+See https://github.com/coreos/etcd/blob/master/Documentation/production-users.md[etcd production users] for more.
+
+Integrations: Kubernetes API server persists cluster metadata in etcd.
+OpenStack uses etcd to keep track of service liveness. CockroachDB, TiKV,
+and Dgraph use etcd/raft implementation for log replication. Please see how
+https://docs.google.com/presentation/d/1_8RZH8VbX3ijH_aVi3r5FyQtfhV4oSvW-KaGsWZ5_G8/edit[NTT manages their network infrastructure],
+how https://www.youtube.com/watch?v=Snnqvr1g4r4[Uber built its time series database m3] on top of etcd,
+and how https://www.youtube.com/watch?v=WQoxyb1o9Y4[BrainTree replaced Redis with etcd], to run its caching systems.
+
+Sponsors: Alibaba Cloud, Amazon Web Services, Google Cloud Platform, Red Hat.
+
+As of August 7, 2018, we have 444 contributors and https://github.com/coreos/etcd/blob/master/MAINTAINERS[8 maintainers].
+
+We hold https://docs.google.com/document/d/16XEGyPBisZvmmoIHSZzv__LoyOeluC5a4x353CX0SIM/edit[bi-weekly community meeting] with about 5 regular attendees.
+
+*What is the team looking for in a foundation*:
+
+In general, etcd team is looking to grow its communities and expand
+maintainers, by having etcd owned by neutral organization like CNCF.
+
+Manage billing for shared https://gcr.io/etcd-development/etcd[Google Cloud account],
+which etcd team uses for performance testing and hosting release files.
+
+Manage etcd.io domain (e.g. play.etcd.io).
+
+Community support (e.g. help enact to https://github.com/coreos/etcd/blob/master/code-of-conduct.md[code of conduct],
+when needed).
