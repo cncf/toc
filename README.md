@@ -149,8 +149,8 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Sep 4, 2018**: OpenMessaging/Dragonfly
 * **Sep 18, 2018**: netdata
 * **Oct 2, 2018**: keycloak
-* **Oct 16, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
-* **Nov 6, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues)
+* **Oct 16, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues))
+* **Nov 6, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues))
 
 ## Meeting Minutes
 
