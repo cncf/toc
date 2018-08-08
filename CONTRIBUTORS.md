@@ -55,7 +55,6 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Louis Fourie, Huawei (louis.fourie@huawei.com)
 * Mark Peek, VMware	(markpeek@vmware.com)
 * Matthew Fornaciari, Gremlin (forni@gremlin.com)
-* Naadir Jeewa, The Scale Factory	(naadir@scalefactory.com)
 * Nick Chase, Mirantis	(nchase@mirantis.com)
 * Pengfei Ni, Microsoft (peni@microsoft.com)
 * Philip Lombardi, Datawire.io (plombardi@datawire.io)
