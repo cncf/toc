@@ -1,15 +1,32 @@
 # Fluentd Graduation Application
 
-Fluentd project has been in incubation for one year. The following application links to the required information to become a graduated project.
+[Fluentd](https://www.fluentd.org) project has been in incubation for one year and a half. The following application links to the required information to become a graduated project plus some additional information about it growth. 
+
+### Fluentd Adoption and Ecosystem
+
+In terms of adoption, It's hard to measure the real numbers of deployments of Fluentd, but based in the public statistics considering only our own Docker images, in the last year  we see more than <u>15 million of pulls</u> .
+
+As a reference of adoption by known companies, we can see that Fluentd plays an important role in the following production environments:
+
+- [Google Cloud Platform Logging Agent](https://cloud.google.com/logging/docs/agent/): Fluentd is packaged and called [google-fluentd](https://github.com/GoogleCloudPlatform/google-fluentd). The official agent for GCP which comes with Stackdriver integration right out of the box. 
+- [Microsoft Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-data-sources-json): Fluentd is the default agent for OMS to collect metrics and logs from Azure systems, the packaged solution is called [OMS Agent](https://github.com/Microsoft/OMS-Agent-for-Linux).
+- [Redhat / OpenShift and Aggregated Logging](https://docs.openshift.com/container-platform/3.10/install_config/aggregate_logging.html): Fluentd is the default solution for aggregated logging through the combination of other components like Elasticsearch and Kibana (known as E__F__K stack)
+
+### Understanding Fluentd and it Ecosystem
+
+Fluentd have a different ecosystem model that other projects, it's composed by a small and stable code base and most of the functionalities are available through plugins which can be: inputs, filters, parsers, buffers and outputs. 
+
+Most of contributions to Fluentd happens through the implementation of plugins, where the majority of them (> 700) are maintained by different companies and individuals. Since the nature of Fluentd language in Ruby and C, these extensions are available through the common Ruby Gems channels and Fluentd offers a built-in tool to install any plugin available. 
 
 ## To graduate from inception or incubating status, or for a new project to join as a graduated project, a project must meet the incubating stage criteria plus:
 
 ### Have committers from at least two organizations.
 
-- [Masahiro Nakagawa](https://github.com/repeatedly), Treasure Data
-- [Naotoshi Seo](https://github.com/sonots), DeNA
-- [Nobuyuki Kubota](https://github.com/nobu-k), Preferred Networks America
-- [Yuichi Tateno](https://github.com/hotchpotch), WAmazing
+- [Naotoshi Seo](https://github.com/sonots), [DeNA](https://dena.com/intl/)
+- [Okkez](https://github.com/okkez), [Clearcode](https://www.clear-code.com/)
+- [Hiroshi Hatake](https://github.com/cosmo0920), [Clearcode](https://www.clear-code.com/)
+- [Masahiro Nakagawa](https://github.com/repeatedly),  [Treasure Data](https://www.treasuredata.com/)
+- [Satoshi Tagomori](https://github.com/tagomoris), [Treasure Data](https://www.treasuredata.com/)
 
 ### Have achieved and maintained a Core Infrastructure Initiative Best Practices Badge.
 
