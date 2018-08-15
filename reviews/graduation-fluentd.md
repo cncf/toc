@@ -16,7 +16,37 @@ As a reference of adoption by known companies, we can see that Fluentd plays an 
 
 Fluentd have a different ecosystem model than other projects, it's composed by a small and stable code base and most of the functionalities are available through plugins which can be: inputs, filters, parsers, buffers and outputs.
 
-Most of contributions to Fluentd happens through the implementation of plugins, where the majority of them (> 700) are maintained by different companies and individuals. Since the nature of Fluentd language in Ruby and C, these extensions are available through the common Ruby Gems channels and Fluentd offers a built-in tool to install any plugin available.
+Most of contributions to Fluentd happens through the implementation of plugins, where the majority of them (> 800) are maintained by different companies and individuals. Since the nature of Fluentd language in Ruby and C, these extensions are available through the common Ruby Gems channels and Fluentd offers a built-in tool to install any plugin available.
+
+
+
+## Progress since joining CNCF as an incubation project on December 2016
+
+- Fluentd **v1.0** released on December 2017 (announced at KubeCon North America)
+
+- Fluentd Code Base
+
+  - **48** Official releases  (today we are at v1.1.2)
+
+- **New** Fluentd plugins hosted in our Github organization
+
+  - Prometheus Output: https://github.com/fluent/fluent-plugin-prometheus
+  - NodeJS Output: https://github.com/fluent/fluent-logger-node/
+  - Kafka Output: https://github.com/fluent/fluent-plugin-kafka
+  - Splunk Output: https://github.com/fluent/fluent-plugin-splunk
+
+- Fluentd Plugins published <u>by the community</u>
+
+  - Total as of today: **876**
+  - Plugins <u>updated since</u> January 2017:  **839**
+
+- Community
+
+  - Slack: on January 2017 an average of 11 new members joined, as of July 2018 we have an average of 23 new members per week.
+
+  - Github Stars: **6600** as of today (we got 1300 new in the last 12 months)
+
+    
 
 ## To graduate from inception or incubating status, or for a new project to join as a graduated project, a project must meet the incubating stage criteria plus:
 
