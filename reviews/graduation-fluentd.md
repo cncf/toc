@@ -1,6 +1,6 @@
 # Fluentd Graduation Application
 
-[Fluentd](https://www.fluentd.org) project has been in incubation for one year and a half. The following application links to the required information to become a graduated project plus some additional information about it growth. 
+[Fluentd](https://www.fluentd.org) project has been in incubation for one year and a half. The following application links to the required information to become a graduated project plus some additional information about it growth.
 
 ### Fluentd Adoption and Ecosystem
 
@@ -8,15 +8,15 @@ In terms of adoption, It's hard to measure the real numbers of deployments of Fl
 
 As a reference of adoption by known companies, we can see that Fluentd plays an important role in the following production environments:
 
-- [Google Cloud Platform Logging Agent](https://cloud.google.com/logging/docs/agent/): Fluentd is packaged and called [google-fluentd](https://github.com/GoogleCloudPlatform/google-fluentd). The official agent for GCP which comes with Stackdriver integration right out of the box. 
+- [Google Cloud Platform Logging Agent](https://cloud.google.com/logging/docs/agent/): Fluentd is packaged and called [google-fluentd](https://github.com/GoogleCloudPlatform/google-fluentd). The official agent for GCP which comes with Stackdriver integration right out of the box.
 - [Microsoft Azure Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-data-sources-json): Fluentd is the default agent for OMS to collect metrics and logs from Azure systems, the packaged solution is called [OMS Agent](https://github.com/Microsoft/OMS-Agent-for-Linux).
 - [Redhat / OpenShift and Aggregated Logging](https://docs.openshift.com/container-platform/3.10/install_config/aggregate_logging.html): Fluentd is the default solution for aggregated logging through the combination of other components like Elasticsearch and Kibana (known as E__F__K stack)
 
 ### Understanding Fluentd and it Ecosystem
 
-Fluentd have a different ecosystem model that other projects, it's composed by a small and stable code base and most of the functionalities are available through plugins which can be: inputs, filters, parsers, buffers and outputs. 
+Fluentd have a different ecosystem model than other projects, it's composed by a small and stable code base and most of the functionalities are available through plugins which can be: inputs, filters, parsers, buffers and outputs.
 
-Most of contributions to Fluentd happens through the implementation of plugins, where the majority of them (> 700) are maintained by different companies and individuals. Since the nature of Fluentd language in Ruby and C, these extensions are available through the common Ruby Gems channels and Fluentd offers a built-in tool to install any plugin available. 
+Most of contributions to Fluentd happens through the implementation of plugins, where the majority of them (> 700) are maintained by different companies and individuals. Since the nature of Fluentd language in Ruby and C, these extensions are available through the common Ruby Gems channels and Fluentd offers a built-in tool to install any plugin available.
 
 ## To graduate from inception or incubating status, or for a new project to join as a graduated project, a project must meet the incubating stage criteria plus:
 
