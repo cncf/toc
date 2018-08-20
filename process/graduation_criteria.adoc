@@ -23,7 +23,7 @@ To graduate from sandbox or incubating status, or for a new project to join as a
 
  * Have committers from at least two organizations.
  * Have achieved and maintained a Core Infrastructure Initiative https://bestpractices.coreinfrastructure.org/[Best Practices Badge].
- * Have completed an independent and third party security audit with results published (i.e., https://github.com/envoyproxy/envoy#security-audit)
+ * Have completed an independent and third party security audit with results published of similar scope and quality as the following example (including critical vulnerabilities addressed): https://github.com/envoyproxy/envoy#security-audit
  * Adopt the CNCF https://github.com/cncf/foundation/blob/master/code-of-conduct.md[Code of Conduct].
  * Explicitly define a project governance and committer process. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
  * Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website).
