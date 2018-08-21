@@ -18,7 +18,7 @@ Fluentd have a different ecosystem model than other projects, it's composed by a
 
 Most of contributions to Fluentd happens through the implementation of plugins, where the majority of them (> 800) are maintained by different companies and individuals. Since the nature of Fluentd language in Ruby and C, these extensions are available through the common Ruby Gems channels and Fluentd offers a built-in tool to install any plugin available.
 
-
+note: during the last year we have seen a 50% decline of the number of companies contributing to the code base (Fluentd core), while at the same time a huge increase in the number of contributions to it ecosystem through plugins. 
 
 ## Progress since joining CNCF as an incubation project on December 2016
 
@@ -46,7 +46,6 @@ Most of contributions to Fluentd happens through the implementation of plugins, 
 
   - Github Stars: **6600** as of today (we got 1300 new in the last 12 months)
 
-    
 
 ## To graduate from inception or incubating status, or for a new project to join as a graduated project, a project must meet the incubating stage criteria plus:
 
