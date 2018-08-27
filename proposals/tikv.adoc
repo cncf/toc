@@ -1,0 +1,140 @@
+== TiKV Project Proposal
+
+*Name of Project*: TiKV
+
+*Description*: TiKV is an open-source distributed transactional key-value database built in Rust and implements the Raft consensus algorithm. It features horizontal scalability, consistent distributed transactions, and geo-replication.
+
+*Why is TiKV a good fit for CNCF?*
+
+TiKV has been one of the few key-value storage solutions in the cloud-native community that can balance both performance and ease of operation with Kubernetes. Data storage is one of the most important components of any cloud-native infrastructure platform, and end users need a range of choices to meet their needs. TiKV is complementary to existing CNCF database projects like Vitess, which is currently the only database option hosted by CNCF. As a transactional key-value database, TiKV serves as another choice for cloud-native applications that need scalability, distributed transactions, high availability, and strong consistency. 
+
+With TiKV becoming a CNCF project, the open-source cloud-native ecosystem will also become more vibrant and robust in China, because our team has a strong track record of fostering the open source community in China and is dedicated to building and promoting CNCF’s mission there. Open source is global, and having TiKV as a part of CNCF will further make that story so. 
+
+*TiKV Overview*
+
+_Development Timeline_: 
+
+- Current release: 2.1.0 beta
+- April 27, 2018: TiKV 2.0 released
+- October 16, 2017: TiKV 1.0 released
+- October 2016: beta version of TiKV was released and used in production
+- April 1, 2016: TiKV was open-sourced
+
+TiKV is currently adopted in-production in more than 200 companies, either together with TiDB (a stateless MySQL compatible SQL layer) or on its own. Please refer to the “Adopters” list below for the current list of publicly acknowledged adopters. 
+
+_Community Stats_:
+
+- Stars: 3300+
+- Contributors: 75+
+- Commits: 2900+
+- Forks: 400+
+
+*Cloud-Native Features of TiKV*
+
+_Horizontal scalability_: TiKV automatically handles data sharding and replication for cloud-native applications and enables elastic capacity scaling by simply adding or removing nodes with no interruption to ongoing workloads. 
+
+_Auto-failover and self-healing_: TiKV supports automatic failover with its implementation of the Raft consensus algorithm, so in situations of software or hardware failures, the system will automatically recover while maintaining the applications’ availability. 
+
+_Strong consistency_: TiKV delivers performant transactions and strong consistency by providing full support for ACID semantics, ensuring the accuracy and reliability of your data anytime, anywhere.
+
+_Cloud-native deployment_: TiKV can be deployed in any cloud environment--public, private, or hybrid--using tidb-operator, a Kubernetes-based deployment tool. 
+
+*Comparison*
+
+This comparison is intended simply to compare features of TiKV with two other well-known NoSQL databases, Cassandra and MongoDB. It is not intended to favor or position one project over another.  Any corrections are welcome.
+
+.Feature Comparison
+|===
+|Area |Cassandra |MongoDB |TiKV
+
+|Type  
+|Wide Column  
+|Document   
+|Key-Value  
+
+|Auto-scaling  
+|Y  
+|Optional 
+|Y  
+
+|ACID Transaction  
+|N 
+|Maybe?  
+|Y 
+
+|Strong consistency replication  
+|Optional 
+|N  
+|Y 
+
+|Geo-based replication 
+|N
+|N  
+|Y 
+
+|Self-hearing  
+|N 
+|N  
+|Y 
+
+|SQL Compatibility 
+|Partial (w/ CQL) 
+|N  
+|MySQL (w/ TiDB)  
+
+|===
+
+*Roadmap*:
+
+https://github.com/pingcap/tikv/blob/master/docs/ROADMAP.md
+
+*Additional Information*:
+
+_TOC Presentation Date_: July 3, 2018
+
+_Current TOC Sponsor_: Bryan Cantrill and Ben Hindman
+
+_Preferred Maturity Level_: Sandbox
+
+_License_: Apache 2.0
+
+_Source control repositories_: https://github.com/pingcap/tikv
+
+_Contributor Guideline_: https://github.com/pingcap/tikv/blob/master/CONTRIBUTING.md
+
+_Official Documentation_: https://github.com/pingcap/tikv/wiki/TiKV-Documentation 
+
+_Blog_: https://www.pingcap.com/blog/#TiKV 
+
+_Infrastructure Required_: 
+
+TiKV uses Circle CI for unit tests and builds and in-house Jenkins CI cluster for some integration tests. We plan to use CNCF test cluster to automatically run stability tests and performance tests in the future.
+
+_Issue Tracker_: https://github.com/pingcap/tikv/issues
+
+_Website_: tikv.org (under construction)
+
+_Release Methodology and Mechanics_: 
+
+TiKV follows the Semantic Versioning 2.0.0 convention. The release cadence is:
+
+- Major version is released every 6 months
+- Minor version is released every 3 months.
+- Patch version is released every 2 weeks.
+
+TiKV releases are announced using GitHub releases and current release is 2.1.0 beta. 
+
+_Social Media Accounts_: TBD
+
+_Adopters_:
+
+https://github.com/pingcap/tikv/blob/master/docs/adopters.md
+
+_Dependencies and License Compliance (done by FOSSA)_: 
+
+https://app.fossa.io/reports/87fe16e8-72a2-4e27-8509-a07dfa52a21a
+
+*Statement on Alignment with CNCF Mission*
+
+Our team believes TiKV will be a great fit for CNCF. As the CNCF’s mission is to “create and drive the adoption of a new computing paradigm that is optimized for modern distributed systems environments capable of scaling to tens of thousands of self healing multi-tenant nodes,” we believe TiKV to be a core enabling technology for this mission. This belief has been validated by our many adopters and developers working to build, deploy, and maintain large-scale applications in a cloud-native environment. Moreover, TiKV has very strong existing synergy with other CNCF projects, and is used heavily in conjunction with projects like: Kubernetes, Prometheus, and gRPC. 
+
