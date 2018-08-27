@@ -92,6 +92,7 @@ CoreDNS can be thought of as a DNS protocol head that can be configured to front
 *Comparison with KubeDNS*:
 
 The incumbent DNS service for Kubernetes, “kubedns”, consists of three components:
+
 * kube-dns which uses SkyDNS as a library provides the DNS service based on the Kubernetes API
 * dnsmasq which acts as a caching server in front of kube-dns
 * sidecar provides metrics and health-check status.
