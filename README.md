@@ -93,6 +93,7 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/1/18](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Incubating
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[7/31/18](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/)|Sandbox
 [OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|Alexis Richardson, Bryan Cantrill|[6/20/17](https://goo.gl/6nmyDn)|[8/10/18](https://www.cncf.io/blog/2018/08/10/cncf-to-host-openmetrics/)|Sandbox
+[TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[8/28/18](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv/)|Sandbox
 
 ## Website Guidelines
 
@@ -100,7 +101,7 @@ CNCF has the following [guidelines](https://www.cncf.io/projects/website-guideli
 
 ## Scheduled Community Presentations
 
-If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. We can schedule a maximum of two community presentations per TOC meeting.
+If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. We can schedule a maximum of one community presentation per TOC meeting.
 
 * **May 4th, 2016**: [Prometheus](https://prometheus.io/) ([overview](https://docs.google.com/presentation/d/1GtVX-ppI95LhrijprGENsrpq78-I1ttcSWLzMVk5d8M/edit?usp=sharing)): Fabian Reinartz, Julius Volz
 * **August 3rd, 2016**: [Fluentd](http://www.fluentd.org/) ([overview](https://docs.google.com/presentation/d/1S79MNv3E2aG8nuZJFJ0XMSumf7jnKozN3vdrivCH77U/edit?usp=sharing)): Kiyoto Tamura / [Heron](https://github.com/twitter/heron) ([overview](https://docs.google.com/presentation/d/1pKwNO2V3VScjD1JxJ0gEgFTwAOccJgaJxHWgwcyczec/edit?usp=sharing)): Karthik Ramasamy / [Minio](https://minio.io/) ([overview](https://docs.google.com/presentation/d/1DGm_Zwq7qYHaXm6ZH26RAQeyBAKF1FOCLlEZQNTMJYE/edit?usp=sharing)): Anand Babu Periasamy
