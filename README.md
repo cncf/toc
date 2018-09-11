@@ -39,7 +39,7 @@ The TOC has created the following working groups to investigate and discuss the 
 | [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [4th Tue of every month at 8AM PT](https://zoom.us/my/cncfciwg) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
 | [Networking](https://github.com/cncf/wg-networking) | Ken Owens        |  [1st and 3rd Tue every month at 9AM PT](https://zoom.us/my/cncfnetworkingwg)                                      | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2M_-K5n67_zTdrPh_PtTKFC)
 | [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/my/cncfserverlesswg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
-| [Storage](https://github.com/cncf/wg-storage)    | Ben Hindman      |  [2nd and 4th Wed every month at 8AM PT](https://zoom.us/my/cncfstoragewg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2NoiNaLVZxr-ERc1ifKP7n6)
+| [Storage](https://github.com/cncf/wg-storage)    | Quinton Hoole      |  [2nd and 4th Wed every month at 8AM PT](https://zoom.us/my/cncfstoragewg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2NoiNaLVZxr-ERc1ifKP7n6)
 
 All meetings are on the public CNCF calendar: https://goo.gl/eyutah
 
@@ -152,7 +152,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Sep 18, 2018**: netdata
 * **Oct 2, 2018**: keycloak
 * **Oct 16, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues))
-* **Nov 6, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues))
+* **Nov 6, 2018**: Graduation/Project Reviews: TUF
 
 ## Meeting Minutes
 
