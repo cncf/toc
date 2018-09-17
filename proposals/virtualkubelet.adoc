@@ -60,7 +60,7 @@ It should be noted that VK is explicitly not intended to be an alternative to Ku
 
 *Statement on alignment with CNCF mission*:
 
-Virtual Kubelet strives to work within the ecosystem of Kubernetes rather than being a replacement architecture
-but we also are a standalone component that can be easily installed or deleted. Virtual Kubelet truly enables people to 
+Virtual Kubelet works within the Kubernetes ecosystem rather than being a replacement architecture
+but it is also are a standalone component that can be easily installed or deleted. Virtual Kubelet truly enables people to 
 extend beyond the lines of a traditional node. The VK community is growing with over 50 contributors from Microsoft, VMWare, Amazon, and more. 
 Release 1.0 is expected in December.
