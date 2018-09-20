@@ -1,0 +1,99 @@
+== Cortex
+
+*Name of project:* Cortex
+
+*Description:*
+
+Cortex is a horizontally scalable, highly available, and multitenant SaaS service that is compatible with Prometheus and offers a long-term storage solution.
+
+For teams looking for a Prometheus solution that offers the following over vanilla Prometheus:
+
+* Long-term metrics storage in a variety of cloud based and on-prem NoSQL data stores
+* Tenancy model supporting commercial SaaS offerings or large/multiple Kubernetes installations requiring data separation
+* On-demand Prometheus instance provisioning
+* A highly-available architecture that benefits from cloud-native architectures run with Kubernetes
+* A highly scalable Prometheus experience that scales out, not up
+* The ability to handle large metric topologies in a single instance without the need for federation
+
+Cortex was presented at the https://docs.google.com/presentation/d/190oIFgujktVYxWZLhLYN4q8p9dtQYoe4sxHgn4deBSI/edit#slide=id.g25ca91f87f_0_0[CNCF TOC meeting on 6/5/2018]
+
+*Statement on alignment with CNCF mission:*
+
+Cortex fully supports the CNCF's goal for scalability, "Ability to support all scales of deployment, from small developer centric environments to the scale of enterprises and service providers."
+
+There are many different ways to provide a scalable and available metric system for Kubernetes. Cortex with it's tenancy model combined with the both the high-availability and horizontally scalability architecture serves this goal directly.
+
+
+
+*Sponsor / Advisor from TOC:* Bryan Cantrill and Ken Owens
+
+*Unique identifier:* cortex
+
+*Preferred maturity level:* sandbox
+
+The CNCF sandbox was designed for just this kind of project. Specifically, the Cortex community is looking for the following from being in the sandbox:
+
+* Encourage public visibility of experiments or other early work that can add value to the CNCF mission
+* Visibility for a new projects designed to extend one or more CNCF projects with functionality
+* The Sandbox should provide a beneficial, neutral home for such projects, in order to foster collaborative development.
+
+*License:* Apache License 2.0
+
+*Source control repositories:* https://github.com/weaveworks/cortex
+
+*External Dependencies:* 
+
+Cortex depends on the following external software components:
+
+* Prometheus (Apache Software License 2.0)
+* Kubernetes (Apache Software License 2.0)
+* Jaeger Tracing (Apache Software License 2.0)
+* OpenTracing (Apache Software License 2.0)
+* GRPC (Apache Software License 2.0)
+* Weaveworks Mesh (Apache Software License 2.0)
+* Golang (Apache Software License 2.0)
+
+*Initial Committers (leads):*
+
+Julius Volz (Independent)
+Tom Wilkie (Grafana Labs)
+
+*Infrastructure requests (CI / CNCF Cluster):*
+
+None
+
+*Communication Channels:*
+
+* Slack: https://weave-community.slack.com/
+* Mailing List: https://groups.google.com/forum/#!forum/cortex-monitoring
+* Community Meeting Doc: https://docs.google.com/document/d/1mYvY4HMVGmetYHupi5z2BnwT1K8PiO64ZcxuX5c6ssc/edit#heading=h.ou5xp51fcp6v
+
+*Issue tracker:* https://github.com/weaveworks/cortex/issues
+
+*Website:* https://github.com/weaveworks/cortex
+
+*Release methodology and mechanics:* Most folks run HEAD in production.
+
+*Social media accounts:* None
+
+*Existing sponsorship:* WeaveWorks
+
+*Community size:*
+
+* 500+ stars
+* 60+ forks
+
+*Production usage*:
+
+Cortex is being actively used in production by the following:
+
+* Electronic Arts https://www.ea.com/
+* FreshTracks.io https://freshtracks.io/
+* Grafana Labs https://grafana.com/
+* OpenEBS https://www.openebs.io/
+* WeaveWorks https://weave.works/
+
+
+
+
+
