@@ -47,7 +47,7 @@ All meetings are on the public CNCF calendar: https://goo.gl/eyutah
 
 The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific):
 
-https://zoom.us/j/263858603
+https://zoom.us/j/967220397
 
 Or Telephone:
 
