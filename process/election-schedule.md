@@ -30,7 +30,6 @@ On 1/29/2019, the other 6 TOC positions are up for re-election by the GB. The ch
 
 *All terms are two years unless otherwise specified. Selected means reappointed or replaced.*
 
-* 3/17/2018: Both TOC-selected members are selected, one for a 1-year term.
 * 3/17/2018 (and each future even year): The TOC selects its chairperson.
 * 1/29/2019: 6 GB-selected TOC members are selected, half for 1-year terms.
 * 1/29/2019 (and each future odd year): End User TOC member is selected.
