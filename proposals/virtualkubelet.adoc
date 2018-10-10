@@ -8,7 +8,7 @@ Virtual Kubelet(VK) is an implementation of the Kubernetes kubelet which masquer
 VK’s primary focus is for serverless services such as Azure ACI, AWS Fargate, Hyper.sh, and others where these services can be treated like any other node in a Kubernetes cluster. 
 It should be noted that VK is explicitly not intended to be an alternative to Kubernetes federation.
 
-*Sponsor / Advisor from TOC*: Alexis Richardson <alexis@weave.works>
+*Sponsor / Advisor from TOC*: Alexis Richardson <alexis@weave.works> and Quinton Hoole <quinton.hoole@huawei.com>
 
 *Unique Identifier*: virtualkubelet
 
