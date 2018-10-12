@@ -15,11 +15,11 @@ As an intentionally minimal security specification / framework, we intentionally
 
 * Python reference implementation / specification (8 committers, 2 organizations)
 
-** Justin Cappos (NYU), Trishank Karthik Kuppusamy (DataDog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Vladimir Diaz (NYU), Sebastien Awwad (NYU), Joey Pabalinas (NYU), Marina Moore (NYU), Lois Anne Delong (NYU)
+  * Justin Cappos (NYU), Trishank Karthik Kuppusamy (DataDog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Vladimir Diaz (NYU), Sebastien Awwad (NYU), Joey Pabalinas (NYU), Marina Moore (NYU), Lois Anne Delong (NYU)
 
 * Notary (8 committers, 3 organizations)
 
-** Ying Li (Docker), Diogo Mónica (Docker), Evan Cordell (RedHat / CoreOS), David Lawrence (Docker), HuKeping (Huawei), Justin Cormack (Docker), Nathan McCauley (Docker), Riyaz Faizullabhoy (Docker)
+  * Ying Li (Docker), Diogo Mónica (Docker), Evan Cordell (RedHat / CoreOS), David Lawrence (Docker), HuKeping (Huawei), Justin Cormack (Docker), Nathan McCauley (Docker), Riyaz Faizullabhoy (Docker)
 
 
 ### Demonstrate a substantial ongoing flow of commits and merged contributions.
