@@ -1,0 +1,119 @@
+=== Dragonfly CNCF Sandbox Project Proposal
+
+*Name of Project:* Dragonfly
+
+*Description:*
+
+Dragonfly is an intelligent P2P based image and file distribution system. It aims to resolve three major issues: efficiency, flow control and security. 
+
+It is a general tool which can be integrated with container engine to help deploy cloud native applications at scale. In addition, users can deploy Dragonfly easily on Kubernetes via Helm and daemonset.
+
+Dragonfly ensures distribution efficiency of images with P2P policy, the avoidance of duplicated image downloads. To not impact the other running applications, Dragonfly implements image distribution flow control, such as download bandwidth limit and disk IO protection. Dragonfly also takes advantages of encryption algorithm for image transmission in order to meet secure demand of enterprise. Here are some key features of Dragonfly:
+
+* P2P based file distribution
+* Support a wide range of container technologies
+* Host level speed limit
+* Passive CDN for downloads
+* Strong consistency of distributed image
+* Disk protection and high efficient IO
+* High performance
+* Exception auto isolation
+* Effective concurrency control of Registry Auth
+* Image encryption when transmission
+
+Dragonfly consists of three major components:
+
+1. **SuperNode**: provides image cache services from source image registry; chooses appropriate downloading policy for each peer.
+
+1. **dfget**: is a client which downloads files from P2P network(peer nodes and SuperNode); receives control orders from SuperNode and transfers data among P2P network.
+
+1. **dfdaemon**: is an agent which proxies image pulling request from local container engine; filters out layer fetching requests and uses dfget to download all these layers.
+
+**Statement on alignment with CNCF mission:**
+
+The Cloud Native Dragonfly project is well-aligned with the CNCF's mission statement of supporting cloud native systems. When developers and operators finish to package applications in container images, Dragonfly aims to tackle distribution issue of packaged image distribution(1a). The intelligent distribution ability of Dragonfly can dynamically manage network bandwidth, disk IO and other resources efficiently to reduce maintenance and operation cost(1b). Dragonfly is decoupled with dependencies and designed to be consist of explicit and minimal services within itself(1c).
+
+The Cloud Native Dragonfly project is complimentary to other CNCF projects, such as Kubernetes, Helm, Harbor and containerd. SuperNode of Dragonfly can be deployed via Helm and dfget and dfdaemon agents can be deployed via daemonset of Kubernetes. When releasing a cloud native application in Kubernetes, Harbor takes advantanges of Dragonfly's open API to control the image preheater. when startup of pod, containerd sends image pull request to Dragonfly and Dragonfly takes over image distribution part automatically, efficiently and safely.
+
+*Roadmap:* 
+
+Dragonfly intends to deliver more essential and advanced feature in ecosystem openness, scalability and security. For more details, please refer to https://github.com/alibaba/Dragonfly/blob/master/ROADMAP.md[ROADMAP].
+
+*Sponsors from TOC:* Jonathan Boulle & Benjamin Hindman
+
+*Preferred maturity level:* Sandbox
+
+*License:* Apache License v2.0
+
+*Source control:* GitHub (https://github.com/alibaba/dragonfly)
+
+*External Dependencies:*
+
+External dependencies of Falco are listed below:
+|===
+|*Software*|*License*|*Project Page*
+
+|go-check|BSD|https://github.com/go-check/check/[https://github.com/go-check/check/]
+|compress|BSD|https://github.com/klauspost/compress[https://github.com/klauspost/compress]
+|cpuid|MIT|https://github.com/klauspost/cpuid[https://github.com/klauspost/cpuid]
+|uuid|BSD|https://github.com/pborman/uuid[https://github.com/pborman/uuid]
+|logrus|MIT|https://github.com/sirupsen/logrus[https://github.com/sirupsen/logrus]
+|pflag|BSD|https://github.com/spf13/pflag[https://github.com/spf13/pflag]
+|bytebufferpool|MIT|https://github.com/valyala/bytebufferpool[https://github.com/valyala/bytebufferpool]
+|fasthttp|MIT|https://github.com/valyala/fasthttp[https://github.com/valyala/fasthttp]
+|terminal|BSD|https://golang.org/x/crypto/ssh/terminal[https://golang.org/x/crypto/ssh/terminal]
+|unix|MIT|https://golang.org/x/sys/unix[https://golang.org/x/sys/unix]
+|windows|zlib|https://golang.org/x/sys/windows[https://golang.org/x/sys/windows]
+|gcfg|BSD|https://gopkg.in/gcfg.v1[https://gopkg.in/gcfg.v1]
+|yaml|Apache License 2.0|https://gopkg.in/yaml.v2[https://gopkg.in/yaml.v2]
+|===
+
+*Initial Committers:*
+
+Founding Maintainers:
+
+ * Allen Sun (Alibaba)
+ * Chaobing Chen (Meitu)
+ * Jian Wang (Alibaba)
+ * Jin Zhang (Alibaba)
+ * Zuozheng Hu (Alibaba)
+
+Additional Maintainers:
+
+ * Haibing Zhou (Ebay China)
+
+*Infrastructure requests (CI / CNCF Cluster):*
+
+_Development needs:_
+
+We currently use Travis and CircleCI for CI, but we may want to use CNCF resources to deploy jenkis for node e2e test.
+
+_Production needs:_
+
+none
+
+*Communication Channels:*
+
+ * Gitter: https://gitter.im/alibaba/Dragonfly
+ * Mailing List: https://lists.cncf.io/g/cncf-dragonfly (proposed)
+ * Issue tracker: https://github.com/alibaba/Dragonfly/issues
+
+*Website:* https://alibaba.github.io/Dragonfly/
+
+*Release methodology and mechanics:*
+
+We set the version rule of Dragonfly on the basis of SemVer which has a version number of MAJOR.MINOR.PATCH. Currently we do feature release 4-5 times per year(all with minor releases). Before every minor release, we plan to tag several RC releases to invite community developers to fully test them. In addition, all the code commits to Dragonfly project must add essential tests to cover the feature or code change. 
+
+*Social media accounts:*
+
+ * Twitter: https://twitter.com/dragonfly_oss[@dragonfly_oss]
+
+*Existing sponsorship*: Alibaba, AntFinancial and China Mobile
+
+*Community size:*
+
+2300+ stars
+
+3 full-time engineers
+
+16 contributors
