@@ -6,7 +6,7 @@ The Update Framework (TUF) helps developers maintain the security of a software 
 
 ### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
 
-* TUF is used in production by Docker, IBM, VMware, Cloudflare, Kolide, DigitalOcean, RedHat, DataDog, and many others.  [Uptane](https://uptane.github.io/), the automotive variant of TUF, is sold by major automotive vendors and is being adopted by automakers with over 1/3 of the cars on US roads in their forthcoming cars.  Uptane is included as part of [Automotive Grade Linux](https://www.automotivelinux.org/), another Linux Foundation project.
+* TUF is used in production by Docker, IBM, VMware, Cloudflare, Kolide, DigitalOcean, RedHat, Datadog, and many others.  [Uptane](https://uptane.github.io/), the automotive variant of TUF, is sold by major automotive vendors and is being adopted by automakers with over 1/3 of the cars on US roads in their forthcoming cars.  Uptane is included as part of [Automotive Grade Linux](https://www.automotivelinux.org/), another Linux Foundation project.
 * More detail about adoption, including some of the in progress adoptions, can be found here:  https://theupdateframework.github.io/adoptions.html
 
 ### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.  The committers should come from at least two organizations.
@@ -15,7 +15,7 @@ As an intentionally minimal security specification / framework, we intentionally
 
 * Python reference implementation / specification (8 committers, 2 organizations)
 
-  * Justin Cappos (NYU), Trishank Karthik Kuppusamy (DataDog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Vladimir Diaz (NYU), Sebastien Awwad (NYU), Joey Pabalinas (NYU), Marina Moore (NYU), Lois Anne Delong (NYU)
+  * Justin Cappos (NYU), Trishank Karthik Kuppusamy (Datadog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Vladimir Diaz (NYU), Sebastien Awwad (NYU), Joey Pabalinas (NYU), Marina Moore (NYU), Lois Anne Delong (NYU)
 
 * Notary (8 committers, 3 organizations)
 
@@ -29,13 +29,13 @@ We have had active contributions from an array of contributors across the CNCF l
 Changes to the TUF standard largely come in the form of TAPs (TUF Augmentation Proposals).  There are 7 active, non-informational TAPs (TAP 3-6 and 8-10).  
 
 The 5 accepted TAPs have authors from 5 different organizations:
-* [TAP3](https://github.com/theupdateframework/taps/blob/master/tap3.md) and [TAP4](https://github.com/theupdateframework/taps/blob/master/tap4.md), by Trishank Karthik Kuppusamy (DataDog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz (NYU), Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
+* [TAP3](https://github.com/theupdateframework/taps/blob/master/tap3.md) and [TAP4](https://github.com/theupdateframework/taps/blob/master/tap4.md), by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz (NYU), Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
 * [TAP6](https://github.com/theupdateframework/taps/blob/master/tap6.md) by David Lawrence (Docker), Vladimir Diaz (NYU), Justin Cappos (NYU)
 * [TAP9](https://github.com/theupdateframework/taps/blob/master/tap9.md) by heartsucker (ATS)
 * [TAP10](https://github.com/theupdateframework/taps/blob/master/tap10.md) by Vladimir Diaz (NYU)
 
 There are 2 TAPs that are currently under consideration (both of which are likely to be accepted) with authors from 4 organizations:
-* [TAP5](https://github.com/theupdateframework/taps/blob/master/tap5.md) by Trishank Karthik Kuppusamy (DataDog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz (NYU), Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
+* [TAP5](https://github.com/theupdateframework/taps/blob/master/tap5.md) by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz (NYU), Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
 * [TAP8](https://github.com/theupdateframework/taps/blob/master/tap8.md) by Hannes Mehnert (OCaml / Mirage), Justin Cappos (NYU)
 
 These demonstrate the breadth of contributions from different adopters and the way in which contributions are merged into the specification.
