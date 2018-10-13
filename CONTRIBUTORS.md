@@ -50,6 +50,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Josh Bernstein, Dell (Joshua.Bernstein@dell.com)
 * Justin Cormack, Docker (justin.cormack@docker.com)
 * Jun Du, Huawei (dujun5@huawei.com)
+* Kiran Mova, MayaData (kiran.mova@mayadata.io)
 * Lachlan	Evenson, Microsoft (lachlan.evenson@microsoft.com)
 * Lee Calcote, SolarWinds (leecalcote@gmail.com)
 * Lei	Zhang, HyperHQ (harryzhang@zju.edu.cn)
