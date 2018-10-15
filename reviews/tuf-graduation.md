@@ -1,6 +1,6 @@
 # TUF Graduation Application
 
-The Update Framework (TUF) helps developers maintain the security of a software update system, even against attackers that compromise the repository or signing keys. TUF provides a flexible framework and specification that developers can adopt into any software update system.
+The Update Framework (TUF) helps developers maintain the security of a software update system, even against attackers that compromise some repository or signing keys. TUF provides a flexible framework and specification that developers can adopt into any software update system.
 
 ## TUF fulfills all the incubating and graduation criteria:
 
@@ -11,7 +11,7 @@ The Update Framework (TUF) helps developers maintain the security of a software 
 
 ### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.  The committers should come from at least two organizations.
 
-As an intentionally minimal security specification / framework, we intentionally do not have a high degree of feature additions in the project.  Effort either comes on the implementations, such as Notary or the Python reference implementation, or comes on the specification itself.  
+As an intentionally minimal security specification / framework, we deliberately do not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as Notary or the Python reference implementation, or the specification itself.  
 
 * Python reference implementation / specification (8 committers, 2 organizations)
 
