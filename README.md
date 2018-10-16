@@ -43,6 +43,10 @@ The TOC has created the following working groups to investigate and discuss the 
 
 All meetings are on the public CNCF calendar: https://goo.gl/eyutah
 
+## Meeting Agenda and Minutes
+
+Meeting Minutes are recorded here: https://docs.google.com/document/d/1jpoKT12jf2jTf-2EJSAl4iTdA7Aoj_uiI19qIaECNFc/edit#
+
 ## Meeting Time
 
 The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific):
@@ -222,3 +226,4 @@ If you're interested in presenting at a TOC call about your project, please open
 * [September 4th, 2018](https://docs.google.com/presentation/d/1umu-iT5ZXq5XsMFmqmVeRe-tn2y7DeSoCebhrehi7fk/edit#slide=id.g41381b8fd7_0_199)
 * [September 18th, 2018](https://docs.google.com/presentation/d/1umu-iT5ZXq5XsMFmqmVeRe-tn2y7DeSoCebhrehi7fk/edit#slide=id.g41381b8fd7_0_199)
 * [October 2nd, 2018](https://docs.google.com/presentation/d/1Xt1xNSN8_pGuDLl5H8xEYToFss7VoIm7GBG0e_HrsLc/edit?usp=sharing)
+* [October 16th, 2018](https://docs.google.com/presentation/d/1UtObz-sbjJqtfoVxlfsl2YlalnZnWQQyH8wloDcRyXk/edit#slide=id.g25ca91f87f_0_0)
