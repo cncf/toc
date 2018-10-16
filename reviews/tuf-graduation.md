@@ -15,7 +15,7 @@ As an intentionally minimal security specification / framework, we deliberately 
 
 * Python reference implementation / specification (8 committers, 2 organizations)
 
-  * Justin Cappos (NYU), Trishank Karthik Kuppusamy (Datadog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Vladimir Diaz (NYU), Sebastien Awwad (NYU), Joey Pabalinas (NYU), Marina Moore (NYU), Lois Anne Delong (NYU)
+  * Justin Cappos (NYU), Trishank Karthik Kuppusamy (Datadog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Vladimir Diaz, Sebastien Awwad (NYU), Joey Pabalinas (NYU), Marina Moore (NYU), Lois Anne Delong (NYU)
 
 * Notary (8 committers, 3 organizations)
 
@@ -29,13 +29,13 @@ We have had active contributions from an array of contributors across the CNCF l
 Changes to the TUF standard largely come in the form of TAPs (TUF Augmentation Proposals).  There are 7 active, non-informational TAPs (TAP 3-6 and 8-10).  
 
 The 5 accepted TAPs have authors from 5 different organizations:
-* [TAP3](https://github.com/theupdateframework/taps/blob/master/tap3.md) and [TAP4](https://github.com/theupdateframework/taps/blob/master/tap4.md), by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz (NYU), Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
-* [TAP6](https://github.com/theupdateframework/taps/blob/master/tap6.md) by David Lawrence (Docker), Vladimir Diaz (NYU), Justin Cappos (NYU)
+* [TAP3](https://github.com/theupdateframework/taps/blob/master/tap3.md) and [TAP4](https://github.com/theupdateframework/taps/blob/master/tap4.md), by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz, Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
+* [TAP6](https://github.com/theupdateframework/taps/blob/master/tap6.md) by David Lawrence (Docker), Vladimir Diaz, Justin Cappos (NYU)
 * [TAP9](https://github.com/theupdateframework/taps/blob/master/tap9.md) by heartsucker (ATS)
-* [TAP10](https://github.com/theupdateframework/taps/blob/master/tap10.md) by Vladimir Diaz (NYU)
+* [TAP10](https://github.com/theupdateframework/taps/blob/master/tap10.md) by Vladimir Diaz
 
 There are 2 TAPs that are currently under consideration (both of which are likely to be accepted) with authors from 4 organizations:
-* [TAP5](https://github.com/theupdateframework/taps/blob/master/tap5.md) by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz (NYU), Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
+* [TAP5](https://github.com/theupdateframework/taps/blob/master/tap5.md) by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz, Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
 * [TAP8](https://github.com/theupdateframework/taps/blob/master/tap8.md) by Hannes Mehnert (OCaml / Cambridge University), Justin Cappos (NYU)
 
 These demonstrate the breadth of contributions from different adopters and the way in which contributions are merged into the specification.
