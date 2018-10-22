@@ -22,8 +22,8 @@ The following application links to the required information to become a graduate
 ### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 
 See the current list of [Envoy owners](https://github.com/envoyproxy/envoy/blob/master/OWNERS.md),
-who are also committers. Currently we have 11 and are on the constant lookout for new maintainers to
-join our ranks.
+who are also committers. Currently, we have 11 and are on the constant lookout for new maintainers
+to join our ranks.
 
 ### Demonstrate a substantial ongoing flow of commits and merged contributions.
 
