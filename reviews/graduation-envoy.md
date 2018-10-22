@@ -15,8 +15,9 @@ The following application links to the required information to become a graduate
   [here](https://www.envoyproxy.io/). This is not an inclusive list and it's likely that
   other organizations are also Envoy users.
 * Envoy is being used by numerous other companies, both large and small, to build higher layer
-  products and services. This includes Istio (RedHat, IBM, Google, VMware, Tetrate.io, etc.),
-  Solo.io, Datawire.io, Covalent.io, F5 Networks, HashiCorp, Heptio, and many others.
+  products and services. This includes Covalent.io, Datawire.io, HashiCorp, Heptio,
+  Istio (F5 Networks, Google, IBM, RedHat, Tetrate.io, Tigera.io, VMware, etc.), Solo.io,
+  and many others.
 
 ### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 
