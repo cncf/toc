@@ -9,14 +9,14 @@ The following application links to the required information to become a graduate
 
 ### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
 
-* Known end users include: Alibaba, Apple, AirBnb, Booking.com, Cookpad, DigitalOcean, eBay, Google, GO-JEK,
-  GroupOn, HashiCorp, IBM, Lyft, Medium, Microsoft, Netflix, Pinterest, Salesforce, Square, Stripe, Tencent, Twilio,
+* Known end users include: AirBnb, Alibaba, Apple, Booking.com, Cookpad, DigitalOcean, eBay, Google, GO-JEK,
+  GroupOn, IBM, Lyft, Medium, Microsoft, Netflix, Pinterest, Salesforce, Snap, Square, Stripe, Tencent, Twilio,
   Two Sigma, Uber, Verizon, VMware, VSCO, Yahoo Japan, and Yelp. Many of these logos are listed
   [here](https://www.envoyproxy.io/). This is not an inclusive list and it's likely that
   other organizations are also Envoy users.
 * Envoy is being used by numerous other companies, both large and small, to build higher layer
-  products and services. This includes Covalent.io, Datawire.io, HashiCorp, Heptio,
-  Istio (F5 Networks, Google, IBM, RedHat, Tetrate.io, Tigera.io, VMware, etc.), Solo.io,
+  products and services. This includes Covalent, Datawire, HashiCorp, Heptio,
+  Istio (F5 Networks, Google, IBM, RedHat, Tetrate, Tigera, VMware, etc.), Solo.io,
   and many others.
 
 ### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
