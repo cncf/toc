@@ -14,15 +14,15 @@ The key sections of the [charter](https://www.cncf.io/about/charter/) are:
 
 Current TOC [Members](https://github.com/cncf/toc#members) and their terms are:
 
-* Jonathan Boulle (term: 3 years - start date: 1/29/2016)
-* Bryan Cantrill (term: 3 years - start date: 1/29/2016)
-* Camille Fournier (term: 3 years - start date: 1/29/2016)
-* Brian Grant (term: 2 years - start date: 3/17/2018)
-* Benjamin Hindman (term: 3 years - start date: 1/29/2016)
-* Quinton Hoole (term: 1 year - start date: 3/17/2018)
-* Sam Lambert (term: 16 months - start date: 10/2/2017)
-* Ken Owens (term: 3 years - start date: 1/29/2016)
-* Alexis Richardson (term: 3 years - start date: 1/29/2016)
+* Jonathan Boulle (term: 3 years - start date: 1/29/2016) [GB appointed]
+* Bryan Cantrill (term: 3 years - start date: 1/29/2016) [GB appointed]
+* Camille Fournier (term: 3 years - start date: 1/29/2016) [GB appointed]
+* Brian Grant (term: 2 years - start date: 3/17/2018) [TOC appointed]
+* Benjamin Hindman (term: 3 years - start date: 1/29/2016) [GB appointed]
+* Quinton Hoole (term: 1 year - start date: 3/17/2018) [TOC appointed]
+* Sam Lambert (term: 16 months - start date: 10/2/2017) [enduser appointed]
+* Ken Owens (term: 3 years - start date: 1/29/2016) [GB appointed]
+* Alexis Richardson (term: 3 years - start date: 1/29/2016) [GB appointed]
 
 On 1/29/2019, the other 6 TOC positions are up for re-election by the GB. The charter requires that the initial appointments have been for 3 years (which they were), but to use staggered, 2-year terms going forward. We propose that half of the positions get a 1-year term in just that cycle (by drawing straws), so that each year afterwards, 3 of the 6 will be reappointed or replaced.
 
