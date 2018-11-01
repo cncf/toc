@@ -8,7 +8,7 @@ The key sections of the [charter](https://www.cncf.io/about/charter/) are:
 
 >6(c)(i) The TOC shall select a Chair of the TOC to set agendas and call meetings of the TOC.
 
->6(e)(ii) Nominations: Each individual (entity or member) eligible to nominate a TOC member may nominate up to two (2) technical representatives, (from vendors, end users or any other fields), at most one of which may be from their respective company.
+>6(e)(ii) Nominations: Each CNCF member may nominate up to two (2) technical representatives, (from vendors, end users or any other fields), at most one of which may be from their respective company. The nominee(s) must agree to participate prior to being added to the nomination list.
 
 >6(f)(i) TOC Members shall serve two-year, staggered terms. The initial six elected TOC members from the Governing Board election shall serve an initial term of three (3) years. The TOC members initially elected by the End User TAB and TOC shall serve an initial term of two (2) years.
 
