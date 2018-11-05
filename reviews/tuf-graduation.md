@@ -6,7 +6,8 @@ The Update Framework (TUF) helps developers maintain the security of a software 
 
 ### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
 
-* TUF is used in production by Cloudflare, Datadog, DigitalOcean, Docker, IBM, Kolide, Microsoft, RedHat, VMware, and many others.  [Uptane](https://uptane.github.io/), the automotive variant of TUF, is sold by major automotive vendors and is being adopted by automakers with over 1/3 of the cars on US roads in their forthcoming cars.  Uptane is included as part of [Automotive Grade Linux](https://www.automotivelinux.org/), another Linux Foundation project.
+* TUF is used in production by Cloudflare, Datadog, DigitalOcean, Docker, IBM, Kolide, LEAP, Microsoft, RedHat, VMware, and many others.   [Uptane](https://uptane.github.io/), the automotive variant of TUF, is sold by major automotive vendors and is being adopted by automakers with over 1/3 of the cars on US roads in their forthcoming cars.  Uptane is included as part of [Automotive Grade Linux](https://www.automotivelinux.org/), another Linux Foundation project.  
+* While these implementations all use the TUF specification, the implementations vary.  Datadog, OTAinfo, and LEAP use the Python reference implementation, most cloud companies use Notary, and most automobiles use custom variants written by different automotive vendors.  
 * More detail about adoption, including some of the in progress adoptions, can be found here:  https://theupdateframework.github.io/adoptions.html
 
 ### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.  The committers should come from at least two organizations.
