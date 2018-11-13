@@ -14,7 +14,7 @@ The following application links to the required information to become a graduate
 
 ### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
 
-* Bose, Infoblox, Zalando, Tradeshift, Yandex, AdGuard are knows users of CoreDNS. More adopters are listed [here](https://github.com/coredns/coredns/blob/master/ADOPTERS.md).
+* Bose, SoundCloud, Infoblox, Zalando, Tradeshift, Yandex, AdGuard are knows users of CoreDNS. More adopters are listed [here](https://github.com/coredns/coredns/blob/master/ADOPTERS.md).
 
 * On Kubernetes side, from [a recent CNCF Survey](https://docs.google.com/forms/d/e/1FAIpQLSehsvd0n2HKnPEifukNHej4gMBrXe2saJOmxAmPq34dTGMWKA/viewanalytics), 50% deployments of cluster are using CoreDNS as the DNS discovery service
 
