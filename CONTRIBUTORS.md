@@ -37,6 +37,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Drew Rapenchuk, Bloomberg	(drapenchuk@bloomberg.net)
 * Dustin Kirkland, Canonical (kirkland@canonical.com)
 * Eduardo	Silva, Treasure Data (eduardo@treasure-data.com)
+* Edward Lee, Intuit (edward_lee@intuit.com)
 * Erin Boyd, Red Hat (eboyd@redhat.com)
 * Gergely Csatari, Nokia (gergely.csatari@nokia.com)
 * Ghe	Rivero, Independent (ghe.rivero@gmail.com)
