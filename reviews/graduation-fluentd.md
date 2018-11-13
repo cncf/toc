@@ -4,7 +4,7 @@
 
 ### Fluentd Adoption and Ecosystem
 
-In terms of adoption, It's hard to measure the real numbers of deployments of Fluentd, but based in the public statistics considering only our own Docker images, in the last year  we see more than <u>15 million of pulls</u> .
+In terms of adoption, It's hard to measure the real numbers of deployments of Fluentd, but based in the public statistics considering only our own Docker images, in the last year  we see more than <u>15 million pulls</u> .
 
 As a reference of adoption by known companies, we can see that Fluentd plays an important role in the following production environments:
 
@@ -18,7 +18,7 @@ Fluentd have a different ecosystem model than other projects, it's composed by a
 
 Most of contributions to Fluentd happens through the implementation of plugins, where the majority of them (> 800) are maintained by different companies and individuals. Since the nature of Fluentd language in Ruby and C, these extensions are available through the common Ruby Gems channels and Fluentd offers a built-in tool to install any plugin available.
 
-note: during the last year we have seen a 50% decline of the number of companies contributing to the code base (Fluentd core), while at the same time a huge increase in the number of contributions to it ecosystem through plugins. 
+note: during the last year we have seen a 50% decline of the number of companies contributing to the code base (Fluentd core), while at the same time a huge increase in the number of contributions to it ecosystem through plugins.
 
 ## Progress since joining CNCF as an incubation project on December 2016
 
