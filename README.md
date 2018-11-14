@@ -95,14 +95,12 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [CloudEvents](https://github.com/cloudevents)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[5/22/18](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/)|Sandbox
 [Telepresence](https://github.com/telepresenceio)|Alexis Richardson, Camille Fournier|[4/17/18](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)|[5/22/18](https://www.cncf.io/blog/2018/05/22/telepresence-in-the-sandbox/)|Sandbox
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/1/18](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Incubating
-[Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[7/31/18](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/)|Sandbox
+[Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[7/31/18](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/)|Incubating
 [OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|Alexis Richardson, Bryan Cantrill|[6/20/17](https://goo.gl/6nmyDn)|[8/10/18](https://www.cncf.io/blog/2018/08/10/cncf-to-host-openmetrics/)|Sandbox
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[8/28/18](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv/)|Sandbox
 [Cortex](https://github.com/cortexproject/cortex)|Ken Owens, Bryan Cantrill|[6/5/18](https://docs.google.com/presentation/d/190oIFgujktVYxWZLhLYN4q8p9dtQYoe4sxHgn4deBSI/edit#slide=id.g25ca91f87f_0_0)|[9/20/18](https://www.cncf.io/blog/2018/09/20/cncf-to-host-in-the-sandbox/)|Sandbox
 [Buildpacks](https://github.com/buildpack/spec)|Brian Grant, Alexis Richardson|[8/21/18](https://docs.google.com/presentation/d/1RkygwZw7ILVgGhBpKnFNgJ4BCc_9qMG8cIf0MRbuzB4/edit?usp=sharing)|[10/3/18](https://www.cncf.io/blog/2018/10/03/cncf-to-host-cloud-native-buildpacks-in-the-sandbox)|Sandbox
 [Falco](https://github.com/falcosecurity/falco)|Brian Grant, Quinton Hoole|[7/17/18](https://docs.google.com/presentation/d/17p5QBVooGMLAtX6Mn6d3NAFhRmFHE0cH-WI_-0MbOm8/edit?usp=sharing)|[10/10/18](https://falco.org/)|Sandbox
-
-Quinton Hoole, Brian Grant
 
 ## Website Guidelines
 
@@ -161,7 +159,7 @@ If you're interested in presenting at a TOC call about your project, please open
 * **Sep 18, 2018**: netdata
 * **Oct 2, 2018**: keycloak
 * **Oct 16, 2018**: (interested presenters contact cra@linuxfoundation.org or open up a github [issue](https://github.com/cncf/toc/issues))
-* **Nov 6, 2018**: Graduation/Project Reviews: TUF
+* **Nov 20, 2018**: Graduation/Project Reviews
 
 ## Meeting Minutes
 
