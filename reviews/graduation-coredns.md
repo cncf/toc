@@ -5,7 +5,7 @@ CoreDNS joined CNCF in March 2017 as inception project and graduated as incubati
 
 It has grown significantly over time either as a DNS Server available in Cloud Native environment, either as a key component of Kubernetes project:
 - In Fall 2017, CoreDNS was proposed to become a DNS Discovery Service for Kubernetes.
-- First version as alpha feature was released in v1.09 of Kubernetes - Dec 2017
+- First version as alpha feature was released in v1.9 of Kubernetes - Dec 2017
 - CoreDNS is considered the “default” DNS Discovery Service for Kubernetes v1.13 - to be released in Dec 2018
 
 The following application links to the required information to become a graduated project.
@@ -21,7 +21,7 @@ The following application links to the required information to become a graduate
 
 ### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 
-CoreDNS has currenlty 16 maintainers.
+CoreDNS currently has 16 maintainers.
 They are listed as ‘approvers’ on our [OWNER document](https://github.com/coredns/coredns/blob/master/OWNERS)
 
 ### Demonstrate a substantial ongoing flow of commits and merged contributions.
