@@ -4,7 +4,7 @@
 
 ### Fluentd Adoption and Ecosystem
 
-In terms of adoption, It's hard to measure the real numbers of deployments of Fluentd, but based in the public statistics considering only our own Docker images, in the last year  we see more than <u>15 million pulls</u> .
+In terms of adoption, It's hard to measure the real numbers of deployments of Fluentd, but based in the public statistics considering <u>only</u> our own Docker images, in the last year we see more than <u>35 million pulls</u>.
 
 As a reference of adoption by known companies, we can see that Fluentd plays an important role in the following production environments:
 
@@ -26,10 +26,9 @@ note: during the last year we have seen a 50% decline of the number of companies
 
 - Fluentd Code Base
 
-  - **48** Official releases  (today we are at v1.1.2)
+  - **61** Official releases  (today we are at **v1.3.0**)
 
 - **New** Fluentd plugins hosted in our Github organization
-
   - Prometheus Output: https://github.com/fluent/fluent-plugin-prometheus
   - NodeJS Output: https://github.com/fluent/fluent-logger-node/
   - Kafka Output: https://github.com/fluent/fluent-plugin-kafka
@@ -44,7 +43,7 @@ note: during the last year we have seen a 50% decline of the number of companies
 
   - Slack: on January 2017 an average of 11 new members joined, as of July 2018 we have an average of 23 new members per week.
 
-  - Github Stars: **6600** as of today (we got 1300 new in the last 12 months)
+  - Github Stars: **7000** as of today (we got 1500 new in the last 12 months)
 
 
 ## To graduate from inception or incubating status, or for a new project to join as a graduated project, a project must meet the incubating stage criteria plus:
