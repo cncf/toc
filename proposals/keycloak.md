@@ -11,7 +11,8 @@ Users authenticate with Keycloak rather than to individual applications. This fr
 ### Token based security
 
 Through OpenID Connect flows applications retrieve access tokens that can be used to invoke services securely without the need to pass user credentials. This enables easy end-to-end user authentication for client-side applications, micro services, service mesh and other modern architectures.
-Identity Brokering and Social Login
+
+### Identity Brokering and Social Login
 
 Keycloak can authenticate users using any existing external OpenID Connect or SAML 2.0 Identity Providers by acting as a proxy and hiding the involved complexity from applications. Leveraging these mechanisms makes enabling authentication via social providers trivial and quick. 
 
@@ -172,8 +173,9 @@ Data from 12th Nov 2018:
 * Github commits: 11163
 * Github contributors: 287 
 
-Developer mailing list (keycloak-dev@jboss.org): ~150 posts/month
-User Mailing list (keycloak-users@jboss.org): ~300 posts/month
+Mailing lists related statistics:
+* Developer mailing list (keycloak-dev@jboss.org): ~150 posts/month
+* User Mailing list (keycloak-users@jboss.org): ~300 posts/month
 
 Keycloak is currently being sponsored by Red Hat with 20+ people working full time on the project. Leveraging JIRA hosted on jira.jboss.org
 
