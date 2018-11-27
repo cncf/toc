@@ -3,7 +3,7 @@
 
 CoreDNS joined CNCF in March 2017 as inception project and graduated as incubation project on February 2018
 
-It has grown significantly over time either as a DNS Server available in Cloud Native environment, either as a key component of Kubernetes project:
+It has grown significantly over time in maturity and user base, both as a DNS Server available in Cloud Native environment and as a key component of Kubernetes project:
 - In Fall 2017, CoreDNS was proposed to become a DNS Discovery Service for Kubernetes.
 - First version as alpha feature was released in v1.9 of Kubernetes - Dec 2017
 - CoreDNS is considered the “default” DNS Discovery Service for Kubernetes v1.13 - to be released in Dec 2018
@@ -14,7 +14,14 @@ The following application links to the required information to become a graduate
 
 ### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
 
-* Bose, SoundCloud, Infoblox, Zalando, Tradeshift, Yandex, AdGuard are knows users of CoreDNS. More adopters are listed [here](https://github.com/coredns/coredns/blob/master/ADOPTERS.md).
+* **SoundCloud** uses CoreDNS as internal cache+proxy in Kubernetes clusters to handle hundreds of thousands DNS service discovery requests per second.
+* **Infoblox** uses CoreDNS in its Active Trust Cloud SaaS service, as well as for Kubernetes cluster DNS.
+* **Admiral** uses CoreDNS to handle geographic DNS requests for our public-facing microservices.
+* **Qunar** uses CoreDNS for service discovery of its GPU machine learning cloud with TensorFlow and Kubernetes.
+* **Tradeshift** uses CoreDNS to look up company identifiers across multiple shards/regions/zones
+* **AdGuard** uses CoreDNS in AdGuard Home and, therefore, in production public AdGuard DNS servers.
+* **Bose, Zalando, Yandex, Hellofresh, Sodimac, Kismia [and many others](https://github.com/coredns/coredns/blob/master/ADOPTERS.md)** use CoreDNS for their production's Kubernetes Cluster
+
 
 * On Kubernetes side, from [a recent CNCF Survey](https://docs.google.com/forms/d/e/1FAIpQLSehsvd0n2HKnPEifukNHej4gMBrXe2saJOmxAmPq34dTGMWKA/viewanalytics), 50% deployments of cluster are using CoreDNS as the DNS discovery service
 
@@ -31,8 +38,7 @@ More than [100+ contributors](https://github.com/coredns/coredns/graphs/contribu
 ### Have committers from at least two organizations.
 
 We currently have [16 maintainers](https://github.com/coredns/coredns/blob/master/OWNERS).
-Most of them are contributing on their spare time and each considered at its own organization,
-4 maintainers are working for 2 distinct companies - Infoblox, Google - that support CoreDNS.
+Most of them are contributing in their spare time; but, considering organizations, 4 maintainers are working for 2 distinct companies
 
 ### Have achieved and maintained a Core Infrastructure Initiative Best Practices Badge.
 
