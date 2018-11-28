@@ -189,3 +189,7 @@ https://www.keycloak.org/security.html
 The Keycloak team believes that this project aligns well with section 1(c) of the CNCF Charter by providing a standard and simple way to secure Cloud Native applications and services. Out of the box, Keycloak provides an extensive set of features such as user federation, admin console and account management console. Securing applications and services can be done with only a few lines of code through Keycloak adapters that are provided for a range of languages and frameworks. Keycloak also provides both OpenID Connect and SAML 2.0 enabling any application that have support for either to be easily secured.
 Keycloak already has wide community support. Bringing Keycloak into the CNCF, the team hopes to continue to expand the list of features, making it even easier to secure different types of applications and reach an even wider community interested in contribution and adoption.
 
+## Slides
+Slide deck about Keycloak which got prepared for the TOC meeting on 2nd October 2018. Keycloak slides begin at slide 26th of this deck:
+https://docs.google.com/presentation/d/1Xt1xNSN8_pGuDLl5H8xEYToFss7VoIm7GBG0e_HrsLc/mobilepresent?slide=id.g3f805096e4_212_0
+
