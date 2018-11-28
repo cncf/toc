@@ -91,7 +91,7 @@ Keycloak integrates with OpenShift https://github.com/keycloak/openshift-integra
 Keycloak provides a standalone adapter called Gatekeeper allowing securing applications via sidecar. Instrumenting security rules without changing application codebase. https://github.com/keycloak/keycloak-gatekeeper 
 
 ## Sponsors from TOC
-TBD
+Quinton Hoole
 
 ## Current Project Sponsor: 
 Red Hat
