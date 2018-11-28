@@ -69,6 +69,7 @@ Minor releases are as needed.
 * Lyft
 * Cillium
 * Nvidia
+* Datica
 
 *Statement on alignment with CNCF mission*:
 
