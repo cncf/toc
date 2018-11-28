@@ -11,13 +11,26 @@ Jaeger fulfills all CNCF incubating and graduation criteria. The following appli
 
 ## Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
 
-Known end users include: Alibaba Cloud, Base CRM (acquired by ZenDesk), Circonus, ContaAzul, FarmersEdge, GrafanaLabs, Massachusetts Open Cloud, Northwestern Mutual, Nets, Stagemonitor, RiksTV, SeatGeek, SpotHero, Vistar Media, Uber, Weave, Weaveworks, Zenly.
+Known end users include: Alibaba Cloud, Base CRM (acquired by ZenDesk), Candide, Circonus, ContaAzul, FarmersEdge, GrafanaLabs, Massachusetts Open Cloud, Northwestern Mutual, Nets, Stagemonitor, RiksTV, SeatGeek, SpotHero, Vistar Media, Uber, Weave HQ, Weaveworks, Zenly.
+
+Some specific examples:
+
+  * [Uber Technologies](https://eng.uber.com/distributed-tracing/) has been running Jaeger in production since 2015. Over 2000 microservices are integrated with Jaeger, which collects about 5 billion spans per day. Data mining techniques on traces are used to significantly reduce root cause analysis time during outages.
+  * [Weaveworks](https://www.weave.works/) empowers developers and DevOps teams to build better software faster. Using Jaeger in production since Spring 2018. ~70 microservices, ~600 containers, most of services are instrumented with Jaeger. Using AWS Elasticsearch as the span storage backend, with two weeks retention. 
+    * Bryan Boreham at KubeCon EU 2018. [How we used Jaeger and Prometheus to deliver lightning-fast user queries](https://www.youtube.com/watch?v=qg0ENOdP1Lo).
+  * [ContaAzul](http://contaazul.com), ERP for small and medium business in Brazil, one legacy monolith with ~60 microservices around it, 20 of them already instrumented and the rest being prioritized. Microservices are deployed to a self-maintained Kubernetes cluster on AWS. Each Kubernetes node holds a Jaeger agent responsible for collecting spans from its node pods. Span storage is on AWS Elasticsearch Service; it currently has 2B searchable documents related to Jaeger spans.
+    * Quote: "Jaeger is helping us to increase observability since Feb 2018 and is praised by our developers."
+  * [Weave HQ](https://www.getweave.com/) threads together data, software and communication platforms to build stronger relationships at the point of contact. Deployed at over 8000 medical offices. Using Jaeger since early 2018; ~150 active microservices, ~500 containers, 90% of microservices are instrumented for tracing. Using Cassandra as span storage backend, 1 week retention. 
+    * Fun fact 1: started collecting fewer metrics in Prometheus because Jaeger works much better for root cause analysis than having extra metrics.
+    * Fun fact 2: most application logs are written to Jaeger spans via the OpenTracing API and viewed in Jaeger UI in the context of the trace, instead of log aggregation tools like ELK.
+  * [Candide](https://candide.eu/), a mobile app for gardeners, uses Jaeger in production running on GKE with an Elasticsearch backend hosted on Elastic Cloud. 30+ microservices.
 
 Jaeger is also being integrated with other open source projects:
 
   * OpenCensus libraries and agent ship with [exporters for Jaeger](https://opencensus.io/guides/exporters/supported-exporters/java/jaeger/)
   * [Istio comes with Jaeger included](https://istio.io/docs/tasks/telemetry/distributed-tracing/)
   * [Envoy works with Jaeger native client](https://www.envoyproxy.io/docs/envoy/latest/start/sandboxes/jaeger_native_tracing)
+  * Eclipse Trace Compass incubator supports [importing traces from Jaeger](https://github.com/tuxology/tracevizlab/tree/master/labs/303-jaeger-opentracing-traces)
 
 ## Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 
