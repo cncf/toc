@@ -4,10 +4,10 @@
 
 *Description*:
 
-Cri-o is a stable, carried-forward container runtime specifically tailored for Kubernetes, and nothing more.
-Not reinventing the wheel, but using shared components, refined approaches, and battle-tested lessons learned to provide a dedicated container runtime for Kubernetes.
-Tuned for performance, stability, compatibility, and adherence to standards, all for enterprise deployments.
-A building block of a Kubernetes cluster, to facilitate the life cycle of containers as required by the Kubernetes Container-Runtime-Interface (CRI).
+Cri-o is a stable container runtime specifically tailored for Kubernetes.
+A founding principal was not "reinventing the wheel" and so the project uses shared components, refined approaches tested in production, and existing battle-tested code.
+Further, it is tuned for performance, stability, compatibility, and adherence to standards, particularly the Kubernetes Conformance tests.
+In short CRI-O is a building block of a Kubernetes cluster, to facilitate the life cycle of containers as required by the Kubernetes Container-Runtime-Interface (CRI).
 
 Cri-o was born in kubernetes-incubator and grew to production stable there.
 Some have claimed since being a kubernetes project that it is already "a CNCF project", but it is often left as an after thought in brand, awareness and support as a top-level project.
@@ -47,7 +47,8 @@ This proposal is effective to promote from the kubernetes incubator a project th
 
 *Release methodology and mechanics*
 
-Major releases are matching to Kubernetes major releases. Minor releases are as needed.
+Major releases are matching to Kubernetes major releases.
+Minor releases are as needed.
 
 *Social media accounts*:
 
