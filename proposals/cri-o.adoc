@@ -4,12 +4,12 @@
 
 *Description*:
 
-Cri-o is a stable container runtime specifically tailored for Kubernetes.
+CRI-O is a stable container runtime specifically tailored for Kubernetes.
 A founding principal was not "reinventing the wheel" and so the project uses shared components, refined approaches tested in production, and existing battle-tested code.
 Further, it is tuned for performance, stability, compatibility, and adherence to standards, particularly the Kubernetes Conformance tests.
 In short CRI-O is a building block of a Kubernetes cluster, to facilitate the life cycle of containers as required by the Kubernetes Container-Runtime-Interface (CRI).
 
-Cri-o was born in kubernetes-incubator and grew to production stable there.
+CRI-O was born in kubernetes-incubator and grew to production stable there.
 Some have claimed since being a kubernetes project that it is already "a CNCF project", but it is often left as an after thought in brand, awareness and support as a top-level project.
 This proposal is effective to promote from the kubernetes incubator a project that has fully matured.
 
@@ -62,20 +62,20 @@ Minor releases are as needed.
 
 *Adopters*:
 
-* Red Hat
+* Red Hat - Default container runtime for their OpenShift product
 * Intel
-* kata-containers
-* SuSE
-* Lyft
-* Cillium
+* kata-containers - primary CRI runtime worked with
+* SuSE - Default for kubic and on track for their CaaSP offering (https://kubic.opensuse.org/blog/2018-09-17-crio-default/)
+* Lyft - Default container runtime for their kubernetes deployment
+* Cillium - Default example for deployment on kubernetes (https://github.com/cilium/cilium/tree/master/examples/kubernetes/)
 * Nvidia
-* Datica
+* Datica - Default runtime for their CKS offering (https://datica.com/compliant-kubernetes-service/)
 
 *Statement on alignment with CNCF mission*:
 
-Cri-o's mission and goal is to align with and provide everything that Kubernetes expects from a container-runtime, and nothing more.
+CRI-O's mission and goal is to align with and provide everything that Kubernetes expects from a container-runtime, and nothing more.
 Based on the OpenContainer Initiative (OCI) format for container images, runtimes and distribution, with compatibility for existing docker formats as well.
-The cri-o project is imbued with the spirit of Kubernetes and the CNCF mission.
+The CRI-O project is imbued with the spirit of Kubernetes and the CNCF mission.
 
 *Contributors*: https://github.com/kubernetes-sigs/cri-o/graphs/contributors
 
