@@ -208,8 +208,6 @@ The CRI-O project is imbued with the spirit of Kubernetes and the CNCF mission.
   - github.com/tchap/go-patricia
   - github.com/ugorji/go
   - github.com/urfave/cli
-* LGPLv3
-  - github.com/juju/ratelimit
 * ISC
   - github.com/davecgh/go-spew
   - github.com/ostreedev/ostree-go
