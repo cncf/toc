@@ -58,14 +58,15 @@ Minor releases are as needed.
 
 * Red Hat (lead)
 * Intel
-* SuSE
+* SUSE
 
 *Adopters*:
 
 * Red Hat - Default container runtime for their OpenShift product
 * Intel
 * kata-containers - primary CRI runtime worked with
-* SuSE - Default for kubic and on track for their CaaSP offering (https://kubic.opensuse.org/blog/2018-09-17-crio-default/)
+* openSUSE - Default for kubic (https://kubic.opensuse.org/blog/2018-09-17-crio-default/)
+* SUSE - on track for their CaaSP offering (https://www.suse.com/releasenotes/x86_64/SUSE-CAASP/3.0/#Intro.New)
 * Lyft - Default container runtime for their kubernetes deployment
 * Cillium - Default example for deployment on kubernetes (https://github.com/cilium/cilium/tree/master/examples/kubernetes/)
 * Nvidia
