@@ -102,6 +102,7 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 [Buildpacks](https://github.com/buildpack/spec)|Brian Grant, Alexis Richardson|[8/21/18](https://docs.google.com/presentation/d/1RkygwZw7ILVgGhBpKnFNgJ4BCc_9qMG8cIf0MRbuzB4/edit?usp=sharing)|[10/3/18](https://www.cncf.io/blog/2018/10/03/cncf-to-host-cloud-native-buildpacks-in-the-sandbox)|Sandbox
 [Falco](https://github.com/falcosecurity/falco)|Brian Grant, Quinton Hoole|[7/17/18](https://docs.google.com/presentation/d/17p5QBVooGMLAtX6Mn6d3NAFhRmFHE0cH-WI_-0MbOm8/edit?usp=sharing)|[10/10/18](https://falco.org/)|Sandbox
 [Dragonfly](https://github.com/dragonflyoss/dragonfly)|Jonathan Boulle, Benjamin Hindman|[9/4/18](https://docs.google.com/presentation/d/1umu-iT5ZXq5XsMFmqmVeRe-tn2y7DeSoCebhrehi7fk/edit#slide=id.g41381b8fd7_0_199)|[11/15/18](https://github.com/oss/dragonfly)|Sandbox
+[Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet)|Alexis Richardson, Quinton Hoole|[9/18/18](https://github.com/cncf/toc/issues/154)|[12/4/18](https://github.com/virtual-kubelet/virtual-kubelet)|Sandbox
 
 ## Website Guidelines
 
