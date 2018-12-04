@@ -1,0 +1,66 @@
+== Virtual Kubelet
+
+*Name of project*: Virtual Kubelet
+
+*Description*:
+
+Virtual Kubelet(VK) is an implementation of the Kubernetes kubelet which masquerades as a node for the purposes of extending the Kubernetes node API to other services. 
+VK’s primary focus is for serverless services such as Azure ACI, AWS Fargate, Hyper.sh, and others where these services can be treated like any other node in a Kubernetes cluster. 
+It should be noted that VK is explicitly not intended to be an alternative to Kubernetes federation.
+
+*Sponsor / Advisor from TOC*: Alexis Richardson <alexis@weave.works> and Quinton Hoole <quinton.hoole@huawei.com>
+
+*Unique Identifier*: virtualkubelet
+
+*License*: ALv2
+
+*Maturity Level:* Sandbox
+
+*Source control repositories*:
+
+* https://github.com/virtual-kubelet/virtual-kubelet
+* https://github.com/virtual-kubelet/
+* https://virtual-kubelet.io
+
+*Current Core Maintainers*:
+
+* Robbie Zhang (Microsoft)
+* Ria Bhatia (Microsoft)
+* Onur Filiz (Amazon)
+* Harry Zhang (Hyper.sh)
+* Yaron Schneider (Microsoft)
+* Jeremy Rickard (Microsoft)
+* Ben Corrie (VMWare)
+* Brian Goff (Microsoft)
+
+*Infrastructure requirements*: AWS testing, CNCF Cluster (Prow/Tide), Azure testing (future)
+
+
+*Issue tracker*: https://github.com/virtual-kubelet/virtual-kubelet/issues
+
+*Mailing lists*
+
+* Slack: https://kubernetes.slack.com/messages/virtual-kubelet
+
+*Website*: http://virtual-kubelet.io - Not completed yet
+
+*Social media accounts*:
+
+* https://twitter.com/virtual-kubelet
+
+*Existing sponsorship*:
+
+* Microsoft
+* Amazon
+* Hyper.sh
+* VMWare
+* Huawei
+
+*Other Contributors*: https://github.com/virtual-kubelet/virtual-kubelet/graphs/contributors
+
+*Statement on alignment with CNCF mission*:
+
+Virtual Kubelet works within the Kubernetes ecosystem rather than being a replacement architecture
+but it is also are a standalone component that can be easily installed or deleted. Virtual Kubelet truly enables people to 
+extend beyond the lines of a traditional node. The VK community is growing with over 50 contributors from Microsoft, VMWare, Amazon, and more. 
+Release 1.0 is expected in December.
