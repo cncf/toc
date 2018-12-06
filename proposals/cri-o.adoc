@@ -43,7 +43,7 @@ This proposal is effective to promote from the kubernetes incubator a project th
 * #cri-o on Freenode IRC
 * https://kubernetes.slack.com/messages/crio
 
-*Website*: http://cri-o.io
+*Website*: https://cri-o.io
 
 *Release methodology and mechanics*
 
