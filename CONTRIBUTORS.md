@@ -45,6 +45,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Gou	Rao, Portworx (gou@portworx.com)
 * Ian Crosby, Container Solutions (ian.crosby@container-solutions.com)
 * Jeyappragash JJ, Independent (pragashjj@gmail.com)
+* Jinming Yue, Caicloud (yuejinming@caicloud.io)
 * Joe Beda, Heptio (joe@heptio.com)
 * Jonghyuk Jong Choi, NCSoft (jongchoi@ncsoft.com)
 * Josef Adersberger, QAware (josef.adersberger@qaware.de)
