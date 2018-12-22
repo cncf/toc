@@ -69,7 +69,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Randy	Abernethy, RX-M LLC (randy.abernethy@rx-m.com)
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
 * Sarah Allen, Google (sarahallen@google.com)
-* Steven Dake, Cisco (stdake@cisco.com)
+* Steven Dake, NetApp (steven.dake@gmail.com)
 * Tammy Butow, Gremlin (tammy@gremlin.com)
 * Timothy Chen, Hyperpilot (tim@hyperpilot.io)
 * Vasu Chandrasekhara, SAP SE (vasu.chandrasekhara@sap.com)
