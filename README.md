@@ -107,7 +107,7 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 
 ## Website Guidelines
 
-CNCF has the following [guidelines](https://www.cncf.io/projects/website-guidelines/) for the websites of our projects.
+CNCF has the following [guidelines](https://github.com/cncf/foundation/blob/master/website-guidelines.md) for the websites of our projects.
 
 ## Scheduled Community Presentations
 
