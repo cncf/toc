@@ -1,6 +1,6 @@
 # CNCF Cloud Native Definition v1.0 #
 
-*Approved by TOC: 6/11/2018*
+*Approved by TOC: 2018-06-11*
 
 中文版本在英文版本之后 (in Chinese below)
 
