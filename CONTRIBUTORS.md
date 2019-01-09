@@ -41,6 +41,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Edward Lee, Intuit (edward_lee@intuit.com)
 * Erin Boyd, Red Hat (eboyd@redhat.com)
 * Gergely Csatari, Nokia (gergely.csatari@nokia.com)
+* Geri Jennings, CyberArk (geri.jennings@cyberark.com)
 * Ghe	Rivero, Independent (ghe.rivero@gmail.com)
 * Gou	Rao, Portworx (gou@portworx.com)
 * Ian Crosby, Container Solutions (ian.crosby@container-solutions.com)
