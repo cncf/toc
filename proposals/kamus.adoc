@@ -1,0 +1,77 @@
+== Kamus
+
+*Name of project:* Kamus
+
+*Description:*
+
+Kamus solve the hard problem of secrets management.
+
+Every application requires a secret (client secret, token, API key, certificate, etc.). 
+These secrets are highly sensitive and should be stored securely -- they also need to pass from the developer's machine (who creates them) to the application running in production. 
+Hence the need for a solution that allows developers to automatically deploy these secrets, in a secure and robust manner. 
+The existing solutions to this problem (including Kubernetes native secret solutions) are imperfect, either from a security or a usability standpoint.
+
+Kamus solves this problem by encrypting a secret for a specific application. 
+Anyone can encrypt a secret, but only this specific application can decrypt it as well. 
+This permission model is secure by default; there's no need to define additional access policies.
+
+Kamus was designed with GitOps in mind.
+By using Kamus, the encrypted secrets can be stored in Git and deploy with the application manifest files.
+Storing encrypted secrets with manifest files create one source of truth to the application state. 
+
+*Statement on alignment with CNCF mission:*
+
+Kamus solved the hard problem of secrets management, an essential part of application development. 
+This is aligned with the CNCF stated mission - "empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds". 
+Kamus also help to build applications that are "resilient, manageable, and observable", and "allow engineers to make high-impact changes frequently and predictably with minimal toil".
+
+*Sponsor / Advisor from TOC:* Looking for a sponsor
+
+
+*Unique identifier:* kamus
+
+*Preferred maturity level:* sandbox
+
+*License:* Apache License v2.0
+
+*Source control repositories:* https://github.com/Soluto/Kamus/
+
+*External Dependencies:*
+
+Kamus composed from multiple components. The full component list can be found here: https://drive.google.com/file/d/1JYMGSdvM530Akross_YF7v8BqndKMr8_/view?usp=sharing.
+These are all the licenses used by all the components:
+
+* AFL-2.1
+* Apache-2.0
+* BSD-2-Clause
+* BSD-3-Clause
+* ISC
+* LGPL-3.0
+* MIT
+
+*Lead:* Omer Levi Hevroni (Soluto)
+
+*Infrastructure requests (CI / CNCF Cluster):* None
+
+*Communication Channels:*
+
+*Issue tracker:* https://github.com/Soluto/Kamus/issues
+
+*Website:* https://github.com/Soluto/Kamus/
+
+*Release methodology and mechanics:*
+
+Released continuously, both to Dockerhub and to NPM (CLI), when changes are merged to master branch.
+Unit\integration\end to end tests and security test are running on each PR, and are required to pass in order to merge the changes to the master branch.
+
+*Social media accounts:* In Progress - Twitter
+
+*Existing sponsorship*: None
+
+*Community size:*
+
+* 74 stars
+* 4 forks
+* Issues from the community
+
+*Production usage*: Soluto, 6 months
