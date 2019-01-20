@@ -100,7 +100,7 @@ The key high-level questions that the voting TOC members will be looking to have
 
 Some details that might inform the above include:
 
-* Does ithe project have a sound, documented process for source control, issue tracking, release management etc.
+* Does the project have a sound, documented process for source control, issue tracking, release management etc.
 * Does it have a documented process for adding committers?
 * Does it have a documented governance model of any kind?
 * Does it have committers from multiple organizations?
