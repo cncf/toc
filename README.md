@@ -22,7 +22,7 @@ Election [schedule](process/election-schedule.md)
 
 ## Mailing List
 
-cncf-toc@lists.cncf.io: https://ponymail.cncf.io/list.html?cncf-toc@lists.cncf.io
+cncf-toc@lists.cncf.io: https://lists.cncf.io/g/cncf-toc
 
 To join: https://lists.cncf.io/mailman/listinfo/cncf-toc
 
