@@ -8,15 +8,15 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 
 ## Members
 
-* **Jonathan Boulle** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
-* **Bryan Cantrill** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
-* **Camille Fournier** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
+* **Joe Beda** (term: TBD years - start date: 1/29/2019 - 1/29/TBD)
+* **Jeff Brewer** (term: 1 year - start date: 1/29/2019 - 1/29/2020)
+* **Brendan Burns** (term: TBD years - start date: 1/29/2019 - 1/29/TBD)
+* **Matt Klein** (term: TBD years - start date: 1/29/2019 - 1/29/TBD)
 * **Brian Grant** (term: 2 years - start date: 3/17/2018 - 3/17/2020)
-* **Benjamin Hindman** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
+* **Kelsey Hightower** (term: TBD years - start date: 1/29/2019 - 1/29/TBD)
 * **Quinton Hoole** (term: 1 years - start date: 3/17/2018 - 3/17/2019)
-* **Sam Lambert** (term: 16 months - start date: 10/2/2017 - 1/29/2019)
-* **Ken Owens** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
-* **Alexis Richardson** (term: 3 years - start date: 1/29/2016 - 1/29/2019)
+* **Xiang Li** (term: TBD years - start date: 1/29/2019 - 1/29/TBD)
+* **Alexis Richardson** (term: TBD years - start date: 1/29/2019 - 1/29/TBD)
 
 Election [schedule](process/election-schedule.md)
 
