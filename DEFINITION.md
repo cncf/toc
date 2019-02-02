@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) below
+[中文版本](#中文版本) | [日本語版](#日本語版) (in Chinese and Japanese below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
