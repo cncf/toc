@@ -57,7 +57,7 @@ These are all the licenses used by all the components:
 
 *Issue tracker:* https://github.com/Soluto/Kamus/issues
 
-*Website:* https://github.com/Soluto/Kamus/
+*Website:* https://github.com/Soluto/Kamus
 
 *Release methodology and mechanics:*
 
@@ -70,8 +70,10 @@ Unit\integration\end to end tests and security test are running on each PR, and 
 
 *Community size:*
 
-* 74 stars
-* 4 forks
-* Issues from the community
+* 137 stars
+* 7 forks
+* 6 watches
+* Issues/PRs from the community
+* One user
 
 *Production usage*: Soluto, 6 months
