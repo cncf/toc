@@ -239,7 +239,7 @@ To bootstrap the process, the TOC proposes the following SIGs, and projects assi
   </tr>
   <tr>
     <td>Storage</td>
-    <td>Block and File Stores, Databases, Key-Value stores etc.</td>
+    <td>Block, File and Object Stores, Databases, Key-Value stores etc.</td>
     <td>TiKV, etcd, Vitess, Rook</td>
   </tr>
 </table>
