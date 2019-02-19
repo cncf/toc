@@ -159,44 +159,15 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8S SIGs.  T
 
 To bootstrap the process, the TOC proposes the following SIGs, and projects assigned to each SIG. Clearly all of these SIG’s will not be fully-formed overnight or begin operating immediately, so the TOC itself will fulfill the duties of not-yet-formed SIG’s until they are.  We can however, fairly immediately, assign one voting member of the TOC as liason for each SIG, and prioritize the order of formation of the SIGs, starting immediately with the most pressing ones. 
 
-<table>
-  <tr>
-    <td>Name (to be finalised)</td>
-    <td>Area</td>
-    <td>Current CNCF Projects</td>
-  </tr>
-  <tr>
-    <td>Traffic</td>
-    <td>networking, service discovery, load balancing, service mesh, RPC, pubsub, etc.</td>
-    <td>Envoy, Linkerd, NATS, gRPC, CoreDNS, CNI</td>
-  </tr>
-  <tr>
-    <td>Observability</td>
-    <td>monitoring, logging, tracing, profiling, etc.
-</td>
-    <td>Prometheus, OpenTracing, Fluentd, Jaeger, Cortex, OpenMetrics, </td>
-  </tr>
-  <tr>
-    <td>Governance</td>
-    <td>security, authentication, authorization, auditing, policy enforcement, compliance, GDPR, cost management, etc</td>
-    <td>SPIFFE, SPIRE, Open Policy Agent, Notary, TUF,  Falco, </td>
-  </tr>
-  <tr>
-    <td>App Dev, Ops & Testing</td>
-    <td>PaaS, Serverless, Operators,... CI/CD,  Conformance, Chaos Eng, Scalability and Reliability measurement etc.</td>
-    <td>Helm, CloudEvents, Telepresence, Buildpacks</td>
-  </tr>
-  <tr>
-    <td>Core and Applied Architectures</td>
-    <td>orchestration, scheduling, container runtimes, sandboxing technologies, packaging and distribution, specialized architectures thereof (e.g. Edge, IoT, Big Data, AI/ML, etc).</td>
-    <td>Kubernetes, containerd, rkt, Harbor, Dragonfly, Virtual Kubelet</td>
-  </tr>
-  <tr>
-    <td>Storage</td>
-    <td>Block, File and Object Stores, Databases, Key-Value stores etc.</td>
-    <td>TiKV, etcd, Vitess, Rook</td>
-  </tr>
-</table>
+
+| Name (to be finalised)  | Area        | Current CNCF Projects 
+| ------------------------|-------------|-----------------------
+| Traffic | networking, service discovery, load balancing, service mesh, RPC, pubsub, etc. | Envoy, Linkerd, NATS, gRPC, CoreDNS, CNI
+| Observability | monitoring, logging, tracing, profiling, etc. | Prometheus, OpenTracing, Fluentd, Jaeger, Cortex, OpenMetrics
+| Governance | security, authentication, authorization, auditing, policy enforcement, compliance, GDPR, cost management, etc. | SPIFFE, SPIRE, Open Policy Agent, Notary, TUF,  Falco
+| App Dev, Ops & Testing | PaaS, Serverless, Operators, CI/CD,  Conformance, Chaos Eng, Scalability and Reliability measurement etc. | Helm, CloudEvents, Telepresence, Buildpacks
+| Core and Applied Architectures | orchestration, scheduling, container runtimes, sandboxing technologies, packaging and distribution, specialized architectures thereof (e.g. Edge, IoT, Big Data, AI/ML, etc). | Kubernetes, containerd, rkt, Harbor, Dragonfly, Virtual Kubelet
+| Storage | Block, File and Object Stores, Databases, Key-Value stores, etc. | TiKV, etcd, Vitess, Rook
 
 
 The TOC and CNCF Staff will draft an initial set of charters for the above, and solicit/elect suitable chairs.
