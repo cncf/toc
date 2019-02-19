@@ -163,7 +163,7 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8S SIGs.  T
 
 * Chairs are assigned following a 2/3 majority vote of the TOC
 
-* Terms last for 1 year but staggered such that at least 1 of the chairs is able to maintain continuity
+* Terms last for 2 years but staggered such that at least 1 of the chairs is able to maintain continuity
 
 * The TOC and Chairs nominate Tech leads
 
@@ -228,7 +228,7 @@ To bootstrap the process, the TOC proposes the following SIGs, and projects assi
   <tr>
     <td>App Dev, Ops & Testing</td>
     <td>PaaS, Serverless, Operators,... CI/CD,  Conformance, Chaos Eng, Scalability and Reliability measurement etc.</td>
-    <td>Helm, CloudEvents, Telepresence, Buildpacks, (CNCF CI)</td>
+    <td>Helm, CloudEvents, Telepresence, Buildpacks</td>
   </tr>
   <tr>
     <td>Core and Applied Architectures</td>
