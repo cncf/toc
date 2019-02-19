@@ -23,23 +23,23 @@ Scale contributions by the CNCF technical and user community, while retaining in
 
 * Focus attention & resources on helping foster project maturity, systematically across CNCF projects.
 
-* Clarify relationship between projects, CNCF project staff, and community volunteers
+* Clarify relationship between projects, CNCF project staff, and community volunteers.
 
-* Engage more communities and create an on-ramp to effective TOC contribution & recognition
+* Engage more communities and create an on-ramp to effective TOC contribution & recognition.
 
 * Reduce some project workload on TOC while retaining executive control & tonal integrity with this elected body.
 
-* Avoid creating a platform for politics between vendors
+* Avoid creating a platform for politics between vendors.
 
 ## Introduction
 
 A CNCF SIG will oversee and coordinate the interests pertaining to a logical area of needs of end users and/or projects.  Examples of such areas include security, testing, observability, storage, networking, etc.  The area overseen by a SIG is typically met by a set of CNCF projects, and may also represent a cross-cutting feature group shared by several projects (like security and observability).  SIG’s are:
 
-* long lived groups that report to the Technical Oversight Committee.
+* long lived groups that report to the Technical Oversight Committee
 
 * led primarily by recognised experts in the relevant field(s), supported by other contributors
 
-CNCF SIGs are modelled on Kubernetes SIGS.  Differences are intended to be minimal to avoid confusion - unavoidable differences are described [here](https://docs.google.com/document/d/1oSGhx5Hw7Hs_qawYB46BvRSPh0ZvFoxvHx-NWaf5Nsc/edit?usp=sharing).
+CNCF SIGs are modelled on Kubernetes SIGs.  Differences are intended to be minimal to avoid confusion - unavoidable differences are described [here](https://docs.google.com/document/d/1oSGhx5Hw7Hs_qawYB46BvRSPh0ZvFoxvHx-NWaf5Nsc/edit?usp=sharing).
 
 ## Responsibilities & Empowerment of SIGs
 
@@ -49,7 +49,7 @@ The SIGs should strive to present the TOC with easily understandable and votable
 
 Key ideas here:
 
-* The TOC is the arbiter & editor and may always intervene and overrule 
+* The TOC is the arbiter & editor and may always intervene and overrule. 
 
 * The SIGs are the productive talent, and respected as such.
 
@@ -97,11 +97,11 @@ SIGs may choose to spawn focussed and time-limited working groups to achieve som
 
 #### SIG Charter:
 
-    * formally reviewed annually, and approved by the TOC.  The charter must clearly articulate:
+    * This is formally reviewed annually, and approved by the TOC.  The charter must clearly articulate:
 
-        * what is in and out of scope of the SIG
+        * what is in and out of scope of the SIG,
 
-        * whether and how it overlaps and interfaces with other CNCF SIG’s or other relevant groups.
+        * whether and how it overlaps and interfaces with other CNCF SIG’s or other relevant groups, and 
 
         * how it operates and is governed, and specifically whether and how it deviates from standard SIG operating guidelines provided by the TOC.  Deviation from these guidelines is discouraged, unless there are good and well-documented reasons for such divergence, approved by the TOC. 
 
@@ -109,9 +109,7 @@ See [Example Responsibilities of a CNCF SIG](https://docs.google.com/document/d/
 
 ## Operating Model
 
-*Important*
-
-*Each SIG is supported by a named member of the CNCF executive staff who is accountable for liaison with the CNCF Exec, plus communication and performance of the SIG, with quarterly and annual reporting to GB & TOC. *** **
+Important: Each SIG is supported by a named member of the CNCF executive staff who is accountable for liaison with the CNCF Executive Director, plus communication and performance of the SIG, with quarterly and annual reporting to Governing Board & TOC.
 
 As a starting point let’s be inspired by CNCF OSS Projects and by K8S SIGs.  That means minimal viable governance and community-based organisation.
 
@@ -119,13 +117,13 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8S SIGs.  T
 
 1. SIGs are formed by the TOC.  Initial SIGs are listed below, and will be adapted over time as required.  If members of the community believe that additional SIGs are desired, they should propose these to the TOC, with clear justification, and ideally volunteers to lead the SIG. The TOC wishes to have the smallest viable number of SIGs, and for all of them to be highly effective (as opposed to a "SIG sprawl" with large numbers of relatively ineffective SIGS).
 
-2. SIG has three co-chairs, who are TOC Contributors and recognised as unbiased experts in that area.
+2. SIG has three co-chairs, who are TOC Contributors, recognized as experts in that area, and for their ability to co-lead the SIG to produce the required unbiased outputs.
 
-3. SIG has one TOC liaison who is a voting member of the TOC acting as non-exec chair on occasions when TOC input is deemed necessary by the TOC or the SIG chairs
+3. SIG has one TOC liaison who is a voting member of the TOC acting as an additional non-executive chair on occasions when TOC input is deemed necessary by the TOC or the SIG chairs.
 
-4. SIG has multiple tech leads who are recognised as unbiased experts in the SIG area, and are recognised leaders of projects in the SIG’s area.  The reason for having separate chair and tech lead roles is to allow responsibility for primarily administrative functions to be separated from deep technical functions and associated time commitments and skill sets.  Where appropriate, an individual may perform both roles (see below).
+4. SIG has multiple tech leads who are recognized as (1) experts in the SIG area, (2) leaders of projects in the SIG’s area (3) demonstrating the ability to provide the balanced technical leadership required to produce the required unbiased outputs of the SIG. The reason for having separate chair and tech lead roles is to allow responsibility for primarily administrative functions to be separated from deep technical functions and associated time commitments and skill sets.  Where appropriate, an individual may perform both roles (see below).
 
-5. Thought and interest diversity is strongly encouraged within SIGs.  To this end, a supermajority (⅔ or more) of chairs or tech leads from a single group of companies, market segment, etc will be actively discouraged by the TOC.
+5. Thought and interest diversity is strongly encouraged within SIGs.  To this end, a supermajority (⅔ or more) of chairs or a supermajority of tech leads from a single group of companies, market segment, etc will be actively discouraged by the TOC.
 
 6. SIG members are self-declared, so that some SIG work is done by volunteers from the TOC Contributors and community.  To recognise members who make sustained  and valuable contributions to a SIG over time, SIG-defined and assigned roles may be created (e.g. scribe, training or documentation coordinator etc).  SIG’s should document what these roles and responsibilities are, and who performs them, and have them approved by SIG leads.
 
@@ -169,7 +167,7 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8S SIGs.  T
 
 * The TOC and Chairs nominate Tech leads
 
-* Tech leads are assigned following a majority vote of the TOC and SIG Chairs
+* Tech leads are assigned following a 2/3 majority vote of the TOC and a 2/3 majority vote of SIG Chairs
 
 * SIG Chairs and Tech Leads may be unassigned from the SIG at any time following a 2/3 majority vote of the TOC
 
