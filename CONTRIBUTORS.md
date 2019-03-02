@@ -83,3 +83,4 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Zefeng (Kevin) Wang, Huawei (wangzefeng@huawei.com)
 * Zou Nengren, CMCC (zounengren@cmss.chinamobile.com)
 * Jia Xuan, CMCC (jiaxuan@chinamobile.com)
+* Zhipeng Huang, Huawei (huangzhipeng@huawei.com)
