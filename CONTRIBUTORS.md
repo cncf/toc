@@ -53,6 +53,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Josef Adersberger, QAware (josef.adersberger@qaware.de)
 * Joseph Jacks, Independent	(jacks.joe@gmail.com)
 * Josh Bernstein, Dell (Joshua.Bernstein@dell.com)
+* Justin Cappos, NYU (jcappos@nyu.edu)
 * Justin Cormack, Docker (justin.cormack@docker.com)
 * Jun Du, Huawei (dujun5@huawei.com)
 * Kai Chen, Alauda (kaichen@alauda.io)
