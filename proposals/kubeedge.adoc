@@ -1,0 +1,104 @@
+=== KubeEdge CNCF Sandbox Project Proposal
+
+*Name of Project:* KubeEdge
+
+*Description:*
+
+KubeEdge is an extended K8s infrastructure for IOT/Edge workload. It aims to resolve three major issues at edge computing: network reliability and bandwidth between cloud and edge, resource constraint at edge, large scalability requirement. 
+
+It is a general kubernetes infrastructure 
+
+Here are some key features of KubeEdge:
+
+* P2P based file distribution
+
+KubeEdge consists of below major components:
+
+On cloud side:
+1. **EdgeController**: 
+2. **CloudHub**:
+
+On edge side
+1. **edgehub**:
+
+2. **edged**:
+
+**Statement on alignment with CNCF mission:**
+
+*Roadmap:* 
+
+
+*Sponsors from TOC:* 
+
+*Preferred maturity level:* Sandbox
+
+*License:* Apache License v2.0
+
+*Source control:* GitHub (https://github.com/kubeedge/kubeedge)
+
+*External Dependencies:*
+
+External dependencies of Falco are listed below:
+|===
+|*Software*|*License*|*Project Page*
+
+|go-check|BSD|https://github.com/go-check/check/[https://github.com/go-check/check/]
+|compress|BSD|https://github.com/klauspost/compress[https://github.com/klauspost/compress]
+|cpuid|MIT|https://github.com/klauspost/cpuid[https://github.com/klauspost/cpuid]
+|uuid|BSD|https://github.com/pborman/uuid[https://github.com/pborman/uuid]
+|logrus|MIT|https://github.com/sirupsen/logrus[https://github.com/sirupsen/logrus]
+|pflag|BSD|https://github.com/spf13/pflag[https://github.com/spf13/pflag]
+|bytebufferpool|MIT|https://github.com/valyala/bytebufferpool[https://github.com/valyala/bytebufferpool]
+|fasthttp|MIT|https://github.com/valyala/fasthttp[https://github.com/valyala/fasthttp]
+|terminal|BSD|https://golang.org/x/crypto/ssh/terminal[https://golang.org/x/crypto/ssh/terminal]
+|unix|MIT|https://golang.org/x/sys/unix[https://golang.org/x/sys/unix]
+|windows|zlib|https://golang.org/x/sys/windows[https://golang.org/x/sys/windows]
+|gcfg|BSD|https://gopkg.in/gcfg.v1[https://gopkg.in/gcfg.v1]
+|yaml|Apache License 2.0|https://gopkg.in/yaml.v2[https://gopkg.in/yaml.v2]
+|===
+
+*Initial Committers:*
+
+Founding Maintainers:
+
+ *  (Huawei)
+
+Additional Maintainers:
+
+ *  (Ebay China)
+
+*Infrastructure requests (CI / CNCF Cluster):*
+
+_Development needs:_
+
+We currently use Travis and CircleCI for CI, but we may want to use CNCF resources to deploy jenkis for node e2e test.
+
+_Production needs:_
+
+none
+
+*Communication Channels:*
+
+ * Slack:
+ * Mailing List: https://lists.cncf.io/g/cncf-kubeedge (proposed)
+ * Issue tracker: https://github.com/kubeedge/KubeEdge/issues
+
+*Website:* https://kubeedge.io/
+
+*Release methodology and mechanics:*
+
+We set the version rule of Dragonfly on the basis of SemVer which has a version number of MAJOR.MINOR.PATCH. Currently we do feature release 4-5 times per year(all with minor releases). Before every minor release, we plan to tag several RC releases to invite community developers to fully test them. In addition, all the code commits to Dragonfly project must add essential tests to cover the feature or code change. 
+
+*Social media accounts:*
+
+ * Twitter: 
+
+*Existing sponsorship*: Huawei, 
+
+*Community size:*
+
+400 stars
+
+3 full-time engineers
+
+28 contributors
