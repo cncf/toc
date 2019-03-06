@@ -1,0 +1,104 @@
+=== Brigade CNCF Sandbox Project Proposal
+
+*Name of Project:* Brigade
+
+*Description:*
+
+Brigade is an in-cluster runtime that interprets scripts and executes generic pipelines of work in Kubernetes. Using JavaScript, developers can chain containers together in a script to create an event-driven workflow in Kubernetes. Scripts can define a series of jobs that run in parralel or serially, and these scripts can be fired based on times, GitHub events, Docker pushes, or any other trigger. Brigade is very lightweight in that it only consists of one or two Pods that need to run in order to execute your jobs using Kubernetes-native objects. Users can deploy Brigade on Kubernetes via Helm charts.
+
+Brigade use cases:
+* carrying out CI/CD workflows
+* building opinioned CI/CD platforms
+* Meta-testing various codebases at regular intervals (language specific linters, code quality assessments, security scanning) and then automatically notifying responsible teams of the results.
+* Assembling weekly rollup reports using a Brigade pipeline by aggregating and analyzing data from multiple data systems.
+* Processing image data
+* Spinning up preview environments for every pull request or on demand to allow developers environments for early and frequent experimentation. Read more in link:https://medium.com/devopslinks/development-in-the-cloud-4aa2cabd3880[this post].
+
+**Statement on alignment with CNCF mission:**
+
+The Brigade project is well-aligned with the CNCF's mission to make cloud native computing ubiquitous. Its most powerful feature is that it creates a distributed scripting environment which gives developers the ability to program containerized workflows using a language they're already familiar. Allowing developers the ability to work with familiar tools and technologies lowers the barrier to entry to using cloud native technologies.
+
+Brigade also already works with and integrates with several other projects in the cloud native ecosystem. It runs inside Kubernetes and is deployed using Helm. It also integrates with Prometheus, CloudEvents, and Virtual Kubelet.
+
+*Roadmap:*
+
+Brigade is on track for a v1.0.0 release this week. The project uses GitHub issues and GitHub project boards to track progress. The current project board can be found at https://github.com/Azure/brigade/projects/1
+
+*Sponsors from TOC:* Brendan Burns & Quinton Hoole
+
+*Preferred maturity level:* Sandbox
+
+*License:* MIT License (with intent to re-license to ALv2)
+
+*Source control:* GitHub https://github.com/Azure/Brigade
+
+We plan on moving the source code to https://github.com/brigadecore/brigade.
+
+*External Dependencies:*
+
+External dependencies of Brigade are listed below:
+|===
+|*Software*|*License*|*Project Page*
+
+|browser|MIT|https://github.com/bacongobbler/browser[https://github.com/bacongobbler/browser]
+|go-github|BSD|https://github.com/google/go-github[https://github.com/google/go-github]
+|uitable|MIT|https://github.com/gosuri/uitable[https://github.com/gosuri/uitable]
+|ulid|ALv2|https://github.com/oklog/ulid[https://github.com/oklog/ulid]
+|cobra|ALv2|https://github.com/spf13/cobra[https://github.com/spf13/cobra]
+|oauth2|BSD|https://github.com/golang/oauth2[https://github.com/golang/oauth2]
+|gin|MIT|https://github.com/gin-gonic/gin[https://github.com/gin-gonic/gin]
+|yaml|ALv2|https://github.com/go-yaml/yaml[https://github.com/go-yaml/yaml]
+|kubernetes-api|ALv2|https://github.com/kubernetes/api[https://github.com/kubernetes/api]
+|kubernetes-apimachinery|ALv2|https://github.com/kubernetes/apimachinery[https://github.com/kubernetes/apimachinery]
+|kitt|MIT|https://github.com/Masterminds/kitt[https://github.com/Masterminds/kitt]
+|go-restful|MIT|https://github.com/emicklei/go-restful[https://github.com/emicklei/go-restful]
+|go-restful-openapi|MIT|https://github.com/emicklei/go-restful-openapi[https://github.com/emicklei/go-restful-openapi]
+|survey|MIT|https://github.com/AlecAivazis/survey[https://github.com/AlecAivazis/survey]
+|sdk-go|ALv2|https://github.com/cloudevents/sdk-go[https://github.com/cloudevents/sdk-go]
+|===
+
+*Maintainers:*
+
+ * Adam Reese (Microsoft)
+ * Yusuke KUOKA (freee K.K.)
+ * Luke Patrick (Charter)
+ * Matt Butcher (Microsoft)
+ * Radu Matei (Microsoft)
+ * Vaughn Dice (Microsoft)
+
+*Infrastructure requests (CI / CNCF Cluster):* none
+
+We currently use Brigade for CI running on AKS.
+
+*Communication Channels:*
+
+ * Slack: link:https://kubernetes.slack.com/messages/C87MF1RFD[Kubernetes/#brigade]
+ * Mailing List: https://lists.cncf.io/g/cncf-brigade (proposed)
+ * Issue tracker: https://github.com/azure/brigade/issues
+
+*Website:* https://brigade.sh/
+
+*Release methodology and mechanics:*
+
+Brigade uses link:http://semver.org/[semantic versioning] for releases. Releases are announced using GitHub. Brigade has just released its first stable version at 1.0.0. More information can be found in the release document link:https://github.com/Azure/brigade/blob/master/docs/topics/releasing.md[here].
+
+*Social media accounts:*
+
+ * Twitter: https://twitter.com/brigadecore
+
+*Existing sponsorship*: Microsoft
+
+*Adopters*:
+  * Charter
+  * freee K.K.
+  * iBotta
+  * Microsoft
+  * Student.com
+  * Spotahome.com
+  * ThredUp
+
+*Community size:*
+
+1500+ stars
+
+67 contributors
