@@ -4,7 +4,8 @@
 
 *Description:*
 
-KubeEdge is an extended K8s infrastructure for IOT/Edge workload. It aims to resolve three major issues at edge computing: network reliability and bandwidth between cloud and edge, resource constraint at edge, large scalability requirement. 
+KubeEdge is an extended K8s infrastructure for IOT/Edge workload. It aims to resolve three major issues at edge computing: network reliability and bandwidth between cloud and edge, resource constraint at edge, large scalability requirement.
+It is an open-source system extending native containerized application orchestration and device management to hosts at the Edge. It is built upon Kubernetes and provides core infrastructure support for networking, application deployment and metadata synchronization between cloud and edge. It also supports MQTT and allows developers to author custom logic and enable resource constrained device communication at the Edge
 
 It is a general kubernetes infrastructure 
 
@@ -14,16 +15,24 @@ Here are some key features of KubeEdge:
 
 KubeEdge consists of below major components:
 
-On cloud side:
-1. **EdgeController**: 
-2. **CloudHub**:
+**In Cloud-Core:**
 
-On edge side
-1. **edgehub**:
+1. **EdgeController:** An extended kubernetes controller which manages edge nodes and pods metadata so that the data can be targeted to a specific edge node.
+2. **CloudHub:** A web socket server responsible for watching changes at the cloud side, caching and sending messages to EdgeHub.
 
-2. **edged**:
+**In Edge-Core:**
 
+1. **EdgeHub**: A web socket client for CloudHub's websocket server responsible for sending/receiving messages of/for all edge components to/from Cloud.
+
+2. **Edged:**: An agent that runs on edge nodes and manages containerized applications.
+
+3. **MetaManager:** the message processor between edged and edgehub. It is also responsible for storing/retrieving metadata to/from a lightweight database (SQLite).
+
+4. **DeviceTwin:** The module responsible for storing device status and syncing device status to the cloud. It also provides query interfaces for applications.
+
+5. **EventBus:** A MQTT client to interact with MQTT servers (mosquitto), offering publish and subscribe capabilities to other components.
 **Statement on alignment with CNCF mission:**
+
 
 *Roadmap:* 
 
