@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) (in Chinese and Japanese below)
+[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) (in Chinese, Japanese and Korean below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -31,3 +31,11 @@ innovations accessible for everyone.
 これらの手法により、回復性、管理力、および可観測性のある疎結合システムが実現します。 これらを堅牢な自動化と組み合わせることで、エンジニアはインパクトのある変更を最小限の労力で頻繁かつ予測どおりに行うことができます。
 
 Cloud Native Computing Foundationは、オープンソースでベンダー中立プロジェクトのエコシステムを育成・維持して、このパラダイムの採用を促進したいと考えてます。 私たちは最先端のパターンを民主化し、これらのイノベーションを誰もが利用できるようにします。
+
+## 한국어:
+
+클라우드 네이티브 기술을 사용하는 조직은 요즘의 퍼블릭, 프라이빗, 그리고 하이브리드 클라우드와 같이 동적인 환경에서 확장성 있는 애플리케이션을 만들고 운영할 수 있다. 컨테이너, 서비스 메시, 마이크로서비스, 불변의 인프라스트럭처, 그리고 선언적 API가 이런 접근법의 전형적인 예이다.
+
+이 기술을 사용하면 시스템이 느슨하게 결합되어 회복성, 관리 편의성, 그리고 가시성을 갖게 된다. 견고한 자동화와 함께 사용하면, 엔지니어는 영향이 큰 변경을 최소한의 노력으로 자주, 예측 가능하게 수행할 수 있다.
+
+Cloud Native Computing Foundation은 벤더 중립적인 오픈소스 프로젝트 생태계를 육성하고 유지해서 이런 패러다임의 채택을 이끌어 내고자 한다. 우리 재단은 최고 기술 수준의 패턴을 대중화시켜서 이런 혁신을 누구나 이룰 수 있도록 한다.
