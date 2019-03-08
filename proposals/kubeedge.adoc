@@ -28,13 +28,14 @@ KubeEdge consists of below major components:
 
 1. **EdgeHub**: A web socket client for CloudHub's websocket server responsible for sending/receiving messages of/for all edge components to/from Cloud.
 
-2. **Edged:**: An agent that runs on edge nodes and manages containerized applications.
+2. **Edged:** An agent that runs on edge nodes and manages containerized applications.
 
 3. **MetaManager:** the message processor between edged and edgehub. It is also responsible for storing/retrieving metadata to/from a lightweight database (SQLite).
 
 4. **DeviceTwin:** The module responsible for storing device status and syncing device status to the cloud. It also provides query interfaces for applications.
 
 5. **EventBus:** A MQTT client to interact with MQTT servers (mosquitto), offering publish and subscribe capabilities to other components.
+
 **Statement on alignment with CNCF mission:**
 
 
@@ -43,9 +44,13 @@ KubeEdge consists of below major components:
 KubeEdge plans to support more advanced features which are useful in edge scenarios. Some of them are as follows:
 
 1) Device management via CRD's
+
 2) East-West communication
+
 3) Multiple device protocol support (i.e Bluetooth, Zigbee, etc)
+
 4) Data management
+
 5) Monitoring & Alerting
 
 *Sponsors from TOC:* 
@@ -87,8 +92,6 @@ none
 *Website:* https://kubeedge.io
 
 *Release methodology and mechanics:*
-
-We set the version rule of Dragonfly on the basis of SemVer which has a version number of MAJOR.MINOR.PATCH. Currently we do feature release 4-5 times per year(all with minor releases). Before every minor release, we plan to tag several RC releases to invite community developers to fully test them. In addition, all the code commits to Dragonfly project must add essential tests to cover the feature or code change. 
 
 *Social media accounts:*
 
