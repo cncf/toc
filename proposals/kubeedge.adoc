@@ -4,29 +4,54 @@
 
 *Description:*
 
-KubeEdge is an extended K8s infrastructure for IOT/Edge workload. It aims to resolve three major issues at edge computing: network reliability and bandwidth between cloud and edge, resource constraint at edge, large scalability requirement. 
+KubeEdge is an extended K8s infrastructure for IOT/Edge workload. It aims to resolve three major issues at edge computing: network reliability and bandwidth between cloud and edge, resource constraint at edge, large scalability requirement.
+It is an open-source system extending native containerized application orchestration and device management to hosts at the Edge. It is built upon Kubernetes and provides core infrastructure support for networking, application deployment and metadata synchronization between cloud and edge.
+It also supports MQTT and allows developers to author custom logic and enable resource constrained device communication at the Edge
 
 It is a general kubernetes infrastructure 
 
-Here are some key features of KubeEdge:
+Here are some key advantages of KubeEdge:
 
-* P2P based file distribution
+* **Edge Computing:** With business logic running at the Edge, much larger volumes of data can be secured & processed locally where the data is produced. Edge nodes can run autonomously which effectively reduces the network bandwidth requirements and consumptions between Edge and Cloud. With data processed at the Edge, the responsiveness is increased dramatically and data privacy is protected.
+* **Simplified development:** Developers can write regular http or mqtt based applications, containerize them, and run them anywhere - either at the Edge or in the Cloud - whichever is more appropriate.
+* **Kubernetes-native support:** With KubeEdge, users can orchestrate apps, manage devices and monitor app and device status on Edge nodes just like a traditional Kubernetes cluster in the Cloud. Locations of edge nodes are transparent to customers.
+* **Abundant applications:** It is easy to get and deploy existing complicated machine learning, image recognition, event processing and other high level applications to the Edge.
 
 KubeEdge consists of below major components:
 
-On cloud side:
-1. **EdgeController**: 
-2. **CloudHub**:
+**In Cloud-Core:**
 
-On edge side
-1. **edgehub**:
+1. **EdgeController:** An extended kubernetes controller which manages edge nodes and pods metadata so that the data can be targeted to a specific edge node.
+2. **CloudHub:** A web socket server responsible for watching changes at the cloud side, caching and sending messages to EdgeHub.
 
-2. **edged**:
+**In Edge-Core:**
+
+1. **EdgeHub**: A web socket client for CloudHub's websocket server responsible for sending/receiving messages of/for all edge components to/from Cloud.
+
+2. **Edged:** An agent that runs on edge nodes and manages containerized applications.
+
+3. **MetaManager:** the message processor between edged and edgehub. It is also responsible for storing/retrieving metadata to/from a lightweight database (SQLite).
+
+4. **DeviceTwin:** The module responsible for storing device status and syncing device status to the cloud. It also provides query interfaces for applications.
+
+5. **EventBus:** A MQTT client to interact with MQTT servers (mosquitto), offering publish and subscribe capabilities to other components.
 
 **Statement on alignment with CNCF mission:**
 
-*Roadmap:* 
 
+*Roadmap:*
+
+KubeEdge plans to support more advanced features which are useful in edge scenarios. Some of them are as follows:
+
+1) Device management via CRD's
+
+2) East-West communication
+
+3) Multiple device protocol support (i.e Bluetooth, Zigbee, etc)
+
+4) Data management
+
+5) Monitoring & Alerting
 
 *Sponsors from TOC:* 
 
@@ -36,34 +61,15 @@ On edge side
 
 *Source control:* GitHub (https://github.com/kubeedge/kubeedge)
 
-*External Dependencies:*
+*External Dependencies:* See https://github.com/kubeedge/kubeedge/blob/master/external-dependency.md[external-dependency.md] file.
 
-External dependencies of Falco are listed below:
-|===
-|*Software*|*License*|*Project Page*
+*Initial Committers:* See https://github.com/kubeedge/kubeedge/blob/master/MAINTAINERS[MAINTAINERS] file.
 
-|go-check|BSD|https://github.com/go-check/check/[https://github.com/go-check/check/]
-|compress|BSD|https://github.com/klauspost/compress[https://github.com/klauspost/compress]
-|cpuid|MIT|https://github.com/klauspost/cpuid[https://github.com/klauspost/cpuid]
-|uuid|BSD|https://github.com/pborman/uuid[https://github.com/pborman/uuid]
-|logrus|MIT|https://github.com/sirupsen/logrus[https://github.com/sirupsen/logrus]
-|pflag|BSD|https://github.com/spf13/pflag[https://github.com/spf13/pflag]
-|bytebufferpool|MIT|https://github.com/valyala/bytebufferpool[https://github.com/valyala/bytebufferpool]
-|fasthttp|MIT|https://github.com/valyala/fasthttp[https://github.com/valyala/fasthttp]
-|terminal|BSD|https://golang.org/x/crypto/ssh/terminal[https://golang.org/x/crypto/ssh/terminal]
-|unix|MIT|https://golang.org/x/sys/unix[https://golang.org/x/sys/unix]
-|windows|zlib|https://golang.org/x/sys/windows[https://golang.org/x/sys/windows]
-|gcfg|BSD|https://gopkg.in/gcfg.v1[https://gopkg.in/gcfg.v1]
-|yaml|Apache License 2.0|https://gopkg.in/yaml.v2[https://gopkg.in/yaml.v2]
-|===
-
-*Initial Committers:*
-
-Founding Maintainers:
+*Founding Maintainers:*
 
  *  (Huawei)
 
-Additional Maintainers:
+*Additional Maintainers:*
 
  *  (Ebay China)
 
@@ -71,7 +77,7 @@ Additional Maintainers:
 
 _Development needs:_
 
-We currently use Travis and CircleCI for CI, but we may want to use CNCF resources to deploy jenkis for node e2e test.
+We currently use Travis CI, but we may want to use CNCF resources to deploy jenkis for node e2e test.
 
 _Production needs:_
 
@@ -79,26 +85,26 @@ none
 
 *Communication Channels:*
 
- * Slack:
- * Mailing List: https://lists.cncf.io/g/cncf-kubeedge (proposed)
- * Issue tracker: https://github.com/kubeedge/KubeEdge/issues
+ * Slack: https://kubeedge.slack.com
+ * Mailing List: https://groups.google.com/forum/#!forum/kubeedge (current), https://lists.cncf.io/g/cncf-kubeedge (proposed)
+ * Issue tracker: https://github.com/kubeedge/kubeedge/issues
 
-*Website:* https://kubeedge.io/
+*Website:* https://kubeedge.io
 
 *Release methodology and mechanics:*
 
-We set the version rule of Dragonfly on the basis of SemVer which has a version number of MAJOR.MINOR.PATCH. Currently we do feature release 4-5 times per year(all with minor releases). Before every minor release, we plan to tag several RC releases to invite community developers to fully test them. In addition, all the code commits to Dragonfly project must add essential tests to cover the feature or code change. 
-
 *Social media accounts:*
 
- * Twitter: 
+ * Twitter: https://twitter.com/KubeEdge
 
-*Existing sponsorship*: Huawei, 
+*Existing sponsorship:* Huawei
 
 *Community size:*
 
-400 stars
+https://github.com/kubeedge/kubeedge/stargazers[400+ stars]
+
+https://github.com/kubeedge/kubeedge/network/members[100+ forks]
 
 3 full-time engineers
 
-28 contributors
+https://github.com/kubeedge/kubeedge/graphs/contributors[30+ contributors]
