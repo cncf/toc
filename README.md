@@ -13,7 +13,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * **Brendan Burns** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 * **Matt Klein** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 * **Brian Grant** (term: 2 years - start date: 3/17/2018 - 3/17/2020) [TOC-appointed]
-* **Kelsey Hightower** (term: 1 year - start date: 1/29/2019 - 1/29/2020) [GB-appointed]
+* **Liz Rice** (term: 1 year - start date: 1/29/2019 - 1/29/2020) [GB-appointed]
 * **Quinton Hoole** (term: 1 year - start date: 3/17/2018 - 3/17/2019) [TOC-appointed]
 * **Xiang Li** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 * **Alexis Richardson** (term: 1 year - start date: 1/29/2019 - 1/29/2020) [GB-appointed]
