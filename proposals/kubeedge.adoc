@@ -5,21 +5,21 @@
 *Description:*
 
 The key goal for KubeEdge is extending Kuberentes ecosystem from cloud to edge. It is an extended K8s infrastructure for IOT/Edge workload. 
-It aims to resolve three major issues at edge computing: 
+It aims to resolve three major issues of edge computing:
 
 - network reliability and bandwidth between cloud and edge
 
-- resource constraint at edge, and
+- resource constraint at edge
 
 - large scalability requirement
 
 It is an open-source system extending native containerized application orchestration and device management to hosts at the Edge. It is built upon Kubernetes and provides core infrastructure support for networking, application deployment and metadata synchronization between cloud and edge. It also supports MQTT and allows developers to author custom logic and enable resource constrained device communication at the Edge
 
-Another key aspect of KubeEdge is that, it provides both Cloud Part and Edge Part opensourced. This enables the users test it with any cloud / data center for the cloud part and run the edge on any suitable edge nodes.
+Another key aspect of KubeEdge is that it provides both Cloud Part and Edge Part opensourced. This enables the users to test it with any cloud / data center for the cloud part and run the edge on any suitable edge nodes.
 
 Here are some key advantages of KubeEdge:
 
-* **Edge Computing:** With business logic running at the Edge, much larger volumes of data can be secured & processed locally where the data is produced. Edge nodes can run autonomously which effectively reduces the network bandwidth requirements and consumptions between Edge and Cloud. With data processed at the Edge, the responsiveness is increased dramatically and data privacy is protected.
+* **Edge Computing:** With business logic running at the Edge, much larger volumes of data can be secured & processed locally where the data is produced. Edge nodes can run autonomously which effectively reduces the network bandwidth requirements and consumptions between Edge and Cloud. With data processed at the Edge, the responsiveness is increased drastically and data privacy is protected.
 
 * **Simplified development:** Developers can write regular http or mqtt based applications, containerize them, and run them anywhere - either at the Edge or in the Cloud - whichever is more appropriate.
 
@@ -33,13 +33,13 @@ KubeEdge consists of below major components:
 
 **In Cloud-Core:**
 
-1. **EdgeController:** An extended kubernetes controller which manages edge nodes and pods metadata so that the data can be targeted to a specific edge node. This can be extended to support device management as well later.
+1. **EdgeController:** An extended kubernetes controller which manages edge nodes and pods metadata so that the data can be targeted to a specific edge node. This can be extended to support device management as well as the later.
 
-2. **CloudHub:** A web socket server responsible for watching changes at the cloud side, caching and sending messages to EdgeHub.
+2. **CloudHub:** A websocket server which is also responsible for receiving messages which are to be sent to edge nodes from all modules at the cloud side and routing/sending it to the specific edge node.
 
 **In Edge-Core:**
 
-1. **EdgeHub**: A web socket client for CloudHub's websocket server responsible for sending/receiving messages of/for all edge components to/from Cloud.
+1. **EdgeHub**: A websocket client for CloudHub's websocket server responsible for sending/receiving messages of/for all edge components to/from Cloud.
 
 2. **Edged:** An agent that runs on edge nodes and manages containerized applications.
 
@@ -51,17 +51,17 @@ KubeEdge consists of below major components:
 
 **Statement on alignment with CNCF mission:**
 
-- We agree with the CNCF philosophy/vision and would like to contribute
+- We agree with the CNCF philosophy/vision and would like to contribute.
 
-- Cloud native concept of container orchestration at Edge
+- Cloud native concept of container orchestration at Edge.
 
-- Extensible and open architecture based and extended upon K8S
+- Extensible and open architecture based and extended upon K8S.
 
-- Open to integration of more CNCF projects including Istio/Envoy, Prometheus, etcd, SPIFFE etc.
+- Open to integration with other CNCF projects like Envoy, Prometheus, etcd, SPIFFE etc.
 
-- Open to engage the community and enable more innovations
+- Open to engage the community and enable more innovations.
 
-- Address IOT and Edge customer & community needs that the architecture is listed as an example one in the K8s IOT/Edge WG white paper
+- Address IOT and Edge customer & community needs that the architecture is listed as an example one in the K8s IOT/Edge WG white paper.
 
 
 *Roadmap:*
@@ -74,7 +74,7 @@ KubeEdge plans to support more advanced features which are useful in edge scenar
 
 3) Multiple device protocol support (i.e Bluetooth, Zigbee, etc)
 
-4) Data management
+4) Data management and Analytics @ Edge
 
 5) Monitoring & Alerting
 
