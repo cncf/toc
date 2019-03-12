@@ -4,24 +4,37 @@
 
 *Description:*
 
-KubeEdge is an extended K8s infrastructure for IOT/Edge workload. It aims to resolve three major issues at edge computing: network reliability and bandwidth between cloud and edge, resource constraint at edge, large scalability requirement.
-It is an open-source system extending native containerized application orchestration and device management to hosts at the Edge. It is built upon Kubernetes and provides core infrastructure support for networking, application deployment and metadata synchronization between cloud and edge.
-It also supports MQTT and allows developers to author custom logic and enable resource constrained device communication at the Edge
+The key goal for KubeEdge is extending Kuberentes ecosystem from cloud to edge. It is an extended K8s infrastructure for IOT/Edge workload. 
+It aims to resolve three major issues at edge computing: 
 
-It is a general kubernetes infrastructure 
+- network reliability and bandwidth between cloud and edge
+
+- resource constraint at edge, and
+
+- large scalability requirement
+
+It is an open-source system extending native containerized application orchestration and device management to hosts at the Edge. It is built upon Kubernetes and provides core infrastructure support for networking, application deployment and metadata synchronization between cloud and edge. It also supports MQTT and allows developers to author custom logic and enable resource constrained device communication at the Edge
+
+Another key aspect of KubeEdge is that, it provides both Cloud Part and Edge Part opensourced. This enables the users test it with any cloud / data center for the cloud part and run the edge on any suitable edge nodes.
 
 Here are some key advantages of KubeEdge:
 
 * **Edge Computing:** With business logic running at the Edge, much larger volumes of data can be secured & processed locally where the data is produced. Edge nodes can run autonomously which effectively reduces the network bandwidth requirements and consumptions between Edge and Cloud. With data processed at the Edge, the responsiveness is increased dramatically and data privacy is protected.
+
 * **Simplified development:** Developers can write regular http or mqtt based applications, containerize them, and run them anywhere - either at the Edge or in the Cloud - whichever is more appropriate.
+
 * **Kubernetes-native support:** With KubeEdge, users can orchestrate apps, manage devices and monitor app and device status on Edge nodes just like a traditional Kubernetes cluster in the Cloud. Locations of edge nodes are transparent to customers.
+
 * **Abundant applications:** It is easy to get and deploy existing complicated machine learning, image recognition, event processing and other high level applications to the Edge.
+
+* **Light weight, Support Heterogeneous Hardware:** It is light weight with ~10MB memory usage. It can support multiple architectures like x86 or ARM. This enables it to run on very low resource heterogeneous devices at the edge.
 
 KubeEdge consists of below major components:
 
 **In Cloud-Core:**
 
-1. **EdgeController:** An extended kubernetes controller which manages edge nodes and pods metadata so that the data can be targeted to a specific edge node.
+1. **EdgeController:** An extended kubernetes controller which manages edge nodes and pods metadata so that the data can be targeted to a specific edge node. This can be extended to support device management as well later.
+
 2. **CloudHub:** A web socket server responsible for watching changes at the cloud side, caching and sending messages to EdgeHub.
 
 **In Edge-Core:**
@@ -32,7 +45,7 @@ KubeEdge consists of below major components:
 
 3. **MetaManager:** the message processor between edged and edgehub. It is also responsible for storing/retrieving metadata to/from a lightweight database (SQLite).
 
-4. **DeviceTwin:** The module responsible for storing device status and syncing device status to the cloud. It also provides query interfaces for applications.
+4. **DeviceTwin:** The module responsible for storing device status and syncing device status to the cloud. It also provides query interfaces for applications. It acts as a mirror to actual device metadata.
 
 5. **EventBus:** A MQTT client to interact with MQTT servers (mosquitto), offering publish and subscribe capabilities to other components.
 
@@ -41,6 +54,7 @@ KubeEdge consists of below major components:
 
 *Roadmap:*
 
+KubeEdge already made 
 KubeEdge plans to support more advanced features which are useful in edge scenarios. Some of them are as follows:
 
 1) Device management via CRD's
