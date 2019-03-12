@@ -51,10 +51,21 @@ KubeEdge consists of below major components:
 
 **Statement on alignment with CNCF mission:**
 
+- We agree with the CNCF philosophy/vision and would like to contribute
+
+- Cloud native concept of container orchestration at Edge
+
+- Extensible and open architecture based and extended upon K8S
+
+- Open to integration of more CNCF projects including Istio/Envoy, Prometheus, etcd, SPIFFE etc.
+
+- Open to engage the community and enable more innovations
+
+- Address IOT and Edge customer & community needs that the architecture is listed as an example one in the K8s IOT/Edge WG white paper
+
 
 *Roadmap:*
 
-KubeEdge already made 
 KubeEdge plans to support more advanced features which are useful in edge scenarios. Some of them are as follows:
 
 1) Device management via CRD's
