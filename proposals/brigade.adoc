@@ -4,7 +4,7 @@
 
 *Description:*
 
-Brigade is an in-cluster runtime that interprets scripts and executes generic pipelines of work in Kubernetes. Using JavaScript, developers can chain containers together in a script to create an event-driven workflow in Kubernetes. Scripts can define a series of jobs that run in parralel or serially, and these scripts can be fired based on times, GitHub events, Docker pushes, or any other trigger. Brigade is very lightweight in that it only consists of one or two Pods that need to run in order to execute your jobs using Kubernetes-native objects. Users can deploy Brigade on Kubernetes via Helm charts.
+Brigade is an in-cluster runtime that interprets scripts and executes generic pipelines of work in Kubernetes. Using JavaScript, developers can chain containers together in a script to create an event-driven workflow in Kubernetes. Scripts can define a series of jobs that run in parallel or serially, and these scripts can be fired based on times, GitHub events, Docker pushes, or any other trigger. Brigade is very lightweight in that it only consists of one or two Pods that need to run in order to execute your jobs using Kubernetes-native objects. Users can deploy Brigade on Kubernetes via Helm charts.
 
 Brigade use cases:
 * carrying out CI/CD workflows
