@@ -8,5 +8,6 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Elissa Murphy (1/29/2016 - 10/2/2017)
 * Ken Owens (1/29/2016 - 1/29/2019)
 * Kelsey Hightower (1/29/2019 - 3/11/2019)
+* Quinton Hoole (3/17/2018 - 3/17/2019)
 
 We thank these members for their service to the CNCF community.
