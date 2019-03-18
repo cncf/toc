@@ -13,7 +13,7 @@ CRI-O was born in kubernetes-incubator and grew to production stable there.
 Some have claimed since being a kubernetes project that it is already "a CNCF project", but it is often left as an after thought in brand, awareness and support as a top-level project.
 This proposal is effective to promote from the kubernetes incubator a project that has fully matured.
 
-*Sponsor / Advisor from TOC*: Jonathan Boulle <jon@nstack.com>
+*Sponsor / Advisor from TOC*: Brendan Burns <bburns@microsoft.com>
 
 *Unique Identifier*: cri-o
 
