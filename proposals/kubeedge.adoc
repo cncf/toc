@@ -1,0 +1,113 @@
+=== KubeEdge CNCF Sandbox Project Proposal
+
+*Name of Project:* KubeEdge
+
+*Description:*
+
+KubeEdge is a K8s extended infrastructure for IOT/Edge workload. It aims to resolve three major challenges at edge computing: network reliability and bandwidth limit between cloud and edge, resource constraint at edge, highly distributed and large scalability requirement.
+
+Being an open-source system, KubeEdge has its control plane at cloud and worker nodes at edge. Native container applications can be orchestrated from cloud to edge nodes. Cloud and edge are loosely coupled where edge side agent can autonomously managing containers and IOT devices when there is network disconnection from cloud; and can sync metadata with cloud when network is reconnected. Using websocket, KubeEdge built a bi-directional multiplexed network channel between edge and cloud. Architecturally KubeEdge is open & extensible that the community can integrate and build more innovations for IOT/Edge computing. 
+
+KubeEdge is a vendor neutral infrastructure. The same code is being used by a few real customers. The advantages of KubeEdge lies in below: 
+
+* **Edge Computing:** With business logic running at the Edge, much larger volumes of data can be secured & processed locally where the data is produced. Edge nodes can run autonomously which effectively reduces the network bandwidth requirements and consumptions between Edge and Cloud. With data processed at the Edge, the responsiveness is increased dramatically and data privacy is protected.
+* **Simple App. Development:** Developers can write regular http or mqtt based applications, containerize them, verify at cloud and port to edge without worry.  
+* **Cloud Native:** With KubeEdge, users can orchestrate apps, manage devices and monitor app and device status on Edge nodes just like a traditional Kubernetes cluster in the Cloud. Locations of edge nodes are transparent to customers.
+* **Extensible Infra. for IOT/Edge:** Based on Kubernates, KubeEdge is highly extensible. Currently using MQTT broker and device twin at edge, KubeEdge can enable customers enable IOT functionalities. As listed above, KubeEdge architecture also addressed the key technical challenges specific for IOT/Edge workload. 
+* **Light weight agent:** Currently the agent memory footprint is about 10MB at runtime. With it, the edge side hardware can be Rasberri-pi or large server. 
+
+KubeEdge consists of below major components:
+
+**In Cloud-Core:**
+
+1. **EdgeController:** An extended kubernetes controller which watches and converts edge nodes and pods metadata so that the data can be grouped according to edge node.
+2. **CloudHub:** A web socket server responsible for watching changes at the cloud side, caching and sending messages to EdgeHub.
+
+**In Edge-Core:**
+
+1. **EdgeHub**: A websocket client for CloudHub's websocket server responsible for sending/receiving messages of/for all edge components to/from Cloud.
+2. **Edged:** An agent that runs on edge nodes and manages containerized applications. It is a shrinked kubelet for IOT/Edge following the same K8S types and APIs. 
+3. **MetaManager:** the message processor between edged and edgehub. It is also responsible for storing/retrieving metadata to/from a lightweight database (SQLite).
+4. **DeviceTwin:** The module responsible for storing device status and syncing device status to the cloud. It also provides query interfaces for applications. It acts as a mirror to actual device metadata.
+5. **EventBus:** A MQTT client to interact with MQTT servers (mosquitto), offering publish and subscribe capabilities to other components.
+
+**Statement on alignment with CNCF mission:**
+
+- We agree with the CNCF philosophy/vision and would like to contribute.
+- Cloud native concept of container orchestration at Edge.
+- Extensible and open architecture based and extended upon K8S.
+- Open to integration with other CNCF projects like Envoy, Prometheus, etcd, SPIFFE etc.
+- Open to engage the community and enable more innovations.
+- Address IOT and Edge customer & community needs that the architecture is listed as an example one in the K8s IOT/Edge WG white paper.
+
+*Roadmap:*
+
+Up till now, we had two minor version released. KubeEdge is providing fundamental E2E capabilities. Going forward, we plan to support below features:
+
+1. Service mesh for data plane covering south-north and east-west communication
+2. Evaluate and enhance scalability and performance
+3. Security guard by integrating with SPIFFE/SPIRE
+4. Device management via K8s CRD
+5. Multiple device protocol support (i.e Bluetooth, Zigbee, etc)
+6. Monitoring & Alerting
+
+*Sponsors from TOC:* Brendan Burns and Quinton Hoole
+
+*Preferred maturity level:* Sandbox
+
+*License:* Apache License v2.0
+
+*Source control:* GitHub (https://github.com/kubeedge/kubeedge)
+
+*External Dependencies:* See https://github.com/kubeedge/kubeedge/blob/master/external-dependency.md[external-dependency.md] file.
+
+*Initial Committers:* See https://github.com/kubeedge/kubeedge/blob/master/MAINTAINERS[MAINTAINERS] file.
+
+*Founding Maintainers:*
+
+ * Jun Du <dujun5@huawei.com> @m1093782566
+ * Li (Cindy) Xing <li.xing1@huawei.com> @CindyXing
+ * Rohit Sardesai <sardesai.rohit.prabhakar@huawei.com> @rohitsardesai83
+ * Siddharth Bhadri <siddharth.bhadri@huawei.com> @sids-b
+ * Qi Zhang <zhangqi21@huawei.com> @qizha
+ * Zefeng (Kevin) Wang <wangzefeng@huawei.com> @kevin-wangzefeng
+
+*Additional Maintainers:*
+
+ *  TBD
+
+*Infrastructure requests (CI / CNCF Cluster):*
+
+_Development needs:_
+
+We currently use Travis CI, but we may want to use CNCF resources to deploy jenkins for node e2e test.
+
+_Production needs:_
+
+none
+
+*Communication Channels:*
+
+ * Slack: https://kubeedge.slack.com
+ * Mailing List: https://groups.google.com/forum/#!forum/kubeedge (current), https://lists.cncf.io/g/cncf-kubeedge (proposed)
+ * Issue tracker: https://github.com/kubeedge/kubeedge/issues
+
+*Website:* https://kubeedge.io
+
+*Release methodology and mechanics:* We set the version rule of KubeEdge on the basis of MAJOR.MINOR. Currently we plan to do 4-5 minor versions and 1 major per year. Upon some minor version or a major release, we'll invite community developers to try out. In addition, we ensure the industry standard for code review and essensible test coverage.  
+
+*Social media accounts:*
+
+ * Twitter: https://twitter.com/KubeEdge
+
+*Existing sponsorship:* Huawei
+
+*Community size:*
+
+https://github.com/kubeedge/kubeedge/stargazers[400+ stars]
+
+https://github.com/kubeedge/kubeedge/network/members[100+ forks]
+
+3 full-time engineers
+
+https://github.com/kubeedge/kubeedge/graphs/contributors[30+ contributors]
