@@ -70,6 +70,7 @@ NOTE: Please use *6 to mute/un-mute your phone during the call
 Here is a link to a World Time Zone Converter here http://www.thetimezoneconverter.com/?t=8:00%20a.m.%20&tz=San%20Francisco&
 
 ## Projects
+See the process for contributing a project [here](CONTRIBUTING.md).
 
 **Project**|**Sponsor**|**TOC Deck**|**Accepted**|**Maturity Level**
 :-----:|:-----:|:-----:|:-----:|:-----:
