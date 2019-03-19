@@ -19,6 +19,7 @@
  .. release methodology and mechanics
  .. social media accounts
  .. community size and any existing sponsorship
+ .. project logo in svg format (see https://github.com/cncf/artwork#cncf-related-logos-and-artwork for guidelines)
 
 . *Project Acceptance Process*.
  .. Projects are required to present their proposal at a TOC meeting
