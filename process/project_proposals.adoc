@@ -1,7 +1,7 @@
-*CNCF Project Proposal Process v1.2*
+== CNCF Project Proposal Process v1.2
 
  . *Introduction*. This governance policy sets forth the proposal process for projects to be accepted into the Cloud Native Computing Foundation (“CNCF”). The process is the same for both existing projects which seek to move into the CNCF, and new projects to be formed within the CNCF.
- . *Project Proposal Requirements*. Projects must be proposed via https://github.com/cncf/toc/tree/master/proposals[GitHub]. Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/master/proposals/kubernetes.adoc[example]) must provide the following information to the best of your ability:
+ . *Project Proposal Requirements*. Projects must be proposed via https://github.com/cncf/toc/tree/master/proposals[GitHub]. Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/master/proposals/kubernetes.adoc[example]) can be written in https://www.markdownguide.org[Markdown], http://asciidoc.org[AsciiDoc], or http://docutils.sourceforge.net/rst.html[reStructuredText] and must provide the following information to the best of your ability:
 
  .. name of project (must be unique within CNCF)
  .. project description (what it does, why it is valuable, origin and history)
