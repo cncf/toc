@@ -90,7 +90,6 @@ Brigade uses link:http://semver.org/[semantic versioning] for releases. Releases
 
 *Adopters*:
   * Charter
-  * freee K.K.
   * iBotta
   * Microsoft
   * Student.com
