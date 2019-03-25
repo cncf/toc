@@ -1,10 +1,10 @@
 # Fluentd Graduation Application
 
-[Fluentd](https://www.fluentd.org) project has been in incubation for one year and a half. The following application links to the required information to become a graduated project plus some additional information about it growth.
+[Fluentd](https://www.fluentd.org) project has been in incubation for more than <u>two years</u>. The following application links to the required information to become a graduated project plus some additional information about it growth.
 
 ### Fluentd Adoption and Ecosystem
 
-In terms of adoption, It's hard to measure the real numbers of deployments of Fluentd, but based in the public statistics considering <u>only</u> our own Docker images, in the last year we see more than <u>35 million pulls</u>.
+In terms of adoption, It's hard to measure the real numbers of deployments of Fluentd, but based in the public statistics considering <u>only</u> our own Docker images, in the last years we see more than <u>48 million pulls</u>.
 
 As a reference of adoption by known companies, we can see that Fluentd plays an important role in the following production environments:
 
@@ -16,7 +16,7 @@ As a reference of adoption by known companies, we can see that Fluentd plays an 
 
 Fluentd have a different ecosystem model than other projects, it's composed by a small and stable code base and most of the functionalities are available through plugins which can be: inputs, filters, parsers, buffers and outputs.
 
-Most of contributions to Fluentd happens through the implementation of plugins, where the majority of them (> 800) are maintained by different companies and individuals. Since the nature of Fluentd language in Ruby and C, these extensions are available through the common Ruby Gems channels and Fluentd offers a built-in tool to install any plugin available.
+Most of contributions to Fluentd happens through the implementation of plugins, where the majority of them (**> 900**) are maintained by different companies and individuals. Since the nature of Fluentd language in Ruby and C, these extensions are available through the common Ruby Gems channels and Fluentd offers a built-in tool to install any plugin available.
 
 note: during the last year we have seen a 50% decline of the number of companies contributing to the code base (Fluentd core), while at the same time a huge increase in the number of contributions to it ecosystem through plugins.
 
@@ -26,7 +26,7 @@ note: during the last year we have seen a 50% decline of the number of companies
 
 - Fluentd Code Base
 
-  - **61** Official releases  (today we are at **v1.3.0**)
+  - **75** Official releases  (today we are at **v1.4.1**)
 
 - **New** Fluentd plugins hosted in our Github organization
   - Prometheus Output: https://github.com/fluent/fluent-plugin-prometheus
@@ -36,14 +36,14 @@ note: during the last year we have seen a 50% decline of the number of companies
 
 - Fluentd Plugins published <u>by the community</u>
 
-  - Total as of today: **876**
-  - Plugins <u>updated since</u> January 2017:  **839**
+  - Total as of today: **941**
+  - Plugins <u>updated since</u> November 2016 (CNCF Incubation):  **917**
 
 - Community
 
   - Slack: on January 2017 an average of 11 new members joined, as of July 2018 we have an average of 23 new members per week.
 
-  - Github Stars: **7000** as of today (we got 1500 new in the last 12 months)
+  - Github Stars: **7500** as of today
 
 
 ## To graduate from inception or incubating status, or for a new project to join as a graduated project, a project must meet the incubating stage criteria plus:
