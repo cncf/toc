@@ -25,7 +25,7 @@ Kamus solved the hard problem of secrets management, an essential part of applic
 This is aligned with the CNCF stated mission - "empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds". 
 Kamus also help to build applications that are "resilient, manageable, and observable", and "allow engineers to make high-impact changes frequently and predictably with minimal toil".
 
-*Sponsor / Advisor from TOC:* Looking for a sponsor
+*Sponsor / Advisor from TOC:* Liz Rice
 
 
 *Unique identifier:* kamus
@@ -70,10 +70,10 @@ Unit\integration\end to end tests and security test are running on each PR, and 
 
 *Community size:*
 
-* 240 stars
+* 260 stars
 * 9 forks
-* 7 watches
+* 8 watches
 * Issues/PRs from the community
-* One user
+* Few users
 
 *Production usage*: Soluto, 6 months
