@@ -33,6 +33,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Dan	Wilson, Concur	(danw@concur.com)
 * Darren Ratcliffe, Atos (darren.ratcliffe@atos.net)
 * Dave Zolotusky, Spotify (dzolo@spotify.com)
+* David McKay, InfluxData (rawkode@influxdata.com)
 * Deyuan Deng, Caicloud (deyuan@caicloud.io)
 * Doug Davis, IBM (dug@us.ibm.com)
 * Drew Rapenchuk, Bloomberg	(drapenchuk@bloomberg.net)
