@@ -95,5 +95,6 @@ Some key points:
     * Require 2/3 vote from the TOC to enter incubation
     * Used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
     * Have a healthy number of committers
+    * Full [due diligence](https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md) by the TOC
 
 * Archiving criteria: projects may be archived via a 2/3 vote from the TOC
