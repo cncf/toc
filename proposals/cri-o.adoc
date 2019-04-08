@@ -1,0 +1,220 @@
+== CRI-O
+
+*Name of project*: cri-o
+
+*Description*:
+
+CRI-O is a stable container runtime specifically tailored for Kubernetes.
+A founding principal was not "reinventing the wheel" and so the project uses shared components, refined approaches tested in production, and existing battle-tested code.
+Further, it is tuned for performance, stability, compatibility, and adherence to standards, particularly the Kubernetes Conformance tests.
+In short CRI-O is a building block of a Kubernetes cluster, to facilitate the life cycle of containers as required by the Kubernetes Container-Runtime-Interface (CRI).
+
+CRI-O was born in kubernetes-incubator and grew to production stable there.
+Some have claimed since being a kubernetes project that it is already "a CNCF project", but it is often left as an after thought in brand, awareness and support as a top-level project.
+This proposal is effective to promote from the kubernetes incubator a project that has fully matured.
+
+*Sponsor / Advisor from TOC*: Brendan Burns <bburns@microsoft.com>
+
+*Unique Identifier*: cri-o
+
+*License*: ALv2
+
+*Maturity Level*: Incubating
+
+*Source control repositories*: https://github.com/kubernetes-sigs/cri-o
+
+*Initial Committers*:
+
+- mrunalp
+- runcom
+- cyphar
+- mikebrow
+- sameo
+- rhatdan
+- nalind
+- giuseppe
+
+*Infrastructure requirements*: CI, CNCF Cluster, TravisCI
+
+*Issue tracker*: https://github.com/kubernetes-sigs/cri-o/issues
+
+*Mailing lists*
+
+* #cri-o on Freenode IRC
+* https://kubernetes.slack.com/messages/crio
+
+*Website*: https://cri-o.io
+
+*Release methodology and mechanics*
+
+Major releases are matching to Kubernetes major releases.
+Minor releases are as needed.
+
+*Social media accounts*:
+
+* Blog: https://medium.com/cri-o/
+
+*Existing sponsorship*:
+
+* Red Hat (lead)
+* Intel
+* SUSE
+
+*Adopters*:
+
+* Red Hat - Default container runtime for their OpenShift product
+* Intel
+* kata-containers - primary CRI runtime worked with
+* openSUSE - Default for kubic (https://kubic.opensuse.org/blog/2018-09-17-crio-default/)
+* SUSE - on track for their CaaSP offering (https://www.suse.com/releasenotes/x86_64/SUSE-CAASP/3.0/#Intro.New)
+* Lyft - Default container runtime for their kubernetes deployment
+* Cillium - Default example for deployment on kubernetes (https://github.com/cilium/cilium/tree/master/examples/kubernetes/)
+* Nvidia
+* Datica - Default runtime for their CKS offering (https://datica.com/compliant-kubernetes-service/)
+
+*Statement on alignment with CNCF mission*:
+
+CRI-O's mission and goal is to align with and provide everything that Kubernetes expects from a container-runtime, and nothing more.
+Based on the OpenContainer Initiative (OCI) format for container images, runtimes and distribution, with compatibility for existing docker formats as well.
+The CRI-O project is imbued with the spirit of Kubernetes and the CNCF mission.
+
+*Contributors*: https://github.com/kubernetes-sigs/cri-o/graphs/contributors
+
+*External Dependencies*: Full list: https://github.com/kubernetes-sigs/cri-o/blob/master/vendor.conf (https://github.com/kubernetes-sigs/cri-o/blob/c6455c30771245c357c987ac5892bc77f2fb12b0/vendor.conf is the version at time of writing). By LICENSE is:
+
+* ALv2
+  - github.com/containerd/cgroups
+  - github.com/containerd/console
+  - github.com/containerd/continuity
+  - github.com/containernetworking/cni
+  - github.com/containers/image
+  - github.com/containers/libpod
+  - github.com/containers/storage
+  - github.com/coreos/go-systemd
+  - github.com/coreos/pkg
+  - github.com/cri-o/ocicni
+  - github.com/docker/distribution
+  - github.com/docker/docker
+  - github.com/docker/go-connections
+  - github.com/docker/go-units
+  - github.com/docker/libtrust
+  - github.com/docker/spdystream
+  - github.com/go-openapi/analysis
+  - github.com/go-openapi/errors
+  - github.com/go-openapi/jsonpointer
+  - github.com/go-openapi/jsonreference
+  - github.com/go-openapi/loads
+  - github.com/go-openapi/spec
+  - github.com/go-openapi/strfmt
+  - github.com/go-openapi/swag
+  - github.com/golang/glog
+  - github.com/golang/groupcache
+  - github.com/google/btree
+  - github.com/google/gofuzz
+  - github.com/googleapis/gnostic
+  - github.com/matttproud/golang_protobuf_extensions
+  - github.com/mistifyio/go-zfs
+  - github.com/modern-go/concurrent
+  - github.com/modern-go/reflect2
+  - github.com/mrunalp/fileutils
+  - github.com/opencontainers/go-digest
+  - github.com/opencontainers/image-spec
+  - github.com/opencontainers/runc
+  - github.com/opencontainers/runtime-spec
+  - github.com/opencontainers/runtime-tools
+  - github.com/opencontainers/selinux
+  - github.com/pquerna/ffjson
+  - github.com/prometheus/client_golang
+  - github.com/prometheus/client_model
+  - github.com/prometheus/common
+  - github.com/prometheus/procfs
+  - github.com/soheilhy/cmux
+  - github.com/vishvananda/netlink
+  - github.com/vishvananda/netns
+  - github.com/xeipuuv/gojsonpointer
+  - github.com/xeipuuv/gojsonreference
+  - github.com/xeipuuv/gojsonschema
+  - google.golang.org/genproto
+  - google.golang.org/grpc
+  - gopkg.in/square/go-jose.v2
+  - gopkg.in/yaml.v2
+  - k8s.io/api
+  - k8s.io/apiextensions-apiserver
+  - k8s.io/apimachinery
+  - k8s.io/apiserver
+  - k8s.io/client-go
+  - k8s.io/csi-api
+  - k8s.io/kube-openapi
+  - k8s.io/kubernetes
+  - k8s.io/utils
+* BSD-2
+  - github.com/godbus/dbus
+  - github.com/pkg/errors
+  - github.com/seccomp/libseccomp-golang
+  - github.com/syndtr/gocapability
+  - gopkg.in/mgo.v2
+* BSD-3
+  - github.com/PuerkitoBio/purell
+  - github.com/PuerkitoBio/urlesc
+  - github.com/cyphar/filepath-securejoin
+  - github.com/fsnotify/fsnotify
+  - github.com/gogo/protobuf
+  - github.com/golang/protobuf
+  - github.com/gorilla/context
+  - github.com/gorilla/mux
+  - github.com/imdario/mergo
+  - github.com/mtrmac/gpgme
+  - github.com/pmezard/go-difflib
+  - github.com/spf13/pflag
+  - github.com/ulikunitz/xz
+  - github.com/vbatts/tar-split
+  - golang.org/x/crypto
+  - golang.org/x/net
+  - golang.org/x/oauth2
+  - golang.org/x/sys
+  - golang.org/x/text
+  - golang.org/x/time
+  - gopkg.in/cheggaaa/pb.v1
+  - gopkg.in/fsnotify.v1
+  - gopkg.in/inf.v0
+  - gopkg.in/tomb.v1
+* MIT
+  - github.com/Azure/go-ansiterm
+  - github.com/BurntSushi/toml
+  - github.com/Microsoft/go-winio
+  - github.com/Microsoft/hcsshim
+  - github.com/asaskevich/govalidator
+  - github.com/beorn7/perks
+  - github.com/blang/semver
+  - github.com/buger/goterm
+  - github.com/dgrijalva/jwt-go
+  - github.com/docker/docker-credential-helpers
+  - github.com/emicklei/go-restful
+  - github.com/emicklei/go-restful-swagger12
+  - github.com/exponent-io/jsonpath
+  - github.com/fatih/camelcase
+  - github.com/ghodss/yaml
+  - github.com/go-zoo/bone
+  - github.com/gregjones/httpcache
+  - github.com/hpcloud/tail
+  - github.com/json-iterator/go
+  - github.com/kr/pty
+  - github.com/mailru/easyjson
+  - github.com/mattn/go-runewidth
+  - github.com/mitchellh/go-wordwrap
+  - github.com/mitchellh/mapstructure
+  - github.com/peterbourgon/diskv
+  - github.com/renstrom/dedent
+  - github.com/sirupsen/logrus
+  - github.com/tchap/go-patricia
+  - github.com/ugorji/go
+  - github.com/urfave/cli
+* ISC
+  - github.com/davecgh/go-spew
+  - github.com/ostreedev/ostree-go
+  - github.com/stretchr/testify
+* MPLv2
+  - github.com/hashicorp/errwrap
+  - github.com/hashicorp/go-multierror
+  - github.com/hashicorp/golang-lru
+
