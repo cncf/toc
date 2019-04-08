@@ -111,6 +111,7 @@ See the process for contributing a project [here](CONTRIBUTING.md).
 [etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[12/11/18](https://www.cncf.io/blog/2018/12/11/cncf-to-host-etcd)|Incubating
 [KubeEdge](https://github.com/kubeedge/kubeedge)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/205)|[3/18/19](https://github.com/kubeedge/kubeedge)|Sandbox
 [Brigade](https://github.com/brigadecore)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/203)|[3/18/19](https://github.com/brigadecore)|Sandbox
+[CRI-O](https://github.com/cri-o)|Brendan Burns|[3/12/19](https://github.com/cncf/toc/pull/177)|[4/8/19](https://github.com/cri-o)|Incubating
 
 ## Website Guidelines
 
