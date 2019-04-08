@@ -40,13 +40,14 @@ Dial: +1 646 558 8656 (US Toll) or +1 408 638 0968 (US Toll)
 +1 877 369 0926 (US Toll Free)
 
 Meeting ID: 263 858 603
-International numbers available: https://zoom.us/zoomconference?m=ddKUsXGa2tGOHvCl4ccI0juqU7TZaCov
+
+International numbers available [here](https://zoom.us/zoomconference?m=ddKUsXGa2tGOHvCl4ccI0juqU7TZaCov)
 
 Here is a public Google calendar you can add the meetings to your calendar: https://goo.gl/eyutah
 
 NOTE: Please use *6 to mute/un-mute your phone during the call
 
-Here is a link to a World Time Zone Converter here http://www.thetimezoneconverter.com/?t=8:00%20a.m.%20&tz=San%20Francisco&
+Link to a World Time Zone Converter [here](http://www.thetimezoneconverter.com/?t=8:00%20a.m.%20&tz=San%20Francisco&)
 
 ## Meeting Agenda and Minutes
 
