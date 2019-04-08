@@ -50,7 +50,7 @@ Here is a link to a World Time Zone Converter here http://www.thetimezoneconvert
 
 ## Meeting Agenda and Minutes
 
-Meeting agenda and persentations are [here](docs/meeting_presentations.md).
+Meeting agenda and presentations are [here](docs/meeting_presentations.md).
 
 Meeting Minutes are recorded [here](https://docs.google.com/document/d/1jpoKT12jf2jTf-2EJSAl4iTdA7Aoj_uiI19qIaECNFc/edit#).
 
