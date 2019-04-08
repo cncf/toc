@@ -15,7 +15,7 @@
  .. infrastructure requests (CI / CNCF Cluster)
  .. communication channels (slack, irc, mailing lists)
  .. issue tracker (GitHub by default)
- .. website (current version will move to project.cncf.io)
+ .. website (current version will move to project.cncf.io, see https://github.com/cncf/foundation/blob/master/website-guidelines.md[here] for guidelines)
  .. release methodology and mechanics
  .. social media accounts
  .. community size and any existing sponsorship
