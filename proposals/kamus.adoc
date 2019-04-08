@@ -19,6 +19,8 @@ Kamus was designed with GitOps in mind.
 By using Kamus, the encrypted secrets can be stored in Git and deploy with the application manifest files.
 Storing encrypted secrets with manifest files create one source of truth to the application state. 
 
+Today, Kamus only supports Kubernetes, but it can do a lot more than that: Kamus can be used on any platform that can provide an identity for an application - including FaaS or bare metal instances. Today, there are no good solutions for those platforms - and we hope that soon we can offer Kamus also there.
+
 *Statement on alignment with CNCF mission:*
 
 Kamus solved the hard problem of secrets management, an essential part of application development. 
@@ -70,9 +72,9 @@ Unit\integration\end to end tests and security test are running on each PR, and 
 
 *Community size:*
 
-* 260 stars
-* 9 forks
-* 8 watches
+* 280 stars
+* 16 forks
+* 7 watches
 * Issues/PRs from the community
 * Few users
 
