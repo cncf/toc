@@ -8,14 +8,14 @@ The full project proposal process is located [here](https://github.com/cncf/toc/
 
 ## TOC Contributors
 
-There has been a call from CNCF’s Technical Oversight Committee (TOC) for additional contributors and expertise to help evaluate potential projects and contribute to [working groups](https://github.com/cncf/toc#working-groups). With the metaphor of the TOC as an open source project and the 9 TOC [members](https://www.cncf.io/people/technical-oversight-committee/) as the maintainers, we are making a call for new **TOC Contributors**.
+There has been a call from CNCF’s Technical Oversight Committee (TOC) for additional contributors and expertise to help evaluate potential projects and contribute to [CNCF SIGs](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md) and [working groups](https://github.com/cncf/toc#working-groups). With the metaphor of the TOC as an open source project and the 9 TOC [members](https://www.cncf.io/people/technical-oversight-committee/) as the maintainers, we are making a call for new **TOC Contributors**.
 
 Possible ways to contribute:
 
 * Tech due diligence for projects
 * Time spent helping projects
 * Liaison with GB
-* Working groups (various tasks)
+* CNCF SIGs & working groups (various tasks)
 * Technical content for website
 
 If you are interested in engaging in this way, we would encourage you to issue a pull request to [TOC Contributors](https://github.com/cncf/toc/blob/master/CONTRIBUTORS.md) that you desire to become a TOC Contributor. Although there is not an actual limit of having one Contributor per company, we would encourage CNCF member companies to designate an official TOC Contributor who is tasked with consulting internal experts and expressing a semi-official view on a given project. We will list current TOC Contributors on a page similar to https://www.cncf.io/people/ambassadors/.
