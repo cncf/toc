@@ -78,16 +78,16 @@ OpenEBS Source code is split across multiple repositories, some of which are lis
 
 *Initial Committers and Founding Maintainers:* 
 
- * Kiran Mova @kmova
- * Amit Kumar Das @AmitKumarDas
- * Karthik Satchitanand @ksatchit
+ * Kiran Mova @kmova (MayaData)
+ * Amit Kumar Das @AmitKumarDas (MayaData)
+ * Karthik Satchitanand @ksatchit (MayaData)
 
 *Additional Maintainers:*
 
- * Murat Karslioglu @muratkars
- * Jeffry Molanus @gila
- * Vishnu Itta @vishnuitta
- * Richard Elling @richardelling
+ * Murat Karslioglu @muratkars (MayaData)
+ * Jeffry Molanus @gila (MayaData)
+ * Vishnu Itta @vishnuitta (MayaData)
+ * Richard Elling @richardelling (Viking Enterprise Solutions a division of Sanmina Corporation)
 
 *Infrastructure requests (CI / CNCF Cluster):*
 
