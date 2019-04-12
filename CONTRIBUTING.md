@@ -26,4 +26,4 @@ The TOC already has the pattern of encouraging non-members to make non-binding v
 
 TOC [meetings](https://github.com/cncf/toc#meeting-time) are only two hours a month, which are mainly taken up with project presentations. While Contributors are welcome to share their views during the meeting, the biggest opportunity is to comment on the TOC [mailing list](https://github.com/cncf/toc#mailing-list), on pull requests representing project applications and in voting.
 
-And, just as the biggest contributors to open source projects often become maintainers, becoming an active TOC Contributor is one of the best paths to distinguish oneself ahead of TOC [elections](https://github.com/cncf/toc#members) in March 2018 and January 2019. 
+And, just as the biggest contributors to open source projects often become maintainers, becoming an active TOC Contributor is one of the best paths to distinguish oneself ahead of TOC [elections](https://github.com/cncf/toc/blob/master/process/election-schedule.md).
