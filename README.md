@@ -55,11 +55,9 @@ Meeting agenda and presentations are [here](docs/meeting_presentations.md).
 
 Meeting Minutes are recorded [here](https://docs.google.com/document/d/1jpoKT12jf2jTf-2EJSAl4iTdA7Aoj_uiI19qIaECNFc/edit#).
 
-## Scheduled Community Presentations
+An archive of community presentations is [here](docs/scheduled_presentations.md)
 
-See the scheduled community presentations [here](docs/scheduled_presentations.md).
-
-If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. We can schedule a maximum of one community presentation per TOC meeting.
+If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. These requests are tracked in the [TOC project backlog](https://github.com/cncf/toc/projects/2).
 
 ## Mailing List
 
