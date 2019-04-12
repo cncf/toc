@@ -1,20 +1,6 @@
-# TOC Contributor Information
+# TOC Contributors
 
-There has been a call from CNCF’s Technical Oversight Committee for additional contributors and expertise to help evaluate potential projects and contribute to working groups. With the metaphor of the TOC as an open source project and the 9 TOC members as the maintainers, we are making a call for new TOC Contributors.
-
-Possible ways to contribute:
-
-* Tech due diligence for projects
-* Time spent helping projects
-* Liaison with GB
-* Working Groups
-* Technical content
-
-This is not only about individual contribution. It is also about rallying help from your employer. Given the breadth of projects represented by cloud native, it is impossible for anyone to be an expert in all technologies that we’re evaluating. We’re particularly interested in TOC Contributors that can act as a focal point for tapping relevant expertise from their organizations and colleagues in order to engage with CNCF discussions in a timely manner. The TOC already has the pattern of encouraging non-members to make non-binding votes, so no change in the TOC charter is necessary to allow Contributors.
-
-If you are interested in engaging in this way, we would encourage you to issue a pull request here that you desire to become a TOC Contributor. Although there is not an actual limit of having one TOC Contributor per company, we would encourage CNCF member companies to designate an official TOC Contributor who is tasked with consulting internal experts and expressing a semi-official view on a given project.
-
-## TOC Contributors
+Find out more about the role of TOC contributors [here](https://github.com/cncf/toc/blob/master/CONTRIBUTING.md#toc-contributors)
 
 List below is the official list of TOC contributors, in alphabetical order:
 
