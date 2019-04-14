@@ -19,7 +19,7 @@ inclusion of each project at the relevant time.
 To enable the voting TOC members to cast an informed vote about a
 project, it is crucial that each member is able to form their own
 opinion as to whether and to what extent the project meets the agreed
-upon [criteria](https://www.cncf.io/projects/graduation-criteria/) for
+upon [criteria](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc) for
 sandbox, incubation or graduation. As the leader of a DD, your job
 is to make sure that they have whatever information they need,
 succinctly and readily available, to form that opinion.
