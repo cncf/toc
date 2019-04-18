@@ -9,8 +9,14 @@ NATS was accepted into the CNCF as an incubating project in March 2018. Signific
 
 NATS has committers from [various organizations](https://nats.devstats.cncf.io/d/5/companies-summary?orgId=1&var-period_name=Last%20decade&var-metric=repositories).
 
-* Paulo Pires [@pires](https://github.com/pires), Mesosphere
+* Christoper Watford [@watfordgnf](https://github.com/watfordgnf), GE
+* Oleg Shaldybin [@olegshaldibin](https://github.com/olegshaldibin), Google
 * Laurent Magnin [@laugimethods](https://github.com/laugimethods), Logimethods
+* Paulo Pires [@pires](https://github.com/pires), Mesosphere
+* Brian Shannan [@brianshannan-wf](https://github.com/brianshannan-wf), Workiva
+* Charlie Strawn [@charliestrawn](https://github.com/charliestrawn), Workiva
+* Lev Brouk [@levb](https://github.com/levb), Independent
+* R.I. Pienaar [@ripienaar](https://github.com/ripienaar), Independent
 * Various committers from Synadia
   - Derek Collison [@derekcollison](https://github.com/derekcollison)
   - Ivan Kozlovic [@kozlovic](https://github.com/kozlovic)
