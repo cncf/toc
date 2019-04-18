@@ -1,0 +1,58 @@
+=== Brigade CNCF Incubator Project Proposal
+
+*Name of Project:* keptn
+
+*Description:*
+
+**Statement on alignment with CNCF mission:**
+
+*Roadmap:*
+
+*Sponsors from TOC:* 
+
+*Preferred maturity level:* Incubator
+
+*License:* Apache 2.0
+
+*Source control:* GitHub https://github.com/keptn
+
+*External Dependencies:*
+
+External dependencies of keptn are listed below:
+|===
+|*Software*|*License*|*Project Page*
+
+|===
+
+*Maintainers:*
+
+ * Alois Reitbauer (Dynatrace)
+
+*Infrastructure requests (CI / CNCF Cluster):* none
+
+
+*Communication Channels:*
+
+ * Slack:
+ * Issue tracker: https://github.com/keptn/keptn/issues
+
+*Website:* https://keptn.sh/
+
+*Release methodology and mechanics:*
+
+keptn uses link:http://semver.org/[semantic versioning] for releases. Releases are announced using GitHub. 
+
+*Social media accounts:*
+
+ * Twitter: https://twitter.com/keptnproject
+
+*Existing sponsorship*: Dynatrace
+
+*Adopters*:
+  * Dynatrace
+
+*Community size:*
+
+stars
+
+contributors
