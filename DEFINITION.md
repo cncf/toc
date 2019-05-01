@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) (in Chinese, Japanese, Korean and Portuguese below)
+[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) (in Chinese, Japanese, Korean and Brazilian Portuguese below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -42,10 +42,8 @@ Cloud Native Computing Foundation은 벤더 중립적인 오픈소스 프로젝�
 
 ## Português Brasileiro:
 
-Tecnologias nativas ao cloud empoderam empresas a criarem e rodarem aplicações escaláveis em ambientes modernos e dinâmicos, como núvens públicas, privadas e híbridas. Containeres, service meshes, microservices, infraestruturas imutáveis e APIs declarativas são alguns exemplos dessa estratégia.
+Tecnologias nativas ao cloud empoderam empresas a criarem e rodarem aplicações escaláveis em ambientes modernos e dinâmicos, como núvens públicas, privadas e híbridas. Containeres, service meshes, microsserviços, infraestruturas imutáveis e APIs declarativas são alguns exemplos dessa estratégia.
 
-Essas técnicas habilitam os sistemas de baixo acoplamento que são resilientes, gerenciáveis e observáveis. Combinadas com automações robustas, elas permitem que os engenheiros fa
-çam alterações de alto impacto de forma frequente e previsível, com o mínimo de esforço.
+Essas técnicas permitem criar sistemas de baixo acoplamento, resilientes, gerenciáveis e observáveis. Combinadas com automações robustas, elas permitem que os engenheiros façam alterações de alto impacto de forma frequente e previsível, com o mínimo de esforço.
 
-A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornece
-dor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
+A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
