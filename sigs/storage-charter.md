@@ -1,26 +1,24 @@
 # CNCF Storage SIG Charter
 
+Primary Author: Quinton Hoole
 
-## Primary Author: Quinton Hoole \
-2019-04-23 \ Reviewed and contributed to by Saad Ali, Alex Chircop,
+2019-04-23
+
+Reviewed and contributed to by Saad Ali, Alex Chircop,
 Xing Yang, Xiang Li, and other members of the CNCF Storage Working
 Group and community.
 
-
 # Introduction
 
-This is the charter referred to in “[CNCF
-SIGs](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#sig-charter)”
+This is the charter referred to in [CNCF
+SIGs](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#sig-charter)
 by the CNCF TOC.
-
 
 # Areas Considered In Scope
 
 Storage systems and approaches suitable for and commonly used in
 [modern cloud-native
 environments](https://github.com/cncf/toc/blob/master/DEFINITION.md):
-
-
 
 *   especially where these differ significantly from storage systems
     and approaches previously commonly used in traditional enterprise
@@ -36,15 +34,12 @@ various cloud-native use cases. This is covered in more detail in the
 [CNCF Storage Landscape White Paper](
 http://bit.ly/cncf-storage-whitepaper).
 
-
 # Areas Considered Out Of Scope
 
 Anything not considered in scope above (:-)).  See also “Interfaces
 with Related Groups” below.
 
 Examples include:
-
-
 
 *   Details of general-purpose low-level storage media like magnetic
     hard disks, solid-state storage devices, non-volatile memory, etc
@@ -58,13 +53,10 @@ Examples include:
     these are the domains of the Storage SIGs specific to each
     orchestrator, e.g. Kubernetes Storage SIG.
 
-
 # SIG Mission Statement
 
 To enable widespread and successful storage of persistent state in
 cloud-native environments through:
-
-
 
 1. Providing valuable and objective information to the TOC, End Users
    and Projects of the CNCF regarding areas considered in scope (see
@@ -75,10 +67,7 @@ cloud-native environments through:
 4. Identifying and filling gaps in the landscape of CNCF Storage
    Projects.
 
-
 # Current CNCF Storage Projects
-
-
 
 1. TiKV
 2. etcd
@@ -86,10 +75,7 @@ cloud-native environments through:
 4. Rook
 5. [TBD] OpenEBS
 
-
 # Interfaces With Other Related Groups
-
-
 
 *   **Kubernetes Storage SIG** - is focussed towards
     Kubernetes-specific storage abstractions, interfaces, and
@@ -119,8 +105,7 @@ cloud-native environments through:
     storage, as well as how storage systems (including databases) may
     be deployed on Kubernetes .  We collaborate with Apps SIG and make
     sure that important topics are well covered.
-*   **[Kubernetes Service Catalog SIG
-    ](https://github.com/kubernetes/community/tree/master/sig-service-catalog)**-
+*   **[Kubernetes Service Catalog SIG](https://github.com/kubernetes/community/tree/master/sig-service-catalog)**-
     works on enabling external managed software offerings such as
     datastore services offered by public cloud providers.
 
