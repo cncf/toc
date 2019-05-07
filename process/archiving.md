@@ -4,7 +4,7 @@ Open source projects have a lifecycle and there are times that projects become i
 
 ## Archiving Criteria
 
-When voting on a proposal to archive a project, TOC members may wish to consider whether the project continues to meet the criteria for CNCF acceptance. The TOC may also look at activity levels in the project, although it is important to note that there is a difference between a mature project that doesn't get much attention any more but is stable, versus a project that is inactive.
+When voting on a proposal to archive a project, TOC members may wish to consider whether the project continues to meet the criteria for CNCF acceptance. The TOC may also look at activity levels in the project (https://all.devstats.cncf.io/d/53/projects-health-table?orgId=1), although it is important to note that there is a difference between a mature project that doesn't get much attention any more but is stable, versus a project that is inactive.
 
 ## Voting Process
 
@@ -27,4 +27,4 @@ What does archiving for a CNCF project mean?
 
 ## Reactivating an Archived Project
 
-Any project can be reactivated into CNCF by following the normal project [proposal](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc) and [sandbox](https://github.com/cncf/toc/blob/master/process/sandbox.md) process.
+Any project can be reactivated into CNCF by following the normal project [proposal](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc) and/or [sandbox](https://github.com/cncf/toc/blob/master/process/sandbox.md) process.
