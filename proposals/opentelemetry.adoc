@@ -1,0 +1,50 @@
+== OpenTelemetry Proposal
+
+*Name of project:* OpenTelemetry
+
+*Description:* OpenTelemetry is an integrated set of APIs and libraries that generate, collect, and describe telemetry about distributed systems. This data includes basic context propagation, distributed traces, metrics, and other signals in the future. OpenTelemetry makes it easy to get critical telemetry data out of your services: for each language it offers a single set of APIs, libraries, and data specifications, and developers can make use of which components they see fit.
+
+OpenTelemetry is well-suited to diverse software systems, from client applications, large monoliths, or highly-distributed microservices. It also provides a collector component that can proxy, aggregate, and enrich telemetry before it is exported to a backend.
+
+Technically and organizationally, OpenTelemetry is a fusion of the OpenTracing and OpenCensus projects, and will supersede both over time. To that end, an important design goal is backwards compatibility with both projects via software bridges. Applications will generate correct telemetry data when they mix idiomatic OpenTracing, OpenCensus, and OpenTelemetry instrumentation, though we expect users to quickly shift to the new unified OpenTelemetry APIs.
+
+*Sponsor / Advisor from TOC:* Brendan Burns, Brian Grant, Matt Klein
+
+*Preferred maturity level:* sandbox
+
+*Unique Identifier:* OpenTelemetry
+
+*License:* Apache License v2.0
+
+*Source control repositories:* Main repository with project description and specifications: https://github.com/open-telemetry/opentelemetry-specification/ Also multiple SDK repositories across various languages, as well as repositories for collectors.
+
+*Initial Committers:* https://github.com/open-telemetry/community/blob/master/community-members.md
+
+*Infrastructure requirements (CI / CNCF Cluster):*
+
+* TravisCI
+* Codecov
+
+*Issue tracker:* https://github.com/open-telemetry/opentelemetry-specification/issues as well as per-language repositories like https://github.com/open-telemetry/opentelemetry-java/issues
+
+*Mailing lists:* Gitter: https://gitter.im/open-telemetry/community
+
+*Website:* https://OpenTelemetry.io/
+
+*Release methodology and mechanics:* Vary across languages. Typically we expect a stable LTS release per year for major languages.
+
+*Social media accounts:* https://twitter.com/OpenTelemetry
+
+*Existing sponsorship:* Project is supported via contributions from Google, Microsoft, LightStep, Omnition
+
+*Contributor statistics:* The OpenTelemetry community is growing. The projects that it descends from have over 7000 stars on GitHub and contributions from over 600 developers. The combined projects are implemented by Google, Microsoft, Omnition, New Relic, Dynatrace, Datadog, Instana, Honeycomb, LightStep, and many other vendors in the space.
+
+*Adopters:* OpenTracing and OpenCensus are widely adopted within startup ecosystem as well as within traditional enterprises. Among the adopters are vendors and cloud companies and many, many end-user companies, including Spotify, Postmates, Box, Square, Snap, Shopify,Twilio, GitHub, Lyft, DigitalOcean, Plaid, Yext, UnderArmour, Indeed, Airtable, SkyScanner, BigCommerce, TicketMaster, Zalando, and Segment.
+
+*External Dependencies:*
+
+* Protobuf
+* GRPC
+* OpenMetrics
+
+*Statement on alignment with CNCF mission:* OpenTelemetry delivers all of the raw materials required for robust observability of modern software applications. Portability, vendor neutrality, and common data formats for collected signals are crucial for cloud-native computing as highlighted in the https://www.cncf.io/about/charter/[CNCF charter]. OpenTracing and OpenCensus are both robust projects, but their overlapping charters have created confusion and wasted work in the larger open-source community. As such, OpenTelemetry also adds considerable value to the CNCF ecosystem by creating the shared destination for the OpenTracing and OpenCensus projects and communities.
