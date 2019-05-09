@@ -35,6 +35,7 @@ Some specific examples:
     * Quote: "Jaeger Tracing is helping us achieve our vision of observability capabilities across different versions of our platforms, how they integrate with each other and how they have grown over time." -- Kraig Amador, Senior Director.
   * [Red Hat](https://www.redhat.com/en), world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies.
     * Jaeger will be fully supported by Red Hat as part of its OpenShift Service Mesh product due for release in a couple of months.
+  * Many other companies self-reporting on https://stackshare.io/jaeger/in-stacks/ajax
 
 Jaeger is also being integrated with other open source projects:
 
