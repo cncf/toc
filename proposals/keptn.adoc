@@ -4,11 +4,101 @@
 
 *Description:*
 
+Keptn is a control plane for continuous delivery and operations providing a
+declaritive approach towards day 1 to day n operations of cloud-native
+applications. 
+
+Keptn is built based on the framework used internally at Dynatrace which allows
+us to run hundrets of production cluster without a dedicated operations team in
+a fully automated "NoOps" approach. 
+
+Keptn solves the problem that traditional releae pipelines are stitched together
+by point-to-point integrations of between a number of tools. The average
+pipeline and operations automation toolchain consists of at least 7+ tools that
+are integrated. The current approach of building toolchains comes with a number
+of problems:
+
+* Integrations are hard to maintain as they are spread acorss the entire
+infrastrucutre
+* Onboarding a new service results in a lot of manual work for pipeline and
+operations automation definition
+* Most tool chains today make it hard to define enterprise-wide best practices
+for application delivery that can simply be applied across different
+applications. 
+
+Keptn solves these problems by providing a configurable control plane to define
+day 1 to day n operations. The design is inspired by SDN stacks:
+
+* The application stack defines how the delivery and operations process should
+work using a shipyard file. Shipyard files define stages, release stratgies,
+testing strategies etc.
+* Keptn than provides a control plane that manages a GitOps repository for the
+stages defined in the shipyard file as well as managing Kubernetes namespaces
+and yaml files for services. Additionally keptn uses a set of well defined
+lifecycle events for each potential event that services can subscribe to. All
+events are defined as cloud events.
+* The integration layer used knative services to connect the Keptn control plane
+to all required tools to manage applicaton delivery and operations. The
+configuration which tools to use is defined in a keptn uniform file. 
+
+The approach of kepnt has a number of advantages has a number of key advantages
+over traditional delivery pipelines and operation automation stacks:
+
+* The behaviour of a delivery and automation workflow can be easily changed and
+is managed in a central place
+* Using shipyard and uniform files the "how" is decoupled from the "what" which
+enables greater flexibility in defining operational procedures. 
+* The declarative approach allows to even change automation at runtime without
+any need for manual reconfiguration or touching tool integrations. 
+
+In the current version keptn focussed on three major use cases for day 1 and day
+2 operations:
+
+* Declarative multistage delivery pipelines with automated quality gates.
+Uniform files allow to create any multi-stage pipeline including defining the
+deployment strategy (e.g. direct, blue/green) and definition of testing strategy
+for propagation. 
+* Deployment-based self healing by automatically rolling back blue/green
+deployment in case of problems without the need for manual intervention
+* Event-driven runbook automation for auto-remediaton and self-healing at the
+application level. 
+
+You can read more about the high-level goals of keptn at: https://medium.com/keptn/how-your-delivery-pipeline-will-become-your-next-big-legacy-code-challenge-4e520999693f?source=friends_link&sk=6bf8dcbff647e3912ca381a39035bf7a
+
 **Statement on alignment with CNCF mission:**
+
+The Keptn project provides an easy and standardized way to deliver and operate
+cloud-native applications. Kubernetes has massively simplified this process from
+a platform perspective. Keptn provides the same simplicity at the application
+level using a declarartive approach to delivery and operations.
+
+Keptn also builds on top of exiting CNCF project:
+
+- Kubernetes is used as the core runtime and deployment platform
+- Istio and Envoy are used for traffic routing and deployment strategies (blue/green,
+canary)
+- Prometheus is used as a monitoring source
+- Helm is used for deployment defintion
+- CloudEvents are the basis for all application lifecycle related events
+
 
 *Roadmap:*
 
+May 2019 - v 0.2.x
+
+
+
+September 2019 - v 0.3.0
+
+
+December 2019 - v 0.4.0
+
+June 2020 - planned v 1.0 rlease
+
+
 *Sponsors from TOC:* 
+
+No sponsors yet
 
 *Preferred maturity level:* Incubator
 
@@ -27,6 +117,7 @@ External dependencies of keptn are listed below:
 *Maintainers:*
 
  * Alois Reitbauer (Dynatrace)
+ * Dirk Wallerstorfer (Dynatrace)
 
 *Infrastructure requests (CI / CNCF Cluster):* none
 
