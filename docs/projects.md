@@ -37,3 +37,4 @@
 [Brigade](https://github.com/brigadecore)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/203)|[3/18/19](https://github.com/brigadecore)|Sandbox
 [Network Service Mesh](https://github.com/networkservicemesh/)|Joe Beda, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/212)|[4/11/19](https://github.com/networkservicemesh/)|Sandbox
 [OpenTelemetry](https://github.com/open-telemetry/community)|Brendan Burns, Brian Grant, Matt Klein|[5/7/19](https://github.com/cncf/toc/pull/233)|[5/7/19](https://github.com/open-telemetry/community)|Sandbox
+[OpenEBS](https://github.com/openebs/openebs)|Alexis Richardson, Xiang Li|[5/14/19](https://github.com/cncf/toc/pull/224)|[5/14/19](https://github.com/openebs/openebs)|Sandbox
