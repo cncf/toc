@@ -107,7 +107,7 @@ none
  * Mailing List: N/A
  * Issue tracker: https://github.com/openebs/openebs/issues
 
-*Website:* https://openebs.io
+*Website:* https://openebs.org
 
 *Release methodology and mechanics:* 
 
@@ -134,4 +134,4 @@ https://github.com/openebs/openebs/network/members[600+ forks]
 
 https://github.com/openebs/openebs/graphs/contributors[50+ Active Contributors and 350+ Total Contributors]
 
-https://slack.openebs.io[1350+ Slack members]
+https://slack.openebs.io[1400+ Slack members]
