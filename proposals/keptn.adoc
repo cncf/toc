@@ -63,7 +63,9 @@ deployment in case of problems without the need for manual intervention
 * Event-driven runbook automation for auto-remediaton and self-healing at the
 application level. 
 
-You can read more about the high-level goals of keptn at: https://medium.com/keptn/how-your-delivery-pipeline-will-become-your-next-big-legacy-code-challenge-4e520999693f?source=friends_link&sk=6bf8dcbff647e3912ca381a39035bf7a
+You can read more about the high-level goals of keptn in
+https://medium.com/keptn/how-your-delivery-pipeline-will-become-your-next-big-legacy-code-challenge-4e520999693f?source=friends_link&sk=6bf8dcbff647e3912ca381a39035bf7a[this
+blog post]
 
 **Statement on alignment with CNCF mission:**
 
