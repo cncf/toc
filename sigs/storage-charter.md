@@ -18,7 +18,7 @@ by the CNCF TOC.
 
 Storage systems and approaches suitable for and commonly used in
 [modern cloud-native
-environments](https://github.com/cncf/toc/blob/master/DEFINITION.md):
+environments](https://github.com/cncf/toc/blob/master/DEFINITION.md) are considered in scope:
 
 *   especially where these differ significantly from storage systems
     and approaches previously commonly used in traditional enterprise
