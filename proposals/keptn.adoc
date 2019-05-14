@@ -1,4 +1,4 @@
-=== Brigade CNCF Incubator Project Proposal
+=== Keptn CNCF Incubator Project Proposal
 
 *Name of Project:* keptn
 
