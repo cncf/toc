@@ -86,16 +86,15 @@ canary)
 
 *Roadmap:*
 
-May 2019 - v 0.2.x
-
-
-
-September 2019 - v 0.3.0
-
-
-December 2019 - v 0.4.0
-
-June 2020 - planned v 1.0 rlease
+* May 2019 - v 0.2.5. 
+* September 2019 - v 0.3.0. keptn's brige UI. Infrastructure fully upgraded to
+latest knative. Removal of Third Party tooling dependency (Jenkins, ...). Keptn
+operator. Improved uniform support. 
+* December 2019 - v 0.4.0. Support for multi-cluster deployment. Improved
+supporte across multiple Kubernetes distributions.
+* June 2020 - planned v 1.0 release. This is the planned releases date for the
+first version that has been hardened after multiple production deployments in
+different settings.
 
 
 *Sponsors from TOC:* 
@@ -126,7 +125,7 @@ External dependencies of keptn are listed below:
 
 *Communication Channels:*
 
- * Slack:
+ * Slack: https://keptn.slack.com/
  * Issue tracker: https://github.com/keptn/keptn/issues
 
 *Website:* https://keptn.sh/
