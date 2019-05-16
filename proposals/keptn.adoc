@@ -138,10 +138,11 @@ External dependencies of Go projects are listed below:
 |websocket|BSD-2-Clause|https://github.com/gorilla/websocket[https://github.com/gorilla/websocket]
 |yaml.v2|Apache-2.0|https://github.com/go-yaml/yaml[https://github.com/go-yaml/yaml]
 |===
+
 Go projects are:
-- keptn/cli
-- dynatrace-service
-- deploy-service
+* keptn/cli
+* dynatrace-service
+* deploy-service
 
 External dependencies of all TypeScript projects are listed below:
 |===
@@ -193,15 +194,16 @@ External dependencies of all TypeScript projects are listed below:
 |ws|MIT|https://www.npmjs.com/package/ws[https://www.npmjs.com/package/ws]
 |yamljs|MIT|https://www.npmjs.com/package/yamljs[https://www.npmjs.com/package/yamljs]
 |===
+
 TypeScript projects are: 
-- github-service
-- jenkins-service
-- pitometer-service 
-- servicenow-service
-- keptn/auth
-- keptn/control
-- keptn/eventbroker
-- keptn/eventbroker-ext
+* github-service
+* jenkins-service
+* pitometer-service 
+* servicenow-service
+* keptn/auth
+* keptn/control
+* keptn/eventbroker
+* keptn/eventbroker-ext
 
 External dependencies of JavaScript projects are listed below:
 |===
@@ -228,8 +230,9 @@ External dependencies of JavaScript projects are listed below:
 |vue-template-compiler|MIT|https://www.npmjs.com/package/vue-template-compiler[https://www.npmjs.com/package/vue-template-compiler]
 |vuex|MIT|https://www.npmjs.com/package/vuex[https://www.npmjs.com/package/vuex]
 |===
+
 JavaScript projects are:
-- bridge
+* bridge
 
 External dependencies of Ballerina projects are listed below:
 |===
@@ -237,8 +240,9 @@ External dependencies of Ballerina projects are listed below:
 
 |ballerina-lang|Apache-2.0|https://github.com/ballerina-platform/ballerina-lang[https://github.com/ballerina-platform/ballerina-lang]
 |===
+
 Ballerina projects are:
-- slack-service
+* slack-service
 
 External dependencies of the jenkins-service are listed below:
 |===
@@ -259,7 +263,7 @@ External dependencies of the jenkins-service are listed below:
 |workflow-aggregator|n/a|https://github.com/jenkinsci/workflow-aggregator-plugin[https://github.com/jenkinsci/workflow-aggregator-plugin]
 |workflow-job|n/a|https://github.com/jenkinsci/workflow-aggregator-plugin[https://github.com/jenkinsci/workflow-aggregator-plugin]
 |_Container tool:_| | 
-tini|MIT|https://github.com/krallin/tini[https://github.com/krallin/tini]
+|tini|MIT|https://github.com/krallin/tini[https://github.com/krallin/tini]
 |===
 
 *Maintainers:*
