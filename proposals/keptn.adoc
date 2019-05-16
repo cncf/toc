@@ -112,9 +112,8 @@ No sponsors yet
 External dependencies of keptn are listed below:
 |===
 |*Software*|*License*|*Project Page*
-
 |curl|MIT/X|https://curl.haxx.se/[https://curl.haxx.se/]
-|gcloud|Apache-2.0|https://cloud.google.com/sdk/gcloud/[https://cloud.google.com/sdk/gcloud/] https://github.com/google-cloud-sdk/google-cloud-sdk[https://github.com/google-cloud-sdk/google-cloud-sdk]
+|gcloud|Apache-2.0|https://github.com/google-cloud-sdk/google-cloud-sdk[https://github.com/google-cloud-sdk/google-cloud-sdk]
 |git|GPLv2|https://git-scm.com/[https://git-scm.com/]
 |helm|Apache-2.0|https://helm.sh/[https://helm.sh/]
 |jq|MIT|https://stedolan.github.io/jq/[https://stedolan.github.io/jq/]
@@ -126,7 +125,6 @@ External dependencies of keptn are listed below:
 External dependencies of Go projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
-
 |cloudevents/sdk-go|Apache-2.0|https://github.com/cloudevents/sdk-go[https://github.com/cloudevents/sdk-go]
 |cobra|Apache-2.0|https://github.com/spf13/cobra[https://github.com/spf13/cobra]
 |docker-credential-helpers|MIT|https://github.com/docker/docker-credential-helpers[https://github.com/docker/docker-credential-helpers]
@@ -140,6 +138,7 @@ External dependencies of Go projects are listed below:
 |===
 
 Go projects are:
+
 * keptn/cli
 * dynatrace-service
 * deploy-service
@@ -147,7 +146,6 @@ Go projects are:
 External dependencies of all TypeScript projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
-
 |axios|MIT|https://www.npmjs.com/package/axios[https://www.npmjs.com/package/axios]
 |base64url|MIT|https://www.npmjs.com/package/base64url[https://www.npmjs.com/package/base64url]
 |body-parser|MIT|https://www.npmjs.com/package/body-parser[https://www.npmjs.com/package/body-parser]
@@ -196,6 +194,7 @@ External dependencies of all TypeScript projects are listed below:
 |===
 
 TypeScript projects are: 
+
 * github-service
 * jenkins-service
 * pitometer-service 
@@ -208,7 +207,6 @@ TypeScript projects are:
 External dependencies of JavaScript projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
-
 |axios|MIT|https://www.npmjs.com/package/axios[https://www.npmjs.com/package/axios]
 |babel-eslint|MIT|https://www.npmjs.com/package/babel-eslint[https://www.npmjs.com/package/babel-eslint]
 |body-parser|MIT|https://www.npmjs.com/package/body-parser[https://www.npmjs.com/package/body-parser]
@@ -232,22 +230,22 @@ External dependencies of JavaScript projects are listed below:
 |===
 
 JavaScript projects are:
+
 * bridge
 
 External dependencies of Ballerina projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
-
 |ballerina-lang|Apache-2.0|https://github.com/ballerina-platform/ballerina-lang[https://github.com/ballerina-platform/ballerina-lang]
 |===
 
 Ballerina projects are:
+
 * slack-service
 
 External dependencies of the jenkins-service are listed below:
 |===
 |*Software*|*License*|*Project Page*
-
 |Jenkins|MIT|https://jenkins.io/
 |_Jenkins Plugins:_| | 
 |credentials-binding|MIT|https://github.com/jenkinsci/credentials-binding-plugin[https://github.com/jenkinsci/credentials-binding-plugin]
