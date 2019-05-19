@@ -86,9 +86,9 @@ canary)
 *Roadmap:*
 
 * May 2019 - v 0.2.5. Latest version of Keptn providing all core functionality
-to support all key use cases. 
-* September 2019 - v 0.3.0. keptn's brige UI. Infrastructure fully upgraded to
-latest knative. Removal of Third Party tooling dependency (Jenkins, ...). Keptn
+to support key use cases. First version of keptn's bridge UI. 
+* September 2019 - v 0.3.0. Improved version of keptn's brige UI. Infrastructure fully upgraded to
+latest version of knative. Removal of Third Party tooling dependency (Jenkins, ...). Keptn
 operator. Improved uniform support with first version of uniform hub. 
 * December 2019 - v 0.4.0. Support for multi-cluster deployment. Improved
 supporte across multiple Kubernetes distributions.
@@ -99,9 +99,9 @@ different settings.
 
 *Sponsors from TOC:* 
 
-No sponsors yet
+No sponsors yet.
 
-*Preferred maturity level:* Incubator
+*Preferred maturity level:* Sandbox
 
 *License:* Apache 2.0
 
