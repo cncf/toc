@@ -58,7 +58,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Quinton Hoole, Huawei (quinton.hoole@huawei.com)
 * Randy	Abernethy, RX-M LLC (randy.abernethy@rx-m.com)
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
-* Sarah Allen, Google (sarahallen@google.com)
+* Sarah Allen, Independent (sarah@ultrasaurus.com)
 * Siddharth Bhadri, Huawei (siddharth.bhadri@huawei.com)
 * Steven Dake, Independent (steven.dake@gmail.com)
 * Tammy Butow, Gremlin (tammy@gremlin.com)
