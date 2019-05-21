@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) | [German](#german) (in Chinese, Japanese, Korean and Brazilian Portuguese below)
+[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) | [Deutsch](#deutsch) (in Chinese, Japanese, Korean and Brazilian Portuguese below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -48,7 +48,7 @@ Essas técnicas permitem criar sistemas de baixo acoplamento, resilientes, geren
 
 A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
 
-## German:
+## Deutsch:
 
 Cloud native Technologien ermöglichen es Unternehmen, skalierbare Anwendungen in modernen, dynamischen Umgebungen zu implementieren und zu betreiben. Dies können öffentliche, private und Hybrid-Clouds sein. Best-Practises, wie Container, Service-Meshs, Microservices, immutable Infrastruktur und deklarative APIs, unterstützen diesen Ansatz.
 
