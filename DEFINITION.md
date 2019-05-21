@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) (in Chinese, Japanese, Korean and Brazilian Portuguese below)
+[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) | [Spanish](#spanish) (in Chinese, Japanese, Korean, Brazilian Portuguese and Spanish below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -47,3 +47,11 @@ Tecnologias nativas ao cloud empoderam empresas a criarem e rodarem aplicações
 Essas técnicas permitem criar sistemas de baixo acoplamento, resilientes, gerenciáveis e observáveis. Combinadas com automações robustas, elas permitem que os engenheiros façam alterações de alto impacto de forma frequente e previsível, com o mínimo de esforço.
 
 A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
+
+## Spanish:
+
+Las tecnologías nativas en la nube permiten a las organizaciones crear y ejecutar aplicaciones escalables en entornos modernos y dinámicos, tales como nubes públicas, privadas, y sistemas híbridos. Los contenedores, los service mesh, los microservicios, la infraestructura inmutable y las API declarativas son un claro ejemplo de esta aproximación.
+
+Estas técnicas permiten sistemas de bajo acoplamiento que son resistentes, manejables y observables. Combinadas con una robusta automatización, permiten que los ingenieros realicen cambios de gran impacto con frecuencia, con resultados predecibles, y sin esfuerzo.
+
+La Cloud Native Computing Foundation busca impulsar la adopción de este paradigma mediante el fomento y el mantenimiento de un ecosistema de proyectos de código abierto neutrales con respecto a los proveedores. Democratizamos los patrones de vanguardia para que estas innovaciones sean accesibles para todos.
