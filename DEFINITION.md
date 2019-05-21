@@ -47,3 +47,11 @@ Tecnologias nativas ao cloud empoderam empresas a criarem e rodarem aplicações
 Essas técnicas permitem criar sistemas de baixo acoplamento, resilientes, gerenciáveis e observáveis. Combinadas com automações robustas, elas permitem que os engenheiros façam alterações de alto impacto de forma frequente e previsível, com o mínimo de esforço.
 
 A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
+
+## German:
+
+Cloud native Technologien ermöglichen es Unternehmen, skalierbare Anwendungen in modernen, dynamischen Umgebungen zu implementieren und zu betreiben. Dies können öffentliche, private und Hybrid-Clouds sein. Best-Practises, wie Container, Service-Meshs, Microservices, immutable Infrastruktur und deklarative APIs, unterstützen diesen Ansatz.
+
+Die zugrundeliegenden Techniken ermöglichen die Umsetzung von entkoppelte Systeme, die belastbar, handhabbar und beobachtbar sind. Kombiniert mit einer robusten Automatisierung können Softwareentwickler mit geringem Aufwand flexibel und schnell auf Änderungen reagieren.
+
+Die Cloud Native Computing Foundation fördert die Akzeptanz dieser Paradigmen durch die Ausgestaltung eines Open Source Ökosystem und herstellerneutralen Projekten. Diese Projekte basieren auf modernsten und innovative Software-Pattern.
