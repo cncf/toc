@@ -54,4 +54,4 @@ Cloud native Technologien ermöglichen es Unternehmen, skalierbare Anwendungen i
 
 Die zugrundeliegenden Techniken ermöglichen die Umsetzung von entkoppelte Systeme, die belastbar, handhabbar und beobachtbar sind. Kombiniert mit einer robusten Automatisierung können Softwareentwickler mit geringem Aufwand flexibel und schnell auf Änderungen reagieren.
 
-Die Cloud Native Computing Foundation fördert die Akzeptanz dieser Paradigmen durch die Ausgestaltung eines Open Source Ökosystem und herstellerneutralen Projekten. Diese Projekte basieren auf modernsten und innovative Software-Pattern.
+Die Cloud Native Computing Foundation fördert die Akzeptanz dieser Paradigmen durch die Ausgestaltung eines Open Source Ökosystem und herstellerneutralen Projekten. Diese Projekte basieren auf modernsten und innovativen Software-Pattern.
