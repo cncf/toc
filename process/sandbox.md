@@ -85,7 +85,7 @@ Some key points:
 
 * Require 2 TOC sponsors to enter the sandbox
 * Require presentation to the TOC community twice-a-month meeting
-* Require adherence to CNCF IP Policy (including trademark transferred)
+* Require adherence to [CNCF IP Policy](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy) (including trademark transferred)
 * Require sandbox projects to list their sandbox status prominently on website/readme
 
 ### Sandbox Exit Requirements
