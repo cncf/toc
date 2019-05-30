@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) (in Chinese, Japanese, Korean and Brazilian Portuguese below)
+[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) | [Español de España](#español-españa) (in Chinese, Japanese, Korean, Brazilian Portuguese and Español de España below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -47,3 +47,11 @@ Tecnologias nativas ao cloud empoderam empresas a criarem e rodarem aplicações
 Essas técnicas permitem criar sistemas de baixo acoplamento, resilientes, gerenciáveis e observáveis. Combinadas com automações robustas, elas permitem que os engenheiros façam alterações de alto impacto de forma frequente e previsível, com o mínimo de esforço.
 
 A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
+
+## Español de España:
+
+Las tecnologías nativas en la nube permiten a las organizaciones a construir y ejecutar aplicaciones escalables en un entorno moderno y dinámico; tanto en nubes públicas, privadas o híbridas. Los contenedores, redes de servicio, microservicios, infraestructuras inmutables y APIs declarativas ejemplifican este alcance.
+
+Éstas técnicas habilitan a los sistemas ligeramente acoplados que sean, resilentes, manejables y observables. Combinado con una robusta automatización, permiten a los ingenieros hacer cambios de gran impacto de manera frecuente y predecible con un esfuerzo mínimo.
+
+La Cloud Native Computing Foundation busca impulsar la adopción de este paradigma mediante el fomento y el mantenimiento de un ecosistema de proyectos de código abierto y neutral. Democratizando los patrones de vanguardia para que estas innovaciones sean accesibles para todos.
