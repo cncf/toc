@@ -13,8 +13,5 @@ a pull request with document referencing the roles and charter, updating the lis
 
 ## Current SIGS
 
-* none yet defined
-
-## History
-* November 2018 - January 2019: the SIG process was developed by the CNCF TOC
-and Contributors
+* https://github.com/cncf/sig-security
+* https://github.com/cncf/sig-storage
