@@ -66,7 +66,7 @@ Up till now, we had two minor version released. KubeEdge is providing fundamenta
 *Founding Maintainers:*
 
  * Jun Du <dujun5@huawei.com> @m1093782566
- * Li (Cindy) Xing <li.xing1@huawei.com> @CindyXing
+ * Li (Cindy) Xing <xl123@hotmail.com> @CindyXing
  * Rohit Sardesai <sardesai.rohit.prabhakar@huawei.com> @rohitsardesai83
  * Siddharth Bhadri <siddharth.bhadri@huawei.com> @sids-b
  * Qi Zhang <zhangqi21@huawei.com> @qizha
