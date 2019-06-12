@@ -101,6 +101,7 @@ We also own neutral github organization which we plan to use: https://github.com
 **Community size:**
 
 * 3550+ stars
+* 110+ contributors
 * 400+ forks
 
 **Production usage:**
