@@ -1,0 +1,140 @@
+== VitoriaMetrics project proposal
+
+*Name of project*
+
+VictoriaMetrics
+
+
+*Project description*
+
+VitoriaMetrics is open-source fast cost effective time series database with good vertical and horizontal scalability.
+It integrates well with Prometheus+Grafana ecosystem as long-term remote storage for Prometheus.
+It provides Prometheus-compatible querying API and it supports PromQL.
+
+_History_:
+
+- Current release: 1.19.2
+- May, 2019: single-node and cluster versions were open-sourced. https://blog.usejournal.com/open-sourcing-victoriametrics-f31e34485c2b
+- January, 2019: the first production use
+- December, 2018: data storage format has been stabilized
+- October, 2018: public announcement of SaaS version. https://medium.com/faun/victoriametrics-creating-the-best-remote-storage-for-prometheus-5d92d66787ac
+- January, 2018: initial commit
+- October, 2017: architecture design and prototype
+
+More info is available by the following links:
+
+- https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/README.md
+- https://github.com/VictoriaMetrics/VictoriaMetrics/wiki/Articles
+
+
+*Statement on alignment with CNCF charter mission*
+
+VictoriaMetrics is aligned well with CNCF because of:
+
+- It is easy to configure and operate as long-term remote storage for Prometheus Operator. It may collect Prometheus data from multiple Kubernetes clusters.
+- It provides Docker images for running in Kubernetes.
+- It provides Helm chart for cluster version in Kubernetes. There are plans to create Kubernetes operator for simplified operation.
+- It scales vertically and horizontally.
+
+
+*Sponsor from TOC*
+
+None
+
+
+*Preferred maturity level*
+
+Sandbox
+
+
+*License*
+
+Apache 2. https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/LICENSE
+
+
+*Source contol*
+
+https://github.com/VictoriaMetrics/VictoriaMetrics
+
+
+*External dependencies*
+
+- https://github.com/VictoriaMetrics/fastcache - MIT
+- https://github.com/VictoriaMetrics/metrics - MIT
+- https://github.com/cespare/xxhash/v2 - MIT
+- https://github.com/valyala/fastjson - MIT
+- https://github.com/valyala/gozstd - MIT
+- https://github.com/valyala/histogram - MIT
+- https://github.com/valyala/quicktemplate - MIT
+- https://github.com/golang/snappy - BSD 3-Clause
+- https://github.com/spaolacci/murmur3 - BSD 3-Clause
+- https://github.com/facebook/zstd - BSD 3-Clause
+- https://github.com/golang/sys/ - BSD 3-Clause
+
+
+*Initial committers*
+
+- https://github.com/valyala/ - works on VictoriaMetrics for 1.5 years.
+- https://github.com/hagen1778 - commits for a year.
+- https://github.com/tenmozes - commits for a year.
+- https://github.com/dlazerka - commits for 8 months.
+
+
+*Infrastructure requests*
+
+None
+
+
+*Communication channels*
+
+- https://groups.google.com/forum/#!forum/victorametrics-users
+- https://t.me/VictoriaMetrics_en - English-speaking users
+- https://t.me/VictoriaMetrics_ru1 - Russian-speaking users
+
+
+*Issue tracker*
+
+https://github.com/VictoriaMetrics/VictoriaMetrics/issues
+
+
+*Website*
+
+https://victoriametrics.com/
+
+
+*Release methodology and mechanics*
+
+Frequent releases via git tags. Release names follow semantic versioning guidelines.
+Releases are published in the following forms:
+
+- Source code - https://github.com/VictoriaMetrics/VictoriaMetrics/releases
+- Binary executables - https://github.com/VictoriaMetrics/VictoriaMetrics/releases
+- Docker images - https://hub.docker.com/r/victoriametrics/victoria-metrics . Previous docker images were published at https://hub.docker.com/r/valyala/victoria-metrics
+
+
+*Social media accounts*
+
+https://twitter.com/MetricsVictoria
+
+
+*Community size and any existing sponsorship*
+
+Github stats:
+
+- Stars: 750+
+- Contributors: 6
+- Commits: 130+
+- Forks: 30
+
+Telegram stats:
+
+- 95+ members on https://t.me/VictoriaMetrics_ru1
+
+VictoriaMetrics is used in production by many users starting from January, 2019.
+
+Victoria Metrics Inc. is the main sponsor.
+
+
+*Project logo in svg format*
+
+https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/README.md#victoria-metrics-logo
