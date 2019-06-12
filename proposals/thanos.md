@@ -96,7 +96,7 @@ We also own neutral github organization which we plan to use: https://github.com
 
 **Social media accounts:** https://twitter.com/ThanosMetrics
 
-**Existing sponsorship:** Improbable
+**Existing sponsorship:** [Improbable](https://improbable.io)
 
 **Community size:**
 
