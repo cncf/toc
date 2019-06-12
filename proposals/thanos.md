@@ -105,6 +105,7 @@ We also own neutral github organization which we plan to use: https://github.com
 * 400+ forks
 
 **Production usage:**
+
 Companies that are actively using Thanos in production and publicly share that:
 
 * [Alibaba](https://www.alibaba.com/)
