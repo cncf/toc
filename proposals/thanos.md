@@ -109,6 +109,7 @@ Companies that are actively using Thanos in production and publicly share that:
 
 * [Alibaba](https://www.alibaba.com/)
 * [AdForm](https://site.adform.com/)
+* [Adobe](https://www.adobe.com/)
 * [Cdiscount](https://www.cdiscount.com/)
 * [GitLab](https://gitlab.com)
 * [eBay](https://www.ebay.com) 
