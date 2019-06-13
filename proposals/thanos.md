@@ -72,7 +72,7 @@ We also own neutral github organization which we plan to use: https://github.com
 * Bartek Plotka - Improbable
 * Dominic Green - Improbable
 * Frederic Branczyk - RedHat
-* Giedrius Statkevičius - AdForm
+* Giedrius Statkevičius - Adform
 * Povilas Versockas - Utility Warehouse
 
 **Infrastructure requests (CI / CNCF Cluster):**
@@ -109,7 +109,7 @@ We also own neutral github organization which we plan to use: https://github.com
 Companies that are actively using Thanos in production and publicly share that:
 
 * [Alibaba](https://www.alibaba.com/)
-* [AdForm](https://site.adform.com/)
+* [Adform](https://site.adform.com/)
 * [Adobe](https://www.adobe.com/)
 * [Cdiscount](https://www.cdiscount.com/)
 * [GitLab](https://gitlab.com)
