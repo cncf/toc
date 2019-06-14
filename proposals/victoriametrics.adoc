@@ -1,4 +1,4 @@
-== VitoriaMetrics project proposal
+== VictoriaMetrics project proposal
 
 *Name of project*
 
@@ -7,7 +7,7 @@ VictoriaMetrics
 
 *Project description*
 
-VitoriaMetrics is open-source fast cost effective time series database with good vertical and horizontal scalability.
+VictoriaMetrics is open-source fast cost effective time series database with good vertical and horizontal scalability.
 It integrates well with Prometheus+Grafana ecosystem as long-term remote storage for Prometheus.
 It provides Prometheus-compatible querying API and it supports PromQL.
 
