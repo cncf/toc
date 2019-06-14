@@ -31,7 +31,7 @@ More info is available by the following links:
 
 VictoriaMetrics is aligned well with CNCF because of:
 
-- It is easy to configure and operate as long-term remote storage for Prometheus Operator. It may collect Prometheus data from multiple Kubernetes clusters.
+- It is easy to configure and operate as long-term remote storage for Prometheus instances running in Kubernetes via Prometheus Operator. It may collect Prometheus data from multiple Kubernetes clusters.
 - It provides Docker images for running in Kubernetes.
 - It provides Helm chart for cluster version in Kubernetes. There are plans to create Kubernetes operator for simplified operation.
 - It scales vertically and horizontally.
