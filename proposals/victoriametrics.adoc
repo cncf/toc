@@ -130,7 +130,13 @@ Telegram stats:
 
 - 95+ members on https://t.me/VictoriaMetrics_ru1
 
-VictoriaMetrics is used in production by many users starting from January, 2019.
+VictoriaMetrics is used in production by many users starting from January, 2019. Here are a few of public users:
+
+- https://trafficstars.com/
+- https://dreamteam.gg/
+- https://www.fil-it.ru/
+
+Other users may be found in https://t.me/VictoriaMetrics_ru1 and https://t.me/VictoriaMetrics_en .
 
 Victoria Metrics Inc. is the main sponsor.
 
