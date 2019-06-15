@@ -21,6 +21,7 @@ Scale contributions by the CNCF technical and user community, while retaining in
 * Engage more communities and create an on-ramp to effective TOC contribution & recognition.
 * Reduce some project workload on TOC while retaining executive control & tonal integrity with this elected body.
 * Avoid creating a platform for politics between vendors.
+* Provide an on-ramp for community members to get involved with the technical oversight of CNCF projects. As part of this, SIGs are expected to actively nurture diverse participation.
 
 ## Introduction
 
@@ -96,8 +97,9 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8S SIGs.  T
 2. SIG has three co-chairs, who are TOC Contributors, recognized as experts in that area, and for their ability to co-lead the SIG to produce the required unbiased outputs.
 3. SIG has one TOC liaison who is a voting member of the TOC acting as an additional non-executive chair on occasions when TOC input is deemed necessary by the TOC or the SIG chairs.
 4. SIG has multiple tech leads who are recognized as (1) experts in the SIG area, (2) leaders of projects in the SIG’s area (3) demonstrating the ability to provide the balanced technical leadership required to produce the required unbiased outputs of the SIG. The reason for having separate chair and tech lead roles is to allow responsibility for primarily administrative functions to be separated from deep technical functions and associated time commitments and skill sets.  Where appropriate, an individual may perform both roles (see below).
-5. Thought and interest diversity is strongly encouraged within SIGs.  To this end, a supermajority (⅔ or more) of chairs or a supermajority of tech leads from a single group of companies, market segment, etc will be actively discouraged by the TOC.
-6. SIG members are self-declared, so that some SIG work is done by volunteers from the TOC Contributors and community.  To recognise members who make sustained  and valuable contributions to a SIG over time, SIG-defined and assigned roles may be created (e.g. scribe, training or documentation coordinator etc).  SIG’s should document what these roles and responsibilities are, and who performs them, and have them approved by SIG leads.
+5. Participant diversity is strongly encouraged within SIGs, and SIG chairs are expected to actively encourage a diverse range of communuty members to take up named roles (see point 7). 
+6. Thought and interest diversity is strongly encouraged within SIGs.  To this end, a supermajority (⅔ or more) of chairs or a supermajority of tech leads from a single group of companies, market segment, etc will be actively discouraged by the TOC.
+7. SIG members are self-declared, so that some SIG work is done by volunteers from the TOC Contributors and community.  To recognise members who make sustained  and valuable contributions to a SIG over time, SIG-defined and assigned roles may be created (e.g. scribe, training or documentation coordinator etc).  SIG’s should document what these roles and responsibilities are, and who performs them, and have them approved by SIG leads.
 
 ### SIG Member Roles
 
