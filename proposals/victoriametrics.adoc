@@ -132,6 +132,7 @@ Telegram stats:
 
 VictoriaMetrics is used in production by many users starting from January, 2019. Here are a few of public users:
 
+- https://www.wix.com/
 - https://trafficstars.com/
 - https://dreamteam.gg/
 - https://www.fil-it.ru/
