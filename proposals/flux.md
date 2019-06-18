@@ -16,7 +16,7 @@ TODO
 
 ## Sponsor from TOC
 
-TODO
+Michelle Noorali, Xiang Li.
 
 ## Preferred maturity level
 
