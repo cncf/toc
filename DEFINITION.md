@@ -52,6 +52,6 @@ A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma 
 
 Les technologies nativement cloud donne le pouvoir aux entreprises de construire et d'exploiter des applications élastiques dans des environnements modernes, dynamiques comme des clouds publics, privés ou bien hybrides. Les conteneurs, les services maillés, les micro services, les infrastructures immuables, les API déclaratives illustrent cette approche.
 
-Ces techniques permettent la mise en œuvre de systèmes à couplage faible qui sont résistants, pilotables et observables. Combinés au système robuste de l'automatisation, ils permettent aux ingénieurs de procéder à de lourds changements fréquemment et avec une charge de travail minimum prédictible.
+Ces techniques permettent la mise en œuvre de systèmes à couplage faible qui sont résistants, pilotables et observables. Combinés au système robuste de l'automatisation, ils permettent aux ingénieurs de procéder à des modifications impactantes fréquemment et de façon prévisible avec un minimum de travail.
 
 La Cloud Native Computing Foundation cherche à favoriser l'adoption de ce paradigme en favorisant et en soutenant un écosystème de projets "opensource" et indépendants des fournisseurs. Nous démocratisons les fonctionnements modernes à l'état de l'art afin de rendre l'innovation accessible à tous.
