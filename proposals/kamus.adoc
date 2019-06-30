@@ -82,4 +82,4 @@ Unit\integration\end to end tests and security test are running on each PR, and 
 * Issues/PRs from the community
 * Few users
 
-*Production usage*: Soluto, 6 months
+*Production usage*: Soluto, 1 year
