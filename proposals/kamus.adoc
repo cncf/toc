@@ -76,9 +76,9 @@ Unit\integration\end to end tests and security test are running on each PR, and 
 
 *Community size:*
 
-* 293 stars
-* 17 forks
-* 7 watches
+* 343 stars
+* 19 forks
+* 11 watches
 * Issues/PRs from the community
 * Few users
 
