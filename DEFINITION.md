@@ -54,5 +54,5 @@ Las tecnologías “Cloud Native” empoderan a las organizaciones para construi
 
 Estas técnicas permiten crear sistemas de bajo acoplamiento que son resilentes, administrables y observables. Combinado con técnicas de automatización robusta les permite a los ingenieros realizar cambios de alto impacto de manera frecuente y predecible con un mínimo esfuerzo.
 
-La "Cloud Native Comuting Foundation" busca impulsar la adopción de este paradigma mediante el fomento y mantenimiento de un ecosistema de proyectos de código abierto y neutro con respecto a los proveedores. Democratizamos los patrones modernos para que estas innovaciones sean accesibles por todos.
+La "Cloud Native Computing Foundation" busca impulsar la adopción de este paradigma mediante el fomento y mantenimiento de un ecosistema de proyectos de código abierto y neutro con respecto a los proveedores. Democratizamos los patrones modernos para que estas innovaciones sean accesibles para todos.
 
