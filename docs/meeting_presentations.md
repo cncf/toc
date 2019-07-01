@@ -72,3 +72,7 @@
 * [March 19th, 2019](https://docs.google.com/presentation/d/1gR_6qLskwBHX352Pqw_l1HWrL2mXvxyA-bI4j4rs6c0/edit#slide=id.g25ca91f87f_0_0)
 * [April 2nd, 2019](https://docs.google.com/presentation/d/1BUmTO5PFt7NZ9jVMMR3r1W7k8NANltNNJJqFCZdbS0I/edit)
 * [April 9th, 2019](https://docs.google.com/presentation/d/1bijEpuwaaa6jR1D5PAjyW731-j6Xc1TFHJuUh_FwwK8/edit)
+* [May 7, 2019](https://docs.google.com/presentation/d/1HOIedutomq3VCvdxdLHn1YdMj3CRTGnCX1DnsUhlCWo/edit#slide=id.g25ca91f87f_0_0)
+* [May 14, 2019](https://docs.google.com/presentation/d/10Z5SsA90MyKLgSSvmGAyufsxoAABIfLTaHDwG7oNQB0/edit#slide=id.g25ca91f87f_0_0)
+* [June 4, 2019](https://docs.google.com/presentation/d/1q02ZMwBrj1YjeACLBWgFYI6gAr4xH7fJtoSbzlbwsHs/edit#slide=id.g25ca91f87f_0_0)
+* [June 11, 2019](https://docs.google.com/presentation/d/1aL_W8G0QGBolgmbgXGwpt8yfoTooSJbqAKJkcxcVbJE/edit?ts=5cfe79b3#slide=id.g25ca91f87f_0_0)
