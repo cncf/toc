@@ -88,7 +88,7 @@ See [Example Responsibilities of a CNCF SIG](https://docs.google.com/document/d/
 
 Important: Each SIG is supported by a named member of the CNCF executive staff who is accountable for liaison with the CNCF Executive Director, plus communication and performance of the SIG, with quarterly and annual reporting to Governing Board & TOC.
 
-As a starting point let’s be inspired by CNCF OSS Projects and by K8S SIGs.  That means minimal viable governance and community-based organisation.
+As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  That means minimal viable governance and community-based organisation.
 
 ### SIG Formation, Leadership and Membership Composition
 
