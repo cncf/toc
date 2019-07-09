@@ -1,14 +1,13 @@
 ## Project name and description
 
-"Weave Flux" (or just "Flux") is the GitOps Kubernetes Operator: it
-automatically ensures that the state of a cluster matches the config
-in git and images are upgraded automatically. Flux uses an operator in
-the cluster to trigger deployments inside Kubernetes. It supports Helm
-as well, with a subproject called the "Helm operator".
+KubeVirt is a virtualization management add-on for Kubernetes.
+It allows a user to run virtual machines on Kubernetes just like pods.
+Because KubeVirt is integrating with Kubernetes APIand resource model, the
+same set of tools can be used to manage and monitor virtual machines.
 
-Weaveworks started the project in July 2016 and is receiving more and
-more contributions from a growing community. The team of maintainers
-is very active and made up from people from different companies.
+KubeVirt was started in 2017 by Red Hat and is seeing a good reception in
+the community which is reflected by the number of Git Hub stars, code
+contributions, and related projects.
 
 ## Alignment with CNCF charter mission
 
