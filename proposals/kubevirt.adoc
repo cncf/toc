@@ -1,0 +1,85 @@
+## Project name and description
+
+"Weave Flux" (or just "Flux") is the GitOps Kubernetes Operator: it
+automatically ensures that the state of a cluster matches the config
+in git and images are upgraded automatically. Flux uses an operator in
+the cluster to trigger deployments inside Kubernetes. It supports Helm
+as well, with a subproject called the "Helm operator".
+
+Weaveworks started the project in July 2016 and is receiving more and
+more contributions from a growing community. The team of maintainers
+is very active and made up from people from different companies.
+
+## Alignment with CNCF charter mission
+
+TODO
+
+## Sponsor from TOC
+
+TODO
+
+## Preferred maturity level
+
+Sandbox.
+
+## License
+
+[Apache 2.0 license](https://github.com/kubevirt/kubevirt/blob/master/LICENSE).
+
+## Source control
+
+https://github.com/kubevirt/kubevirt
+
+## External Dependencies
+
+Generated license analysis:
+
+| Dependency                                                                                    | License analysis |
+|-----------------------------------------------------------------------------------------------|------------------|
+| github.com/kubevirt/kubevirt                                                                  | Apache License 2.0 |
+| TBD | TBD |
+
+## Initial committers
+
+Roman Mohr (Red Hat) and Fabian Deutsch (Red Hat) were the initial committers. Roman is still with Red Hat and one of the lead maintainers today.
+
+## Infrastructure requests
+
+There are no infrastructure requests.
+KubeVirt is using Travis CI for unit-tests and releases, functional-tests are run on hardware provided by Red Hat which is adequate at present.
+
+## Communication channels
+
+Development discussion is principally via public mailing list and
+Slack channel (and GitHub issues/PRs). The project [README](https://github.com/weaveworks/flux#help) enumerates the user
+support channels.
+
+## Issue tracker
+
+In the [GitHub project](https://github.com/kubevirt/kubevirt).
+
+## Website
+
+There is a basic website available at [kubevirt.io](https://kubevirt.io).
+Documentation is in [markdown format](https://github.com/kubevirt/user-guide) and published in the [user guide](https://kubevirt.io/user-guide/).
+An [API reference](https://kubevirt.io/api-reference/) is generated from OpenAPI definitions.
+
+## Release methodology and mechanics
+
+Container images and executables for releases are built in Travis CI. The
+release process is [explained here](https://github.com/kubevirt/kubevirt/blob/master/docs/release.md).
+
+## Social media accounts
+
+https://twitter.com/kubevirt
+
+## Community size and existing sponsorship
+
+KubeVirt has 1348 stars on Github, 290 people on Slack. The project counts
+90 individual committers up until now with many Red Hat contributors, a few
+non Red Hat contributors, and a few drive-by contributions.
+
+### Project logo
+
+The KubeVirt logo:
+![KubeVirt Logo](https://raw.githubusercontent.com/kubevirt/community/master/logo/KubeVirt_logo.png)
