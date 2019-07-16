@@ -50,7 +50,7 @@ KubeVirt is using Travis CI for unit-tests and releases, functional-tests are ru
 ## Communication channels
 
 Development discussion is principally via public mailing list and
-Slack channel (and GitHub issues/PRs). The project [README](https://github.com/weaveworks/flux#help) enumerates the user
+Slack channel (and GitHub issues/PRs). The project [README](https://github.com/kubevirt/kubevirt) enumerates the user
 support channels.
 
 ## Issue tracker
