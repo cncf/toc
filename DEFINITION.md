@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) | [Français](#français) (in Chinese, Japanese, Korean, Brazilian Portuguese and French below)
+[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Español](#español) | [Français](#français) | [Português Brasileiro](#português-brasileiro) (in Chinese, Japanese, Korean, Brazilian, Portuguese, French and Spanish below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -40,13 +40,13 @@ Cloud Native Computing Foundationは、オープンソースでベンダー中�
 
 Cloud Native Computing Foundation은 벤더 중립적인 오픈소스 프로젝트 생태계를 육성하고 유지함으로써 해당 패러다임 채택을 촉진한다. 우리 재단은 최신 기술 수준의 패턴을 대중화하여 이런 혁신을 누구나 접근 가능하도록 한다.
 
-## Português Brasileiro:
+## Español:
 
-Tecnologias nativas ao cloud empoderam empresas a criarem e rodarem aplicações escaláveis em ambientes modernos e dinâmicos, como núvens públicas, privadas e híbridas. Containeres, service meshes, microsserviços, infraestruturas imutáveis e APIs declarativas são alguns exemplos dessa estratégia.
+Las tecnologías “Cloud Native” empoderan a las organizaciones para construir y correr aplicaciones escalables en ambientes dinámicos modernos, como lo son hoy las nubes públicas, privadas o hibridas. Temas como contenedores, mallas de servicios, microservicios, infraestructura inmutable y APIs declarativas son ejemplos de este enfoque.
 
-Essas técnicas permitem criar sistemas de baixo acoplamento, resilientes, gerenciáveis e observáveis. Combinadas com automações robustas, elas permitem que os engenheiros façam alterações de alto impacto de forma frequente e previsível, com o mínimo de esforço.
+Estas técnicas permiten crear sistemas de bajo acoplamiento que son resilentes, administrables y observables. Combinado con técnicas de automatización robusta les permite a los ingenieros realizar cambios de alto impacto de manera frecuente y predecible con un mínimo esfuerzo.
 
-A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
+La "Cloud Native Computing Foundation" busca impulsar la adopción de este paradigma mediante el fomento y mantenimiento de un ecosistema de proyectos de código abierto y neutro con respecto a los proveedores. Democratizamos los patrones modernos para que estas innovaciones sean accesibles para todos.
 
 ## Français
 
@@ -55,3 +55,11 @@ Les technologies nativement cloud donne le pouvoir aux entreprises de construire
 Ces techniques permettent la mise en œuvre de systèmes à couplage faible qui sont résistants, pilotables et observables. Combinés au système robuste de l'automatisation, ils permettent aux ingénieurs de procéder à des modifications impactantes fréquemment et de façon prévisible avec un minimum de travail.
 
 La Cloud Native Computing Foundation cherche à favoriser l'adoption de ce paradigme en favorisant et en soutenant un écosystème de projets "opensource" et indépendants des fournisseurs. Nous démocratisons les fonctionnements modernes à l'état de l'art afin de rendre l'innovation accessible à tous.
+
+## Português Brasileiro:
+
+Tecnologias nativas ao cloud empoderam empresas a criarem e rodarem aplicações escaláveis em ambientes modernos e dinâmicos, como núvens públicas, privadas e híbridas. Containeres, service meshes, microsserviços, infraestruturas imutáveis e APIs declarativas são alguns exemplos dessa estratégia.
+
+Essas técnicas permitem criar sistemas de baixo acoplamento, resilientes, gerenciáveis e observáveis. Combinadas com automações robustas, elas permitem que os engenheiros façam alterações de alto impacto de forma frequente e previsível, com o mínimo de esforço.
+
+A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
