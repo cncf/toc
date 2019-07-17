@@ -2,7 +2,7 @@
 
 The CNCF TOC is the technical governing body of the CNCF Foundation. It admits and oversees all projects in the CNCF Foundation and has a mandate to facilitate driving neutral consensus for:
 * defining and maintaining the technical vision for the Cloud Native Computing Foundation,
-* approving new projects within the scope for CNCF set by the Governing Board, and create a conceptual architecture for the projects,aligning projects, removing or archiving projects,
+* approving new projects within the scope for CNCF set by the Governing Board (GB), and create a conceptual architecture for the projects,aligning projects, removing or archiving projects,
 * accepting feedback from end user committee and map to projects,
 * aligning interfaces to components under management (code reference implementations before standardizing), and defining common practices to be implemented across CNCF projects, if any.
 
@@ -79,7 +79,7 @@ The TOC has created the following working groups to investigate and discuss the 
 
 | Working Group | Chair            | Meeting Time                          | Minutes/Recordings |
 |---------------|------------------|---------------------------------------|--------------------|
-| [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [4th Tue of every month at 8AM PT](https://zoom.us/my/cncfciwg) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
+| [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [4th Tue of every month at 12PM PT](https://zoom.us/my/cncfciwg) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
 | [Networking](https://github.com/cncf/wg-networking) | Ken Owens        |  [1st and 3rd Tue every month at 9AM PT](https://zoom.us/my/cncfnetworkingwg)                                      | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2M_-K5n67_zTdrPh_PtTKFC)
 | [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/my/cncfserverlesswg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
 

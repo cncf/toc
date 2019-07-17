@@ -18,6 +18,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Clinton	Kitson, Dell (Clinton.Kitson@dell.com)
 * Dan	Wilson, Concur	(danw@concur.com)
 * Darren Ratcliffe, Atos (darren.ratcliffe@atos.net)
+* Davanum Srinivas, VMware (davanum@gmail.com)
 * Dave Zolotusky, Spotify (dzolo@spotify.com)
 * David McKay, InfluxData (rawkode@influxdata.com)
 * Deyuan Deng, Caicloud (deyuan@caicloud.io)
