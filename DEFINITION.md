@@ -2,8 +2,6 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Português Brasileiro](#português-brasileiro) | [Español](#Español)  (in Chinese, Japanese, Korean,B razilian Portuguese and Spanish below)
-=======
 [中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Español](#español) | [Français](#français) | [Português Brasileiro](#português-brasileiro) (in Chinese, Japanese, Korean, Brazilian, Portuguese, French and Spanish below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
