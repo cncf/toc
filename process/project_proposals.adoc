@@ -6,6 +6,7 @@
  .. name of project (must be unique within CNCF)
  .. project description (what it does, why it is valuable, origin and history)
  .. statement on alignment with CNCF charter mission
+ .. comparison with similar projects (inside or outside the CNCF), including what differentiates this project
  .. sponsor from TOC (sponsor helps mentor projects)
  .. preferred maturity level (see https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc[CNCF Graduation Criteria])
  .. license (charter dictates http://www.apache.org/licenses/LICENSE-2.0[Apache 2] by default)
@@ -19,6 +20,7 @@
  .. release methodology and mechanics
  .. social media accounts
  .. community size and any existing sponsorship
+ .. who is currently known to be using the project? Are they using it in production and at what scale? (It may be hard to obtain accurate data for this, but any supporting evidence of usage is helpful)
  .. project logo in svg format (see https://github.com/cncf/artwork#cncf-related-logos-and-artwork for guidelines)
 
 . *Project Acceptance Process*.
