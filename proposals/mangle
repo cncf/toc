@@ -1,0 +1,52 @@
+== Mangle Proposal
+
+*Name of project:* Mangle
+
+*Description*
+
+Mangle enables you to run chaos engineering experiments seamlessly against applications and infrastructure components to assess resiliency and fault tolerance. It is designed to introduce faults with very little pre-configuration and can support any infrastructure that you might have including K8S, Docker, vCenter or any Remote Machine with ssh enabled. With its powerful plugin model, you can define a custom fault of your choice based on a template and run it without building your code from scratch.
+
+Tried and Tested in VMware - Validated on VMware product and Cloud platforms.
+Container and OVA support - Can be easily deployed and setup in a matter of minutes using either the containers or OVA packages.
+Efficient custom fault plugin model - Can build and plugin new faults on the fly without building the code from scratch.
+
+*Sponsor / Advisor from TOC*: VMware
+
+*Unique Identifier*: Mangle
+
+*License*: Apache License v2.0
+
+*Source control repositories*: https://github.com/vmware/mangle
+
+*Initial Committers*: https://vmware.github.io/mangle/#contributors
+
+*Infrastructure requirements *:
+
+* Virtual Machine
+* Docker
+
+*External Dependencies*
+
+* third-party - https://raw.githubusercontent.com/vmware/mangle/master/LICENSE [https://raw.githubusercontent.com/vmware/mangle/master/LICENSE]
+
+*Communication channels:* 
+Mangle currently uses one communication channel:
+
+. Mailing list: mailto:mangle@vmware.com[mangle@vmware.com]
+
+*Website/Blog:*
+
+The website is currently https://vmware.github.io/mangle/: [https://vmware.github.io/mangle/] 
+
+*Release Cadence:*
+
+The release schedule for Mangle's as follows:
+
+* 3 months of feature develoment
+* 2 months of feature freeze
+* 1 month of release candidacy
+
+*Statement on alignment with CNCF mission:*
+
+Mangle has been offered as a fault injection tool to the CNCF and meets the criteria of a cloud native system (container packaged, dynamically managed and micro-services oriented). It enables you to run chaos engineering experiments seamlessly against applications and infrastructure components to assess resiliency and fault tolerance. Release 1.2 is expected in mid January.
+
