@@ -121,14 +121,19 @@ https://twitter.com/MetricsVictoria
 
 Github stats:
 
-- Stars: 750+
-- Contributors: 6
-- Commits: 130+
-- Forks: 30
+- Stars: 956+
+- Contributors: 8
+- Commits: 239+
+- Forks: 44
 
 Telegram stats:
 
-- 95+ members on https://t.me/VictoriaMetrics_ru1
+- 115+ members at https://t.me/VictoriaMetrics_ru1
+
+Slack stats:
+
+- 36 members at http://slack.victoriametrics.com
+
 
 VictoriaMetrics is used in production by many users starting from January, 2019. Here are a few of public users:
 
@@ -137,7 +142,7 @@ VictoriaMetrics is used in production by many users starting from January, 2019.
 - https://dreamteam.gg/
 - https://www.fil-it.ru/
 
-Other users may be found in https://t.me/VictoriaMetrics_ru1 and https://t.me/VictoriaMetrics_en .
+Other users may be found at https://t.me/VictoriaMetrics_ru1 , https://t.me/VictoriaMetrics_en and http://slack.victoriametrics.com .
 
 Victoria Metrics Inc. is the main sponsor.
 
