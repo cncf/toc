@@ -28,7 +28,8 @@ See the current CNCF projects [here](https://www.cncf.io/projects/).
 
 ## Meeting Time
 
-The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific):
+The TOC meets on the 1st Tuesday of every month at 8AM PT (USA Pacific).
+Project Presentations are on the 3rd Tuesday of every month.
 
 https://zoom.us/j/967220397
 
