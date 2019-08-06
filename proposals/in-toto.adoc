@@ -29,7 +29,7 @@ software.
 
 *Sponsors from TOC:* Michelle Noorali
 
-*Preferred maturity level:* incubation
+*Preferred maturity level:* sandbox
 
 *Unique identifier:* in-toto
 
