@@ -23,6 +23,6 @@
 
 . *Project Acceptance Process*.
  .. Project is proposed via a GitHub issue
- .. TOC may request that a [CNCF SIG](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md) assesses the project 
+ .. TOC may request that a https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md[CNCF SIG] assesses the project 
  .. Projects are required to present their proposal at a TOC meeting
  .. Projects get accepted via a 2/3 supermajority vote of the TOC
