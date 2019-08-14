@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Español](#español) | [Français](#français) | [Português Brasileiro](#português-brasileiro) (in Chinese, Japanese, Korean, Brazilian, Portuguese, French and Spanish below)
+[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Deutsch](#deutsch)| [Español](#español) | [Français](#français) | [Português Brasileiro](#português-brasileiro) (in Chinese, Japanese, Korean, Brazilian, Portuguese, German, French and Spanish below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -55,6 +55,15 @@ Les technologies nativement cloud donne le pouvoir aux entreprises de construire
 Ces techniques permettent la mise en œuvre de systèmes à couplage faible qui sont résistants, pilotables et observables. Combinés au système robuste de l'automatisation, ils permettent aux ingénieurs de procéder à des modifications impactantes fréquemment et de façon prévisible avec un minimum de travail.
 
 La Cloud Native Computing Foundation cherche à favoriser l'adoption de ce paradigme en favorisant et en soutenant un écosystème de projets "opensource" et indépendants des fournisseurs. Nous démocratisons les fonctionnements modernes à l'état de l'art afin de rendre l'innovation accessible à tous.
+
+## Deutsch:
+
+Cloud native Technologien ermöglichen es Unternehmen, skalierbare Anwendungen in modernen, dynamischen Umgebungen zu implementieren und zu betreiben. Dies können öffentliche, private und Hybrid-Clouds sein. Best-Practises, wie Container, Service-Meshs, Microservices, immutable Infrastruktur und deklarative APIs, unterstützen diesen Ansatz.
+
+Die zugrundeliegenden Techniken ermöglichen die Umsetzung von entkoppelten en, die belastbar, handhabbar und beobachtbar sind. Kombiniert mit einer robusten Automatisierung können Softwareentwickler mit geringem Aufwand flexibel und schnell auf Änderungen reagieren.
+
+Die Cloud Native Computing Foundation fördert die Akzeptanz dieser Paradigmen durch die Ausgestaltung eines Open Source Ökosystems aus herstellerneutralen Projekten. Wir demokratisieren modernste und innovative Softwareentwicklungs-Patterns, um
+diese Innovationen für alle zugänglich zu machen.
 
 ## Português Brasileiro:
 
