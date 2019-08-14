@@ -121,23 +121,25 @@ https://twitter.com/MetricsVictoria
 
 Github stats:
 
-- Stars: 956+
+- Stars: 1k+
 - Contributors: 8
-- Commits: 239+
-- Forks: 44
+- Commits: 300+
+- Forks: 50+
 
 Telegram stats:
 
-- 115+ members at https://t.me/VictoriaMetrics_ru1
+- 127+ members at https://t.me/VictoriaMetrics_ru1
 
 Slack stats:
 
-- 36 members at http://slack.victoriametrics.com
+- 55+ members at http://slack.victoriametrics.com
 
 
 VictoriaMetrics is used in production by many users starting from January, 2019. Here are a few of public users:
 
 - https://www.wix.com/
+- https://www.seznam.cz/
+- https://www.wedos.cz/
 - https://trafficstars.com/
 - https://dreamteam.gg/
 - https://www.fil-it.ru/
