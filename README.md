@@ -2,7 +2,7 @@
 
 The CNCF TOC is the technical governing body of the CNCF Foundation. It admits and oversees all projects in the CNCF Foundation and has a mandate to facilitate driving neutral consensus for:
 * defining and maintaining the technical vision for the Cloud Native Computing Foundation,
-* approving new projects within the scope for CNCF set by the Governing Board, and create a conceptual architecture for the projects,aligning projects, removing or archiving projects,
+* approving new projects within the scope for CNCF set by the Governing Board (GB), and create a conceptual architecture for the projects,aligning projects, removing or archiving projects,
 * accepting feedback from end user committee and map to projects,
 * aligning interfaces to components under management (code reference implementations before standardizing), and defining common practices to be implemented across CNCF projects, if any.
 
@@ -28,7 +28,8 @@ See the current CNCF projects [here](https://www.cncf.io/projects/).
 
 ## Meeting Time
 
-The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific):
+The TOC meets on the 1st Tuesday of every month at 8AM PT (USA Pacific).
+Project Presentations are on the 3rd Tuesday of every month.
 
 https://zoom.us/j/967220397
 
@@ -72,16 +73,19 @@ See the voting policy [here](docs/voting.md).
 ## SIGs
 
 The TOC has approved the formation of [SIGs](sigs/cncf-sigs.md).
-
+Currently, the following Special Interest Groups are active: 
+[SIG-Security](https://github.com/cncf/sig-security)
+[SIG-Storage](https://github.com/cncf/sig-storage) 
+Proposed: 
+[SIG-App-delivery](https://github.com/cncf/sig-app-delivery)
 ## Working Groups
 
 The TOC has created the following working groups to investigate and discuss the following topics:
 
 | Working Group | Chair            | Meeting Time                          | Minutes/Recordings |
 |---------------|------------------|---------------------------------------|--------------------|
-| [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [4th Tue of every month at 8AM PT](https://zoom.us/my/cncfciwg) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
+| [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [4th Tue of every month at 12PM PT](https://zoom.us/my/cncfciwg) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
 | [Networking](https://github.com/cncf/wg-networking) | Ken Owens        |  [1st and 3rd Tue every month at 9AM PT](https://zoom.us/my/cncfnetworkingwg)                                      | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2M_-K5n67_zTdrPh_PtTKFC)
 | [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/my/cncfserverlesswg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
-| [Storage](https://github.com/cncf/wg-storage)    | Quinton Hoole      |  [2nd and 4th Wed every month at 8AM PT](https://zoom.us/my/cncfstoragewg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2NoiNaLVZxr-ERc1ifKP7n6)
 
 All meetings are on the public CNCF calendar: https://goo.gl/eyutah
