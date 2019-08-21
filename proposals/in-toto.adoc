@@ -1,0 +1,144 @@
+=== in-toto CNCF Incubating Project Proposal
+
+*Name of Project:* in-toto
+
+*Description:*
+
+in-toto is a framework to secure software supply chains in and outside of the
+cloud. 
+
+Current cloud native deployments build software using a complex process that
+is vulnerable to attack.  Building software involves a software supply chain 
+comprised of version control systems, build servers, CI/CD systems, test frameworks, 
+localization, etc. that must all be honest or else the software may be tampered with.  
+in-toto is the first framework to provide cryptograpically
+verifiable, full-system provenance of all the artifacts (e.g., source code files, 
+executables, documentation, pictures, etc.) within the supply chain.  As a result,
+in-toto is able to defend against malicious parties that tamper with a company's
+software.
+
+*Current CNCF Ecosystem Integrations:*
+
+- TUF:
+    * Datadog has integrated https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/[TUF and in-toto into their pipeline].
+    We intend to standardize this approach as a https://github.com/in-toto/ITE/issues/3[best-practices] document within our organization.
+
+- Kubernettes:
+    * kubectl plugin: There is a kubectl plugin that you can use to scan containers running in pods to check that they pass in-toto verification. https://github.com/in-toto/kubectl-in-toto[more here]
+    * Admission webhook: in-toto can also be set up as an admission controller to verify the ingress of any containers. https://github.com/in-toto/in-toto-webhook[more here]
+
+*Sponsors from TOC:* Michelle Noorali
+
+*Preferred maturity level:* sandbox
+
+*Unique identifier:* in-toto
+
+*Current Core Maintainers:*  
+
+. Santiago Torres-Arias
+. Justin Cappos
+. Lukas Puhringher
+
+*License:*** **Apache License v 2 (ALv2)
+
+*Code Repositories:*
+
+The following code repositories contain all of the available components for
+in-toto
+
+. https://github.com/in-toto/in-toto[reference implementation]
+. https://github.com/in-toto/docs[specification documents]
+. https://github.com/in-toto/ITE[governance documents]
+. https://github.com/in-toto/in-toto-java[Java implementation]
+. https://github.com/in-toto/in-toto-go[Go implementation]
+. https://github.com/in-toto/kubectl-in-toto[kubectl plugin]
+. https://github.com/in-toto/in-toto-webhook[Admission controller webhook]
+. https://github.com/in-toto/in-toto-webhook[Admission controller webhook]
+. https://github.com/jenkinsci/in-toto-plugin[Jenkins CI official plugin]
+
+*External Code Dependencies* +
+External dependencies of in-toto are listed below:
+
+|===
+|*component*|*Software*|*License*|*Project Page*
+
+|reference-implementation|attrs|MIT|https://attrs.readthedocs.io/en/stable/[https://attrs.readthedocs.io/en/stable/]
+|reference-implementation|python-dateuril|BSD|http://labix.org/python-dateutil[http://labix.org/python-dateutil]
+|reference-implementation|six|MIT|https://six.readthedocs.io/[https://six.readthedocs.io/]
+|reference-implementation|pathspec|MPL-2.0|https://github.com/cpburnz/python-path-specification[https://github.com/cpburnz/python-path-specification]
+|reference-implementation|pycryptodome|BSD|https://www.pycryptodome.org/en/latest[https://www.pycryptodome.org/en/latest]
+|reference-implementation|pynacl|Apache 2.0|https://github.com/pyca/pynacl/[https://github.com/pyca/pynacl/]
+|reference-implementation|subprocess32|PSFLv2|https://github.com/google/python-subprocess32[https://github.com/google/python-subprocess32]
+|java implementation|Bouncy Castle|MIT|https://www.bouncycastle.org/[https://www.bouncycastle.org/]
+|java implementation|Gson|Apache 2.0|https://github.com/google/gson/[https://github.com/google/gson/]
+|jenkins plugin|google-http|Apache 2.0|https://developers.google.com/api-client-library/java/google-http-java-client/[https://developers.google.com/api-client-library/java/google-http-java-client/]
+|jenkins plugin|jedis|MIT|https://github.com/xetorthio/jedis[https://github.com/xetorthio/jedis]
+|admission webhook|kubewebhook|Apache 2.0|https://github.com/slok/kubewebhook[https://github.com/slok/kubewebhook]
+|admission webhook|k8s.io/*|Apache 2.0|https://github.com/kubernetes/k8s.io[https://github.com/kubernetes/k8s.io]
+|kubectl plugin|k8s.io/*|Apache 2.0|https://github.com/kubernetes/k8s.io[https://github.com/kubernetes/k8s.io]
+
+|===
+
+
+*Committer information:* 
+
+* Initial commiters:
+  ** Santiago Torres-Arias (NYU)
+  ** Justin Cappos (NYU)
+  ** Lukas Puehringher (NYU)
+  ** Ofek Lev (DataDog)
+  ** Joey Pabalinas (NYU)
+  ** Sebastien Awwad (NYU)
+* Total committers:
+  ** 13 on the reference implementation
+  ** 16 total over all repositories
+
+*Users of Note:*
+
+Datadog has a detailed https://www.datadoghq.com/blog/engineering/secure-publication-of-datadog-agent-integrations-with-tuf-and-in-toto/[integration document] where they describe their usage of
+in-toto and TUF to deliver end-to-end verified agent integration wheels
+
+*Communication channels:* 
+in-toto currently uses three communication channels:
+
+. Slack team: #in-toto @ https://securesystemslab.slack.com/[https://securesystemslab.slack.com/] +
+. Mailing list: mailto:in-toto-dev@googlegroups.com[in-toto@googlegroups.com]
+. irc channel: in-toto@irc.freenode.net
+
+
+*Website/Blog:*
+
+The website is currently a 301 to in-toto.github.io: https://in-toto.io[https://in-toto.io] 
+
+Blogposts related to in-toto are currently published in NYU's secure systems's lab blog. https://ssl.engineering.nyu.edu/blog/[https://ssl.engineering.nyu.edu/blog/]
+
+
+*Release Cadence:*
+
+in-toto's release process for the reference implementation has a strict
+adherence with semver. The release schedule is as follows:
+
+* 2 months of feature develoment
+* 1 one month of feature freeze
+* 1 month of release candidacy
+
+Other code repositories will follow semver as they mature. Specifications and
+other repositories follow the release code published in the enhancement
+documents https://github.com/in-toto/ITE[https://github.com/in-toto/ITE]
+
+
+*Statement on alignment with CNCF mission:*
+
+The cloud-native ecosystem has evolved into an incredibly rich and featureful
+set of applications that are built using a complex set of tools. Ensuring
+applications are built correctly and without tampering is paramount for cloud
+security.  Furthermore, vulnerability scanners, static analyzers, buildfarms, code
+review systems, etc. need a way to have their outcomes validated before applications
+are shipped. in-toto's architecture provides cryptographically verifiable methods to 
+ensure compliance and security for all tools, hence protecting cloud applications.
+
+in-toto aligns with the CNCF mission statement by:
+
+* being-container transparent: when designing in-toto, we considered the nature of all toolchains involved in contemporary applications. As such, in-toto can be used in and out of the cloud interchangably. Furthermore, in-toto can be used in hybrid cloud setups.
+* Helping to enforce cloud native best practices: in-toto layouts are a great place to locate cloud native policy information. With it, parties can judge and verify that a project is, in-fact, running a correct process in their cloud native pipeline. Our admission webhook can be used to enforce the admission of pods, daemonsets and statefulsets that strictly followed the layout assigned to them.
+ 
