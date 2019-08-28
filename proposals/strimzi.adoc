@@ -51,7 +51,7 @@ Apache Kafka is a complex application consisting of multiple separate components
 
 Apache Kafka is very popular as infrastructure technology for supporting cloud-native applications. It enables loosely-coupled systems that are resilient, manageable, and observable. In a Kubernetes environment, Kafka is traditionally deployed “off to the side”, outside of the cluster where the application services run. Strimzi makes it easy to move Kafka on to the Kubernetes cluster and operate it using native Kubernetes concepts.
 
-*Sponsor / Advisor from TOC*: tbd
+*Sponsor / Advisor from TOC*: Alexis Richardson and Matt Klein
 
 *Unique identifier:* strimzi
 
