@@ -1,0 +1,122 @@
+== Strimzi
+
+*Name of project:* Strimzi
+
+*Description*
+
+Strimzi enables developers to run Apache Kafka and its ecosystem on Kubernetes. It provides container images for running Apache Kafka and operators for deploying, managing and configuring Apache Kafka clusters.
+
+Apache Kafka has emerged as a leading streaming platform for building real-time data pipelines to address multiple use cases. Distributed and massively horizontally scalable, Apache Kafka is a good candidate for running on Kubernetes. Apache Kafka is a common building block in event-driven, microservices-based architectures, and is a powerful tool for connecting scalable and decoupled components.
+
+Running Apache Kafka on Kubernetes provides many advantages:
+
+* Kafka on Kubernetes brings scalable messaging to a scalable platform.
+* Running Kafka directly on bare metal has a high bar (ops competency, dealing with physical servers, scaling up/down, etc.). Kubernetes make this much easier by providing an effective abstraction layer to build on.
+* Configuration as code.
+* Simplifies repetitive ops actions like rolling updates and software upgrades.
+* Restoration of Kafka cluster nodes by rescheduling pods in the event of failure.
+* Co-location of apps with messaging infrastructure.
+* Kafka clusters and topics are stored as YAMLs that can be provisioned at the same time as the application.
+
+But running Apache Kafka on Kubernetes is not always trivial and it includes a lot of challenges:
+
+* Kafka brokers are stateful, which necessitates:
+    ** Stable broker identities
+    ** Broker / cluster discovery
+    ** Durable broker state
+    ** The ability to recover broker state after a failure
+    ** All of the above are required for Apache Zookeeper nodes as well
+
+The goal of Strimzi is to make it possible to run a Kafka cluster on Kubernetes in production with the bare minimum of Kafka expertise by providing a sophisticated operator that runs "in auto-pilot" and covers all operational aspects. Strimzi uses the Kubernetes operator pattern to address the entire Apache Kafka lifecycle. Cluster deployment and management is simplified by using Kubernetes Custom Resources, which serve as blueprints for the deployments. The issues Strimzi wants to address include:
+
+* Deploying Apache Kafka and its components
+    ** Kafka brokers + Apache Zookeeper
+    ** Kafka Connect
+    ** Kafka Mirror Maker
+    ** Kafka HTTP Bridge / Proxy
+    ** etc.
+* Managing the deployments and their "day 2 operations"
+    ** Updating broker configuration and handling the related rolling operation to restart with no downtime
+    ** Securing Apache Kafka and all related components
+    ** Optimizing running clusters for performance and efficiency
+    ** Scaling clusters up and down
+    ** Disaster recovery, backup and restore
+* Managing topics, users and permissions in a Kubernetes native way
+
+*Statement on alignment with CNCF mission*:
+
+The Strimzi team believes that the project aligns closely with the Cloud Native Computing Foundation (CNCF) mission as described in section 1 of the CNCF Charter.
+
+Apache Kafka is a complex application consisting of multiple separate components (Apache Zookeeper, Apache Kafka brokers, etc.). Strimzi packages Apache Kafka into containers and makes deploying Apache Kafka clusters as easy as a simple deployment. Strimzi provides a central process for managing Apache Kafka clusters. It utilizes Kubernetes features such as scalability to achieve efficient Apache Kafka deployments which run wherever Kubernetes runs. Strimzi and Apache Kafka are also used as a foundation for other cloud native projects, such as Knative.
+
+Apache Kafka is very popular as infrastructure technology for supporting cloud-native applications. It enables loosely-coupled systems that are resilient, manageable, and observable. In a Kubernetes environment, Kafka is traditionally deployed “off to the side”, outside of the cluster where the application services run. Strimzi makes it easy to move Kafka on to the Kubernetes cluster and operate it using native Kubernetes concepts.
+
+*Sponsor / Advisor from TOC*: Alexis Richardson and Matt Klein
+
+*Unique identifier:* strimzi
+
+*Prefered Maturity Level*: Sandbox
+
+*License*: Apache License v2.0
+
+*Source control repositories*: link:https://github.com/strimzi[GitHub]
+
+*External dependencies*
+
+_(Runtime dependencies only)_
+
+* Apache Kafka / ALv2
+* Apache Zookeeper / ALv2
+* Fabric8 Kubernetes Client / ALv2
+* Sundrio / ALv2
+* OkHttp / ALv2
+* Apache Logging (Log4j) / ALv2
+* SLF4J / MIT
+* ZKClient / ALv2
+* Jackson / ALv2
+* Vert.x / ALv2 & EPLv2
+* Quartz Scheduler / ALv2
+* Scala / ALv2
+
+*Initial Committers*:
+
+* Tom Bentley (Red Hat)
+* Paolo Patierno (Red Hat)
+* Jakub Scholz (Red Hat)
+
+*Infrastructure requirements*: 
+
+* CI (currently use TravisCI)
+
+*Communication Channels*:
+
+* Mailing List: https://www.redhat.com/mailman/listinfo/strimzi _(A public mailing list hosted by Red Hat. Move to CNCF Mailing Lists should be considered if Strimzi is accepted.)_
+* Slack: https://join.slack.com/t/strimzi/shared_invite/enQtMzU2Mjk3NTgxMzE5LTYyMTUwMGNlMDQwMzBhOGI4YmY4MjhiMDgyNjA5OTk2MTFiYjc4M2Q3NGU1YTFjOWRiMzM2NGMwNDUwMjBlNDY
+
+*Issue Tracker*: link:https://github.com/strimzi/strimzi-kafka-operator/issues[Github Issues]
+
+*Website*: https://strimzi.io/
+
+*Release methodology and mechanics*
+
+Releases are done through Travis CI. Container images build there and pushed to Docker Hub. Java libraries are released through Sonatype into Maven Central repositories.
+
+*Social Media Accounts*:
+
+* Twitter: https://twitter.com/strimziio
+
+*Community size and existing sponsorship*:
+
+_(12/July/2019)_
+
+* Github Stars (in the main repository): 775
+* Github Forks (in the main repository): 185
+* GitHub Code Contributors (in the main repository): 41
+* Slack users: 329
+* Mailing list subscribers: 50
+* Twitter followers: 528
+
+* Existing Sponsors:
+  * Red Hat (10 people working full-time)
+
+*Project logo*: link:https://design.jboss.org/strimzi/logo/final/strimzi_logo_default.svg[SVG]
