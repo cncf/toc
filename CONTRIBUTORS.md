@@ -60,7 +60,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Randy	Abernethy, RX-M LLC (randy.abernethy@rx-m.com)
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
 * Sarah Allen, Independent (sarah@ultrasaurus.com)
-* Siddharth Bhadri, Huawei (siddharth.bhadri@huawei.com)
+* Siddharth Bhadri, Infoblox (sbhadri@infoblox.com)
 * Steven Dake, Independent (steven.dake@gmail.com)
 * Tammy Butow, Gremlin (tammy@gremlin.com)
 * Timothy Chen, Hyperpilot (tim@hyperpilot.io)
