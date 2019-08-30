@@ -13,19 +13,6 @@ https://github.com/cncf/toc/blob/master/CONTRIBUTORS.md
 If you have specific focus areas, CNCF SIG meetings are good opportunity to dive in:
 https://github.com/cncf/toc/tree/master/sigs
 
-## How do I propose my project to the CNCF?
-
-The first step is to file a [project proposal](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc) and request a community presentation. 
-
-See these examples for inspiration:
-* CRI-O: https://github.com/cncf/toc/pull/177
-* etcd: https://github.com/cncf/toc/pull/143
-* Falco: https://github.com/cncf/toc/pull/157
-* Flux: https://github.com/cncf/toc/pull/232
-* Harbor: https://github.com/cncf/toc/pull/135
-* TiKV: https://github.com/cncf/toc/pull/133
-* Virtual Kubelet: https://github.com/cncf/toc/pull/153
-
 ## What are CNCF SIGs?
 
 The CNCF Special Interest Groups (SIGs) scale contributions by the CNCF technical and user community, while retaining integrity and increasing quality in support of our mission.
