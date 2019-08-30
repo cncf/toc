@@ -10,7 +10,7 @@ https://github.com/cncf/toc/blob/master/process/election-schedule.md
 The best way to get involved is to start attending TOC meetings and become an official TOC Contributor:
 https://github.com/cncf/toc/blob/master/CONTRIBUTORS.md
 
-If you have a specific focus areas, CNCF SIG meetings are good opportunity to dive in:
+If you have specific focus areas, CNCF SIG meetings are good opportunity to dive in:
 https://github.com/cncf/toc/tree/master/sigs
 
 ## How do I propose my project to the CNCF?
