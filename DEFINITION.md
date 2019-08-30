@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Deutsch](#deutsch)| [Español](#español) | [Français](#français) | [Português Brasileiro](#português-brasileiro) (in Chinese, Japanese, Korean, Brazilian, Portuguese, German, French and Spanish below)
+[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Deutsch](#deutsch)| [Español](#español) | [Français](#français) | [Português Brasileiro](#português-brasileiro) | [Русский](#русский)(in Chinese, Japanese, Korean, Brazilian, Portuguese, German, French and Spanish below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -72,3 +72,11 @@ Tecnologias nativas ao cloud empoderam empresas a criarem e rodarem aplicações
 Essas técnicas permitem criar sistemas de baixo acoplamento, resilientes, gerenciáveis e observáveis. Combinadas com automações robustas, elas permitem que os engenheiros façam alterações de alto impacto de forma frequente e previsível, com o mínimo de esforço.
 
 A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
+
+## Русский:
+
+Нативные облачные (Cloud native) технологии позволяют организациям создавать и запускать масштабируемые приложения в современных динамических средах, таких как публичные, частные и гибридные облака. Контейнеры, сервисные сита (service meshes), микросервисы, неизменяемая инфраструктура и декларативные API являются примером такого подхода.
+
+Эти техники позволяют слабосвязанным системам быть устойчивыми, управляемыми и под постоянным контролем. В сочетании с надежной автоматизацией они позволяют инженерам часто и предсказуемо вносить значительные изменения с минимальными усилиями.
+
+Cloud Native Computing Foundation ставит целью адаптировать эту парадигму, развивая и поддерживая экосистему проектов, с открытым исходным кодом, независимую от их поставщиков. Мы демократизируем современные модели, чтобы сделать эти инновации доступными для всех.
