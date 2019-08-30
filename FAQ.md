@@ -57,6 +57,6 @@ TOC members are available to provide guidance to the projects but do not control
 
 Please see the [TOC Principles](https://github.com/cncf/toc/blob/master/PRINCIPLES.md) for more details.
 
-## What type of support do I receive as a CNCF project?
+## What type of support do CNCF projects receive?
 
 The CNCF provides a variety of services that are accessible by maintainers via the ServiceDesk: https://github.com/cncf/servicedesk
