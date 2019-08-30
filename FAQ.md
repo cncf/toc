@@ -1,6 +1,6 @@
 # CNCF TOC FAQ
 
-An FAQ geared towards CNCF TOC and project issues.
+A FAQ geared towards CNCF TOC and project issues.
 
 ## How do I join the TOC?
 
