@@ -61,7 +61,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
 * Sarah Allen, Independent (sarah@ultrasaurus.com)
 * Siddharth Bhadri, Infoblox (sbhadri@infoblox.com)
-* Steven Dake, Independent (steven.dake@gmail.com)
+* Steve Dake, IBM (sdake@ibm.com)
 * Tammy Butow, Gremlin (tammy@gremlin.com)
 * Timothy Chen, Hyperpilot (tim@hyperpilot.io)
 * Vasu Chandrasekhara, SAP SE (vasu.chandrasekhara@sap.com)
