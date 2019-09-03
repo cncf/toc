@@ -15,3 +15,4 @@ a pull request with document referencing the roles and charter, updating the lis
 
 * https://github.com/cncf/sig-security
 * https://github.com/cncf/sig-storage
+* https://github.com/cncf/sig-app-delivery
