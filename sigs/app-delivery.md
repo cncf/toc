@@ -2,7 +2,7 @@
 
 Primary Authors: Michelle Noorali, Alexis Richardson
 
-<approval date>
+Approved September 3rd, 2019
 
 Reviewed and contributed to by:
 
