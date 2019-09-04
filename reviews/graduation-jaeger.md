@@ -112,10 +112,10 @@ https://github.com/jaegertracing/jaeger/blob/master/ADOPTERS.md
 
 ## Open-source alternatives to Jaeger
 
-### Apache Zipkin
+### Zipkin
 
-  * https://zipkin.apache.org/
-  * Incubating at Apache Software Foundation.
+  * https://zipkin.io
+  * (Was incubating at Apache Software Foundation, but withdrew in the summer 2019).
   * Offers similar functionality to Jaeger, but lacks certain features, such as adaptive sampling or trace comparisons in the UI.
   * Implemented in Java. Comes with its own instrumentation SDK for Java called Brave.
 
