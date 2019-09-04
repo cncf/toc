@@ -28,7 +28,7 @@ Some specific examples:
     * Quote: "Jaeger is helping us to increase observability since Feb 2018 and is praised by our developers."
   * [GrafanaLabs](https://grafana.com/) runs a managed metrics platform GrafanaCloud.
     * Uses Jaeger in production for observability and query optimization
-    * Case study: [Grafana Labs Teams Use Jaeger to Improve Query Performance Up to 10x](https://medium.com/jaegertracing/grafana-labs-teams-observed-query-performance-improvements-up-to-10x-with-jaeger-cec84b0e3609).
+    * Case study: [Grafana Labs Teams Use Jaeger to Improve Query Performance Up to 10x][grafanalabs].
   * [Weave HQ](https://www.getweave.com/) threads together data, software and communication platforms to build stronger relationships at the point of contact. Deployed at over 8000 medical offices. Using Jaeger since early 2018; ~150 active microservices, ~500 containers, ~90% of microservices are instrumented for tracing. Using Cassandra as span storage backend, 1 week retention, ~2M spans/day.
     * Fun fact 1: started collecting fewer metrics in Prometheus because Jaeger works much better for root cause analysis than having extra metrics.
     * Fun fact 2: most application logs are written to Jaeger spans via the OpenTracing API and viewed in Jaeger UI in the context of the trace, instead of log aggregation tools like ELK.
@@ -36,7 +36,7 @@ Some specific examples:
   * [Ticketmaster](https://www.ticketmaster.com/), a ticket sales and distribution company based in Beverly Hills, California, with operations around the world.
     * Traces 100 million transactions per day with Jaeger .
     * Has 50-plus services instrumented and nine groups of engineering teams actively using Jaeger.
-    * Case study: [Ticketmaster Traces 100 Million Transactions per Day with Jaeger](https://medium.com/jaegertracing/ticketmaster-traces-100-million-transactions-per-day-with-jaeger-38ec6cf599f0).
+    * Case study: [Ticketmaster Traces 100 Million Transactions per Day with Jaeger][ticketmaster].
     * Quote: "Jaeger Tracing is helping us achieve our vision of observability capabilities across different versions of our platforms, how they integrate with each other and how they have grown over time." -- Kraig Amador, Senior Director.
   * [Red Hat](https://www.redhat.com/en), world’s leading provider of enterprise open source solutions, using a community-powered approach to deliver high-performing Linux, cloud, container, and Kubernetes technologies.
     * Jaeger is fully supported by Red Hat as part of its OpenShift Service Mesh product ([press release][openshift]).
@@ -162,3 +162,5 @@ For more information, see [Jaeger and OpenTelemetry blog post](https://medium.co
 [devstats]: https://jaeger.devstats.cncf.io/d/18/project-statistics?orgId=1&var-period_name=Last%20decade&var-repogroup_name=All
 [committers]: https://github.com/jaegertracing/jaeger/blob/master/CODEOWNERS
 [openshift]: https://www.redhat.com/en/about/press-releases/red-hat-launches-openshift-service-mesh-accelerate-adoption-microservices-and-cloud-native-applications
+[ticketmaster]: https://medium.com/jaegertracing/ticketmaster-traces-100-million-transactions-per-day-with-jaeger-38ec6cf599f0
+[grafanalabs]: https://medium.com/jaegertracing/grafana-labs-teams-observed-query-performance-improvements-up-to-10x-with-jaeger-cec84b0e3609
