@@ -11,11 +11,11 @@ contributions, and related projects.
 
 ## Alignment with CNCF charter mission
 
-TODO
+Kubevirt doesn't require a different CRI implementation, it can cohabit nodes with ordinary container workloads.
 
 ## Sponsor from TOC
 
-TODO
+Brian Grant and Liz Rice
 
 ## Preferred maturity level
 
