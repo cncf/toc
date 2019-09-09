@@ -1,0 +1,195 @@
+## Project name and description
+
+*Name of project*: KubeVirt
+
+*Description*:
+
+KubeVirt is a virtualization management add-on for Kubernetes.
+It allows a user to run virtual machines on Kubernetes just like pods.
+Because KubeVirt is integrating with Kubernetes APIand resource model, the
+same set of tools can be used to manage and monitor virtual machines.
+
+KubeVirt was started in 2017 by Red Hat and is seeing a good reception in
+the community which is reflected by the number of Git Hub stars, code
+contributions, and related projects.
+
+*Sponsor / Advisor from TOC*: Brian Grant <> and Liz Rice <>
+
+*Unique Identifier*: kubevirt
+
+*License*: Apache 2.0 license https://github.com/kubevirt/kubevirt/blob/master/LICENSE
+
+*Maturity Level:* Sandbox
+
+*Source control repositories*:
+
+https://github.com/kubevirt/kubevirt
+
+*Initial committers*:
+
+Roman Mohr (Red Hat) and Fabian Deutsch (Red Hat) were the initial committers. Roman is still with Red Hat and one of the lead maintainers today.
+
+*Infrastructure requirements*:
+
+RedHat Cluster (Prow/Tide), IBM Cluster (WIP), nVIDIA Cluster (WIP)
+
+*Mailing lists*
+
+The project README at https://github.com/kubevirt/kubevirt enumerates the user
+support channels.
+
+* Slack: https://kubernetes.slack.com/messages/virtualization
+* Mailinglist: https://groups.google.com/forum/#!forum/kubevirt-dev
+
+*Issue tracker*: https://github.com/kubevirt/kubevirt/issues
+
+*Website*: https://kubevirt.io
+
+*Social media accounts*:
+
+* https://twitter.com/kubevirt
+
+*Community and Existing sponsorship*:
+
+KubeVirt has 1348 stars on Github, 290 people on Slack. The project counts
+90 individual committers up until now with many Red Hat contributors, a few
+non Red Hat contributors, and a few drive-by contributions.
+
+* NTT
+* Loodse
+* OSI
+* SAP
+* Cloudflare
+* Nvidia
+* IBM
+* RedHat
+
+*Other Contributors*: https://github.com/kubevirt/kubevirt/graphs/contributors
+
+*Documentation*: https://github.com/kubevirt/user-guide available at https://kubevirt.io/user-guide/
+
+An https://kubevirt.io/api-reference/ is generated from OpenAPI definitions.
+
+*Release methodology and mechanics*: semver, a time based release process, with container artifatcs, all defined in
+https://github.com/kubevirt/kubevirt/blob/master/docs/release.md
+
+*Project logo*: https://raw.githubusercontent.com/kubevirt/community/master/logo/KubeVirt_logo.png
+
+*Statement on alignment with CNCF mission*:
+
+Kubevirt doesn't require a different CRI implementation, it can cohabit nodes with ordinary container workloads.
+
+*External Dependencies*:
+
+Generated license analysis:
+
+|===
+| Dependency                   | License analysis
+
+| github.com/kubevirt/kubevirt | Apache-2.0
+| cloud.google.com/go | Apache-2.0
+| github.com/asaskevich/govalidator | MIT
+| github.com/Azure/go-autorest | Apache-2.0
+| github.com/beorn7/perks | MIT
+| github.com/blang/semver | MIT
+| github.com/coreos/go-iptables | Apache-2.0
+| github.com/coreos/go-semver | Apache-2.0
+| github.com/davecgh/go-spew | BSD
+| github.com/dgrijalva/jwt-go | MIT
+| github.com/docker/spdystream | CC-BY-SA-4.0
+| github.com/emicklei/go-restful | MIT
+| github.com/emicklei/go-restful-openapi | MIT
+| github.com/evanphx/json-patch | BSD-3-Clause
+| github.com/fsnotify/fsnotify | BSD-3-Clause
+| github.com/globalsign/mgo | BSD-2-Clause
+| github.com/globalsign/mgo/bson | BSD-2-Clause
+| github.com/globalsign/mgo/internal/json | BSD-3-Clause
+| github.com/go-kit/kit | MIT
+| github.com/golang/groupcache | Apache-2.0
+| github.com/golang/mock | Apache-2.0
+| github.com/golang/protobuf | BSD-3-Clause
+| github.com/go-logfmt/logfmt | MIT
+| github.com/googleapis/gnostic | Apache-2.0
+| github.com/google/btree | Apache-2.0
+| github.com/google/goexpect | BSD-3-Clause
+| github.com/google/gofuzz | Apache-2.0
+| github.com/google/goterm | BSD-3-Clause
+| github.com/google/uuid | BSD-3-Clause
+| github.com/go-openapi/analysis | Apache-2.0
+| github.com/go-openapi/errors | Apache-2.0
+| github.com/go-openapi/jsonpointer | Apache-2.0
+| github.com/go-openapi/jsonreference | Apache-2.0
+| github.com/go-openapi/loads | Apache-2.0
+| github.com/go-openapi/runtime | Apache-2.0
+| github.com/go-openapi/runtime/middleware/denco | MIT
+| github.com/go-openapi/spec | Apache-2.0
+| github.com/go-openapi/strfmt | Apache-2.0
+| github.com/go-openapi/swag | Apache-2.0
+| github.com/go-openapi/validate | Apache-2.0
+| github.com/gophercloud/gophercloud | Apache-2.0
+| github.com/gorilla/websocket | BSD-2-Clause
+| github.com/go-stack/stack | MIT
+| github.com/gregjones/httpcache | MIT
+| github.com/hashicorp/golang-lru | MPL-2.0-no-copyleft-exception
+| github.com/hpcloud/tail | MIT
+| github.com/imdario/mergo | BSD-3-Clause
+| github.com/inconshreveable/mousetrap | Apache-2.0
+| github.com/json-iterator/go | MIT
+| github.com/k8snetworkplumbingwg/network-attachment-definition-client | Apache-2.0
+| github.com/krolaw/dhcp4 | BSD-3-Clause
+| github.com/libvirt/libvirt-go | MIT
+| github.com/mailru/easyjson | MIT
+| github.com/mattn/go-runewidth | MIT
+| github.com/matttproud/golang_protobuf_extensions | Apache-2.0
+| github.com/mitchellh/mapstructure | MIT
+| github.com/modern-go/concurrent | Apache-2.0
+| github.com/modern-go/reflect2 | Apache-2.0
+| github.com/onsi/ginkgo | MIT
+| github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable | MIT
+| github.com/onsi/ginkgo/reporters/stenographer/support/go-isatty | MIT
+| github.com/onsi/gomega | MIT
+| github.com/openshift/api | Apache-2.0
+| github.com/openshift/client-go | Apache-2.0
+| github.com/operator-framework/operator-lifecycle-manager | Apache-2.0
+| github.com/operator-framework/operator-marketplace | Apache-2.0
+| github.com/pborman/uuid | BSD-3-Clause
+| github.com/peterbourgon/diskv | MIT
+| github.com/prometheus/client_golang | Apache-2.0
+| github.com/prometheus/client_model | Apache-2.0
+| github.com/prometheus/common | Apache-2.0
+| github.com/prometheus/procfs | Apache-2.0
+| github.com/PuerkitoBio/purell | BSD-3-Clause
+| github.com/PuerkitoBio/urlesc | BSD-3-Clause
+| github.com/spf13/cobra | Apache-2.0
+| github.com/spf13/pflag | BSD-3-Clause
+| github.com/vishvananda/netlink | Apache-2.0
+| github.com/vishvananda/netns | Apache-2.0
+| golang.org/x/crypto | BSD-3-Clause
+| golang.org/x/net | BSD-3-Clause
+| golang.org/x/oauth2 | BSD-3-Clause
+| golang.org/x/sys | BSD-3-Clause
+| golang.org/x/text | BSD-3-Clause
+| golang.org/x/time | BSD-3-Clause
+| google.golang.org/appengine | Apache-2.0
+| google.golang.org/genproto | Apache-2.0
+| google.golang.org/grpc | Apache-2.0
+| gopkg.in/cheggaaa/pb.v1 | BSD-3-Clause
+| gopkg.in/fsnotify.v1 | BSD-3-Clause
+| gopkg.in/inf.v0 | BSD-3-Clause
+| gopkg.in/ini.v1 | Apache-2.0
+| gopkg.in/tomb.v1 | BSD-3-Clause
+| gopkg.in/yaml.v2 | Apache-2.0
+| gopkg.in/yaml.v2 | Apache-2.0
+| k8s.io/api | Apache-2.0
+| k8s.io/apiextensions-apiserver | Apache-2.0
+| k8s.io/apimachinery | Apache-2.0
+| k8s.io/client-go | Apache-2.0
+| k8s.io/klog | Apache-2.0
+| k8s.io/kube-aggregator | Apache-2.0
+| k8s.io/kube-openapi | Apache-2.0
+| k8s.io/utils | Apache-2.0
+| kubevirt.io/containerized-data-importer | Apache-2.0
+| kubevirt.io/qe-tools | Apache-2.0
+| sigs.k8s.io/controller-runtime | Apache-2.0
+|===
+
