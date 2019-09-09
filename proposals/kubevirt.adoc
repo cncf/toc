@@ -55,15 +55,14 @@ KubeVirt has 1348 stars on Github, 290 people on Slack. The project counts
 90 individual committers up until now with many Red Hat contributors, a few
 non Red Hat contributors, and a few drive-by contributions.
 
-* RedHat
-* StackPath
-* OSI
-* Akamai
-* Cisco
-* CloudFlare
-* IBM
-* SAP
 * NTT
+* Loodse
+* OSI
+* SAP
+* Cloudflare
+* Nvidia
+* IBM
+* RedHat
 
 *Other Contributors*: https://github.com/kubevirt/kubevirt/graphs/contributors
 
