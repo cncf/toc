@@ -41,6 +41,7 @@
 [Thanos](https://github.com/thanos-io/thanos)|Joe Beda, Xiang Li, Alexis Richardson, Liz Rice|[6/11/19](https://github.com/cncf/toc/pull/256)|[7/20/19](https://github.com/thanos-io/thanos)|Sandbox
 [in-toto](https://github.com/in-toto/in-toto)|Michelle Noorali, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/252)|[8/21/19](https://github.com/in-toto/in-toto)|Sandbox
 [Strimzi](https://github.com/strimzi)|Alexis Richardson, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/266)|[8/28/19](https://github.com/strimzi)|Sandbox
+[KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Sandbox
 
 ## Archived Projects
 
