@@ -126,7 +126,7 @@ External dependencies of keptn are listed below:
 External dependencies of all Go projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
-|census-ecosystem/opencensus-go-exporter-ocagent|Apache-2.0|github.com/census-ecosystem/opencensus-go-exporter-ocagent[github.com/census-ecosystem/opencensus-go-exporter-ocagent]|
+|census-ecosystem/opencensus-go-exporter-ocagent|Apache-2.0|github.com/census-ecosystem/opencensus-go-exporter-ocagent[github.com/census-ecosystem/opencensus-go-exporter-ocagent]
 |cloudevents/sdk-go|Apache-2.0|github.com/cloudevents/sdk-go[github.com/cloudevents/sdk-go]
 |docker/docker-credential-helpers|MIT|github.com/docker/docker-credential-helpers[github.com/docker/docker-credential-helpers]
 |gbrlsnchs/jwt|MIT|github.com/gbrlsnchs/jwt[github.com/gbrlsnchs/jwt]
@@ -164,6 +164,7 @@ External dependencies of all Go projects are listed below:
 |===
 
 Go projects are:
+
 * github.com/keptn/keptn/api
 * github.com/keptn/keptn/cli
 * github.com/keptn/keptn/configuration-service
@@ -212,7 +213,8 @@ External dependencies of all TypeScript projects are listed below:
 |yamljs|MIT|https://www.npmjs.com/package/yamljs[https://www.npmjs.com/package/yamljs]
 |===
 
-TypeScript projects are: 
+TypeScript projects are:
+
 * github.com/keptn-contrib/pitometer-service 
 * github.com/keptn-contrib/servicenow-service
 
@@ -242,6 +244,7 @@ External dependencies of JavaScript projects are listed below:
 |===
 
 JavaScript projects are:
+
 * github.com/keptn/keptn/bridge
 
 *Maintainers:*
