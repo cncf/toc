@@ -111,161 +111,141 @@ No sponsors yet.
 
 External dependencies of keptn are listed below:
 
-(Will be updated based on the latest release, before presenting to TOC)
-
 |===
 |*Software*|*License*|*Project Page*
 |curl|MIT/X|https://curl.haxx.se/[https://curl.haxx.se/]
-|gcloud|Apache-2.0|https://github.com/google-cloud-sdk/google-cloud-sdk[https://github.com/google-cloud-sdk/google-cloud-sdk]
 |git|GPLv2|https://git-scm.com/[https://git-scm.com/]
 |helm|Apache-2.0|https://helm.sh/[https://helm.sh/]
 |jq|MIT|https://stedolan.github.io/jq/[https://stedolan.github.io/jq/]
 |kubectl|Apache-2.0|https://github.com/kubernetes/kubernetes[https://github.com/kubernetes/kubernetes]
+|oc|Apache-2.0|https://github.com/openshift/origin[https://github.com/openshift/origin]
 |wget|GPLv3|https://github.com/mirror/wget[https://github.com/mirror/wget]
 |yq|MIT|https://mikefarah.github.io/yq/[https://mikefarah.github.io/yq/]
 |===
 
-External dependencies of Go projects are listed below:
+External dependencies of all Go projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
 |cloudevents/sdk-go|Apache-2.0|https://github.com/cloudevents/sdk-go[https://github.com/cloudevents/sdk-go]
-|cobra|Apache-2.0|https://github.com/spf13/cobra[https://github.com/spf13/cobra]
-|docker-credential-helpers|MIT|https://github.com/docker/docker-credential-helpers[https://github.com/docker/docker-credential-helpers]
-|go-github|BSD-3-Clause|https://github.com/google/go-github[https://github.com/google/go-github]
-|go-homedir|MIT|https://github.com/mitchellh/go-homedir[https://github.com/mitchellh/go-homedir]
-|go-lang|BSD|https://github.com/golang/go[https://github.com/golang/go]
-|uuid|BSD-3-Clause|https://github.com/google/uuid[https://github.com/google/uuid]
-|viper|MIT|https://github.com/spf13/viper[https://github.com/spf13/viper]
-|websocket|BSD-2-Clause|https://github.com/gorilla/websocket[https://github.com/gorilla/websocket]
-|yaml.v2|Apache-2.0|https://github.com/go-yaml/yaml[https://github.com/go-yaml/yaml]
+|docker/docker-credential-helpers|MIT|https://github.com/docker/docker-credential-helpers[https://github.com/docker/docker-credential-helpers]
+|gbrlsnchs/jwt|MIT|https://github.com/gbrlsnchs/jwt[https://github.com/gbrlsnchs/jwt]
+|ghodss/yaml|MIT|https://github.com/ghodss/yaml[https://github.com/ghodss/yaml]
+|gogo/protobuf|BSD-3-Clause|https://github.com/gogo/protobuf[https://github.com/gogo/protobuf]
+|google/go-github|BSD-3-Clause|https://github.com/google/go-github[https://github.com/google/go-github]
+|google/uuid|BSD-3-Clause|https://github.com/google/uuid[https://github.com/google/uuid]
+|go-openapi/errors|Apache-2.0|https://github.com/go-openapi/errors[https://github.com/go-openapi/errors]
+|go-openapi/loads|Apache-2.0|https://github.com/go-openapi/loads[https://github.com/go-openapi/loads]
+|go-openapi/runtime|Apache-2.0|https://github.com/go-openapi/runtime[https://github.com/go-openapi/runtime]
+|go-openapi/spec|Apache-2.0|https://github.com/go-openapi/spec[https://github.com/go-openapi/spec]
+|go-openapi/strfmt|Apache-2.0|https://github.com/go-openapi/strfmt[https://github.com/go-openapi/strfmt]
+|go-openapi/swag|Apache-2.0|https://github.com/go-openapi/swag[https://github.com/go-openapi/swag]
+|go-openapi/validate|Apache-2.0|https://github.com/go-openapi/validate[https://github.com/go-openapi/validate]
+|gorilla/websocket|BSD-2-Clause|https://github.com/gorilla/websocket[https://github.com/gorilla/websocket]
+|go-yaml/yaml|Apache-2.0|https://github.com/go-yaml/yaml[https://github.com/go-yaml/yaml]
+|jeremywohl/flatten|MIT|https://github.com/jeremywohl/flatten[https://github.com/jeremywohl/flatten]
+|jessevdk/go-flags|BSD-3-Clause|https://github.com/jessevdk/go-flags[https://github.com/jessevdk/go-flags]
+|kelseyhightower/envconfig|MIT|https://github.com/kelseyhightower/envconfig[https://github.com/kelseyhightower/envconfig]
+|kinbiko/jsonassert|MIT|https://github.com/kinbiko/jsonassert[https://github.com/kinbiko/jsonassert]
+|kubernetes/api|Apache-2.0|https://github.com/kubernetes/api[https://github.com/kubernetes/api]
+|kubernetes/apimachinery|Apache-2.0|https://github.com/kubernetes/apimachinery[https://github.com/kubernetes/apimachinery]
+|kubernetes/client-go|Apache-2.0|https://github.com/kubernetes/client-go[https://github.com/kubernetes/client-go]
+|magiconair/properties|BSD-2-Clause|https://github.com/magiconair/properties[https://github.com/magiconair/properties]
+|mitchellh/go-homedir|MIT|https://github.com/mitchellh/go-homedir[https://github.com/mitchellh/go-homedir]
+|mongodb/mongo-go-driver|Apache-2.0|https://github.com/mongodb/mongo-go-driver[https://github.com/mongodb/mongo-go-driver]
+|nats-io/nats.go|Apache-2.0|https://github.com/nats-io/nats.go[https://github.com/nats-io/nats.go]
+|opencensus-go-exporter-ocagent|Apache-2.0|https://github.com/census-ecosystem/opencensus-go-exporter-ocagent[https://github.com/census-ecosystem/opencensus-go-exporter-ocagent]
+|prometheus/common|Apache-2.0|https://github.com/prometheus/common[https://github.com/prometheus/common]
+|prometheus/prometheus|Apache-2.0|https://github.com/prometheus/prometheus[https://github.com/prometheus/prometheus]
+|spf13/cobra|Apache-2.0|https://github.com/spf13/cobra[https://github.com/spf13/cobra]
+|spf13/viper|MIT|https://github.com/spf13/viper[https://github.com/spf13/viper]
+|src-d/go-git/|Apache-2.0|https://github.com/src-d/go-git/[https://github.com/src-d/go-git/]
+|stretchr/testify|MIT|https://github.com/stretchr/testify[https://github.com/stretchr/testify]
+|tidwall/sjson|MIT|https://github.com/tidwall/sjson[https://github.com/tidwall/sjson]
 |===
 
 Go projects are:
 
-* keptn/cli
-* dynatrace-service
-* deploy-service
+* github.com/keptn/keptn/api
+* github.com/keptn/keptn/cli
+* github.com/keptn/keptn/configuration-service
+* github.com/keptn/keptn/distributor
+* github.com/keptn/keptn/eventbroker
+* github.com/keptn/keptn/gatekeeper-service
+* github.com/keptn/keptn/helm-service
+* github.com/keptn/keptn/jmeter-service
+* github.com/keptn/keptn/mongodb-datastore
+* github.com/keptn/keptn/platform-support/openshift-route-service
+* github.com/keptn/keptn/shipyard-service
+* github.com/keptn/keptn/wait-service
+* github.com/keptn-contrib/prometheus-service
 
 External dependencies of all TypeScript projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
-|axios|MIT|https://www.npmjs.com/package/axios[https://www.npmjs.com/package/axios]
-|base64url|MIT|https://www.npmjs.com/package/base64url[https://www.npmjs.com/package/base64url]
-|body-parser|MIT|https://www.npmjs.com/package/body-parser[https://www.npmjs.com/package/body-parser]
-|buffer-equal-constant-time|BSD-3-Clause|https://www.npmjs.com/package/buffer-equal-constant-time[https://www.npmjs.com/package/buffer-equal-constant-time]
-|camelize|MIT|https://www.npmjs.com/package/camelize[https://www.npmjs.com/package/camelize]
-|chai|MIT|https://www.npmjs.com/package/chai[https://www.npmjs.com/package/chai]
-|cloudevent|Apache-2.0|https://www.npmjs.com/package/cloudevent[https://www.npmjs.com/package/cloudevent]
-|cloudevents-sdk|Apache-2.0|https://www.npmjs.com/package/cloudevents-sdk[https://www.npmjs.com/package/cloudevents-sdk]
-|copyfiles|MIT|https://www.npmjs.com/package/copyfiles[https://www.npmjs.com/package/copyfiles]
-|crypto|ISC|https://www.npmjs.com/package/crypto[https://www.npmjs.com/package/crypto]
-|decamelize|MIT|https://www.npmjs.com/package/decamelize[https://www.npmjs.com/package/decamelize]
-|express|MIT|https://www.npmjs.com/package/express[https://www.npmjs.com/package/express]
-|express-ws|BSD-2-Clause|https://www.npmjs.com/package/express-ws[https://www.npmjs.com/package/express-ws]
-|express-ws-routes|MIT|https://www.npmjs.com/package/express-ws-routes[https://www.npmjs.com/package/express-ws-routes]
-|github-api|BSD-3-Clause-Clear|https://www.npmjs.com/package/github-api[https://www.npmjs.com/package/github-api]
-|inversify|MIT|https://www.npmjs.com/package/inversify[https://www.npmjs.com/package/inversify]
-|inversify-express-utils|MIT|https://www.npmjs.com/package/inversify-express-utils[https://www.npmjs.com/package/inversify-express-utils]
-|jenkins|MIT|https://www.npmjs.com/package/jenkins[https://www.npmjs.com/package/jenkins]
-|js-base64|BSD-3-Clause|https://www.npmjs.com/package/js-base64[https://www.npmjs.com/package/js-base64]
-|jsonwebtoken|MIT|https://www.npmjs.com/package/jsonwebtoken[https://www.npmjs.com/package/jsonwebtoken]
-|kubernetes-client|MIT|https://www.npmjs.com/package/kubernetes-client[https://www.npmjs.com/package/kubernetes-client]
-|mocha|MIT|https://www.npmjs.com/package/mocha[https://www.npmjs.com/package/mocha]
-|moment|MIT|https://www.npmjs.com/package/moment[https://www.npmjs.com/package/moment]
-|mustache|MIT|https://www.npmjs.com/package/mustache[https://www.npmjs.com/package/mustache]
-|nock|MIT|https://www.npmjs.com/package/nock[https://www.npmjs.com/package/nock]
-|nodejs-base64|Unlicense|https://www.npmjs.com/package/nodejs-base64[https://www.npmjs.com/package/nodejs-base64]
-|nodemon|MIT|https://www.npmjs.com/package/nodemon[https://www.npmjs.com/package/nodemon]
-|nyc|ISC|https://www.npmjs.com/package/nyc[https://www.npmjs.com/package/nyc]
-|postinstall|MIT|https://www.npmjs.com/package/postinstall[https://www.npmjs.com/package/postinstall]
-|reflect-metadata|Apache-2.0|https://www.npmjs.com/package/reflect-metadata[https://www.npmjs.com/package/reflect-metadata]
-|sinon|BSD-3-Clause|https://www.npmjs.com/package/sinon[https://www.npmjs.com/package/sinon]
-|snyk|Apache-2.0|https://www.npmjs.com/package/snyk[https://www.npmjs.com/package/snyk]
-|socket.io|MIT|https://www.npmjs.com/package/socket.io[https://www.npmjs.com/package/socket.io]
-|source-map-support|MIT|https://www.npmjs.com/package/source-map-support[https://www.npmjs.com/package/source-map-support]
-|swagger-express-ts|MIT|https://www.npmjs.com/package/swagger-express-ts[https://www.npmjs.com/package/swagger-express-ts]
-|swagger-ui-dist|Apache-2.0|https://www.npmjs.com/package/swagger-ui-dist[https://www.npmjs.com/package/swagger-ui-dist]
-|ts-base-64|ISC|https://www.npmjs.com/package/ts-base-64[https://www.npmjs.com/package/ts-base-64]
-|tslint|Apache-2.0|https://www.npmjs.com/package/tslint[https://www.npmjs.com/package/tslint]
-|tslint-config-airbnb|Apache-2.0|https://www.npmjs.com/package/tslint-config-airbnb[https://www.npmjs.com/package/tslint-config-airbnb]
-|ts-node|MIT|https://www.npmjs.com/package/ts-node[https://www.npmjs.com/package/ts-node]
-|typescript|Apache-2.0|https://www.npmjs.com/package/typescript[https://www.npmjs.com/package/typescript]
-|uuid|MIT|https://www.npmjs.com/package/uuid[https://www.npmjs.com/package/uuid]
-|verify-github-webhook|MIT|https://www.npmjs.com/package/verify-github-webhook[https://www.npmjs.com/package/verify-github-webhook]
-|ws|MIT|https://www.npmjs.com/package/ws[https://www.npmjs.com/package/ws]
-|yamljs|MIT|https://www.npmjs.com/package/yamljs[https://www.npmjs.com/package/yamljs]
+|axios|MIT|https://npmjs.com/package/axios[https://npmjs.com/package/axios]
+|body-parser|MIT|https://npmjs.com/package/body-parser[https://npmjs.com/package/body-parser]
+|chai|MIT|https://npmjs.com/package/chai[https://npmjs.com/package/chai]
+|cloudevent|Apache-2.0|https://npmjs.com/package/cloudevent[https://npmjs.com/package/cloudevent]
+|copyfiles|MIT|https://npmjs.com/package/copyfiles[https://npmjs.com/package/copyfiles]
+|express|MIT|https://npmjs.com/package/express[https://npmjs.com/package/express]
+|inversify|MIT|https://npmjs.com/package/inversify[https://npmjs.com/package/inversify]
+|inversify-express-utils|MIT|https://npmjs.com/package/inversify-express-utils[https://npmjs.com/package/inversify-express-utils]
+|kubernetes-client|MIT|https://npmjs.com/package/kubernetes-client[https://npmjs.com/package/kubernetes-client]
+|mocha|MIT|https://npmjs.com/package/mocha[https://npmjs.com/package/mocha]
+|moment|MIT|https://npmjs.com/package/moment[https://npmjs.com/package/moment]
+|mustache|MIT|https://npmjs.com/package/mustache[https://npmjs.com/package/mustache]
+|nock|MIT|https://npmjs.com/package/nock[https://npmjs.com/package/nock]
+|nodejs-base64|Unlicense|https://npmjs.com/package/nodejs-base64[https://npmjs.com/package/nodejs-base64]
+|nodemon|MIT|https://npmjs.com/package/nodemon[https://npmjs.com/package/nodemon]
+|nyc|ISC|https://npmjs.com/package/nyc[https://npmjs.com/package/nyc]
+|postinstall|MIT|https://npmjs.com/package/postinstall[https://npmjs.com/package/postinstall]
+|reflect-metadata|Apache-2.0|https://npmjs.com/package/reflect-metadata[https://npmjs.com/package/reflect-metadata]
+|sinon|BSD-3-Clause|https://npmjs.com/package/sinon[https://npmjs.com/package/sinon]
+|snyk|Apache-2.0|https://npmjs.com/package/snyk[https://npmjs.com/package/snyk]
+|source-map-support|MIT|https://npmjs.com/package/source-map-support[https://npmjs.com/package/source-map-support]
+|swagger-express-ts|MIT|https://npmjs.com/package/swagger-express-ts[https://npmjs.com/package/swagger-express-ts]
+|swagger-ui-dist|Apache-2.0|https://npmjs.com/package/swagger-ui-dist[https://npmjs.com/package/swagger-ui-dist]
+|tslint|Apache-2.0|https://npmjs.com/package/tslint[https://npmjs.com/package/tslint]
+|tslint-config-airbnb|Apache-2.0|https://npmjs.com/package/tslint-config-airbnb[https://npmjs.com/package/tslint-config-airbnb]
+|ts-node|MIT|https://npmjs.com/package/ts-node[https://npmjs.com/package/ts-node]
+|typescript|Apache-2.0|https://npmjs.com/package/typescript[https://npmjs.com/package/typescript]
+|uuid|MIT|https://npmjs.com/package/uuid[https://npmjs.com/package/uuid]
+|yamljs|MIT|https://npmjs.com/package/yamljs[https://npmjs.com/package/yamljs]
 |===
 
-TypeScript projects are: 
+TypeScript projects are:
 
-* github-service
-* jenkins-service
-* pitometer-service 
-* servicenow-service
-* keptn/auth
-* keptn/control
-* keptn/eventbroker
-* keptn/eventbroker-ext
+* github.com/keptn/keptn/pitometer-service 
+* github.com/keptn-contrib/servicenow-service
 
 External dependencies of JavaScript projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
-|axios|MIT|https://www.npmjs.com/package/axios[https://www.npmjs.com/package/axios]
-|babel-eslint|MIT|https://www.npmjs.com/package/babel-eslint[https://www.npmjs.com/package/babel-eslint]
-|body-parser|MIT|https://www.npmjs.com/package/body-parser[https://www.npmjs.com/package/body-parser]
-|bootstrap|MIT|https://www.npmjs.com/package/bootstrap[https://www.npmjs.com/package/bootstrap]
-|bootstrap-vue|MIT|https://www.npmjs.com/package/bootstrap[https://www.npmjs.com/package/bootstrap]
-|cookie-parser|MIT|https://www.npmjs.com/package/cookie-parser[https://www.npmjs.com/package/cookie-parser]
-|core-js|MIT|https://www.npmjs.com/package/core-js[https://www.npmjs.com/package/core-js]
-|debug|MIT|https://www.npmjs.com/package/debug[https://www.npmjs.com/package/debug]
-|eslint|MIT|https://www.npmjs.com/package/eslint[https://www.npmjs.com/package/eslint]
-|eslint-plugin-vue|MIT|https://www.npmjs.com/package/eslint-plugin-vue[https://www.npmjs.com/package/eslint-plugin-vue]
-|express|MIT|https://www.npmjs.com/package/express[https://www.npmjs.com/package/express]
-|http-errors|MIT|https://www.npmjs.com/package/http-errors[https://www.npmjs.com/package/http-errors]
-|less|Apache-2.0|https://www.npmjs.com/package/less[https://www.npmjs.com/package/less]
-|less-loader|MIT|https://www.npmjs.com/package/less-loader[https://www.npmjs.com/package/less-loader]
-|momen|MIT|https://www.npmjs.com/package/moment[https://www.npmjs.com/package/moment]
-|morgan|MIT|https://www.npmjs.com/package/morgan[https://www.npmjs.com/package/morgan]
-|vue|MIT|https://www.npmjs.com/package/vue[https://www.npmjs.com/package/vue]
-|vue-router|MIT|https://www.npmjs.com/package/vue-router[https://www.npmjs.com/package/vue-router]
-|vue-template-compiler|MIT|https://www.npmjs.com/package/vue-template-compiler[https://www.npmjs.com/package/vue-template-compiler]
-|vuex|MIT|https://www.npmjs.com/package/vuex[https://www.npmjs.com/package/vuex]
+|axios|MIT|https://npmjs.com/package/axios[https://npmjs.com/package/axios]
+|babel-eslint|MIT|https://npmjs.com/package/babel-eslint[https://npmjs.com/package/babel-eslint]
+|body-parser|MIT|https://npmjs.com/package/body-parser[https://npmjs.com/package/body-parser]
+|bootstrap|MIT|https://npmjs.com/package/bootstrap[https://npmjs.com/package/bootstrap]
+|bootstrap-vue|MIT|https://npmjs.com/package/bootstrap[https://npmjs.com/package/bootstrap]
+|cookie-parser|MIT|https://npmjs.com/package/cookie-parser[https://npmjs.com/package/cookie-parser]
+|core-js|MIT|https://npmjs.com/package/core-js[https://npmjs.com/package/core-js]
+|debug|MIT|https://npmjs.com/package/debug[https://npmjs.com/package/debug]
+|eslint|MIT|https://npmjs.com/package/eslint[https://npmjs.com/package/eslint]
+|eslint-plugin-vue|MIT|https://npmjs.com/package/eslint-plugin-vue[https://npmjs.com/package/eslint-plugin-vue]
+|express|MIT|https://npmjs.com/package/express[https://npmjs.com/package/express]
+|http-errors|MIT|https://npmjs.com/package/http-errors[https://npmjs.com/package/http-errors]
+|less|Apache-2.0|https://npmjs.com/package/less[https://npmjs.com/package/less]
+|less-loader|MIT|https://npmjs.com/package/less-loader[https://npmjs.com/package/less-loader]
+|momen|MIT|https://npmjs.com/package/moment[https://npmjs.com/package/moment]
+|morgan|MIT|https://npmjs.com/package/morgan[https://npmjs.com/package/morgan]
+|vue|MIT|https://npmjs.com/package/vue[https://npmjs.com/package/vue]
+|vue-router|MIT|https://npmjs.com/package/vue-router[https://npmjs.com/package/vue-router]
+|vue-template-compiler|MIT|https://npmjs.com/package/vue-template-compiler[https://npmjs.com/package/vue-template-compiler]
+|vuex|MIT|https://npmjs.com/package/vuex[https://npmjs.com/package/vuex]
 |===
 
 JavaScript projects are:
 
-* bridge
-
-External dependencies of Ballerina projects are listed below:
-|===
-|*Software*|*License*|*Project Page*
-|ballerina-lang|Apache-2.0|https://github.com/ballerina-platform/ballerina-lang[https://github.com/ballerina-platform/ballerina-lang]
-|===
-
-Ballerina projects are:
-
-* slack-service
-
-External dependencies of the jenkins-service are listed below:
-|===
-|*Software*|*License*|*Project Page*
-|Jenkins|MIT|https://jenkins.io/
-|_Jenkins Plugins:_| | 
-|credentials-binding|MIT|https://github.com/jenkinsci/credentials-binding-plugin[https://github.com/jenkinsci/credentials-binding-plugin]
-|git|MIT|https://github.com/jenkinsci/git-plugin[https://github.com/jenkinsci/git-plugin]
-|github-branch-source|MIT|https://github.com/jenkinsci/github-branch-source-plugin[https://github.com/jenkinsci/github-branch-source-plugin]
-|google-oauth-plugin|Apache-2.0|https://github.com/jenkinsci/google-oauth-plugin[https://github.com/jenkinsci/google-oauth-plugin]
-|google-source-plugin|Apache-2.0|https://github.com/jenkinsci/google-source-plugin[https://github.com/jenkinsci/google-source-plugin]
-|kubernetes|Apache-2.0|https://github.com/jenkinsci/kubernetes-plugin[https://github.com/jenkinsci/kubernetes-plugin]
-|kubernetes-credentials-provider|MIT|https://github.com/jenkinsci/kubernetes-credentials-provider-plugin[https://github.com/jenkinsci/kubernetes-credentials-provider-plugin]
-|performance|MIT|https://github.com/jenkinsci/performance-plugin[https://github.com/jenkinsci/performance-plugin]
-|performance-signature-dynatracesaas|Apache-2.0|https://github.com/jenkinsci/performance-signature-dynatrace-plugin[https://github.com/jenkinsci/performance-signature-dynatrace-plugin]
-|performance-signature-ui|Apache-2.0|https://github.com/jenkinsci/performance-signature-dynatrace-plugin[https://github.com/jenkinsci/performance-signature-dynatrace-plugin]
-|workflow-aggregator|n/a|https://github.com/jenkinsci/workflow-aggregator-plugin[https://github.com/jenkinsci/workflow-aggregator-plugin]
-|workflow-job|n/a|https://github.com/jenkinsci/workflow-aggregator-plugin[https://github.com/jenkinsci/workflow-aggregator-plugin]
-|_Container tool:_| | 
-|tini|MIT|https://github.com/krallin/tini[https://github.com/krallin/tini]
-|===
+* github.com/keptn/keptn/bridge
 
 *Maintainers:*
 
