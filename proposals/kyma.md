@@ -8,9 +8,9 @@ Kyma goal is to solve 2 problems:
 - Difficulty of moving monolith legacy software into cloud
 - Challange related to choosing proper cloud-native tools to build production ready solutions on top of Kubernetes
 
-https://kubernetes.io/blog/2019/05/23/kyma-extend-and-build-on-kubernetes-with-ease/
-
-
+More details:
+Blog about Kyma on Kubernetes blog: https://kubernetes.io/blog/2019/05/23/kyma-extend-and-build-on-kubernetes-with-ease/
+Kyma official slide deck: https://docs.google.com/presentation/d/1mBaYSdOxT-3u_eXnGbkjfQ5k9ouIP8wm-CtTF7M7T10/
 
 *Statement on alignment with CNCF mission:*
 
