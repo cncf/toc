@@ -68,6 +68,7 @@ Jaeger project contains a number of sub-projects, such as client libraries, inte
     * @vprithvi (Uber)
     * @yurishkuro (Uber)
   * Jaeger UI
+    * @everett980 (Uber)
     * @tiffon (Uber)
     * @saminzadeh (Uber)
   * Jaeger client for C++
@@ -87,7 +88,7 @@ https://jaeger.devstats.cncf.io/d/4/companies-stats?orgId=1&var-period=m&var-met
 
 ## Have committers from at least two organizations.
 
-We currently have 7 committers from 2 organizations, Uber and Red Hat.
+We currently have 7 committers from 2 organizations, Uber and Red Hat, in the main backend repository, and more diversity in the client libraries.
 
 ## Have achieved and maintained a Core Infrastructure Initiative Best Practices Badge.
 
@@ -130,6 +131,12 @@ https://github.com/jaegertracing/jaeger/blob/master/ADOPTERS.md
   * https://expediadotcom.github.io/haystack/
   * Tracing and analysis system from Expedia.
   * Beyond simple tracing, allows to observe trends and setup anomaly detection.
+
+### Pinpoint
+
+  * https://naver.github.io/pinpoint/
+  * APM system developed by NaverCorp (S. Korea).
+  * Focused mostly on Java applications performance, for which it provides zero-touch instrumentation integrated with many OSS frameworks.
 
 ## Jaeger relationship to OpenTracing and OpenCensus
 
