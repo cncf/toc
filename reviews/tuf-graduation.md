@@ -32,7 +32,7 @@ Changes to the TUF standard largely come in the form of TAPs (TUF Augmentation P
 The 5 accepted TAPs have authors from 5 different organizations:
 * [TAP3](https://github.com/theupdateframework/taps/blob/master/tap3.md) and [TAP4](https://github.com/theupdateframework/taps/blob/master/tap4.md), by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (Conda), Evan Cordell (CoreOS / RedHat), Vladimir Diaz, Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
 * [TAP6](https://github.com/theupdateframework/taps/blob/master/tap6.md) by David Lawrence (Docker), Vladimir Diaz, Justin Cappos (NYU)
-* [TAP9](https://github.com/theupdateframework/taps/blob/master/tap9.md) by heartsucker (ATS)
+* [TAP9](https://github.com/theupdateframework/taps/blob/master/tap9.md) by heartsucker (HERE)
 * [TAP10](https://github.com/theupdateframework/taps/blob/master/tap10.md) by Vladimir Diaz
 
 There are 2 TAPs that are currently under consideration (both of which are likely to be accepted) with authors from 4 organizations:
