@@ -14,7 +14,7 @@ The Update Framework (TUF) helps developers maintain the security of a software 
 
 As an intentionally minimal security specification / framework, we deliberately do not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as Notary or the Python reference implementation, or the specification itself.  
 
-* Python reference implementation / specification (8 committers, 2 organizations)
+* Python reference implementation / specification (8 committers, 3 organizations)
 
   * Justin Cappos (NYU), Trishank Karthik Kuppusamy (Datadog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Vladimir Diaz, Sebastien Awwad (Conda), Joey Pabalinas (NYU), Marina Moore (NYU), Lois Anne Delong (NYU)
 
