@@ -44,7 +44,7 @@ There is also a TAPs from the automotive industry dealing with upgrading while c
 
 These demonstrate the breadth of contributions from different adopters and the way in which contributions are merged into the specification.
 
-Each part of TUF has seen activity both from core committers and external parties.  Of course the fewest commits have come in the TAPs and spec itself.   The TAPs have had 516 commits by 10 contributors (5 external, 2 were non-TAP authors).  The specification has had 59 commits by 7 contributors (4 external contributors).  Notary has had more than 2.8K commits from 60 contributors (52 external).  TUF's Python reference implementation has had more than 3.3K commits, by 33 contributors (26 external).   This demonstrates both activity and committer diversity.
+Each part of TUF has seen activity both from core committers and external parties.  Of course the fewest commits have come in the TAPs and spec itself.   The TAPs have had 575 commits by 10 contributors (5 external, 2 were non-TAP authors).  The specification has had 82 commits by 11 contributors (6 external contributors).  Notary has had more than 2.8K commits from 80 contributors (55 external).  TUF's Python reference implementation has had more than 3.3K commits, by 42 contributors (26 external).   This demonstrates both activity and committer diversity.
 
 ### A clear versioning scheme
 
