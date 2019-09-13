@@ -38,6 +38,7 @@ The 5 accepted TAPs have authors from 5 different organizations:
 There are 2 TAPs that are currently under consideration (both of which are likely to be accepted) with authors from 4 organizations:
 * [TAP5](https://github.com/theupdateframework/taps/blob/master/tap5.md) by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz, Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
 * [TAP8](https://github.com/theupdateframework/taps/blob/master/tap8.md) by Hannes Mehnert (OCaml / Cambridge University), Justin Cappos (NYU)
+* [TAP11](https://github.com/theupdateframework/taps/blob/master/tap11.md) by Marina Moore (NYU), Santiago Torres (NYU), Trishank Kuppusamy (Datadog), Sebastien Awwad (Conda), Justin Cappos (NYU)
 
 There is also a TAPs from the automotive industry dealing with upgrading while changing the TUF metadata version itself that is currently being iterated over.
 
