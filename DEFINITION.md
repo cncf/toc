@@ -67,7 +67,7 @@ diese Innovationen für alle zugänglich zu machen.
 
 ## Polski
 
-Technologie **Cloud Native** pozwalają organizacjom tworzyć i wykorzystywać skalowalne aplikacje w nowoczesnych, dynamicznych środowiskach takich jak chmury publiczne, prywatne czy hybrydowe. Przykładami tego podejścia technologicznego są kontenery aplikacyjne (ang. *containers*), mikrousługi (ang. *microservices*), platformy dla mikrousług (ang. *service mesh*), niezmienna infrastruktura (ang. *immutable infrastructure*) i deklaratywne interfejsy aplikacyjne (ang. *declarative APIs*).
+Technologie **Cloud Native** pozwalają organizacjom tworzyć i wykorzystywać skalowalne aplikacje w nowoczesnych, dynamicznych środowiskach takich jak chmury publiczne, prywatne czy hybrydowe. Przykładami tego podejścia technologicznego są wirtualne kontenery (ang. *containers*), mikrousługi (ang. *microservices*), platformy dla mikrousług (ang. *service mesh*), niezmienna infrastruktura (ang. *immutable infrastructure*) i deklaratywne interfejsy aplikacyjne (ang. *declarative APIs*).
 
 Wymienione technologie umożliwiają współistnienie luźno-powiązanych (ang. *loosely coupled*) systemów, które cechują się wysokim poziomem odporności, zarządzalności i monitorowalności. W powiązaniu z niezawodną automatyzacją pozwalają inżynierom regularnie i przewidywalnie wprowadzać istotne zmiany z minimalnym wysiłkiem.
 
