@@ -69,4 +69,5 @@ These documents may be found here:
 
 ### Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website).
 
-Our website has an [adoptions page](https://theupdateframework.github.io/adoptions.html) on it that lists the different projects.  We also have an [ADOPTERS.MD](https://github.com/theupdateframework/tuf/blob/develop/docs/ADOPTERS.md) which contains much the same information.
+Our website has an [adoptions page](https://theupdateframework.github.io/adoptions.html) on it that lists the different projects.  We also have an [ADOPTERS.MD](https://github.com/theupdateframework/tuf/blob/develop/docs/ADOPTERS.md) which contains much of the same information.  [Uptane](https://uptane.github.io/), the automotive version of TUF, also its own [adoptions page](https://uptane.github.io/adoptions.html).
+
