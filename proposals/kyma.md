@@ -12,13 +12,34 @@ More details:
 Blog about Kyma on Kubernetes blog: https://kubernetes.io/blog/2019/05/23/kyma-extend-and-build-on-kubernetes-with-ease/
 Kyma official slide deck: https://docs.google.com/presentation/d/1mBaYSdOxT-3u_eXnGbkjfQ5k9ouIP8wm-CtTF7M7T10/
 
+**Architecture**
+
+Three main components are:
+- _Application Connector_ that is a custom component to enable connectivity between legacy system and Kyma/Kubernetes
+- _Serverless_ based on Kubeless (in process of migrating to Knative) to enable rapid development
+- _Service Catalog_ based on Kubernetes Service Catalog. Used to expose connected applications into the cluster and to enable access to different services from hyperscalars (by default you have Azure, AWS and Google service brokers in the catalog)
+![](https://d33wubrfki0l68.cloudfront.net/8d90378749aacb4fa910b1fd0dffc9a414a870c6/e0413/images/blog/2019-05-23-kyma-extend-and-build-on-kubernetes-with-ease/ac-s-sc.svg)
+
+To enable developers to focus only on writing business code another components glued inside Kyma are:
+- Prometheus
+- Grafana
+- Loki
+- Jaeger
+- Minio (through our custom component that can be used in different scenarios and we will soon move it outside Kyma repository to enable wider adoption)
+- NATS
+- Dex
+- Knative eventing
+- Istio
+
+All those components, especially the 3 main "pillars" are integrated in single UI called "Console". This way first steps with Kyma and Kubernetes are easier as all Connectivity, Service Catalog and Serverless operations (and others) supported by nice User Interface.
+
 *Statement on alignment with CNCF mission:*
 
 Kyma project aligns with CNCF's mission by empowering organizations with:
 * Connector for old legacy software to enable their extensibility in Kubernetes
 * Project that integrates all cloud native solutions so they can focus on business code only
 
-*Sponsors from TOC:* tbd
+*Sponsors from TOC:* We did not contact offline any specific TOC member to ask for sponsorship
 
 *Preferred maturity level:* Sandbox
 
@@ -262,8 +283,11 @@ CI is based on Prow and the infrastructure is sponsored by SAP.
 *Communication Channels:*
 
 * http://slack.kyma-project.io
-* https://github.com/kyma-project
 * https://www.youtube.com/channel/UC8Q8bBtYe9gQN-dQ-_L8JvQ
+
+*Issue Tracker:*
+
+* https://github.com/kyma-project
 
 *Website:* https://kyma-project.io
 
@@ -277,12 +301,26 @@ CI is based on Prow and the infrastructure is sponsored by SAP.
 * https://twitter.com/kymaproject
 * https://www.linkedin.com/company/kyma-project/
 
-*Existing sponsorship:* SAP
+*Existing sponsorship:* SAP (around 50 people working full time)
 
 *Community size:*
 
 GitHub:
-- https://github.com/kyma-project/kyma/stargazers [740+ stars]
-- https://github.com/kyma-project/kyma/graphs/contributors [85+ contributors]
+- https://github.com/kyma-project/kyma/stargazers (in the main repository) [740+ stars]
+- https://github.com/kyma-project/kyma/graphs/contributors (in the main repository) [85+ contributors]
+- https://twitter.com/kymaproject [790+ followers]
 
 Slack workspace http://slack.kyma-project.io [820+ users]
+
+*Who is currently known to be using the project?*
+
+We are not doing any active research and do not have analytics that tell us how many times someone installs Kyma.
+From direct communication we know that https://www.netconomy.net/ is operating Kyma on theiry own and extend SAP products for their customers and hope soon they can write about in on our blog.
+Other early adopters mentioned on our website played with Kyma but we do not know if they used it on production.
+
+Important to know is that SAP wants to long term support the project and drive it with community as for SAP it is a standard extensibility framework for SAP customers -> https://blogs.sap.com/2019/05/07/now-available-the-sap-cp-extension-factory/.
+
+*Project logo*
+
+* https://github.com/kyma-incubator/artwork/blob/master/logos/kyma/Kyma-Logo-Symbol.svg
+* https://github.com/kyma-incubator/artwork/blob/master/logos/kyma/Kyma-Logo.svg
