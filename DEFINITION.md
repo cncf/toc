@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Deutsch](#deutsch)| [Español](#español) | [Français](#français) | [Português Brasileiro](#português-brasileiro) | [Русский](#русский)(in Chinese, Japanese, Korean, Brazilian, Portuguese, German, French and Spanish below)
+[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Deutsch](#deutsch)| [Español](#español) | [Français](#français) | [Polski](#polski) | [Português Brasileiro](#português-brasileiro) | [Русский](#русский)(in Chinese, Japanese, Korean, Brazilian, Portuguese, German, French and Spanish below)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -64,6 +64,14 @@ Die zugrundeliegenden Techniken ermöglichen die Umsetzung von entkoppelten Syst
 
 Die Cloud Native Computing Foundation fördert die Akzeptanz dieser Paradigmen durch die Ausgestaltung eines Open Source Ökosystems aus herstellerneutralen Projekten. Wir demokratisieren modernste und innovative Softwareentwicklungs-Patterns, um
 diese Innovationen für alle zugänglich zu machen.
+
+## Polski
+
+Technologie **Cloud Native** pozwalają organizacjom tworzyć i wykorzystywać skalowalne aplikacje w nowoczesnych, dynamicznych środowiskach takich jak chmury publiczne, prywatne czy hybrydowe. Przykładami tego podejścia technologicznego są wirtualne kontenery (ang. *containers*), mikrousługi (ang. *microservices*), platformy dla mikrousług (ang. *service mesh*), niezmienna infrastruktura (ang. *immutable infrastructure*) i deklaratywne interfejsy aplikacyjne (ang. *declarative APIs*).
+
+Wymienione technologie umożliwiają współistnienie luźno-powiązanych (ang. *loosely coupled*) systemów, które cechują się wysokim poziomem odporności, zarządzalności i monitorowalności. W powiązaniu z niezawodną automatyzacją pozwalają inżynierom regularnie i przewidywalnie wprowadzać istotne zmiany z minimalnym wysiłkiem.
+
+Intencją **Cloud Native Computing Foundation** jest przyczynienie się do adopcji tego paradygmatu poprzez wspieranie ekosystemu niezależnych projektów open-source. Demokratyzujemy wysokiej klasy wzorce tworzenia wolnego oprogramowania, aby uczynić te innowacje dostępne dla wszystkich.
 
 ## Português Brasileiro:
 
