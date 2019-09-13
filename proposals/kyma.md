@@ -64,8 +64,7 @@ Kyma repositories include:
 
 *External Dependencies:*
 
-** Golang package dependencies:
-
+* Golang package dependencies:<br>
 alecthomas-jsonschema      -       https://github.com/alecthomas/jsonschema/blob/master/COPYING      -       MIT License  <br>
 allegro-bigcache      -       https://github.com/allegro/bigcache/blob/master/LICENSE      -       Apache License 2.0  <br>
 alpine linux      -       https://github.com/alpinelinux/alpine-wiki/blob/master/LICENSE      -       MIT License  <br>
