@@ -16,7 +16,7 @@ As an intentionally minimal security specification / framework, we deliberately 
 
 * Python reference implementation / specification (8 committers, 2 organizations)
 
-  * Justin Cappos (NYU), Trishank Karthik Kuppusamy (Datadog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Vladimir Diaz, Sebastien Awwad (NYU), Joey Pabalinas (NYU), Marina Moore (NYU), Lois Anne Delong (NYU)
+  * Justin Cappos (NYU), Trishank Karthik Kuppusamy (Datadog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Vladimir Diaz, Sebastien Awwad (Conda), Joey Pabalinas (NYU), Marina Moore (NYU), Lois Anne Delong (NYU)
 
 * Notary (8 committers, 3 organizations)
 
