@@ -30,6 +30,8 @@ To enable developers to focus only on writing business code another components g
 - Dex
 - Knative eventing
 - Istio
+- Hydra by Ory
+- Kiali
 
 All those components, especially the 3 main "pillars" are integrated in single UI called "Console". This way first steps with Kyma and Kubernetes are easier as all Connectivity, Service Catalog and Serverless operations (and others) supported by nice User Interface.
 
