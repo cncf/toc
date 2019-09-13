@@ -5,7 +5,7 @@
 *Project Description:*
 
 Kyma goal is to solve 2 problems:
-- Difficulty of moving monolith legacy software into cloud
+- Difficulty of moving monolith legacy software into cloud. Enable legacy products to be enhanced and evolved with a side-by-side flexible cloud native runtime, supporting both lightweight functions, static content or heavyweight microservices.
 - Challange related to choosing proper cloud-native tools to build production ready solutions on top of Kubernetes
 
 More details:
@@ -33,7 +33,7 @@ To enable developers to focus only on writing business code another components g
 - Hydra by Ory
 - Kiali
 
-All those components, especially the 3 main "pillars" are integrated in single UI called "Console". This way first steps with Kyma and Kubernetes are easier as all Connectivity, Service Catalog and Serverless operations (and others) supported by nice User Interface.
+All those components, especially the 3 main "pillars" are integrated in single UI called "Console". This way first steps with Kyma and Kubernetes are easier as all Connectivity, Service Catalog and Serverless operations (and others) are supported by nice User Interface.
 
 *Statement on alignment with CNCF mission:*
 
