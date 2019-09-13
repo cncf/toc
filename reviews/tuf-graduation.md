@@ -27,7 +27,7 @@ As an intentionally minimal security specification / framework, we deliberately 
 
 We have had active contributions from an array of contributors across the CNCF landscape, more traditional software projects, and automakers.  One way to see this is via the substantial changes that made their way into the specification.
 
-Changes to the TUF standard largely come in the form of TAPs (TUF Augmentation Proposals).  There are 7 active, non-informational TAPs (TAP 3-6 and 8-10).  
+Changes to the TUF standard largely come in the form of TAPs (TUF Augmentation Proposals).  There are 8 active, non-informational TAPs (TAP 3-6 and 8-11).  
 
 The 5 accepted TAPs have authors from 5 different organizations:
 * [TAP3](https://github.com/theupdateframework/taps/blob/master/tap3.md) and [TAP4](https://github.com/theupdateframework/taps/blob/master/tap4.md), by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (Conda), Evan Cordell (CoreOS / RedHat), Vladimir Diaz, Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
