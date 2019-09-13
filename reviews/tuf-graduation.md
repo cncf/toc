@@ -39,6 +39,8 @@ There are 2 TAPs that are currently under consideration (both of which are likel
 * [TAP5](https://github.com/theupdateframework/taps/blob/master/tap5.md) by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz, Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
 * [TAP8](https://github.com/theupdateframework/taps/blob/master/tap8.md) by Hannes Mehnert (OCaml / Cambridge University), Justin Cappos (NYU)
 
+There are also TAPs from the automotive industry dealing with upgrading while changing the TUF metadata version itself and about specifying wireline formats that are currently being iterated over.
+
 These demonstrate the breadth of contributions from different adopters and the way in which contributions are merged into the specification.
 
 Each part of TUF has seen activity both from core committers and external parties.  Of course the fewest commits have come in the TAPs and spec itself.   The TAPs have had 516 commits by 10 contributors (5 external, 2 were non-TAP authors).  The specification has had 59 commits by 7 contributors (4 external contributors).  Notary has had more than 2.8K commits from 60 contributors (52 external).  TUF's Python reference implementation has had more than 3.3K commits, by 33 contributors (26 external).   This demonstrates both activity and committer diversity.
