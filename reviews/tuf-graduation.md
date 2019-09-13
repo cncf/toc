@@ -30,7 +30,7 @@ We have had active contributions from an array of contributors across the CNCF l
 Changes to the TUF standard largely come in the form of TAPs (TUF Augmentation Proposals).  There are 7 active, non-informational TAPs (TAP 3-6 and 8-10).  
 
 The 5 accepted TAPs have authors from 5 different organizations:
-* [TAP3](https://github.com/theupdateframework/taps/blob/master/tap3.md) and [TAP4](https://github.com/theupdateframework/taps/blob/master/tap4.md), by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz, Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
+* [TAP3](https://github.com/theupdateframework/taps/blob/master/tap3.md) and [TAP4](https://github.com/theupdateframework/taps/blob/master/tap4.md), by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (Conda), Evan Cordell (CoreOS / RedHat), Vladimir Diaz, Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
 * [TAP6](https://github.com/theupdateframework/taps/blob/master/tap6.md) by David Lawrence (Docker), Vladimir Diaz, Justin Cappos (NYU)
 * [TAP9](https://github.com/theupdateframework/taps/blob/master/tap9.md) by heartsucker (ATS)
 * [TAP10](https://github.com/theupdateframework/taps/blob/master/tap10.md) by Vladimir Diaz
