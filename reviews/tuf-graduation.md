@@ -39,7 +39,7 @@ There are 2 TAPs that are currently under consideration (both of which are likel
 * [TAP5](https://github.com/theupdateframework/taps/blob/master/tap5.md) by Trishank Karthik Kuppusamy (Datadog / NYU), Sebastien Awwad (NYU), Evan Cordell (CoreOS / RedHat), Vladimir Diaz, Jake Moshenko (CoreOS / RedHat), Justin Cappos (NYU)
 * [TAP8](https://github.com/theupdateframework/taps/blob/master/tap8.md) by Hannes Mehnert (OCaml / Cambridge University), Justin Cappos (NYU)
 
-There are also TAPs from the automotive industry dealing with upgrading while changing the TUF metadata version itself and about specifying wireline formats that are currently being iterated over.
+There is also a TAPs from the automotive industry dealing with upgrading while changing the TUF metadata version itself that is currently being iterated over.
 
 These demonstrate the breadth of contributions from different adopters and the way in which contributions are merged into the specification.
 
