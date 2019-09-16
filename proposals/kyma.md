@@ -6,7 +6,7 @@
 
 Kyma goal is to solve 2 problems:
 - Difficulty of moving monolith legacy software into cloud. Enable legacy products to be enhanced and evolved with a side-by-side flexible cloud native runtime, supporting both lightweight functions, static content or heavyweight microservices.
-- Challange related to choosing proper cloud-native tools to build production ready solutions on top of Kubernetes
+- Challenge related to choosing proper cloud-native tools to build production ready solutions on top of Kubernetes
 
 More details:
 Blog about Kyma on Kubernetes blog: https://kubernetes.io/blog/2019/05/23/kyma-extend-and-build-on-kubernetes-with-ease/
@@ -17,10 +17,10 @@ Kyma official slide deck: https://docs.google.com/presentation/d/1mBaYSdOxT-3u_e
 Three main components are:
 - _Application Connector_ that is a custom component to enable connectivity between legacy system and Kyma/Kubernetes
 - _Serverless_ based on Kubeless (in process of migrating to Knative) to enable rapid development
-- _Service Catalog_ based on Kubernetes Service Catalog. Used to expose connected applications into the cluster and to enable access to different services from hyperscalars (by default you have Azure, AWS and Google service brokers in the catalog)
+- _Service Catalog_ based on Kubernetes Service Catalog. Used to expose connected applications into the cluster and to enable access to different services from hyperscalers (by default you have Azure, AWS and Google service brokers in the catalog)
 ![](https://d33wubrfki0l68.cloudfront.net/8d90378749aacb4fa910b1fd0dffc9a414a870c6/e0413/images/blog/2019-05-23-kyma-extend-and-build-on-kubernetes-with-ease/ac-s-sc.svg)
 
-To enable developers to focus only on writing business code another components glued inside Kyma are:
+To enable developers to focus only on writing business code other components glued inside Kyma are:
 - Prometheus
 - Grafana
 - Loki
@@ -33,7 +33,7 @@ To enable developers to focus only on writing business code another components g
 - Hydra by Ory
 - Kiali
 
-All those components, especially the 3 main "pillars" are integrated in single UI called "Console". This way first steps with Kyma and Kubernetes are easier as all Connectivity, Service Catalog and Serverless operations (and others) are supported by nice User Interface.
+All those components, especially the 3 main "pillars" are integrated in a single UI called "Console". This way first steps with Kyma and Kubernetes are easier as all Connectivity, Service Catalog and Serverless operations (and others) are supported by nice User Interface.
 
 *Statement on alignment with CNCF mission:*
 
@@ -272,7 +272,7 @@ yaml.v2      -       https://github.com/go-yaml/yaml/blob/v2/LICENSE      -     
 * Krystian Cieslik @crabtree (SAP), since 07/2018
 * Adam Szecowka @aszecowka (SAP), since 07/2018
  
-Above are just first two commiters to the project once we moved it to public GitHub, but since day one there were much more regular commiters because of the size of the project
+Above are just first two committers to the project once we moved it to public GitHub, but since day one there were much more regular committers because of the size of the project
 
 *Current Maintainer*
 * https://github.com/kyma-project/kyma/blob/master/CODEOWNERS (SAP)
@@ -293,10 +293,10 @@ CI is based on Prow and the infrastructure is sponsored by SAP.
 *Website:* https://kyma-project.io
 
 *Release methodology and mechanics:*
-- Sematic Versioning with monthly release cycle for minor versions - https://github.com/kyma-project/kyma/releases
+- Semantic Versioning with monthly release cycle for minor versions - https://github.com/kyma-project/kyma/releases
 - We support only latest version and provide patches only for latest
 - We assure it is possible to always upgrade between minor versions
-- Full proces described here https://kyma-project.io/community/guidelines/release/#kyma-release-process-kyma-release-process
+- Full process described here https://kyma-project.io/community/guidelines/release/#kyma-release-process-kyma-release-process
 
 *Social media accounts:*
 * https://twitter.com/kymaproject
@@ -317,9 +317,9 @@ Slack workspace http://slack.kyma-project.io [820+ users]
 
 We are not doing any active research and do not have analytics that tell us how many times someone installs Kyma.
 From direct communication we know that https://www.netconomy.net/ is operating Kyma on theiry own and extend SAP products for their customers and hope soon they can write about in on our blog.
-Other early adopters mentioned on our website played with Kyma but we do not know if they used it on production.
+Other early adopters mentioned on our website played with Kyma but we do not know if they used it in production.
 
-Important to know is that SAP wants to long term support the project and drive it with community as for SAP it is a standard extensibility framework for SAP customers -> https://blogs.sap.com/2019/05/07/now-available-the-sap-cp-extension-factory/.
+Important to know is that SAP wants to support the project long term and drive it with community as for SAP it is a standard extensibility framework for SAP customers -> https://blogs.sap.com/2019/05/07/now-available-the-sap-cp-extension-factory/.
 
 *Project logo*
 
