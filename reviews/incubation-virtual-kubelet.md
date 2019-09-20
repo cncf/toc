@@ -13,7 +13,7 @@ To be accepted to incubating stage, a project must meet the sandbox stage requir
 
 * Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
 
-  * Adopters: [https://github.com/rook/rook/blob/master/ADOPTERS.md](https://github.com/rook/rook/blob/master/ADOPTERS.md)
+  * Adopters: [https://github.com/virtual-kubelet/virtual-kubelet/blob/master/ADOPTERS.md](https://github.com/virtual-kubelet/virtual-kubelet/blob/master/ADOPTERS.md)
 
 * Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 
