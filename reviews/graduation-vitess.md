@@ -22,7 +22,9 @@ In addition to these case studies, Slack has estimated that Vitess powers 40%+ o
 
 **Have a healthy number of committers**
 
-The Vitess [maintainers team](https://github.com/orgs/vitessio/teams/maintainers) consists of 13 current members. Over the last 12 months, [130 distinct users](https://vitess.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Last%20year&var-repogroup_name=All) have authored pull requests.
+The Vitess [maintainers team](https://github.com/orgs/vitessio/teams/maintainers) team currently exists of 13 members, with a healthy distribution of corporations represented (Hubspot, Pinterest, Nozzle, PlanetScale, Slack, Square).
+
+Over the last 12 months, [130 distinct users](https://vitess.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Last%20year&var-repogroup_name=All) have authored pull requests.
 
 **Demonstrate a substantial ongoing flow of commits and merged contributions**
 
