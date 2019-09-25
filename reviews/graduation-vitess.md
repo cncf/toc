@@ -2,7 +2,7 @@
 
 Since joining the CNCF in [February 2018](https://www.cncf.io/blog/2018/02/05/cncf-host-vitess/) as an incubation project, Vitess has built a healthy ecosystem of maintainers and production adoptions.
 
-On behalf of the maintainers team, we believe Vitess is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage) and meets the v1.2 criteria. As the criteria has evolved over since February 2018, we include also answers for incubation criteria.
+On behalf of the maintainers team, we believe Vitess is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage) and meets the v1.2 criteria. As the criteria has evolved since February 2018, we include also answers for incubation criteria.
 
 ### CNCF Incubation Criteria
 
@@ -28,7 +28,7 @@ Over the last 12 months, [130 distinct users](https://vitess.devstats.cncf.io/d/
 
 **Demonstrate a substantial ongoing flow of commits and merged contributions**
 
-Vitess maintains a healthy [ongoing flow of commits](https://vitess.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&from=now-2y&to=now&var-period=w&var-repogroups=All). The most notable change in commit activity comes from documentation being in the primary repository to now being hosted in vitessio/website.
+Vitess maintains a healthy [ongoing flow of commits](https://vitess.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&from=now-2y&to=now&var-period=w&var-repogroups=All). In late 2018, documentation moved from the primary repoistory to vitessio/vitess.
 
 **A clear versioning scheme**
 
@@ -59,20 +59,20 @@ We have achieved passing level criteria for [CII Best Practices](https://bestpra
 
 **Have completed an independent and third party security audit**
 
-A third party security audit funded by the CNCF was performed in February 2019. The [full report](https://github.com/vitessio/vitess/blob/master/doc/VIT-01-report.pdf) is available online. Only minor issues were discovered by the Cure53 team. To emphasize the first few sentences from the report's conclusion:
+A third party security audit funded by the CNCF was performed in February 2019. The [full report](https://vitess.io/blog/2019-03-12-vitess-security-audit/) is available online. Only minor issues were discovered by the Cure53 team. To emphasize the first few sentences from the report's conclusion:
 
 > The results from this Cure53 assessment funded by CNCF / The Linux Foundation certify that the Vitess database scaler is secure and robust. This very good outcome is achieved by limiting the attack surface, taking appropriate care of user-supplied input with security-driven best practices, as well as - to a certain extent - the usage of the Go language ecosystem. A team of five Cure53 testers investigated the software system during a budgeted period of 18 days in February 2019.
 
 **Adopt the CNCF Code of Conduct.**
 
-We have adopted the CNCF Code of Conduct. A link is [provided](https://github.com/vitessio/vitess/blob/master/CODE_OF_CONDUCT.md) in the primary repository.
+We have adopted the CNCF Code of Conduct. A [link](https://github.com/vitessio/vitess/blob/master/CODE_OF_CONDUCT.md) is provided in the primary repository.
 
 **Explicitly define a project governance and committer process.**
 
 The Vitess project governance is defined in the [primary repository](https://github.com/vitessio/vitess/blob/master/GOVERNANCE.md). To draw attention to key details:
 
 * Contributors can propose pull requests, which are reviewed and approved by maintainers.
-* New maintainers are nominated by any existing maintainer. There are no special requirements, other than to have shown a willingness and ability to participate in the project as a team player. Maintainers can not approve their-own PRs.
+* New maintainers are nominated by any existing maintainer. There are no special requirements, other than to have shown a willingness and ability to participate in the project as a team player. Maintainers cannot approve their own PRs.
 * A Project Management Committee (PMC) of 5 members oversees the process, and is responsible for ensuring the [Guiding Principles](https://github.com/vitessio/vitess/blob/master/GUIDING_PRINCIPLES.md) are followed. Sugu Sougoumarane is the founding and current PMC chair.
 
 **Have a public list of project adopters for at least the primary repository.**
