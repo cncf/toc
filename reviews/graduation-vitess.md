@@ -10,14 +10,15 @@ On behalf of the maintainers team, we believe Vitess is ready for [graduation st
 
 Vitess can be classified as both a middleware and orchestration system for managing sharded MySQL systems. It depends on a MySQL-like database (most deployments currently use MySQL 5.7) and a topology server (etcd is now the default, but zookeeper and consul are also supported).
 
-Production adoption depends on a high degree of trust from users, since database connectivity is actively routed through Vitess. Vitess unavailability would correspond with a production outage for most of our users.
+Adoption depends on a high degree of trust from users, since Vitess sits in front of the database and connectivity from applications to the database depend on Vitess being available. Vitess unavailability would correspond with a production outage for most of our users.
 
-JD.com was [recently featured](https://www.cncf.io/jdcom-case-study/) as a CNCF Case Study. We also include the following supporting statements from maintainers who are actively employed by companies to contribute to Vitess:
+Several Vitess users have been featured in CNCF case studies:
 
-* Square: [include supporting statement describing usage for Cash App]
-* Slack: [include supporting statement saying 40%+ of databases are powered by Vitess]
-* Hubspot: [include supporting statement]
-* Pinterest: [include supporting statement]
+* JD.com was [recently featured](https://www.cncf.io/jdcom-case-study/).
+* Square uses Vitess for their [Cash App](https://www.cncf.io/square-case-study/)
+* A case study on Nozzle will be published shortly.
+
+In addition to these case studies, Slack has estimated that Vitess powers 40%+ of their database servers, with the goal of migrating remaining databases by the end of 2019.
 
 **Have a healthy number of committers**
 
@@ -29,7 +30,7 @@ Vitess maintains a healthy [ongoing flow of commits](https://vitess.devstats.cnc
 
 **A clear versioning scheme**
 
-Vitess 3.0 currently uses Semantic Versioning. Similar to [other](http://www.databasesoup.com/2016/05/changing-postgresql-version-numbering.html) [database](https://www.cockroachlabs.com/blog/calendar-versioning/) products we have found semver difficult to follow. Following the release of Vitess 4.0 in November 2019, Vitess will be released under the [Vitess Release Cycle](https://github.com/vitessio/enhancements/blob/master/veps/vep-1.md).
+Vitess 3.0 currently uses Semantic Versioning. Similar to [other](http://www.databasesoup.com/2016/05/changing-postgresql-version-numbering.html) [database](https://www.cockroachlabs.com/blog/calendar-versioning/) products we have found semver difficult to follow. Following the release of Vitess 4.0 in November 2019, Vitess 5.0 will be released in February 2020 under the [Vitess Release Cycle](https://github.com/vitessio/enhancements/blob/master/veps/vep-1.md).
 
 ### CNCF Graduation Criteria
 
@@ -52,7 +53,7 @@ Committers by company [for the preceding 12 months](https://vitess.devstats.cncf
 
 **Have achieved and maintained a Core Infrastructure Initiative Best Practices Badge.**
 
-We have achieved passing level criteria for [CII Best Practices](https://bestpractices.coreinfrastructure.org/en/projects/1724). (@TODO: add link in the main repository)
+We have achieved passing level criteria for [CII Best Practices](https://bestpractices.coreinfrastructure.org/en/projects/1724). A badge is [displayed](https://github.com/vitessio/vitess) in the primary repository's `README.md`.
 
 **Have completed an independent and third party security audit**
 
@@ -76,7 +77,7 @@ The Vitess project governance is defined in the [primary repository](https://git
 
 The primary repository lists [key project adopters](https://github.com/vitessio/vitess/blob/master/ADOPTERS.md).
 
-A list of logos is also prominently displayed on the [Vitess.io homepage](https://vitess.io) under "Who uses Vitess". A link to instructions on how to [add a user logo](https://github.com/vitessio/website/#adding-a-user-logo) are included. Currently there are 16 logos featured.
+A list of logos is also prominently displayed on the [Vitess.io homepage](https://vitess.io) under "Who uses Vitess". A link to instructions on how to [add a user logo](https://github.com/vitessio/website/#adding-a-user-logo) are included.
 
 **Receive a supermajority vote from the TOC to move to graduation stage.**
 
