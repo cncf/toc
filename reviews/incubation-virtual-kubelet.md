@@ -3,7 +3,7 @@
 Virtual kubelet is currently a sandbox stage project.  Please refer to virtual kubelet's [sandbox stage proposal](../proposals/virtualkubelet.adoc) ("inception" at time of acceptance) for details on the sandbox requirements.
 
 In the time since being accepted to the sandbox stage (about 8 months ago), virtual kubelet has demonstrated healthy growth and progress.
-Four releases were completed which included v0.9.0, v0.10.0, v0.11.0, v1.0.0. In the last release, virtual kubelet was declared ready for production use. Providers were moved out of tree in v0.11.0 thus each provider is expected to manage their own releases because virtual kubelet core will not release binaries anymore. Virtual kubelet has also standarized on community guidelines and created a process for providers to maintain their respective providers within the virtual kubelet organization. 
+Four releases were completed which included v0.9.0, v0.10.0, v0.11.0, v1.0.0 and v1.1.0. In the v1.0.0 release, virtual kubelet was declared ready for production use. Providers were moved out of tree in v0.11.0 thus each provider is expected to manage their own releases because virtual kubelet core will not release binaries anymore. Virtual kubelet has also standarized on community guidelines and created a process for providers to maintain their respective providers within the virtual kubelet organization. 
 
 A [formalized governance policy](https://github.com/virtual-kubelet/community/blob/master/governance.md) has been approved and instituted for the project.
 
@@ -34,4 +34,3 @@ To be accepted to incubating stage, a project must meet the sandbox stage requir
   * CNCF DevStats: [https://virtualkubelet.devstats.cncf.io/](https://virtualkubelet.devstats.cncf.io)
     * [Community Stats](https://virtualkubelet.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1)
 
-Further details of Virtual Kubelet's growth and progress since entering the sandbox stage as well as use case details from the Virtual Kubelet community can be found in this [slide deck](https://docs.google.com/presentation/d/1kvZL0Ep3JHzgQsqTAcvNo6FTqIt4XMZi3Ny49bdP2Gw/edit?usp=sharing).
