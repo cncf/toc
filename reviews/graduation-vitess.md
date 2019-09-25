@@ -8,7 +8,7 @@ On behalf of the maintainers team, we believe Vitess is ready for [graduation st
 
 **Production usage by three independent users**
 
-Vitess can be classified as both a middleware and orchestration system for managing sharded MySQL systems. It depends on a MySQL-like database (most deployments currently use MySQL 5.7) and a topology server (etcd is now the default, but ZooKeeper and Consul are also supported).
+Vitess can be classified as both a middleware and an orchestration system for managing sharded MySQL systems. It depends on a MySQL-like database (most deployments currently use MySQL 5.7) and a topology server (etcd is now the default, but ZooKeeper and Consul are also supported).
 
 Adoption depends on a high degree of trust from users, since Vitess is responsible for the integrity and durability of canonical data, and connectivity from applications to the database depend on Vitess being available. Vitess unavailability generally causes a production outage for most users.
 
