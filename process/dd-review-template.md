@@ -49,7 +49,7 @@ As a secondary goal, it is in the interests of the broader CNCF ecosystem that t
 * release methodology and mechanics
 * community size and any existing sponsorship
 
-##Technical
+## Technical
 * An architectural, design and feature overview should be available. (add link)
 * What are the primary target cloud-native use cases? Which of those:
   * Can be accomplished now.
