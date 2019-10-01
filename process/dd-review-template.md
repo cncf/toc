@@ -39,15 +39,15 @@ As a secondary goal, it is in the interests of the broader CNCF ecosystem that t
 8. Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website).
 
 ### Documentation of CNCF Alignment (if not addressed above):
-name of project (must be unique within CNCF)
-project description (what it does, why it is valuable, origin and history)
-statement on alignment with CNCF charter mission
-sponsor from TOC (sponsor helps mentor projects)
-license (charter dictates Apache 2 by default)
-source control (GitHub by default)
-external dependencies (including licenses)
-release methodology and mechanics
-community size and any existing sponsorship
+* name of project (must be unique within CNCF)
+* project description (what it does, why it is valuable, origin and history)
+* statement on alignment with CNCF charter mission
+* sponsor from TOC (sponsor helps mentor projects)
+* license (charter dictates Apache 2 by default)
+* source control (GitHub by default)
+* external dependencies (including licenses)
+* release methodology and mechanics
+* community size and any existing sponsorship
 
 ##Technical
 * An architectural, design and feature overview should be available. (add link)
