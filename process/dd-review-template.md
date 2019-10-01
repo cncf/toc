@@ -10,13 +10,13 @@ To enable the voting TOC members to cast an informed vote about a project, it is
 
 As a secondary goal, it is in the interests of the broader CNCF ecosystem that there exists some reasonable degree of consensus across the community regarding the inclusion or otherwise of projects at the various maturity levels. Making sure that the relevant information is available, and any disagreement or misunderstanding as to it's validity are ideally resolved, helps to foster this consensus.
 
-## Statment of CNCF Alignment to TOC Principles
+## Statement of CNCF Alignment to TOC Principles
 1. Project is self-governing
 2. Is there a documented Code of Conduct that adheres to the CNCF guidelines?
 3. Does the project have production deployments that are high quality and high-velocity? (for incubation and graduated projects).
 (Sandbox level projects are targeted at earlier-stage projects to cultivate a community/technology)
 4. Is the project committed to achieving the CNCF principles and do they have a committed roadmap to address any areas of concern raised by the community?
-5. The project needs to be reviewed and document that the project has a fundamentally sound design without obvious critical compromises that will inhibit potential widespread adoption
+5. Document that the project has a fundamentally sound design without obvious critical compromises that will inhibit potential widespread adoption
 6. Document that the project is useful for cloud native deployments & degree that it's architected in a cloud native style
 7. Document that the project has an affinity for how CNCF operates and understand the expectation of being a CNCF project.
 
