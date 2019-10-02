@@ -68,20 +68,7 @@ _(12/July/2019)_
 
 * Existing Sponsors:
   * Red Hat (10-15 people working full-time)
-
-Supporting documentation -- not part of the PR
-The Operator Framework is an open source toolkit to manage Kubernetes native applications, called operators, in an effective, automated, and scalable way. Operators take advantage of Kubernetes's extensibility to deliver the automation advantages of cloud services like provisioning, scaling, and backup/restore while being able to run anywhere that Kubernetes can run. First introduced by CoreOS in 2016, the Operator Framework is continuing to be refined and more widely used.
-The Operator Framework (intro blog post) is an open source toolkit to manage Kubernetes native applications, called operators, in an effective, automated, and scalable way. Operators take advantage of Kubernetes's extensibility to deliver the automation advantages of cloud services like provisioning, scaling, and backup/restore while being able to run anywhere that Kubernetes can run.
-The framework consists of:
-Operator SDK: Allows your developers to build an operator based on your expertise without requiring knowledge of Kubernetes API complexities.
-Operator Lifecycle Manager: Helps you to install, update, and generally manage the lifecycle of all of the operators (and their associated services) running across your clusters.
-Operator Marketplace: A conduit to deliver operators from a variety of vendors & community projects.
-Operator Metering: Operator metering is responsible for collecting metrics and other information about what's happening in a Kubernetes cluster, and providing a way to create reports on the collected data.
-
-
-Operator Registry: A registry that stores operator data to be supplied to the Operator Lifecycle Manager
-Community Operators: A canonical source for Kube Operators that appears in OperatorHub.io
-The Operator Framework has a wide user base that aligns closely with the Cloud Native Computing Foundation (CNCF) mission as described in section 1 of the CNCF Charter.
+  
 We hope that by bringing the Operator Framework project under the CNCF umbrella as a neutral host, we will be able to further expand the development community and the further expand the adoption of the project.
 Website: https://operatorhub.io/
 GitHub: https://github.com/operator-framework
