@@ -50,7 +50,7 @@ enables greater flexibility in defining operational procedures.
 * The declarative approach allows to even change automation at runtime without
 any need for manual reconfiguration or touching tool integrations.
 
-In the current version keptn focussed on three major use cases for day 1 and day
+In the current version keptn focused on three major use cases for day 1 and day
 2 operations:
 
 * Declarative multistage delivery pipelines with automated quality gates.
@@ -110,8 +110,6 @@ No sponsors yet.
 *External Dependencies:*
 
 External dependencies of keptn are listed below:
-
-(Will be updated based on the latest release, before presenting to TOC)
 
 |===
 |*Software*|*License*|*Project Page*
