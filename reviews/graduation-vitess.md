@@ -18,7 +18,7 @@ Several Vitess users have been featured in CNCF case studies:
 * Square uses Vitess for their [Cash App](https://www.cncf.io/square-case-study/)
 * A case study on Nozzle will be published shortly.
 
-In addition to these case studies, Slack has estimated that Vitess powers 40%+ of their database servers, with the goal of migrating remaining databases by the end of 2019.
+In addition to these case studies, Slack has estimated that Vitess powers 40%+ of their database servers, with the goal of migrating remaining databases by mid 2010.
 
 **Have a healthy number of committers**
 
