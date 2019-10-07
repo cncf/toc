@@ -16,23 +16,23 @@ Several Vitess users have been featured in CNCF case studies:
 
 * JD.com was [recently featured](https://www.cncf.io/jdcom-case-study/).
 * Square uses Vitess for their [Cash App](https://www.cncf.io/square-case-study/)
-* A case study on Nozzle will be published shortly.
+* Case studies on Nozzle and Slack will be published shortly.
 
-In addition to these case studies, Slack has estimated that Vitess powers 40%+ of their database servers, with the goal of migrating remaining databases by mid 2010.
+In addition to these case studies, Slack has estimated that Vitess powers 40%+ of their database servers, with the goal of migrating remaining databases by mid 2020.
 
 **Have a healthy number of committers**
 
-The Vitess [maintainers team](https://github.com/orgs/vitessio/teams/maintainers) team currently exists of 14 members, with a healthy distribution of corporations represented (Hubspot, Pinterest, Nozzle, PlanetScale, Slack, Square).
+The Vitess [maintainers team](https://github.com/orgs/vitessio/teams/maintainers) team currently consists of 14 members, with a healthy distribution of corporations represented (Hubspot, Pinterest, Nozzle, PlanetScale, Slack, Square).
 
 Over the last 12 months, [130 distinct users](https://vitess.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Last%20year&var-repogroup_name=All) have authored pull requests.
 
 **Demonstrate a substantial ongoing flow of commits and merged contributions**
 
-Vitess maintains a healthy [ongoing flow of commits](https://vitess.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&from=now-2y&to=now&var-period=w&var-repogroups=All). In late 2018, documentation moved from the primary repoistory to vitessio/vitess.
+Vitess maintains a healthy [ongoing flow of commits](https://vitess.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&from=now-2y&to=now&var-period=w&var-repogroups=All). In late 2018, documentation moved from the primary repository to vitessio/vitess.
 
 **A clear versioning scheme**
 
-Vitess 3.0 currently uses Semantic Versioning. Similar to [other](http://www.databasesoup.com/2016/05/changing-postgresql-version-numbering.html) [database](https://www.cockroachlabs.com/blog/calendar-versioning/) products we have found semver difficult to follow. Following the release of Vitess 4.0 in November 2019, Vitess 5.0 will be released in February 2020 under the [Vitess Release Cycle](https://github.com/vitessio/enhancements/blob/master/veps/vep-1.md).
+Vitess 3.0 currently uses Semantic Versioning. Similar to [other](http://www.databasesoup.com/2016/05/changing-postgresql-version-numbering.html) [database](https://www.cockroachlabs.com/blog/calendar-versioning/) products semver has been difficult to follow. Following the release of Vitess 4.0 in November 2019, Vitess 5.0 will be released in February 2020 under the [Vitess Release Cycle](https://github.com/vitessio/enhancements/blob/master/veps/vep-1.md).
 
 ### CNCF Graduation Criteria
 
@@ -59,7 +59,7 @@ We have achieved passing level criteria for [CII Best Practices](https://bestpra
 
 **Have completed an independent and third party security audit**
 
-A third party security audit funded by the CNCF was performed in February 2019. The [full report](https://vitess.io/blog/2019-03-12-vitess-security-audit/) is available online. Only minor issues were discovered by the Cure53 team. To emphasize the first few sentences from the report's conclusion:
+A third-party security audit funded by the CNCF was performed in February 2019. The [full report](https://vitess.io/blog/2019-03-12-vitess-security-audit/) is available online. Only minor issues were discovered by the Cure53 team. To emphasize the first few sentences from the report's conclusion:
 
 > The results from this Cure53 assessment funded by CNCF / The Linux Foundation certify that the Vitess database scaler is secure and robust. This very good outcome is achieved by limiting the attack surface, taking appropriate care of user-supplied input with security-driven best practices, as well as - to a certain extent - the usage of the Go language ecosystem. A team of five Cure53 testers investigated the software system during a budgeted period of 18 days in February 2019.
 
