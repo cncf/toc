@@ -2,7 +2,7 @@
 
 The goal of the Falco project is to provide cloud native runtime security with a focus on Kubernetes intrusion & anomaly detection. Falco achieves this through the use of eBPF, Linux kernel probes, and the Kubernetes audit logging API to create an event stream of low level system and orchestrator events. This includes network connection info, file opens/writes, process information, and Kubernetes API calls. Falco also polls metadata (labels, resource names, container info, etc) from the Kubernetes API server and the underlying container runtime. 
 
-The Falco engine applies rule sets (or policies) to this event stream to identify potentially malicious behavior, or to simply log activity on a Kubernetes cluster for later auditing or review. The Kubernetes metadata can be incorporated into the rule conditions to allow rules to apply to only particular resources in a Kubernetes cluster. Falco alerts can be sent to a wide range of destinations including logging arggreation services, pub/sub services, serverles functions, and more. This allows Falco users to integrate Falco alerts into their existing incident response and Ops/SRE workflows.
+The Falco engine applies rule sets (or policies) to this event stream to identify potentially malicious behavior, or to simply log activity on a Kubernetes cluster for later auditing or review. The Kubernetes metadata can be incorporated into the rule conditions to allow rules to apply to only particular resources in a Kubernetes cluster. Falco alerts can be sent to a wide range of destinations including logging aggregation services, pub/sub services, serverles functions, and more. This allows Falco users to integrate Falco alerts into their existing incident response and Ops/SRE workflows.
 
 Falco entered the CNCF Sandbox on October 11th, 2018. Please see the project's [Sandbox proposal](https://github.com/cncf/toc/blob/master/proposals/falco.adoc). 
 
@@ -15,7 +15,7 @@ In short, the Falco project has seen terrific growth and project participation s
 * The project has seen an increase in integrations, as well as Falco being incorporated into other products (Sumo Logic, Altran).
 * The community has seen increased participation and activity.
 * Public end users are documented in the projects' [ADOPTERS.md](https://github.com/falcosecurity/falco/blob/dev/ADOPTERS.md). Two end users are speaking at Kubecon NA 2019.
-* The project completed a security audit and fixed 14 security bugs.
+* The project completed a security audit and fixed 13 of 14 security bugs. The audit will be published when the last bug is fixed within the next two releases (~1 month).
 * The project successfully participated in the Google Summer of Code.
 * The project successfully defined and shipped a roadmap. 
 
@@ -52,7 +52,7 @@ Downloads and Docker Hub pulls increased by 179% and 247% respectively.
 
 Integrations have been a major focus of the Falco team over the last year. Falco's usefulness is magnified when its data can be easily sent to an end user's existing Ops and SRE tooling. The Falco project can count over 40 integrations in a number of categories.
 
-- **Orchestrators:** Kuberenetes, Mesosphere
+- **Orchestrators:** Kubernetes, Mesosphere
 - **Container runtime:** Docker, Containerd, CRI-O, rkt, lxc
 - **Logging:** Splunk, Datadog, Elasticsearch, Sumo Logic, Stackdriver Logging, Fluentd, Fluentbit, Kibana, Grafana Loki
 - **Pub/Sub:** NATS, AWS SNS, Google Pub/Sub
