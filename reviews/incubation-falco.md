@@ -14,7 +14,7 @@ In short, the Falco project has seen terrific growth and project participation s
 * Downloads have seen significant growth.
 * The project has seen an increase in integrations, as well as Falco being incorporated into other products (Sumo Logic, Altran).
 * The community has seen increased participation and activity.
-* Public end users are documenting in the projects' [ADOPTERS.md](https://github.com/falcosecurity/falco/blob/dev/ADOPTERS.md). Two end users are speaking at Kubecon NA 2019.
+* Public end users are documented in the projects' [ADOPTERS.md](https://github.com/falcosecurity/falco/blob/dev/ADOPTERS.md). Two end users are speaking at Kubecon NA 2019.
 * The project completed a security audit and fixed 14 security bugs.
 * The project successfully participated in the Google Summer of Code.
 * The project successfully defined and shipped a roadmap. 
@@ -23,7 +23,7 @@ In short, the Falco project has seen terrific growth and project participation s
 
 #### Github
 
-The CNCF provides Falco Github metrics through it's [devstats site](https://falco.devstats.cncf.io/d/65/summary-dashboard?orgId=1&from=now-3y&to=now-1w&var-period=m&var-repo_name=Falco&var-repogroup_name=All&var-repogroups=All). The devstats metrics show that the Falco team has maintained a constant flow of commits, and has increased the velocity of commits. This is due in part to Sysdig's sponsorship of the project, providing 4 full time employees for the project. Overall comitters increased by 40 to 56, showing that while the sponsorship does influence commit velocity, the project is taking commits from a wider group outside of Sysdig. This is also evidenced by the Contributing Companies metric increasing from a max of 7 to a max of 13.
+The CNCF provides Falco Github metrics through its [devstats site](https://falco.devstats.cncf.io/d/65/summary-dashboard?orgId=1&from=now-3y&to=now-1w&var-period=m&var-repo_name=Falco&var-repogroup_name=All&var-repogroups=All). The devstats metrics show that the Falco team has maintained a constant flow of commits, and has increased the velocity of commits. This is due in part to Sysdig's sponsorship of the project, providing 4 full time employees for the project. Overall comitters increased by 40 to 56, showing that while the sponsorship does influence commit velocity, the project is taking commits from a wider group outside of Sysdig. This is also evidenced by the Contributing Companies metric increasing from a max of 7 to a max of 13.
 
 | GitHub |Pre-Sandbox* (< 10-2018) | Post-Sandbox (>= 10-2018) | | 
 |--------|-------------------------|---------------------------|-|
@@ -50,7 +50,7 @@ Downloads and Docker Hub pulls increased by 179% and 247% respectively.
 
 ### Integrations
 
-Integrations have been a major focus of the Falco team over the last year. Falco's usefulness is magnified when it's data can be easily sent to an end user's existing Ops and SRE tooling. The Falco project can count over 40 integrations in a number of categories.
+Integrations have been a major focus of the Falco team over the last year. Falco's usefulness is magnified when its data can be easily sent to an end user's existing Ops and SRE tooling. The Falco project can count over 40 integrations in a number of categories.
 
 - **Orchestrators:** Kuberenetes, Mesosphere
 - **Container runtime:** Docker, Containerd, CRI-O, rkt, lxc
@@ -63,8 +63,8 @@ Integrations have also been an easy way for Falco to encourage external contribu
 
 One of the other ways Falco is being integrated is by other CN ecosystem members including Falco in their product or service. Significant examples of these integrations include:
 
-* **Sumo Logic:** Sumo Logic integrates Falco as part of it's [Continuous Intelligence Platform for Kubernetes](https://www.sumologic.com/solutions/kubernetes/). Sumo Logic also integrates other CNCF projects such as Prometheus, and Fluentd; as well as the OSS project Fluentbit.
-* **Atran:** Altran has integrated Falco into it's Secure Cloud Native Fabric product along with other OSS projects such as Istio, OSSEC, Kube-bench, Envoy, Cloud Custodian, Clair, Anchore, and more. More information is available via Altran's [whitepaper (pdf)](https://setns.run/altranwp). 
+* **Sumo Logic:** Sumo Logic integrates Falco as part of its [Continuous Intelligence Platform for Kubernetes](https://www.sumologic.com/solutions/kubernetes/). Sumo Logic also integrates other CNCF projects such as Prometheus, and Fluentd; as well as the OSS project Fluentbit.
+* **Atran:** Altran has integrated Falco into its Secure Cloud Native Fabric product along with other OSS projects such as Istio, OSSEC, Kube-bench, Envoy, Cloud Custodian, Clair, Anchore, and more. More information is available via Altran's [whitepaper (pdf)](https://setns.run/altranwp). 
 
 **Note:** Not all integrations are created equal. Some of the above integrations are core changes the Falco project had to make to the Falco code base itself. Examples include Containerd support, CRI-O support, gRPC, and Prometheus. Other integrations are configuring existing tooling to consume Falco alerts. These integrations are either published as documentation, blog posts, or sub projects (such as the Falco [Kubernetes Response Engine](https://github.com/falcosecurity/kubernetes-response-engine)). 
 
