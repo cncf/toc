@@ -2,7 +2,7 @@
 
 The goal of the Falco project is to provide cloud native runtime security with a focus on Kubernetes intrusion & anomaly detection. Falco achieves this through the use of eBPF, Linux kernel probes, and the Kubernetes audit logging API to create an event stream of low level system and orchestrator events. This includes network connection info, file opens/writes, process information, and Kubernetes API calls. Falco also polls metadata (labels, resource names, container info, etc) from the Kubernetes API server and the underlying container runtime. 
 
-The Falco engine applies rule sets (or policies) to this event stream to identify potentially malicious behavior, or to simply log activity on a Kubernetes cluster for later auditing or review. The Kubernetes metadata can be incorporated into the rule conditions to allow rules to apply to only particular resources in a Kubernetes cluster. Falco alerts can be sent to a wide range of destinations including logging aggregation services, pub/sub services, serverles functions, and more. This allows Falco users to integrate Falco alerts into their existing incident response and Ops/SRE workflows.
+The Falco engine applies rule sets (or policies) to this event stream to identify potentially malicious behavior, or to simply log activity on a Kubernetes cluster for later auditing or review. The Kubernetes metadata can be incorporated into the rule conditions to allow rules to apply to only particular resources in a Kubernetes cluster. Falco alerts can be sent to a wide range of destinations including logging aggregation services, pub/sub services, serverless functions, and more. This allows Falco users to integrate Falco alerts into their existing incident response and Ops/SRE workflows.
 
 Falco entered the CNCF Sandbox on October 11th, 2018. Please see the project's [Sandbox proposal](https://github.com/cncf/toc/blob/master/proposals/falco.adoc). 
 
@@ -43,7 +43,7 @@ Downloads and Docker Hub pulls increased by 179% and 247% respectively.
 | Eco System | Pre-Sandbox* (< 10-2018) | Post-Sandbox (>= 10-2018) ||
 |------------|-------|----------|---------|
 | Docker Hub Pulls | 1,918,000 | 6,670,000 (+247%) | Current Velocity: ~ 400K/Month |
-| Downloads | 43,482 | 121,270 (+179%) | dpkg/rpm |
+| Downloads | 72,333 | 244801 (+238%) | dpkg/rpm |
 | Integrations | 8 | 40 (+400%) | 8 CNCF Projects |
 
 \* Pre-Sandbox is a 29 month period (May 2016-Oct 2018)
