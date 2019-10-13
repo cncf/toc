@@ -13,7 +13,7 @@ It provides Prometheus-compatible querying API and it supports PromQL.
 
 _History_:
 
-- Current release: 1.19.2
+- Current release: 1.28.0
 - May, 2019: single-node and cluster versions were open-sourced. https://blog.usejournal.com/open-sourcing-victoriametrics-f31e34485c2b
 - January, 2019: the first production use
 - December, 2018: data storage format has been stabilized
@@ -87,9 +87,10 @@ None
 
 *Communication channels*
 
-- https://groups.google.com/forum/#!forum/victorametrics-users
+- http://slack.victoriametrics.com
 - https://t.me/VictoriaMetrics_en - English-speaking users
 - https://t.me/VictoriaMetrics_ru1 - Russian-speaking users
+- https://groups.google.com/forum/#!forum/victorametrics-users
 
 
 *Issue tracker*
@@ -109,7 +110,7 @@ Releases are published in the following forms:
 
 - Source code - https://github.com/VictoriaMetrics/VictoriaMetrics/releases
 - Binary executables - https://github.com/VictoriaMetrics/VictoriaMetrics/releases
-- Docker images - https://hub.docker.com/r/victoriametrics/victoria-metrics . Previous docker images were published at https://hub.docker.com/r/valyala/victoria-metrics
+- Docker images - https://hub.docker.com/r/victoriametrics/victoria-metrics
 
 
 *Social media accounts*
@@ -121,18 +122,18 @@ https://twitter.com/MetricsVictoria
 
 Github stats:
 
-- Stars: 1k+
-- Contributors: 8
-- Commits: 300+
-- Forks: 50+
+- Stars: 1250+
+- Contributors: 11
+- Commits: 440+
+- Forks: 72+
 
 Telegram stats:
 
-- 127+ members at https://t.me/VictoriaMetrics_ru1
+- 152+ members at https://t.me/VictoriaMetrics_ru1
 
 Slack stats:
 
-- 55+ members at http://slack.victoriametrics.com
+- 95+ members at http://slack.victoriametrics.com
 
 
 VictoriaMetrics is used in production by many users starting from January, 2019. Here are a few of public users:
