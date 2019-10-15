@@ -74,10 +74,15 @@ See the voting policy [here](docs/voting.md).
 
 The TOC has approved the formation of [SIGs](sigs/cncf-sigs.md).
 Currently, the following Special Interest Groups are active: 
-[SIG-Security](https://github.com/cncf/sig-security)
-[SIG-Storage](https://github.com/cncf/sig-storage) 
+* [SIG-Security](https://github.com/cncf/sig-security)
+* [SIG-Storage](https://github.com/cncf/sig-storage) 
+* [SIG-App-Delivery](https://github.com/cncf/sig-app-delivery)
+
 Proposed: 
-[SIG-App-delivery](https://github.com/cncf/sig-app-delivery)
+* [SIG-Network](https://github.com/cncf/sig-network)
+* [SIG-Runtime](https://github.com/cncf/sig-runtime)
+
+
 ## Working Groups
 
 The TOC has created the following working groups to investigate and discuss the following topics:
