@@ -27,12 +27,14 @@ The CNCF provides Falco Github metrics through its [devstats site](https://falco
 
 | GitHub |Pre-Sandbox* (< 10-2018) | Post-Sandbox (>= 10-2018) | | 
 |--------|-------------------------|---------------------------|-|
-| Commits| 3051 (24 per week)| 2382 (48 per week) |+100% increase |
-| Committers | 16 | 56 (+250%) | |
-| Contributors | Avg: 7 Max: 25 | Avg: 13 (+85%) Max: 55 (+120%) |28 Day MA |
-| Contributing Companies | Avg: 2 Max: 7 | Avg: 7 (+250%) Max: 13 (+85%) | 28 Day MA |
-| Stars | 945 | 1820 (+92%) | |
+| Commits| 3051 (24 per week)| 2642 (49 per week) |+104% increase |
+| Committers | 16 | 58 (+262%) | |
+| Contributors | Avg: 7 Max: 25 | Avg: 27 (+285%) Max: 55 (+120%) |28 Day MA |
+| Contributing Companies | Avg: 2 Max: 7 | Avg: 7 (+250%) Max: 15 (+114%) | 28 Day MA |
+| Stars | 945 | 1835 (+94%) | |
 | CII Progress| 0% | 70% to “passing” | |
+
+**Note:** Post Sandbox #'s as of 2019-10-13
 
 \* Pre-Sandbox is a 29 month period (May 2016-Oct 2018)
 
@@ -42,9 +44,11 @@ Downloads and Docker Hub pulls increased by 179% and 247% respectively.
 
 | Eco System | Pre-Sandbox* (< 10-2018) | Post-Sandbox (>= 10-2018) ||
 |------------|-------|----------|---------|
-| Docker Hub Pulls | 1,918,000 | 6,670,000 (+247%) | Current Velocity: ~ 400K/Month |
-| Downloads | 72,333 | 244801 (+238%) | dpkg/rpm |
-| Integrations | 8 | 40 (+400%) | 8 CNCF Projects |
+| Docker Hub Pulls | 1,918,000 | 6,762,966 (+252%) | Current Velocity: ~ 400K/Month |
+| Downloads | 110,000 | 270,000 (+145%) | dpkg/rpm |
+| Integrations | 9 | 40 (+344%) | 8 CNCF Projects |
+
+**Note:** Post Sandbox #'s as of 2019-10-13
 
 \* Pre-Sandbox is a 29 month period (May 2016-Oct 2018)
 
@@ -75,10 +79,12 @@ The Falco project has grown into a vibrant community of end users and project me
 | Slack | Pre-Sandbox* (< 10-2018)|Post-Sandbox (>= 10-2018)| |
 |-------|-------------------------|-------------------------|-|
 |Slack Members|1436|2466 (+71%)||
-|Slack WAU|93|213 (+129%)|Weekly Active Users|
-|Slack WMPM|34|68 (+100%)|Weekly Members Posting Messages|
-|Slack DAU|34|104 (+205%)|Daily Active Users|
-|Slack DMPM|12|25 (+108%)|Daily Members Posting Messages|
+|Slack WAU|93|221 (+137%)|Weekly Active Users|
+|Slack WMPM|34|53 (+55%)|Weekly Members Posting Messages|
+|Slack DAU|86 (+152%)|Daily Active Users|
+|Slack DMPM|12|23 (+91%)|Daily Members Posting Messages|
+
+**Note:** Post Sandbox #'s as of 2019-10-13
 
 \* Pre-Sandbox is a 29 month period (May 2016-Oct 2018)
 
