@@ -10,6 +10,8 @@ The Update Framework (TUF) helps developers maintain the security of a software 
 * While these integrations all use the TUF specification, the implementations vary.  Datadog, OTAinfo, and LEAP use the Python reference implementation, most cloud companies use Notary, Google is integrating their own Go implementation into Fuschia, and most automobiles use custom variants written by different automotive vendors.  
 * More detail about adoption, including some of the in progress adoptions, can be found here:  https://theupdateframework.github.io/adoptions.html
 
+Apart from the Docker, LEAP, and AppContainer adoptions (which happened prior to joining the CNCF), these adoptions have all happened while TUF is in incubation.
+
 ### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.  The committers should come from at least two organizations.
 
 As an intentionally minimal security specification / framework, we deliberately do not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as Notary or the Python reference implementation, or the specification itself.  
