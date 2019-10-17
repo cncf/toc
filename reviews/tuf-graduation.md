@@ -74,3 +74,8 @@ These documents may be found here:
 
 Our website has an [adoptions page](https://theupdateframework.github.io/adoptions.html) on it that lists the different projects.  We also have an [ADOPTERS.MD](https://github.com/theupdateframework/tuf/blob/develop/docs/ADOPTERS.md) which contains much of the same information.  [Uptane](https://uptane.github.io/), the automotive version of TUF, also its own [adoptions page](https://uptane.github.io/adoptions.html).
 
+### Alternatives to TUF
+
+The most common alternative to TUF involves using either a signing key on the server (e.g., TLS) or on a server as part of software creation (e.g., GPG signing in a build farm).  Either way, the fundamental difference is that a single key / server compromise can result in an attacker having the ability to install arbitrary code on end user machines.  Existing specifications / proposals like OMA-DM, SUIT, ITU-T X.1373, as well as common use patterns for GPG/PGP/RSA signing and TLS all have this flaw.  
+
+In contrast, TUF is designed with the assumption that the company deploying TUF may not have perfect security.  In other words, a key and/or server will be compromised at some point.  TUF is focused on preventing an attacker from performing harmful attacks while allowing the operator to recover to a secure baseline.```
