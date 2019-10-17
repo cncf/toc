@@ -2,11 +2,11 @@
 
 *Name of project:* Harbor
 
-*Description:* Harbor is an open source cloud native registry that provides trust, compliance, performance, and interoperability. As a private on-premises registry, Harbor fills a gap for organizations that prefer not to use a public or cloud-based registry or want a consistent experience across clouds.
+*Description:* Harbor is an open source cloud native registry that provides trust, compliance, performance, and interoperability. As a private on-premises registry, Harbor fills a gap for organizations that prefer not to use a public or cloud-based registry or want a consistent experience across clouds. Harbor secures images with role-based access control, scans images for vulnerabilities, and signs images as trusted. A CNCF Incubating project, Harbor helps you consistently and securely manage images across cloud native compute platforms like Kubernetes and Docker
 
 === Why does CNCF need a container registry?
 
-The CNCF has an impressive portfolio of projects that can be leveraged to build and run complex distributed systems; a gap, however, exists without a secure container registry. In particular, no other open source container registry offers the featureset present in Harbor.
+The CNCF has an impressive portfolio of projects that can be leveraged to build and run complex distributed systems; a gap, however, exists without a secure container registry. In particular, no other open source container registry offers the feature set present in Harbor.
 
 Harbor's features and community are a natural fit for the CNCF. A donation would ensure a vendor-neutral home for the project, while increasing community involvement and feature velocity, and a tighter alignment between Harbor and other CNCF projects.
 
