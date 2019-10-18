@@ -1,65 +1,91 @@
-== Harbor Proposal
+== Harbor Graduation Proposal
+
+Since joining the CNCF in [July 2018](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/) as a Sandbox project and in [November 2018](https://www.cncf.io/blog/2018/11/13/harbor-into-incubator/) moving to an Incubating Project, Harbor has built a healthy ecosystem of users, maintainers, and production implementations.
+
+On behalf of the maintainers team, we believe Harbor is ready for the CNCF [Graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage) and meets the v1.2 criteria. We address the [CNCF Technical Due Diligence questions](tbd) in a separate Google Docs document (referred to as Tech-DD from now on).
 
 *Name of project:* Harbor
 
-*Description:* Harbor is an open source cloud native registry that provides trust, compliance, performance, and interoperability. As a private on-premises registry, Harbor fills a gap for organizations that prefer not to use a public or cloud-based registry or want a consistent experience across clouds. Harbor secures images with role-based access control, scans images for vulnerabilities, and signs images as trusted. A CNCF Incubating project, Harbor helps you consistently and securely manage images across cloud native compute platforms like Kubernetes and Docker
+*Project Description:* Harbor is an open source cloud native registry that provides trust, compliance, performance, and interoperability. As a private on-premises registry, Harbor fills a gap for organizations that prefer not to use a public or cloud-based registry or want a consistent experience across clouds. Harbor secures images with role-based access control, scans images for vulnerabilities, and signs images as trusted. A CNCF Incubating project, Harbor helps you consistently and securely manage images across cloud native compute platforms like Kubernetes and Docker.
+
+Harbor in essense solves common problems in organizations building cloud native applications by offering them a choice to deploy their own private on-premises registry and apply a consistent policy across artifact management in any cloud.
+
+*TOC Sponsor:* Joe Beda
 
 === Why does CNCF need a container registry?
 
 The CNCF has an impressive portfolio of projects that can be leveraged to build and run complex distributed systems; a gap, however, exists without a secure container registry. In particular, no other open source container registry offers the feature set present in Harbor.
 
-Harbor's features and community are a natural fit for the CNCF. A donation would ensure a vendor-neutral home for the project, while increasing community involvement and feature velocity, and a tighter alignment between Harbor and other CNCF projects.
+Harbor's features and community are a natural fit for the CNCF. CNCF offers a vendor-neutral home for the project, while increasing community involvement and feature velocity, with a tighter alignment between Harbor and other CNCF projects.
 
-=== Harbor Overview
-
-Harbor is an open source cloud native registry that solves common problems in organizations building cloud native applications by delivering trust, compliance, performance, and interoperability. As a private on-premises registry, Harbor fills a gap for organizations that prefer not to use a public or cloud-based registry or want a consistent experience across clouds.
+A comparison of Harbor with other non-CNCF similar projects is available in the Tech-DD.
 
 ==== Features
 
-The mission of Harbor is to provide users in cloud native environments the ability to confidently manage and securely serve container images. To do so, Harbor stores, signs, and scans content. Here are some of the key features of Harbor:
+The mission of Harbor is to provide users in cloud native environments the ability to confidently manage and securely serve container images and Helm charts. To do so, Harbor stores, signs, and scans content. Here are some of the key features of Harbor organized by user needs:
 
- * Multi-tenant content signing and validation
- * Security and vulnerability analysis
- * Audit logging
- * Identity integration and role-based access control
- * Image replication between instances
- * Extensible API and graphical UI
- * Internationalization (currently English and Chinese)
+*Security & Compliance*
+Users ask for a comprehensive policy, registry and data ownership, identity federation with built-in multitenancy
+Harbor delivers:
+* Security & Vulnerability Scanning
+* CVE Exception Policy
+* Image Signing
+* Quotas Management
+* Retention Policies
+* Audit logging
+* OIDC/LDAP Integration for Identity Federation
+* Role Based Access Control & CLI secrets
+* Project Isolation and Multitenancy
 
-https://blogs.vmware.com/cloudnative/2018/06/14/harbor-delivers-a-trusted-cloud-native-registry/[Click here] to learn more about Harbor's features.
+*Infrastructure*
+Users ask for the ability to deploy the registry on any infrastructure (private, public, hosted, edge), data locality, and the ability to  execute containers on Kubernetes and Docker
+Harbor delivers on every one of these requests including:
+* Internationalization (currently English and Chinese)
+
+*Scale & Control*
+Users ask for controlled access to artifacts, the ability to replicate resources based on business needs, and a scalable registry
+Harbor delivers:
+* Replicate Harbor artifacts to another instance of Harbor
+* Replicate Harbor artifacts to Docker Registry
+* Replicate Harbor artifacts to every major cloud provider's registry, including Docker Hub, Huawei Cloud, AWS, Azure, GCP, Alibaba Cloud
+
+*Automation & Extensibility*
+Users ask for the registry to have the ability to be plug-n-play with existing investments in infrastructure and services
+Harbor delivers:
+* Syslog integration
+* Webhooks
+* Extensible REST API and graphical UI
+* Robot Accounts
+
+To learn more about Harbor's features, read and view the following resources:
+* [Intro to Harbor](https://blogs.vmware.com/cloudnative/2018/06/14/harbor-delivers-a-trusted-cloud-native-registry)
+* [Going Big: Harbor 1.8 Takes Security and Replication to New Heights](https://goharbor.io/blogs/announcing-harbor-1.8/)
+*	[Harbor 1.9 tackles multi-tenancy with key enterprise features](https://goharbor.io/blogs/harbor-1.9/)
+*	[Harbor CNCF webinar on Security and Day 2 operations](https://www.cncf.io/webinars/kubernetes-in-highly-restrictive-environments-meeting-the-needs-of-enterprise-governance-security-2/)
+* [Harbor CNCF webinar on Gain Confidence in Compliance: Advanced Image Scanning with Harbor](https://www.cncf.io/webinars/gain-confidence-in-compliance-advanced-image-scanning-with-harbor/)
 
 === Project Timeline and Snapshot
 
- * In June 2014, Harbor started as a project within VMware's China R&D organization, where it was leveraged for a handful of internal projects to manage container images. To allow more developers in the community to use and contribute to the project, VMware open sourced Harbor in March of 2016 and it has steadily gained traction since.
- * Harbor has been integrated into two commercial VMware products, vSphere Integrated Containers (VIC) and Pivotal Container Services (PKS).
- * Many companies include Harbor in their own cloud native solutions, including Chinese CNCF member startups Caicloud and Dataman.
- * In April 2018, Harbor passed 4000 stars on GitHub and currently has 59 community contributors worldwide, 30 of which have made non-trivial contributions to the project.
+A brief history of Harbor is included in the Tech-DD.
 
 == Production Users
 
-Harbor currently has production https://github.com/vmware/harbor/blob/master/partners.md[users], including:
-
- * Trend Micro
- * OnStar in China
- * Caicloud
- * CloudChef
- * Rancher
-
-A number of CNCF member companies, such as JD.com, China Mobile, Caicloud, Dataman, and Tenxcloud are also users of Harbor.
+A comprehensive adoption guide is included in the Tech-DD.
 
 == In-Flight Features
 
-The Harbor team is currently working on improving Harbor, including:
+The Harbor team is currently working on improving Harbor with our 1.10 release. The theme of the release is `Security & Compliance` and some of the key features include:
+* Immutable Images and Repositories
+* OIDC Group Support
+* Limited Guest Role
+* CLI Secret and Robot account enhancements
+* Interrogation Service
+* Pluggable out-of-tree scanning by Aqua Trivy
+* Pluggable out-of-tree scanning by Anchore Engine and Anchore Enterprise
 
- * Native support of Helm
- * Highly-available deployments
- * Image caching and proxying
- * Label-related feature improvements
- * Quotas
+The direction of the project has been generally guided by our open source community and users. There are a plethora of GitHub issues requesting various features that we prioritize based on popularity of user requests and engineering capacity. Our community has been involved in the addition of several new important features, including webhooks and the pluggable scanner work.
 
-The direction of the project has been generally guided by our open source community and users. There are a plethora of GitHub issues requesting various features that we prioritize based on popularity of user requests and engineering capacity. Our community has been involved in the addition of several new important features, including the creation of a Helm chart for Harbor.
-
-A roadmap for future features, including those listed above, can be found GitHub: https://github.com/vmware/harbor/labels/Epic. The project welcomes contributions of any kind: code, documentation, bug reporting via issues, and project management to help track and prioritize workstreams.
+A roadmap for future features, including those listed above, can be found in the Tech-DD. The project welcomes contributions of any kind: code, documentation, bug reporting via issues, security testing, and project management to help track and prioritize workstreams.
 
 == Use Cases
 
