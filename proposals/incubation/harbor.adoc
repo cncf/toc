@@ -107,6 +107,7 @@ The following is a list of common use-cases for Harbor users:
  * *Source control repositories / issue tracker:* https://github.com/goharbor
  * *Website:* https://goharbor.io
  * *Release Methodology and Mechanics:* Covered in Tech-DD
+ * *Receive a supermajority vote from the TOC to move to graduation stage:* We believe this document and the Tech-DD prepares us for a TOC vote on the graduation readiness of Harbor.
 
 == Social Media Accounts:
 
