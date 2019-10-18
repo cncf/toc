@@ -109,12 +109,13 @@ The following is a list of common use-cases for Harbor users:
  * *Release Methodology and Mechanics:* Covered in Tech-DD
  * *Receive a supermajority vote from the TOC to move to graduation stage:* We believe this document and the Tech-DD prepares us for a TOC vote on the graduation readiness of Harbor.
 
-== Social Media Accounts:
+== Social Media Accounts (more details and membership numbers in the Tech-DD):
 
  * *Twitter:* https://twitter.com/project_harbor
  * *Users Google Groups:* https://lists.cncf.io/g/harbor-users/topics
  * *Developer Google Groups:* https://lists.cncf.io/g/harbor-dev/topics
  * *Slack:* https://cloud-native.slack.com/messages/harbor
+ * *WeChat:* Harbor Community
 
 == Contributor Statistics
 Covered in depth in the Tech-DD
