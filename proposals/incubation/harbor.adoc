@@ -10,15 +10,15 @@ On behalf of the maintainers team, we believe Harbor is ready for the CNCF [Grad
 
 Harbor in essense solves common problems in organizations building cloud native applications by offering them a choice to deploy their own private on-premises registry and apply a consistent policy across artifact management in any cloud.
 
-*TOC Sponsor:* Joe Beda
-
-=== Why does CNCF need a container registry?
+=== CNCF Alignment & Why does CNCF need a container registry? 
 
 The CNCF has an impressive portfolio of projects that can be leveraged to build and run complex distributed systems; a gap, however, exists without a secure container registry. In particular, no other open source container registry offers the feature set present in Harbor.
 
 Harbor's features and community are a natural fit for the CNCF. CNCF offers a vendor-neutral home for the project, while increasing community involvement and feature velocity, with a tighter alignment between Harbor and other CNCF projects.
 
-A comparison of Harbor with other non-CNCF similar projects is available in the Tech-DD.
+Harbor's core mission aligns well with graduated projects like Kubernetes and the container ecosystem. The CNCF's mission is to “create and drive the adoption of a new computing paradigm that is optimized for modern distributed systems environments capable of scaling to tens of thousands of self-healing multi-tenant nodes.” We believe container registries are essential to achieve this mission. Harbor, as a mature open source registry is a logical complement to the CNCF's existing portfolio of graduated projects.
+
+*Registry Landscape:* A comparison of Harbor with other non-CNCF similar projects is available in the Tech-DD.
 
 ==== Features
 
@@ -40,7 +40,7 @@ Users ask for a comprehensive policy, registry and data ownership, identity fede
 *Infrastructure*
 Users ask for the ability to deploy the registry on any infrastructure (private, public, hosted, edge), data locality, and the ability to  execute containers on Kubernetes and Docker. Harbor delivers on every one of these requests including:
 
- * Internationalization (currently English and Chinese)
+ * Internationalization (currently English, Chinese, Spanish, Portuguese, French, and Turkish)
 
 *Scale & Control*
 Users ask for controlled access to artifacts, the ability to replicate resources based on business needs, and a scalable registry. Harbor delivers:
@@ -94,69 +94,29 @@ A roadmap for future features, including those listed above, can be found in the
 The following is a list of common use-cases for Harbor users:
 
  * *On-prem container registry* – organizations with the desire to host sensitive production images on-premises can do so with Harbor
- * *Vulnerability scanning* – organizations can scan images before they are used in production. Images with failed vulnerability scans can be blocked from being pulled
+ * *Edge container registry* – organizations with the desire to host images near edge compute nodes because links ultimately fail
+ * *Vulnerability scanning* – organizations can scan images before they are used in production to safeguard against threats. Images with failed vulnerability scans can be blocked from being pulled
  * *Image signing* – images can be signed via Notary to ensure provenance
- * *Role-based Access Control* – integration with LDAP (and AD) to provide user- and group-level permissions
- * *Image replication* – production images can be replicated to disparate Harbor nodes, providing disaster recovery, load balancing and the ability for organizations to replicate images to different geos to provide a more expedient image pull
+ * *Role-based Access Control* – integration with LDAP (and AD) or OIDC to provide user- and group-level permissions
+ * *Image replication* – production images can be replicated to disparate registries, providing disaster recovery, load balancing and the ability for organizations to replicate images to different geos to provide a more expedient image pull
 
-
-== CNCF Donation Details
- * *Preferred Maturity Level:* Sandbox or Incubation
- * *Sponsors:* Quinton Hoole and Ken Owens
- * *License:* Apache 2
- * *Source control repositories / issue tracker:* https://github.com/vmware/harbor, with a ZenHub board tracking engineering work. _Will be moved to github.com/goharbor organization_
- * *Infrastructure Required:* Infrastructure for CI / CD
- * *Website:* https://vmware.github.io/harbor/. Will be moved to https://goharbor.io.
- * *Release Methodology and Mechanics:* We currently do feature releases for major updates 3-4 times per year (with minor releases) when needed. Before releasing we tag one or more RC releases for community testing. Commits to the project are analyzed and we require that changes do not decrease overall test coverage to the project.
+== CNCF Requirement Details
+ * *Preferred Maturity Level:* Graduation Stage
+ * *TOC Sponsor:* Joe Beda
+ * *License:* Apache License 2.0
+ * *Source control repositories / issue tracker:* https://github.com/goharbor
+ * *Website:* https://goharbor.io
+ * *Release Methodology and Mechanics:* Covered in Tech-DD
 
 == Social Media Accounts:
 
  * *Twitter:* https://twitter.com/project_harbor
- * *Users Google Groups:* harbor-users@googlegroups.com
- * *Developer Google Groups:* harbor-dev@googlegroups.com
- * *Slack:* https://goharbor.slack.com
+ * *Users Google Groups:* https://lists.cncf.io/g/harbor-users/topics
+ * *Developer Google Groups:* https://lists.cncf.io/g/harbor-dev/topics
+ * *Slack:* https://cloud-native.slack.com/messages/harbor
 
 == Contributor Statistics
-There have been 23 non-VMware committers with non-trivial (50+ LoC) contributions since the project's inception.
+Covered in depth in the Tech-DD
 
-== Alignment with CNCF
-
-Our team believes Harbor to be a great fit for the CNCF. Harbor's core mission aligns well with Kubernetes and the container ecosystem. The CNCF's mission is to “create and drive the adoption of a new computing paradigm that is optimized for modern distributed systems environments capable of scaling to tens of thousands of self-healing multi-tenant nodes.” We believe container registries are essential to achieve this mission. Harbor, as a mature open source registry is a logical complement to the CNCF's existing portfolio of projects.
-
-== Asks from CNCF
-
- * Governance – General access to staff to provide advice, and help optimize and document our governance process
- * Infrastructure for CI / CD
- * Integration with CNCF devstat
- * A vendor-neutral home for Harbor
-
-
-== Appendices
-
-=== Architecture
-Harbor is cleanly architected and includes both third-party components – notably Docker registry, Clair, Notary and Nginx – and various Harbor-specific components. Harbor leverages Kubernetes to manage the runtimes of the various components.
-
-An architectural diagram can be found on https://github.com/vmware/harbor/blob/master/docs/img/harbor-arch.png[GitHub] and shows various components: red 3rd party components which Harbor leverages for functionality (e.g., nginx, Notary, etc.); green components to denote a persistence layer; and blue Harbor-specific components.
-
-Succinctly, the bulk of the heavy lifting is done by the Core Service which provides both an API and a UI for registry functionality. The job and admin services handle asynchronous jobs and management of configurations. Additional details for the various components below.
-
-=== Components
-
-|===
-| *Component* | *Description*
-| *API Routing Layer (Nginx)* | A reverse proxy serves as the endpoint of Harbor, Docker and Notary clients. Users will leverage this endpoint to access Harbor’s API or UI
-| *Core Services* | Hosts Harbor’s API and UI resources. Additionally, an interceptor for registry API to block Docker pull/push in particular use cases (e.g., image fails vulnerability scan)
-| *Admin Service* | Serves API for components to retrieve/manage the configurations
-| *Job Service* | Serves API to be called by Core service for asynchronous job
-| *Registry v2* | Open Source Docker Distribution, whose authorization is set to the token API of Core service
-| *Clair* | Open Source vulnerability scanner by CoreOS whose API will be called by job service to pull image layers fro Registry for static analysis
-| *Notary* | Components of Docker’s content trust open source project
-| *Database* | PostgresSQL to store user data
-|===
-
-== Registry Landscape
-There are numerous registries available for developers and platform architecture teams to leverage. We’ve analyzed the various options available and summarized them here:
-
-https://github.com/vmware/harbor/blob/master/docs/registry_landscape.md
-
-This table provides our best estimation of features and functionality available on other container registry platforms. Should you find mistakes please submit a PR to update the table.
+== Architecture
+A detailed Harbor architecture and its various components is covered in the Tech-DD
