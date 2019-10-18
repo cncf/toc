@@ -2,7 +2,7 @@
 
 Since joining the CNCF in [July 2018](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/) as a Sandbox project and in [November 2018](https://www.cncf.io/blog/2018/11/13/harbor-into-incubator/) moving to an Incubating Project, Harbor has built a healthy ecosystem of users, maintainers, and production implementations.
 
-On behalf of the maintainers team, we believe Harbor is ready for the CNCF [Graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage) and meets the v1.2 criteria. We address the [CNCF Technical Due Diligence questions](tbd) in a separate Google Docs document (referred to as Tech-DD from now on).
+On behalf of the maintainers team, we believe Harbor is ready for the CNCF [Graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage) and meets the v1.2 criteria. We address the [CNCF Technical Due Diligence questions](tbd) in a separate Google Docs document (referred to as the `Tech-DD` from now on).
 
 *Name of project:* Harbor
 
@@ -24,45 +24,46 @@ A comparison of Harbor with other non-CNCF similar projects is available in the 
 
 The mission of Harbor is to provide users in cloud native environments the ability to confidently manage and securely serve container images and Helm charts. To do so, Harbor stores, signs, and scans content. Here are some of the key features of Harbor organized by user needs:
 
-*Security & Compliance*
-Users ask for a comprehensive policy, registry and data ownership, identity federation with built-in multitenancy
-Harbor delivers:
-* Security & Vulnerability Scanning
-* CVE Exception Policy
-* Image Signing
-* Quotas Management
-* Retention Policies
-* Audit logging
-* OIDC/LDAP Integration for Identity Federation
-* Role Based Access Control & CLI secrets
-* Project Isolation and Multitenancy
+*Security & Compliance*  
+Users ask for a comprehensive policy, registry and data ownership, identity federation with built-in multitenancy. Harbor delivers:
+
+ * Security & Vulnerability Scanning
+ * CVE Exception Policy
+ * Image Signing
+ * Quotas Management
+ * Retention Policies
+ * Audit logging
+ * OIDC/LDAP Integration for Identity Federation
+ * Role Based Access Control & CLI secrets
+ * Project Isolation and Multitenancy
 
 *Infrastructure*
-Users ask for the ability to deploy the registry on any infrastructure (private, public, hosted, edge), data locality, and the ability to  execute containers on Kubernetes and Docker
-Harbor delivers on every one of these requests including:
-* Internationalization (currently English and Chinese)
+Users ask for the ability to deploy the registry on any infrastructure (private, public, hosted, edge), data locality, and the ability to  execute containers on Kubernetes and Docker. Harbor delivers on every one of these requests including:
+
+ * Internationalization (currently English and Chinese)
 
 *Scale & Control*
-Users ask for controlled access to artifacts, the ability to replicate resources based on business needs, and a scalable registry
-Harbor delivers:
-* Replicate Harbor artifacts to another instance of Harbor
-* Replicate Harbor artifacts to Docker Registry
-* Replicate Harbor artifacts to every major cloud provider's registry, including Docker Hub, Huawei Cloud, AWS, Azure, GCP, Alibaba Cloud
+Users ask for controlled access to artifacts, the ability to replicate resources based on business needs, and a scalable registry. Harbor delivers:
+
+ * Replicate Harbor artifacts to another instance of Harbor
+ * Replicate Harbor artifacts to Docker Registry
+ * Replicate Harbor artifacts to every major cloud provider's registry, including Docker Hub, Huawei Cloud, AWS, Azure, GCP, Alibaba Cloud
 
 *Automation & Extensibility*
-Users ask for the registry to have the ability to be plug-n-play with existing investments in infrastructure and services
-Harbor delivers:
-* Syslog integration
-* Webhooks
-* Extensible REST API and graphical UI
-* Robot Accounts
+Users ask for the registry to have the ability to be plug-n-play with existing investments in infrastructure and services. Harbor delivers:
+
+ * Syslog integration
+ * Webhooks
+ * Extensible REST API and graphical UI
+ * Robot Accounts
 
 To learn more about Harbor's features, read and view the following resources:
-* [Intro to Harbor](https://blogs.vmware.com/cloudnative/2018/06/14/harbor-delivers-a-trusted-cloud-native-registry)
-* [Going Big: Harbor 1.8 Takes Security and Replication to New Heights](https://goharbor.io/blogs/announcing-harbor-1.8/)
-*	[Harbor 1.9 tackles multi-tenancy with key enterprise features](https://goharbor.io/blogs/harbor-1.9/)
-*	[Harbor CNCF webinar on Security and Day 2 operations](https://www.cncf.io/webinars/kubernetes-in-highly-restrictive-environments-meeting-the-needs-of-enterprise-governance-security-2/)
-* [Harbor CNCF webinar on Gain Confidence in Compliance: Advanced Image Scanning with Harbor](https://www.cncf.io/webinars/gain-confidence-in-compliance-advanced-image-scanning-with-harbor/)
+
+ * [Intro to Harbor](https://blogs.vmware.com/cloudnative/2018/06/14/harbor-delivers-a-trusted-cloud-native-registry)
+ * [Going Big: Harbor 1.8 Takes Security and Replication to New Heights](https://goharbor.io/blogs/announcing-harbor-1.8/)
+ *	[Harbor 1.9 tackles multi-tenancy with key enterprise features](https://goharbor.io/blogs/harbor-1.9/)
+ *	[Harbor CNCF webinar on Security and Day 2 operations](https://www.cncf.io/webinars/kubernetes-in-highly-restrictive-environments- meeting-the-needs-of-enterprise-governance-security-2/)
+ * [Harbor CNCF webinar on Gain Confidence in Compliance: Advanced Image Scanning with Harbor](https://www.cncf.io/webinars/gain-confidence-in-compliance-advanced-image-scanning-with-harbor/)
 
 === Project Timeline and Snapshot
 
@@ -75,17 +76,18 @@ A comprehensive adoption guide is included in the Tech-DD.
 == In-Flight Features
 
 The Harbor team is currently working on improving Harbor with our 1.10 release. The theme of the release is `Security & Compliance` and some of the key features include:
-* Immutable Images and Repositories
-* OIDC Group Support
-* Limited Guest Role
-* CLI Secret and Robot account enhancements
-* Interrogation Service
-* Pluggable out-of-tree scanning by Aqua Trivy
-* Pluggable out-of-tree scanning by Anchore Engine and Anchore Enterprise
+
+ * Immutable Images and Repositories
+ * OIDC Group Support
+ * Limited Guest Role
+ * CLI Secret and Robot account enhancements
+ * Interrogation Service
+ * Pluggable out-of-tree scanning by Aqua Trivy
+ * Pluggable out-of-tree scanning by Anchore Engine and Anchore Enterprise
 
 The direction of the project has been generally guided by our open source community and users. There are a plethora of GitHub issues requesting various features that we prioritize based on popularity of user requests and engineering capacity. Our community has been involved in the addition of several new important features, including webhooks and the pluggable scanner work.
 
-A roadmap for future features, including those listed above, can be found in the Tech-DD. The project welcomes contributions of any kind: code, documentation, bug reporting via issues, security testing, and project management to help track and prioritize workstreams.
+A roadmap for future features, including those listed above, can be found in the Tech-DD. The project welcomes contributions of any kind: features, bug fixes, documentation, bug reporting via issues, security testing, and project management to help track and prioritize workstreams.
 
 == Use Cases
 
