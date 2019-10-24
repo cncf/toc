@@ -82,7 +82,7 @@ gRPC has public implementations in many languages:
 ### 
 **Have committers from at least two organizations.**
 
-*   Committers from Google, Dropox and LinkedIn in [gRPC](https://github.com/grpc/grpc/blob/master/MAINTAINERS.md) repo (C++, Python, Ruby, C#, PHP, ObjectiveC).
+*   Committers from Google, Dropbox, LinkedIn and Skyscanner in [gRPC](https://github.com/grpc/grpc/blob/master/MAINTAINERS.md) repo (C++, Python, Ruby, C#, PHP, ObjectiveC).
 *   Committers from Google and Microsoft in [grpc-dotnet](https://github.com/grpc/grpc-dotnet/blob/master/MAINTAINERS.md) repo. 
 *   Committers from Apple, Timing, Lyft and Google in [grpc-swift](https://github.com/grpc/grpc-swift/blob/master/MAINTAINERS.md) repo.
 
@@ -96,8 +96,7 @@ https://bestpractices.coreinfrastructure.org/en/projects/2112
 ### 
 **Have completed an independent and third party security audit with results published of similar scope and quality as the following example (including critical vulnerabilities addressed): https://github.com/envoyproxy/envoy#security-audit and all critical vulnerabilities need to be addressed before graduation.**
 
-Third party audit for gRPC C++ implementation in https://github.com/grpc/grpc is underway. We will update as soon as we have the report and all critical vulnerabilities, if any, are addressed.
-
+A third-party security audit of gRPC C++ stack was performed by [Cure53](https://cure53.de) in October 2019. This was funded by CNCF. The full report is available [here](https://github.com/srini100/grpc/blob/secreport/doc/grpc_security_audit.pdf). No major issues were found. Only one medium and two minor severity issues were found. The medium issue GRP-01-001 has already been fixed in gRPC version 1.24.0 and above. The fix was also patched in version 1.23.1. 
 
 ### 
 **Adopt the CNCF Code of Conduct.**
