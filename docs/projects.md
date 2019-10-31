@@ -12,7 +12,7 @@
 [containerd](https://containerd.io/)|Brian Grant|[3/15/17](https://docs.google.com/presentation/d/1qmGsmARyMhRLwbFWG7LXJSsDHm45nqZ_QtBv5SnQL54/edit?usp=sharing)|[3/29/17](https://www.cncf.io/announcement/2017/03/29/containerd-joins-cloud-native-computing-foundation/)|Graduated
 [CNI](https://github.com/containernetworking/cni)|Ken Owens|[5/3/17](https://docs.google.com/presentation/d/1flQXWp1NQg_FdiLQ0MzKw5QACIwR1i939a-FD74imxk/edit#slide=id.g217fd51990_0_140)|[5/23/17](https://www.cncf.io/blog/2017/05/23/cncf-hosts-container-networking-interface-cni/)|Incubating
 [Envoy](https://github.com/envoyproxy/envoy)|Alexis Richardson|[8/15/17](https://goo.gl/iSP394)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-envoy/)|Graduated
-[Jaeger](https://github.com/jaegertracing/jaeger)|Bryan Cantrill|[8/1/17](https://goo.gl/ehtgts)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-jaeger/)|Incubating
+[Jaeger](https://github.com/jaegertracing/jaeger)|Bryan Cantrill|[8/1/17](https://goo.gl/ehtgts)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-jaeger/)|Graduated
 [Notary](https://github.com/docker/notary)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 [TUF](https://github.com/theupdateframework)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 [rook](https://github.com/rook)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[1/29/18](https://www.cncf.io/blog/2018/01/29/cncf-host-rook-project-cloud-native-storage-capabilities)|Incubating
