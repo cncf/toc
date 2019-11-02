@@ -58,11 +58,11 @@ CNCF uses revenues from events first and foremost to cover the cost of events. T
 
 ## Does CNCF make decisions based on “pay-to-play” considerations?
 
-**No**. CNCF’s charter [Section 3(c)](https://github.com/cncf/foundation/blob/master/charter.md) explicitly calls out fairness as a core value and requires us to ‘avoid undue influence, bad behavior or “pay-to-play” decision-making.’ Also projects 
+**No**. CNCF’s charter [Section 3(c)](https://github.com/cncf/foundation/blob/master/charter.md) explicitly calls out fairness as a core value and requires us to ‘avoid undue influence, bad behavior or “pay-to-play” decision-making.’ Also projects are [openly governed](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/) and technical participation never requires any form of membership. The correct way to view this is that CNCF members **PAY TO SUSTAIN** and govern the shared budget which goes to sustain project activities such as events,scholarships and security audits.
 
 ## Does membership or sponsorship level ever affect project-related decisions? 
 
-A: No. All project-related decisions are made by the project maintainers. Maintainership and governance processes are decided by the projects without regard to CNCF membership. Here’s more detail on [open governance](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/).
+**No**. *All project-related decisions are made by the project maintainers*. Maintainership and governance processes are decided by the projects without regard to CNCF membership. Here’s more detail on [open governance](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/).
 
 ## Why do members join if they don’t get to control CNCF and its projects?
 
