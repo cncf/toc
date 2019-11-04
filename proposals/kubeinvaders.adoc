@@ -1,0 +1,29 @@
+== Kubeinvaders Proposal
+
+*Name of project:* KubeInvaders
+
+*Description*
+
+KubeInvaders is a gamified chaos engineering tool for Kubernetes. It is like Space Invaders but the aliens are PODs.
+
+*Sponsor / Advisor from TOC*: Eugenio Marzo
+
+*Unique Identifier*: kubeinvaders
+
+*License*: Apache License v2.0
+
+*Source control repositories*: https://github.com/lucky-sideburn/KubeInvaders
+
+*Initial Committers*: https://github.com/lucky-sideburn
+
+*Infrastructure requirements (CI / CNCF Cluster)*:
+
+* Kubernetes or Openshift cluster
+
+*External Dependencies*
+
+* Defold - Defold License https://defold.com
+
+*Statement on alignment with CNCF mission*:
+
+I am looking forward joining the foundation for increasing the number of committers! I think that Kubeinvaders could be inserted in some Kubernetes Web UI (Dashboard).
