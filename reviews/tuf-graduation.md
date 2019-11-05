@@ -16,7 +16,7 @@ Apart from the Docker, LEAP, and AppContainer adoptions (which happened prior to
 
 As an intentionally minimal security specification / framework, we deliberately do not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as Notary or the Python reference implementation, or the specification itself.  
 
-* Python reference implementation / specification (5 committers, 3 organizations)
+* Python reference implementation / specification (6 committers, 3 organizations)
 
   * Justin Cappos (NYU), Trishank Karthik Kuppusamy (Datadog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Sebastien Awwad (Conda), Marina Moore (NYU)
 
