@@ -20,7 +20,6 @@ As an intentionally minimal security specification / framework, we deliberately 
 
   * Justin Cappos (NYU), Trishank Karthik Kuppusamy (Datadog / NYU), Lukas Puehringer (NYU), Santiago Torres (NYU), Sebastien Awwad (Conda), Marina Moore (NYU)
 
-* Notary (8 committers, 3 organizations)
 
   * Ying Li, Diogo Mónica, Evan Cordell (RedHat / CoreOS), David Lawrence, HuKeping (Huawei), Justin Cormack (Docker), Nathan McCauley, Riyaz Faizullabhoy
 
