@@ -22,7 +22,6 @@ As an intentionally minimal security specification / framework, we deliberately 
 
 
 
-
 ### Demonstrate a substantial ongoing flow of commits and merged contributions.
 
 We have had active contributions from an array of contributors across the CNCF landscape, more traditional software projects, and automakers.  One way to see this is via the substantial changes that made their way into the specification.
