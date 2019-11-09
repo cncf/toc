@@ -14,7 +14,7 @@ Apart from the Docker, LEAP, and AppContainer adoptions (which happened prior to
 
 ### Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.  The committers should come from at least two organizations.
 
-As an intentionally minimal security specification / framework, we deliberately do not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as Notary or the Python reference implementation, or the specification itself.  
+As an intentionally minimal security specification / framework, we deliberately do not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as Notary, Amazon's Rust implementation, Google's implementation, or the Python reference implementation, or the specification itself.  As TUF is a specification project, we focus on the specification and the Python reference implementation.
 
 * Python reference implementation / specification (6 committers, 3 organizations)
 
