@@ -1,8 +1,9 @@
 ## CNCF Runtime SIG Charter
 
 
-### Primary Author: Quinton Hoole \
-2019-09-02 \
+### Primary Author: Quinton Hoole
+
+2019-09-02
 
 Also reviewed and contributed to by:
 
