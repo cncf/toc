@@ -1,20 +1,35 @@
 %% This is the source for flowchart diagram
 %% See: https://mermaidjs.github.io/#/flowchart
 %% setup: `yarn install`  (in this directory)
-%% regenerate diagram: ``
+%% regenerate diagram: `npm run diagram`
 %% or use [mermaid live editor](https://mermaidjs.github.io/mermaid-live-editor)
 
 graph TD
-    Pitch[Elevator Pitch] --> TOC1[TOC presentation]
-    TOC1 --> Check1{OK?}
-    Check1 --> |no| Pitch
-    Check1 --> |yes| DD[Due Dilligence]
-    DD --> Check2{OK?}
-    Check2 --> |no| DD
-    Check2 --> |yes| TOC2[Full TOC presentation]
-    TOC2 --> Vote{TOC Vote}
-    Vote --> |yes| Approved
-    Vote --> |no| Rejected
+  New{New to CNCF?} --> |yes| Engage[Get Involved]
+  subgraph Engage with CNCF Community 
+    Engage --> |useful? used?| Projects
+    Engage --> |present| SIG
+    Engage --> |volunteer| SIG
+  end
+  New{New to CNCF?} --> |no| SIG
+
+  SIG --> Champion{Champion?}
+  Champion --> |no with feedback| Reject
+  Champion --> |yes| DD{Due Dilligence}
+  DD --> |open issues| Reject
+  DD --> TOC1{TOC Presentation}
+  TOC1 --> |unresolved concerns| Reject
+  TOC1 --> PR{Proposal Pull Request}
+  PR --> |feedback addressed| Vote{TOC Vote}
+  PR --> |unresolved feedback| Reject
+  Vote --> Accept
+  Vote --> Reject
+
+  subgraph project internal
+    Reject[Questions or Concerns] --> |iterate| SIG
+    Reject --> Bye[Step Back]
+
+  end
 
 
 
