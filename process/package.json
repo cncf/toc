@@ -1,0 +1,14 @@
+{
+  "name": "toc-process",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cncf/toc.git",
+  "license": "MIT",
+  "devDependencies": {
+    "mermaid": "^8.4.2",
+    "mermaid.cli": "^0.5.1"
+  },
+  "scripts": {
+    "diagram": "./node_modules/.bin/mmdc -i diagram.mmd -o diagram.png"
+  }
+}

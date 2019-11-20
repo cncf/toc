@@ -1,0 +1,22 @@
+%% This is the source for flowchart diagram
+%% See: https://mermaidjs.github.io/#/flowchart
+%% setup: `yarn install`  (in this directory)
+%% regenerate diagram: ``
+%% or use [mermaid live editor](https://mermaidjs.github.io/mermaid-live-editor)
+
+graph TD
+    Pitch[Elevator Pitch] --> TOC1[TOC presentation]
+    TOC1 --> Check1{OK?}
+    Check1 --> |no| Pitch
+    Check1 --> |yes| DD[Due Dilligence]
+    DD --> Check2{OK?}
+    Check2 --> |no| DD
+    Check2 --> |yes| TOC2[Full TOC presentation]
+    TOC2 --> Vote{TOC Vote}
+    Vote --> |yes| Approved
+    Vote --> |no| Rejected
+
+
+
+
+
