@@ -2,7 +2,8 @@
 
 *Approved by TOC: 2018-06-11*
 
-[العربية](#العربية) | [中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Deutsch](#deutsch)| [Español](#español) | [Français](#français) | [Polski](#polski) | [Português Brasileiro](#português-brasileiro) | [Русский](#русский)(in Arabic, Chinese, Japanese, Korean, Brazilian, Portuguese, German, French and Spanish below)
+[العربية](#العربية) | [中文版本](#中文版本) (Chinese) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese) | [Русский](#русский) (Russian)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
