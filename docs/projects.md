@@ -43,9 +43,10 @@
 [Strimzi](https://github.com/strimzi)|Alexis Richardson, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/266)|[8/28/19](https://github.com/strimzi)|Sandbox
 [KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Sandbox
 [Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Sandbox
+[ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
+
+
 ## Graduated Projects
-
-
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
 :-----:|:-----:|:-----:|:-----:|:-----:
 [Kubernetes](https://kubernetes.io/)|Alexis Richardson|N/A|3/06/18|Graduated
