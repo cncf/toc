@@ -57,6 +57,20 @@
 [Jaeger](https://github.com/jaegertracing/jaeger)|Bryan Cantrill|[8/1/17](https://goo.gl/ehtgts)| 10/31/19|Graduated
 [Vitess](https://github.com/vitessio/vitess)|Brian Grant|[4/19/17](https://goo.gl/6nmyDn)| 11/05/19|Graduated 
 
+## Project Audits
+
+**Project**|**Audit**|**Announcement**|
+:------:|:--------:|:----------:|
+[Kubernetes](https://kubernetes.io/)|[8/06/2019](https://github.com/kubernetes/community/pull/3975)|[Announcement](https://www.cncf.io/blog/2019/08/06/open-sourcing-the-kubernetes-security-audit/)|
+[Helm](https://github.com/helm)|[11/04/2019](https://github.com/helm/community/blob/master/security-audit/HLM-01-report.pdf)|[Announcement](https://helm.sh/blog/2019-11-04-helm-security-audit-results/)|
+[gRPC](http://www.grpc.io/)|[10/29/2019](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|[Announcement](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|
+[etcd](https://github.com/etcd-io/etcd)| In progress | In progress | 
+[rook](https://github.com/rook)| In progress | In progress | 
+[Fluentd](http://www.fluentd.org/) | In progress | In progress | 
+[Linkerd](https://linkerd.io/)| In progress | In progress | 
+[Harbor](https://github.com/goharbor) | In progress | In progress | 
+[Falco](https://github.com/falcosecurity/falco) | In progress | In progress | 
+[TiKV](https://github.com/tikv/tikv) | In progress | In progress | 
 ## Archived Projects
 
 **Project**|**Sponsor**|**TOC Deck**|**Archived**|**Maturity Level**
