@@ -12,7 +12,7 @@ Project maintainers are responsible for agreeing between them who will complete 
 
 * Raise a PR titled *[Project name] [year] Annual Review*
 * The PR should include a file called `<year>-<project name>-annual.md` (for example, `2019-amazingproj-annual.md`) with the contents described below
-* Send an email to the TOC mailing list so that the community knows the PR is there and can comment on it
+* Send an email to the [TOC mailing list](mailto:cncf-toc@lists.cncf.io) so that the community knows the PR is there and can comment on it
 
 If your annual review isn’t submitted within two months of notification, we will take this as a sign that the project is not under active maintenance and the TOC is likely to decide to archive the project. 
 
