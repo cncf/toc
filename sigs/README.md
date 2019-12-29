@@ -13,6 +13,9 @@ a pull request with document referencing the roles and charter, updating the lis
 
 ## Current SIGS
 
-* https://github.com/cncf/sig-security
-* https://github.com/cncf/sig-storage
-* https://github.com/cncf/sig-app-delivery
+| Name | TOC Liaisons |
+|------|--------------| 
+| [SIG Security](https://github.com/cncf/sig-security) | Liz Rice, Joe Beda |
+| [SIG Storage](https://github.com/cncf/sig-storage) | Xiang Li | 
+| [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Alexis Richardson | 
+
