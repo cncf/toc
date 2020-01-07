@@ -2,18 +2,18 @@
 
 *Name of project:* Contour
 
-*Description:* Contour is an open source Kubernetes ingress controller providing the control plane for the Envoy edge and service proxy. Contour supports dynamic configuration updates and multi-team ingress delegation out of the box while maintaining a lightweight profile.
+*Description:* Contour is an open source Kubernetes ingress controller providing the control plane for the Envoy edge and service proxy. Contour supports dynamic configuration updates and multi-team ingress delegation out of the box, while maintaining a lightweight profile.
 
 === Alignment with CNCF - Why does CNCF need an ingress controller?
 
-The CNCF has an impressive portfolio of projects that can be leveraged to build and run complex distributed systems; Our team believes Contour to be a great fit for the CNCF. Contour's core mission aligns well with Kubernetes and Envoy and the container and networking ecosystem. The CNCF's mission is to “create and drive the adoption of a new computing paradigm that is optimized for modern distributed systems environments capable of scaling to tens of thousands of self-healing multi-tenant nodes.” Modern distributed systems rely on networking and connectivity. As a result, ingress controllers for the compute platform, Kubernetes, are an essential piece of this architecture. Contour is a logical complement to Envoy in this architecture, making it easier to consume Envoy in a cloud native multi-team environment.
+The CNCF has an impressive portfolio of projects that can be leveraged to build and run complex distributed systems; our team believes Contour to be a great fit for the CNCF. Contour's core mission aligns well with Kubernetes and Envoy and the container and networking ecosystem. The CNCF's mission is to “create and drive the adoption of a new computing paradigm that is optimized for modern distributed systems environments capable of scaling to tens of thousands of self-healing multi-tenant nodes.” Modern distributed systems rely on networking and connectivity. As a result, ingress controllers for the compute platform, Kubernetes, are an essential piece of this architecture. Contour is a logical complement to Envoy in this architecture, making it easier to consume Envoy in a cloud native multi-team environment.
 
 === Contour Overview
 
 ==== Features
 
  * Envoy Inside - Contour is built as the control plane for Envoy, the high performance L7 proxy and load balancer
- * Flexible Arhitecture - Contour can be deployed as either a Kubernetes deployment or daemonset
+ * Flexible Arhitecture - Contour can be deployed as either a Kubernetes Deployment or DaemonSet
  * Multi-team support - Safely support ingress in multi-team Kubernetes clusters
  * TLS Certificate Delegation - Administrators can delegate wildcard certificate access securely
  * Support for outputting HTTP request logs in a configurable structured JSON format
@@ -36,10 +36,10 @@ To learn more about Contour's features, read and view the following resources:
 == In-Flight Features
 
 The Contour team is currently working on the following feature improvements:
- * Using Contour to redirect requests to locations other than Pods, rewriting the externalname in the host header for proxied requests
+ * Using Contour to redirect requests to locations other than Pods, rewriting the ExternalName in the host header for proxied requests
  * Migration tooling for IngressRoute to HTTPProxy
 
-The direction of the project has been generally guided by our open source community and users. There are a plethora of GitHub issues requesting various features that we prioritize based on popularity of user requests and engineering capacity. 
+The direction of the project has generally been guided by our open source community and users. There are a plethora of GitHub issues requesting various features that we prioritize based on popularity of user requests and engineering capacity. 
 
 A roadmap for future features, including those listed above, can be found in GitHub at https://github.com/projectcontour/contour#workspaces/contour-5bc5116124028a7e4bf2ef81/board?repos=108462822. 
 The project welcomes contributions of any kind: code, documentation, bug reporting via issues, and project management to help track and prioritize workstreams.
@@ -49,7 +49,7 @@ The following is a list of common use-cases for Contour users:
 
  * High performance ingress controller for Kubernetes 
  * Multi-team and multi-tenant ingress controller for Kubernetes 
- * Blue/Green deployments 
+ * Blue/Green and canary deployments
 
 == CNCF Donation Details
  * *Preferred Maturity Level:* Incubation
