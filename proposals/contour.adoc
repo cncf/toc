@@ -53,10 +53,10 @@ The following is a list of common use-cases for Contour users:
 
 == CNCF Donation Details
  * *Preferred Maturity Level:* Incubation
- * *Sponsors:* 
+ * *Sponsors:* @monadic, @mattklein123
  * *License:* Apache 2
  * *Source control repositories / issue tracker:* https://github.com/projectcontour, with a ZenHub board tracking engineering work.
- * *Infrastructure Required:* 
+ * *Infrastructure Required:* N/A
  * *Website:* https://projectcontour.io
  * *Release Methodology and Mechanics:* Documented at https://projectcontour.io/resources/release-process/
 
