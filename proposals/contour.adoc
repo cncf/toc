@@ -13,7 +13,7 @@ The CNCF has an impressive portfolio of projects that can be leveraged to build 
 ==== Features
 
  * Envoy Inside - Contour is built as the control plane for Envoy, the high performance L7 proxy and load balancer
- * Flexible Arhitecture - Contour can be deployed as either a Kubernetes Deployment or DaemonSet
+ * Flexible Architecture - Contour can be deployed as either a Kubernetes Deployment or DaemonSet
  * Multi-team support - Safely support ingress in multi-team Kubernetes clusters
  * TLS Certificate Delegation - Administrators can delegate wildcard certificate access securely
  * Support for outputting HTTP request logs in a configurable structured JSON format
