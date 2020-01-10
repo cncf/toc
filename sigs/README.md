@@ -18,4 +18,33 @@ a pull request with document referencing the roles and charter, updating the lis
 | [SIG Security](https://github.com/cncf/sig-security) | Liz Rice, Joe Beda |
 | [SIG Storage](https://github.com/cncf/sig-storage) | Xiang Li | 
 | [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Alexis Richardson | 
+| [SIG Network](https://github.com/cncf/sig-network) | Matt Klein |
+
+## SIG Chairs as of January 2020
+
+### SIG Storage 
+* [Erin Boyd](https://github.com/erinboyd)
+* [Quinton Hoole](https://github.com/quinton-hoole)
+* [Alex Chircop](https://github.com/chira001)
+
+### SIG Security 
+* [Sarah Allen](https://github.com/ultrasaurus)
+* [Jeyappragash Jeyakeerthi](https://github.com/pragashj)
+* [Dan Shaw](https://github.com/dshaw)
+
+### SIG App-Delivery
+* [Bryan Liles](https://github.com/bryanl)
+* [Lei Zhang](https://github.com/resouer)
+* [Alois Reitbauer](https://github.com/AloisReitbauer)
+
+### SIG Network 
+* [Lee Calcote](https://github.com/leecalcote)
+* [Ken Owens](https://github.com/kenowens12)
+
+### SIG Runtime 
+(still in formation)
+* [Quinton Hoole](https://github.com/quinton-hoole)
+* [Ricardo Aravena](https://github.com/raravena80)
+
+
 
