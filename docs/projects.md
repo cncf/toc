@@ -67,11 +67,16 @@
 [gRPC](http://www.grpc.io/)|[10/29/2019](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|[Announcement](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|
 [etcd](https://github.com/etcd-io/etcd)| In progress | In progress | 
 [rook](https://github.com/rook)| In progress | In progress | 
-[Fluentd](http://www.fluentd.org/) | In progress | In progress | 
-[Linkerd](https://linkerd.io/)| In progress | In progress | 
-[Harbor](https://github.com/goharbor) | In progress | In progress | 
-[Falco](https://github.com/falcosecurity/falco) | In progress | In progress | 
+[Fluentd](http://www.fluentd.org/) | [05/01/2019](https://cure53.de/pentest-report_fluent.pdf) | [Announcement](http://www.fluentd.org/)| 
+[Linkerd](https://linkerd.io/)| [06/01/2019](https://github.com/linkerd/linkerd2/blob/master/SECURITY_AUDIT.pdf) | [Announcement](https://github.com/linkerd/linkerd2/blob/master/SECURITY_AUDIT.pdf) | 
+[Harbor](https://github.com/goharbor) | [10/01/2019](https://github.com/goharbor/harbor/blob/master/docs/security/Harbor_Security_Audit_Oct2019.pdf) | [Announcement](https://github.com/goharbor/harbor#security-audit) | 
+[Falco](https://github.com/falcosecurity/falco) | [06-07-2019](https://github.com/falcosecurity/falco/blob/dev/audits/SECURITY_AUDIT_2019_07.pdf) | [Announcement](https://github.com/falcosecurity/falco/blob/dev/audits/SECURITY_AUDIT_2019_07.pdf) | 
 [TiKV](https://github.com/tikv/tikv) | In progress | In progress | 
+[NATS](https://github.com/nats-io/gnatsd)|[02/06/2019](https://github.com/nats-io/nats-general/blob/master/reports/Cure53_NATS_Audit.pdf) | [Announcement](https://nats.io/blog/nats-security-update/)
+[Prometheus](https://prometheus.io/)|[06/11/2018](https://prometheus.io/assets/downloads/2018-06-11--cure53_security_audit.pdf) | [Announcement](https://prometheus.io/docs/operating/security/#external-audits)   
+[CoreDNS](https://coredns.io/)|[02/03/2018](https://coredns.io/assets/DNS-01-report.pdf)|[Announcement](https://github.com/coredns/coredns)
+[Jaeger](https://github.com/jaegertracing/jaeger)|[05/04/2019](https://github.com/jaegertracing/security-audits/blob/master/SECURITY_AUDIT_2019_05_04.pdf)| [Announcement](https://github.com/jaegertracing/security-audits)
+[Vitess](https://github.com/vitessio/vitess) | [02/01/2019](https://vitess.io/files/VIT-01-report.pdf) | [Announcement](https://vitess.io/blog/2019-03-12-vitess-security-audit/)
 ## Archived Projects
 
 **Project**|**Sponsor**|**TOC Deck**|**Archived**|**Maturity Level**
