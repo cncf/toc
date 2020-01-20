@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) (Chinese) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
+[العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
 [Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese) | [Русский](#русский) (Russian)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
@@ -16,6 +16,19 @@ toil.
 The Cloud Native Computing Foundation seeks to drive adoption of this paradigm by fostering and sustaining an
 ecosystem of open source, vendor-neutral projects. We democratize state-of-the-art patterns to make these
 innovations accessible for everyone.
+
+
+<div dir="rtl">
+
+## العربية
+
+تمكّن التقنيات سحابية المصدر المؤسسات من إنشاء تطبيقات قابلة للتطوير و تشغيلها في بيئات حديثة و ديناميكية مثل السحب العامة و الخاصة و الهجينة. يمثل هذا النموذج الحاويات، و شبكات الخدمة، و الخدمات المصغرة، و البنية التحتية غير المستقرة، و واجهات برمجة التطبيقات التعريفية.
+
+و تمكن هذه التقنيات النظم المقرونة بالمرونة و القابلية للاداره و الملاحظة. بالاضافه إلى الاتمته القوية ، فانها تسمح للمهندسين باجراء تغييرات عاليه التاثير بشكل متكرر و متوقع مع الحد الأدنى من الكدح.
+
+تسعى Cloud Native Computing Foundation إلى دفع اعتماد هذا النموذج من خلال تعزيز نظام إيكولوجي ثابت و مفتوح المصدر و محايد من البائعين. اننا نقوم بإضفاء الديمقراطية على أحدث الأنماط لجعل هذه الابتكارات متاحه للجميع.
+
+</div>
 
 ## 中文版本：
 
