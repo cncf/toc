@@ -96,7 +96,7 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 1. SIGs are formed by the TOC.  Initial SIGs are listed below, and will be adapted over time as required.  If members of the community believe that additional SIGs are desired, they should propose these to the TOC, with clear justification, and ideally volunteers to lead the SIG. The TOC wishes to have the smallest viable number of SIGs, and for all of them to be highly effective (as opposed to a "SIG sprawl" with large numbers of relatively ineffective SIGS).
 2. SIG has three co-chairs, who are TOC Contributors, recognized as experts in that area, and for their ability to co-lead the SIG to produce the required unbiased outputs.
 3. SIG has one TOC liaison who is a voting member of the TOC acting as an additional non-executive chair on occasions when TOC input is deemed necessary by the TOC or the SIG chairs.
-4. SIG has multiple tech leads who are recognized as (1) experts in the SIG area, (2) leaders of projects in the SIG’s area (3) demonstrating the ability to provide the balanced technical leadership required to produce the required unbiased outputs of the SIG. The reason for having separate chair and tech lead roles is to allow responsibility for primarily administrative functions to be separated from deep technical functions and associated time commitments and skill sets.  Where appropriate, an individual may perform both roles (see below).
+4. SIG has multiple [tech leads](#tech-lead). The reason for having separate chair and tech lead roles is to allow responsibility for primarily administrative functions to be separated from deep technical functions and associated time commitments and skill sets.  Where appropriate, an individual may perform both roles (see below).
 5. Participant diversity is strongly encouraged within SIGs, and SIG chairs are expected to actively encourage a diverse range of community members to take up named roles (see point 7). 
 6. A variety of perspectives is strongly encouraged within SIGs.  To this end, a supermajority (⅔ or more) of chairs or a supermajority of tech leads from a single group of related companies, market segment, etc will be actively discouraged by the TOC.
 7. SIG members are self-declared, so that some SIG work is done by volunteers from the TOC Contributors and community.  To recognise members who make sustained  and valuable contributions to a SIG over time, SIG-defined and assigned roles may be created (e.g. scribe, training or documentation coordinator etc).  SIG’s should document what these roles and responsibilities are, and who performs them, and have them approved by SIG leads. SIGs roles should have active mentoring and shadowing programs to encourage sustainability of the SIG.
@@ -111,8 +111,23 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 
 #### Tech Lead
 
-* Leads projects in the SIG’s area.
-* Has the time and ability to perform deep technical dives on projects.   Projects may include formal CNCF projects or other projects in the area covered by the SIG.
+A Tech Lead will typically have a track record of participation in SIG
+activities and/or as TOC Contributors; however, this is not a requirement,
+particularly for new SIGs and to fill vacancies.
+
+Qualifications:
+* Expert in the SIG area
+* Demonstrated ability to provide balanced and inclusive technical leadership,
+  which is needed to produce the required unbiased outputs of the SIG
+* Has the time and ability to perform deep technical dives on cloud native,
+  open source projects. (Projects may include accepted or proposed CNCF projects
+  or other projects in the area covered by the SIG.)
+
+Responsibilities:
+* Leadership or oversight of SIG projects, especially those that result in
+  SIG outputs.
+* Foster an inclusive and welcoming environment.
+* Contribute to regular TOC updates in collaboration with chairs.
 
 #### Other named roles
 
