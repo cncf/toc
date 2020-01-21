@@ -142,11 +142,13 @@ Responsibilities:
 
 ### Elections
 
-* The TOC nominates Chairs
-* Chairs are assigned following a 2/3 majority vote of the TOC
-* Terms last for 2 years but staggered such that at least 1 of the chairs is able to maintain continuity
-* The TOC and Chairs nominate Tech leads
-* Tech leads are assigned following a 2/3 majority vote of the TOC and a 2/3 majority vote of SIG Chairs
+* Chairs
+  * Nomination: TOC
+  * Vote: 2/3 majority of the TOC
+  * Terms last for 2 years but staggered such that at least 1 of the chairs is able to maintain continuity
+* Tech leads
+  * Nomination: TOC liaison or Chair
+  * Vote: 2/3 majority of the TOC and 2/3 majority vote of SIG Chairs
 * SIG Chairs and Tech Leads may be unassigned from the SIG at any time following a 2/3 majority vote of the TOC
 
 ### Governance
