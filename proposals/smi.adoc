@@ -9,7 +9,7 @@ Service Mesh Interface is an open source specification for interoperable service
 The Service Mesh Interface spec is well-aligned with the CNCF mission to make cloud native computing ubiquitous. Interoperability creates a virtuous cycle which increases adoption. SMI encourages an open source, vendor-neutral service mesh ecosystem by empowering end users to build upon ecosystem tools without needing to re-implement the underlying substrate.
 
 *Comparison with similar projects (inside or outside the CNCF), including what differentiates this project:*
-SMI is complementary to existing CNCF projects like LinkerD; it encourages adoption of service mesh. SMI is the only cross-industry effort to make service meshes interoperable. For example, LinkerD is one example of a service mesh that implements and uses SMI.
+SMI is complementary to existing CNCF projects like LinkerD and other projects like https://octo.vmware.com/project-hamlet-secure-multi-vendor-multi-mesh-federation-open-source/[Hamlet]; it encourages adoption of service mesh. SMI is a cross-industry effort to make service meshes interoperable in a multi-vendor ecosystem. For example, LinkerD is one example of a service mesh that implements and uses SMI, and SMI can be used with Hamlet.
 
 *Sponsor from TOC (sponsor helps mentor projects):*
 TBD
