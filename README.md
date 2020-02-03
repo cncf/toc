@@ -7,16 +7,17 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * aligning interfaces to components under management (code reference implementations before standardizing), and defining common practices to be implemented across CNCF projects, if any.
 
 ## Members
-
-* **Joe Beda** (term: 1 years - start date: 1/29/2019 - 1/29/2020) [GB-appointed]
-* **Jeff Brewer** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [EndUser-appointed]
 * **Brendan Burns** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 * **Brian Grant** (term: 2 years - start date: 3/17/2018 - 3/17/2020) [TOC-appointed]
+* **Jeff Brewer** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [EndUser-appointed]
+* **Justin Cormack** (term: 2 years - start date 2/4/2020 - 2/4/2022) [Maintainer-appointed]
+* **Katie Gamanji** (term: 2 years - start date 2/4/2020 - 2/4/2022) [EndUser-appointed]
+* **Liz Rice** (term: 2 years - start date: 2/4/2020 - 2/4/2022) [GB-appointed]
 * **Matt Klein** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
-* **Xiang Li** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 * **Michelle Noorali** (term: 2 years - start date: 3/18/2019 - 3/18/2021) [TOC-appointed]
-* **Liz Rice** (term: 1 year - start date: 1/29/2019 - 1/29/2020) [GB-appointed]
-* **Alexis Richardson** (term: 1 year - start date: 1/29/2019 - 1/29/2020) [GB-appointed]
+* **Saad Ali** (term: 2 years - start date 2/4/2020 - 2/4/2022) [GB-appointed]
+* **Sheng Liang** (term: 2 years - start date 2/4/2020 - 2/4/2022) [GB-appointed]
+* **Xiang Li** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 
 Election [schedule](process/election-schedule.md)
 
