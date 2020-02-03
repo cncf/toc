@@ -12,6 +12,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Bassam Tabbara, Upbound	(bassam@upbound.io)
 * Bob	Wise, Amazon Web Services	(bob@bobsplanet.com)
 * Cathy	Zhang, Huawei (cathy.h.zhang@huawei.com)
+* Calvin Weng, PingCAP (wenghao@pingcap.com)
 * Chase	Pettet, Wikimedia	Foundation (cpettet@wikimedia.org)
 * Christopher Liljenstople, Tigera (cdl@asgaard.org)
 * Clinton	Kitson, Dell (Clinton.Kitson@dell.com)
