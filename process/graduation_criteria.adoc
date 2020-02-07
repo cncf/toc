@@ -2,17 +2,20 @@
 
 Every CNCF project has an associated maturity level. Proposed CNCF projects should state their preferred maturity level. A two-thirds supermajority is required for a project to be accepted as incubating or graduated. If there is not a supermajority of votes to enter as a graduated project, then any graduated votes are recounted as votes to enter as an incubating project. If there is not a supermajority of votes to enter as an incubating project, then any graduated or incubating votes are recounted as sponsorship to enter as an sandbox project. If there is not enough sponsorship to enter as an sandbox stage project, the project is rejected. This voting process is called fallback voting.
 
-Projects of all maturities have access to all resources listed at https://cncf.io/projects[https://cncf.io/projects] but if there is contention, more mature projects will generally have priority.
+The criteria for each stage of maturity are described below, and there is a separate https://github.com/cncf/toc/blob/master/process/project_proposals.adoc[Project Proposal process].
+
+Incubating and graduated projects have access to all resources listed at https://cncf.io/projects[https://cncf.io/projects] but if there is contention, more mature projects will generally have priority.
 
 === Sandbox Stage
 
-To be accepted in the sandbox a project must 
+To be accepted in the sandbox a project must
 
-* Have at least 2 TOC sponsors
+* Require 3 of the 11 TOC members to step forward as sponsors to enter the sandbox
 * Adopt the CNCF https://github.com/cncf/foundation/blob/master/code-of-conduct.md[Code of Conduct]
 * Adhere to CNCF https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy[IP Policy] (including trademark transferred)
+* List their sandbox status prominently on website/readme
 
-See the https://github.com/cncf/toc/blob/master/process/sandbox.md[CNCF Sandbox Guidelines v1.0] for the detailed process. 
+See the https://github.com/cncf/toc/blob/master/process/sandbox.md[CNCF Sandbox Guidelines v1.0] for the detailed process.
 
 === Incubating Stage
 
