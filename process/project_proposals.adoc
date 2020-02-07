@@ -1,87 +1,92 @@
 == CNCF Project Proposal Process v1.3
 
- . *Introduction*. This governance policy sets forth the proposal process for projects to be accepted into the Cloud Native Computing Foundation (“CNCF”). The process is the same for both existing projects which seek to move into the CNCF, and new projects to be formed within the CNCF.
+=== Introduction 
 
- . *Project stages*
+This governance policy sets forth the proposal process for projects to be accepted into the Cloud Native Computing Foundation (“CNCF”). The process is the same for both existing projects which seek to move into the CNCF, and new projects to be formed within the CNCF.
 
- image::project-stages.png[Project stages]
+=== Project stages
 
- . *Sandbox process*.
+image::project-stages.png[Project stages]
 
-  All exceptions (and "no" outcomes) are handled by the TOC. Timeframes are approximate, to set expectations.
+=== Sandbox process
 
-  image::sandbox-process.png[Sandbox process]
+All exceptions (and "no" outcomes) are handled by the TOC. Timeframes are approximate, to set expectations.
 
-.. *Project Proposal*
+image::sandbox-process.png[Sandbox process]
+
+. *Project Proposal*
    * Project proposed through a https://github.com/cncf/toc/issues[GitHub issue]
    * Template TBD
-.. *TOC Triage* _2 weeks max_
+. *TOC Triage* _2 weeks max_
    * Performed by any TOC member
    * Lazy TOC consensus before declining outright
    * Picks appropriate https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md[CNCF SIG] to perform assessment
-.. *SIG Assessment* _1-2 months_
+. *SIG Assessment* _1-2 months_
    * Project presents to SIG
    * Lightweight - this is pre-DD
    * Confirms that project accepts the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#sandbox-stage[Sandbox entry requirements]
    * SIG makes recommendation to TOC: Sandbox / Incubation / Decline
-.. *TOC Review*
+. *TOC Review*
    * TOC review recommendation and presentation
    * TOC may engage with project to ask further questions
-.. *TOC Sandbox Sponsors* _Within 2 months of SIG recommendation_
+. *TOC Sandbox Sponsors* _Within 2 months of SIG recommendation_
    * If three TOC members step forward as Sponsors, the project moves to Sandbox
    * TOC Sandbox Sponsor has no formal role, but is a natural candidate for driving due diligence in the future if the project applies for incubation
-.. *Governance / legal issues*
+. *Governance / legal issues*
    * CNCF staff handle governance / legal issues
    * This can happen after TOC Sandbox Sponsors step forward
 
-  See the https://github.com/cncf/toc/blob/master/process/sandbox.md[Sandbox guidelines] for the definition of and motivation behind the CNCF Sandbox.
+See the https://github.com/cncf/toc/blob/master/process/sandbox.md[Sandbox guidelines] for the definition of and motivation behind the CNCF Sandbox.
 
-. *Incubation process*
+=== Incubation process
 
-  All exceptions (and "no" outcomes) are handled by the TOC.
+All exceptions (and "no" outcomes) are handled by the TOC.
 
-  image::incubation-process.png[Incubation process]
+image::incubation-process.png[Incubation process]
 
-.. *Project Proposal* - as for Sandbox
-.. *TOC Triage* - as for Sandbox
-.. *SIG Assessment* - as for Sandbox
+. *Project Proposal* - as for Sandbox
+. *TOC Triage* - as for Sandbox
+. *SIG Assessment* - as for Sandbox
    * Note that this step is still meant to be a lightweight, pre-DD process
-.. *TOC Review*
+. *TOC Review*
    * TOC review recommendation and presentation
    * TOC may engage with project to ask further questions
-.. *TOC Incubation Sponsor*
+. *TOC Incubation Sponsor*
    * If a TOC member steps forward as an Incubation Sponsor, due diligence commences
-.. *Due Diligence* _2-3 months_
+. *Due Diligence* _2-3 months_
    * TOC Incubation Sponsor drives due diligence (see the https://github.com/cncf/toc/blob/master/process/dd-review-template.md[template] and https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md[guidelines]).
    * TOC Incubation Sponsor can delegate DD work to CNCF SIGs and/or other TOC members.
    * TOC Incubation Sponsor can ask project maintainers to complete the DD template as a first pass.
    * CNCF staff do governance and legal DD.
    * During DD some conversations may be held in private (e.g. user interviews where the user wishes to remain anonymous) and are documented using discretion.
    * TOC Incubation Sponsor determines when DD is “done”. DD documentation should then be on GitHub, open to public comment on record.
-.. *Due Diligence review* _2-6 weeks_
+. *Due Diligence review* _2-6 weeks_
    * DD documents are available for public review and comment (GitHub, TOC mailing list, TOC public meetings)
    * TOC Incubation sponsor decides when to call TOC vote, allowing at least two weeks for public comment before calling vote
-.. *TOC vote* _up to 6 weeks_
+. *TOC vote* _up to 6 weeks_
    * TOC members assess whether project meets the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage[Incubation criteria]
    * Projects get accepted to incubation via a 2/3 supermajority vote of the TOC.
    * If the vote is not conclusive after 6 weeks, TOC chair may extend vote, or conclude that silence = abstain
 
-. *Graduation process*
+=== Graduation process
 
-  Graduation process follows the pattern of incubation, but the majority of DD should have happened at the incubation phase so it should be a less onerous process for graduation.
+Graduation process follows the pattern of incubation, but the majority of DD should have happened at the incubation phase so it should be a less onerous process for graduation.
 
-  .. *TOC vote*
+. *TOC vote*
    * TOC members assess whether project meets the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage[Graduation criteria]
    * Projects get accepted to incubation via a 2/3 supermajority vote of the TOC
 
- . *Notes*
-   * TOC always has final discretion
-   * TOC doesn’t have to accept SIG recommendation
-   * Outcome may be “no” simply because sponsors don’t step forward within the timeframe
-   * Outcome from TOC Triage or SIG recommendation could be that we want to wait for some reason e.g. project backlogs; batching similar projects together. We should give the project an explanation and set time expectations in these cases.
-   * All “no” outcomes and other exceptions are discussed by the TOC, and then with project and SIG representatives. We will try to give feedback but it may simply be a lack of conviction in the project.
+=== Notes
 
- . *Project Proposal Requirements*. Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/master/proposals/kubernetes.adoc[example]) can be written in https://www.markdownguide.org[Markdown], http://asciidoc.org[AsciiDoc], or http://docutils.sourceforge.net/rst.html[reStructuredText] and must provide the following information to the best of your ability:
+* TOC always has final discretion
+* TOC doesn’t have to accept SIG recommendation
+* Outcome may be “no” simply because sponsors don’t step forward within the timeframe
+* Outcome from TOC Triage or SIG recommendation could be that we want to wait for some reason e.g. project backlogs; batching similar projects together. We should give the project an explanation and set time expectations in these cases.
+* All “no” outcomes and other exceptions are discussed by the TOC, and then with project and SIG representatives. We will try to give feedback but it may simply be a lack of conviction in the project.
+
+=== Project Proposal Requirements
+
+Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/master/proposals/kubernetes.adoc[example]) can be written in https://www.markdownguide.org[Markdown], http://asciidoc.org[AsciiDoc], or http://docutils.sourceforge.net/rst.html[reStructuredText] and must provide the following information to the best of your ability:
 
  .. name of project (must be unique within CNCF)
  .. project description (what it does, why it is valuable, origin and history)
