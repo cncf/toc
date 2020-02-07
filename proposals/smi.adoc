@@ -12,7 +12,10 @@ The Service Mesh Interface spec is well-aligned with the CNCF mission to make cl
 SMI is complementary to existing CNCF projects like LinkerD and other projects like https://octo.vmware.com/project-hamlet-secure-multi-vendor-multi-mesh-federation-open-source/[Hamlet]; it encourages adoption of service mesh. SMI is a cross-industry effort to make service meshes interoperable in a multi-vendor ecosystem. For example, LinkerD is one example of a service mesh that implements and uses SMI, and SMI can be used with Hamlet.
 
 *Sponsor from TOC (sponsor helps mentor projects):*
-Matt Klein, Michelle Noorali
+
+* Matt Klein https://github.com/mattklein123[@mattklein123]
+* Brendan Burns https://github.com/brendandburns[@brendandburns]
+* Jeff Brewer https://github.com/brewer531[@brewer531]
 
 *Preferred maturity level (see CNCF Graduation Criteria):*
 Sandbox
