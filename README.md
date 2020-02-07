@@ -79,9 +79,10 @@ Currently, the following Special Interest Groups are active:
 * [SIG-Storage](https://github.com/cncf/sig-storage) 
 * [SIG-App-Delivery](https://github.com/cncf/sig-app-delivery)
 * [SIG-Network](https://github.com/cncf/sig-network)
+* [SIG-Runtime](https://github.com/cncf/sig-runtime)
 
 Proposed: 
-* [SIG-Runtime](https://github.com/cncf/sig-runtime)
+* SIG-ContribStrategy
 
 
 ## Working Groups
