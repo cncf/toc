@@ -10,7 +10,7 @@ image::project-stages.png[Project stages]
 
 === Sandbox process
 
-All exceptions (and "no" outcomes) are handled by the TOC. Timeframes are approximate, to set expectations.
+All exceptions (and "no" outcomes) are handled by the TOC. Possible "no" outcomes include "not at this time", and the project may be encouraged to re-apply after addressing issues. Timeframes are approximate, to set expectations.
 
 image::sandbox-process.png[Sandbox process]
 
@@ -19,13 +19,13 @@ image::sandbox-process.png[Sandbox process]
    * Template TBD
 . *TOC Triage* _2 weeks max_
    * Performed by any TOC member
-   * Lazy TOC consensus before declining outright
+   * Lazy TOC consensus before declining outright or deferring assessment at this time
    * Picks appropriate https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md[CNCF SIG] to perform assessment
 . *SIG Assessment* _1-2 months_
    * Project presents to SIG
    * Lightweight - this is pre-DD
    * Confirms that project accepts the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#sandbox-stage[Sandbox entry requirements]
-   * SIG makes recommendation to TOC: Sandbox / Incubation / Decline
+   * SIG makes recommendation to TOC: Sandbox / Incubation / Decline 
 . *TOC Review*
    * TOC review recommendation and presentation
    * TOC may engage with project to ask further questions
