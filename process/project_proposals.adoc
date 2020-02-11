@@ -17,7 +17,7 @@ image::sandbox-process.png[Sandbox process]
 . *Project Proposal*
    * Project proposed through a https://github.com/cncf/toc/issues[GitHub issue]
    * Template TBD
-. *TOC Triage* _2 weeks max_
+. *TOC Triage* _2 weeks for a straightforward referral to a SIG; decline or defer could require more discussion_
    * Performed by any TOC member
    * Lazy TOC consensus before declining outright or deferring assessment at this time
    * Picks appropriate https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md[CNCF SIG] to perform assessment
