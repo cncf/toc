@@ -28,7 +28,7 @@ To learn more about Contour's features, read and view the following resources:
 
 === Project Timeline and Snapshot
  * Heptio launched and open sourced Contour in October 2017 as an ingress controller for Kubernetes based on Envoy
- * Contour 1.0 ships in November 2019, signaling to the community a commitment to a stable set of APIs 
+ * Contour 1.0 shipped in November 2019, signaling to the community a commitment to a stable set of APIs 
  
 == Production Users
  * TBD
@@ -36,6 +36,7 @@ To learn more about Contour's features, read and view the following resources:
 == In-Flight Features
 
 The Contour team is currently working on the following feature improvements:
+ * Involved in the [Service APIs](https://github.com/kubernetes-sigs/service-apis) work to incorporate and support them in Contour
  * Using Contour to redirect requests to locations other than Pods, rewriting the ExternalName in the host header for proxied requests
  * Migration tooling for IngressRoute to HTTPProxy
 
