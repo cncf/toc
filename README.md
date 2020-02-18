@@ -59,7 +59,7 @@ Meeting agenda and presentations are [here](docs/meeting_presentations.md).
 
 An archive of community presentations is [here](docs/scheduled_presentations.md)
 
-If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. These requests are tracked in the [TOC project backlog](https://github.com/cncf/toc/projects/2).
+If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. These requests are tracked in the [TOC project backlog](https://github.com/cncf/toc/projects/4).
 
 ## Mailing List
 
@@ -79,9 +79,11 @@ Currently, the following Special Interest Groups are active:
 * [SIG-Storage](https://github.com/cncf/sig-storage) 
 * [SIG-App-Delivery](https://github.com/cncf/sig-app-delivery)
 * [SIG-Network](https://github.com/cncf/sig-network)
+* [SIG-Runtime](https://github.com/cncf/sig-runtime)
 
 Proposed: 
-* [SIG-Runtime](https://github.com/cncf/sig-runtime)
+* SIG Contributor Strategy
+* SIG Observability 
 
 
 ## Working Groups
