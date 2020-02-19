@@ -81,10 +81,8 @@ Currently, the following Special Interest Groups are active:
 * [SIG-Network](https://github.com/cncf/sig-network)
 * [SIG-Runtime](https://github.com/cncf/sig-runtime)
 
-Proposed: 
 * SIG Contributor Strategy
 * SIG Observability 
-
 
 ## Working Groups
 
