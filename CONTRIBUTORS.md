@@ -28,6 +28,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Eduardo	Silva, Treasure Data (eduardo@treasure-data.com)
 * Edward Lee, Intuit (edward_lee@intuit.com)
 * Erin Boyd, Red Hat (eboyd@redhat.com)
+* Frederick Kautz, Doc.ai (frederick@doc.ai)
 * Gergely Csatari, Nokia (gergely.csatari@nokia.com)
 * Geri Jennings, CyberArk (geri.jennings@cyberark.com)
 * Ghe	Rivero, Independent (ghe.rivero@gmail.com)
