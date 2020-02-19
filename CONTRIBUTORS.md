@@ -59,6 +59,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Nimesh Agarwal, Dunzo (nimesh.mittal@gmail.com)
 * Pengfei Ni, Microsoft (peni@microsoft.com)
 * Philip Lombardi, Datawire.io (plombardi@datawire.io)
+* Piyush Sharrma, Accurics (piyush@accurics.com)
 * Quinton Hoole, Huawei (quinton.hoole@huawei.com)
 * Randy	Abernethy, RX-M LLC (randy.abernethy@rx-m.com)
 * Ricardo Aravena, Rakuten (raravena80@gmail.com)
@@ -78,4 +79,3 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Zou Nengren, CMCC (zounengren@cmss.chinamobile.com)
 * Jia Xuan, CMCC (jiaxuan@chinamobile.com)
 * Zhipeng Huang, Huawei (huangzhipeng@huawei.com)
-* Piyush Sharrma, Accurics (piyush@accurics.com)
