@@ -2,7 +2,8 @@
 
 ## Contributing Projects to CNCF
 
-If you're interested in contributing a project to CNCF, please open up an issue here for discussion: https://github.com/cncf/toc/issues
+If you're interested in contributing a project to CNCF, please open up a PR so that it can be tracked through the process: 
+https://github.com/cncf/toc/pulls
 
 The full project proposal process is located [here](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc).
 
