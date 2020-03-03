@@ -70,11 +70,17 @@ image::incubation-process.png[Incubation process]
 
 === Graduation process
 
-Graduation process follows the pattern of incubation, but the majority of DD should have happened at the incubation phase so it should be a less onerous process for graduation.
-
+. *Submit Graduation Proposal Template*
+   * Project fills out and submits the link:graduation-proposal-template.md[graduation proposal template] in a pull request in the https://github.com/cncf/toc[cncf/toc GitHub repo].
+   * The file containing the proposal should be located in https://github.com/cncf/toc/proposals/graduation/[the graduation proposals directory].
+   * The proposal addresses how the project has grown since incubation and any concerns from incubation DD in addition to the standard graduation requirements.
+. *TOC member kicks off two week period of time for pulic comment on the TOC mailing list*
+   * The email should contain a link to the proposal pull request.
+   * All SIGs, end users, TOC members, and community members are welcome to comment at this time on the mailing list.
+   * Historically, projects have done a TOC presentation as part of the graduation process. The TOC has gotten rid of the presentation requirement. Instead, if the TOC wants to have a deeper discussion about the project with the maintainers, they may schedule an ad hoc meeting to do so before the vote.
 . *TOC vote*
    * TOC members assess whether project meets the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage[Graduation criteria]
-   * Projects get accepted to incubation via a 2/3 supermajority vote of the TOC
+   * Projects must have a 2/3 supermajority vote of the TOC to graduate
 
 === Notes
 
