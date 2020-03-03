@@ -380,7 +380,7 @@ PingCAP
 
 Our team believes Chaos Mesh will be a great fit for CNCF. As manifested in the CNCF mission:
 
-_““These techniques enable loosely coupled systems that are **resilient, manageable, and observable**. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil. “_
+_“These techniques enable loosely coupled systems that are **resilient, manageable, and observable**. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil. “_
 
 We believe Chaos Mesh is one of the essential enablements to this mission, and it’s also a great addition to the sandbox project scope. By covering comprehensive fault injection methods in Pod, network, file system, and even the kernel, Chaos Mesh aims at providing a neutral, universal Chaos Engineering platform that enables cloud-native applications to be as resilient as they should be. Chaos Mesh uses CRD to define chaos objects, making it naturally integrated with the Kubernetes ecosystem. In addition, it integrates several other projects in the cloud-native ecosystem, such as Helm, Prometheus, and Grafana.
 
