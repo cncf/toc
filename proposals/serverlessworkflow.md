@@ -6,7 +6,7 @@
 
 TOC created the Serverless Working Group to investigate
 the Serverless landscape. The outputs of the WG included:
-- a [whitepaper]https://github.com/cncf/wg-serverless/blob/master/whitepapers/serverless-overview/README.md) that:
+- a [whitepaper](https://github.com/cncf/wg-serverless/blob/master/whitepapers/serverless-overview/README.md) that:
   - defines Serverless and its terminology
   - describes common use cases for the technology
   - compares it with other Cloud Native technologies and \*aaS environments
@@ -21,7 +21,10 @@ the Serverless landscape. The outputs of the WG included:
     around: Events, Deployments and Workflows
   - provide additional education as needed
 
-In addition to CloudEvents specification, the Serverless WG has agreed to form a sub working group to work on
+The Working Group's first focus area was around making it easier for middleware to process Events,
+which led to the development of the [CloudEvents](https://cloudevents.io) specification.
+
+Additionally, the Serverless WG has agreed to form a sub working group to work on
 the Serverless Workflow specification.
 
 Goals of the Serverless Workflow sub-group are to :
@@ -66,9 +69,10 @@ sense for this work to be more formalized as a new sandbox project under the CNC
 The goals/roadmap of the project include:
 
 - finalize release v0.1.
-- keep improving specification to v1.0.
 - define requirements for implementation compliance.
 - define requirements for Serverless Workflow API/SDK.
+- continue improving and verifying specification quality by
+promoting and testing community implementations.
 
 **Statement on alignment with CNCF mission**:
 
@@ -119,6 +123,8 @@ We would like to request a dedicated github repository for the Serverless Workfl
 
 We would like to request a dedicated website.
 
+We would like to request a dedicated mailing list if possible.
+
 **Communication Channels**:
 
 Mailing list: https://lists.cncf.io/g/cncf-wg-serverless
@@ -162,8 +168,7 @@ one meeting:
 
 Nokia, Red Hat, Camunda, Futurewei, Pivotal / VMware, IBM, Twilio, Codid
 
-And the following have voting rights (today), which means they regularly
-attend the weekly calls:
+And the following have voting rights (today):
 
 Red Hat, Camunda, Futurewei
 
