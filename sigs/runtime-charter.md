@@ -28,7 +28,7 @@ are in scope, including:
 
 
 *   generalized orchestration, autoscaling, scheduling, execution, container
-    runtimes, sandboxing, virtualization, image packaging and distribution and specialized architectures thereof, e.g. 
+    runtimes, sandboxing, virtualization, image packaging/distribution and specialized architectures thereof, e.g. 
     *   those aimed specifically at Edge, IoT, Batch, Big Data, AI/ML, etc
     *   those incorporating specialized computing elements beyond CPUs, including GPUs, TPUs, FPGAs, ASICs, etc.
 
@@ -43,10 +43,8 @@ Anything not considered in scope above is out of scope.  See also “Interfaces 
 
 Examples include:
 
-
-
-*   General authentication, authorization, accounting, auditing, etc (even though these clearly apply to )
-    - because AAA, etc is clearly the domain of the [CNCF Security SIG](https://github.com/cncf/sig-app-delivery).
+*   General authentication, authorization, accounting, auditing, etc (even though these clearly apply to several of the areas in the scope of this SIG)
+    - because AAA, etc is clearly the domain of the [CNCF Security SIG](https://github.com/cncf/sig-security).
 *   Getting network traffic into and out of workloads, or any of the interfaces related to that (e.g. CNI)
     - these are the domain of the ([proposed](https://github.com/cncf/toc/blob/master/sigs/proposed.md)) CNCF Traffic SIG, and other related network-centric groups.  
 *   Local or remote storage associated with workloads
@@ -98,8 +96,8 @@ set out by the CNCF TOC](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.
     effort by the two groups and maintain clear and consistent messaging
     to our end user community and projects.
 *   **[CNCF Security SIG](https://github.com/cncf/sig-security)**
-    - works on the more general area of cloud-native security including a
-    uthentication, authorization, encryption, accounting, auditing, and
+    - works on the more general area of cloud-native security including
+    authentication, authorization, encryption, accounting, auditing, and
     related topics.  We defer as much as possible to this group to deal
     with general security-related issues and liaise closely with them on
     how to deal with security areas where these arise.
@@ -109,6 +107,11 @@ set out by the CNCF TOC](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.
     pertains to helping to ensure that the required underlying workload
     execution abstractions and mechanisms are suitably provided to support
     these application-level delivery needs.
+*   **[OCI Open Container Initiative](https://www.opencontainers.org/)**
+    is an open governance structure focussed on creating industry standards
+    around container formats and runtime. CNCF projects in the scope of
+    this SIG-Runtime will typically engage directly with OCI, with SIG-Runtime
+    being involved as needed.
 *   **Note regarding Container Registries/Repositories** and the like:
     While image packaging and distribution (and hence container
     registries/repositories in general) fall within the scope of this
@@ -130,10 +133,11 @@ provided by the TOC unless otherwise stated here.
 
 **Current TOC Liaison:**  Brendan Burns and Brian Grant
 
-**[Proposed] Co-Chairs:** [Quinton Hoole](https://www.linkedin.com/in/quintonhoole/),
-  [Ricardo Aravena](https://www.linkedin.com/in/raravena), 1 TBD
+**Co-Chairs:** [Quinton Hoole](https://www.linkedin.com/in/quintonhoole/),
+  [Ricardo Aravena](https://www.linkedin.com/in/raravena),
+  [Diane Feddema](www.linkedin.com/in/dianefeddema)
 
-**[Proposed] Tech Leads:** [Klaus Ma](http://www.klaus1982.cn/about/), 2 TBD
+**Tech Leads:** [Klaus Ma](http://www.klaus1982.cn/about/), 2 TBD
 
 **Other named roles: **None at present; will be identified and staffed as needed.
 
