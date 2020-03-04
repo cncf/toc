@@ -157,7 +157,7 @@ attendance.
 Without implying endorsement, the following companies have attended at least
 one meeting:
 
-Nokie, Red Hat, Camunda, Futurewei, Pivotal / VMware, IBM, Twilio, Codid
+Nokia, Red Hat, Camunda, Futurewei, Pivotal / VMware, IBM, Twilio, Codid
 
 And the following have voting rights (today), which means they regularly
 attend the weekly calls:
