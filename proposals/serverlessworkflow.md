@@ -49,10 +49,10 @@ Here is diagram that illustrates the Serverless Workflow functional flow:
 <img src="https://github.com/cncf/wg-serverless/raw/master/workflow/spec/media/sample-serverless-workflow2.png" with="400px" height="260px" alt="Serverless Workflow Diagram"/>
 </p>
 
-You can see Serverless Workflow Examples
+You can see the Serverless Workflow specification examples
 [here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/spec-examples.md).
 
-You can see the currently defined Serverless Workflow use cases
+You can see the Serverless Workflow specification use-cases
 [here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/spec-usecases.md)
 
 You can see the Serverless Workflow specification logo
@@ -65,7 +65,8 @@ sense for this work to be more formalized as a new sandbox project under the CNC
 
 The goals/roadmap of the project include:
 
-- moving the specification to v1.0.
+- finalize release v0.1.
+- keep improving specification to v1.0.
 - define requirements for implementation compliance.
 - define requirements for Serverless Workflow API/SDK.
 
@@ -86,7 +87,8 @@ as possible.
 
 **Sponsor / Advisor from TOC**:
 
-**Preferred maturity level**: 
+**Preferred maturity level**:
+
 Sandbox
 
 **License**:
@@ -111,9 +113,11 @@ Also we have the:
 [OWNERS](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/governance/owners.md)
 doc lists community members currently responsible for overseeing, reviewing, and approving changes to specification documents.
 
-**Infrastructure Requests**: 
+**Infrastructure Requests**:
 
-We would like to request a dedicated github repository for the Serverless Workflow specification. 
+We would like to request a dedicated github repository for the Serverless Workflow specification.
+
+We would like to request a dedicated website.
 
 **Communication Channels**:
 
@@ -135,11 +139,10 @@ Changes are tracked with GitHub PRs: https://github.com/cncf/wg-serverless/pulls
 **Website**:
 
 Serverless Workflow does not have its own website.
-We would like to request one if possible.
 
 **Release Methodology and Mechanics**
 
-With the large growth of the specification in the last month, we are formalizing the 
+With the large growth of the specification in the last months, we are formalizing the
 specification roadmap at the moment and working on the v.0.1 release.
 
 Beyond what will be defined there, the sub-group will decide when
@@ -149,7 +152,7 @@ significate progress has been made to warrant a new release.
 
 **Contributor statistics**:
 
-Attendance is tracked [here](https://docs.google.com/document/d/1xwcsWQmMiRN24a7o7oy9MstzMroAup31oOkM5Dru1jQ/edit#heading=h.g2rizfze8av2).
+Meeting attendance is tracked [here](https://docs.google.com/document/d/1xwcsWQmMiRN24a7o7oy9MstzMroAup31oOkM5Dru1jQ/edit#heading=h.g2rizfze8av2).
 
 As can been seen in that document, Serverless Workflow monthly calls have regular
 attendance.
@@ -163,3 +166,5 @@ And the following have voting rights (today), which means they regularly
 attend the weekly calls:
 
 Red Hat, Camunda, Futurewei
+
+We continue to keep working on increasing our community interested in this specification.
