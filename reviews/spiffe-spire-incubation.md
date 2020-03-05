@@ -50,9 +50,9 @@ https://spire.devstats.cncf.io/d/1/activity-repository-groups?orgId=1
 
 ### A clear versioning scheme
 
-SPIRE operates on a 90 day major release cadence. The SPIFFE specification is currently unversioned.
+SPIRE operates on a 90 day major release cadence. SPIRE is currently on version 0.9.3. There are regular releases with an up to date change log.
 
-SPIRE is currently on version 0.9.0 There are regular releases with an up to date change log. 
+The SPIFFE specification is currently unversioned.
 
 ### Public Reference to the spec
 
