@@ -1,29 +1,61 @@
-== Kubeinvaders Proposal
+=== KubeInvaders CNCF Sandbox Project Proposal
 
-*Name of project:* KubeInvaders
+*Name of Project:* KubeInvaders
 
-*Description*
+*Description:*
 
 KubeInvaders is a gamified chaos engineering tool for Kubernetes. It is like Space Invaders but the aliens are PODs.
+It is very lightweight but I would like add some functionalities in order to transform KubeInvaders in an useful and interactive chaos engineering and monitoring tool.
 
-*Sponsor / Advisor from TOC*: Eugenio Marzo
+Users can deploy KubeInvaders on Kubernetes via Helm charts.
 
-*Unique Identifier*: kubeinvaders
+KubeInvaders use cases:
 
-*License*: Apache License v2.0
+* Test how resilient Kubernetes clusters are on unexpected pod deletion.
+* Collect metrics like pod restart time.
+* Tune readiness probes.
 
-*Source control repositories*: https://github.com/lucky-sideburn/KubeInvaders
+**Statement on alignment with CNCF mission:**
 
-*Initial Committers*: https://github.com/lucky-sideburn
+KubeInvaders is well-aligned with the CNCF's mission because allow developers to interact with Kubernetes clusters and test quickly the performance of pods.
 
-*Infrastructure requirements (CI / CNCF Cluster)*:
+It will be integrated with Prometheus.
 
-* Kubernetes or Openshift cluster
+*Roadmap:*
 
-*External Dependencies*
+The project uses GitHub issues.
 
-* Defold - Defold License https://defold.com
+This is the roadmap:
 
-*Statement on alignment with CNCF mission*:
+1. Integrate KubeInvaders with Prometheus
+2. Extend KubeInvaders to test not only pods but also: nodes, networking, disk i/o, cpu, memory.
 
-I am looking forward joining the foundation for increasing the number of committers! I think that Kubeinvaders could be inserted in some Kubernetes Web UI (Dashboard).
+*Sponsors from TOC:* Nobody for now...
+
+*Preferred maturity level:* Sandbox
+
+*License:* Apache License 2.0 
+
+*Source control:* GitHub https://github.com/lucky-sideburn/KubeInvaders
+
+*Maintainers:*
+
+ * Eugenio Marzo (Sourcesense)
+
+*Infrastructure requests (CI / CNCF Cluster):* none
+
+We currently use test and build KubeInvaders on a Kimsufi physical server. We use Jenkins for CI/CD and Openshift and Kubernetes as target cluster.
+
+*Communication Channels:*
+
+ * Issue tracker: https://github.com/lucky-sideburn/KubeInvaders/issues
+
+*Social media accounts:*
+
+ * Twitte: https://twitter.com/luckysideburn
+
+*Community size:*
+
+500+ stars
+
+6 contributors
