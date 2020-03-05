@@ -2,7 +2,7 @@
 
 The SPIFFE and SPIRE projects were open-sourced in December 2017. The projects were accepted into the CNCF in March 2018. The projects have grown significantly over time.
 
-The following application links to the required information to become an incubation project. Additionally, a due diligence has been prepared to assist in the view has been prepared and is accesible at https://docs.google.com/document/d/1tkN9YgBSLEUszOflWPHO72qedOaUb3iHfAye45dKJT8/
+The following application links to the required information to become an incubation project. Additionally, a due diligence document has been prepared to assist in the view has been prepared and is accesible at: https://docs.google.com/document/d/1tkN9YgBSLEUszOflWPHO72qedOaUb3iHfAye45dKJT8/
 
 
 ## SPIFFE/SPIRE fulfills all the incubation criteria:
@@ -28,8 +28,9 @@ https://spire.devstats.cncf.io/d/1/activity-repository-groups?orgId=1
 
 #### SPIFFE spec
 
-| Commits    | 298     |
+|            |         |
 |------------|---------|
+| Commits    | 298     |
 | Committers | 5       |
 | Commits    | Avg: 5 Max: 29 |
 | Stars      | 586     |
@@ -38,8 +39,9 @@ https://spire.devstats.cncf.io/d/1/activity-repository-groups?orgId=1
 
 #### SPIRE
 
-| Commits                | 2,892          |
+|                        |                |
 |------------------------|----------------|
+| Commits                | 2,892          |
 | Committers             | 7              |
 | Contributors           | Avg: 7 Max: 50 |
 | Contributing Companies | Avg: 3 Max: 27 |
