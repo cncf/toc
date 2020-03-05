@@ -2,7 +2,7 @@
 
 The SPIFFE and SPIRE projects were open-sourced in December 2017. The projects were accepted into the CNCF in March 2018. The projects have grown significantly over time.
 
-The following application links to the required information to become an incubation project. Additionally, a due diligence document has been prepared to assist in the view has been prepared and is accesible at: https://docs.google.com/document/d/1tkN9YgBSLEUszOflWPHO72qedOaUb3iHfAye45dKJT8/
+The following application links to the required information to become an incubation project. Additionally, a due diligence document has been prepared to assist in the proposal review is accesible at: https://docs.google.com/document/d/1tkN9YgBSLEUszOflWPHO72qedOaUb3iHfAye45dKJT8/
 
 
 ## SPIFFE/SPIRE fulfills all the incubation criteria:
