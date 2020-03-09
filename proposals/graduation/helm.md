@@ -43,7 +43,7 @@ _**Project should address each area listed below**_
 
 ### * Link to Incubation Due Diligence(DD) Document
 
-Helm entered the CNCF as an incubating project after being part of Kubernetes when it came into the CNCF. Helm was apart of Kubernetes when it graduated. The Helm due diligence at the time is captured in the [incubating proposal](https://github.com/cncf/toc/blob/master/proposals/incubation/helm.adoc).
+Helm entered the CNCF as an incubating project after being part of Kubernetes when it came into the CNCF. Helm was a part of Kubernetes when it graduated. The Helm due diligence at the time is captured in the [incubating proposal](https://github.com/cncf/toc/blob/master/proposals/incubation/helm.adoc).
 
 ### * Address any concerns or recommendations from the SIG and/or TOC sponsor(s) from the DD Document
 
