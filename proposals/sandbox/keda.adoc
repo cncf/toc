@@ -22,7 +22,7 @@ By leveraging scale-to-0, Kubernetes Event-driven Autoscaling (KEDA) allows cust
 
 Kubernetes Event-driven Autoscaling (KEDA) provides production-grade security by supporting pod identities, like Azure AD Pod Identity, to avoid secret management and allow for authentication re-use across multiple scalers. This allows existing deployments to run under the same minimal permissions while KEDA scalers can use higher-priviledged authentication to gain the required metrics. With this approach, we allow developers to focus on their workload while ops manages the authentication & configuration of the autoscaling, although it can be managed end-to-end by a full-stack as well.
 
-KEDA was presented at [KubeCon 2019](https://www.youtube.com/watch?v=ZK2SS_GXF-g).
+KEDA was presented at KubeCon 2019 (https://www.youtube.com/watch?v=ZK2SS_GXF-g).
 
 *Statement on alignment with CNCF mission:*
 
