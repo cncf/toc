@@ -4,6 +4,13 @@ Helm originally joined the CNCF when Kubernetes became the first CNCF project. H
 
 On behalf of the maintainers, we believe Helm is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage) and meets the v1.3 criteria. The Helm [due diligence questions](https://docs.google.com/document/d/1-5ncwLwikeQrAmeVAPuCYlWLYMCw2OmQuouTYCECYFk/edit), following the [guidelines](https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md), can be found in a separate Google Docs document.
 
+Helm has seen dramatic growth since joining incubation. For example,
+
+* [At KubeCon/CloudNativeCon US in San Diego Helm was 3rd most popular project](https://www.cncf.io/wp-content/uploads/2020/01/KubeCon_NA_19_Report.pdf).
+* Helm now has more than 1 million downloads in a months time.
+* Installations via Homebrew for MacOS have grown more than 12 times since entering incubation.
+* Helm v3, a major change, was released
+
 ## Graduation State Criteria
 
 _**Project should address each graduation criteria listed below**_
