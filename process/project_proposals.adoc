@@ -72,7 +72,7 @@ image::incubation-process.png[Incubation process]
 
 . *Submit Graduation Proposal Template*
    * Project fills out and submits the link:graduation-proposal-template.md[graduation proposal template] in a pull request in the https://github.com/cncf/toc[cncf/toc GitHub repo].
-   * The file containing the proposal should be located in https://github.com/cncf/toc/proposals/graduation/[the graduation proposals directory].
+   * The file containing the proposal should be located in https://github.com/cncf/toc/tree/master/proposals/graduation[the graduation proposals directory].
    * The proposal addresses how the project has grown since incubation and any concerns from incubation DD in addition to the standard graduation requirements.
 . *TOC member kicks off two week period of time for pulic comment on the TOC mailing list*
    * The email should contain a link to the proposal pull request.
