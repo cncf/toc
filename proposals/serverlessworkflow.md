@@ -6,6 +6,7 @@
 
 TOC created the Serverless Working Group to investigate
 the Serverless landscape. The outputs of the WG included:
+
 - a [whitepaper](https://github.com/cncf/wg-serverless/blob/master/whitepapers/serverless-overview/README.md) that:
   - defines Serverless and its terminology
   - describes common use cases for the technology
@@ -27,13 +28,16 @@ which led to the development of the [CloudEvents](https://cloudevents.io) specif
 Additionally, the Serverless WG has agreed to form a sub working group to work on
 the Serverless Workflow specification.
 
+Serverless Workflow is a vendor-neutral specification for defining the model of workflows responsible for 
+orchestrating event-driven serverless applications.
+
 Goals of the Serverless Workflow sub-group are to :
 
 - Standardize Serverless Workflow model and definition
 - Facilitate Serverless Workflow portability
 - Be completely vendor neutral
 - Support both stateless and stateful Serverless Workflow implementations
-- Supply a light-weight, human-readable, and embeddable format for describing serverless workflows
+- To define a light-weight and powerful Serverless Workflow model
 
 Functional scope of the Serverless Workflow specification includes:
 
@@ -58,6 +62,8 @@ You can see the Serverless Workflow specification examples
 You can see the Serverless Workflow specification use-cases
 [here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/spec-usecases.md)
 
+You can see the Serverless Workflow community contributed libraries/tools [here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/community/open-source.md).
+
 You can see the Serverless Workflow specification logo
 [here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/media/logo-small-text.png).
 
@@ -73,6 +79,10 @@ The goals/roadmap of the project include:
 - define requirements for Serverless Workflow API/SDK.
 - continue improving and verifying specification quality by
 promoting and testing community implementations.
+
+You can find the project roadmap document [here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/roadmap.md).
+
+You can find the Serverless Workflow blog [here](https://serverlessworkflow.blogspot.com/).
 
 **Statement on alignment with CNCF mission**:
 
