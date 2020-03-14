@@ -22,10 +22,11 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 Election [schedule](process/election-schedule.md)
 
 ## Projects
+See the current CNCF projects and a description of project maturity levels (Sandbox, Incubating, Graduated) [here](https://www.cncf.io/projects/).
 
-See the process for contributing a project [here](CONTRIBUTING.md).
+[Here](https://www.cncf.io/services-for-projects/) is a list of services that the CNCF provides for Incubating and Graduated projects hosted in the foundation. CNCF also provides a subset of these services to [Sandbox](https://www.cncf.io/sandbox-projects/) level projects.
 
-See the current CNCF projects [here](https://www.cncf.io/projects/).
+See the process for contributing a project [here](CONTRIBUTING.md). If you have any questions or don't know where to start, open an [issue](https://github.com/cncf/toc/issues).
 
 ## Meeting Time
 
