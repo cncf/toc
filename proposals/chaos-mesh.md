@@ -1,5 +1,13 @@
 # Chaos Mesh Project Proposal
 
+# Background
+
+**[TOC PR](https://github.com/cncf/toc/pull/367)** 
+
+**[Presentation Slide](https://docs.google.com/presentation/d/115QvSCnT6ROwwV1lK-R10d4MW54fQhtVM2uZDGscpEk/edit#slide=id.g80f082b201_0_0)**
+
+**[GitHub](https://github.com/pingcap/chaos-mesh)**
+
 **Name of Project:** Chaos Mesh  
 
 **Description**:
