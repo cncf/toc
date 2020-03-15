@@ -138,9 +138,9 @@ This is currently being defined. Releases every few months with RC process.
 Although it’s just been open-sourced since Dec 31, 2019, Chaos Mesh has been gaining recognition and popularity quickly in the community, with 1400+ stars received on GitHub in a month. It has also been listed under  [CNCF Cloud Native Interactive Landscape](https://landscape.cncf.io/category=chaos-engineering&format=card-mode&grouping=category).
 
 * Stars: 1500+
-* Contributors: 20
-* Commits: 201+
-* Forks: 78+
+* Contributors: 23
+* Commits: 240+
+* Forks: 88+
 
 **Comparison**
 
