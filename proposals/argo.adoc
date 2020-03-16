@@ -2,7 +2,9 @@
 
 *Name of project*: Argo
 
-*Description*: The Argo Project is a set of Kubernetes-native tools for running and managing jobs and applications on Kubernetes. This is exemplified by the Argo tagline, "Get stuff done with Kubernetes!" Argo make it easy to combine three modes of computing (services, workflows and event-based) in creating jobs and applications on Kubernetes.
+*Description*:
+
+The Argo Project is a set of Kubernetes-native tools for deploying and running jobs and applications on Kubernetes. All the Argo tools are implemented as controllers and custom resources. These tools can be used independently but are even more powerful when used together. As a CNCF incubation project, all top level projects  must meet incubation maturity requirements.
 
 *Argo Workflows* enables creation of complex parallel workflows as Kubernetes resources and is used in many different use cases from CI/CD pipelines to DAG-based ML training workflows. It is the workflow engine behind the open source Kubeflow Pipelines.
 
@@ -31,6 +33,7 @@ The Argo project is well-aligned with the CNCF’s mission to make cloud native 
 Alexis Richardson
 Jeff Brewer
 Joe Beda
+Michelle Noorali
 Xiang Li
 
 *Unique identifier*: argo, argoproj
