@@ -45,6 +45,7 @@
 [Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Sandbox
 [ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
 [KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Sandbox
+[Service Mesh Interface](https://smi-spec.io)|Jeff Brewer, Brendan Burns, Matt Klein|[1/16/20](https://github.com/cncf/toc/pull/336) -  [SIG Network](https://github.com/cncf/sig-network/blob/master/recommendations/smi.md)|[3/16/20](https://github.com/deislabs/smi-spec)|Sandbox
 
 
 ## Graduated Projects
