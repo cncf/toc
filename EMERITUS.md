@@ -11,5 +11,6 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Quinton Hoole (3/17/2018 - 3/17/2019)
 * Alexis Richardson (1/29/2016 - 1/29/2020)
 * Joe Beda (1/29/2019 - 1/29/2020) 
+* Brian Grant (3/17/2018 - 3/17/2020)
 
 We thank these members for their service to the CNCF community.
