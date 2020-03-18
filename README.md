@@ -7,8 +7,8 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * aligning interfaces to components under management (code reference implementations before standardizing), and defining common practices to be implemented across CNCF projects, if any.
 
 ## Members
+* **Alena Prokharchyk** (term: 2 years - start date: 3/18/2020 - 3/18/2022) [TOC-appointed]
 * **Brendan Burns** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
-* **Brian Grant** (term: 2 years - start date: 3/17/2018 - 3/17/2020) [TOC-appointed]
 * **Jeff Brewer** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [EndUser-appointed]
 * **Justin Cormack** (term: 2 years - start date 2/4/2020 - 2/4/2022) [Maintainer-appointed]
 * **Katie Gamanji** (term: 2 years - start date 2/4/2020 - 2/4/2022) [EndUser-appointed]
