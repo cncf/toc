@@ -19,8 +19,9 @@ a pull request with document referencing the roles and charter, updating the lis
 | [SIG Storage](https://github.com/cncf/sig-storage) | Xiang Li | 
 | [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Katie Gamanji | 
 | [SIG Network](https://github.com/cncf/sig-network) | Matt Klein |
+| [SIG Runtime](https://github.com/cncf/sig-runtime) | Brendan Burns, Brian Grant |
 
-## SIG Chairs as of January 2020
+## SIG Chairs as of March 2020
 
 ### SIG Storage 
 * [Erin Boyd](https://github.com/erinboyd)
@@ -42,9 +43,6 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Ken Owens](https://github.com/kenowens12)
 
 ### SIG Runtime 
-(still in formation)
+* [Diane Feddema](https://github.com/dfeddema)
 * [Quinton Hoole](https://github.com/quinton-hoole)
 * [Ricardo Aravena](https://github.com/raravena80)
-
-
-
