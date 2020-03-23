@@ -31,6 +31,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Frederick Kautz, Doc.ai (frederick@doc.ai)
 * Gergely Csatari, Nokia (gergely.csatari@nokia.com)
 * Geri Jennings, CyberArk (geri.jennings@cyberark.com)
+* Gerred Dillon, D2iQ (gerred@d2iq.com)
 * Ghe	Rivero, Independent (ghe.rivero@gmail.com)
 * Gilbert Song, Mesosphere (gilbert@mesosphere.com)
 * Gou	Rao, Portworx (gou@portworx.com)
