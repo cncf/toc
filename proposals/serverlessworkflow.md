@@ -53,14 +53,14 @@ Functional scope of the Serverless Workflow specification includes:
 Here is diagram that illustrates the Serverless Workflow functional flow:
 
 <p align="center">
-<img src="https://github.com/cncf/wg-serverless/raw/master/workflow/spec/media/sample-serverless-workflow2.png" with="400px" height="260px" alt="Serverless Workflow Diagram"/>
+<img src="https://raw.githubusercontent.com/cncf/wg-serverless/master/workflow/spec/media/spec/sample-serverless-workflow2.png" height="450px" alt="Serverless Workflow Diagram"/>
 </p>
 
 You can see the Serverless Workflow specification examples
-[here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/spec-examples.md).
+[here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/examples.md).
 
 You can see the Serverless Workflow specification use-cases
-[here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/spec-usecases.md)
+[here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/usecases.md)
 
 You can see the Serverless Workflow community contributed libraries/tools [here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/community/open-source.md).
 
