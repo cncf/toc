@@ -8,7 +8,7 @@ final review by Liz Rice, Joe Beda and Zhipeng Huang.
 
 # Roles
 
-**TOC Liaisons:** Liz Rice, Joe Beda
+**TOC Liaisons:** Liz Rice, Justin Cormack
 
 **Co-Chairs:** Sarah Allen, Dan Shaw, Jeyappragash JJ
 
