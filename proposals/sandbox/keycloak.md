@@ -1,6 +1,6 @@
 # Keycloak CNCF Sandbox Project Submission Proposal
 
-This is a resubmission of Keycloa as Sandbox project. Initially proposed in 2018 has been impacted by Sandbox process changes and overal lack of bandwidth in TOC. This resulted in halt of intake of new projects. Now that new process settled and new TOC elections concluded we would like to approach inclusion of Keycloak as CNCF Sandbox project again. 
+This is a resubmission of Keycloak as Sandbox project. Initially proposed in 2018 has been impacted by Sandbox process changes and overal lack of bandwidth in TOC. This resulted in halt of intake of new projects. Now that new process settled and new TOC elections concluded we would like to approach inclusion of Keycloak as CNCF Sandbox project again. 
 
 
 Authors:  
@@ -100,7 +100,7 @@ Key high level items
 * Token Exchange Service
 * Introduce Webhooks as extension mechanism
 * Config templates / isolation and realm hierarchy
-* Authentication improvments - Adaptive / Risk based Step Up Authentication; Flexible consent authentication flows
+* Authentication improvements - Adaptive / Risk based Step Up Authentication; Flexible consent authentication flows
 
 # Project Scope
 
@@ -115,11 +115,22 @@ Focusing on modern standards around the OAuth2 ecosystem, while including SAML2 
 It is an opinionated solution trying to avoid code and function creep. Aiming to remain fairly lightweight. Delivering on 80/20 principle. Focusing on Cloud Native and modern use cases. 
 
 
-## Value-add to the CNCF ecosystem
+## Value-add to the Cloud Native Deployments
 
-Security is a cornerstone of Cloud Native environments and the OAuth2 family of standards like OpenID Connect has become a default choice when implementing modern applications, services, and APIs. Keycloak fits perfectly into the cloud landscape as a lightweight and modern solution. Embracing developers with an ease of use and and the rapid velocity of integrating Keycloak into applications, Keycloak also embraces new development models. 
+Security is a cornerstone of Cloud Native deployments and the OAuth2 family of standards like OpenID Connect has become a default choice when implementing modern applications, services, and APIs. Keycloak fits perfectly into the cloud landscape as a lightweight and modern solution. Embracing developers with an ease of use and and the rapid velocity of integrating Keycloak into applications, Keycloak also embraces new development models. 
 
-Rapid project growth and adoption has proven it has already become a technology of choice for applications developed in Cloud Native ecosystem. 
+Rapid project growth and adoption has proven it has already become a technology of choice for applications developed in Cloud Native ecosystem.
+
+## Single Source of Truth for Cloud Identities
+
+By centralizing identity management and allowing integration with different identity sources (e.g.: LDAP and user-defined databases), Keycloak can act as a single source
+of truth for applications as well as to the infrastructure where these applications are deployed to.
+
+Keycloak is already considered by some key projects such as OpenStack, Kubernetes and OpenShift to leverage their security capabilities by providing this single source of truth for identities accessing the cloud. Some references:
+
+* https://docs.openstack.org/vitrage/latest/contributor/keycloak-config.html
+* https://kubernetes.io/docs/reference/access-authn-authz/authentication/#configuring-the-api-server
+
 
 ## Alignment with other CNCF projects
 
