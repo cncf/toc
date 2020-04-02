@@ -8,7 +8,7 @@ GitHub Stars: 7100+
 Contributors in the TiKV core repository: 226
 Forks: 1100+
 Releases: 86 releases
-Adoptors: 500+
+Adoptors: 500+ (including commercial users and community users)
 
 On behalf of the maintainers team, we believe TiKV is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage).
 
@@ -56,15 +56,55 @@ https://github.com/tikv/tikv/blob/master/docs/adopters.md
 
 ### * Address any concerns or recommendations from the SIG and/or TOC sponsor(s) from the DD Document
 
-- More diversified (company-wise) core maintainers:
+- **More diversified (company-wise) core maintainers**:
 
-    - In the incubating proposal, we had "approximately 82%
-of the commits came from PingCAP, with the remaining 18% coming from companies like Alibaba, Docker, Netease, Tencent, and others". Now, the contribution ratio has been improved - with PingCAP contributing 70% and the remaining 30% coming from multiple other companies like Bilibili, Netease, Spotify, Grafana, and others.
+    - In the incubating proposal, we had "approximately 82% of the commits came from PingCAP, with the remaining 18% coming from companies like Alibaba, Docker, Netease, Tencent, and others". Now, the contribution ratio has been improved - with PingCAP contributing 70% and the remaining 30% coming from multiple other companies like Bilibili, Netease, Spotify, Grafana, and others.
+
     - With regard to the maintainer structure, we have two new maintainers promoted from our adopters. With more diversity introduced to the maintainership we believe the TiKV project is heading towards healthy and sustained development.
 
-- More diversified user base:
-    - We have adopters distributed in a more broader geographical range, including Europe (dailymotion), East and Southeast Asia (VNG, Bookmyshow, Shoppee, etc), Japan, and the US (not-yet-public adopters can be shared upon request).
-    - We have more (8) known adoptors deploying TiKV independently without TiDB. Some of the case studies are:
-       - [Case study: TiKV in JD Cloud](https://www.cncf.io/blog/2019/11/26/case-study-tikv-in-jd-cloud/)
-       - [Zhihu's 1.3 Trillion Rows of Data, Milliseconds of Response Time](https://dzone.com/articles/lesson-learned-from-queries-over-13-trillion-rows-1)
+
+- **More diversified user base**:
+
+    - We have adopters distributed in a broader geographical range, including Europe (dailymotion), East and Southeast Asia (VNG, Bookmyshow, Shoppee, etc), Japan, and the US (not-yet-public adopters can be shared upon request).
+    - We have more known adopters deploying TiKV independently without TiDB. Some of the use cases are:
+        - JD Cloud (full-service cloud computing platform)  adopts TiKV for its metadata storage of our OSS, which was migrated from MySQL. See [Case study: TiKV in JD Cloud](https://www.cncf.io/blog/2019/11/26/case-study-tikv-in-jd-cloud/)
+       
+        - Yidian Zixun (news aggregator) uses TiKV independently to build performant distributed storage for their user profiling data, by implementing a tikv-proxy that allows TiKV deployment either via tidb-ansible or a modified tidb operator (which they will migrate to)
+        
+        - Zhihu (quora in China) is building Zetta Table Store, its structured data layer on top of TiKV, to serve its trillion rows of data of feed service. They also hold the record of the largest single cluster, with 168 TiKV nodes. The use case study is working in progress.
+    
     - Current adopters are across a wide range of industries including finance, internet, online education, news, e-commerce, entertainment, etc.
+
+-** Roadmap with release target:**
+
+  We have roadmap per release, but previously only on TiDB. Now already published on the [TiKV website](https://tikv.org/docs/dev/roadmap/)
+
+- Performance test results and regression test between releases
+
+  We have the following tests in-between releases. A test report will be provided before each release. The related doc can be requested if needed.
+
+    - CI tests
+      - Unit tests
+      - Integration tests
+      - Compatibility testing
+    - Feature tests
+      - Bugfix tests
+      - Ansible tests
+      - Regression tests
+      - About 200+ cases
+    - Chaos test (on both the internal chaos engineering platform and Chaos Mesh, the open-sourced Chaos Engineering solution for Kubernetes )
+      - 4 functionality tests
+      - More than 5 stability tests
+      - 2 compatibility test
+    - Jepsen tests
+      - Performance tests
+      - Sysbench five OLTP tests
+      - TPC-C
+      - TPC-H, covers 22 SQLs
+      - YCSB (workloada, workloadb, workloadc, workloadd, workloadf)
+
+- **A TiKV centric toolset and reduce hard external binary dependencies**:
+
+   Helm chart in practice turned out an unfitting solution for deploying TiKV due to some of its own issues. So we choose operator instead. Currently, TiKV can be easily deployed on Kubernetes via TiDB Operator and monitored by Prometheus, as already been practised by some of our adoptors like Yidian Zixun. And the community will support a standalone TiKV Operator by end of April, 2020.
+
+
