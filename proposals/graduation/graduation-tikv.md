@@ -4,11 +4,11 @@ TiKV is an open source distributed transactional key-value database. TiKV joined
 
 To highlight some of the achievements:
 
-GitHub Stars: 7100+
-Contributors in the TiKV core repository: 226
-Forks: 1100+
-Releases: 86 releases
-Adoptors: 500+ (including commercial users and community users)
+- GitHub Stars: 7100+
+- Contributors in the TiKV core repository: 226
+- Forks: 1100+
+- Releases: 86 releases
+- Adoptors: 500+ (including commercial users and community users)
 
 On behalf of the maintainers team, we believe TiKV is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage).
 
@@ -71,7 +71,7 @@ https://github.com/tikv/tikv/blob/master/docs/adopters.md
        
         - Yidian Zixun (news aggregator) uses TiKV independently to build performant distributed storage for their user profiling data, by implementing a tikv-proxy that allows TiKV deployment either via tidb-ansible or a modified tidb operator (which they will migrate to)
         
-        - Zhihu (quora in China) is building Zetta Table Store, its structured data layer on top of TiKV, to serve its trillion rows of data of feed service. They also hold the record of the largest single cluster, with 168 TiKV nodes. The use case study is working in progress.
+        - Zhihu (quora in China) is building Zetta Table Store, its structured data layer on top of TiKV, to serve its trillion rows of data of feed service. They also hold the record of the largest single cluster, with 252 TiKV nodes. The use case study is working in progress.
     
     - Current adopters are across a wide range of industries including finance, internet, online education, news, e-commerce, entertainment, etc.
 
