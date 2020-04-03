@@ -55,7 +55,7 @@ _Principle: Great projects already have many ingredients to succeed. First: do n
 Identify projects that have a real shot at being a useful tool in the evolving box of cloud native technology. This is a mix of mature and early-stage projects.   Early stage may not have all the criteria we want: diverse contributor bases, formalized governance, interoperability, cloud-native designs, quality bar, etc. 
 
 Some considerations:
-- Transparent, consistent technical and governance quality bar for [graduation](https://www.cncf.io/projects/graduation-criteria/) from incubation
+- Transparent, consistent technical and governance quality bar for [graduation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc) from incubation
 - Has users, preferably in production; is a high quality, high-velocity project (for incubation and graduated projects). Inception level projects are targeted at earlier-stage projects to cultivate a community/technology
 - Has a committed and excited team that appears to understand the challenges ahead and wishes to meet them
 - Has a fundamentally sound design without obvious critical compromises that will inhibit potential widespread adoption
