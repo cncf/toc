@@ -33,13 +33,13 @@ When we say that Sandbox projects are "early stage" this covers the following ex
 
 The CNCF hopes that all early stage projects will achieve the success they desire.  And the organisation will help as appropriate.  But certain caveats must be stated nonetheless.
 
-End users should treat early stage projects with care.  It is expected that some Sandbox projects may fail.  They may never move to the next maturity level. While many early projects are safe to try out, users must exercise their own judgment.  Some projects may be alpha quality software.  There is no guarantee of production readiness, users, or professional level support.  Where projects enjoy the public support of one or more professional software organisations, those may be seed stage. In short: The CNCF Operating Principle about "no kingmakers" is of special importance in the Sandbox.  
+End users should treat early stage projects with care.  It is expected that some Sandbox projects may fail.  They may never move to the next maturity level. While many early projects are safe to try out, users must exercise their own judgment.  Some projects may be alpha quality software.  There is no guarantee of production readiness, users, or professional level support.  Where projects enjoy the public support of one or more professional software organisations, those may be seed stage. In short: The CNCF Operating Principle about "no kingmakers" is of special importance in the Sandbox.
 
 ## Sandbox Governance and Benefits
 
 ### Advantages of Sandbox vs non-Sandbox for new projects
 
-CNCF will remain fair and open to all projects no matter what their initial provenance.  Should a project apply for CNCF Incubation, the TOC will use the same criteria regardless of origin. This means the TOC will not discriminate in favour of Sandbox projects vs. non-Sandbox projects.  
+CNCF will remain fair and open to all projects no matter what their initial provenance.  Should a project apply for CNCF Incubation, the TOC will use the same criteria regardless of origin. This means the TOC will not discriminate in favour of Sandbox projects vs. non-Sandbox projects.
 
 Therefore the advantages of being in the Sandbox apply prior to application for Incubation, ie.:
 
@@ -81,20 +81,4 @@ Some key points:
 * Reviewed on an annual basis; submit a report to the TOC for review
 * CNCF Sandbox projects can stay in the sandbox indefinitely
 
-### Sandbox Entry Requirements
 
-* Require 2 TOC sponsors to enter the sandbox
-* Require presentation to the TOC community twice-a-month meeting
-* Require adherence to [CNCF IP Policy](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy) (including trademark transferred)
-* Require sandbox projects to list their sandbox status prominently on website/readme
-
-### Sandbox Exit Requirements
-
-* Existing incubation criteria: [https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc)
-
-    * Require 2/3 vote from the TOC to enter incubation
-    * Used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
-    * Have a healthy number of committers
-    * Full [due diligence](https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md) by the TOC
-
-* Archiving criteria: projects may be archived via a 2/3 vote from the TOC

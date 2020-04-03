@@ -8,7 +8,7 @@ The full project proposal process is located [here](https://github.com/cncf/toc/
 
 ## TOC Contributors
 
-There has been a call from CNCF’s Technical Oversight Committee (TOC) for additional contributors and expertise to help evaluate potential projects and contribute to [CNCF SIGs](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md) and [working groups](https://github.com/cncf/toc#working-groups). With the metaphor of the TOC as an open source project and the 9 TOC [members](https://www.cncf.io/people/technical-oversight-committee/) as the maintainers, we are making a call for new **TOC Contributors**.
+There has been a call from CNCF’s Technical Oversight Committee (TOC) for additional contributors and expertise to help evaluate potential projects and contribute to [CNCF SIGs](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md) and [working groups](https://github.com/cncf/toc#working-groups). With the metaphor of the TOC as an open source project and the TOC [members](https://github.com/cncf/toc#members) as the maintainers, we are making a call for new **TOC Contributors**.
 
 Possible ways to contribute:
 

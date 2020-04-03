@@ -1,0 +1,126 @@
+== Service Mesh Interface Proposal
+*Name of Project:*
+Service Mesh Interface
+
+*Project Description:*
+Service Mesh Interface is an open source specification for interoperable service meshes on Kubernetes. Launched in May 2019, SMI brings the ecosystem together with a standard which enables innovation by providing a common abstraction that anyone can build against.
+
+*Statement on alignment with CNCF charter mission:*
+The Service Mesh Interface spec is well-aligned with the CNCF mission to make cloud native computing ubiquitous. Interoperability creates a virtuous cycle which increases adoption. SMI encourages an open source, vendor-neutral service mesh ecosystem by empowering end users to build upon ecosystem tools without needing to re-implement the underlying substrate.
+
+*Comparison with similar projects (inside or outside the CNCF), including what differentiates this project:*
+SMI is complementary to existing CNCF projects like LinkerD and other projects like https://octo.vmware.com/project-hamlet-secure-multi-vendor-multi-mesh-federation-open-source/[Hamlet]; it encourages adoption of service mesh. SMI is a cross-industry effort to make service meshes interoperable in a multi-vendor ecosystem. For example, LinkerD is one example of a service mesh that implements and uses SMI, and SMI can be used with Hamlet.
+
+*Sponsor from TOC (sponsor helps mentor projects):*
+
+* Matt Klein https://github.com/mattklein123[@mattklein123]
+* Brendan Burns https://github.com/brendandburns[@brendandburns]
+* Jeff Brewer https://github.com/brewer531[@brewer531]
+
+*Preferred maturity level (see CNCF Graduation Criteria):*
+Sandbox
+
+*License (charter dictates Apache 2 by default):* 
+The current license is OWF Contributor License Agreement 1.0 - Copyright and Patent. - https://github.com/deislabs/smi-spec/blob/master/CONTRIBUTING.md#specifications-subject-to-the-open-web-foundation-agreements
+
+*Source control (GitHub by default):* 
+https://github.com/deislabs/smi-spec
+
+*External dependencies (including licenses):*
+While the spec itself does not have dependencies, the SMI Go SDK lists https://github.com/deislabs/smi-sdk-go/blob/master/go.mod[these dependencies]:
+
+* https://github.com/kubernetes/client-go[github.com/kubernetes-client/go] v0.0.0-20190516163813-075b33afc74f
+* https://github.com/stretchr/testify[github.com/stretchr/testify] v1.3.0
+* https://gopkg.in/yaml.v2[gopkg.in/yaml.v2] v2.2.2
+* https://github.com/kubernetes/api[k8s.io/api] v0.0.0-20181213150558-05914d821849
+* https://github.com/kubernetes/apimachinery[k8s.io/apimachinery] v0.0.0-20181127025237-2b1284ed4c93
+* https://github.com/kubernetes/client-go[k8s.io/client-go] v0.0.0-20181213151034-8d9ed539ba31
+* https://github.com/kubernetes/code-generator[k8s.io/code-generator] v0.0.0-20181114232248-ae218e241252
+
+SMI Metrics lists https://github.com/deislabs/smi-metrics/blob/master/go.mod[these dependencies]:
+
+* https://github.com/deislabs/smi-sdk-go[github.com/deislabs/smi-sdk-go] v0.1.0
+* https://github.com/fsnotify/fsnotify[github.com/fsnotify/fsnotify] v1.4.7
+* https://github.com/go-chi/chi[github.com/go-chi/chi] * v4.0.2+incompatible
+* https://github.com/hellofresh/health-go[github.com/hellofresh/health-go] v2.0.2+incompatible
+* https://github.com/improbable-eng/go-httpwares[github.com/improbable-eng/go-httpwares] v0.0.0-20190118142334-33c6690a604c
+* https://github.com/Masterminds/sprig[github.com/masterminds/sprig] v2.18.0+incompatible
+* https://github.com/prometheus/client_golang[github.com/prometheus/client_golang] v0.9.3-0.20190127221311-3c4408c8b829
+* https://github.com/prometheus/common[github.com/prometheus/common] v0.3.0
+* https://github.com/sirupsen/logrus[github.com/sirupsen/logrus] v1.4.1
+* https://github.com/spf13/cobra[github.com/spf13/cobra] v0.0.3
+* https://github.com/spf13/pflag[github.com/spf13/pflag] v1.0.3
+* https://github.com/spf13/viper[github.com/spf13/viper] v1.3.2
+* https://github.com/stretchr/testify[github.com/stretchr/testify] v1.3.0
+* https://github.com/unrolled/render[github.com/unrolled/render] v1.0.0
+* https://gopkg.in/yaml.v2[gopkg.in/yaml.v2] v2.2.2
+* https://github.com/kubernetes/api[k8s.io/api] v0.0.0-20190409021203-6e4e0e4f393b
+* https://github.com/kubernetes/apimachinery[k8s.io/apimachinery] v0.0.0-20190404173353-6a84e37a896d
+* https://github.com/kubernetes/client-go[k8s.io/client-go] v11.0.0+incompatible
+* https://github.com/kubernetes/klog[k8s.io/klog] v0.3.2
+
+SMI adapter for Istio lists https://github.com/deislabs/smi-adapter-istio/blob/master/Gopkg.toml[these dependencies]:
+
+* https://github.com/coreos/prometheus-operator[github.com/coreos/prometheus-operator]
+* https://github.com/deislabs/smi-sdk-go[github.com/deislabs/smi-sdk-go]
+* https://github.com/evanphx/json-patch[github.com/evanphx/json-patch]
+* https://github.com/go-openapi/spec[github.com/go-openapi/spec]
+* https://github.com/operator-framework/operator-sdk[github.com/operator-framework/operator-sdk]
+* https://github.com/kubernetes/api[k8s.io/api]
+* https://github.com/kubernetes/apiextensions-apiserver[k8s.io/apiextensions-apiserver]
+* https://github.com/kubernetes/apimachinery[k8s.io/apimachinery]
+* https://github.com/kubernetes/client-go[k8s.io/client-go]
+* https://github.com/kubernetes/code-generator[k8s.io/code-generator]
+* https://github.com/kubernetes/gengo[k8s.io/gengo]
+* https://github.com/kubernetes/kube-openapi[k8s.io/kube-openapi]
+* https://github.com/kubernetes-sigs/controller-runtime[sigs.k8s.io/controller-runtime]
+* https://github.com/kubernetes-sigs/controller-tools[sigs.k8s.io/controller-tools]
+
+*Initial committers (how long working on project, companies they represent):*
+
+* https://github.com/deislabs/smi-spec/graphs/contributors
+* https://github.com/deislabs/smi-metrics/graphs/contributors
+* https://github.com/deislabs/smi-adapter-istio/graphs/contributors
+
+Contributors from Buoyant and Hashicorp shaped much of the initial spec development, along with contributors from Microsoft and others on all projects. 
+
+*Infrastructure requests (CI / CNCF Cluster):*
+We have no infrastructure requests at this time.
+
+*Communication channels (slack, irc, mailing lists):*
+SMI Slack allows self-signup (from https://smi-spec.io/). https://aka.ms/smi/slack
+
+*Issue tracker (GitHub by default):* https://github.com/deislabs/smi-spec/issues
+
+*Website:* https://smi-spec.io/
+
+*Release methodology and mechanics:* 
+The SMI community has bi-weekly calls where we review any spec changes. After discussion and input from all parties, we submit a pull request to the repo where at least 2 maintainers must LGTM. When an API is changed, we bump the version of the API listed in the document containing the API.
+The smi-sdk-go project is a companion project to the specification and helps the community to integrate with SMI more easily. Once an API version is increased in the specification, the changes are made in the smi-sdk-go project. Then, we cut a new github release. We release at the moment on every API change.
+
+*Social media accounts:* https://twitter.com/smi_spec
+
+*Community size and any existing sponsorship:* 
+As SMI is a spec, it’s hard to measure the community size. However, there are several implementations of SMI (listed below) and the bi-weekly community meetings generally have an attendance of around 15 people. 
+
+We have 10 core maintainers from 6 different employers: Buoyant, KinVolk, HashiCorp, Maeshery, Weaveworks, and Microsoft.
+
+The https://github.com/deislabs/smi-spec[spec repo] has 379 stars and 31 forks on GitHub.
+
+*Who is currently known to be using the project? Are they using it in production and at what scale? (It may be hard to obtain accurate data for this, but any supporting evidence of usage is helpful):*
+As SMI is a spec, a more useful approach may be looking at who is implementing the spec.
+
+* Flagger: progressive delivery operator 	flagger.app
+* Rio: application deployment engine	rio.io
+* Maesh: simpler service mesh		mae.sh
+* Linkerd: [CNCF] ultralight service mesh	linkerd.io
+* Service Mesh Hub: unified dashboard 	solo.io/products/service-mesh-hub
+* SuperGloo: mesh orchestration 		supergloo.solo.io
+* Istio*: connect, secure, control, observe	deislabs/smi-adapter-istio
+* Consul Connect*: service segmentation	consul.io/docs/connect
+
+*via adaptor
+
+*Project logo in svg format (see https://github.com/cncf/artwork#cncf-related-logos-and-artwork for guidelines):*
+https://raw.githubusercontent.com/deislabs/smi-spec/master/logo/logo.svg
+(See https://github.com/deislabs/smi-spec/pull/90 for all logo files.)
