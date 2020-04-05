@@ -77,7 +77,7 @@ https://github.com/tikv/tikv/blob/master/docs/adopters.md
 
 - **Roadmap with release target**:
 
-  We have roadmap per release, but previously only on TiDB. Now already published on the [TiKV website](https://tikv.org/docs/dev/roadmap/)
+  We have roadmap per release, but previously only on TiDB. Now already published on the [TiKV website](https://tikv.org/docs/dev/roadmap/).
 
 - Performance test results and regression test between releases
 
@@ -105,6 +105,6 @@ https://github.com/tikv/tikv/blob/master/docs/adopters.md
 
 - **A TiKV centric toolset and reduce hard external binary dependencies**:
 
-   Helm chart in practice turned out an unfitting solution for deploying TiKV due to some of its own issues. So we choose operator instead. Currently, TiKV can be easily deployed on Kubernetes via TiDB Operator and monitored by Prometheus, as already has been practised by some of our adoptors like Yidian Zixun. And the community will support a standalone TiKV Operator by end of April, 2020.
+   Helm chart in practice turned out an unfitting solution for deploying TiKV due to some of its own issues. So we choose operator instead. Currently, TiKV can be easily deployed on Kubernetes via TiDB Operator and monitored by Prometheus, as already has been practised by some of our adoptors like Yidian Zixun. And the community are in the process of supporting a standalone TiKV Operator, which will be available in May, 2020.
 
 
