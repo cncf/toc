@@ -135,7 +135,7 @@ Primary external dependencies of Go projects are listed below:
 |go-github|BSD-3-Clause|https://github.com/google/go-github[https://github.com/google/go-github]
 |go-homedir|MIT|https://github.com/mitchellh/go-homedir[https://github.com/mitchellh/go-homedir]
 |go-lang|BSD|https://github.com/golang/go[https://github.com/golang/go]
-|go-version|MLPL-2.0|https://github.com/hashicorp/go-version[https://github.com/hashicorp/go-version]
+|go-version|MPL-2.0|https://github.com/hashicorp/go-version[https://github.com/hashicorp/go-version]
 |k8s.io/api|Apache-2.0|https://github.com/kubernetes/api[https://github.com/kubernetes/api]
 |k8s.io/helm|Apache-2.0|https://github.com/kubernetes/helm[https://github.com/kubernetes/helm]
 |k8s.io/utils|Apache-2.0|https://github.com/kubernetes/utils[https://github.com/kubernetes/utils]
