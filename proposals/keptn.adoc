@@ -125,15 +125,17 @@ Keptn uses several tools in the background (either as helpers for tutorials, or 
 
 In addition, Keptn is split into multiple Microservices within the https://github.com/keptn/keptn repository. Each of these microservices can have various dependencies.
 
-Primray external dependencies of Go projects are listed below:
+Primary external dependencies of Go projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
 |cobra|MIT|https://github.com/spf13/cobra[https://github.com/spf13/cobra]
 |cloudevents/sdk-go|Apache-2.0|https://github.com/cloudevents/sdk-go[https://github.com/cloudevents/sdk-go]
 |docker-credential-helpers|MIT|https://github.com/docker/docker-credential-helpers[https://github.com/docker/docker-credential-helpers]
+|go-autorest|Apache-2.0|https://github.com/Azure/go-autorest/autorest[https://github.com/Azure/go-autorest/autorest]
 |go-github|BSD-3-Clause|https://github.com/google/go-github[https://github.com/google/go-github]
 |go-homedir|MIT|https://github.com/mitchellh/go-homedir[https://github.com/mitchellh/go-homedir]
 |go-lang|BSD|https://github.com/golang/go[https://github.com/golang/go]
+|go-version|MLPL-2.0|https://github.com/hashicorp/go-version[https://github.com/hashicorp/go-version]
 |k8s.io/api|Apache-2.0|https://github.com/kubernetes/api[https://github.com/kubernetes/api]
 |k8s.io/helm|Apache-2.0|https://github.com/kubernetes/helm[https://github.com/kubernetes/helm]
 |k8s.io/utils|Apache-2.0|https://github.com/kubernetes/utils[https://github.com/kubernetes/utils]
@@ -143,7 +145,17 @@ Primray external dependencies of Go projects are listed below:
 |yaml.v2|Apache-2.0|https://github.com/go-yaml/yaml[https://github.com/go-yaml/yaml]
 |===
 
-Furthermore, Keptn's Bridge is implemented using Angular and TypeScript. See [keptn/bridge/package.json](https://github.com/keptn/keptn/blob/0.6.1/bridge/package.json) as an overview.
+Furthermore, Keptn's Bridge is implemented using Angular and TypeScript.
+
+Primary external dependencies of Keptn's Bridge are listed below:
+|===
+|*Software*|*License*|*Project Page*
+|angular|MIT|https://github.com/angular/angular[https://github.com/angular/angular]
+|barista-components|Apache-2.0|https://github.com/dynatrace-oss/barista[https://github.com/dynatrace-oss/barista]
+|ngrx|MIT|https://github.com/ngrx[https://github.com/ngrx]
+|===
+Please see keptn/bridge/package.json[https://github.com/keptn/keptn/blob/0.6.1/bridge/package.json] for full details.
+
 
 *Maintainers:*
 
