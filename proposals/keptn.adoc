@@ -109,7 +109,7 @@ No sponsors yet.
 
 *External Dependencies:*
 
-External dependencies of keptn are listed below:
+Keptn uses several tools in the background (either as helpers for tutorials, or as core components):
 
 |===
 |*Software*|*License*|*Project Page*
@@ -123,152 +123,32 @@ External dependencies of keptn are listed below:
 |yq|MIT|https://mikefarah.github.io/yq/[https://mikefarah.github.io/yq/]
 |===
 
-External dependencies of Go projects are listed below:
+In addition, Keptn is split into multiple Microservices within the https://github.com/keptn/keptn repository. Each of these microservices can have various dependencies.
+
+Primray external dependencies of Go projects are listed below:
 |===
 |*Software*|*License*|*Project Page*
+|cobra|MIT|https://github.com/spf13/cobra[https://github.com/spf13/cobra]
 |cloudevents/sdk-go|Apache-2.0|https://github.com/cloudevents/sdk-go[https://github.com/cloudevents/sdk-go]
-|cobra|Apache-2.0|https://github.com/spf13/cobra[https://github.com/spf13/cobra]
 |docker-credential-helpers|MIT|https://github.com/docker/docker-credential-helpers[https://github.com/docker/docker-credential-helpers]
 |go-github|BSD-3-Clause|https://github.com/google/go-github[https://github.com/google/go-github]
 |go-homedir|MIT|https://github.com/mitchellh/go-homedir[https://github.com/mitchellh/go-homedir]
 |go-lang|BSD|https://github.com/golang/go[https://github.com/golang/go]
+|k8s.io/api|Apache-2.0|https://github.com/kubernetes/api[https://github.com/kubernetes/api]
+|k8s.io/helm|Apache-2.0|https://github.com/kubernetes/helm[https://github.com/kubernetes/helm]
+|k8s.io/utils|Apache-2.0|https://github.com/kubernetes/utils[https://github.com/kubernetes/utils]
 |uuid|BSD-3-Clause|https://github.com/google/uuid[https://github.com/google/uuid]
 |viper|MIT|https://github.com/spf13/viper[https://github.com/spf13/viper]
 |websocket|BSD-2-Clause|https://github.com/gorilla/websocket[https://github.com/gorilla/websocket]
 |yaml.v2|Apache-2.0|https://github.com/go-yaml/yaml[https://github.com/go-yaml/yaml]
 |===
 
-Go projects are:
-
-* keptn/cli
-* dynatrace-service
-* deploy-service
-
-External dependencies of all TypeScript projects are listed below:
-|===
-|*Software*|*License*|*Project Page*
-|axios|MIT|https://www.npmjs.com/package/axios[https://www.npmjs.com/package/axios]
-|base64url|MIT|https://www.npmjs.com/package/base64url[https://www.npmjs.com/package/base64url]
-|body-parser|MIT|https://www.npmjs.com/package/body-parser[https://www.npmjs.com/package/body-parser]
-|buffer-equal-constant-time|BSD-3-Clause|https://www.npmjs.com/package/buffer-equal-constant-time[https://www.npmjs.com/package/buffer-equal-constant-time]
-|camelize|MIT|https://www.npmjs.com/package/camelize[https://www.npmjs.com/package/camelize]
-|chai|MIT|https://www.npmjs.com/package/chai[https://www.npmjs.com/package/chai]
-|cloudevent|Apache-2.0|https://www.npmjs.com/package/cloudevent[https://www.npmjs.com/package/cloudevent]
-|cloudevents-sdk|Apache-2.0|https://www.npmjs.com/package/cloudevents-sdk[https://www.npmjs.com/package/cloudevents-sdk]
-|copyfiles|MIT|https://www.npmjs.com/package/copyfiles[https://www.npmjs.com/package/copyfiles]
-|crypto|ISC|https://www.npmjs.com/package/crypto[https://www.npmjs.com/package/crypto]
-|decamelize|MIT|https://www.npmjs.com/package/decamelize[https://www.npmjs.com/package/decamelize]
-|express|MIT|https://www.npmjs.com/package/express[https://www.npmjs.com/package/express]
-|express-ws|BSD-2-Clause|https://www.npmjs.com/package/express-ws[https://www.npmjs.com/package/express-ws]
-|express-ws-routes|MIT|https://www.npmjs.com/package/express-ws-routes[https://www.npmjs.com/package/express-ws-routes]
-|github-api|BSD-3-Clause-Clear|https://www.npmjs.com/package/github-api[https://www.npmjs.com/package/github-api]
-|inversify|MIT|https://www.npmjs.com/package/inversify[https://www.npmjs.com/package/inversify]
-|inversify-express-utils|MIT|https://www.npmjs.com/package/inversify-express-utils[https://www.npmjs.com/package/inversify-express-utils]
-|jenkins|MIT|https://www.npmjs.com/package/jenkins[https://www.npmjs.com/package/jenkins]
-|js-base64|BSD-3-Clause|https://www.npmjs.com/package/js-base64[https://www.npmjs.com/package/js-base64]
-|jsonwebtoken|MIT|https://www.npmjs.com/package/jsonwebtoken[https://www.npmjs.com/package/jsonwebtoken]
-|kubernetes-client|MIT|https://www.npmjs.com/package/kubernetes-client[https://www.npmjs.com/package/kubernetes-client]
-|mocha|MIT|https://www.npmjs.com/package/mocha[https://www.npmjs.com/package/mocha]
-|moment|MIT|https://www.npmjs.com/package/moment[https://www.npmjs.com/package/moment]
-|mustache|MIT|https://www.npmjs.com/package/mustache[https://www.npmjs.com/package/mustache]
-|nock|MIT|https://www.npmjs.com/package/nock[https://www.npmjs.com/package/nock]
-|nodejs-base64|Unlicense|https://www.npmjs.com/package/nodejs-base64[https://www.npmjs.com/package/nodejs-base64]
-|nodemon|MIT|https://www.npmjs.com/package/nodemon[https://www.npmjs.com/package/nodemon]
-|nyc|ISC|https://www.npmjs.com/package/nyc[https://www.npmjs.com/package/nyc]
-|postinstall|MIT|https://www.npmjs.com/package/postinstall[https://www.npmjs.com/package/postinstall]
-|reflect-metadata|Apache-2.0|https://www.npmjs.com/package/reflect-metadata[https://www.npmjs.com/package/reflect-metadata]
-|sinon|BSD-3-Clause|https://www.npmjs.com/package/sinon[https://www.npmjs.com/package/sinon]
-|snyk|Apache-2.0|https://www.npmjs.com/package/snyk[https://www.npmjs.com/package/snyk]
-|socket.io|MIT|https://www.npmjs.com/package/socket.io[https://www.npmjs.com/package/socket.io]
-|source-map-support|MIT|https://www.npmjs.com/package/source-map-support[https://www.npmjs.com/package/source-map-support]
-|swagger-express-ts|MIT|https://www.npmjs.com/package/swagger-express-ts[https://www.npmjs.com/package/swagger-express-ts]
-|swagger-ui-dist|Apache-2.0|https://www.npmjs.com/package/swagger-ui-dist[https://www.npmjs.com/package/swagger-ui-dist]
-|ts-base-64|ISC|https://www.npmjs.com/package/ts-base-64[https://www.npmjs.com/package/ts-base-64]
-|tslint|Apache-2.0|https://www.npmjs.com/package/tslint[https://www.npmjs.com/package/tslint]
-|tslint-config-airbnb|Apache-2.0|https://www.npmjs.com/package/tslint-config-airbnb[https://www.npmjs.com/package/tslint-config-airbnb]
-|ts-node|MIT|https://www.npmjs.com/package/ts-node[https://www.npmjs.com/package/ts-node]
-|typescript|Apache-2.0|https://www.npmjs.com/package/typescript[https://www.npmjs.com/package/typescript]
-|uuid|MIT|https://www.npmjs.com/package/uuid[https://www.npmjs.com/package/uuid]
-|verify-github-webhook|MIT|https://www.npmjs.com/package/verify-github-webhook[https://www.npmjs.com/package/verify-github-webhook]
-|ws|MIT|https://www.npmjs.com/package/ws[https://www.npmjs.com/package/ws]
-|yamljs|MIT|https://www.npmjs.com/package/yamljs[https://www.npmjs.com/package/yamljs]
-|===
-
-TypeScript projects are: 
-
-* github-service
-* jenkins-service
-* pitometer-service 
-* servicenow-service
-* keptn/auth
-* keptn/control
-* keptn/eventbroker
-* keptn/eventbroker-ext
-
-External dependencies of JavaScript projects are listed below:
-|===
-|*Software*|*License*|*Project Page*
-|axios|MIT|https://www.npmjs.com/package/axios[https://www.npmjs.com/package/axios]
-|babel-eslint|MIT|https://www.npmjs.com/package/babel-eslint[https://www.npmjs.com/package/babel-eslint]
-|body-parser|MIT|https://www.npmjs.com/package/body-parser[https://www.npmjs.com/package/body-parser]
-|bootstrap|MIT|https://www.npmjs.com/package/bootstrap[https://www.npmjs.com/package/bootstrap]
-|bootstrap-vue|MIT|https://www.npmjs.com/package/bootstrap[https://www.npmjs.com/package/bootstrap]
-|cookie-parser|MIT|https://www.npmjs.com/package/cookie-parser[https://www.npmjs.com/package/cookie-parser]
-|core-js|MIT|https://www.npmjs.com/package/core-js[https://www.npmjs.com/package/core-js]
-|debug|MIT|https://www.npmjs.com/package/debug[https://www.npmjs.com/package/debug]
-|eslint|MIT|https://www.npmjs.com/package/eslint[https://www.npmjs.com/package/eslint]
-|eslint-plugin-vue|MIT|https://www.npmjs.com/package/eslint-plugin-vue[https://www.npmjs.com/package/eslint-plugin-vue]
-|express|MIT|https://www.npmjs.com/package/express[https://www.npmjs.com/package/express]
-|http-errors|MIT|https://www.npmjs.com/package/http-errors[https://www.npmjs.com/package/http-errors]
-|less|Apache-2.0|https://www.npmjs.com/package/less[https://www.npmjs.com/package/less]
-|less-loader|MIT|https://www.npmjs.com/package/less-loader[https://www.npmjs.com/package/less-loader]
-|momen|MIT|https://www.npmjs.com/package/moment[https://www.npmjs.com/package/moment]
-|morgan|MIT|https://www.npmjs.com/package/morgan[https://www.npmjs.com/package/morgan]
-|vue|MIT|https://www.npmjs.com/package/vue[https://www.npmjs.com/package/vue]
-|vue-router|MIT|https://www.npmjs.com/package/vue-router[https://www.npmjs.com/package/vue-router]
-|vue-template-compiler|MIT|https://www.npmjs.com/package/vue-template-compiler[https://www.npmjs.com/package/vue-template-compiler]
-|vuex|MIT|https://www.npmjs.com/package/vuex[https://www.npmjs.com/package/vuex]
-|===
-
-JavaScript projects are:
-
-* bridge
-
-External dependencies of Ballerina projects are listed below:
-|===
-|*Software*|*License*|*Project Page*
-|ballerina-lang|Apache-2.0|https://github.com/ballerina-platform/ballerina-lang[https://github.com/ballerina-platform/ballerina-lang]
-|===
-
-Ballerina projects are:
-
-* slack-service
-
-External dependencies of the jenkins-service are listed below:
-|===
-|*Software*|*License*|*Project Page*
-|Jenkins|MIT|https://jenkins.io/
-|_Jenkins Plugins:_| | 
-|credentials-binding|MIT|https://github.com/jenkinsci/credentials-binding-plugin[https://github.com/jenkinsci/credentials-binding-plugin]
-|git|MIT|https://github.com/jenkinsci/git-plugin[https://github.com/jenkinsci/git-plugin]
-|github-branch-source|MIT|https://github.com/jenkinsci/github-branch-source-plugin[https://github.com/jenkinsci/github-branch-source-plugin]
-|google-oauth-plugin|Apache-2.0|https://github.com/jenkinsci/google-oauth-plugin[https://github.com/jenkinsci/google-oauth-plugin]
-|google-source-plugin|Apache-2.0|https://github.com/jenkinsci/google-source-plugin[https://github.com/jenkinsci/google-source-plugin]
-|kubernetes|Apache-2.0|https://github.com/jenkinsci/kubernetes-plugin[https://github.com/jenkinsci/kubernetes-plugin]
-|kubernetes-credentials-provider|MIT|https://github.com/jenkinsci/kubernetes-credentials-provider-plugin[https://github.com/jenkinsci/kubernetes-credentials-provider-plugin]
-|performance|MIT|https://github.com/jenkinsci/performance-plugin[https://github.com/jenkinsci/performance-plugin]
-|performance-signature-dynatracesaas|Apache-2.0|https://github.com/jenkinsci/performance-signature-dynatrace-plugin[https://github.com/jenkinsci/performance-signature-dynatrace-plugin]
-|performance-signature-ui|Apache-2.0|https://github.com/jenkinsci/performance-signature-dynatrace-plugin[https://github.com/jenkinsci/performance-signature-dynatrace-plugin]
-|workflow-aggregator|n/a|https://github.com/jenkinsci/workflow-aggregator-plugin[https://github.com/jenkinsci/workflow-aggregator-plugin]
-|workflow-job|n/a|https://github.com/jenkinsci/workflow-aggregator-plugin[https://github.com/jenkinsci/workflow-aggregator-plugin]
-|_Container tool:_| | 
-|tini|MIT|https://github.com/krallin/tini[https://github.com/krallin/tini]
-|===
+Furthermore, Keptn's Bridge is implemented using Angular and TypeScript. See [keptn/bridge/package.json](https://github.com/keptn/keptn/blob/0.6.1/bridge/package.json) as an overview.
 
 *Maintainers:*
 
  * Alois Reitbauer (Dynatrace)
- * Dirk Wallerstorfer (Dynatrace)
+ * Christian Kreuzberger (Dynatrace)
 
 *Infrastructure requests (CI / CNCF Cluster):* none
 
@@ -277,13 +157,14 @@ External dependencies of the jenkins-service are listed below:
 
  * Slack: https://keptn.slack.com/
  * Issue tracker: https://github.com/keptn/keptn/issues
+ * Keptn Community: https://github.com/keptn/community
 
 *Website:* https://keptn.sh/
 
 *Release methodology and mechanics:*
 
 keptn uses link:http://semver.org/[semantic versioning] for releases. Releases
-are announced using GitHub. We aim at releasing updates every spring (two weeks)
+are announced using GitHub. We aim at releasing updates every sprint (two weeks)
 while following a quarterly release cycle for major features. 
 
 *Social media accounts:*
