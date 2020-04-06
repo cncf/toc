@@ -32,7 +32,7 @@ The following are example areas that are considered in scope:
   management of their applications on those platforms
 * workload interoperability - e.g. portability of functions,
   interaction with hosting environment/runtime
-* interoperability and connectivity with backend services used by worloads
+* interoperability and connectivity with backend services used by workloads
 
 ## Areas Considered Out Of Scope
 
@@ -107,6 +107,14 @@ within the SIG.
     pertains to helping to ensure that the required underlying workload
     execution abstractions and mechanisms are suitably provided to support
     these application-level delivery needs.
+*   **[CNCF Runtime SIG](https://github.com/cncf/sig-runtime)**
+    includes projects that are focused on the runtime used to host
+    cloud-native applications. While we expect a lot of collaboration with this
+    SIG, the difference can be thought of as SIG-Runtime will be more
+    concerned with the specifics of how runtimes host the application, while
+    SIG-Serverless will be more about how developers interact with the
+    runtime. And in particular, in a way that attempts to abstract the
+    complexities of that runtime.
 
 ## Operating Model
 
@@ -121,8 +129,13 @@ provided by the TOC unless otherwise stated here.
   [Mark Peek](https://github.com/markpeek/),
   [Ken Owens](https://github.com/kenowens12)
 
-**Tech Leads:** [Doug Davis](https://github.com/duglin/),
-  [Mark Peek](https://github.com/markpeek/)
+**Tech Leads:**
+  - Workflow: See project
+  [owners](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/governance/owners.md)
+  - CloudEvents: See project
+  [governance](https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md)
+  - Discovery & Subscription: See project
+  [governance](https://github.com/cloudevents/spec/blob/master/GOVERNANCE.md)
 
 **Other named roles:** None at present; will be identified as needed
 
@@ -136,4 +149,4 @@ Zoom:
 Mailing list: Join SIG-Serverless mailing list at
 [lists.cncf.io](https://lists.cncf.io)
 
-Slack channel: [TBD](TBD)  
+Slack channel: [TBD](TBD) 
