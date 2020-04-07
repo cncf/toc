@@ -9,6 +9,7 @@ To highlight some of the achievements:
 - Forks: 1100+
 - Releases: 86 releases
 - Adoptors: 500+ (including commercial users and community users)
+- 4.0 GA targeted in May, 2020
 
 On behalf of the maintainers team, we believe TiKV is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage).
 
@@ -67,7 +68,7 @@ https://github.com/tikv/tikv/blob/master/docs/adopters.md
 
     - We have adopters distributed in a broader geographical range, including Europe (dailymotion), East and Southeast Asia (VNG, Bookmyshow, Shoppee, etc), Japan, and the US (not-yet-public adopters can be shared upon request).
     - We have more known adopters deploying TiKV independently without TiDB. Some of the use cases are:
-        - JD Cloud (full-service cloud computing platform)  adopts TiKV for its metadata storage of our OSS, which was migrated from MySQL. See [Case study: TiKV in JD Cloud](https://www.cncf.io/blog/2019/11/26/case-study-tikv-in-jd-cloud/)
+        - JD Cloud (full-service cloud computing platform)  adopts TiKV for its metadata storage of their Object Storage Service (OSS), which was migrated from MySQL. See [Case study: TiKV in JD Cloud](https://www.cncf.io/blog/2019/11/26/case-study-tikv-in-jd-cloud/)
        
         - Yidian Zixun (news aggregator) uses TiKV independently to build performant distributed storage for their user profiling data, by implementing a tikv-proxy that allows TiKV deployment either via tidb-ansible or a modified tidb operator (which they will migrate to)
         
@@ -79,7 +80,7 @@ https://github.com/tikv/tikv/blob/master/docs/adopters.md
 
   We have roadmap per release, but previously only on TiDB. Now already published on the [TiKV website](https://tikv.org/docs/dev/roadmap/).
 
-- Performance test results and regression test between releases
+- **Performance test results and regression test between releases**
 
   We have the following tests in-between releases. A test report will be provided before each release. The related doc can be requested if needed.
 
