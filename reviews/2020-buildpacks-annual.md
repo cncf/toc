@@ -1,6 +1,20 @@
 # 2020 Buildpacks Annual
+## Background
+* [Buildpacks Sandbox Proposal](https://github.com/cncf/toc/blob/master/proposals/sandbox/buildpacks.adoc)
+* [Original CNCF TOC Meeting Slides](https://docs.google.com/presentation/d/1InW4LbgFb8dSCCgbN7hozNTAFZTsIVBWxm8sv87TjZs/edit?usp=sharing)
+* [Cloud Native Buildpacks](https://buildpacks.io) translate source code into container images with a focus on developer productivity, container security, and day-2 operations involving container images at scale.
 
-## Requirements
+Notable improvements in the last year include:
+* Introduced a [Request for Comments](https://github.com/buildpacks/rfcs) system to encourage collaboration and share knowledge
+* Designed a Distribution Spec for sharing and packaging buildpack(s) (https://github.com/buildpacks/spec/blob/master/distribution.md)
+* Add Image Introspection with inspect image command and bill of materials provided by buildpacks.
+* Reproducible Builds with ["zero out" creation dates](https://github.com/buildpacks/imgutil/pull/19).
+* Introduce a [Project Descriptor, project.toml](https://github.com/buildpacks/rfcs/blob/master/text/0019-project-descriptor.md).
+
+## Alignment with Cloud Native
+Cloud Native Buildpacks is part of the App Delivery SIG and [presented to the SIG on 12/4/2019](https://docs.google.com/presentation/d/1iM_47YWQWpvQ09fdGYxutbX9eB_PAB0Sl_L9JoEFYEE/edit?usp=sharing). The project cleanly fits into the SIG model in Topic 1 (Application Definition) and Topic 1.5 (Application Packaging). For Topic 1, Buildpacks themselves and a [Project Descriptor](https://github.com/buildpacks/rfcs/blob/master/text/0019-project-descriptor.md) define a way a application is built. At it's core, the project performs source to image builds and "rebasing" Operating System level security patches on existing images which fit into Topic 1.5. Ultimately, Buildpacks "empower organizations build scalable applications in modern, dynamic environments such as public, private, and hybrid clouds" by producing OCI compliant images that can be run on any Cloud Native infrastructure.
+
+## Annual Review Questions
 * Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity. Please feel free to add commentary to add colour to the numbers and graphs we will see on devstats.
   * [CNCF DevStats](https://buildpacks.devstats.cncf.io)
   * Deliverables do not include buildpacks themselves. Instead this project is about fostering an ecosystem where individuals or companies can use the specification and tools provided by this project to create and use them.
