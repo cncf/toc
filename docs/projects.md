@@ -29,7 +29,7 @@
 [Cortex](https://github.com/cortexproject/cortex)|Ken Owens, Bryan Cantrill|[6/5/18](https://docs.google.com/presentation/d/190oIFgujktVYxWZLhLYN4q8p9dtQYoe4sxHgn4deBSI/edit#slide=id.g25ca91f87f_0_0)|[9/20/18](https://www.cncf.io/blog/2018/09/20/cncf-to-host-in-the-sandbox/)|Sandbox
 [Buildpacks](https://github.com/buildpack/spec)|Brian Grant, Alexis Richardson|[8/21/18](https://docs.google.com/presentation/d/1RkygwZw7ILVgGhBpKnFNgJ4BCc_9qMG8cIf0MRbuzB4/edit?usp=sharing)|[10/3/18](https://www.cncf.io/blog/2018/10/03/cncf-to-host-cloud-native-buildpacks-in-the-sandbox)|Sandbox
 [Falco](https://github.com/falcosecurity/falco)|Brian Grant, Quinton Hoole|[7/17/18](https://docs.google.com/presentation/d/17p5QBVooGMLAtX6Mn6d3NAFhRmFHE0cH-WI_-0MbOm8/edit?usp=sharing)|[10/10/18](https://falco.org/)|Incubating
-[Dragonfly](https://github.com/dragonflyoss/dragonfly)|Jonathan Boulle, Benjamin Hindman|[9/4/18](https://docs.google.com/presentation/d/1umu-iT5ZXq5XsMFmqmVeRe-tn2y7DeSoCebhrehi7fk/edit#slide=id.g41381b8fd7_0_199)|[11/15/18](https://github.com/oss/dragonfly)|Sandbox
+[Dragonfly](https://github.com/dragonflyoss/dragonfly)|Jonathan Boulle, Benjamin Hindman|[9/4/18](https://docs.google.com/presentation/d/1umu-iT5ZXq5XsMFmqmVeRe-tn2y7DeSoCebhrehi7fk/edit#slide=id.g41381b8fd7_0_199)|[11/15/18](https://github.com/oss/dragonfly)|Incubating
 [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet)|Alexis Richardson, Quinton Hoole|[9/18/18](https://github.com/cncf/toc/issues/154)|[12/4/18](https://github.com/virtual-kubelet/virtual-kubelet)|Sandbox
 [etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[12/11/18](https://www.cncf.io/blog/2018/12/11/cncf-to-host-etcd)|Incubating
 [KubeEdge](https://github.com/kubeedge/kubeedge)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/205)|[3/18/19](https://github.com/kubeedge/kubeedge)|Sandbox
@@ -71,6 +71,7 @@
 | [OPA](https://www.openpolicyagent.org/) | 3/29/18        | 4/2/19              | Incubating |
 | [CloudEvents](https://cloudevents.io/)  | 5/15/18        | 10/28/19            | Incubating |
 | [Falco](https://falco.org/)             | 10/10/18       | 1/8/20              | Incubating |
+| [Dragonfly](https://d7y.io/)             | 11/15/18       | 4/9/20              | Incubating |
 
 ## Project Audits
 
