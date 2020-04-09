@@ -81,9 +81,8 @@ Currently, the following Special Interest Groups are active:
 * [SIG-App-Delivery](https://github.com/cncf/sig-app-delivery)
 * [SIG-Network](https://github.com/cncf/sig-network)
 * [SIG-Runtime](https://github.com/cncf/sig-runtime)
-
-* SIG Contributor Strategy
-* SIG Observability 
+* [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy)
+* [SIG Observability](https://github.com/cncf/sig-observability)
 
 ## Working Groups
 
