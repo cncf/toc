@@ -67,6 +67,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Ricardo Aravena, Rakuten (raravena80@gmail.com)
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
 * Sarah Allen, Independent (sarah@ultrasaurus.com)
+* Shida Qiu, BoCloud (shidaqiu2018@gmail.com)
 * Siddharth Bhadri, Infoblox (sbhadri@infoblox.com)
 * Steve Dake, IBM (sdake@ibm.com)
 * Tammy Butow, Gremlin (tammy@gremlin.com)
