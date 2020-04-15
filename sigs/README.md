@@ -19,7 +19,7 @@ a pull request with document referencing the roles and charter, updating the lis
 | [SIG Storage](https://github.com/cncf/sig-storage) | Xiang Li | 
 | [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Katie Gamanji | 
 | [SIG Network](https://github.com/cncf/sig-network) | Matt Klein |
-| [SIG Runtime](https://github.com/cncf/sig-runtime) | Brendan Burns, Brian Grant |
+| [SIG Runtime](https://github.com/cncf/sig-runtime) | Brendan Burns, Alena Prokharchyk |
 | [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy) | Matt Klein |
 | [SIG Observability](https://github.com/cncf/sig-observability) | Jeff Brewer, Brendan Burns | 
 

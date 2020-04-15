@@ -131,11 +131,11 @@ set out by the CNCF TOC](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.
 This SIG follows the [standard operating guidelines](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#operating-model)
 provided by the TOC unless otherwise stated here.
 
-**Current TOC Liaison:**  Brendan Burns and Brian Grant
+**TOC Liaisons:**  [Brendan Burns](https://github.com/brendandburns), [Alena Prokharchyk](https://github.com/alena1108)
 
-**Co-Chairs:** [Quinton Hoole](https://www.linkedin.com/in/quintonhoole/),
-  [Ricardo Aravena](https://www.linkedin.com/in/raravena),
-  [Diane Feddema](www.linkedin.com/in/dianefeddema)
+**SIG Chairs:** [Quinton Hoole](https://github.com/quinotn-hoole),
+  [Ricardo Aravena](https://github.com/raravena80),
+  [Diane Feddema](https://gihubt.com/dfeddema)
 
 **Tech Leads:** [Klaus Ma](http://www.klaus1982.cn/about/), 2 TBD
 
