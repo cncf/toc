@@ -133,9 +133,9 @@ provided by the TOC unless otherwise stated here.
 
 **TOC Liaisons:**  [Brendan Burns](https://github.com/brendandburns), [Alena Prokharchyk](https://github.com/alena1108)
 
-**SIG Chairs:** [Quinton Hoole](https://github.com/quinotn-hoole),
+**SIG Chairs:** [Quinton Hoole](https://github.com/quinton-hoole),
   [Ricardo Aravena](https://github.com/raravena80),
-  [Diane Feddema](https://gihubt.com/dfeddema)
+  [Diane Feddema](https://github.com/dfeddema)
 
 **Tech Leads:** [Klaus Ma](http://www.klaus1982.cn/about/), 2 TBD
 
