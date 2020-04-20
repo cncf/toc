@@ -24,18 +24,22 @@ The goal of LitmusChoas project is to provide infrastructure toolset to do end t
 
 ## Current Status
 
-- **Project releases:** Litmus achieved GA status or 1.0 release in January 2020. Last latest release is 1.2. The project has made [16 releases](https://github.com/litmuschaos/litmus/releases) so far.
+- **Project releases:** Litmus achieved GA status or 1.0 release in January 2020. Last latest release is 1.3. The project has made [21 releases](https://github.com/litmuschaos/litmus/releases) so far.
 
 - **Community status:** Litmus has monthly contributor calls. The community notes is [here](https://hackmd.io/a4Zu_sH4TZGeih-xCimi3Q). Other stats on  the community: 
-  - 630+ stars on GitHub
+  - 650+ stars on GitHub
   - 50+ contributors, incl.
     - MayaData
     - Intuit
     - Wipro
     - ArgoAI
     - Zebrium
-
+    
+  References from community adoption: 
   
+  - https://www.zebrium.com/blog/using-autonomous-monitoring-with-litmus-chaos-engine-on-kubernetes
+
+
 
 Chaos experiments are hosted on https://hub.litmuschaos.io. It is a central hub where the application developers or vendors share their chaos experiments so that their users can use them to increase the resilience of the applications in production.
 
@@ -45,38 +49,47 @@ Chaos experiments are hosted on https://hub.litmuschaos.io. It is a central hub 
 - Chaos Operator to orchestrate chaos experiments
 - Off the shelf / ready chaos experiments for general Kubernetes chaos
 - Per-experiment minimal RBAC permissions definition
+- Helm3 charts for Litmus Chaos (operator, kubernetes/generic chaos charts)
+- Support for Kubernetes events for chaos experiments
+- Support for admin mode (centralized chaos management from single namespace)
 - Centralized Hub for chaos experiments
-- Documentation (user & developer guides)
+- Documentation (user & developer guides, integration with other chaos tools)
 - Gitlab e2e pipeline for chaos experiments
 - Define community sync up schedule
 
 ## Future Plans
 
+In summary, LitmusChaos project has achieved the milestone of having a basic infrastructure toolset to do chaos engineering 
+on Kubernetes. In the short term, the plan is to add chaos monitoring support and many other application chaos charts to chaos 
+hub. In the long term, LitmusChaos team wants to work with many projects or applications in the CNCF landscape to integrate 
+Litmus into their chaos engineering or reliability engineering needs.
+
 #### In-Progress (Near-term)
 
-- Off the shelf chaos-integrated grafana dashboards for OpenEBS, Kafka, Cassandra 
-- Support for scheduled (continuous/background) chaos with halt/resume 
-- Support for Kubernetes events for chaos experiments
-- Support for hard chaos abort via pre-stop hooks 
-- Support for admin mode (separate namespace for chaos resources, with opt-in/out option for specific experiments in applications) 
-- Scaffold tools to generate experiment templates in python, golang 
-- Support for user defined chaos experiment result definition (ex:json blob as chaos result) 
-- Pod level resource chaos libraries (memory, disk stress) 
-- HTTP proxy Chaos libraries 
-- Support for chaos on containerd runtime 
-- Self-sufficient ChaosHub with downloadable sample chaosengine, experiment-level RBAC manifests & versioned chaos charts 
-- Support for custom override of chaos-operator, chaos-runner and chaos-experiment attributes 
+- Off the shelf chaos-integrated grafana dashboards for OpenEBS, Kafka, Cassandra #1280
+- Support for scheduled (continuous/background) chaos with halt/resume #1223
+- Support for OpenShift platform/resources 1406
+- Support for complete chaos abort via pre-stop hooks #1284
+- Go, Python SDK for Litmus Experiments 1466 #1259
+- Support for user defined chaos experiment result definition (ex:json blob as chaos result) #1254
+- Pod level resource chaos libraries (memory, disk stress) #877
+- HTTP proxy Chaos libraries #1179
+- Support for chaos on containerd runtime #1245
+- Self-sufficient ChaosHub with downloadable sample chaosengine, experiment-level RBAC manifests & versioned chaos charts #1228
+- Support for custom override of chaos-operator, chaos-runner and chaos-experiment attributes #1253 #1252 #1227
+- Integration with Argo project for Chaos workflows, support for scenario creation with experiments1465
+- Detailed design #1282
 
 #### Backlog
 
 - Support for Kubernetes pod scheduling policies (affinity rules for chaos resources)
 - Support for cloudevents compliant chaos events
 - Kubectl plugin for CLI based execution of chaos experiments
-- Integration with Argo project for Chaos workflows, support for scenario creation with experiments
 - Increased chaos metrics via prometheus chaos exporter
 - CI (Gitlab) chaos templates
 - Migration to native Kubernetes ansible modules for ansible-based experiments
 - Improved application Chaos Suites (OpenEBS, Kafka, Cassandra)
+- Support for platform (AWS, GKE, vSphere) Chaos
 
 # Project Scope
 
@@ -228,20 +241,37 @@ Yes. This project meets the definition of Cloud Native.
 
 **Are there any metrics around code quality? Are there good examples of code reviews? Are there enforced coding standards?**
 
-The code quality is measured by the using static code check tools such as GolangCI, GoReport while using BetterCodeHub score as an indicator of overall code quality. 
+- Some standards for the ansible-based experiments: https://github.com/litmuschaos/litmus/blob/master/.github/PULL_REQUEST_TEMPLATE.md
+- Standards for go/python-based components (chaos-operator, chaos-runner) include: BCH, GoReportCard 
+- CII best practice score of 82% is achieved. https://bestpractices.coreinfrastructure.org/en/projects/3202
+- BCH score of 8/10 for litmuschaos/litmus and 10/10 for litmuschaos/loperator and litmuschaos/lexporter repositories.
+
+Examples of review: 
+  - https://github.com/litmuschaos/chaos-operator/pull/193
+  - https://github.com/litmuschaos/litmus/pull/1015
+  - https://github.com/litmuschaos/chaos-runner/pull/33
+  - https://github.com/litmuschaos/litmus/pull/1345
+  - https://github.com/litmuschaos/litmus-e2e/pull/50
 
 **What are the performance goals and results? What performance tradeoffs have been made? What is the resource cost?**
 
-There are no performance tradeoffs. Litmus adopts a Kubernetes native approach to chaos with custom resources and controllers, thereby reusing the Kubernetes infrastructure itself, hence causing no additional resource costs. 
+There are no performance tradeoffs. Litmus adopts a Kubernetes native approach to chaos with custom resources and controllers, 
+thereby reusing the Kubernetes infrastructure itself, hence causing no additional resource costs. 
 
 **What is the CI/CD system? Are there code coverage metrics? What types of tests exist?**
 
-Apart from unit-tests, Litmus makes use of GinkGo based BDD framework to create e2e suites for testing the chaos framework (chaos experiments, operator, runner, exporter). These are executed via [Gitlab pipelines](https://gitlab.mayadata.io/litmuschaos/litmus-e2e) at scheduled intervals, with Travis/CircleCI being used for build purposes.
+Apart from unit-tests, Litmus makes use of GinkGo based BDD framework to create e2e suites for testing the 
+chaos framework (chaos experiments, operator, runner, exporter). These are executed via Gitlab pipelines at 
+scheduled intervals, with Travis/CircleCI being used for “build” purposes. The build pipelines themselves include 
+static code checks (lint) as well as security scans against the docker image artefacts before being pushed into the 
+respective public image repositories on dockerhub. 
 
+Code-Coverage has been added to the Chaos-Operator and the community is working on increasing the same via more 
+unit-tests. 
 
 **Is there documentation?**
 
-Litmus has documentation explaining both user as well as developer workflows at the [litmus-docs](https://gitlab.mayadata.io/litmuschaos/litmus-e2e) along with individual experiment guides.
+Litmus has documentation explaining both user as well as developer workflows at the [litmus-docs](https://docs.litmuschaos.io/docs/getstarted/) along with individual experiment guides.
 
 **How is it deployed?**
 
@@ -267,12 +297,14 @@ No. We have to approach the security SIG.
 
 **How are committers chosen?**
 
-- Based on the new chaos charts being contributed. 
-- Based on the review and contribution history
+- Committers are chosen once they make significant contributions (such as additions of new chaos charts/categories, 
+litmus backend/chaos orchestration component improvements, or litmus project infra improvements such as docusaurus-based
+website, chaoshub) and are committed to the long-term success of the project. 
 
 **How are architectural and roadmap decisions made?**
 
-- Community sync-ups where feedback is solicited and roadmap decisions made
+- Roadmap & architectural decisions are made via consultation and feedback from the Litmus community (users and contributors) 
+comprising developers and SREs. The feedback is received via github issues or during the monthly community sync up call.
 - ROADMAP items are reviewed by maintainers before acceptance. 
 
 **How many decision makers are outside the sponsoring organization.**
@@ -289,7 +321,7 @@ No. We have to approach the security SIG.
 - "Sumit Nagal",@sumitnagal,Intuit
 - "Uma Mukkara",@umamukkara,MayaData
 
-The adoptors file is managed [here](https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md).
+The adopters file is managed [here](https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md).
 
 **How long has the project been developed for?**
 
@@ -324,12 +356,13 @@ Yes. All the code will be under CNCF managed orgs and repos.
 
 **Are all defaults for upstream reporting either unset or community hosted infrastructure (i.e. doesn’t point to vendor hosted SaaS control plane or analytics server for usage data)? Is all project naming independent of vendors?**
 
-
-
 **Relevant Assets regarding vendor independence**
 
 https://litmuschaos.io
+
 https://docs.litmuschaos.io
+
 https://hub.litmuschaos.io
+
 https://github.com/litmuschaos
 https://twitter.com/litmuschaos
