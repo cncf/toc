@@ -116,10 +116,10 @@ This SIG follows the [standard operating
 guidelines](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#operating-model)
 provided by the TOC unless otherwise stated here.
 
-**Current TOC Liaison:** Xiang Li
+**TOC Liaison:** [Xiang Li](https://github.com/xiang90)
 
-**[Proposed] Co-Chairs:** Alex Chircop, Quinton Hoole, “One Other TBD”
+**SIG Chairs:** [Alex Chircop](https://github.com/chira001), [Quinton Hoole](https://github.com/quinton-hoole), [Erin Boyd](https://github.com/erinboyd)
 
-**[Proposed] Tech Leads:** Saad Ali, Xing Yang, “One Other TBD”
+**Tech Leads:** Saad Ali, Xing Yang, Sugu Sougoumarane, Luis Pabon
 
 **Other named roles: **None at present; will be identified and staffed as needed.
