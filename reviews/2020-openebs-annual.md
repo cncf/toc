@@ -24,7 +24,7 @@ For the Kubernetes SRE / Administrator OpenEBS offers:
 - Declarative API using standard Kubernetes primitives (StorageClasses, Custom Resources, ResourceQuotas, Taints/Tolerations and so forth) and Kubernetes Operators enabling administrators to:
    * Set up different classes of Storage services for application workloads.
    * Secure using RBAC, PodSecurityPolicies, OPA, Istio and so forth.
-   * Automate storage operations and allow OpenEBS to be installed via platform tools like Helm, BOSH, Terraform, Ansible and Kubernetes bootstrapping projects like Gravitational, Lokmotive.
+   * Automate storage operations and allow OpenEBS to be installed via platform tools like Helm, BOSH, Terraform, Ansible and Kubernetes bootstrapping projects like [Gravitational](https://gravitational.com/gravity/docs/storage/), [Lokomotive](https://github.com/kinvolk/lokomotive-kubernetes/wiki/The-big-picture#openebs-operator).
 - Standard API for Provisioning, Snapshots, Backup and Restore using standard API enabling administrators to implement data protection and migration capabilities by plugging into other projects like Velero.
 - Simplified administration and management of the storage attached to the nodes by making block devices first-class Kubernetes resources.
 - OpenEBS offers an Open Source alternative to proprietary and non Kubernetes based Storage Products and Services without vendor lock-in for both on-premise and cloud environments.
