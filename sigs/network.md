@@ -95,7 +95,7 @@ This SIG follows the [standard operating model](https://github.com/cncf/toc/blob
 ## Chairs:
 
 - TOC Liaison: [Matt Klein](https://twitter.com/mattklein123)
-- Chairs: [Lee Calcote](https://twitter.com/lcalcote), [Ken Owens](https://twitter.com/kenowens12)
+- SIG Chairs: [Lee Calcote](https://twitter.com/lcalcote), [Ken Owens](https://twitter.com/kenowens12)
 
 In accordance with the [elections and terms](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections) follow the [CNCF SIG definition](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections).
 

@@ -6,11 +6,11 @@ Quinton Hoole and members of SIG-Security (formerly known as SAFE WG), with
 final review by Liz Rice, Joe Beda and Zhipeng Huang.
 * [Current CNCF Projects](https://github.com/cncf/sig-security/blob/master/governance/cncf-projects.md)
 
-# Roles
+## **Operations**
 
-**TOC Liaisons:** Liz Rice, Justin Cormack
+**TOC Liaisons:** [Liz Rice](https://github.com/lizrice), [Justin Cormack](https://github.com/justincormack)
 
-**Co-Chairs:** Sarah Allen, Dan Shaw, Jeyappragash JJ
+**SIG Chairs:** [Sarah Allen](https://github.com/ultrasaurus), [Dan Shaw](https://github.com/dshaw), [Jeyappragash JJ](https://github.com/pragashj)
 
 **Tech Leads:** TBD (co-chairs to act as tech leads until at least two Technical Leads are identified, see [roles](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-chairs))
 

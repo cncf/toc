@@ -126,10 +126,11 @@ set out by the CNCF TOC](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.
 	those artifact types, e.g. Apps SIG, Security SIG, etc.
 
 
-## Operating Model
+## **Operations**
 
 This SIG follows the [standard operating guidelines](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#operating-model)
 provided by the TOC unless otherwise stated here.
+
 
 **TOC Liaisons:**  [Brendan Burns](https://github.com/brendandburns), [Alena Prokharchyk](https://github.com/alena1108)
 
