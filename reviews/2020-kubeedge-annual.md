@@ -1,27 +1,49 @@
 # KubeEdge Sandbox Annual Review
 
+## Table of Contents
+
+- [Background](#background)
+- [Alignment with Cloud Native](#alignment-with-cloud-native)  
+- [Highlights of Last Year](#highlights-of-last-year)  
+- [Annual Review Contents](#annual-review-contents)
+- [Project Links](#project-links)
 
 ## Background
 
-KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. It's built upon kubernetes and provides fundamental infrastructure support for network, application deployment and metadata synchronization between cloud and edge.
+[KubeEdge](https://kubeedge.io/en/) is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. It's built upon kubernetes and provides fundamental infrastructure support for network, application deployment and metadata synchronization between cloud and edge.
 
+It aims to resolve three major challenges at edge computing: network reliability and bandwidth limit between cloud and edge, resource constraint at edge, highly distributed and large scalability requirement.
 
-KubeEdge was accepted as a CNCF Sandbox project on Mar 18, 2019.
+**KubeEdge provides:**
+- Seamless Compute at Edge : low resource requirements;low latency; decision at edge; improve quality of edge service
+- Simplified Development : regular http or mqtt based applications; containerize and run anywhere at Edge / Cloud
+- Kubernetes Native Edge Platform : Only Kubernetes native Edge Platform in CNCF; Seamless workload orchestration
+- Abundant Applications at Edge : Easy to get and deploy complex applications to edge (like image recognition, ML ..)
+
+**KubeEdge was accepted as a CNCF Sandbox project on Mar 18, 2019.**
 - [KubeEdge Sandbox Proposal](https://github.com/cncf/toc/blob/master/proposals/sandbox/kubeedge.adoc)
 - [Original CNCF TOC meeting slides](https://docs.google.com/presentation/d/1e1ahun91Abn2xvX7Z8PVgGBz6c7Q7iO027XVzVuffDg/edit#slide=id.g25ca91f87f_0_0)
-
 
 ## Alignment with Cloud Native
 
 KubeEdge falls in the scope of [CNCF Runtime SIG](https://github.com/cncf/sig-runtime).
 
-KubeEdge targets on:
+**KubeEdge targets on:**
   - building an open edge computing platform with cloud native technologies
   - helping users extending their business architecture, applications, services, etc. from cloud to edge in same experience
   - implementing extensible architecture based on Kubernetes
   - integration with CNCF projects, including (but not limited to) containerd, cri-o, Prometheus, etc.
+  - seamless development, deployment and run complex workloads at edge with optimized resources
 
-## Annual review contents
+## Highlights of Last Year
+- Major, Stable releases (1.x.x ; currently 1.3.x) started
+- Total 11 releases including major and minor
+- 1400+ commits; 2400+ stars; 600+ forks; 300+ contributors
+- 25+ Contributing organizations
+- 5 User Adoptions and more under discussions
+- Key Features Added : Device Management at Edge, Bluetooth Device Mapper, containerd support, QUIC as alternative to websocket, EdgeMesh, EdgeSite, CSI at Edge, AutoRegistration of Edge Nodes, Device CRD Validation, Reliable Message delivery to Cloud
+
+## Annual Review Contents
 
 * Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity. Please feel free to add commentary to add colour to the numbers and graphs we will see on devstats.
 
@@ -41,10 +63,10 @@ KubeEdge targets on:
   - Community growth
     - Entered CNCF sandbox in March 2019
     - Continuous momentum
-      - Num of Contributors: 30 => 300+
-      - Github Stars: 400+ => 2400+
-      - Github Forks: 100+ => 600+
-      - Contributing member organizations: 1 => 20+
+      - Num of Contributors: 30 => **300+**
+      - Github Stars: 400+ => **2400+**
+      - Github Forks: 100+ => **600+**
+      - Contributing member organizations: 1 => **25+**
       - Contributing member organizations
         - __Cloud__: Huawei Cloud, DaoCloud, TenxCloud, EasyStack
         - __Carriers/Telco__: China Unicom, China Telecom, China Mobile
@@ -131,3 +153,11 @@ KubeEdge targets on:
 
 * Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
   - Yes
+
+## Project Links
+ - [Website](https://kubeedge.io)
+ - [Github](https://github.com/kubeedge/kubeedge)
+ - [Slack](https://kubeedge.slack.com)
+ - [Mailing List]( https://groups.google.com/forum/#!forum/kubeedge )  
+ - [Twitter](https://twitter.com/KubeEdge)
+ - [Issue Tracker](https://github.com/kubeedge/kubeedge/issues)
