@@ -2,7 +2,7 @@
 This page provides project review guidelines to those leading or contributing to due diligence exercises performed by or on behalf of the Technical Oversight Committee of the CNCF.
 
 ## Introduction
-The decision to graduate or promote a project depend on the TOC sponsors of the project performing and documenting the evaluation process in deciding upon initial or continued inclusion of projects through a Technical Due Diligence ('Tech DD') exercise. Ultimately the voting members of the TOC will, on the basis of this and other information, vote for or against the inclusion of each project at the relevant time.
+The decision to graduate or promote a project depends on the TOC sponsors of the project performing and documenting the evaluation process in deciding upon initial or continued inclusion of projects through a Technical Due Diligence ('Tech DD') exercise. Ultimately the voting members of the TOC will, on the basis of this and other information, vote for or against the inclusion of each project at the relevant time.
 
 ## Technical Due Diligence
 ### Primary Goals
