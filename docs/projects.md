@@ -22,7 +22,7 @@
 [OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-open-policy-agent-opa/)|Incubating
 [CloudEvents](https://github.com/cloudevents)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[5/22/18](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/)|Incubating
 [Telepresence](https://github.com/telepresenceio)|Alexis Richardson, Camille Fournier|[4/17/18](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)|[5/22/18](https://www.cncf.io/blog/2018/05/22/telepresence-in-the-sandbox/)|Sandbox
-[Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/1/18](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Incubating
+[Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/1/18](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Graduated
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[7/31/18](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/)|Incubating
 [OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|Alexis Richardson, Bryan Cantrill|[6/20/17](https://goo.gl/6nmyDn)|[8/10/18](https://www.cncf.io/blog/2018/08/10/cncf-to-host-openmetrics/)|Sandbox
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[8/28/18](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv/)|Incubating
@@ -60,6 +60,7 @@
 [Envoy](https://github.com/envoyproxy/envoy)|Alexis Richardson|[8/15/17](https://goo.gl/iSP394)|11/28/19 |Graduated
 [Jaeger](https://github.com/jaegertracing/jaeger)|Bryan Cantrill|[8/1/17](https://goo.gl/ehtgts)| 10/31/19|Graduated
 [Vitess](https://github.com/vitessio/vitess)|Brian Grant|[4/19/17](https://goo.gl/6nmyDn)| 11/05/19|Graduated 
+[Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[4/30/20](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Graduated
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
