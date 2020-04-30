@@ -3,8 +3,8 @@
 ## Table of Contents
 
 - [Background](#background)
-- [Alignment with Cloud Native](#alignment-with-cloud-native)  
-- [Highlights of Last Year](#highlights-of-last-year)  
+- [Alignment with Cloud Native](#alignment-with-cloud-native)
+- [Highlights of Last Year](#highlights-of-last-year)
 - [Annual Review Contents](#annual-review-contents)
 - [Project Links](#project-links)
 
@@ -12,13 +12,14 @@
 
 [KubeEdge](https://kubeedge.io/en/) is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. It's built upon kubernetes and provides fundamental infrastructure support for network, application deployment and metadata synchronization between cloud and edge.
 
-It aims to resolve three major challenges at edge computing: network reliability and bandwidth limit between cloud and edge, resource constraint at edge, highly distributed and large scalability requirement.
+It aims to resolve three major challenges for edge computing: network reliability and bandwidth limit between cloud and edge, resource constraint at edge, highly distributed and heterogeneous device management.
 
 **KubeEdge provides:**
-- Seamless Compute at Edge : low resource requirements;low latency; decision at edge; improve quality of edge service
-- Simplified Development : regular http or mqtt based applications; containerize and run anywhere at Edge / Cloud
-- Kubernetes Native Edge Platform : Only Kubernetes native Edge Platform in CNCF; Seamless workload orchestration
-- Abundant Applications at Edge : Easy to get and deploy complex applications to edge (like image recognition, ML ..)
+1. Seamless Cloud-Edge Communication for both metadata and data
+2. Edge Autonomy: Autonomous operation of Edge even during disconnection from cloud.
+3. Low Resource Ready: KubeEdge can work in constrained resource situations (low memory, low bandwidth, low compute)
+4. Simplified Device Communication: Easy communication between application and devices for IOT and IIOT
+
 
 **KubeEdge was accepted as a CNCF Sandbox project on Mar 18, 2019.**
 - [KubeEdge Sandbox Proposal](https://github.com/cncf/toc/blob/master/proposals/sandbox/kubeedge.adoc)
@@ -36,29 +37,19 @@ KubeEdge falls in the scope of [CNCF Runtime SIG](https://github.com/cncf/sig-ru
   - seamless development, deployment and run complex workloads at edge with optimized resources
 
 ## Highlights of Last Year
-- Major, Stable releases (1.x.x ; currently 1.3.x) started
-- Total 11 releases including major and minor
+- Moved to 1.0
 - 1400+ commits; 2400+ stars; 600+ forks; 300+ contributors
 - 25+ Contributing organizations
 - 5 User Adoptions and more under discussions
-- Key Features Added : Device Management at Edge, Bluetooth Device Mapper, containerd support, QUIC as alternative to websocket, EdgeMesh, EdgeSite, CSI at Edge, AutoRegistration of Edge Nodes, Device CRD Validation, Reliable Message delivery to Cloud
+- Key Features Added: Device Management at Edge, Bluetooth Device Mapper, containerd support, QUIC as alternative to websocket, EdgeMesh, EdgeSite, CSI at Edge, Auto Registration of Edge Nodes, Device CRD Validation, Reliable Message delivery to Cloud
 
 ## Annual Review Contents
 
 * Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity. Please feel free to add commentary to add colour to the numbers and graphs we will see on devstats.
 
   - [New PRs last 1 year](https://kubeedge.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&from=1553961600000&to=now)
-  <!--
-    ![New PRs last 1 year](https://kubeedge.devstats.cncf.io/render/d-solo/15/new-prs-in-repository-groups?orgId=1&from=1553961600000&to=1588071511757&var-period=w&var-repogroup_name=All&panelId=1&width=1000&height=500&tz=Asia%2FShanghai)
-  -->
-  <!--
-  - [Commits to main repo last 1 year](https://docs.google.com/spreadsheets/d/1sEHuUg2yyYOSf887mlFoZWNb6Y1dhk0xRyODxpiKi1M/edit?usp=sharing) (using data from git history, since commits data on devstats look not accurate)(using data from git history, since commits data on devstats look not accurate)
-  -->
 
   - [Commits Repository Groups last 1 year](https://kubeedge.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&from=1551369600000&to=now&var-period=w&var-repogroups=All)
-  <!--
-    ![Commits Repository Groups last 1 year](https://kubeedge.devstats.cncf.io/render/d-solo/2/commits-repository-groups?orgId=1&from=1551369600000&to=1588072093433&var-period=w&var-repogroups=All&panelId=2&width=1000&height=500&tz=Asia%2FShanghai)
-  -->
 
   - Community growth
     - Entered CNCF sandbox in March 2019
@@ -67,7 +58,7 @@ KubeEdge falls in the scope of [CNCF Runtime SIG](https://github.com/cncf/sig-ru
       - Github Stars: 400+ => **2400+**
       - Github Forks: 100+ => **600+**
       - Contributing member organizations: 1 => **25+**
-      - Contributing member organizations
+      - Contributing organizations including:
         - __Cloud__: Huawei Cloud, DaoCloud, TenxCloud, EasyStack
         - __Carriers/Telco__: China Unicom, China Telecom, China Mobile
         - __IT__: inovex, Infoblox, SpanIdea
@@ -149,10 +140,11 @@ KubeEdge falls in the scope of [CNCF Runtime SIG](https://github.com/cncf/sig-ru
 
 * How can the CNCF help you achieve your upcoming goals?
 
-  - More speaking opportunities
+  - We need more speaking and marketing opportunities to help attract more contributors and user adoptions.
+  - We also need some technical writers to help improve documentation and website content.
 
 * Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
-  - Yes
+  - Yes, incubation proposal is under preparation.
 
 ## Project Links
  - [Website](https://kubeedge.io)
