@@ -151,13 +151,13 @@ In the [GitHub project](https://github.com/weaveworks/flux).
 ## Website
 
 None at present; documentation is in markdown format in the [GitHub
-repo](https://github.com/weaveworks/flux/tree/master/site).
+repo](https://github.com/weaveworks/flux/tree/master/docs).
 
 ## Release methodology and mechanics
 
 Container images and executables for releases are built in CI. The
 process of preparing a release is [explained
-here](https://github.com/weaveworks/flux/blob/master/internal_docs/releasing.md).
+here](https://github.com/weaveworks/flux/blob/master/internal/docs/releasing.md).
 
 ## Social media accounts
 
