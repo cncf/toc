@@ -70,6 +70,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Shida Qiu, BoCloud (shidaqiu2018@gmail.com)
 * Siddharth Bhadri, Infoblox (sbhadri@infoblox.com)
 * Steve Dake, IBM (sdake@ibm.com)
+* Swamy D K V, Cisco (swamydkv@gmail.com)
 * Tammy Butow, Gremlin (tammy@gremlin.com)
 * Timothy Chen, Hyperpilot (tim@hyperpilot.io)
 * Vasu Chandrasekhara, SAP SE (vasu.chandrasekhara@sap.com)
