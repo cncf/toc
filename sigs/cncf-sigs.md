@@ -114,6 +114,14 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 * Leads projects in the SIG’s area.
 * Has the time and ability to perform deep technical dives on projects.   Projects may include formal CNCF projects or other projects in the area covered by the SIG.
 
+
+#### TOC Liaison
+
+* Streamlines communications between TOC and SIG chairs.
+* Communicates performance of the SIG to Governing Board & TOC.
+* Helps with growth and development of the SIG.
+* Attends SIG meetings, as needed/requested.
+
 #### Other named roles
 
 * Named and defined by the SIG (e.g. scribe, PR lead, docs/training lead, etc)
