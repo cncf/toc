@@ -13,6 +13,47 @@ a pull request with document referencing the roles and charter, updating the lis
 
 ## Current SIGS
 
-* https://github.com/cncf/sig-security
-* https://github.com/cncf/sig-storage
-* https://github.com/cncf/sig-app-delivery
+| Name | TOC Liaisons |
+|------|--------------| 
+| [SIG Security](https://github.com/cncf/sig-security) | Liz Rice, Justin Cormack |
+| [SIG Storage](https://github.com/cncf/sig-storage) | Xiang Li | 
+| [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Katie Gamanji | 
+| [SIG Network](https://github.com/cncf/sig-network) | Matt Klein |
+| [SIG Runtime](https://github.com/cncf/sig-runtime) | Brendan Burns, Alena Prokharchyk |
+| [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy) | Matt Klein |
+| [SIG Observability](https://github.com/cncf/sig-observability) | Jeff Brewer, Brendan Burns | 
+
+## SIG Chairs as of April 2020
+
+### SIG Storage 
+* [Erin Boyd](https://github.com/erinboyd)
+* [Quinton Hoole](https://github.com/quinton-hoole)
+* [Alex Chircop](https://github.com/chira001)
+
+### SIG Security 
+* [Sarah Allen](https://github.com/ultrasaurus)
+* [Jeyappragash Jeyakeerthi](https://github.com/pragashj)
+* [Dan Shaw](https://github.com/dshaw)
+
+### SIG App-Delivery
+* [Bryan Liles](https://github.com/bryanl)
+* [Lei Zhang](https://github.com/resouer)
+* [Alois Reitbauer](https://github.com/AloisReitbauer)
+
+### SIG Network 
+* [Lee Calcote](https://github.com/leecalcote)
+* [Ken Owens](https://github.com/kenowens12)
+
+### SIG Runtime 
+* [Diane Feddema](https://github.com/dfeddema)
+* [Quinton Hoole](https://github.com/quinton-hoole)
+* [Ricardo Aravena](https://github.com/raravena80)
+
+### SIG Contributor Strategy
+* [Paris Pittman](https://github.com/parispittman)
+* [Josh Berkus](https://github.com/jberkus)
+* [Gerred Dillon](https://github.com/gerred)
+
+### SIG Observability
+* [Matt Young](https://github.com/halcyondude)
+* [Richard Hartmann](https://github.com/RichiH)

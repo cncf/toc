@@ -7,24 +7,26 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * aligning interfaces to components under management (code reference implementations before standardizing), and defining common practices to be implemented across CNCF projects, if any.
 
 ## Members
-
-* **Joe Beda** (term: 1 years - start date: 1/29/2019 - 1/29/2020) [GB-appointed]
-* **Jeff Brewer** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [EndUser-appointed]
+* **Alena Prokharchyk** (term: 2 years - start date: 3/18/2020 - 3/18/2022) [TOC-appointed]
 * **Brendan Burns** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
-* **Brian Grant** (term: 2 years - start date: 3/17/2018 - 3/17/2020) [TOC-appointed]
+* **Jeff Brewer** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [EndUser-appointed]
+* **Justin Cormack** (term: 2 years - start date 2/4/2020 - 2/4/2022) [Maintainer-appointed]
+* **Katie Gamanji** (term: 2 years - start date 2/4/2020 - 2/4/2022) [EndUser-appointed]
+* **Liz Rice** (term: 2 years - start date: 2/4/2020 - 2/4/2022) [GB-appointed]
 * **Matt Klein** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
-* **Xiang Li** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 * **Michelle Noorali** (term: 2 years - start date: 3/18/2019 - 3/18/2021) [TOC-appointed]
-* **Liz Rice** (term: 1 year - start date: 1/29/2019 - 1/29/2020) [GB-appointed]
-* **Alexis Richardson** (term: 1 year - start date: 1/29/2019 - 1/29/2020) [GB-appointed]
+* **Saad Ali** (term: 2 years - start date 2/4/2020 - 2/4/2022) [GB-appointed]
+* **Sheng Liang** (term: 2 years - start date 2/4/2020 - 2/4/2022) [GB-appointed]
+* **Xiang Li** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 
 Election [schedule](process/election-schedule.md)
 
 ## Projects
+See the current CNCF projects and a description of project maturity levels (Sandbox, Incubating, Graduated) [here](https://www.cncf.io/projects/).
 
-See the process for contributing a project [here](CONTRIBUTING.md).
+[Here](https://www.cncf.io/services-for-projects/) is a list of services that the CNCF provides for Incubating and Graduated projects hosted in the foundation. CNCF also provides a subset of these services to [Sandbox](https://www.cncf.io/sandbox-projects/) level projects.
 
-See the current CNCF projects [here](https://www.cncf.io/projects/).
+See the process for contributing a project [here](CONTRIBUTING.md). If you have any questions or don't know where to start, open an [issue](https://github.com/cncf/toc/issues).
 
 ## Meeting Time
 
@@ -58,7 +60,7 @@ Meeting agenda and presentations are [here](docs/meeting_presentations.md).
 
 An archive of community presentations is [here](docs/scheduled_presentations.md)
 
-If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. These requests are tracked in the [TOC project backlog](https://github.com/cncf/toc/projects/2).
+If you're interested in presenting at a TOC call about your project, please open a [github issue](https://github.com/cncf/toc/issues) with the request. These requests are tracked in the [TOC project backlog](https://github.com/cncf/toc/projects/4).
 
 ## Mailing List
 
@@ -74,10 +76,14 @@ See the voting policy [here](docs/voting.md).
 
 The TOC has approved the formation of [SIGs](sigs/cncf-sigs.md).
 Currently, the following Special Interest Groups are active: 
-[SIG-Security](https://github.com/cncf/sig-security)
-[SIG-Storage](https://github.com/cncf/sig-storage) 
-Proposed: 
-[SIG-App-delivery](https://github.com/cncf/sig-app-delivery)
+* [SIG-Security](https://github.com/cncf/sig-security)
+* [SIG-Storage](https://github.com/cncf/sig-storage) 
+* [SIG-App-Delivery](https://github.com/cncf/sig-app-delivery)
+* [SIG-Network](https://github.com/cncf/sig-network)
+* [SIG-Runtime](https://github.com/cncf/sig-runtime)
+* [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy)
+* [SIG Observability](https://github.com/cncf/sig-observability)
+
 ## Working Groups
 
 The TOC has created the following working groups to investigate and discuss the following topics:
@@ -85,7 +91,6 @@ The TOC has created the following working groups to investigate and discuss the 
 | Working Group | Chair            | Meeting Time                          | Minutes/Recordings |
 |---------------|------------------|---------------------------------------|--------------------|
 | [CI](https://github.com/cncf/wg-ci)         | Camille Fournier | [4th Tue of every month at 12PM PT](https://zoom.us/my/cncfciwg) | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
-| [Networking](https://github.com/cncf/wg-networking) | Ken Owens        |  [1st and 3rd Tue every month at 9AM PT](https://zoom.us/my/cncfnetworkingwg)                                      | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2M_-K5n67_zTdrPh_PtTKFC)
 | [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/my/cncfserverlesswg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
 
 All meetings are on the public CNCF calendar: https://goo.gl/eyutah

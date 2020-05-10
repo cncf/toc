@@ -1,0 +1,101 @@
+== ChubaoFS
+
+*Name of project*: ChubaoFS
+
+*Description*: ChuaboFS is a distributed file system designed for cloud native applications. ChubaoFS has several unique features that make it suitable for large-scale container platforms. For example, it has a general-purpose storage engine with scenario-aware replications to accommodate different file access patterns with optimized performance. In addition, it employs a separate cluster to store the file metadata in a distributed fashion with a simple but efficient metadata placement strategy. Moreover, it provides POSIX-compliant APIs with relaxed POSIX semantics and metadata atomicity to obtain better system performance.
+
+*Statement on alignment with CNCF mission*: CNCF does not have any similar cloud native distributed file system solutions to the best of our knowledge. The ChubaoFS project itself aims at the use cases of applications/services deployed on Kubernetes (especially at a large scale) that need a persistent and reliable storage accessible like local disk. By providing the support of these use cases, ChubaoFS could make cloud native computing more ubiquitous based on our industrial experience. 
+
+*Sponsor / Advisor from TOC*: Alexis Richardson <alexis@weave.works>, Xiang Li <xiangli.cs@gmail.com>
+
+*Unique Identifier*: chubaofs
+
+*Preferred Maturity Level:* Sandbox 
+
+*License*: ALv2
+
+*Source control repositories*: https://github.com/chubaofs/chubaofs
+
+*External dependencies*
+
+* bazil.org/fuse - BSD
+
+* rocksdb - ALv2 and GPLv2
+
+* prometheus - ALv2
+
+* protobuf - BSD-3-Clause
+
+* google/btree - ALv2
+
+* tiglabs/raft - ALv2
+
+* petar/GoLLRB - BSD-3-Clause
+
+* davecgh/go-spew - ISC
+
+* jacobsa/fuse - ALv2
+
+* jacobsa/daemonize - ALv2
+
+* facebookgo/ensure - BSD
+
+* facebookgo/stack - BSD
+
+* facebookgo/subset - BSD
+
+* matttproud/golang_protobuf_extensions - ALv2
+
+* moul/http2curl - MIT
+
+* parnurzeal/gorequest - MIT
+
+* pkg/errors - BSD-2-Clause
+
+* tecbot/gorocksdb - MIT
+
+* beorn7/perks - MIT
+
+*Initial Committers*:
+
+* Haifeng Liu
+* Weilong Guo
+* Shuoran Liu 
+* Hongyin Zhu 
+* Jianxing Zhao 
+* Tianpeng Li
+* Wei Ding
+* Zhengyi Zhu 
+* Liying Zhang 
+
+*Infrastructure requirements*: CI (currently use TravisCI)
+
+*Communication Channels*:
+
+* Mailing List: chubaofs-users@groups.io 
+
+* Issue tracker: https://github.com/chubaofs/chubaofs/issues
+
+* Website: http://chubao.io
+
+*Release methodology and mechanics*
+
+The current release is v1.2.0. We use the link:http://semver.org/[semantic versioning] numbering system. The releases
+are announced using link:https://github.com/chubaofs/chubaofs/releases [github’s releases] feature. The next major
+release changes the client, and will be tagged 1.3.0.
+
+The master branch is kept strictly stable, and we encourage users to regularly pull and deploy from it, as JD does. 
+
+*Social media accounts*: N/A
+
+*Community size and existing sponsorship*:
+
+_(22/August/2019)_
+
+* Github Stars (in the main repository): 358
+* Github Forks (in the main repository): 65
+* GitHub Code Contributors (in the main repository): 13
+* Existing Sponsors:
+  * jd.com (9 people working full-time)
+
+*Project logo*: link:https://github.com/cncf/landscape/blob/master/hosted_logos/chubaofs.svg[SVG]

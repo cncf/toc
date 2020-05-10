@@ -2,7 +2,8 @@
 
 *Approved by TOC: 2018-06-11*
 
-[中文版本](#中文版本) | [日本語版](#日本語版) | [한국어](#한국어) | [Deutsch](#deutsch)| [Español](#español) | [Français](#français) | [Polski](#polski) | [Português Brasileiro](#português-brasileiro) | [Русский](#русский)(in Chinese, Japanese, Korean, Brazilian, Portuguese, German, French and Spanish below)
+[العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese) | [Русский](#русский) (Russian)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -15,6 +16,19 @@ toil.
 The Cloud Native Computing Foundation seeks to drive adoption of this paradigm by fostering and sustaining an
 ecosystem of open source, vendor-neutral projects. We democratize state-of-the-art patterns to make these
 innovations accessible for everyone.
+
+
+<div dir="rtl">
+
+## العربية
+
+تمكّن التقنيات سحابية المصدر المؤسسات من إنشاء تطبيقات قابلة للتطوير و تشغيلها في بيئات حديثة و ديناميكية مثل السحب العامة و الخاصة و الهجينة. يمثل هذا النموذج الحاويات، و شبكات الخدمة، و الخدمات المصغرة، و البنية التحتية غير المستقرة، و واجهات برمجة التطبيقات التعريفية.
+
+و تمكن هذه التقنيات النظم المقرونة بالمرونة و القابلية للاداره و الملاحظة. بالاضافه إلى الاتمته القوية ، فانها تسمح للمهندسين باجراء تغييرات عاليه التاثير بشكل متكرر و متوقع مع الحد الأدنى من الكدح.
+
+تسعى Cloud Native Computing Foundation إلى دفع اعتماد هذا النموذج من خلال تعزيز نظام إيكولوجي ثابت و مفتوح المصدر و محايد من البائعين. اننا نقوم بإضفاء الديمقراطية على أحدث الأنماط لجعل هذه الابتكارات متاحه للجميع.
+
+</div>
 
 ## 中文版本：
 
@@ -50,11 +64,11 @@ La "Cloud Native Computing Foundation" busca impulsar la adopción de este parad
 
 ## Français
 
-Les technologies nativement cloud donne le pouvoir aux entreprises de construire et d'exploiter des applications élastiques dans des environnements modernes, dynamiques comme des clouds publics, privés ou bien hybrides. Les conteneurs, les services maillés, les micro services, les infrastructures immuables, les API déclaratives illustrent cette approche.
+Les technologies nativement cloud permettent aux entreprises de construire et d'exploiter des applications élastiques dans des environnements modernes et dynamiques comme des clouds publics, privés ou bien hybrides. Les conteneurs, les services maillés, les micro services, les infrastructures immuables et les API déclaratives illustrent cette approche.
 
-Ces techniques permettent la mise en œuvre de systèmes à couplage faible qui sont résistants, pilotables et observables. Combinés au système robuste de l'automatisation, ils permettent aux ingénieurs de procéder à des modifications impactantes fréquemment et de façon prévisible avec un minimum de travail.
+Ces techniques permettent la mise en œuvre de systèmes faiblement couplés, à la fois résistants, pilotables et observables. Combinés à un robuste système d'automatisation, ils permettent aux ingénieurs de procéder à des modifications impactantes, fréquemment et de façon prévisible avec un minimum de travail.
 
-La Cloud Native Computing Foundation cherche à favoriser l'adoption de ce paradigme en favorisant et en soutenant un écosystème de projets "opensource" et indépendants des fournisseurs. Nous démocratisons les fonctionnements modernes à l'état de l'art afin de rendre l'innovation accessible à tous.
+La Cloud Native Computing Foundation cherche à favoriser l'adoption de ce paradigme en encourageant et en soutenant un écosystème de projets "opensource" et indépendants. Nous démocratisons l'état de l'art des pratiques afin de rendre l'innovation accessible à tous.
 
 ## Deutsch:
 

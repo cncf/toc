@@ -49,7 +49,7 @@ validity are ideally resolved, helps to foster this consensus.
   landscape in the immediate vicinity of the project (and don't only use the proposal and that project's documentation as a guide in this regard).
 * at this point you should have a very clear technical idea of what exactly the project actually does and does not do, roughly how it compares with and differs from 
   similar projects in it's technology area, and/or a set of unanswered questions in those regards. 
-* go through the [graduation criteria](https://www.cncf.io/projects/graduation-criteria/) and for each item,
+* go through the [graduation criteria](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc) and for each item,
   decide for yourself whether or not you have enough info to make a strong, informed call on that item.
   * If so, write it down, with motivation.
   * If not, jot down what information you feel you're missing.
@@ -79,7 +79,7 @@ the detail where necessary.
   Are they appropriate given the intended usage (e.g. cluster-wide shared services need to fail gracefully etc)?
 * What trade-offs have been made regarding performance, scalability, complexity, reliability, security etc?  Are these trade-offs explicit or implicit?
   Why?  Are they appropriate given the intended usage?  Are they user-tunable? 
-* What are the most important holes? No HA? No flow control? Inadequate integration points?
+* What are the most important holes? No High-Availability? No flow control? Inadequate integration points?
 * Code quality.  Does it look good, bad or mediocre to you (based on a spot review).  How thorough are the code reviews? Substance over form.
   Are there explicit coding guidelines for the project?
 * Dependencies.  What external dependencies exist, do they seem justified?
@@ -91,7 +91,7 @@ the detail where necessary.
 
 #### Project
 
-The key high-level questions that the voting TOC members will be looking to have answered are (from the [graduation criteria](https://www.cncf.io/projects/graduation-criteria/):
+The key high-level questions that the voting TOC members will be looking to have answered are (from the [graduation criteria](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc)):
 
 * Do we believe this is a growing, thriving project with committed contributors?
 * Is it aligned with CNCF's values and mission?

@@ -47,3 +47,23 @@ Please see the [TOC Principles](https://github.com/cncf/toc/blob/master/PRINCIPL
 ## What type of support do CNCF projects receive?
 
 The CNCF provides a variety of services that are accessible by maintainers via the ServiceDesk: https://github.com/cncf/servicedesk
+
+## What does CNCF do with its events revenues, especially for projects?
+
+CNCF uses revenues from events first and foremost to cover the cost of events. The remaining money, which can be thought of as the events’ profits, are used to directly support CNCF’s hosted projects. Two recent examples of this include funding $250,000 for the Kubernetes security audit and funding nearly $100,000 for Jepsen testing of etcd. The services CNCF provides to its hosted projects are detailed in the [CNCF Annual Report](https://www.cncf.io/cncf-annual-report-2018/) and the Project Journey Reports for [Kubernetes](https://www.cncf.io/cncf-kubernetes-project-journey/) and Envoy.
+
+## So CNCF invests all events revenues back into the events or to support its hosted projects?
+
+**Yes**! In fact, CNCF invests both all events profits *and* a significant portion of its membership revenue in support of its hosted projects.
+
+## Does CNCF make decisions based on “pay-to-play” considerations?
+
+**No**. CNCF’s charter [Section 3(c)](https://github.com/cncf/foundation/blob/master/charter.md) explicitly calls out fairness as a core value and requires us to ‘avoid undue influence, bad behavior or “pay-to-play” decision-making.’ Also projects are [openly governed](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/) and technical participation never requires any form of membership. The correct way to view this is that CNCF members **PAY TO SUSTAIN** and govern the shared budget which goes to sustain project activities such as events,scholarships and security audits.
+
+## Does membership or sponsorship level ever affect project-related decisions? 
+
+**No**. *All project-related decisions are made by the project maintainers*. Maintainership and governance processes are decided by the projects without regard to CNCF membership. Here’s more detail on [open governance](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/).
+
+## Why do members join if they don’t get to control CNCF and its projects?
+
+The main member benefit is to support the cloud native ecosystem and to be publicly seen supporting it. You can see other benefits on the [Join](https://www.cncf.io/about/join/) page, but none of them involve control over projects. The governing board has ultimate control over CNCF, but CNCF is managed through a written charter and it consists of many disparate and competing interests. As a result, decision-making is consensus-based.
