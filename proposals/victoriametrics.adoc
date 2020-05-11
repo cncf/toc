@@ -13,7 +13,7 @@ It provides Prometheus-compatible querying API and it supports PromQL.
 
 _History_:
 
-- Current release: 1.30.5
+- Current release: 1.35.3
 - May, 2019: single-node and cluster versions were open-sourced. https://blog.usejournal.com/open-sourcing-victoriametrics-f31e34485c2b
 - January, 2019: the first production use
 - December, 2018: data storage format has been stabilized
@@ -32,6 +32,7 @@ More info is available by the following links:
 VictoriaMetrics is aligned well with CNCF because of:
 
 - It is easy to configure and operate as long-term remote storage for Prometheus instances running in Kubernetes via Prometheus Operator. It may collect Prometheus data from multiple Kubernetes clusters.
+- It provides Prometheus-compatible service discovery for Kubernetes, EC2, AWS and Consul. See https://github.com/VictoriaMetrics/VictoriaMetrics/blob/master/app/vmagent/README.md
 - It provides Docker images for running in Kubernetes.
 - It provides Helm chart for cluster version in Kubernetes. There are plans to create Kubernetes operator for simplified operation.
 - It scales vertically and horizontally.
@@ -110,7 +111,7 @@ Releases are published in the following forms:
 
 - Source code - https://github.com/VictoriaMetrics/VictoriaMetrics/releases
 - Binary executables - https://github.com/VictoriaMetrics/VictoriaMetrics/releases
-- Docker images - https://hub.docker.com/r/victoriametrics/victoria-metrics
+- Docker images - https://hub.docker.com/u/victoriametrics
 
 
 *Social media accounts*
@@ -122,18 +123,18 @@ https://twitter.com/MetricsVictoria
 
 Github stats:
 
-- Stars: 1470+
-- Contributors: 15
-- Commits: 620+
-- Forks: 87+
+- Stars: 2250+
+- Contributors: 28
+- Commits: 1149+
+- Forks: 155+
 
 Telegram stats:
 
-- 200+ members at https://t.me/VictoriaMetrics_ru1
+- 357+ members at https://t.me/VictoriaMetrics_ru1
 
 Slack stats:
 
-- 177+ members at http://slack.victoriametrics.com
+- 400+ members at http://slack.victoriametrics.com
 
 
 VictoriaMetrics is used in production by many users starting from January, 2019. Here are a few of public users:
@@ -144,6 +145,8 @@ VictoriaMetrics is used in production by many users starting from January, 2019.
 - https://trafficstars.com/
 - https://dreamteam.gg/
 - https://www.fil-it.ru/
+
+See also https://github.com/VictoriaMetrics/VictoriaMetrics/wiki/CaseStudies
 
 Other users may be found at https://t.me/VictoriaMetrics_ru1 , https://t.me/VictoriaMetrics_en and http://slack.victoriametrics.com .
 
