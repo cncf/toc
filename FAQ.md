@@ -48,6 +48,9 @@ Please see the [TOC Principles](https://github.com/cncf/toc/blob/master/PRINCIPL
 
 The CNCF provides a variety of services that are accessible by maintainers via the ServiceDesk: https://github.com/cncf/servicedesk
 
+## What is the definition of an end user, specifically for graduation criteria from sandbox to incubation? ##
+The definition of an end user is someone who uses cloud native technologies internally and does not sell any cloud native services externally. End users exclude vendors, consultancies, training partners, and telcos.
+
 ## What does CNCF do with its events revenues, especially for projects?
 
 CNCF uses revenues from events first and foremost to cover the cost of events. The remaining money, which can be thought of as the events’ profits, are used to directly support CNCF’s hosted projects. Two recent examples of this include funding $250,000 for the Kubernetes security audit and funding nearly $100,000 for Jepsen testing of etcd. The services CNCF provides to its hosted projects are detailed in the [CNCF Annual Report](https://www.cncf.io/cncf-annual-report-2018/) and the Project Journey Reports for [Kubernetes](https://www.cncf.io/cncf-kubernetes-project-journey/) and Envoy.
