@@ -16,6 +16,14 @@ complexities of the platform hosting/managing their applications. As such,
 this SIG will focus on technologies related to enabling this simplified
 developer experience.
 
+Note: the definition of 'Serverless' can be rather challenging to define
+when trying to distinguish it from the othe CNCF SIGs, in particular
+SIG Application Delivery. Both SIGs share many similar goals, and as such,
+these two SIGs will share a special relationship in that as new projects are
+brought to the CNCF, these two SIGs will need to work together to determine the
+most appropriate home for the project. Often this decision may depend on the
+new project's relationship to the existing projects within each SIG.
+
 ## Areas Considered In Scope
 
 Technologies related to hosting, managing, developing and integrating of
@@ -23,13 +31,19 @@ Serverless applications from an application developer's perspective.
 The following are example areas that are considered in scope:
 
 * container hosting platforms that attempt to abstract their complexities away
-  from the application developer
+  from the application developer. In many cases this could include hiding
+  of the specific deployment artifacts (e.g. container images) used by the
+  hosting platform
 * orchestration and management of workloads running on those platforms from the
-  application developer's perspective
-* tooling to aid in the development and deployment of those workloads
+  application developer's perspective - e.g. auto-scaling, including
+  scaling down to zero
+* tooling to aid in the development and deployment of those workloads. For
+  example, source-to-image tooling
 * integration technologies that aim to promote interoperability between the
   various systems that an application developer may interact with during the
-  management of their applications on those platforms
+  management of their applications on those platforms - e.g.
+  CloudEvents which provides a standardized way to expose common event
+  metadata
 * workload interoperability - e.g. portability of functions,
   interaction with hosting environment/runtime
 * interoperability and connectivity with backend services used by workloads
@@ -106,7 +120,9 @@ within the SIG.
     cloud-native applications. We collaborate with this SIG where it
     pertains to helping to ensure that the required underlying workload
     execution abstractions and mechanisms are suitably provided to support
-    these application-level delivery needs.
+    these application-level delivery needs. We will work very closely with
+	this SIG to determine the best home for any new project since the potential
+	overlap between the two SIG could make this choice a challenge.
 *   **[CNCF Runtime SIG](https://github.com/cncf/sig-runtime)**
     includes projects that are focused on the runtime used to host
     cloud-native applications. While we expect a lot of collaboration with this
