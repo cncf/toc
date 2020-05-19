@@ -1,0 +1,213 @@
+== Pravega Proposal
+
+*Name of project*: Pravega
+
+=== Description
+
+Storage is indisputably an integral component of computer infrastructure. As distinct applications and frameworks generate data, it is persisted in various types of storage systems. Cloud-native applications are no different and require access to storage systems that can provide capacity, performance, and appropriate guarantees.
+
+Several classes of applications, exemplified by the ones referred to as Edge and Internet of Things applications, present sources that generate data continuously in the form of events. Those events are persisted for processing, and it is not unusual that multiple applications are processing such events, some of them processing the events as soon as they are made available. Some other applications or even the same applications tailing might require processing events from arbitrarily far in the past, perhaps because they found a bug and need to re-run, they crashed, and they need to resume from a known position, or they require inspecting past data.
+
+Such applications with sources continuously generating data and requiring access to past data are prevalent today. For these applications, the storage abstraction of a stream matches much better when compared to traditional storage primitives: block, file, and object. Pravega is a storage system that exposes a stream as its storage primitive. Applications write to and read from Pravega streams using a client. Pravega streams can accommodate an unbounded amount of data per stream, they are elastic, and they enable exactly-once semantics end-to-end.
+
+Pravega has been designed and implemented to be cloud-native. It uses Kubernetes operators to manage the lifecycle of a Pravega deployment, and it builds on horizontally-scalable cloud storage, which it uses to store stream data long term. We currently support NFS-mounted storage systems, S3-like object stores and HDFS-compatible systems. It is part of the project mission not only to be cloud-native, but also to provide effective stream storage for cloud-native applications.
+
+==== Origin and History of Pravega
+
+The development of Pravega started at Dell EMC in 2016 with the mission of designing and implementing a system that has a stream as its storage primitive. The code base was open-sourced under the Apache License v2.0 in 2017 to grow a community. The development of Pravega is very active, and the Dell EMC engineers remain the primary contributors to the project to date.
+
+==== Expanding on Pravega
+
+A stream in Pravega is a composition of segments, where a segment is an append-only sequence of bytes. At any point in time, a stream can have several parallel segments that applications can append to, and such a number can change over time, grow or shrink, following an auto-scaling policy. When appending to a stream, an application provides a routing key, which determines the segment it is appending to. We can think of the segments as shards for the routing key space. To append to streams and read from streams, applications use a Pravega client. Currently, there is only a Java client, but more clients are under development. Applications can additionally use a gRPC gateway to connect to Pravega, which enables access to Pravega streams in more languages.
+
+A Pravega cluster consists of controllers, segment stores, long-term storage, BookKeeper bookies, and a ZooKeeper ensemble. Pravega deploys natively on Kubernetes with a set of operators maintained by Pravega: a Pravega operator, a BookKeeper operator and a ZooKeeper operator.
+
+The controllers manage the lifecycle of streams, while the segment stores are responsible for persisting segment data and managing the lifecycle of segments. The controllers command the segment store to create, delete, merge, and seal segments as part of their operations.
+
+The segment store uses Apache BookKeeper ledgers to implement journals. Such journals guarantee the durability of appended data, providing both low latency and high throughput. Data written to BookKeeper remains in a memory cache until it is flushed to long-term storage, which happens asynchronously. Long-term storage is expected to be a horizontally scalable storage system, which is a primary characteristic of cloud storage. Pravega can use both cloud storage based on files or objects.
+
+Apache ZooKeeper is used for coordination tasks, such as the assigning and balancing of work across segment stores, but not storing stream metadata, which we store in Pravega itself using a key-value pair API implemented on top of segments.
+
+See more detail about Pravega in the documentation on the http://pravega.io[Pravega Web site]
+
+=== CNCF Storage SIG presentation
+
+Our presentation to the Storage SIG has already been recorded and is available on YouTube:
+
+https://www.youtube.com/watch?v=AZX0LQwGB9E&list=PLj6h78yzYM2NoiNaLVZxr-ERc1ifKP7n6&t=11m29s
+
+=== Conference presentations and Podcasts
+
+* https://bigdatabeard.com/streaming-storage-reimagined/[Big Data Beard]
+* https://softwareengineeringdaily.com/2020/05/07/pravega-storage-for-streams-with-flavio-junquiera/[Software Engineering Daily] 
+* Flink Forward 2020:
+** https://www.youtube.com/watch?v=_xaf6ICDrg4
+** https://www.youtube.com/watch?v=av2FJWK2xik
+* https://www.cncf.io/webinars/pravega-rethinking-storage-for-streams/[CNCF webinar 2020]
+* https://www.microsoft.com/en-us/research/video/pravega-a-new-storage-abstraction-data-streams/[Microsoft Research]
+* Flink Forward Asia 2019
+** https://www.youtube.com/watch?v=SEyYrQx9sJU
+** https://www.youtube.com/watch?v=g8Kcle3kAws
+* https://www.youtube.com/watch?v=abNulm1P6M0[DataWorks Barcelona 2019]
+* https://conferences.oreilly.com/strata/strata-eu-2018/public/schedule/detail/65388[Strata London 2018]
+* https://www.youtube.com/watch?v=GEpdZA1eyS4[DataWorks Summit 2018]
+* https://conferences.oreilly.com/strata/strata-ca-2018/public/schedule/detail/63888[Strata San Jose 2018]
+* https://www.youtube.com/watch?v=FstZzVUVAdE[Flink Forward San Francisco 2018]
+
+=== Comparison with NATS
+
+From the projects in the CNCF roster, NATS is the one that is closest to Pravega. Pravega has a different mission compared to NATS, however. NATS is a software system for messaging; it focuses on the communication across processes, exposing message patterns such as publish/subscribe, request/reply, and queues https://github.com/nats-io/nats-general/blob/master/architecture/ARCHITECTURE.md[[NATS Architecture]]. Pravega instead focuses on capturing and storing stream data, typically storing such data long term. Pravega provides features that NATS states as not being goals https://github.com/nats-io/nats-general/blob/master/architecture/DESIGN.md#minimizing-state[[NATS Design Goals]]:
+
+* Transactions
+* Schemas
+* Durability
+* Support for exactly-once semantics end-to-end
+
+
+=== Statement on alignment with CNCF mission
+
+Pravega embodies CNCF's commitment to cloud-native infrastructure and brings a new class of storage system to the portfolio of CNCF, one that enables cloud-native applications to store continuously generated data as streams. It is architected to be horizontally scalable, and in particular, to rely on tiered cloud storage to ingest an unbounded amount of data per stream and store such data long term. Streams in Pravega can dynamically scale according to workload variations, while satisfying relevant properties such as consistency, atomicity, and order.
+
+Pravega uses CNCF projects including Kubernetes, gRPC, Helm, CoreDNS, and Keycloak. It is deployed as a set of Kubernetes pods, using Kubernetes operators to manage the lifecycle of the distinct components.
+
+As a store for data streams with connectors to processing frameworks, Pravega adds cloud-native data streaming to the CNCF portfolio.
+
+=== Sponsors / Advisors from TOC
+
+TBD
+
+=== Unique identifier
+
+pravega
+
+=== Preferred maturity level
+
+*Incubating*
+
+Pravega is looking for the following by becoming a CNCF project:
+
+* Gain visibility to attract external users and outside contributors.
+* Enhance CNCF’s portfolio by providing storage infrastructure for modern data platforms.
+* Attract new stakeholders to drive Pravega development according to their own roadmaps.
+* Tight integration and coordination with other CNCF & LF projects.
+* Gain access to CNCF resources for mailing lists, paid Slack, website hosting, etc.
+
+=== License
+
+Apache-2.0
+
+=== Source control repositories
+
+* https://github.com/pravega/pravega
+* https://github.com/pravega/pravega-operator
+* https://github.com/pravega/bookkeeper-operator
+* https://github.com/pravega/zookeeper-operator
+* https://github.com/pravega/hadoop-connectors
+* https://github.com/pravega/pravega-keycloak
+* https://github.com/pravega/pravega-grpc-gateway
+* https://github.com/pravega/pravega-samples
+* https://github.com/pravega/video-samples
+
+==== Source control repositories being donated to Flink & ASF
+
+* https://github.com/pravega/flink-connectors
+
+=== External Dependencies
+
+Pravega depends on the following external software components:
+
+* gRPC (Apache-2.0)
+* Apache BookKeeper (Apache-2.0)
+* Apache ZooKeeper (Apache-2.0)
+* Apache Curator (Apache-2.0)
+* Netty (Apache-2.0)
+* Jersey (EPL-2.0 or GPL-2.0-with-classpath-exception)
+* Swagger (Apache-2.0)
+* Micrometer (Apache-2.0)
+
+Optional components additionally depend on:
+
+* Kubernetes (Apache-2.0)
+* Helm (Apache-2.0)
+* Apache Hadoop (Apache-2.0)
+* Apache Flink (Apache-2.0)
+* Keycloak (Apache-2.0)
+* Operator SDK (Apache-2.0)
+
+=== Initial Committers
+
+* Aaron Speigel - Dell (Aaron.Spiegel@dell.com)
+* Andrei Paduroiu - Dell (Andrei.Paduroiu@dell.com)
+* Anisha Kj - Dell (Anisha.Kj@dell.com)
+* Brian Zhou - Dell (B.Zhou@dell.com)
+* Claudio Fahey - Dell (Claudio.Fahey@dell.com)
+* Derek Moore - Dell (Derek.Moore@dell.com)
+* Enrico Olivelli - Diennea (eolivelli@apache.org)
+* Flavio Junqueira - Dell (Flavio.Junqueira@dell.com)
+* Prajakta Belgundi - Dell (Prajakta.Belgundi@dell.com)
+* Raúl Gracia - Dell (Raul.Gracia@dell.com)
+* Ravi Sharda - Dell (Ravi.Sharda@dell.com)
+* Sandeep Shridhar - Dell (Sandeep.Shridhar@dell.com)
+* Shivesh Ranjan - Dell (Shivesh.Ranjan@dell.com)
+* Srishti Thakkar - Dell (Srishti.Thakkar@dell.com)
+* Tom Kaitchuck - Dell (Tom.Kaitchuck@dell.com)
+
+=== Infrastructure requests
+
+Bare metal cluster access or cloud credits for:
+
+* General CI, build, testing & performance automation
+* Operator development & system integration testing
+
+=== Communication Channels
+
+* Slack: https://pravega-io.slack.com/
+** To join: http://pravega-slack-invite.herokuapp.com/
+
+=== Issue tracker
+
+https://github.com/pravega/pravega/issues
+
+=== Website
+
+http://pravega.io/
+
+=== Release methodology and mechanics
+
+* Release management duties are rotated among leads with each major release
+* Pravega committers and contributors are invited to a chat room to discuss and approve each point release
+
+=== Social media accounts
+
+Twitter: https://twitter.com/PravegaIO
+
+=== Existing sponsorship
+
+Dell EMC
+
+=== Community size
+
+* 1400 stars
+* 400 forks
+* 88 contributors
+* 135 Slack members
+
+=== Production usage
+
+New production systems and pilot projects are being developed with Pravega by:
+
+* RWTH
+** Industrial automation research lab advancing quality control methods using computer vision & IoT sensors to discover and prevent the production of bad or out-of-spec parts in multi-step manufacturing processes.
+** https://www.dellemc.com/resources/en-us/asset/customer-profiles-case-studies/solutions/delltechnologies-customer-profile-rwth.pdf[Case Study]
+** https://www.cio.de/a/ein-win-win-fuer-die-deutsche-industrieforschung,3633096[CIO Magazin interview (German language)]
+** https://youtu.be/89IDFI9jry8
+* Dell IT
+** Development productivity dashboards streaming GitLab & PKS events measuring project health with behavioral, historical and predictive analytics to reduce costs and to improve utilization and uptime.
+** iDRAC9 Telementry Streaming - Server Telemetry Data streams report on nearly 200 metrics analyzed in real time to monitor thermal anomalies across racks, detect power consumption spikes, and predict critical workload failures across hundreds of enterprise servers.
+* Dell EMC
+** Streaming Data Platform is an innovative, enterprise-grade software platform empowering organizations to harness their real-time and historical data in a single, auto-scaling infrastructure and programming model.
+** https://www.delltechnologies.com/en-us/storage/streaming-data-platform.htm[Product Website]
+** https://youtu.be/8h5hBfCcevk
+* I-NET Corp. https://www.inet.co.jp/english/
+** Construction project monitoring and analysis using streaming video, telemetry, and object detection to track progress against project plans and digital architectural models.
+** https://youtu.be/BTh1gkf0kQQ
