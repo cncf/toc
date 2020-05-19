@@ -117,8 +117,8 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 
 #### TOC Liaison
 
-* Streamlines communications between TOC and SIG chairs.
-* Communicates performance of the SIG to Governing Board & TOC.
+* Streamlines communications between TOC and SIG chairs, and helps SIG to set priorities.
+* Communicates performance of the SIG to TOC.
 * Helps with growth and development of the SIG.
 * Attends SIG meetings, as needed/requested.
 
