@@ -56,18 +56,14 @@ Here is diagram that illustrates the Serverless Workflow functional flow:
 <img src="https://raw.githubusercontent.com/cncf/wg-serverless/master/workflow/spec/media/spec/sample-serverless-workflow2.png" height="450px" alt="Serverless Workflow Diagram"/>
 </p>
 
-You can see the Serverless Workflow specification examples
-[here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/examples.md).
+Below are some of the core Serverless Workflow Specification documents:
 
-You can see the Serverless Workflow specification use-cases
-[here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/usecases.md)
+* [Examples](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/examples.md)
+* [Use Cases](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/usecases.md)
+* [Community Contributions](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/community/open-source.md)
+* [Logo](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/media/logo-small-text.png)
 
-You can see the Serverless Workflow community contributed libraries/tools [here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/community/open-source.md).
-
-You can see the Serverless Workflow specification logo
-[here](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/media/logo-small-text.png).
-
-The work on this specification is currently being done within the
+The work on this specification is currently being executed within the
 CNCF's Serverless WG Workflow sub-group, but with the large growth of the specification,
 and the short-term plan for a release of our first milestone (v0.1), it would make
 sense for this work to be more formalized as a new sandbox project under the CNCF.
@@ -119,27 +115,24 @@ None
 
 **Initial Maintainers**:
 
-We have the
-[GOVERNANCE](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/governance/readme.md)
-doc which explains the processes we follow.
+The [GOVERNANCE](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/governance/readme.md)
+documentation explains the process used within the Serverless Workflow group.
 
-Also we have the:
-[OWNERS](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/governance/owners.md)
-doc lists community members currently responsible for overseeing, reviewing, and approving changes to specification documents.
+The [OWNERS](https://github.com/cncf/wg-serverless/blob/master/workflow/spec/governance/owners.md)
+file lists community members currently responsible for oversight, review, and approval of changes to specification 
+documents.
 
 **Infrastructure Requests**:
 
-We would like to request a dedicated github repository for the Serverless Workflow specification.
-
-We would like to request a dedicated website.
-
-We would like to request a dedicated mailing list if possible.
+The Serverless Workflow Group requests a dedicated github repository within the https://github.com/CNCF namespace for the Serverless Workflow specification.
+The Serverless Workflow Group requests a dedicated website.
+The Serverless Workflow Group requests a dedicated mailing list.
 
 **Communication Channels**:
 
 Mailing list: https://lists.cncf.io/g/cncf-wg-serverless
 
-Slack: #serverless-workflow Slack channel under CNCF's Slack workspace https://slack.cncf.io/
+Slack: #serverless-workflow Slack channel within CNCF's Slack workspace https://slack.cncf.io/
 
 We have monthly zoom calls, first Monday every month @ 10-11am PT:
 https://zoom.us/my/cncfserverlesswg
