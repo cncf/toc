@@ -1,0 +1,100 @@
+## BFE Project Proposal
+
+### Name of Project: 
+BFE
+
+### Description: 
+BFE is an open-source layer 7 load balancer derived from proprietary Baidu FrontEnd. Its features and advantages include:
+
+- **Written in Golang**: BFE is written in a memory safety language and immune to Buffer Overflow vulnerability; BFE recovers from the runtime panics and handles them appropriately without killing the BFE process; BFE runs on Linux, Windows, Mac OS and almost anything to which Go compiles.
+
+- **Flexible plugin framework**: BFE has a builtin plugin framework that makes it possible to develop new features rapidly by writing plugins.
+
+- **Multi-tenancy architecture**: BFE is designed to provide every tenant a dedicated share of the instance. Each tenant’s configuration is isolated and remains invisible to other tenants.
+
+- **Multiple protocols supported**: BFE supports HTTP, HTTPS, SPDY, HTTP2, WebSocket, TLS, etc. Future support is planned for gRPC and HTTP/3.
+
+- **Content based routing**: BFE provides an advanced domain-specific language to describe routing rules which are easy to understand and maintain.
+
+- **Advanced load balancing**: BFE supports global load balancing and distributed load balancing for zone aware balancing, zone level failure resilience, overload protection etc.
+
+- **A rich set of builtin plugins**: BFE provides a rich set of plugins for traffic management, security, observability, etc.
+
+- **Best-in-class observability**: BFE includes detailed built-in metrics for all subsystems. BFE writes various logs(server log/access log/TLS key log) for trouble shooting, data analysis and visualization. BFE also supports distributed tracing.
+
+- **Easily integrated with ecosystem projects**: BFE is easily integrated with mainstream layer 4 load balancing solution, and other ecosystem projects(e.g. Kubernetes、Prometheus、Jaeger、Fluentd etc).
+
+### Why is BFE a good fit for CNCF?
+Load balancing is one of the most important components of any cloud-native infrastructure platform, and end users need a range of choices to meet their needs. BFE is complementary to existing CNCF reverseproxy projects like Envoy, which is currently the only reverseproxy option hosted by CNCF. As a edge load balancer, BFE serves as another choice for cloud-native applications that need flexible, security, high availability, and scalability.
+
+With BFE becoming a CNCF project, the open-source cloud-native ecosystem will also become more vibrant and robust in China, because our team has a strong track record of fostering the open source community in China and is dedicated to building and promoting CNCF’s mission there. Open source is global, and having BFE as a part of CNCF will further make that story so.
+
+### BFE Overview
+ * Development Timeline:
+   * Current release: 0.9.0
+   * Jul 31, 2019: BFE was open-sourced
+ * Community Stats:
+   * Stars: 3400+
+   * Maintainers: 5 (Baidu/Kuishou/ByteDance)
+   * Contributors: 40+
+   * Commits: 500+
+   * Forks: 500+
+
+### Cloud-Native Features of BFE
+ * Horizontal scalability: BFE enables elastic capacity scaling by simply adding or removing nodes with no interruption to ongoing workloads.
+ * Auto-failover and self-healing: BFE supports automatic failover, so in situations of software or hardware failures, the system will automatically recover while maintaining the applications’ availability.
+ * Cloud-native deployment: BFE can be deployed in any cloud environment--public, private, or hybrid--.
+
+### Roadmap:
+https://github.com/baidu/bfe/milestones
+
+### Additional Information:
+
+**Sponsors from TOC**: TBD
+
+**Preferred Maturity Level**: Sandbox
+
+**License**: Apache 2.0
+
+**Source control repositories**: https://github.com/baidu/bfe
+We plan on moving the source code to https://github.com/bfenetworks/bfe
+
+**Contributor Guideline**: https://github.com/baidu/bfe/blob/develop/CONTRIBUTING.md
+
+**Official Documentation**: https://www.bfe-networks.net/en_us/ABOUT/
+
+**Infrastructure Required**: BFE uses Travis CI for unit tests and builds and in-house Jenkins CI cluster for some integration tests. We plan to use CNCF test cluster to automatically run stability tests and performance tests in the future.
+
+**Communication Channels**:
+
+* Slack: https://bfe-networks.slack.com/
+
+* Mailing List: https://lists.cncf.io/g/cncf-bfe (proposed)
+
+* Issue tracker: https://github.com/baidu/bfe/issues
+
+**Website**: https://www.bfe-networks.net
+
+**Release Methodology and Mechanics**:
+BFE follows the Semantic Versioning 2.0.0 convention. The release cadence is:
+- Major version is released every 6 months
+- Minor version is released every 1 months.
+- Patch version is released every 2 weeks.
+BFE releases are announced using GitHub releases and current release is 0.9.0.
+
+**Social Media Accounts**: https://twitter.com/BfeNetworks
+
+**Adopters**: 
+
+* Baidu
+* CCTV
+* SPD Bank
+* CEB Bank
+* Sichuan Airlines
+* China Life
+
+**Dependencies and License Compliance (done by FOSSA)**: https://app.fossa.io/reports/1bd1bae4-31bf-41bf-8865-320eedbd1f85
+
+## Statement on Alignment with CNCF Mission
+
+Our team believes BFE will be a great fit for CNCF. As the CNCF’s mission is to “create and drive the adoption of a new computing paradigm that is optimized for modern distributed systems environments capable of scaling to tens of thousands of self healing multi-tenant nodes,” we believe BFE to be a core enabling technology for this mission. This belief has been validated by our many adopters and developers working to build, deploy, and maintain large-scale applications in a cloud-native environment. Moreover, BFE has very strong existing synergy with other CNCF projects, and is used heavily in conjunction with projects like: Kubernetes, Prometheus, Jaeger、Fluentd and gRPC. 
