@@ -92,7 +92,7 @@ image::incubation-process.png[Incubation process]
 
 === Project Proposal Requirements
 
-Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/master/proposals/kubernetes.adoc[example]) can be written in https://www.markdownguide.org[Markdown], http://asciidoc.org[AsciiDoc], or http://docutils.sourceforge.net/rst.html[reStructuredText] and must provide the following information to the best of your ability:
+Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/master/proposals/incubation/kubernetes.adoc[example]) can be written in https://www.markdownguide.org[Markdown], http://asciidoc.org[AsciiDoc], or http://docutils.sourceforge.net/rst.html[reStructuredText] and must provide the following information to the best of your ability:
 
  .. name of project (must be unique within CNCF)
  .. project description (what it does, why it is valuable, origin and history)
