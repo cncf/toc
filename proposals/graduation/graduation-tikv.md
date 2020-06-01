@@ -4,12 +4,12 @@ TiKV is an open source distributed transactional key-value database. TiKV joined
 
 To highlight some of the achievements:
 
-- GitHub Stars: 7100+
-- Contributors in the TiKV core repository: 226
+- GitHub Stars: 7400+
+- Contributors in the TiKV core repository: 239
 - Forks: 1100+
 - Releases: 86 releases
-- Adoptors: 500+ (including commercial users and community users)
-- 4.0 GA targeted in May, 2020
+- Adoptors: 1000+ (including commercial users and community users)
+- 4.0 GA released in May, 2020
 
 On behalf of the maintainers team, we believe TiKV is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage).
 
@@ -106,6 +106,6 @@ https://github.com/tikv/tikv/blob/master/docs/adopters.md
 
 - **A TiKV centric toolset and reduce hard external binary dependencies**:
 
-   Helm chart in practice turned out an unfitting solution for deploying TiKV due to some of its own issues. So we choose operator instead. Currently, TiKV can be easily deployed on Kubernetes via TiDB Operator and monitored by Prometheus, as already has been practised by some of our adoptors like Yidian Zixun. And the community are in the process of supporting a standalone TiKV Operator, which will be available in May, 2020.
+   Helm chart in practice turned out an unfitting solution for deploying TiKV due to some of its own issues. So we choose operator instead. Currently, TiKV can be easily deployed on Kubernetes via TiDB Operator and monitored by Prometheus, as already has been practised by some of our adoptors like Yidian Zixun. And the community are in the process of supporting a standalone TiKV Operator, which will be available soon.
 
 
