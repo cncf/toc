@@ -106,6 +106,8 @@ https://github.com/tikv/tikv/blob/master/docs/adopters.md
 
 - **A TiKV centric toolset and reduce hard external binary dependencies**:
 
-   Helm chart in practice turned out an unfitting solution for deploying TiKV due to some of its own issues. So we choose operator instead. Currently, TiKV can be easily deployed on Kubernetes via TiDB Operator and monitored by Prometheus, as already has been practised by some of our adoptors like Yidian Zixun. And the community are in the process of supporting a standalone TiKV Operator, which will be available soon.
-
+ TiKV can be easily deployed on Kubernetes via TiDB Operator and monitored by Prometheus, as already has been practiced by some of our adopters like Yidian Zixun.  
+ [Updated on June 8] The community has already provided the [design](https://github.com/tikv/rfcs/pull/53) and the initial implementation of [TiKV operator](https://github.com/tikv/tikv-operator), which is a Kubernetes Operator that aims to automate the deployment, management, and operational tasks of TiKV clusters.
+ 
+ 
 
