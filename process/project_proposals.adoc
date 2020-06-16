@@ -10,6 +10,8 @@ image::project-stages.png[Project stages]
 
 === Sandbox process
 
+_Note: we are currently experimenting with a https://docs.google.com/document/d/1IlhqnmhSzs3aTPMkp_75JPYz6LD21aK1sNPrBNruDt0/edit?usp=sharing[new lighter-weight process for Sandbox proposals]. If you are interested in submitting a project for Sandbox we recommending reaching out to CNCF staff, or raising in the TOC channel on CNCF Slack, for advice on how to proceed in the short term._
+
 All exceptions (and "no" outcomes) are handled by the TOC. Possible "no" outcomes include "not at this time", and the project may be encouraged to re-apply after addressing issues. Timeframes are approximate, to set expectations.
 
 image::sandbox-process.png[Sandbox process]
