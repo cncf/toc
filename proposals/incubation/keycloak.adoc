@@ -1,12 +1,10 @@
-Keycloak CNCF Sandbox Project Submission Proposal
--------------------------------------------------
+Keycloak CNCF Incubation Project Submission Proposal
+----------------------------------------------------
 
-This is a resubmission of Keycloak as Sandbox project. Initially
+This is a resubmission of Keycloak as Incubation project. Initially
 proposed in 2018 has been impacted by Sandbox process changes and overal
 lack of bandwidth in TOC. This resulted in halt of intake of new
-projects. Now that new process settled and new TOC elections concluded
-we would like to approach inclusion of Keycloak as CNCF Sandbox project
-again.
+projects. With recent changes to Sandbox definition would like to approach inclusion of Keycloak as CNCF Incubation project instead.
 
 Authors: +
 Bolesław Dawidowicz https://twitter.com/bdawidowicz +
@@ -14,11 +12,9 @@ Stian Thorgersen https://github.com/stianst
 
 Background
 ----------
+Keycloak Pitch (Short) Video [1m 42s]: https://www.youtube.com/watch?v=GZTN_VXjoQw
 
-Link to TOC PR: This
-
-Link to Presentation: (Oct 2018 TOC presentation - slide 26)
-https://docs.google.com/presentation/d/1Xt1xNSN8_pGuDLl5H8xEYToFss7VoIm7GBG0e_HrsLc/mobilepresent?slide=id.g3f805096e4_212_0
+Keycloak Introduction Video [32min 11s] https://www.youtube.com/watch?v=duawSV69LDI
 
 Link to GitHub project: https://github.com/keycloak
 
@@ -27,8 +23,11 @@ Getting Started / Trying out: https://www.keycloak.org/getting-started
 CNCF SIG Security assesment request:
 https://github.com/cncf/sig-security/issues/372
 
-CNCF SIG Security Self Assesment document:
+CNCF SIG Security Self Assesment document with great level of details about the project:
 https://docs.google.com/document/d/14IIGliP3BWjdS-0wfOk3l_1AU8kyoSiLUzpPImsz4R0/edit#
+
+Link to initial 2018 Presentation: (Oct 2018 TOC presentation - slide 26)
+https://docs.google.com/presentation/d/1Xt1xNSN8_pGuDLl5H8xEYToFss7VoIm7GBG0e_HrsLc/mobilepresent?slide=id.g3f805096e4_212_0
 
 Goal
 ~~~~
@@ -142,10 +141,15 @@ Keycloak is a mature and widely adopted project. Currently on 9.x
 release since February. Although follows quick every few months major
 release while keeping backwards compatibility.
 
-Github and community stats (March 2020): * Forks: 2.6k * Stars: 5.6k *
-Controbutors: 377 * Commits: 11.5k * Website visits: >60k unique users
-per month * Developer mailing list: ~100 posts/month * User mailing
-list: ~200 posts/month
+Github and community stats (March 2020): 
+* Forks: 2.8k 
+* Stars: 6.4k 
+* Controbutors: 393 
+* Commits: 12.5k 
+* Website visits: >60k unique users per month 
+* Developer mailing list: ~100 posts/month 
+* User mailing list: ~200 posts/month
+
 
 Governance and Community
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -161,24 +165,109 @@ https://github.com/keycloak/keycloak/blob/master/MAINTAINERS.md
 https://github.com/keycloak/keycloak/blob/master/LICENSE.txt
 * Community channels: https://www.keycloak.org/community
 
+
+Incubation Criteria
+~~~~~~~~~~~~~~~~~~~
+
+Section dedicated to address requirements listed in Incubation process: https://github.com/cncf/toc/tree/master/process#project-graduation-process-sandbox-to-incubating
+
+Production usage
+^^^^^^^^^^^^^^^^
+
+"Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope."
+
+Refering endorsements from Submission:
+
+* listed in: https://github.com/cncf/toc/issues/406
+* grouped and summarized in: https://github.com/cncf/toc/pull/405#issuecomment-623491056 and https://github.com/cncf/toc/pull/405#issuecomment-624043670 
+
+Bosh, Zalando, Cisco IT, Backbase, Government of British Columbia, Fresenius Medical Care North America IT Group, Cloudtrust and U.S Air Force, Hitachi, NTT Communications, Namura Research Institute Ltd. and Cuebiq publicly stated production usage. 
+
+One post claiming 42 million users in production deployment (https://github.com/cncf/toc/issues/406#issuecomment-632882838)
+
+
+Healthy number of committers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+"Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project"
+
+Right now only people from Maintainers list can merge commits: https://github.com/keycloak/keycloak/blob/master/MAINTAINERS.md
+
+Although there is much wider group of people reviewing and commenting particular PRs. 
+
+Substantial ongoing flow of commits and merged contributions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+"Demonstrate a substantial ongoing flow of commits and merged contributions."
+
+Example of most recent design discussions:
+
+* OpenID Connect Client Initiated Backchannel Authentication - contributor from Hitachi - https://github.com/keycloak/keycloak-community/pull/105
+* Client Policies - contributor from Hitachi - https://github.com/keycloak/keycloak-community/pull/99
+* Multi Factor and Step Up authentication improvements - contributor from ELCA - https://github.com/keycloak/keycloak-community/pull/39
+* User profile handling improvements - contributor from Bosh - https://github.com/keycloak/keycloak-community/pull/104
+
+All design specifications for major features discussed in the open with engagement from various contributors:
+
+* https://github.com/keycloak/keycloak-community/tree/master/design
+* https://github.com/keycloak/keycloak-community/pulls 
+
+Commits in the main repo: https://github.com/keycloak/keycloak/commits/master
+
+All contributors: https://github.com/keycloak/keycloak/graphs/contributors
+
+Selected Committers (without Red Hat associated ones)
+
+* https://github.com/keycloak/keycloak/commits?author=thomasdarimont
+* https://github.com/keycloak/keycloak/commits?author=girirajsharma
+* https://github.com/keycloak/keycloak/commits?author=Captain1653
+* https://github.com/keycloak/keycloak/commits?author=k-tamura
+* https://github.com/keycloak/keycloak/commits?author=tnorimat
+* https://github.com/keycloak/keycloak/commits?author=gerbermichi
+* https://github.com/keycloak/keycloak/commits?author=dteleguin
+* https://github.com/keycloak/keycloak/commits?author=hypery2k
+* https://github.com/keycloak/keycloak/commits?author=knutz3n
+* https://github.com/keycloak/keycloak/commits?author=y-tabata
+* https://github.com/keycloak/keycloak/commits?author=unly
+* https://github.com/keycloak/keycloak/commits?author=hokuda
+* https://github.com/keycloak/keycloak/commits?author=sventorben
+* https://github.com/keycloak/keycloak/commits?author=gtudan
+* https://github.com/keycloak/keycloak/commits?author=gcaranzo
+* https://github.com/keycloak/keycloak/commits?author=bartmentech
+
+
+
+
+A clear versioning scheme
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Currently Keycloak follows a fast pace of releasing new major version every few months. Maintaining backwards compatibility in key areas and providing documented upgrade path. 
+
+Keycloak project releases a micro if there is significant CVE or regression to address. 
+
+* Downloads archive: https://www.keycloak.org/downloads-archive.html
+* Release notes: https://www.keycloak.org/docs/latest/release_notes/index.html
+* Upgrade guide - highlighting relevant changes between versions: https://www.keycloak.org/docs/latest/upgrading/
+
+
 Future Plans / Roadmap
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Key high level items * W3C WebAuthN - initial support already in
-Keycloak 9 * Admin UI Redesign and reimplementation of Admin UIs in
-ReactJS.
+Key high level items 
+
+* Quarkus - https://quarkus.io - based distribution allowing natively compiled
+binaries and startup/footprint comparable to golang. 
+* New improved storage layer - drop requirement for database and leveraging etcd OOTB. 
+* Keycloak.X - number of Cloud Native related improvements
+https://www.keycloak.org/2019/10/keycloak-x 
+* Kubernetes Operator - initial release on OperatorHub https://operatorhub.io/operator/keycloak-operator 
+* Admin UI Redesign and reimplementation of Admin UIs in ReactJS.
 https://groups.google.com/d/msgid/keycloak-dev/188f4f10-6135-4220-a399-96f0a6e94ff9%40googlegroups.com
-* Kubernetes Operator - initial release on OperatorHub
-https://operatorhub.io/operator/keycloak-operator * Quarkus -
-https://quarkus.io - based distribution allowing natively compiled
-binaries and startup/footprint comparable to golang. * New improved
-storage layer - drop requirement for database. * Keycloak.X - number of
-Cloud Native related improvements
-https://www.keycloak.org/2019/10/keycloak-x * FAPI (Financial APIs) *
-Token Exchange Service * Introduce Webhooks as extension mechanism *
-Config templates / isolation and realm hierarchy * Authentication
-improvements - Adaptive / Risk based Step Up Authentication; Flexible
-consent authentication flows
+* FAPI (Financial APIs) 
+* Token Exchange Service 
+* Introduce Webhooks as extension mechanism *
+Config templates / isolation and realm hierarchy 
+* Authentication improvements - Full WebAuthN support, Adaptive / Risk based Step Up Authentication; Flexible consent authentication flows
 
 Project Scope
 -------------
@@ -313,9 +402,11 @@ Has the TOC been approached for sponsorship
 Keycloak has approached Sandbox submission in the past although this has
 been impacted with process changes. At the point Keycloak submitted CNCF
 TOC decided to halt intake of new projects and redesign the whole
-process. This essentially derailed previous submission
+process. This essentially derailed previous submission. During second attempt definition of Sandbox changed which lead project to switch aiming Incubation
 
-Previous PR: https://github.com/cncf/toc/pull/176
+Initial PR: https://github.com/cncf/toc/pull/176
+Second PR: https://github.com/cncf/toc/pull/405
+GH Issue: https://github.com/cncf/toc/issues/406 
 
 Sponsors from TOC
 ~~~~~~~~~~~~~~~~~
@@ -325,7 +416,7 @@ TBD
 Preferred maturity level
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sandbox
+Incubation
 
 Project and Code Quality. Other information
 -------------------------------------------
@@ -353,3 +444,8 @@ already has wide community support. Bringing Keycloak into the CNCF, the
 team hopes to continue to expand the list of features, making it even
 easier to secure different types of applications and reach an even wider
 community interested in contribution and adoption.
+
+
+
+
+
