@@ -377,8 +377,13 @@ Community meetings (Planing)
 
 **Adopters or potential users?**
 
-TiKV/TiDB projects   
-Netease (testing)
+- [Celo](https://celo.org/)
+- [Dailymotion](https://www.dailymotion.com/)
+- [NetEase Fuxi Lab](https://www.crunchbase.com/organization/netease-fuxi-lab)
+- [JuiceFS](http://juicefs.com/?hl=en)
+- [Meituan-Dianping](https://about.meituan.com/en)
+- [PingCAP](www.pingcap.com)
+- [Xpeng Motors](https://en.xiaopeng.com/)
 
 **Existing sponsorship**
 
