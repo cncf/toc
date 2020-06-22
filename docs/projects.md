@@ -18,7 +18,7 @@
 [rook](https://github.com/rook)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[1/29/18](https://www.cncf.io/blog/2018/01/29/cncf-host-rook-project-cloud-native-storage-capabilities)|Incubating
 [Vitess](https://github.com/vitessio/vitess)|Brian Grant|[4/19/17](https://goo.gl/6nmyDn)|[2/5/18](https://www.cncf.io/blog/2018/02/05/cncf-host-vitess/)|Graduated
 [NATS](https://github.com/nats-io/gnatsd)|Alexis Richardson|[9/21/16](https://goo.gl/6nmyDn)|[3/15/18](https://www.cncf.io/blog/2018/03/15/cncf-to-host-nats/)|Incubating
-[SPIFFE](https://github.com/spiffe)|Brian Grant, Sam Lambert, Ken Owens|[11/7/17](https://goo.gl/6nmyDn)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-the-spiffe-project/)|Sandbox
+[SPIFFE](https://github.com/spiffe)|Brian Grant, Sam Lambert, Ken Owens|[11/7/17](https://goo.gl/6nmyDn)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-the-spiffe-project/)|Incubating
 [OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-open-policy-agent-opa/)|Incubating
 [CloudEvents](https://github.com/cloudevents)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[5/22/18](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/)|Incubating
 [Telepresence](https://github.com/telepresenceio)|Alexis Richardson, Camille Fournier|[4/17/18](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)|[5/22/18](https://www.cncf.io/blog/2018/05/22/telepresence-in-the-sandbox/)|Sandbox
@@ -72,7 +72,8 @@
 | [OPA](https://www.openpolicyagent.org/) | 3/29/18        | 4/2/19              | Incubating |
 | [CloudEvents](https://cloudevents.io/)  | 5/15/18        | 10/28/19            | Incubating |
 | [Falco](https://falco.org/)             | 10/10/18       | 1/8/20              | Incubating |
-| [Dragonfly](https://d7y.io/)             | 11/15/18       | 4/9/20              | Incubating |
+| [Dragonfly](https://d7y.io/)            | 11/15/18       | 4/9/20              | Incubating |
+| [SPIFFE](https://github.com/spiffe)     | 3/29/18        | 6/22/20             | [Incubating](https://github.com/cncf/toc/pull/382) |
 
 ## Project Audits
 
