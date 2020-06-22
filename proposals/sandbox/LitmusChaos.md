@@ -34,6 +34,8 @@ The goal of LitmusChoas project is to provide infrastructure toolset to do end t
     - Wipro
     - ArgoAI
     - Zebrium
+    - RingCentral/Dino Systems
+    - Container Solutions
     
   References from community adoption: 
   
