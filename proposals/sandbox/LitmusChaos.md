@@ -167,7 +167,7 @@ LitmusChaos project comes with the following components.
 - Chaos Metrics exporter and
 - Chaos Hub (Which is a list of Chaos Customer Resources)
 
-![Litmus Project Architecture diagrams](https://docs.litmuschaos.io/docs/assets/architecture.png)
+![Litmus Project Architecture diagrams](https://docs.litmuschaos.io/docs/assets/litmus-schematic.png)
 
 Detailed architecture of the project is [here](https://docs.litmuschaos.io/docs/architecture/).
 
