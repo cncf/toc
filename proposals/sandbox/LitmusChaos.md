@@ -41,6 +41,7 @@ The goal of LitmusChoas project is to provide infrastructure toolset to do end t
   
   - https://www.zebrium.com/blog/using-autonomous-monitoring-with-litmus-chaos-engine-on-kubernetes
   - https://youtu.be/Uwqop-s99LA?t=720 (Intuit has demonstrated Litmus Argo integration and usage in the recent community syncup meeting)
+  - https://youtu.be/M7nL1sqQPOU (Andreas Krivas from container solutions has discussed how they have used Litmus in large retail customer environment for Chaos Engineering)
 
 
 Chaos experiments are hosted on https://hub.litmuschaos.io. It is a central hub where the application developers or vendors share their chaos experiments so that their users can use them to increase the resilience of the applications in production.
