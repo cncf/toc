@@ -47,6 +47,7 @@ The goal of LitmusChoas project is to provide infrastructure toolset to do end t
 Chaos experiments are hosted on https://hub.litmuschaos.io. It is a central hub where the application developers or vendors share their chaos experiments so that their users can use them to increase the resilience of the applications in production.
 
 ## Completed Roadmap items include: 
+Note: We make monthly releases and features are continuously being churned. For an updated roadmap, use this URL ( https://github.com/litmuschaos/litmus/blob/master/ROADMAP.md )
 
 - Declarative Chaos Intent via custom resources
 - Chaos Operator to orchestrate chaos experiments
@@ -69,6 +70,7 @@ Litmus into their chaos engineering or reliability engineering needs.
 
 #### In-Progress (Near-term)
 
+- A UI portal for LitmusChaos to trigger and schedule chaos experiments & workflows. 
 - Off the shelf chaos-integrated grafana dashboards for OpenEBS, Kafka, Cassandra #1280
 - Support for scheduled (continuous/background) chaos with halt/resume #1223
 - Support for OpenShift platform/resources 1406
