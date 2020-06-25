@@ -45,11 +45,12 @@
 [Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Sandbox
 [ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
 [KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Sandbox
-[Service Mesh Interface](https://smi-spec.io)|Jeff Brewer, Brendan Burns, Matt Klein|[1/16/20](https://github.com/cncf/toc/pull/336) -  [SIG Network](https://github.com/cncf/sig-network/blob/master/recommendations/smi.md)|[3/16/20](https://github.com/deislabs/smi-spec)|Sandbox
+[Service Mesh Interface (SMI)](https://smi-spec.io)|Jeff Brewer, Brendan Burns, Matt Klein|[1/16/20](https://github.com/cncf/toc/pull/336) -  [SIG Network](https://github.com/cncf/sig-network/blob/master/recommendations/smi.md)|[3/16/20](https://github.com/deislabs/smi-spec)|Sandbox
 [Argo](https://argoproj.github.io)|Jeff Brewer, Michelle Noorali, Xiang Li|[9/24/19](https://github.com/cncf/toc/pull/299) -  [SIG App Delivery](https://github.com/cncf/sig-app-delivery/issues/18)|[4/7/20](https://github.com/argoproj/argo)|Incubating
 [Volcano](https://volcano.sh)|Liz Rice, Sheng Liang, Alena Prokharchyk|[11/6/19](https://github.com/cncf/toc/pull/318) -  [SIG Runtime](https://github.com/cncf/sig-runtime/blob/master/recommendations/sandbox/volcano.md)|[4/10/20](https://github.com/volcano-sh/)|Sandbox
 [ArtifactHub](https://artifacthub.io)|TOC Vote|[4/1/20](https://github.com/cncf/toc/pull/409)|[6/23/20](https://github.com/artifacthub/hub)|Sandbox
 [BFE](https://www.bfe-networks.net)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/453)|[6/23/20](https://github.com/bfenetworks/bfe)|Sandbox
+[Cloud Custodian](https://cloudcustodian.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/issues/478)|[6/23/20](https://github.com/cloud-custodian/cloud-custodian)|Sandbox
 [Crossplane](https://www.crossplane.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/454)|[6/23/20](https://github.com/crossplane/crossplane)|Sandbox
 [Dex](https://github.com/dexidp/dex)|TOC Vote|[3/4/20](https://github.com/cncf/toc/pull/379)|[6/23/20](https://github.com/dexidp/dex)|Sandbox
 [Keptn](https://keptn.sh)|TOC Vote|[6/4/19](https://github.com/cncf/toc/pull/250)|[6/23/20](https://github.com/keptn)|Sandbox
