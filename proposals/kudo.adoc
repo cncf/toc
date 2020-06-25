@@ -1,0 +1,119 @@
+=== KUDO Sandbox Project Proposal
+
+*Name of the project: KUDO*
+
+*Description:*
+
+The Kubernetes Universal Declarative Operator (KUDO) is a highly productive toolkit for writing Operators for Kubernetes, with a focus on distributed data services. Using KUDO, you can deploy your applications, give your users the tools they need to operate it and understand how it's behaving in their environments.
+
+The KUDO creators have years of experience automating distributed data services such as https://kafka.apache.org[Apache Kafka] and https://cassandra.apache.org/[Apache Cassandra] on top of https://mesos.apache.org/[Apache Mesos] using the open source https://github.com/mesosphere/dcos-commons[DC/OS SDK]. KUDO aims to bring the successful patterns and user experience of the DC/OS SDK to Kubernetes.
+
+*KUDO Orchestrates Existing Tooling*
+
+Software like databases weren't built only to run on Kubernetes. They already have a rich set of tooling for deployment and operations, no matter where they are deployed. These tools are written, tested, and maintained by the experts who know this software best. KUDO encourages you to build operators that take advantage of this work.
+
+Instead of rewriting all of these tools in Go, KUDO allows you to encapsulate your operations into plans that KUDO executes in the right sequence. As a developer, plans are your route for exposing best practice operations for your software. As a user, run plans like backup and restore in confidence that these plans work and are tested.
+
+*Lifecycle Management for Complex Software*
+
+Software with complicated lifecycles like distributed data services is the kind of software KUDO was built for. In many cases, submitting a bunch of manifests and letting pods crash until other pods have run creates additional complexity in the deployment and maintenance of this software.
+
+Init Containers go awry, binaries get wrapped in esoteric launch scripts that are hard to debug, and Kubernetes users have to navigate a minefield of misleading data with poor resolution. The solution? Write software that deploys your software and handles this sequencing for you.
+
+KUDO brings sequencing of complicated software lifecycles without having to build software to do it for you. Plans contain phases, steps, and tasks, allowing plans to represent the full lifecycle of your application's stages.
+
+*Optimizing for User Experience*
+
+Other tools require learning a programming language, learning new APIs, or learning a DSL specific for building operators. For many teams, this doesn't overlap with their core competencies.
+
+Additionally, when a new version of Kubernetes is released, you have to wait for your toolkit to update to take advantage of any new upstream features in Kubernetes.
+
+KUDO operators are just a series of Custom Resource Definitions and Kubernetes templates, with configuration provided by Go Templates. KUDO Operators can even inherit from other formats, such as Helm, to quickly be able to re-use these formats and become rapidly productive with KUDO.
+
+*Statement on alignment with CNCF mission:*
+
+KUDO aligns with the CNCF mission of making cloud-native computing ubiquitous by enabling more teams to build Kubernetes operators.
+In our conversations with software vendors we found that they are hesitant to use any toolkit that is not managed by a neutral foundation like the CNCF to build Operators, which they see as business-critical. The project creators started with the goal in mind to donate KUDO to a foundation and modeled project governance after other CNCF projects from the start.
+
+KUDO offers a declarative approach for building operators, and users get declarative APIs for managing the lifecycle of KUDO-based workloads, which is the expectation for cloud-native software. It complements other CNCF projects, for example by providing a way to add Day 2 automation to existing Helm charts (see https://github.com/kudobuilder/kudo/blob/master/keps/0013-external-specs.md[KEP-0013]).
+
+KUDO democratizes patterns for managing the lifecycle of complex distributed workloads that would otherwise be out of reach or many teams.
+
+
+*KUDO Roadmap (short term):*
+
+* *Dynamic CRDs:*
+Dynamic CRDs provide the ability for KUDO to manage the lifecycle of operator CRDs for the operator developers and users. This will enable more expressiveness around declarative components and day 2 operations, that are specific to the business domain each operator is trying to solve.
+
+* *Create Application CRD for each Instance:*
+The Application CRD will allow KUDO to integrate naturally with all of the tooling that supports it. It also adds the potential for KUDO to use any software that uses the Application CRD as a dependency.
+
+* *Operator Dependencies:*
+Client-side dependencies are in, but this is the ability for KUDO to support a wide range of dependencies (from existing instances and connection strings to entirely new dependencies that are KUDO managed), and for tighter control of dependency specification by operator developers.
+
+* *Operator Extensions:*
+Operator extensions provide a mechanism for developers to extend from other formats such as other KUDO operators, Helm charts, or CNAB bundles. This extension mechanism has semantics depending on the upstream format, but helps both developers coming to KUDO quickly add day 2 operations to static formats, and experienced developers specialize operators for other environments without completely forking an operator.
+
+* *Package Distribution:*
+While package distribution is in, it currently is pointed to a single repository (or installable from local tarball/folder). Repositories are being currently developed, with airgap support being a high priority for the initial release.
+
+* *Improve testing suite:*
+KUDO will ship an extensive e2e suite with a grid of providers and volume drivers. KUDO intends to perform Mixed-Workload Testing (MWT) of operators to ensure that dependent operators work together, and at scale. Part of admission into the package distribution registry will require passing this process.
+
+*Planned Advocacy work:*
+
+There is ongoing work to build awareness of the project.
+
+* *Docs Improvements:*
+Improve docs around building, testing and publishing KUDO based Operators and any related work that come out of the https://github.com/kudobuilder/kudo/blob/master/keps/0009-operator-toolkit.md[KUDO Operator specification] or ongoing development of the https://kudo.dev/[KUDO website].
+
+* *Blog Posts:*
+Getting started, KUDO developer tutorial, and blog posts about specific operators.
+
+* *Events:*
+Meetups, workshops and conferences to build awareness and enabling users to use KUDO to develop their own Operators.
+
+*Sponsors from TOC:* We’ve had the chance to talk to some of the TOC members to help them understand KUDO’s objective and provide a deeper understanding of the architecture. We are submitting this PR to bring it in front of the entire TOC and are looking for sponsors.
+
+*Preferred Maturity level:* Sandbox
+
+*Unique identifier:* KUDO
+
+*Current project sponsor:* Mesosphere
+
+*License:* Apache License v2.0
+
+*Code repositories:* The code is hosted in a vendor-neutral Github organization at https://github.com/kudobuilder
+
+*External code dependencies:*
+Available at https://github.com/kudobuilder/kudo/blob/master/go.mod
+
+*Infrastructure requests (CI / CNCF Cluster):*
+
+* CI (currently uses CircleCI)
+* https://www.cncf.io/community/infrastructure-lab/[Cloud infrastructure resources] for scale and mixed workload tests
+
+*Community Communication:*
+KUDO has weekly community meetings which occur every Thursday at different times of day to cater to contributors in different time zones.
+
+*Slack:* #kudo on https://slack.k8s.io/
+
+*Mailing List:* KUDO currently uses https://groups.google.com/d/forum/kudobuilder but we are proposing a mailing list under CNCF such as cncf-kudo@lists.cncf.io.
+
+*Issue trackers:*
+https://github.com/orgs/kudobuilder/projects/1 (Canonical)
+https://github.com/kudobuilder/kudo/projects/4 (Supported, but being merged into the former to support multiple repos)
+
+*Website/Blog:* https://kudo.dev
+
+*Social media accounts:* Twitter: https://twitter.com/kudobuilder
+
+*Release Methodology:*
+
+We currently use numbered releases with the changelog and binaries published to kudobuilder/kudo/releases. The current release process is documented here: https://github.com/kudobuilder/kudo/blob/master/RELEASE.md
+
+*Community Size (as of 7/31):*
+
+* 248 Stars
+* 40 Committers
+* 6 full-time engineers
