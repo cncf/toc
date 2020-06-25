@@ -1,12 +1,18 @@
 # I. Overview
+
 This policy describes the Cloud Native Computing Foundation (CNCF) project life cycle process, from sandbox to archival and more. It describes the stages a project may be admitted under and what the criteria and expectations are for a given stage, as well as the acceptance criteria for a project to move from one stage to another. It also describes the Annual Review Process through which those changes will be evaluated and made.
 
 Project progression, movement from one stage to another, allows projects to participate at the level that is most appropriate for them given where they are in their lifecycle.
+
+
 # II. Stages - Definitions & Expectations 
+
 CNCF projects have a maturity level of sandbox, incubating, or graduated. Archived is for projects no longer in active development. The maturity level is a signal by CNCF as to what sorts of enterprises should be adopting different projects. Projects increase their maturity by demonstrating their sustainability to CNCF’s Technical Oversight Committee: that they have adoption, a healthy rate of changes, committers from multiple organizations, have adopted the CNCF Code of Conduct, and have achieved and maintained the Core Infrastructure Initiative Best Practices Badge. 
 
 ![Project Stages](https://github.com/cncf/toc/blob/master/process/project-stages.png)
+
 ## Sandbox: 
+
 The CNCF Sandbox is the entry point for early stage projects and has four goals:
 
 * Encourage public visibility of experiments or other early work that can add value to the CNCF mission and build the ingredients of a successful Incubation level project
@@ -27,13 +33,16 @@ Graduated projects signal the highest level of maturity for a CNCF project.
 Archived projects are no longer in active development and are only archived after a TOC vote.
 
 # III. Project Proposal Process
+
 Introduction:
 This governance policy sets forth the proposal process for projects to be accepted into the CNCF.
 The process is the same for both existing projects which seek to move into the Foundation, and new projects to be formed within the CNCF.
 
-Project Proposal Requirements: 
+## Project Proposal Requirements: 
+
 ## Sandbox Projects: 
-Projects being submitted to the CNCF at the sandbox level are intended to be the entry point for early stage projects and are not required to undergo due diligence. A project is reviewed by a SIG (chosen by the TOC to review). After presenting to the SIG, a SIG will make a written recommendation to the TOC to review. Three sponsors are required for entry into the sandbox. 
+
+Projects being submitted to the CNCF at the sandbox level are intended to be the entry point for early stage projects and are not required to undergo due diligence. 
 
 Sandbox projects should be early-stage projects that the CNCF TOC believes warrant experimentation.   
 
@@ -42,8 +51,8 @@ Sandbox projects should be early-stage projects that the CNCF TOC believes warra
 * Projects commissioned or sanctioned by the CNCF, including initial code for CNCF WG collaborations, and "experimental" projects
 * Any project that realistically intends to join CNCF Incubation in future and wishes to lay the foundations for that
 
-![Sandbox Project Process](https://github.com/cncf/toc/blob/master/process/sandbox-process.png)
-Projects currently in review and process for entry into CNCF at the Sandbox level are tracked here: https://github.com/cncf/toc/projects/4 
+To apply for inclusion into the Sandbox, projects should use [this form](https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit). 
+The TOC will review on a rotating basis, currently every two months as of June 2020. 
 
 ## Project Graduation Process: Sandbox to Incubating
 
@@ -62,10 +71,11 @@ To be accepted to incubating stage, a project must meet the sandbox stage requir
 ![Incubating](https://github.com/cncf/toc/blob/master/process/incubation-process.png)
 
 Projects currently in progress for consideration at the Incubating stage are tracked: https://github.com/cncf/toc/projects/7 
+
 ## (3) Project Graduation Process: Incubating to Graduation 
 Projects that wish to move from Incubating to Graduation: 
 * Have committers from at least two organizations.
-* Have achieved and maintained a [Core Infrastructure Initiative Best Practices Badge/(https://bestpractices.coreinfrastructure.org/).
+* Have achieved and maintained a [Core Infrastructure Initiative Best Practices Badge](https://bestpractices.coreinfrastructure.org/).
 * Have completed an independent and third party security audit with results published of similar scope and quality as this example which includes all critical vulnerabilities and all critical vulnerabilities need to be addressed before graduation.
 * Explicitly define a project governance and committer process. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
 * Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website). For a specification, have a list of adopters for the implementation(s) of the spec.
@@ -73,10 +83,13 @@ Projects that wish to move from Incubating to Graduation:
 Projects moving from incubation to graduation are tracked here: https://github.com/cncf/toc/projects/6
 
 ## (4) Archiving Projects
+
 Open source projects have a lifecycle and there are times that projects become inactive due to a variety of reasons. There are also cases where a project may no longer want to be supported by the TOC, or the TOC may no longer wish to recommend the use of a project.
 Archiving Criteria
 When voting on a proposal to archive a project, TOC members may wish to consider whether the project continues to meet the criteria for CNCF acceptance. The TOC may also look at activity levels in the project (https://all.devstats.cncf.io/d/53/projects-health-table?orgId=1), although it is important to note that there is a difference between a mature project that doesn't get much attention any more but is stable, versus a project that is inactive.
+
 ### Voting Process
+
 To archive a project:
 * A proposal must be put forth to the TOC repo
 * The TOC will inform the project maintainers, CNCF end user community and wider community of all archiving proposals
@@ -84,6 +97,7 @@ To archive a project:
 * A vote must be finalized with 2/3 approval from the TOC
 
 ### Archiving Process
+
 What does archiving for a CNCF project mean?
 * CNCF will no longer provide support for the project via service desk
 * CNCF will list archived projects online
@@ -92,6 +106,7 @@ What does archiving for a CNCF project mean?
 * Other CNCF marketing activities will no longer be provided for the project
 
 # IV. Annual Review Process 
+
 Sandbox projects are subject to an annual review by the TOC. This is intended to be a lightweight process to ensure that projects are on track, and getting the support they need.
 
 Your annual review should answer the following questions:
