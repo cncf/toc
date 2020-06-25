@@ -31,7 +31,13 @@ To learn more about Contour's features, read and view the following resources:
  * Contour 1.0 shipped in November 2019, signaling to the community a commitment to a stable set of APIs 
  
 == Production Users
- * TBD
+ * Adobe
+ * DS hostnet
+ * PayIt
+ * PhishLabs
+ * Kintone.io
+ * Replicated
+ * Kinvolk
 
 == In-Flight Features
 
