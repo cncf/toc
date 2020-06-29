@@ -8,7 +8,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Allen Sun, Alibaba (allensun.shl@alibaba-inc.com)
 * Andrés Vega, Hewlett-Packard Enterprise (andres.vega@hpe.com)
 * Andy Santosa, Ebay (asantosa@ebay.com)
-* Ara	Pulido, Bitnami	(ara@bitnami.com)
+* Ara	Pulido, Datadog	(ara.pulido@datadoghq.com)
 * Ayrat Khayretdinov (ayratk@google.com)
 * Bassam Tabbara, Upbound	(bassam@upbound.io)
 * Bob	Wise, Amazon Web Services	(bob@bobsplanet.com)
