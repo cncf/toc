@@ -304,7 +304,7 @@ _(06, 24, 2020)_
   - [Sentry](https://github.com/spotify/backstage/tree/master/plugins/sentry) 
 
 ## Adopters:
-https://github.com/spotify/backstage/ADOPTERS.md
+https://github.com/spotify/backstage/blob/master/ADOPTERS.md
 
 ## Project logo in svg format
 ![Backstage SVG logo](https://backstage.io/img/logo.svg)
