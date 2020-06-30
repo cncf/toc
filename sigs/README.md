@@ -58,3 +58,8 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Matt Young](https://github.com/halcyondude)
 * [Richard Hartmann](https://github.com/RichiH)
 
+## Emeritus Chairs
+
+| SIG | Emeritus Chair |
+|---|---|
+| SIG Contributor Strategy | [Gerred Dillon](https://github.com/gerred) |
