@@ -78,7 +78,10 @@ This last year was arguably Brigade's most exciting, including:
 
 - *How can the CNCF help you achieve your upcoming goals?*
     - We believe opportunities like occasional CNCF webinars or blog posts are good for informing the CNCF user base of our project's features and goals.
-    - When the 2.0 planning cycle ends and development begins, we feel that we need to develop a platform for reaching new contributors.
+    - When the 2.0 planning cycle ends and development begins, we feel that we need to develop a platform for reaching new contributors. The current anticipated timeline is:
+      1. Brigade 2.0 development kicks off on July 20, 2020 (unless the proposal needs updates)
+      2. Brigade 2.0.0-alpha.1 will be released January, 2021
+      3. Tentative date for Brigade 2.0.0 final is June 30, 2021
     - We are unsure what a sandbox project will be able to ask of CNCF, given the new sandbox definition.
 
 - *Do you think that your project meets the criteria for incubation?*
