@@ -19,12 +19,11 @@ The Operator Framework provides essential features for distributed systems autho
 * lifecycle handling of long running Operators with regards to upgrades, versioning & dependencies 
 
 
-
 *Statement on alignment with CNCF mission*:
 
 The Operator Framework expands the Kubernetes ecosystem to empower users with an easy and robust mechanism to run advanced distributed systems. These distributed systems are frequently other CNCF projects like Prometheus, Jaeger, etcd, Rook, NATS and more. The Bringing the Operator Framework into the CNCF will strengthen these relationships and allow users to adopt and run these CNCF projects in production.
 
-*Sponsor / Advisor from TOC*: tbd
+*Sponsor / Advisor from TOC*: Katie Gamanji
 
 *Unique identifier:* operator-framework
 
