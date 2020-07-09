@@ -23,7 +23,7 @@ a pull request with document referencing the roles and charter, updating the lis
 | [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy) | Matt Klein |
 | [SIG Observability](https://github.com/cncf/sig-observability) | Jeff Brewer, Brendan Burns | 
 
-## SIG Chairs as of April 2020
+## SIG Chairs as of July 2020
 
 ### SIG Storage 
 * [Erin Boyd](https://github.com/erinboyd)
@@ -52,8 +52,14 @@ a pull request with document referencing the roles and charter, updating the lis
 ### SIG Contributor Strategy
 * [Paris Pittman](https://github.com/parispittman)
 * [Josh Berkus](https://github.com/jberkus)
-* [Gerred Dillon](https://github.com/gerred)
+* [Stephen Augustus](https://github.com/justaugustus)
 
 ### SIG Observability
 * [Matt Young](https://github.com/halcyondude)
 * [Richard Hartmann](https://github.com/RichiH)
+
+## Emeritus Chairs
+
+| SIG | Emeritus Chair |
+|---|---|
+| SIG Contributor Strategy | [Gerred Dillon](https://github.com/gerred) |
