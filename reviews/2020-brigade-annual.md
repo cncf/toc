@@ -25,7 +25,7 @@ This last year was arguably Brigade's most exciting, including:
 - Several incremental feature releases, most recently [Brigade v1.4.0](https://github.com/brigadecore/brigade/releases/tag/v1.4.0)
 - Maintainers Summit in Boulder, CO to plan Brigade 2.0 
     - We generated a list of Future User Stories: https://hackmd.io/DN152vISS72IWD2Roty7Ag
-    - This led to an early/informal prototype of Brigade 2.0 that will inform a formal proposal: https://github.com/krancour/brignext
+    - This led to an [early/informal prototype of Brigade 2.0](https://github.com/krancour/brignext) that informed the formal proposal: https://github.com/brigadecore/brigade/pull/1101
 - At Helm Summit Amsterdam, [a session featured](https://helmsummit2019.sched.com/event/S8tc/ship-it-faster-safer-cheaper-state-of-the-art-of-gitops-with-helm-yusuke-kuoka-z-lab-corporation) a Brigade and Helm integration project
 - At KubeCon San Diego, the Brigade team demonstrated [using Brigade as a Kubernetes Controller](https://github.com/brigadecore/buck).
 
