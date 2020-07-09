@@ -60,8 +60,7 @@
 [PARSEC](https://github.com/parallaxsecond/parsec)|TOC Vote|[4/30/20](https://github.com/cncf/toc/pull/441)|[6/23/20](https://github.com/parallaxsecond/parsec)|Sandbox
 [CNI-Genie](https://github.com/cni-genie/CNI-Genie)|TOC Vote|[3/17/19](https://github.com/cncf/toc/pull/208)|[6/23/20](https://github.com/cni-genie/CNI-Genie)|Sandbox
 [Contour](https://github.com/projectcontour/contour)|Matt Klein|[1/6/20](https://github.com/cncf/toc/pull/330)|[7/7/20](https://github.com/projectcontour/contour)|Incubating
-
-
+[Operator Framework](https://github.com/operator-framework)|Katie Gamanji|[10/9/19](https://github.com/cncf/toc/pull/303)|[7/9/20](https://github.com/operator-framework)|Incubating
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
