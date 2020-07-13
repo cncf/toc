@@ -126,6 +126,7 @@ Areas of future collaboration with the Rook community may include:
    OpenEBS source code, documentations and tests are distributed among several repositories. 
    - There are a total of [7 maintainers](https://github.com/openebs/openebs/blob/master/MAINTAINERS) and
    - 17 additional reviewers. The [reviewers](https://github.com/openebs/openebs/blob/master/GOVERNANCE.md#reviewers) maintain one or more repositories and are on their way to becoming maintainers.
+   - Looking at the [devstats on companies contributing since joining CNCF](https://openebs.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Since%20joining%20CNCF&var-metric=contributions), we have seen several companies contributing to the project in terms of issues, reviews on PRs and code fixes. MayaData and Sanmina/Viking are already part of the OpenEBS org. We are in the process of onboarding regular contributors from companies like Kinvolk, Orange, IBM, DO, Huawei and several independent contributors.
   
 - *What do you know about adoption, and how has this changed since your last review / since you joined Sandbox? If you can list companies that are end-users of your project, please do so. (Feel free to link to an existing ADOPTERS file if appropriate.)* 
 
