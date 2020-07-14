@@ -61,6 +61,8 @@
 [CNI-Genie](https://github.com/cni-genie/CNI-Genie)|TOC Vote|[3/17/19](https://github.com/cncf/toc/pull/208)|[6/23/20](https://github.com/cni-genie/CNI-Genie)|Sandbox
 [Contour](https://github.com/projectcontour/contour)|Matt Klein|[1/6/20](https://github.com/cncf/toc/pull/330)|[7/7/20](https://github.com/projectcontour/contour)|Incubating
 [Operator Framework](https://github.com/operator-framework)|Katie Gamanji|[10/9/19](https://github.com/cncf/toc/pull/303)|[7/9/20](https://github.com/operator-framework)|Incubating
+[Serverless Workflow Specification](https://github.com/cncf/wg-serverless-workflow)|TOC Vote|[3/3/20](https://github.com/cncf/toc/pull/376)|[7/14/20](https://github.com/cncf/wg-serverless-workflow)|Sandbox
+[ChaosMesh](https://github.com/pingcap/chaos-mesh)|TOC Vote|[2/26/20](https://github.com/cncf/toc/pull/367)|[7/14/20](https://github.com/pingcap/chaos-mesh)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
