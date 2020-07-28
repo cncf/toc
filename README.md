@@ -26,7 +26,7 @@ See the current CNCF projects and a description of project maturity levels (Sand
 
 [Here](https://www.cncf.io/services-for-projects/) is a list of services that the CNCF provides for Incubating and Graduated projects hosted in the foundation. CNCF also provides a subset of these services to [Sandbox](https://www.cncf.io/sandbox-projects/) level projects.
 
-See the process for contributing a project [here](CONTRIBUTING.md). If you have any questions or don't know where to start, open an [issue](https://github.com/cncf/toc/issues).
+See the process for contributing a project [here](https://github.com/cncf/toc/blob/master/process/README.md). If you have any questions or don't know where to start, open an [issue](https://github.com/cncf/toc/issues).
 
 ## Meeting Time
 
