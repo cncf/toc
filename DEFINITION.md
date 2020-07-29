@@ -102,3 +102,11 @@ A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma 
 Эти техники позволяют слабосвязанным системам быть устойчивыми, управляемыми и под постоянным контролем. В сочетании с надежной автоматизацией они позволяют инженерам часто и предсказуемо вносить значительные изменения с минимальными усилиями.
 
 Cloud Native Computing Foundation ставит целью адаптировать эту парадигму, развивая и поддерживая экосистему проектов, с открытым исходным кодом, независимую от их поставщиков. Мы демократизируем современные модели, чтобы сделать эти инновации доступными для всех.
+
+## Italiano:
+
+Le tecnologie **cloud native** permettono alle organizzazioni di costruire ed eseguire applicazioni scalabili in ambienti moderni e dinamici come cloud pubblici, privati e ibridi. I container, i micro-servizi, le infrastrutture immutabili e le API dichiarative esemplificano questo approccio.
+
+Queste tecniche permettono che sistemi debolmente accoppiati siano resilienti, gestibili e osservabili. Combinati con un sistema robusto di automazione, permettono agli ingegneri di eseguire frequentemente e con minimo sforzo i cambi ad alto impatto
+
+La **Cloud Native Computing Foundation** cerca di favorire l'adozione di questo paradigma incoraggiando e sostenendo un ecosistema di progetti open source e indipendenti dai vendor. Noi democratizziamo le pratiche allo stato dell'arte per rendere queste innovazioni accessibili a tutti.
