@@ -119,13 +119,11 @@ Your annual review should answer the following questions:
 * How can the CNCF help you achieve your upcoming goals?
 * Do you think that your project meets the criteria for incubation?
 
-The outcome of the annual review is either:
+Based on this review the TOC will vote on whether to continue to sponsor the project in Sandbox. If the vote does not reach a simple majority, we will discuss archiving or other next steps with you.
 
-At least three (two before the TOC grows to 11 members) TOC members agree to continue to sponsor the project in Sandbox, or
-If enough TOC members don’t agree to continue to sponsor the project, we will discuss archiving or other next steps with you.
-Additionally, the TOC might recommend that you apply for Incubation stage. This requires extra work and due diligence so it’s not a possible outcome directly from this lightweight annual review.
+Additionally, the TOC might recommend that you apply for Incubation stage. This requires extra work and due diligence so it’s not a possible outcome to move directly to Incubation from this lightweight annual review.
 
-It is fine for projects to stay in the Sandbox indefinitely while it is still active, but if a project has genuinely stalled we can save everyone’s effort by archiving it.
+It is fine for a project to stay in the Sandbox indefinitely while it is still active, but if a project has genuinely stalled we can save everyone’s effort by archiving it.
 
 
 
