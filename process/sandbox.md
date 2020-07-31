@@ -25,10 +25,6 @@ When we say that Sandbox projects are "early stage" this covers the following ex
 3. Projects commissioned or sanctioned by the CNCF, including initial code for CNCF WG collaborations, and "experimental" projects
 4. Any project that realistically intends to join CNCF Incubation in future and wishes to lay the foundations for that
 
-## Roadmap for Sandbox Projects
-
-![CNCF Sandbox Roadmap](sandbox.png)
-
 ## Caveat Utilitor
 
 The CNCF hopes that all early stage projects will achieve the success they desire.  And the organisation will help as appropriate.  But certain caveats must be stated nonetheless.
@@ -81,4 +77,8 @@ Some key points:
 * Reviewed on an annual basis; submit a report to the TOC for review
 * CNCF Sandbox projects can stay in the sandbox indefinitely
 
+### Application into Sandbox 
+
+To apply for inclusion into the Sandbox, projects should use [this form](https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit). 
+The TOC will review on a rotating basis, currently every two months as of June 2020.  
 
