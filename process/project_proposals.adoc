@@ -19,7 +19,7 @@ image::sandbox-process.png[Sandbox process]
    * Project proposed through a https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit[form]
    * Project proposed for contribution through a https://github.com/cncf/toc/pulls[Pull request] 
 . *TOC Review*
-   * TOC reviews proposal in spreadsheet and presentation
+   * TOC reviews proposal in spreadsheet and presentation, project passes for inclusion with a simple majority vote. 
    * TOC may engage with project to ask further questions
    * Projects may re-apply after six months
 . *Governance / legal issues*
