@@ -16,7 +16,7 @@ All exceptions (and "no" outcomes) are handled by the TOC. Possible "no" outcome
 
 image::sandbox-process.png[Sandbox process]
 . *Project Proposal*
-   * Project proposed through a https://docs.google.com/document/d/1IlhqnmhSzs3aTPMkp_75JPYz6LD21aK1sNPrBNruDt0/edit?usp=sharing[form]
+   * Project proposed through a https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit[form]
    * Project proposed for contribution through a https://github.com/cncf/toc/pulls[Pull request] 
 . *TOC Review*
    * TOC reviews proposal in spreadsheet and presentation
