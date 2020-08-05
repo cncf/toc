@@ -20,7 +20,7 @@ Using the CNCF Envoy project, OSM implements Service Mesh Interface (SMI) for se
 
 OSM runs on Kubernetes. The control plane implements Envoy's xDS and is configured with SMI APIs. OSM injects an Envoy proxy as a sidecar container next to each instance of an application.
 
-The data plane (the set of Envoy proxies running as part OSM) executess rules around access control policies, implements routing configuration, and captures metrics. The control plane continually programs the data plane to ensure policies and routing rules are up to date and ensures the data plane is healthy.
+The data plane (the set of Envoy proxies running as part OSM) executes rules around access control policies, implements routing configuration, and captures metrics. The control plane continually programs the data plane to ensure policies and routing rules are up to date and ensures the data plane is healthy.
 
 ### Features
 
