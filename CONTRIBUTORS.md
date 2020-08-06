@@ -41,6 +41,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Jeyappragash JJ, Independent (pragashjj@gmail.com)
 * Jinming Yue, Caicloud (yuejinming@caicloud.io)
 * Joe Beda, Heptio (joe@heptio.com)
+* John Hillegass, Capital One (john.hillegass@capitalone.com)
 * Jonghyuk Jong Choi, NCSoft (jongchoi@ncsoft.com)
 * Josef Adersberger, QAware (josef.adersberger@qaware.de)
 * Joseph Jacks, Independent	(jacks.joe@gmail.com)
