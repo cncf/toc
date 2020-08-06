@@ -38,7 +38,9 @@ Open Service Mesh is well-aligned with the CNCF mission to make cloud native com
 
 ## Comparison with similar projects (inside or outside the CNCF), including what differentiates this project
 
-Linkerd is a service mesh which is an incubating CNCF project and implements SMI APIs but does not use the Envoy data plane. Kuma is a service mesh which is a sandbox CNCF project and uses the Envoy data plane but does not implement SMI APIs. Istio is a non-CNCF project which is a service mesh using the Envoy data plane.
+- **[Linkerd](https://github.com/linkerd/linkerd)** is a service mesh which is an incubating CNCF project and implements SMI APIs but does not use the Envoy data plane.
+- **[Kuma](https://github.com/kumahq/kuma)** is a service mesh which is a sandbox CNCF project and uses the Envoy data plane but does not implement SMI APIs.
+- **[Istio](https://github.com/istio/istio)** is a non-CNCF project which is a service mesh using the Envoy data plane.
 
 Open Service Mesh implements SMI APIs, uses the Envoy data plane, and plans to be a sandbox CNCF project.
 
@@ -151,4 +153,3 @@ As this is a brand new open source project, all usage is yet to come.
 All logos are available in https://github.com/openservicemesh/osm/tree/main/community/logos
 
 The svg main logo is here: https://github.com/openservicemesh/osm/blob/main/community/logos/osm-logo.svg
-
