@@ -72,7 +72,7 @@ We've also had a number of user requests that we'd like to address, including:
 
 ### How can the CNCF help?
 
-We'd welcome help in expanding our user base by having CNCF contributors contribute and pbuslih tutorials and improve our documentation.
+We'd welcome help in expanding our user base by having CNCF contributors contribute and publish tutorials and improve our documentation.
 
 ### Incubation
 
