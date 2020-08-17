@@ -34,7 +34,7 @@ The Telepresence project has seen continued growth and adoption since entering t
 * Timecampus
 * ThetaRay
 
-Quote from Timecampus: "It initially took a lot of time for me to build Socker images every time I did some development. Telepresence improved my development cycle dramatically. I just swap the deployment, keep developing and push only when I am done. So easy."
+Quote from Timecampus: "It initially took a lot of time for me to build Docker images every time I did some development. Telepresence improved my development cycle dramatically. I just swap the deployment, keep developing and push only when I am done. So easy."
 
 Quote from Avaya: "This tool combined with devspace works magic for our development workflow. Being able to debug directly in any of our installations its pure gold. Keep up the good work!"
 
