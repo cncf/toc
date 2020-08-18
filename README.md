@@ -64,8 +64,6 @@ Here is a [Google calendar for all public CNCF events](https://goo.gl/eyutah).
 - [Meeting agenda and presentations](docs/meeting_presentations.md).
 - [Archive of community presentations](docs/scheduled_presentations.md)
 
-If you're interested in presenting at a TOC call about your project, please open a [GitHub issue](https://github.com/cncf/toc/issues) with the request. These requests are tracked in the [TOC project backlog](https://github.com/cncf/toc/projects/4).
-
 
 ## Mailing List
 
