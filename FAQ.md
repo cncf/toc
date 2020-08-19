@@ -21,11 +21,11 @@ https://github.com/cncf/toc/tree/master/sigs
 
 ## What type of governance is my CNCF project expected to follow?
 
-CNCF does not require its hosted projects to follow any specific governance model by default. 
+CNCF does not require its hosted projects to follow any specific governance model by default.
 
 Instead, CNCF [specifies](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc) that graduated projects need to "[e]xplicitly define a project governance and committer process." 
 
-This varied and open governance approach has led to different projects defining what is best and optimized for their community: 
+This varied and [open governance](https://github.com/opengovernance/opengovernance.dev) approach has led to different projects defining what is best and optimized for their community: 
 
 * https://github.com/containerd/project/blob/master/GOVERNANCE.md
 * https://github.com/coredns/coredns/blob/master/GOVERNANCE.md
@@ -33,6 +33,8 @@ This varied and open governance approach has led to different projects defining 
 * https://github.com/helm/community/blob/master/governance/governance.md
 * https://github.com/kubernetes/community/blob/master/governance.md
 * https://prometheus.io/governance/
+
+All project assets like trademarks, domains, github are neutrally owned by the foundation.
 
 ## Does the CNCF TOC control CNCF projects in anyway?
 
