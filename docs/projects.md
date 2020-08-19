@@ -38,7 +38,7 @@
 [OpenTelemetry](https://github.com/open-telemetry/community)|Brendan Burns, Brian Grant, Matt Klein|[5/7/19](https://github.com/cncf/toc/pull/233)|[5/7/19](https://github.com/open-telemetry/community)|Sandbox
 [OpenEBS](https://github.com/openebs/openebs)|Alexis Richardson, Xiang Li|[5/14/19](https://github.com/cncf/toc/pull/224)|[5/14/19](https://github.com/openebs/openebs)|Sandbox
 [Flux](https://github.com/fluxcd/flux)|Michelle Noorali, Xiang Li|[6/11/19](https://github.com/cncf/toc/pull/232)|[7/15/19](https://github.com/fluxcd/flux)|Sandbox
-[Thanos](https://github.com/thanos-io/thanos)|Joe Beda, Xiang Li, Alexis Richardson, Liz Rice|[6/11/19](https://github.com/cncf/toc/pull/256)|[7/20/19](https://github.com/thanos-io/thanos)|Sandbox
+[Thanos](https://github.com/thanos-io/thanos)|Joe Beda, Xiang Li, Alexis Richardson, Liz Rice|[6/11/19](https://github.com/cncf/toc/pull/256)|[7/20/19](https://github.com/thanos-io/thanos)|Incubating
 [in-toto](https://github.com/in-toto/in-toto)|Michelle Noorali, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/252)|[8/21/19](https://github.com/in-toto/in-toto)|Sandbox
 [Strimzi](https://github.com/strimzi)|Alexis Richardson, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/266)|[8/28/19](https://github.com/strimzi)|Sandbox
 [KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Sandbox
@@ -90,6 +90,8 @@
 | [Falco](https://falco.org/)             | 10/10/18       | 1/8/20              | Incubating |
 | [Dragonfly](https://d7y.io/)            | 11/15/18       | 4/9/20              | Incubating |
 | [SPIFFE](https://github.com/spiffe)     | 3/29/18        | 6/22/20             | [Incubating](https://github.com/cncf/toc/pull/382) |
+| [Thanos](https://thanos.io)             | 7/20/19        | 8/19/20             | [Incubating](https://github.com/cncf/toc/pull/342) |
+
 
 ## Project Audits
 
