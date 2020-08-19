@@ -34,7 +34,7 @@ This varied and [open governance](https://github.com/opengovernance/opengovernan
 * https://github.com/kubernetes/community/blob/master/governance.md
 * https://prometheus.io/governance/
 
-All project assets like trademarks, domains, github are neutrally owned by the foundation.
+All project assets like trademarks, domains, builds, registries, github are neutrally owned by the foundation versus a single vendor.
 
 ## Does the CNCF TOC control CNCF projects in anyway?
 
@@ -42,7 +42,7 @@ Neither the CNCF Governing Board (GB) nor the Technical Oversight Committee (TOC
 
 Instead, the maintainers of those projects manage them; this includes defining the governance process. The GB is responsible for the budget.
 
-TOC members are available to provide guidance to the projects but do not control them. To date, we have had no meaningful disagreements between the TOC and project maintainers. 
+TOC members are available to provide guidance and conflict resolution if desired to the projects but do not control them. The TOC also helps mature projects through the various CNCF project maturity levels to ensure projects meet the expected [graduation criteria](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc). To date, we have had no meaningful disagreements between the TOC and project maintainers.
 
 Please see the [TOC Principles](https://github.com/cncf/toc/blob/master/PRINCIPLES.md) for more details.
 
@@ -50,7 +50,7 @@ Please see the [TOC Principles](https://github.com/cncf/toc/blob/master/PRINCIPL
 
 The CNCF provides a variety of services that are accessible by maintainers via the ServiceDesk: https://github.com/cncf/servicedesk
 
-## What is the definition of an end user? ##
+## What is the definition of an end user?
 End user companies use [cloud native](https://github.com/cncf/toc/blob/master/DEFINITION.md) technologies internally, but do not sell any cloud native services externally. Examples of end user companies are Adidas, Apple, Capital One, Spotify, and The New York Times. Examples of cloud native vendors (and so not end users) include cloud providers (e.g., Alibaba Cloud, AWS, Google Cloud, Microsoft Azure), consulting firms (e.g., Accenture, Booz Allen), infrastructure software vendors (e.g., SUSE, Red Hat), and telecom operators (e.g., AT&T, China Mobile).
 
 If you’re not sure if your company is an end user, please compare the members of the [CNCF end user community](https://landscape.cncf.io/enduser=yes&format=card-mode) to the [vendor members](https://landscape.cncf.io/category=cncf-members&enduser=no&format=card-mode&grouping=category) of CNCF and find your company or one similar to yours in one group or the other. Or, you can email info@cncf.io and we’ll help you.
