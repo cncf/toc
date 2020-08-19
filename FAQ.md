@@ -33,8 +33,9 @@ This varied and [open governance](https://github.com/opengovernance/opengovernan
 * https://github.com/helm/community/blob/master/governance/governance.md
 * https://github.com/kubernetes/community/blob/master/governance.md
 * https://prometheus.io/governance/
+* https://thanos.io/governance.md/
 
-All project assets like trademarks, domains, builds, registries, github are neutrally owned by the foundation versus a single vendor.
+All project assets like trademarks, domains, builds, registries, github are neutrally owned by the foundation members versus a single vendor.
 
 ## Does the CNCF TOC control CNCF projects in anyway?
 
