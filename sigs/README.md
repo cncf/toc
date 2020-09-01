@@ -15,12 +15,15 @@ a pull request with document referencing the roles and charter, updating the lis
 
 | Name | TOC Liaisons |
 |------|--------------| 
-| [SIG Security](https://github.com/cncf/sig-security) | Liz Rice, Joe Beda |
+| [SIG Security](https://github.com/cncf/sig-security) | Liz Rice, Justin Cormack |
 | [SIG Storage](https://github.com/cncf/sig-storage) | Xiang Li | 
-| [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Alexis Richardson | 
+| [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Katie Gamanji | 
 | [SIG Network](https://github.com/cncf/sig-network) | Matt Klein |
+| [SIG Runtime](https://github.com/cncf/sig-runtime) | Brendan Burns, Alena Prokharchyk |
+| [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy) | Matt Klein |
+| [SIG Observability](https://github.com/cncf/sig-observability) | Jeff Brewer, Brendan Burns | 
 
-## SIG Chairs as of January 2020
+## SIG Chairs as of July 2020
 
 ### SIG Storage 
 * [Erin Boyd](https://github.com/erinboyd)
@@ -42,9 +45,21 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Ken Owens](https://github.com/kenowens12)
 
 ### SIG Runtime 
-(still in formation)
+* [Diane Feddema](https://github.com/dfeddema)
 * [Quinton Hoole](https://github.com/quinton-hoole)
 * [Ricardo Aravena](https://github.com/raravena80)
 
+### SIG Contributor Strategy
+* [Paris Pittman](https://github.com/parispittman)
+* [Josh Berkus](https://github.com/jberkus)
+* [Stephen Augustus](https://github.com/justaugustus)
 
+### SIG Observability
+* [Matt Young](https://github.com/halcyondude)
+* [Richard Hartmann](https://github.com/RichiH)
 
+## Emeritus Chairs
+
+| SIG | Emeritus Chair |
+|---|---|
+| SIG Contributor Strategy | [Gerred Dillon](https://github.com/gerred) |

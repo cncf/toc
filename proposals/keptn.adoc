@@ -1,0 +1,197 @@
+=== Keptn CNCF Incubator Project Proposal
+
+*Name of Project:* keptn
+
+*Description:*
+
+Keptn is a control plane for continuous delivery and operations providing 
+a declarative approach towards day 1 to day n operations of cloud-native
+applications.
+
+Keptn is built based on the framework used internally at Dynatrace which allows
+us to run hundreds of production cluster without a dedicated operations team in
+a fully automated "NoOps" approach.
+
+Keptn solves the problem that traditional release pipelines are stitched together
+by point-to-point integrations between a number of tools. The average
+pipeline and operations automation toolchain consists of at least 7+ tools that
+are integrated. The current approach of building toolchains comes with a number
+of problems:
+
+* Integrations are hard to maintain as they are spread across the entire
+infrastructure
+* Onboarding a new service results in a lot of manual work for pipeline and
+operations automation definition
+* Most toolchains today make it hard to define enterprise-wide best practices
+for application delivery that can simply be applied across different
+applications.
+
+Keptn solves these problems by providing a configurable control plane to define
+day 1 to day n operations. The design is inspired by SDN stacks:
+
+* The application stack defines how the delivery and operations process should
+work using a shipyard file. Shipyard files define stages, release strategies,
+testing strategies, etc.
+* Keptn then provides a control plane that manages a GitOps repository for the
+stages defined in the shipyard file as well as managing Kubernetes namespaces
+and yaml files for services. Additionally, keptn uses a set of well-defined
+lifecycle events for each potential event that services can subscribe to. All
+events are defined as cloud events.
+* The integration layer used knative services to connect the Keptn control plane
+to all required tools to manage application delivery and operations. The
+configuration which tools to use is defined in a keptn uniform file.
+
+The approach of keptn has a number of advantages over traditional delivery pipelines and operation automation stacks:
+
+* The behavior of a delivery and automation workflow can be easily changed and
+is managed in a central place.
+* Using shipyard and uniform files the "how" is decoupled from the "what" which
+enables greater flexibility in defining operational procedures.
+* The declarative approach allows to even change automation at runtime without
+any need for manual reconfiguration or touching tool integrations.
+
+In the current version keptn focused on three major use cases for day 1 and day
+2 operations:
+
+* Declarative multistage delivery pipelines with automated quality gates.
+Uniform files allow creating any multi-stage pipeline including defining the
+deployment strategy (e.g. direct, blue/green) and definition of testing strategy
+for propagation.
+* Deployment-based self-healing by automatically rolling back blue/green
+deployment in case of problems without the need for manual intervention.
+* Event-driven runbook automation for auto-remediation and self-healing at the
+application level.
+
+You can read more about the high-level goals of keptn in
+https://medium.com/keptn/how-your-delivery-pipeline-will-become-your-next-big-legacy-code-challenge-4e520999693f?source=friends_link&sk=6bf8dcbff647e3912ca381a39035bf7a[this
+blog post]
+
+
+**Statement on alignment with CNCF mission:**
+
+The Keptn project provides an easy and standardized way to deliver and operate
+cloud-native applications. Kubernetes has massively simplified this process from
+a platform perspective. Keptn provides the same simplicity at the application
+level using a declarative approach to delivery and operations.
+
+Keptn also builds on top of exiting CNCF projects:
+
+- Kubernetes is used as the core runtime and deployment platform
+- Istio and Envoy are used for traffic routing and deployment strategies (blue/green,
+canary)
+- Prometheus is used as a monitoring source
+- Helm is used for deployment definition
+- CloudEvents are the basis for all application lifecycle-related events
+
+*Roadmap:*
+
+* May 2019 - v 0.2.5. Latest version of Keptn providing all core functionality
+to support key use cases. First version of keptn's bridge UI. 
+* September 2019 - v 0.3.0. Improved version of keptn's brige UI. Infrastructure fully upgraded to
+latest version of knative. Removal of Third Party tooling dependency (Jenkins, ...). Keptn
+operator. Improved uniform support with first version of uniform hub. 
+* December 2019 - v 0.4.0. Support for multi-cluster deployment. Improved
+supporte across multiple Kubernetes distributions.
+* June 2020 - planned v 1.0 release. This is the planned releases date for the
+first version that has been hardened after multiple production deployments in
+different settings.
+
+
+*Sponsors from TOC:* 
+
+No sponsors yet.
+
+*Preferred maturity level:* Sandbox
+
+*License:* Apache 2.0
+
+*Source control:* GitHub https://github.com/keptn
+
+*External Dependencies:*
+
+Keptn uses several tools in the background (either as helpers for tutorials, or as core components):
+
+|===
+|*Software*|*License*|*Project Page*
+|curl|MIT/X|https://curl.haxx.se/[https://curl.haxx.se/]
+|gcloud|Apache-2.0|https://github.com/google-cloud-sdk/google-cloud-sdk[https://github.com/google-cloud-sdk/google-cloud-sdk]
+|git|GPLv2|https://git-scm.com/[https://git-scm.com/]
+|helm|Apache-2.0|https://helm.sh/[https://helm.sh/]
+|jq|MIT|https://stedolan.github.io/jq/[https://stedolan.github.io/jq/]
+|kubectl|Apache-2.0|https://github.com/kubernetes/kubernetes[https://github.com/kubernetes/kubernetes]
+|wget|GPLv3|https://github.com/mirror/wget[https://github.com/mirror/wget]
+|yq|MIT|https://mikefarah.github.io/yq/[https://mikefarah.github.io/yq/]
+|===
+
+In addition, Keptn is split into multiple Microservices within the https://github.com/keptn/keptn repository. Each of these microservices can have various dependencies.
+
+Primary external dependencies of Go projects are listed below:
+|===
+|*Software*|*License*|*Project Page*
+|cobra|MIT|https://github.com/spf13/cobra[https://github.com/spf13/cobra]
+|cloudevents/sdk-go|Apache-2.0|https://github.com/cloudevents/sdk-go[https://github.com/cloudevents/sdk-go]
+|docker-credential-helpers|MIT|https://github.com/docker/docker-credential-helpers[https://github.com/docker/docker-credential-helpers]
+|go-autorest|Apache-2.0|https://github.com/Azure/go-autorest/autorest[https://github.com/Azure/go-autorest/autorest]
+|go-github|BSD-3-Clause|https://github.com/google/go-github[https://github.com/google/go-github]
+|go-homedir|MIT|https://github.com/mitchellh/go-homedir[https://github.com/mitchellh/go-homedir]
+|go-lang|BSD|https://github.com/golang/go[https://github.com/golang/go]
+|go-version|MPL-2.0|https://github.com/hashicorp/go-version[https://github.com/hashicorp/go-version]
+|k8s.io/api|Apache-2.0|https://github.com/kubernetes/api[https://github.com/kubernetes/api]
+|k8s.io/helm|Apache-2.0|https://github.com/kubernetes/helm[https://github.com/kubernetes/helm]
+|k8s.io/utils|Apache-2.0|https://github.com/kubernetes/utils[https://github.com/kubernetes/utils]
+|uuid|BSD-3-Clause|https://github.com/google/uuid[https://github.com/google/uuid]
+|viper|MIT|https://github.com/spf13/viper[https://github.com/spf13/viper]
+|websocket|BSD-2-Clause|https://github.com/gorilla/websocket[https://github.com/gorilla/websocket]
+|yaml.v2|Apache-2.0|https://github.com/go-yaml/yaml[https://github.com/go-yaml/yaml]
+|===
+
+Furthermore, Keptn's Bridge is implemented using Angular and TypeScript.
+
+Primary external dependencies of Keptn's Bridge are listed below:
+|===
+|*Software*|*License*|*Project Page*
+|angular|MIT|https://github.com/angular/angular[https://github.com/angular/angular]
+|barista-components|Apache-2.0|https://github.com/dynatrace-oss/barista[https://github.com/dynatrace-oss/barista]
+|ngrx|MIT|https://github.com/ngrx[https://github.com/ngrx]
+|===
+Please see keptn/bridge/package.json[https://github.com/keptn/keptn/blob/0.6.1/bridge/package.json] for full details.
+
+
+*Maintainers:*
+
+ * Alois Reitbauer (Dynatrace)
+ * Christian Kreuzberger (Dynatrace)
+
+*Infrastructure requests (CI / CNCF Cluster):* none
+
+
+*Communication Channels:*
+
+ * Slack: https://keptn.slack.com/
+ * Issue tracker: https://github.com/keptn/keptn/issues
+ * Keptn Community: https://github.com/keptn/community
+
+*Website:* https://keptn.sh/
+
+*Release methodology and mechanics:*
+
+keptn uses link:http://semver.org/[semantic versioning] for releases. Releases
+are announced using GitHub. We aim at releasing updates every sprint (two weeks)
+while following a quarterly release cycle for major features. 
+
+*Social media accounts:*
+
+ * Twitter: https://twitter.com/keptnproject
+
+*Existing sponsorship*: Dynatrace
+
+*Adopters*:
+  * Dynatrace
+
+*Community size:*
+
+68 stars
+
+7 contributors
+
+15 forks 

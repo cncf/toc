@@ -55,7 +55,7 @@ _Principle: Great projects already have many ingredients to succeed. First: do n
 Identify projects that have a real shot at being a useful tool in the evolving box of cloud native technology. This is a mix of mature and early-stage projects.   Early stage may not have all the criteria we want: diverse contributor bases, formalized governance, interoperability, cloud-native designs, quality bar, etc. 
 
 Some considerations:
-- Transparent, consistent technical and governance quality bar for [graduation](https://www.cncf.io/projects/graduation-criteria/) from incubation
+- Transparent, consistent technical and governance quality bar for [graduation](/process/graduation_criteria.adoc) from incubation
 - Has users, preferably in production; is a high quality, high-velocity project (for incubation and graduated projects). Inception level projects are targeted at earlier-stage projects to cultivate a community/technology
 - Has a committed and excited team that appears to understand the challenges ahead and wishes to meet them
 - Has a fundamentally sound design without obvious critical compromises that will inhibit potential widespread adoption
@@ -77,6 +77,8 @@ _Principles:_
 Via the “no kingmakers” principle and “what is a project”, the CNCF may support several projects which show how a ‘stack’ is a solution to certain use cases. For example, some stacks might use a container orchestrator. Other stacks might show how to integrate monitoring with other “observability” technologies, for cloud native apps regardless of their orchestration model.
 
 This means that the CNCF is not promoting a single, monolithic stack of technologies. 
+
+CNCF projects may have dependencies on other open source projects that comply with the [CNCF IP policy](https://github.com/cncf/foundation/blob/master/allowed-third-party-license-policy.md), which may be outside the CNCF. Widely-used dependencies are preferred; pluggable dependencies fit well with our principles but are not essential.  _Examples: Kubernetes' dependency on etcd, which was not a CNCF project at the time Kubernetes was brought into the CNCF; CNI, which enables pluggable networking dependencies._ 
 
 The CNCF is a badge of quality and velocity. CNCF projects should be on a path to being tools that users can trust, broadly work together, and that meet other cloud native criteria. But the CNCF badge does not mean “this is the standard tool”.
 

@@ -1,0 +1,88 @@
+=== CNI-Genie CNCF Sandbox Project Proposal
+
+
+
+*Name of Project:* CNI-Genie
+
+*Description:*
+
+CNI-Genie is a User friendly multi networking plugin for kubernetes.  It makes container orchestrator to seamlessly connect to the choice of CNI plugins installed on the host
+
+Here are some key features already supported by CNI-Genie 
+
+* Dynamic plugin selection: Using multiple CNI plugins for different pods in same cluster
+* Multi-ip assignment: Multiple interfaces per containers with IPs belonging to different plugins
+* Logical network crd objects: Realization of different provisions wrt ip management (Eg. Customized subnet usage)
+* Network level policy: Application of network policy at network level
+* Support for Kubernetes NPWG multi-network spec v1
+* Default networks: Configuring default network(s) once for each of the pods coming up
+
+
+CNI Genie consists of 3 major components
+
+* Genie plugin: Manages all multi-ip related provisions
+* Network admission controller: Validation of logical network crd objects
+* Network policy controller: Application of policies at network level
+
+
+*Statement on alignment with CNCF mission:*
+The Cloud Native CNI-Genie project is well-alligned with the CNCF's mission statement of supporting cloud native systems. Kubernetes is a leading open source container orchestration engine. Standard kubernetes allows pods to have only single network interface. But these pods can have use-cases to host containers supporting service provisioning applications or virtual network functions (VNFs) that may typically require multiple network interfaces. CNI-Genie supports that and can continue support for several new use-cases on these aspects 
+
+CNI Genie is open to engage community and enable more innovations towards multi-networking usecases
+
+**Roadmap:**
+The major part of the roadmap includes
+
+* Support pod level network policy to co-exist with network level policy
+* Enhancement of network crd objects to provide more CNI customizations
+* Enhancements as per Kubernetes Network Plumbing Working Group conclusions/decisions
+* CNI version upgrade based on new CNI version release
+
+**Sponsors from TOC:** Quinton Hoole 
+
+**Tentative Sponsor(s):** Alexis Richardson
+
+**Preferred maturity level:** Sandbox
+
+**License:** Apache License v2.0
+
+**Source control:** Github (https://github.com/cni-genie/CNI-Genie)
+
+**External Dependencies:** Reference for https://github.com/cni-genie/CNI-Genie/blob/master/external-build-dependencies.md[external-dependency list]
+
+**Initial Committers:**
+Initial committers of CNI-Genie are listed below
+
+Karun Chennuri - 1.5 years
+
+Kaveh Shafiee - 1.5 years
+
+**Infrastructure requests (CI/ CNCF Cluster):**
+We currently use Travis for CI but we may want to use CNCF resources to deploy  jenkins for node e2e test
+
+**Communication Channels:**
+
+* Slack: https://cni-genie.slack.com
+* Mailing List: https://groups.google.com/forum/#!forum/cni-genie
+* Issue Tracker: Github - https://github.com/cni-genie/CNI-Genie/issues
+
+**Website:**
+https://cni-genie.io (proposed)
+
+**Release methodology and mechanics:**
+We set the version rule of CNI-Genie on the basis of SemVer which has a version number of MAJOR.MINOR.PATCH. Currently we do feature release 3-4 times per year(all with minor releases). Before every minor release, we plan to tag several RC releases to invite community developers to fully test them. In addition, all the code commits to CNI-Genie must add essential tests to cover the feature or the code change
+
+**Social media accounts:** None
+
+**Existing sponsorship:** Huawei
+
+**Community Size:**
+
+* https://github.com/cni-genie/CNI-Genie/stargazers[235+ stars]
+* https://github.com/cni-genie/CNI-Genie/network/members[58+ forks]
+* https://github.com/cni-genie/CNI-Genie/commits/master[421+ commits]
+* https://github.com/cni-genie/CNI-Genie/releases[4+ releases]
+* https://github.com/cni-genie/CNI-Genie/graphs/contributors[10+ contributors]
+* 3 full-time engineers
+
+

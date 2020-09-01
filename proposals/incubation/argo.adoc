@@ -1,0 +1,177 @@
+== Argo Proposal
+
+*Name of project*: Argo
+
+*Description*:
+
+The Argo Project is a set of Kubernetes-native tools for deploying and running jobs and applications on Kubernetes. All the Argo tools are implemented as controllers and custom resources. These tools can be used independently but are even more powerful when used together. As a CNCF incubation project, all top level projects  must meet incubation maturity requirements.
+
+*Argo Workflows* enables creation of complex parallel workflows as Kubernetes resources and is used in many different use cases from CI/CD pipelines to DAG-based ML training workflows. It is the workflow engine behind the open source Kubeflow Pipelines.
+
+*Argo Events* provides declarative management of event-based dependencies and triggers for Kubernetes resources based on various event sources. A common use of Argo Events is to trigger Argo Workflows and to generate events for long-lived services deployed using Argo CD.
+
+*Argo CD* supports declarative GitOps-based deployment of any Kubernetes resource, including Argo Events, services and deployments across multiple k8s clusters.
+
+Each of these tools is built to be Kubernetes native and are implemented as controllers and Custom Resources.  These tools can be used independently, but there is great benefit in using them together to create complex applications. Argo Events, for example, can kick off Argo Workflows which can generate and queue additional Argo Events which are processed by long-lived services deployed using Argo CD.
+
+Different Argo tools have been presented at Kubernetes community meetings and KubeCon conferences.
+
+* KubeCon: https://www.youtube.com/watch?v=yeVkTTO9nOA
+* KubeCon: https://www.youtube.com/watch?v=OdzH82VpMwI&feature=youtu.be
+* KubeCon: https://www.youtube.com/watch?v=ZK510prml8o
+* KubeCon: https://www.youtube.com/watch?v=VXrGp5er1ZE&t=0s&index=135&list=PLj6h78yzYM2PZf9eA7bhWnIh_mK1vyOfU
+* Sig Apps: https://www.youtube.com/watch?v=aWDIQMbp1cc
+* K8s Community Meeting: https://www.youtube.com/watch?v=LRDoKOLOlf8
+* K8s Community Meeting: https://www.youtube.com/watch?v=GeB50xG-gmc&feature=youtu.be&t=81
+* TGIK by Joe Bedahttps://www.youtube.com/watch?v=M_rxPPLG8pU&start=859
+
+*Statement on alignment with CNCF mission*:
+
+The Argo project is well-aligned with the CNCF’s mission to make cloud native computing ubiquitous. We are completely aligned to "empower organizations to build and run scalable applications" including the adoption of Kubernetes and declarative APIs. All the Argo tools are implemented as controllers and custom resources. They use/integrate with other CNCF projects like gRPC, Prometheus, NATS, Helm..
+
+*Sponsors / Advisors from TOC*:
+Alexis Richardson
+Jeff Brewer
+Joe Beda
+Michelle Noorali
+Xiang Li
+
+*Unique identifier*: argo, argoproj
+
+*Preferred maturity level*: Incubating
+
+The Argo Community is looking for the following by becoming a CNCF project:
+
+* Promote public visibility to add value to the CNCF mission.
+* Foster collaborative development to further the overall CNCF mission.
+* Closer integration and collaboration with other CNCF projects.
+
+*License*: Apache License 2.0
+
+*Source control repositories*: 
+
+* https://github.com/argoproj/argo
+* https://github.com/argoproj/argo-events
+* https://github.com/argoproj/argo-cd
+
+*External Dependencies*: 
+
+Argo depends on the following external software components:
+
+* Kubernetes (Apache Software License 2.0)
+* Dex (Apache Software License 2.0)
+* Redis (BSD)
+* React (MIT)
+* GRPC (Apache Software License 2.0)
+* Golang (Apache Software License 2.0)
+
+*Initial Committers (leads)*:
+
+* Alex Collins (Intuit)
+* Alexander Matyushentsev (Intuit)
+* Jesse Suen (Intuit)
+* Matthew Magaldi (BlackRock)
+* Vaibhav Page (BlackRock)
+
+*Infrastructure requests (CI / CNCF Cluster)*:
+
+None
+
+*Communication Channels*:
+
+* Slack: https://argoproj.slack.com/
+  * To join: https://join.slack.com/t/argoproj/shared_invite/enQtMzExODU3MzIyNjYzLTA5MTFjNjI0Nzg3NzNiMDZiNmRiODM4Y2M1NWQxOGYzMzZkNTc1YWVkYTZkNzdlNmYyZjMxNWI3NjY2MDc1MzI
+* Mailing List: https://groups.google.com/forum/#!forum/argoproj 
+* Community Meeting Doc: https://docs.google.com/document/d/16aWGQ1Te5IRptFuAIFtg3rONRQqHC1Z3X9rdDHYhYfE 
+
+*Issue tracker*: 
+
+* https://github.com/argoproj/argo/issues 
+* https://github.com/argoproj/argo-events/issues
+* https://github.com/argoproj/argo-cd/issues
+
+*Website*: https://argoproj.github.io/ 
+
+*Release methodology and mechanics*:
+
+* Major feature release about four times per year with additional minor/patch releases
+* Some users also run HEAD of master particularly for trying and testing release candidates.
+
+*Social media accounts*:
+
+*Twitter: @argoproj
+
+*Existing sponsorship*: Intuit is currently the primary sponsor of Argo
+
+*Community size*:
+
+Argoproj
+
+* 5700 stars
+* 900 forks
+* 240 contributors
+
+* Production usage*:
+
+Argo is known to be actively used in production by the following organizations:
+
+* Adevinta https://www.adevinta.com/
+* Admiralty https://admiralty.io/
+* Adobe https://www.adobe.com/
+* Alibaba Cloud https://www.alibabacloud.com/about
+* ANSTO https://www.synchrotron.org.au/
+* BlackRock https://www.blackrock.com/
+* Canva https://www.canva.com/
+* Codec https://www.codec.ai/
+* Codility https://www.codility.com/
+* Commodus Tech https://www.commodus.tech/
+* Commonbond https://commonbond.co/
+* CyberAgent https://www.cyberagent.co.jp/en/
+* CoreFiling https://www.corefiling.com/
+* Cratejoy https://www.cratejoy.com/
+* Cyrus Biotechnology https://cyrusbio.com/
+* Datadog https://www.datadoghq.com/
+* DataStax https://www.datastax.com/
+* END. https://www.endclothing.com/
+* Equinor https://www.equinor.com/
+* Future PLC https://www.futureplc.com/
+* Gardener https://gardener.cloud/
+* GitHub https://github.com/
+* Gladly https://gladly.com/
+* GMETRI https://gmetri.com/
+* Google https://www.google.com/intl/en/about/our-company/
+* IBM https://ibm.com/
+* Interline Technologies https://www.interline.io/blog/scaling-openstreetmap-data-workflows/
+* Intuit https://www.intuit.com/
+* Karius https://www.kariusdx.com/
+* KintoHub https://www.kintohub.com/
+* KompiTech GmbH https://www.kompitech.com/
+* Lytt https://www.lytt.co/
+* Localytics https://www.localytics.com/
+* Mambu https://www.mambu.com/
+* Max Kelsen https://maxkelsen.com/
+* Mirantis https://www.mirantis.com/
+* NVIDIA https://www.nvidia.com/
+* OpenSaaS Studio https://opensaas.studio/
+* Optoro https://www.optoro.com/
+* OVH https://www.ovh.com/
+* Preferred Networks https://www.preferred-networks.jp/en/
+* Quantibio http://quantibio.com/us/en/
+* Riskified https://www.riskified.com/
+* Saildrone https://www.saildrone.com/
+* SAP Fieldglass https://www.fieldglass.com/
+* SAP Hybris https://cx.sap.com/
+* Styra https://www.styra.com/
+* Tesla https://www.tesla.com/
+* Threekit https://www.threekit.com/
+* Ticketmaster https://www.ticketmaster.com/
+* tZERO https://www.tzero.com/
+* Yieldlab https://www.yieldlab.de/
+* UBIO https://ub.io/
+* Volvo Cars https://www.volvocars.com/us
+
+Listed at
+
+https://github.com/argoproj/argo
+https://github.com/argoproj/argo-cd
+

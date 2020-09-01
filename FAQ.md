@@ -21,11 +21,11 @@ https://github.com/cncf/toc/tree/master/sigs
 
 ## What type of governance is my CNCF project expected to follow?
 
-CNCF does not require its hosted projects to follow any specific governance model by default. 
+CNCF does not require its hosted projects to follow any specific governance model by default.
 
 Instead, CNCF [specifies](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc) that graduated projects need to "[e]xplicitly define a project governance and committer process." 
 
-This varied and open governance approach has led to different projects defining what is best and optimized for their community: 
+This varied and [open governance](https://github.com/opengovernance/opengovernance.dev) approach has led to different projects defining what is best and optimized for their community: 
 
 * https://github.com/containerd/project/blob/master/GOVERNANCE.md
 * https://github.com/coredns/coredns/blob/master/GOVERNANCE.md
@@ -33,6 +33,9 @@ This varied and open governance approach has led to different projects defining 
 * https://github.com/helm/community/blob/master/governance/governance.md
 * https://github.com/kubernetes/community/blob/master/governance.md
 * https://prometheus.io/governance/
+* https://thanos.io/governance.md/
+
+All project assets like trademarks, domains, builds, registries, github are neutrally owned by the foundation members versus a single vendor.
 
 ## Does the CNCF TOC control CNCF projects in anyway?
 
@@ -40,13 +43,18 @@ Neither the CNCF Governing Board (GB) nor the Technical Oversight Committee (TOC
 
 Instead, the maintainers of those projects manage them; this includes defining the governance process. The GB is responsible for the budget.
 
-TOC members are available to provide guidance to the projects but do not control them. To date, we have had no meaningful disagreements between the TOC and project maintainers. 
+TOC members are available to provide guidance and conflict resolution if desired to the projects but do not control them. The TOC also helps mature projects through the various CNCF project maturity levels to ensure projects meet the expected [graduation criteria](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc). To date, we have had no meaningful disagreements between the TOC and project maintainers.
 
 Please see the [TOC Principles](https://github.com/cncf/toc/blob/master/PRINCIPLES.md) for more details.
 
 ## What type of support do CNCF projects receive?
 
 The CNCF provides a variety of services that are accessible by maintainers via the ServiceDesk: https://github.com/cncf/servicedesk
+
+## What is the definition of an end user?
+End user companies use [cloud native](https://github.com/cncf/toc/blob/master/DEFINITION.md) technologies internally, but do not sell any cloud native services externally. Examples of end user companies are Adidas, Apple, Capital One, Spotify, and The New York Times. Examples of cloud native vendors (and so not end users) include cloud providers (e.g., Alibaba Cloud, AWS, Google Cloud, Microsoft Azure), consulting firms (e.g., Accenture, Booz Allen), infrastructure software vendors (e.g., SUSE, Red Hat), and telecom operators (e.g., AT&T, China Mobile).
+
+If you’re not sure if your company is an end user, please compare the members of the [CNCF end user community](https://landscape.cncf.io/enduser=yes&format=card-mode) to the [vendor members](https://landscape.cncf.io/category=cncf-members&enduser=no&format=card-mode&grouping=category) of CNCF and find your company or one similar to yours in one group or the other. Or, you can email info@cncf.io and we’ll help you.
 
 ## What does CNCF do with its events revenues, especially for projects?
 

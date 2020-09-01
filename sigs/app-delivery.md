@@ -119,8 +119,8 @@ Lifecycle management of applications is a broad and mainstream topic of Cloud Na
 
 ## **Operations**
 
-* TOC Liaisons: Alexis Richardson and Michelle Noorali
-* SIG chairs: Alois Reitbauer, Bryan Liles, Lei Zhang (Harry)
+* TOC Liaisons: [Michelle Noorali](https://github.com/michelleN), Katie Gamanji
+* SIG chairs: [Alois Reitbauer](https://github.com/AloisReitbauer), [Bryan Liles]((https://github.com/bryanl)), [Lei Zhang (Harry)](https://github.com/resouer)
 * See [roles](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-chairs) for more information
 * Slack channel: #sig-app-delivery in CNCF workspace - [https://cloud-native.slack.com/messages/CL3SL0CP5](https://cloud-native.slack.com/messages/CL3SL0CP5) 
 

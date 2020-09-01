@@ -20,7 +20,7 @@ If your annual review isn’t submitted within two months of notification, we wi
 
 The outcome of the annual review is either:
 
-* At least three (two before the TOC grows to 11 members) TOC members agree to continue to sponsor the project in Sandbox, or
+* At least three TOC members agree to continue to sponsor the project in Sandbox, or
 * If enough TOC members don’t agree to continue to sponsor the project, we will discuss archiving or other next steps with you. 
 
 Additionally, the TOC might recommend that you apply for Incubation stage. This requires extra work and due diligence so it’s not a possible outcome directly from this lightweight annual review. 
