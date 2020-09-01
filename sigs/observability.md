@@ -1,5 +1,7 @@
 # CNCF SIG Observability Charter
 
+source: https://github.com/cncf/sig-observability/blob/master/observability-charter.md
+
 - [CNCF SIG Observability Charter](#cncf-sig-observability-charter)
   - [Introduction](#introduction)
   - [Mission](#mission)
@@ -9,14 +11,14 @@
   - [Governance](#governance)
   - [Operations](#operations)
 
-*Initially authored by [Matthew Young][matthew young] with grateful review and
-contributions from:
+*Review and contributions from:
 [Alex Nauda][Alex Nauda],
 [Alois Reitbauer][Alois Reitbauer],
 [Bartłomiej (Bartek) Płotka][Bartłomiej (Bartek) Płotka],
 [Daniel Khan][Daniel Khan],
 [Daniel Prata][Daniel Prata],
 [Lincoln Sward][Lincoln Sward],
+[Matthew Young][Matthew Young],
 [Matthias Loibl][Matthias Loibl],
 [Michael Hausenblas][Michael Hausenblas],
 [Ricardo Aravena][Ricardo Aravena],
@@ -29,23 +31,24 @@ contributions from:
 and [Umair Ishaq][Umair Ishaq].*
 
 <!-- TODO: please put github names here -->
-[Matthew Young]:              https://github.com/halcyondude
 [Alex Nauda]:                 @
-[Alois Reitbauer]:            @
-[Bartłomiej (Bartek) Płotka]: @
+[Alois Reitbauer]:            https://github.com/aloisreitbauer
+[Bartłomiej (Bartek) Płotka]: https://github.com/bwplotka
+[Brendan Burns]:              https://github.com/brendandburns
 [Daniel Khan]:                @
 [Daniel Prata]:               @
 [Lincoln Sward]:              @
-[Matthias Loibl]:             @
-[Michael Hausenblas]:         @
-[Ricardo Aravena]:            @
-[Richard Hartmann]:           @
+[Matthew Young]:              https://github.com/halcyondude
+[Matthias Loibl]:             https://github.com/metalmatze
+[Michael Hausenblas]:         https://github.com/mhausenblas
+[Ricardo Aravena]:            https://github.com/raravena80
+[Richard Hartmann]:           https://github.com/RichiH
 [Sergey Kanzhelev]:           @
-[Steve Flanders]:             @
+[Steve Flanders]:             https://github.com/flands
 [Ted Young]:                  @
 [Tigran Najaryan]:            @
-[Tommy Chong]:                @
-[Umair Ishaq]:                @
+[Tommy Chong]:                https://github.com/techietommy
+[Umair Ishaq]:                https://github.com/umairishaq
 
 ## Introduction
 
@@ -101,13 +104,14 @@ topics such as:
 - Best practices for meaningful alerting, queries, and operational dashboards
   including how to manage things including rules, definitions, thresholds and
   policies.
-- How developers, operators, SRE, IT, and other actors comprehend, process, and
-  reason on distributed cloud-native systems.
+- How developers, operators, Site Reliability Engineers (SRE), IT Engineers, and
+  other actors comprehend, process, and reason on distributed cloud-native
+  systems.
 - Projects that incorporate novel & insightful approaches to utilizing
   observability data such as:
   - ML, model training, Bayesian networks, and other data science techniques
     that enable anomaly & intrusion detection.
-  - correlating resource consumption with costing data to reduce the total cost
+  - Correlating resource consumption with costing data to reduce the total cost
     of cloud native infrastructure
   - Using observability data exposed by service meshes, orchestrators, and other
     metric sources to inform continuous deployment tooling (e.g. Canary
@@ -117,19 +121,19 @@ topics such as:
 - Best practices around observability and its continuous improvement, e.g. post
   mortems, runbooks
 - Provide guidance around and foster interoperability between observability
-  solutions without trying to enforce one specific standard
+  solutions without trying to enforce one specific standard.
 - Foster understanding of the prerequisites and corner-stones of observability
   like SLI/KPI, service objectives, and internal/external commitments.
 
 The following is a non-exhaustive sample list of activities and deliverables
-that are in-scope for this SIG
+that are **in-scope** for this SIG
 
 - Summary and overview of projects available in the community.
 - Catalog of reference architectures that draw from CNCF projects, combining
   them in useful and novel ways.
 - Definitions of implementations and patterns for best practices for
   delivering observability tooling at enterprise scale.
-- Tooling composition and tool chain creation based on existing projects.
+- Tooling composition and toolchain creation based on existing projects.
 - Best practices for operations and monitoring workflows using CNCF Projects.
 - Organizing and helping to provide visibility to Meetups, Blogs, and Podcasts
   related to the scope of the SIG.
@@ -138,11 +142,11 @@ that are in-scope for this SIG
 - Patterns for observing application delivery pipelines.
 - Education regarding instrumentation cloud native workloads.
 - Processing and Accessing relevant observability data at scale.
-- Policy and security controls for observabilty data.
+- Policy and security controls for observability data.
 - Creating artifacts as part of CI/CD pipelines that facilitate observation of
-  services.  Concrete examples might be:
-  - service profiles for Linkerd
-  - debug binaries or other diagnostic metadata.
+  services. Concrete examples might be:
+  - Service profiles for Linkerd.
+  - Debug binaries or other diagnostic metadata.
   - representative trace spans from failing CI tests.
 
 ## Areas considered out of Scope
@@ -156,13 +160,13 @@ Examples include:
 - Security aspects that need to be present when setting up cloud native
   infrastructure, these might be more relevant for SIG Security.
 - How cloud native applications that need observability are deployed; this would
-  fall in the scope of SIG App Delivery
+  fall in the scope of SIG App Delivery.`
 - Tools and projects that are used to run cloud native workloads that in some
   cases need observability would fall under the scope of SIG-Runtime.
 
 ## Roadmap & Initial Efforts
 
-- Contribute to [due diligence reports][ddr] to assist the CNCF TOC for projects
+- Contribute to [due diligence reports][ddg] to assist the CNCF TOC for projects
   in the scope of the SIG.
 - Facilitate webinars and presentations from CNCF projects and domain experts in
   the scope of the SIG.
@@ -171,7 +175,7 @@ Examples include:
 
   > _SIGs may choose to spawn focussed and time-limited working groups to achieve some of their responsibilities (for example, to produce a specific educational white paper, or portfolio gap analysis report). Working groups should have a clearly documented charter, timeline (typically a few quarters at most), and set of deliverables. Once the timeline has elapsed, or the deliverables delivered, the working group dissolves, or is explicitly re-chartered._
 
-[ddr]: https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md
+[ddg]: https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md
 [sigwg]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#responsibilities--empowerment-of-sigs
 
 ## Governance
@@ -183,20 +187,24 @@ Examples include:
 
 ## Operations
 
-- Formation of the SIG follows the [documented process][sigform].
-- [Roles][sigroles] for SIG Observability
-  - TOC Liaison: *Jeff Brewer*\*
-  - SIG Chairs: [Matt Young](https://github.com/halcyondude), [Richard Hartmann](https://github.com/RichiH)
-  - Tech Leads: [Michael Hausenblas](https://github.com/mhausenblas), [Bartłomiej Płotka](https://github.com/bwplotka), *Richard Hartmann*\*
+- The formation of the SIG follows the [documented process][sigform].
 
-\*_**(TODO: need confirmation)**_
+- [Roles][sigroles] for SIG Observability
+  - TOC Liaison: [Brendan Burns][Brendan Burns]
+  - SIG Chairs:
+    - [Matthew Young][matthew young]
+    - [Richard Hartmann][Richard Hartmann]
+    - TBD
+  - Tech Leads ([sigtlprocess])
+    - Bartłomiej Płotka
 
 [sigform]: https://github.com/cncf/toc/tree/master/sigs#sig-formation-process
 [sigroles]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#sig-member-roles
+[sigtlprocess]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections
 
 - Contact
   - Slack channel: #sig-observability @ [https://cloud-native.slack.com](https://cloud-native.slack.com)
   - Email List: [cncf-sig-observability@lists.cncf.io](mailto:cncf-sig-observability@lists.cncf.io)
 - Meeting Schedule:
   - TBD - pending feedback from SIG members
-  - [https://www.cncf.io/community/calendar](https://www.cncf.io/community/calendar/)
+  - [https://www.cncf.io/community/calendar](https://www.cncf.io
