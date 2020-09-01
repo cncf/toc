@@ -8,20 +8,23 @@ assignees: caniszczyk, amye
 ---
 
 Welcome to CNCF Project Onboarding!
+This is an issue created to help onboard your project into the CNCF after the TOC has voted to accept your project. 
 
-Please ensure that you:
+From the project side, please ensure that you:
 - [ ] Understand the project proposal process and reqs: https://github.com/cncf/toc/blob/master/process/project_proposals.adoc#introduction
 - [ ] Understand the services available for your project at CNCF https://www.cncf.io/services-for-projects/
 - [ ] Ensure your project meets the CNCF IP Policy: https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy
 - [ ] Has your project adopted open governance already? see http://opengovernance.dev
 
 Formal onboarding:
+- [ ] Owners file: Please add a link to your owners file to this issue, this is used to be able to create your maintainers mailing list. 
+- [ ] Create maintainer list + added to aggregated https://maintainers.cncf.io list
 - [ ] Domain: transfer domain to CNCF/LF (ITx)
 - [ ] Trademarks: transfer any trademark and logo mark assets over to the LF
-- [ ] GitHub: ensure 'thelinuxfoundation' and 'caniszczyk' are added as initial org owners
+- [ ] GitHub: ensure 'thelinuxfoundation' and 'caniszczyk' are added as initial org owners, this helps us make sure we have continuity of GH ownership
 - [ ] Artwork: Ensure logos present on https://github.com/cncf/artwork
-- [ ] Website: ensure LF footer is there and website guidelines followed, analytics transferred
-- [ ] Create maintainer list + added to aggregated https://maintainers.cncf.io list - OWNERS file needed
+- [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/copyright-notices.md#copyright-notices) followed
+- [ ] Website: Analytics transferred
 - [ ] Devstats: add to devstats https://devstats.cncf.io/
 - [ ] Marketing: update relevant intro + slide decks
 - [ ] Trail Map: update CNCF trail map if relevant (incubating projects and above)
