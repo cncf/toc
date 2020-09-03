@@ -72,6 +72,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
 * Sarah Allen, Independent (sarah@ultrasaurus.com)
 * Shida Qiu, BoCloud (shidaqiu2018@gmail.com)
+* Sidhant Bhayana, SiriusXM-Pandora (sbhayana@pandora.com)
 * Siddharth Bhadri, Infoblox (sbhadri@infoblox.com)
 * Steve Dake, IBM (sdake@ibm.com)
 * Swamy D K V, Cisco (swamydkv@gmail.com)
