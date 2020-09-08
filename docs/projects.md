@@ -25,7 +25,7 @@
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/1/18](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Graduated
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[7/31/18](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/)|Graduated
 [OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|Alexis Richardson, Bryan Cantrill|[6/20/17](https://goo.gl/6nmyDn)|[8/10/18](https://www.cncf.io/blog/2018/08/10/cncf-to-host-openmetrics/)|Sandbox
-[TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[8/28/18](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv/)|Incubating
+[TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[8/28/18](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv/)|Graduated
 [Cortex](https://github.com/cortexproject/cortex)|Ken Owens, Bryan Cantrill|[6/5/18](https://docs.google.com/presentation/d/190oIFgujktVYxWZLhLYN4q8p9dtQYoe4sxHgn4deBSI/edit#slide=id.g25ca91f87f_0_0)|[9/20/18](https://www.cncf.io/blog/2018/09/20/cncf-to-host-in-the-sandbox/)|Sandbox
 [Buildpacks](https://github.com/buildpack/spec)|Brian Grant, Alexis Richardson|[8/21/18](https://docs.google.com/presentation/d/1RkygwZw7ILVgGhBpKnFNgJ4BCc_9qMG8cIf0MRbuzB4/edit?usp=sharing)|[10/3/18](https://www.cncf.io/blog/2018/10/03/cncf-to-host-cloud-native-buildpacks-in-the-sandbox)|Sandbox
 [Falco](https://github.com/falcosecurity/falco)|Brian Grant, Quinton Hoole|[7/17/18](https://docs.google.com/presentation/d/17p5QBVooGMLAtX6Mn6d3NAFhRmFHE0cH-WI_-0MbOm8/edit?usp=sharing)|[10/10/18](https://falco.org/)|Incubating
@@ -78,6 +78,7 @@
 [Vitess](https://github.com/vitessio/vitess)|Brian Grant|[4/19/17](https://goo.gl/6nmyDn)| 11/05/19|Graduated 
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[4/30/20](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Graduated
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/23/20](https://www.cncf.io/announcement/2020/06/23/cloud-native-computing-foundation-announces-harbor-graduation/)|Graduated
+[TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[9/2/2020](https://www.cncf.io/announcements/2020/09/02/cloud-native-computing-foundation-announces-tikv-graduation/)|Graduated
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
