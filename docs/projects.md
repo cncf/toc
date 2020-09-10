@@ -64,7 +64,12 @@
 [Serverless Workflow Specification](https://github.com/cncf/wg-serverless-workflow)|TOC Vote|[3/3/20](https://github.com/cncf/toc/pull/376)|[7/14/20](https://github.com/cncf/wg-serverless-workflow)|Sandbox
 [ChaosMesh](https://github.com/pingcap/chaos-mesh)|TOC Vote|[2/26/20](https://github.com/cncf/toc/pull/367)|[7/14/20](https://github.com/pingcap/chaos-mesh)|Sandbox
 [k3s](https://github.com/rancher/k3s)|TOC Vote|[5/11/2020](https://github.com/cncf/toc/pull/447)|[8/19/2020](https://github.com/rancher/k3s)|Sandbox
-
+[Backstage](https://github.com/spotify/backstage)|TOC Vote|[6/24/2020](https://github.com/cncf/toc/pull/476)|[9/8/2020](https://github.com/spotify/backstage)|Sandbox
+[Tremor](https://github.com/wayfair-tremor/)|TOC Vote|[7/13/2020](https://github.com/cncf/toc/pull/492)|[9/8/2020](https://github.com/wayfair-tremor/)|Sandbox
+[metal3-io](https://github.com/metal3-io/)|TOC Vote|[3/31/2020](https://github.com/cncf/toc/pull/408)|[9/8/2020](https://github.com/metal3-io/)|Sandbox
+[Porter](https://github.com/deislabs/porter)|TOC Vote|[7/17/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/8/2020](https://github.com/deislabs/porter)|Sandbox
+[OpenYurt](https://github.com/alibaba/openyurt)|TOC Vote|[8/27/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/8/2020](https://github.com/alibaba/openyurt)|Sandbox
+[Open Service Mesh](https://github.com/openservicemesh/osm/)|TOC Vote|[8/5/2020](https://github.com/cncf/toc/pull/507)|[9/8/2020](https://github.com/openservicemesh/osm/)|Sandbox
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
 :-----:|:-----:|:-----:|:-----:|:-----:
