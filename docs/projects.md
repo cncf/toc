@@ -70,6 +70,7 @@
 [Porter](https://github.com/deislabs/porter)|TOC Vote|[7/17/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/8/2020](https://github.com/deislabs/porter)|Sandbox
 [OpenYurt](https://github.com/alibaba/openyurt)|TOC Vote|[8/27/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/8/2020](https://github.com/alibaba/openyurt)|Sandbox
 [Open Service Mesh](https://github.com/openservicemesh/osm/)|TOC Vote|[8/5/2020](https://github.com/cncf/toc/pull/507)|[9/8/2020](https://github.com/openservicemesh/osm/)|Sandbox
+[Keylime](https://github.com/keylime)|TOC Vote[8/26/2020](https://github.com/cncf/toc/pull/496)/[9/22/2020](https://github.com/keylime)|Sandbox
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
 :-----:|:-----:|:-----:|:-----:|:-----:
