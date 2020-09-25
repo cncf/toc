@@ -110,3 +110,11 @@ Le tecnologie **cloud native** permettono alle organizzazioni di costruire ed es
 Queste tecniche permettono che sistemi debolmente accoppiati siano resilienti, gestibili e osservabili. Combinati con un sistema robusto di automazione, permettono agli ingegneri di eseguire frequentemente e con minimo sforzo i cambi ad alto impatto
 
 La **Cloud Native Computing Foundation** cerca di favorire l'adozione di questo paradigma incoraggiando e sostenendo un ecosistema di progetti open source e indipendenti dai vendor. Noi democratizziamo le pratiche allo stato dell'arte per rendere queste innovazioni accessibili a tutti.
+
+## Türkçe
+
+Bulut yerlisi (Cloud Native) teknolojiler, kuruluşların, ölçeklenebilir uygulamalarını genel, özel ve hibrit bulutlar gibi modern ve dinamik ortamlarda oluşturup çalıştırmasını sağlar. Konteynerler, service mesh, mikroservisler, değişmez altyapı ve declarative API'ler bu yaklaşımı örneklendirir.
+
+Bu teknikler, esnek, yönetilebilir ve gözlemlenebilir olan birbirlerine az bağımlı sistemleri mümkün kılar. Sağlam bir otomasyon altyapısıyla birleştiğinde, mühendislerin minimum zahmetle sık ve öngörülebilir şekilde yüksek etkili değişiklikler yapmasına olanak tanır.
+
+**Cloud Native Computing Foundation**, açık kaynaklı, satıcı-bağımsız (vendor-neutral) projelerden oluşan bir ekosistemi teşvik ederek ve sürdürerek bu paradigmanın benimsenmesini sağlamayı amaçlamaktadır. Bu yenilikleri herkes için erişilebilir kılmak için, son teknoloji paternlerini demokratikleştiriyoruz.
