@@ -11,7 +11,7 @@ Strimzi also integrates with many other CNCF projects such as:
 
 Strimzi can be also installed using Helm charts or using OperatorHub.io which is part of the Operator Framework project.
 
-Strimzi joined CNCF Sandbox in September 2019.
+Strimzi joined CNCF Sandbox in September 2019 ([slides from TOC presentation proposing Strimzi to CNCF Sandbox](https://docs.google.com/presentation/d/1bijEpuwaaa6jR1D5PAjyW731-j6Xc1TFHJuUh_FwwK8/edit#slide=id.g5628e016b1_46_346)).
 
 ## Contribution activity
 
@@ -41,6 +41,7 @@ Strimzi project sees growth in adoption both in terms of production users as wel
 * [Helvetia](https://helvetia.com/)
 * [Marlow Navigation](https://marlow-navigation.com/)
 * [SBB CFF FFS](https://www.sbb.ch/en/home.html)
+* [Swisscom](https://www.swisscom.ch/)
 
 Strimzi is also adopted by several vendors and used in their products:
 * [IBM](https://www.ibm.com/cloud/event-streams)
