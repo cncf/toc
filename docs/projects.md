@@ -103,14 +103,14 @@
 | [KubeEdge](https://kubeedge.io/)        | 3/18/19        | 9/16/20             | [Incubating](https://github.com/cncf/toc/pull/461) |
 
 
-## Project Audits
+## Project Security Audits
 
 **Project**|**Audit**|**Announcement**|
 :------:|:--------:|:----------:|
 [Kubernetes](https://kubernetes.io/)|[8/06/2019](https://github.com/kubernetes/community/pull/3975)|[Announcement](https://www.cncf.io/blog/2019/08/06/open-sourcing-the-kubernetes-security-audit/)|
 [Helm](https://github.com/helm)|[11/04/2019](https://github.com/helm/community/blob/master/security-audit/HLM-01-report.pdf)|[Announcement](https://helm.sh/blog/2019-11-04-helm-security-audit-results/)|
 [gRPC](http://www.grpc.io/)|[10/29/2019](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|[Announcement](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|
-[etcd](https://github.com/etcd-io/etcd)| In progress | In progress | 
+[etcd](https://github.com/etcd-io/etcd)| [8/5/2020](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf) | [Announcement](https://www.cncf.io/blog/2020/08/05/etcd-security-audit/) | 
 [rook](https://github.com/rook)| [12/1/2019](https://drive.google.com/file/d/1rOwrwYmBUpLUm6W5J5rhXvdVit818hWJ/view) | [Announcement](https://github.com/rook/rook/blob/master/SECURITY.md#security-audit) |
 [Fluentd](http://www.fluentd.org/) | [05/01/2019](https://cure53.de/pentest-report_fluent.pdf) | [Announcement](http://www.fluentd.org/)| 
 [Linkerd](https://linkerd.io/)| [06/01/2019](https://github.com/linkerd/linkerd2/blob/master/SECURITY_AUDIT.pdf) | [Announcement](https://github.com/linkerd/linkerd2/blob/master/SECURITY_AUDIT.pdf) | 
