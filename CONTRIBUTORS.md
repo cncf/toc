@@ -82,6 +82,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Xiang Li, Alibaba (x.li@alibaba.com)
 * Xu Wang, Hyper (xu@hyper.sh)
 * Yaron Haviv, iguazio (yaronh@iguaz.io)
+* Yin Ding, (dingyin@gmail.com)
 * Yong Tang, Infoblox (ytang@infoblox.com)
 * Yuri Shkuro, Uber	(ys@uber.com)
 * Zefeng (Kevin) Wang, Huawei (wangzefeng@huawei.com)
