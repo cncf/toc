@@ -117,6 +117,10 @@ will form the basis for Flux v2 and Helm Operator v2.
 Once we reach feature parity, we will ask our community of users to
 cut over to using v2 (based on the GOTK) within 6 months.
 
+The Flux v2 website has [a
+roadmap](https://toolkit.fluxcd.io/roadmap/#the-road-to-flux-v2) for
+the above.
+
 ### How can the CNCF help us achieve our upcoming goals?
 
 We are struggling somewhat with supporting users on Slack and Github
