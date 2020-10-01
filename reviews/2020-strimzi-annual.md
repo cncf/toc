@@ -63,7 +63,13 @@ These goals are being fulfilled as seen from the new users and new contributors 
 For the next year, we would like to achieve the following goals:
 * Keep attracting more users to Strimzi and Apache Kafka on Kubernetes
 * Keep broadening the contributor base with focus on trying to get also more regular and long-term committers. This should also lead to adding more maintainers from other companies than just IBM and Red Hat.
-* Release Strimzi 1.0. While we see Strimzi as production-ready and have production users, we are still on `0.x` versions. We should move to 1.0 during the next year.
+* First release of the Strimzi UI
+* Release Strimzi 1.0. While we see Strimzi as production-ready and have production users, we are still on `0.x` versions. We should move to 1.0 during the next year. We plan to work on the following features before releasing 1.0:
+    * Improve the use of Cruise Control for automatic performance tuning of the Kafka clusters
+    * Move our main Custom Resources to `v1`
+    * Remove Zookeeper from Apache Kafka clusters managed by Strimzi (ongoing effort in Apache Kafka community)
+
+_(High level roadmap is available as a [project](https://github.com/orgs/strimzi/projects/1) in our GitHub organization.)_
 
 ## How can the CNCF help?
 
