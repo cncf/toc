@@ -15,7 +15,7 @@
 [Jaeger](https://github.com/jaegertracing/jaeger)|Bryan Cantrill|[8/1/17](https://goo.gl/ehtgts)|[9/13/17](https://www.cncf.io/blog/2017/09/13/cncf-hosts-jaeger/)|Graduated
 [Notary](https://github.com/docker/notary)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
 [TUF](https://github.com/theupdateframework)|Solomon Hykes|[6/20/17](https://goo.gl/6nmyDn)|[10/24/17](https://www.cncf.io/announcement/2017/10/24/cncf-host-two-security-projects-notary-tuf-specification/)|Incubating
-[rook](https://github.com/rook)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[1/29/18](https://www.cncf.io/blog/2018/01/29/cncf-host-rook-project-cloud-native-storage-capabilities)|Incubating
+[rook](https://github.com/rook)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[1/29/18](https://www.cncf.io/blog/2018/01/29/cncf-host-rook-project-cloud-native-storage-capabilities)|Graduated
 [Vitess](https://github.com/vitessio/vitess)|Brian Grant|[4/19/17](https://goo.gl/6nmyDn)|[2/5/18](https://www.cncf.io/blog/2018/02/05/cncf-host-vitess/)|Graduated
 [NATS](https://github.com/nats-io/gnatsd)|Alexis Richardson|[9/21/16](https://goo.gl/6nmyDn)|[3/15/18](https://www.cncf.io/blog/2018/03/15/cncf-to-host-nats/)|Incubating
 [SPIFFE](https://github.com/spiffe)|Brian Grant, Sam Lambert, Ken Owens|[11/7/17](https://goo.gl/6nmyDn)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-the-spiffe-project/)|Incubating
@@ -71,6 +71,7 @@
 [OpenYurt](https://github.com/alibaba/openyurt)|TOC Vote|[8/27/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/8/2020](https://github.com/alibaba/openyurt)|Sandbox
 [Open Service Mesh](https://github.com/openservicemesh/osm/)|TOC Vote|[8/5/2020](https://github.com/cncf/toc/pull/507)|[9/8/2020](https://github.com/openservicemesh/osm/)|Sandbox
 [Keylime](https://github.com/keylime)|TOC Vote|[8/26/2020](https://github.com/cncf/toc/pull/496)|[9/22/2020](https://github.com/keylime)|Sandbox
+
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
 :-----:|:-----:|:-----:|:-----:|:-----:
@@ -85,6 +86,7 @@
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[4/30/20](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Graduated
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/23/20](https://www.cncf.io/announcement/2020/06/23/cloud-native-computing-foundation-announces-harbor-graduation/)|Graduated
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[9/2/2020](https://www.cncf.io/announcements/2020/09/02/cloud-native-computing-foundation-announces-tikv-graduation/)|Graduated
+[Rook](https://github.com/tikv/tikv)|Ben Hindman|6/6/17](https://goo.gl/6nmyDn)|[10/7/2020](https://www.cncf.io/announcements/2020/10/07/cloud-native-computing-foundation-announces-rook-graduation/)|Graduated
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
