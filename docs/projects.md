@@ -86,7 +86,7 @@
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[4/30/20](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Graduated
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/23/20](https://www.cncf.io/announcement/2020/06/23/cloud-native-computing-foundation-announces-harbor-graduation/)|Graduated
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[9/2/2020](https://www.cncf.io/announcements/2020/09/02/cloud-native-computing-foundation-announces-tikv-graduation/)|Graduated
-[Rook](https://github.com/tikv/tikv)|Ben Hindman|6/6/17](https://goo.gl/6nmyDn)|[10/7/2020](https://www.cncf.io/announcements/2020/10/07/cloud-native-computing-foundation-announces-rook-graduation/)|Graduated
+[Rook](https://github.com/tikv/tikv)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[10/7/2020](https://www.cncf.io/announcements/2020/10/07/cloud-native-computing-foundation-announces-rook-graduation/)|Graduated
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
