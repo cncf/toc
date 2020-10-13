@@ -83,10 +83,12 @@ Some key points:
 * Reviewed on an annual basis; submit a report to the TOC for review
 * CNCF Sandbox projects can stay in the sandbox indefinitely
 
-## Sandbox processes
+### Application into Sandbox 
 
-Projects can [apply to join the Sandbox](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc#sandbox-process). 
+To apply for inclusion into the Sandbox, projects should use [this form](https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit). 
+The TOC will review on a rotating basis, currently every two months as of June 2020.  
 
+### Annual review
 Once in the Sandbox, projects are subject to an [Annual Review](https://github.com/cncf/toc/blob/master/process/sandbox-annual-review.md).
 
 

@@ -110,10 +110,7 @@ Some details that might inform the above include:
 * What is the general quality of informal communication around the project (slack, github issues, PR reviews, technical blog posts, etc)?
 * How much time does the core team commit to the project?
 * How big is the team? Who funds them? Why? How much? For how long?
-* Who are the clear leaders?  Are there any areas lacking clear leadership?  Testing? Release? Documentation?  These roles sometimes go unfilled.
-* Besides the core team, how active is the surrounding community?  Bug reports?  Assistance to newcomers? Blog posts etc.
-* Do they make it easy to contribute to the project? If not, what are the main obstacles?
-* Are there any especially difficult personalities to deal with?  How is this done?  Is it a problem?
+* Who are the clear leaders? Are there any areas lacking clear leadership? Testing? Release? Documentation? These roles sometimes go unfilled.
 * What is the rate of ongoing contributions to the project (typically in the form of merged commits).
 
 #### Users
@@ -121,6 +118,15 @@ Some details that might inform the above include:
 * Who uses the project?  Get a few in-depth references from 2-4 of them who actually know and understand it.
 * What do real users consider to be it's strengths and weaknesses?  Any concrete examples of these?
 * Perception vs Reality:  Is there lots of buzz, but the software is flaky/untested/unused?  Does it have a bad reputation for some flaw that has already been addressed?
+
+#### Contributor experience
+
+* Besides the core team, how active is the surrounding community? Bug reports? Assistance to newcomers? Blog posts etc.
+* Is it easy to contribute to the project as an external contributor? If not, what are the main obstacles?
+* Are there any especially difficult personalities to deal with? How is this done? Is it a problem?
+* Getting interviews with 2-3 external contributors is advisable for DD process, both from the community and technical perspective. It can help to identify technical depth in areas like extensibility, API design and general code architecture.
+* For more in-depth review of the contributor experience, consulting with [sig-contributor-strategy](https://github.com/cncf/sig-contributor-strategy) is always a good idea.
+
 
 #### Context
 

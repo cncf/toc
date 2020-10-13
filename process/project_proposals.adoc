@@ -10,30 +10,18 @@ image::project-stages.png[Project stages]
 
 === Sandbox process
 
-_Note: we are currently experimenting with a https://docs.google.com/document/d/1IlhqnmhSzs3aTPMkp_75JPYz6LD21aK1sNPrBNruDt0/edit?usp=sharing[new lighter-weight process for Sandbox proposals]. If you are interested in submitting a project for Sandbox we recommending reaching out to CNCF staff, or raising in the TOC channel on CNCF Slack, for advice on how to proceed in the short term._
+Note: We have changed the sandbox proposal process to a https://docs.google.com/document/d/1IlhqnmhSzs3aTPMkp_75JPYz6LD21aK1sNPrBNruDt0/edit?usp=sharing[new lighter-weight process for Sandbox proposals].
 
 All exceptions (and "no" outcomes) are handled by the TOC. Possible "no" outcomes include "not at this time", and the project may be encouraged to re-apply after addressing issues. Timeframes are approximate, to set expectations.
 
 image::sandbox-process.png[Sandbox process]
-
 . *Project Proposal*
-   * Project proposed through a https://github.com/cncf/toc/issues[GitHub issue]
-   * Template TBD
-. *TOC Triage* _2 weeks for a straightforward referral to a SIG; decline or defer could require more discussion_
-   * Performed by any TOC member
-   * Lazy TOC consensus before declining outright or deferring assessment at this time
-   * Picks appropriate https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md[CNCF SIG] to perform assessment
-. *SIG Assessment* _1-2 months_
-   * Project presents to SIG
-   * Lightweight - this is pre-DD
-   * Confirms that project accepts the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#sandbox-stage[Sandbox entry requirements]
-   * SIG makes recommendation to TOC: Sandbox / Incubation / Decline 
+   * Project proposed through a https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit[form]
+   * Project proposed for contribution through a https://github.com/cncf/toc/pulls[Pull request] 
 . *TOC Review*
-   * TOC review recommendation and presentation
+   * TOC reviews proposal in spreadsheet and presentation, project passes for inclusion with a simple majority vote. 
    * TOC may engage with project to ask further questions
-. *TOC Sandbox Sponsors* _Within 2 months of SIG recommendation_
-   * If three TOC members step forward as Sponsors, the project moves to Sandbox
-   * TOC Sandbox Sponsor has no formal role, but is a natural candidate for driving due diligence in the future if the project applies for incubation
+   * Projects may re-apply after six months
 . *Governance / legal issues*
    * CNCF staff handle governance / legal issues
    * This can happen after TOC Sandbox Sponsors step forward
@@ -46,13 +34,18 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 
 image::incubation-process.png[Incubation process]
 
-. *Project Proposal* - as for Sandbox
-. *TOC Triage* - as for Sandbox
-. *SIG Assessment* - as for Sandbox
+. *Project Proposal* 
+ * Incubation proposed through a https://github.com/cncf/toc/issues[GitHub issue]
+. *TOC Triage* _2 weeks for a straightforward referral to a SIG; decline or defer could require more discussion_
+   * Performed by any TOC member
+   * Lazy TOC consensus before declining outright or deferring assessment at this time
+   * Picks appropriate https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md[CNCF SIG] to perform assessment
+. *SIG Assessment* _1-2 months_
+   * Project presents to SIG
+   * Lightweight - this is pre-DD
+   * Confirms that project accepts the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubation-stage[Incubation requirements]
+   * SIG makes recommendation to TOC: Sandbox / Incubation / Decline 
    * Note that this step is still meant to be a lightweight, pre-DD process
-. *TOC Review*
-   * TOC review recommendation and presentation
-   * TOC may engage with project to ask further questions
 . *TOC Incubation Sponsor*
    * If a TOC member steps forward as an Incubation Sponsor, due diligence commences
 . *Due Diligence* _2-3 months_

@@ -1,0 +1,504 @@
+# Metal³ Proposal
+
+*Name of project*: Metal³ ("Metal Kubed")
+
+*Description*:
+
+The Metal³ project (pronounced: Metal Kubed) exists to provide bare metal host
+management for Kubernetes.  The primary components of Metal³ include
+baremetal-operator, a component that provides a Kubernetes API for provisioning
+and managing bare metal hosts, and cluster-api-provider-metal3, which
+integrates Metal³ with cluster-api project from the Kubernetes cluster
+lifecycle SIG.
+
+While the cluster-api integration allows you to use Metal³ to automate the
+provisioning of bare metal hosts for a Kubernetes cluster, a subset of Metal³
+can be used to perform bare metal host provisioning for any purpose.
+
+*Statement on Alignment with the CNCF Mission*:
+
+As cloud native technologies become the norm for organizations to deploy and
+manage their applications, Metal³ aims to apply similar patterns such as
+declarative APIs to allow administrators to manage their underlying
+infrastructure.  Metal³ is trying to make physical infrastructure management
+more accessible to the cloud native ecosystem.
+
+*Sponsor / Advisor from TOC*: TBD
+
+*Unique Identifier*: metal3-io
+
+*License*: Apache 2.0
+
+*Maturity Level*: Sandbox
+
+*Web Site*: https://metal3.io
+
+*Source Control Repositories*:
+
+All repositories under https://github.com/metal3-io/
+
+*Issue Tracking*:
+
+GitHub issues on each repository.
+
+*Release Methodology and Mechanics*:
+
+* link:https://github.com/metal3-io/cluster-api-provider-metal3/blob/master/docs/releasing.md[cluster-api-provider-metal3] - Following the same release cadence as the cluster-api project of the Kubernetes cluster lifecycle SIG
+* baremetal-operator - No releases yet, link:https://github.com/metal3-io/metal3-docs/issues/71[issue for creating release process here].
+
+*Initial committers*:
+
+Initial committers are reflected in the OWNERS file from each repository.  For example:
+* https://github.com/metal3-io/cluster-api-provider-metal3/blob/master/OWNERS
+* https://github.com/metal3-io/baremetal-operator/blob/master/OWNERS
+
+The process for adding/removing committers (or maintainers) is:
+https://github.com/metal3-io/metal3-docs/tree/master/maintainers
+
+There are currently maintainers across different repositories from the following
+companies:
+
+* Ericsson
+* Mirantis
+* Red Hat
+
+*Existing Community*:
+
+The project was started by a team at Red Hat, but has grown to include
+contributors from several companies over the last year.  Contributing companies
+now include:
+
+* AT&T
+* Dell EMC
+* Ericsson
+* Fujitsu
+* Mirantis
+* Red Hat
+
+As of 2020-03-25:
+
+* baremetal-operator has 38 commit authors
+* cluster-api-provider-metal3 has 20 commit authors
+
+*Project Infrastructure*:
+
+* Prow based CI cluster running on donated capacity from https://packet.net:
+  https://prow.apps.ci.metal3.io/
+* Jenkins server for some additional CI jobs using capacity from
+  https://www.nordix.org/:
+  https://github.com/metal3-io/project-infra/blob/master/jenkins/README.md
+* Web page (https://metal3.io) hosted on GitHub pages:
+  https://github.com/metal3-io/metal3-io.github.io
+* Infrastructure resources: https://github.com/metal3-io/project-infra/
+* https://metal3.io/community-resources.html
+
+*Communication*:
+
+* link:https://groups.google.com/forum/#!forum/metal3-dev[Mailing List]
+* Slack Channel: #cluster-api-baremetal on the Kubernetes Slack
+* link:https://docs.google.com/document/d/1d7jqIgmKHvOdcEmE2v72WDZo9kz7WwhuslDOili25Ls/edit[Bi-weekly zoom meeting]
+
+*Social Media Accounts*:
+
+* link:https://twitter.com/metal3_io[Twitter]
+* link:https://www.youtube.com/channel/UC_xneeYbo-Dl4g-U78xW15g[Youtube Channel]
+
+*Other References*:
+
+* link:https://www.youtube.com/watch?v=KIIkVD7gujY[Talk at KubeCon San Diego, Fall 2019]
+* link:https://github.com/metal3-io/metal3-docs/blob/master/design/foundation-proposal.md[Proposal to metal3-io community to apply to the CNCF Sandbox]
+
+*Project Logo*:
+
+* link:https://github.com/metal3-io/metal3-docs/blob/master/images/metal3.svg[SVG]
+* link:https://github.com/metal3-io/metal3-docs/blob/master/images/metal3.png[PNG]
+* link:https://github.com/metal3-io/metal3-docs/blob/master/images/metal3-white.svg[SVG - White]
+* link:https://github.com/metal3-io/metal3-docs/blob/master/images/metal3-white.png[PNG - White]
+* link:https://github.com/metal3-io/metal3-docs/blob/master/images/metal3-.svg[SVG - Black]
+* link:https://github.com/metal3-io/metal3-docs/blob/master/images/metal3-black.png[PNG - Black]
+* link:https://github.com/metal3-io/metal3-docs/blob/master/images/metal3-website-sticker.svg[SVG - Sticker]
+* link:https://github.com/metal3-io/metal3-docs/blob/master/images/metal3-website-sticker.png[PNG - Sticker]
+* link:https://github.com/metal3-io/metal3-docs/blob/master/images/metal3-banner.pdf[PDF - Banner]
+
+*External Dependencies*:
+
+Generated using https://github.com/google/go-licenses
+
+.Dependencies for baremetal-operator
+|===
+|Package |License
+
+|github.com/PuerkitoBio/urlesc
+|BSD-3-Clause
+
+|golang.org/x/text
+|BSD-3-Clause
+
+|github.com/evanphx/json-patch
+|BSD-3-Clause
+
+|go.uber.org/atomic
+|MIT
+
+|github.com/gophercloud/gophercloud
+|Apache-2.0
+
+|golang.org/x/xerrors
+|BSD-3-Clause
+
+|github.com/PuerkitoBio/purell
+|BSD-3-Clause
+
+|gopkg.in/fsnotify.v1
+|BSD-3-Clause
+
+|cloud.google.com/go/compute/metadata
+|Apache-2.0
+
+|github.com/emicklei/go-restful
+|MIT
+
+|sigs.k8s.io/controller-runtime/pkg
+|Apache-2.0
+
+|github.com/go-openapi/spec
+|Apache-2.0
+
+|k8s.io/apimachinery
+|Apache-2.0
+
+|github.com/matttproud/golang_protobuf_extensions/pbutil
+|Apache-2.0
+
+|github.com/hashicorp/golang-lru
+|MPL-2.0
+
+|gopkg.in/yaml.v2
+|Apache-2.0
+
+|golang.org/x/net
+|BSD-3-Clause
+
+|github.com/go-logr/logr
+|Apache-2.0
+
+|gomodules.xyz/jsonpatch/v2
+|Apache-2.0
+
+|github.com/go-openapi/swag
+|Apache-2.0
+
+|k8s.io/api
+|Apache-2.0
+
+|github.com/go-openapi/jsonreference
+|Apache-2.0
+
+|k8s.io/client-go
+|Apache-2.0
+
+|github.com/imdario/mergo
+|BSD-3-Clause
+
+|github.com/mailru/easyjson
+|MIT
+
+|github.com/go-logr/zapr
+|Apache-2.0
+
+|github.com/golang/groupcache/lru
+|Apache-2.0
+
+|github.com/beorn7/perks/quantile
+|MIT
+
+|github.com/golang/protobuf
+|BSD-3-Clause
+
+|github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
+|BSD-3-Clause
+
+|golang.org/x/sys/unix
+|BSD-3-Clause
+
+|github.com/spf13/pflag
+|BSD-3-Clause
+
+|github.com/gogo/protobuf
+|BSD-3-Clause
+
+|github.com/google/gofuzz
+|Apache-2.0
+
+|github.com/pkg/errors
+|BSD-2-Clause
+
+|sigs.k8s.io/yaml
+|MIT
+
+|github.com/modern-go/reflect2
+|Apache-2.0
+
+|golang.org/x/time/rate
+|BSD-3-Clause
+
+|gopkg.in/inf.v0
+|BSD-3-Clause
+
+|github.com/json-iterator/go
+|MIT
+
+|github.com/davecgh/go-spew/spew
+|ISC
+
+|golang.org/x/oauth2
+|BSD-3-Clause
+
+|github.com/metal3-io/baremetal-operator
+|Apache-2.0
+
+|go.uber.org/multierr
+|MIT
+
+|github.com/prometheus/client_golang/prometheus
+|Apache-2.0
+
+|github.com/modern-go/concurrent
+|Apache-2.0
+
+|github.com/cespare/xxhash/v2
+|MIT
+
+|github.com/prometheus/procfs
+|Apache-2.0
+
+|golang.org/x/crypto/ssh/terminal
+|BSD-3-Clause
+
+|github.com/google/uuid
+|BSD-3-Clause
+
+|github.com/go-openapi/jsonpointer
+|Apache-2.0
+
+|k8s.io/klog
+|Apache-2.0
+
+|k8s.io/kube-openapi/pkg
+|Apache-2.0
+
+|go.uber.org/zap
+|MIT
+
+|github.com/prometheus/client_model/go
+|Apache-2.0
+
+|github.com/googleapis/gnostic
+|Apache-2.0
+
+|github.com/prometheus/common
+|Apache-2.0
+
+|k8s.io/utils
+|Apache-2.0
+
+|github.com/google/go-cmp/cmp
+|BSD-3-Clause
+
+|github.com/operator-framework/operator-sdk
+|Apache-2.0
+|===
+
+.Dependencies for cluster-api-provider-metal3
+|===
+|Package |License
+
+|github.com/modern-go/concurrent
+|Apache-2.0
+
+|github.com/google/uuid
+|BSD-3-Clause
+
+|golang.org/x/text
+|BSD-3-Clause
+
+|github.com/pkg/errors
+|BSD-2-Clause
+
+|gomodules.xyz/jsonpatch/v2
+|Apache-2.0
+
+|github.com/PuerkitoBio/urlesc
+|BSD-3-Clause
+
+|github.com/golang/mock/gomock
+|Apache-2.0
+
+|github.com/docker/distribution
+|Apache-2.0
+
+|k8s.io/klog
+|Apache-2.0
+
+|github.com/evanphx/json-patch
+|BSD-3-Clause
+
+|github.com/matttproud/golang_protobuf_extensions/pbutil
+|Apache-2.0
+
+|github.com/opencontainers/go-digest
+|Apache-2.0
+
+|github.com/go-openapi/spec
+|Apache-2.0
+
+|github.com/metal3-io/cluster-api-provider-metal3
+|Apache-2.0
+
+|k8s.io/api
+|Apache-2.0
+
+|github.com/blang/semver
+|MIT
+
+|sigs.k8s.io/controller-runtime
+|Apache-2.0
+
+|golang.org/x/oauth2
+|BSD-3-Clause
+
+|github.com/hashicorp/golang-lru
+|MPL-2.0
+
+|github.com/golang/groupcache/lru
+|Apache-2.0
+
+|github.com/prometheus/common
+|Apache-2.0
+
+|github.com/mailru/easyjson
+|MIT
+
+|github.com/gogo/protobuf
+|BSD-3-Clause
+
+|github.com/davecgh/go-spew/spew
+|ISC
+
+|github.com/modern-go/reflect2
+|Apache-2.0
+
+|gopkg.in/yaml.v2
+|Apache-2.0
+
+|github.com/spf13/pflag
+|BSD-3-Clause
+
+|k8s.io/apimachinery
+|Apache-2.0
+
+|golang.org/x/time/rate
+|BSD-3-Clause
+
+|github.com/metal3-io/baremetal-operator/pkg/apis
+|Apache-2.0
+
+|github.com/PuerkitoBio/purell
+|BSD-3-Clause
+
+|k8s.io/cluster-bootstrap/token
+|Apache-2.0
+
+|golang.org/x/crypto/ssh/terminal
+|BSD-3-Clause
+
+|github.com/json-iterator/go
+|MIT
+
+|github.com/imdario/mergo
+|BSD-3-Clause
+
+|github.com/go-openapi/swag
+|Apache-2.0
+
+|github.com/go-logr/logr
+|Apache-2.0
+
+|k8s.io/apiextensions-apiserver/pkg/apis/apiextensions
+|Apache-2.0
+
+|github.com/go-openapi/jsonpointer
+|Apache-2.0
+
+|gopkg.in/fsnotify.v1
+|BSD-3-Clause
+
+|gopkg.in/inf.v0
+|BSD-3-Clause
+
+|golang.org/x/net
+|BSD-3-Clause
+
+|k8s.io/utils
+|Apache-2.0
+
+|github.com/googleapis/gnostic
+|Apache-2.0
+
+|github.com/cespare/xxhash/v2
+|MIT
+
+|github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
+|BSD-3-Clause
+
+|golang.org/x/sys/unix
+|BSD-3-Clause
+
+|github.com/google/go-cmp/cmp
+|BSD-3-Clause
+
+|github.com/prometheus/client_golang/prometheus
+|Apache-2.0
+
+|github.com/beorn7/perks/quantile
+|MIT
+
+|github.com/prometheus/procfs
+|Apache-2.0
+
+|golang.org/x/xerrors
+|BSD-3-Clause
+
+|github.com/google/gofuzz
+|Apache-2.0
+
+|sigs.k8s.io/cluster-api
+|Apache-2.0
+
+|sigs.k8s.io/yaml
+|MIT
+
+|github.com/golang/protobuf
+|BSD-3-Clause
+
+|github.com/onsi/gomega
+|MIT
+
+|k8s.io/client-go
+|Apache-2.0
+
+|github.com/go-openapi/jsonreference
+|Apache-2.0
+
+|github.com/emicklei/go-restful
+|MIT
+
+|k8s.io/kube-openapi/pkg
+|Apache-2.0
+
+|github.com/prometheus/client_model/go
+|Apache-2.0
+
+|cloud.google.com/go/compute/metadata
+|Apache-2.0
+|===
