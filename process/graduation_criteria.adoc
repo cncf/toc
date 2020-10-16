@@ -13,6 +13,7 @@ To be accepted in the sandbox a project must
 * Require 3 of the 11 TOC members to step forward as sponsors to enter the sandbox
 * Adopt the CNCF https://github.com/cncf/foundation/blob/master/code-of-conduct.md[Code of Conduct]
 * Adhere to CNCF https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy[IP Policy] (including trademark transferred)
+* Have a basic CONTRIBUTING.md file or other information on how to contribute to the project 
 * List their sandbox status prominently on website/readme
 
 See the https://github.com/cncf/toc/blob/master/process/sandbox.md[CNCF Sandbox Guidelines v1.0] for the detailed process.
