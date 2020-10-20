@@ -16,6 +16,11 @@ Supported languages :
 - Rust SDK
 - Swift SDK
 
+## Sandbox Presentation 
+- [Slides](https://docs.google.com/presentation/d/1roUFtkiVw25N7nRuUnMa-ziNhb6vzhZAe43jpBfiDiw/edit#slide=id.g5724df7a45_0_258)
+- [Proposal](https://github.com/cncf/toc/blob/f4ecf1bf391867d0840434b638cd9ef6cb2f57fe/proposals/sandbox/opentelemetry.adoc)
+- [PR](https://github.com/cncf/toc/pull/233)
+
 
 ## Alignment with CloudNative
 OpenTelemetry delivers all of the raw materials required for robust observability of modern software applications. Portability, vendor neutrality, and common data formats for collected signals are crucial for cloud-native computing as highlighted in the [CNCF charter](https://www.cncf.io/about/charter/). OpenTracing and OpenCensus are both robust projects, but their overlapping charters have created confusion and wasted work in the larger open-source community. As such, OpenTelemetry also adds considerable value to the CNCF ecosystem by creating the shared destination for the OpenTracing and OpenCensus projects and communities.
@@ -85,6 +90,8 @@ The following are “must-do” goals:
 - Release GA(1.0). Similar to Beta, GA has requirements around implementation, documentation and testing. In addition, the guarantee is made that the APIs and SDKs must not take any breaking changes between release candidates, the GA releases, and any subsequent releases that implement spec version < 2.0. [GA Launch Plan Documentation](https://docs.google.com/document/d/1dyXxsmpcHLvlpyvZc3HXBfKF-vrfJlMLAN6CQVzCEos/edit?usp=sharing)
 - Archive OpenTracing and OpenCensus. 
 - Meet incubation criteria. 
+
+Project roadmap can be found [here](https://opentelemetry.io/project-status/)
 
 
 
