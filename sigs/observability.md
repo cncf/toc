@@ -160,14 +160,15 @@ Examples include:
 - Security aspects that need to be present when setting up cloud native
   infrastructure, these might be more relevant for SIG Security.
 - How cloud native applications that need observability are deployed; this would
-  fall in the scope of SIG App Delivery.`
+  fall in the scope of SIG App Delivery.
 - Tools and projects that are used to run cloud native workloads that in some
   cases need observability would fall under the scope of SIG-Runtime.
 
 ## Roadmap & Initial Efforts
 
-- Contribute to [due diligence reports][ddg] to assist the CNCF TOC for projects
-  in the scope of the SIG.
+- Contribute to Due Diligence (DD) Reviews in accordance with the TOC's
+  [Due Diligence Guidelines][ddg] and [Due Diligence Review Template][ddrt] to
+  assist the CNCF TOC for projects in the scope of the SIG.
 - Facilitate webinars and presentations from CNCF projects and domain experts in
   the scope of the SIG.
 - Formation of [SIG working group(s)][sigwg] as resource capacity and member
@@ -176,6 +177,7 @@ Examples include:
   > _SIGs may choose to spawn focussed and time-limited working groups to achieve some of their responsibilities (for example, to produce a specific educational white paper, or portfolio gap analysis report). Working groups should have a clearly documented charter, timeline (typically a few quarters at most), and set of deliverables. Once the timeline has elapsed, or the deliverables delivered, the working group dissolves, or is explicitly re-chartered._
 
 [ddg]: https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md
+[ddrt]: https://github.com/cncf/toc/blob/master/process/dd-review-template.m
 [sigwg]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#responsibilities--empowerment-of-sigs
 
 ## Governance
@@ -206,5 +208,6 @@ Examples include:
   - Slack channel: #sig-observability @ [https://cloud-native.slack.com](https://cloud-native.slack.com)
   - Email List: [cncf-sig-observability@lists.cncf.io](mailto:cncf-sig-observability@lists.cncf.io)
 - Meeting Schedule:
-  - TBD - pending feedback from SIG members
-  - [https://www.cncf.io/community/calendar](https://www.cncf.io
+  - Every 2nd Tuesday, 4pm - 5pm, UTC ([CNCF Calendar][cncfcal] for details)
+
+[cncfcal]: https://www.cncf.io/calendar
