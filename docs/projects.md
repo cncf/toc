@@ -71,6 +71,15 @@
 [OpenYurt](https://github.com/alibaba/openyurt)|TOC Vote|[8/27/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/8/2020](https://github.com/alibaba/openyurt)|Sandbox
 [Open Service Mesh](https://github.com/openservicemesh/osm/)|TOC Vote|[8/5/2020](https://github.com/cncf/toc/pull/507)|[9/8/2020](https://github.com/openservicemesh/osm/)|Sandbox
 [Keylime](https://github.com/keylime)|TOC Vote|[8/26/2020](https://github.com/cncf/toc/pull/496)|[9/22/2020](https://github.com/keylime)|Sandbox
+[SchemaHero](https://github.com/schemahero/schemahero)|TOC Vote|[9/10/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/schemahero/schemahero)|Sandbox
+[Cloud Development Kit for Kubernetes (cdk8s)](https://github.com/awslabs/cdk8s)|TOC Vote|[10/19/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/awslabs/cdk8s)|Sandbox
+[cert-manager](https://github.com/jetstack/cert-manager)|TOC Vote|[10/27/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/jetstack/cert-manager)|Sandbox
+[OpenKruise](https://github.com/openkruise/kruise)|TOC Vote|[11/3/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/openkruise/kruise)|Sandbox
+|[Tinkerbell](https://github.com/tinkerbell)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/tinkerbell)|Sandbox
+[Pravega](https://github.com/pravega)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/pravega)|Sandbox
+[Kyverno](https://github.com/kyverno/kyverno/)|TOC Vote|[11/9/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/kyverno/kyverno/)|Sandbox
+
+
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
