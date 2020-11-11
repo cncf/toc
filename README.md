@@ -13,7 +13,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * **Brendan Burns** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 * **Dave Zolotusky** (term: [remainder of previous term] - start date: 10/5/2020  - 1/29/2020) [EndUser-appointed]
 * **Justin Cormack** (term: 2 years - start date 2/4/2020 - 2/4/2022) [Maintainer-appointed]
-* **Katie Gamanji** (term: 2 years - start date 2/4/2020 - 2/4/2022) [EndUser-appointed]
+* **[TO BE FILLED SINCE KATIE STEPPED DOWN]** (term: 2 years - start date 2/4/2020 - 2/4/2022) [EndUser-appointed]
 * **Liz Rice** (term: 2 years - start date: 2/4/2020 - 2/4/2022) [GB-appointed]
 * **Matt Klein** (term: 2 years - start date: 1/29/2019 - 1/29/2021) [GB-appointed]
 * **Michelle Noorali** (term: 2 years - start date: 3/18/2019 - 3/18/2021) [TOC-appointed]
@@ -23,7 +23,6 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 
 Election [schedule](process/election-schedule.md)
 
-
 ## Projects
 
 See the [current CNCF projects](https://www.cncf.io/projects/) and a description of project maturity levels (Sandbox, Incubating, Graduated).
@@ -31,7 +30,6 @@ See the [current CNCF projects](https://www.cncf.io/projects/) and a description
 The CNCF provides [list of services](https://www.cncf.io/services-for-projects/) for incubating and graduated projects hosted in the foundation. A subset of these services is also available for [Sandbox](https://www.cncf.io/sandbox-projects/) level projects.
 
 Do you want to contribute to a project? We have [outlined the process](https://github.com/cncf/toc/blob/master/process/README.md) to get started. If you have any questions or don't know where to start, please open an [issue](https://github.com/cncf/toc/issues).
-
 
 ## Meeting Time
 
