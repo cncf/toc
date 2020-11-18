@@ -27,7 +27,7 @@
 [OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|Alexis Richardson, Bryan Cantrill|[6/20/17](https://goo.gl/6nmyDn)|[8/10/18](https://www.cncf.io/blog/2018/08/10/cncf-to-host-openmetrics/)|Sandbox
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[8/28/18](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv/)|Graduated
 [Cortex](https://github.com/cortexproject/cortex)|Ken Owens, Bryan Cantrill|[6/5/18](https://docs.google.com/presentation/d/190oIFgujktVYxWZLhLYN4q8p9dtQYoe4sxHgn4deBSI/edit#slide=id.g25ca91f87f_0_0)|[9/20/18](https://www.cncf.io/blog/2018/09/20/cncf-to-host-in-the-sandbox/)|Incubating
-[Buildpacks](https://github.com/buildpack/spec)|Brian Grant, Alexis Richardson|[8/21/18](https://docs.google.com/presentation/d/1RkygwZw7ILVgGhBpKnFNgJ4BCc_9qMG8cIf0MRbuzB4/edit?usp=sharing)|[10/3/18](https://www.cncf.io/blog/2018/10/03/cncf-to-host-cloud-native-buildpacks-in-the-sandbox)|Sandbox
+[Buildpacks](https://github.com/buildpack/spec)|Brian Grant, Alexis Richardson|[8/21/18](https://docs.google.com/presentation/d/1RkygwZw7ILVgGhBpKnFNgJ4BCc_9qMG8cIf0MRbuzB4/edit?usp=sharing)|[10/3/18](https://www.cncf.io/blog/2018/10/03/cncf-to-host-cloud-native-buildpacks-in-the-sandbox)|Incubating
 [Falco](https://github.com/falcosecurity/falco)|Brian Grant, Quinton Hoole|[7/17/18](https://docs.google.com/presentation/d/17p5QBVooGMLAtX6Mn6d3NAFhRmFHE0cH-WI_-0MbOm8/edit?usp=sharing)|[10/10/18](https://falco.org/)|Incubating
 [Dragonfly](https://github.com/dragonflyoss/dragonfly)|Jonathan Boulle, Benjamin Hindman|[9/4/18](https://docs.google.com/presentation/d/1umu-iT5ZXq5XsMFmqmVeRe-tn2y7DeSoCebhrehi7fk/edit#slide=id.g41381b8fd7_0_199)|[11/15/18](https://github.com/oss/dragonfly)|Incubating
 [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet)|Alexis Richardson, Quinton Hoole|[9/18/18](https://github.com/cncf/toc/issues/154)|[12/4/18](https://github.com/virtual-kubelet/virtual-kubelet)|Sandbox
@@ -112,6 +112,7 @@
 | [Thanos](https://thanos.io)             | 7/20/19        | 8/19/20             | [Incubating](https://github.com/cncf/toc/pull/342) |
 | [Cortex](https://cortexmetrics.io)      | 9/20/18        | 8/20/20             | [Incubating](https://github.com/cncf/toc/pull/315) | 
 | [KubeEdge](https://kubeedge.io/)        | 3/18/19        | 9/16/20             | [Incubating](https://github.com/cncf/toc/pull/461) |
+| [Buildpacks](https://buildpacks.io/)    | 10/3/18        | 11/18/20            | [Incubating](https://github.com/cncf/toc/pull/338) |
 
 
 ## Project Security Audits
