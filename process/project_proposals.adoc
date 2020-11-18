@@ -109,3 +109,4 @@ Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/ma
  .. who is currently known to be using the project? Are they using it in production and at what scale? (It may be hard to obtain accurate data for this, but any supporting evidence of usage is helpful)
  .. project logo in svg format (see https://github.com/cncf/artwork#cncf-related-logos-and-artwork for guidelines)
 
+Also, all project maintainers part of the project proposal are required to take an inclusive open source community course provided by the Linux Foundation: https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/
