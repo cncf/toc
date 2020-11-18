@@ -24,7 +24,7 @@ Helm,Brian Grant,5/15/18,6/1/18,Graduation,Yes,No - DCO,Yes,"Yes, email address"
 Harbor,"Quinton Hoole, Ken Owens",6/19/18,7/31/18,Graduation,Yes,No - DCO,No,No,No,No,CNCF
 OpenMetrics,"Alexis Richardson, Bryan Cantrill",6/20/17,8/10/18,Sandbox,No,No,No,No,No,No,N/A
 Cortex,"Ken Owens, Bryan Cantrill",6/5/18,9/20/18,Sandbox,No,No - DCO,Yes,No,No,Yes,CNCF
-Buildpacks,"Brian Grant, Alexis Richardson",8/21/18,10/3/18,Sandbox,No,No,No,No,No,No,https://buildpacks.slack.com/#/
+Buildpacks,"Brian Grant, Alexis Richardson",8/21/18,10/3/18,Incubation,No,No,No,No,No,No,https://buildpacks.slack.com/#/
 Falco,"Brian Grant, Quinton Hoole",7/17/18,10/10/18,Incubation,No,Yes,Yes,No,No,Yes,Kubernetes
 Dragonfly,"Jonathan Boulle, Benjamin Hindman",9/4/18,11/15/18,Incubation,No,No,No,"Yes, corporate email address",No,Yes -- personal email address for reporting,https://gitter.im/alibaba/Dragonfly
 Virtual Kubelet,"Alexis Richardson, Quinton Hoole",9/18/18,12/4/18,Sandbox,No,Yes,No,No,No,https://github.com/virtual-kubelet/virtual-kubelet#contributing,Kubernetes
