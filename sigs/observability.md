@@ -177,7 +177,7 @@ Examples include:
   > _SIGs may choose to spawn focussed and time-limited working groups to achieve some of their responsibilities (for example, to produce a specific educational white paper, or portfolio gap analysis report). Working groups should have a clearly documented charter, timeline (typically a few quarters at most), and set of deliverables. Once the timeline has elapsed, or the deliverables delivered, the working group dissolves, or is explicitly re-chartered._
 
 [ddg]: https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md
-[ddrt]: https://github.com/cncf/toc/blob/master/process/dd-review-template.m
+[ddrt]: https://github.com/cncf/toc/blob/master/process/dd-review-template.md
 [sigwg]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#responsibilities--empowerment-of-sigs
 
 ## Governance
