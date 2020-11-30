@@ -197,7 +197,7 @@ Examples include:
     - [Matthew Young][matthew young]
     - [Richard Hartmann][Richard Hartmann]
     - TBD
-  - Tech Leads ([sigtlprocess])
+  - Tech Leads ([definition][sigtldefinition], [TL election][sigtlprocess])
     - Bartłomiej Płotka
 
 [sigform]: https://github.com/cncf/toc/tree/master/sigs#sig-formation-process
@@ -211,3 +211,5 @@ Examples include:
   - Every 2nd Tuesday, 4pm - 5pm, UTC ([CNCF Calendar][cncfcal] for details)
 
 [cncfcal]: https://www.cncf.io/calendar
+[sigtlprocess]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections
+[sigtldefinition]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#tech-lead
