@@ -10,6 +10,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Andy Santosa, Ebay (asantosa@ebay.com)
 * Ara	Pulido, Datadog	(ara.pulido@datadoghq.com)
 * Ayrat Khayretdinov (ayratk@google.com)
+* Bartlomiej Plotka, Red Hat (bwplotka@gmail.com)
 * Bassam Tabbara, Upbound	(bassam@upbound.io)
 * Bob	Wise, Amazon Web Services	(bob@bobsplanet.com)
 * Bora Ozkan, Vizlib (bora.ozkan@vizlib.com)
@@ -69,6 +70,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Quinton Hoole, Huawei (quinton.hoole@huawei.com)
 * Randy	Abernethy, RX-M LLC (randy.abernethy@rx-m.com)
 * Ricardo Aravena, Rakuten (raravena80@gmail.com)
+* Richard "RichiH" Hartmann, Grafana Labs (richih+cncf@richih.org)
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
 * Sarah Allen, Independent (sarah@ultrasaurus.com)
 * Shida Qiu, BoCloud (shidaqiu2018@gmail.com)
@@ -89,4 +91,3 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Zou Nengren, CMCC (zounengren@cmss.chinamobile.com)
 * Jia Xuan, CMCC (jiaxuan@chinamobile.com)
 * Zhipeng Huang, Huawei (huangzhipeng@huawei.com)
-
