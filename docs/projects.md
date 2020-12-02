@@ -79,8 +79,6 @@
 [Pravega](https://github.com/pravega)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/pravega)|Sandbox
 [Kyverno](https://github.com/kyverno/kyverno/)|TOC Vote|[11/9/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/kyverno/kyverno/)|Sandbox
 
-
-
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
 :-----:|:-----:|:-----:|:-----:|:-----:
@@ -96,6 +94,7 @@
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/23/20](https://www.cncf.io/announcement/2020/06/23/cloud-native-computing-foundation-announces-harbor-graduation/)|Graduated
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[9/2/2020](https://www.cncf.io/announcements/2020/09/02/cloud-native-computing-foundation-announces-tikv-graduation/)|Graduated
 [Rook](https://github.com/tikv/tikv)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[10/7/2020](https://www.cncf.io/announcements/2020/10/07/cloud-native-computing-foundation-announces-rook-graduation/)|Graduated
+[etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[11/24/2020](https://www.cncf.io/announcements/2020/11/24/cloud-native-computing-foundation-announces-etcd-graduation/)|Graduated
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
