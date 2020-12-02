@@ -31,7 +31,7 @@
 [Falco](https://github.com/falcosecurity/falco)|Brian Grant, Quinton Hoole|[7/17/18](https://docs.google.com/presentation/d/17p5QBVooGMLAtX6Mn6d3NAFhRmFHE0cH-WI_-0MbOm8/edit?usp=sharing)|[10/10/18](https://falco.org/)|Incubating
 [Dragonfly](https://github.com/dragonflyoss/dragonfly)|Jonathan Boulle, Benjamin Hindman|[9/4/18](https://docs.google.com/presentation/d/1umu-iT5ZXq5XsMFmqmVeRe-tn2y7DeSoCebhrehi7fk/edit#slide=id.g41381b8fd7_0_199)|[11/15/18](https://github.com/oss/dragonfly)|Incubating
 [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet)|Alexis Richardson, Quinton Hoole|[9/18/18](https://github.com/cncf/toc/issues/154)|[12/4/18](https://github.com/virtual-kubelet/virtual-kubelet)|Sandbox
-[etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[12/11/18](https://www.cncf.io/blog/2018/12/11/cncf-to-host-etcd)|Incubating
+[etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[12/11/18](https://www.cncf.io/blog/2018/12/11/cncf-to-host-etcd)|Graduated
 [KubeEdge](https://github.com/kubeedge/kubeedge)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/205)|[3/18/19](https://github.com/kubeedge/kubeedge)|Incubating
 [Brigade](https://github.com/brigadecore)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/203)|[3/18/19](https://github.com/brigadecore)|Sandbox
 [Network Service Mesh](https://github.com/networkservicemesh/)|Joe Beda, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/212)|[4/11/19](https://github.com/networkservicemesh/)|Sandbox
@@ -79,8 +79,6 @@
 [Pravega](https://github.com/pravega)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/pravega)|Sandbox
 [Kyverno](https://github.com/kyverno/kyverno/)|TOC Vote|[11/9/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/kyverno/kyverno/)|Sandbox
 
-
-
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
 :-----:|:-----:|:-----:|:-----:|:-----:
@@ -96,6 +94,7 @@
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/23/20](https://www.cncf.io/announcement/2020/06/23/cloud-native-computing-foundation-announces-harbor-graduation/)|Graduated
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[9/2/2020](https://www.cncf.io/announcements/2020/09/02/cloud-native-computing-foundation-announces-tikv-graduation/)|Graduated
 [Rook](https://github.com/tikv/tikv)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[10/7/2020](https://www.cncf.io/announcements/2020/10/07/cloud-native-computing-foundation-announces-rook-graduation/)|Graduated
+[etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[11/24/2020](https://www.cncf.io/announcements/2020/11/24/cloud-native-computing-foundation-announces-etcd-graduation/)|Graduated
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
