@@ -110,3 +110,17 @@ Le tecnologie **cloud native** permettono alle organizzazioni di costruire ed es
 Queste tecniche permettono che sistemi debolmente accoppiati siano resilienti, gestibili e osservabili. Combinati con un sistema robusto di automazione, permettono agli ingegneri di eseguire frequentemente e con minimo sforzo i cambi ad alto impatto
 
 La **Cloud Native Computing Foundation** cerca di favorire l'adozione di questo paradigma incoraggiando e sostenendo un ecosistema di progetti open source e indipendenti dai vendor. Noi democratizziamo le pratiche allo stato dell'arte per rendere queste innovazioni accessibili a tutti.
+
+## Bahasa Indonesia:
+
+Teknologi *cloud native* memperlengkapi organisasi-organisasi untuk membangun dan menjalankan aplikasi-aplikasi yang dapat diskalakan di dalam lingkungan yang modern dan dinamis seperti
+layanan *cloud* publik, privat, maupun hibrida. Kontainer, jaringan layanan (*service mesh*), layanan mikro (*microservice*), infrastruktur
+yang tidak dapat diubah (*immutable*), dan API-API yang deklaratif merupakan contoh-contoh pendekatan ini.
+
+Teknik-teknik tersebut memungkinkan sistem-sistem yang terhubung secara longgar (*loosely coupled*) yang tahan banting, dapat dikelola, dan dapat dipantau. Dikombinasikan dengan
+automasi yang baik, mereka memungkinkan para rekayasawan (*engineer*) untuk membuat perubahan-perubahan yang berdampak besar secara sering dan dapat diprediksi dengan
+usaha yang minimal.
+
+**Cloud Native Computing Foundation** berusaha untuk mendorong adopsi paradigma ini dengan membina dan menopang sebuah
+ekosistem proyek-proyek yang bersifat sumber terbuka (*open source*) dan tidak memihak vendor tertentu. Kami mendemokratisasi pola-pola terkini agar
+inovasi-inovasi ini dapat diakses oleh semua orang.
