@@ -13,5 +13,6 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Joe Beda (1/29/2019 - 1/29/2020) 
 * Brian Grant (1/29/2016 - 3/17/2020)
 * Jeff Brewer (1/29/2019 - 9/1/2020)
+* Katie Gamanji (2/4/2020 - 11/2/2020)
 
 We thank these members for their service to the CNCF community.
