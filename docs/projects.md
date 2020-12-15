@@ -133,7 +133,11 @@
 [CoreDNS](https://coredns.io/)|[02/03/2018](https://coredns.io/assets/DNS-01-report.pdf)|[Announcement](https://github.com/coredns/coredns)
 [Jaeger](https://github.com/jaegertracing/jaeger)|[05/04/2019](https://github.com/jaegertracing/security-audits/blob/master/SECURITY_AUDIT_2019_05_04.pdf)| [Announcement](https://github.com/jaegertracing/security-audits)
 [Vitess](https://github.com/vitessio/vitess) | [02/01/2019](https://vitess.io/files/VIT-01-report.pdf) | [Announcement](https://vitess.io/blog/2019-03-12-vitess-security-audit/)
-[etcd](https://github.com/etcd-io/etcd) | [08/5/2020](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf) | [Announcement](hhttps://www.cncf.io/blog/2020/08/05/etcd-security-audit/)
+[TiKV](https://github.com/vitessio/vitess) | [03/05/2020](https://tikv.org/blog/TiKV-Security-Audit.pdf) | [Announcement](https://tikv.org/blog/tikv-pass-security-audit/)
+[linkerd (rustls)](https://github.com/ctz/rustls) | [06/05/2020](https://github.com/ctz/rustls/blob/main/audit/TLS-01-report.pdf) | [Announcement](https://jbp.io/2020/06/14/rustls-audit.html)
+[OPA (gatekeeper)](https://github.com/open-policy-agent/gatekeeper) | [03/10/2020](https://github.com/open-policy-agent/gatekeeper/blob/master/SECURITY_AUDIT.pdf) | [Announcement](https://github.com/open-policy-agent/gatekeeper/blob/master/SECURITY_AUDIT.pdf)
+[Prometheus (node_exporter)](https://github.com/prometheus/node_exporter) | [07/21/2020](https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf) | [Announcement](https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf)
+[etcd](https://github.com/etcd-io/etcd) | [08/5/2020](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf) | [Announcement](https://www.cncf.io/blog/2020/08/05/etcd-security-audit/)
 [FluentBit (fuzzing)](https://github.com/fluent/fluent-bit) | [12/15/2020](https://github.com/fluent/fluent-bit/blob/master/doc-reports/cncf-fuzzing-audit.pdf) | [Announcement](https://www.cncf.io/blog/2020/12/15/securing-open-source-fuzzing-integration-vulnerability-analysis-and-bug-fixing-of-fluent-bit/)
 
 ## Archived Projects
