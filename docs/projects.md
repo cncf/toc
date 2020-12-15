@@ -133,6 +133,8 @@
 [CoreDNS](https://coredns.io/)|[02/03/2018](https://coredns.io/assets/DNS-01-report.pdf)|[Announcement](https://github.com/coredns/coredns)
 [Jaeger](https://github.com/jaegertracing/jaeger)|[05/04/2019](https://github.com/jaegertracing/security-audits/blob/master/SECURITY_AUDIT_2019_05_04.pdf)| [Announcement](https://github.com/jaegertracing/security-audits)
 [Vitess](https://github.com/vitessio/vitess) | [02/01/2019](https://vitess.io/files/VIT-01-report.pdf) | [Announcement](https://vitess.io/blog/2019-03-12-vitess-security-audit/)
+[etcd](https://github.com/etcd-io/etcd) | [08/5/2020](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf) | [Announcement](hhttps://www.cncf.io/blog/2020/08/05/etcd-security-audit/)
+[FluentBit (fuzzing)](https://github.com/fluent/fluent-bit) | [12/15/2020](https://github.com/fluent/fluent-bit/blob/master/doc-reports/cncf-fuzzing-audit.pdf) | [Announcement](https://www.cncf.io/blog/2020/12/15/securing-open-source-fuzzing-integration-vulnerability-analysis-and-bug-fixing-of-fluent-bit/)
 
 ## Archived Projects
 
