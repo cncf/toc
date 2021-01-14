@@ -138,8 +138,8 @@
 [Prometheus (node_exporter)](https://github.com/prometheus/node_exporter) | [07/21/2020](https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf) | [Announcement](https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf) | Project Maintainer | [Cure53](https://cure53.de/)
 [FluentBit (fuzzing)](https://github.com/fluent/fluent-bit) | [12/15/2020](https://github.com/fluent/fluent-bit/blob/master/doc-reports/cncf-fuzzing-audit.pdf) | [Announcement](https://www.cncf.io/blog/2020/12/15/securing-open-source-fuzzing-integration-vulnerability-analysis-and-bug-fixing-of-fluent-bit/) | Project Maintainer | [Ada Logics](https://adalogics.com/)
 [Envoy](https://github.com/envoyproxy/envoy) | [02/27/18](https://github.com/envoyproxy/envoy/blob/master/docs/SECURITY_AUDIT.pdf) | [Announcement](https://www.cncf.io/news/2018/03/23/eweek-envoy-cncf-project-completes-security-audit-delivers-new-release/) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
-[TUF/Notary](https://github.com/theupdateframework/notary) | [08/07/18](https://cure53.de/pentest-report_tuf.pdf) | [Announcement](#) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
-[OPA](https://github.com/open-policy-agent/opa) | [08/30/18](https://cure53.de/pentest-report_opa.pdf) | [Announcement](#) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[TUF/Notary](https://github.com/theupdateframework/notary) | [08/07/18](https://cure53.de/pentest-report_tuf.pdf) | [Announcement] | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[OPA](https://github.com/open-policy-agent/opa) | [08/30/18](https://cure53.de/pentest-report_opa.pdf) | [Announcement] | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
 
 ## Archived Projects
 
