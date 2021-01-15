@@ -116,29 +116,30 @@
 
 ## Project Security Audits
 
-**Project**|**Audit**|**Announcement**|
-:------:|:--------:|:----------:|
-[Kubernetes](https://kubernetes.io/)|[8/06/2019](https://github.com/kubernetes/community/pull/3975)|[Announcement](https://www.cncf.io/blog/2019/08/06/open-sourcing-the-kubernetes-security-audit/)|
-[Helm](https://github.com/helm)|[11/04/2019](https://github.com/helm/community/blob/master/security-audit/HLM-01-report.pdf)|[Announcement](https://helm.sh/blog/2019-11-04-helm-security-audit-results/)|
-[gRPC](http://www.grpc.io/)|[10/29/2019](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|[Announcement](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|
-[etcd](https://github.com/etcd-io/etcd)| [8/5/2020](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf) | [Announcement](https://www.cncf.io/blog/2020/08/05/etcd-security-audit/) | 
-[rook](https://github.com/rook)| [12/1/2019](https://drive.google.com/file/d/1rOwrwYmBUpLUm6W5J5rhXvdVit818hWJ/view) | [Announcement](https://github.com/rook/rook/blob/master/SECURITY.md#security-audit) |
-[Fluentd](http://www.fluentd.org/) | [05/01/2019](https://cure53.de/pentest-report_fluent.pdf) | [Announcement](http://www.fluentd.org/)| 
-[Linkerd](https://linkerd.io/)| [06/01/2019](https://github.com/linkerd/linkerd2/blob/master/SECURITY_AUDIT.pdf) | [Announcement](https://github.com/linkerd/linkerd2/blob/master/SECURITY_AUDIT.pdf) | 
-[Harbor](https://github.com/goharbor) | [10/01/2019](https://github.com/goharbor/harbor/blob/master/docs/security/Harbor_Security_Audit_Oct2019.pdf) | [Announcement](https://github.com/goharbor/harbor#security-audit) | 
-[Falco](https://github.com/falcosecurity/falco) | [06-07-2019](https://github.com/falcosecurity/falco/blob/dev/audits/SECURITY_AUDIT_2019_07.pdf) | [Announcement](https://github.com/falcosecurity/falco/blob/dev/audits/SECURITY_AUDIT_2019_07.pdf) | 
-[TiKV](https://github.com/tikv/tikv) | [3/5/2020](https://tikv.org/blog/TiKV-Security-Audit.pdf) | [Announcement](https://tikv.org/blog/tikv-pass-security-audit/) | 
-[NATS](https://github.com/nats-io/gnatsd)|[02/06/2019](https://github.com/nats-io/nats-general/blob/master/reports/Cure53_NATS_Audit.pdf) | [Announcement](https://nats.io/blog/nats-security-update/)
-[Prometheus](https://prometheus.io/)|[06/11/2018](https://prometheus.io/assets/downloads/2018-06-11--cure53_security_audit.pdf) | [Announcement](https://prometheus.io/docs/operating/security/#external-audits)   
-[CoreDNS](https://coredns.io/)|[02/03/2018](https://coredns.io/assets/DNS-01-report.pdf)|[Announcement](https://github.com/coredns/coredns)
-[Jaeger](https://github.com/jaegertracing/jaeger)|[05/04/2019](https://github.com/jaegertracing/security-audits/blob/master/SECURITY_AUDIT_2019_05_04.pdf)| [Announcement](https://github.com/jaegertracing/security-audits)
-[Vitess](https://github.com/vitessio/vitess) | [02/01/2019](https://vitess.io/files/VIT-01-report.pdf) | [Announcement](https://vitess.io/blog/2019-03-12-vitess-security-audit/)
-[TiKV](https://github.com/vitessio/vitess) | [03/05/2020](https://tikv.org/blog/TiKV-Security-Audit.pdf) | [Announcement](https://tikv.org/blog/tikv-pass-security-audit/)
-[linkerd (rustls)](https://github.com/ctz/rustls) | [06/05/2020](https://github.com/ctz/rustls/blob/main/audit/TLS-01-report.pdf) | [Announcement](https://jbp.io/2020/06/14/rustls-audit.html)
-[OPA (gatekeeper)](https://github.com/open-policy-agent/gatekeeper) | [03/10/2020](https://github.com/open-policy-agent/gatekeeper/blob/master/SECURITY_AUDIT.pdf) | [Announcement](https://github.com/open-policy-agent/gatekeeper/blob/master/SECURITY_AUDIT.pdf)
-[Prometheus (node_exporter)](https://github.com/prometheus/node_exporter) | [07/21/2020](https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf) | [Announcement](https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf)
-[etcd](https://github.com/etcd-io/etcd) | [08/5/2020](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf) | [Announcement](https://www.cncf.io/blog/2020/08/05/etcd-security-audit/)
-[FluentBit (fuzzing)](https://github.com/fluent/fluent-bit) | [12/15/2020](https://github.com/fluent/fluent-bit/blob/master/doc-reports/cncf-fuzzing-audit.pdf) | [Announcement](https://www.cncf.io/blog/2020/12/15/securing-open-source-fuzzing-integration-vulnerability-analysis-and-bug-fixing-of-fluent-bit/)
+**Project**|**Audit Date and Report**|**Announcement**|**Directed by**|**Audit Vendor**
+:------:|:--------:|:----------:|:------:|:--------:|
+[Kubernetes](https://kubernetes.io/)|[8/06/2019](https://github.com/kubernetes/community/tree/master/sig-security/security-audit-2019/findings)|[Announcement](https://www.cncf.io/blog/2019/08/06/open-sourcing-the-kubernetes-security-audit/)| CNCF (Security Audit WG) | [Trail of Bits](https://www.trailofbits.com/) & [Atredis Partners](https://www.atredis.com/)
+[Helm](https://github.com/helm)|[11/04/2019](https://github.com/helm/community/blob/master/security-audit/HLM-01-report.pdf)|[Announcement](https://helm.sh/blog/2019-11-04-helm-security-audit-results/)| CNCF (Security Audit WG) | [Cure53](https://cure53.de/) & [Trail of Bits](https://www.trailofbits.com/)
+[gRPC](http://www.grpc.io/)|[10/29/2019](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|[Announcement](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)| CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[etcd](https://github.com/etcd-io/etcd)| [8/5/2020](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf) | [Announcement](https://www.cncf.io/blog/2020/08/05/etcd-security-audit/) | CNCF (Security Audit WG) | [Trail of Bits](https://www.trailofbits.com/)
+[rook](https://github.com/rook)| [12/1/2019](https://drive.google.com/file/d/1rOwrwYmBUpLUm6W5J5rhXvdVit818hWJ/view) | [Announcement](https://github.com/rook/rook/blob/master/SECURITY.md#security-audit) | Project Maintainer | [Trail of Bits](https://www.trailofbits.com/)
+[Fluentd](http://www.fluentd.org/) | [05/01/2019](https://cure53.de/pentest-report_fluent.pdf) | [Announcement](http://www.fluentd.org/)| CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[Linkerd](https://linkerd.io/)| [06/01/2019](https://github.com/linkerd/linkerd2/blob/master/SECURITY_AUDIT.pdf) | [Announcement](https://github.com/linkerd/linkerd2/blob/master/SECURITY_AUDIT.pdf) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[Harbor](https://github.com/goharbor) | [10/01/2019](https://github.com/goharbor/harbor/blob/master/docs/security/Harbor_Security_Audit_Oct2019.pdf) | [Announcement](https://github.com/goharbor/harbor#security-audit) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[Falco](https://github.com/falcosecurity/falco) | [06-07-2019](https://github.com/falcosecurity/falco/blob/dev/audits/SECURITY_AUDIT_2019_07.pdf) | [Announcement](https://github.com/falcosecurity/falco/blob/dev/audits/SECURITY_AUDIT_2019_07.pdf) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[TiKV](https://github.com/tikv/tikv) | [3/5/2020](https://tikv.org/blog/TiKV-Security-Audit.pdf) | [Announcement](https://tikv.org/blog/tikv-pass-security-audit/) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[NATS](https://github.com/nats-io/gnatsd)|[02/06/2019](https://github.com/nats-io/nats-general/blob/master/reports/Cure53_NATS_Audit.pdf) | [Announcement](https://nats.io/blog/nats-security-update/) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[Prometheus](https://prometheus.io/)|[06/11/2018](https://prometheus.io/assets/downloads/2018-06-11--cure53_security_audit.pdf) | [Announcement](https://prometheus.io/docs/operating/security/#external-audits) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[CoreDNS](https://coredns.io/)|[02/03/2018](https://coredns.io/assets/DNS-01-report.pdf)|[Announcement](https://github.com/coredns/coredns) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[Jaeger](https://github.com/jaegertracing/jaeger)|[05/04/2019](https://github.com/jaegertracing/security-audits/blob/master/SECURITY_AUDIT_2019_05_04.pdf)| [Announcement](https://github.com/jaegertracing/security-audits) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[Vitess](https://github.com/vitessio/vitess) | [02/01/2019](https://vitess.io/files/VIT-01-report.pdf) | [Announcement](https://vitess.io/blog/2019-03-12-vitess-security-audit/) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[linkerd (rustls)](https://github.com/ctz/rustls) | [06/05/2020](https://github.com/ctz/rustls/blob/main/audit/TLS-01-report.pdf) | [Announcement](https://jbp.io/2020/06/14/rustls-audit.html) | CNCF (Security Audit WG) + Buoyant | [Cure53](https://cure53.de/)
+[OPA (gatekeeper)](https://github.com/open-policy-agent/gatekeeper) | [03/10/2020](https://github.com/open-policy-agent/gatekeeper/blob/master/SECURITY_AUDIT.pdf) | [Announcement](https://github.com/open-policy-agent/gatekeeper/blob/master/SECURITY_AUDIT.pdf) | CNCF (Security Audit WG) | [Trail of Bits](https://www.trailofbits.com/)
+[Prometheus (node_exporter)](https://github.com/prometheus/node_exporter) | [07/21/2020](https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf) | [Announcement](https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf) | Project Maintainer | [Cure53](https://cure53.de/)
+[FluentBit (fuzzing)](https://github.com/fluent/fluent-bit) | [12/15/2020](https://github.com/fluent/fluent-bit/blob/master/doc-reports/cncf-fuzzing-audit.pdf) | [Announcement](https://www.cncf.io/blog/2020/12/15/securing-open-source-fuzzing-integration-vulnerability-analysis-and-bug-fixing-of-fluent-bit/) | Project Maintainer | [Ada Logics](https://adalogics.com/)
+[Envoy](https://github.com/envoyproxy/envoy) | [02/27/18](https://github.com/envoyproxy/envoy/blob/master/docs/SECURITY_AUDIT.pdf) | [Announcement](https://www.cncf.io/news/2018/03/23/eweek-envoy-cncf-project-completes-security-audit-delivers-new-release/) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[TUF/Notary](https://github.com/theupdateframework/notary) | [08/07/18](https://cure53.de/pentest-report_tuf.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[OPA](https://github.com/open-policy-agent/opa) | [08/30/18](https://cure53.de/pentest-report_opa.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
 
 ## Archived Projects
 
