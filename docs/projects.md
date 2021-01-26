@@ -78,6 +78,13 @@
 [Tinkerbell](https://github.com/tinkerbell)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/tinkerbell)|Sandbox
 [Pravega](https://github.com/pravega)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/pravega)|Sandbox
 [Kyverno](https://github.com/kyverno/kyverno/)|TOC Vote|[11/9/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/kyverno/kyverno/)|Sandbox
+[GitOps Working Group](https://github.com/gitops-working-group/gitops-working-group)|TOC Vote|[11/20/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[1/26/2021](https://github.com/gitops-working-group/gitops-working-group)|Sandbox
+[Piraeus-Datastore](https://github.com/piraeusdatastore)|TOC Vote|[11/23/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[1/26/2021](https://github.com/piraeusdatastore)|Sandbox
+[Curiefense](https://github.com/curiefense/curiefense)|TOC Vote|[1/7/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[1/26/2021](https://github.com/curiefense/curiefense)|Sandbox
+[Athenz](https://github.com/yahoo/athenz)|TOC Vote|[1/12/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[1/26/2021](https://github.com/yahoo/athenz)|Sandbox
+[Kube-OVN](https://github.com/alauda/kube-ovn)|TOC Vote|[1/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[1/26/2021](https://github.com/alauda/kube-ovn)|Sandbox
+[k8dash](https://github.com/indeedeng/k8dash)|TOC Vote|[1/25/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[1/26/2021](https://github.com/indeedeng/k8dash)|Sandbox
+[Distribution](https://github.com/docker/distribution)|TOC Vote|[1/26/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[1/26/2021](https://github.com/docker/distribution)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
