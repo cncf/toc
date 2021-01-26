@@ -16,7 +16,7 @@ From the project side, please ensure that you:
 - [ ] Ensure your project meets the CNCF IP Policy: https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy
 - [ ] Has your project adopted open governance already? see http://opengovernance.dev
 
-Formal onboarding:
+Things that CNCF will need from the project: 
 - [ ] Owners file: Please add a link to your owners file to this issue, this is used to be able to create your maintainers mailing list. 
 - [ ] Create maintainer list + added to aggregated https://maintainers.cncf.io list
 - [ ] Domain: transfer domain to CNCF/LF (ITx)
@@ -25,6 +25,8 @@ Formal onboarding:
 - [ ] Artwork: Ensure logos present on https://github.com/cncf/artwork
 - [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/copyright-notices.md#copyright-notices) followed
 - [ ] Website: Analytics transferred
+
+Things that the CNCF will do or help the project to do: 
 - [ ] Devstats: add to devstats https://devstats.cncf.io/
 - [ ] Marketing: update relevant intro + slide decks
 - [ ] Trail Map: update CNCF trail map if relevant (incubating projects and above)
