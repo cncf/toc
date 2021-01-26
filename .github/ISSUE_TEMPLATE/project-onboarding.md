@@ -14,6 +14,7 @@ From the project side, please ensure that you:
 - [ ] Understand the project proposal process and reqs: https://github.com/cncf/toc/blob/master/process/project_proposals.adoc#introduction
 - [ ] Understand the services available for your project at CNCF https://www.cncf.io/services-for-projects/
 - [ ] Ensure your project meets the CNCF IP Policy: https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy
+- [ ] Review the online programs guidelines: https://github.com/cncf/foundation/blob/master/online-programs-guidelines.md
 - [ ] Has your project adopted open governance already? see http://opengovernance.dev
 
 Things that CNCF will need from the project: 
