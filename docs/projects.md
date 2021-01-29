@@ -19,7 +19,7 @@
 [Vitess](https://github.com/vitessio/vitess)|Brian Grant|[4/19/17](https://goo.gl/6nmyDn)|[2/5/18](https://www.cncf.io/blog/2018/02/05/cncf-host-vitess/)|Graduated
 [NATS](https://github.com/nats-io/gnatsd)|Alexis Richardson|[9/21/16](https://goo.gl/6nmyDn)|[3/15/18](https://www.cncf.io/blog/2018/03/15/cncf-to-host-nats/)|Incubating
 [SPIFFE](https://github.com/spiffe)|Brian Grant, Sam Lambert, Ken Owens|[11/7/17](https://goo.gl/6nmyDn)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-the-spiffe-project/)|Incubating
-[OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-open-policy-agent-opa/)|Incubating
+[OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[3/29/18](https://www.cncf.io/blog/2018/03/29/cncf-to-host-open-policy-agent-opa/)|Graduated
 [CloudEvents](https://github.com/cloudevents)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|[5/22/18](https://www.cncf.io/blog/2018/05/22/cloudevents-in-the-sandbox/)|Incubating
 [Telepresence](https://github.com/telepresenceio)|Alexis Richardson, Camille Fournier|[4/17/18](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)|[5/22/18](https://www.cncf.io/blog/2018/05/22/telepresence-in-the-sandbox/)|Sandbox
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/1/18](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Graduated
@@ -102,6 +102,7 @@
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[9/2/2020](https://www.cncf.io/announcements/2020/09/02/cloud-native-computing-foundation-announces-tikv-graduation/)|Graduated
 [Rook](https://github.com/tikv/tikv)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[10/7/2020](https://www.cncf.io/announcements/2020/10/07/cloud-native-computing-foundation-announces-rook-graduation/)|Graduated
 [etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[11/24/2020](https://www.cncf.io/announcements/2020/11/24/cloud-native-computing-foundation-announces-etcd-graduation/)|Graduated
+[OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|1/29/2020|Graduated
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
