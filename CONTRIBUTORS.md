@@ -77,6 +77,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Steve Dake, IBM (sdake@ibm.com)
 * Swamy D K V, Cisco (swamydkv@gmail.com)
 * Tammy Butow, Gremlin (tammy@gremlin.com)
+* Thomas Schuetz, Dynatrace (thomas.schuetz@dynatrace.com)
 * Timothy Chen, Hyperpilot (tim@hyperpilot.io)
 * Vasu Chandrasekhara, SAP SE (vasu.chandrasekhara@sap.com)
 * Xiang Li, Alibaba (x.li@alibaba.com)
