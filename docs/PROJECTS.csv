@@ -18,7 +18,7 @@ Vitess,Brian Grant,4/19/17,2/5/18,Graduation,Yes,No - DCO,Yes,Email to maintaine
 NATS,Alexis Richardson,9/21/16,3/15/18,Incubation,Yes,No,Yes,No,Yes,Yes,https://natsio.slack.com/#/,https://github.com/nats-io
 SPIFFE,"Brian Grant, Sam Lambert, Ken Owens",11/7/17,3/29/18,Incubation,No,No - DCO,Yes,No,No,Yes,https://spiffe.slack.com/#/,https://github.com/spiffe
 OPA,"Brian Grant, Ken Owens",11/14/17,3/29/18,Incubation,Yes,No - DCO,Yes,"Yes, email address","Trail of Bits,Cure53",Yes,https://openpolicyagent.slack.com/#/,https://github.com/open-policy-agent
-CloudEvents,"Ken Owens, Brian Grant",5/15/18,5/15/18,Incubation,No,No - DCO ,Yes,No,No,No,N/A,https://github.com/cloudevents
+CloudEvents,"Ken Owens, Brian Grant",5/15/18,5/15/18,Graduation,No,No - DCO ,Yes,No,No,No,N/A,https://github.com/cloudevents
 Telepresence,"Alexis Richardson, Camille Fournier",4/17/18,5/22/18,Sandbox,No,No,Yes,No,No,No,https://datawire-oss.slack.com/,https://github.com/telepresenceio
 Helm,Brian Grant,5/15/18,6/1/18,Graduation,Yes,No - DCO,Yes,"Yes, email address",No,Yes,Kubernetes,https://github.com/helm
 Harbor,"Quinton Hoole, Ken Owens",6/19/18,7/31/18,Graduation,Yes,No - DCO,No,No,No,No,CNCF,https://github.com/goharbor
