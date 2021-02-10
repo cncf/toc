@@ -69,6 +69,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Quinton Hoole, Huawei (quinton.hoole@huawei.com)
 * Randy	Abernethy, RX-M LLC (randy.abernethy@rx-m.com)
 * Ricardo Aravena, Rakuten (raravena80@gmail.com)
+* Renyu Zhang, QingCloud (jeffzhang@yunify.com)
 * Rick Spencer, Bitnami	(rick@bitnamni.com)
 * Sarah Allen, Independent (sarah@ultrasaurus.com)
 * Shida Qiu, BoCloud (shidaqiu2018@gmail.com)
