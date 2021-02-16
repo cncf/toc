@@ -5,7 +5,7 @@
 🚧 TODO
 
 - What is KEDA
-- Our journey towards CNCF
+- Our journey towards CNCF and why
 - Link to proposal
 
 ## Develoment metrics
@@ -53,15 +53,28 @@ As of KEDA 2.0 we allow users to practically scale anything (as long as the CRD 
 
 🚧 TODO
 
+- Add more scalers
+- Make it easier to use KEDA - Improve documentation
+- Improve release process  
+
 > What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
 
 🚧 TODO
 
+- Grow ecosystem (scalers, secret providers, integrations)
+- Adoption & community (incl who's using KEDA)
+- Public roadmap, "no concrete goals" but HTTP is a main focus area here
+- Aiming to come up with a more frequent release cadance (?)
+
 ## CNCF membership
 
 > How can the CNCF help you achieve your upcoming goals?
-> 
-🚧 TODO
+
+CNCF allows us to focus on our core business and helps us manage the project itself.
+
+We've consulted the CNCF for legal questions, creative services to design a new website for use, recommendations on tooling and more.
+
+This is a tremendous help for us and supports us in making autoscaling simpler.
 
 ### Incubation
 
