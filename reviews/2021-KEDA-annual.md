@@ -49,7 +49,8 @@ When we initially joined KEDA, we provided around ~15 scalers to our users which
 One of our focus points has been in **growing the community** by getting people to our community standups, listing who is using KEDA provide, and give it a [central place in our documentation](https://keda.sh/community/). This allows people who are considering to use KEDA to get trust in the technology and start using it themselves or learn how they are using it.
 
 We have made it simple for people to [become listed on our website](https://github.com/kedacore/keda#become-a-listed-keda-user). Today, we are aware of the following users:
-![image](https://user-images.githubusercontent.com/4345663/108028108-93c50780-702b-11eb-8f2b-69a4b87af968.png)
+
+![EukwAwQXUAMebyQ](https://user-images.githubusercontent.com/4345663/108509240-4790f600-72bd-11eb-9322-58c72f066b17.jpg)
 
 As part of this effort, we are working on a blog post with Alibaba Cloud to highlight how they are using KEDA and how it helps them autoscale applications on [Alibaba Cloud’s Enterprise Distributed Application Service (EDAS)](https://www.alibabacloud.com/product/edas).
 
