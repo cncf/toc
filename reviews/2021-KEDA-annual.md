@@ -67,22 +67,40 @@ Unfortunately, it is hard to measure adoption since Docker Hub only provides lim
 
 > How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)
 
-🚧 TODO
+That said, our main focus was on adding more scalers, making it easier to use KEDA and improve the documentation as well as improve our release process.
 
-- Add more scalers
-- Make it easier to use KEDA - Improve documentation
-- Improve release process  
+We have managed to finalize all of them:
+
+- Our release process is mainly automated and fully documented on [GitHub](https://github.com/kedacore/keda/blob/main/RELEASE-PROCESS.MD)
+  - We have different release captains every release to dogfood it and automate where we can
+- We've made it easier to use KEDA on a few fronts:
+  - Our website is revamped (thanks to CNCF) which is now fully version, more usable, provides search, etc.
+  - Contributing to the docs is simpler and are using the "Every change is just a PR away", along with PR previews of the changes
+  - We have introduced more consistent scaler documentation and configuration so that it's more straight-forward
+  - We have grown our samples catalog and are doing more talks on how to use KEDA
+- We are constantly adding scaler to every new release, either built by our core team or contributed by the community.
+Here is an overview of the growth of our scaler catalog:
+
+![Scaler Growth](https://user-images.githubusercontent.com/4345663/108472973-b5252e00-728d-11eb-8d06-3d7ae07e3b77.png)
 
 > What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
 
-🚧 TODO
+We are running our project in a fairly open & flexible model so that we can react to the needs of our community, but we have recently introduced a [high-level roadmap](https://github.com/kedacore/keda/projects/3) on where we are going.
 
-- Grow ecosystem (scalers, secret providers, integrations)
-- Adoption & community (incl who's using KEDA)
-    - https://github.com/kedacore/governance/issues/16
-    - ![image](https://user-images.githubusercontent.com/4345663/108208162-f51ed080-7128-11eb-8bbe-d05a8bc35b5e.png)
-- Public roadmap, "no concrete goals" but HTTP is a main focus area here
-- Aiming to come up with a more frequent release cadance (?)
+Our major investment area is **HTTP-based autoscaling**. There is a high demand for this and a big gap in our offering, so we are currently building an [experimental add-on](https://github.com/kedacore/http-add-on) to have an early approach and see how we need to evolve.
+
+As part of this effort, we want to rely on open specification such as [Service Mesh Interface spec](https://smi-spec.io/) which is exactly what we need, but it does not cover Ingress nor Service-to-Service communication. Because of that, we are [proposing to incorporate this in the new Gateway API](https://github.com/kubernetes-sigs/gateway-api/issues/554) from the get-go so that other products can easily build vendor-agnostic integrations.
+
+That said, this seems to be a gap where we should consider building a Traffic Metrics API spec for all things HTTP/gRPC in Kubernetes which covers service mesh, service-to-service & ingress/gateway which is what we'll further contribute to, where possible.
+
+Next to HTTP-based autoscaling, we will continue to focus on making KEDA more powerful by:
+
+- Adding new scalers to our catalog
+- Making the current ones more powerful (more authentication options, etc.)
+- Support more secret providers for our trigger authentication (ie. Azure Key Vault, etc.)
+- Integrate with other projects and are considering to provide an overview to our users ([GitHub](https://github.com/kedacore/governance/issues/14))
+
+Last but not least, we will keep on focussing on adoption and keep on growing our community around KEDA.
 
 ## CNCF membership
 
