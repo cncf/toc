@@ -2,19 +2,27 @@
 
 ## Background
 
-🚧 TODO
+**Kubernetes Event-Driven Autoscaling (KEDA)** is a single-purpose event-driven autoscaler for Kubernetes that can be easily added to your Kubernetes cluster to scale your applications. It aims to make application auto-scaling dead-simple and optimize for cost by supporting scale-to-zero.
 
-- What is KEDA
-- Our journey towards CNCF and why
-- Link to proposal
+KEDA takes away all the scaling infrastructure and manages everything for you, allowing you to scale on 30+ systems or extend it with your own scalers (pull-based, push-based or REST API-driven).
+
+Users only need to create a `ScaledObject` ([docs](https://keda.sh/docs/latest/concepts/scaling-deployments/)) or `ScaledJob` ([docs](https://keda.sh/docs/latest/concepts/scaling-jobs/)) that defines what you want to scale and what triggers you want to use; KEDA will handle all the rest!
+
+![Picture1](https://user-images.githubusercontent.com/4345663/108470255-f9163400-7289-11eb-98fc-6a5f522202e0.png)
+
+It allows you to literally scale anything; even if it’s a CRD from another product you are using, as long as it implements `/scale` subresource. This allows us to build an ecosystem of products to integrate with and make them more powerful and successful.
+
+In order to provide production-grade security, we've introduced `TriggerAuthentication` and `ClusterTriggerAuthentication` ([docs](https://keda.sh/docs/latest/concepts/authentication/)) allowing users to move authentication information out of their application into a seperate CRD. This not only allows for re-use, but operators can manage the authentication seperately in a centralized place and avoid applications to run with higher priviledges than they need.
+
+Although KEDA was originally started by Microsoft and Red Hat in 2019 ([announcement](https://cloudblogs.microsoft.com/opensource/2019/05/06/announcing-keda-kubernetes-event-driven-autoscaling-containers/)), the goal was to fully platform & vendor agnostic allowing us to support any major cloud vendor and products. Because of that, we've decided that it's best to donate KEDA to an open-source foundation where CNCF was the perfect fit since it aligns with the ecosystem and mindset that we have.
+
+KEDA was proposed and accepted as a sandbox project early 2020. ([GitHub](https://github.com/cncf/toc/issues/335)).
 
 ## Develoment metrics
 
 > Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity. Please feel free to add commentary to add colour to the numbers and graphs we will see on devstats.
 
-🚧 TODO
-
-https://keda.devstats.cncf.io/d/8/dashboards?orgId=1&refresh=15m
+DevStats can be found [here](https://keda.devstats.cncf.io/d/8/dashboards?orgId=1&refresh=15m).
 
 ## Maintainers
 
@@ -47,6 +55,14 @@ As part of this effort, we are working on a blog post with Alibaba Cloud to high
 
 As of KEDA 2.0 we allow users to practically scale anything (as long as the CRD supports `/scale` subresource), so we integrate with a variety of other projects. We are currently [considering to providing a central place](https://github.com/kedacore/governance/issues/14) for users to learn about all these various integrations so that they can get the most out of the technologies.
 
+In terms of our artifacts on [Docker Hub](https://hub.docker.com/r/kedacore/keda), we have passed 6.5M downloads of our operator and have a steady growth.
+
+Unfortunately, it is hard to measure adoption since Docker Hub only provides limited metrics, so we've built our own dashboard which scrapes the Docker Hub API to understand the growth over time:
+
+![image](https://user-images.githubusercontent.com/4345663/108208162-f51ed080-7128-11eb-8bbe-d05a8bc35b5e.png)
+
+> 💡 Because of the limited metrics, we are considering to move to GitHub Container Registry which gives a lot more insights. ([GitHub](https://github.com/kedacore/governance/issues/16))
+
 ## Project goals
 
 > How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)
@@ -63,6 +79,8 @@ As of KEDA 2.0 we allow users to practically scale anything (as long as the CRD 
 
 - Grow ecosystem (scalers, secret providers, integrations)
 - Adoption & community (incl who's using KEDA)
+    - https://github.com/kedacore/governance/issues/16
+    - ![image](https://user-images.githubusercontent.com/4345663/108208162-f51ed080-7128-11eb-8bbe-d05a8bc35b5e.png)
 - Public roadmap, "no concrete goals" but HTTP is a main focus area here
 - Aiming to come up with a more frequent release cadance (?)
 
