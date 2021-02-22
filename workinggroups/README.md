@@ -6,7 +6,7 @@ The purpose of working groups are to study and report on a particular question a
 
 ## Process
 
-If you would like to submit a working group proposal, please submit a pull request to the working groups folder. As an example, you can see the other working group proposals here: https://github.com/cncf/toc/tree/master/workinggroups
+If you would like to submit a working group proposal, please submit a pull request to the working groups folder. As an example, you can see the other working group proposals here: https://github.com/cncf/toc/tree/main/workinggroups
 
 You will also have to present to the CNCF TOC and wider community before your WG proposal will be voted upon by the TOC and community. You can request a presentation by filing an issue here: https://github.com/cncf/toc/issues
 

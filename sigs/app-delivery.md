@@ -31,7 +31,7 @@ The charter describes the operations of the CNCF SIG Application Delivery. The A
 
 ## **Mission**
 
-Consistent with the [CNCF SIG definition](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md), the mission of CNCF SIG App Delivery is:
+Consistent with the [CNCF SIG definition](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md), the mission of CNCF SIG App Delivery is:
 
 * To collaborate on areas related to developing, distributing, deploying, managing and operating secure cloud-native applications with the target of delivering application in manner of cloud native.
 * To develop informational resources including guides, tutorials and white papers to give the community an understanding of best practices, trade-offs, and value-adds regarding to application delivery.
@@ -121,7 +121,7 @@ Lifecycle management of applications is a broad and mainstream topic of Cloud Na
 
 * TOC Liaisons: [Michelle Noorali](https://github.com/michelleN), Katie Gamanji
 * SIG chairs: [Alois Reitbauer](https://github.com/AloisReitbauer), [Bryan Liles]((https://github.com/bryanl)), [Lei Zhang (Harry)](https://github.com/resouer)
-* See [roles](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-chairs) for more information
+* See [roles](https://github.com/cncf/sig-security/blob/main/governance/roles.md#role-of-chairs) for more information
 * Slack channel: #sig-app-delivery in CNCF workspace - [https://cloud-native.slack.com/messages/CL3SL0CP5](https://cloud-native.slack.com/messages/CL3SL0CP5) 
 
 ## **Contact**

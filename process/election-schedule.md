@@ -1,6 +1,6 @@
 **TOC Election Schedule v1.2**
 
-This page lays out the election schedule for the CNCF’s Technical Oversight Committee (TOC) to implement the requirements of the CNCF [charter](https://github.com/cncf/foundation/blob/master/charter.md), including:
+This page lays out the election schedule for the CNCF’s Technical Oversight Committee (TOC) to implement the requirements of the CNCF [charter](https://github.com/cncf/foundation/blob/main/charter.md), including:
 
 >6(b)(iii) The Governing Board shall elect six (6) TOC members, the End User TAB shall elect two (2) TOC members, the non-sandbox project maintainers shall elect one (1) TOC member, and the TOC members shall elect an additional two (2) TOC members. Each group is defined as a Selecting Group.
 

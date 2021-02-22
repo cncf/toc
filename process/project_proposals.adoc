@@ -26,7 +26,7 @@ image::sandbox-process.png[Sandbox process]
    * CNCF staff handle governance / legal issues
    * This can happen after TOC Sandbox Sponsors step forward
 
-See the https://github.com/cncf/toc/blob/master/process/sandbox.md[Sandbox guidelines] for the definition of and motivation behind the CNCF Sandbox.
+See the https://github.com/cncf/toc/blob/main/process/sandbox.md[Sandbox guidelines] for the definition of and motivation behind the CNCF Sandbox.
 
 === Incubation process
 
@@ -39,17 +39,17 @@ image::incubation-process.png[Incubation process]
 . *TOC Triage* _2 weeks for a straightforward referral to a SIG; decline or defer could require more discussion_
    * Performed by any TOC member
    * Lazy TOC consensus before declining outright or deferring assessment at this time
-   * Picks appropriate https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md[CNCF SIG] to perform assessment
+   * Picks appropriate https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md[CNCF SIG] to perform assessment
 . *SIG Assessment* _1-2 months_
    * Project presents to SIG
    * Lightweight - this is pre-DD
-   * Confirms that project accepts the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubation-stage[Incubation requirements]
+   * Confirms that project accepts the https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc#incubation-stage[Incubation requirements]
    * SIG makes recommendation to TOC: Sandbox / Incubation / Decline 
    * Note that this step is still meant to be a lightweight, pre-DD process
 . *TOC Incubation Sponsor*
    * If a TOC member steps forward as an Incubation Sponsor, due diligence commences
 . *Due Diligence* _2-3 months_
-   * TOC Incubation Sponsor drives due diligence (see the https://github.com/cncf/toc/blob/master/process/dd-review-template.md[template] and https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md[guidelines]).
+   * TOC Incubation Sponsor drives due diligence (see the https://github.com/cncf/toc/blob/main/process/dd-review-template.md[template] and https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md[guidelines]).
    * TOC Incubation Sponsor can delegate DD work to CNCF SIGs and/or other TOC members.
    * TOC Incubation Sponsor can ask project maintainers to complete the DD template as a first pass.
    * CNCF staff do governance and legal DD.
@@ -59,7 +59,7 @@ image::incubation-process.png[Incubation process]
    * DD documents are available for public review and comment (GitHub, TOC mailing list, TOC public meetings)
    * TOC Incubation sponsor decides when to call TOC vote, allowing at least two weeks for public comment before calling vote
 . *TOC vote* _up to 6 weeks_
-   * TOC members assess whether project meets the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage[Incubation criteria]
+   * TOC members assess whether project meets the https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc#incubating-stage[Incubation criteria]
    * Projects get accepted to incubation via a 2/3 supermajority vote of the TOC.
    * If the vote is not conclusive after 6 weeks, TOC chair may extend vote, or conclude that silence = abstain
 
@@ -67,14 +67,14 @@ image::incubation-process.png[Incubation process]
 
 . *Submit Graduation Proposal Template*
    * Project fills out and submits the link:graduation-proposal-template.md[graduation proposal template] in a pull request in the https://github.com/cncf/toc[cncf/toc GitHub repo].
-   * The file containing the proposal should be located in https://github.com/cncf/toc/tree/master/proposals/graduation[the graduation proposals directory].
+   * The file containing the proposal should be located in https://github.com/cncf/toc/tree/main/proposals/graduation[the graduation proposals directory].
    * The proposal addresses how the project has grown since incubation and any concerns from incubation DD in addition to the standard graduation requirements.
 . *TOC member kicks off two week period of time for pulic comment on the TOC mailing list*
    * The email should contain a link to the proposal pull request.
    * All SIGs, end users, TOC members, and community members are welcome to comment at this time on the mailing list.
    * Historically, projects have done a TOC presentation as part of the graduation process. The TOC has gotten rid of the presentation requirement. Instead, if the TOC wants to have a deeper discussion about the project with the maintainers, they may schedule an ad hoc meeting to do so before the vote.
 . *TOC vote*
-   * TOC members assess whether project meets the https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage[Graduation criteria]
+   * TOC members assess whether project meets the https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc#graduation-stage[Graduation criteria]
    * Projects must have a 2/3 supermajority vote of the TOC to graduate
 
 === Notes
@@ -87,14 +87,14 @@ image::incubation-process.png[Incubation process]
 
 === Project Proposal Requirements
 
-Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/master/proposals/incubation/kubernetes.adoc[example]) can be written in https://www.markdownguide.org[Markdown], http://asciidoc.org[AsciiDoc], or http://docutils.sourceforge.net/rst.html[reStructuredText] and must provide the following information to the best of your ability:
+Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/main/proposals/incubation/kubernetes.adoc[example]) can be written in https://www.markdownguide.org[Markdown], http://asciidoc.org[AsciiDoc], or http://docutils.sourceforge.net/rst.html[reStructuredText] and must provide the following information to the best of your ability:
 
  .. name of project (must be unique within CNCF)
  .. project description (what it does, why it is valuable, origin and history)
  .. statement on alignment with CNCF charter mission
  .. comparison with similar projects (inside or outside the CNCF), including what differentiates this project
  .. sponsor from TOC (sponsor helps mentor projects)
- .. preferred maturity level (see https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc[CNCF Graduation Criteria])
+ .. preferred maturity level (see https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc[CNCF Graduation Criteria])
  .. license (charter dictates http://www.apache.org/licenses/LICENSE-2.0[Apache 2] by default)
  .. source control (GitHub by default)
  .. external dependencies (including licenses)

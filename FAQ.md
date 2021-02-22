@@ -5,31 +5,31 @@ A FAQ geared towards CNCF TOC and project issues.
 ## How do I join the TOC?
 
 The TOC is a body elected by a variety of constituents. There is a public election schedule:
-https://github.com/cncf/toc/blob/master/process/election-schedule.md
+https://github.com/cncf/toc/blob/main/process/election-schedule.md
 
 The best way to get involved is to start attending TOC meetings and become an official TOC Contributor:
-https://github.com/cncf/toc/blob/master/CONTRIBUTORS.md
+https://github.com/cncf/toc/blob/main/CONTRIBUTORS.md
 
 If you have specific focus areas, CNCF SIG meetings are good opportunity to dive in:
-https://github.com/cncf/toc/tree/master/sigs
+https://github.com/cncf/toc/tree/main/sigs
 
 ## What are CNCF SIGs?
 
 The CNCF Special Interest Groups (SIGs) scale contributions by the CNCF technical and user community, while retaining integrity and increasing quality in support of our mission.
 
-https://github.com/cncf/toc/tree/master/sigs
+https://github.com/cncf/toc/tree/main/sigs
 
 ## What type of governance is my CNCF project expected to follow?
 
 CNCF does not require its hosted projects to follow any specific governance model by default.
 
-Instead, CNCF [specifies](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc) that graduated projects need to "[e]xplicitly define a project governance and committer process." 
+Instead, CNCF [specifies](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc) that graduated projects need to "[e]xplicitly define a project governance and committer process." 
 
 This varied and [open governance](https://github.com/opengovernance/opengovernance.dev) approach has led to different projects defining what is best and optimized for their community: 
 
 * https://github.com/containerd/project/blob/master/GOVERNANCE.md
 * https://github.com/coredns/coredns/blob/master/GOVERNANCE.md
-* https://github.com/envoyproxy/envoy/blob/master/GOVERNANCE.md
+* https://github.com/envoyproxy/envoy/blob/main/GOVERNANCE.md
 * https://github.com/helm/community/blob/master/governance/governance.md
 * https://github.com/kubernetes/community/blob/master/governance.md
 * https://prometheus.io/governance/
@@ -43,16 +43,16 @@ Neither the CNCF Governing Board (GB) nor the Technical Oversight Committee (TOC
 
 Instead, the maintainers of those projects manage them; this includes defining the governance process. The GB is responsible for the budget.
 
-TOC members are available to provide guidance and conflict resolution if desired to the projects but do not control them. The TOC also helps mature projects through the various CNCF project maturity levels to ensure projects meet the expected [graduation criteria](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc). To date, we have had no meaningful disagreements between the TOC and project maintainers.
+TOC members are available to provide guidance and conflict resolution if desired to the projects but do not control them. The TOC also helps mature projects through the various CNCF project maturity levels to ensure projects meet the expected [graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc). To date, we have had no meaningful disagreements between the TOC and project maintainers.
 
-Please see the [TOC Principles](https://github.com/cncf/toc/blob/master/PRINCIPLES.md) for more details.
+Please see the [TOC Principles](https://github.com/cncf/toc/blob/main/PRINCIPLES.md) for more details.
 
 ## What type of support do CNCF projects receive?
 
 The CNCF provides a variety of services that are accessible by maintainers via the ServiceDesk: https://github.com/cncf/servicedesk
 
 ## What is the definition of an end user?
-End user companies use [cloud native](https://github.com/cncf/toc/blob/master/DEFINITION.md) technologies internally, but do not sell any cloud native services externally. Examples of end user companies are Adidas, Apple, Capital One, Spotify, and The New York Times. Examples of cloud native vendors (and so not end users) include cloud providers (e.g., Alibaba Cloud, AWS, Google Cloud, Microsoft Azure), consulting firms (e.g., Accenture, Booz Allen), infrastructure software vendors (e.g., SUSE, Red Hat), and telecom operators (e.g., AT&T, China Mobile).
+End user companies use [cloud native](https://github.com/cncf/toc/blob/main/DEFINITION.md) technologies internally, but do not sell any cloud native services externally. Examples of end user companies are Adidas, Apple, Capital One, Spotify, and The New York Times. Examples of cloud native vendors (and so not end users) include cloud providers (e.g., Alibaba Cloud, AWS, Google Cloud, Microsoft Azure), consulting firms (e.g., Accenture, Booz Allen), infrastructure software vendors (e.g., SUSE, Red Hat), and telecom operators (e.g., AT&T, China Mobile).
 
 If you’re not sure if your company is an end user, please compare the members of the [CNCF end user community](https://landscape.cncf.io/enduser=yes&format=card-mode) to the [vendor members](https://landscape.cncf.io/category=cncf-members&enduser=no&format=card-mode&grouping=category) of CNCF and find your company or one similar to yours in one group or the other. Or, you can email info@cncf.io and we’ll help you.
 
@@ -66,7 +66,7 @@ CNCF uses revenues from events first and foremost to cover the cost of events. T
 
 ## Does CNCF make decisions based on “pay-to-play” considerations?
 
-**No**. CNCF’s charter [Section 3(c)](https://github.com/cncf/foundation/blob/master/charter.md) explicitly calls out fairness as a core value and requires us to ‘avoid undue influence, bad behavior or “pay-to-play” decision-making.’ Also projects are [openly governed](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/) and technical participation never requires any form of membership. The correct way to view this is that CNCF members **PAY TO SUSTAIN** and govern the shared budget which goes to sustain project activities such as events,scholarships and security audits.
+**No**. CNCF’s charter [Section 3(c)](https://github.com/cncf/foundation/blob/main/charter.md) explicitly calls out fairness as a core value and requires us to ‘avoid undue influence, bad behavior or “pay-to-play” decision-making.’ Also projects are [openly governed](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/) and technical participation never requires any form of membership. The correct way to view this is that CNCF members **PAY TO SUSTAIN** and govern the shared budget which goes to sustain project activities such as events,scholarships and security audits.
 
 ## Does membership or sponsorship level ever affect project-related decisions? 
 

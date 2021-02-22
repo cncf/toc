@@ -9,7 +9,7 @@ Project progression, movement from one stage to another, allows projects to part
 
 CNCF projects have a maturity level of sandbox, incubating, or graduated. Archived is for projects no longer in active development. The maturity level is a signal by CNCF as to what sorts of enterprises should be adopting different projects. Projects increase their maturity by demonstrating their sustainability to CNCF’s Technical Oversight Committee: that they have adoption, a healthy rate of changes, committers from multiple organizations, have adopted the CNCF Code of Conduct, and have achieved and maintained the Core Infrastructure Initiative Best Practices Badge. 
 
-![Project Stages](https://github.com/cncf/toc/blob/master/process/project-stages.png)
+![Project Stages](https://github.com/cncf/toc/blob/main/process/project-stages.png)
 
 ## Sandbox: 
 
@@ -68,7 +68,7 @@ To be accepted to incubating stage, a project must meet the sandbox stage requir
 * A clear versioning scheme.
 * Specifications must have at least one public reference implementation.
 
-![Incubating](https://github.com/cncf/toc/blob/master/process/incubation-process.png)
+![Incubating](https://github.com/cncf/toc/blob/main/process/incubation-process.png)
 
 Projects currently in progress for consideration at the Incubating stage are tracked: https://github.com/cncf/toc/projects/7 
 
