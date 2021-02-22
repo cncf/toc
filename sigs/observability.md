@@ -62,8 +62,8 @@ A full list of [CNCF projects][projs] can be found at [landscape.cncf.io].
 [cncf]: https://www.cncf.io
 [projs]: https://www.cncf.io/projects
 [landscape.cncf.io]: https://landscape.cncf.io
-[sig]:  https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md
-[cn-def]: https://github.com/cncf/toc/blob/master/DEFINITION.md
+[sig]:  https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md
+[cn-def]: https://github.com/cncf/toc/blob/main/DEFINITION.md
 
 ## Mission
 
@@ -171,15 +171,15 @@ Examples include:
 
   > _SIGs may choose to spawn focussed and time-limited working groups to achieve some of their responsibilities (for example, to produce a specific educational white paper, or portfolio gap analysis report). Working groups should have a clearly documented charter, timeline (typically a few quarters at most), and set of deliverables. Once the timeline has elapsed, or the deliverables delivered, the working group dissolves, or is explicitly re-chartered._
 
-[ddr]: https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md
-[sigwg]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#responsibilities--empowerment-of-sigs
+[ddr]: https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md
+[sigwg]: https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#responsibilities--empowerment-of-sigs
 
 ## Governance
 
 - This SIG follows the [standard operating model][som] provided by the TOC
   unless otherwise stated here.
 
-[som]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#operating-model
+[som]: https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#operating-model
 
 ## Operations
 
@@ -191,8 +191,8 @@ Examples include:
 
 \*_**(TODO: need confirmation)**_
 
-[sigform]: https://github.com/cncf/toc/tree/master/sigs#sig-formation-process
-[sigroles]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#sig-member-roles
+[sigform]: https://github.com/cncf/toc/tree/main/sigs#sig-formation-process
+[sigroles]: https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#sig-member-roles
 
 - Contact
   - Slack channel: #sig-observability @ [https://cloud-native.slack.com](https://cloud-native.slack.com)

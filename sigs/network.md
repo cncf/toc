@@ -19,7 +19,7 @@ SIG Network&#39;s charter is inspired from the [CNCF Networking WG](https://gith
 
 ## In Scope
 
-We strive to understand the fundamental characteristics of different networking approaches with respect to availability, scalability, performance, consistency, observability, security, ease-of-use, cost, performance and operational complexity; and relate these to their suitability to various cloud native use cases. Networks, network services and methodologies suitable for and commonly used in [modern cloud-native environments](https://github.com/cncf/toc/blob/master/DEFINITION.md) are considered in scope:
+We strive to understand the fundamental characteristics of different networking approaches with respect to availability, scalability, performance, consistency, observability, security, ease-of-use, cost, performance and operational complexity; and relate these to their suitability to various cloud native use cases. Networks, network services and methodologies suitable for and commonly used in [modern cloud-native environments](https://github.com/cncf/toc/blob/main/DEFINITION.md) are considered in scope:
 
 - Especially where these differ significantly from network systems and approaches previously commonly used in traditional enterprise data center environments.
 - Consideration for public, private, and hybrid cloud environments.
@@ -88,7 +88,7 @@ Clarify and further concepts of cloud native networking, traffic management and 
 
 # Governance &amp; Operations
 
-This SIG follows the [standard operating model](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#operating-model) provided by the TOC unless otherwise stated here.
+This SIG follows the [standard operating model](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#operating-model) provided by the TOC unless otherwise stated here.
 
 # Operating Model
 
@@ -97,7 +97,7 @@ This SIG follows the [standard operating model](https://github.com/cncf/toc/blob
 - TOC Liaison: [Matt Klein](https://twitter.com/mattklein123)
 - SIG Chairs: [Lee Calcote](https://twitter.com/lcalcote), [Ken Owens](https://twitter.com/kenowens12)
 
-In accordance with the [elections and terms](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections) follow the [CNCF SIG definition](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#elections).
+In accordance with the [elections and terms](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#elections) follow the [CNCF SIG definition](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#elections).
 
 ## Communications
 

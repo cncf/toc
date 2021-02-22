@@ -11,14 +11,14 @@ Group and community.
 # Introduction
 
 This is the charter referred to in [CNCF
-SIGs](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#sig-charter)
+SIGs](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#sig-charter)
 by the CNCF TOC.
 
 # Areas Considered In Scope
 
 Storage systems and approaches suitable for and commonly used in
 [modern cloud-native
-environments](https://github.com/cncf/toc/blob/master/DEFINITION.md) are considered in scope:
+environments](https://github.com/cncf/toc/blob/main/DEFINITION.md) are considered in scope:
 
 *   especially where these differ significantly from storage systems
     and approaches previously commonly used in traditional enterprise
@@ -113,7 +113,7 @@ cloud-native environments through:
 # Operating Model
 
 This SIG follows the [standard operating
-guidelines](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#operating-model)
+guidelines](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#operating-model)
 provided by the TOC unless otherwise stated here.
 
 **TOC Liaison:** [Xiang Li](https://github.com/xiang90)

@@ -9,7 +9,7 @@ v1.0
 
 ## Overall Purpose
 
-Scale contributions by the CNCF technical and user community, while retaining integrity and increasing quality in support of our [mission](https://github.com/cncf/foundation/blob/master/charter.md#1-mission-of-the-cloud-native-computing-foundation). 
+Scale contributions by the CNCF technical and user community, while retaining integrity and increasing quality in support of our [mission](https://github.com/cncf/foundation/blob/main/charter.md#1-mission-of-the-cloud-native-computing-foundation). 
 
 ## Specific Objectives
 
@@ -34,9 +34,9 @@ CNCF SIGs are modelled on Kubernetes SIGs.  Differences are intended to be minim
 
 ## Responsibilities & Empowerment of SIGs
 
-It is the desire of the TOC that the CNCF SIGs, under guidance from the TOC, provide high-quality technical expertise, unbiased information and proactive leadership within their category.  The TOC makes use of this input to act as an informed and effective executive board to select and promote appropriate CNCF projects and practices, and to disseminate high quality information to end users and the cloud-native community in general.  SIGs explicitly have no direct authority over CNCF projects. In particular, the creation of CNCF SIG’s does not change the existing, successfully practiced [charter](https://github.com/cncf/foundation/blob/master/charter.md) goal that "Projects.. will be ‘lightly’ subject to the Technical Oversight Committee". 
+It is the desire of the TOC that the CNCF SIGs, under guidance from the TOC, provide high-quality technical expertise, unbiased information and proactive leadership within their category.  The TOC makes use of this input to act as an informed and effective executive board to select and promote appropriate CNCF projects and practices, and to disseminate high quality information to end users and the cloud-native community in general.  SIGs explicitly have no direct authority over CNCF projects. In particular, the creation of CNCF SIG’s does not change the existing, successfully practiced [charter](https://github.com/cncf/foundation/blob/main/charter.md) goal that "Projects.. will be ‘lightly’ subject to the Technical Oversight Committee". 
 
-The SIGs should strive to present the TOC with easily understandable and votable "propositions", each of which is supported by clear written evidence.  A proposition may be “to approve this project for incubation based on this [written ](https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md)[due diligence](https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md)[ investigation](https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md)”, or “to approve this landscape document based on these clear goals and evidence that it achieves them”.  It is of utmost importance that the information and proposals provided to the TOC by SIGs be highly accurate and unbiased, driven by the goal to improve the CNCF as a whole, rather than benefit one project or company over another.  We believe that the rising tide lifts all boats, and that is our goal.
+The SIGs should strive to present the TOC with easily understandable and votable "propositions", each of which is supported by clear written evidence.  A proposition may be “to approve this project for incubation based on this [written ](https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md)[due diligence](https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md)[ investigation](https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md)”, or “to approve this landscape document based on these clear goals and evidence that it achieves them”.  It is of utmost importance that the information and proposals provided to the TOC by SIGs be highly accurate and unbiased, driven by the goal to improve the CNCF as a whole, rather than benefit one project or company over another.  We believe that the rising tide lifts all boats, and that is our goal.
 
 Key ideas here:
 

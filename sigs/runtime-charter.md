@@ -13,16 +13,16 @@ Also reviewed and contributed to by:
 ## Introduction
 
 This is the charter referred to in “[CNCF
-SIGs](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#sig-charter)”
+SIGs](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#sig-charter)”
 by the CNCF TOC, and consistent with the [proposed SIG
-definition](https://github.com/cncf/toc/blob/master/sigs/proposed.md).
+definition](https://github.com/cncf/toc/blob/main/sigs/proposed.md).
 
 
 ## Areas Considered In Scope
 
 Workload execution and management systems, components and interfaces
 used in [modern cloud-native
-environments](https://github.com/cncf/toc/blob/master/DEFINITION.md)
+environments](https://github.com/cncf/toc/blob/main/DEFINITION.md)
 are in scope, including:
 
 
@@ -46,7 +46,7 @@ Examples include:
 *   General authentication, authorization, accounting, auditing, etc (even though these clearly apply to several of the areas in the scope of this SIG)
     - because AAA, etc is clearly the domain of the [CNCF Security SIG](https://github.com/cncf/sig-security).
 *   Getting network traffic into and out of workloads, or any of the interfaces related to that (e.g. CNI)
-    - these are the domain of the ([proposed](https://github.com/cncf/toc/blob/master/sigs/proposed.md)) CNCF Traffic SIG, and other related network-centric groups.  
+    - these are the domain of the ([proposed](https://github.com/cncf/toc/blob/main/sigs/proposed.md)) CNCF Traffic SIG, and other related network-centric groups.  
 *   Local or remote storage associated with workloads
      - this is the domain of the [CNCF Storage SIG](https://github.com/cncf/sig-storage) and related groups.
 
@@ -67,7 +67,7 @@ categories listed as in scope, in cloud-native environments through:
 4. Identifying and filling gaps in the landscape of CNCF Projects within scope.
 
 Specific SIG deliverables are as per the above, and the [general SIG responsibilities
-set out by the CNCF TOC](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#responsibilities--empowerment-of-sigs).
+set out by the CNCF TOC](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#responsibilities--empowerment-of-sigs).
 
 
 ## Current CNCF Projects considered to be within the Scope of this SIG
@@ -128,7 +128,7 @@ set out by the CNCF TOC](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.
 
 ## **Operations**
 
-This SIG follows the [standard operating guidelines](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#operating-model)
+This SIG follows the [standard operating guidelines](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#operating-model)
 provided by the TOC unless otherwise stated here.
 
 

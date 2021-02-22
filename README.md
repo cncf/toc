@@ -29,7 +29,7 @@ See the [current CNCF projects](https://www.cncf.io/projects/) and a description
 
 The CNCF provides a [list of services](https://www.cncf.io/services-for-projects/) for incubating and graduated projects hosted in the foundation. A subset of these services is also available for [Sandbox](https://www.cncf.io/sandbox-projects/) level projects.
 
-Do you want to contribute to a project? We have [outlined the process](https://github.com/cncf/toc/blob/master/process/README.md) to get started. If you have any questions or don't know where to start, please open an [issue](https://github.com/cncf/toc/issues).
+Do you want to contribute to a project? We have [outlined the process](https://github.com/cncf/toc/blob/main/process/README.md) to get started. If you have any questions or don't know where to start, please open an [issue](https://github.com/cncf/toc/issues).
 
 ## Meeting Time
 
