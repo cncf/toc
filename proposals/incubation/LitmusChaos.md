@@ -18,6 +18,7 @@
 - [CNCF blog on Introduction to LitmusChaos - 28 Aug 2020](https://www.cncf.io/blog/2020/08/28/introduction-to-litmuschaos/)
 - [CNCF blog on defining cloud native chaos engineering - 6 Nov 2019](https://www.cncf.io/blog/2019/11/06/cloud-native-chaos-engineering-enhancing-kubernetes-application-resiliency/)
 - [Project update to Sig-App-Delivery](https://docs.google.com/presentation/d/1zNzSRc0N4I1_LsQsUnpcispQAJMU9ni6k-vfTQXefLo/edit?usp=sharing)
+- [Incubation presentation to Sig-App-Delivery](https://docs.google.com/presentation/d/1jir2aHrfkXUsOxhObyjxgNcWy0eZ2XPlaFhDD8i9FWc/edit?usp=sharing)
 
 ## Recap: What is LitmusChaos
 
@@ -50,6 +51,9 @@ https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md
 - Complex chaos workflows with argo integration 
 - Declarative Hypothesis via Litmus Probes
 - Different modes (namespaced, admin/cluster)  of operation
+- GitOps integration - Both for keeping chaos configuration at Git and to achieve event triggered chaos
+- Integration with other tools such as Argo Workflow, Keptn, GitLab, GitHub and Spinnaker
+- Interleaved chaos charts for open observability
 
 #### Governance:
 
@@ -61,18 +65,18 @@ https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md
 ### Community Stats (graphs / dashboards) 
 
 - Stars
-  - 1.3k from 650 (2x)
+  - 1.5k from 650 (2x)
 
 - Slack Membership
-  - 421 from 237 (~70%+)
+  - 555 from 237 (~134%+)
 
 - Usage metrics 
   - Operator Installations / Experiment Run Count
-    - Operator installations: 19646 
-    - Experiments Run: 160049
+    - Operator installations: 41667 
+    - Experiments Run: 215294
 
   - New Experiments Added
-    - 41 from 29 (12) 
+    - 48 from 29 (17) 
 
 ### External contributions
 
@@ -85,6 +89,9 @@ https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md
 - Autopilot
 - Container Solutions
 - Okteto 
+- HSBC
+- Deutsche Telecom
+- Orange
 
 #### References / Highlights: 
 - [Special Interest Groups](https://github.com/litmuschaos/litmus/wiki/Special-Interest-Groups)
@@ -111,6 +118,14 @@ https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md
 - Helm Hub / Artifact Hub
 - jFrog ChartCenter
 
+### Litmus user presentations at ChaosCarnival
+- [Network Chaos (Andreas Krivas, ContainerSolutions)](https://www.youtube.com/watch?v=whdDP41Omd8&list=PLBuYBMjBLBzHPuPsvdbJvKu1KxSowWDYl&index=3)
+- [Chaos Testing on OpenShift (Jordi Gill, Red Hat)](https://www.youtube.com/watch?v=VITGHJ47gx8&list=PLBuYBMjBLBzHPuPsvdbJvKu1KxSowWDYl&index=6)
+- [Putting Chaos into Continuous Delivery (Juergen Etzlstorfer, Keptn](https://www.youtube.com/watch?v=j7THMrIGKO4&list=PLBuYBMjBLBzGGxnZn7DVMQ2tbh7Gwkw7G&index=8&t=1277s)
+- [Building Reliability Pipelines with Chaos Workflows (Michael Knyazev, IAG)](https://www.youtube.com/watch?v=7yBFgqUo01E&list=PLBuYBMjBLBzHPuPsvdbJvKu1KxSowWDYl&index=14)
+- [Event-Driven Chaos Injection  (Raj and Shoumo, ChaosNative](https://www.youtube.com/watch?v=7cF3rwcZMcA&list=PLBuYBMjBLBzHPuPsvdbJvKu1KxSowWDYl&index=8)
+- [Bring Chaos into your Development Environment (Ramiro Berrelleza, Oketeto)](https://www.youtube.com/watch?v=3No4-1H6slc&list=PLBuYBMjBLBzGGxnZn7DVMQ2tbh7Gwkw7G&index=13&t=1830s)
+- [Chaos Engineering in Telco Cloudnative Infra (Samar and Vaibhav, Orange)](https://www.youtube.com/watch?v=UOhjFbCrncw&list=PLBuYBMjBLBzHPuPsvdbJvKu1KxSowWDYl&index=4&t=201s )
 
 ## Incubation Stage Requirements
 
