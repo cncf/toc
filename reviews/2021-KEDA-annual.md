@@ -62,7 +62,7 @@ Unfortunately, it is hard to measure adoption since Docker Hub only provides lim
 
 ![image](https://user-images.githubusercontent.com/4345663/108208162-f51ed080-7128-11eb-8bbe-d05a8bc35b5e.png)
 
-> 💡 Because of the limited metrics, we are considering moving to GitHub Container Registry which gives a lot more insights. ([GitHub](https://github.com/kedacore/governance/issues/16))
+> 💡 Because of the limited metrics, we are moving to GitHub Container Registry which gives a lot more insights. ([GitHub](https://github.com/kedacore/governance/issues/16))
 
 ## Project goals
 
