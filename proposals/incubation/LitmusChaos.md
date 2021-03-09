@@ -127,6 +127,18 @@ https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md
 - [Bring Chaos into your Development Environment (Ramiro Berrelleza, Oketeto)](https://www.youtube.com/watch?v=3No4-1H6slc&list=PLBuYBMjBLBzGGxnZn7DVMQ2tbh7Gwkw7G&index=13&t=1830s)
 - [Chaos Engineering in Telco Cloudnative Infra (Samar and Vaibhav, Orange)](https://www.youtube.com/watch?v=UOhjFbCrncw&list=PLBuYBMjBLBzHPuPsvdbJvKu1KxSowWDYl&index=4&t=201s )
 
+### Litmus 2.0
+When we started the Litmus project, the goal of this project was to create a complete platform to practice chaos engineering at scale in a Kubernetes way. Of course this had to be done incrementally, first create a toolset for chaos injection and then add additional features to make it a platform. Litmus 1.x achieved the goal of keeping it completely open source, creating a ChaosHub and creating the required CRDs, Operators and Schedulers. With Litmus 1.x, users have a working chaos engineering toolset aligned with the original goals.
+Over time, the monthly cadence releases added the following features. 
+- Chaos experiments become building blocks of a ChaosWorkflow, to allow users to create a larger chaos scenarios. 
+- A portal to centrally visualize the chaos workflows, get chaos analytics, get the teaming in place for collaboration of chaos workflows.
+- Chaos GitOps for highly scalable automation of chaos workflows. Chaos can now be trigged as a result of a change to an application. This integrates with other CD tools like ArgoCD and FluxCD
+- Chaos Interleaved dashboards. A step toward open observability that is interleaved with chaos incident details
+
+With all these features, Litmus is a comprehensive platform for chaos engineering.
+
+**Note:** Litmus itself is composed of microservices. For 2.0, more microservices are added and the the existing ones will continue to work. Litmus 2.0 is completely backward compatible. No features are deprecated. Migration path is about constructing new artifacts such as ChaosWorkflows that include the current chaos experiments in use by the users. 
+
 ## Incubation Stage Requirements
 
 ### Production usage
