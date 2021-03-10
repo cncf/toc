@@ -36,7 +36,7 @@ KEDA currently has 5 maintainers from 3 different companies:
 | Anirudh Garg         | [anirudhgarg](https://github.com/anirudhgarg) | Microsoft   |
 | Ahmed ElSayed        | [ahmelsayed](https://github.com/ahmelsayed)   | Microsoft   |
 
-These have not changed since we have joined CNCF, but this is about to change soon.
+But Anirudh [has decided to step down](https://github.com/kedacore/governance/issues/17) and are starting this process now.
 
 The full maintainer list can be found in our [GitHub repository](https://github.com/kedacore/governance/blob/main/MAINTAINERS.md) along with our [governance policy](https://github.com/kedacore/governance/blob/main/GOVERNANCE.md).
 
