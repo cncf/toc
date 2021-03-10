@@ -16,12 +16,12 @@ a pull request with document referencing the roles and charter, updating the lis
 | Name | TOC Liaisons |
 |------|--------------| 
 | [SIG Security](https://github.com/cncf/sig-security) | Liz Rice, Justin Cormack |
-| [SIG Storage](https://github.com/cncf/sig-storage) | Xiang Li | 
-| [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Katie Gamanji | 
-| [SIG Network](https://github.com/cncf/sig-network) | Matt Klein |
-| [SIG Runtime](https://github.com/cncf/sig-runtime) | Brendan Burns, Alena Prokharchyk |
-| [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy) | Matt Klein |
-| [SIG Observability](https://github.com/cncf/sig-observability) | Jeff Brewer, Brendan Burns | 
+| [SIG Storage](https://github.com/cncf/sig-storage) | Erin Boyd, Saad Ali | 
+| [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Lei Zhang, Cornelia Davis | 
+| [SIG Network](https://github.com/cncf/sig-network) | Dave Zolotusky, Liz Rice |
+| [SIG Runtime](https://github.com/cncf/sig-runtime) | Richardo Rocha, Alena Prokharchyk |
+| [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy) | Saad Ali, Alena Prokharchyk |
+| [SIG Observability](https://github.com/cncf/sig-observability) | Lei Zhang, Cornelia Davis | 
 
 ## SIG Chairs as of July 2020
 
