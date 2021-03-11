@@ -38,7 +38,7 @@ OpenEBS,"Alexis Richardson, Xiang Li",5/14/19,5/14/19,Sandbox,No,DCO,Yes,No,No,Y
 CRI-O,Brendan Burns,3/12/19,4/18/19,Incubation,Yes,DCO,No,Yes,No,Yes,Kubernetes,https://github.com/cri-o
 SPIRE,"Brian Grant, Sam Lambert, Ken Owens",11/7/17,3/29/18,Incubation,No,CLA,Yes,No,No,Yes,https://spiffe.slack.com/,https://github.com/spiffe/spire
 Thanos,"Liz Rice, Alexis Richardson, Xiang Li, Joe Beda",7/9/19,7/9/19,Sandbox,No,DCO,Yes,No,No,Yes,CNCF,https://github.com/thanos-io
-Flux,"Michelle Noorali, Xiang Li",6/11/19,7/15/19,Sandbox,,DCO,No,No,No,Yes,CNCF,https://github.com/fluxcd
+Flux,"Michelle Noorali, Xiang Li",6/11/19,7/15/19,Incubation,,DCO,No,No,No,Yes,CNCF,https://github.com/fluxcd
 In-Toto,"Liz Rice, Michelle Noorali",7/9/19,8/21/19,Sandbox,,DCO,Yes,No,No,Yes,IRC,https://github.com/in-toto
 Strimzi,"Matt Klein, Alexis Richardson",4/9/19,8/28/19,Sandbox,,DCO,Yes,No,No,Yes,CNCF,https://github.com/strimzi
 KubeVirt,"Brian Grant, Liz Rice",7/9/19,9/9/19,Sandbox,,DCO,Yes,No,No,Yes,Kubernetes,https://github.com/kubevirt
