@@ -33,7 +33,7 @@ maintainers from anywhere in the world. Linkerd has [publicly committed to open
 governance](https://linkerd.io/2019/10/03/linkerds-commitment-to-open-governance/)
 and features a [steering committee](https://linkerd.io/2021/01/28/announcing-the-linkerd-steering-committee/) comprising end-users.
 
-### Have achieved and maintained a [Core Infrastructure Initiative Best Practices Badge/(https://bestpractices.coreinfrastructure.org/).
+### Have achieved and maintained a [Core Infrastructure Initiative Best Practices Badge](https://bestpractices.coreinfrastructure.org/).
 
 The Linkerd project has achieved a [Core Infrastructure Initiative Best Practices Badge](https://bestpractices.coreinfrastructure.org/en/projects/4629).
 
