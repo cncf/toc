@@ -17,5 +17,6 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Brendan Burns (1/29/2019 - 1/29/2021)
 * Matt Klein (1/29/2019 - 1/29/2021)
 * Xiang Li (1/29/2019 - 1/29/2021)
+* Michelle Noorali (3/18/2019 - 3/18/2021)
 
 We thank these members for their service to the CNCF community.
