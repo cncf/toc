@@ -221,11 +221,11 @@ YouTube channel: https://www.youtube.com/channel/UCtpSQ9BLB_3EXdWAUQYwnRA
 
 ## Community size and any existing sponsorship
 
-Currently 736 contributors over the last 16 months, which has grown rapidly over the last year. This includes contributors from Microsoft, Alibaba, Disney, Zeiss, Morgan Stanley, Citigroup, New Relic, Dynatrace and Hashicorp.
+Currently 823 [contributors](https://github.com/cncf/devstats/blob/master/README_K8s.md) over the last 16 months, which has grown rapidly over the last year. This includes committers from Microsoft, Alibaba, Hashicorp, Disney, Zeiss, Morgan Stanley, Citigroup, New Relic, and Dynatrace.
 
 The community has developed and contributed over 70 components for state management (such as Redis, MySQL,and many more), Pub/Sub messaging (such as RabbitMQ, AWS SNS/SQS, Kafka), secret stores (such as Kubernetes secret store, Azure Key Vault, HashiCorp Vault, and more) and both input and output bindings to integrate with services such as SendGrid, Twilio and Twitter.
 
-The Dapr Github repo currently has 11.7k stars.
+The Dapr Github repo currently has 11.8k stars.
 
 As for sponsorship, Microsoft currently pays for the project’s GitHub, infrastructure for testing/releases, website hosting and Docker repos.
 
