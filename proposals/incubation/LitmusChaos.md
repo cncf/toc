@@ -150,6 +150,16 @@ With all these features, Litmus is a comprehensive platform for chaos engineerin
     - https://sumitnagal.medium.com/chaos-journey-279924051d57
     - https://youtu.be/cvH6R4wRVrg?t=1055
 
+  - [Red Hat](https://www.redhat.com/en) : Litmus is being used to test the maturity and resilience of Red Hat Openshift Virtualization solution. The experiments involve chaos injection on the VMs that host the OpenShift nodes (reboots, shutdowns) as well as pod level chaos while using litmus probes to validate expected behavior during chaos.
+
+     References: 
+     - https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/redhat.md
+
+  - [Container Solutions](https://www.container-solutions.com/) : Container Solutions team has been using Litmus and contributing back to the project at various levels including Network Chaos experiments and Chaos orchestration improvements. They are using Litmus for chaos engineering needs of their client environments which are based on OpenShift for nearly an year.
+
+     References: 
+     - https://www.youtube.com/watch?v=PiGqQc_UYPc&amp;feature=youtu.be
+
 
   - [Wipro](https://www.wipro.com/en-IN/infrastructure/wipros-appanywhere/?utm_source=github&utm_campaign=litmuschaos_repo): Uses litmus as part of its “AppAnywhere Gecko” managed service. to validate and verify the reliability of applications moved into Kubernetes as part of end-to-end automation. Also makes chaos experiments available as self-service for customers of the platform. 
 
@@ -170,8 +180,7 @@ With all these features, Litmus is a comprehensive platform for chaos engineerin
 #### Known list of LitmusChaos users
 Litmus is known to be used by the following organizations which are at various stages of testing.
 
-- [ContainerSolutions](https://www.container-solutions.com/): Uses Litmus experiments and infrastructure to manage chaos engineering in a large Kubernetes cluster at one of their clients. They have been using Litmus for more than 6 months and contributed to various chaos experiments based on their field usage experience. 
-  - https://youtu.be/PiGqQc_UYPc
+- [LifeCycle](https://www.lifecycle-software.com/)
 - [Daimler AG](https://www.daimler.com/)
 - [Auto Pilot](https://www.autopilothq.com/)
 - [IAG Limited](https://www.iag.com.au/)
@@ -179,7 +188,6 @@ Litmus is known to be used by the following organizations which are at various s
 - [Oracle](https://www.oracle.com)
 - [Microsoft](https://www.microsoft.com)
 - [Navi Technologies](https://navi.com/)
-- [RedHat](https://www.redhat.com)
 - [Akridata](https://www.akridata.com/)
 - [Workday](https://www.workday.com/)
 - [Anuta Networks](https://www.anutanetworks.com/)
