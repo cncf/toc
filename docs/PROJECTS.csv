@@ -79,3 +79,10 @@ OpenKruise,N/A,N/A,11/10/20,Sandbox,,DCO,Yes,No,No,Yes,kruise-workspace,https://
 "Tinkerbell ",N/A,N/A,11/10/20,Sandbox,,DCO,No,No,No,Yes,https://tinkerbell.org/community/slack/,https://github.com/tinkerbell
 Pravega,N/A,N/A,11/10/20,Sandbox,,DCO,No,No,No,Yes,https://pravega.io/#,https://github.com/pravega
 Kyverno,N/A,N/A,11/10/20,Sandbox,,DCO,No,No,No,Yes,Kubernetes,https://github.com/kyverno
+80,GitOps Working Group,N/A,N/A,1/26/2021,2021,Sandbox,,DCO,Yes,N/A,No,Yes,CNCF Slack,,,,
+81,Piraeus-Datastore,N/A,N/A,1/26/2021,2021,Sandbox,,No,Yes,No,No,Yes,Piraeas,,,,
+82,Curiefense,N/A,N/A,1/26/2021,2021,Sandbox,,No,No,Yes ,No,Yes,,,,,
+82,Athenz,N/A,N/A,1/26/2021,2021,Sandbox,,DCO,Yes,Yes,No,No,,,,,
+83,Kube-OVN,N/A,N/A,1/26/2021,2021,Sandbox,,No,No,No,No,Yes,Kube-OVN Slack,,,,
+84,k8dash,N/A,N/A,1/26/2021,2021,Sandbox,,No,No,No,No,Yes,,,,,
+85,Distribution,N/A,N/A,1/26/2021,2021,Sandbox,,DCO,Yes,No,No,Yes,CNCF Slack,,,,
