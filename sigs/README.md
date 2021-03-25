@@ -17,9 +17,9 @@ a pull request with document referencing the roles and charter, updating the lis
 |------|--------------| 
 | [SIG Security](https://github.com/cncf/sig-security) | Liz Rice, Justin Cormack |
 | [SIG Storage](https://github.com/cncf/sig-storage) | Erin Boyd, Saad Ali | 
-| [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Michelle Noorali, Lei Zhang, Cornelia Davis | 
+| [SIG App Delivery](https://github.com/cncf/sig-app-delivery) | Davanum Srinivas, Lei Zhang, Cornelia Davis | 
 | [SIG Network](https://github.com/cncf/sig-network) | Dave Zolotusky, Liz Rice |
-| [SIG Runtime](https://github.com/cncf/sig-runtime) | Richardo Rocha, Alena Prokharchyk |
+| [SIG Runtime](https://github.com/cncf/sig-runtime) | Richardo Rocha, Alena Prokharchyk, Davanum Srinivas |
 | [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy) | Saad Ali, Alena Prokharchyk |
 | [SIG Observability](https://github.com/cncf/sig-observability) | Lei Zhang, Cornelia Davis | 
 
