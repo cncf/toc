@@ -78,11 +78,15 @@ cert-manager,N/A,N/A,11/10/20,Sandbox,,DCO,No,No,No,Yes,Kubernetes,https://githu
 OpenKruise,N/A,N/A,11/10/20,Sandbox,,DCO,Yes,No,No,Yes,kruise-workspace,https://github.com/openkruise
 "Tinkerbell ",N/A,N/A,11/10/20,Sandbox,,DCO,No,No,No,Yes,https://tinkerbell.org/community/slack/,https://github.com/tinkerbell
 Pravega,N/A,N/A,11/10/20,Sandbox,,DCO,No,No,No,Yes,https://pravega.io/#,https://github.com/pravega
-Kyverno,N/A,N/A,11/10/20,Sandbox,,DCO,No,No,No,Yes,Kubernetes,https://github.com/kyverno
+Kyverno,N/A,N/A,11/10/2020,2020,Sandbox,,No,No,No,No,Yes,Kubernetes,,,,
 GitOps Working Group,N/A,N/A,1/26/2021,2021,Sandbox,,DCO,Yes,N/A,No,Yes,CNCF Slack,,,,
 Piraeus-Datastore,N/A,N/A,1/26/2021,2021,Sandbox,,No,Yes,No,No,Yes,Piraeas,,,,
 Curiefense,N/A,N/A,1/26/2021,2021,Sandbox,,No,No,Yes ,No,Yes,,,,,
-Athenz,N/A,N/A,1/26/2021,2021,Sandbox,,DCO,Yes,Yes,No,No,,,,,
+Athenz,N/A,N/A,1/26/2021,2021,Sandbox,,DCO,Yes,Yes,No,Yes,,,,,
 Kube-OVN,N/A,N/A,1/26/2021,2021,Sandbox,,No,No,No,No,Yes,Kube-OVN Slack,,,,
 k8dash,N/A,N/A,1/26/2021,2021,Sandbox,,No,No,No,No,Yes,,,,,
 Distribution,N/A,N/A,1/26/2021,2021,Sandbox,,DCO,Yes,No,No,Yes,CNCF Slack,,,,
+Ingraind ,,,3/30/2021,2021,Sandbox,,No,No,No,No,Yes,,,,,
+Kuberhealthy,,,3/30/2021,2021,Sandbox,,CLA,No,No,No,Yes,,,,,
+k8gb ,,,3/30/2021,2021,Sandbox,,No,No,No,No,Yes,,,,,
+Trickster ,,,3/30/2021,2021,Sandbox,,CLA,No,No,No,Yes,,,,,
