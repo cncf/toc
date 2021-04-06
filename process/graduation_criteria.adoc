@@ -10,7 +10,7 @@ Incubating and graduated projects have access to all resources listed at https:/
 
 To be accepted in the sandbox a project must
 
-* Require 3 of the 11 TOC members to step forward as sponsors to enter the sandbox
+* Apply to join the sandbox using the https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit[form]
 * Adopt the CNCF https://github.com/cncf/foundation/blob/master/code-of-conduct.md[Code of Conduct]
 * Adhere to CNCF https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy[IP Policy] (including trademark transferred)
 * List their sandbox status prominently on website/readme
