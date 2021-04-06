@@ -35,7 +35,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 image::incubation-process.png[Incubation process]
 
 . *Project Proposal* 
- * Incubation proposed through a https://github.com/cncf/toc/issues[GitHub issue]
+ * Incubation proposed through a https://github.com/cncf/toc/pulls[GitHub pull request]
 . *TOC Triage* _2 weeks for a straightforward referral to a SIG; decline or defer could require more discussion_
    * Performed by any TOC member
    * Lazy TOC consensus before declining outright or deferring assessment at this time
