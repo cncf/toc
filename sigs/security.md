@@ -12,6 +12,11 @@ final review by Liz Rice, Joe Beda and Zhipeng Huang.
 
 **SIG Chairs:** [Sarah Allen](https://github.com/ultrasaurus), [Emily Fox](https://github.com/TheFoxAtWork), [Jeyappragash JJ](https://github.com/pragashj)
 
-**Tech Leads:** TBD (co-chairs to act as tech leads until at least two Technical Leads are identified, see [roles](https://github.com/cncf/sig-security/blob/master/governance/roles.md#role-of-chairs))
+**Tech Leads:** 
+* Brandon Lum ([@lumjjb](https://github.com/lumjjb)), IBM
+* Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
+* Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
+* Andres Vega ([@anvega](https://github.com/anvega), VMWare
+* Aradhana Chetal ([@achetal01](https://github.com/achetal01), TIAA 
 
 For complete details on process and elaboration of rules, see [SIG-Security governance](https://github.com/cncf/sig-security/tree/master/governance)
