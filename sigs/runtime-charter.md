@@ -132,9 +132,10 @@ This SIG follows the [standard operating guidelines](https://github.com/cncf/toc
 provided by the TOC unless otherwise stated here.
 
 
-**TOC Liaisons:**  [Brendan Burns](https://github.com/brendandburns), [Alena Prokharchyk](https://github.com/alena1108)
+**TOC Liaisons:**  [Richardo Rocha](https://twitter.com/ahcorporto), [Alena Prokharchyk](https://github.com/alena1108), [Davanum Srinivas](https://twitter.com/dims)
 
-**SIG Chairs:** [Quinton Hoole](https://github.com/quinton-hoole),
+**SIG Chairs:** 
+  [Quinton Hoole](https://github.com/quinton-hoole),
   [Ricardo Aravena](https://github.com/raravena80),
   [Diane Feddema](https://github.com/dfeddema)
 
