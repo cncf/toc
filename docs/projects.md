@@ -153,6 +153,9 @@
 [Envoy](https://github.com/envoyproxy/envoy) | [02/27/18](https://github.com/envoyproxy/envoy/blob/master/docs/SECURITY_AUDIT.pdf) | [Announcement](https://www.cncf.io/news/2018/03/23/eweek-envoy-cncf-project-completes-security-audit-delivers-new-release/) | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
 [TUF/Notary](https://github.com/theupdateframework/notary) | [08/07/18](https://cure53.de/pentest-report_tuf.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
 [OPA](https://github.com/open-policy-agent/opa) | [08/30/18](https://cure53.de/pentest-report_opa.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+[Contour](https://github.com/projectcontour/contour) | [12/01/21](https://github.com/projectcontour/contour/blob/main/Contour_Security_Audit_Dec2020.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
+
+
 
 ## Archived Projects
 
