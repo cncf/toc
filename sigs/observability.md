@@ -185,9 +185,9 @@ Examples include:
 
 - Formation of the SIG follows the [documented process][sigform].
 - [Roles][sigroles] for SIG Observability
-  - TOC Liaison: *Jeff Brewer*\*
+  - TOC Liaison: 	Lei Zhang, Cornelia Davis
   - SIG Chairs: [Matt Young](https://github.com/halcyondude), [Richard Hartmann](https://github.com/RichiH)
-  - Tech Leads: [Michael Hausenblas](https://github.com/mhausenblas), [Bartłomiej Płotka](https://github.com/bwplotka), *Richard Hartmann*\*
+  - Tech Leads: [Michael Hausenblas](https://github.com/mhausenblas), [Bartłomiej Płotka](https://github.com/bwplotka), 
 
 \*_**(TODO: need confirmation)**_
 
