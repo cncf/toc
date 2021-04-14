@@ -29,6 +29,7 @@ To be accepted to incubating stage, a project must meet the sandbox stage requir
  * Demonstrate a substantial ongoing flow of commits and merged contributions.
  * Since these metrics can vary significantly depending on the type, scope and size of a project, the TOC has final judgement over the level of activity that is adequate to meet these criteria
  * A clear versioning scheme.
+ * Clearly documented security processes explaining how to report security issues to the project, and describing how the project provides updated releases or patches to resolve security vulnerabilities 
  * Specifications must have at least one public reference implementation.
 
 === Graduation Stage
