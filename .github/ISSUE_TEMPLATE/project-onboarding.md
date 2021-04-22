@@ -19,7 +19,7 @@ From the project side, please ensure that you:
 - [ ] Understand the trademark guidelines: https://www.linuxfoundation.org/en/trademark-usage/ 
 - [ ] Has your project adopted open governance already? see http://opengovernance.dev
 - [ ] Slack: Are your slack channels migrated to the Kubernetes or CNCF Slack? 
-- [ ] Is your project in its own separate github repo? 
+- [ ] Is your project in its own separate neutral github organization? 
 
 Things that CNCF will need from the project: 
 - [ ] Owners file: Please add a link to your owners file to this issue, this is used to be able to create your maintainers mailing list. 
@@ -31,6 +31,8 @@ Things that CNCF will need from the project:
 - [ ] Artwork: Ensure logos present on https://github.com/cncf/artwork
 - [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/copyright-notices.md#copyright-notices) followed
 - [ ] Website: Analytics transferred to amye@linuxfoundation.org
+- [ ] Adopt a license scanning tool, like FOSSA or Snyk
+- [ ] CII: Start on a CII best practices badge https://bestpractices.coreinfrastructure.org/en
 
 Things that the CNCF will do or help the project to do: 
 - [ ] Devstats: add to devstats https://devstats.cncf.io/
@@ -39,4 +41,4 @@ Things that the CNCF will do or help the project to do:
 - [ ] Events: update CFP + Registration + CFP Area forms
 - [ ] ServiceDesk: confirm maintainers have read https://www.cncf.io/services-for-projects/
 - [ ] CNCF Welcome Email Sent to confirm maintainer list access, welcome email has monthly project sync details
-- [ ] Adding to CNCF license scanning tool 
+- [ ] Create space for meetings/events on community.cncf.io, e.g., https://community.cncf.io/pravega-community/
