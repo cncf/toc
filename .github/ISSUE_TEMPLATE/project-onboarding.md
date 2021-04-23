@@ -20,6 +20,7 @@ From the project side, please ensure that you:
 - [ ] Has your project adopted open governance already? see http://opengovernance.dev
 - [ ] Slack: Are your slack channels migrated to the Kubernetes or CNCF Slack? 
 - [ ] Is your project in its own separate neutral github organization? 
+- [ ] Submitted a Pull request to add your project as a sandbox project to https://landscape.cncf.io
 
 Things that CNCF will need from the project: 
 - [ ] Owners file: Please add a link to your owners file to this issue, this is used to be able to create your maintainers mailing list. 
@@ -37,7 +38,6 @@ Things that CNCF will need from the project:
 Things that the CNCF will do or help the project to do: 
 - [ ] Devstats: add to devstats https://devstats.cncf.io/
 - [ ] Marketing: update relevant intro + slide decks
-- [ ] Update https://landscape.cncf.io
 - [ ] Events: update CFP + Registration + CFP Area forms
 - [ ] ServiceDesk: confirm maintainers have read https://www.cncf.io/services-for-projects/
 - [ ] CNCF Welcome Email Sent to confirm maintainer list access, welcome email has monthly project sync details
