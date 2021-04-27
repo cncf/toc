@@ -8,7 +8,23 @@ Cloud Custodian
 
 ### Introduction
 
-Cloud Custodian is a YAML DSL based stateless rules engine for cloud audit, management, and governance.
+Cloud Custodian is a YAML DSL based stateless rules engine for cloud
+audit, management, and governance.
+
+Cloud Custodian exists as a policy/governance as code tool for
+organizations to enable realtime detective controls to ensure that
+organizational policies are being adhered to by their cloud
+infrastructure. Policy/governance as code is about bringing some of
+the best practices of software engineering to policy/governance,
+ie. using version control, code review, testing, and continuous
+integration and deployment tools.
+
+Custodian can be used to manage AWS, Azure, and GCP environments by
+ensuring real time compliance to security policies (like encryption
+and access requirements), tag policies, operations best practices, and
+cost management via garbage collection of unused resources and
+off-hours resource management. Kubernetes and OpenStack support is
+present in alpha stages at the moment.
 
 Some of its features:
 * Ability to implement detective controls to ensure adherence to organizational policies
@@ -16,42 +32,24 @@ Some of its features:
 * Consistent outputs and telemetry (blob, logs, trace, metrics) with provider native sinks.
 * Minimal installation, usable as a cli query/investigative tool, or as an operations tool in a compliance as code environment.
 
-As organizations move to cloud infrastructure the need to automate
-governance becomes paramount to realize the benefits of self-service
-and on demand infrastructure while ensuring compliance with
-organizational policies. Different teams within an organization will
-often use distinct tools for their infrastructure
-provisioning. However, ensuring that the organization as a whole is
-well-managed requires additional tooling to ensure that governance
-objectives are met regardless of the choice of provisioning tool.
-
-Cloud Custodian exists as a policy/governance as code tool for
-organizations to enable detective controls to ensure that
-organizational policies are being adhered to. Policy/governance as
-code is about bringing some of the best practices of software
-engineering to policy/governance, ie. using version control, code
-review, testing, and continuous integration and deployment tools.
-
-Custodian can be used to manage AWS, Azure, and GCP environments by
-ensuring real time compliance to security policies (like encryption
-and access requirements), tag policies, and cost management via
-garbage collection of unused resources and off-hours resource
-management. Kubernetes and OpenStack support is present in alpha
-stages at the moment.
-
 
 ### Intended Use
 
 Custodian enables reusable vocabularies of filters and actions that
-can be used to implement many semantic policies. For example an action
-like `stop` a vm instance could be used for offhours savings, tag
-compliance, or incident response. Some additional examples might be
+can be used to implement many semantic policies across hundreds of
+resource types. For example an action like `stop` a vm instance could
+be used for offhours savings, tag compliance, or incident
+response. Some additional examples use cases might be
 
-* Identify and Remediate load balancers or storage buckets not configured for logging
-* Turning off development servers/clusters and databases off at night to realize cost savings.
-* Finding underutilized resources and sending an email to their creator to reduce the size. 
+* Identify and Remediate load balancers or storage buckets not
+  configured for logging
+* Turning off development servers/clusters and databases off at night
+  to realize cost savings.
+* Finding underutilized resources and sending an email to their
+  creator to reduce the size.
 * Enforcing tag compliance policies on resources.
-* Finding resources with embedded access control policies that are setup to give access across the org boundary.
+* Finding resources with embedded access control policies that are
+  setup to give access across the org boundary.
 * In response to a security event, used as a remediation tool to
   snapshot, disk, network isolate a server, change cloud credentials,
   and install forensics tools.
@@ -90,16 +88,20 @@ The official public facing website can be found at [https://cloudcustodian.io/](
 
 ## Community size and any existing sponsorship
 
+Cloud Custodian has been in the CNCF Sandbox since June 24th, 2020
 
-The following statistics, when related to code repositories, are for the main Cloud Custodian repo of
+The following statistics, when related to code repositories, are for
+the main Cloud Custodian repo of
 [https://github.com/cloud-custodian/cloud-custodian](https://github.com/cloud-custodian/cloud-custodian).
 
-* GitHub Stars: 3,569
+* GitHub Stars: 3,569  (+18% since sandbox)
 * Releases: 86+
-* Commits: 3554+
+* Pull Requests: 3576+
 * Forks: 996+
 * Contributors: 299+
+* Gitter Channel Members: 1533
 * Maintainers: 20 maintainers from 5 organizations
+
 
 
 ### Who is currently known to be using the project? Are they using it in production and at what scale?
@@ -119,9 +121,7 @@ End User contributors:
  - Transamerica
  - TCF
  - Georgia State University
- - Toyota Connected
  - Stacklet
- - CapitalOne
  - State Farm
  - Infosys
  - Disney
