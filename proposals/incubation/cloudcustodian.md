@@ -148,11 +148,15 @@ Less active channels include a mailing list, reddit, and stack overflow.
 
 * Case Studies / Articles
 
-** https://stelligent.com/2017/05/15/cloud-custodian-cleans-up-your-cloud-clutter/
-** https://www.cloudsecops.com/aws-security-audit-using-cloud-custodian-for-aws/
-** https://aws.amazon.com/blogs/opensource/announcing-cloud-custodian-integration-aws-security-hub/
-** https://aws.amazon.com/blogs/opensource/compliance-as-code-and-auto-remediation-with-cloud-custodian/
-** https://medium.com/slalom-technology/managing-cloud-compliance-at-scale-with-aws-security-hub-and-cloud-custodian-73c630863a59
+  - https://stelligent.com/2017/05/15/cloud-custodian-cleans-up-your-cloud-clutter/
+
+  - https://www.cloudsecops.com/aws-security-audit-using-cloud-custodian-for-aws/
+
+  - https://aws.amazon.com/blogs/opensource/announcing-cloud-custodian-integration-aws-security-hub/
+
+  - https://aws.amazon.com/blogs/opensource/compliance-as-code-and-auto-remediation-with-cloud-custodian/
+
+  - https://medium.com/slalom-technology/managing-cloud-compliance-at-scale-with-aws-security-hub-and-cloud-custodian-73c630863a59
 
 * We have a separate document with more exhaustive threat modeling
   exercises contributed by Capital One
