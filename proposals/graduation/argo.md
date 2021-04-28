@@ -35,8 +35,8 @@ Argo has been presented at Kubernetes community meetings, KubeCon conferences, a
 The Argo project is well-aligned with the CNCF’s mission to make cloud native computing ubiquitous. We are completely aligned to "empower organizations to build and run scalable applications" including the adoption of Kubernetes and declarative APIs. All the Argo tools are implemented as controllers and custom resources. They use/integrate with other CNCF projects like gRPC, Prometheus, NATS, Helm..
 
 #### Sponsors / Advisors from TOC
-* Michelle Noorali
 * Lei Zhang
+* Davanum Srinivas
 
 #### Project name
 * Argo
@@ -152,7 +152,9 @@ Core Infrastructure Initiative Best Practices Badges have been completed and are
 
 #### Have completed an independent and third party security audit with results published of similar scope and quality as [this example](https://github.com/envoyproxy/envoy#security-audit) which includes all critical vulnerabilities and all critical vulnerabilities need to be addressed before graduation
 
-Currently in progress with Trail of Bits as the 3rd party auditor.
+Third party security audit has been completed with Trail of Bits as the 3rd party auditor.
+https://github.com/argoproj/argoproj/blob/master/docs/argo_threat_model.pdf
+https://github.com/argoproj/argoproj/blob/master/docs/argo_security_final_report.pdf
 
 #### Explicitly define a project governance and committer process
 
