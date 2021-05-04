@@ -125,7 +125,7 @@ Some details that might inform the above include:
 * Is it easy to contribute to the project as an external contributor? If not, what are the main obstacles?
 * Are there any especially difficult personalities to deal with? How is this done? Is it a problem?
 * Getting interviews with 2-3 external contributors is advisable for DD process, both from the community and technical perspective. It can help to identify technical depth in areas like extensibility, API design and general code architecture.
-* For more in-depth review of the contributor experience, consulting with [sig-contributor-strategy](https://github.com/cncf/sig-contributor-strategy) is always a good idea.
+* For more in-depth review of the contributor experience, consulting with [tag-contributor-strategy](https://github.com/cncf/tag-contributor-strategy) is always a good idea.
 
 
 #### Context

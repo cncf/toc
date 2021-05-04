@@ -20,4 +20,4 @@ _**Project should address each area listed below**_
 
 ### * Link to Incubation Due Diligence(DD) Document
 
-### * Address any concerns or recommendations from the SIG and/or TOC sponsor(s) from the DD Document
+### * Address any concerns or recommendations from the TAG and/or TOC sponsor(s) from the DD Document

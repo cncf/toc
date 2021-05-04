@@ -1,4 +1,4 @@
-# CNCF Storage SIG Charter
+# CNCF Storage TAG Charter
 
 Primary Author: Quinton Hoole
 
@@ -11,7 +11,7 @@ Group and community.
 # Introduction
 
 This is the charter referred to in [CNCF
-SIGs](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#sig-charter)
+TAGs](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#tag-charter)
 by the CNCF TOC.
 
 # Areas Considered In Scope
@@ -47,13 +47,13 @@ Examples include:
     not they’re being used in a cloud-native environment).
 *   General authentication, authorization, accounting, auditing etc
     (even though these clearly apply to storage systems too) - because
-    AAA etc is clearly the domain of the CNCF Security SIG.
+    AAA etc is clearly the domain of the CNCF Security TAG.
 *   Standardizing container storage interfaces - this is the domain of CSI.
 *   Defining storage abstraction APIs for container orchestrators -
-    these are the domains of the Storage SIGs specific to each
+    these are the domains of the Storage TAGs or SIGs specific to each
     orchestrator, e.g. Kubernetes Storage SIG.
 
-# SIG Mission Statement
+# TAG Mission Statement
 
 To enable widespread and successful storage of persistent state in
 cloud-native environments through:
@@ -91,15 +91,15 @@ cloud-native environments through:
     container orchestration systems.  Again, we maintain close
     communication with this group, and avoid unnecessary duplication
     of effort and inconsistent messaging wherever possible.
-*   **CNCF Security SIG** - works on the more general area of
+*   **CNCF Security TAG** - works on the more general area of
     cloud-native security including authentication, authorization,
     encryption, accounting, auditing and related topics.  We defer as
     much as possible to this group to deal with general
     security-related issues, and liaise closely with them on how to
     deal with storage-specific security areas where these arise.
-*   **CNCF Apps SIG** (not yet fully formed) - will be focussed on the
+*   **CNCF App-Delivery TAG** - be focussed on the
     development, deployment, operation and testing of cloud-native
-    applications.  We collaborate with this SIG where this pertains to
+    applications.  We collaborate with this TAG where this pertains to
     Storage.
 *   **K8s Apps SIG** - has done some work on how Kubernetes apps use
     storage, as well as how storage systems (including databases) may
@@ -112,13 +112,13 @@ cloud-native environments through:
 
 # Operating Model
 
-This SIG follows the [standard operating
-guidelines](https://github.com/cncf/toc/blob/main/sigs/cncf-sigs.md#operating-model)
+This TAG follows the [standard operating
+guidelines](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#operating-model)
 provided by the TOC unless otherwise stated here.
 
 **TOC Liaison:** [Erin Boyd](https://github.com/erinboyd), [Saad Ali](https://github.com/saad-ali)
 
-**SIG Chairs:** [Alex Chircop](https://github.com/chira001), [Quinton Hoole](https://github.com/quinton-hoole)
+**TAG Chairs:** [Alex Chircop](https://github.com/chira001), [Quinton Hoole](https://github.com/quinton-hoole)
 
 **Tech Leads:** Xing Yang, Sugu Sougoumarane, Luis Pabon
 

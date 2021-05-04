@@ -1,4 +1,4 @@
-# CNCF SIG Contributor Strategy Charter
+# CNCF TAG Contributor Strategy Charter
 
 Primary Authors: Paris Pittman, Josh Berkus  
 
@@ -17,8 +17,8 @@ Reviewed and/or contributed to by:
 * Sarah Allen
 
 ## Introduction
-This charter describes the operations of the CNCF Special Interest Group (SIG)
-Contributor Strategy. This SIG is responsible for contributor experience,
+This charter describes the operations of the CNCF Special Interest Group (TAG)
+Contributor Strategy. This TAG is responsible for contributor experience,
 sustainability, governance, and openness guidance to help CNCF community groups
 and projects with their own contributor strategies for a healthy project.
 
@@ -28,7 +28,7 @@ Our initial three stakeholders:
 3 - TOC
 
 ## Mission
-Consistent with the CNCF SIG definition, the mission of CNCF SIG Contributor
+Consistent with the CNCF TAG definition, the mission of CNCF TAG Contributor
 Strategy is to collaborate on strategies related to building, scaling, and
 retaining contributor communities, including (people) governance, 
 communications, operations, and tools. We want to help grow flourishing, 
@@ -49,7 +49,7 @@ points for rolling feedback and guidance.
 
 #### In scope:
 The following, non exhaustive list of activities and deliverables are
-in-scope for the SIG:
+in-scope for the TAG:
 * Definition of a contributor. This is helpful across projects for metrics and
 establishing guidelines, programs, and workflows.
 * Contributor and goverance related proposed/suggested/modified project 
@@ -65,9 +65,9 @@ via surveys, GB reps, and Maintainers Circle (Example: what is the project doing
   now, challenges, gaps)
 
 #### Out of scope
-* The day to day operations of CNCF SIGs, Kubernetes SIGs, or any community 
+* The day to day operations of CNCF TAGs, Kubernetes TAGs, or any community 
 group of CNCF or its respective projects of any graduation level.
-* The creation and approval of CNCF SIGs or other community groups; we will
+* The creation and approval of CNCF TAGs or other community groups; we will
 offer advice but the responsibility lies on the TOC for those matters.
 * CNCF operations and marketing initiatives such as: product review/demo
 webinars, kubecon event planning, branding, stickers, swag, etc
@@ -93,12 +93,12 @@ If you see something here that interests you, join us and start it:
 * Automation and self service for contributors, community GitOps
 
 ## Governance
-This SIGs topic requires cross collaboration between end users, CNCF SIGs, and
+This TAGs topic requires cross collaboration between end users, CNCF TAGs, and
 CNCF projects of all graduation levels.
 
-This SIG should be populated and governed by reps from CNCF projects that want
+This TAG should be populated and governed by reps from CNCF projects that want
 to create and run intentional contributor experience programs, a rep(s) from the
-end user committee, and the TOC liaison(s). While the SIG reps do not need to be
+end user committee, and the TOC liaison(s). While the TAG reps do not need to be
 core maintainers, they do need to have a drive for making things better for
 contributors and end users. We welcome industry experts and academics in
 relevant working groups!
@@ -111,24 +111,24 @@ during a public TOC meeting.
 
 ### Members
 
-Members are active participants in the work of the SIG who are entitled to vote
-in any SIG decisions that require a vote.  Any contributor to the SIG is
-eligible to become a member after participating in the work of the SIG for at
+Members are active participants in the work of the TAG who are entitled to vote
+in any TAG decisions that require a vote.  Any contributor to the TAG is
+eligible to become a member after participating in the work of the TAG for at
 least three months.
 
-In order to prevent the SIG from becoming unbalanced, it will have the following
+In order to prevent the TAG from becoming unbalanced, it will have the following
 limits on who can be a voting member:
 
 Up to one from each participating Incubating or Sandbox CNCF project
 Up to two from each Graduated CNCF project
-One from each SIG-ContribStrat Working Group, generally the lead for that WG
+One from each TAG-ContribStrat Working Group, generally the lead for that WG
 No more than ⅓ of members from the same employer
 
 If a contributor would be entitled to be a member, but are restricted because of
 the above limits, they are a non-voting member who may participate in meetings
 but cannot vote.
 
-Members who are no longer participating actively in the SIG (including both WG
+Members who are no longer participating actively in the TAG (including both WG
   work and the regular meetings) will step down from membership.
 
 #### Chairs and TOC Liaison
@@ -139,14 +139,14 @@ Dillon)
 - Tech Leads: None at this time but can change with need at a later time with
 charter ratification   
 
-In accordance with the terms and roles laid out in [cncf-sigs.md](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md)
+In accordance with the terms and roles laid out in [cncf-tags.md](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md)
 
-The TOC will also appoint 3 [Chairs](https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md#chair)
+The TOC will also appoint 3 [Chairs](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#chair)
 
 ### Meetings and Decisions
 
-Most SIG work will be carried out without requiring any kind of regular meeting
-or vote. The SIG will have a regular meeting, bi-weekly, at which the
+Most TAG work will be carried out without requiring any kind of regular meeting
+or vote. The TAG will have a regular meeting, bi-weekly, at which the
 membership may vote on the following items as the come up:
 
 * Addition of new members or removal of inactive ones
@@ -158,17 +158,17 @@ the TOC
 
 ### Bootstrapping
 
-Initially, the TOC shall appoint three members in order to launch the SIG
+Initially, the TOC shall appoint three members in order to launch the TAG
 
 ## Reach out!
-Mailing List: [sig-contributor-strategy](mailto:sig-contributor-strategy@lists.cncf.io)
+Mailing List: [TAG-contributor-strategy](mailto:tag-contributor-strategy@lists.cncf.io)
 mailer at [lists.cncf.io](https://lists.cncf.io)  
 [Meeting Notes](https://docs.google.com/document/d/1Xjw-yAqidQW67zv7OfMRErsfCotc-mfQ_248Te_YL0g/edit#heading=h.252i9x89qe0d)  
-Slack channel: [#sig-contributor-strategy]  
+Slack channel: [#tag-contributor-strategy]  
 Public Meetings: Bi-weekly on Thursday at 5:30pm UTC. Join our mailing list for
 
 
-[cncf-sigs.md]: https://github.com/cncf/toc/blob/master/sigs/cncf-sigs.md
-[sig-contributor-strategy]: mailto:sig-contributor-strategy@lists.cncf.io
+[cncf-tags.md]: https://github.com/cncf/toc/blob/master/TAGs/cncf-tags.md
+[TAG-contributor-strategy]: mailto:tag-contributor-strategy@lists.cncf.io
 [lists.cncf.io]: https://lists.cncf.io
 [Meeting Notes]: https://docs.google.com/document/d/1Xjw-yAqidQW67zv7OfMRErsfCotc-mfQ_248Te_YL0g/edit#heading=h.252i9x89qe0d
