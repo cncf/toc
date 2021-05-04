@@ -129,8 +129,8 @@ inovasi-inovasi ini dapat diakses oleh semua orang.
 ## Türkçe
 
 
-Bulut mevzun teknolojiler, kuruluşların ölçeklenebilir uygulamaları genel, özel ve hibrit bulutlar gibi modern, dinamik ortamlarda oluşturup çalıştırmasını sağlar. Konteynerlar; hizmet ağları, mikro hizmetler, sabit altyapı ve bildirime dayalı API'ler bu yaklaşımı temsil etmektedir.
+Bulut tabanlı teknolojiler, kuruluşların ölçeklenebilir uygulamaları genel, özel ve hibrit bulutlar gibi modern, dinamik ortamlarda oluşturup çalıştırmasını sağlar. Konteynerler; servis ağları, mikro servisler, sabit altyapı ve bildirime dayalı API'ler bu yaklaşımı temsil etmektedir.
 
-Bu teknikler; esnek, yönetilebilir ve gözlemlenebilir olan gevşek bağlı sistemleri mümkün kılar. Sağlam otomasyonla desteklendiğinde, mühendislerin minimum zahmetle sık sık ve öngörülebilir şekilde yüksek etkili değişiklikler yapmasına olanak tanır.
+Bu teknikler; esnek, yönetilebilir ve gözlemlenebilir olan, birbirine sıkı sıkıya bağlı olmayan sistemleri mümkün kılar. Güçlü otomasyonlarla desteklendiğinde, mühendislerin yüksek etkili değişiklikleri daha az zahmetle, sık sık ve öngörülebilir şekilde yapmasına olanak tanır.
 
-**Cloud Native Computing Foundation** açık kaynaklı, satıcıdan bağımsız projelerden oluşan bir ekosistemi teşvik ederek bu paradigmanın benimsenmesini sağlamayı amaçlamaktadır. Bu yenilikleri herkes için erişilebilir kılmak için gelişmiş son teknoloji modellerini demokratikleştiriyoruz.
+**Cloud Native Computing Foundation** açık kaynaklı, sağlayıcıdan bağımsız projelerden oluşan bir ekosistemi teşvik ederek bu paradigmanın benimsenmesini sağlamayı amaçlamaktadır. Bu yenilikleri herkes için erişilebilir kılmak için gelişmiş son teknoloji modellerini demokratikleştiriyoruz.
