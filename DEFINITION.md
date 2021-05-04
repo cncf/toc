@@ -2,7 +2,7 @@
 
 *Approved by TOC: 2018-06-11*
 
-[العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
+[العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
 [Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
@@ -37,6 +37,18 @@ innovations accessible for everyone.
 这些技术能够构建容错性好、易于管理和便于观察的松耦合系统。结合可靠的自动化手段，云原生技术使工程师能够轻松地对系统作出频繁和可预测的重大变更。
 
 云原生计算基金会（CNCF）致力于培育和维护一个厂商中立的开源生态系统，来推广云原生技术。我们通过将最前沿的模式民主化，让这些创新为大众所用。
+
+<div dir="rtl">
+
+## עברית
+
+טכנולוגיות Cloud Native מעודדות ארגונים לבנות ולהפעיל יישומים מדרגיים בסביבות מודרניות ודינמיות כמו עננים ציבוריים, פרטיים והיברידיים. קונטיינרים, רשתות שירות (service meshes), מיקרו-שירותים, תשתית מקובעת, ו-APIs הצהרתיים הם דוגמאות לגישה הזאת.
+
+שיטות אלו מאפשרות צימוד רופף (loose coupling) של מערכות אשר יהיה עמיד, קל לניהול ולפיקוח. בשילוב עם אוטומציה עמידה, שיטות אלו מאפשרות למהנדסים לעשות שינויים משמעותיים באופן תדיר וצפוי במינימום מאמץ.
+
+קרן Cloud Native Computing Foundation שואפת להביא לאימוץ של הגישה הזאת ע"י טיפוח ותחזוק של מערך פרויקטים שאינו מוטה כלפי ספק מסוים (vendor-neutral) ובקוד פתוח. אנחנו רוצים להעביר תבניות חדישות בתהליך דמוקרטי כך שיהיו נגישות לכולם.
+
+</div>
 
 ## 日本語版：
 
