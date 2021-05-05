@@ -17,7 +17,7 @@ https://github.com/cncf/toc/tree/main/tags
 
 The CNCF Technical Advisory Groups (TAGs) scale contributions by the CNCF technical and user community, while retaining integrity and increasing quality in support of our mission.
 
-https://github.com/cncf/toc/tree/main/tagss
+https://github.com/cncf/toc/tree/main/tags
 
 ## What type of governance is my CNCF project expected to follow?
 
