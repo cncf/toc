@@ -1,6 +1,6 @@
-# SIG-Security Charter
+# TAG-Security Charter
 
-This charter describes operations as a [CNCF SIG](https://github.com/cncf/toc/blob/master/sigs/). The [Focus](#focus) section below describes what is in and out of scope,
+This charter describes operations as a [CNCF TAG](https://github.com/cncf/toc/blob/master/tags/). The [Focus](#focus) section below describes what is in and out of scope,
 and [Governance](#governance) section describes how our operations are consistent with CNCF policies with links to more detailed documents.
 
 **Mission:** to reduce risk that cloud native
@@ -36,7 +36,7 @@ improve overall security in cloud native systems.
 
 ## Focus
 
-In addition to the [CNCF security-related projects](https://github.com/cncf/sig-security/blob/master/governance/cncf-projects.md), there
+In addition to the [CNCF security-related projects](https://github.com/cncf/tag-security/blob/master/governance/cncf-projects.md), there
 are three key focus areas:
 * Protection of heterogeneous, distributed and fast changing systems, while
 providing needed access
@@ -47,7 +47,7 @@ requirements
 
 ### In scope
 
-Terminology note: SIG-Security uses the term "end user" to describe the humans
+Terminology note: TAG-Security uses the term "end user" to describe the humans
 who use cloud native applications, whereas CNCF refers to companies that operate
 cloud native systems as CNCF End Users. In the context of security, we often
 need to discuss how a particular control affects the people who use the software
@@ -59,7 +59,7 @@ system or the privacy of its users,  specifically how to enable secure
 access, policy control and safety for operators, administrators,
 developers, and end-users  across the cloud native ecosystem.
 
-SIG-Security will consider [proposals](https://github.com/cncf/sig-security/blob/master/governance/process.md) from its members or delegated
+TAG-Security will consider [proposals](https://github.com/cncf/tag-security/blob/master/governance/process.md) from its members or delegated
 tasks from the CNCF TOC that are consistent with the mission, including
 the following activities:
 
@@ -79,12 +79,12 @@ the following activities:
   * Best practices and anti-patterns (potentially highlighting where there is disagreement on these)
 * Security assessments of specific proposals or projects
 * Identify projects for consideration for CNCF
-* Cross-pollinate knowledge by participating and inviting people from other projects and SIGs to share security practices
-* Integrate relevant external standards, such as from CII or NIST, as part of educational resources and/or SIG processes
+* Cross-pollinate knowledge by participating and inviting people from other projects and TAGs to share security practices
+* Integrate relevant external standards, such as from CII or NIST, as part of educational resources and/or TAG processes
 
 Given that the group is comprised of volunteers, specific requests from the TOC
 may be queued according to the bandwidth of the group. The co-chairs will
-facilitate prioritization under the guidance of the SIG-Security TOC liaison.
+facilitate prioritization under the guidance of the TAG-Security TOC liaison.
 
 ### Out of scope
 * Not a standards body: We won't be creating standards.
@@ -115,16 +115,16 @@ other groups that
 focus on a particular technology (such as Kubernetes SIGs) or have a broader
 mandate (such as government organizations).
 
-As a guide to visitors, we maintain the list of groups in the SIG
-[README](https://github.com/cncf/sig-security#related-groups).
+As a guide to visitors, we maintain the list of groups in the TAG
+[README](https://github.com/cncf/tag-security#related-groups).
 
 Co-chairs are responsible to ensure periodic cross-group knowledge sharing,
 which is accomplished by cross-group membership, invitation to present at
-a SIG meeting and/or offering to present to the related group.
+a TAG meeting and/or offering to present to the related group.
 
 ## Operations
-SIG-Security operations are consistent with standard SIG operating guidelines
+TAG-Security operations are consistent with standard TAG operating guidelines
 provided by the CNCF Technical Oversight Committee
 [TOC](https://github.com/cncf/toc).
 
-Full details of process and roles are linked in the SIG Security [governance README](https://github.com/cncf/sig-security/tree/master/governance).
+Full details of process and roles are linked in the TAG Security [governance README](https://github.com/cncf/tag-security/tree/master/governance).

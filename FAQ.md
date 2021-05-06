@@ -10,14 +10,14 @@ https://github.com/cncf/toc/blob/main/process/election-schedule.md
 The best way to get involved is to start attending TOC meetings and become an official TOC Contributor:
 https://github.com/cncf/toc/blob/main/CONTRIBUTORS.md
 
-If you have specific focus areas, CNCF SIG meetings are good opportunity to dive in:
-https://github.com/cncf/toc/tree/main/sigs
+If you have specific focus areas, CNCF TAG meetings are good opportunity to dive in:
+https://github.com/cncf/toc/tree/main/tags
 
-## What are CNCF SIGs?
+## What are CNCF TAGs?
 
-The CNCF Special Interest Groups (SIGs) scale contributions by the CNCF technical and user community, while retaining integrity and increasing quality in support of our mission.
+The CNCF Technical Advisory Groups (TAGs) scale contributions by the CNCF technical and user community, while retaining integrity and increasing quality in support of our mission.
 
-https://github.com/cncf/toc/tree/main/sigs
+https://github.com/cncf/toc/tree/main/tags
 
 ## What type of governance is my CNCF project expected to follow?
 

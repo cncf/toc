@@ -75,18 +75,18 @@ To join: https://lists.cncf.io/mailman/listinfo/cncf-toc
 This is our [voting policy](docs/voting.md).
 
 
-## SIGs
+## Technical Advisory Groups
 
-The TOC has approved the formation of [SIGs](sigs/cncf-sigs.md).
+The TOC has approved the formation of [TAGs](tags/cncf-tags.md).
 Currently, the following Special Interest Groups are active: 
 
-* [SIG-Security](https://github.com/cncf/sig-security)
-* [SIG-Storage](https://github.com/cncf/sig-storage) 
-* [SIG-App-Delivery](https://github.com/cncf/sig-app-delivery)
-* [SIG-Network](https://github.com/cncf/sig-network)
-* [SIG-Runtime](https://github.com/cncf/sig-runtime)
-* [SIG Contributor Strategy](https://github.com/cncf/sig-contributor-strategy)
-* [SIG Observability](https://github.com/cncf/sig-observability)
+* [TAG-Security](https://github.com/cncf/tag-security)
+* [TAG-Storage](https://github.com/cncf/tag-storage) 
+* [TAG-App-Delivery](https://github.com/cncf/tag-app-delivery)
+* [TAG-Network](https://github.com/cncf/tag-network)
+* [TAG-Runtime](https://github.com/cncf/tag-runtime)
+* [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy)
+* [TAG Observability](https://github.com/cncf/tag-observability)
 
 
 ## Working Groups

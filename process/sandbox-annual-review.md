@@ -2,7 +2,7 @@
 
 Sandbox projects are subject to an annual review by the TOC. This is intended to be a lightweight process to ensure that projects are on track, and getting the support they need.
 
-To keep it lightweight, it is a single phase process - the review doesn't first pass through SIGs and then the TOC. The review document is shared with the community and SIG members can comment on each review, as can any other TOC contributor. The intention is to quickly reach a position where TOC members agree to continue sponsorship. 
+To keep it lightweight, it is a single phase process - the review doesn't first pass through TAGs and then the TOC. The review document is shared with the community and TAG members can comment on each review, as can any other TOC contributor. The intention is to quickly reach a position where TOC members agree to continue sponsorship. 
 
 ## How to file your annual review
 
