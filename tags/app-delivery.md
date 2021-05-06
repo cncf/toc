@@ -1,4 +1,4 @@
-# CNCF SIG App Delivery Charter
+# CNCF TAG App Delivery Charter
 
 Primary Authors: Michelle Noorali, Alexis Richardson
 
@@ -120,7 +120,7 @@ Lifecycle management of applications is a broad and mainstream topic of Cloud Na
 ## **Operations**
 
 * TOC Liaisons: Davanum Srinivas, Lei Zhang, Cornelia Davis
-* SIG chairs: [Alois Reitbauer](https://github.com/AloisReitbauer), [Bryan Liles]((https://github.com/bryanl)), [Lei Zhang (Harry)](https://github.com/resouer)
+* TAG chairs: [Alois Reitbauer](https://github.com/AloisReitbauer), [Bryan Liles]((https://github.com/bryanl)), [Lei Zhang (Harry)](https://github.com/resouer)
 * See [roles](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-chairs) for more information
 * Slack channel: #tag-app-delivery in CNCF workspace - [https://cloud-native.slack.com/messages/CL3SL0CP5](https://cloud-native.slack.com/messages/CL3SL0CP5) 
 
