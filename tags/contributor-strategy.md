@@ -65,7 +65,7 @@ via surveys, GB reps, and Maintainers Circle (Example: what is the project doing
   now, challenges, gaps)
 
 #### Out of scope
-* The day to day operations of CNCF TAGs, Kubernetes TAGs, or any community 
+* The day to day operations of CNCF TAGs, Kubernetes SIGs, or any community 
 group of CNCF or its respective projects of any graduation level.
 * The creation and approval of CNCF TAGs or other community groups; we will
 offer advice but the responsibility lies on the TOC for those matters.
@@ -93,7 +93,7 @@ If you see something here that interests you, join us and start it:
 * Automation and self service for contributors, community GitOps
 
 ## Governance
-This TAGs topic requires cross collaboration between end users, CNCF TAGs, and
+This TAG's topic requires cross collaboration between end users, CNCF TAGs, and
 CNCF projects of all graduation levels.
 
 This TAG should be populated and governed by reps from CNCF projects that want
