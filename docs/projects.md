@@ -154,8 +154,7 @@
 [TUF/Notary](https://github.com/theupdateframework/notary) | [08/07/18](https://cure53.de/pentest-report_tuf.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
 [OPA](https://github.com/open-policy-agent/opa) | [08/30/18](https://cure53.de/pentest-report_opa.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
 [Contour](https://github.com/projectcontour/contour) | [12/01/21](https://github.com/projectcontour/contour/blob/main/Contour_Security_Audit_Dec2020.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
-
-
+[linkerd (fuzzing)](https://github.com/ctz/rustls) | [05/07/2021](https://github.com/linkerd/linkerd2-proxy/blob/main/docs/reports/linkerd2-proxy-fuzzing-report.pdf) | [Announcement](https://linkerd.io/2021/05/07/fuzz-testing-for-linkerd/) | CNCF | [AdaLogics](https://adalogics.com)
 
 ## Archived Projects
 
