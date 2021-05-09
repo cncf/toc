@@ -3,7 +3,7 @@
 *Approved by TOC: 2018-06-11*
 
 [العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian)
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -136,3 +136,11 @@ usaha yang minimal.
 **Cloud Native Computing Foundation** berusaha untuk mendorong adopsi paradigma ini dengan membina dan menopang sebuah
 ekosistem proyek-proyek yang bersifat sumber terbuka (*open source*) dan tidak memihak vendor tertentu. Kami mendemokratisasi pola-pola terkini agar
 inovasi-inovasi ini dapat diakses oleh semua orang.
+
+## Türkçe:
+
+Buluta Yönelik (**Cloud Native**) teknolojiler kuruluşlara kamusal, özel ve karma bulut ortamları gibi devingen, çağdaş ortamlarda ölçeklenebilir uygulamalar oluşturma ve çalıştırma gücü sağlar. Konteynırlar, servis ağları (service mesh),  mikroservisler, değiştirilmez alt yapılar ve bildirimsel API'ler bu yaklaşıma örnek verilebilir.
+
+Bu yöntemler dirençli, yönetilebilir ve gözlemlenebilir gevşek bağlı sistemlerin oluşturulmasını sağlar. Bunlar güçlü bir otomasyonla harmanlandığında, mühendislerin en az çaba ile yüksek etki oluşturan değişimleri sık ve öngörülebilir şekilde yapabilmelerine olanak verir.
+
+**Cloud Native Computing Foundation** açık kaynaklı ve üretici bağımsız bir ekosistemi destekleyerek ve büyüterek bu paradigmanın benimsenmesini amaçlamaktadır. Bu alandaki en son gelişmelerin herkes tarafından ulaşabilabilir olması için çalışırız.
