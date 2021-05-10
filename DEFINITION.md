@@ -143,4 +143,4 @@ Buluta Yönelik (**Cloud Native**) teknolojiler kuruluşlara kamusal, özel ve k
 
 Bu yöntemler dirençli, yönetilebilir ve gözlemlenebilir gevşek bağlı sistemlerin oluşturulmasını sağlar. Bunlar güçlü bir otomasyonla harmanlandığında, mühendislerin en az çaba ile yüksek etki oluşturan değişimleri sık ve öngörülebilir şekilde yapabilmelerine olanak verir.
 
-**Cloud Native Computing Foundation** açık kaynaklı ve üretici bağımsız bir ekosistemi destekleyerek ve büyüterek bu paradigmanın benimsenmesini amaçlamaktadır. Bu alandaki en son gelişmelerin herkes tarafından ulaşabilabilir olması için çalışırız.
+**Cloud Native Computing Foundation** açık kaynaklı ve üretici bağımsız bir ekosistemi destekleyerek ve büyüterek bu paradigmanın benimsenmesini amaçlamaktadır. Bu alandaki en son gelişmelerin herkes tarafından ulaşabilabilir olması için çalışır.
