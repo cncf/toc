@@ -9,14 +9,14 @@
   - [Governance](#governance)
   - [Operations](#operations)
 
-*Initially authored by [Matthew Young][matthew young] with grateful review and
-contributions from:
+Review and contributions from:
 [Alex Nauda][Alex Nauda],
 [Alois Reitbauer][Alois Reitbauer],
 [Bartłomiej (Bartek) Płotka][Bartłomiej (Bartek) Płotka],
 [Daniel Khan][Daniel Khan],
 [Daniel Prata][Daniel Prata],
 [Lincoln Sward][Lincoln Sward],
+[Matthew Young][Matthew Young],
 [Matthias Loibl][Matthias Loibl],
 [Michael Hausenblas][Michael Hausenblas],
 [Ricardo Aravena][Ricardo Aravena],
@@ -29,23 +29,24 @@ contributions from:
 and [Umair Ishaq][Umair Ishaq].*
 
 <!-- TODO: please put github names here -->
-[Matthew Young]:              https://github.com/halcyondude
 [Alex Nauda]:                 @
-[Alois Reitbauer]:            @
-[Bartłomiej (Bartek) Płotka]: @
+[Alois Reitbauer]:            https://github.com/aloisreitbauer
+[Bartłomiej (Bartek) Płotka]: https://github.com/bwplotka
+[Brendan Burns]:              https://github.com/brendandburns
 [Daniel Khan]:                @
 [Daniel Prata]:               @
 [Lincoln Sward]:              @
-[Matthias Loibl]:             @
-[Michael Hausenblas]:         @
-[Ricardo Aravena]:            @
-[Richard Hartmann]:           @
+[Matthew Young]:              https://github.com/halcyondude
+[Matthias Loibl]:             https://github.com/metalmatze
+[Michael Hausenblas]:         https://github.com/mhausenblas
+[Ricardo Aravena]:            https://github.com/raravena80
+[Richard Hartmann]:           https://github.com/RichiH
 [Sergey Kanzhelev]:           @
-[Steve Flanders]:             @
+[Steve Flanders]:             https://github.com/flands
 [Ted Young]:                  @
 [Tigran Najaryan]:            @
-[Tommy Chong]:                @
-[Umair Ishaq]:                @
+[Tommy Chong]:                https://github.com/techietommy
+[Umair Ishaq]:                https://github.com/umairishaq
 
 ## Introduction
 
@@ -101,13 +102,14 @@ topics such as:
 - Best practices for meaningful alerting, queries, and operational dashboards
   including how to manage things including rules, definitions, thresholds and
   policies.
-- How developers, operators, SRE, IT, and other actors comprehend, process, and
-  reason on distributed cloud-native systems.
+- How developers, operators, Site Reliability Engineers (SRE), IT Engineers, and
+  other actors comprehend, process, and reason on distributed cloud-native
+  systems.
 - Projects that incorporate novel & insightful approaches to utilizing
   observability data such as:
   - ML, model training, Bayesian networks, and other data science techniques
     that enable anomaly & intrusion detection.
-  - correlating resource consumption with costing data to reduce the total cost
+  - Correlating resource consumption with costing data to reduce the total cost
     of cloud native infrastructure
   - Using observability data exposed by service meshes, orchestrators, and other
     metric sources to inform continuous deployment tooling (e.g. Canary
@@ -117,7 +119,7 @@ topics such as:
 - Best practices around observability and its continuous improvement, e.g. post
   mortems, runbooks
 - Provide guidance around and foster interoperability between observability
-  solutions without trying to enforce one specific standard
+  solutions without trying to enforce one specific standard.
 - Foster understanding of the prerequisites and corner-stones of observability
   like SLI/KPI, service objectives, and internal/external commitments.
 
@@ -129,7 +131,7 @@ that are in-scope for this TAG
   them in useful and novel ways.
 - Definitions of implementations and patterns for best practices for
   delivering observability tooling at enterprise scale.
-- Tooling composition and tool chain creation based on existing projects.
+- Tooling composition and toolchain creation based on existing projects.
 - Best practices for operations and monitoring workflows using CNCF Projects.
 - Organizing and helping to provide visibility to Meetups, Blogs, and Podcasts
   related to the scope of the TAG.
@@ -138,11 +140,11 @@ that are in-scope for this TAG
 - Patterns for observing application delivery pipelines.
 - Education regarding instrumentation cloud native workloads.
 - Processing and Accessing relevant observability data at scale.
-- Policy and security controls for observabilty data.
+- Policy and security controls for observability data.
 - Creating artifacts as part of CI/CD pipelines that facilitate observation of
-  services.  Concrete examples might be:
-  - service profiles for Linkerd
-  - debug binaries or other diagnostic metadata.
+  services. Concrete examples might be:
+  - Service profiles for Linkerd.
+  - Debug binaries or other diagnostic metadata.
   - representative trace spans from failing CI tests.
 
 ## Areas considered out of Scope
@@ -162,17 +164,19 @@ Examples include:
 
 ## Roadmap & Initial Efforts
 
-- Contribute to [due diligence reports][ddr] to assist the CNCF TOC for projects
-  in the scope of the TAG.
+- Contribute to Due Diligence (DD) Reviews in accordance with the TOC's
+  [Due Diligence Guidelines][ddg] and [Due Diligence Review Template][ddrt] to
+  assist the CNCF TOC for projects in the scope of the SIG.
 - Facilitate webinars and presentations from CNCF projects and domain experts in
   the scope of the TAG.
 - Formation of [TAG working group(s)][tagwg] as resource capacity and member
   contribution allows.
 
-  > _SIGs may choose to spawn focussed and time-limited working groups to achieve some of their responsibilities (for example, to produce a specific educational white paper, or portfolio gap analysis report). Working groups should have a clearly documented charter, timeline (typically a few quarters at most), and set of deliverables. Once the timeline has elapsed, or the deliverables delivered, the working group dissolves, or is explicitly re-chartered._
+  > _TAGs may choose to spawn focussed and time-limited working groups to achieve some of their responsibilities (for example, to produce a specific educational white paper, or portfolio gap analysis report). Working groups should have a clearly documented charter, timeline (typically a few quarters at most), and set of deliverables. Once the timeline has elapsed, or the deliverables delivered, the working group dissolves, or is explicitly re-chartered._
 
-[ddr]: https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md
-[tagwg]: https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#responsibilities--empowerment-of-tags
+[ddg]: https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md
+[ddrt]: https://github.com/cncf/toc/blob/master/process/dd-review-template.md
+[tagwg]: https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#responsibilities--empowerment-of-tags
 
 ## Governance
 
@@ -185,18 +189,24 @@ Examples include:
 
 - Formation of the TAG follows the [documented process][tagform].
 - [Roles][tagroles] for TAG Observability
-  - TOC Liaison: 	Lei Zhang, Cornelia Davis
-  - TAG Chairs: [Matt Young](https://github.com/halcyondude), [Richard Hartmann](https://github.com/RichiH)
-  - Tech Leads: [Michael Hausenblas](https://github.com/mhausenblas), [Bartłomiej Płotka](https://github.com/bwplotka), 
-
-\*_**(TODO: need confirmation)**_
+  - TOC Liaison: Lei Zhang, Cornelia Davis
+  - TAG Chairs:
+    - [Matthew Young][matthew young]
+    - [Richard Hartmann][Richard Hartmann]
+    - TBD
+  - Tech Leads ([definition][tagtldefinition], [TL election][tagtlprocess])
+    - Bartłomiej Płotka
+    - TBD more
 
 [tagform]: https://github.com/cncf/toc/tree/main/tags#tag-formation-process
 [tagroles]: https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#tag-member-roles
+[tagtlprocess]: https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#elections
+[tagtldefinition]: https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#tech-lead
 
 - Contact
   - Slack channel: #tag-observability @ [https://cloud-native.slack.com](https://cloud-native.slack.com)
   - Email List: [cncf-tag-observability@lists.cncf.io](mailto:cncf-tag-observability@lists.cncf.io)
 - Meeting Schedule:
-  - TBD - pending feedback from TAG members
-  - [https://www.cncf.io/community/calendar](https://www.cncf.io/community/calendar/)
+  - Every 2nd Tuesday, 4pm - 5pm, UTC ([CNCF Calendar][cncfcal] for details)
+
+[cncfcal]: https://www.cncf.io/calendar
