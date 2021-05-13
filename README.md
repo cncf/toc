@@ -78,7 +78,7 @@ This is our [voting policy](docs/voting.md).
 ## Technical Advisory Groups
 
 The TOC has approved the formation of [TAGs](tags/cncf-tags.md).
-Currently, the following Special Interest Groups are active: 
+Currently, the following Technical Advisory Groups are active: 
 
 * [TAG-Security](https://github.com/cncf/tag-security)
 * [TAG-Storage](https://github.com/cncf/tag-storage) 
