@@ -251,4 +251,4 @@ Dapr has had multiple, independent [security audits](https://docs.dapr.io/concep
 
 All logos are available in https://github.com/dapr/docs/tree/v1.0/daprdocs/assets/icons
 
-The svg main logo is here: https://github.com/dapr/docs/blob/v1.0/daprdocs/assets/icons/logo.png 
+The svg main logo is here: https://github.com/dapr/docs/blob/v1.0/daprdocs/assets/icons/logo.svg
