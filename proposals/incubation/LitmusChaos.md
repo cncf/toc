@@ -65,18 +65,18 @@ https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md
 ### Community Stats (graphs / dashboards) 
 
 - Stars
-  - 1.5k from 650 (2x)
+  - 1.7k from 650 (2x)
 
 - Slack Membership
-  - 555 from 237 (~134%+)
+  - 662 from 237 (>2x)
 
 - Usage metrics 
   - Operator Installations / Experiment Run Count
-    - Operator installations: 41667 
-    - Experiments Run: 215294
+    - Operator installations: 77521 
+    - Experiments Run: 253096
 
   - New Experiments Added
-    - 48 from 29 (17) 
+    - 50 from 29 (21) 
 
 ### External contributions
 
@@ -150,6 +150,17 @@ With all these features, Litmus is a comprehensive platform for chaos engineerin
     - https://sumitnagal.medium.com/chaos-journey-279924051d57
     - https://youtu.be/cvH6R4wRVrg?t=1055
 
+  - [Orange](https://www.orange.com/) :Litmus is being used to test the resilience of OpenStack based Kubernetes environment. Litmus experiments are run against their internal cloud systems and also in some of their CI/CD pipelines.
+
+     References: 
+     
+     - https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/orange.md
+
+  - [Anuta Networks](https://www.anutanetworks.com/) : Anuta Networks uses Kubernetes for some applications that enable parts of their public cloud. Litmus is being used by their SREs to test the resilience of their Kubernetes platform and these applications.
+
+     References: 
+     - https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/anutanetworks.md 
+
   - [Red Hat](https://www.redhat.com/en) : Litmus is being used to test the maturity and resilience of Red Hat Openshift Virtualization solution. The experiments involve chaos injection on the VMs that host the OpenShift nodes (reboots, shutdowns) as well as pod level chaos while using litmus probes to validate expected behavior during chaos.
 
      References: 
@@ -190,7 +201,6 @@ Litmus is known to be used by the following organizations which are at various s
 - [Navi Technologies](https://navi.com/)
 - [Akridata](https://www.akridata.com/)
 - [Workday](https://www.workday.com/)
-- [Anuta Networks](https://www.anutanetworks.com/)
 - [Argo AI](https://www.argo.ai/)
 - [Nokia](https://nokia.com)
 - [AWS](https://aws.amazon.com)
@@ -209,6 +219,9 @@ Litmus is known to be used by the following organizations which are at various s
       - [Uma Mukkara (MayaData)](https://github.com/umamukkara)
       - [Maria Kotlyarevskaya (Wrike)](https://github.com/Jasstkn)
 
+  - Other significant contributors
+    - [Jordi Gil (RedHat)](https://github.com/jordigilh)
+    
   - Committers across Organizations (per SIG / sub-projects)
 
     - SIG Integrations: [litmus-python, chaos-charts, chaos-workflows, litmus-go, litmus-ansible]
@@ -236,8 +249,8 @@ Litmus is known to be used by the following organizations which are at various s
   - [Sustained monthly release](https://litmuschaos.devstats.cncf.io/d/8/dashboards?orgId=1&refresh=15m&from=now-1y&to=now-1h) cadence (15th of every month) (this is measured against releases on litmuschaos/litmus)
   - Patch releases on demand (1-2) between monthly releases for individual components / sub-projects
 
-- New Contributors added in last 6 months: 50  
-  - (81 since 12 months) [starting 25th Nov 2019](https://litmuschaos.devstats.cncf.io/d/52/new-contributors-table?orgId=1&from=now-1y&to=now)
+- New Contributors added in last 6 months: 63  
+  - (94 since 12 months) [starting 25th Nov 2019](https://litmuschaos.devstats.cncf.io/d/52/new-contributors-table?orgId=1&from=now-1y&to=now)
 
 - [PRs opened/merged per month](https://litmuschaos.devstats.cncf.io/d/12/issues-opened-closed-by-repository-group?orgId=1&var-period=m&var-repogroup_name=All&from=now-1y&to=now): ~290/~280 
 
