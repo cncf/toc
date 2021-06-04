@@ -26,7 +26,7 @@ a pull request with document referencing the roles and charter, updating the lis
 ## TAG Chairs as of June 2021
 
 ### TAG Storage 
-* [Erin Boyd](https://github.com/erinboyd)
+* [Xing Yang](https://github.com/xing-yang)
 * [Quinton Hoole](https://github.com/quinton-hoole)
 * [Alex Chircop](https://github.com/chira001)
 
@@ -66,3 +66,4 @@ a pull request with document referencing the roles and charter, updating the lis
 | TAG Security | [Sarah Allen](https://github.com/ultrasaurus) |
 | TAG Security |[Jeyappragash Jeyakeerthi](https://github.com/pragashj) |
 | TAG Security |[Dan Shaw](https://github.com/dshaw) |
+| TAG Storage | [Erin Boyd](https://github.com/erinboyd | 
