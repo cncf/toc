@@ -138,14 +138,13 @@ For our releases, Keptn maintainers follow the [release checklist](https://githu
 
 ## Roadmap
 
-The complete project [roadmap is publicly available](https://github.com/keptn/enhancement-proposals/blob/master/roadmap.md) and upcoming feature highlights are listed below:
+The complete project [roadmap is publicly available](https://github.com/keptn/enhancement-proposals/blob/master/roadmap.md) and upcoming building blocks are listed below:
 
-- **[Zero-downtime Upgrades & High Availability](https://github.com/keptn/enhancement-proposals/pull/48)**: 
-- **[Support for Keptn Uniform](https://github.com/keptn/enhancement-proposals/issues/42)**:
-- **Security and access control**: 
-- **Multi-tenancy support**
-- **Ecosystem expansion**
-
+- **[Zero-downtime Upgrades & High Availability](https://github.com/keptn/enhancement-proposals/pull/48)**: *Goal: Utilization of Keptn at scale without downtime for the end-user.* This implies running critical components with multiple replicas, utilizing rolling upgrade mechanism, and graceful shutdowns for various upgrading scenarios.
+- **[Keptn Uniform support](https://github.com/keptn/enhancement-proposals/issues/42)**: *Goal: Seamless integration of DevOps tooling into the sequence orchestration by Keptn.* This implies having UI-support for managing connected integrations and means to configure their subscriptions.
+- **Security: Access Control**: *Goal: Allow fine-grained access control for interacting with Keptn.* This contains basic functionality to control user access and user/API permissions. 
+- **Execution Plane support**: *Goal: Central component (e.g., Operator) for managing execution-planes.* For handling multiple execution-planes that are connected to one Keptn control-plane, a central component has to be in place that implements the communication and is responsible for operating the integrations (which are running on the execution plane).
+- **Multi-tenancy**: *Goal: Reduction of resource footprint by multi-tenant capabilities.* This concludes architectural changes in Keptn for maintaining multiple clients with multiple projects by one Keptn installation.
 
 ## Incubation Proposal Resources
 
