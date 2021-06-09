@@ -6,7 +6,7 @@ Keptn is a cloud-native application life-cycle orchestration tool. Its goal is n
 
 Keptn builds upon declarative definitions for multi-stage environments, SLO-based quality gates, and auto-remediation and integrates with tools via an event-based approach. 
 
-TBA
+TBA Jürgen
 
 
 ## Sandbox proposal artifacts
@@ -53,39 +53,40 @@ TBD double check this list
 | Statistic | Sandbox | Current | Multiplier |
 |-|-|-|-|
 | [GitHub stars](https://github.com/keptn/keptn/stargazers) | 410 | 893+ | >2x |
-| Commits | 3,751 | 5,500+ | ~1.5x |
-| [Releases](https://github.com/keptn/keptn/releases) | 18 | 30 | >1.5x |
+| [Commits](https://github.com/keptn/keptn) | 3,751 | 5,500+ | ~1.5x |
+| [Releases](https://github.com/keptn/keptn/releases) | 18 | 30+ | >1.5x |
 | [Contributors (commits)](https://github.com/keptn/keptn/graphs/contributors) | 23 | 56+ | >2x |
 | [Twitter followers](https://twitter.com/keptnProject) | 495 | 1,133+ | >2x |
-| [Slack members](https://slack.keptn.sh) | WHERE TO FIND THIS NUMBER | 645+ (93,000+ messages sent) | TBA |
+| [Slack weekly active users](https://slack.keptn.sh) | 50 | 110+ (645+ users in total) | >2x |
 | [YouTube subscribers](https://www.youtube.com/c/keptn) | 78 | 235+ | >3x | 
 
 
 ### Collaboration within the CNCF Ecosystem
 
-TBD: ongoing and already released collaborations
+In the following, we provide a list of ecosystem projects that have collaborated or integrated with Keptn.
 
-  * [LitmusChaos](https://www.youtube.com/watch?v=_DgCc4-BLW8): orchestrating Chaos tests and load tests as part of a Keptn CD sequence as evaluating its impact with SLO-based quality-gates (presented at KubeCon 2021 europe)
-  * [Tekton](https://cdeliveryfdn.slack.com/archives/C0151BTKEJX/p1622202061013700): bridging the gap between CI and CD by defining interoperable events that can be exchanged between Tekton and Keptn 
-  * [ArgoRollouts](https://www.youtube.com/watch?v=w-E8FzTbN3g): orchestrating a delivery sequence via ArgoRollouts for canary releases with Keptn quality gates to proceed or stop the rollout
-  * [Crossplane](https://www.youtube.com/watch?v=V8L-JTpkEpc&list=PL510POnNVaaYFuK-B_SIUrpIonCtLVOzT&index=3): utilization of Crossplane for infrastructure management in DevOps workflows and Keptn CD sequences.
-  * [Helm](https://github.com/keptn/keptn/tree/master/helm-service): deployment of applications via Helm charts orchestrated by Keptn
-  * [Gitlab](https://www.youtube.com/watch?v=fyS8m8VoayM): automating deployment validation using Keptn’s SLI/SLO-based quality gates orchestrated in Gitlab CI/CD pipelines.
-  * [Istio](https://keptn.sh/docs/0.8.x/continuous_delivery/deployment_helm/): usage of Istio for traffic shifting between blue/green deployments. Keptn rewrites Istio virtual services and therefore manages the traffic shifting.
-  * [CloudEvents](https://github.com/keptn/spec/blob/master/cloudevents.md): all events that are sent to and from the Keptn control plane make use of the CloudEvents specification. 
-  * [NATS](https://nats.io/): Keptn is using NATS as its message system internally and [contributed back to the NATS project](https://github.com/nats-io/k8s/pull/222).
-  * [Ansible](https://github.com/keptn-sandbox/ansibletower-service): Integration to trigger Ansible Tower playbooks as part of Keptn's orchestrated remediation sequences. 
-  * [Jenkins](https://github.com/keptn-sandbox/keptn-jenkins-library): Jenkins shared library for integrating Keptn use cases with Jenkins pipelines.
-  * [Auto-remediation working group](https://docs.google.com/document/d/1_WlLP6oLcHe0yyC7kXH2hB3i9bOPvIArp83NohE78FU/edit#): Keptn maintainers initiated a working group to discuss the current state and requirements of auto-remediation and to define the future of automated operations where auto-remediation is a big part of.
-  * ArtifactHub: issue from LFX scholarship
+* [LitmusChaos](https://www.youtube.com/watch?v=_DgCc4-BLW8): orchestrating Chaos tests and load tests as part of a Keptn CD sequence as evaluating its impact with SLO-based quality-gates (presented at KubeCon 2021 europe)
+* [Tekton](https://cdeliveryfdn.slack.com/archives/C0151BTKEJX/p1622202061013700): bridging the gap between CI and CD by defining interoperable events that can be exchanged between Tekton and Keptn 
+* [ArgoRollouts](https://www.youtube.com/watch?v=w-E8FzTbN3g): orchestrating a delivery sequence via ArgoRollouts for canary releases with Keptn quality gates to proceed or stop the rollout
+* [Crossplane](https://www.youtube.com/watch?v=V8L-JTpkEpc&list=PL510POnNVaaYFuK-B_SIUrpIonCtLVOzT&index=3): utilization of Crossplane for infrastructure management in DevOps workflows and Keptn CD sequences.
+* [Helm](https://github.com/keptn/keptn/tree/master/helm-service): deployment of applications via Helm charts orchestrated by Keptn
+* [Gitlab](https://www.youtube.com/watch?v=fyS8m8VoayM): automating deployment validation using Keptn’s SLI/SLO-based quality gates orchestrated in Gitlab CI/CD pipelines.
+* [Istio](https://keptn.sh/docs/0.8.x/continuous_delivery/deployment_helm/): usage of Istio for traffic shifting between blue/green deployments. Keptn rewrites Istio virtual services and therefore manages the traffic shifting.
+* [CloudEvents](https://github.com/keptn/spec/blob/master/cloudevents.md): all events that are sent to and from the Keptn control plane make use of the CloudEvents specification. 
+* [NATS](https://nats.io/): Keptn is using NATS as its message system internally and [contributed back to the NATS project](https://github.com/nats-io/k8s/pull/222).
+* [Ansible](https://github.com/keptn-sandbox/ansibletower-service): Integration to trigger Ansible Tower playbooks as part of Keptn's orchestrated remediation sequences. 
+* [Jenkins](https://github.com/keptn-sandbox/keptn-jenkins-library): Jenkins shared library for integrating Keptn use cases with Jenkins pipelines.
+* [Auto-remediation working group](https://docs.google.com/document/d/1_WlLP6oLcHe0yyC7kXH2hB3i9bOPvIArp83NohE78FU/edit#): Keptn maintainers initiated a working group to discuss the current state and requirements of auto-remediation and to define the future of automated operations where auto-remediation is a big part of.
 
-Planned: 
- * ArgoCD: 
- * Flux
- * Falco
- * Vault
- * OpenTelemetry: [KEP reference](https://github.com/keptn/enhancement-proposals/pull/30)
- * Snyk
+Integrations that are currently planned for Keptn, in no particular order:
+
+* [ArtifactHub](https://github.com/keptn/keptn/issues/3406) to provide a central hub for Keptn itself and Keptn integrations. Currently, integrations are curated via GitHub, and the ArtifactHub can provide a holistic view for the user on all available integrations.
+* [OpenTelemetry](https://github.com/keptn/enhancement-proposals/pull/30) to align the Keptn's internal "Keptn context" with the trace-context supported by OpenTelemetry.
+* ArgoCD for deployments as an alternative via Helm charts and ArgoRollouts that are already supported by Keptn.
+* Flux, similar to ArgoCD, for deployments as an alternative via Helm charts and ArgoRollouts that are already supported by Keptn
+* Falco to identify any security issues and have its ruleset managed by Keptn and use Keptn to orchestrate counter-action in response to identified security threats.
+* Vault to support encrypted secret management in Keptn.
+* Snyk to be integrated in the CD process to check for security vulnerabilities of container images as part of a quality gate and as a dedicated security scanning task during multi-stage delivery.
 
 
 
@@ -140,11 +141,11 @@ For our releases, Keptn maintainers follow the [release checklist](https://githu
 
 The complete project [roadmap is publicly available](https://github.com/keptn/enhancement-proposals/blob/master/roadmap.md) and upcoming feature highlights are listed below:
 
-- Zero-downtime Upgrades & HA: https://github.com/keptn/enhancement-proposals/pull/48 
-- Support for Keptn Uniform:  https://github.com/keptn/enhancement-proposals/issues/42 
-- Security and access control   
-- Multi-tenancy support
-- Ecosystem expansion
+- **[Zero-downtime Upgrades & HA](https://github.com/keptn/enhancement-proposals/pull/48)**: 
+- **[Support for Keptn Uniform](https://github.com/keptn/enhancement-proposals/issues/42)**:
+- **Security and access control**: 
+- **Multi-tenancy support**
+- **Ecosystem expansion**
 
 
 ## Incubation Proposal Resources
