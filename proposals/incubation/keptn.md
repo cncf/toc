@@ -33,12 +33,17 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 - *Clear separation of control-plane and execution-plane*: Both components can be installed separately and allow for different execution-planes that are connected to Keptn. 
 - *Multi-cluster support*: Keptn control-plane and execution plane can run on separate clusters in the same or even in different cloud providers or on-prem. This allows, e.g., Keptn to orchestrate delivery of application even if each stage/environment is managed on a separate Kubernetes cluster.
 - *Support for individual tasks in sequences*: User defined tasks can be added to a task sequence allowing for customized sequences.
-- *Support for multiple parallel stages to be executed*: TBD
+- *Support for multiple parallel stages to be executed*: TBD Johannes
+- *Hardening of Keptn*: Introduced RBAC for all Keptn core services to restrict permissions used by Keptn, added security contexts for core services, and core services are not running root users anymore.
+- *Concept for subscribing execution-plane services to the control-plane*: Developed an approach to manage subscription of execution-plane services to the Keptn control-plane.
+- *Reduced resource consumption*: TBD Johannes
 
 
-**Ecosystem Growth**: Keptn has grown its ecosystem by adding support for more than 15 tools and addd and strengthened integrations with CNCF projects as well as other tools. Besides, the Keptn team is providing [templates](https://github.com/keptn-sandbox?q=template&type=&language=&sort=) to foster new tools integrations. 
-- Added integrations: ArgoRollouts, LitmusChaos, Jenkins, Slack, Splunk, Gitlab, Grafana, Jira, AnsibleTower, XMatters, Locust, Artillery, ZenDesk, Azure DevOps, OneChart (from Gimlet), and counting
-- Strengthened integrations in CNCF Ecosystem: CloudEvents, Prometheus, Helm
+**Ecosystem Growth**: Keptn has grown its ecosystem by adding support for more than 15 tools and added and strengthened integrations with CNCF projects as well as other tools. Besides, the Keptn team is providing [templates](https://github.com/keptn-sandbox?q=template&type=&language=&sort=) to foster new tools integrations. 
+- Added integrations: ArgoRollouts, LitmusChaos, Slack, Splunk, Gitlab, Grafana, Jira, AnsibleTower, XMatters, Locust, Artillery, ZenDesk, Azure DevOps, OneChart (from Gimlet), and counting
+- Strengthened integrations with CNCF Ecosystem: CloudEvents, Prometheus, Helm, Jenkins
+
+TBD double check this list
 
 **Community**: We have significantly grown our community, on average by the factor 2 spanning across our multiple channels. In Slack, which is our preferred way to interact with the Keptn community, we have more than double our weekly active users (from around 50 to 110+), and all other community channels have shown significant increase as well as shown in the following. Besides the community growth, we have established weekly Keptn developer and community meetings (see public CNCF calendar) as well as monthly Keptn user groups to foster exchange between Keptn adopters that share best practices on their Keptn usage. 
 
@@ -48,7 +53,7 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 | Statistic | Sandbox | Current | Multiplier |
 |-|-|-|-|
 | [GitHub stars](https://github.com/keptn/keptn/stargazers) | 410 | 893+ | >2x |
-| Commits? |  | 5,500+ |
+| Commits | 3,751 | 5,500+ | ~1.5x |
 | [Releases](https://github.com/keptn/keptn/releases) | 18 | 30 | >1.5x |
 | [Contributors (commits)](https://github.com/keptn/keptn/graphs/contributors) | 23 | 56+ | >2x |
 | [Twitter followers](https://twitter.com/keptnProject) | 495 | 1,133+ | >2x |
@@ -58,7 +63,9 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 
 ### Collaboration within the CNCF Ecosystem
 
-  * [LitmusChaos](https://www.youtube.com/watch?v=_DgCc4-BLW8): orchestrating Chaos tests and load tests as part of a Keptn CD sequence as evaluating its impact with SLO-based quality-gates ( presented at KubeCon 2021 europe)
+TBD: ongoing and already released collaborations
+
+  * [LitmusChaos](https://www.youtube.com/watch?v=_DgCc4-BLW8): orchestrating Chaos tests and load tests as part of a Keptn CD sequence as evaluating its impact with SLO-based quality-gates (presented at KubeCon 2021 europe)
   * [Tekton](https://cdeliveryfdn.slack.com/archives/C0151BTKEJX/p1622202061013700): bridging the gap between CI and CD by defining interoperable events that can be exchanged between Tekton and Keptn 
   * [ArgoRollouts](https://www.youtube.com/watch?v=w-E8FzTbN3g): orchestrating a delivery sequence via ArgoRollouts for canary releases with Keptn quality gates to proceed or stop the rollout
   * [Crossplane](https://www.youtube.com/watch?v=V8L-JTpkEpc&list=PL510POnNVaaYFuK-B_SIUrpIonCtLVOzT&index=3): utilization of Crossplane for infrastructure management in DevOps workflows and Keptn CD sequences.
@@ -66,17 +73,21 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
   * [Gitlab](https://www.youtube.com/watch?v=fyS8m8VoayM): automating deployment validation using Keptn’s SLI/SLO-based quality gates orchestrated in Gitlab CI/CD pipelines.
   * [Istio](https://keptn.sh/docs/0.8.x/continuous_delivery/deployment_helm/): usage of Istio for traffic shifting between blue/green deployments. Keptn rewrites Istio virtual services and therefore manages the traffic shifting.
   * [CloudEvents](https://github.com/keptn/spec/blob/master/cloudevents.md): all events that are sent to and from the Keptn control plane make use of the CloudEvents specification. 
+  * [NATS](https://nats.io/): Keptn is using NATS as its message system internally and [contributed back to the NATS project](https://github.com/nats-io/k8s/pull/222).
   * [Ansible](https://github.com/keptn-sandbox/ansibletower-service): Integration to trigger Ansible Tower playbooks as part of Keptn's orchestrated remediation sequences. 
   * [Jenkins](https://github.com/keptn-sandbox/keptn-jenkins-library): Jenkins shared library for integrating Keptn use cases with Jenkins pipelines.
   * [Auto-remediation working group](https://docs.google.com/document/d/1_WlLP6oLcHe0yyC7kXH2hB3i9bOPvIArp83NohE78FU/edit#): Keptn maintainers initiated a working group to discuss the current state and requirements of auto-remediation and to define the future of automated operations where auto-remediation is a big part of.
+  * ArtifactHub: issue from LFX scholarship
 
-
-Planned:
- * ArtifactHub
+Planned: 
+ * ArgoCD: 
+ * Flux
  * Falco
  * Vault
- * OpenTracing
- * Flux
+ * OpenTelemetry: [KEP reference](https://github.com/keptn/enhancement-proposals/pull/30)
+ * Snyk
+
+
 
 
 ## Incubation Stage Requirements
@@ -124,6 +135,16 @@ The projects versioning scheme is related to the [semantic versioning](https://s
 
 The Keptn project has a 4 weeks release cadence since version Keptn 0.8.0. Prior to that releases were based on value increments. 
 For our releases, Keptn maintainers follow the [release checklist](https://github.com/keptn/keptn/wiki/Release-Checklist) as documented for the latest releases [0.8.1](https://github.com/keptn/keptn/issues/3483), [0.8.2](https://github.com/keptn/keptn/issues/3746 ), and [0.8.3](https://github.com/keptn/keptn/issues/4089) were a dedicated [release manager](https://github.com/keptn/keptn/wiki/Release-Checklist#github-issues-milestone-etc) is responsible for driving the release process. If need be, there is a [hotfix checklist](https://github.com/keptn/keptn/wiki/Hotfix-Checklist) that has been executed for a [hotfix release](https://github.com/keptn/keptn/issues/3909) in the past.
+
+## Roadmap
+
+The complete project [roadmap is publicly available](https://github.com/keptn/enhancement-proposals/blob/master/roadmap.md) and upcoming feature highlights are listed below:
+
+- Zero-downtime Upgrades & HA: https://github.com/keptn/enhancement-proposals/pull/48 
+- Support for Keptn Uniform:  https://github.com/keptn/enhancement-proposals/issues/42 
+- Security and access control   
+- Multi-tenancy support
+- Ecosystem expansion
 
 
 ## Incubation Proposal Resources
