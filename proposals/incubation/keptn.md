@@ -6,6 +6,7 @@ Keptn is a cloud-native application life-cycle orchestration tool. Its goal is n
 
 Keptn builds upon declarative definitions for multi-stage environments, SLO-based quality gates, and auto-remediation and integrates with tools via an event-based approach. 
 
+TBA
 
 
 ## Sandbox proposal artifacts
@@ -55,14 +56,28 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 | [YouTube subscribers](https://www.youtube.com/c/keptn) | 78 | 235+ | >3x | 
 
 
-## Collaboration within the CNCF Ecosystem
+### Collaboration within the CNCF Ecosystem
 
-  * [Crossplane](https://www.youtube.com/watch?v=V8L-JTpkEpc&list=PL510POnNVaaYFuK-B_SIUrpIonCtLVOzT&index=3) 
-  * [LitmusChaos](https://www.youtube.com/watch?v=_DgCc4-BLW8) presented at KubeCon 2021 europe
-  * [Tekton](https://cdeliveryfdn.slack.com/archives/C0151BTKEJX/p1622202061013700) 
-  * [ArgoRollouts](https://www.youtube.com/watch?v=w-E8FzTbN3g)
-  * [Helm]
-  * [Cloudevents](https://cloudevents.io/) 
+  * [LitmusChaos](https://www.youtube.com/watch?v=_DgCc4-BLW8): orchestrating Chaos tests and load tests as part of a Keptn CD sequence as evaluating its impact with SLO-based quality-gates ( presented at KubeCon 2021 europe)
+  * [Tekton](https://cdeliveryfdn.slack.com/archives/C0151BTKEJX/p1622202061013700): bridging the gap between CI and CD by defining interoperable events that can be exchanged between Tekton and Keptn 
+  * [ArgoRollouts](https://www.youtube.com/watch?v=w-E8FzTbN3g): orchestrating a delivery sequence via ArgoRollouts for canary releases with Keptn quality gates to proceed or stop the rollout
+  * [Crossplane](https://www.youtube.com/watch?v=V8L-JTpkEpc&list=PL510POnNVaaYFuK-B_SIUrpIonCtLVOzT&index=3): utilization of Crossplane for infrastructure management in DevOps workflows and Keptn CD sequences.
+  * [Helm](https://github.com/keptn/keptn/tree/master/helm-service): deployment of applications via Helm charts orchestrated by Keptn
+  * [Gitlab](https://www.youtube.com/watch?v=fyS8m8VoayM): automating deployment validation using Keptn’s SLI/SLO-based quality gates orchestrated in Gitlab CI/CD pipelines.
+  * [Istio](https://keptn.sh/docs/0.8.x/continuous_delivery/deployment_helm/): usage of Istio for traffic shifting between blue/green deployments. Keptn rewrites Istio virtual services and therefore manages the traffic shifting.
+  * [CloudEvents](https://github.com/keptn/spec/blob/master/cloudevents.md): all events that are sent to and from the Keptn control plane make use of the CloudEvents specification. 
+  * [Ansible](https://github.com/keptn-sandbox/ansibletower-service): Integration to trigger Ansible Tower playbooks as part of Keptn's orchestrated remediation sequences. 
+  * [Jenkins](https://github.com/keptn-sandbox/keptn-jenkins-library): Jenkins shared library for integrating Keptn use cases with Jenkins pipelines.
+  * [Auto-remediation working group](https://docs.google.com/document/d/1_WlLP6oLcHe0yyC7kXH2hB3i9bOPvIArp83NohE78FU/edit#): Keptn maintainers initiated a working group to discuss the current state and requirements of auto-remediation and to define the future of automated operations where auto-remediation is a big part of.
+
+
+Planned:
+ * ArtifactHub
+ * Falco
+ * Vault
+ * OpenTracing
+ * Flux
+
 
 ## Incubation Stage Requirements
 
@@ -76,11 +91,10 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 
 1. [Kitopi](https://www.kitopi.com/), the world's leading cloud kitchen platform, is using Keptn to evaluate the resilience of their applications. Using Keptn quality gates and Prometheus data, their evaluations are running in several nightly runs over 3 chaos stages, summing up in total of over 700 runs as of March 2021. Find a reference of Adrian Gonciarz, Lead QA Engineer, [who presented their use case](https://www.youtube.com/watch?t=222&v=m_RVxVQQrHo).
 
-1. [Intuit](https://www.intuit.com/), a leading provider of financial software in the United States of America, is using Keptin conjunction with other tools in a system called DISTRO to allow for distributed load testing and evaluations thereof. The tooling includes Galting, Argo, and Keptn. Sumit Nagal, Principal Engineer, has summarized their application a [blog](https://sumitnagal.medium.com/distributed-load-testing-using-argo-in-kubernetes-distro-132c350f8733) and [presented it in a Keptn user group](https://www.youtube.com/watch?v=Omprl5OFtEw&t=402s)
+1. [Intuit](https://www.intuit.com/), a leading provider of financial software in the United States of America, is using Keptn in conjunction with other tools in a system called DISTRO to allow for distributed load testing and evaluations thereof. The tooling includes Gatling, Argo, and Keptn. Sumit Nagal, Principal Engineer, has summarized their application a [blog](https://sumitnagal.medium.com/distributed-load-testing-using-argo-in-kubernetes-distro-132c350f8733) and [presented it in a Keptn user group](https://www.youtube.com/watch?v=Omprl5OFtEw&t=402s)
 
-1. Raiffeisen 
-    - Use Case TBA
-    - Reference TBA
+1. [Raiffeisen Software](https://www.r-software.at/) is a leading software manufacturer for financial applications in Europe. They are running Keptn quality gates for internet banking, both for their mobile app and desktop applications evaluating 30+ SLIs and SLOs for each release. The software quality is evaluated weekly via load tests, and integrated in Jenkins. 
+    - Reference TBA (blog)
 
 
 There are many more adopters of Keptn and organizations evaluating the project as well. Organizations that agreed to have them listed publicly can be found in the [ADOPTERS.md](https://github.com/keptn/keptn/blob/master/ADOPTERS.md) file which currently lists 10 adopters, while some of these have only consented to sharing their details privately with the TOC, if required.
@@ -91,23 +105,27 @@ Keptn currently has contributions from [more than 15 different organizations](ht
 
 There are 10 maintainers and a clear [membership definition](https://github.com/keptn/community/blob/master/COMMUNITY_MEMBERSHIP.md) on how to become a member, approver, and maintainer of the project. An example of a recent member that have been promoted via this process can be found [here](https://github.com/keptn/community/issues/45) and [here](https://github.com/keptn/community/issues/42). 
 
-Due to the architecture of the project, it is worth to mention that 
+TBA: steering committee (create issue for this)
+
+Due to the architecture of the project, it is worth to mention that contributions and enhancement to Keptn do not necessarily be contributed to [Keptn core](https://github.com/keptn/keptn), but often are contributed to the Keptn ecosystem in terms of [Keptn-Contrib](https://github.com/keptn-contrib) and [Keptn-Sandbox](https://github.com/keptn-sandbox). Both ecosystem repositories currently hold 30+ integrations in total, maintained by 65+ contributors ([contrib](https://github.com/orgs/keptn-contrib/people) / [sandbox](https://github.com/orgs/keptn-sandbox/people)).
 
 
 ### Demonstrate a substantial ongoing flow of commits and merged contributions
 
-The project averages at ~620 contributions from around ~16 contributors per month - DEVSTATS https://keptn.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=m&var-metric=commits&var-repogroup_name=All&var-country_name=All&var-company_name=All&var-company=all 
-
-
-
-
+The project averages at [~620 contributions from around ~16 contributors](https://keptn.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=m&var-metric=commits&var-repogroup_name=All&var-country_name=All&var-company_name=All&var-company=all) per month according to keptn.devstats.cncf.io contained within [126 merged PRs](https://keptn.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=m&var-metric=mergedprs&var-repogroup_name=All&var-country_name=All&var-company_name=All&var-company=all&from=now-1y&to=now-9d) on average per month for the last year.
 
 ### A clear versioning scheme
 
+The projects versioning scheme is related to the [semantic versioning](https://semver.org/spec/v2.0.0.html) structure and implemented for Keptn as follows:
 
-### Incubation Proposal Resources
+- Major: currently 0 as the [spec](https://github.com/keptn/spec) is actively developed and not yet finalized
+- Minor: is incremented if breaking change in the Keptn spec occurs
+- Patch: can contain bug fixes and features (including [Keptn Enhancement Proposals](https://github.com/keptn/enhancement-proposals))
+
+The Keptn project has a 4 weeks release cadence since version Keptn 0.8.0. Prior to that releases were based on value increments. 
+For our releases, Keptn maintainers follow the [release checklist](https://github.com/keptn/keptn/wiki/Release-Checklist) as documented for the latest releases [0.8.1](https://github.com/keptn/keptn/issues/3483), [0.8.2](https://github.com/keptn/keptn/issues/3746 ), and [0.8.3](https://github.com/keptn/keptn/issues/4089) were a dedicated [release manager](https://github.com/keptn/keptn/wiki/Release-Checklist#github-issues-milestone-etc) is responsible for driving the release process. If need be, there is a [hotfix checklist](https://github.com/keptn/keptn/wiki/Hotfix-Checklist) that has been executed for a [hotfix release](https://github.com/keptn/keptn/issues/3909) in the past.
+
+
+## Incubation Proposal Resources
 
 TBA
-
-
-
