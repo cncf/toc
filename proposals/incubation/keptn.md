@@ -31,12 +31,12 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 - *Delivery assistant*: Promotion after an SLO-based quality gate evaluation can be done manually, automated, or even via 3rd party integrations using e.g., a ChatOps approach with Slack.
 - *Support for closed-loop remediation*: Remediation sequences orchestrated by Keptn include evaluation of the executed remediation actions to verify if a remediation sequence can be aborted as a result of a fixed issue or might need escalation if automated remediation can not solve the issue.
 - *Clear separation of control-plane and execution-plane*: Both components can be installed separately and allow for different execution-planes that are orchestrated by a Keptn control-plane. The separation of the planes enables: 
-    - *Multi-cluster support*: Keptn control-plane and execution plane can run on separate clusters in the same or even in different cloud providers, or on-prem. This allows, e.g., Keptn to orchestrate the delivery of the application even if each stage/environment is managed on a separate Kubernetes cluster.
+    - *Multi-cluster support*: Keptn control-plane and execution-plane can run on separate clusters in the same or even in different cloud providers, or on-prem. This allows, e.g., Keptn to orchestrate the delivery of the application even if each stage/environment is managed on a separate Kubernetes cluster.
     - *Parallel sequence executions*: The execution-planes are independent from each other meaning that they can execute sequences (e.g., for delivery or remediation) in parallel. This enables the use-case of deploying an app into multiple environments simultaneously. 
 - *Support for individual tasks in sequences*: User-defined tasks can be added to a task sequence allowing for customized delivery or remediation use-cases.
 - *Hardening of Keptn*: Introduced RBAC for all Keptn core services to restrict permissions on the Kubernetes cluster, added security contexts for core services, and core services are not running root users anymore.
-- *Concept for subscribing execution-plane services to the control-plane*: Developed an approach to manage the subscription of execution-plane services to the Keptn control-plane.
-- *Reduced resource consumption*: TBD Johannes
+- *Concept for subscribing execution-plane services (aka. integrations) to the control-plane*: Developed an approach to manage the subscription of execution-plane services to the Keptn control-plane.
+- *Reduced resource consumption*: From Keptn 0.6.2 (the latest stable release as the project achieved Sandbox) to Keptn 0.8.3 (latest stable release as of today), the resource footprint has been reduced by various improvements: (1) removing Istio from the default Keptn installation, (2) switching from Helm 2 to Helm 3 what removed Tiller, (3) defining explicit resource quota for the Keptn core services, and (4) extracting services that are needed for delivery/remediation use-cases but not for the core functionality of Keptn (see: *Clear separation of control-plane and execution-plane* mentioned above).
 
 **Ecosystem Growth**: Keptn has grown its ecosystem by adding support for more than 15 tools and added and strengthened integrations with CNCF projects as well as other tools. Besides, the Keptn team is providing [templates](https://github.com/keptn-sandbox?q=template&type=&language=&sort=) to foster new tools integrations. 
 - Added integrations: ArgoRollouts, LitmusChaos, Slack, Splunk, Gitlab, Grafana, Jira, AnsibleTower, XMatters, Locust, Artillery, ZenDesk, Azure DevOps, OneChart (from Gimlet), and counting
@@ -71,7 +71,7 @@ In the following, we provide a list of ecosystem projects that have collaborated
 * [Helm](https://github.com/keptn/keptn/tree/master/helm-service): deployment of applications via Helm charts orchestrated by Keptn
 * [Gitlab](https://www.youtube.com/watch?v=fyS8m8VoayM): automating deployment validation using Keptn’s SLI/SLO-based quality gates orchestrated in Gitlab CI/CD pipelines.
 * [Istio](https://keptn.sh/docs/0.8.x/continuous_delivery/deployment_helm/): usage of Istio for traffic shifting between blue/green deployments. Keptn rewrites Istio virtual services and therefore manages the traffic shifting.
-* [CloudEvents](https://github.com/keptn/spec/blob/master/cloudevents.md): all events that are sent to and from the Keptn control plane make use of the CloudEvents specification. 
+* [CloudEvents](https://github.com/keptn/spec/blob/master/cloudevents.md): all events that are sent to and from the Keptn control-plane make use of the CloudEvents specification. 
 * [NATS](https://nats.io/): Keptn is using NATS as its message system internally and [contributed back to the NATS project](https://github.com/nats-io/k8s/pull/222).
 * [Ansible](https://github.com/keptn-sandbox/ansibletower-service): Integration to trigger Ansible Tower playbooks as part of Keptn's orchestrated remediation sequences. 
 * [Jenkins](https://github.com/keptn-sandbox/keptn-jenkins-library): Jenkins shared library for integrating Keptn use cases with Jenkins pipelines.
@@ -86,8 +86,6 @@ Integrations that are currently planned for Keptn, in no particular order:
 * Falco to identify any security issues and have its ruleset managed by Keptn and use Keptn to orchestrate counter-action in response to identified security threats.
 * Vault to support encrypted secret management in Keptn.
 * Snyk to be integrated into the CD process to check for security vulnerabilities of container images as part of a quality gate and as a dedicated security scanning task during multi-stage delivery.
-
-
 
 
 ## Incubation Stage Requirements
@@ -140,11 +138,16 @@ For our releases, Keptn maintainers follow the [release checklist](https://githu
 
 The complete project [roadmap is publicly available](https://github.com/keptn/enhancement-proposals/blob/master/roadmap.md) and upcoming building blocks are listed below:
 
-- **[Zero-downtime Upgrades & High Availability](https://github.com/keptn/enhancement-proposals/pull/48)**: *Goal: Utilization of Keptn at scale without downtime for the end-user.* This implies running critical components with multiple replicas, utilizing rolling upgrade mechanism, and graceful shutdowns for various upgrading scenarios.
-- **[Keptn Uniform support](https://github.com/keptn/enhancement-proposals/issues/42)**: *Goal: Seamless integration of DevOps tooling into the sequence orchestration by Keptn.* This implies having UI-support for managing connected integrations and means to configure their subscriptions.
-- **Security: Access Control**: *Goal: Allow fine-grained access control for interacting with Keptn.* This contains basic functionality to control user access and user/API permissions. 
-- **Execution Plane support**: *Goal: Central component (e.g., Operator) for managing execution-planes.* For handling multiple execution-planes that are connected to one Keptn control-plane, a central component has to be in place that implements the communication and is responsible for operating the integrations (which are running on the execution plane).
-- **Multi-tenancy**: *Goal: Reduction of resource footprint by multi-tenant capabilities.* This concludes architectural changes in Keptn for maintaining multiple clients with multiple projects by one Keptn installation.
+- **[Zero-downtime Upgrades & High Availability](https://github.com/keptn/enhancement-proposals/pull/48)**: *Utilization of Keptn at scale without downtime for the end-user.* 
+    * Critical components in Keptn are running with multiple replicas, utilizing rolling upgrade mechanism, and graceful shutdowns for various upgrading scenarios.
+- **[Keptn Uniform support](https://github.com/keptn/enhancement-proposals/issues/42)**: *Seamless integration of DevOps tooling into the sequence orchestration by Keptn.* 
+    * UI-support for managing connected integrations and means to configure their subscriptions.
+- **Security: Access Control**: *Allow fine-grained access control for interacting with Keptn.* 
+    * Basic functionality to control user access and user/API permissions on different entities (e.g., Keptn projects)
+- **Execution-Plane support**: *Central component (e.g., Operator) for installing and managing execution-planes.* 
+    * For handling multiple execution-planes that are connected to one Keptn control-plane, a central component (*in the sense of an Operator*) has to be in place that allows installing an execution-plane, handles the communication back to the control-plane, and is responsible for operating the integrations (which are running on the execution-plane).
+- **Multi-tenancy**: *Reduction of resource footprint by multi-tenant capabilities.* 
+    * This concludes architectural changes in Keptn core for maintaining multiple clients with multiple projects by one Keptn deployment.
 
 ## Incubation Proposal Resources
 
