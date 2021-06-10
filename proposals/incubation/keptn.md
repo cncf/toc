@@ -12,6 +12,10 @@ Keptn builds upon declarative definitions for multi-stage environments, SLO-base
 The control-plane is responsible to orchestrate the life-cycle of an application managed by Keptn.
 Execution-plane service can connect to the control-plane to interact with Keptn via CloudEvents sent through NATS. The CloudEvents are currently stored in a MongoDB that serves as the datastore for all events that are sent via Keptn and allows for full traceability of life-cycle events. The architecture of the Keptn project can be found in the [Keptn documentation](https://keptn.sh/docs/concepts/architecture/).
 
+**Keptn Quality Gates**: should have a dedicated section 
+
+TODO: shape introduction
+
 
 ## Sandbox proposal artifacts
 
@@ -67,6 +71,7 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 
 In the following, we provide a list of ecosystem projects that have collaborated or integrated with Keptn.
 
+* [Prometheus](https://github.com/keptn-contrib/prometheus-service): configuring Prometheus by creating scrape jobs and alerting rules based on SLOs managed by Keptn and utilizing data from Prometheus for Keptn quality gates.
 * [LitmusChaos](https://www.youtube.com/watch?v=_DgCc4-BLW8): orchestrating Chaos tests and load tests as part of a Keptn CD sequence as evaluating its impact with SLO-based quality-gates (presented at KubeCon 2021 Europe)
 * [Tekton](https://www.youtube.com/watch?v=Qq3fTt6g2FM&list=PL2KXbZ9-EY9RlxWAnAjxs8Azuz11XVhkC&index=6): bridging the gap between CI and CD by defining interoperable events that can be exchanged between Tekton and Keptn 
 * [ArgoRollouts](https://www.youtube.com/watch?v=w-E8FzTbN3g): orchestrating a delivery sequence via ArgoRollouts for canary releases with Keptn quality gates to proceed or stop the rollout
@@ -76,6 +81,7 @@ In the following, we provide a list of ecosystem projects that have collaborated
 * [Istio](https://keptn.sh/docs/0.8.x/continuous_delivery/deployment_helm/): usage of Istio for traffic shifting between blue/green deployments. Keptn rewrites Istio virtual services and therefore manages the traffic shifting.
 * [CloudEvents](https://github.com/keptn/spec/blob/master/cloudevents.md): all events that are sent to and from the Keptn control-plane make use of the CloudEvents specification. 
 * [NATS](https://nats.io/): Keptn is using NATS as its message system internally and [contributed back to the NATS project](https://github.com/nats-io/k8s/pull/222).
+* [Grafana](https://github.com/keptn-sandbox/grafana-service): Integration to automatically create dashboards for services managed by Keptn. 
 * [Ansible](https://github.com/keptn-sandbox/ansibletower-service): Integration to trigger Ansible Tower playbooks as part of Keptn's orchestrated remediation sequences. 
 * [Jenkins](https://github.com/keptn-sandbox/keptn-jenkins-library): Jenkins shared library for integrating Keptn use cases with Jenkins pipelines.
 * [Auto-remediation working group](https://docs.google.com/document/d/1_WlLP6oLcHe0yyC7kXH2hB3i9bOPvIArp83NohE78FU/edit#): Keptn maintainers initiated a working group to discuss the current state and requirements of auto-remediation and to define the future of automated operations where auto-remediation is a big part of.
