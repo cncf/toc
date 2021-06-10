@@ -65,7 +65,7 @@ TBD double check this list
 In the following, we provide a list of ecosystem projects that have collaborated or integrated with Keptn.
 
 * [LitmusChaos](https://www.youtube.com/watch?v=_DgCc4-BLW8): orchestrating Chaos tests and load tests as part of a Keptn CD sequence as evaluating its impact with SLO-based quality-gates (presented at KubeCon 2021 Europe)
-* [Tekton](https://cdeliveryfdn.slack.com/archives/C0151BTKEJX/p1622202061013700): bridging the gap between CI and CD by defining interoperable events that can be exchanged between Tekton and Keptn 
+* [Tekton](https://www.youtube.com/watch?v=Qq3fTt6g2FM&list=PL2KXbZ9-EY9RlxWAnAjxs8Azuz11XVhkC&index=6): bridging the gap between CI and CD by defining interoperable events that can be exchanged between Tekton and Keptn 
 * [ArgoRollouts](https://www.youtube.com/watch?v=w-E8FzTbN3g): orchestrating a delivery sequence via ArgoRollouts for canary releases with Keptn quality gates to proceed or stop the rollout
 * [Crossplane](https://www.youtube.com/watch?v=V8L-JTpkEpc&list=PL510POnNVaaYFuK-B_SIUrpIonCtLVOzT&index=3): utilization of Crossplane for infrastructure management in DevOps workflows and Keptn CD sequences.
 * [Helm](https://github.com/keptn/keptn/tree/master/helm-service): deployment of applications via Helm charts orchestrated by Keptn
@@ -95,7 +95,7 @@ Integrations that are currently planned for Keptn, in no particular order:
 1. [Schlumberger](https://slb.com/), an oilfield services company working in more than 120 countries, has currently 4 applications evaluated with Keptn quality gates. Evaluations make use of 10-20 SLIs, one of them even 90 SLIs per quality gate evaluation. Their integration triggers Keptn quality gates via Azure DevOps automation daily.
     - Reference: Keptn user group TBA June 15
 
-1. [Vitality Group](https://www.vitalitygroup.com/) is a leading behavior change platform to make people healthier and enhance and protect their lives. They are triggering Keptn quality gates by utilizing an integration with Jenkins. Currently, Vitality has 22 services onboarded in DEV, TEST & QA environments. They are running quality evaluations with Keptn multiple times a day in DEV, once per day in TEST, and Adhoc via the Keptn API in QA.
+1. [Vitality Group](https://www.vitalitygroup.com/) is a leading behavior change platform to make people healthier and enhance and protect their lives. They are triggering Keptn quality gates by utilizing an integration with Jenkins. Currently, Vitality has 22 services managed by Keptn in DEV, TEST & QA environments. They are running quality evaluations with Keptn multiple times a day in DEV, once per day in TEST, and ad-hoc via the Keptn API in QA.
     - Reference: TBA
 
 1. [Kitopi](https://www.kitopi.com/), the world's leading cloud kitchen platform, is using Keptn to evaluate the resilience of their applications. Using Keptn quality gates and Prometheus data, their evaluations are running in several nightly runs over 3 chaos stages, summing up in a total of over 700 runs as of March 2021. Find a reference of Adrian Gonciarz, Lead QA Engineer, [who presented their use case](https://www.youtube.com/watch?t=222&v=m_RVxVQQrHo).
@@ -114,9 +114,9 @@ Keptn currently has contributions from [more than 15 different organizations](ht
 
 There are 10 maintainers and a clear [membership definition](https://github.com/keptn/community/blob/master/COMMUNITY_MEMBERSHIP.md) on how to become a member, approver, and maintainer of the project. An example of a recent member that have been promoted via this process can be found [here](https://github.com/keptn/community/issues/45) and [here](https://github.com/keptn/community/issues/42). 
 
-TBA: steering committee (create an issue for this)
-
 Due to the architecture of the project, it is worth mentioning that contributions and enhancement to Keptn do not necessarily be contributed to [Keptn core](https://github.com/keptn/keptn), but often are contributed to the Keptn ecosystem in terms of [Keptn-Contrib](https://github.com/keptn-contrib) and [Keptn-Sandbox](https://github.com/keptn-sandbox). Both ecosystem repositories currently hold 30+ integrations in total, maintained by 65+ contributors ([contrib](https://github.com/orgs/keptn-contrib/people) / [sandbox](https://github.com/orgs/keptn-sandbox/people)).
+
+In addition to a clear membership definition, the Keptn project plans to establish a [steering committee](https://github.com/keptn/keptn/issues/4284) that helps to shape the future of the project and provide guidance for maintainers. 
 
 
 ### Demonstrate a substantial ongoing flow of commits and merged contributions
@@ -145,7 +145,7 @@ The complete project [roadmap is publicly available](https://github.com/keptn/en
 - **Security: Access Control**: *Allow fine-grained access control for interacting with Keptn.* 
     * Basic functionality to control user access and user/API permissions on different entities (e.g., Keptn projects)
 - **Alignment with [Continous Delivery Foundation (CDF) eventing standard](https://github.com/cdfoundation/sig-events)**: *Establish an industry-wide eventing standard jointly with the CDF.* 
-    * A translation layer will translate *CDF events* into *Keptn events*, followed by a step-wise integration of the established eventing standard into Keptn.
+    * A translation layer will translate *CDF events* into *Keptn events*, followed by a step-wise integration of the established eventing standard into Keptn. [Recording of SIG meeting](https://www.youtube.com/watch?v=Qq3fTt6g2FM&list=PL2KXbZ9-EY9RlxWAnAjxs8Azuz11XVhkC&index=6)
 - **Execution-Plane support**: *Central component (e.g., Operator) for installing and managing execution-planes.* 
     * For handling multiple execution-planes that are connected to one Keptn control-plane, a central component (*in the sense of an Operator*) has to be in place that allows installing an execution-plane, handles the communication back to the control-plane, and is responsible for operating the integrations (which are running on the execution-plane).
 - **Multi-tenancy**: *Reduction of resource footprint by multi-tenant capabilities.* 
