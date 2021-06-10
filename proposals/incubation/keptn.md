@@ -22,7 +22,7 @@ Keptn was accepted into the CNCF Sandbox on [June 24th, 2020](https://lists.cncf
 
 ### Progress since joining the CNCF Sandbox
 
-Since joining the CNCF Sandbox, Keptn has made substantial progress in various dimensions: user adoption, feature set, ecosystem growth, and community growth.
+Since joining the CNCF Sandbox, Keptn has made substantial progress in various dimensions, including user adoption, feature set, ecosystem growth, and community growth.
 
 **User Adoption**: Keptn has been adopted by 25+ organizations (highlights being listed in section [requirements](#incubation-stage-requirements)) and seen a 6x increase of weekly downloads of the Keptn CLI. The successful usage of Keptn has been presented in Keptn User Groups, blogs, as well as presentations of Keptn users in meetups.
 
@@ -90,7 +90,7 @@ Integrations that are currently planned for Keptn, in no particular order:
 
 ## Incubation Stage Requirements
 
-### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgment, are of adequate quality and scope
+### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope
 
 1. [Schlumberger](https://slb.com/), an oilfield services company working in more than 120 countries, has currently 4 applications evaluated with Keptn quality gates. Evaluations make use of 10-20 SLIs, one of them even 90 SLIs per quality gate evaluation. Their integration triggers Keptn quality gates via Azure DevOps automation daily.
     - Reference: Keptn user group TBA June 15
