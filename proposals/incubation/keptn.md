@@ -138,15 +138,17 @@ For our releases, Keptn maintainers follow the [release checklist](https://githu
 
 The complete project [roadmap is publicly available](https://github.com/keptn/enhancement-proposals/blob/master/roadmap.md) and upcoming building blocks are listed below:
 
-- **[Zero-downtime Upgrades & High Availability](https://github.com/keptn/enhancement-proposals/pull/48)**: *Utilization of Keptn at scale without downtime for the end-user.* 
+- **[Zero-downtime Upgrades & High Availability](https://github.com/keptn/enhancement-proposals/pull/48)**: *Running Keptn at scale without downtime for end-users.*
     * Critical components in Keptn are running with multiple replicas, utilizing rolling upgrade mechanism, and graceful shutdowns for various upgrading scenarios.
 - **[Keptn Uniform support](https://github.com/keptn/enhancement-proposals/issues/42)**: *Seamless integration of DevOps tooling into the sequence orchestration by Keptn.* 
     * UI-support for managing connected integrations and means to configure their subscriptions.
 - **Security: Access Control**: *Allow fine-grained access control for interacting with Keptn.* 
     * Basic functionality to control user access and user/API permissions on different entities (e.g., Keptn projects)
+- **Alignment with [Continous Delivery Foundation (CDF) eventing standard](https://github.com/cdfoundation/sig-events)**: *Establish an industry-wide eventing standard jointly with the CDF.* 
+    * A translation layer will translate *CDF events* into *Keptn events*, followed by a step-wise integration of the established eventing standard into Keptn.
 - **Execution-Plane support**: *Central component (e.g., Operator) for installing and managing execution-planes.* 
     * For handling multiple execution-planes that are connected to one Keptn control-plane, a central component (*in the sense of an Operator*) has to be in place that allows installing an execution-plane, handles the communication back to the control-plane, and is responsible for operating the integrations (which are running on the execution-plane).
-- **Multi-tenancy**: *Reduction of resource footprint by multi-tenant capabilities.* 
+- (future) **Multi-tenancy**: *Reduction of resource footprint by multi-tenant capabilities.* 
     * This concludes architectural changes in Keptn core for maintaining multiple clients with multiple projects by one Keptn deployment.
 
 ## Incubation Proposal Resources
