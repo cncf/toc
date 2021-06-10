@@ -148,7 +148,7 @@ The complete project [roadmap is publicly available](https://github.com/keptn/en
     * A translation layer will translate *CDF events* into *Keptn events*, followed by a step-wise integration of the established eventing standard into Keptn.
 - **Execution-Plane support**: *Central component (e.g., Operator) for installing and managing execution-planes.* 
     * For handling multiple execution-planes that are connected to one Keptn control-plane, a central component (*in the sense of an Operator*) has to be in place that allows installing an execution-plane, handles the communication back to the control-plane, and is responsible for operating the integrations (which are running on the execution-plane).
-- (future) **Multi-tenancy**: *Reduction of resource footprint by multi-tenant capabilities.* 
+- **Multi-tenancy**: *Reduction of resource footprint by multi-tenant capabilities.* 
     * This concludes architectural changes in Keptn core for maintaining multiple clients with multiple projects by one Keptn deployment.
 
 ## Incubation Proposal Resources
