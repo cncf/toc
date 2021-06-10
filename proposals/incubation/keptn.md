@@ -6,6 +6,8 @@ Keptn is a cloud-native application life-cycle orchestration tool. Its goal is n
 
 Keptn builds upon declarative definitions for multi-stage environments, SLO-based quality gates, and auto-remediation and integrates with tools via an event-based approach. 
 
+**Keptn CloudEvents:** The event-based approach is built upon a well-defined defined set of *Keptn events*; currently in [v0.2.2](https://github.com/keptn/spec/blob/0.2.2/cloudevents.md). All *Keptn events* conform to the CloudEvents specification in version [1.0](https://github.com/cloudevents/spec/blob/v1.0/spec.md). The CloudEvents specification is a vendor-neutral specification for defining the format of event data. In the course of the Keptn project, the event data is defined for the use-cases of application *delivery* and *remediation* as well as  life-cycle orchestration tasks such as: *deployment*, *test*, *evaluation*, *release*, *problem*, etc. The specification of Keptn CloudEvents is not limited to the mentioned tasks and can be easily extended by following the proposed [format](https://github.com/keptn/spec/blob/0.2.2/cloudevents.md#type).
+
 TBA Jürgen
 
 
