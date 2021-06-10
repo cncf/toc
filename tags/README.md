@@ -66,4 +66,4 @@ a pull request with document referencing the roles and charter, updating the lis
 | TAG Security | [Sarah Allen](https://github.com/ultrasaurus) |
 | TAG Security |[Jeyappragash Jeyakeerthi](https://github.com/pragashj) |
 | TAG Security |[Dan Shaw](https://github.com/dshaw) |
-| TAG Storage | [Erin Boyd](https://github.com/erinboyd | 
+| TAG Storage | [Erin Boyd](https://github.com/erinboyd) | 
