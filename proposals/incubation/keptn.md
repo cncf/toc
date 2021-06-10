@@ -8,7 +8,9 @@ Keptn builds upon declarative definitions for multi-stage environments, SLO-base
 
 **Keptn CloudEvents:** The event-based approach is built upon a well-defined defined set of *Keptn events*; currently in [v0.2.2](https://github.com/keptn/spec/blob/0.2.2/cloudevents.md). All *Keptn events* conform to the CloudEvents specification in version [v1.0](https://github.com/cloudevents/spec/blob/v1.0/spec.md). The CloudEvents specification is a vendor-neutral specification for defining the format of event data. In the course of the Keptn project, the event data is defined for the use-cases of application *delivery* and *remediation* as well as life-cycle orchestration tasks such as *deployment*, *test*, *evaluation*, *release*, *problem*, etc. The specification of Keptn CloudEvents is not limited to the mentioned tasks and can be easily extended by following the proposed [format](https://github.com/keptn/spec/blob/0.2.2/cloudevents.md#type). The Keptn project is currently in the progress of aligning the *Keptn events*  with the [event specification](https://github.com/cdfoundation/sig-events) from the Continuous Delivery Foundation (CDF) with the goal of establishing an industry-wide eventing standard for application life-cycle orchestration. 
 
-TBA Jürgen
+**Keptn Control-Plane:** Keptn is built for Kubernetes and consists of a couple of Keptn core services that altogether form the Keptn control-plane. 
+The control-plane is responsible to orchestrate the life-cycle of an application managed by Keptn.
+Execution-plane service can connect to the control-plane to interact with Keptn via CloudEvents sent through NATS. The CloudEvents are currently stored in a MongoDB that serves as the datastore for all events that are sent via Keptn and allows for full traceability of life-cycle events. The architecture of the Keptn project can be found in the [Keptn documentation](https://keptn.sh/docs/concepts/architecture/).
 
 
 ## Sandbox proposal artifacts
@@ -40,11 +42,10 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 - *Concept for subscribing execution-plane services (aka. integrations) to the control-plane*: Developed an approach to manage the subscription of execution-plane services to the Keptn control-plane.
 - *Reduced resource consumption*: From Keptn 0.6.2 (the latest stable release as the project achieved Sandbox) to Keptn 0.8.3 (latest stable release as of today), the resource footprint has been reduced by various improvements: (1) removing Istio from the default Keptn installation, (2) switching from Helm 2 to Helm 3 what removed Tiller, (3) defining explicit resource quota for the Keptn core services, and (4) extracting services that are needed for delivery/remediation use-cases but not for the core functionality of Keptn (see: *Clear separation of control-plane and execution-plane* mentioned above).
 
-**Ecosystem Growth**: Keptn has grown its ecosystem by adding support for more than 15 tools and added and strengthened integrations with CNCF projects as well as other tools. Besides, the Keptn team is providing [templates](https://github.com/keptn-sandbox?q=template&type=&language=&sort=) to foster new tools integrations. 
-- Added integrations: ArgoRollouts, LitmusChaos, Slack, Splunk, Gitlab, Grafana, Jira, AnsibleTower, XMatters, Locust, Artillery, ZenDesk, Azure DevOps, OneChart (from Gimlet), and counting
+**Ecosystem Growth**: Keptn has grown its ecosystem by adding support for more than 10 tools and added and strengthened integrations with CNCF projects as well as other tools. Besides, the Keptn team is providing [templates](https://github.com/keptn-sandbox?q=template&type=&language=&sort=) to foster new tools integrations. 
+- Added integrations since Sandbox: ArgoRollouts, LitmusChaos, Gitlab, Grafana, AnsibleTower, XMatters, Locust, Artillery, ZenDesk, Azure DevOps, OneChart (from Gimlet), and counting
 - Strengthened integrations with CNCF Ecosystem: CloudEvents, Prometheus, Helm, Jenkins
 
-TBD double check this list
 
 **Community**: We have significantly grown our community, on average by the factor 2 spanning across our multiple channels. In Slack, which is our preferred way to interact with the Keptn community, we have more than double our weekly active users (from around 50 to 110+), and all other community channels have shown a significant increase as well as shown in the following. Besides the community growth, we have established weekly Keptn developer and community meetings (see public CNCF calendar) as well as monthly Keptn user groups to foster exchange between Keptn adopters that share best practices on their Keptn usage. 
 
