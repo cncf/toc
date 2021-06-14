@@ -146,7 +146,7 @@ For our releases, Keptn maintainers follow the [release checklist](https://githu
 The complete project [roadmap is publicly available](https://github.com/keptn/enhancement-proposals/blob/master/roadmap.md) and upcoming building blocks are listed below:
 
 - **[Zero-downtime Upgrades & High Availability](https://github.com/keptn/enhancement-proposals/pull/48)**: *Running Keptn at scale without downtime for end-users.*
-    * Critical components in Keptn are running with multiple replicas, utilizing rolling upgrade mechanism, and graceful shutdowns for various upgrading scenarios.
+    * Critical components in Keptn are running with multiple replicas, utilizing a rolling upgrade mechanism, and graceful shutdowns for various upgrading scenarios.
 - **[Keptn Uniform support](https://github.com/keptn/enhancement-proposals/issues/42)**: *Seamless integration of DevOps tooling into the sequence orchestration by Keptn.* 
     * UI-support for managing connected integrations and means to configure their subscriptions.
 - **Security: Access Control**: *Allow fine-grained access control for interacting with Keptn.* 
