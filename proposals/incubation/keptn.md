@@ -12,10 +12,9 @@ Keptn builds upon declarative definitions for multi-stage environments, SLO-base
 The control-plane is responsible to orchestrate the life-cycle of an application managed by Keptn.
 Execution-plane service can connect to the control-plane to interact with Keptn via CloudEvents sent through NATS. The CloudEvents are currently stored in a MongoDB that serves as the datastore for all events that are sent via Keptn and allows for full traceability of life-cycle events. The architecture of the Keptn project can be found in the [Keptn documentation](https://keptn.sh/docs/concepts/architecture/).
 
-**Keptn Quality Gates**: should have a dedicated section 
+**Keptn Quality Gates:** A central component of Keptn are [quality gate evaluations](https://keptn.sh/docs/concepts/quality_gates/) based on service-level objectives (SLOs). Therefore, Keptn builds upon SRE best practices such as service-level indicators (SLIs) and allows to declaratively define SLOs for them. These SLOs define quality criteria for the applications and act as a gatekeeper during software delivery before promoting any application or microservice from one environment (e.g,. hardening) to the next environment (e.g., production). 
 
-TODO: shape introduction
-
+**Keptn Life-Cycle Orchestration:** Keptn's architecture allows any tool to be integrated into the application life-cycle orchestration managed by Keptn. These *execution plane* services can run within the same cluster as the Keptn control plane or on different clusters, allowing to orchestrate multi-cluster deployments, tests, evaluations, and operational tasks such as remediation orchestration or ChatOps. 
 
 ## Sandbox proposal artifacts
 
@@ -102,10 +101,10 @@ Integrations that are currently planned for Keptn, in no particular order:
 ### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope
 
 1. [Schlumberger](https://slb.com/), an oilfield services company working in more than 120 countries, has currently 4 applications evaluated with Keptn quality gates. Evaluations make use of 10-20 SLIs, one of them even 90 SLIs per quality gate evaluation. Their integration triggers Keptn quality gates via Azure DevOps automation daily.
-    - Reference: Keptn user group TBA June 15
+    - Reference: Keptn user group recording from June 15 will be added once available
 
 1. [Vitality Group](https://www.vitalitygroup.com/) is a leading behavior change platform to make people healthier and enhance and protect their lives. They are triggering Keptn quality gates by utilizing an integration with Jenkins. Currently, Vitality has 22 services managed by Keptn in DEV, TEST & QA environments. They are running quality evaluations with Keptn multiple times a day in DEV, once per day in TEST, and ad-hoc via the Keptn API in QA.
-    - Reference: TBA
+    - Reference: link will be added once publicly available
 
 1. [Kitopi](https://www.kitopi.com/), the world's leading cloud kitchen platform, is using Keptn to evaluate the resilience of their applications. Using Keptn quality gates and Prometheus data, their evaluations are running in several nightly runs over 3 chaos stages, summing up in a total of over 700 runs as of March 2021. Find a reference of Adrian Gonciarz, Lead QA Engineer, [who presented their use case](https://www.youtube.com/watch?t=222&v=m_RVxVQQrHo).
 
