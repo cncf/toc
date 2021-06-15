@@ -43,7 +43,7 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 - *Support for user-defined automation sequences*: Go beyond delivery and remediation by defining your own automation sequences including pre-defined and custom tasks.
 - *Security improvements of Keptn*: Introduced RBAC for all Keptn core services to restrict permissions on the Kubernetes cluster, added security contexts for core services, and core services are not running root users anymore.
 - *Change of tooling at runtime*: Developed an approach to manage execution of Keptn integrations at runtime to allow for more flexible tool integrations. The subscription of tool integrations to the Keptn control-plane can be managed via a central interface.
-- *Reduced default resource consumption & dependencies*: By removing dependencies in the Keptn default installation, the resource consumption could be improved by ~55% in terms of CPU and memory resources. This could be achieved by a clear [separation between control-plane](https://keptn.sh/docs/0.8.x/operate/k8s_support/) (Keptn default installation) and execution plane.
+- *Reduced default resource consumption & dependencies*: By removing dependencies in the Keptn default installation, the resource consumption could be reduced by ~55% in terms of CPU and memory resources. This could be achieved by a clear [separation between control-plane](https://keptn.sh/docs/0.8.x/operate/k8s_support/) (Keptn default installation) and execution plane.
 
 
 **Ecosystem Growth**: Keptn has grown its ecosystem by adding support for more than 10 tools and added and strengthened integrations with CNCF projects as well as other tools. Besides, the Keptn team is providing [templates](https://github.com/keptn-sandbox?q=template&type=&language=&sort=) to foster new tools integrations. 
@@ -105,7 +105,7 @@ Integrations that are currently planned for Keptn, in no particular order:
     - Reference: Keptn user group recording from June 15 will be added once available
 
 1. [Vitality Group](https://www.vitalitygroup.com/) is a leading behavior change platform to make people healthier and enhance and protect their lives. They are triggering Keptn quality gates by utilizing an integration with Jenkins. Currently, Vitality has 22 services managed by Keptn in DEV, TEST & QA environments. They are running quality evaluations with Keptn multiple times a day in DEV, once per day in TEST, and ad-hoc via the Keptn API in QA.
-    - Reference: link will be added once publicly available
+    - Reference: can be shared privately with the TOC and will be shared here once it is pubic 
 
 1. [Kitopi](https://www.kitopi.com/), the world's leading cloud kitchen platform, is using Keptn to evaluate the resilience of their applications. Using Keptn quality gates and Prometheus data, their evaluations are running in several nightly runs over 3 chaos stages, summing up in a total of over 700 runs as of March 2021. Find a reference of Adrian Gonciarz, Lead QA Engineer, [who presented their use case](https://www.youtube.com/watch?t=222&v=m_RVxVQQrHo).
 
