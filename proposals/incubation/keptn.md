@@ -38,15 +38,16 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 - *Delivery assistant*: Promotion after an SLO-based quality gate evaluation can be done manually, automated, or even via 3rd party integrations using e.g., a ChatOps approach with Slack.
 - *Support for closed-loop remediation*: Remediation sequences orchestrated by Keptn include evaluation of the executed remediation actions to verify if a remediation sequence can be aborted as a result of a fixed issue or might need escalation if automated remediation can not solve the issue.
 - *Clear separation of control-plane and execution-plane*: Both components can be installed separately and allow for different execution-planes that are orchestrated by a Keptn control-plane. The separation of the planes enables: 
-    - *Multi-cluster support*: Keptn control-plane and execution-plane can run on separate clusters in the same or even in different cloud providers, or on-prem. This allows, e.g., Keptn to orchestrate the delivery of the application even if each stage/environment is managed on a separate Kubernetes cluster.
     - *Parallel sequence executions*: The execution-planes are independent from each other meaning that they can execute sequences (e.g., for delivery or remediation) in parallel. This enables the use-case of deploying an app into multiple environments simultaneously. 
-- *Support for individual tasks in sequences*: User-defined tasks can be added to a task sequence allowing for customized delivery or remediation use-cases.
-- *Hardening of Keptn*: Introduced RBAC for all Keptn core services to restrict permissions on the Kubernetes cluster, added security contexts for core services, and core services are not running root users anymore.
-- *Concept for subscribing execution-plane services (aka. integrations) to the control-plane*: Developed an approach to manage the subscription of execution-plane services to the Keptn control-plane.
-- *Reduced resource consumption*: From Keptn 0.6.2 (the latest stable release as the project achieved Sandbox) to Keptn 0.8.3 (latest stable release as of today), the resource footprint has been reduced by various improvements: (1) removing Istio from the default Keptn installation, (2) switching from Helm 2 to Helm 3 what removed Tiller, (3) defining explicit resource quota for the Keptn core services, and (4) extracting services that are needed for delivery/remediation use-cases but not for the core functionality of Keptn (see: *Clear separation of control-plane and execution-plane* mentioned above).
+- *Multi-cluster support*: Keptn control-plane and execution-plane can run on separate clusters in the same or even in different cloud providers, or on-prem. This allows, e.g., Keptn to orchestrate the delivery of the application even if each stage/environment is managed on a separate Kubernetes cluster.
+- *Support for user-defined automation sequences*: Go beyond delivery and remediation by defining your own automation sequences including pre-defined and custom tasks.
+- *Security improvements of Keptn*: Introduced RBAC for all Keptn core services to restrict permissions on the Kubernetes cluster, added security contexts for core services, and core services are not running root users anymore.
+- *Change of tooling at runtime*: Developed an approach to manage execution of Keptn integrations at runtime to allow for more flexible tool integrations. The subscription of tool integrations to the Keptn control-plane can be managed via a central interface.
+- *Reduced default resource consumption & dependencies*: By removing dependencies in the Keptn default installation, the resource consumption could be improved by ~55% in terms of CPU and memory resources. This could be achieved by a clear [separation between control-plane](https://keptn.sh/docs/0.8.x/operate/k8s_support/) (Keptn default installation) and execution plane.
+
 
 **Ecosystem Growth**: Keptn has grown its ecosystem by adding support for more than 10 tools and added and strengthened integrations with CNCF projects as well as other tools. Besides, the Keptn team is providing [templates](https://github.com/keptn-sandbox?q=template&type=&language=&sort=) to foster new tools integrations. 
-- Added integrations since Sandbox: ArgoRollouts, LitmusChaos, Gitlab, Grafana, AnsibleTower, XMatters, Locust, Artillery, ZenDesk, Azure DevOps, OneChart (from Gimlet), and counting
+- Added integrations since Sandbox: ArgoRollouts, LitmusChaos, Gitlab, Grafana, AnsibleTower, XMatters, Locust, Artillery, ZenDesk, Azure DevOps, OneChart (from Gimlet), Kubernetes Job-Executor, and counting 
 - Strengthened integrations with CNCF Ecosystem: CloudEvents, Prometheus, Helm, Jenkins
 
 
@@ -57,13 +58,13 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 
 | Statistic | Sandbox | Current | Multiplier |
 |-|-|-|-|
-| [GitHub stars](https://github.com/keptn/keptn/stargazers) | 410 | 893+ | >2x |
-| [Commits](https://github.com/keptn/keptn) | 3,751 | 5,500+ | ~1.5x |
 | [Releases](https://github.com/keptn/keptn/releases) | 18 | 30+ | >1.5x |
+| [Commits](https://github.com/keptn/keptn) | 3,751 | 5,600+ | ~1.5x |
 | [Contributors (commits)](https://github.com/keptn/keptn/graphs/contributors) | 23 | 56+ | >2x |
-| [Twitter followers](https://twitter.com/keptnProject) | 495 | 1,133+ | >2x |
-| [Slack weekly active users](https://slack.keptn.sh) | 50 | 110+ (645+ users in total) | >2x |
-| [YouTube subscribers](https://www.youtube.com/c/keptn) | 78 | 235+ | >3x | 
+| [GitHub stars](https://github.com/keptn/keptn/stargazers) | 410 | 944+ | >2x |
+| [Twitter followers](https://twitter.com/keptnProject) | 495 | 1,154+ | >2x |
+| [Slack weekly active users](https://slack.keptn.sh) | 50 | 110+ (657+ users in total) | >2x |
+| [YouTube subscribers](https://www.youtube.com/c/keptn) | 78 | 239+ | >3x | 
 
 
 ### Collaboration within the CNCF Ecosystem
@@ -89,11 +90,11 @@ Integrations that are currently planned for Keptn, in no particular order:
 
 * [ArtifactHub](https://github.com/keptn/keptn/issues/3406) to provide a central hub for Keptn itself and Keptn integrations. Currently, integrations are curated via GitHub, and the ArtifactHub can provide a holistic view for the user on all available integrations.
 * [OpenTelemetry](https://github.com/keptn/enhancement-proposals/pull/30) to align the Keptn's internal "Keptn context" with the trace-context supported by OpenTelemetry.
-* ArgoCD for deployments as an alternative via Helm charts and ArgoRollouts that are already supported by Keptn.
-* Flux, similar to ArgoCD, for deployments as an alternative via Helm charts and ArgoRollouts that are already supported by Keptn
-* Falco to identify any security issues and have its ruleset managed by Keptn and use Keptn to orchestrate counter-action in response to identified security threats.
-* Vault to support encrypted secret management in Keptn.
-* Snyk to be integrated into the CD process to check for security vulnerabilities of container images as part of a quality gate and as a dedicated security scanning task during multi-stage delivery.
+* [ArgoCD](https://github.com/keptn-sandbox/argocd-service/issues/1) for deployments as an alternative via Helm charts and ArgoRollouts that are already supported by Keptn.
+* [Flux](https://github.com/keptn/keptn/issues/2669), similar to ArgoCD, for deployments as an alternative via Helm charts and ArgoRollouts that are already supported by Keptn
+* [Falco](https://github.com/keptn-sandbox/falco-service/issues/1) to identify any security issues and have its ruleset managed by Keptn and use Keptn to orchestrate counter-action in response to identified security threats.
+* [Vault](https://github.com/keptn/keptn/issues/4342) to support encrypted secret management in Keptn.
+* [Snyk](https://github.com/keptn/keptn/issues/417) to be integrated into the CD process to check for security vulnerabilities of container images as part of a quality gate and as a dedicated security scanning task during multi-stage delivery.
 
 
 ## Incubation Stage Requirements
@@ -153,7 +154,7 @@ The complete project [roadmap is publicly available](https://github.com/keptn/en
     * Basic functionality to control user access and user/API permissions on different entities (e.g., Keptn projects)
 - **Alignment with [Continous Delivery Foundation (CDF) eventing standard](https://github.com/cdfoundation/sig-events)**: *Establish an industry-wide eventing standard jointly with the CDF.* 
     * A translation layer will translate *CDF events* into *Keptn events*, followed by a step-wise integration of the established eventing standard into Keptn. [Recording of SIG meeting](https://www.youtube.com/watch?v=Qq3fTt6g2FM&list=PL2KXbZ9-EY9RlxWAnAjxs8Azuz11XVhkC&index=6), [Link to PR](https://github.com/cdfoundation/sig-events/pull/58/files?short_path=c5fe78f#diff-c5fe78faf0fe65408977b558e57a95839b7cc3536ade5208b34db71447c1d8ce)
-- **Execution-Plane support**: *Central component (e.g., Operator) for installing and managing execution-planes.* 
+- **Remote management of execution plane**: *Central component (e.g., Operator) for installing and managing execution-planes.* 
     * For handling multiple execution-planes that are connected to one Keptn control-plane, a central component (*in the sense of an Operator*) has to be in place that allows installing an execution-plane, handles the communication back to the control-plane, and is responsible for operating the integrations (which are running on the execution-plane).
 - **Multi-tenancy**: *Reduction of resource footprint by multi-tenant capabilities.* 
     * This concludes architectural changes in Keptn core for maintaining multiple clients with multiple projects by one Keptn deployment.
