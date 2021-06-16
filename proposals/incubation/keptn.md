@@ -61,7 +61,7 @@ Since joining the CNCF Sandbox, Keptn has made substantial progress in various d
 | [Releases](https://github.com/keptn/keptn/releases) | 18 | 30+ | >1.5x |
 | [Commits](https://github.com/keptn/keptn) | 3,751 | 5,600+ | ~1.5x |
 | [Contributors (commits)](https://github.com/keptn/keptn/graphs/contributors) | 23 | 56+ | >2x |
-| [GitHub stars](https://github.com/keptn/keptn/stargazers) | 410 | 944+ | >2x |
+| [GitHub stars](https://github.com/keptn/keptn/stargazers) | 410 | 957+ | >2x |
 | [Twitter followers](https://twitter.com/keptnProject) | 495 | 1,154+ | >2x |
 | [Slack weekly active users](https://slack.keptn.sh) | 50 | 110+ (657+ users in total) | >2x |
 | [YouTube subscribers](https://www.youtube.com/c/keptn) | 78 | 239+ | >3x | 
@@ -101,8 +101,7 @@ Integrations that are currently planned for Keptn, in no particular order:
 
 ### Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope
 
-1. [Schlumberger](https://slb.com/), an oilfield services company working in more than 120 countries, has currently 4 applications evaluated with Keptn quality gates. Evaluations make use of 10-20 SLIs, one of them even 90 SLIs per quality gate evaluation. Their integration triggers Keptn quality gates via Azure DevOps automation daily.
-    - Reference: Keptn user group recording from June 15 will be added once available
+1. [Schlumberger](https://slb.com/), an oilfield services company working in more than 120 countries, has currently 4 applications evaluated with Keptn quality gates. Evaluations make use of 10-20 SLIs, one of them even 90 SLIs per quality gate evaluation. Their integration triggers Keptn quality gates via Azure DevOps automation daily. It has been [presented it in a Keptn user group](https://youtu.be/9YYjk1e9ZGE).
 
 1. [Vitality Group](https://www.vitalitygroup.com/) is a leading behavior change platform to make people healthier and enhance and protect their lives. They are triggering Keptn quality gates by utilizing an integration with Jenkins. Currently, Vitality has 22 services managed by Keptn in DEV, TEST & QA environments. They are running quality evaluations with Keptn multiple times a day in DEV, once per day in TEST, and ad-hoc via the Keptn API in QA.
     - Reference: can be shared privately with the TOC and will be shared here once it is pubic 
@@ -116,7 +115,7 @@ Integrations that are currently planned for Keptn, in no particular order:
 
 There are many more adopters of Keptn and organizations evaluating the project as well. Organizations that agreed to have them listed publicly can be found in the [ADOPTERS.md](https://github.com/keptn/keptn/blob/master/ADOPTERS.md) file which currently lists 10 adopters, while some of these have only consented to share their details privately with the TOC, if required.
 
-### Have a healthy number of committers. 
+### Have a healthy number of committers
 
 Keptn currently has contributions from [more than 15 different organizations](https://keptn.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20decade&var-metric=commits) and a [total of 50+ individual contributors](https://github.com/keptn/keptn/graphs/contributors) to the core project. 
 
