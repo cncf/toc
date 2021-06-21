@@ -25,7 +25,7 @@ From the project side, please ensure that you:
 Things that CNCF will need from the project: 
 - [ ] Owners file: Please add a link to your owners file to this issue, this is used to be able to create your maintainers mailing list. 
 - [ ] Create maintainer list + added to aggregated https://maintainers.cncf.io list
-- [ ] Domain: transfer domain to the CNCF - please send a transfer code to amye@linuxfoundation.org
+- [ ] Domain: transfer domain to the CNCF - please send a transfer code to project-onboarding@cncf.io
 - [ ] Trademarks: transfer any trademark and logo mark assets over to the LF - https://github.com/cncf/foundation/tree/master/agreements has agreements
 - [ ] GitHub: ensure 'thelinuxfoundation' and 'caniszczyk' are added as initial org owners, this helps us make sure we have continuity of GH ownership
 - [ ] GitHub: ensure [DCO](https://github.com/apps/dco) or [CLA](https://github.com/cncf/cla) are enabled for all GitHub repositories of the project
