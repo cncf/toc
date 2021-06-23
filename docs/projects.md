@@ -96,6 +96,13 @@
 [Fluid](https://github.com/fluid-cloudnative/fluid)|TOC Vote|[4/27/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit?usp=forms_web_b#gid=1398510353)|[4/27/2021](https://github.com/fluid-cloudnative/fluid)| Sandbox
 [Submariner](https://github.com/submariner-io)|TOC Vote|[4/27/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit?usp=forms_web_b#gid=1398510353)|[4/27/2021](https://github.com/submariner-io)| Sandbox
 [Antrea](https://github.com/antrea-io/antrea)|TOC Vote|[4/27/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit?usp=forms_web_b#gid=1398510353)|[4/27/2021](https://github.com/antrea-io/antrea)| Sandbox
+[Pixie](https://github.com/pixie-labs/pixie)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/15/2021](https://github.com/pixie-labs/pixie)| Sandbox
+[Meshery](https://github.com/layer5io/meshery)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/21/2021](https://github.com/layer5io/meshery)| Sandbox
+[Service Mesh Performance](https://github.com/layer5io/service-mesh-performance)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/21/2021](https://github.com/layer5io/service-mesh-performance)| Sandbox
+[KubeVela](https://github.com/oam-dev/kubevela)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/4/2021](https://github.com/oam-dev/kubevela)| Sandbox
+[kube-vip](https://github.com/kube-vip/kube-vip)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/kube-vip/kube-vip)| Sandbox
+[KubeDL](https://github.com/alibaba/kubedl)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/alibaba/kubedl)| Sandbox
+
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
