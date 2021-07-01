@@ -2,18 +2,16 @@
 
 Chaos Mesh was accepted into the CNCF Sandbox on July 15th, 2020. This doc proposes promoting Chaos Mesh to a CNCF Incubating project.
 
-## Background 
-
 * **Name of Project:** Chaos Mesh  
 * **Unique Identifier**: chaos-mesh
 * **License**: Apache License, Version 2.0
-* **[GitHub]**(https://github.com/pingcap/chaos-mesh)**
-* **[Sandbox proposal PR]**(https://github.com/cncf/toc/pull/367)
-* **[Sandbox proposal doc]**(https://github.com/cncf/toc/blob/1809ba96b31a562c8968265f06b5395c462c8b35/proposals/chaos-mesh.md)
-* **[Sandbox presentation slides]**(https://docs.google.com/presentation/d/115QvSCnT6ROwwV1lK-R10d4MW54fQhtVM2uZDGscpEk/edit#slide=id.g80f082b201_0_0)
+* **[GitHub]**: https://github.com/pingcap/chaos-mesh
 * **Website**: [https://github.com/pingcap/chaos-mesh](https://github.com/pingcap/chaos-mesh)
 * **Sponsor from TOC**: TBD
 * **Preferred Maturity Level**: Incubating
+* **Sandbox References**
+  *  [Sandbox proposal PR](https://github.com/cncf/toc/pull/367)
+  * [Sandbox presentation slides](https://docs.google.com/presentation/d/115QvSCnT6ROwwV1lK-R10d4MW54fQhtVM2uZDGscpEk/edit#slide=id.g80f082b201_0_0)
 
 ## Project description
 
@@ -27,7 +25,7 @@ Chaos Mesh contains the following main components:
 
 # Alignment with Cloud Native
 
-Chaos Mesh falls into the scope of[CNCF TAG Network](https://github.com/cncf/tag-network).
+Chaos Mesh falls into the scope of [CNCF TAG Network](https://github.com/cncf/tag-network).
 
 Chaos Mesh adopts a Kubernetes architecture that uses Kubernetes CustomResourceDefinitions (CRDs) to define chaos objects, making it naturally integrated with the Cloud Native ecosystem.
 
@@ -79,6 +77,7 @@ What’s more, The quality of an open source community determines whether the co
 *   There have also been 13 [community generated articles](https://github.com/chaos-mesh/chaos-mesh#community-blogs) on various platforms, such as the CNCF blog, Medium, opensource.com, etc. Among them is [an interactive tutorial](https://chaos-mesh.org/interactive-tutorial), published on O’Reilly’s Katakoda site. 
 *   Repurposing and amplifying [videos and tutorials](https://github.com/chaos-mesh/chaos-mesh#community-talks) generated in community meetings, live streams, conferences, webinars, and meetups on different social media channels.
 
+
 ## Comparison with other CNCF Chaos Engineering projects
 
 As compared to other Cloud Native chaos engineering tools, Chaos Mesh has the following advantages: 
@@ -99,48 +98,45 @@ When compared to LitmusChaos, Chaos Mesh puts more focus on reducing the cost of
 
 **Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.**
 
-This is a [list of Chaos Mesh users](https://github.com/chaos-mesh/chaos-mesh/blob/master/ADOPTERS.md) that have gone into production. Below are some 
+This is a [list of Chaos Mesh users](https://github.com/chaos-mesh/chaos-mesh/blob/master/ADOPTERS.md) that have gone into production. Below are some user cases to highlight:
 
 * [Apache APISIX](https://github.com/apache/apisix) \
-Apache APISIX is a dynamic, real-time, high-performance open source API gateway, which provides rich traffic management features, such as load balancing, dynamic upstream and more. 
-
+Apache APISIX is a dynamic, real-time, high-performance open source API gateway, which provides rich traffic management features, such as load balancing, dynamic upstream and more. \
 APISIX integrates Chaos Mesh into open-source CI pipelines, to further enhance APISIX's resiliency and robustness.
 
-*  [NetEase Fuxi Lab](https://fuxi.163.com/en/about.html)
+*  [NetEase Fuxi Lab](https://fuxi.163.com/en/about.html) 
+  
+    NetEase Fuxi AI Lab is China’s first professional game AI research institution. Researchers use their Kubernetes-based Danlu platform for algorithm development, training and tuning, and online publishing. 
 
-[Use case](https://chaos-mesh.org/blog/how-a-top-game-company-uses-chaos-engineering-to-improve-testing) 
-
-NetEase Fuxi AI Lab is China’s first professional game AI research institution. Researchers use their Kubernetes-based Danlu platform for algorithm development, training and tuning, and online publishing.  
-
-They use Chaos Mesh to improve the stability of their internal hybrid cloud. In addition, their users with cloud platforms also access Chaos Mesh to test the stability of user services.
+    They use Chaos Mesh to improve the stability of their internal hybrid cloud. In addition, their users with cloud platforms also access Chaos Mesh to test the stability of user services. See more in their [Use case](https://chaos-mesh.org/blog/how-a-top-game-company-uses-chaos-engineering-to-improve-testing).
 
 * [KingNet](https://www.kingnet.com/) 
 
-KingNet’s main business includes the development, operation and distribution of premium entertainment content. 
+    KingNet’s main business includes the development, operation and distribution of premium entertainment content. 
 
-KingNet mainly uses Chaos Mesh for testing the availability of multiple data centers and microservice links. Chaos Mesh also helps them with mocking service unavailability and abnormal network conditions.
+    KingNet mainly uses Chaos Mesh for testing the availability of multiple data centers and microservice links. Chaos Mesh also helps them with mocking service unavailability and abnormal network conditions.
 
 *   [Qiniu Cloud](https://qiniu.com/en)
 
-Qiniu Cloud is a distributed cloud system that carries massive amounts of data, and is one that requires high data consistency and high availability, with the data quantity level at 1 trillion+.  
+    Qiniu Cloud is a distributed cloud system that carries massive amounts of data, and is one that requires high data consistency and high availability, with the data quantity level at 1 trillion+.  
 
-To ensure the reliability of cloud storage products, they use Chaos Mesh to perform chaos tests on metadata and the underlying storage system under conditions such as: single point of failure of services, network abnormality, abnormal resource consumption (CPU, memory, I/O), etc.
+    To ensure the reliability of cloud storage products, they use Chaos Mesh to perform chaos tests on metadata and the underlying storage system under conditions such as: single point of failure of services, network abnormality, abnormal resource consumption (CPU, memory, I/O), etc.
 *   [Tencent](https://www.tencent.com/en-us) \
 After Tencent Interactive Entertainment migrated their online operations to the Tencent Cloud Kubernetes engine, they wished to provide users with a more stable and reliable experience, which is why they introduced Chaos Mesh. Tencent mainly use Chaos Mesh to simulate the following types of failures:
-1. Fault isolation, such as simulating pod abnormality, and checking whether the system can automatically isolate fault instances;
-2. Service degradation, such as simulating a downstream recommended service failure through network failure, and verifying whether the local cache is effective;
-3. Verifying if the alarm works, for example, purposefully burning the CPU to 90%, and checking whether the alarm is timely issued in time.
+    * Fault isolation, such as simulating pod abnormality, and checking whether the system can automatically isolate fault instances;
+    * Service degradation, such as simulating a downstream recommended service failure through network failure, and verifying whether the local cache is effective;
+    * Verifying if the alarm works, for example, purposefully burning the CPU to 90%, and checking whether the alarm is timely issued in time.
 
 *   [Xpeng](https://en.xiaopeng.com/) 
 
-Xpeng Motors is China's leading smart electric vehicle designer and manufacturer, as well as a technology company integrating cutting-edge Internet and AI innovation. They use Chaos Mesh in the following scenarios: 
+    Xpeng Motors is China's leading smart electric vehicle designer and manufacturer, as well as a technology company integrating cutting-edge Internet and AI innovation. They use Chaos Mesh in the following scenarios: 
 
-* Rolling updates of microservices and lossless verification of traffic;
-* Microservices, multi-registries, multi-party synchronization, and traffic lossless verification;
-* mqtt cluster two-way subscription verification;
-* Exactly-once consumer business verification for message queues;
-* Simulation of weak 4G network for in-vehicle systems, saving drive test costs;
-* AIOPS anomaly detection dataset generation.
+    * Rolling updates of microservices and lossless verification of traffic;
+    * Microservices, multi-registries, multi-party synchronization, and traffic lossless verification;
+    * mqtt cluster two-way subscription verification;
+    * Exactly-once consumer business verification for message queues;
+    * Simulation of weak 4G network for in-vehicle systems, saving drive test costs;
+    * AIOPS anomaly detection dataset generation.
 
 **Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.**
 
@@ -160,4 +156,5 @@ The release cadence are as follows:
 *   Minor version is released every 2 months.
 *   Patch version is released as necessary.
 
-The releases are announced using [GitHub’s releases](https://github.com/chaos-mesh/chaos-mesh/releases), followed by Slack (CNCF/#project-chaos-mesh) and social media ([Twitter](https://twitter.com/chaos_mesh)) announcements. 
+The releases are announced using [GitHub’s releases](https://github.com/chaos-mesh/chaos-mesh/releases), followed by Slack (CNCF/#project-chaos-mesh) and social media ([Twitter](https://twitter.com/chaos_mesh)) announcements.
+
