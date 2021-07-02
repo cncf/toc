@@ -118,8 +118,8 @@ provided by the TOC unless otherwise stated here.
 
 **TOC Liaison:** [Erin Boyd](https://github.com/erinboyd), [Saad Ali](https://github.com/saad-ali)
 
-**TAG Chairs:** [Alex Chircop](https://github.com/chira001), [Quinton Hoole](https://github.com/quinton-hoole)
+**TAG Chairs:** [Alex Chircop](https://github.com/chira001), [Quinton Hoole](https://github.com/quinton-hoole), [Xing Yang](https://github.com/xing-yang) 
 
-**Tech Leads:** Xing Yang, Sugu Sougoumarane, Luis Pabon
+**Tech Leads:** Nick Connolly, Sugu Sougoumarane, Luis Pabon
 
 **Other named roles: **None at present; will be identified and staffed as needed.
