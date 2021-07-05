@@ -1,4 +1,4 @@
-# CNCF Sandbox Guidelines v1.0
+# CNCF Sandbox Overview 
 ![CNCF Sandbox](https://github.com/cncf/artwork/blob/master/other/cncf-sandbox/horizontal/color/cncf-sandbox-horizontal-color.png)
 
 The CNCF Sandbox is the entry point for early stage projects and has four goals:
@@ -8,13 +8,11 @@ The CNCF Sandbox is the entry point for early stage projects and has four goals:
 * Nurture projects (e.g. via CNCF [Service Desk](https://github.com/cncf/servicedesk) requests)
 * Remove possible legal and governance obstacles to adoption and contribution by ensuring all projects adhere to CNCF legal, code of conduct and IP Policy requirements
 
-This proposal is to move all Inception level projects to the Sandbox and provide clarity on what Sandbox projects stand for.
+This document describes the Sandbox and provide clarity on what Sandbox projects stand for.
 
 ## What is the CNCF Sandbox
 
-There’s been a desire within the CNCF TOC and community to provide further clarity around project maturity levels in CNCF.
-
-When we initially created the Inception project level, it was intended to provide an avenue for technically interesting early-stage projects that were beneficial to the cloud-native community.  We are transitioning Inception projects to the Sandbox. Sandbox projects should be early-stage projects that the CNCF TOC believes warrant experimentation. The Sandbox should provide a beneficial, neutral home for such projects, in order to foster collaborative development. We aspire to make the Sandbox the preferred path for early-stage projects to enter the CNCF. More mature projects can continue to jump directly to incubation, but as the cloud-native ecosystem grows, we expect to see proportionally more early-stage projects.
+Sandbox projects should be early-stage projects that the CNCF TOC believes warrant experimentation. The Sandbox should provide a beneficial, neutral home for such projects, in order to foster collaborative development. We aspire to make the Sandbox the preferred path for early-stage projects to enter the CNCF. More mature projects can continue to jump directly to Incubation, but as the cloud-native ecosystem grows, we expect to see proportionally more early-stage projects.
 
 ## Early Stage
 
@@ -30,6 +28,14 @@ When we say that Sandbox projects are "early stage" this covers the following ex
 The CNCF hopes that all early stage projects will achieve the success they desire.  And the organisation will help as appropriate.  But certain caveats must be stated nonetheless.
 
 End users should treat early stage projects with care.  It is expected that some Sandbox projects may fail.  They may never move to the next maturity level. While many early projects are safe to try out, users must exercise their own judgment.  Some projects may be alpha quality software.  There is no guarantee of production readiness, users, or professional level support.  Where projects enjoy the public support of one or more professional software organisations, those may be seed stage. In short: The CNCF Operating Principle about "no kingmakers" is of special importance in the Sandbox.
+
+## Routes out of the Sandbox
+
+There are several possible next steps for a project in Sandbox:
+
+* If it achieves sufficient momentum and maturity it can [apply for Incubation status](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc#incubation-process) 
+* Based on alignment with another project, it might make sense to merge with or become part of another project within the CNCF. This would be done based on a consensus between project maintainers and the TOC that this is best for both projects.  
+* Some projects and experiments may fail, or otherwise reach a state where they should be moved into the [Archive](https://github.com/cncf/toc/blob/master/process/archiving.md)
 
 ## Sandbox Governance and Benefits
 
@@ -81,4 +87,8 @@ Some key points:
 
 To apply for inclusion into the Sandbox, projects should use [this form](https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit). 
 The TOC will review on a rotating basis, currently every two months as of June 2020.  
+
+### Annual review
+Once in the Sandbox, projects are subject to an [Annual Review](https://github.com/cncf/toc/blob/master/process/sandbox-annual-review.md).
+
 
