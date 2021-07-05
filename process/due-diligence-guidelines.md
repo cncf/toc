@@ -82,7 +82,7 @@ the detail where necessary.
 * What are the most important holes? No High-Availability? No flow control? Inadequate integration points?
 * Code quality.  Does it look good, bad or mediocre to you (based on a spot review).  How thorough are the code reviews? Substance over form.
   Are there explicit coding guidelines for the project?
-* Dependencies.  What external dependencies exist, do they seem justified?
+* Dependencies.  What external dependencies exist, do they seem justified?  Note: all core dependencies should be listed in the document along with the details of relevant repos
 * What is the release model?  Versioning scheme?  Evidence of stability or otherwise of past stable released versions?
 * What is the CI/CD status?  Do explicit code coverage metrics exist? If not, what is the subjective adequacy of automated testing?
   Do different levels of tests exist (e.g. unit, integration, interface, end-to-end), or is there only partial coverage in this regard?  Why?
