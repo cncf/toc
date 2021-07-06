@@ -34,8 +34,12 @@ Here are a few highligths from the project's [devstats page](https://openebs.dev
    
 ### Maintainers
 
-- There are a total of [7 maintainers](https://github.com/openebs/openebs/blob/master/MAINTAINERS) and
-- 20 additional reviewers. The [reviewers](https://github.com/openebs/openebs/blob/master/GOVERNANCE.md#reviewers) maintain one or more repositories and are on their way to becoming organization maintainers.
+- There are a total of [10 maintainers](https://github.com/openebs/openebs/blob/master/MAINTAINERS), up from 7 last year and
+- 29 additional reviewers. The [reviewers](https://github.com/openebs/openebs/blob/master/GOVERNANCE.md#reviewers) maintain one or more repositories and are on their way to becoming organization maintainers. This is up grom 17 last year. 
+
+Majority of the maintainers still are from MayaData, while ~10 maintainers are contributing from other companies. 
+
+
 
 ### Other metrics
 
@@ -56,9 +60,18 @@ There are many more adopters of OpenEBS and organizations evaluating the project
 
 **How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)**
 
-- Continue to expand our community of user and contributors. We are particularly focused on improving the contributor experience.  We believe that as the project matures and usage continues to grow, we will see an increase in interested contributors.  We plan to learn from the Contributor SIG how to better embrace them and help them to become successful contributors.  While we do have some major external contributors, we know there is more we can do.
-- Improve the documentation and website.
-- Work on the [Roadmap items](https://github.com/openebs/openebs/blob/master/ROADMAP.md), which primarily include:
+Our goals from last year annual review were:
+
+- *Continue to expand our community of user and contributors. We are particularly focused on improving the contributor experience.*
+  
+  We have made some progress in this regard. However we still need to get a lot better in terms of onboarding new contributors, by making it easier to contribute via running contributor sessions, regular contributor meetings, additional tooling and refactoring of the repositories to let contributors focus on specific areas for their contribution. 
+
+- *Improve the documentation and website.*
+
+  We have made progress in engaging new contributors to help with improving the documentation and website. New content is being worked on to be part of the upcoming 3.0 release. We also kick-started a process to capture the feedback that comes through the community slack into GitHub Community tracker projects to fix the website and documentation aspects. 
+  
+
+- *Work on the [Roadmap items](https://github.com/openebs/openebs/blob/master/ROADMAP.md), which primarily include:*
     * GA of cStor and migration towards CSI 
     * GA of Local PV Operators
     * Beta and GA of Mayastor 
