@@ -68,16 +68,30 @@ Our goals from last year annual review were:
 
 - *Improve the documentation and website.*
 
-  We have made progress in engaging new contributors to help with improving the documentation and website. New content is being worked on to be part of the upcoming 3.0 release. We also kick-started a process to capture the feedback that comes through the community slack into GitHub Community tracker projects to fix the website and documentation aspects. 
+  We have made progress in engaging new contributors to help with improving the documentation and website. New content is being worked on to be part of the upcoming 3.0 release. We also kick-started a process to capture the feedback that comes through the community slack into [GitHub Community tracker projects](https://github.com/orgs/openebs/projects) to fix the website and documentation aspects. 
   
 
 - *Work on the [Roadmap items](https://github.com/openebs/openebs/blob/master/ROADMAP.md), which primarily include:*
-    * GA of cStor and migration towards CSI 
-    * GA of Local PV Operators
-    * Beta and GA of Mayastor 
 
-
+  Our primary goal from a feature readiness standpoint was to hit GA with the OpenEBS data engines. There has been a lot of progress made in this regard as can be seen from the updates done to the [Roadmap items](https://github.com/openebs/openebs/blob/master/ROADMAP.md). In addition we had to work on a few additional items to address user requests, deal with the changes in the eco-system around Travis/DockerHub and improving the contributor experience. Few noteworthy changes are as follows: 
+  - Migrate Jiva and cStor from external-storage provisioner to CSI driver based provisioning 
+  - Enhance Jiva to make use of OpenEBS Local Volumes instead of `hostpath` volumes
+  - Enhance Jiva and cStor volumes to deal with Read-only mounts and multi-attach errors that happen due a abrupt node reboots 
+  - Support for multi-arch images - with native support for AMD64 and ARM64
+  - Enhance Local PV volumes to be backed by LVM and Device partitions in addition to hospath and ZFS from earlier releases
+  - Enhance OpenEBS velero plugin to perform ZFS Local PV incremental backups 
+  - Enhance Mayastor to handle Kubernetes node failure scenarios. Working closely with the upstream SPDK community to push NVMe and other fixes 
+  - Migrating all the CI pipelines to GitHub Actions
+  - Refactor and modularize our system (e2e) tests so that they can be run against a data engine. Helps to release each engines independently
+  - Refactor and modularize the helm charts to release each data engine independently to allow users to install only the required components
+  - Split most of the mono repos into functionality based repos for better managebility and contributor experience
+   
 **What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?**
+
+Our goals for the next year will be focused on:
+  - Continue to progress on hitting the GA for all the data engines by listening to users and working on the [planned items](https://github.com/openebs/openebs/blob/master/ROADMAP.md) 
+  - Focus more on community, reference architectures and solution documents that can increase the adoption of Kubernetes for running Stateful workloads. 
+  - Follow through with the feedback being recieved from the CNCF Storage TAG to help with Incubation of the project
 
 
 ## CNCF membership
