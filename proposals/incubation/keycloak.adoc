@@ -1,0 +1,451 @@
+Keycloak CNCF Incubation Project Submission Proposal
+----------------------------------------------------
+
+This is a resubmission of Keycloak as Incubation project. Initially
+proposed in 2018 has been impacted by Sandbox process changes and overal
+lack of bandwidth in TOC. This resulted in halt of intake of new
+projects. With recent changes to Sandbox definition would like to approach inclusion of Keycloak as CNCF Incubation project instead.
+
+Authors: +
+Bolesław Dawidowicz https://twitter.com/bdawidowicz +
+Stian Thorgersen https://github.com/stianst
+
+Background
+----------
+Keycloak Pitch (Short) Video [1m 42s]: https://www.youtube.com/watch?v=GZTN_VXjoQw
+
+Keycloak Introduction Video [32min 11s] https://www.youtube.com/watch?v=duawSV69LDI
+
+Link to GitHub project: https://github.com/keycloak
+
+Getting Started / Trying out: https://www.keycloak.org/getting-started
+
+CNCF SIG Security assesment request:
+https://github.com/cncf/sig-security/issues/372
+
+CNCF SIG Security Self Assesment document with great level of details about the project:
+https://docs.google.com/document/d/14IIGliP3BWjdS-0wfOk3l_1AU8kyoSiLUzpPImsz4R0/edit#
+
+Link to initial 2018 Presentation: (Oct 2018 TOC presentation - slide 26)
+https://docs.google.com/presentation/d/1Xt1xNSN8_pGuDLl5H8xEYToFss7VoIm7GBG0e_HrsLc/mobilepresent?slide=id.g3f805096e4_212_0
+
+Goal
+~~~~
+
+Keycloak is an open source Identity and access management solution aimed
+at modern applications and services. It makes it easy to secure
+applications and services with little to no code.
+
+Keycloak is based on standard protocols with an aim toward modern use
+cases and the flexibility to integrate with other solutions and prevent
+vendor lock in. Supported protocols include: OAuth2, OpenID Connect,
+User Managed Access 2.0 (UMA) and SAML 2.0.
+
+Single-Sign On
+^^^^^^^^^^^^^^
+
+Users authenticate with Keycloak rather than to individual applications.
+This frees developers from dealing with login forms, authenticating
+users, and storing users. Keycloak provides both single sign-in and
+single sign-out to different types of applications (client-side,
+server-side, mobile, etc.) and protocols (OIDC and SAML2) within same
+realm. It also provides Kerberos bridge to propagate authentication
+(LDAP or Active Directory) from workstations to web applications via
+SPNEGO.
+
+Token based security
+^^^^^^^^^^^^^^^^^^^^
+
+Through OpenID Connect flows applications retrieve access tokens that
+can be used to invoke services securely without the need to pass user
+credentials. This enables easy end-to-end user authentication for
+client-side applications, micro services, service mesh and other modern
+architectures.
+
+Identity Brokering and Social Login
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Keycloak can authenticate users using any existing external OpenID
+Connect or SAML 2.0 Identity Providers by acting as a proxy and hiding
+the involved complexity from applications. Leveraging these mechanisms
+makes enabling authentication via social providers trivial and quick.
+
+User Federation
+^^^^^^^^^^^^^^^
+
+Keycloak has built-in support to connect to existing LDAP or Active
+Directory servers, allowing custom provider implementations to connect
+users in other stores, such as a relational database.
+
+Client Adapters
+^^^^^^^^^^^^^^^
+
+Keycloak client adapters make it easy to secure applications and
+services by providing adapters for a number of platforms and programming
+languages. Keycloak is built on standard protocols which then allows any
+existing OpenID Connect Resource Library or SAML 2.0 Service Provider
+library to integrate with it.
+
+It is also possible to use a proxy adapter to secure applications, which
+removes the need to modify an application at all. This can be leveraged
+in Kubernetes deployment by deploying the adapter as a side car.
+
+Admin Console
+^^^^^^^^^^^^^
+
+All features and aspects of Keycloak configuration can be managed via an
+Admin UI, the CLI or a set of REST APIs, this includes managing users,
+permissions and active SSO sessions.
+
+Account Management Console
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Through the account management console users can manage their own
+accounts. They can update their user profile, change passwords, and
+setup two-factor authentication. Users can also manage sessions and view
+history for the account. If they have enabled social login or identity
+brokering, users can also link their accounts with additional providers
+to allow them to authenticate to the same account with different
+identity providers.
+
+Authorization Services
+^^^^^^^^^^^^^^^^^^^^^^
+
+Keycloak provides the ability for more fine-grained authorization for
+scenarios where traditional RBAC is not enough. By implementing the UMA
+2 spec it allows managing resources, permissions and sophisticated
+policies from the Keycloak admin console.
+
+SPI and pluggable architecture
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+All core components in Keycloak are implemented with pluggable
+architecture. Introducing new or alternative implementations of
+particular capabilities or required extensions is easy. There are number
+of externally hosted and maintained plugins which serve as examples to
+anyone who would like to write their own or contribute to the project.
+
+High Availability and Active-Active Cross-Data Center
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Keycloak supports traditional high availability by providing clustering.
+In addition, it supports deployments of connected clusters between
+geo-separated data centers. Keycloak provides both active-active and
+active-passive (fallback) switching scenarios between configured data
+centers.
+
+Current Status
+~~~~~~~~~~~~~~
+
+Keycloak is a mature and widely adopted project. Currently on 9.x
+release since February. Although follows quick every few months major
+release while keeping backwards compatibility.
+
+Github and community stats (March 2020): 
+* Forks: 2.8k 
+* Stars: 6.4k 
+* Controbutors: 393 
+* Commits: 12.5k 
+* Website visits: >60k unique users per month 
+* Developer mailing list: ~100 posts/month 
+* User mailing list: ~200 posts/month
+
+
+Governance and Community
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Governance:
+https://github.com/keycloak/keycloak/blob/master/GOVERNANCE.md
+* Contributing Guide:
+https://github.com/keycloak/keycloak/blob/master/CONTRIBUTING.md
+* Maintainers:
+https://github.com/keycloak/keycloak/blob/master/MAINTAINERS.md
+* Adopters: https://github.com/keycloak/keycloak/blob/master/ADOPTERS.md
+* License: ASF 2.0
+https://github.com/keycloak/keycloak/blob/master/LICENSE.txt
+* Community channels: https://www.keycloak.org/community
+
+
+Incubation Criteria
+~~~~~~~~~~~~~~~~~~~
+
+Section dedicated to address requirements listed in Incubation process: https://github.com/cncf/toc/tree/master/process#project-graduation-process-sandbox-to-incubating
+
+Production usage
+^^^^^^^^^^^^^^^^
+
+"Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope."
+
+Refering endorsements from Submission:
+
+* listed in: https://github.com/cncf/toc/issues/406
+* grouped and summarized in: https://github.com/cncf/toc/pull/405#issuecomment-623491056 and https://github.com/cncf/toc/pull/405#issuecomment-624043670 
+
+Bosh, Zalando, Cisco IT, Backbase, Government of British Columbia, Fresenius Medical Care North America IT Group, Cloudtrust and U.S Air Force, Hitachi, NTT Communications, Namura Research Institute Ltd. and Cuebiq publicly stated production usage. 
+
+One post claiming 42 million users in production deployment (https://github.com/cncf/toc/issues/406#issuecomment-632882838)
+
+
+Healthy number of committers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+"Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project"
+
+Right now only people from Maintainers list can merge commits: https://github.com/keycloak/keycloak/blob/master/MAINTAINERS.md
+
+Although there is much wider group of people reviewing and commenting particular PRs. 
+
+Substantial ongoing flow of commits and merged contributions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+"Demonstrate a substantial ongoing flow of commits and merged contributions."
+
+Example of most recent design discussions:
+
+* OpenID Connect Client Initiated Backchannel Authentication - contributor from Hitachi - https://github.com/keycloak/keycloak-community/pull/105
+* Client Policies - contributor from Hitachi - https://github.com/keycloak/keycloak-community/pull/99
+* Multi Factor and Step Up authentication improvements - contributor from ELCA - https://github.com/keycloak/keycloak-community/pull/39
+* User profile handling improvements - contributor from Bosh - https://github.com/keycloak/keycloak-community/pull/104
+
+All design specifications for major features discussed in the open with engagement from various contributors:
+
+* https://github.com/keycloak/keycloak-community/tree/master/design
+* https://github.com/keycloak/keycloak-community/pulls 
+
+Commits in the main repo: https://github.com/keycloak/keycloak/commits/master
+
+All contributors: https://github.com/keycloak/keycloak/graphs/contributors
+
+Selected Committers (without Red Hat associated ones)
+
+* https://github.com/keycloak/keycloak/commits?author=thomasdarimont
+* https://github.com/keycloak/keycloak/commits?author=girirajsharma
+* https://github.com/keycloak/keycloak/commits?author=Captain1653
+* https://github.com/keycloak/keycloak/commits?author=k-tamura
+* https://github.com/keycloak/keycloak/commits?author=tnorimat
+* https://github.com/keycloak/keycloak/commits?author=gerbermichi
+* https://github.com/keycloak/keycloak/commits?author=dteleguin
+* https://github.com/keycloak/keycloak/commits?author=hypery2k
+* https://github.com/keycloak/keycloak/commits?author=knutz3n
+* https://github.com/keycloak/keycloak/commits?author=y-tabata
+* https://github.com/keycloak/keycloak/commits?author=unly
+* https://github.com/keycloak/keycloak/commits?author=hokuda
+* https://github.com/keycloak/keycloak/commits?author=sventorben
+* https://github.com/keycloak/keycloak/commits?author=gtudan
+* https://github.com/keycloak/keycloak/commits?author=gcaranzo
+* https://github.com/keycloak/keycloak/commits?author=bartmentech
+
+
+
+
+A clear versioning scheme
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Currently Keycloak follows a fast pace of releasing new major version every few months. Maintaining backwards compatibility in key areas and providing documented upgrade path. 
+
+Keycloak project releases a micro if there is significant CVE or regression to address. 
+
+* Downloads archive: https://www.keycloak.org/downloads-archive.html
+* Release notes: https://www.keycloak.org/docs/latest/release_notes/index.html
+* Upgrade guide - highlighting relevant changes between versions: https://www.keycloak.org/docs/latest/upgrading/
+
+
+Future Plans / Roadmap
+~~~~~~~~~~~~~~~~~~~~~~
+
+Key high level items 
+
+* Quarkus - https://quarkus.io - based distribution allowing natively compiled
+binaries and startup/footprint comparable to golang. 
+* New improved storage layer - drop requirement for database and leveraging etcd OOTB. 
+* Keycloak.X - number of Cloud Native related improvements
+https://www.keycloak.org/2019/10/keycloak-x 
+* Kubernetes Operator - initial release on OperatorHub https://operatorhub.io/operator/keycloak-operator 
+* Admin UI Redesign and reimplementation of Admin UIs in ReactJS.
+https://groups.google.com/d/msgid/keycloak-dev/188f4f10-6135-4220-a399-96f0a6e94ff9%40googlegroups.com
+* FAPI (Financial APIs) 
+* Token Exchange Service 
+* Introduce Webhooks as extension mechanism *
+Config templates / isolation and realm hierarchy 
+* Authentication improvements - Full WebAuthN support, Adaptive / Risk based Step Up Authentication; Flexible consent authentication flows
+
+Project Scope
+-------------
+
+Clear project definition
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+OpenSource Identity and Access Management Solution for Modern
+Applications, API and Services. Aiming to make security easy for
+developers. OpenID Connect Certified and SAML 2.0 compatible Identity
+Provider. Also User Managed Access (UMA2) implementation.
+
+Allowing to secure applications with minimum to no code. Providing all
+typically required authentication, authorization and identity management
+capabilities for applications. Allowing developers to provide strong
+security into their applications without implementing typical features
+like login screens, registration, user management, password policies,
+figuring out how to securely issue and handle tokens and etc.
+
+Focusing on modern standards around the OAuth2 ecosystem, while
+including SAML2 support due to widespread usage. Keeping other
+technologies (CAS, WS-Fed, etc.) outside of the core codebase and as
+extensions.
+
+It is an opinionated solution trying to avoid code and function creep.
+Aiming to remain fairly lightweight. Delivering on 80/20 principle.
+Focusing on Cloud Native and modern use cases.
+
+Value-add to the Cloud Native Deployments
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Security is a cornerstone of Cloud Native deployments and the OAuth2
+family of standards like OpenID Connect has become a default choice when
+implementing modern applications, services, and APIs. Keycloak fits
+perfectly into the cloud landscape as a lightweight and modern solution.
+Embracing developers with an ease of use and and the rapid velocity of
+integrating Keycloak into applications, Keycloak also embraces new
+development models.
+
+Rapid project growth and adoption has proven it has already become a
+technology of choice for applications developed in Cloud Native
+ecosystem.
+
+Single Source of Truth for Cloud Identities
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By centralizing identity management and allowing integration with
+different identity sources (e.g.: LDAP and user-defined databases),
+Keycloak can act as a single source of truth for applications as well as
+to the infrastructure where these applications are deployed to.
+
+Keycloak is already considered by some key projects such as OpenStack,
+Kubernetes and OpenShift to leverage their security capabilities by
+providing this single source of truth for identities accessing the
+cloud. Some references:
+
+* https://docs.openstack.org/vitrage/latest/contributor/keycloak-config.html
+* https://kubernetes.io/docs/reference/access-authn-authz/authentication/#configuring-the-api-server
+
+Alignment with other CNCF projects
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+OpenID Connect, OAuth2 and JWT are standards leveraged by all Cloud
+Native technologies nowadays.
+
+Kubernetes Official Documentation for authentication points to Keycloak
+as one of possible OpenID Connect Providers to leverage
+https://kubernetes.io/docs/reference/access-authn-authz/authentication/
+
+OIDC is embraced for end user authentication by service mesh
+technologies.
+
+Keycloak provides a standalone adapter called Gatekeeper allowing
+securing applications via sidecar. Instrumenting security rules without
+changing application codebase.
+https://github.com/keycloak/keycloak-gatekeeper
+
+Anticipated use cases
+~~~~~~~~~~~~~~~~~~~~~
+
+Standalone Identity Provider (OpenID Connect, SAML 2.0)
+
+Standalone Authorization Server (OAuth 2.0)
+
+Central Authorization solution (User Managed Access - UMA 2.0). * Policy
+Evaluation Point, custom, chained policies (ABAC, Rules, JavaScript,
+etc.)
+
+Offloading application from implementing typical capabilities by
+providing integrations and set of hosted screens and services which can
+be themed/skinned to look like an integral part of application *
+Security (auth/authz) * Identity and Access Management capabilities
+(User/Role/Attribute management, password policies, etc.) *
+Authentication / Registration capabilities * Modern authentication
+capabilities (W3C WebAuthN, MFA) * User Self Service (changing profile,
+password, registering authentication tokens, sessions and consent
+management)
+
+Shields developer from legacy or custom infrastructure integrations
+which can be plugged in and leveraged while being hidden from
+application. Allowing developers to develop using modern protocols
+(OpenID Connect/OAuth 2.0) while still delivering on traditional
+integration needs * Flexible LDAP and Kerberos (SPNEGO) integration *
+Custom User Storage implementations * Social Login Providers (Sign in
+via FB, Google, Github, Twitter, etc) with flexible attribute mapping *
+External Identity Providers (SAML 2.0, OpenID Connect, custom)
+
+Alignment with SIG Reference Model
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CNCF SIG Securiry assesment request:
+https://github.com/cncf/sig-security/issues/372
+
+CNCF SIG Security Self Assesment:
+https://docs.google.com/document/d/14IIGliP3BWjdS-0wfOk3l_1AU8kyoSiLUzpPImsz4R0/edit?usp=sharing
+
+High level architecture
+~~~~~~~~~~~~~~~~~~~~~~~
+
+https://docs.google.com/document/d/14IIGliP3BWjdS-0wfOk3l_1AU8kyoSiLUzpPImsz4R0/edit#heading=h.hwn90fa4whrx
+
+Formal Requirements
+-------------------
+
+Keycloak project is able to meet all requirements. Already has proper
+governance model, is ready to adopt CNCF Code of Conduct and perform
+required trademark transfer. Will adhere to the CNCF IP Policy
+
+Has the TOC been approached for sponsorship
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Keycloak has approached Sandbox submission in the past although this has
+been impacted with process changes. At the point Keycloak submitted CNCF
+TOC decided to halt intake of new projects and redesign the whole
+process. This essentially derailed previous submission. During second attempt definition of Sandbox changed which lead project to switch aiming Incubation
+
+Initial PR: https://github.com/cncf/toc/pull/176
+Second PR: https://github.com/cncf/toc/pull/405
+GH Issue: https://github.com/cncf/toc/issues/406 
+
+Sponsors from TOC
+~~~~~~~~~~~~~~~~~
+
+TBD
+
+Preferred maturity level
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Incubation
+
+Project and Code Quality. Other information
+-------------------------------------------
+
+Comprehensive overview of the project has been performed for SIG
+Security Assesment:
+
+https://github.com/cncf/sig-security/issues/372
+
+https://docs.google.com/document/d/14IIGliP3BWjdS-0wfOk3l_1AU8kyoSiLUzpPImsz4R0/edit?usp=sharing
+
+Cloud Native
+------------
+
+The Keycloak team believes that this project aligns well with section
+1(c) of the CNCF Charter by providing a standard and simple way to
+secure Cloud Native applications and services. Out of the box, Keycloak
+provides an extensive set of features such as user federation, admin
+console and account management console. Securing applications and
+services can be done with only a few lines of code through Keycloak
+adapters that are provided for a range of languages and frameworks.
+Keycloak also provides both OpenID Connect and SAML 2.0 enabling any
+application that have support for either to be easily secured. Keycloak
+already has wide community support. Bringing Keycloak into the CNCF, the
+team hopes to continue to expand the list of features, making it even
+easier to secure different types of applications and reach an even wider
+community interested in contribution and adoption.
+
+
+
+
+
