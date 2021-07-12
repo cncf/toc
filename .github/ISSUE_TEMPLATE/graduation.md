@@ -32,4 +32,3 @@
 
 \[INSERT: grass roots? adopters?\]
 
-[What do your enemies say too?\]
