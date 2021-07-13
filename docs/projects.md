@@ -102,6 +102,10 @@
 [KubeVela](https://github.com/oam-dev/kubevela)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/4/2021](https://github.com/oam-dev/kubevela)| Sandbox
 [kube-vip](https://github.com/kube-vip/kube-vip)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/kube-vip/kube-vip)| Sandbox
 [KubeDL](https://github.com/alibaba/kubedl)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/alibaba/kubedl)| Sandbox
+[Krustlet](https://github.com/deislabs/krustlet)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/24/2021](https://github.com/deislabs/krustlet)| Sandbox
+[Krator](https://github.com/krator-rs/krator)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/26/2021](https://github.com/krator-rs/krator)| Sandbox
+[ORAS(OCI Registry as Storage)](https://github.com/oras-project/)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/2/2021]( https://github.com/oras-project/)| Sandbox
+[wasmCloud ](https://github.com/wasmCloud)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[7/12/2021](https://github.com/wasmCloud)| Sandbox
 
 
 ## Graduated Projects
