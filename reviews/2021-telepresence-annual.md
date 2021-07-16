@@ -58,7 +58,7 @@ From a user standpoint, we have been engaging with the Telepresence community an
 * Frank Gu: “Hey everyone! T2 is an amazing tool and you guys have done an excellent job reworking it with Golang! We have incorporated T2 into our dev workflow.”
 * Nicolas Porta: “We are currently adopting telepresence for developing locally our micro services in k8s, and also starting to configure ArgoCD. We using 2.2 with preview urls and everything. We have around 40 devs, growing every week. Telepresence is really helping our developers to test their code hitting a real backend without having to push the code to the repository and waiting for the CICD pipeline to finish. And also helped us go from a git flow process to a trunk based process.”
 * Tomas Soukup: “I am currently testing Telepresence 2. We have been testing Telepresence 1 in the past, but there were some obstacles to really put it in use at company. I like Telepresence 2 design and overall it was much cleaner and nicer to setup and also fits better in our gitops lifecycle.”
-* Samuel Loury”: “I discovered telepresence last year and was just mind blown. I’m convincing my team to use it now :-p Too bad it is no more python based though. Kinda love python. So just saying keep the great job!”
+* Samuel Loury: “I discovered telepresence last year and was just mind blown. I’m convincing my team to use it now :-p Too bad it is no more python based though. Kinda love python. So just saying keep the great job!”
 * Michael Foley: “First off, I want to say how great this product is. Wow!”
 
 
@@ -76,7 +76,15 @@ We also set out to a address a number of user requests, including:
 * Support for project-specific configuration
 * Better documentation
 
-Over the past year we accomplished many of these items. We refactored our codebase to Go, allowing us to take better advantage of the Kubernetes ecosystem libraries, while also increasing accessibility to the broader community. As part of this refactoring we introduced Telepresence V2, providing an extensible architecture and giving the community the ability to extend the base telepresence functionality, while also addressing many of the issues raised by the community. We enhanced our test suite and improved the deployment pipeline, enabling us to regularly release Telepresence on a weekly cadence, providing fixes and features to the community quicker than in the past. We recently took this a step further, enabling nightly builds and improving community accessibility. Throughout our development efforts, we have put an emphasis on improving the user and development documentation to make it easier for new and existing users to adopt Telepresence.
+Over the past year, we introduced Telepresence 2, a major rearchitecture and refactoring of the original Telepresence code base. Telepresence 2:
+
+* Is written entirely in Go, improving contributor accessibility and Kubernetes compatibility
+* Supports third-party integrations to add functionality to Telepresence; we take advantage of this plug-in architecture to display status information and such in Ambassador Cloud
+* Updated the test suite and deployment pipeline, enabling a weekly release cadence
+* Enabled nightly builds to improve community accessibility
+* Addressed issues raised by the community
+
+Throughout our development efforts, we have put an emphasis on improving the user and development documentation to make it easier for new and existing users to adopt Telepresence.
 
 ### Current Goals
 
