@@ -21,15 +21,11 @@ Chaos Mesh contains the following components:
 
 * **Chaos Controller Manager:** the core logic component of Chaos Mesh. It’s responsible for the scheduling and managing chaos experiments. The Controller Manager contains multiple CRD Controllers, such as Workflow Controller, Scheduler Controller, and various types of fault controllers.
 
-
 * **Chaos Daemon:** the main executive component of Chaos Mesh. Chaos Daemon runs in [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) mode and has privileged permissions by default (can be turned off). Chaos Daemon mainly interferes with specific network devices, file systems, kernels, etc. by intruding into the target Pod Namespace.
 
 **Chaos Mesh was accepted into CNCF Sandbox on July 15, 2020**
 
-
-
 * [Sandbox proposal PR](https://github.com/cncf/toc/pull/367)
-
 
 * [Sandbox proposal doc](https://github.com/cncf/toc/blob/1809ba96b31a562c8968265f06b5395c462c8b35/proposals/chaos-mesh.md)
 
@@ -40,15 +36,11 @@ Chaos Mesh contains the following components:
 
 Chaos Mesh falls into the scope of[ CNCF TAG Network](https://github.com/cncf/tag-network).
 
-
 Chaos Mesh adopts a Kubernetes architecture that uses Kubernetes CustomResourceDefinitions (CRDs) to define chaos objects, making it naturally integrated with the Cloud Native ecosystem.
-
 
 By orchestrating chaos experiments via comprehensive fault injection methods, Chaos Mesh provides a vendor-neutral, scalable chaos engineering platform that enables cloud-native applications to be **_resilient, manageable, and observable_**.  
 
-
 In addition, it integrates several other projects in the cloud-native ecosystem, such as Helm, Prometheus, and Grafana.
-
 
 ## Year in Review
 
@@ -68,8 +60,6 @@ In addition, it integrates several other projects in the cloud-native ecosystem,
   * Grafana plug-in to help users monitor chaos experiments.
   * A toolkit, Chaosd, so that users can simulate failures directly through physical nodes.
 
-
-
 * Community
   * Stars: 3.7k (from 1.5k)
   * Contributors: 102 (from 23)
@@ -77,13 +67,9 @@ In addition, it integrates several other projects in the cloud-native ecosystem,
   * Forks: 430+ (from 88)
   * Adopters: 40+
 
-
 ## Annual Review Contents
 
-
-
 * **Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity.**
-
 
   According to [chaosmesh.devstats.cncf.io](http://chaosmesh.devstats.cncf.io), the Chaos Mesh project average monthly stats in the past year are as follows:
     * [980 contributions](https://chaosmesh.devstats.cncf.io/d/74/contributions-chart?orgId=1);
@@ -128,7 +114,6 @@ Xpeng Motors is China's leading smart electric vehicle designer and manufacturer
         * Simulation of weak 4G network for in-vehicle systems, saving drive test costs;
         * AIOPS anomaly detection dataset generation.
 
-
 * **How has the project performed against its goals since the last review?**
 
   * From the feature’s perspective, 5 new fault injection types are now supported, namely: StressChaos, DNSChaos, JVMChaos, AWSChaos, and HTTPChaos; we have also updated the Chaos Dashboard for better user experience; Workflow orchestration support for users to arrange chaos experiments on their own; authorization mechanism based on Kubernetes RBAC permission policies; Grafana plug-in to help users monitor chaos experiments; and last but not least, Chaosd, a toolkit provided by Chaos Mesh, to enables users to simulate failures directly through physical nodes.
@@ -145,7 +130,6 @@ Xpeng Motors is China's leading smart electric vehicle designer and manufacturer
 
 
 ## Project Links
-
 * [Website](https://chaos-mesh.org/)
 * [GitHub](https://github.com/chaos-mesh/chaos-mesh)
 * Slack:[ CNCF](http://slack.cncf.io) / #project-chaos-mesh
