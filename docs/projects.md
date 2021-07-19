@@ -41,7 +41,7 @@
 [Thanos](https://github.com/thanos-io/thanos)|Joe Beda, Xiang Li, Alexis Richardson, Liz Rice|[6/11/19](https://github.com/cncf/toc/pull/256)|[7/20/19](https://github.com/thanos-io/thanos)|Incubating
 [in-toto](https://github.com/in-toto/in-toto)|Michelle Noorali, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/252)|[8/21/19](https://github.com/in-toto/in-toto)|Sandbox
 [Strimzi](https://github.com/strimzi)|Alexis Richardson, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/266)|[8/28/19](https://github.com/strimzi)|Sandbox
-[KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Incubating
+[KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Sandbox
 [Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Sandbox
 [ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
 [KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Sandbox
