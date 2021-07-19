@@ -86,12 +86,12 @@ As compared to other Cloud Native chaos engineering tools, Chaos Mesh has the fo
 *   Chaos Mesh uses Kubernetes CustomResourceDefinitions (CRDs) to manage chaos experiments, is easy to scale, and is closely integrated with the Kubernetes ecosystem, enabling users to use Chaos Mesh in combination with other tools within the Kubernetes ecosystem easily.
 *   **Thanks to its native orchestration engine, users do not need to install other components to perform chaos experiments, reducing component dependencies and risks.**
 *   Chaos Mesh has an easy-to-use UI (Chaos Dashboard) for chaos experiments, which reduces the cost of chaos experiments.
-*   **Chaos Mesh currently provides physical (VM) and Kubernetes fault injection methods, respectively. **
+*   Chaos Mesh currently provides physical (VM) and Kubernetes fault injection methods, respectively.
 *   Faults injected through Chaos Mesh are not intrusive to the applications, which means users do not need to make any adjustments, and can use Chaos Mesh directly in the production environment.
 
-In comparison to ChaosBlade, Chaos Mesh embraces cloud-native, is more closely integrated with the Kubernetes ecosystem and aims to build a **chaos engineering ecology. **Chaos Mesh enables users to design and orchestrate complex chaos experiments, rather than a mere fault injection chaos tool.
+In comparison to ChaosBlade, Chaos Mesh embraces cloud-native, is more closely integrated with the Kubernetes ecosystem and aims to build a **chaos engineering ecology**. Chaos Mesh enables users to design and orchestrate complex chaos experiments, rather than a mere fault injection chaos tool.
 
-When compared to LitmusChaos, Chaos Mesh puts more focus on reducing the cost of chaos engineering. Chaos Mesh provides native orchestration, meaning that users do not need to rely on external tools for conducting chaos experiments, whereas Litmus users have to rely on other tools for Workflow. What’s more, Chaos Mesh has a Chaos Engineering toolkit, Chaosd, which can be used to inject failures into physical nodes, providing more possibilities for chaos tests. 
+When compared to LitmusChaos, Chaos Mesh puts more focus on reducing the cost of chaos engineering. Chaos Mesh provides native orchestration, meaning that users do not need to rely on external tools for conducting chaos experiments, whereas Litmus users have to rely on other tools for Workflow. What’s more, Chaos Mesh has a Chaos Engineering toolkit, Chaosd, which can be used to inject failures into physical nodes, providing more possibilities for chaos tests.
 
 
 ## Incubation requirements
@@ -103,6 +103,10 @@ This is a [list of Chaos Mesh users](https://github.com/chaos-mesh/chaos-mesh/bl
 * [Apache APISIX](https://github.com/apache/apisix) \
 Apache APISIX is a dynamic, real-time, high-performance open source API gateway, which provides rich traffic management features, such as load balancing, dynamic upstream and more. \
 APISIX integrates Chaos Mesh into open-source CI pipelines, to further enhance APISIX's resiliency and robustness.
+
+ * [ByteDance](https://bytedance.com/en/) \
+ByteDance is a technology company operating a range of content platforms including TikTok, Lark, Helo, Vigo Video, Douyin, and Huoshan in over 150 markets and 75 languages. \
+ByteDance's self-developed chaos engineering platform is mainly used by the company's own technology system. As there are some cloud-native deployment services involved, they integrated Chaos Mesh as the underlying fault injection engine, which is a key supplement to ByteDance’s chaos engineering platform.
 
 *  [NetEase Fuxi Lab](https://fuxi.163.com/en/about.html) 
   
