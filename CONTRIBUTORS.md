@@ -60,6 +60,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Mark Peek, VMware	(markpeek@vmware.com)
 * Matt Farina, Samsung SDS (matt@mattfarina.com)
 * Matthew Fornaciari, Gremlin (forni@gremlin.com)
+* Matthew Giassa, Cisco (mgiassa@cisco.com)
 * Matt Young, EverQuote (myoung@everquote.com)
 * Nick Chase, Mirantis	(nchase@mirantis.com)
 * Nimesh Agarwal, Dunzo (nimesh.mittal@gmail.com)
