@@ -17,6 +17,7 @@ From the project side, please ensure that you:
 - [ ] Ensure your project meets the CNCF IP Policy: https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy
 - [ ] Review the online programs guidelines: https://github.com/cncf/foundation/blob/master/online-programs-guidelines.md
 - [ ] Understand the trademark guidelines: https://www.linuxfoundation.org/en/trademark-usage/ 
+- [ ] Understand the license allowlist: https://github.com/cncf/foundation/blob/master/allowed-third-party-license-policy.md#approved-licenses-for-allowlist
 - [ ] Has your project adopted open governance already? see http://opengovernance.dev
 - [ ] Slack: Are your slack channels migrated to the Kubernetes or CNCF Slack? 
 - [ ] Is your project in its own separate neutral github organization? 
