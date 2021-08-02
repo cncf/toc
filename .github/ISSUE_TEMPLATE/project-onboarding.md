@@ -3,7 +3,7 @@ name: Project Onboarding - Sandbox Projects
 about: project onboarding
 title: "[SANDBOX PROJECT ONBOARDING] project"
 labels: project onboarding, sandbox
-assignees: caniszczyk, amye
+assignees: caniszczyk, amye, idvoretskyi
 
 ---
 
@@ -22,10 +22,10 @@ From the project side, please ensure that you:
 - [ ] Slack: Are your slack channels migrated to the Kubernetes or CNCF Slack? 
 - [ ] Is your project in its own separate neutral github organization? 
 - [ ] Submitted a Pull request to add your project as a sandbox project to https://landscape.cncf.io
+- [ ] Create maintainer list + add to aggregated https://maintainers.cncf.io list by submitting a PR to it
 
 Things that CNCF will need from the project: 
 - [ ] Owners file: Please add a link to your owners file to this issue, this is used to be able to create your maintainers mailing list. 
-- [ ] Create maintainer list + added to aggregated https://maintainers.cncf.io list
 - [ ] Domain: transfer domain to the CNCF - please send a transfer code to project-onboarding@cncf.io
 - [ ] Trademarks: transfer any trademark and logo mark assets over to the LF - https://github.com/cncf/foundation/tree/master/agreements has agreements
 - [ ] GitHub: ensure 'thelinuxfoundation' and 'caniszczyk' are added as initial org owners, this helps us make sure we have continuity of GH ownership
@@ -33,7 +33,6 @@ Things that CNCF will need from the project:
 - [ ] Artwork: Ensure logos present on https://github.com/cncf/artwork
 - [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/copyright-notices.md#copyright-notices) followed
 - [ ] Website: Analytics transferred to amye@linuxfoundation.org
-- [ ] Adopt a license scanning tool, like FOSSA or Snyk
 - [ ] CII: Start on a CII best practices badge https://bestpractices.coreinfrastructure.org/en
 
 Things that the CNCF will do or help the project to do: 
@@ -43,3 +42,5 @@ Things that the CNCF will do or help the project to do:
 - [ ] ServiceDesk: confirm maintainers have read https://www.cncf.io/services-for-projects/
 - [ ] CNCF Welcome Email Sent to confirm maintainer list access, welcome email has monthly project sync details
 - [ ] Create space for meetings/events on community.cncf.io, e.g., https://community.cncf.io/pravega-community/
+- [ ] Adopt a license scanning tool, like FOSSA or Snyk
+
