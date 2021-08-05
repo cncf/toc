@@ -41,6 +41,5 @@ Things that the CNCF will do or help the project to do:
 - [ ] Events: update CFP + Registration + CFP Area forms
 - [ ] ServiceDesk: confirm maintainers have read https://www.cncf.io/services-for-projects/
 - [ ] CNCF Welcome Email Sent to confirm maintainer list access, welcome email has monthly project sync details
-- [ ] Create space for meetings/events on community.cncf.io, e.g., https://community.cncf.io/pravega-community/
+- [ ] Create space for meetings/events on https://community.cncf.io, e.g., https://community.cncf.io/pravega-community/ -  (https://github.com/cncf/communitygroups/blob/main/README.md#cncf-projects)
 - [ ] Adopt a license scanning tool, like FOSSA or Snyk
-
