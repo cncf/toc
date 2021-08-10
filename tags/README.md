@@ -36,13 +36,14 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Aradhna Chetal](https://github.com/achetal01)
 
 ### TAG App-Delivery
-* [Bryan Liles](https://github.com/bryanl)
-* [Lei Zhang](https://github.com/resouer)
+* [Jennifer Strejevitch](https://github.com/jenniferstrej)
+* [Hongchao Deng](https://github.com/hongchaodeng)
 * [Alois Reitbauer](https://github.com/AloisReitbauer)
 
 ### TAG Network 
 * [Lee Calcote](https://github.com/leecalcote)
 * [Ken Owens](https://github.com/kenowens12)
+* TBD
 
 ### TAG Runtime 
 * [Diane Feddema](https://github.com/dfeddema)
@@ -57,6 +58,7 @@ a pull request with document referencing the roles and charter, updating the lis
 ### TAG Observability
 * [Matt Young](https://github.com/halcyondude)
 * [Richard Hartmann](https://github.com/RichiH)
+* TBD
 
 ## Emeritus Chairs
 
