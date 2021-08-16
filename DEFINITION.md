@@ -3,7 +3,7 @@
 *Approved by TOC: 2018-06-11*
 
 [العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish)
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -153,3 +153,10 @@ Buluta Yönelik (**Cloud Native**) teknolojiler kuruluşlara kamusal, özel ve k
 Bu yöntemler dirençli, yönetilebilir ve gözlemlenebilir gevşek bağlı sistemlerin oluşturulmasını sağlar. Bunlar güçlü bir otomasyonla harmanlandığında, mühendislerin en az çaba ile yüksek etki oluşturan değişimleri sık ve öngörülebilir şekilde yapabilmelerine olanak verir.
 
 **Cloud Native Computing Foundation** açık kaynaklı ve üretici bağımsız bir ekosistemi destekleyerek ve büyüterek bu paradigmanın benimsenmesini amaçlamaktadır. Bu alandaki en son gelişmelerin herkes tarafından ulaşabilabilir olması için çalışır.
+
+## Български:
+Технологиите присъщи за облачните услуги(Cloud Native), позволяват на организациите да изградят и оперират скалируеми приложения в модерните и силно динамични среди, като публичните облачни услуги, частни такива и от смесен тип. Контейнерите, мержовите услуги(service mesh), микроуслугите(microservices), непроменлива(статична) инфраструктура и декларативните Приложно-Програмни Интерфейси(API) подчертават този подход на работа.
+
+Тези технологии позволяват отделните недиректно свързани системи да са издържливи, управляриуеми и наблюдаеми. Комбинирано с изпипана автоматизация те позволяват на инженерите да извършват големи промени, често и предвидимо с минилани пречки.
+
+Фондацията за Cloud Native Computing цели да постигне приемственост на този подход като насърчава и подкрепя еко-система от софтуер с отворен код и проекти-необвързани неразработвани от кокретна фирма. Ние позволяваме на тези най-съвременни модели да бъдат достъпни от всеки.
