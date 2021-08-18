@@ -143,6 +143,7 @@
 | [KubeEdge](https://kubeedge.io/)        | 3/18/19        | 9/16/20             | [Incubating](https://github.com/cncf/toc/pull/461) |
 | [Buildpacks](https://buildpacks.io/)    | 10/3/18        | 11/18/20            | [Incubating](https://github.com/cncf/toc/pull/338) |
 | [Flux](https://fluxcd.io)               | 7/15/19        | 3/11/21            | [Incubating](https://github.com/cncf/toc/pull/567) |
+| [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21            | [Incubating](https://github.com/cncf/toc/pull/622)
 
 
 ## Project Security Audits
