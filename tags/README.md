@@ -43,6 +43,7 @@ a pull request with document referencing the roles and charter, updating the lis
 ### TAG Network 
 * [Lee Calcote](https://github.com/leecalcote)
 * [Ken Owens](https://github.com/kenowens12)
+* [Ed Warnicke](https://github.com/edwarnicke)
 
 ### TAG Runtime 
 * [Diane Feddema](https://github.com/dfeddema)
@@ -57,6 +58,7 @@ a pull request with document referencing the roles and charter, updating the lis
 ### TAG Observability
 * [Matt Young](https://github.com/halcyondude)
 * [Richard Hartmann](https://github.com/RichiH)
+* [Alolita Sharma](https://github.com/alolita)
 
 ## Emeritus Chairs
 
