@@ -26,6 +26,9 @@ Dapr can be hosted in multiple environments, including self hosted for local dev
 
 Dapr released as a v1.0 project in Feb 2021 and has achieved the stability and enterprise readiness to be designated production ready. Dapr is used in production today by multiple companies. 
 
+### CNCF Due Diligence (DD) document
+The [Dapr CNCF Due Diligence document](https://docs.google.com/document/d/1tI1dha5IBMRu9BWtfq21OlHF2JIMq7MW) provides the necessary details to support submission of Dapr as an Incubations project to CNCF via the App-Delivery SIG. Refer to this document to answer required questions on accepting Dapr into CNCF Incubation status.
+
 ### Features
 
 Dapr consists of a high-performance runtime, CLI, language specific SDKs (Java, Python, Go, .NET, PHP, C++, Javascript) and pluggable components to integrate with a range of different technologies including storage, queues, event brokers etc.
@@ -252,3 +255,6 @@ Dapr has had multiple, independent [security audits](https://docs.dapr.io/concep
 All logos are available in https://github.com/dapr/docs/tree/v1.0/daprdocs/assets/icons
 
 The svg main logo is here: https://github.com/dapr/docs/blob/v1.0/daprdocs/assets/icons/logo.svg
+
+### CNCF Due Diligence (DD) document
+The [Dapr CNCF Due Diligence document](https://docs.google.com/document/d/1tI1dha5IBMRu9BWtfq21OlHF2JIMq7MW) provides the necessary details to support submission of Dapr as an Incubations project to CNCF.
