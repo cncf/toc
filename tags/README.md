@@ -27,7 +27,7 @@ a pull request with document referencing the roles and charter, updating the lis
 
 ### TAG Storage 
 * [Xing Yang](https://github.com/xing-yang)
-* [Quinton Hoole](https://github.com/quinton-hoole)
+* [Nick Connolly](https://github.com/nconnolly1)
 * [Alex Chircop](https://github.com/chira001)
 
 ### TAG Security 
