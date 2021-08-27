@@ -1,0 +1,111 @@
+== Volcano proposal for CNCF Incubation
+
+=== Table of Contents
+
+* link:#volcano-proposal-for-cncf-incubation[Volcano proposal for CNCF Incubation]
+** link:#table-of-contents[Table of Contents]
+** link:#background[Background]
+** link:#alignment-with-cloud-native[Alignment with Cloud Native]
+** link:#incubation-state-requirements[Incubation State Requirements]
+
+=== Background
+
+* https://github.com/cncf/toc/blob/main/proposals/volcano.md[Volcano Sandbox Proposal]
+* https://github.com/cncf/toc/blob/main/reviews/2021-volcano-annual.md[Project Review Proposal]
+* https://docs.google.com/presentation/d/1RdplRxmUicu0Y03VoMzap3Fb4amwjvMdLH9K7QxOFiM/edit#slide=id.g619fd2f8d0_2_24[Original CNCF TOC meeting slides]
+* https://docs.google.com/presentation/d/1_yGSYi9_g3NJfehbgtbps9-VyOsjv6BFVv8Ccf7-jiI/edit#slide=id.p1[Incubation Application Presentation for TAG-Runtime]
+
+https://volcano.sh/en/[Volcano] is a system for running high-performance workloads on Kubernetes. It features powerful batch scheduling capability that Kubernetes cannot provide but is commonly required by many classes of high-performance workloads, including Machine Learning, Deep Learning, Big Data, Bioinformatics Computing, etc. These types of workloads typically run on generalized domain frameworks like TensorFlow, Spark, PyTorch, MPI, etc. Volcano is integrated with these frameworks to allow users to run their applications without extra adaptation efforts while enjoying remarkable batch scheduling.
+
+*Volcano provides:*
+
+[arabic]
+. Powful support to mainstream computing architectures such as Spark/Flink/Tensorflow/PyTorch.
+. Rich advanced scheduling strategies including Gang Scheduling/Backfill/Bin-pack, etc.
+. Support mixed scheduling of heterogeneous resources, e.g. CPU, Memory, GPU, etc.
+
+*Volcano was accepted as a CNCF Sandbox project on Apr 10, 2020.*
+
+* https://github.com/cncf/toc/blob/main/proposals/volcano.md[Volcano Sandbox Proposal]
+* https://docs.google.com/presentation/d/1RdplRxmUicu0Y03VoMzap3Fb4amwjvMdLH9K7QxOFiM/edit#slide=id.g619fd2f8d0_2_24[Original CNCF TOC meeting slides]
+
+*Continuous Momentum*
+
+* Least Release: v1.3.0
+* Num of Contributors: 60 => *270+*
+* Github Stars: 800+ => *1900+*
+* Github Forks: 190+ => *400+*
+* Contributing member organizations: 14 => *40+*
+* Maintainers (including Approvers & Reviewers): 3 (1 company) => *12* (6 companies)
+* Notable improvements since sandbox include:
+** Support GPU sharing
+** Support advanced scheduling algorithms such as Preempt and Reclaim
+** Support more mainstream computing architectures such as Flink
+** Support resource reservation
+** Support task topology
+** Support SLA and TDM plugin
+** Support HDRF
+
+=== Alignment with Cloud Native
+
+Volcano falls in the scope of https://github.com/cncf/tag-runtime[CNCF Runtime TAG].
+
+*Volcano targets on:*
+
+* leveraging high performance (especially AI/Big Data/HPC) workloads, to run on Kubernetes
+* providing unified API for all computing architectures
+* providing rich and scalable scheduling strategies framework
+* supporting heterogeneous devices such as GPU/FPGA
+
+=== Incubation State Requirements
+
+==== 1. _Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope._
+
+We have the list of public adopters in the repo and https://volcano.sh/en/[home page] of official website, some notable users include https://github.com/volcano-sh/volcano/blob/master/docs/community/adopters.md[here]:
+
+* https://www.huaweicloud.com/intl/en-us/[HUAWEI CLOUD], is using Volcano as the scheduler for https://www.huaweicloud.com/product/cci.html[CCI] service. Volcano plugin is provided in https://www.huaweicloud.com/product/cce.html[CCE] service.
+* https://www.tencent.com/en-us[Tencent] is using Volcano as part of infrastructure at the department of AI computing.
+* https://www.iqiyi.com/[iQIYI] integrates Volcano with its Jarvis Deep Learning platform.
+* https://www.vip.com/?wxsdk=1[VIPS (VIP.com)] is using Volcano for AI training and reasoning in clusters with a large number of nodes.
+* https://www.ruitiancapital.com/#/[Ruitian Investment] has used Volcano at financial computing for nearly one year
+* https://www.xiaohongshu.com/[Xiaohongshu] is using Vocano for AI training and reasoning business and serves for hundreds of millions of users.
+* https://www.didiglobal.com/[Didi] is using Volcano for AI business for a long time.
+
+More adopters under confirmation to publish their name.
+
+==== 2. _Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project._
+
+We have 12 active maintainers/approvers/reviewers currently, from 6 different companies, including Huawei, Baidu, Ruitian, CCB, Boss, Cambricon. See OWNERS files under https://github.com/volcano-sh/volcano[Volcano repositories] for details.
+
+==== 3. _Demonstrate a substantial ongoing flow of commits and merged contributions._
+
+We are seeing a constant stream of improvements and features from the maintainers and community. See the stats here:
+
+* https://volcano.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&var-period=d7&var-repogroups=All&from=now-6M&to=now[Commits per week over the last 6 months]
+* https://volcano.devstats.cncf.io/d/12/issues-opened-closed-by-repository-group?orgId=1&from=now-6M&to=now[Issue Opened/Closed per week over the last 6 months]
+* https://volcano.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&from=now-6M&to=now&var-period=d7&var-repogroup_name=All[New PRs per week over the last 6 months]
+
+==== 4. _A clear versioning scheme._
+
+Volcano follows the https://semver.org/[semantic versioning spec], and now is under every 3 months release cadence.
+
+We have releases documented at: https://github.com/volcano-sh/volcano/releases
+
+The latest 4 releases are:
+
+* https://github.com/volcano-sh/volcano/releases/tag/v1.0.0[release 1.0]
+* https://github.com/volcano-sh/volcano/releases/tag/v1.1.0[release 1.1]
+* https://github.com/volcano-sh/volcano/releases/tag/v1.2.0[release 1.2]
+* https://github.com/volcano-sh/volcano/releases/tag/v1.3.0[release 1.3]
+* release 1.4 (WIP)
+
+==== 5. _Roadmap_
+
+We have a lot of plans for future development, and major items in our https://github.com/volcano-sh/volcano/blob/master/docs/community/roadmap.md[roadmap] are:
+
+* Support Hierarchy Queue.
+* Support Task level DAG
+* Expose more detailed monitoring metrics: Queue, Job, Cluster Resource
+* Support configuration Hot Update.
+* Support job backfill.
+* Improve the autoscaling efficiency.
