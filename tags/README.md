@@ -23,17 +23,17 @@ a pull request with document referencing the roles and charter, updating the lis
 | [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Saad Ali, Alena Prokharchyk |
 | [TAG Observability](https://github.com/cncf/tag-observability) | Lei Zhang, Cornelia Davis | 
 
-## TAG Chairs as of July 2020
+## TAG Chairs as of June 2021
 
 ### TAG Storage 
-* [Erin Boyd](https://github.com/erinboyd)
-* [Quinton Hoole](https://github.com/quinton-hoole)
+* [Xing Yang](https://github.com/xing-yang)
+* [Nick Connolly](https://github.com/nconnolly1)
 * [Alex Chircop](https://github.com/chira001)
 
 ### TAG Security 
-* [Sarah Allen](https://github.com/ultrasaurus)
-* [Jeyappragash Jeyakeerthi](https://github.com/pragashj)
-* [Dan Shaw](https://github.com/dshaw)
+* [Brandon Lum](https://github.com/lumjjb)
+* [Emily Fox](https://github.com/TheFoxAtWork)
+* [Aradhna Chetal](https://github.com/achetal01)
 
 ### TAG App-Delivery
 * [Bryan Liles](https://github.com/bryanl)
@@ -43,6 +43,7 @@ a pull request with document referencing the roles and charter, updating the lis
 ### TAG Network 
 * [Lee Calcote](https://github.com/leecalcote)
 * [Ken Owens](https://github.com/kenowens12)
+* [Ed Warnicke](https://github.com/edwarnicke)
 
 ### TAG Runtime 
 * [Diane Feddema](https://github.com/dfeddema)
@@ -57,9 +58,14 @@ a pull request with document referencing the roles and charter, updating the lis
 ### TAG Observability
 * [Matt Young](https://github.com/halcyondude)
 * [Richard Hartmann](https://github.com/RichiH)
+* [Alolita Sharma](https://github.com/alolita)
 
 ## Emeritus Chairs
 
 | TAG | Emeritus Chair |
 |---|---|
 | TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred) |
+| TAG Security | [Sarah Allen](https://github.com/ultrasaurus) |
+| TAG Security |[Jeyappragash Jeyakeerthi](https://github.com/pragashj) |
+| TAG Security |[Dan Shaw](https://github.com/dshaw) |
+| TAG Storage | [Erin Boyd](https://github.com/erinboyd) | 

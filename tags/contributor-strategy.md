@@ -136,8 +136,7 @@ Members who are no longer participating actively in the TAG (including both WG
 - TOC Liaison: Saad Ali, Alena Prokharchyk  
 - Chairs: Josh Berkus, Stephen Augustus, Paris Pittman  (Emeritus: Gerred 
 Dillon)
-- Tech Leads: None at this time but can change with need at a later time with
-charter ratification   
+- Tech Leads: Carolyn Van Slyck
 
 In accordance with the terms and roles laid out in [cncf-tags.md](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md)
 

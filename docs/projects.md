@@ -41,7 +41,7 @@
 [Thanos](https://github.com/thanos-io/thanos)|Joe Beda, Xiang Li, Alexis Richardson, Liz Rice|[6/11/19](https://github.com/cncf/toc/pull/256)|[7/20/19](https://github.com/thanos-io/thanos)|Incubating
 [in-toto](https://github.com/in-toto/in-toto)|Michelle Noorali, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/252)|[8/21/19](https://github.com/in-toto/in-toto)|Sandbox
 [Strimzi](https://github.com/strimzi)|Alexis Richardson, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/266)|[8/28/19](https://github.com/strimzi)|Sandbox
-[KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Incubating
+[KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Sandbox
 [Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Sandbox
 [ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
 [KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Sandbox
@@ -89,6 +89,24 @@
 [Kuberhealthy](https://github.com/Comcast/kuberhealthy)|TOC Vote|[2/24/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[3/30/2021](https://github.com/Comcast/kuberhealthy)|Sandbox
 [k8gb - Kubernetes Global Balancer](https://github.com/AbsaOSS/k8gb)|TOC Vote|[3/3/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[3/30/2021](https://github.com/AbsaOSS/k8gb)|Sandbox
 [Trickster](https://github.com/tricksterproxy/trickster)|TOC Vote|[3/8/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[3/30/2021](https://github.com/tricksterproxy/trickster)|Sandbox
+[Emissary-ingress](https://github.com/emissary-ingress/community)|Matt Klein|[4/14/2021](https://github.com/cncf/toc/pull/435)|[4/14/2021](https://github.com/emissary-ingress/community)| Incubating
+[Vineyard](https://github.com/v6d-io/v6d/)|TOC Vote|[4/27/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit?usp=forms_web_b#gid=1398510353)|[4/27/2021](https://github.com/v6d-io/v6d/)| Sandbox
+[WasmEdge Runtime](https://github.com/WasmEdge/WasmEdge)|TOC Vote|[4/27/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit?usp=forms_web_b#gid=1398510353)|[4/27/2021](https://github.com/WasmEdge/WasmEdge)| Sandbox
+[ChaosBlade](https://github.com/chaosblade-io/chaosblade)|TOC Vote|[4/27/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit?usp=forms_web_b#gid=1398510353)|[4/27/2021](https://github.com/chaosblade-io/chaosblade)| Sandbox
+[Fluid](https://github.com/fluid-cloudnative/fluid)|TOC Vote|[4/27/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit?usp=forms_web_b#gid=1398510353)|[4/27/2021](https://github.com/fluid-cloudnative/fluid)| Sandbox
+[Submariner](https://github.com/submariner-io)|TOC Vote|[4/27/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit?usp=forms_web_b#gid=1398510353)|[4/27/2021](https://github.com/submariner-io)| Sandbox
+[Antrea](https://github.com/antrea-io/antrea)|TOC Vote|[4/27/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit?usp=forms_web_b#gid=1398510353)|[4/27/2021](https://github.com/antrea-io/antrea)| Sandbox
+[Pixie](https://github.com/pixie-labs/pixie)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/15/2021](https://github.com/pixie-labs/pixie)| Sandbox
+[Meshery](https://github.com/layer5io/meshery)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/21/2021](https://github.com/layer5io/meshery)| Sandbox
+[Service Mesh Performance](https://github.com/layer5io/service-mesh-performance)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/21/2021](https://github.com/layer5io/service-mesh-performance)| Sandbox
+[KubeVela](https://github.com/oam-dev/kubevela)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/4/2021](https://github.com/oam-dev/kubevela)| Sandbox
+[kube-vip](https://github.com/kube-vip/kube-vip)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/kube-vip/kube-vip)| Sandbox
+[KubeDL](https://github.com/alibaba/kubedl)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/alibaba/kubedl)| Sandbox
+[Krustlet](https://github.com/deislabs/krustlet)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/24/2021](https://github.com/deislabs/krustlet)| Sandbox
+[Krator](https://github.com/krator-rs/krator)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/26/2021](https://github.com/krator-rs/krator)| Sandbox
+[ORAS(OCI Registry as Storage)](https://github.com/oras-project/)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/2/2021]( https://github.com/oras-project/)| Sandbox
+[wasmCloud ](https://github.com/wasmCloud)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[7/12/2021](https://github.com/wasmCloud)| Sandbox
+
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
@@ -125,6 +143,7 @@
 | [KubeEdge](https://kubeedge.io/)        | 3/18/19        | 9/16/20             | [Incubating](https://github.com/cncf/toc/pull/461) |
 | [Buildpacks](https://buildpacks.io/)    | 10/3/18        | 11/18/20            | [Incubating](https://github.com/cncf/toc/pull/338) |
 | [Flux](https://fluxcd.io)               | 7/15/19        | 3/11/21            | [Incubating](https://github.com/cncf/toc/pull/567) |
+| [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21            | [Incubating](https://github.com/cncf/toc/pull/622)
 
 
 ## Project Security Audits
@@ -154,7 +173,10 @@
 [TUF/Notary](https://github.com/theupdateframework/notary) | [08/07/18](https://cure53.de/pentest-report_tuf.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
 [OPA](https://github.com/open-policy-agent/opa) | [08/30/18](https://cure53.de/pentest-report_opa.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
 [Contour](https://github.com/projectcontour/contour) | [12/01/21](https://github.com/projectcontour/contour/blob/main/Contour_Security_Audit_Dec2020.pdf) | -- | CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
-[linkerd (fuzzing)](https://github.com/ctz/rustls) | [05/07/2021](https://github.com/linkerd/linkerd2-proxy/blob/main/docs/reports/linkerd2-proxy-fuzzing-report.pdf) | [Announcement](https://linkerd.io/2021/05/07/fuzz-testing-for-linkerd/) | CNCF | [AdaLogics](https://adalogics.com)
+[linkerd (fuzzing)](https://github.com/linkerd/linkerd2-proxy) | [05/07/2021](https://github.com/linkerd/linkerd2-proxy/blob/main/docs/reports/linkerd2-proxy-fuzzing-report.pdf) | [Announcement](https://linkerd.io/2021/05/07/fuzz-testing-for-linkerd/) | CNCF | [AdaLogics](https://adalogics.com)
+[Envoy (fuzzing)](https://github.com/envoyproxy/envoy) | [05/14/2021](https://github.com/envoyproxy/envoy/blob/main/docs/security/audit_fuzzer_adalogics_2021.pdf) | [Announcement](https://blog.envoyproxy.io/a-stroll-down-fuzzer-optimisation-lane-and-why-instrumentation-policies-matter-f0012ec260b3) | CNCF | [AdaLogics](https://adalogics.com)
+[Vitess (fuzzing)](https://github.com/vitessio/vitess) | [05/19/2021](https://github.com/vitessio/vitess/blob/master/doc/VIT-02-report-fuzzing-audit.pdf) | [Announcement](https://github.com/vitessio/vitess/blob/master/doc/VIT-02-report-fuzzing-audit.pdf) | CNCF | [AdaLogics](https://adalogics.com)
+[SPIRE/SPIFFE](https://github.com/spiffe/spire) | [08/17/2021](https://github.com/spiffe/spire/blob/main/doc/cure53-report.pdf) | [Announcement](https://www.cncf.io/blog/2021/08/17/open-sourcing-the-spiffe-spire-security-audit/) | CNCF | [Cure53](https://cure53.de)
 
 ## Archived Projects
 
