@@ -48,7 +48,7 @@ For the last year, KubeVirt has averaged [more than 350 merged PRs per month](ht
 
 ### Governance
 
-* [WIP Governance](https://github.com/kubevirt/community/pull/123)
+* [Governance policy](https://github.com/kubevirt/community/blob/master/GOVERNANCE.md)
 * [Membership policy](https://github.com/kubevirt/community/blob/master/membership_policy.md)
 
 As the project is in the process of growing beyond its initial group of contributors, we are working on adopting additional written governance rules.
@@ -72,38 +72,19 @@ Most of those SIGs are not yet independent committees. The Performance and Scale
 * 96 watched tags
 
 ### Communications
-The project utilizes Google Groups as a mailing list where where users have a chance to interact with core developers and discuss general topics. There are currently (2021/06/01) 436 subscribers.  The mailing list typically receives 0-5 new threads per day.
+The project utilizes Google Groups as a [mailing list](https://groups.google.com/g/kubevirt-dev) where where users have a chance to interact with core developers and discuss general topics. There are currently (2021/06/01) 436 subscribers.  The [mailing list](https://groups.google.com/g/kubevirt-dev) typically receives 0-5 new threads per day.
 
-The project holds a video conference every week where users have a chance to interact with core developers, discuss general topics and participate in bug triage. Recently the performance and scale working group started conducting a weekly meeting based on the topic. Both meetings are recorded and posted to the project YouTube channel. Meeting notes are also emailed to the general mailing list to keep the community informed.
+The project holds a video conference every week where users have a chance to interact with core developers, discuss general topics and participate in bug triage. Recently the performance and scale working group started conducting a weekly meeting based on the topic. Both meetings are recorded and posted to the project YouTube channel. Meeting notes are also emailed to the general [mailing list](https://groups.google.com/g/kubevirt-dev) to keep the community informed.
 
 The project uses two channels on the CNCF Kubernetes Slack server. #virtualization is used to handle general use topics. The channel hosts over 1000 users. #kubevirt-dev is used for developer oriented topics. The channel hosts 350 users. The channels typically receive 0-5 new threads per day.
 
-Important announcements are relayed via mailing list, website blog and Twitter.
+Important announcements are relayed via [mailing list](https://groups.google.com/g/kubevirt-dev), website blog and Twitter.
 
 KubeVirt advertises communications channels via https://kubevirt.io/community as well as project [README](https://github.com/kubevirt/kubevirt/blob/master/README.md).
 
-### End Users
+### Adopters
 
-Project end users are maintained in the [Adopters](https://github.com/kubevirt/kubevirt/blob/main/ADOPTERS.md) files
-
-Significant users include:
-* NVIDIA
-* SUSE
-* Kubermatic
-* H3C
-* CoreWeave
-* Civo
-* CloudFlare
-* Ateme
-* Cloudbase Solutions
-
-### Integrations
-
-* [oVirt](https://www.ovirt.org) ... Virtual machines can be run in a container using the external provider feature.
-* [Gardener](https://gardener.cloud/blog/2020-10/00/) ...
-* [Kubermatic Virtualization](https://www.kubermatic.com/products/kubevirt/)
-* [SUSE/Rancher Harvester](https://github.com/rancher/harvester/blob/766abd06561b059c1af623aacc4e505db471ceee/deploy/charts/harvester/README.md)
-* [Google Anthos](https://youtu.be/RE0A3kHT3LA?t=126)
+The Kubevirt project tracks adopters via the [Adopters file](https://github.com/kubevirt/kubevirt/blob/main/ADOPTERS.md) files
 
 ### CNCF Sponsored Security Audit
 
@@ -153,6 +134,8 @@ Kubevirt has an established and documented release process and cadence
 * [WIP] Online Snapshots
 * [WIP] CPU NUMA topology support
 * [WIP] SSH proxy ingress support
+
+Work is in progress to convert items into publicly advertised [GitHub Milestones](future roadmap is being mapped out at https://github.com/kubevirt/kubevirt/milestones)
 
 ## Incubation Stage Requirements
 
