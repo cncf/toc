@@ -87,6 +87,7 @@ KubeVirt advertises communications channels via https://kubevirt.io/community as
 The Kubevirt project tracks adopters via the [Adopters file](https://github.com/kubevirt/kubevirt/blob/main/ADOPTERS.md) files
 
 ### CNCF Sponsored Security Audit
+This section is a place holder to be filled in when it occurs during incubation.
 
 ## Product information
 
