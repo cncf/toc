@@ -84,6 +84,7 @@ Serverless Workflow currently has [5 project maintainers](https://github.com/ser
 
 Both the adoption and community interest has been steadily increasing over the course of the year.
 Most notable adoptions have been by:
+
 - [Kogito](https://kogito.kie.org/), a Red Hat project automation runtime
 - [Automatiko](https://automatiko.io/), a workflow automation runtime
 - [Synapse](https://github.com/serverlessworkflow/synapse), a Kubernetes-based workflow runtime which has joined the Serverless Workflow ecosystem
@@ -98,7 +99,7 @@ We have surpassed all of our goals that we have set for this year.
 We have been able to not only surpass the goals of the main specifications,
 but also to go from just hosting a specification to creating
 an entire workflow ecosystem around it. This includes SDKs, Tooling (VSCode, IntelliJ),
-rumtimes (Synapse), etc.
+runtimes (Synapse), etc.
 
 Over this year we were able to create a workflow DSL which is in our opinion
 at this time the most feature-rich and most powerful workflow DSL that exists.
