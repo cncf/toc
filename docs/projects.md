@@ -51,7 +51,7 @@
 [ArtifactHub](https://artifacthub.io)|TOC Vote|[4/1/20](https://github.com/cncf/toc/pull/409)|[6/23/20](https://github.com/artifacthub/hub)|Sandbox
 [BFE](https://www.bfe-networks.net)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/453)|[6/23/20](https://github.com/bfenetworks/bfe)|Sandbox
 [Cloud Custodian](https://cloudcustodian.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/issues/478)|[6/23/20](https://github.com/cloud-custodian/cloud-custodian)|Sandbox
-[Crossplane](https://www.crossplane.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/454)|[6/23/20](https://github.com/crossplane/crossplane)|Sandbox
+[Crossplane](https://www.crossplane.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/454)|[6/23/20](https://github.com/crossplane/crossplane)|Incubating
 [Dex](https://github.com/dexidp/dex)|TOC Vote|[3/4/20](https://github.com/cncf/toc/pull/379)|[6/23/20](https://github.com/dexidp/dex)|Sandbox
 [Keptn](https://keptn.sh)|TOC Vote|[6/4/19](https://github.com/cncf/toc/pull/250)|[6/23/20](https://github.com/keptn)|Sandbox
 [KUDO](https://kudo.dev)|TOC Vote|[6/25/19](https://github.com/cncf/toc/pull/261)|[6/23/20](https://github.com/kudobuilder)|Sandbox
@@ -142,8 +142,9 @@
 | [Cortex](https://cortexmetrics.io)      | 9/20/18        | 8/20/20             | [Incubating](https://github.com/cncf/toc/pull/315) | 
 | [KubeEdge](https://kubeedge.io/)        | 3/18/19        | 9/16/20             | [Incubating](https://github.com/cncf/toc/pull/461) |
 | [Buildpacks](https://buildpacks.io/)    | 10/3/18        | 11/18/20            | [Incubating](https://github.com/cncf/toc/pull/338) |
-| [Flux](https://fluxcd.io)               | 7/15/19        | 3/11/21            | [Incubating](https://github.com/cncf/toc/pull/567) |
-| [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21            | [Incubating](https://github.com/cncf/toc/pull/622)
+| [Flux](https://fluxcd.io)               | 7/15/19        | 3/11/21             | [Incubating](https://github.com/cncf/toc/pull/567) |
+| [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21             | [Incubating](https://github.com/cncf/toc/pull/622)
+| [Crossplane](https://www.crossplane.io) | 5/26/20        | 9/14/21             | [Incubating](https://github.com/cncf/toc/pull/620)
 
 
 ## Project Security Audits
