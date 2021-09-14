@@ -23,14 +23,15 @@ From the project side, please ensure that you:
 - [ ] Is your project in its own separate neutral github organization? 
 - [ ] Submitted a Pull request to add your project as a sandbox project to https://landscape.cncf.io
 - [ ] Create maintainer list + add to aggregated https://maintainers.cncf.io list by submitting a PR to it
+- [ ] Have added your project to https://github.com/cncf/contribute 
+- [ ] Artwork: Submit a pull request to https://github.com/cncf/artwork with your artwork
 
 Things that CNCF will need from the project: 
-- [ ] Owners file: Please add a link to your owners file to this issue, this is used to be able to create your maintainers mailing list. 
+- [ ] Provide emails for the maintainers added to https://maintainers.cncf.io in order to get access to the maintainers mailing list and ServiceDesk
 - [ ] Domain: transfer domain to the CNCF - please send a transfer code to project-onboarding@cncf.io
 - [ ] Trademarks: transfer any trademark and logo mark assets over to the LF - https://github.com/cncf/foundation/tree/master/agreements has agreements
 - [ ] GitHub: ensure 'thelinuxfoundation' and 'caniszczyk' are added as initial org owners, this helps us make sure we have continuity of GH ownership
 - [ ] GitHub: ensure [DCO](https://github.com/apps/dco) or [CLA](https://github.com/cncf/cla) are enabled for all GitHub repositories of the project
-- [ ] Artwork: Ensure logos present on https://github.com/cncf/artwork
 - [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/copyright-notices.md#copyright-notices) followed
 - [ ] Website: Analytics transferred to amye@linuxfoundation.org
 - [ ] CII: Start on a CII best practices badge https://bestpractices.coreinfrastructure.org/en
