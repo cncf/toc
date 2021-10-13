@@ -111,6 +111,7 @@
 [karmada](https://github.com/karmada-io/karmada)|TOC Vote|[6/9/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/karmada-io/karmada) | Sandbox
 [Inclavare Containers](https://github.com/alibaba/inclavare-containers)|TOC Vote|[6/17/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/alibaba/inclavare-containers) | Sandbox
 [SuperEdge](https://github.com/superedge/superedge)|TOC Vote|[6/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/superedge/superedge) | Sandbox
+[Cilium](https://github.com/cilium/cilium)|TOC Vote|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6164)|[10/13/21](https://lists.cncf.io/g/cncf-toc/message/6288) | Incubating
 
 
 ## Graduated Projects
