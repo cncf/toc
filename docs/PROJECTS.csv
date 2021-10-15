@@ -103,3 +103,13 @@ Service Mesh Performance,N/A,N/A,6/22/2021,Sandbox,,DCO,,,No,Yes,,https://github
 KubeVela,N/A,N/A,6/25/2021,Sandbox,,CLA,,,No,Yes,,https://github.com/oam-dev/kubevela
 kube-vip,N/A,N/A,6/22/2021,Sandbox,,No,,,No,Yes,,https://github.com/kube-vip
 KubeDL,N/A,N/A,6/22/2021,Sandbox,,CLA,,,No,Yes,,https://github.com/alibaba/kubedl
+Krustlet,N/A,N/A,7/13/2021,Sandbox,,DCO,No,No,No,Yes,https://kubernetes.slack.com/messages/krustlet,https://github.com/krustlet/krustlet
+Krator,N/A,N/A,7/13/2021,Sandbox,,CLA,No,Yes,No,Yes,https://kubernetes.slack.com/messages/krator,https://github.com/krator-rs/krator
+ORAS (OCI Registry as Storage),N/A,N/A,7/13/2021,Sandbox,,DCO,Yes,No,No,Yes,CNCF,https://github.com/oras-project
+wasmCloud,N/A,N/A,7/13/2021,Sandbox,,DCO,No,No,No,Yes,None,https://github.com/wasmCloud/wasmCloud/
+Akri,N/A,N/A,9/14/2021,Sandbox,,CLA,No,No,No,Yes,https://kubernetes.slack.com/messages/akri,https://github.com/deislabs/akri
+MetalLB,N/A,N/A,9/14/2021,Sandbox,,DCO,No,Yes,No,Yes,K8s,https://github.com/metallb/metallb
+karmada,N/A,N/A,9/14/2021,Sandbox,,None,No,No,No,Yes,https://join.slack.com/t/karmada-io/shared_invite/zt-omhy1wfa-LmAkCLfpDMnBjVXp3_U~0w,https://github.com/karmada-io/karmada
+Inclavare Containers,N/A,N/A,9/14/2021,Sandbox,,CLA,Yes,Yes,No,Yes,CNCF Slack,https://github.com/alibaba/inclavare-containers
+SuperEdge,N/A,N/A,9/14/2021,Sandbox,,None,No,Yes,No,Yes,Closed slack,https://github.com/superedge/superedge
+Cilium,N/A,N/A,10/13/2021,Incubation,,DCO,No,Yes,No,Yes,https://cilium.slack.com/,https://github.com/cilium/cilium
