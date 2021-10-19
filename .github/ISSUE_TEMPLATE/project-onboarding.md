@@ -32,7 +32,7 @@ Things that CNCF will need from the project:
 - [ ] Trademarks: transfer any trademark and logo mark assets over to the LF - https://github.com/cncf/foundation/tree/master/agreements has agreements
 - [ ] GitHub: ensure 'thelinuxfoundation' and 'caniszczyk' are added as initial org owners, this helps us make sure we have continuity of GH ownership
 - [ ] GitHub: ensure [DCO](https://github.com/apps/dco) or [CLA](https://github.com/cncf/cla) are enabled for all GitHub repositories of the project
-- [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/copyright-notices.md#copyright-notices) followed
+- [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/website-guidelines.md) followed
 - [ ] Website: Analytics transferred to amye@linuxfoundation.org
 - [ ] CII: Start on a CII best practices badge https://bestpractices.coreinfrastructure.org/en
 
