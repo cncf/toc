@@ -10,106 +10,93 @@
 
 ## Background
 
-
-- [Sandbox presentation slides](https://docs.google.com/presentation/d/1w94WgGmsgRXu4xFbkkVIPHtEl5V4eOg6FxgVikGimYs/edit#slide=id.g7e5d7aa8b9_2_75)
-- [Recommendation from SIG-App-Delivery chairs](https://github.com/cncf/toc/pull/391#issuecomment-624115660) (refer to end of doc) 
-  - [Sandbox presentation video](https://youtu.be/O40GK24Ea4k?t=1106)
-- CNCF incubation presentation (TBA)
+- [CNCF blog on defining cloud native chaos engineering - 6th Nov 2019 ](https://www.cncf.io/blog/2019/11/06/cloud-native-chaos-engineering-enhancing-kubernetes-application-resiliency/)
+- [Sandbox presentation slides](https://docs.google.com/presentation/d/1w94WgGmsgRXu4xFbkkVIPHtEl5V4eOg6FxgVikGimYs/edit#slide=id.g7e5d7aa8b9_2_75) & [Sandbox presentation video - 18th March 2020](https://youtu.be/O40GK24Ea4k?t=1106)
+- [Recommendations from SIG-App-Delivery upon acceptance as sandbox project - June 25th 2020](https://docs.google.com/document/d/10G1fOySiYeCYIkWhz_ueyXTBi04_pQVRkDBdt2ryCFo/edit#heading=h.6pidoniplc5n) 
 - [CNCF blog on Introduction to LitmusChaos - 28 Aug 2020](https://www.cncf.io/blog/2020/08/28/introduction-to-litmuschaos/)
-- [CNCF blog on defining cloud native chaos engineering - 6 Nov 2019](https://www.cncf.io/blog/2019/11/06/cloud-native-chaos-engineering-enhancing-kubernetes-application-resiliency/)
-- [Project update to Sig-App-Delivery](https://docs.google.com/presentation/d/1zNzSRc0N4I1_LsQsUnpcispQAJMU9ni6k-vfTQXefLo/edit?usp=sharing)
-- [Incubation presentation to Sig-App-Delivery](https://docs.google.com/presentation/d/1jir2aHrfkXUsOxhObyjxgNcWy0eZ2XPlaFhDD8i9FWc/edit?usp=sharing)
+- [Incubation presentation to Sig-App-Delivery - 3rd March 2021 ](https://docs.google.com/presentation/d/1jir2aHrfkXUsOxhObyjxgNcWy0eZ2XPlaFhDD8i9FWc/edit?usp=sharing)
 
 ## Recap: What is LitmusChaos
 
 ### What is LitmusChaos ?
-Litmus is a chaos engineering framework for Kubernetes. It provides a complete set of tools required by Kubernetes developers and SREs to carry out chaos experiments easily and in Kubernetes-native way. The project has “Declarative Chaos” as the fundamental design goal and keeps the community at the center for growing the chaos experiments. 
-Litmus has the following components:
-- Chaos Portal: Litmus Portal is a centralized web portal for creating, scheduling, and monitoring chaos workflows. A chaos workflow is a set of chaos experiments. Chaos workflows can be scheduled on remote Kubernetes clusters from the portal. SRE teams can share the portal while managing chaos through the portal.
-- Chaos Operator: This operator is built using the Operator SDK framework and manages the lifecycle of a chaos experiment.
-- Chaos CRDs: Primarily, there are three chaos CRDs – ChaosEngine, ChaosExperiment, and ChaosResult. Chaos is built, run, and managed using the above CRDs. ChaosEngine binds a target application (or infrastructure component) with a ChaosExperiment CR. When run by the operator, the result will be stored in ChaosResult CR.
-- Chaos experiments or the ChaosHub: Chaos experiments are custom resources that define low level chaos intent. The YAML specifications for these custom resources are hosted at the public ChaosHub (https://hub.litmuschaos.io).
+
+LitmusChaos is a chaos engineering framework for Kubernetes. The  project aims to provide a complete Chaos Engineering platform to help developers and SREs to carry out chaos experiments easily and as defined by the [principles of chaos](https://principlesofchaos.org/) . It has “cloud-native chaos” as its fundamental design goal and keeps the community at the center for growing the chaos experiments via the ChaosHub. Litmus supports common practices and aids needed in the practice of chaos, including blast radius control, steady-state definition & hypothesis validation, simulation of real-world scenarios, ability to schedule/automate experiments and observability hooks via events and prometheus metrics.
+
+At a high level, Litmus comprises of:
+
+Chaos Control Plane: A centralized chaos management tool called chaos-center, which helps construct, schedule and visualize chaos. The control plane is made up of a graphql server, react-based web-ui/dashboard and mongodb to store chaos data.
+
+Chaos Execution Plane: Made up of a chaos agent or subscriber, multiple operators and a chaos exporter that execute & monitor the experiment within a defined target Kubernetes environment.
+
+ChaosHub: An open-catalog of ready-to-use chaos/fault templates for Kubernetes and cloud platforms. The public chaoshub maintained by the Litmus project is also “embedded” into the chaos-center to aid in picking the right faults as part of a chaos workflow.
 
 ### What are the use cases?
 
-Typical use cases of Litmus include: chaos testing CI/CD pipelines, in staging and production environments with a goal of either benchmarking the resilience or improving the resilience
+LitmusChaos is predominantly used by the following persona:
 
-*Link to adopters*
-
-https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md
-
+-   Developers: To run chaos experiments during application development as part of extended devtests.
+    
+-   DevOps Engineers: To run chaos as a pipeline stage to find bugs when the application is subjected to fail paths as part of e2e validation in CI/CD
+    
+-   SREs: To plan and schedule chaos experiments into applications and/or supporting infrastructure in staging/pre-prod environments during gamedays or as part of a randomized / continuous background chaos service.
 
 ## Progress Since Joining CNCF
 
-### Project improvements in this period (features & governance) 
+### Project improvements in this period 
 
-#### Features:
+#### Feature Summary:
 
-- Litmus Portal to simplify management of chaos 
-- Support for chaos on containerd, crio runtime 
-- Golang SDK & migration to golang-based experiments 
-- Complex chaos workflows with argo integration 
-- Declarative Hypothesis via Litmus Probes
+- Migration to golang for chaos business logic with "litmus-sdk" created to bootstrap new experiments 
+- Introduction of Chaos-Center, a centralized control plane to simplify management of chaos 
+- Support for complex chaos workflows via Argo integration 
+- Steady-state hypothesis validation via Litmus Probes
 - Different modes (namespaced, admin/cluster)  of operation
-- GitOps integration - Both for keeping chaos configuration at Git and to achieve event triggered chaos
-- Integration with other tools such as Argo Workflow, Keptn, GitLab, GitHub and Spinnaker
-- Interleaved chaos charts for open observability
+- Ability to source chaos artifacts from a Git backend & synchornize changes into the chaos-center
+- Support for chaos on containerd, cri-o runtime 
+- Introduction of newer chaos types for both Kubernetes & cloud infratructure (AWS,GCP,Azure,VMware)
+- Improved suite of prometheus metrics for chaos experiments 
 
-#### Governance:
+#### Governance Summary: 
 
-- Moved to a SIG based model with chairs maintaining the associated sub-projects (group of repositories) under the purview of the respective SIG, while the project leadership group comprising a subsection of the chairs holds commit bit across repos in the project. 
+- Moving to a SIG based model with leads driving improvements/agenda in the associated sub-projects (group of repositories) under the purview of the respective SIG
 
-- Chairs from Wrike (sig-deployment), Infracloud (sig-orchestration), Amazon & HSBC (sig-docs), Intuit (sig-integration), NetApp & Deutche Bank(sig-observability)
+- Operational groups include sig-deployment (Leads from Wrike, Klanik), sig-docs (Leads from HSBC, Amazon) & sig-observability (Leads from NetApp, Deutche Bank). 
 
 
 ### Community Stats (graphs / dashboards) 
 
+(Refer to the [DD doc](https://docs.google.com/document/d/1_8svqwzs1xYRHU92Qfd1I6UUXYyb8J3Zlpemg2-n4SU/edit#heading=h.kd4eg2uz3lt0) for detailed stats) 
+
 - Stars
-  - 1.7k from 650 (2x)
+  - 2.3k from 650 
 
 - Slack Membership
-  - 662 from 237 (>2x)
+  - 1025 from 237 
 
 - Usage metrics 
-  - Operator Installations / Experiment Run Count
-    - Operator installations: 77521 
-    - Experiments Run: 253096
+    - Operator installations: ~240k  
+    - Experiments Run: ~570k 
 
-  - New Experiments Added
-    - 50 from 29 (21) 
+- New Experiments 
+    - 51 from 29 (22) 
 
 ### External contributions
 
-- Intuit 
-- RedHat
-- Microsoft
-- Dino Systems
-- Navi Technologies
-- IAG
-- Autopilot
-- Container Solutions
-- Okteto 
-- HSBC
-- Deutsche Telecom
-- Orange
+List of contributing companies: https://litmuschaos.devstats.cncf.io/d/5/companies-table?orgId=1
 
-#### References / Highlights: 
-- [Special Interest Groups](https://github.com/litmuschaos/litmus/wiki/Special-Interest-Groups)
-- Meetups by Community, Joint Meetups 
-  - Our sync up, [Argo meetup (Sumit)](https://youtu.be/eqm8bhrFuiY?t=1453), [okteto](https://youtu.be/MVWmRD9B470), [WeScale(French)](https://youtu.be/tr5C8bZ0elc), [Kubernetes/Docker meetup (malaysia)](https://youtu.be/bXwhXpw74No), [Cloud Native, Madison](https://www.youtube.com/watch?v=wRLKiMXbBbo&t=2620s)
-- [Thoughtworks Radar](https://www.thoughtworks.com/radar/tools?blipid=202010081#.X7H-CwT19VA.link) (published. Oct 20, 2020) 
-- [User Feedback](https://www.youtube.com/watch?v=PiGqQc_UYPc&amp;feature=youtu.be) (Andreas Krivas, Engineering Manager, ContainerSolutions AG) 
+### Integrations with CNCF Ecosystem
 
-#### Integrations with CNCF Ecosystem
-- [Argo Workflows](https://dev.to/ksatchit/chaos-workflows-with-argo-and-litmuschaos-2po5) (constructing complex chaos workflows) 
-- Argo Rollouts (select pods managed by argo rollouts annotated for chaos)
+- [Argo Workflows](https://dev.to/ksatchit/chaos-workflows-with-argo-and-litmuschaos-2po5) (constructing complex chaos workflows) & Argo Rollouts (select pods managed by argo rollouts annotated for chaos)
 - [Keptn](https://github.com/keptn-sandbox/litmus-service) (executing chaos tests as part of the keptn CD pipeline before quality gate evaluation)
 - [Spinnaker](https://www.armory.io/blog/litmuschaos-in-your-spinnaker-pipeline/) (build chaos stages as part of the spinnaker CD pipeline before app promotion)
 - [Gitlab](https://dev.to/uditgaurav/litmuschaos-gitlab-remote-templates-6l2) (chaos tests as a gitlab job )
-- [Okteto](https://dev.to/ksatchit/litmus-sdk-devtest-your-chaos-experiments-with-okteto-4dkj) (chaos operator is available as a ready template usage of Okteto CLI for development of litmus experiments) 
-- [Prometheus & Grafana](https://grafana.com/grafana/dashboards/12096) (chaos event [interleaved](https://dev.to/ksatchit/monitoring-litmus-chaos-experiments-198a) app dashboards) 
+- [Okteto](https://dev.to/ksatchit/litmus-sdk-devtest-your-chaos-experiments-with-okteto-4dkj) (Okteto CLI for development of litmus experiments) 
+- [Prometheus & Grafana](https://dev.to/ksatchit/observability-considerations-in-chaos-the-metrics-story-6cb) monitoring chaos impact on applications) 
+- [Dex](https://docs.litmuschaos.io/docs/next/user-guides/chaoscenter-oauth-dex-installation) (integrated with litmus auth server to provide improved authentication methods, such as via Google, Github) 
+- [Kyverno](https://litmuschaos.github.io/litmus/experiments/concepts/security/kyverno-policies/) (building policies to control permissions for execution of litmus experiments)
 
-#### Catalog listing / Open Marketplace / SaaS Integrations 
+
+### Catalog listing / Open Marketplace / SaaS Integrations 
 - [Okteto Cloud](https://github.com/okteto/litmus-on-okteto)
 - [Kublr](https://kublr.com/on-demand-videos/kubernetes-chaos-engineering-with-mayadata-and-kublr/) 
 
@@ -118,7 +105,15 @@ https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md
 - Helm Hub / Artifact Hub
 - jFrog ChartCenter
 
-### Litmus user presentations at ChaosCarnival
+### References / Highlights: 
+
+- Meetup Presentations by User Community Members
+  -  [Argo meetup (Sumit Nagal)](https://youtu.be/eqm8bhrFuiY?t=1453), [Okteto Meetup (Ramiro Berrelleza)](https://youtu.be/MVWmRD9B470), [WeScale Meetup (Akram Riahi) (French)](https://youtu.be/tr5C8bZ0elc), [Be Tech! Meetup (Santander) (Spanish) ](https://www.youtube.com/watch?v=8KyjsRhhRI0) 
+- [KubeCon case-study featuring LitmusChaos](https://static.sched.com/hosted_files/kccncna2021/be/Reslience-telco-KubeCon_NA_2021.pptx.pdf)
+- [Thoughtworks Radar](https://www.thoughtworks.com/radar/tools?blipid=202010081#.X7H-CwT19VA.link) (published. Oct 20, 2020) 
+- [User Testimonial](https://www.youtube.com/watch?v=PiGqQc_UYPc&amp;feature=youtu.be) (Andreas Krivas, Engineering Manager, ContainerSolutions AG) 
+
+#### Litmus user presentations at ChaosCarnival
 - [Network Chaos (Andreas Krivas, ContainerSolutions)](https://www.youtube.com/watch?v=whdDP41Omd8&list=PLBuYBMjBLBzHPuPsvdbJvKu1KxSowWDYl&index=3)
 - [Chaos Testing on OpenShift (Jordi Gill, Red Hat)](https://www.youtube.com/watch?v=VITGHJ47gx8&list=PLBuYBMjBLBzHPuPsvdbJvKu1KxSowWDYl&index=6)
 - [Putting Chaos into Continuous Delivery (Juergen Etzlstorfer, Keptn](https://www.youtube.com/watch?v=j7THMrIGKO4&list=PLBuYBMjBLBzGGxnZn7DVMQ2tbh7Gwkw7G&index=8&t=1277s)
@@ -128,6 +123,7 @@ https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md
 - [Chaos Engineering in Telco Cloudnative Infra (Samar and Vaibhav, Orange)](https://www.youtube.com/watch?v=UOhjFbCrncw&list=PLBuYBMjBLBzHPuPsvdbJvKu1KxSowWDYl&index=4&t=201s )
 
 ### Litmus 2.0
+
 When we started the Litmus project, the goal of this project was to create a complete platform to practice chaos engineering at scale in a Kubernetes way. Of course this had to be done incrementally, first create a toolset for chaos injection and then add additional features to make it a platform. Litmus 1.x achieved the goal of keeping it completely open source, creating a ChaosHub and creating the required CRDs, Operators and Schedulers. With Litmus 1.x, users have a working chaos engineering toolset aligned with the original goals.
 Over time, the monthly cadence releases added the following features. 
 - Chaos experiments become building blocks of a ChaosWorkflow, to allow users to create a larger chaos scenarios. 
@@ -137,55 +133,33 @@ Over time, the monthly cadence releases added the following features.
 
 With all these features, Litmus is a comprehensive platform for chaos engineering.
 
-**Note:** Litmus itself is composed of microservices. For 2.0, more microservices are added and the the existing ones will continue to work. Litmus 2.0 is completely backward compatible. No features are deprecated. Migration path is about constructing new artifacts such as ChaosWorkflows that include the current chaos experiments in use by the users. 
+**Note:** Litmus itself is composed of microservices. For 2.0, more microservices are added and the existing ones will continue to work. Litmus 2.0 is completely backward compatible. No features are deprecated. Migration path is about constructing new artifacts such as ChaosWorkflows that include the current chaos experiments in use by the users. 
 
 ## Incubation Stage Requirements
 
 ### Production usage
 
-  - [Intuit](https://www.intuit.com/?utm_source=github&utm_campaign=litmuschaos_repo): Uses the BYOC (Bring-Your-Own-Chaos) capability of Litmus, where existing experiments can be orchestrated with Litmus (in the process offering blast radius & app filter capabilities, on-demand/run-once execution, chaos artifacts that lend themselves to GitOps, Kubernetes chaos events  etc.,) 
-			
-		References: 
-    - https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/intuit.md
-    - https://sumitnagal.medium.com/chaos-journey-279924051d57
-    - https://youtu.be/cvH6R4wRVrg?t=1055
+(Refer to the detailed adoption info [here](https://github.com/litmuschaos/litmus/blob/master/ADOPTERS.md))
 
-  - [Orange](https://www.orange.com/) :Litmus is being used to test the resilience of OpenStack based Kubernetes environment. Litmus experiments are run against their internal cloud systems and also in some of their CI/CD pipelines.
+  - [HaloDoc](https://www.halodoc.com/): Uses the chaos-center to control and manage complex chaos workflows across its fleet of pre-prod and production clusters. Also uses the chaos-gitops & event-triggered chaos functionality wherein microservices subscribe to or are mapped to a given workflow that is triggered upon any changes to the said microservice on the cluster. 
 
-     References: 
-     
-     - https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/orange.md
+- [PoleEmploi](https://www.pole-emploi.fr/accueil/): Uses LitmusChaos along with private chaoshubs to test the resiliency of the Kubernetes infrastructure as well as application microservices in an air-gapped environment. 
 
-  - [Anuta Networks](https://www.anutanetworks.com/) : Anuta Networks uses Kubernetes for some applications that enable parts of their public cloud. Litmus is being used by their SREs to test the resilience of their Kubernetes platform and these applications.
+- [Intuit](https://www.intuit.com/?utm_source=github&utm_campaign=litmuschaos_repo): Uses the BYOC (Bring-Your-Own-Chaos) capability of Litmus, where existing experiments can be orchestrated with Litmus (in the process offering blast radius & app filter capabilities, on-demand/run-once execution, chaos artifacts that lend themselves to GitOps, Kubernetes chaos events  etc.,) 
 
-     References: 
-     - https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/anutanetworks.md 
+- [Orange](https://www.orange.com/): Litmus is being used to test the resilience of OpenStack based Kubernetes environment. Litmus experiments are run against their internal cloud systems and also in some of their CI/CD pipelines.
 
-  - [Red Hat](https://www.redhat.com/en) : Litmus is being used to test the maturity and resilience of Red Hat Openshift Virtualization solution. The experiments involve chaos injection on the VMs that host the OpenShift nodes (reboots, shutdowns) as well as pod level chaos while using litmus probes to validate expected behavior during chaos.
+- [Anuta Networks](https://www.anutanetworks.com/) : Anuta Networks uses Kubernetes for some applications that enable parts of their public cloud. Litmus is being used by their SREs to test the resilience of their Kubernetes platform and these applications.
 
-     References: 
-     - https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/redhat.md
+- [Red Hat](https://www.redhat.com/en) : Litmus is being used to test the maturity and resilience of Red Hat Openshift Virtualization solution. The experiments involve chaos injection on the VMs that host the OpenShift nodes (reboots, shutdowns) as well as pod level chaos while using litmus probes to validate expected behavior during chaos.
 
-  - [Container Solutions](https://www.container-solutions.com/) : Container Solutions team has been using Litmus and contributing back to the project at various levels including Network Chaos experiments and Chaos orchestration improvements. They are using Litmus for chaos engineering needs of their client environments which are based on OpenShift for nearly an year.
+- [Container Solutions](https://www.container-solutions.com/) : Container Solutions team has been using Litmus and contributing back to the project at various levels including Network Chaos experiments and Chaos orchestration improvements. They are using Litmus for chaos engineering needs of their client environments which are based on OpenShift for nearly an year.
 
-     References: 
-     - https://www.youtube.com/watch?v=PiGqQc_UYPc&amp;feature=youtu.be
+- [Wipro](https://www.wipro.com/en-IN/infrastructure/wipros-appanywhere/?utm_source=github&utm_campaign=litmuschaos_repo): Uses litmus as part of its “AppAnywhere Gecko” managed service. to validate and verify the reliability of applications moved into Kubernetes as part of end-to-end automation. Also makes chaos experiments available as self-service for customers of the platform. 
 
+- [WeScale](https://www.wescale.fr/): Uses Litmus experiments to enhance resiliency of clients’ Kubernetes clusters. The experiments are integrated with the respective clients CI pipelines, with pod-level chaos experiments attempted first before moving to cluster level ones.
 
-  - [Wipro](https://www.wipro.com/en-IN/infrastructure/wipros-appanywhere/?utm_source=github&utm_campaign=litmuschaos_repo): Uses litmus as part of its “AppAnywhere Gecko” managed service. to validate and verify the reliability of applications moved into Kubernetes as part of end-to-end automation. Also makes chaos experiments available as self-service for customers of the platform. 
-
-    References:
-
-    - https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/wipro.md
-
-  - [WeScale](https://www.wescale.fr/): Uses Litmus experiments to enhance resiliency of clients’ Kubernetes clusters. The experiments are integrated with the respective clients CI pipelines, with pod-level chaos experiments attempted first before moving to cluster level ones.
-		
-		References: 
-    - https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/wescale.md
-    - https://blog.wescale.fr/2020/09/29/wespeakcloud-quest-ce-que-le-chaos-engineering-et-comment-peut-il-sappliquer-a-votre-infrastructure/
-
-
-  - [NetApp](https://www.netapp.com) [(chaos as part of QA cycles)](https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/netapp.md), which also contributes to the Litmus project, with one of the SIG-Chairs for Observability. 
+- [NetApp](https://www.netapp.com) [(chaos as part of QA cycles)](https://github.com/litmuschaos/litmus/blob/master/adopters/organizations/netapp.md), which also contributes to the Litmus project, with one of the SIG-Chairs for Observability. 
 
 
 #### Known list of LitmusChaos users
@@ -211,55 +185,24 @@ Litmus is known to be used by the following organizations which are at various s
 ### Committers
 - Have a healthy number of committers
 
-  - Maintainers list
-    - Overall project maintainers: 
-      - [Sumit Nagal (Intuit)](https://github.com/sumitnagal)
-      - [Jayesh Kumar (AWS)](https://github.com/k8s-dev) 
-      - [Karthik Satchitanand (MayaData)](https://github.com/ksatchit)
-      - [Uma Mukkara (MayaData)](https://github.com/umamukkara)
-      - [Maria Kotlyarevskaya (Wrike)](https://github.com/Jasstkn)
-
-  - Other significant contributors
-    - [Jordi Gil (RedHat)](https://github.com/jordigilh)
-    
-  - Committers across Organizations (per SIG / sub-projects)
-
-    - SIG Integrations: [litmus-python, chaos-charts, chaos-workflows, litmus-go, litmus-ansible]
-      - [Sumit Nagal (Intuit)](https://github.com/sumitnagal)
-      - [Ondra Machacek (RedHat)](https://github.com/machacekondra)
-      - [Ramiro Berrelleza (Okteto)](https://github.com/rberrelleza)
-
-    - SIG Documentation: [litmus-docs] 
-      - [Jayesh Kumar (AWS)](https://github.com/k8s-dev)
-      - [Divya Mohan (HSBC)](https://github.com/divya-mohan0209)
-
-    - SIG-Orchestration [chaos-operator, elves, chaos-runner, admission-controller, chaos-scheduler]
-      - [Rahul M Chheda (InfraCloud)](https://github.com/rahulchheda)
-
-    - SIG-Deployment [chaos-helm, litmus]
-      - [Maria Kotlyarevskaya (Wrike)](https://github.com/Jasstkn)
-
-    - SIG Observability [chaos-observability] 
-      - [Kristin Barkardottir (NetApp)](https://github.com/xkbarkar), 
-      - [Shantanu Deshpande (Deutsche Bank)](https://github.com/ishantanu)
+  - [Maintainers list](https://github.com/litmuschaos/litmus/blob/master/MAINTAINERS)
 
 ### Demonstrate substantial flow of commits / healthy merge rate (backed-up by devstats)
 
 - Release Cadence
-  - [Sustained monthly release](https://litmuschaos.devstats.cncf.io/d/8/dashboards?orgId=1&refresh=15m&from=now-1y&to=now-1h) cadence (15th of every month) (this is measured against releases on litmuschaos/litmus)
+  - [Sustained monthly release](https://litmuschaos.devstats.cncf.io/d/8/dashboards?orgId=1&refresh=15m&from=now-2y&to=now-1h) cadence (15th of every month) (this is measured against releases on litmuschaos/litmus)
   - Patch releases on demand (1-2) between monthly releases for individual components / sub-projects
 
-- New Contributors added in last 6 months: 63  
-  - (94 since 12 months) [starting 25th Nov 2019](https://litmuschaos.devstats.cncf.io/d/52/new-contributors-table?orgId=1&from=now-1y&to=now)
+- New Contributors added since sandbox: [120](https://litmuschaos.devstats.cncf.io/d/52/new-contributors-table?orgId=1&from=1593023400000&to=now)
 
-- [PRs opened/merged per month](https://litmuschaos.devstats.cncf.io/d/12/issues-opened-closed-by-repository-group?orgId=1&var-period=m&var-repogroup_name=All&from=now-1y&to=now): ~290/~280 
+- [PRs opened/merged per month since sandbox](https://litmuschaos.devstats.cncf.io/d/12/issues-opened-closed-by-repository-group?orgId=1&var-period=m&var-repogroup_name=All&from=now-1y&to=now):  203/1197
 
 - No. of contributors month-on-month over the last year
   - 6.75 per month (including hacktoberfest)
   - 4.16 per month (excluding hacktoberfest)
 
-- No. of contributing orgs over the last 1 year
-  - More than [10 companies made over 5 contributions](https://litmuschaos.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=contributions)
+- No. of contributing orgs over the last couple of years
+  - More than [10 companies made over 30 contributions](https://litmuschaos.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%202%20years&var-metric=contributions)
 
 ### A clear versioning Scheme
 
@@ -274,10 +217,9 @@ Litmus is known to be used by the following organizations which are at various s
 
 ## Statement on alignment with the CNCF mission
 
-The practices of Chaos Engineering is a necessity for achieving service reliability. Reliable application delivery and operations are very important and key to the success of technology adoption of various CNCF projects and ecosystem projects. LitmusChaos project goal is to become the toolset to measure and achieve that reliability.  Litmus extends the existing experiences of both the cloud-native developers and SREs in adding chaos tests to either CI pipelines or to their operational infrastructure. Litmus integrates with other CNCF projects such as Argo Workflows, Argo rollouts, Prometheus and Keptn to enrich the experience of cloud native communities during their efforts to run their application services reliably. LitmusChaos Hub hosts the application specific experiments and CNCF project specific experiments will find their way into the hub. CoreDNS is one such example. 
+The practice of Chaos Engineering is a necessity for achieving service reliability. Reliable application delivery and operations are very important and key to the success of technology adoption of various CNCF projects and ecosystem projects. LitmusChaos project goal is to become the toolset to measure and achieve that reliability.  Litmus extends the existing experiences of both the cloud-native developers and SREs in adding chaos tests to either CI pipelines or to their operational infrastructure. Litmus integrates with other CNCF projects such as Argo Workflows, Argo rollouts, Prometheus and Keptn to enrich the experience of cloud native communities during their efforts to run their application services reliably. LitmusChaos Hub hosts the application specific experiments and CNCF project specific experiments will find their way into the hub. CoreDNS is one such example. 
 
 In summary, LitmusChaos project clearly aligns with CNCF mission of making the cloud native ubiquitous by being the readily usable and easily extensible toolset for measuring and enhancing the reliability of Cloud Native applications and platforms.
-
 
 
 ## Comparison with other CNCF chaos engineering projects
@@ -305,27 +247,35 @@ In summary, LitmusChaos project clearly aligns with CNCF mission of making the c
 
 - Importantly, Litmus orchestrates both native experiments as well as any other, i.e., supports BYOC and helps to homogenize the operational flow for these.
 
-- In other words, the focus of the project is not only around providing means to inject different chaos types/failures (for example, projects like chaos-mesh & pumba are more focused on providing chaos injection methodologies), but also practice chaos engineering in a wholesome way. 
+- In other words, the focus of the project is not only around providing means to inject different chaos types/failures (for example, projects like chaos-mesh & chaos blade are more focused on providing chaos injection methodologies), but also practice chaos engineering in a wholesome way. 
 
-### Comparison blog by a community user
-Here is a blog comparing different chaos engineering tools for kubernetes : https://blog.container-solutions.com/comparing-chaos-engineering-tools
+### Comparisons by  community 
 
+Here is some blogs comparing different chaos engineering tools for kubernetes: 
+
+https://blog.container-solutions.com/comparing-chaos-engineering-tools
+https://www.gremlin.com/community/tutorials/chaos-engineering-tools-comparison/
+
+**Note**: The blog by Container-Solutions & Gremlin was created between the 1.7.0 - 1.10 releases of litmus. All the roadmap items/needed improvements described in the blog have since been addressed.
 
 ## Roadmap
 
 [Link to the Roadmap](https://github.com/litmuschaos/litmus/blob/master/ROADMAP.md)
 
-Roadmap classification based on categories: 
+- Immediate-Term (in-progress)
+  -   Additional Chaos on non-kubernetes targets (cloud & baremetal resources)
+  -   Improved Observability via audit logs, alerts from the Chaos-Center  
+  -   Simplified monitoring (chaos-metric instrumented app dashboards) within the chaos-center  
+  -   GRPC Chaos, I/O & JVM chaos librariesc  
+  -   Runtime validation of chaos resources via admission controllers  
+  -   Simplified ChaosHub setup for air-gapped environments
 
-- Features
-  - Increased support for different container runtimes wrt I/O chaos
-  - Integration with service-mesh ecosystem to provide experiments with greater control/granularity wrt service-level chaos (http, grpc)
-  - Additional application specific chaos experiments
-  - Support for platform chaos scenarios as applicable
+- Near-Term (Backlog)
+  - Improved SLO management via conditional probes, probe chaining
+  -   Improved integrations into the CI/CD ecosystem (via chaos-center API)
+  -   Enhanced suite of application-specific chaos libraries
+  -   Support for cloudevents compliant chaos events
 
-- Integrations
-  - Increased off-the-shelf chaos-interleaved monitoring dashboards for different popular applications
-  - Continue to work with Keptn, Spinnaker, Okteto, Argo & other communities to drive the left-shift of chaos into CI/CD pipelines
 - Governance
-  - Operationalize the SIG-Testing & SIG-CI groups to improve the resiliency of the LitmusChaos framework & aid with reference implementations of chaos-enabled pipelines for community
-  - Collaborate with contributing organizations to come up with an improved graduation process for committers & maintainers 
+  - Operationalize more special interest groups  within litmus around various aspects of chaos engineering & aid with reference implementations in respective areas
+  - Collaborate with contributing organizations to come up with an improved graduation process for committers & maintainers
