@@ -42,6 +42,8 @@ Strong end-user adoption and usage has grown since the OSM project entered into 
 
 We continue to grow the community with providing our [Contributor Ladder](https://github.com/openservicemesh/osm/blob/main/CONTRIBUTOR_LADDER.md) to make is easy and clear to newcomers how to contribute and grow in status with the project.
 
+There are currently over 100K+ pulls of the OSM controller image on [Docker Hub](https://hub.docker.com/r/openservicemesh/osm-controller), and community feedback has been positive for two CNCF sessions on [Securing your workload communications with OSM](https://www.youtube.com/watch?v=llC9gLznJX4) and [Simplifying service mesh operations with OSM](https://www.youtube.com/watch?v=fb80WmVVzH8).
+
 ## Project Performance
 
 > How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)
@@ -51,15 +53,24 @@ This is OSM's first CNCF project review. OSM's main project objectives has been 
 - Delivering a simplified operators experience for service mesh operations
 - Building a community that embodies the understanding and need for simple service mesh controls
 
-The core OSM team believes we've made significant progress in these areas. The project will continue to engage the community with through community calls, as well as interactions on issues posted to the GitHub repo.
+The core OSM team believes we've made significant progress in these areas. The project will continue to engage the community through the use of community calls, session videos, as well as interactions on issues posted to the GitHub repo.
 
 ## Project Goals
 
 > What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
 
+OSM has the following project goals:
+
+- Release v1.0.0 upstream
+- Enhance scalability and performance
+- Grow project maintainers list
+- Expand project functionality and capabilities (multi-cluster, additional compute runtimes, PKI, Service Mesh Interface APIs)
+
 ## CNCF Collaboration
 
 > How can the CNCF help you achieve your upcoming goals?
+
+The OSM project has benefited from the partnership with the CNCF to host webinars to inform the community of the latest enhancements of the project. We look to continue to leverage the CNCF to assist in growing awareness of the project and providing community feedback on the project direction.
 
 ## Project Incubation Status
 
