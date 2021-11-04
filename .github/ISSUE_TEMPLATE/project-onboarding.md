@@ -25,11 +25,11 @@ From the project side, please ensure that you:
 - [ ] Create maintainer list + add to aggregated https://maintainers.cncf.io list by submitting a PR to it
 - [ ] Have added your project to https://github.com/cncf/contribute
 - [ ] Artwork: Submit a pull request to https://github.com/cncf/artwork with your artwork
+- [ ] -Domain: transfer domain to the CNCF - https://jira.linuxfoundation.org/plugins/servlet/theme/portal/2/create/63
 
 Things that CNCF will need from the project:
 
 - [ ] Provide emails for the maintainers added to https://maintainers.cncf.io in order to get access to the maintainers mailing list and ServiceDesk
-- [ ] Domain: transfer domain to the CNCF - please send a transfer code to project-onboarding@cncf.io
 - [ ] Trademarks: transfer any trademark and logo mark assets over to the LF - https://github.com/cncf/foundation/tree/master/agreements has agreements
 - [ ] GitHub: ensure 'thelinuxfoundation' and 'caniszczyk' are added as initial org owners, this helps us make sure we have continuity of GH ownership
 - [ ] GitHub: ensure [DCO](https://github.com/apps/dco) or [CLA](https://github.com/cncf/cla) are enabled for all GitHub repositories of the project
