@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**[Open Service Mesh](https://openservicemesh.io)** is a simple, lightweight, extensible extensible cloud native service mesh that allows users to uniformly manage, secure, and get out-of-the-box observability features for highly dynamic microservice environments.
+**[Open Service Mesh](https://openservicemesh.io)** is a simple, lightweight, extensible cloud native service mesh that allows users to uniformly manage, secure, and get out-of-the-box observability features for highly dynamic microservice environments.
 
 ## DevStats
 
@@ -17,7 +17,7 @@ Open Service Mesh DevStats can be found [here](https://openservicemesh.devstats.
 OSM currently has 15 [maintainers](https://github.com/openservicemesh/osm/blob/main/OWNERS).
 
 - Delyan Raychev, Microsoft
-- Eduardo Serra Miralles , VMware
+- Eduardo Serra Miralles, VMware
 - Kalya Subramanian, Microsoft
 - Michelle Noorali, Independent
 - Jon Huhn, Microsoft
@@ -32,15 +32,15 @@ OSM currently has 15 [maintainers](https://github.com/openservicemesh/osm/blob/m
 - Allen Leigh, Microsoft
 - Rita Zhang, Microsoft
 
-Beyond the maintainer's list, OSM has had 64 unique [contributors](https://github.com/openservicemesh/osm/graphs/contributors) to the project. Over the past year there has been [10 contributing companies and up to 48 contributing developers](https://openservicemesh.devstats.cncf.io/d/7/companies-contributing-in-repository-groups?orgId=1&from=now-365d&to=now-1h&var-period=d28&var-repogroup_name=All).
+Beyond the maintainers list, OSM has had 64 unique [contributors](https://github.com/openservicemesh/osm/graphs/contributors) to the project. Over the past year there have been [10 contributing companies and up to 48 contributing developers](https://openservicemesh.devstats.cncf.io/d/7/companies-contributing-in-repository-groups?orgId=1&from=now-365d&to=now-1h&var-period=d28&var-repogroup_name=All).
 
 ## Adoption
 
 > What do you know about adoption, and how has this changed since your last review / since you joined Sandbox? If you can list companies that are end users of your project, please do so. (Feel free to link to an existing ADOPTERS file if appropriate.)
 
-Strong end-user adoption and usage has grown since the OSM project entered into the incubating stage. This adoption has made the OSM project pivot to supporting additional community projects collaborations/integrations such as [Flagger](https://github.com/fluxcd/flagger/blob/main/docs/gitbook/tutorials/osm-progressive-delivery.md), [Contour Ingress](https://release-v0-11.docs.openservicemesh.io/docs/demos/ingress_contour/), and [Open Policy Agent](https://release-v0-11.docs.openservicemesh.io/docs/guides/integrations/external_auth_opa/), with more in the works.
+Strong end-user adoption and usage has grown since the OSM project entered into the sandbox stage. This adoption has made the OSM project pivot to supporting additional community projects collaborations/integrations such as [Flagger](https://github.com/fluxcd/flagger/blob/main/docs/gitbook/tutorials/osm-progressive-delivery.md), [Contour Ingress](https://release-v0-11.docs.openservicemesh.io/docs/demos/ingress_contour/), and [Open Policy Agent](https://release-v0-11.docs.openservicemesh.io/docs/guides/integrations/external_auth_opa/), with more in the works.
 
-We continue to grow the community with providing our [Contributor Ladder](https://github.com/openservicemesh/osm/blob/main/CONTRIBUTOR_LADDER.md) to make is easy and clear to newcomers how to contribute and grow in status with the project.
+We continue to grow the community with providing our [Contributor Ladder](https://github.com/openservicemesh/osm/blob/main/CONTRIBUTOR_LADDER.md) to make it easy and clear to newcomers how to contribute and grow in status with the project.
 
 There are currently over 100K+ pulls of the OSM controller image on [Docker Hub](https://hub.docker.com/r/openservicemesh/osm-controller), and community feedback has been positive for two CNCF sessions on [Securing your workload communications with OSM](https://www.youtube.com/watch?v=llC9gLznJX4) and [Simplifying service mesh operations with OSM](https://www.youtube.com/watch?v=fb80WmVVzH8).
 
@@ -48,12 +48,13 @@ There are currently over 100K+ pulls of the OSM controller image on [Docker Hub]
 
 > How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)
 
-This is OSM's first CNCF project review. OSM's main project objectives has been centered the following:
+This is OSM's first CNCF project review. OSM's main project objectives has been centered on the following:
 
+- Release version 1.0
 - Delivering a simplified operators experience for service mesh operations
 - Building a community that embodies the understanding and need for simple service mesh controls
 
-The core OSM team believes we've made significant progress in these areas. The project will continue to engage the community through the use of community calls, session videos, as well as interactions on issues posted to the GitHub repo.
+The core OSM team believes we've made significant progress in these areas. We will soon be releasing version 1.0 upstream. The project will continue to engage with the community through the use of community calls, session videos, as well as interactions on issues posted to the GitHub repo.
 
 ## Project Goals
 
@@ -65,6 +66,8 @@ OSM has the following project goals:
 - Enhance scalability and performance
 - Grow project maintainers list
 - Expand project functionality and capabilities (multi-cluster, additional compute runtimes, PKI, Service Mesh Interface APIs)
+
+The OSM project also has a well defined [project road map](https://github.com/openservicemesh/osm/projects/3) with a list of initiatives for the project going forward.
 
 ## CNCF Collaboration
 
