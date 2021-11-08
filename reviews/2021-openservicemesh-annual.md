@@ -78,3 +78,5 @@ The OSM project has benefited from the partnership with the CNCF to host webinar
 ## Project Incubation Status
 
 > Do you think that your project meets the criteria for incubation?
+
+At this specific time of the annual review, the OSM project team believes we are close to beginning incubation stage talks after the v1.0.0 release has been available to customers for a period of time. Incubation discussion will most likely start in S
