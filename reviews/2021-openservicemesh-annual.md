@@ -38,7 +38,7 @@ Beyond the maintainers list, OSM has had 64 unique [contributors](https://github
 
 > What do you know about adoption, and how has this changed since your last review / since you joined Sandbox? If you can list companies that are end users of your project, please do so. (Feel free to link to an existing ADOPTERS file if appropriate.)
 
-Strong end-user adoption and usage has grown since the OSM project entered into the sandbox stage. This adoption has made the OSM project pivot to supporting additional community projects collaborations/integrations such as [Flagger](https://github.com/fluxcd/flagger/blob/main/docs/gitbook/tutorials/osm-progressive-delivery.md), [Contour Ingress](https://release-v0-11.docs.openservicemesh.io/docs/demos/ingress_contour/), and [Open Policy Agent](https://release-v0-11.docs.openservicemesh.io/docs/guides/integrations/external_auth_opa/), with more in the works.
+Strong end-user adoption have grown since the OSM project entered into the sandbox stage. This adoption has made the OSM project pivot to supporting additional community projects collaborations/integrations such as [Flagger](https://github.com/fluxcd/flagger/blob/main/docs/gitbook/tutorials/osm-progressive-delivery.md), [Contour Ingress](https://release-v0-11.docs.openservicemesh.io/docs/demos/ingress_contour/), and [Open Policy Agent](https://release-v0-11.docs.openservicemesh.io/docs/guides/integrations/external_auth_opa/), with more in the works.
 
 We continue to grow the community with providing our [Contributor Ladder](https://github.com/openservicemesh/osm/blob/main/CONTRIBUTOR_LADDER.md) to make it easy and clear to newcomers how to contribute and grow in status with the project.
 
@@ -48,13 +48,13 @@ There are currently over 100K+ pulls of the OSM controller image on [Docker Hub]
 
 > How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)
 
-This is OSM's first CNCF project review. OSM's main project objectives has been centered on the following:
+This is OSM's first CNCF project review. OSM's main project objectives have been centered on the following:
 
-- Release version 1.0
+- Release version 1.0.0
 - Delivering a simplified operators experience for service mesh operations
 - Building a community that embodies the understanding and need for simple service mesh controls
 
-The core OSM team believes we've made significant progress in these areas. We will soon be releasing version 1.0 upstream. The project will continue to engage with the community through the use of community calls, session videos, as well as interactions on issues posted to the GitHub repo.
+The core OSM team believes we've made significant progress in these areas. We will soon be releasing version 1.0.0. The project will continue to engage with the community through the use of community calls, session videos, as well as interactions on issues posted to the GitHub repo.
 
 ## Project Goals
 
@@ -62,7 +62,7 @@ The core OSM team believes we've made significant progress in these areas. We wi
 
 OSM has the following project goals:
 
-- Release v1.0.0 upstream
+- Release v1.0.0
 - Enhance scalability and performance
 - Grow project maintainers list
 - Expand project functionality and capabilities (multi-cluster, additional compute runtimes, PKI, Service Mesh Interface APIs)
@@ -79,4 +79,4 @@ The OSM project has benefited from the partnership with the CNCF to host webinar
 
 > Do you think that your project meets the criteria for incubation?
 
-At this specific time of the annual review, the OSM project team believes we are close to beginning incubation stage talks after the v1.0.0 release has been available to customers for a period of time. Incubation discussion will most likely start in H1 CY2022.
+At this specific time of the annual review, the OSM project team believes we are close to beginning incubation stage talks after the v1.0.0 release has been available to users for a period of time. Incubation discussion will most likely start in H1 CY2022.
