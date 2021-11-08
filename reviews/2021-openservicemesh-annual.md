@@ -38,7 +38,7 @@ Beyond the maintainers list, OSM has had 64 unique [contributors](https://github
 
 > What do you know about adoption, and how has this changed since your last review / since you joined Sandbox? If you can list companies that are end users of your project, please do so. (Feel free to link to an existing ADOPTERS file if appropriate.)
 
-Strong end-user adoption have grown since the OSM project entered into the sandbox stage. This adoption has made the OSM project pivot to supporting additional community projects collaborations/integrations such as [Flagger](https://github.com/fluxcd/flagger/blob/main/docs/gitbook/tutorials/osm-progressive-delivery.md), [Contour Ingress](https://release-v0-11.docs.openservicemesh.io/docs/demos/ingress_contour/), and [Open Policy Agent](https://release-v0-11.docs.openservicemesh.io/docs/guides/integrations/external_auth_opa/), with more in the works.
+Strong end-user adoption has grown since the OSM project entered into the sandbox stage. This adoption has made the OSM project pivot to supporting additional community projects collaborations/integrations such as [Flagger](https://github.com/fluxcd/flagger/blob/main/docs/gitbook/tutorials/osm-progressive-delivery.md), [Contour Ingress](https://release-v0-11.docs.openservicemesh.io/docs/demos/ingress_contour/), and [Open Policy Agent](https://release-v0-11.docs.openservicemesh.io/docs/guides/integrations/external_auth_opa/), with more in the works.
 
 We continue to grow the community with providing our [Contributor Ladder](https://github.com/openservicemesh/osm/blob/main/CONTRIBUTOR_LADDER.md) to make it easy and clear to newcomers how to contribute and grow in status with the project.
 
@@ -79,4 +79,4 @@ The OSM project has benefited from the partnership with the CNCF to host webinar
 
 > Do you think that your project meets the criteria for incubation?
 
-At this specific time of the annual review, the OSM project team believes we are close to beginning incubation stage talks after the v1.0.0 release has been available to users for a period of time. Incubation discussion will most likely start in H1 CY2022.
+At this specific time of the annual review, the OSM project team believes we are close to beginning incubation stage talks after the v1.0.0 release has been available to users for a period of time. Incubation discussion will most likely start in the first half of calendar year 2022.
