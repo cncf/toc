@@ -23,7 +23,8 @@ There is a weird spike of Github activity on 01-13-2021 that distorts the steady
 
 ## Maintainers
 
-Keylime currently has 9 maintainers, from 7 different organisations (IBM, MIT, Netflix, Red Hat, Universität Bern, ZTE).
+Keylime currently has 9 maintainers, from 7 different organisations:
+- IBM, MIT, Netflix, Red Hat, Universität Bern, ZTE
 
 Rust-keylime has 7 maintainers, from 1 organisation (Red Hat).
 
@@ -32,12 +33,32 @@ For more details, please refer to the MAINTAINERS.md file for keylime/keylime ([
 
 # Adoption
 
+## IBM
+
 Since last year, IBM has started using Keylime in production, at scale, on their IBM Cloud.
 
 In practice, this means more than 5,000 servers are using Keylime on a daily basis.
 
-For more details on this deployment: [MIT article](https://news.mit.edu/2021/keylime-security-software-deployed-ibm-cloud-0727), [CNCF blog article](https://www.cncf.io/blog/2021/07/06/ibm-implements-remote-attestation-on-linux-with-a-hardware-root-of-trust-using-keylime/).
+This is great news for the project, as the scale of the deployment is both
+impressive and a great source of real-world testing, which helps test the
+codebase under pressure (and confirms Keylime is scalable).
 
+More details on this deployment:
+- [MIT article](https://news.mit.edu/2021/keylime-security-software-deployed-ibm-cloud-0727)
+- [CNCF blog article](https://www.cncf.io/blog/2021/07/06/ibm-implements-remote-attestation-on-linux-with-a-hardware-root-of-trust-using-keylime/).
+
+## Lernstick
+
+The
+[Lernstick](https://www.digitale-nachhaltigkeit.unibe.ch/services_and_support/lernstick/index_eng.html)
+project provides students with a Linux-based operating system on a (USB) stick
+allowing them to learn but also take exams on their own device. Lernstick is
+using Keylime to guarantee the integrity of the system being loaded on student's
+computers. It is currently in a proof of concept stage, but once in use it will
+translate to hundreds of student machines using Keylime to prove to the exam
+server that they are runnnig a system that hasn't been tampered with.
+
+Using Keylime in a "bring your own device" (BYOD) context is a novel and interesting use, which we are excited about. 
 
 # Goals
 
