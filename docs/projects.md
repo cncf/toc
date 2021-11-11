@@ -189,6 +189,7 @@
 [Envoy (fuzzing)](https://github.com/envoyproxy/envoy) | [05/14/2021](https://github.com/envoyproxy/envoy/blob/main/docs/security/audit_fuzzer_adalogics_2021.pdf) | [Announcement](https://blog.envoyproxy.io/a-stroll-down-fuzzer-optimisation-lane-and-why-instrumentation-policies-matter-f0012ec260b3) | CNCF | [AdaLogics](https://adalogics.com)
 [Vitess (fuzzing)](https://github.com/vitessio/vitess) | [05/19/2021](https://github.com/vitessio/vitess/blob/master/doc/VIT-02-report-fuzzing-audit.pdf) | [Announcement](https://github.com/vitessio/vitess/blob/master/doc/VIT-02-report-fuzzing-audit.pdf) | CNCF | [AdaLogics](https://adalogics.com)
 [SPIRE/SPIFFE](https://github.com/spiffe/spire) | [08/17/2021](https://github.com/spiffe/spire/blob/main/doc/cure53-report.pdf) | [Announcement](https://www.cncf.io/blog/2021/08/17/open-sourcing-the-spiffe-spire-security-audit/) | CNCF | [Cure53](https://cure53.de)
+[Flux](https://github.com/fluxcd/flux2) | [11/10/2021](https://fluxcd.io/FluxFinalReport-v1.1.pdf) | [Announcement](http://fluxcd.io/blog/2021-11-10-flux-security-audit/) | CNCF | [ADA Logics](https://adalogics.com)
 
 ## Archived Projects
 
