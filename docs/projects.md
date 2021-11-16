@@ -42,7 +42,7 @@
 [in-toto](https://github.com/in-toto/in-toto)|Michelle Noorali, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/252)|[8/21/19](https://github.com/in-toto/in-toto)|Sandbox
 [Strimzi](https://github.com/strimzi)|Alexis Richardson, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/266)|[8/28/19](https://github.com/strimzi)|Sandbox
 [KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Sandbox
-[Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Sandbox
+[Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Incubating
 [ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
 [KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Sandbox
 [Service Mesh Interface (SMI)](https://smi-spec.io)|Jeff Brewer, Brendan Burns, Matt Klein|[1/16/20](https://github.com/cncf/toc/pull/336) -  [SIG Network](https://github.com/cncf/sig-network/blob/master/recommendations/smi.md)|[3/16/20](https://github.com/deislabs/smi-spec)|Sandbox
@@ -156,6 +156,7 @@
 | [Flux](https://fluxcd.io)               | 7/15/19        | 3/11/21             | [Incubating](https://github.com/cncf/toc/pull/567) |
 | [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21             | [Incubating](https://github.com/cncf/toc/pull/622)
 | [Crossplane](https://www.crossplane.io) | 5/26/20        | 9/14/21             | [Incubating](https://github.com/cncf/toc/pull/620)
+| [Longhorn]](https://www.crossplane.io) | 5/26/20         | 11/4/21              | [Incubating](https://github.com/cncf/toc/pull/553)
 
 
 ## Project Security Audits
