@@ -116,7 +116,10 @@
 [OpenELB](https://github.com/kubesphere/openelb)|TOC Vote|[7/7/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/kubesphere/openelb) | Sandbox
 [Open Cluster Management](https://github.com/open-cluster-management-io)|TOC Vote|[7/11/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/open-cluster-management-io) | Sandbox
 [VS Code Kubernetes Tools](https://github.com/Azure/vscode-kubernetes-tools)|TOC Vote|[10/25/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/Azure/vscode-kubernetes-tools)| Sandbox
-
+[Nocalhost] (https://github.com/nocalhost/nocalhost)|TOC Vote|[8/17/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/nocalhost/nocalhost)|Sandbox
+[KubeArmor] (https://github.com/kubearmor/KubeArmor)|TOC Vote|[9/6/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/kubearmor/KubeArmor)|Sandbox
+[K8up] (https://github.com/k8up-io/k8up)|TOC Vote|[9/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/k8up-io/k8up)|Sandbox
+[kube-rs] (https://github.com/kube-rs/kube-rs)|TOC Vote|[10/30/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/kube-rs/kube-rs)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
