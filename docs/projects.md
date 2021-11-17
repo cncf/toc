@@ -42,7 +42,7 @@
 [in-toto](https://github.com/in-toto/in-toto)|Michelle Noorali, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/252)|[8/21/19](https://github.com/in-toto/in-toto)|Sandbox
 [Strimzi](https://github.com/strimzi)|Alexis Richardson, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/266)|[8/28/19](https://github.com/strimzi)|Sandbox
 [KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Sandbox
-[Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Sandbox
+[Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Incubating
 [ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
 [KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Sandbox
 [Service Mesh Interface (SMI)](https://smi-spec.io)|Jeff Brewer, Brendan Burns, Matt Klein|[1/16/20](https://github.com/cncf/toc/pull/336) -  [SIG Network](https://github.com/cncf/sig-network/blob/master/recommendations/smi.md)|[3/16/20](https://github.com/deislabs/smi-spec)|Sandbox
@@ -112,6 +112,10 @@
 [Inclavare Containers](https://github.com/alibaba/inclavare-containers)|TOC Vote|[6/17/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/alibaba/inclavare-containers) | Sandbox
 [SuperEdge](https://github.com/superedge/superedge)|TOC Vote|[6/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/superedge/superedge) | Sandbox
 [Cilium](https://github.com/cilium/cilium)|TOC Vote|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6164)|[10/13/21](https://lists.cncf.io/g/cncf-toc/message/6288) | Incubating
+[Dapr](https://github.com/dapr/dapr)|TOC Vote|[10/14/2021](https://lists.cncf.io/g/cncf-toc/message/6293)|[11/03/2021](https://lists.cncf.io/g/cncf-toc/message/6338) | Incubating
+[OpenELB](https://github.com/kubesphere/openelb)|TOC Vote|[7/7/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/kubesphere/openelb) | Sandbox
+[Open Cluster Management](https://github.com/open-cluster-management-io)|TOC Vote|[7/11/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/open-cluster-management-io) | Sandbox
+[VS Code Kubernetes Tools](https://github.com/Azure/vscode-kubernetes-tools)|TOC Vote|[10/25/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/Azure/vscode-kubernetes-tools)| Sandbox
 
 
 ## Graduated Projects
@@ -152,6 +156,7 @@
 | [Flux](https://fluxcd.io)               | 7/15/19        | 3/11/21             | [Incubating](https://github.com/cncf/toc/pull/567) |
 | [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21             | [Incubating](https://github.com/cncf/toc/pull/622)
 | [Crossplane](https://www.crossplane.io) | 5/26/20        | 9/14/21             | [Incubating](https://github.com/cncf/toc/pull/620)
+| [Longhorn]](https://www.crossplane.io) | 5/26/20         | 11/4/21              | [Incubating](https://github.com/cncf/toc/pull/553)
 
 
 ## Project Security Audits
@@ -185,6 +190,7 @@
 [Envoy (fuzzing)](https://github.com/envoyproxy/envoy) | [05/14/2021](https://github.com/envoyproxy/envoy/blob/main/docs/security/audit_fuzzer_adalogics_2021.pdf) | [Announcement](https://blog.envoyproxy.io/a-stroll-down-fuzzer-optimisation-lane-and-why-instrumentation-policies-matter-f0012ec260b3) | CNCF | [AdaLogics](https://adalogics.com)
 [Vitess (fuzzing)](https://github.com/vitessio/vitess) | [05/19/2021](https://github.com/vitessio/vitess/blob/master/doc/VIT-02-report-fuzzing-audit.pdf) | [Announcement](https://github.com/vitessio/vitess/blob/master/doc/VIT-02-report-fuzzing-audit.pdf) | CNCF | [AdaLogics](https://adalogics.com)
 [SPIRE/SPIFFE](https://github.com/spiffe/spire) | [08/17/2021](https://github.com/spiffe/spire/blob/main/doc/cure53-report.pdf) | [Announcement](https://www.cncf.io/blog/2021/08/17/open-sourcing-the-spiffe-spire-security-audit/) | CNCF | [Cure53](https://cure53.de)
+[Flux](https://github.com/fluxcd/flux2) | [11/10/2021](https://fluxcd.io/FluxFinalReport-v1.1.pdf) | [Announcement](http://fluxcd.io/blog/2021-11-10-flux-security-audit/) | CNCF | [ADA Logics](https://adalogics.com)
 
 ## Archived Projects
 
