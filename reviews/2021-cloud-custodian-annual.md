@@ -76,7 +76,7 @@ Governance as Code Day as Part of KubeCon + CloudNativeCon
 - Extracting core from the AWS provider (have each cloud provider in its own package)
 - Kubernetes Admission Controller
 - Policy Enforcement against IaC definitions like Terraform (aka shift left)
-- Rigorous policy testing
+- End User Policy Testing framework
 
 # Incubation Requirements
 
