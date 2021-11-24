@@ -14,25 +14,27 @@ We track the community health using the following metrics as key indicators:
 * [Issue Creators](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Issue%20creators&var-table=scommunity_health&var-pref=&var-met1=chealthissue&var-met2=&from=now-1y&to=now): 500% annual growth from 45 -> 225.
 * [Code Committers](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20committers&var-table=scommunity_health&var-pref=&var-met1=chealthcommit&var-met2=&from=now-1y&to=now): 500% annual growth from 18 -> 90.
 * [Code Commenters](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20commenters&var-table=scommunity_health&var-pref=&var-met1=chealthcomment&var-met2=&from=now-1y&to=now): 509% annual growth from 22 -> 112.
-
+* Slack Membership
 
 ## Maintainers (Anita)
 
-Kyverno currently has X maintainers from Y different companies:
+Kyverno currently has 5 maintainers from 4 different companies:
 
 | Maintainer           | GitHub ID                                     | Affiliation |
 | -------------------- | --------------------------------------------- | ----------- |
-| {Name}                 | [githubid](https://github.com/{id})         | {Company}   |
-| {Name}                 | [githubid](https://github.com/{id})         | {Company}   |
-| {Name}                 | [githubid](https://github.com/{id})         | {Company}   |
-| {Name}                 | [githubid](https://github.com/{id})         | {Company}   |
+| JimBugwadia          | [github-id](https://github.com/JimBugwadia)           | Nirmata Inc.  |
+| Realshuting          | [github-id](https://github.com/realshuting)           | Nirmata Inc.   |
+| Chip zoller           | [github-id](https://github.com/chipzoller)           |dell  |
+| Marcel Mue            | [github-id](https://github.com/MarcelMue)           | Giant Swarm GmbH |
+| Treydock             | [github-id](https://github.com/treydock)           |Ohio Supercomputer Center |
 
 
-The full maintainer list can be found in our [GitHub repository](https://github.com/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://github.com/kyverno/blob/main/GOVERNANCE.md).
+
+The full maintainer list can be found in our [GitHub repository](https://github.com/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/project-governance/).
 
 ## Adoption (Anita)
 
-We list public adopters on the [Kyverno GitHub repository](https://in-toto.io/integrations/).
+We list public adopters on the [Kyverno GitHub repository](https://github.com/kyverno/kyverno/blob/main/ADOPTERS.md).
 
 * Flux
 * OpenEBS
@@ -51,6 +53,8 @@ We list public adopters on the [Kyverno GitHub repository](https://in-toto.io/in
 
 > What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
 
+## Annual Review Contents
+ The following notable features were added over the past year: 
 
 ## CNCF membership (Jim)
 
