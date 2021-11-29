@@ -35,7 +35,7 @@
 [KubeEdge](https://github.com/kubeedge/kubeedge)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/205)|[3/18/19](https://github.com/kubeedge/kubeedge)|Incubating
 [Brigade](https://github.com/brigadecore)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/203)|[3/18/19](https://github.com/brigadecore)|Sandbox
 [Network Service Mesh](https://github.com/networkservicemesh/)|Joe Beda, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/212)|[4/11/19](https://github.com/networkservicemesh/)|Sandbox
-[OpenTelemetry](https://github.com/open-telemetry/community)|Brendan Burns, Brian Grant, Matt Klein|[5/7/19](https://github.com/cncf/toc/pull/233)|[5/7/19](https://github.com/open-telemetry/community)|Sandbox
+[OpenTelemetry](https://github.com/open-telemetry/community)|Brendan Burns, Brian Grant, Matt Klein|[5/7/19](https://github.com/cncf/toc/pull/233)|[5/7/19](https://github.com/open-telemetry/community)|Incubating
 [OpenEBS](https://github.com/openebs/openebs)|Alexis Richardson, Xiang Li|[5/14/19](https://github.com/cncf/toc/pull/224)|[5/14/19](https://github.com/openebs/openebs)|Sandbox
 [Flux](https://github.com/fluxcd/flux)|Michelle Noorali, Xiang Li|[6/11/19](https://github.com/cncf/toc/pull/232)|[7/15/19](https://github.com/fluxcd/flux)|Incubating
 [Thanos](https://github.com/thanos-io/thanos)|Joe Beda, Xiang Li, Alexis Richardson, Liz Rice|[6/11/19](https://github.com/cncf/toc/pull/256)|[7/20/19](https://github.com/thanos-io/thanos)|Incubating
@@ -44,7 +44,7 @@
 [KubeVirt](https://github.com/kubevirt)|Brian Grant, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/265)|[9/9/19](https://github.com/kubevirt)|Sandbox
 [Longhorn](https://github.com/longhorn)|Alexis Richardson, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/259)|[10/11/19](https://github.com/longhorn/longhorn)|Incubating
 [ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
-[KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Sandbox
+[KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Incubating
 [Service Mesh Interface (SMI)](https://smi-spec.io)|Jeff Brewer, Brendan Burns, Matt Klein|[1/16/20](https://github.com/cncf/toc/pull/336) -  [SIG Network](https://github.com/cncf/sig-network/blob/master/recommendations/smi.md)|[3/16/20](https://github.com/deislabs/smi-spec)|Sandbox
 [Argo](https://argoproj.github.io)|Jeff Brewer, Michelle Noorali, Xiang Li|[9/24/19](https://github.com/cncf/toc/pull/299) -  [SIG App Delivery](https://github.com/cncf/sig-app-delivery/issues/18)|[4/7/20](https://github.com/argoproj/argo)|Incubating
 [Volcano](https://volcano.sh)|Liz Rice, Sheng Liang, Alena Prokharchyk|[11/6/19](https://github.com/cncf/toc/pull/318) -  [SIG Runtime](https://github.com/cncf/sig-runtime/blob/master/recommendations/sandbox/volcano.md)|[4/10/20](https://github.com/volcano-sh/)|Sandbox
@@ -157,8 +157,9 @@
 | [KubeEdge](https://kubeedge.io/)        | 3/18/19        | 9/16/20             | [Incubating](https://github.com/cncf/toc/pull/461) |
 | [Buildpacks](https://buildpacks.io/)    | 10/3/18        | 11/18/20            | [Incubating](https://github.com/cncf/toc/pull/338) |
 | [Flux](https://fluxcd.io)               | 7/15/19        | 3/11/21             | [Incubating](https://github.com/cncf/toc/pull/567) |
-| [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21             | [Incubating](https://github.com/cncf/toc/pull/622)
-| [Crossplane](https://www.crossplane.io) | 5/26/20        | 9/14/21             | [Incubating](https://github.com/cncf/toc/pull/620)
+| [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21             | [Incubating](https://github.com/cncf/toc/pull/622) |
+| [Crossplane](https://www.crossplane.io) | 5/26/20        | 9/14/21             | [Incubating](https://github.com/cncf/toc/pull/620) | 
+| [OpenTelemetry](https://github.com/open-telemetry/community) | 5/7/19 | 8/26/2021 | [Incubating](https://github.com/cncf/toc/issues/614)| 
 | [Longhorn](https://https://longhorn.io/) | 5/26/20       | 11/4/21           | [Incubating](https://github.com/cncf/toc/pull/553)
 
 
