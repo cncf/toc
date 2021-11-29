@@ -33,10 +33,10 @@ Do you want to contribute to a project? We have [outlined the process](https://g
 
 ## Meeting Time
 
-The TOC meets on the 1st Tuesday of every month at 8AM PT (USA Pacific Time; [Convert to local time zone](http://www.thetimezoneconverter.com/?t=8:00AM&tz=San%20Francisco)).  
-Project Presentations are on the 3rd Tuesday of every month.
+The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific Time; [Convert to local time zone](http://www.thetimezoneconverter.com/?t=8:00AM&tz=San%20Francisco)).  
 
 https://zoom.us/j/967220397
+Passcode: 77777
 
 Or Telephone:
 
@@ -53,7 +53,7 @@ Or Telephone:
 >
 > NOTE: _Please use `*6` to mute/un-mute your phone during the call_
 
-Here is a [Google calendar for all public CNCF events](https://goo.gl/eyutah).
+Here is a [Google calendar for all public CNCF events](https://goo.gl/eyutah). This calendar is also available on the [CNCF Website](https://www.cncf.io/calendar/)
 
 
 ## Meeting Agenda and Minutes
@@ -72,8 +72,7 @@ To join: https://lists.cncf.io/mailman/listinfo/cncf-toc
 
 ## Voting
 
-This is our [voting policy](docs/voting.md).
-
+This is our [voting policy](docs/voting.md). Only TOC members can cast binding votes. (+1 Binding)
 
 ## Technical Advisory Groups
 
