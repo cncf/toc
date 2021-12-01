@@ -289,7 +289,7 @@ The current release versioning mechanism is described in [this document](https:/
 
 Releases branches are created as release-1.x, and tagged as knative-1.x.y for release artifacts and v0.27+x.y for go module imports to avoid semantic versioning problems.
 
-##Specifications
+## Specifications
 
 * Specifications: <https://github.com/knative/specs>
 * Implementation: <https://github.com/knative/serving> and <https://github.com/knative/eventing> 
