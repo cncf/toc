@@ -26,7 +26,6 @@ From the project side, please ensure that you:
 - [ ] Have added your project to <https://github.com/cncf/contribute>
 - [ ] Artwork: Submit a pull request to <https://github.com/cncf/artwork> with your artwork
 - [ ] Domain: transfer domain to the CNCF - <https://jira.linuxfoundation.org/plugins/servlet/theme/portal/2/create/63>
-- [ ] CNCF Code of Conduct: please make sure t
 
 Things that CNCF will need from the project:
 
