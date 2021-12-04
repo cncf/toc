@@ -144,7 +144,7 @@ Note: Both documents pending merge, will update accordingly
 
 # Adoption
 
-[ADOPTERS.md](https://github.com/cloud-custodian/cloud-custodian/ADOPTERS.md)
+[ADOPTERS.md](https://github.com/cloud-custodian/cloud-custodian/blob/master/ADOPTERS.md)
 
 - Downloads from end users have increased 4x since this time last year
 - Over a million downloads a month
