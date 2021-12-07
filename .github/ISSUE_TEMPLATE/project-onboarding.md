@@ -18,7 +18,7 @@ From the project side, please ensure that you:
 - [ ] Review the online programs guidelines: <https://github.com/cncf/foundation/blob/master/online-programs-guidelines.md>
 - [ ] Understand the trademark guidelines: <https://www.linuxfoundation.org/en/trademark-usage/>
 - [ ] Understand the license allowlist: <https://github.com/cncf/foundation/blob/master/allowed-third-party-license-policy.md#approved-licenses-for-allowlist>
-- [ ] Has your project adopted open governance already? see <http://opengovernance.dev>
+- [ ] Is your project working on written, open governance? see <https://contribute.cncf.io/maintainers/governance/>
 - [ ] Slack: Are your slack channels migrated to the Kubernetes or CNCF Slack? (see <https://slack.com/help/articles/217872578-Import-data-from-one-Slack-workspace-to-another> for more details)
 - [ ] Is your project in its own separate neutral github organization?
 - [ ] Submitted a Pull request to add your project as a sandbox project to <https://landscape.cncf.io>
