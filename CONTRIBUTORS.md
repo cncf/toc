@@ -10,6 +10,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Andy Santosa, Ebay (asantosa@ebay.com)
 * Ara	Pulido, Datadog	(ara.pulido@datadoghq.com)
 * Ayrat Khayretdinov (ayratk@google.com)
+* Ayush Ghosh, Cisco (ayush@ayush.me)
 * Bartlomiej Plotka, Red Hat (bwplotka@gmail.com)
 * Bassam Tabbara, Upbound	(bassam@upbound.io)
 * Bob	Wise, Amazon Web Services	(bob@bobsplanet.com)
