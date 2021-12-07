@@ -53,7 +53,7 @@ Kyverno currently has 5 maintainers from 4 different companies:
 
 
 
-The full maintainer list can be found in our [GitHub repository](https://github.com/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/project-governance/).
+The full maintainer list can be found in our [GitHub repository](https://github.com/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/).
 
 ## Adoption (Anita)
 
