@@ -60,7 +60,9 @@ The full maintainer list can be found in our [GitHub repository](https://github.
 
 ## Adoption
 
-We list public adopters on the [Kyverno GitHub repository](https://github.com/kyverno/kyverno/blob/main/ADOPTERS.md). Some of these are:
+Asopters who are publicly referenceable are listed in the [Kyverno GitHub repository ADOPTERS.md file](https://github.com/kyverno/kyverno/blob/main/ADOPTERS.md).
+
+Some of the adopters include:
  
 **Projects**
 * [Flux](https://github.com/fluxcd/flux2-multi-tenancy/tree/main/infrastructure/kyverno-policies) 
@@ -71,13 +73,11 @@ We list public adopters on the [Kyverno GitHub repository](https://github.com/ky
 **Organizations**
 * [Ohio Supercomputer Center](https://www.osc.edu/)
 * [VSHN](https://www.vshn.ch/en/)
-- [Coinbase](https://www.coinbase.com/)
-- [Mandiant](https://www.mandiant.com/)
-- [Giant Swarm](https://www.giantswarm.io/)
-- [Vodafone Group Plc](https://www.vodafone.com/)
-- [Deutsche Telekom](https://www.telekom.com/en)
-
-There are a number of other adopters not listed here, who are privately referencable.
+* [Coinbase](https://www.coinbase.com/)
+* [Mandiant](https://www.mandiant.com/)
+* [Giant Swarm](https://www.giantswarm.io/)
+* [Vodafone Group Plc](https://www.vodafone.com/)
+* [Deutsche Telekom](https://www.telekom.com/en)
 
 A list of companies providing commercial services and solutions for Kyverno is available [here](https://kyverno.io/support/).
 
