@@ -4,11 +4,11 @@ This is a Kubernetes ToC Annual Review for the [Kyverno](https://kyverno.io) pro
 
 ## Table of Contents
 - [Background](#background)
-- [DevStats](#development-metrics)
+- [DevStats](#devstats)
 - [Maintainers](#maintainers)
 - [Adoption](#adoption) 
 - [Project goals](#project-goals) 
-- [CNCF Membership](#annual-review-contents)
+- [CNCF Membership](#cncf-membership)
 - [Incubation](#incubation)
 - [Project Links](#project-links)
 
@@ -44,7 +44,7 @@ We are using the following metrics as key indicators of community health:
 * [Code Committers](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20committers&var-table=scommunity_health&var-pref=&var-met1=chealthcommit&var-met2=&from=now-1y&to=now): 500% annual growth from 18 -> 90.
 * [Code Commenters](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20commenters&var-table=scommunity_health&var-pref=&var-met1=chealthcomment&var-met2=&from=now-1y&to=now): 509% annual growth from 22 -> 112.
 
-## Maintainers (Anita)
+## Maintainers
 
 Kyverno currently has 5 maintainers from 4 different companies:
 
@@ -81,7 +81,7 @@ There are a number of other adopters not listed here, who are privately referenc
 
 A list of companies providing commercial services and solutions for Kyverno is available [here](https://kyverno.io/support/).
 
-## Project goals (Jim)
+## Project Goals
 
 > How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)
 
