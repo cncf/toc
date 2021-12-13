@@ -53,7 +53,7 @@ Kyverno currently has 5 maintainers from 4 different companies:
 | Jim Bugwadia          | [@JimBugwadia](https://github.com/JimBugwadia)   | Nirmata Inc.  |
 | Shuting Zhao          | [@realshuting](https://github.com/realshuting)   | Nirmata Inc.   |
 | Chip Zoller           | [@chipzoller](https://github.com/chipzoller)   | Dell Technologies  |
-| Marcel Mueller        | [@MarcelMue](https://github.com/MarcelMue)    | Giant Swarm GmbH |
+| Marcel Muller        | [@MarcelMue](https://github.com/MarcelMue)    | Giant Swarm GmbH |
 | Trey Dockendorf       | [@treydock](https://github.com/treydock)      | Ohio Supercomputer Center |
 
 The full maintainer list can be found in our [GitHub repository](https://github.com/kyverno/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/).
