@@ -4,11 +4,12 @@ This is a Kubernetes ToC Annual Review for the [Kyverno](https://kyverno.io) pro
 
 ## Table of Contents
 - [Background](#background)
-- [Development metrics](#development-metrics)
+- [DevStats](#development-metrics)
 - [Maintainers](#maintainers)
 - [Adoption](#adoption) 
 - [Project goals](#project-goals) 
-- [Annual Review Contents](#annual-review-contents)
+- [CNCF Membership](#annual-review-contents)
+- [Incubation](#incubation)
 - [Project Links](#project-links)
 
 ## Background
@@ -49,11 +50,11 @@ Kyverno currently has 5 maintainers from 4 different companies:
 
 | Maintainer           | GitHub ID                                     | Affiliation |
 | -------------------- | --------------------------------------------- | ----------- |
-| JimBugwadia          | [github-id](https://github.com/JimBugwadia)   | Nirmata Inc.  |
-| Realshuting          | [github-id](https://github.com/realshuting)   | Nirmata Inc.   |
-| Chip zoller           | [github-id](https://github.com/chipzoller)   | Dell  |
-| Marcel Mue            | [github-id](https://github.com/MarcelMue)    | Giant Swarm GmbH |
-| Treydock             | [github-id](https://github.com/treydock)      | Ohio Supercomputer Center |
+| Jim Bugwadia          | [@JimBugwadia](https://github.com/JimBugwadia)   | Nirmata Inc.  |
+| Shuting Zhao          | [@realshuting](https://github.com/realshuting)   | Nirmata Inc.   |
+| Chip Zoller           | [@ChipZoller](https://github.com/chipzoller)   | Dell  |
+| Marcel Mueller        | [@MarcelMue](https://github.com/MarcelMue)    | Giant Swarm GmbH |
+| Trey Dockendorf       | [@treydock](https://github.com/treydock)      | Ohio Supercomputer Center |
 
 The full maintainer list can be found in our [GitHub repository](https://github.com/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/).
 
@@ -116,7 +117,7 @@ Some areas where we can use help are:
 * A security assessment and guidance on fuzzing and other security best practices to improve the Kyverno security posture. 
 * Continued support for webinar, blogs, and other community activities to increase visibility and adoption.
 
-### Incubation (Jim)
+## Incubation
 
 > Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
 
