@@ -63,19 +63,19 @@ The full maintainer list can be found in our [GitHub repository](https://github.
 We list public adopters on the [Kyverno GitHub repository](https://github.com/kyverno/kyverno/blob/main/ADOPTERS.md). Some of these are:
  
 **Projects**
-* [Flux](add link to Kyverno use) 
-* [OpenEBS](add link to Kyverno use)
-* [cert-manager](add link to Kyverno use)
-* [CNF WG tests](add link to Kyverno use)
+* [Flux](https://github.com/fluxcd/flux2-multi-tenancy/tree/main/infrastructure/kyverno-policies) 
+* [OpenEBS](https://github.com/openebs/charts/tree/main/charts/openebs/templates/kyverno)
+* [cert-manager](https://github.com/jetstack/cert-manager/tree/master/devel/addon/kyverno)
+* [CNF WG tests](https://github.com/cncf/cnf-testsuite)
 
 **Organizations**
 * [Ohio Supercomputer Center](https://www.osc.edu/)
 * [VSHN](https://www.vshn.ch/en/)
-- Coinbase
-- Mandiant
-- Giant Swarm
-- Vodafone Group Plc
-- Deutsche Telekom
+- [Coinbase](https://www.coinbase.com/)
+- [Mandiant](https://www.mandiant.com/)
+- [Giant Swarm](https://www.giantswarm.io/)
+- [Vodafone Group Plc](https://www.vodafone.com/)
+- [Deutsche Telekom](https://www.telekom.com/en)
 
 There are a number of other adopters not listed here, who are privately referencable.
 
