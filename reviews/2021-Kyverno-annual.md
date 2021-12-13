@@ -14,7 +14,7 @@ This is a Kubernetes ToC Annual Review for the [Kyverno](https://kyverno.io) pro
 
 ## Background
 
-Kyverno (which means "govern" in Greek) is a policy management solution designed for Kubernetes. 
+Kyverno ("govern" in Greek) is a policy management solution designed for Kubernetes. 
 
 The main goal for the Kyverno project is to simplify Kubernetes configuration management using policies for security and automation. Kyverno making it easy for Kubernetes administrators to write and manage Kubernetes policies, and for Kubernetes users (i.e. developers) to consume policy results and address issues. 
 
@@ -89,7 +89,7 @@ The main goals of the project have been in the following categories:
 
 * **Complex policy support**: Several new features such as [JMESPath support](https://kyverno.io/docs/writing-policies/variables/), [API Server Lookups](https://kyverno.io/docs/writing-policies/external-data-sources/#variables-from-kubernetes-api-server-calls), and [foreach](https://kyverno.io/docs/writing-policies/validate/#foreach) have been introduced to allow declarative processing of complex policy logic.
 
-* **Availibility**: Kyverno has added the ability to support multiple replicas for fault-tolerance and increased availability in Release 1.4.0 (June 2021).
+* **Availability**: Kyverno has added the ability to support multiple replicas for fault-tolerance and increased availability in Release 1.4.0 (June 2021).
 
 * **Scalability**: Several fixes and improvenents have been made to reduce memory usage and handle large clusters. This remains an on-going area of test and improvement.
 
@@ -116,6 +116,7 @@ Some areas where we can use help are:
 * Best practices for automated scale testing.
 * A security assessment and guidance on fuzzing and other security best practices to improve the Kyverno security posture. 
 * Continued support for webinar, blogs, and other community activities to increase visibility and adoption.
+* Add Kyverno to the Certified Kubernetes Security Specialist (CKS) examination and any other CNCF materials that reference Open Policy Agent (OPA), to help promote fairness across projects.
 
 ## Incubation
 
