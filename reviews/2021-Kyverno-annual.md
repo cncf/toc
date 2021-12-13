@@ -16,7 +16,7 @@ This is a Kubernetes ToC Annual Review for the [Kyverno](https://kyverno.io) pro
 
 Kyverno ("govern" in Greek) is a policy management solution designed for Kubernetes. 
 
-The main goal for the Kyverno project is to simplify Kubernetes configuration management using policies for security and automation. Kyverno making it easy for Kubernetes administrators to write and manage Kubernetes policies, and for Kubernetes users (i.e. developers) to consume policy results and address issues. 
+The main goal of the Kyverno project is to simplify Kubernetes configuration management using policies for security and automation. Kyverno makes it easy for Kubernetes administrators to write and manage Kubernetes policies, and for Kubernetes users (ex., developers) to consume policy results and address issues.
 
 Kyverno has full support for mutating and generating Kubernetes resources, and hence can be used to automate costly and error-prone handoffs across operations, security, and development roles.
 
@@ -28,7 +28,7 @@ Since Kyverno is focused on Kubernetes, it leverages Kubernetes patterns, idioms
 * structural schemas in OpenAPIv3 
 * strategic merge patches
 
-This focus on Kubetnetes and the subsequent ability to leverage Kubernetes internals makes Kyverno intuitive and easier to use for Kubernetes administrators and users.
+This focus on Kubernetes and the subsequent ability to leverage Kubernetes internals makes Kyverno intuitive and easier to use for Kubernetes administrators and users.
 
 Kyverno was accepted as a CNCF Sandbox project on [November 9th, 2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842).
 
@@ -52,15 +52,15 @@ Kyverno currently has 5 maintainers from 4 different companies:
 | -------------------- | --------------------------------------------- | ----------- |
 | Jim Bugwadia          | [@JimBugwadia](https://github.com/JimBugwadia)   | Nirmata Inc.  |
 | Shuting Zhao          | [@realshuting](https://github.com/realshuting)   | Nirmata Inc.   |
-| Chip Zoller           | [@ChipZoller](https://github.com/chipzoller)   | Dell  |
+| Chip Zoller           | [@chipzoller](https://github.com/chipzoller)   | Dell Technologies  |
 | Marcel Mueller        | [@MarcelMue](https://github.com/MarcelMue)    | Giant Swarm GmbH |
 | Trey Dockendorf       | [@treydock](https://github.com/treydock)      | Ohio Supercomputer Center |
 
-The full maintainer list can be found in our [GitHub repository](https://github.com/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/).
+The full maintainer list can be found in our [GitHub repository](https://github.com/kyverno/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/).
 
 ## Adoption
 
-Asopters who are publicly referenceable are listed in the [Kyverno GitHub repository ADOPTERS.md file](https://github.com/kyverno/kyverno/blob/main/ADOPTERS.md).
+Adopters who are publicly referenceable are listed in the [Kyverno GitHub repository ADOPTERS.md file](https://github.com/kyverno/kyverno/blob/main/ADOPTERS.md).
 
 Some of the adopters include:
  
@@ -95,7 +95,7 @@ The main goals of the project have been in the following categories:
 
 * **Security**: Kyverno participated in the CNCF TAG Security [Security Pals](https://github.com/cncf/tag-security/issues/554) program. As a result, Kyverno has adopted recommended security best practices. The [Security](https://main.kyverno.io/docs/security/) section in the Kyverno documentation lists these and acts as a security guide for adopters.
 
-* **Community and Awareness**: Kyverno has grown from a initially having maintainers from a single community, to maintainers from multiple organizations. The community has also grown significantly as reflected by [DevStats](https://kyverno.devstats.cncf.io). While Kyverno awareness has grown, more work is needed to make the community fully aware of all of its features and capabilities.
+* **Community and Awareness**: Kyverno has grown from initially having maintainers from a single company, to maintainers from multiple organizations. The community has also grown significantly as reflected by [DevStats](https://kyverno.devstats.cncf.io). While Kyverno awareness has grown, more work is needed to make the community fully aware of all of its features and capabilities.
 
 > What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
 
@@ -122,13 +122,11 @@ Some areas where we can use help are:
 
 > Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
 
-Yes. The Kyverno project has started planning a proposal for incubation and plan to submit this in the next month. This work is tracked at [github issue](...).
+Yes. The Kyverno project has started planning a proposal for incubation and plans to submit this in the next month. This work is tracked at [github issue](...).
 
 ## Project Links
  - [Website](https://kyverno.io)
  - [Github](https://github.com/kyverno)
  - [Slack](https://slack.k8s.io/#kyverno)
  - [Twitter](https://twitter.com/kyverno)
-
-
-
+ 
