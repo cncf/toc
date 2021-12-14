@@ -117,4 +117,4 @@ Bulut yerlisi (Cloud Native) teknolojiler, kuruluşların, ölçeklenebilir uygu
 
 Bu teknikler, esnek, yönetilebilir ve gözlemlenebilir olan birbirlerine az bağımlı sistemleri mümkün kılar. Sağlam bir otomasyon altyapısıyla birleştiğinde, mühendislerin minimum zahmetle sık ve öngörülebilir şekilde yüksek etkili değişiklikler yapmasına olanak tanır.
 
-**Cloud Native Computing Foundation**, açık kaynaklı, satıcı-bağımsız (vendor-neutral) projelerden oluşan bir ekosistemi teşvik ederek ve sürdürerek bu paradigmanın benimsenmesini sağlamayı amaçlamaktadır. Bu yenilikleri herkes için erişilebilir kılmak için, son teknoloji paternlerini demokratikleştiriyoruz.
+**Cloud Native Computing Foundation**, açık kaynaklı, satıcı-bağımsız (vendor-neutral) projelerden oluşan bir ekosistemi teşvik ederek ve sürdürerek bu paradigmanın benimsenmesini sağlamayı amaçlamaktadır. Bu yenilikleri herkese erişilebilir kılmak için, son teknoloji paternlerini demokratikleştiriyoruz.
