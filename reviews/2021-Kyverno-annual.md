@@ -116,7 +116,7 @@ Some areas where we can use help are:
 * Best practices for automated scale testing.
 * A security assessment and guidance on fuzzing and other security best practices to improve the Kyverno security posture. 
 * Continued support for webinar, blogs, and other community activities to increase visibility and adoption.
-* Add Kyverno to the Certified Kubernetes Security Specialist (CKS) examination and any other CNCF materials that reference Open Policy Agent (OPA), to help promote fairness across projects.
+* Add Kyverno to the Certified Kubernetes Security Specialist (CKS) examination and any other CNCF materials that reference the Open Policy Agent (OPA) project, to help drive awareness and promote fairness across projects.
 
 ## Incubation
 
