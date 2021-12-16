@@ -1,6 +1,6 @@
 # Kyverno 2021 Annual Review
 
-This is a Kubernetes ToC Annual Review for the [Kyverno](https://kyverno.io) project.
+This is a Kubernetes ToC Annual Review for the [Kyverno](https://kyverno.io) project for 2021.
 
 ## Table of Contents
 - [Background](#background)
@@ -16,11 +16,11 @@ This is a Kubernetes ToC Annual Review for the [Kyverno](https://kyverno.io) pro
 
 Kyverno ("govern" in Greek) is a policy management solution designed for Kubernetes. 
 
-The main goal of the Kyverno project is to simplify Kubernetes configuration management using policies for security and automation. Kyverno makes it easy for Kubernetes administrators to write and manage Kubernetes policies, and for Kubernetes users (ex., developers) to consume policy results and address issues.
+The main goal of the Kyverno project is to simplify Kubernetes configuration management using policies for security and automation. Kyverno makes it easy for Kubernetes administrators to write and manage Kubernetes policies and for Kubernetes workload owners (for example, developers) to consume policy results and address issues.
 
-Kyverno has full support for mutating and generating Kubernetes resources, and hence can be used to automate costly and error-prone handoffs across operations, security, and development roles.
+In addition to validating resources (in either audit or enforce modes), Kyverno has full support for mutating and generating Kubernetes resource and is often used to automate costly and error-prone handoffs across operations, security, and development roles.
 
-Kyverno uses Kubernetes custom resources for policies and policy reporting. Kyverno runs as an admission controller and a command-line tool.
+Kyverno uses Kubernetes custom resource definitions for cluster-wide and namespaced policies, and the [Kubernetes Policy WG policy report](https://github.com/kubernetes-sigs/wg-policy-prototypes/tree/master/policy-report) for reporting policy results. Kyverno runs as an admission controller and as a standalone command-line tool.
 
 Since Kyverno is focused on Kubernetes, it leverages Kubernetes patterns, idioms, and tools such as:
 * owner references
@@ -28,7 +28,7 @@ Since Kyverno is focused on Kubernetes, it leverages Kubernetes patterns, idioms
 * structural schemas in OpenAPIv3 
 * strategic merge patches
 
-This focus on Kubernetes and the subsequent ability to leverage Kubernetes internals makes Kyverno intuitive and easier to use for Kubernetes administrators and users.
+Kyverno's focus on Kubernetes and its subsequent ability to leverage Kubernetes internals makes it intuitive and easy to use for Kubernetes administrators and operators.
 
 Kyverno was accepted as a CNCF Sandbox project on [November 9th, 2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842).
 
@@ -50,19 +50,19 @@ Kyverno currently has 5 maintainers from 4 different companies:
 
 | Maintainer           | GitHub ID                                     | Affiliation |
 | -------------------- | --------------------------------------------- | ----------- |
-| Jim Bugwadia          | [@JimBugwadia](https://github.com/JimBugwadia)   | Nirmata Inc.  |
-| Shuting Zhao          | [@realshuting](https://github.com/realshuting)   | Nirmata Inc.   |
 | Chip Zoller           | [@chipzoller](https://github.com/chipzoller)   | Dell Technologies  |
+| Jim Bugwadia          | [@JimBugwadia](https://github.com/JimBugwadia)   | Nirmata Inc.  |
 | Marcel Muller        | [@MarcelMue](https://github.com/MarcelMue)    | Giant Swarm GmbH |
+| Shuting Zhao          | [@realshuting](https://github.com/realshuting)   | Nirmata Inc.   |
 | Trey Dockendorf       | [@treydock](https://github.com/treydock)      | Ohio Supercomputer Center |
 
-The full maintainer list can be found in our [GitHub repository](https://github.com/kyverno/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/).
+The maintainer list is managed in our [GitHub repository](https://github.com/kyverno/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/).
 
 ## Adoption
 
 Adopters who are publicly referenceable are listed in the [Kyverno GitHub repository ADOPTERS.md file](https://github.com/kyverno/kyverno/blob/main/ADOPTERS.md).
 
-Some of the adopters include:
+Kyverno adopters include:
  
 **Projects**
 * [Flux](https://github.com/fluxcd/flux2-multi-tenancy/tree/main/infrastructure/kyverno-policies) 
@@ -101,7 +101,7 @@ The main goals of the project have been in the following categories:
 
 1. **Scalability**: Kyverno is increasingly being used in large production clusters. We aim to dramatically improve scalability in the subsequent releases.
 
-2. **Security**: In addition to current security processes, a goal for Kyverno is to achieve [SLSA Level 4](https://slsa.dev/levels) in 2022.
+2. **Security**: In addition to current security processes, a goal for Kyverno is to improve software supply chain security and achieve [SLSA Level 4](https://slsa.dev/levels).
 
 3. **Adoption**: We aim to continue growing Kyverno adoption. A survey conducted by Nirmata at KubeCon US 2021 showed Kyverno adoption is currently around 8%. Our goal is to exceed 30% adoption by Q4 2022.
 
@@ -122,7 +122,7 @@ Some areas where we can use help are:
 
 > Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
 
-Yes. The Kyverno project has started planning a proposal for incubation and plans to submit this in the next month. This work is tracked at [github issue](https://github.com/kyverno/kyverno/issues/2838).
+Yes. The Kyverno project team has started planning a proposal for incubation and plans to submit it in the next month. This work is tracked in [issue #2838](https://github.com/kyverno/kyverno/issues/2838).
 
 ## Project Links
  - [Website](https://kyverno.io)
