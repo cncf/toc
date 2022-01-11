@@ -162,7 +162,7 @@
 | [Crossplane](https://www.crossplane.io) | 5/26/20        | 9/14/21             | [Incubating](https://github.com/cncf/toc/pull/620) | 
 | [OpenTelemetry](https://github.com/open-telemetry/community) | 5/7/19 | 8/26/2021 | [Incubating](https://github.com/cncf/toc/issues/614)| 
 | [Longhorn](https://https://longhorn.io/) | 5/26/20       | 11/4/21           | [Incubating](https://github.com/cncf/toc/pull/553)|
-| [LitmusChaos](https://litmuschaos.io)|) |6/23/20.        | 1/11/22           |[Incubating](https://github.com/cncf/toc/pull/569)|
+| [LitmusChaos](https://litmuschaos.io) |  6/23/20        | 1/11/22           |[Incubating](https://github.com/cncf/toc/pull/569)|
 
 ## Project Security Audits
 
