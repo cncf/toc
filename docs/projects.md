@@ -120,6 +120,7 @@
 [KubeArmor](https://github.com/kubearmor/KubeArmor)|TOC Vote|[9/6/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/kubearmor/KubeArmor)|Sandbox
 [K8up](https://github.com/k8up-io/k8up)|TOC Vote|[9/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/k8up-io/k8up)|Sandbox
 [kube-rs](https://github.com/kube-rs/kube-rs)|TOC Vote|[10/30/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/kube-rs/kube-rs)|Sandbox
+[Devfile](https://github.com/devfile/api)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[01/11/2022](https://github.com/devfile/api)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
@@ -160,8 +161,8 @@
 | [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21             | [Incubating](https://github.com/cncf/toc/pull/622) |
 | [Crossplane](https://www.crossplane.io) | 5/26/20        | 9/14/21             | [Incubating](https://github.com/cncf/toc/pull/620) | 
 | [OpenTelemetry](https://github.com/open-telemetry/community) | 5/7/19 | 8/26/2021 | [Incubating](https://github.com/cncf/toc/issues/614)| 
-| [Longhorn](https://https://longhorn.io/) | 5/26/20       | 11/4/21           | [Incubating](https://github.com/cncf/toc/pull/553)
-
+| [Longhorn](https://https://longhorn.io/) | 5/26/20       | 11/4/21           | [Incubating](https://github.com/cncf/toc/pull/553)|
+| [LitmusChaos](https://litmuschaos.io) |  6/23/20        | 1/11/22           |[Incubating](https://github.com/cncf/toc/pull/569)|
 
 ## Project Security Audits
 

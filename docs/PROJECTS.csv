@@ -53,7 +53,7 @@ Keptn,N/A,N/A,6/23/20,Sandbox,DCO,Yes,No,No,Yes,slack.keptn.sh & CNCF channel,ht
 Kudo,N/A,N/A,6/23/20,Sandbox,DCO,No,Yes,No,Yes,Kubernetes,https://github.com/kudobuilder,
 Cloud Custodian,N/A,N/A,6/23/20,Sandbox,CLA,No,Yes,No,Yes,Gitter,https://github.com/cloud-custodian,
 Dex,N/A,N/A,6/23/20,Sandbox,DCO,No,Yes - CoreOS,No,Yes. - CoreOS,Kubernetes,https://github.com/dexidp,
-LitmusChaos,N/A,N/A,6/23/20,Sandbox,DCO,Yes,No,No,Yes,https://slack.litmuschaos.io/,https://github.com/litmuschaos,
+LitmusChaos,N/A,N/A,6/23/20,Incubating,DCO,Yes,No,No,Yes,https://slack.litmuschaos.io/,https://github.com/litmuschaos,
 Artifact Hub,N/A,N/A,6/23/20,Sandbox,DCO,No,Yes,No,Yes,CNCF,https://github.com/artifacthub,
 Kuma,N/A,N/A,6/23/20,Sandbox,DCO,Yes,No,No,Yes,Community + Slack Chat,https://github.com/kumahq,
 Parsec,N/A,N/A,6/23/20,Sandbox,DCO,No,No,No,Yes,CNCF,https://github.com/parallaxsecond,
@@ -121,3 +121,4 @@ Nocalhost,N/A,N/A,11/16/2021,Sandbox,No,No,No,No,Yes,https://nocalhost.slack.com
 KubeArmor,N/A,N/A,11/16/2021,Sandbox,No,No,No,No,Yes,https://kubearmor.herokuapp.com/,https://github.com/kubearmor/KubeArmor,
 K8up,N/A,N/A,11/16/2021,Sandbox,No,No,No,No,Yes,N/A?,https://github.com/k8up-io/k8up,
 kube-rs,N/A,N/A,11/16/2021,Sandbox,DCO,No,Yes,No,Yes,Discord,https://github.com/kube-rs/kube-rs,
+Devfile,N/A,N/A,1/11/2022,Sandbox,No,No,No,No,Yes,https://gitter.im/devfile/community,https://github.com/devfile/,
