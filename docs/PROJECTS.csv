@@ -121,4 +121,4 @@ Nocalhost,N/A,N/A,11/16/2021,Sandbox,No,No,No,No,Yes,https://nocalhost.slack.com
 KubeArmor,N/A,N/A,11/16/2021,Sandbox,No,No,No,No,Yes,https://kubearmor.herokuapp.com/,https://github.com/kubearmor/KubeArmor,
 K8up,N/A,N/A,11/16/2021,Sandbox,No,No,No,No,Yes,N/A?,https://github.com/k8up-io/k8up,
 kube-rs,N/A,N/A,11/16/2021,Sandbox,DCO,No,Yes,No,Yes,Discord,https://github.com/kube-rs/kube-rs,
-Devfile,N/A,N/A,1/11/2022,Sandbox,No,No,No,No,Yes,N/A?,https://github.com/devfile/api,
+Devfile,N/A,N/A,1/11/2022,Sandbox,No,No,No,No,Yes,https://gitter.im/devfile/community,https://github.com/devfile/,
