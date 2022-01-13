@@ -96,12 +96,6 @@ Reviews and blogs:
 - [Simplify Kubernetes Cluster Management with Kyverno](https://movi.hashnode.dev/simplify-kubernetes-cluster-management-with-kyverno-ckt6yxjqy0duy95s14groe7h4), by Anita Ihuman, Sep 2021
 
 
-
-- [Securing and Automating Kubernetes with Kyverno](https://www.youtube.com/watch?v=0cJAfmQ7Emg&feature=youtu.be&ab_channel=CloudNativeIslamabad)
-
-- https://twitter.com/_sambhavkothari/status/1480986173631774723
-
-
 ### Integrations with CNCF Ecosystem
 - [FluxCD](https://github.com/fluxcd/flux2-multi-tenancy#enforce-tenant-isolation): Kyverno policies to enforce tenant isolation
 - [LitmusChaos](https://litmuschaos.github.io/litmus/experiments/concepts/security/kyverno-policies/): manage permissions for execution of litmus experiments
