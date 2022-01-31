@@ -1,7 +1,7 @@
 Project,Sponsor,TOC Presentation,Accepted,Stage,CLA,Governance,Security Disclosure,Security Audit,CoC,Slack,GitHub URL,
 Kubernetes,Alexis Richardson,N/A,3/10/16,Graduation,CLA,Yes,Yes,Now on third,Yes,https://kubernetes.slack.com/,https://github.com/kubernetes,
 Prometheus,Alexis Richardson,3/4/16,5/9/16,Graduation,DCO,Yes,Yes,"Yes, cure53",Yes,IRC,https://github.com/prometheus,
-OpenTracing,Bryan Cantrill,8/17/16,10/11/16,Incubation,No,Yes,No,No,Yes,CNCF,https://github.com/opentracing,
+OpenTracing,Bryan Cantrill,8/17/16,10/11/16,Archived,No,Yes,No,No,Yes,CNCF,https://github.com/opentracing,
 Fluentd,Brian Grant,8/3/16,11/8/16,Graduation,DCO,Yes,No,No,Yes,https://slack.fluentd.org/,https://github.com/fluent,
 Linkerd,Jonathan Boulle,10/5/16,1/23/17,Graduation,DCO,Yes,No,No,Yes,https://linkerd.slack.com/,https://github.com/linkerd,
 gRPC,Brian Grant,10/19/16,2/16/17,Incubation,CLA,Yes,No,No,Yes,https://gitter.im/grpc/grpc,https://github.com/grpc,
