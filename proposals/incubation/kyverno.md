@@ -70,7 +70,7 @@ We are using the following metrics as key indicators of community health:
 - [Code Committers](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20committers&var-table=scommunity_health&var-pref=&var-met1=chealthcommit&var-met2=&from=now-1y&to=now): 594% growth from 18 -> 107.
 - [Code Commenters](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20commenters&var-table=scommunity_health&var-pref=&var-met1=chealthcomment&var-met2=&from=now-1y&to=now): 573% growth from 22 -> 126.
 
-Slack has grown to 674 members since July 2019, and Twitter accounts now has 708 followers since Sep 2020.
+Slack has grown to 722 members since July 2019, and Twitter account has added 738 followers since Sep 2020.
 
 ### References / Highlights
 
@@ -118,7 +118,7 @@ Additional end users are available for private references.
 
 **_Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project._**
 
-- There are 6 maintainers for Kyverno and its sub-projects from five different organizations, full maintainers list can be found [here](https://github.com/kyverno/kyverno/blob/main/MAINTAINERS.md)
+- There are 8 maintainers for Kyverno from five different organizations. The maintainers list can be found [here](https://github.com/kyverno/kyverno/blob/main/MAINTAINERS.md)
 
 **_Demonstrate a substantial ongoing flow of commits and merged contributions._**
 - [Commit Activity](https://kyverno.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&var-period=d7&var-repogroups=All&from=1604851200000&to=now)
