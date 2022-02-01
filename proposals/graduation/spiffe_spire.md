@@ -53,7 +53,7 @@ The SPIFFE community holds regular meetups and community days, and runs an annua
 
   
 
-spire has 5 committers from 3 different organizations. spiffe has 4 comitters from 3 different organizations. The steering committee has 5 members from 4 organizations.
+SPIRE has 5 committers from 3 different organizations. SPIFFE has 4 comitters from 3 different organizations. The steering committee has 5 members from 4 organizations.
 
   
 
@@ -123,4 +123,4 @@ The CNCF made the following recommendations:
 
 * Conduct a formal security review/audit for the project as it is critical to security of services that use it. We completed the audit in the first months of 2021.
 
- * Provide an avenue for education of spiffe/spire and advanced spiffe/spire topology use cases for end users. In addition to producing Production Identity Day as a colocated event, we published a book on spiffe and also created interactive learning labs in katacoda.
+ * Provide an avenue for education of SPIFFE/SPIRE and advanced SPIFFE/SPIRE topology use cases for end users. In addition to producing Production Identity Day as a colocated event, we published a book on SPIFFE and also created interactive learning labs in katacoda.
