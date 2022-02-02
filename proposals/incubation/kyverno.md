@@ -153,7 +153,8 @@ Here is the video and the blog published by community compares policy management
 
 Kyverno maintains a steady pace of releases driven by a growing set of requirements and use cases. The planned releases can be viewed using the issue [milestones](https://github.com/kyverno/kyverno/milestones?direction=asc&sort=due_date&state=open). 
 
-Some longer term items include:
-- Additional features for simplifying complex logic
+Some longer term features may include:
+- Additional features for simplifying complex policy logic
+- Adopting Common Expressions Language (CEL) or similar processors
+- Expansion of use cases to the application layer
 - SLSA Level 3 compliance for build security
-- Expansion of use cases and integrations
