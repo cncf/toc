@@ -27,16 +27,16 @@ The growth of the SPIFFE and SPIRE projects, with support from the CNCF as it mo
     
 -   SPIRE grew its number of platform integrations through the introduction of a half dozen new plugins
     
--   Accross Twitter, Github and Slack the community had 915 distinct active members from the period Feb 1, 2021 to Jan 31, 2022. The number of SPIFFE Slack members has grown by 37%, now exceeding 1,300 people
+-   Across Twitter, Github and Slack the community had 915 distinct active members from the period Feb 1, 2021 to Jan 31, 2022. The number of SPIFFE Slack members has grown by over 37%, now exceeding 1,300 people
     
--   Number of SPIRE contributors grown by 47%
+-   Number of SPIRE contributors grown by ~47%
     
--   Number of SPIRE commits grown by nearly 30%
+-   Number of SPIRE commits grown by nearly ~30%
     
 
   
 
-SPIFFE and SPIRE governance has also significantly strengthened and diversified to become true vendor-neutral projects. SPIFFE and SPIRE’s collective seven core maintainers represent six distinct organizations. Similarly the project’s steering committee’s 5 members represent four distinct organizations. Over the 12 months from Feb 1, 2021 to Jan 31, 2022 the projects received pull requests from employees of 41 organizations over 4 continents.
+SPIFFE and SPIRE governance has also significantly strengthened and diversified to become true vendor-neutral projects. SPIFFE and SPIRE’s collective seven core maintainers represent six distinct organizations. Similarly the project’s steering committee’s 5 members represent four distinct organizations. Over the 12 months from Feb 1, 2021 to Jan 31, 2022 alone, the projects received pull requests from employees of 41 organizations over 4 continents.
 
   
 
@@ -123,4 +123,4 @@ The CNCF made the following recommendations:
 
 * Conduct a formal security review/audit for the project as it is critical to security of services that use it. We completed the audit in the first months of 2021.
 
- * Provide an avenue for education of SPIFFE/SPIRE and advanced SPIFFE/SPIRE topology use cases for end users. In addition to producing Production Identity Day as a colocated event, we published a book on SPIFFE and also created interactive learning labs in katacoda.
+ * Provide an avenue for education of SPIFFE/SPIRE and advanced SPIFFE/SPIRE topology use cases for end users. In addition to producing Production Identity Day as a colocated event, we published a [book on SPIFFE](https://spiffe.io/book/) and also created [interactive learning labs](https://www.katacoda.com/spiffe) in katacoda.
