@@ -18,5 +18,8 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Matt Klein (1/29/2019 - 1/29/2021)
 * Xiang Li (1/29/2019 - 1/29/2021)
 * Michelle Noorali (3/18/2019 - 3/18/2021)
+* Liz Rice (3/11/2019-2/4/2022)
+* Saad Ali (2/4/2020-2/4/2022)
+* Sheng Liang (2/4/2020-2/4/2022)
 
 We thank these members for their service to the CNCF community.

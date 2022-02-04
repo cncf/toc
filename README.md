@@ -12,13 +12,13 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * **Alena Prokharchyk** (term: 2 years - start date: 3/18/2020 - 3/18/2022) [TOC-appointed]
 * **Erin Boyd** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [GB-appointed]
 * **Dave Zolotusky** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [EndUser-appointed]
-* **Justin Cormack** (term: 2 years - start date 2/4/2020 - 2/4/2022) [Maintainer-appointed]
-* **Ricardo Rocha** (term: remainder of 2 years - start date 2/1/2021 - 2/4/2022) [EndUser-appointed]
-* **Liz Rice** (term: 2 years - start date: 2/4/2020 - 2/4/2022) [GB-appointed] (TOC Chair)
+* **Justin Cormack** (term: 2 years - start date 2/4/2022 - 2/4/2024) [Maintainer-appointed]
+* **Ricardo Rocha** (term: 2/4/2022 - 2/4/2024) [EndUser-appointed]
+* **Emily Fox** (term: 2 years - start date: 2/4/2022 - 2/4/2024) [GB-appointed]
 * **Cornelia Davis** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [GB-appointed]
 * **Davanum Srinivas** (term: 2 years - start date: 3/18/2021 - 3/18/2023) [TOC-appointed]
-* **Saad Ali** (term: 2 years - start date 2/4/2020 - 2/4/2022) [GB-appointed]
-* **Sheng Liang** (term: 2 years - start date 2/4/2020 - 2/4/2022) [GB-appointed]
+* **Matt Farina** (term: 2 years - start date 2/4/2022 - 2/4/2024) [GB-appointed]
+* **Richard Hartmann** (term: 2 years - start date 2/4/2022 - 2/4/2024) [GB-appointed]
 * **Lei Zhang** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [GB-appointed]
 
 Election [schedule](process/election-schedule.md)
