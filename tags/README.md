@@ -23,7 +23,7 @@ a pull request with document referencing the roles and charter, updating the lis
 | [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Saad Ali, Alena Prokharchyk |
 | [TAG Observability](https://github.com/cncf/tag-observability) | Lei Zhang, Cornelia Davis | 
 
-## TAG Chairs as of June 2021
+## TAG Chairs as of February 2022
 
 ### TAG Storage 
 * [Xing Yang](https://github.com/xing-yang)
@@ -32,7 +32,6 @@ a pull request with document referencing the roles and charter, updating the lis
 
 ### TAG Security 
 * [Brandon Lum](https://github.com/lumjjb)
-* [Emily Fox](https://github.com/TheFoxAtWork)
 * [Aradhna Chetal](https://github.com/achetal01)
 
 ### TAG App-Delivery
@@ -66,6 +65,7 @@ a pull request with document referencing the roles and charter, updating the lis
 |---|---|
 | TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred) |
 | TAG Security | [Sarah Allen](https://github.com/ultrasaurus) |
-| TAG Security |[Jeyappragash Jeyakeerthi](https://github.com/pragashj) |
-| TAG Security |[Dan Shaw](https://github.com/dshaw) |
+| TAG Security | [Jeyappragash Jeyakeerthi](https://github.com/pragashj) |
+| TAG Security | [Dan Shaw](https://github.com/dshaw) |
 | TAG Storage | [Erin Boyd](https://github.com/erinboyd) | 
+| TAG Security | [Emily Fox](https://github.com/TheFoxAtWork) |
