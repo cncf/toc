@@ -6,6 +6,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 
 * Alex Chircop, StorageOS (alex.chircop@storageos.com)
 * Allen Sun, Alibaba (allensun.shl@alibaba-inc.com)
+* Amit Raj, InMobi (amitbmas90@gmail.com)
 * Andrés Vega, Hewlett-Packard Enterprise (andres.vega@hpe.com)
 * Andy Santosa, Ebay (asantosa@ebay.com)
 * Ara	Pulido, Datadog	(ara.pulido@datadoghq.com)
@@ -98,4 +99,3 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Jia Xuan, CMCC (jiaxuan@chinamobile.com)
 * Zhipeng Huang, Huawei (huangzhipeng@huawei.com)
 * Zhiqiang Yu, China Mobile (yuzhiqiang@chinamobile.com)
-* Amit Raj, InMobi (amitbmas90@gmail.com)
