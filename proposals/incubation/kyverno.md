@@ -22,7 +22,10 @@ Kyverno is a policy engine designed for Kubernetes. With Kyverno, policies are m
 
 ### High-level Architecture
 
-Kyverno comprises of four major components, each component is described below.
+Kyverno comprises of four major components, each component is described below:
+
+<img src="https://kyverno.io/images/kyverno-architecture.png" alt="Kyverno Architecture" width="80%"/>
+</br></br>
 
 **Webhook**: The `Webhook` component registers as a validating and mutating admission webhook and receives `AdmissionReview` requests from the API server to validate and mutate configuration changes, based on policies. Users can configure which namespaces and resources the webhooks will receive via command line options or the ConfigMap.
 
@@ -91,7 +94,7 @@ Slack has grown to 722 members since July 2019, and Twitter account has added 73
 - [Automate Your Security Practices and Policies on OpenShift With Kyverno](https://cloud.redhat.com/blog/automate-your-security-practices-and-policies-on-openshift-with-kyverno), by Gareth Healy, Sep 2021
 - [Kyverno - A Kubernetes native policy manager (Policy as Code)](https://blog.mimacom.com/kyverno/), by Arun Singh Sisodiya, Sep 2021
 - [Simplify Kubernetes Cluster Management with Kyverno](https://movi.hashnode.dev/simplify-kubernetes-cluster-management-with-kyverno-ckt6yxjqy0duy95s14groe7h4), by Anita Ihuman, Sep 2021
-
+- [Guide to Mutations of a Resource on OpenShift with Kyverno](https://cloud.redhat.com/blog/guide-to-mutations-of-a-resource-on-openshift-with-kyverno), by Gareth Healy, Jan 2022
 
 ### Integrations with CNCF Ecosystem
 - [FluxCD](https://github.com/fluxcd/flux2-multi-tenancy#enforce-tenant-isolation): Kyverno policies to enforce tenant isolation
