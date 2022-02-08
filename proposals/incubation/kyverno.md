@@ -1,4 +1,4 @@
-# Propose Kyverno to Incubation Stage 
+# Proposal Kyverno for incubating 
 
 ## Table of Contents
 
@@ -12,16 +12,15 @@
 
 ## Background
 
-Kyverno was accepted as a CNCF Sandbox project on [November 9th, 2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842).
+Kubernetes has a declarative configuration management system that allows users to specify the desired state of resources which Kubernetes controllers continuously reconcile with the current system state. Kyverno uses Kubernetes custom resource definitions for cluster-wide and namespaced policies, and the [Kubernetes Policy WG policy report](https://github.com/kubernetes-sigs/wg-policy-prototypes/tree/master/policy-report) for reporting policy results.
 
+Kyverno was accepted as a CNCF Sandbox project on [November 9th, 2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842).
 
 ## About Kyverno
 
 Kyverno is a policy engine designed for Kubernetes. With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies. This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. Kyverno policies can validate, mutate, and generate Kubernetes resources. The Kyverno CLI can be used to test policies and validate resources as part of a CI/CD pipeline.
 
 ### High-level Architecture
-
-Kubernetes has a declarative configuration management system that allows users to specify the desired state of resources which Kubernetes controllers continuously reconcile with the current system state. Kyverno uses Kubernetes custom resource definitions for cluster-wide and namespaced policies, and the [Kubernetes Policy WG policy report](https://github.com/kubernetes-sigs/wg-policy-prototypes/tree/master/policy-report) for reporting policy results.
 
 Kyverno comprises of four major components, each component is described below.
 
@@ -39,21 +38,19 @@ The `Webhook` also creates and updates `GenerateRequest` and `PolicyChangeReques
 
 ### Feature Summary
 
-
-- Publish Kyverno Pod Security Polices based the on Kubernetes [Pod Security Standards definitions](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
-- Support multiple replicas for fault-tolerance and increased availability in Release 1.4.0 (June 2021)
+- Support multiple replicas for high availability and scalability
 - Improved observability via Prometheus Metrics over both the state and execution of cluster-applied Kyverno policies
-- Ability to verify image signatures and attestations
-- Introduce `JMESPath` support to configure Kyverno policies in a flexible manner
-- Capable of `API Server Lookups` to consume external data dynamically
-- Add `foreach` type of rule which simplifies validation of sub-elements in resource declarations
-- Migration to register and manage webhooks dynamically based on the configured policy
-- Standalone CLI that can be used in CI/CD pipelines to ensure policy compliance 
-- Automate scaling testing to measure the performance across a wide-range of clusters settings
+- Implement Kubernetes [Pod Security Standards definitions](https://kubernetes.io/docs/concepts/security/pod-security-standards/) with compatbility testing across versions
+- Standalone Kyverno CLI to check for policy compliance in CI/CD pipelines
+- Support for unit tests via CLI for policy as code best practices
+- Introduce `JMESPath` support for complex processing
+- `API Server Lookups` and `ConfigMap Lookups` for data-driven policies
+- Add `foreach` block for processing sub-elements in resource declarations
+- Dynamic webhook management with a fail-closed default based on the configured policy
+- Automated scale testing to measure the performance across a wide-range of clusters settings
 - Optimize memory usage for large clusters with hundreds of namespaces and thousands of resources
 - Ability to fetch and use image configuration data from OCI registries
-- Integrations with Sigstore for software supply chain security verification of signatures and attestations
-
+- Integrations with sigstore for software supply chain security verification of signatures and attestations
 
 ### Project Governance
 
@@ -100,7 +97,7 @@ Slack has grown to 722 members since July 2019, and Twitter account has added 73
 - [FluxCD](https://github.com/fluxcd/flux2-multi-tenancy#enforce-tenant-isolation): Kyverno policies to enforce tenant isolation
 - [LitmusChaos](https://litmuschaos.github.io/litmus/experiments/concepts/security/kyverno-policies/): manage permissions for execution of litmus experiments
 - [OpenEBS](https://github.com/openebs/charts/tree/main/charts/openebs/templates/kyverno): build Kyverno policies to secure configurations
-- [Cert Manager](https://github.com/jetstack/cert-manager/tree/master/devel/addon/kyverno): adopt Kyverno Pod Security Standards policies
+- [Cert-Manager](https://github.com/jetstack/cert-manager/tree/master/devel/addon/kyverno): adopt Kyverno Pod Security Standards policies
 
 
 ## Incubation Stage Requirements
@@ -135,15 +132,15 @@ Kyverno uses the [Semantic Versioning scheme](https://semver.org/#semantic-versi
 
 ## Statement on Alignment with the CNCF Mission
 
-A recent [CNCF security survey](https://www.cncf.io/blog/2021/10/12/cloud-native-security-microsurvey-more-than-80-of-organizations-want-to-build-modern-security-systems-with-open-source-software/) revealed that more than 80% of organizations are looking for modern security systems with open source software. Kyverno's aims to address this gap. Kyverno secures and automates Kubernetes configurations by providing a powerful but easy-to-use policy engine that allows developers, operators, and security engineers to leverage policies as contracts for collaboration. By making Kubernetes easier to use and secure, Kyverno's mission directly aligns with the Foundations mission of making cloud native ubiquitious.
+A recent [CNCF security survey](https://www.cncf.io/blog/2021/10/12/cloud-native-security-microsurvey-more-than-80-of-organizations-want-to-build-modern-security-systems-with-open-source-software/) revealed that more than 80% of organizations are looking for modern security systems with open source software. Kyverno's goal is to help address and close this gap. Kyverno secures and automates Kubernetes configurations by providing a powerful but easy-to-use policy engine that allows developers, operators, and security engineers to leverage policies as contracts for collaboration. By making Kubernetes easier to use and secure, Kyverno's mission directly aligns with the Foundations mission of making cloud native ubiquitious.
 
 ## Comparison with Other CNCF Policy Management Projects
 
 ### Comparison to OPA/Gatekeeper
 
-Open Policy Agent (OPA) is a general-purpose policy engine where policies are defined using Rego. [Gatekeeper]([OPA/Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/) applies OPA/Rego policies to Kubernetes and allows customization of policies using constraints.
+Open Policy Agent (OPA) is a general-purpose policy engine where policies are defined using Rego. [Gatekeeper]([OPA/Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/) enables OPA/Rego policies to be used in Kubernetes and allows customization of Rego policies using constraints.
 
-In contrast, Kyverno was designed for Kubernetes and it's policies leverage the OpenAPIv3 structural schema used for Kubernetes resources. In addition, Kyverno uses Kubernetes patterns, idioms, and best-practices, so it feels familiar to Kubernetes DevSecOps teams. Kyverno policies, and policy results, are custom resources that can be managed using the same declarative configuration management principles used in Kubernetes and by widely adopted tools like kubectl and Kustomize. 
+Kyverno was designed for Kubernetes and it's policies leverage the OpenAPIv3 structural schema used for Kubernetes resources. In addition, Kyverno uses Kubernetes patterns, idioms, and best-practices, so it feels familiar to Kubernetes DevSecOps teams. Kyverno policies, and policy results, are custom resources that can be managed using the same declarative configuration management principles used in Kubernetes and by widely adopted tools like kubectl and Kustomize. 
 
 Here is the video and the blog published by community compares policy management tools for Kubernetes:
 - [Kubernetes Policy Management Tools Compared - OPA with Gatekeeper vs. Kyverno](https://www.youtube.com/watch?v=9gSrRNmmKBc&feature=youtu.be&ab_channel=DevOpsToolkit), by Viktor Farcic
@@ -154,7 +151,7 @@ Here is the video and the blog published by community compares policy management
 Kyverno maintains a steady pace of releases driven by a growing set of requirements and use cases. The planned releases can be viewed using the issue [milestones](https://github.com/kyverno/kyverno/milestones?direction=asc&sort=due_date&state=open). 
 
 Some longer term features may include:
-- Additional features for simplifying complex policy logic
-- Adopting Common Expressions Language (CEL) or similar processors
-- Expansion of use cases to the application layer
+- Flexible deployment models for Kyverno beyond admission controls
+- Adopting Common Expressions Language (CEL), or similar processors
+- Expansion of use cases for applications security and automation
 - SLSA Level 3 compliance for build security
