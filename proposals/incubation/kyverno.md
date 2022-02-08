@@ -1,4 +1,4 @@
-# Proposal Kyverno for incubating 
+# Kyverno for incubating 
 
 ## Table of Contents
 
