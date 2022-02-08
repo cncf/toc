@@ -135,7 +135,7 @@ Kyverno uses the [Semantic Versioning scheme](https://semver.org/#semantic-versi
 
 ## Statement on Alignment with the CNCF Mission
 
-A recent [CNCF security survey](https://www.cncf.io/blog/2021/10/12/cloud-native-security-microsurvey-more-than-80-of-organizations-want-to-build-modern-security-systems-with-open-source-software/) revealed that more than 80% of organizations are looking for modern security systems with open source software. Kyverno's aims to adddress this gap. Kyverno secures and automates Kubernetes configurations by providing a powerful but easy-to-use policy engine that allows developers, operators, and security engineers to leverage policies as contracts for collaboration. By making Kubernetes easier to use, Kyverno's mission directly aligns with the Foundations mission of making cloud native ubiquitious.
+A recent [CNCF security survey](https://www.cncf.io/blog/2021/10/12/cloud-native-security-microsurvey-more-than-80-of-organizations-want-to-build-modern-security-systems-with-open-source-software/) revealed that more than 80% of organizations are looking for modern security systems with open source software. Kyverno's aims to address this gap. Kyverno secures and automates Kubernetes configurations by providing a powerful but easy-to-use policy engine that allows developers, operators, and security engineers to leverage policies as contracts for collaboration. By making Kubernetes easier to use and secure, Kyverno's mission directly aligns with the Foundations mission of making cloud native ubiquitious.
 
 ## Comparison with Other CNCF Policy Management Projects
 
