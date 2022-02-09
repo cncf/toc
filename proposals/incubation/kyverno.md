@@ -18,24 +18,24 @@ Kyverno was accepted as a CNCF Sandbox project on [November 9th, 2020](https://d
 
 ## About Kyverno
 
-Kyverno is a policy engine designed for Kubernetes. With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies. This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. Kyverno policies can validate, mutate, and generate Kubernetes resources. The Kyverno CLI can be used to test policies and validate resources as part of a CI/CD pipeline.
+Kyverno is a policy engine designed for Kubernetes. With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies. This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. Kyverno policies can validate, mutate, and generate Kubernetes resources in addition to verifying container image supply chain security via signing verification and attestations. The Kyverno CLI can be used to test policies and validate resources as part of a CI/CD pipeline.
 
 ### High-level Architecture
 
-Kyverno comprises of four major components, each component is described below:
+Kyverno comprises four major components with each described below:
 
 <img src="https://kyverno.io/images/kyverno-architecture.png" alt="Kyverno Architecture" width="80%"/>
 </br></br>
 
-**Webhook**: The `Webhook` component registers as a validating and mutating admission webhook and receives `AdmissionReview` requests from the API server to validate and mutate configuration changes, based on policies. Users can configure which namespaces and resources the webhooks will receive via command line options or the ConfigMap.
+**Webhook**: The Webhook component registers as a validating and mutating admission webhook and receives AdmissionReview requests from the API server to validate and mutate configuration changes, based on policies. Users can configure which namespaces and resources the webhooks will receive via command line options or the ConfigMap.
 
-The `Webhook` also creates and updates `GenerateRequest` and `PolicyChangeRequest` resources to trigger updates via other Kyverno controllers.
+The Webhook also creates and updates `GenerateRequest` and `ReportChangeRequest` resources to trigger updates via other Kyverno controllers.
 
-**Webhook Monitor**: On startup, Kyverno's `Webhook Monitor` component generates a self-signed certificate (or uses a user-provided certificate) and auto-creates the webhook configurations required to register Kyverno as an admission webhook. The component also periodically monitors if Kyverno is receiving webhook events and recreates the certificate and webhook configurations if needed.
+**Webhook Monitor**: On startup, Kyverno's Webhook Monitor component generates a self-signed certificate (or uses a user-provided certificate) and auto-creates the webhook configurations required to register Kyverno as an admission webhook. The component also periodically monitors if Kyverno is receiving webhook events and recreates the certificate and webhook configurations if needed.
 
-**Generate Controller**: The `Generate Controller` watches `GenerateRequest` resources and creates, updates, and deletes Kubernetes resources based on Kyverno [generate rules](https://kyverno.io/docs/writing-policies/generate/). The `Generate Controller` also watches for changes in policy definitions to update generated resources.
+**Generate Controller**: The Generate Controller watches `GenerateRequest` resources and creates, updates, and deletes Kubernetes resources based on Kyverno [generate rules](https://kyverno.io/docs/writing-policies/generate/). The Generate Controller also watches for changes in policy definitions to update generated resources.
 
-**Policy Controller**: The `Policy Controller` performs periodic background scans on existing configurations and creates or updates policy reports based on changes and background scans. The `Policy Controller` watches `ReportChangeRequest` resources and creates, updates, and delete Kyverno [Policy Report](https://kyverno.io/docs/policy-reports/) resources. The `Policy Controller` also watches for changes in policies definitions to update policy reports.
+**Policy Controller**: The Policy Controller performs periodic background scans on existing configurations and creates or updates policy reports based on changes and background scans. The Policy Controller watches `ReportChangeRequest` resources and creates, updates, and delete Kyverno [Policy Report](https://kyverno.io/docs/policy-reports/) resources. The Policy Controller also watches for changes in policy definitions to update policy reports.
 
 ## Progress Since Sandbox
 
@@ -46,14 +46,14 @@ The `Webhook` also creates and updates `GenerateRequest` and `PolicyChangeReques
 - Implement Kubernetes [Pod Security Standards definitions](https://kubernetes.io/docs/concepts/security/pod-security-standards/) with compatbility testing across versions
 - Standalone Kyverno CLI to check for policy compliance in CI/CD pipelines
 - Support for unit tests via CLI for policy as code best practices
-- Introduce `JMESPath` support for complex processing
-- `API Server Lookups` and `ConfigMap Lookups` for data-driven policies
+- Introduce JMESPath support for complex processing
+- API Server Lookups and ConfigMap Lookups for data-driven policies
 - Add `foreach` block for processing sub-elements in resource declarations
 - Dynamic webhook management with a fail-closed default based on the configured policy
 - Automated scale testing to measure the performance across a wide-range of clusters settings
 - Optimize memory usage for large clusters with hundreds of namespaces and thousands of resources
 - Ability to fetch and use image configuration data from OCI registries
-- Integrations with sigstore for software supply chain security verification of signatures and attestations
+- Integrations with Sigstore for software supply chain security verification of signatures and attestations
 
 ### Project Governance
 
@@ -70,7 +70,7 @@ We are using the following metrics as key indicators of community health:
 - [Code Committers](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20committers&var-table=scommunity_health&var-pref=&var-met1=chealthcommit&var-met2=&from=now-1y&to=now): 594% growth from 18 -> 107.
 - [Code Commenters](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20commenters&var-table=scommunity_health&var-pref=&var-met1=chealthcomment&var-met2=&from=now-1y&to=now): 573% growth from 22 -> 126.
 
-Slack has grown to 722 members since July 2019, and Twitter account has added 738 followers since Sep 2020.
+Slack has grown to 722 members since July 2019, and Twitter account has added 745 followers since Sep 2020.
 
 ### References / Highlights
 
@@ -111,8 +111,8 @@ Full list of our adopters can be found [here](https://github.com/kyverno/kyverno
 
 - [Ohio Supercomputer Center](https://www.osc.edu/): Support Kubernetes multi-user workflows through Open OnDemand.
 - [Coinbase](https://www.coinbase.com/): Use Kyverno for mutation, to replace hand-written Webhooks, and generation to project common Kubernetes objects into many similar namespaces.
-- [Vodafone Group Plc](https://www.vodafone.com/): Policy enforcement and automation on an internal k8s service offering.
-- [Deutsche Telekom](https://www.telekom.com/en): Use Kyverno to enforce Policies on managed clusters to prevent right escalation of internal customers and to enforce security rules.
+- [Vodafone Group Plc](https://www.vodafone.com/): Policy enforcement and automation on an internal Kubernetes service offering.
+- [Deutsche Telekom](https://www.telekom.com/en): Uses Kyverno to enforce policies on managed clusters in order to prevent privilege escalation of internal customers and to enforce security rules.
 
 Additional end users are available for private references.
 
@@ -145,7 +145,7 @@ Open Policy Agent (OPA) is a general-purpose policy engine where policies are de
 
 Kyverno was designed for Kubernetes and its policies leverage the OpenAPIv3 structural schema used for Kubernetes resources. In addition, Kyverno uses Kubernetes patterns, idioms, and best practices, so it feels familiar to Kubernetes DevSecOps teams. Kyverno policies—and policy results—are custom resources that can be managed using the same declarative configuration management principles used in Kubernetes and by widely adopted tools like kubectl and Kustomize. 
 
-Here is the video and the blog published by community compares policy management tools for Kubernetes:
+Here is a video and blog published by members of the community which compares policy management tools for Kubernetes:
 - [Kubernetes Policy Management Tools Compared - OPA with Gatekeeper vs. Kyverno](https://www.youtube.com/watch?v=9gSrRNmmKBc&feature=youtu.be&ab_channel=DevOpsToolkit), by Viktor Farcic
 - [Kubernetes Policy Comparison: OPA/Gatekeeper vs Kyverno](https://neonmirrors.net/post/2021-02/kubernetes-policy-comparison-opa-gatekeeper-vs-kyverno/), by Chip Zoller
 
