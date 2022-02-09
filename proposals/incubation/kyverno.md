@@ -143,7 +143,7 @@ A recent [CNCF security survey](https://www.cncf.io/blog/2021/10/12/cloud-native
 
 Open Policy Agent (OPA) is a general-purpose policy engine where policies are defined using Rego. [Gatekeeper]([OPA/Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/) enables OPA/Rego policies to be used in Kubernetes and allows customization of Rego policies using constraints.
 
-Kyverno was designed for Kubernetes and it's policies leverage the OpenAPIv3 structural schema used for Kubernetes resources. In addition, Kyverno uses Kubernetes patterns, idioms, and best-practices, so it feels familiar to Kubernetes DevSecOps teams. Kyverno policies, and policy results, are custom resources that can be managed using the same declarative configuration management principles used in Kubernetes and by widely adopted tools like kubectl and Kustomize. 
+Kyverno was designed for Kubernetes and its policies leverage the OpenAPIv3 structural schema used for Kubernetes resources. In addition, Kyverno uses Kubernetes patterns, idioms, and best practices, so it feels familiar to Kubernetes DevSecOps teams. Kyverno policies—and policy results—are custom resources that can be managed using the same declarative configuration management principles used in Kubernetes and by widely adopted tools like kubectl and Kustomize. 
 
 Here is the video and the blog published by community compares policy management tools for Kubernetes:
 - [Kubernetes Policy Management Tools Compared - OPA with Gatekeeper vs. Kyverno](https://www.youtube.com/watch?v=9gSrRNmmKBc&feature=youtu.be&ab_channel=DevOpsToolkit), by Viktor Farcic
