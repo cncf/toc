@@ -3,6 +3,7 @@
 _Version 1.0, Nov 27, 2017  
 Approved by TOC on: Nov 27, 2017
 Approved by GB on: Dec 5, 2017  
+Last reviewed and concurred: TBD, [Issue 413](https://github.com/cncf/toc/issues/413)
 
 [TOC Operating Principles](#toc-operating-principles)  
 [We Are Project-Centric](#we-are-project-centric)  
@@ -15,22 +16,32 @@ Approved by GB on: Dec 5, 2017
 
 ## TOC Operating Principles
 
-Now that CNCF has been active for over a year we want to start writing down what we have learned. Future TOCs can still make changes, but there will at least be documented precedent.
+ As part of our continued community engagement and iterations on the work done, the following list of principles serve as the guiding star the the TOC in their work. Since the CNCF's inception we have endevoured to capture the lessons learned and interate on these principles to service the foundation, the community, and the projects.
+
+ 1. We are project-centric.
+ 1. We exercise minimal viable governance to enable community driven success.
+ 1. Do not harm by enabling robust, well engineered projects and supportive processed to be leveraged for greatest adoption likelihood.
+ 1. No kingmakers. Similar or competitive projects are not excluded for reasons of overlap. 
+ 1. No single stack. Encourage interoperability for the emergence of a variety of stacks and patterns to serve the community and adopters.
+ 1. Promote interfaces over standards for real world use.
+ 1. CNCF is the home for all cloud native app tooling
+ 1. We help high-quality high-velocity cloud native open source projects which are the main driver of customer adoption and success.
+
 
 ### We Are Project-Centric
 
 _Principle: If it can be on a modern public source code control system, then it can be a project. And we put projects front and center._
 
-CNCF is a home for several kinds of “project” where community collaboration furthers the goals of the CNCF community:
+CNCF is a home for several kinds of “projects” where community collaboration furthers the goals of the CNCF community:
 1. Open source software projects, e.g., Prometheus.
 1. Projects that develop interface and/or schema specifications (e.g., [CNI](https://github.com/containernetworking/cni), reference implementations, conformance tests, adaptors, etc., in order to facilitate interoperability.
 1. Reference materials, such as architectures, stacks, guides, docs.
  
 ## Projects Are Self-Governing
 
-_Principle: Minimal Viable Governance_
+_Principle: We exercise minimal viable governance to enable community driven success._
 
-Our expectations around governance and support are all predicated on the notion that a CNCF project works like a typical, modern “community-owned” open source software project, such as a person might discover hosted on GitHub. That means that it has ‘committers’ and shared ownership using source code control, etc. People who want the CNCF to support their ‘thing’ need to make it into a project and support “GitHub-style” communities. (Though please note that CNCF projects don't actually need to live on GitHub.)
+Our expectations around governance and support are all predicated on the notion that a CNCF project works like a typical, modern “community-owned” open source software project, such as a person might discover hosted on GitHub. That means that it has ‘committers’ and shared ownership using source code control, etc. People who want the CNCF to support their ‘thing’ need to make it into a project and support “GitHub-style” communities. CNCF projectsare not required to reside on GitHub to support a GitHub-style community.
 
 In the GitHub era, open projects are able to get a lot “done” without outside help. The CNCF does not want to get in the way of that. This starts with “minimal viable governance”.
 
@@ -42,21 +53,21 @@ In the GitHub era, open projects are able to get a lot “done” without outsid
 - The TOC/CNCF want the ability to intervene if things go really wrong - i.e., project leads are stuck and cannot fix things.
 - Provide a template for new projects, a set of best practices to help jump-start the task of setting up a new project.
 
-### Draft Public Statement for website
+### Public Statement
 
 The CNCF is committed to helping its member projects succeed, but without dictating or micromanaging how the projects are run. To that end, it requires only minimal viable governance criteria: a [Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) with neutral processes for resolving conflicts, a documented governance model that includes a contribution-based process by which contributors can become committers or maintainers, and a clear definition of the top-level project leadership, with which the foundation will engage and inform and from which it may receive requests for funding and support. Once a project has graduated from incubation, new governance requirements cannot be imposed without consent of the project, except where legally required.
 
 ## What We're Looking For
 
-We are looking for high-quality, high-velocity projects that fit ‘cloud native’.
+_Principle: Do not harm by enabling robust, well engineered projects and supportive processed to be leveraged for greatest adoption likelihood._
 
-_Principle: Great projects already have many ingredients to succeed. First: do no harm._
+We are looking for high-quality, high-velocity projects that fit ‘cloud native’.
 
 Identify projects that have a real shot at being a useful tool in the evolving box of cloud native technology. This is a mix of mature and early-stage projects.   Early stage may not have all the criteria we want: diverse contributor bases, formalized governance, interoperability, cloud-native designs, quality bar, etc. 
 
 Some considerations:
 - Transparent, consistent technical and governance quality bar for [graduation](/process/graduation_criteria.adoc) from incubation
-- Has users, preferably in production; is a high quality, high-velocity project (for incubation and graduated projects). Inception level projects are targeted at earlier-stage projects to cultivate a community/technology
+- Has users, preferably in production; is a high quality, high-velocity project (for incubation and graduated projects). Sandbox level projects are targeted at earlier-stage projects to cultivate a community/technology
 - Has a committed and excited team that appears to understand the challenges ahead and wishes to meet them
 - Has a fundamentally sound design without obvious critical compromises that will inhibit potential widespread adoption
 - Is useful for cloud native deployments & ideally, is architected in a cloud native style
@@ -71,12 +82,12 @@ _Preamble:_
 1. There is no “one true stack”, cloud native applications cover many different use cases with different needs. Many architectures are reasonable: from 12-factor to microservice, to stateful or data-intensive, to others. And there are many scales from one node to many, from low to high latency, etc. So “one size does not fit all”.
 
 _Principles:_
-1. No kingmakers. The TOC picks projects with a real chance of achieving widespread use, and it does not pick a winner in each category. Similar or competitive projects are not excluded for reasons of overlap. 
-1. No one stack. The TOC does not pick a “winning stack” - i.e., vertically integrated set of projects as a solution for multiple application problems. Instead by encouraging interop, we hope that a range of patterns & “stacks” will emerge.
+1. No kingmakers. Similar or competitive projects are not excluded for reasons of overlap. 
+1. No single stack. Encourage interoperability for the emergence of a variety of stacks and patterns to serve the community and adopters..
 
-Via the “no kingmakers” principle and “what is a project”, the CNCF may support several projects which show how a ‘stack’ is a solution to certain use cases. For example, some stacks might use a container orchestrator. Other stacks might show how to integrate monitoring with other “observability” technologies, for cloud native apps regardless of their orchestration model.
+The TOC picks projects with a real chance of achieving widespread use, and it does not pick a winner in each category. Via the “no kingmakers” principle and “what is a project”, the CNCF may support several projects which show how a ‘stack’ is a solution to certain use cases. For example, some stacks might use a container orchestrator. Other stacks might show how to integrate monitoring with other “observability” technologies, for cloud native apps regardless of their orchestration model.
 
-This means that the CNCF is not promoting a single, monolithic stack of technologies.
+The TOC does not pick a “winning stack” - i.e., vertically integrated set of projects as a solution for multiple application problems. This means that the CNCF is not promoting a single, monolithic stack of technologies. 
 
 CNCF projects may have dependencies on other open source projects that comply with the [CNCF IP policy](https://github.com/cncf/foundation/blob/master/allowed-third-party-license-policy.md), which may be outside the CNCF. Widely-used dependencies are preferred; pluggable dependencies fit well with our principles but are not essential.  _Examples: Kubernetes' dependency on etcd, which was not a CNCF project at the time Kubernetes was brought into the CNCF; CNI, which enables pluggable networking dependencies._ 
 
@@ -89,7 +100,7 @@ The CNCF is a badge of quality and velocity. CNCF projects should be on a path t
 
 ## Not a Standards Body
 
-_Principle: CNCF promotes interoperability via interfaces that get real-world use_
+_Principle: Promote interfaces over standards for real world use._
 
 Users and vendors both want as little friction as possible when it comes to integration. Taking any two projects and putting them into a larger stack, product, platform, solution, etc., is always easier when this is the case. For example, cloud native storage vendors want as few moving parts as possible when it comes to making their products and services work with the various emerging container platforms. At the same time, the world is littered with the untouchable remains of failed ‘standards’ that promised to provide interoperability but did not get traction.
 
@@ -134,7 +145,7 @@ OCI is not in the CNCF. The OCI project operates according to the norms of inter
 
 ## We Want a Comprehensive Toolchain
 
-_Principle: users don’t need to look beyond the CNCF for cloud native app tooling_
+_Principle: CNCF is the home for all cloud native app tooling_
 
 Grand vision: CNCF should identify, facilitate and promote a *complete toolset* for cloud native applications and stacks at scales from small to large. This enables customers to adopt good tools faster, and be less at risk of confusion and doubt.
 
@@ -142,7 +153,7 @@ We need to flesh out the portfolio of projects needed by users to succeed with c
 
 ## Above All We Want To Help Projects
 
-_Principle: Our top priority is helping high-quality high-velocity cloud native open source projects be the main driver of customer adoption and success_
+_Principle: We help high-quality high-velocity cloud native open source projects which are the main driver of customer adoption and success._
  
 We want to be able to say that CNCF is a net positive for big & small projects. Doing so requires more coordination with project leads. 
 
