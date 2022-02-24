@@ -60,7 +60,7 @@ The CNCF is committed to helping its member projects succeed, but without dictat
 
 ## What We're Looking For
 
-_Principle: Do not harm by enabling robust, well engineered projects and supportive processed to be leveraged for greatest adoption likelihood._
+_Principle: Do no harm, by enabling robust, well engineered projects and supportive processes to be leveraged for greatest adoption likelihood._
 
 We are looking for high-quality, high-velocity projects that fit ‘cloud native’.
 
