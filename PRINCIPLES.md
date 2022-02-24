@@ -20,7 +20,7 @@ Last reviewed and concurred: TBD, [Issue 413](https://github.com/cncf/toc/issues
 
  1. We are project-centric.
  1. We exercise minimal viable governance to enable community driven success.
- 1. Do not harm by enabling robust, well engineered projects and supportive processed to be leveraged for greatest adoption likelihood.
+ 1. Do no harm by enabling robust, well engineered projects and supportive processed to be leveraged for greatest adoption likelihood.
  1. No kingmakers. Similar or competitive projects are not excluded for reasons of overlap. 
  1. No single stack. Encourage interoperability for the emergence of a variety of stacks and patterns to serve the community and adopters.
  1. Promote interfaces over standards for real world use.
@@ -41,7 +41,7 @@ CNCF is a home for several kinds of “projects” where community collaboration
 
 _Principle: We exercise minimal viable governance to enable community driven success._
 
-Our expectations around governance and support are all predicated on the notion that a CNCF project works like a typical, modern “community-owned” open source software project, such as a person might discover hosted on GitHub. That means that it has ‘committers’ and shared ownership using source code control, etc. People who want the CNCF to support their ‘thing’ need to make it into a project and support “GitHub-style” communities. CNCF projectsare not required to reside on GitHub to support a GitHub-style community.
+Our expectations around governance and support are all predicated on the notion that a CNCF project works like a typical, modern “community-owned” open source software project, such as a person might discover hosted on GitHub. That means that it has ‘committers’ and shared ownership using source code control, etc. People who want the CNCF to support their ‘thing’ need to make it into a project and support “GitHub-style” communities. CNCF projects are not required to reside on GitHub to support a GitHub-style community.
 
 In the GitHub era, open projects are able to get a lot “done” without outside help. The CNCF does not want to get in the way of that. This starts with “minimal viable governance”.
 
@@ -59,7 +59,7 @@ The CNCF is committed to helping its member projects succeed, but without dictat
 
 ## What We're Looking For
 
-_Principle: Do not harm by enabling robust, well engineered projects and supportive processed to be leveraged for greatest adoption likelihood._
+_Principle: Do no harm, by enabling robust, well engineered projects and supportive processes to be leveraged for greatest adoption likelihood._
 
 We are looking for high-quality, high-velocity projects that fit ‘cloud native’.
 
