@@ -137,7 +137,7 @@ Network Service Mesh had three release in the last year:
       - *v1.0.0 release.* - Done. The refactor of NSM took longer than expected, but NSM has now settled into a regular 60 day release candence.
       - *Continue to expand and broaden the NSM community.* - NSM has increased the breath of maintainers overall, particularly in sub-maintainers for particular repos
       - *Grow adoption across: Service Provider* - “Ericsson is actively contributing to NSM to enable 5G specific use cases for cloud native network functions. We have multiple NSM based solutions in our roadmap, targeting live deployments by the end of 2022.”
-      - *Grow adoption across: IoT* - "NSM is being considered in the Intel Smart Edge Open roadmap for Service Function Chaining (SFC) of FD.io VPP based Container Network Functions (CNFs)"
+      - *Grow adoption across: Edge/IoT* - "NSM is being considered in the Intel Smart Edge Open roadmap for Service Function Chaining (SFC) of FD.io VPP based Container Network Functions (CNFs)"
       - *Grow adoption across: Enterprise* - The NSM vL3 and Application Service Mesh over vL3 (see below) features need to be delivered to enable traction in Enterprise.
 
 5. _What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?_
