@@ -66,6 +66,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Matt Young, EverQuote (myoung@everquote.com)
 * Nick Chase, Mirantis	(nchase@mirantis.com)
 * Nimesh Agarwal, Dunzo (nimesh.mittal@gmail.com)
+* Oleg Nenashev, Dynatrace (o.v.nenashev@gmail.com)
 * Pengfei Ni, Microsoft (peni@microsoft.com)
 * Philip Lombardi, Datawire.io (plombardi@datawire.io)
 * Piyush Sharrma, Accurics (piyush@accurics.com)
