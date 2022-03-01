@@ -57,6 +57,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Lachlan	Evenson, Microsoft (lachlan.evenson@microsoft.com)
 * Lee Calcote, SolarWinds (leecalcote@gmail.com)
 * Lei	Zhang, HyperHQ (harryzhang@zju.edu.cn)
+* Liz Rice, Isovalent (liz@lizrice.com)
 * Louis Fourie, Huawei (louis.fourie@huawei.com)
 * Mark Peek, VMware	(markpeek@vmware.com)
 * Matt Farina, Samsung SDS (matt@mattfarina.com)
