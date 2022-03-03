@@ -105,12 +105,12 @@
 [Krator](https://github.com/krator-rs/krator)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/26/2021](https://github.com/krator-rs/krator)| Sandbox
 [ORAS(OCI Registry as Storage)](https://github.com/oras-project/)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/2/2021]( https://github.com/oras-project/)| Sandbox
 [wasmCloud ](https://github.com/wasmCloud)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[7/12/2021](https://github.com/wasmCloud)| Sandbox
-[Akri](https://github.com/deislabs/akri)|TOC Vote|[6/1/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/deislabs/akri) | Sandbox
-[MetalLB](https://github.com/metallb/metallb)|TOC Vote|[6/8/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/metallb/metallb) | Sandbox
-[karmada](https://github.com/karmada-io/karmada)|TOC Vote|[6/9/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/karmada-io/karmada) | Sandbox
-[Inclavare Containers](https://github.com/alibaba/inclavare-containers)|TOC Vote|[6/17/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/alibaba/inclavare-containers) | Sandbox
-[SuperEdge](https://github.com/superedge/superedge)|TOC Vote|[6/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/superedge/superedge) | Sandbox
-[Cilium](https://github.com/cilium/cilium)|TOC Vote|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6164)|[10/13/21](https://lists.cncf.io/g/cncf-toc/message/6288) | Incubating
+[Akri](https://github.com/deislabs/akri)|TOC Vote|[6/1/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/deislabs/akri) | Sandbox
+[MetalLB](https://github.com/metallb/metallb)|TOC Vote|[6/8/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/metallb/metallb) | Sandbox
+[karmada](https://github.com/karmada-io/karmada)|TOC Vote|[6/9/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/karmada-io/karmada) | Sandbox
+[Inclavare Containers](https://github.com/alibaba/inclavare-containers)|TOC Vote|[6/17/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/alibaba/inclavare-containers) | Sandbox
+[SuperEdge](https://github.com/superedge/superedge)|TOC Vote|[6/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/superedge/superedge) | Sandbox
+[Cilium](https://github.com/cilium/cilium)|TOC Vote|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6164)|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6288) | Incubating
 [Dapr](https://github.com/dapr/dapr)|TOC Vote|[10/14/2021](https://lists.cncf.io/g/cncf-toc/message/6293)|[11/03/2021](https://lists.cncf.io/g/cncf-toc/message/6338) | Incubating
 [OpenELB](https://github.com/kubesphere/openelb)|TOC Vote|[7/7/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/kubesphere/openelb) | Sandbox
 [Open Cluster Management](https://github.com/open-cluster-management-io)|TOC Vote|[7/11/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/open-cluster-management-io) | Sandbox
@@ -120,6 +120,7 @@
 [K8up](https://github.com/k8up-io/k8up)|TOC Vote|[9/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/k8up-io/k8up)|Sandbox
 [kube-rs](https://github.com/kube-rs/kube-rs)|TOC Vote|[10/30/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/kube-rs/kube-rs)|Sandbox
 [Devfile](https://github.com/devfile/api)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[01/11/2022](https://github.com/devfile/api)|Sandbox
+[Knative](https://github.com/knative)|Davanum Srinivas|[11/30/2021](https://lists.cncf.io/g/cncf-toc/message/6625)|[3/2/2022](https://lists.cncf.io/g/cncf-toc/message/6734)| Incubating
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
