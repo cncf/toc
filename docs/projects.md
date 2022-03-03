@@ -23,7 +23,7 @@
 [Telepresence](https://github.com/telepresenceio)|Alexis Richardson, Camille Fournier|[4/17/18](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)|[5/22/18](https://www.cncf.io/blog/2018/05/22/telepresence-in-the-sandbox/)|Sandbox
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/1/18](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Graduated
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[7/31/18](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/)|Graduated
-[OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|Alexis Richardson, Bryan Cantrill|[6/20/17](https://goo.gl/6nmyDn)|[8/10/18](https://www.cncf.io/blog/2018/08/10/cncf-to-host-openmetrics/)|Sandbox
+[OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|Alexis Richardson, Bryan Cantrill|[6/20/17](https://goo.gl/6nmyDn)|[8/10/18](https://www.cncf.io/blog/2018/08/10/cncf-to-host-openmetrics/)|Incubating
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[8/28/18](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv/)|Graduated
 [Cortex](https://github.com/cortexproject/cortex)|Ken Owens, Bryan Cantrill|[6/5/18](https://docs.google.com/presentation/d/190oIFgujktVYxWZLhLYN4q8p9dtQYoe4sxHgn4deBSI/edit#slide=id.g25ca91f87f_0_0)|[9/20/18](https://www.cncf.io/blog/2018/09/20/cncf-to-host-in-the-sandbox/)|Incubating
 [Buildpacks](https://github.com/buildpack/spec)|Brian Grant, Alexis Richardson|[8/21/18](https://docs.google.com/presentation/d/1RkygwZw7ILVgGhBpKnFNgJ4BCc_9qMG8cIf0MRbuzB4/edit?usp=sharing)|[10/3/18](https://www.cncf.io/blog/2018/10/03/cncf-to-host-cloud-native-buildpacks-in-the-sandbox)|Incubating
@@ -61,7 +61,7 @@
 [Contour](https://github.com/projectcontour/contour)|Matt Klein|[1/6/20](https://github.com/cncf/toc/pull/330)|[7/7/20](https://github.com/projectcontour/contour)|Incubating
 [Operator Framework](https://github.com/operator-framework)|Katie Gamanji|[10/9/19](https://github.com/cncf/toc/pull/303)|[7/9/20](https://github.com/operator-framework)|Incubating
 [Serverless Workflow Specification](https://github.com/cncf/wg-serverless-workflow)|TOC Vote|[3/3/20](https://github.com/cncf/toc/pull/376)|[7/14/20](https://github.com/cncf/wg-serverless-workflow)|Sandbox
-[ChaosMesh](https://github.com/pingcap/chaos-mesh)|TOC Vote|[2/26/20](https://github.com/cncf/toc/pull/367)|[7/14/20](https://github.com/pingcap/chaos-mesh)|Sandbox
+[ChaosMesh](https://github.com/pingcap/chaos-mesh)|TOC Vote|[2/26/20](https://github.com/cncf/toc/pull/367)|[7/14/20](https://github.com/pingcap/chaos-mesh)|Incubating
 [k3s](https://github.com/rancher/k3s)|TOC Vote|[5/11/2020](https://github.com/cncf/toc/pull/447)|[8/19/2020](https://github.com/rancher/k3s)|Sandbox
 [Backstage](https://github.com/spotify/backstage)|TOC Vote|[6/24/2020](https://github.com/cncf/toc/pull/476)|[9/8/2020](https://github.com/spotify/backstage)|Sandbox
 [Tremor](https://github.com/wayfair-tremor/)|TOC Vote|[7/13/2020](https://github.com/cncf/toc/pull/492)|[9/8/2020](https://github.com/wayfair-tremor/)|Sandbox
@@ -163,6 +163,8 @@
 | [OpenTelemetry](https://github.com/open-telemetry/community) | 5/7/19 | 8/26/2021 | [Incubating](https://github.com/cncf/toc/issues/614)| 
 | [Longhorn](https://https://longhorn.io/) | 5/26/20       | 11/4/21           | [Incubating](https://github.com/cncf/toc/pull/553)|
 | [LitmusChaos](https://litmuschaos.io) |  6/23/20        | 1/11/22           |[Incubating](https://github.com/cncf/toc/pull/569)|
+[OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|8/10/18| 2/2/2022 | [Incubating](https://github.com/cncf/toc/pull/615)|
+[ChaosMesh](https://github.com/pingcap/chaos-mesh)|7/14/20| 2/16/2022 | [Incubating](https://github.com/cncf/toc/pull/683)
 
 ## Project Security Audits
 
