@@ -24,7 +24,7 @@ Last reviewed and concurred: TBD, [Issue 413](https://github.com/cncf/toc/issues
  1. No kingmakers. Similar or competitive projects are not excluded for reasons of overlap. 
  1. No single stack. Encourage interoperability for the emergence of a variety of stacks and patterns to serve the community and adopters.
  1. Promote interfaces over standards for real world use.
- 1. CNCF is the home for all cloud native app tooling
+ 1. Users don't need to look beyond the CNCF for cloud native app tooling.
  1. We help high-quality high-velocity cloud native open source projects which are the main driver of customer adoption and success.
 
 
@@ -145,7 +145,7 @@ OCI is not in the CNCF. The OCI project operates according to the norms of inter
 
 ## We Want a Comprehensive Toolchain
 
-_Principle: CNCF is the home for all cloud native app tooling_
+_Principle: Users don't need to look beyond the CNCF for cloud native app tooling_
 
 Grand vision: CNCF should identify, facilitate and promote a *complete toolset* for cloud native applications and stacks at scales from small to large. This enables customers to adopt good tools faster, and be less at risk of confusion and doubt.
 
