@@ -28,7 +28,7 @@ All exceptions (and "no" outcomes) are handled by the TOC. Possible "no" outcome
    * CNCF staff handle governance / legal issues
    * This can happen after TOC Sandbox Sponsors step forward
 
-See the[https://github.com/cncf/toc/blob/main/process/sandbox.md](Sandbox guidelines) for the definition of and motivation behind the CNCF Sandbox.
+See the [https://github.com/cncf/toc/blob/main/process/sandbox.md](Sandbox guidelines) for the definition of and motivation behind the CNCF Sandbox.
 
 ### Incubation process
 
