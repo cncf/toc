@@ -16,7 +16,7 @@ Last reviewed and concurred: TBD, [Issue 413](https://github.com/cncf/toc/issues
 
 ## TOC Operating Principles
 
- As part of our continued community engagement and iterations on the work done, the following list of principles serve as the guiding star the the TOC in their work. Since the CNCF's inception we have endevoured to capture the lessons learned and interate on these principles to service the foundation, the community, and the projects.
+ As part of our continued community engagement and iterations on the work done, the following list of principles serve to provide an understanding of how the TOC intends to work with projects, effectively the guiding star the the TOC in their work. It also provides insight into what the TOC is looking for continuity and evolution across each seated TOC. Since the CNCF's inception we have endevoured to capture the lessons learned and interate on these principles to service the foundation, the community, and the projects.
 
  1. We are project-centric.
  1. We exercise minimal viable governance to enable community driven success.
