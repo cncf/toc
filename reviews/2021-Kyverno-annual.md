@@ -55,6 +55,10 @@ Kyverno currently has 5 maintainers from 4 different companies:
 | Marcel Muller        | [@MarcelMue](https://github.com/MarcelMue)    | Giant Swarm GmbH |
 | Shuting Zhao          | [@realshuting](https://github.com/realshuting)   | Nirmata Inc.   |
 | Trey Dockendorf       | [@treydock](https://github.com/treydock)      | Ohio Supercomputer Center |
+| Vyankatesh Kudtarkar	| [@vyankyGH](https://github.com/vyankyGH)	| Nirmata Inc.  |
+| Prateek Pandey        | [@prateekpandey14](https://github.com/prateekpandey14) | Nirmata                   |
+| Sambhav Kothari       | [@samj1912](https://github.com/samj1912)               | Bloomberg                 |
+
 
 The maintainer list is managed in our [GitHub repository](https://github.com/kyverno/kyverno/blob/main/MAINTAINERS.md) along with our [governance policy](https://kyverno.io/community/).
 
@@ -78,6 +82,7 @@ Kyverno adopters include:
 * [Giant Swarm](https://www.giantswarm.io/)
 * [Vodafone Group Plc](https://www.vodafone.com/)
 * [Deutsche Telekom](https://www.telekom.com/en)
+* [Bloomberg](https://www.techatbloomberg.com/) 
 
 A list of companies providing commercial services and solutions for Kyverno is available [here](https://kyverno.io/support/).
 
