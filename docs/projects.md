@@ -199,6 +199,7 @@
 [SPIRE/SPIFFE](https://github.com/spiffe/spire) | [08/17/2021](https://github.com/spiffe/spire/blob/main/doc/cure53-report.pdf) | [Announcement](https://www.cncf.io/blog/2021/08/17/open-sourcing-the-spiffe-spire-security-audit/) | CNCF | [Cure53](https://cure53.de)
 [Flux](https://github.com/fluxcd/flux2) | [11/10/2021](https://fluxcd.io/FluxFinalReport-v1.1.pdf) | [Announcement](http://fluxcd.io/blog/2021-11-10-flux-security-audit/) | CNCF | [ADA Logics](https://adalogics.com)
 [Argo](https://github.com/argoproj/argoproj) | [2/28/2022](https://github.com/argoproj/argoproj/blob/dd7cae43d81c5a11f21ff4ea0a4afadcae4799c7/docs/audit_fuzzer_adalogics_2022.pdf) | [Announcement](https://blog.argoproj.io/argo-security-automation-with-oss-fuzz-da38c1f86452) | CNCF | [ADA Logics](https://adalogics.com)
+[etcd](https://github.com/etcd-io/etcd) | [3/11/2022](https://github.com/etcd-io/etcd/blob/main/security/FUZZING_AUDIT_2022.PDF) | [Announcement](https://etcd.io/blog/2022/etcd-integrates-continuous-fuzzing/) | CNCF | [ADA Logics](https://adalogics.com)
 
 ## Archived Projects
 
