@@ -9,7 +9,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 
 ## Members
 
-* **Alena Prokharchyk** (term: 2 years - start date: 3/18/2020 - 3/18/2022) [TOC-appointed]
+* **Katie Gamanji** (term: 2 years - start date: 3/18/2022 - 3/18/2024) [TOC-appointed]
 * **Erin Boyd** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [GB-appointed]
 * **Dave Zolotusky** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [EndUser-appointed]
 * **Justin Cormack** (term: 2 years - start date 2/4/2022 - 2/4/2024) [Maintainer-appointed]
