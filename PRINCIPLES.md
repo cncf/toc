@@ -63,7 +63,7 @@ _Principle: Do no harm, by enabling robust, well engineered projects and support
 
 We are looking for high-quality, high-velocity projects that fit ‘cloud native’.
 
-Identify projects that have a real shot at being a useful tool in the evolving box of cloud native technology. This is a mix of mature and early-stage projects.   Early stage may not have all the criteria we want: diverse contributor bases, formalized governance, interoperability, cloud-native designs, quality bar, etc. 
+Identify projects that have a real shot at being a useful tool in the evolving box of cloud native technology. This is a mix of mature and early-stage projects.   Early stage may not have all the criteria we want: diverse contributor bases, formalized governance, interoperability, cloud native designs, quality bar, etc. 
 
 Some considerations:
 - Transparent, consistent technical and governance quality bar for [graduation](/process/graduation_criteria.adoc) from incubation
@@ -149,7 +149,7 @@ _Principle: Users don't need to look beyond the CNCF for cloud native app toolin
 
 Grand vision: CNCF should identify, facilitate and promote a *complete toolset* for cloud native applications and stacks at scales from small to large. This enables customers to adopt good tools faster, and be less at risk of confusion and doubt.
 
-We need to flesh out the portfolio of projects needed by users to succeed with cloud-native computing. It's pretty clear where remaining gaps in the project portfolio are. We should try to fill some of those, and at least document the rest. We can make more WGs to help with a few of those. (Note that “detailed architecture and stack” can be a Project)
+We need to flesh out the portfolio of projects needed by users to succeed with cloudnative computing. It's pretty clear where remaining gaps in the project portfolio are. We should try to fill some of those, and at least document the rest. We can make more WGs to help with a few of those. (Note that “detailed architecture and stack” can be a Project)
 
 ## Above All We Want To Help Projects
 
