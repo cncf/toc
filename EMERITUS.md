@@ -21,5 +21,6 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Liz Rice (3/11/2019-2/4/2022)
 * Saad Ali (2/4/2020-2/4/2022)
 * Sheng Liang (2/4/2020-2/4/2022)
+* Alena Prokharchyk (3/18/2020-3/18/2022)
 
 We thank these members for their service to the CNCF community.
