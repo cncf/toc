@@ -4,7 +4,6 @@
 :-----:|:-----:|:-----:|:-----:|:-----:
 [Kubernetes](https://kubernetes.io/)|Alexis Richardson|N/A|[3/10/16](https://cncf.io/news/news/2015/07/techcrunch-kubernetes-hits-10-google-donates-technology-newly-formed-cloud-native)|Graduated
 [Prometheus](https://prometheus.io/)|Alexis Richardson|[3/4/16](https://docs.google.com/presentation/d/1GtVX-ppI95LhrijprGENsrpq78-I1ttcSWLzMVk5d8M/edit?usp=sharing)|[5/9/16](https://cncf.io/news/announcement/2016/05/cloud-native-computing-foundation-accepts-prometheus-second-hosted-project)|Graduated
-[OpenTracing](http://opentracing.io/)|Bryan Cantrill|[8/17/16](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165)|[10/11/16](https://cncf.io/news/blogs/2016/10/opentracing-joins-cloud-native-computing-foundation)|Incubating
 [Fluentd](http://www.fluentd.org/)|Brian Grant|[8/3/16](https://docs.google.com/presentation/d/1S79MNv3E2aG8nuZJFJ0XMSumf7jnKozN3vdrivCH77U/edit?usp=sharing)|[11/8/16](https://www.cncf.io/blog/2016/12/08/fluentd-cloud-native-logging)|Graduated
 [Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[1/23/17](https://www.cncf.io/blog/2017/01/23/linkerd-project-joins-cloud-native-computing-foundation)|Graduated
 [gRPC](http://www.grpc.io/)|Brian Grant|[10/19/16](https://docs.google.com/presentation/d/16mNYaqgd7BaV50OnbcuQ1zRHpWoUKhL3XHvCJwEm8CE/edit#slide=id.g185c09339a_23_106)|[2/16/17](https://www.cncf.io/blog/2017/03/01/cloud-native-computing-foundation-host-grpc-google)|Incubating
@@ -24,7 +23,7 @@
 [Telepresence](https://github.com/telepresenceio)|Alexis Richardson, Camille Fournier|[4/17/18](https://docs.google.com/presentation/d/1VrHKGre5Y8AbmXEOXu4VPfILReoLT38Uw9TMN71u08E/edit?usp=sharing)|[5/22/18](https://www.cncf.io/blog/2018/05/22/telepresence-in-the-sandbox/)|Sandbox
 [Helm](https://github.com/helm)|Brian Grant|[5/15/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[6/1/18](https://www.cncf.io/blog/2018/06/01/cncf-to-host-helm/)|Graduated
 [Harbor](https://github.com/goharbor)|Quinton Hoole, Ken Owens|[6/19/18](https://docs.google.com/presentation/d/1KNSv70fyTfSqUerCnccV7eEC_ynhLsm9A_kjnlmU_t0/edit#slide=id.g25ca91f87f_0_0)|[7/31/18](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/)|Graduated
-[OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|Alexis Richardson, Bryan Cantrill|[6/20/17](https://goo.gl/6nmyDn)|[8/10/18](https://www.cncf.io/blog/2018/08/10/cncf-to-host-openmetrics/)|Sandbox
+[OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|Alexis Richardson, Bryan Cantrill|[6/20/17](https://goo.gl/6nmyDn)|[8/10/18](https://www.cncf.io/blog/2018/08/10/cncf-to-host-openmetrics/)|Incubating
 [TiKV](https://github.com/tikv/tikv)|Ben Hindman, Bryan Cantrill|[7/3/18](https://docs.google.com/presentation/d/1864TEfbwCpbW5kPYGQNAfqAUdc3X83n-_OYigqxfohw/edit?usp=sharing)|[8/28/18](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv/)|Graduated
 [Cortex](https://github.com/cortexproject/cortex)|Ken Owens, Bryan Cantrill|[6/5/18](https://docs.google.com/presentation/d/190oIFgujktVYxWZLhLYN4q8p9dtQYoe4sxHgn4deBSI/edit#slide=id.g25ca91f87f_0_0)|[9/20/18](https://www.cncf.io/blog/2018/09/20/cncf-to-host-in-the-sandbox/)|Incubating
 [Buildpacks](https://github.com/buildpack/spec)|Brian Grant, Alexis Richardson|[8/21/18](https://docs.google.com/presentation/d/1RkygwZw7ILVgGhBpKnFNgJ4BCc_9qMG8cIf0MRbuzB4/edit?usp=sharing)|[10/3/18](https://www.cncf.io/blog/2018/10/03/cncf-to-host-cloud-native-buildpacks-in-the-sandbox)|Incubating
@@ -62,7 +61,7 @@
 [Contour](https://github.com/projectcontour/contour)|Matt Klein|[1/6/20](https://github.com/cncf/toc/pull/330)|[7/7/20](https://github.com/projectcontour/contour)|Incubating
 [Operator Framework](https://github.com/operator-framework)|Katie Gamanji|[10/9/19](https://github.com/cncf/toc/pull/303)|[7/9/20](https://github.com/operator-framework)|Incubating
 [Serverless Workflow Specification](https://github.com/cncf/wg-serverless-workflow)|TOC Vote|[3/3/20](https://github.com/cncf/toc/pull/376)|[7/14/20](https://github.com/cncf/wg-serverless-workflow)|Sandbox
-[ChaosMesh](https://github.com/pingcap/chaos-mesh)|TOC Vote|[2/26/20](https://github.com/cncf/toc/pull/367)|[7/14/20](https://github.com/pingcap/chaos-mesh)|Sandbox
+[ChaosMesh](https://github.com/pingcap/chaos-mesh)|TOC Vote|[2/26/20](https://github.com/cncf/toc/pull/367)|[7/14/20](https://github.com/pingcap/chaos-mesh)|Incubating
 [k3s](https://github.com/rancher/k3s)|TOC Vote|[5/11/2020](https://github.com/cncf/toc/pull/447)|[8/19/2020](https://github.com/rancher/k3s)|Sandbox
 [Backstage](https://github.com/spotify/backstage)|TOC Vote|[6/24/2020](https://github.com/cncf/toc/pull/476)|[9/8/2020](https://github.com/spotify/backstage)|Sandbox
 [Tremor](https://github.com/wayfair-tremor/)|TOC Vote|[7/13/2020](https://github.com/cncf/toc/pull/492)|[9/8/2020](https://github.com/wayfair-tremor/)|Sandbox
@@ -106,13 +105,13 @@
 [Krator](https://github.com/krator-rs/krator)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/26/2021](https://github.com/krator-rs/krator)| Sandbox
 [ORAS(OCI Registry as Storage)](https://github.com/oras-project/)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/2/2021]( https://github.com/oras-project/)| Sandbox
 [wasmCloud ](https://github.com/wasmCloud)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[7/12/2021](https://github.com/wasmCloud)| Sandbox
-[Akri](https://github.com/deislabs/akri)|TOC Vote|[6/1/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/deislabs/akri) | Sandbox
-[MetalLB](https://github.com/metallb/metallb)|TOC Vote|[6/8/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/metallb/metallb) | Sandbox
-[karmada](https://github.com/karmada-io/karmada)|TOC Vote|[6/9/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/karmada-io/karmada) | Sandbox
-[Inclavare Containers](https://github.com/alibaba/inclavare-containers)|TOC Vote|[6/17/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/alibaba/inclavare-containers) | Sandbox
-[SuperEdge](https://github.com/superedge/superedge)|TOC Vote|[6/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/21](https://github.com/superedge/superedge) | Sandbox
-[Cilium](https://github.com/cilium/cilium)|TOC Vote|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6164)|[10/13/21](https://lists.cncf.io/g/cncf-toc/message/6288) | Incubating
-[Dapr](https://github.com/dapr/dapr)|TOC Vote|[10/14/2021](https://lists.cncf.io/g/cncf-toc/message/6293)|[11/03/2021](https://lists.cncf.io/g/cncf-toc/message/6338) | Incubating
+[Akri](https://github.com/deislabs/akri)|TOC Vote|[6/1/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/deislabs/akri) | Sandbox
+[MetalLB](https://github.com/metallb/metallb)|TOC Vote|[6/8/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/metallb/metallb) | Sandbox
+[karmada](https://github.com/karmada-io/karmada)|TOC Vote|[6/9/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/karmada-io/karmada) | Sandbox
+[Inclavare Containers](https://github.com/alibaba/inclavare-containers)|TOC Vote|[6/17/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/alibaba/inclavare-containers) | Sandbox
+[SuperEdge](https://github.com/superedge/superedge)|TOC Vote|[6/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/superedge/superedge) | Sandbox
+[Cilium](https://github.com/cilium/cilium)|Justin Cormack|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6164)|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6288) | Incubating
+[Dapr](https://github.com/dapr/dapr)|Lei Zhang|[10/14/2021](https://lists.cncf.io/g/cncf-toc/message/6293)|[11/03/2021](https://lists.cncf.io/g/cncf-toc/message/6338) | Incubating
 [OpenELB](https://github.com/kubesphere/openelb)|TOC Vote|[7/7/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/kubesphere/openelb) | Sandbox
 [Open Cluster Management](https://github.com/open-cluster-management-io)|TOC Vote|[7/11/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/open-cluster-management-io) | Sandbox
 [VS Code Kubernetes Tools](https://github.com/Azure/vscode-kubernetes-tools)|TOC Vote|[10/25/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/Azure/vscode-kubernetes-tools)| Sandbox
@@ -120,6 +119,10 @@
 [KubeArmor](https://github.com/kubearmor/KubeArmor)|TOC Vote|[9/6/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/kubearmor/KubeArmor)|Sandbox
 [K8up](https://github.com/k8up-io/k8up)|TOC Vote|[9/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/k8up-io/k8up)|Sandbox
 [kube-rs](https://github.com/kube-rs/kube-rs)|TOC Vote|[10/30/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/kube-rs/kube-rs)|Sandbox
+[Devfile](https://github.com/devfile/api)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[01/11/2022](https://github.com/devfile/api)|Sandbox
+[Knative](https://github.com/knative)|Davanum Srinivas|[11/30/2021](https://lists.cncf.io/g/cncf-toc/message/6625)|[3/2/2022](https://lists.cncf.io/g/cncf-toc/message/6734)| Incubating
+[Confidential Containers](https://github.com/devfile/api)|TOC Vote|[12/19/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/confidential-containers)|Sandbox
+[FabEdge](https://github.com/devfile/api)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/FabEdge/fabedge/)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
@@ -160,8 +163,10 @@
 | [KEDA](https://keda.sh/)                | 3/9/20         | 8/18/21             | [Incubating](https://github.com/cncf/toc/pull/622) |
 | [Crossplane](https://www.crossplane.io) | 5/26/20        | 9/14/21             | [Incubating](https://github.com/cncf/toc/pull/620) | 
 | [OpenTelemetry](https://github.com/open-telemetry/community) | 5/7/19 | 8/26/2021 | [Incubating](https://github.com/cncf/toc/issues/614)| 
-| [Longhorn](https://https://longhorn.io/) | 5/26/20       | 11/4/21           | [Incubating](https://github.com/cncf/toc/pull/553)
-
+| [Longhorn](https://https://longhorn.io/) | 5/26/20       | 11/4/21           | [Incubating](https://github.com/cncf/toc/pull/553)|
+| [LitmusChaos](https://litmuschaos.io) |  6/23/20        | 1/11/22           |[Incubating](https://github.com/cncf/toc/pull/569)|
+[OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|8/10/18| 2/2/2022 | [Incubating](https://github.com/cncf/toc/pull/615)|
+[ChaosMesh](https://github.com/pingcap/chaos-mesh)|7/14/20| 2/16/2022 | [Incubating](https://github.com/cncf/toc/pull/683)
 
 ## Project Security Audits
 
@@ -195,9 +200,13 @@
 [Vitess (fuzzing)](https://github.com/vitessio/vitess) | [05/19/2021](https://github.com/vitessio/vitess/blob/master/doc/VIT-02-report-fuzzing-audit.pdf) | [Announcement](https://github.com/vitessio/vitess/blob/master/doc/VIT-02-report-fuzzing-audit.pdf) | CNCF | [AdaLogics](https://adalogics.com)
 [SPIRE/SPIFFE](https://github.com/spiffe/spire) | [08/17/2021](https://github.com/spiffe/spire/blob/main/doc/cure53-report.pdf) | [Announcement](https://www.cncf.io/blog/2021/08/17/open-sourcing-the-spiffe-spire-security-audit/) | CNCF | [Cure53](https://cure53.de)
 [Flux](https://github.com/fluxcd/flux2) | [11/10/2021](https://fluxcd.io/FluxFinalReport-v1.1.pdf) | [Announcement](http://fluxcd.io/blog/2021-11-10-flux-security-audit/) | CNCF | [ADA Logics](https://adalogics.com)
+[Argo](https://github.com/argoproj/argoproj) | [2/28/2022](https://github.com/argoproj/argoproj/blob/dd7cae43d81c5a11f21ff4ea0a4afadcae4799c7/docs/audit_fuzzer_adalogics_2022.pdf) | [Announcement](https://blog.argoproj.io/argo-security-automation-with-oss-fuzz-da38c1f86452) | CNCF | [ADA Logics](https://adalogics.com)
+[etcd](https://github.com/etcd-io/etcd) | [3/11/2022](https://github.com/etcd-io/etcd/blob/main/security/FUZZING_AUDIT_2022.PDF) | [Announcement](https://etcd.io/blog/2022/etcd-integrates-continuous-fuzzing/) | CNCF | [ADA Logics](https://adalogics.com)
 
 ## Archived Projects
 
 **Project**|**Sponsor**|**TOC Deck**|**Archived**|**Maturity Level**
 :-----:|:-----:|:-----:|:-----:|:-----:
 [rkt](http://rkt.io)|Brian Grant|[3/15/17](https://docs.google.com/presentation/d/1KzA58_Zz30mKKzeLuSvXLh63aIC75KRdAOTw4PJ_10g/edit?usp=sharing)|[8/16/19](https://www.cncf.io/blog/2019/08/16/cncf-archives-the-rkt-project/)|Archived
+[OpenTracing](http://opentracing.io/)|Bryan Cantrill|[8/17/16](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165)|[01/31/22](https://www.cncf.io/blog/2022/01/31/cncf-archives-the-opentracing-project/)|Archived
+

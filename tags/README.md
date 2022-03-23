@@ -15,25 +15,25 @@ a pull request with document referencing the roles and charter, updating the lis
 
 | Name | TOC Liaisons |
 |------|--------------| 
-| [TAG Security](https://github.com/cncf/tag-security) | Liz Rice, Justin Cormack |
-| [TAG Storage](https://github.com/cncf/tag-storage) | Erin Boyd, Saad Ali | 
-| [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Davanum Srinivas, Lei Zhang, Cornelia Davis | 
-| [TAG Network](https://github.com/cncf/tag-network) | Dave Zolotusky, Liz Rice |
-| [TAG Runtime](https://github.com/cncf/tag-runtime) | Richardo Rocha, Alena Prokharchyk, Davanum Srinivas |
-| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Saad Ali, Alena Prokharchyk |
-| [TAG Observability](https://github.com/cncf/tag-observability) | Lei Zhang, Cornelia Davis | 
+| [TAG Security](https://github.com/cncf/tag-security) | Emily Fox, Justin Cormack |
+| [TAG Storage](https://github.com/cncf/tag-storage) | Erin Boyd, Richard Hartmann |
+| [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Matt Farina, Lei Zhang, Cornelia Davis |
+| [TAG Network](https://github.com/cncf/tag-network) | Dave Zolotusky, Davanum Srinivas |
+| [TAG Runtime](https://github.com/cncf/tag-runtime) | Richardo Rocha, Richard Hartmann, Davanum Srinivas |
+| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Matt Farina, Katie Gamanji |
+| [TAG Observability](https://github.com/cncf/tag-observability) | Lei Zhang, Cornelia Davis |
 
-## TAG Chairs as of June 2021
+## TAG Chairs as of March 2022
 
 ### TAG Storage 
 * [Xing Yang](https://github.com/xing-yang)
-* [Nick Connolly](https://github.com/nconnolly1)
+* [Quinton Hoole](https://github.com/quinton-hoole)
 * [Alex Chircop](https://github.com/chira001)
 
 ### TAG Security 
 * [Brandon Lum](https://github.com/lumjjb)
-* [Emily Fox](https://github.com/TheFoxAtWork)
 * [Aradhna Chetal](https://github.com/achetal01)
+* [Andrew Martin](https://github.com/sublimino)
 
 ### TAG App-Delivery
 * [Bryan Liles](https://github.com/bryanl)
@@ -66,6 +66,7 @@ a pull request with document referencing the roles and charter, updating the lis
 |---|---|
 | TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred) |
 | TAG Security | [Sarah Allen](https://github.com/ultrasaurus) |
-| TAG Security |[Jeyappragash Jeyakeerthi](https://github.com/pragashj) |
-| TAG Security |[Dan Shaw](https://github.com/dshaw) |
+| TAG Security | [Jeyappragash Jeyakeerthi](https://github.com/pragashj) |
+| TAG Security | [Dan Shaw](https://github.com/dshaw) |
 | TAG Storage | [Erin Boyd](https://github.com/erinboyd) | 
+| TAG Security | [Emily Fox](https://github.com/TheFoxAtWork) |
