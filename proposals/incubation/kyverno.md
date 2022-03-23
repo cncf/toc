@@ -5,6 +5,7 @@
 - [Background](#background)
 - [About Kyverno](#about-kyverno)
 - [Progress Since Joining CNCF](#progress-since-sandbox)
+- [License and Dependencies](#license-and-dependencies)
 - [Incubation Stage Requirements](#incubation-stage-requirements)
 - [Statement on alignment with the CNCF mission](#statement-on-alignment-with-the-cncf-mission)
 - [Comparison with other CNCF Policy Management projects](#comparison-with-other-cncf-chaos-engineering-projects)
@@ -58,6 +59,65 @@ The Webhook also creates and updates `GenerateRequest` and `ReportChangeRequest`
 ### Project Governance
 
 The Kyverno community has matured significantly. We have on-boarded maintainers across different companies, and we host weekly contributors meetings and monthly community meetings. We codified our [governance processes](https://main.kyverno.io/community/#project-governance), [contributing guidelines](https://github.com/kyverno/kyverno/blob/main/CONTRIBUTING.md), and [security processes](https://main.kyverno.io/docs/security/).
+
+## License and Dependencies
+
+Kyverno is licensed under the Apache 2.0 license.
+
+External dependencies, from kyverno/kyverno go.mod:
+
+
+- Apache 2.0 github.com/awslabs/amazon-ecr-credential-helper/ecr-login 
+- Apache 2.0 github.com/chrismellard/docker-credential-acr-env 
+- Apache 2.0 github.com/cornelk/hashmap 
+- Apache 2.0 github.com/distribution/distribution 
+- Apache 2.0 github.com/gardener/controller-manager-library 
+- Apache 2.0 github.com/go-git/go-billy/v5 
+- Apache 2.0 github.com/go-git/go-git/v5 
+- Apache 2.0 github.com/go-logr/logr 
+- Apache 2.0 github.com/google/go-containerregistry 
+- Apache 2.0 github.com/google/go-containerregistry/pkg/authn/kubernetes 
+- Apache 2.0 github.com/googleapis/gnostic 
+- Apache 2.0 github.com/in-toto/in-toto-golang 
+- Apache 2.0 github.com/jmespath/go-jmespath 
+- Apache 2.0 github.com/lensesio/tableprinter 
+- Apache 2.0 github.com/mattbaird/jsonpatch 
+- Apache 2.0 github.com/prometheus/client_golang 
+- Apache 2.0 github.com/sigstore/cosign 
+- Apache 2.0 github.com/sigstore/sigstore 
+- Apache 2.0 github.com/spf13/cobra 
+- Apache 2.0 gopkg.in/yaml.v2 
+- Apache 2.0 gotest.tools 
+- Apache 2.0 k8s.io/api 
+- Apache 2.0 k8s.io/apiextensions-apiserver 
+- Apache 2.0 k8s.io/apimachinery 
+- Apache 2.0 k8s.io/cli-runtime 
+- Apache 2.0 k8s.io/client-go 
+- Apache 2.0 k8s.io/klog/v2 
+- Apache 2.0 k8s.io/kube-openapi 
+- Apache 2.0 sigs.k8s.io/controller-runtime 
+- Apache 2.0 sigs.k8s.io/kustomize/api 
+- Apache 2.0 sigs.k8s.io/kustomize/kyaml 
+- BSD 3-Clause github.com/evanphx/json-patch 
+- BSD 3-Clause github.com/evanphx/json-patch/v5 
+- BSD 3-Clause github.com/julienschmidt/httprouter
+- BSD 2-Clause github.com/pkg/errors 
+- BSD-3-Clause gopkg.in/inf.v0 
+- GNU Affero v3.0 github.com/minio/pkg 
+- MIT github.com/aquilax/truncate 
+- MIT github.com/blang/semver/v4 
+- MIT github.com/cenkalti/backoff 
+- MIT github.com/fatih/color 
+- MIT github.com/ghodss/yaml 
+- MIT github.com/kataras/tablewriter
+- MIT github.com/onsi/ginkgo 
+- MIT github.com/onsi/gomega 
+- MIT github.com/orcaman/concurrent-map 
+- MIT github.com/patrickmn/go-cache 
+- MIT github.com/robfig/cron/v3 
+- MIT github.com/stretchr/testify 
+- MIT and Apache 2.0 gopkg.in/yaml.v3 
+- MIT sigs.k8s.io/yaml 
 
 
 ### Community Stats (graphs / dashboards) 
