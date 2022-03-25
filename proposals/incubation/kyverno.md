@@ -80,6 +80,7 @@ External dependencies, from kyverno/kyverno go.mod:
 - Apache 2.0 github.com/googleapis/gnostic 
 - Apache 2.0 github.com/in-toto/in-toto-golang 
 - Apache 2.0 github.com/jmespath/go-jmespath 
+- Apache 2.0 github.com/kyverno/go-wildcard
 - Apache 2.0 github.com/lensesio/tableprinter 
 - Apache 2.0 github.com/mattbaird/jsonpatch 
 - Apache 2.0 github.com/prometheus/client_golang 
@@ -103,7 +104,6 @@ External dependencies, from kyverno/kyverno go.mod:
 - BSD 3-Clause github.com/julienschmidt/httprouter
 - BSD 2-Clause github.com/pkg/errors 
 - BSD-3-Clause gopkg.in/inf.v0 
-- GNU Affero v3.0 github.com/minio/pkg 
 - MIT github.com/aquilax/truncate 
 - MIT github.com/blang/semver/v4 
 - MIT github.com/cenkalti/backoff 
