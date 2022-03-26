@@ -36,9 +36,9 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Andrew Martin](https://github.com/sublimino)
 
 ### TAG App-Delivery
-* [Bryan Liles](https://github.com/bryanl)
-* [Lei Zhang](https://github.com/resouer)
 * [Alois Reitbauer](https://github.com/AloisReitbauer)
+* [Jennifer Strejevitch](https://github.com/Jenniferstrej)
+* [Hongchao Deng](https://github.com/hongchaodeng)
 
 ### TAG Network 
 * [Lee Calcote](https://github.com/leecalcote)
