@@ -14,7 +14,7 @@ Please refer to Curiefense's [devstat page](https://curiefense.devstats.cncf.io/
 
 ## How many maintainers do you have, and which organisations are they from?
 
-Currently the project has 10 unique mantainers all related to Reblaze accross
+Currently the project has 10 unique maintainers all related to Reblaze across
 the main repositories. While the team has grown in numbers, it has yet to
 diversify itself. The community is expanding and there has been more engagement
 on Slack, GitHub, and other platforms.
@@ -29,7 +29,7 @@ reached out with new feature requests, and code proposals.
 We have also seen an increased amount of MVP/trial environments being created.
 
 Finally, there are 2 companies using it in production. Working on getting
-approval for a public referene.
+approval for a public reference.
 
 
 ## How has the project performed against its goals since the last review?
@@ -46,10 +46,10 @@ achievements from a community and technical perspective that are listed below:
   deprecation process for major features and services.
 
 - The curiefense-helm code has been split into its own project, providing more
-  focus, clarity, and esae of navigation.
+  focus, clarity, and ease of navigation.
 
 - CI stabilization was a major focus for the team. During this period the team
-  focused on creating an e2e environment that would match a real produciton
+  focused on creating an e2e environment that would match a real production
   environment at a smaller scale.
 
 ## What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
@@ -59,6 +59,8 @@ achievements from a community and technical perspective that are listed below:
 
 - The curiefense-helm project will be undergoing a major refactoring soon,
   which sparked from conversations with community members over slack.
+  This is separate from the effort to split the chart into its own repo.
+
 - Support for new proxies
 - New security protection strategies
 
@@ -80,7 +82,7 @@ Curiefense has benefitted a lot from being part of the CNCF. The attention the
 project has gotten come not only from the hard work of the team but also
 because of the platform that the CNCF has provided.
 
-The same continus guidance and support is what the team would like to keep
+The same continuos guidance and support is what the team would like to keep
 getting from the CNCF.
 
 There are currently no other requirements.
@@ -90,6 +92,6 @@ There are currently no other requirements.
 Curiefense is not ready to apply for incubation due to limited adoption and the
 lack of corporate diversity within its maintainers. The team is working on
 improving adoption, which will hopefully result in new maintainers and
-organizations joining the community. The team would like to work on this before
+organizations joining the community. The team would like improve adoption before
 applying for incubation.
 
