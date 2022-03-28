@@ -7,7 +7,7 @@ Project progression, movement from one stage to another, allows projects to part
 
 # II. Stages - Definitions & Expectations 
 
-CNCF projects have a maturity level of sandbox, incubating, or graduated. Archived is for projects no longer in active development. The maturity level is a signal by CNCF as to what sorts of enterprises should be adopting different projects. Projects increase their maturity by demonstrating their sustainability to CNCF’s Technical Oversight Committee: that they have adoption, a healthy rate of changes, committers from multiple organizations, have adopted the CNCF Code of Conduct, and have achieved and maintained the Core Infrastructure Initiative Best Practices Badge. 
+CNCF projects have a maturity level of sandbox, incubating, or graduated. Archived is for projects no longer in active development. The maturity level is a signal by CNCF as to what sorts of enterprises should be adopting different projects. Projects increase their maturity by demonstrating their sustainability to CNCF’s Technical Oversight Committee: that they have adoption, a healthy rate of changes, committers from multiple organizations, have adopted the CNCF Code of Conduct, and have achieved and maintained the OpenSSF's Best Practices Badge. 
 
 ![Project Stages](https://github.com/cncf/toc/blob/main/process/project-stages.png)
 
@@ -75,7 +75,7 @@ Projects currently in progress for consideration at the Incubating stage are tra
 ## (3) Project Graduation Process: Incubating to Graduation 
 Projects that wish to move from Incubating to Graduation should open a PR confirming the following criteria: 
 * Have committers from at least two organizations.
-* Have achieved and maintained a [Core Infrastructure Initiative Best Practices Badge](https://bestpractices.coreinfrastructure.org/).
+* Have achieved and maintained a [OpenSSF's Best Practices Badge](https://bestpractices.coreinfrastructure.org/).
 * Have completed an independent and third party security audit with results published of similar scope and quality as [this example](https://github.com/envoyproxy/envoy#security-audit) which includes all critical vulnerabilities and all critical vulnerabilities need to be addressed before graduation.
 * Explicitly define a project governance and committer process. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
 * Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website). For a specification, have a list of adopters for the implementation(s) of the spec.
@@ -110,7 +110,7 @@ What does archiving for a CNCF project mean?
 
 Sandbox projects are subject to an annual review by the TOC. This is intended to be a lightweight process to ensure that projects are on track, and getting the support they need.
 
-Your annual review should answer the following questions:
+Your annual review should be in the form of a PR and answer the following questions:
 
 * Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity. Please feel free to add commentary to add colour to the numbers and graphs we will see on devstats.
 * How many maintainers do you have, and which organisations are they from? (Feel free to link to an existing MAINTAINERS file if appropriate.)
@@ -120,7 +120,7 @@ Your annual review should answer the following questions:
 * How can the CNCF help you achieve your upcoming goals?
 * Do you think that your project meets the criteria for incubation?
 
-Based on this review the TOC will vote on whether to continue to sponsor the project in Sandbox. If the vote does not reach a simple majority, we will discuss archiving or other next steps with you.
+Based on the discussions from the public review meeting, the TOC will vote on whether to continue to sponsor the project in Sandbox. If the vote does not reach a simple majority, we will discuss archiving or other next steps with you. Additional information on the Annual Review may be found on the [project proposals page](project_proposals.adoc)
 
 Additionally, the TOC might recommend that you apply for Incubation stage. This requires extra work and due diligence so it’s not a possible outcome to move directly to Incubation from this lightweight annual review.
 
