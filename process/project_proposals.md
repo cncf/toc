@@ -36,7 +36,8 @@ All exceptions (and "no" outcomes) are handled by the TOC. Possible "no" outcome
      * After the meeting wraps up, the assigned TOC member may summarize the discussion on the PR in the form of a comment to document information for the project and community.
 . *Governance / legal issues*
    * CNCF staff handle governance / legal issues
-   * This can happen after TOC Sandbox Sponsors step forward - Lobbying for a sponsor is not permitted.
+   * This can happen after TOC Sandbox Sponsors step forward - Directly contacting a TOC member to serve as a project sponsor is not permitted.
+   * Projects are encouraged to participate/attend TOC meetings and reaching out to TAGS for advice or scheduling presentations and discussions.
 
 See the [Sandbox guidelines](https://github.com/cncf/toc/blob/main/process/sandbox.md) for the definition of and motivation behind the CNCF Sandbox.
 
@@ -56,9 +57,8 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * The TOC may agree that the project does not (yet) meet the [Incubation requirements](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubation-stage) and give feedback on why this is the case. If the project is not already in the CNCF, the TOC may suggest that project apply for Sandbox instead.
    * If a TOC Incubation Sponsor has not stepped forward within two months after the proposal PR is submitted, projects may request that their project proposal is discussed at a forthcoming TOC meeting by adding it to the [Working Doc](https://docs.google.com/document/d/1jpoKT12jf2jTf-2EJSAl4iTdA7Aoj_uiI19qIaECNFc/edit). The outcome of this is discussion is either that a sponsor steps forward, or that the TOC votes to admit the project to Sandbox, or the proposal is rejected (projects may reapply after six months). If, even after all those steps, a sponsor does not step forward, the proposal is rejected. 
    * DD will usually involve a presentation to a TAG, but an interested TAG is welcome to schedule a project presentation at any time. TAGs can discuss their recommendations or concerns about a project with their TOC liaison(s) if there isn't already a TOC Incubation Sponsor in place. 
-   * Although it is not necessary, projects are allowed to informally reach out to TOC members for advice, including asking about potential sponsorship. TOC members should keep each other informed about these approaches so that we can avoid falling prey to "lobbying". There is a fine line between a project asking for help to make a successful application, and a project shopping around looking to pressurize a TOC member into sponsorship. 
-
-*TOC Incubation Sponsor* 
+   * Although it is not necessary, projects are allowed to informally reach out to TOC members for advice, including asking about potential sponsorship. TOC members should keep each other informed about these approaches so that we can avoid falling prey to "lobbying" (directly contacting a TOC member to volunteer or manage an action or issue). There is a fine line between a project asking for help to make a successful application, and a project shopping around looking to pressurize a TOC member into sponsorship. 
+. *TOC Incubation Sponsor* 
    * TOC Incubation Sponsor is responsible for driving the process, and co-ordinating with TAGs for review and input as they see fit. 
    * TOC Incubation Sponsor is a point of contact for the project throughout the process.
    * TOC members may not sponsor a project for which they have a clear conflict of interest (for example, originating primarily from their organization). This doesn't mean that they can't have any involvement at all - for example, contributing pull requests, or being an end user of that project, can signal a healthy interest in and knowledge of a worthwhile project. 
@@ -87,7 +87,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * The proposal addresses how the project has grown since incubation and any concerns from incubation DD in addition to the standard graduation requirements.
    * Projects will be reviewed on a rolling basis as they apply, instead of two meetings a year.    
 . * If a TOC member steps forward to support the project as a sponsor and determines the Graduation DD document is finalized, the TOC member kicks off two week period of time for public comment on the TOC mailing list
-   * Lobbying for a sponsor is not permitted.
+   * Directly contacting a TOC member to serve as a project sponsor is not permitted.
    * The email should contain a link to the proposal pull request and graduation DD document.
    * All TAGs, end users, TOC members, and community members are welcome to comment at this time on the mailing list.
    * Historically, projects have done a TOC presentation as part of the graduation process. The TOC has gotten rid of the presentation requirement. 
@@ -105,3 +105,31 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 * Outcome may be “no” simply because sponsors don’t step forward within the timeframe
 * Outcome from TOC Triage or TAG recommendation could be that we want to wait for some reason e.g. project backlogs; batching similar projects together. We should give the project an explanation and set time expectations in these cases.
 * All “no” outcomes and other exceptions are discussed by the TOC, and then with project and TAG representatives. We will try to give feedback but it may simply be a lack of conviction in the project.
+* If the project is concerned about the timeline, feels they have waited too long, or needs to reach out, please reach out to the TOC via one of their mailing lists or contact the CNCF Staff.
+* Projects are encouraged to participate/attend TOC meetings and reaching out to TAGS for advice or scheduling presentations and discussions.
+
+=== Project Proposal Requirements
+
+Project proposals submitted to the CNCF (see https://github.com/cncf/toc/blob/main/proposals/incubation/kubernetes.adoc[example]) can be written in https://www.markdownguide.org[Markdown], http://asciidoc.org[AsciiDoc], or http://docutils.sourceforge.net/rst.html[reStructuredText] and must provide the following information to the best of your ability:
+
+ .. name of project (must be unique within CNCF)
+ .. project description (what it does, why it is valuable, origin and history)
+ .. statement on alignment with CNCF charter mission
+ .. comparison with similar projects (inside or outside the CNCF), including what differentiates this project
+ .. sponsor from TOC (sponsor helps mentor projects)
+ .. preferred maturity level (see https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc[CNCF Graduation Criteria])
+ .. license (charter dictates http://www.apache.org/licenses/LICENSE-2.0[Apache 2] by default)
+ .. source control (GitHub by default)
+ .. external dependencies (including licenses)
+ .. initial committers (how long working on project, companies they represent)
+ .. infrastructure requests (CI / CNCF Cluster)
+ .. communication channels (slack, irc, mailing lists)
+ .. issue tracker (GitHub by default)
+ .. website (current version will move to project.cncf.io, see https://github.com/cncf/foundation/blob/master/website-guidelines.md[here] for guidelines)
+ .. release methodology and mechanics
+ .. social media accounts
+ .. community size and any existing sponsorship
+ .. who is currently known to be using the project? Are they using it in production and at what scale? (It may be hard to obtain accurate data for this, but any supporting evidence of usage is helpful)
+ .. project logo in svg format (see https://github.com/cncf/artwork#cncf-related-logos-and-artwork for guidelines)
+
+Also, all project maintainers that are part of the project proposal are required to take an inclusive open source community course provided by the Linux Foundation: https://training.linuxfoundation.org/training/inclusive-open-source-community-orientation-lfc102/
