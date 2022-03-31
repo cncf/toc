@@ -110,8 +110,8 @@
 [karmada](https://github.com/karmada-io/karmada)|TOC Vote|[6/9/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/karmada-io/karmada) | Sandbox
 [Inclavare Containers](https://github.com/alibaba/inclavare-containers)|TOC Vote|[6/17/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/alibaba/inclavare-containers) | Sandbox
 [SuperEdge](https://github.com/superedge/superedge)|TOC Vote|[6/20/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[9/14/2021](https://github.com/superedge/superedge) | Sandbox
-[Cilium](https://github.com/cilium/cilium)|TOC Vote|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6164)|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6288) | Incubating
-[Dapr](https://github.com/dapr/dapr)|TOC Vote|[10/14/2021](https://lists.cncf.io/g/cncf-toc/message/6293)|[11/03/2021](https://lists.cncf.io/g/cncf-toc/message/6338) | Incubating
+[Cilium](https://github.com/cilium/cilium)|Justin Cormack|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6164)|[10/13/2021](https://lists.cncf.io/g/cncf-toc/message/6288) | Incubating
+[Dapr](https://github.com/dapr/dapr)|Lei Zhang|[10/14/2021](https://lists.cncf.io/g/cncf-toc/message/6293)|[11/03/2021](https://lists.cncf.io/g/cncf-toc/message/6338) | Incubating
 [OpenELB](https://github.com/kubesphere/openelb)|TOC Vote|[7/7/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/kubesphere/openelb) | Sandbox
 [Open Cluster Management](https://github.com/open-cluster-management-io)|TOC Vote|[7/11/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/open-cluster-management-io) | Sandbox
 [VS Code Kubernetes Tools](https://github.com/Azure/vscode-kubernetes-tools)|TOC Vote|[10/25/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/Azure/vscode-kubernetes-tools)| Sandbox
@@ -121,6 +121,8 @@
 [kube-rs](https://github.com/kube-rs/kube-rs)|TOC Vote|[10/30/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/kube-rs/kube-rs)|Sandbox
 [Devfile](https://github.com/devfile/api)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[01/11/2022](https://github.com/devfile/api)|Sandbox
 [Knative](https://github.com/knative)|Davanum Srinivas|[11/30/2021](https://lists.cncf.io/g/cncf-toc/message/6625)|[3/2/2022](https://lists.cncf.io/g/cncf-toc/message/6734)| Incubating
+[Confidential Containers](https://github.com/devfile/api)|TOC Vote|[12/19/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/confidential-containers)|Sandbox
+[FabEdge](https://github.com/devfile/api)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/FabEdge/fabedge/)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
@@ -199,6 +201,7 @@
 [SPIRE/SPIFFE](https://github.com/spiffe/spire) | [08/17/2021](https://github.com/spiffe/spire/blob/main/doc/cure53-report.pdf) | [Announcement](https://www.cncf.io/blog/2021/08/17/open-sourcing-the-spiffe-spire-security-audit/) | CNCF | [Cure53](https://cure53.de)
 [Flux](https://github.com/fluxcd/flux2) | [11/10/2021](https://fluxcd.io/FluxFinalReport-v1.1.pdf) | [Announcement](http://fluxcd.io/blog/2021-11-10-flux-security-audit/) | CNCF | [ADA Logics](https://adalogics.com)
 [Argo](https://github.com/argoproj/argoproj) | [2/28/2022](https://github.com/argoproj/argoproj/blob/dd7cae43d81c5a11f21ff4ea0a4afadcae4799c7/docs/audit_fuzzer_adalogics_2022.pdf) | [Announcement](https://blog.argoproj.io/argo-security-automation-with-oss-fuzz-da38c1f86452) | CNCF | [ADA Logics](https://adalogics.com)
+[etcd](https://github.com/etcd-io/etcd) | [3/11/2022](https://github.com/etcd-io/etcd/blob/main/security/FUZZING_AUDIT_2022.PDF) | [Announcement](https://etcd.io/blog/2022/etcd-integrates-continuous-fuzzing/) | CNCF | [ADA Logics](https://adalogics.com)
 
 ## Archived Projects
 

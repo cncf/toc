@@ -6,6 +6,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 
 * Alex Chircop, StorageOS (alex.chircop@storageos.com)
 * Allen Sun, Alibaba (allensun.shl@alibaba-inc.com)
+* Amit Raj, InMobi (amitbmas90@gmail.com)
 * Andrés Vega, Hewlett-Packard Enterprise (andres.vega@hpe.com)
 * Andy Santosa, Ebay (asantosa@ebay.com)
 * Ara	Pulido, Datadog	(ara.pulido@datadoghq.com)
@@ -40,6 +41,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Gou	Rao, Portworx (gou@portworx.com)
 * Ian Crosby, Container Solutions (ian.crosby@container-solutions.com)
 * Jeyappragash JJ, Independent (pragashjj@gmail.com)
+* Jie Ding, Linkall (jie.ding@linkall.cloud)
 * Jinming Yue, Caicloud (yuejinming@caicloud.io)
 * Joe Beda, Heptio (joe@heptio.com)
 * John Hillegass, Capital One (john.hillegass@capitalone.com)

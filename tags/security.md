@@ -10,7 +10,7 @@ final review by Liz Rice, Joe Beda and Zhipeng Huang.
 
 **TOC Liaisons:** [Justin Cormack](https://github.com/justincormack)
 
-**TAG Chairs:** [Brandon Lum](https://github.com/lumjjb), [Aradhana Chetal](https://github.com/achetal01)
+**TAG Chairs:** [Brandon Lum](https://github.com/lumjjb), [Aradhana Chetal](https://github.com/achetal01), [Andrew Martin](https://github.com/sublimino)
 
 **Tech Leads:** 
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
