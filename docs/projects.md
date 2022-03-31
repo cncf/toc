@@ -121,8 +121,8 @@
 [kube-rs](https://github.com/kube-rs/kube-rs)|TOC Vote|[10/30/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/16/2021](https://github.com/kube-rs/kube-rs)|Sandbox
 [Devfile](https://github.com/devfile/api)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[01/11/2022](https://github.com/devfile/api)|Sandbox
 [Knative](https://github.com/knative)|Davanum Srinivas|[11/30/2021](https://lists.cncf.io/g/cncf-toc/message/6625)|[3/2/2022](https://lists.cncf.io/g/cncf-toc/message/6734)| Incubating
-[Confidential Containers](https://github.com/devfile/api)|TOC Vote|[12/19/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/confidential-containers)|Sandbox
-[FabEdge](https://github.com/devfile/api)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/FabEdge/fabedge/)|Sandbox
+[Confidential Containers](https://github.com/confidential-containers)|TOC Vote|[12/19/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/confidential-containers)|Sandbox
+[FabEdge](https://github.com/FabEdge/fabedge)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/FabEdge/fabedge/)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
