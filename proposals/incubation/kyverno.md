@@ -44,7 +44,7 @@ The Webhook also creates and updates `GenerateRequest` and `ReportChangeRequest`
 
 - Support multiple replicas for high availability and scalability
 - Improved observability via Prometheus Metrics over both the state and execution of cluster-applied Kyverno policies
-- Implement Kubernetes [Pod Security Standards definitions](https://kubernetes.io/docs/concepts/security/pod-security-standards/) with compatbility testing across versions
+- Implement Kubernetes [Pod Security Standards definitions](https://kubernetes.io/docs/concepts/security/pod-security-standards/) with compatibility testing across versions
 - Standalone Kyverno CLI to check for policy compliance in CI/CD pipelines
 - Support for unit tests via CLI for policy as code best practices
 - Introduce JMESPath support for complex processing
