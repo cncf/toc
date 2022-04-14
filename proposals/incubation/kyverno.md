@@ -13,6 +13,9 @@
 
 ## Background
 
+- [Incubation presentation to CNCF TAG Security - 13th April 2022](https://youtu.be/ko_T_fiA_1s?t=2297), [slides](https://docs.google.com/presentation/d/1CDgQKnGGb0Rck88CrqURYvNWIT3dUdx_/edit?usp=sharing&ouid=112353473651856718940&rtpof=true&sd=true)
+
+
 Kubernetes has a declarative configuration management system that allows users to specify the desired state of resources which Kubernetes controllers continuously reconcile with the current system state. Kyverno uses Kubernetes custom resource definitions for cluster-wide and namespaced policies, and the [Kubernetes Policy WG policy report](https://github.com/kubernetes-sigs/wg-policy-prototypes/tree/master/policy-report) for reporting policy results.
 
 Kyverno was accepted as a CNCF Sandbox project on [November 9th, 2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842).
