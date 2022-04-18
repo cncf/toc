@@ -89,9 +89,11 @@ They did find two vulnerabilities: one in the legacy API that was being deprecat
 
 ### Have a public list of Project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the Project website). For a specification, have a list of adopters for the implementation(s) of the spec.
 
-  
 
-[ADOPTERS.md](https://github.com/spiffe/spire/blob/main/ADOPTERS.md)
+For the SPIFFE specification, a list of “Who uses SPIFFE” SPIFFE is displayed in the project website spiffe.io . The list showcases the variety of projects that implement the spec to both issue and consume SPIFFE IDs.
+
+
+As for the SPIRE software implementation, the [ADOPTERS.md](https://github.com/spiffe/spire/blob/main/ADOPTERS.md) file in the GitHub repository for SPIRE, catalogs a number of implementors and end user organizations who have spoken publicly of their success stories with SPIRE.
 
 ## Incubation Details
 
