@@ -164,9 +164,10 @@
 | [Crossplane](https://www.crossplane.io) | 5/26/20        | 9/14/21             | [Incubating](https://github.com/cncf/toc/pull/620) | 
 | [OpenTelemetry](https://github.com/open-telemetry/community) | 5/7/19 | 8/26/2021 | [Incubating](https://github.com/cncf/toc/issues/614)| 
 | [Longhorn](https://https://longhorn.io/) | 5/26/20       | 11/4/21           | [Incubating](https://github.com/cncf/toc/pull/553)|
-| [LitmusChaos](https://litmuschaos.io) |  6/23/20        | 1/11/22           |[Incubating](https://github.com/cncf/toc/pull/569)|
-[OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|8/10/18| 2/2/2022 | [Incubating](https://github.com/cncf/toc/pull/615)|
-[ChaosMesh](https://github.com/pingcap/chaos-mesh)|7/14/20| 2/16/2022 | [Incubating](https://github.com/cncf/toc/pull/683)
+| [LitmusChaos](https://litmuschaos.io)   |  6/23/20        | 1/11/22           |[Incubating](https://github.com/cncf/toc/pull/569)|
+| [OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|8/10/18| 2/2/2022 | [Incubating](https://github.com/cncf/toc/pull/615)|
+| [ChaosMesh](https://github.com/pingcap/chaos-mesh)|7/14/20| 2/16/2022 | [Incubating](https://github.com/cncf/toc/pull/683) |
+| [KubeVirt](https://kubevirt.io)         |  9/9/19        | 4/19/22           |[Incubating](https://github.com/cncf/toc/pull/715)|
 
 ## Project Security Audits
 
