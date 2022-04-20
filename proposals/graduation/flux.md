@@ -178,3 +178,86 @@ We have several users from a wide range of companies who have confirmed that the
   - [Flexing the Flux - Multi-Cluster, Multi-Cloud - somewhat opinionated take](https://youtu.be/PTsDNC33SFo)
   - "When we started re-platforming our services, what we wanted was a simple tool that doesn't get in the way. So among many of the solutions we evaluated, we thought Flux was the simplest without introducing any new concepts or constructs beyond standard tooling. We're pretty happy with the simplicity of Flux and we'll be continuing to use it in our existing and upcoming Kubernetes deployments."
 - **Dan Wessels, solo.io: [GitOps and Cloud Native API Gateways](https://youtu.be/yzE-9qgyJGg)**
+
+## Graduation FAQ
+
+### Assessment of dependencies
+
+- The Flux project uses Go libraries which are well-maintained and well-spread throughout the ecosystem: `{sigs.,}k8s.io`, `helm.sh`, plus relevant SDKs from Google, Azure and AWS to interact with relevant cloud services.
+- For multi-arch container image builds, we have a dependency on [`tonistiigi/xx`](https://github.com/tonistiigi/xx). This project is stable (`>1.0.0`), and used by recognized projects and organizations ([[1]](https://github.com/search?q=tonistiigi%2Fxx+org%3Adocker&type=Code), [[2]](https://github.com/go-gost/gost/blob/28644802964ed66ea862d95f4026ecc0dee8a727/Dockerfile#L5), [[3]](https://github.com/search?q=org%3Amoby+tonistiigi%2Fxx&type=code)).
+- We realise that some of these APIs have not been marked GA just yet, e.g. Kubernetes core `controller-runtime` or `kustomize`, but a lot of Cloud Native projects rely heavily on them and we have good ties into these communities and figure out issues together when they arise.
+- One key design principle for Flux is to integrate as tightly with tooling APIs as possible and never to shell out to CLI tools. For our story around git you might want to refer to e.g. <https://fluxcd.io/blog/2022/03/flux-puts-the-git-into-gitops/>. This is why we use several Go libraries to interact with `age`, `sops`, `git`, `helm`, `ssl`, `gpg` and more. This is to provide the best user experience possible and to support the multitude of different ways of working (Git submodules, GPG signed commits, various SSH key formats, etc.)
+- We recommend reading <https://github.com/fluxcd/pkg/tree/main/runtime#goals> as our philosophy towards Kubernetes dependencies and standards.
+
+Understood problem areas:
+
+- The future of SOPS was uncertain for some time, but [Mozilla has confirmed they are committed to continue to maintain it](https://github.com/mozilla/sops/discussions/927#discussioncomment-2183834).
+  We are meeting with the SOPS team to see if we can help.
+- go-git upstream admits in <https://github.com/go-git/go-git#comparison-with-git> that it is
+  > challenging for *go-git* to implement all the features
+  
+  Till date, this has besides the lack of support for the v2 Git transport protocol (which was solved with libgit2, and is edge-case for many users other than Azure DevOps folks), not posed any issues.
+- We had to go great lengths to be able to integrate the most recent `libgit2` with all its dependencies into Flux, but we got the hang of it now, cf <https://github.com/fluxcd/golang-with-libgit2>
+  Several other companies and projects depend on [libgit2](https://libgit2.org/), including [AWS](https://github.com/aws/eks-distro-build-tooling), [GitHub](https://github.com/collections/projects-that-power-github), [Microsoft](https://github.com/search?q=org:microsoft+libgit2&type=code) and Git Kraken.
+
+*What If?*
+
+If we should find that e.g. Git libraries should not serve the needs of our users any more, or they go unmaintained, we could fall back to shelling out to `git` as we did in [Flux Legacy](https://github.com/fluxcd/flux) (v1).
+
+Our design is actually also taking this possibility into account, and we can easily introduce new implementations (be it shelling out, or some other Git package that suddenly shows up), by writing a new [GitProvider implementation](https://fluxcd.io/docs/components/source/gitrepositories/#git-implementation).
+
+Theoretically, but much less desirable: We could even fork out some of the projects and maintain them ourselves. Flux requires a small subset of features within Git and therefore, there are sufficient alternatives available.
+
+At present, the need to shell out to `git` does not seem very likely.
+
+### Review of Incubation TODO
+
+During the Incubation process of Flux, the [following TODO items](https://docs.google.com/document/d/1Z6yPN9-bWeVGpMrBxXJ3NBTBYZowJ3R93wKHEVmBJ1A/edit#heading=h.wt1gt34gj6vx) were brought up:
+
+Follow-up after move of /f/flagger (from /weaveworks):
+
+- [x] Move #flagger on Weaveworks Slack to CNCF home
+- [x] Replace Flagger logo (formerly Weaveworks logo with ‘flagger’ underneath).
+      Discussion here: <https://github.com/fluxcd/flux2/discussions/653>
+- [ ] Move <https://flagger.app> under CNCF (currently owned by Stefan Prodan)
+      Status: Tracked here: <https://github.com/fluxcd/community/issues/201>
+
+Come up with comprehensive plan re: docs and urls
+
+- [x] move Flux v2 docs from toolkit.f.i to f.i/docs
+- [x] Move Flux v1 docs under f.i/docs
+- [ ] Moved Flagger docs under f.i/docs
+      We are tracking the work in <https://github.com/fluxcd/website/issues/894>.
+
+### Flux contributor ladder
+
+We are continuing to put a lot of thought and work into providing a great contributor experience and making it easy for folks to get involved.
+
+Some of the steps we undertook so far:
+
+- Clearly defines roles in our community: <https://github.com/fluxcd/community/blob/main/community-roles.md>
+- Run regular meetings ([since Nov 2018](https://www.youtube.com/playlist?list=PLwjBY07V76p5mWNgdINjIiuUiItIeLhIN))
+  We are very pleased to have folks from various organisations join these meetings to discuss features they need and would like to see integrated, one particular example is the integration of OCI support, which is of big interest to many.
+- Run the weekly [Flux Bug Scrub event](https://www.youtube.com/playlist?list=PLwjBY07V76p6J6z30cBRqS_N0Ka6NhEsY) for 9 months now, which is essentially one-to-one mentoring by a Flux maintainer.
+- Broadcast individual ways to get involved: <https://fluxcd.io/blog/2022/04/contributing-to-flux/>.
+- Particate in the upcoming Flux Bug Bash pre-KubeCon event.
+- [Monthly updates](https://fluxcd.io/tags/monthly-update/) published on all channels, which celebrate the work by everyone and also introduce new maintainers and their background.
+
+### Flux Security Process
+
+Instructions for how to report Flux vulnerabilities confidentially and responsibly can be found prominently on our website <https://fluxcd.io/security/> which is the [SECURITY.md document](https://github.com/fluxcd/.github/blob/main/SECURITY.md) that all of the `fluxcd` repositories share.
+
+That's also the document where the Security Team (and their GPG keys are shared). Past audits and advisories are listed there as well.
+
+Internally, the security team keeps track of the reported vulnerabilities and their status, making sure each reported item is investigated, and if confirmed, fixed. The process also accounts for Coordinated Vulnerability Disclosures as well as Public Security Disclosures.
+
+## Follow-up after meeting with TOC
+
+- [x] <https://github.com/fluxcd/community/pull/199>: fix small inconsistencies in our governance documentation.
+- [x] Filed <https://github.com/fluxcd/community/issues/201> to move <https://flagger.app> domain.
+  This will likely take a little longer.
+- [x] Filed <https://github.com/fluxcd/website/issues/894> to move the Flagger docs under <https://fluxcd.io>.
+      This will likely take a little longer.
+- [ ] <https://github.com/fluxcd/community/pull/200>: provide examples for decision making questions, e.g. Flagger moving under Flux organisation, applying for membership, RFC process.
+- [ ] <https://github.com/fluxcd/pkg/issues/263>: Update related packages in `fluxcd/pkg`.
+- [ ] Extend security team: <https://github.com/fluxcd/.github/pull/15>.
