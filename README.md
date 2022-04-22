@@ -65,10 +65,17 @@ Here is a [Google calendar for all public CNCF events](https://goo.gl/eyutah). T
 
 ## Mailing List
 
-cncf-toc@lists.cncf.io: https://lists.cncf.io/g/cncf-toc
+Public mailing list for the CNCF TOC: cncf-toc@lists.cncf.io
 
-To join: https://lists.cncf.io/mailman/listinfo/cncf-toc
+The public mailing archive: https://lists.cncf.io/g/cncf-toc
 
+Details to join this public mailing list: https://lists.cncf.io/mailman/listinfo/cncf-toc
+
+In case you need to reach the CNCF TOC on sensitive issues, please email us at: cncf-private-toc@lists.cncf.io
+
+## Slack
+
+Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we are reachable at [#toc](https://cloud-native.slack.com/archives/C0MP69YF4).  
 
 ## Voting
 
