@@ -69,7 +69,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * Projects get accepted to incubation via a 2/3 supermajority vote of the TOC.
    * If the vote is not conclusive after 6 weeks, TOC chair may extend vote, or conclude that silence = abstain
 
-=== Graduation process
+### Graduation process
 
 . *Submit Graduation Proposal Template*
    * Project fills out and submits the [graduation proposal template](graduation-proposal-template.md) in a pull request in the [cncf/toc GitHub repo](https://github.com/cncf/toc).
@@ -87,12 +87,10 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * TOC members assess whether project meets the [Graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#graduation-stage)
    * Projects must have a 2/3 supermajority vote of the TOC to graduate
 
-=== Notes
+### Notes
 
 * TOC always has final discretion
 * TOC doesn’t have to accept TAG recommendation
 * Outcome may be “no” simply because sponsors don’t step forward within the timeframe
 * Outcome from TOC Triage or TAG recommendation could be that we want to wait for some reason e.g. project backlogs; batching similar projects together. We should give the project an explanation and set time expectations in these cases.
 * All “no” outcomes and other exceptions are discussed by the TOC, and then with project and TAG representatives. We will try to give feedback but it may simply be a lack of conviction in the project.
-
-
