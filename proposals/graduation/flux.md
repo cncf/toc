@@ -251,6 +251,12 @@ That's also the document where the Security Team (and their GPG keys are shared)
 
 Internally, the security team keeps track of the reported vulnerabilities and their status, making sure each reported item is investigated, and if confirmed, fixed. The process also accounts for Coordinated Vulnerability Disclosures as well as Public Security Disclosures.
 
+### Flagger as part of Flux organisation
+
+Flagger was designed to work with Flux and it's a natural fit for the GitOps toolkit. This is already noted briefly in this PR under ["Why is the Project ready to Graduate?"](#why-is-the-project-ready-to-graduate) In short, the plan is to add GitOps Toolkit compatibility to Flagger. Here are some more links. See the top section under [Flagger's Roadmap](https://github.com/fluxcd/flagger/blob/main/README.md#roadmap) in its README, and was added by [this PR](https://github.com/fluxcd/flagger/pull/714) in Oct 2020.
+
+Flagger is intended to remain a sub-project of Flux. There are 133 contributors, 60 with more than one commit, but @stefanprodan has made 1300 commits. The closest 2nd is Takeshi Yoneda, who has made 50 commits, and is the only co-maintainer. Part of the reason for this move is that after Flagger is refactored on top of flux2 controllers, a wider group of existing maintainers can help support it in addition to Stefan.
+
 ## Follow-up after meeting with TOC
 
 - [x] <https://github.com/fluxcd/community/pull/199>: fix small inconsistencies in our governance documentation.
@@ -258,6 +264,9 @@ Internally, the security team keeps track of the reported vulnerabilities and th
   This will likely take a little longer.
 - [x] Filed <https://github.com/fluxcd/website/issues/894> to move the Flagger docs under <https://fluxcd.io>.
       This will likely take a little longer.
-- [ ] <https://github.com/fluxcd/community/pull/200>: provide examples for decision making questions, e.g. Flagger moving under Flux organisation, applying for membership, RFC process.
+- [x] <https://github.com/fluxcd/community/pull/200>: provide examples for decision making questions, e.g. Flagger moving under Flux organisation, applying for membership, RFC process.
 - [ ] <https://github.com/fluxcd/pkg/issues/263>: Update related packages in `fluxcd/pkg`.
 - [ ] Extend security team: <https://github.com/fluxcd/.github/pull/15>.
+- [ ] Transform Oversight Committee into transparent Governance part that matches day-to-day practices and has members voted in.  
+      Status: analysis done, then discussed within Flux maintainers group, now [in discussion with WG Governance](https://cloud-native.slack.com/archives/CT6CWS1JN/p1650982739822829).
+- [ ] Start process with TAG Security to review post-GA multi-tenancy plans: <https://github.com/cncf/tag-security/issues/896>
