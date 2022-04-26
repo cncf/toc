@@ -170,7 +170,10 @@
 | [LitmusChaos](https://litmuschaos.io)   |  6/23/20        | 1/11/22           |[Incubating](https://github.com/cncf/toc/pull/569)|
 | [OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|8/10/18| 2/2/2022 | [Incubating](https://github.com/cncf/toc/pull/615)|
 | [ChaosMesh](https://github.com/pingcap/chaos-mesh)|7/14/20| 2/16/2022 | [Incubating](https://github.com/cncf/toc/pull/683) |
-| [KubeVirt](https://kubevirt.io)         |  9/9/19        | 4/19/22           |[Incubating](https://github.com/cncf/toc/pull/715)|
+| [in-toto](https://github.com/in-toto/in-toto) |   8/21/19|   3/10/2022 |    [Incubating](https://github.com/cncf/toc/pull/393)|
+| [Backstage](https://github.com/spotify/backstage) |9/8/2020| 3/15/2022 |  [Incubating](https://github.com/cncf/toc/pull/717)
+| [Volcano](https://volcano.sh)             | 4/10/2020 |    4/7/2022|  [Incubating](https://github.com/cncf/toc/pull/712)
+| [KubeVirt](https://kubevirt.io)         |  9/9/2019        | 4/19/2022           |[Incubating](https://github.com/cncf/toc/pull/715)|
 
 ## Project Security Audits
 
