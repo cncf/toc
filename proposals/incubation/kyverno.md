@@ -133,7 +133,7 @@ We are using the following metrics as key indicators of community health:
 - [Code Committers](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20committers&var-table=scommunity_health&var-pref=&var-met1=chealthcommit&var-met2=&from=now-1y&to=now): 594% growth from 18 -> 107.
 - [Code Commenters](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20commenters&var-table=scommunity_health&var-pref=&var-met1=chealthcomment&var-met2=&from=now-1y&to=now): 573% growth from 22 -> 126.
 
-Slack has grown to 897 members since July 2019, and Twitter account has added 745 followers since Sep 2020.
+Slack has grown to 897 members since July 2019, and Twitter account has added 977 followers since Sep 2020.
 
 ### References / Highlights
 
