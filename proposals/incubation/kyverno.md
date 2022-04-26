@@ -128,10 +128,10 @@ The Kyverno DevStats dashboards can be found [here](https://kyverno.devstats.cnc
 
 We are using the following metrics as key indicators of community health:
 
-- [Stargazers](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Stargazers&var-table=swatchers&var-pref=all&var-met1=watch&var-met2=watch&from=now-1y&to=now): 372% growth from 524 -> 1949.
-- [Issue Creators](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Issue%20creators&var-table=scommunity_health&var-pref=&var-met1=chealthissue&var-met2=&from=now-1y&to=now): 602% growth from 45 -> 271.
-- [Code Committers](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20committers&var-table=scommunity_health&var-pref=&var-met1=chealthcommit&var-met2=&from=now-1y&to=now): 594% growth from 18 -> 107.
-- [Code Commenters](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20commenters&var-table=scommunity_health&var-pref=&var-met1=chealthcomment&var-met2=&from=now-1y&to=now): 573% growth from 22 -> 126.
+- [Stargazers](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Stargazers&var-table=swatchers&var-pref=all&var-met1=watch&var-met2=watch&from=now-1y&to=now): 484% growth from 524 -> 2537.
+- [Issue Creators](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Issue%20creators&var-table=scommunity_health&var-pref=&var-met1=chealthissue&var-met2=&from=now-1y&to=now): 791% growth from 45 -> 356.
+- [Code Committers](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20committers&var-table=scommunity_health&var-pref=&var-met1=chealthcommit&var-met2=&from=now-1y&to=now): 856% growth from 18 -> 154.
+- [Code Commenters](https://kyverno.devstats.cncf.io/d/81/community-health?orgId=1&var-repo_name=All&var-metric=Code%20commenters&var-table=scommunity_health&var-pref=&var-met1=chealthcomment&var-met2=&from=now-1y&to=now): 782% growth from 22 -> 172.
 
 Slack has grown to 897 members since July 2019, and Twitter account has added 745 followers since Sep 2020.
 
