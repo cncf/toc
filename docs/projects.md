@@ -123,6 +123,9 @@
 [Knative](https://github.com/knative)|Davanum Srinivas|[11/30/2021](https://lists.cncf.io/g/cncf-toc/message/6625)|[3/2/2022](https://lists.cncf.io/g/cncf-toc/message/6734)| Incubating
 [Confidential Containers](https://github.com/confidential-containers)|TOC Vote|[12/19/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/confidential-containers)|Sandbox
 [FabEdge](https://github.com/FabEdge/fabedge)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/FabEdge/fabedge/)|Sandbox
+[OpenFunction](https://github.com/OpenFunction)|TOC Vote|[04/26/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/OpenFunction)|Sandbox
+[Teller](https://github.com/SpectralOps/teller)|TOC Vote|[11/18/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[04/26/2022](https://github.com/SpectralOps/teller)|Sandbox
+[sealer](https://github.com/alibaba/sealer)|TOC Vote|[11/25/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[04/26/2022](https://github.com/alibaba/sealer)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
