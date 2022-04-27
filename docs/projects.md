@@ -123,6 +123,9 @@
 [Knative](https://github.com/knative)|Davanum Srinivas|[11/30/2021](https://lists.cncf.io/g/cncf-toc/message/6625)|[3/2/2022](https://lists.cncf.io/g/cncf-toc/message/6734)| Incubating
 [Confidential Containers](https://github.com/confidential-containers)|TOC Vote|[12/19/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/confidential-containers)|Sandbox
 [FabEdge](https://github.com/FabEdge/fabedge)|TOC Vote|[12/28/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[03/08/2022](https://github.com/FabEdge/fabedge/)|Sandbox
+[OpenFunction](https://github.com/OpenFunction)|TOC Vote|[04/26/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/OpenFunction)|Sandbox
+[Teller](https://github.com/SpectralOps/teller)|TOC Vote|[11/18/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[04/26/2022](https://github.com/SpectralOps/teller)|Sandbox
+[sealer](https://github.com/alibaba/sealer)|TOC Vote|[11/25/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[04/26/2022](https://github.com/alibaba/sealer)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
@@ -167,7 +170,10 @@
 | [LitmusChaos](https://litmuschaos.io)   |  6/23/20        | 1/11/22           |[Incubating](https://github.com/cncf/toc/pull/569)|
 | [OpenMetrics](https://github.com/OpenObservability/OpenMetrics)|8/10/18| 2/2/2022 | [Incubating](https://github.com/cncf/toc/pull/615)|
 | [ChaosMesh](https://github.com/pingcap/chaos-mesh)|7/14/20| 2/16/2022 | [Incubating](https://github.com/cncf/toc/pull/683) |
-| [KubeVirt](https://kubevirt.io)         |  9/9/19        | 4/19/22           |[Incubating](https://github.com/cncf/toc/pull/715)|
+| [in-toto](https://github.com/in-toto/in-toto) |   8/21/19|   3/10/2022 |    [Incubating](https://github.com/cncf/toc/pull/393)|
+| [Backstage](https://github.com/spotify/backstage) |9/8/2020| 3/15/2022 |  [Incubating](https://github.com/cncf/toc/pull/717)
+| [Volcano](https://volcano.sh)             | 4/10/2020 |    4/7/2022|  [Incubating](https://github.com/cncf/toc/pull/712)
+| [KubeVirt](https://kubevirt.io)         |  9/9/2019        | 4/19/2022           |[Incubating](https://github.com/cncf/toc/pull/715)|
 
 ## Project Security Audits
 
