@@ -266,7 +266,7 @@ Flagger is intended to remain a sub-project of Flux. There are 133 contributors,
       This will likely take a little longer.
 - [x] <https://github.com/fluxcd/community/pull/200>: provide examples for decision making questions, e.g. Flagger moving under Flux organisation, applying for membership, RFC process.
 - [ ] <https://github.com/fluxcd/pkg/issues/263>: Update related packages in `fluxcd/pkg`.
-- [ ] Extend security team: <https://github.com/fluxcd/.github/pull/15>.
+- [x] Extend security team: <https://github.com/fluxcd/.github/pull/15>.
 - [ ] Transform Oversight Committee into transparent Governance part that matches day-to-day practices and has members voted in.  
-      Status: analysis done, then discussed within Flux maintainers group, now [in discussion with WG Governance](https://cloud-native.slack.com/archives/CT6CWS1JN/p1650982739822829).
+      Status: research done, discussed with Flux maintainers, factored [WG Governance feedback into Draft PR](https://github.com/fluxcd/community/pull/203).
 - [ ] Start process with TAG Security to review post-GA multi-tenancy plans: <https://github.com/cncf/tag-security/issues/896>
