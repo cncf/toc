@@ -260,10 +260,10 @@ Flagger is intended to remain a sub-project of Flux. There are 133 contributors,
 ## Follow-up after meeting with TOC
 
 - [x] <https://github.com/fluxcd/community/pull/199>: fix small inconsistencies in our governance documentation.
-- [x] Filed <https://github.com/fluxcd/community/issues/201> to move <https://flagger.app> domain.
-  This will likely take a little longer.
-- [x] Filed <https://github.com/fluxcd/website/issues/894> to move the Flagger docs under <https://fluxcd.io>.
-      This will likely take a little longer.
+- [x] Filed <https://github.com/fluxcd/community/issues/201> to move <https://flagger.app> domain.  
+      Status: With CNCF ServiceDesk.
+- [x] Moved Flagger docs to <https://fluxcd.io/flagger> (<https://github.com/fluxcd/website/pull/903>).  
+      Status: After some time we will turn `flagger.app` [into redirects](https://github.com/fluxcd/flagger/issues/1182).
 - [x] <https://github.com/fluxcd/community/pull/200>: provide examples for decision making questions, e.g. Flagger moving under Flux organisation, applying for membership, RFC process.
 - [ ] <https://github.com/fluxcd/pkg/issues/263>: Update related packages in `fluxcd/pkg`.
 - [x] Extend security team: <https://github.com/fluxcd/.github/pull/15>.
