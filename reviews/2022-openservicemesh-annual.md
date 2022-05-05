@@ -32,7 +32,7 @@ The [Service Mesh Interface](https://github.com/servicemeshinterface) GitHub org
 
 - *How many maintainers do you have, and which organisations are they from? (Feel free to link to an existing MAINTAINERS file if appropriate.)*
   - SMI currently has [12 core maintainers](https://github.com/servicemeshinterface/smi-spec/blob/main/CODEOWNERS)
-    - Thomas Rampelberg, Buoyant
+    - Thomas Rampelberg, Airbnb
     - Lachlan Evenson, Microsoft
     - Lee Calcote, Layer5
     - Nic Jackson, HashiCorp
@@ -42,8 +42,8 @@ The [Service Mesh Interface](https://github.com/servicemeshinterface) GitHub org
     - Idit Levine, Solo.io
     - Michael Hausenblas, Amazon Web Services
     - Tarun Pothulapati, Buoyant
-  - Keith Mattix, Microsoft
-  - Jared Byers, NGINX Inc.
+    - Keith Mattix, Microsoft
+    - Jared Byers, NGINX Inc.
 
 - *What do you know about adoption, and how has this changed since your last review / since you joined Sandbox? If you can list companies that are end users of your project, please do so. (Feel free to link to an existing ADOPTERS file if appropriate.)*
 
