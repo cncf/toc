@@ -22,5 +22,6 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Saad Ali (2/4/2020-2/4/2022)
 * Sheng Liang (2/4/2020-2/4/2022)
 * Alena Prokharchyk (3/18/2020-3/18/2022)
+* Cornelia Davis (2/1/2021-5/9/2022)
 
 We thank these members for their service to the CNCF community.
