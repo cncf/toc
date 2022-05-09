@@ -3,7 +3,7 @@
 *Approved by TOC: 2018-06-11*
 
 [العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian)
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -160,3 +160,13 @@ Bu yöntemler dirençli, yönetilebilir ve gözlemlenebilir gevşek bağlı sist
 Тези технологии позволяват отделните недиректно свързани системи да са издържливи, управляриуеми и наблюдаеми. Комбинирано с изпипана автоматизация те позволяват на инженерите да извършват големи промени, често и предвидимо с минилани пречки.
 
 Фондацията за Cloud Native Computing цели да постигне приемственост на този подход като насърчава и подкрепя еко-система от софтуер с отворен код и проекти-необвързани неразработвани от кокретна фирма. Ние позволяваме на тези най-съвременни модели да бъдат достъпни от всеки.
+
+## ไทย:
+เทคโนโลยีคลาวด์-เนทีฟช่วยทำให้องค์กรต่างๆสามารถสร้างและรันแอปพลิเคชั่นที่สเกลปรับขนาดได้ (scalable) ในสภาพแวดล้อมที่ทันสมัยและมีการเปลี่ยนแปลงอยู่เสมอ เช่น คลาวด์แบบพับลิค (Public) แบบไพรเวท (Private) และแบบไฮบริด (Hybrid) เป็นต้น
+โดยมี คอนเทนเนอร์ (Container), เซอร์วิสเมช (Service Mesh), ไมโครเซอร์วิส (microservices), อิมมิวเทเบิลอินฟราสตรัคเจอร์ (immutable infrastructure) และ ดีแคลเรทีพเอพีไอ (declarative APIs) เป็นตัวอย่างของแนวทางนี้
+
+ซึ่งการใช้เทคนิคเหล่านี้จะทำให้ระบบสามารถเชื่อมต่อกันอย่างหลวมๆมีความยืดหยุ่นสูง เสียหายยาก จัดการได้ง่าย ดูแลได้ง่าย
+และเมื่อมารวมกับระบบอัตโนมัติที่แข็งแกร่งด้วยนั้น จะช่วยให้วิศวกรสามารถทำการเปลี่ยนแปลงกับระบบที่ส่งผลกระทบสูงได้บ่อยมากขึ้น ใช้แรงงานน้อยลง และคาดการณ์ได้
+
+มูลนิธิ Cloud Native Computing พยายามที่จะผลักดันเพื่อนำกระบวนทัศน์หรือแนวคิดนี้ไปใช้โดยการส่งเสริมและรักษาระบบนิเวศของโอเพ่นซอร์สให้ยั่งยืน
+โครงการนี้เป็นโครงการที่เป็นกลางไม่ยึดกับเวนเดอร์หรือผู้ขายต่างๆ โดยเรานำรูปแบบที่ล้ำสมัยให้เป็นประชาธิปไตยเพื่อสร้างนวัตกรรมที่ทุกคนเข้าถึงได้
