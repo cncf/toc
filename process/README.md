@@ -46,7 +46,7 @@ Projects being submitted to the CNCF at the sandbox level are intended to be the
 
 Sandbox projects should be early-stage projects that the CNCF TOC believes warrant experimentation.   
 
-* New projects that are designed to extend one or more CNCF projects with functionality or interoperability libraries. In the case of Kubernetes, the Sandbox is intended as a home for projects that would previously have started in the Kubernetes Incubator.
+* New projects that are designed to extend one or more CNCF projects with functionality or interoperability libraries.
 * Independent projects that fit the CNCF mission and provide potential for a novel approach to existing functional areas (or are an attempt to meet an unfulfilled need)
 * Projects commissioned or sanctioned by the CNCF, including initial code for CNCF WG collaborations, and "experimental" projects
 * Any project that realistically intends to join CNCF Incubation in future and wishes to lay the foundations for that

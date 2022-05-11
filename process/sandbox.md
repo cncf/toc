@@ -18,7 +18,7 @@ Sandbox projects should be early-stage projects that the CNCF TOC believes warra
 
 When we say that Sandbox projects are "early stage" this covers the following examples:
 
-1. New projects that are designed to extend one or more CNCF projects with functionality or interoperability libraries. In the case of Kubernetes, the Sandbox is intended as a home for projects that would previously have [started in the Kubernetes Incubator](https://github.com/kubernetes/community/blob/master/incubator.md).
+1. New projects that are designed to extend one or more CNCF projects with functionality or interoperability libraries.
 2. Independent projects that fit the CNCF mission and provide potential for a novel approach to existing functional areas (or are an attempt to meet an unfulfilled need)
 3. Projects commissioned or sanctioned by the CNCF, including initial code for CNCF WG collaborations, and "experimental" projects
 4. Any project that realistically intends to join CNCF Incubation in future and wishes to lay the foundations for that
