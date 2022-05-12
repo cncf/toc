@@ -219,8 +219,8 @@ Follow-up after move of /f/flagger (from /weaveworks):
 - [x] Move #flagger on Weaveworks Slack to CNCF home
 - [x] Replace Flagger logo (formerly Weaveworks logo with ‘flagger’ underneath).
       Discussion here: <https://github.com/fluxcd/flux2/discussions/653>
-- [ ] Move <https://flagger.app> under CNCF (currently owned by Stefan Prodan)
-      Status: Tracked here: <https://github.com/fluxcd/community/issues/201>
+- [x] Move <https://flagger.app> under CNCF / LinuxFoundation  
+      Status: Done: <https://github.com/fluxcd/community/issues/201>
 
 Come up with comprehensive plan re: docs and urls
 
@@ -240,7 +240,6 @@ Some of the steps we undertook so far:
   We are very pleased to have folks from various organisations join these meetings to discuss features they need and would like to see integrated, one particular example is the integration of OCI support, which is of big interest to many.
 - Run the weekly [Flux Bug Scrub event](https://www.youtube.com/playlist?list=PLwjBY07V76p6J6z30cBRqS_N0Ka6NhEsY) for 9 months now, which is essentially one-to-one mentoring by a Flux maintainer.
 - Broadcast individual ways to get involved: <https://fluxcd.io/blog/2022/04/contributing-to-flux/>.
-- Participate in the upcoming Flux Bug Bash pre-KubeCon event.
 - [Monthly updates](https://fluxcd.io/tags/monthly-update/) published on all channels, which celebrate the work by everyone and also introduce new maintainers and their background.
 
 ### Flux Security Process
@@ -260,8 +259,7 @@ Flagger is intended to remain a sub-project of Flux. There are 133 contributors,
 ## Follow-up after meeting with TOC
 
 - [x] <https://github.com/fluxcd/community/pull/199>: fix small inconsistencies in our governance documentation.
-- [x] Filed <https://github.com/fluxcd/community/issues/201> to move <https://flagger.app> domain.  
-      Status: With LinuxFoundation IT.
+- [x] <https://github.com/fluxcd/community/issues/201>: moved <https://flagger.app> domain to LinuxFoundation IT.
 - [x] Moved Flagger docs to <https://fluxcd.io/flagger> (<https://github.com/fluxcd/website/pull/903>).  
       Status: After some time we will turn `flagger.app` [into redirects](https://github.com/fluxcd/flagger/issues/1182).
 - [x] <https://github.com/fluxcd/community/pull/200>: provide examples for decision making questions, e.g. Flagger moving under Flux organisation, applying for membership, RFC process.
