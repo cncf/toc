@@ -59,7 +59,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * TOC Incubation Sponsor can ask project maintainers to complete the DD template. (In practice project maintainers sometimes choose to make a start on this in advance of the official DD process, or even in advance of the initial proposal as it may help them ensure they meet all the requirements.) The TOC Incubation Sponsor should carefully review and ask questions about the DD as prepared by the project maintainers, and may also call on TAGs to help with this. 
    * CNCF staff do governance and legal DD.
    * During DD some conversations may be held in private (e.g. user interviews where the user wishes to remain anonymous) and are documented using discretion.
-   * TOC Incubation Sponsor confirms that project meets the [Incubation requirements](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubation-stage).
+   * TOC Incubation Sponsor confirms that project meets the [Incubation requirements](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage).
    * TOC Incubation Sponsor determines when DD is “done”. DD documentation should then be on GitHub, open to public comment on record.
 . *Due Diligence review* _2-6 weeks_
    * TOC Incubation Sponsor announces on the TOC mailing list when the DD documents are available for public review and comment, which can take place on GitHub, the TOC mailing list, or at TOC public meetings. 
