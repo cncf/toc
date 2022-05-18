@@ -226,8 +226,8 @@ Come up with comprehensive plan re: docs and urls
 
 - [x] move Flux v2 docs from toolkit.f.i to f.i/docs
 - [x] Move Flux v1 docs under f.i/docs
-- [ ] Move Flagger docs under f.i/docs
-      We are tracking the work in the follow-up items of <https://github.com/fluxcd/website/pull/903> (Almost done)
+- [x] Move Flagger docs under f.i/docs  
+      Status: Website has moved. Last step: replace old page with redirects. Tracked here <https://github.com/fluxcd/flagger/issues/1182>
 
 ### Flux contributor ladder
 
@@ -265,6 +265,6 @@ Flagger is intended to remain a sub-project of Flux. There are 133 contributors,
 - [x] <https://github.com/fluxcd/community/pull/200>: provide examples for decision making questions, e.g. Flagger moving under Flux organisation, applying for membership, RFC process.
 - [ ] <https://github.com/fluxcd/pkg/issues/263>: Update related packages in `fluxcd/pkg`.
 - [x] Extend security team: <https://github.com/fluxcd/.github/pull/15>.
-- [ ] Transform Oversight Committee into transparent Governance part that matches day-to-day practices and has members voted in.  
-      Status: research done, discussed with Flux maintainers, factored [WG Governance feedback into Draft PR](https://github.com/fluxcd/community/pull/203).
-- [ ] Start process with TAG Security to review post-GA multi-tenancy plans: <https://github.com/cncf/tag-security/issues/896>
+- [x] Transform Oversight Committee into transparent Governance part that matches day-to-day practices and has members voted in.  
+      Status: [Governance PR](https://github.com/fluxcd/community/pull/203) merged, [follow-up items](https://github.com/fluxcd/community/issues/207) resolved.
+- [x] Start process with TAG Security to review post-GA multi-tenancy plans: <https://github.com/cncf/tag-security/issues/896>
