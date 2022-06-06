@@ -11,7 +11,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 
 * **Erin Boyd** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [GB-appointed]
 * **Dave Zolotusky** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [EndUser-appointed]
-* **Cornelia Davis** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [GB-appointed]
+* **TBD** (term: remainder of 2 years - start date: 7/1/2022 - 2/1/2023) [GB-appointed]
 * **Lei Zhang** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [GB-appointed]
 * **Davanum Srinivas** (term: 2 years - start date: 3/18/2021 - 3/18/2023) [TOC-appointed][TOC Chair]
 * **Justin Cormack** (term: 2 years - start date 2/4/2022 - 2/4/2024) [Maintainer-appointed]
@@ -65,10 +65,17 @@ Here is a [Google calendar for all public CNCF events](https://goo.gl/eyutah). T
 
 ## Mailing List
 
-cncf-toc@lists.cncf.io: https://lists.cncf.io/g/cncf-toc
+Public mailing list for the CNCF TOC: cncf-toc@lists.cncf.io
 
-To join: https://lists.cncf.io/mailman/listinfo/cncf-toc
+The public mailing archive: https://lists.cncf.io/g/cncf-toc
 
+Details to join this public mailing list: https://lists.cncf.io/mailman/listinfo/cncf-toc
+
+In case you need to reach the CNCF TOC on sensitive issues, please email us at: cncf-private-toc@lists.cncf.io
+
+## Slack
+
+Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we are reachable at [#toc](https://cloud-native.slack.com/archives/C0MP69YF4).  
 
 ## Voting
 

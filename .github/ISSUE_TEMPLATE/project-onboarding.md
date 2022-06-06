@@ -3,7 +3,7 @@ name: Project Onboarding - Sandbox Projects
 about: project onboarding
 title: "[SANDBOX PROJECT ONBOARDING] project"
 labels: project onboarding, sandbox
-assignees: caniszczyk, amye, idvoretskyi
+assignees: caniszczyk, amye, idvoretskyi, jeefy
 ---
 
 Welcome to CNCF Project Onboarding!
@@ -35,7 +35,7 @@ Things that CNCF will need from the project:
 - [ ] GitHub: ensure [DCO](https://github.com/apps/dco) or [CLA](https://github.com/cncf/cla) are enabled for all GitHub repositories of the project
 - [ ] GitHub: ensure that hat the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) (or your adopted version of it) are explicitly referenced at the project's README on GitHub
 - [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/website-guidelines.md) followed (if your project doesn't have a dedicated website, please adopt those guidelines to the README file of your project on GitHub).
-- [ ] Website: Analytics transferred to amye@linuxfoundation.org
+- [ ] Website: Analytics transferred to projects@cncf.io
 - [ ] CII: Start on a CII best practices badge <https://bestpractices.coreinfrastructure.org/en>
 
 Things that the CNCF will do or help the project to do:

@@ -51,9 +51,8 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Ricardo Aravena](https://github.com/raravena80)
 
 ### TAG Contributor Strategy
-* [Paris Pittman](https://github.com/parispittman)
 * [Josh Berkus](https://github.com/jberkus)
-* [Stephen Augustus](https://github.com/justaugustus)
+* [Dawn Foster](https://github.com/geekygirldawn)
 
 ### TAG Observability
 * [Matt Young](https://github.com/halcyondude)
@@ -72,3 +71,5 @@ a pull request with document referencing the roles and charter, updating the lis
 | TAG Security | [Dan Shaw](https://github.com/dshaw) |
 | TAG Storage | [Erin Boyd](https://github.com/erinboyd) | 
 | TAG Security | [Emily Fox](https://github.com/TheFoxAtWork) |
+| TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman) |
+| TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus)

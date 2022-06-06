@@ -34,7 +34,7 @@ validity are ideally resolved, helps to foster this consensus.
 ### Where to start
 
 * Make sure you are clear on the [TOC Principles](https://github.com/cncf/toc/blob/main/PRINCIPLES.md),
-  the [project proposal process](https://github.com/cncf/toc/blob/main/process/project_proposals.adoc),
+  the [project proposal process](https://github.com/cncf/toc/blob/main/process/project_proposals.md),
   the [graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc),
   and the [desired cloud native properties](https://www.cncf.io/about/charter/).  The project sponsor (a member
   of the TOC) should have assisted in crafting the proposal to explain why it is a good fit for the CNCF. If anything is

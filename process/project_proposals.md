@@ -64,13 +64,13 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * TOC Incubation Sponsor is a point of contact for the project throughout the process.
    * TOC members may not sponsor a project for which they have a clear conflict of interest (for example, originating primarily from their organization). This doesn't mean that they can't have any involvement at all - for example, contributing pull requests, or being an end user of that project, can signal a healthy interest in and knowledge of a worthwhile project. 
 . *Due Diligence* _2-3 months_
-   * TOC Incubation Sponsor drives due diligence (see the [temaplte](https://github.com/cncf/toc/blob/main/process/dd-review-template.md) and [guidelines](https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md).
+   * TOC Incubation Sponsor drives due diligence (see the [template](https://github.com/cncf/toc/blob/main/process/dd-review-template.md) and [guidelines](https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md)).
    * TOC Incubation Sponsor can delegate DD work to CNCF TAGs and/or other TOC members.
    * Typically DD includes a presentation to a CNCF TAG, as identified by the TOC Sponsor. This step may be omitted if the TOC Sponsor feels there are readily-available and suitable presentations on video - for example, because the TAG has already recently held a presentation. (We do not want unnecessary levels of process or bureaucracy to delay a widely-known and adopted project from joining the CNCF). TOC Sponsor has discretion to arrange alternatives (for example, arranging a Q&A session at a TOC meeting) to ensure there is ample opportunity to ask questions.
    * TOC Incubation Sponsor can ask project maintainers to complete the DD template. (In practice project maintainers sometimes choose to make a start on this in advance of the official DD process, or even in advance of the initial proposal as it may help them ensure they meet all the requirements.) The TOC Incubation Sponsor should carefully review and ask questions about the DD as prepared by the project maintainers, and may also call on TAGs to help with this. 
    * CNCF staff do governance and legal DD.
    * During DD some conversations may be held in private (e.g. user interviews where the user wishes to remain anonymous) and are documented using discretion.
-   * TOC Incubation Sponsor confirms that project meets the [Incubation requirements](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubation-stage).
+   * TOC Incubation Sponsor confirms that project meets the [Incubation requirements](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage).
    * TOC Incubation Sponsor determines when DD is “done”. DD documentation should then be on GitHub, open to public comment on record.
 . *Due Diligence review* _2-6 weeks_
    * TOC Incubation Sponsor announces on the TOC mailing list when the DD documents are available for public review and comment, which can take place on GitHub, the TOC mailing list, or at TOC public meetings. 
@@ -80,10 +80,10 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * Projects get accepted to incubation via a 2/3 supermajority vote of the TOC.
    * If the vote is not conclusive after 6 weeks, TOC chair may extend vote, or conclude that silence = abstain
 
-=== Graduation process
+### Graduation process
 
 . *Submit Graduation Proposal Template*
-   * Project fills out and submits the [graduation proposal template](graduation-proposal-template.md)] in a pull request in the [cncf/toc GitHub repo](https://github.com/cncf/toc).
+   * Project fills out and submits the [graduation proposal template](graduation-proposal-template.md) in a pull request in the [cncf/toc GitHub repo](https://github.com/cncf/toc).
    * The file containing the proposal should be located in [the graduation proposals directory](https://github.com/cncf/toc/tree/main/proposals/graduation).
    * The proposal addresses how the project has grown since incubation and any concerns from incubation DD in addition to the standard graduation requirements.
    * Projects will be reviewed on a rolling basis as they apply, instead of two meetings a year.    
@@ -99,7 +99,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * TOC members assess whether project meets the [Graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#graduation-stage)
    * Projects must have a 2/3 supermajority vote of the TOC to graduate
 
-=== Notes
+### Notes
 
 * TOC always has final discretion
 * TOC doesn’t have to accept TAG recommendation
