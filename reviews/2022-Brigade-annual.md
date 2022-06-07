@@ -119,7 +119,7 @@ Our best measure of adoption (and a poor one at that), is that there are only
 2.7k pulls of our API server component from Docker Hub since the V2.0.0 release
 six months ago. This does not speak to widespread adoption.
 
-# Future of the Project
+## Future of the Project
 
 _Architecturally_, the project has achieved its goals and delivered exactly what
 we set out to build. We continue to believe that Brigade is unique and valuable.
@@ -143,3 +143,10 @@ personal project. Unencumbered by governance and their employer, this maintainer
 wishes to seek out a better product/market fit through a series of experiments
 and pivots. If this endeavor is met with any success, the results will proudly
 be re-donated to CNCF.
+
+__Amendment:__ Since the initial recommendation to archive the project was made,
+a small cohort of contributors has graciously volunteered as new core
+maintainers. Per Brigade's own governing docs, none of these individuals meet
+the criteria to be considered for this responsibility, but in light of the
+extenuating circumstances, with all current maintainers recommending archival,
+we believe the TOC should determine whether such a transition is permissible.
