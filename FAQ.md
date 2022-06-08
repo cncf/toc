@@ -23,7 +23,7 @@ https://github.com/cncf/toc/tree/main/tags
 
 CNCF does not require its hosted projects to follow any specific governance model by default.
 
-Instead, CNCF [specifies](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc) that graduated projects need to "[e]xplicitly define a project governance and committer process." 
+Instead, CNCF [specifies](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md) that graduated projects need to "[e]xplicitly define a project governance and committer process." 
 
 This varied and [open governance](https://github.com/opengovernance/opengovernance.dev) approach has led to different projects defining what is best and optimized for their community: 
 
@@ -43,7 +43,7 @@ Neither the CNCF Governing Board (GB) nor the Technical Oversight Committee (TOC
 
 Instead, the maintainers of those projects manage them; this includes defining the governance process. The GB is responsible for the budget.
 
-TOC members are available to provide guidance and conflict resolution if desired to the projects but do not control them. The TOC also helps mature projects through the various CNCF project maturity levels to ensure projects meet the expected [graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc). To date, we have had no meaningful disagreements between the TOC and project maintainers.
+TOC members are available to provide guidance and conflict resolution if desired to the projects but do not control them. The TOC also helps mature projects through the various CNCF project maturity levels to ensure projects meet the expected [graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md). To date, we have had no meaningful disagreements between the TOC and project maintainers.
 
 Please see the [TOC Principles](https://github.com/cncf/toc/blob/main/PRINCIPLES.md) for more details.
 
