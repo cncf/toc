@@ -198,7 +198,7 @@ We want to achieve the above roadmap while also maintaining cadence with upstrea
 
 The CNCF has been helpful thus far by contributing CI resources. As we worked towards incubation, we'll likely reach out with specific, tactical asks as we encounter them.
 
-### Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+### Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
 At this time, we aren't ready to submit for incubation status. Our goal is to submit next year. We'll use this upcoming year to prep for that and improve the areas of the project that need it.
 

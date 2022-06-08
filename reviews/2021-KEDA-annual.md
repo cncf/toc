@@ -115,6 +115,6 @@ This is a tremendous help for us and supports us in making autoscaling simpler.
 
 ### Incubation
 
-> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
 Yes, we do, and we are planning to propose to graduate later this month/next month and is being tracked on [GitHub](https://github.com/kedacore/governance/issues/2).

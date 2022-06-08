@@ -192,7 +192,7 @@ on the board.
 - As part of the project goals for the upcoming year, there is increased collaboration planned with other CNCF projects (in terms of providing a joint solution/integration as
 well as help them by enabling project(app)-specific experiments). A forum to ease these interactions or present findings jointly would be much beneficial. 
 
-### Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+### Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
 Yes, we've also filed our [incubation proposal](https://github.com/cncf/toc/pull/569).
 

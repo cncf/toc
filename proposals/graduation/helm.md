@@ -2,7 +2,7 @@
 
 Helm originally joined the CNCF when Kubernetes became the first CNCF project. Helm was a sub-project of Kubernetes at that time. Since joining the CNCF as an incubating sister project to Kubernetes in June 2018, Helm has released v3, created a governance appropriate for Helm, and has continued to watch the use of Helm grow and evolve.
 
-On behalf of the maintainers, we believe Helm is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage) and meets the v1.3 criteria. The Helm [due diligence questions](https://docs.google.com/document/d/1-5ncwLwikeQrAmeVAPuCYlWLYMCw2OmQuouTYCECYFk/edit), following the [guidelines](https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md), can be found in a separate Google Docs document.
+On behalf of the maintainers, we believe Helm is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#graduation-stage) and meets the v1.3 criteria. The Helm [due diligence questions](https://docs.google.com/document/d/1-5ncwLwikeQrAmeVAPuCYlWLYMCw2OmQuouTYCECYFk/edit), following the [guidelines](https://github.com/cncf/toc/blob/master/process/due-diligence-guidelines.md), can be found in a separate Google Docs document.
 
 Helm has seen dramatic growth since joining incubation. For example,
 

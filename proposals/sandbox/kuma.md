@@ -1,6 +1,6 @@
 Hello,
 
-We would like to propose to donate Kuma to CNCF as a SandBox project. We are opening this GitHub issue according to the process outlined [here](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc) with the format outlined [here](https://github.com/cncf/toc/issues/344).
+We would like to propose to donate Kuma to CNCF as a SandBox project. We are opening this GitHub issue according to the process outlined [here](https://github.com/cncf/toc/blob/master/process/project_proposals.md) with the format outlined [here](https://github.com/cncf/toc/issues/344).
 
 Authors:
 
@@ -148,7 +148,7 @@ More information can be accessed from the official documentation: https://kuma.i
 
 # Formal Requirements
 
-**_Document that the project fulfills the requirements as documented in the [CNCF graduation criteria for sandbox](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#sandbox-stage)_**
+**_Document that the project fulfills the requirements as documented in the [CNCF graduation criteria for sandbox](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#sandbox-stage)_**
 
 * We [have adopted](https://github.com/Kong/kuma/blob/master/CODE_OF_CONDUCT.md) the CNCF Code of Conduct.
 * Will adhere to the CNCF IP policy.

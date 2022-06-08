@@ -145,7 +145,7 @@ Volcano falls in the scope of [CNCF Runtime SIG](https://github.com/cncf/sig-run
   - We need more speaking and marketing opportunities to help attract more contributors and user adoptions.
   - We also need some technical writers to help improve documentation and website content.
 
-* Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+* Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
   - Yes, incubation proposal is under preparation.
 
 ## Project Links

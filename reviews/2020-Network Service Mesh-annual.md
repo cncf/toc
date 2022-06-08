@@ -171,7 +171,7 @@ Network Service Mesh had [two releases](https://networkservicemesh.io/docs/relea
    enthusiastically, or we have been informed cannot be provided until we reach incubation or graduation as a matter of
    policy set by the Board and/or TOC.
 
-7. _Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?_
+7. _Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?_
 
    Network Service Mesh does not currently meet all criteria for incubation, but is on track to do so.
    

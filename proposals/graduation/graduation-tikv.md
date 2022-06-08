@@ -11,7 +11,7 @@ To highlight some of the achievements:
 - Adoptors: 1000+ (including commercial users and community users)
 - 4.0 GA released in May, 2020
 
-On behalf of the maintainers team, we believe TiKV is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage).
+On behalf of the maintainers team, we believe TiKV is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#graduation-stage).
 
 ## Graduation State Criteria
 

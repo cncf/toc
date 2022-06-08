@@ -38,7 +38,7 @@ In the GitHub era, open projects are able to get a lot “done” without outsid
 - But: we do not want to impose bureaucracy on projects because that will slow them down.
 - Minimal viable governance also means that the TOC does not step in at a tactical level to overrule project leads’ decisions.
 - There are some basics like [Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) - see Draft Statement below. Including dealing with problematic leads & maintainers.
-- There is a formal & regulated system of [Graduation Criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc) for CNCF Projects
+- There is a formal & regulated system of [Graduation Criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md) for CNCF Projects
 - The TOC/CNCF want the ability to intervene if things go really wrong - i.e., project leads are stuck and cannot fix things.
 - Provide a template for new projects, a set of best practices to help jump-start the task of setting up a new project.
 
@@ -55,7 +55,7 @@ _Principle: Great projects already have many ingredients to succeed. First: do n
 Identify projects that have a real shot at being a useful tool in the evolving box of cloud native technology. This is a mix of mature and early-stage projects.   Early stage may not have all the criteria we want: diverse contributor bases, formalized governance, interoperability, cloud-native designs, quality bar, etc. 
 
 Some considerations:
-- Transparent, consistent technical and governance quality bar for [graduation](/process/graduation_criteria.adoc) from incubation
+- Transparent, consistent technical and governance quality bar for [graduation](/process/graduation_criteria.md) from incubation
 - Has users, preferably in production; is a high quality, high-velocity project (for incubation and graduated projects). Inception level projects are targeted at earlier-stage projects to cultivate a community/technology
 - Has a committed and excited team that appears to understand the challenges ahead and wishes to meet them
 - Has a fundamentally sound design without obvious critical compromises that will inhibit potential widespread adoption

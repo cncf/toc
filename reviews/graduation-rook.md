@@ -7,7 +7,7 @@ time of acceptance) for details on the acceptance criteria at the time of those 
 In the time since being accepted to the incubation stage, Rook has demonstrated healthy growth of
 the community, continually released new features, and expanded storage provider support.  This
 proposal focuses on Rook's maturity and compliance with the [CNCF Graduation Criteria
-v1.3](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc).
+v1.3](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md).
 
 Every major project and community statistic has [**increased
 2-3x**](https://docs.google.com/presentation/d/1mMPYMDC4JMGWhoL3FzFgeasSLJepNwYMfwQD-T_gET4/edit#slide=id.g3e2163a66f_0_0)

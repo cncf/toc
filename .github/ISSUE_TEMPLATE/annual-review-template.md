@@ -15,4 +15,4 @@ Your annual review should answer the following questions:
 [] How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)
 [] What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
 [] How can the CNCF help you achieve your upcoming goals?
-[] Do you think that your project meets the criteria for [incubation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc#incubating-stage)?
+[] Do you think that your project meets the criteria for [incubation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage)?

@@ -357,7 +357,7 @@ the project with the following:
 ## Incubation
 
 > Do you think that your project meets the [criteria for
-> incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+> incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
 Yes, we very much believe Crossplane meets the criteria for incubation and have published the
 proposal on March 22, 2021.  We have presented to the App-Delivery TAG, published a full and
