@@ -2,7 +2,7 @@
 
 Since joining the CNCF in [July 2018](https://www.cncf.io/blog/2018/07/31/cncf-to-host-harbor-in-the-sandbox/) as a Sandbox project and in [November 2018](https://www.cncf.io/blog/2018/11/13/harbor-into-incubator/) moving to an Incubating Project, Harbor has built a healthy ecosystem of users, maintainers, and production implementations.
 
-On behalf of the maintainers team, we believe Harbor is ready for the CNCF [Graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage) and meets the v1.2 criteria. We address the [CNCF Technical Due Diligence questions](tbd) in a separate Google Docs document (referred to as the `Tech-DD` from now on).
+On behalf of the maintainers team, we believe Harbor is ready for the CNCF [Graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#graduation-stage) and meets the v1.2 criteria. We address the [CNCF Technical Due Diligence questions](tbd) in a separate Google Docs document (referred to as the `Tech-DD` from now on).
 
 *Name of project:* Harbor
 

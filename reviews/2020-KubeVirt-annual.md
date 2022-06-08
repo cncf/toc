@@ -124,7 +124,7 @@ These goals translate to multiple specific work items, including:
      office hours. We would like all these types of project support to continue.
 
  - Do you think that your project meets the [criteria for
-   incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+   incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
  
    - We believe that the project is in a healthy growing status in both user
      adoption and contributors. We are working to properly document existing

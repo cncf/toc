@@ -94,7 +94,7 @@ This architecture is illustrated in the following diagram:
 
 
 ## Formal Requirements
-Here is k3s's status on [the formal requirements](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#sandbox-stage)
+Here is k3s's status on [the formal requirements](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#sandbox-stage)
 - Require 3 of the 11 TOC members to step forward as sponsors to enter the sandbox - Pending
 - Adopt the CNCF Code of Conduct - [k3s is adopting the CNCF Community Code of Conduct](https://github.com/rancher/k3s/pull/1783)
 - Adhere to CNCF IP Policy (including trademark transferred) - We agree to this policy and will work through the requirements with the CNCF as the process moves forward

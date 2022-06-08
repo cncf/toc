@@ -1,6 +1,6 @@
 Hi, 
 
-We would like to propose to donate LitmusChaos to CNCF as a SandBox project. We have been advised to follow the new process outlined [here](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc). The template we are following is outlined [here](https://github.com/cncf/toc/issues/344). 
+We would like to propose to donate LitmusChaos to CNCF as a SandBox project. We have been advised to follow the new process outlined [here](https://github.com/cncf/toc/blob/master/process/project_proposals.md). The template we are following is outlined [here](https://github.com/cncf/toc/issues/344). 
 
 Please consider this proposal and guide us through the process.
 

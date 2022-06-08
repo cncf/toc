@@ -56,7 +56,7 @@ Importantly, we also received the donation of the [`aws-privateca-issuer`](https
 
 In the short term, a major goal is to complete the migration of the [jetstack/cert-manager](https://github.com/jetstack/cert-manager) repo into the [cert-manager organization](https://github.com/cert-manager/).
 
-After that, the guiding star will be to target CNCF [incubation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc#incubating-stage), since we believe cert-manager to be a strong candidate for incubation.
+After that, the guiding star will be to target CNCF [incubation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage), since we believe cert-manager to be a strong candidate for incubation.
 
 We also aim to grow our support for new features and tools in the cloud native ecosystem; recent and ongoing examples include the [Kubernetes Gateway API](https://gateway-api.sigs.k8s.io/) and the Kubernetes [CertificateSigningRequest](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/) resource. We're always on the lookout for more in this space.
 
@@ -81,7 +81,7 @@ Put more generally, we ideally don't want to reinvent the wheel when it comes to
 
 ## Incubation
 
-Based on the [graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc#incubating-stage), cert-manager seems to already tick the relevant boxes required for incubation. We believe cert-manager to be a strong candidate for incubation based on the following:
+Based on the [graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage), cert-manager seems to already tick the relevant boxes required for incubation. We believe cert-manager to be a strong candidate for incubation based on the following:
 
 - Document that it is being used successfully in production by at least three independent end users   
   cert-manager is used in production by _many_ more than three independent end users; it shouldn't be hard to find a few case studies if needed. Several major cloud native projects including [Istio](https://istio.io/latest/docs/ops/integrations/certmanager/), the [Kubernetes Cluster API](https://cluster-api.sigs.k8s.io/developer/guide.html#cert-manager) and [Knative](https://knative.dev/development/install/serving/installing-cert-manager/) suggest or require that cert-manager be installed.
