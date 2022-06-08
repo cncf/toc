@@ -78,6 +78,6 @@ We think there are two important ways that CNCF can help us with the growth of t
 
 ## Incubation
 
-> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
 Yes, we believe that Artifact Hub is ready and we now have [an issue](https://github.com/artifacthub/hub/issues/1418) to track progress at proposing a move to incubation.

@@ -105,7 +105,7 @@ Parsec will continue to look towards the CNCF for guidance in preparing itself f
 
 ## Readiness for Incubation
 
-Parsec does not yet meet the [stated criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc#incubating-stage) for incubation for the following reasons:
+Parsec does not yet meet the [stated criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage) for incubation for the following reasons:
 
 - There are not yet three independent adoptions that are in production.
 - Security assessment still pending.

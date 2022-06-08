@@ -1,6 +1,6 @@
 For TOC Consideration: please adopt PARSEC into CNCF as a SandBox project. This proposal is being
 made in accordance with the [**stated
-process**](https://github.com/cncf/toc/blob/master/process/project_proposals.adoc) and the
+process**](https://github.com/cncf/toc/blob/master/process/project_proposals.md) and the
 [**proposal template**](https://github.com/cncf/toc/issues/344).
 
 Authors: - Paul Howard, @paulhowardarm, Arm Limited, PARSEC technical lead

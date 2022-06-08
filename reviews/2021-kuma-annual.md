@@ -116,7 +116,7 @@ What we've shipped since:
   - We would like to reintroduce a way to follow feature usage and installation count as it's hard to track adoption without this.
   - We could use with some help with some technical writing.
 
-### Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+### Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
 No for the following reasons:
 

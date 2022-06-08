@@ -1,7 +1,7 @@
 # Thanos Incubation Stage Proposal
  
 During Thanos presentation at the [CNCF TOC meeting on 7/9/2019](https://docs.google.com/presentation/d/1jhzJlSAAJNNil1nIYp60eSMH3LPd6AwqHLt3vEAzMSg/edit#slide=id.g5cdf155fc3_0_4)
-we were suggested by TOC members to apply straight for [the Incubation Stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage).
+we were suggested by TOC members to apply straight for [the Incubation Stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage).
 We all agreed back then that we will join Sandbox first and after that perform Due Diligence required for the Incubation Stage. 
  
 This proposal aims to address the Diligence requirements.

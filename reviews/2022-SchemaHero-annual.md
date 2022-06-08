@@ -114,7 +114,7 @@ Some areas where we'd like to get continued and additional help are:
 
 ## Incubation
 
-> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
 Not at this time. It's the goal of the Schemahero project to continue to build in the Sandbox for the next year to increase production-grade adoption and add additional maintaining organizations. Once the project has achieved production status and has moved out of evaluation phases at adopting organizations, we will start planning for incubation.
 

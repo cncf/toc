@@ -183,7 +183,7 @@ For our releases, Keptn maintainers follow the [release checklist](https://githu
 - The CNCF ecosystem is another driver for Keptn. We are already engaging with multiple CNCF projects and will further drive collaboration with the help of the CNCF.
 
 
-### Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+### Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
 - Yes, we've also filed our [incubation proposal](https://github.com/cncf/toc/pull/670).
 

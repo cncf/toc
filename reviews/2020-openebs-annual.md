@@ -161,7 +161,7 @@ Areas of future collaboration with the Rook community may include:
   - Embracing and communicating the use of Kubernetes in ways that may not have been originally anticipated or intended by the originators of Kubernetes, including as a substrate for a fundamentally new way of managing data and delivering storage capabilities.  For example, it may be useful to increasingly use a phrase such as Container Attached Storage to reflect this pattern.
   - Additional help with reviewing licenses used by sub components.  There may need to be a check if the licenses of these subcomponents - most notably CDDL - can be included in the CNCF whitelist policy or if these sub components should be held in another open source repository such as an OpenSource repository of MayaData or otherwise.
   
-- *Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?*
+- *Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?*
   
   Yes. We are in the process of completing the Due Diligence document and submitting the incubation proposal. 
 

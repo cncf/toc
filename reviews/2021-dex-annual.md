@@ -136,7 +136,7 @@ but we are open to other suggestions, even some coaching/tips about reaching out
 
 ## Incubation
 
-> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.adoc#incubating-stage)?
+> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage)?
 
 No, at this point we don't feel that the project meets the criteria.
 We would like to grow more in terms of maintainers and known users before considering to move to the next stage.

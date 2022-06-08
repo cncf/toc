@@ -4,7 +4,7 @@ Since the [March 2017 announcement](https://www.cncf.io/announcement/2017/03/29/
 
 In late 2017, containerd announced its [1.0 release](https://blog.docker.com/2017/12/cncf-containerd-1-0-ga-announcement/), followed in early 2018 by a 1.1 release that has been updated with several minor fix releases through 2018. The containerd team has just completed the next major release, [1.2.0](https://github.com/containerd/containerd/releases/tag/v1.2.0), with more complete Windows runtime support and a new runtime shim v2 API that is [proving](https://www.cncf.io/blog/2018/09/17/gsoc-18-kata-containers-support-for-containerd/) [valuable](https://twitter.com/resouer/status/1035066629887905792) for [runc](https://github.com/opencontainers/runc) alternatives like [Kata containers](https://katacontainers.io/).
 
-At this time, we believe containerd is ready for the [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#graduation-stage) within the CNCF, and per the guidelines listed there, we detail our readiness in the section below.
+At this time, we believe containerd is ready for the [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#graduation-stage) within the CNCF, and per the guidelines listed there, we detail our readiness in the section below.
 
 ### CNCF Graduation Criteria
 

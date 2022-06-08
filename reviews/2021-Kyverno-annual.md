@@ -125,7 +125,7 @@ Some areas where we can use help are:
 
 ## Incubation
 
-> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?
+> Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
 Yes. The Kyverno project team has started planning a proposal for incubation and plans to submit it in the next month. This work is tracked in [issue #2838](https://github.com/kyverno/kyverno/issues/2838).
 

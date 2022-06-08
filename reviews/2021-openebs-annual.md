@@ -109,7 +109,7 @@ We are looking forward to the continued support in the above areas and as well a
 
 ### Incubation
 
-**Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc#incubating-stage)?**
+**Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?**
 
 Yes, we do, and we are planning to present the progress we have made since our last [CNCF Storage TAG review](https://github.com/cncf/toc/pull/506#issuecomment-756153457) and move towards the next steps.
 
