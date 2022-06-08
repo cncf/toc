@@ -1,7 +1,7 @@
 Thank you for submitting your project proposal to CNCF!
 
 Before you submit your project, please ensure that:
-- [ ] Understand the project proposal process and reqs: https://github.com/cncf/toc/blob/master/process/project_proposals.adoc#introduction
+- [ ] Understand the project proposal process and reqs: https://github.com/cncf/toc/blob/master/process/project_proposals.md#introduction
 - [ ] Understand the services available for your project at CNCF https://www.cncf.io/services-for-projects/
 - [ ] Ensure your project meets the CNCF IP Policy: https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy
 - [ ] Has your project adopted open governing already? see http://opengovernance.dev

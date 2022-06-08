@@ -4,7 +4,7 @@
 
 If you're interested in contributing a project to CNCF, please open up an issue here for discussion: https://github.com/cncf/toc/issues
 
-The full project proposal process is located [here](https://github.com/cncf/toc/blob/main/process/project_proposals.adoc).
+The full project proposal process is located [here](https://github.com/cncf/toc/blob/main/process/project_proposals.md).
 
 ## TOC Contributors
 
