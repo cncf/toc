@@ -17,5 +17,8 @@ final review by Liz Rice, Joe Beda and Zhipeng Huang.
 * Ash Narkar ([@ashutosh-narkar](https://github.com/ashutosh-narkar)), Styra
 * Andres Vega ([@anvega](https://github.com/anvega), VMware
 * Pushkar Joglekar ([@pushkarj](https://github.com/pushkarj), VMware
+* Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), TBD
+* Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), TBD
+* Marina Moore ([@mnm678](https://github.com/mnm678)), NYU
 
 For complete details on process and elaboration of rules, see [TAG-Security governance](https://github.com/cncf/tag-security/tree/main/governance)
