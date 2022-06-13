@@ -1,4 +1,5 @@
-# CNCF Project Proposal Process v1.3
+
+# CNCF Project Proposal Process v1.4
 
 ## Introduction 
 
@@ -23,10 +24,21 @@ All exceptions (and "no" outcomes) are handled by the TOC. Possible "no" outcome
    * TOC reviews proposal in spreadsheet and presentation, project passes for inclusion with a simple majority vote. 
    * TOC may engage with project to ask further questions
    * Projects may re-apply after six months
-   
+   * Annual reviews are performed in order to check in with sandbox projects, ascertain their progress, and address any outstanding questions
+     * A TOC representative volunteers to lead the review once the project files a PR.
+     * The assigned member reviews the content of the PR and analyzes the project for community health indicators, their findings are placed within a thread in the private TOC channel for discussion
+       * findings should highlight important facts about the project that could influence the TOCs decision around the future of the project, its status in sandbox, its path to incubation, etc.
+       * the thread should always include whether the Project's view of themselves and the ask of the CNCF is reasonable to assist the project moving forward.
+     * Projects are invited to the public TOC meeting to engage in TOC led discussion around the project. Projects are not obligated to attend.
+     * The assigned TOC member provides a summary of the project and leverages the thread's content as the basis of discussion.
+       * Discussion typically focuses on what is going well with the project and areas to improve
+     * Project are invited to use this time to voice any concerns and requests for help they may have that are not captured in the PR (or highlight asks within the PR).
+     * At the conclusion of the public meeting, the TOC votes to approve all annual reviews covered. Should a concern registered on a project, the votes will be held separately.
+     * After the meeting wraps up, the assigned TOC member may summarize the discussion on the PR in the form of a comment to document information for the project and community.
+ 
  *Governance / legal issues* 
    * CNCF staff handle governance / legal issues
-   * This can happen after TOC Sandbox Sponsors step forward
+   * Projects are encouraged to participate/attend TOC meetings and reach out to TAGs for advice or scheduling presentations and discussions.
 
 See the [Sandbox guidelines](https://github.com/cncf/toc/blob/main/process/sandbox.md) for the definition of and motivation behind the CNCF Sandbox.
 
@@ -40,15 +52,14 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 
 *Project Proposal* 
    * Incubation proposed through a [GitHub pull request](https://github.com/cncf/toc/pulls)
-   * The proposal moves to Due Diligence when a TOC member steps forward as an Incubation Sponsor.
+   * The proposal moves to Due Diligence when a TOC member steps forward as an Incubation Sponsor - Please avoid contacting TOC members individually to serve as project sponsor.
    * The status of outstanding Incubation proposals is reported on a monthly basis in the TOC public meeting. This highlights projects looking for sponsorship, and provides a check-in on DD progress for sponsored projects. 
    * A potential sponsor can indicate that they are interested but don't have capacity to work on DD at this time, to set a project's expectations.
    * The TOC may agree that the project does not (yet) meet the [Incubation requirements](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubation-stage) and give feedback on why this is the case. If the project is not already in the CNCF, the TOC may suggest that project apply for Sandbox instead.
    * If a TOC Incubation Sponsor has not stepped forward within two months after the proposal PR is submitted, projects may request that their project proposal is discussed at a forthcoming TOC meeting by adding it to the [Working Doc](https://docs.google.com/document/d/1jpoKT12jf2jTf-2EJSAl4iTdA7Aoj_uiI19qIaECNFc/edit). The outcome of this is discussion is either that a sponsor steps forward, or that the TOC votes to admit the project to Sandbox, or the proposal is rejected (projects may reapply after six months). If, even after all those steps, a sponsor does not step forward, the proposal is rejected. 
    * DD will usually involve a presentation to a TAG, but an interested TAG is welcome to schedule a project presentation at any time. TAGs can discuss their recommendations or concerns about a project with their TOC liaison(s) if there isn't already a TOC Incubation Sponsor in place. 
-   * Although it is not necessary, projects are allowed to informally reach out to TOC members for advice, including asking about potential sponsorship. TOC members should keep each other informed about these approaches so that we can avoid falling prey to "lobbying". There is a fine line between a project asking for help to make a successful application, and a project shopping around looking to pressurize a TOC member into sponsorship. 
-
-*TOC Incubation Sponsor* 
+   * Although it is not necessary, projects are allowed to informally reach out to TOC members for advice, including asking about potential sponsorship. TOC members should keep each other informed about these approaches so that we can avoid falling prey to "lobbying" (directly contacting a TOC member to volunteer or manage an action or issue). There is a fine line between a project asking for help to make a successful application, and a project shopping around looking to pressurize a TOC member into sponsorship. 
+. *TOC Incubation Sponsor* 
    * TOC Incubation Sponsor is responsible for driving the process, and co-ordinating with TAGs for review and input as they see fit. 
    * TOC Incubation Sponsor is a point of contact for the project throughout the process.
    * TOC members may not sponsor a project for which they have a clear conflict of interest (for example, originating primarily from their organization). This doesn't mean that they can't have any involvement at all - for example, contributing pull requests, or being an end user of that project, can signal a healthy interest in and knowledge of a worthwhile project. 
@@ -77,7 +88,8 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * The proposal addresses how the project has grown since incubation and any concerns from incubation DD in addition to the standard graduation requirements.
    * Projects will be reviewed on a rolling basis as they apply, instead of two meetings a year.    
 . * If a TOC member steps forward to support the project as a sponsor and determines the Graduation DD document is finalized, the TOC member kicks off two week period of time for public comment on the TOC mailing list
-   * The email should contain a link to the proposal pull request and incubation DD document.
+   * Please avoid contacting TOC members individually to serve as project sponsor.
+   * The email should contain a link to the proposal pull request and graduation DD document.
    * All TAGs, end users, TOC members, and community members are welcome to comment at this time on the mailing list.
    * Historically, projects have done a TOC presentation as part of the graduation process. The TOC has gotten rid of the presentation requirement. 
 * If the TOC does not sponsor the project to move forward at that time, they will provide feedback to the project and the PR will be closed. 
@@ -94,3 +106,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 * Outcome may be “no” simply because sponsors don’t step forward within the timeframe
 * Outcome from TOC Triage or TAG recommendation could be that we want to wait for some reason e.g. project backlogs; batching similar projects together. We should give the project an explanation and set time expectations in these cases.
 * All “no” outcomes and other exceptions are discussed by the TOC, and then with project and TAG representatives. We will try to give feedback but it may simply be a lack of conviction in the project.
+* If the project is concerned about the timeline, feels they have waited too long, or needs to reach out, please reach out to the TOC via one of their mailing lists or contact the CNCF Staff.
+* Projects are encouraged to participate/attend TOC meetings and reaching out to TAGs for advice or scheduling presentations and discussions.
+
+
