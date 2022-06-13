@@ -19,7 +19,7 @@ Istio is designed for extensibility, and can handle a diverse range of deploymen
 
 ### Sponsor / Advisor from TOC
 
-To be appointed.
+Dave Zolotusky, with help from Erin Boyd (TOC) and Lee Calcote (TAG Network)
 
 ### License
 
