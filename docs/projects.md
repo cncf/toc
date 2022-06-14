@@ -126,6 +126,13 @@
 [OpenFunction](https://github.com/OpenFunction)|TOC Vote|[04/26/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/09/2021](https://github.com/OpenFunction)|Sandbox
 [Teller](https://github.com/SpectralOps/teller)|TOC Vote|[11/18/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[04/26/2022](https://github.com/SpectralOps/teller)|Sandbox
 [sealer](https://github.com/alibaba/sealer)|TOC Vote|[11/25/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[04/26/2022](https://github.com/alibaba/sealer)|Sandbox
+[Clusterpedia](https://github.com/clusterpedia-io/clusterpedia)|TOC Vote|[1/30/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/clusterpedia-io/clusterpedia)|Sandbox
+[OpenCost](https://github.com/kubecost/cost-model)|TOC Vote|[2/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/kubecost/cost-model)|Sandbox
+[Aeraki Mesh](https://github.com/aeraki-mesh/aeraki)|TOC Vote|[2/28/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/aeraki-mesh/aeraki)|Sandbox
+[Curve](https://github.com/opencurve/curve)|TOC Vote|[2/10/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/opencurve/curve)|Sandbox
+[OpenFeature](https://github.com/open-feature)|TOC Vote|[2/18/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/open-feature)|Sandbox
+[kubewarden](https://github.com/kubewarden)|TOC Vote|[2/23/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/kubewarden)|Sandbox
+[DevStream](https://github.com/devstream-io/devstream)|TOC Vote|[2/28/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/devstream-io/devstream)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
