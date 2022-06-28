@@ -217,6 +217,7 @@
 [Argo](https://github.com/argoproj/argoproj) | [2/28/2022](https://github.com/argoproj/argoproj/blob/dd7cae43d81c5a11f21ff4ea0a4afadcae4799c7/docs/audit_fuzzer_adalogics_2022.pdf) | [Announcement](https://blog.argoproj.io/argo-security-automation-with-oss-fuzz-da38c1f86452) | CNCF | [ADA Logics](https://adalogics.com)
 [etcd](https://github.com/etcd-io/etcd) | [3/11/2022](https://github.com/etcd-io/etcd/blob/main/security/FUZZING_AUDIT_2022.PDF) | [Announcement](https://etcd.io/blog/2022/etcd-integrates-continuous-fuzzing/) | CNCF | [ADA Logics](https://adalogics.com)
 [crio](https://github.com/cri-o/cri-o/) | [6/6/2022](https://github.com/cri-o/cri-o/pull/5938) | [Announcement](https://www.cncf.io/blog/2022/06/06/ada-logics-cri-o-holistic-security-audit-engagement/) | CNCF | [ADA Logics](https://adalogics.com)
+[linkerd](https://github.com/linkerd/linkerd2) | [6/28/2022](https://github.com/linkerd/linkerd2/tree/main/audits/2022) | [Announcement](https://www.cncf.io/blog/2022/06/28/announcing-the-completion-of-linkerds-2022-security-audit/) | CNCF | [Trail of Bits](https://trailofbits.com)
 
 
 ## Archived Projects
