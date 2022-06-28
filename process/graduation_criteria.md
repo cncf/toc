@@ -23,7 +23,7 @@ See the [CNCF Sandbox Guidelines v1.0](https://github.com/cncf/toc/blob/main/pro
 
 To be accepted to incubating stage, a project must meet the sandbox stage requirements plus:
 
- * Document that it is being used successfully in production by at least three independent adopterss which, in the TOC’s judgement, are of adequate quality and scope. For the definition of an adopter, see https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter.
+ * Document that it is being used successfully in production by at least three independent direct adopters which, in the TOC’s judgement, are of adequate quality and scope. For the definition of an adopter, see https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter.
 
  * Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
  * Demonstrate a substantial ongoing flow of commits and merged contributions.

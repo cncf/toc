@@ -24,12 +24,12 @@ As a secondary goal, it is in the interests of the broader CNCF ecosystem that t
 /* Use appropriate Section */
 
 ### Sandbox Graduation (Exit Requirements)
-1. Document that it is being used successfully in production by at least three independent adopters which with focus on adequate quality and scope defined.
+1. Document that it is being used successfully in production by at least three independent direct adopters which with focus on adequate quality and scope defined.
 2. Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 3. Demonstrate a substantial ongoing flow of commits and merged contributions.
 
 ### Incubating Stage Graduation (Exit Requirements)
-1. Document that it is being used successfully in production by at least three independent adopters which with focus on adequate quality and scope defined.
+1. Document that it is being used successfully in production by at least three independent direct adopters which with focus on adequate quality and scope defined.
 2. Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 3. Demonstrate a substantial ongoing flow of commits and merged contributions.
 4. Have committers from at least two organizations.
