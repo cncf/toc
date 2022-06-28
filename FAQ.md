@@ -51,10 +51,26 @@ Please see the [TOC Principles](https://github.com/cncf/toc/blob/main/PRINCIPLES
 
 The CNCF provides a variety of services that are accessible by maintainers via the ServiceDesk: https://github.com/cncf/servicedesk
 
-## What is the definition of an end user?
-End user companies use [cloud native](https://github.com/cncf/toc/blob/main/DEFINITION.md) technologies internally, but do not sell any cloud native services externally. Examples of end user companies are Adidas, Apple, Capital One, Spotify, and The New York Times. Examples of cloud native vendors (and so not end users) include cloud providers (e.g., Alibaba Cloud, AWS, Google Cloud, Microsoft Azure), consulting firms (e.g., Accenture, Booz Allen), infrastructure software vendors (e.g., SUSE, Red Hat), and telecom operators (e.g., AT&T, China Mobile).
+## What is the definition of an adopter?
+Adopters of a CNCF project are any organization that successfully leverages that project in the manner it was intended or repackages it as a core component of a service offering.
 
-If you’re not sure if your company is an end user, please compare the members of the [CNCF end user community](https://landscape.cncf.io/enduser=yes&format=card-mode) to the [vendor members](https://landscape.cncf.io/category=cncf-members&enduser=no&format=card-mode&grouping=category) of CNCF and find your company or one similar to yours in one group or the other. Or, you can email info@cncf.io and we’ll help you.
+The TOC’s intent of identifying adopters is to better understand the operational or production-level use of a given project (which can also be a specification) by its operators or users. We do this to ascertain the level of maturity the project has reached, its interactions with adopters, and its likelihood to continue growing within and supporting the ecosystem.
+
+[Cloud native](https://github.com/cncf/toc/blob/main/DEFINITION.md) project adopters may be any one of the following or a combination thereof : 
+* A CNCF End-User member - Companies and organizations who are members of the CNCF (https://www.cncf.io/enduser/ & https://landscape.cncf.io/card-mode?enduser=yes)
+* Another project - an open source project that leverages a CNCF project as part of their solution, integrates with for compatibility and interoperability, or is used in the supply chain of another project
+* A Service Provider - a service provider is a organization that repackages an open source project as a core component of a service offering, sells cloud native services externally
+  * APIs
+  * SaaS
+  * A service provider’s customers are considered transitive adopters and should be excluded from identification within the ADOPTERS.md file.
+  * Examples of service providers (and not end users) include cloud providers (e.g., Alibaba Cloud, AWS, Google Cloud, Microsoft Azure), consulting firms (e.g., Accenture, Booz Allen), infrastructure software vendors (e.g., SUSE, Red Hat), and telecom operators (e.g., AT&T, China Mobile). Refer to the [vendor category on the landscape](https://landscape.cncf.io/category=cncf-members&enduser=no&format=card-mode&grouping=category) for more examples.
+* End users - companies and organizations that are not CNCF End-User members that use the project and cloud native technologies internally,  or build upon a cloud native open source project but do not sell the cloud native project externally as a service offering (those are service providers)
+* Consultancy - an entity whose purpose is to assist other organizations in developing a solution leveraging cloud native technology. They may be embedded in the end user team and is responsible for the execution of the service. They may also package cloud native technologies for reuse as part of their offerings. These function as proxies for an end user.
+  * For the purposes of identifying adopters of a project, consultancies are not recommended for inclusion in the ADOPTERS.md file
+
+Projects may leverage the above guidelines to list organizations in their ADOPTERS.md file within their repo.
+
+If you’re not sure if your organization falls into any of these categories you can email info@cncf.io and we’ll help you.
 
 ## What does CNCF do with its events revenues, especially for projects?
 
