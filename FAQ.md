@@ -57,7 +57,7 @@ Adopters of a CNCF project are any organization that successfully leverages that
 The TOC’s intent of identifying adopters is to better understand the operational or production-level use of a given project (which can also be a specification) by its operators or users. We do this to ascertain the level of maturity the project has reached, its interactions with adopters, and its likelihood to continue growing within and supporting the ecosystem.
 
 [Cloud native](https://github.com/cncf/toc/blob/main/DEFINITION.md) project adopters may be any one of the following or a combination thereof : 
-* A CNCF End-User member - Companies and organizations who are members of the CNCF (https://www.cncf.io/enduser/ & https://landscape.cncf.io/card-mode?enduser=yes)
+* A CNCF End-User member - Companies and organizations who are End User members of the CNCF (https://www.cncf.io/enduser/ & https://landscape.cncf.io/card-mode?enduser=yes)
 * Another project - an open source project that leverages a CNCF project as part of their solution, integrates with for compatibility and interoperability, or is used in the supply chain of another project
 * A Service Provider - a service provider is a organization that repackages an open source project as a core component of a service offering, sells cloud native services externally
   * APIs
