@@ -24,19 +24,19 @@ As a secondary goal, it is in the interests of the broader CNCF ecosystem that t
 /* Use appropriate Section */
 
 ### Sandbox Graduation (Exit Requirements)
-1. Document that it is being used successfully in production by at least three independent end users which with focus on adequate quality and scope defined.
+1. Document that it is being used successfully in production by at least three independent adopters which with focus on adequate quality and scope defined.
 2. Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 3. Demonstrate a substantial ongoing flow of commits and merged contributions.
 
 ### Incubating Stage Graduation (Exit Requirements)
-1. Document that it is being used successfully in production by at least three independent end users which with focus on adequate quality and scope defined.
+1. Document that it is being used successfully in production by at least three independent adopters which with focus on adequate quality and scope defined.
 2. Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 3. Demonstrate a substantial ongoing flow of commits and merged contributions.
 4. Have committers from at least two organizations.
 5. Have achieved and maintained a Core Infrastructure Initiative Best Practices Badge.
 6. Adopted the CNCF Code of Conduct.
 7. Explicitly define a project governance and committer process. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
-8. Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website).
+8. Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website), guidelines for identifying adopters can be found in the [FAQs](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter).
 
 ### Documentation of CNCF Alignment (if not addressed above):
 * name of project (must be unique within CNCF)

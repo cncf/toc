@@ -62,14 +62,15 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 . *TOC Incubation Sponsor* 
    * TOC Incubation Sponsor is responsible for driving the process, and co-ordinating with TAGs for review and input as they see fit. 
    * TOC Incubation Sponsor is a point of contact for the project throughout the process.
-   * TOC members may not sponsor a project for which they have a clear conflict of interest (for example, originating primarily from their organization). This doesn't mean that they can't have any involvement at all - for example, contributing pull requests, or being an end user of that project, can signal a healthy interest in and knowledge of a worthwhile project. 
+   * TOC members may not sponsor a project for which they have a clear conflict of interest (for example, originating primarily from their organization). This doesn't mean that they can't have any involvement at all - for example, contributing pull requests, or being an [adopter](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter) of that project, can signal a healthy interest in and knowledge of a worthwhile project. 
 . *Due Diligence* _2-3 months_
    * TOC Incubation Sponsor drives due diligence (see the [template](https://github.com/cncf/toc/blob/main/process/dd-review-template.md) and [guidelines](https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md)).
    * TOC Incubation Sponsor can delegate DD work to CNCF TAGs and/or other TOC members.
    * Typically DD includes a presentation to a CNCF TAG, as identified by the TOC Sponsor. This step may be omitted if the TOC Sponsor feels there are readily-available and suitable presentations on video - for example, because the TAG has already recently held a presentation. (We do not want unnecessary levels of process or bureaucracy to delay a widely-known and adopted project from joining the CNCF). TOC Sponsor has discretion to arrange alternatives (for example, arranging a Q&A session at a TOC meeting) to ensure there is ample opportunity to ask questions.
    * TOC Incubation Sponsor can ask project maintainers to complete the DD template. (In practice project maintainers sometimes choose to make a start on this in advance of the official DD process, or even in advance of the initial proposal as it may help them ensure they meet all the requirements.) The TOC Incubation Sponsor should carefully review and ask questions about the DD as prepared by the project maintainers, and may also call on TAGs to help with this. 
    * CNCF staff do governance and legal DD.
-   * During DD some conversations may be held in private (e.g. user interviews where the user wishes to remain anonymous) and are documented using discretion.
+   * During DD some conversations may be held in private (e.g. adopter interviews where the adopter wishes to remain anonymous) and are documented using discretion.
+     * TOC members are not required to identify the kind of adopter an interviewed organization is, rather they should use their discretion and the guidelines defined in the [FAQs](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter) for selected organizations to be interviewed and the nature of the interview as it assists projects.
    * TOC Incubation Sponsor confirms that project meets the [Incubation requirements](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage).
    * TOC Incubation Sponsor determines when DD is “done”. DD documentation should then be on GitHub, open to public comment on record.
 . *Due Diligence review* _2-6 weeks_
@@ -90,7 +91,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 . * If a TOC member steps forward to support the project as a sponsor and determines the Graduation DD document is finalized, the TOC member kicks off two week period of time for public comment on the TOC mailing list
    * Please avoid contacting TOC members individually to serve as project sponsor.
    * The email should contain a link to the proposal pull request and graduation DD document.
-   * All TAGs, end users, TOC members, and community members are welcome to comment at this time on the mailing list.
+   * All TAGs, adopters, TOC members, and community members are welcome to comment at this time on the mailing list.
    * Historically, projects have done a TOC presentation as part of the graduation process. The TOC has gotten rid of the presentation requirement. 
 * If the TOC does not sponsor the project to move forward at that time, they will provide feedback to the project and the PR will be closed. 
 * If the Graduation DD document is not finalized, the TOC sponsor will begin the process to refresh the existing DD document and begin the public comment process.
