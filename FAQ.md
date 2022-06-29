@@ -52,23 +52,22 @@ Please see the [TOC Principles](https://github.com/cncf/toc/blob/main/PRINCIPLES
 The CNCF provides a variety of services that are accessible by maintainers via the ServiceDesk: https://github.com/cncf/servicedesk
 
 ## What is the definition of an adopter?
-Adopters of a CNCF project are any organization that successfully leverages that project in the manner it was intended or repackages it as a core component of a service offering.
+Adopters of a CNCF project are any organization that successfully leverages that project in the manner it was intended or repackages it as a core component of a service offering. To increase understanding of how the project is adopted, we distinguish a direct adopter from a transitive adopter; i.e. a Service Provider using Kubernetes as the underlying container orchestrator for their Knative offering, in this scenario the Service Provider is a direct adopter of Kubernetes and their Knative users are direct adopters of Knative but transitive adopters of Kubernetes.
 
 The TOC’s intent of identifying adopters is to better understand the operational or production-level use of a given project (which can also be a specification) by its operators or users. We do this to ascertain the level of maturity the project has reached, its interactions with adopters, and its likelihood to continue growing within and supporting the ecosystem.
 
-[Cloud native](https://github.com/cncf/toc/blob/main/DEFINITION.md) project adopters may be any one of the following. Please note that any single company can fall under several categories at once. If that's the case, it should enumerate all that apply and only be listed once. 
-* A CNCF End-User member - Companies and organizations who are End User members of the CNCF (https://www.cncf.io/enduser/ & https://landscape.cncf.io/card-mode?enduser=yes)
+[Cloud native](https://github.com/cncf/toc/blob/main/DEFINITION.md) project adopters may be any one of the following. Please note that any single company can fall under several categories at once. If that's the case, it should enumerate all that apply and only be listed once. For the purposes of identifying the adopters of a project, we encourage the use of `adopter` to include all of the below, if a project needs to identify the category of adopter we encourage them to use the convention provided below.
+* A CNCF End-User member - Companies and organizations who are End-User members of the CNCF (https://www.cncf.io/enduser/ & https://landscape.cncf.io/card-mode?enduser=yes). TThis group is identified in the written form by the convention `End-User`, capitalizing the `E` in `End`, hyphenating the two words, and captializing the `U` in `User`.
 * Another project - an open source project that leverages a CNCF project as part of their solution, integrates with for compatibility and interoperability, or is used in the supply chain of another project
-* End users - companies and organizations that are not CNCF End-User members that use the project and cloud native technologies internally,  or build upon a cloud native open source project but do not sell the cloud native project externally as a service offering (those are Service Providers)
+* End users - companies and organizations that are not CNCF End-User members that use the project and cloud native technologies internally,  or build upon a cloud native open source project but do not sell the cloud native project externally as a service offering (those are Service Providers). This group is identified in the written form by the convention `end user`, uncapitalized and unhyphenated.
 * A Service Provider - a Service Provider is a organization that repackages an open source project as a core component of a service offering, sells cloud native services externally
   * APIs
   * SaaS
   * A Service Provider’s customers are considered transitive adopters and should be excluded from identification within the ADOPTERS.md file.
-  * Examples of Service Providers (and not end users) include cloud providers (e.g., Alibaba Cloud, AWS, Google Cloud, Microsoft Azure), consulting firms (e.g., Accenture, Booz Allen), infrastructure software vendors (e.g., SUSE, Red Hat), and telecom operators (e.g., AT&T, China Mobile). Refer to the [vendor category on the landscape](https://landscape.cncf.io/category=cncf-members&enduser=no&format=card-mode&grouping=category) for more examples.
+  * Examples of Service Providers (and not end users) include cloud providers (e.g., Alibaba Cloud, AWS, Google Cloud, Microsoft Azure), infrastructure software vendors (e.g., SUSE, Red Hat), and telecom operators (e.g., AT&T, China Mobile). Refer to the [vendor category on the landscape](https://landscape.cncf.io/category=cncf-members&enduser=no&format=card-mode&grouping=category) for more examples.
 * Consultancy - an entity whose purpose is to assist other organizations in developing a solution leveraging cloud native technology. They may be embedded in the end user team and is responsible for the execution of the service. They may also package cloud native technologies for reuse as part of their offerings. These function as proxies for an end user.
-  * For the purposes of identifying adopters of a project, consultancies are not recommended for inclusion in the ADOPTERS.md file. They are, however, encouraged to confirm other End Users and/orService Providers where possible.
 
-Projects may leverage the above guidelines to list organizations in their ADOPTERS.md file within their repo.
+Projects may leverage the above guidelines to list organizations in their ADOPTERS.md file within their repo. 
 
 If you’re not sure if your organization falls into any of these categories you can ask in the #toc slack channel, on the TOC mailing list, or email info@cncf.io and we’ll help you.
 
