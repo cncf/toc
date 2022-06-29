@@ -189,7 +189,7 @@ Examples include:
 
 - Formation of the TAG follows the [documented process][tagform].
 - [Roles][tagroles] for TAG Observability
-  - TOC Liaison: Lei Zhang, Cornelia Davis
+  - TOC Liaison: Lei Zhang, Cathy Zhang
   - TAG Chairs:
     - [Matthew Young][matthew young]
     - [Richard Hartmann][Richard Hartmann]
