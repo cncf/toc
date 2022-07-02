@@ -75,3 +75,9 @@ CNCF uses revenues from events first and foremost to cover the cost of events. T
 ## Why do members join if they don’t get to control CNCF and its projects?
 
 The main member benefit is to support the cloud native ecosystem and to be publicly seen supporting it. You can see other benefits on the [Join](https://www.cncf.io/about/join/) page, but none of them involve control over projects. The governing board has ultimate control over CNCF, but CNCF is managed through a written charter and it consists of many disparate and competing interests. As a result, decision-making is consensus-based.
+
+## Do I have to use my real name when contributing via DCO/CLA?
+
+Yes, no pseudonyms or anonymous contributions. The CNCF follows the same tried and true policy in the Linux Kernel and other LF projects. They have proven strong enough to defend the Linux kernel against legal attacks to date
+
+* https://github.com/torvalds/linux/blob/master/Documentation/process/submitting-patches.rst#developers-certificate-of-origin-11
