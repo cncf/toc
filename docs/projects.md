@@ -181,6 +181,7 @@
 | [Backstage](https://github.com/spotify/backstage) |9/8/2020| 3/15/2022 |  [Incubating](https://github.com/cncf/toc/pull/717)
 | [Volcano](https://volcano.sh)             | 4/10/2020 |    4/7/2022|  [Incubating](https://github.com/cncf/toc/pull/712)
 | [KubeVirt](https://kubevirt.io)         |  9/9/2019        | 4/19/2022           |[Incubating](https://github.com/cncf/toc/pull/715)|
+| [CubeFS](https://cubefs.io)         |  8/27/19        | 7/3/2022           |[Incubating](https://github.com/cncf/toc/pull/586)|
 
 ## Project Security Audits
 
