@@ -2,19 +2,27 @@
 
 ## Introduction
 
-The purpose of working groups are to study and report on a particular question and make recommendations based on its findings. The end result of a working group may be a new project proposal, landscape, whitepaper or even a report detailing their findings. The intention of working groups is not to host a full project or specification. Working Groups can be formed at any time but must be sponsored by a TOC member and voted with a super majority vote by the CNCF TOC. The TOC can also shut down a working group with a super majority vote.
+CNCF Working Groups (WGs) serve several purposes, for example to study and report on a particular question, to make recommendations based on their findings, or to complete a specific work package. The intention of WGs is _not_ to host a full project or specification. The work result of a WG may include a new project proposal, landscape, whitepaper report detailing their findings, or similar.
+
+WGs must be created under the umbrella of a [CNCF Technical Advisory Group](https://github.com/cncf/toc/tree/main/tags) (TAG), and sponsored by a CNCF TOC member. In case of disagreement within TOC, a supermajority vote may be called 
+
+WGs can be shut down when they determine that they have reached their stated goals, by consensus within their umbrella TAG, or a supermajority vote within the TOC.
 
 ## Process
 
-If you would like to submit a working group proposal, please submit a pull request to the working groups folder. As an example, you can see the other working group proposals here: https://github.com/cncf/toc/tree/main/workinggroups
-
-You will also have to present to the CNCF TOC and wider community before your WG proposal will be voted upon by the TOC and community. You can request a presentation by filing an issue here: https://github.com/cncf/toc/issues
+If you would like to submit a WG proposal, please get in contact with suitable umbrella TAGs. The TAG work with their TOC liasons to create the WG.
 
 At a minimum, please include this information:
 
+* Umbrella TAG & TOC liason
+* Links supporting information
 * Goals
 * Non-goals
-* Mailing list information
+* Mailing list / Slack information
 * The location of meetings / agenda / notes
 * Initial interested parties to show that there are multiple people across multiple orgs interested
-* The chair(s) and TOC sponsor being explicitly listed so they are discoverable
+
+## Current Working Groups
+
+* TAG 123
+  * WG abc
