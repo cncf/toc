@@ -6,7 +6,10 @@ CNCF Working Groups (WGs) serve several purposes, for example to study and repor
 
 WGs must be created under the umbrella of a [CNCF Technical Advisory Group](https://github.com/cncf/toc/tree/main/tags) (TAG), and sponsored by a CNCF TOC member. In case of disagreement within TOC, a supermajority vote may be called 
 
-WGs can be shut down when the working group and TAG, with concurrence of the TOC sponsor, determines that they have reached their stated goals, by consensus within their umbrella TAG, or by a supermajority vote within the TOC.
+WGs can be shut down
+* when the working group and TAG, with concurrence of the TOC sponsor, determines that they have reached their stated goals, or
+* by consensus within their umbrella TAG, or
+* by a supermajority vote within the TOC.
 
 ## Process
 
