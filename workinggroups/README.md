@@ -12,7 +12,7 @@ WGs can be shut down when they determine that they have reached their stated goa
 
 If you would like to submit a WG proposal, please get in contact with suitable umbrella TAGs. The TAG will follow their existing working group processes or engage with their TOC liasons to create the WG should no process exist.
 
-At a minimum, please include this information:
+All TAG and working group processes regarding the governance, details, and logistics of the working group should include, at a minimum, the following information within their repos:
 
 * Umbrella TAG & TOC liason
 * Links supporting information
