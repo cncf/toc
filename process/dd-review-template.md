@@ -35,8 +35,9 @@ As a secondary goal, it is in the interests of the broader CNCF ecosystem that t
 4. Have committers from at least two organizations.
 5. Have achieved and maintained a Core Infrastructure Initiative Best Practices Badge.
 6. Adopted the CNCF Code of Conduct.
-7. Explicitly define a project governance and committer process. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
-8. Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website), guidelines for identifying adopters can be found in the [FAQs](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter).
+7. Explicitly define a project governance and committer process. The committer process should cover the full committer lifecycle including onboarding and offboarding or emeritus criteria. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
+8. Explicitly define the criteria, process and offboarding or emeritus conditions for project maintainers; or those who may interact with the CNCF on behalf of the project. The list of maintainers should be preferably be stored in a MAINTAINERS.md file and audited at a minimum of an annual cadence.
+9. Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website), guidelines for identifying adopters can be found in the [FAQs](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter).
 
 ### Documentation of CNCF Alignment (if not addressed above):
 * name of project (must be unique within CNCF)
