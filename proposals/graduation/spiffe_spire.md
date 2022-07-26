@@ -3,7 +3,7 @@
 
   
 
-The SPIFFE and SPIRE projects were started with an ambitious vision: to automatically provide every workload with an identity that is cryptographically verifiable, automatically rotated, interoperable and portable across a wide variety of platforms and providers. The goal is an interoperable workload identity format (SPIFFE), and supporting tooling to issue those identities (SPIRE), that allows components in a distributed system to ensure the authenticity, integrity and confidentiality of messages passed between them. To accomplish it effectively, the supporting toolchain must be able to deliver identities to workloads across a range of hosting platforms (eg. private estate, public cloud) and runtime orchestration tools (eg. bare metal machines, virtual machines, containers).
+The SPIFFE and SPIRE projects were started with an ambitious vision: to automatically provide every workload with an identity that is cryptographically verifiable, automatically rotated, interoperable and portable across a wide variety of platforms and providers. The goal is an interoperable workload identity format (SPIFFE), and supporting tooling to issue those identities (SPIRE), that allows components in a distributed system to ensure the authenticity, integrity and confidentiality of messages passed between them. To accomplish it effectively, the supporting toolchain must be able to deliver identities to workloads across a range of hosting platforms (eg. private estate, public cloud) and runtime orchestration tools for generalized classes of identities (canonical, attributed, or delegated) for varying workload form factors (eg. bare metal machines, virtual machines, containers).
 
   
 
@@ -21,7 +21,7 @@ The growth of the SPIFFE and SPIRE projects, with support from the CNCF as it mo
     
 -   Project Tornjak launched, a web-based UI for managing SPIRE deployments
     
--   SPIRE released support for serverless platforms
+-   SPIRE released support for serverless platforms via [SVID Store plugins](https://blog.spiffe.io/enabling-authenticated-communication-for-serverless-workloads-with-spire-d636bf2f7a91)
     
 -   Developed a [maturity framework](https://github.com/spiffe/spiffe/blob/main/MATURITY.md#) for sub-projects
     
