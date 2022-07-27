@@ -18,15 +18,14 @@ Last reviewed and concurred: Jul 27, 2022, [Issue 413](https://github.com/cncf/t
 
 As part of our continued community engagement, the following list of principles serve to provide an understanding of how the TOC intends to work with projects, effectively serving as the guiding star for the TOC. It also provides insight into what the TOC is looking for in terms of continuity and evolution over time. Since the CNCF's inception we have endeavoured to capture the lessons learned and iterate on these principles to serve the foundation, the community, and the projects.
 
-  1. We are project-centric.
-  1. We rely on minimal viable governance to enable community driven success.
-  1. Do no harm by enabling robust, well engineered projects and supportive processes to increase the likelihood of success.
-  1. No kingmakers. Similar or competitive projects are not excluded for reasons of overlap. 
-  1. No single stack. Encourage interoperability for the emergence of a variety of stacks and patterns to serve the community and adopters.
-  1. Promote interfaces  and defacto implementations over standards for real world use.
-  1. Users should not need to look beyond the CNCF for cloud native app tooling.
-  1. To help facilitate high-quality high-velocity cloud native open source projects which are the main driver of customer adoption and success.
- 1. We help high-quality high-velocity cloud native open source projects which are the main driver of customer adoption and success.
+ 1. We are project-centric.
+ 1. We rely on minimal viable governance to enable community driven success.
+ 1. Do no harm by enabling robust, well engineered projects and supportive processes to increase the likelihood of success.
+ 1. No kingmakers. Similar or competitive projects are not excluded for reasons of overlap. 
+ 1. No single stack. Encourage interoperability for the emergence of a variety of stacks and patterns to serve the community and adopters.
+ 1. Promote interfaces  and defacto implementations over standards for real world use.
+ 1. Users should not need to look beyond the CNCF for cloud native app tooling.
+ 1. To help facilitate high-quality high-velocity cloud native open source projects which are the main driver of customer adoption and success.
 
 
 ### We Are Project-Centric
@@ -86,7 +85,7 @@ _Principles:_
 1. No kingmakers. Similar or competitive projects are not excluded for reasons of overlap. 
 1. No single stack. Encourage interoperability for the emergence of a variety of stacks and patterns to serve the community and adopters.
 
-The TOC picks projects with a real chance of achieving widespread use, and it does not pick a signle winner in each category. Via the “no kingmakers” principle and “what is a project”, the CNCF may support several projects which show how a ‘stack’ is a solution to certain use cases. For example, some stacks might use a container orchestrator. Other stacks might show how to integrate monitoring with other “observability” technologies, for cloud native apps regardless of their orchestration model.
+The TOC picks projects with a real chance of achieving widespread use, and it does not pick a single winner in each category. Via the “no kingmakers” principle and “what is a project”, the CNCF may support several projects which show how a ‘stack’ is a solution to certain use cases. For example, some stacks might use a container orchestrator. Other stacks might show how to integrate monitoring with other “observability” technologies, for cloud native apps regardless of their orchestration model.
 
 The TOC does not pick a “winning stack” - i.e., vertically integrated set of projects as a solution for multiple application problems. This means that the CNCF is not promoting a single, monolithic stack of technologies. 
 
