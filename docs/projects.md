@@ -133,6 +133,10 @@
 [OpenFeature](https://github.com/open-feature)|TOC Vote|[2/18/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/open-feature)|Sandbox
 [kubewarden](https://github.com/kubewarden)|TOC Vote|[2/23/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/kubewarden)|Sandbox
 [DevStream](https://github.com/devstream-io/devstream)|TOC Vote|[2/28/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[06/14/2022](https://github.com/devstream-io/devstream)|Sandbox
+[Hexa Policy Orchestrator](https://github.com/hexa-org/policy-orchestrator)|TOC Vote|[6/8/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/hexa-org/policy-orchestrator )|Sandbox
+[Konveyor](https://github.com/konveyor)|TOC Vote|[3/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/konveyor)|Sandbox
+[Armada](https://github.com/G-Research/armada)|TOC Vote|[3/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/G-Research/armada)|Sandbox
+[External Secrets Operator](https://github.com/external-secrets/external-secrets)|TOC Vote|[3/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/external-secrets/external-secrets)|Sandbox
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
@@ -182,6 +186,8 @@
 | [Volcano](https://volcano.sh)             | 4/10/2020 |    4/7/2022|  [Incubating](https://github.com/cncf/toc/pull/712)
 | [KubeVirt](https://kubevirt.io)         |  9/9/2019        | 4/19/2022           |[Incubating](https://github.com/cncf/toc/pull/715)|
 | [CubeFS](https://cubefs.io)         |  8/27/19        | 7/3/2022           |[Incubating](https://github.com/cncf/toc/pull/586)|
+| [Kyverno]() | 11/10/2020 |    7/12/2022   |[Incubating](https://github.com/cncf/toc/pull/784)|
+| [Keptn](https://keptn.sh/) | 6/23/20   | 7/13/2022 | [Incubating](https://github.com/cncf/toc/pull/670)|
 
 ## Project Security Audits
 
