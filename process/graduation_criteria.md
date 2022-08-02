@@ -19,7 +19,7 @@ See the [CNCF Sandbox Guidelines v1.0](https://github.com/cncf/toc/blob/main/pro
 
 ### Incubating Stage
 
-*Note: The incubation level is the point at which we expect to perform full [due dilligence](https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md) on projects.*
+*Note: The incubation level is the point at which we expect to perform full [due diligence](https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md) on projects.*
 
 To be accepted to incubating stage, a project must meet the sandbox stage requirements plus:
 
