@@ -32,7 +32,7 @@ List below is the official list of TOC contributors, in alphabetical order:
 * Dustin Kirkland, Canonical (kirkland@canonical.com)
 * Eduardo	Silva, Treasure Data (eduardo@treasure-data.com)
 * Edward Lee, Intuit (edward_lee@intuit.com)
-* Frederick Kautz, Doc.ai (frederick@doc.ai)
+* Frederick Kautz, Doc.ai (fkautz@alumni.cmu.edu)
 * Gergely Csatari, Nokia (gergely.csatari@nokia.com)
 * Geri Jennings, CyberArk (geri.jennings@cyberark.com)
 * Gerred Dillon, D2iQ (gerred@d2iq.com)
