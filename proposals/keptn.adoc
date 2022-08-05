@@ -87,11 +87,11 @@ canary)
 
 * May 2019 - v 0.2.5. Latest version of Keptn providing all core functionality
 to support key use cases. First version of keptn's bridge UI. 
-* September 2019 - v 0.3.0. Improved version of keptn's brige UI. Infrastructure fully upgraded to
-latest version of knative. Removal of Third Party tooling dependency (Jenkins, ...). Keptn
+* September 2019 - v 0.3.0. Improved version of keptn's bridge UI. Infrastructure fully upgraded to
+latest version of knative. Removal of Third Party tooling dependency (Jenkins, ...) Keptn
 operator. Improved uniform support with first version of uniform hub. 
 * December 2019 - v 0.4.0. Support for multi-cluster deployment. Improved
-supporte across multiple Kubernetes distributions.
+support across multiple Kubernetes distributions.
 * June 2020 - planned v 1.0 release. This is the planned releases date for the
 first version that has been hardened after multiple production deployments in
 different settings.
