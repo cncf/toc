@@ -149,7 +149,7 @@ _Principle: Users shouldn't need to look beyond the CNCF for cloud native app to
 
 Grand vision: CNCF should identify, facilitate and promote a *complete toolset* for cloud native applications and stacks at scales from small to large. This enables customers to adopt good tools faster, and be less at risk of confusion and doubt.
 
-We need to flesh out the portfolio of projects needed by users to succeed with cloudnative computing. It's pretty clear where remaining gaps in the project portfolio are. We should try to fill some of those, and at least document the rest. We can make more WGs to help with a few of those. (Note that “detailed architecture and stack” can be a Project)
+We need to flesh out the portfolio of projects needed by users to succeed with cloud native computing. It's pretty clear where remaining gaps in the project portfolio are. We should try to fill some of those, and at least document the rest. We can make more WGs to help with a few of those. (Note that “detailed architecture and stack” can be a Project)
 
 ## Above All We Want To Help Projects
 
