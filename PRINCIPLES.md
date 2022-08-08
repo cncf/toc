@@ -23,7 +23,7 @@ As part of our continued community engagement, the following list of principles 
  1. Do no harm by enabling robust, well engineered projects and supportive processes to increase the likelihood of success.
  1. No kingmakers. Similar or competitive projects are not excluded for reasons of overlap. 
  1. No single stack. Encourage interoperability for the emergence of a variety of stacks and patterns to serve the community and adopters.
- 1. Promote interfaces  and defacto implementations over standards for real world use.
+ 1. Promote interfaces and defacto implementations over standards for real world use.
  1. Users should not need to look beyond the CNCF for cloud native app tooling.
  1. To help facilitate high-quality high-velocity cloud native open source projects which are the main driver of customer adoption and success.
 
@@ -87,7 +87,7 @@ _Principles:_
 
 The TOC picks projects with a real chance of achieving widespread use, and it does not pick a single winner in each category. Via the “no kingmakers” principle and “what is a project”, the CNCF may support several projects which show how a ‘stack’ is a solution to certain use cases. For example, some stacks might use a container orchestrator. Other stacks might show how to integrate monitoring with other “observability” technologies, for cloud native apps regardless of their orchestration model.
 
-The TOC does not pick a “winning stack” - i.e., vertically integrated set of projects as a solution for multiple application problems. This means that the CNCF is not promoting a single, monolithic stack of technologies. 
+The TOC does not pick a “winning stack” - i.e., vertically integrated set of projects as a solution for multiple application problems. This means that the CNCF is not promoting a single, monolithic stack of technologies.
 
 CNCF projects may have dependencies on other open source projects that comply with the [CNCF IP policy](https://github.com/cncf/foundation/blob/master/allowed-third-party-license-policy.md), which may be outside the CNCF. Widely-used dependencies are preferred; pluggable dependencies fit well with our principles but are not essential.  _Examples: Kubernetes' dependency on etcd, which was not a CNCF project at the time Kubernetes was brought into the CNCF; CNI, which enables pluggable networking dependencies._ 
 
