@@ -17,10 +17,10 @@ a pull request with document referencing the roles and charter, updating the lis
 |------|--------------| 
 | [TAG Security](https://github.com/cncf/tag-security) | Emily Fox, Justin Cormack |
 | [TAG Storage](https://github.com/cncf/tag-storage) | Erin Boyd, Richard Hartmann |
-| [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Matt Farina, Lei Zhang, Cathy Zhang |
+| [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Matt Farina, Lei Zhang, Katie Gamanji |
 | [TAG Network](https://github.com/cncf/tag-network) | Dave Zolotusky, Davanum Srinivas |
 | [TAG Runtime](https://github.com/cncf/tag-runtime) | Ricardo Rocha, Richard Hartmann, Davanum Srinivas |
-| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Matt Farina, Katie Gamanji |
+| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Matt Farina, Katie Gamanji, Cathy Zhang |
 | [TAG Observability](https://github.com/cncf/tag-observability) | Lei Zhang, Cathy Zhang |
 
 ## TAG Chairs as of March 2022
