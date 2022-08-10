@@ -113,9 +113,9 @@ Some details that might inform the above include:
 * Who are the clear leaders? Are there any areas lacking clear leadership? Testing? Release? Documentation? These roles sometimes go unfilled.
 * What is the rate of ongoing contributions to the project (typically in the form of merged commits).
 
-#### Users
+#### Users & Adopters
 
-* Who uses the project?  Get a few in-depth references from 2-4 of them who actually know and understand it.
+* Who uses the project?  Get a few in-depth references from 2-4 of them who actually know and understand it. Guidelines on identifying these can be found in the [FAQs](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter).
 * What do real users consider to be its strengths and weaknesses?  Any concrete examples of these?
 * Perception vs Reality:  Is there lots of buzz, but the software is flaky/untested/unused?  Does it have a bad reputation for some flaw that has already been addressed?
 

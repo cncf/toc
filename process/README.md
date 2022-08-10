@@ -61,7 +61,7 @@ Incubating projects are required to undergo due diligence as a part of the proce
 Criteria: 
 To be accepted to incubating stage, a project must meet the sandbox stage requirements plus:
 
-* Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope.
+* Document that it is being used successfully in production by at least three independent adopters which, in the TOC’s judgement, are of adequate quality and scope.
 * Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.
 * Demonstrate a substantial ongoing flow of commits and merged contributions.
 * Since these metrics can vary significantly depending on the type, scope and size of a project, the TOC has final judgement over the level of activity that is adequate to meet these criteria
@@ -77,7 +77,8 @@ Projects that wish to move from Incubating to Graduation should open a PR confir
 * Have committers from at least two organizations.
 * Have achieved and maintained a [Core Infrastructure Initiative Best Practices Badge](https://bestpractices.coreinfrastructure.org/).
 * Have completed an independent and third party security audit with results published of similar scope and quality as [this example](https://github.com/envoyproxy/envoy#security-audit) which includes all critical vulnerabilities and all critical vulnerabilities need to be addressed before graduation.
-* Explicitly define a project governance and committer process. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
+* Explicitly define a project governance and committer process. The committer process should cover the full committer lifecycle including onboarding and offboarding or emeritus criteria. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
+* Explicitly define the criteria, process and offboarding or emeritus conditions for project maintainers; or those who may interact with the CNCF on behalf of the project. The list of maintainers should be preferably be stored in a MAINTAINERS.md file and audited at a minimum of an annual cadence.
 * Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website). For a specification, have a list of adopters for the implementation(s) of the spec.
 * Please include a short one-page narrative based off the Graduation template, no more than 500 words.
 
@@ -93,7 +94,7 @@ When voting on a proposal to archive a project, TOC members may wish to consider
 
 To archive a project:
 * A proposal must be put forth to the TOC repo
-* The TOC will inform the project maintainers, CNCF end user community and wider community of all archiving proposals
+* The TOC will inform the project maintainers, CNCF End-User community and wider community of all archiving proposals
 * The proposal must remain open for at least 2 weeks of discussion after the maintainers are informed.
 * A vote must be finalized with 2/3 approval from the TOC
 
@@ -114,7 +115,7 @@ Your annual review should answer the following questions:
 
 * Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity. Please feel free to add commentary to add colour to the numbers and graphs we will see on devstats.
 * How many maintainers do you have, and which organisations are they from? (Feel free to link to an existing MAINTAINERS file if appropriate.)
-* What do you know about adoption, and how has this changed since your last review / since you joined Sandbox? If you can list companies that are end users of your project, please do so. (Feel free to link to an existing ADOPTERS file if appropriate.)
+* What do you know about adoption, and how has this changed since your last review / since you joined Sandbox? If you can list companies that are adopters of your project, please do so. (Feel free to link to an existing ADOPTERS file if appropriate.)
 * How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)
 * What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
 * How can the CNCF help you achieve your upcoming goals?

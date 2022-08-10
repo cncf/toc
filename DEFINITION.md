@@ -3,7 +3,7 @@
 *Approved by TOC: 2018-06-11*
 
 [العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai)
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -74,7 +74,7 @@ Estas técnicas permiten crear sistemas de bajo acoplamiento que son resilentes,
 
 La "Cloud Native Computing Foundation" busca impulsar la adopción de este paradigma mediante el fomento y mantenimiento de un ecosistema de proyectos de código abierto y neutro con respecto a los proveedores. Democratizamos los patrones modernos para que estas innovaciones sean accesibles para todos.
 
-## Français
+## Français:
 
 Les technologies *Cloud Native* permettent aux entreprises de construire et d'exploiter des applications élastiques dans des environnements modernes et dynamiques comme des *clouds* publics, privés ou bien hybrides. Les conteneurs, le maillage de services, les microservices, les infrastructures immuables et les API déclaratives illustrent cette approche.
 
@@ -170,3 +170,19 @@ Bu yöntemler dirençli, yönetilebilir ve gözlemlenebilir gevşek bağlı sist
 
 มูลนิธิ Cloud Native Computing พยายามที่จะผลักดันเพื่อนำกระบวนทัศน์หรือแนวคิดนี้ไปใช้โดยการส่งเสริมและรักษาระบบนิเวศของโอเพ่นซอร์สให้ยั่งยืน
 โครงการนี้เป็นโครงการที่เป็นกลางไม่ยึดกับเวนเดอร์หรือผู้ขายต่างๆ โดยเรานำรูปแบบที่ล้ำสมัยให้เป็นประชาธิปไตยเพื่อสร้างนวัตกรรมที่ทุกคนเข้าถึงได้
+
+## Magyar:
+
+A Cloud Native technológiák képessé teszik a szervezeteket arra, hogy skálázható alkalmazásokat hozzanak létre és futtassanak olyan modern és dinamikus környezetekben, mint a nyilvános, privát és hibrid felhők. Ezt a megközelítést olyan technológiák fémjelzik, mint a konténerek, a szolgáltatás-hálók (service mesh), a mikroszervizek, a nem módosítható infrastruktúra (immutable infrastructure), valamint a deklaratív API-k.
+
+Ezek a technológiák lazán csatolt rendszereket eredményeznek, melyek rugalmasak, jól menedzselhetők és könnyen megfigyelhetők. Robusztus automatizációval kombinálva lehetővé teszik a mérnökök számára, hogy gyakran és kiszámíthatóan hajthassanak végre nagy hatással bíró változtatásokat, minimális erőfeszítés mellett.
+
+A **Cloud Native Computing Foundation** nyílt forráskódú és szolgáltató-semleges projektek támogatása és fenntartása mentén arra törekszik, hogy ösztönözze a Cloud Native paradigma átvételét. Célunk a legmodernebb minták demokratizálása annak érdekében, hogy ezek az innovációk mindenki számára elérhetők legyenek.
+
+## हिन्दी:
+
+क्लाउड नेटिव प्रौद्योगिकियां संगठनों को सार्वजनिक, निजी और हाइब्रिड क्लाउड जैसे आधुनिक, गतिशील वातावरण में स्केलेबल एप्लिकेशन बनाने और चलाने के लिए सशक्त बनाती हैं। कंटेनर, सर्विस मेश, माइक्रोसर्विसेज, अपरिवर्तनीय इन्फ्रास्ट्रक्चर और डिक्लेरेटिव एपीआई इस दृष्टिकोण का उदाहरण हैं।
+
+ये तकनीक ढीले युग्मित सिस्टम को सक्षम करती हैं जो लचीला, प्रबंधनीय और अवलोकन योग्य हैं। मजबूत स्वचालन के साथ, वे इंजीनियरों को न्यूनतम परिश्रम के साथ बार-बार और अनुमानित रूप से उच्च-प्रभाव वाले परिवर्तन करने की अनुमति देते हैं।
+
+क्लाउड नेटिव कंप्यूटिंग फाउंडेशन खुले स्रोत, विक्रेता-तटस्थ परियोजनाओं के एक पारिस्थितिकी तंत्र को बढ़ावा देने और बनाए रखने के द्वारा इस प्रतिमान को अपनाने का प्रयास करता है। हम इन नवाचारों को सभी के लिए सुलभ बनाने के लिए अत्याधुनिक पैटर्न का लोकतंत्रीकरण करते हैं।

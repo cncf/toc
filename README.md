@@ -61,7 +61,7 @@ Here is a [Google calendar for all public CNCF events](https://goo.gl/eyutah). T
 - [Meeting Working Doc](https://docs.google.com/document/d/1jpoKT12jf2jTf-2EJSAl4iTdA7Aoj_uiI19qIaECNFc/edit#). This includes minutes from previous meetings.
 - [Meeting agenda and presentations](docs/meeting_presentations.md).
 - [Archive of community presentations](docs/scheduled_presentations.md)
-
+- [CNCF TOC Playlist on YouTube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Mf6GCZzW6CAk6GlZESbemB)
 
 ## Mailing List
 
