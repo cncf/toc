@@ -122,7 +122,7 @@ Argo depends on the following external software components:
 Argoproj
 
 * 25,000 stars
-* 5300 slack members
+* 14,000 slack members
 * 2900 forks
 * 550 contributors
 * 240 end user companies and organizations
