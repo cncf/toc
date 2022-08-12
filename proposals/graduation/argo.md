@@ -155,6 +155,8 @@ Core Infrastructure Initiative Best Practices Badges have been completed and are
 Third party security audit has been completed with Trail of Bits and ADA Logics as the 3rd party auditors.
 https://github.com/argoproj/argoproj/blob/master/docs/argo_threat_model.pdf
 https://github.com/argoproj/argoproj/blob/master/docs/argo_security_final_report.pdf
+https://github.com/argoproj/argoproj/blob/master/docs/audit_fuzzer_adalogics_2022.pdf
+https://github.com/argoproj/argoproj/blob/master/docs/argo_security_audit_2022.pdf
 
 #### Explicitly define a project governance and committer process
 
