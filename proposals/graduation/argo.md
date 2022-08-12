@@ -36,7 +36,7 @@ The Argo project is well-aligned with the CNCF’s mission to make cloud native 
 
 #### Sponsors / Advisors from TOC
 * Lei Zhang
-* Davanum Srinivas
+* Cathy Zhang
 
 #### Project name
 * Argo
