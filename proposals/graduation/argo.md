@@ -152,7 +152,7 @@ Core Infrastructure Initiative Best Practices Badges have been completed and are
 
 #### Have completed an independent and third party security audit with results published of similar scope and quality as [this example](https://github.com/envoyproxy/envoy#security-audit) which includes all critical vulnerabilities and all critical vulnerabilities need to be addressed before graduation
 
-Third party security audit has been completed with Trail of Bits as the 3rd party auditor.
+Third party security audit has been completed with Trail of Bits and ADA Logics as the 3rd party auditors.
 https://github.com/argoproj/argoproj/blob/master/docs/argo_threat_model.pdf
 https://github.com/argoproj/argoproj/blob/master/docs/argo_security_final_report.pdf
 
