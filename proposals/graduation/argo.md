@@ -91,7 +91,7 @@ Argo depends on the following external software components:
 
 #### Communication Channels
 
-* Slack: https://argoproj.slack.com/
+* Slack: https://cncf.slack.com/ #argo-cd #argo-workflow #argo-rollouts #argo-events
 * Mailing List: https://groups.google.com/forum/#!forum/argoproj 
 * Community Docs: https://github.com/argoproj/argoproj/blob/master/community/README.md
 
