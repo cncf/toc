@@ -124,7 +124,7 @@ Argoproj
 * 25,000 stars
 * 14,000 slack members
 * 6,100 forks
-* 550 contributors
+* 815 contributors
 * 240 end user companies and organizations
 
 #### Production usage
