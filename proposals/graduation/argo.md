@@ -115,7 +115,7 @@ Argo depends on the following external software components:
 * Twitter: @argoproj
 
 #### Existing sponsorship
-* CNCF, Intuit, Red Hat, Blackrock and Codefresh are the sponsors of Argo
+* CNCF, Intuit, Akuity, BlackRock, Codefresh and Red Hat are the sponsors of Argo
 
 #### Community size
 
