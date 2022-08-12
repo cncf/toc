@@ -82,7 +82,7 @@ Argo depends on the following external software components:
 * Jann Fischer (Red Hat)
 * Jesse Suen (Akuity)
 * Jonathan West (Red Hat)
-* Oleg Sucharevich (Codefresh)
+* Oleg Sucharevich (Elastic)
 * Vaibhav Page (BlackRock)
 
 #### Infrastructure requests
