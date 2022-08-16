@@ -48,7 +48,7 @@ Note that we have limited resources so may not be able to address every project.
 
 #### Operations
 
-Security TAG operations are consistent with standard TAG operating guidelines provided by the [CNCF Technical Oversight Committee TOC](https://github.com/cncf/toc).
+Environmental Sustainability TAG operations are consistent with standard TAG operating guidelines provided by the [CNCF Technical Oversight Committee TOC](https://github.com/cncf/toc).
 
 ## Acknowledgement
 The format of this proposal is inspired from [TAG security](https://github.com/cncf/tag-security/blob/main/governance/charter.md#operations).
