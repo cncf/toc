@@ -25,8 +25,6 @@ We recognize that:
 - Community outreach on any items within scope, for instance, social media/conferences/podcasts/meetups et cetera
 - Collaboration with other sustainability efforts
 
-Note that we have limited resources so may not be able to address every project.
-
 ### Out of scope
 - Form an umbrella organization beyond the CNCF
 - Establish a compliance and standards body beyond the CNCF space
@@ -48,7 +46,7 @@ Note that we have limited resources so may not be able to address every project.
 
 #### Operations
 
-Security TAG operations are consistent with standard TAG operating guidelines provided by the [CNCF Technical Oversight Committee TOC](https://github.com/cncf/toc).
+Environmental Sustainability TAG operations are consistent with standard TAG operating guidelines provided by the [CNCF Technical Oversight Committee TOC](https://github.com/cncf/toc).
 
 ## Acknowledgement
 The format of this proposal is inspired from [TAG security](https://github.com/cncf/tag-security/blob/main/governance/charter.md#operations).
