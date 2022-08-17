@@ -25,8 +25,6 @@ We recognize that:
 - Community outreach on any items within scope, for instance, social media/conferences/podcasts/meetups et cetera
 - Collaboration with other sustainability efforts
 
-Note that we have limited resources so may not be able to address every project.
-
 ### Out of scope
 - Form an umbrella organization beyond the CNCF
 - Establish a compliance and standards body beyond the CNCF space
