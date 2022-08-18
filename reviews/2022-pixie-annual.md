@@ -73,6 +73,8 @@ AWS:
 - [Pixie - Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/ds-pixie.html) 
 - [EKS Workshop: Monitoring using Pixie](https://www.eksworkshop.com/intermediate/241_pixie/)
 
+Misc: 
+
 - [Pixie is Now Available as Part of New Relic One](https://newrelic.com/blog/how-to-relic/kubernetes-monitoring-pixie-ga)
 - [Verizon takes innovation to the edge with Pixie and New Relic.](https://newrelic.com/customers/verizon?utm_campaign=PostBeyond&utm_source=Twitter&utm_medium=%23362600&utm_term=Verizon)
 
