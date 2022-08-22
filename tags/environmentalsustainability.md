@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The Paris Climate Accords outline the link between economic activity, greenhouse gas (GHG) emissions, and the impacts of climate change. GHG  emissions, primarily made from Carbon Dioxide, are released during the combustion of fossil fuels to produce electricity. To reach net zero goals, we need to identify how to reduce the environmental footprints of increasingly large data centers.
+The Paris Climate Accords outline the link between economic activity, greenhouse gas (GHG) emissions, and the impacts of climate change. GHG  emissions, primarily made from Carbon Dioxide, are released during the combustion of fossil fuels to produce electricity. To reach net zero goals, we need to first identify how to reduce the environmental footprints of increasingly large data centers and then help the community take action to mitigate these footprints.
 
 ## Mission Statement
 This TAG's goal is to advocate for, develop, support, and help evaluate environmental sustainability initiatives in Cloud Native Technologies.
 
-All activities of this TAG should aim to positively impact the community by changing mindset, increasing resource efficiency, and putting energy efficiency and environmental sustainability on everyone's agenda.
+All activities of this TAG should aim to positively impact the community by working to help reach net-zero goals and simplifying the processes to do so.
 
 ## Responsibilities & Deliverables
 
 ### Background
 We recognize that: 
-- balancing resource consumption with the desire for performance is difficult
-- there is inconsistency in how emissions are calculated and what is included by software in scopes of emission. 
+- the trade off between reducing resource consumption and higher performance is hard to balance
+- there is wide inconsistency in how emissions are calculated among projects
 
 ### In-Scope
 
@@ -32,8 +32,9 @@ We recognize that:
 - Focus outside of Cloud Native Technologies, according to the [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md)
 
 ## Deliverables to ToC
-- landscape for the carbon and energy metrics/measurements/management savings
+- landscape for the carbon and energy metrics, measurements, and management
 - recommendations for new CNCF projects where there are clear use cases or where exploration is needed
+- review of upcoming project proposed for adoption and propose to CNCF according to interest
 - regular reporting to ToC on ongoing and completed work
 - recommend projects for sandbox and graduation status
 - suggestions for improvements for CNCF internal processes, for example, education for sustainability
@@ -52,26 +53,4 @@ Environmental Sustainability TAG operations are consistent with standard TAG ope
 The format of this proposal is inspired from [TAG security](https://github.com/cncf/tag-security/blob/main/governance/charter.md#operations).
 The initial doc was taken from the [Environmental WG charter](https://docs.google.com/document/d/1JaF7lSUmLQ2zmScmca6UF7PgbjMzSxjhhjx2LThThaY/edit#heading=h.x77xxicolnig) and modified by the community.
 
-## Contributors
-This proposal is contributed by (in alphabetical order):
-- Cara Delia
-- Chen Wang
-- Debra Bernstein
-- Eun Kyung Lee
-- Fanjing Meng
-- Frederick F. Kautz IV
-- Huamin Chen
-- Jiaju Zhang
-- Jochen Joswig
-- Jorge Palma
-- Leonard Pahlke
-- Mark Butcher
-- Marlow Weston
-- Max Körbächer
-- Niki Manoledaki
-- Parul Singh
-- Scott Rigby
-- Tony Mongkolsmai
-- William Caban
-- Wojtek Cichoń
-- Yassine El Ghali
+
