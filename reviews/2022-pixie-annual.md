@@ -2,15 +2,15 @@
 
 ## Background
 
-Pixie is an open source observability tool for Kubernetes applications. Leveraging technology such as eBPF, Pixie automatically collects telemetry data, including full-body requests, resource and network metrics, application profiles, and more. This allows developers to view the high-level state of their cluster (service maps, cluster resources, application traffic) and also drill down into more detailed views (pod state, flame graphs). All telemetry data is collected and stored locally in the cluster, utilizing less than 5% of cluster CPU. This data can be processed using Pixie's flexible Pythonic query language, Pxl, across Pixie's UI, CLI, and APIs. 
+Pixie is an open source observability tool for Kubernetes applications. Leveraging technology such as eBPF, Pixie automatically collects telemetry data, including full-body requests, resource and network metrics, application profiles, and more. This allows developers to view the high-level state of their cluster (service maps, cluster resources, application traffic) and also drill down into more detailed views (pod state, flame graphs). All telemetry data is collected and stored locally in the cluster, utilizing less than 5% of the cluster's CPU. This data can be processed using Pixie's flexible Pythonic query language, Pxl, across Pixie's UI, CLI, and APIs. 
 
-Pixie was accepted as a CNCF sandbox project in June 2021. Since our inclusion in the CNCF, Pixie has seen promising community contribution and adoption.
+Pixie was accepted as a CNCF sandbox project in June 2021. Since our inclusion in the CNCF, Pixie has seen promising community contribution, growth, and adoption.
 
 ## DevStats
 
-Pixie has seen a steady growth of Github activity. The [steady increase in the number of stars](https://pixie.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1&from=now-1y&to=now) indicates a growing adoption of Pixie from the community.
+Pixie has seen a [steady growth](https://pixie.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1&from=now-1y&to=now) of Github activity. 
 
-Pixie has a core team of 10+ full-time contributors that are focused on improving the product and adding new capabilities. Although the majority of our contributors are from New Relic, we are currently working on growing active contributors across other companies. We are [seeing more contributions](https://pixie.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=d7&var-metric=contributions&from=now-1y&to=now) of various sizes from the community. This includes significant contributions (such as new protocols implemented in eBPF) from various organizations. In addition, Pixie is [adopted](https://github.com/pixie-io/pixie/blob/main/ADOPTERS.md) and used by various cloud providers.
+Pixie has a core team of 10+ full-time contributors that are focused on improving the product and adding new capabilities. Although the majority of our contributors are from New Relic, we are currently working on growing active contributors across other companies. We are [seeing more contributions](https://pixie.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=d7&var-metric=contributions&from=now-1y&to=now) of various sizes from the community. This includes significant contributions (such as new protocols implemented in eBPF) from various organizations. In addition, Pixie is [adopted](https://github.com/pixie-io/pixie/blob/main/ADOPTERS.md) and used by various, end-users, cloud vendors, and tool providers.
  
 Overall, Pixie has over 50 contributors to date. 
 
@@ -26,7 +26,7 @@ Our [governance policy](https://github.com/pixie-io/pixie/blob/main/GOVERNANCE.m
 
 ## Adoption
  
-We are seeing a large uptick in community participation and adoption. Our conference presence has been well-received and we had an overflowing room for our talks at Kubecon EU 2022. 
+Our community participation and adoption are growing. Our conference presence has been well-received, and we had significant attendance at our booth and talks at Kubecon EU 2022.
 We also noticed an uptick on our [Slack](https://slackin.px.dev/) from folks trying out Pixie, asking some questions and using Pixie across their clusters.
  
 Some users have implemented tools built on top of Pixie. For example:
