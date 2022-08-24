@@ -52,6 +52,3 @@ We recognize that:
 
 Environmental Sustainability TAG operations are consistent with standard TAG operating guidelines provided by the [CNCF Technical Oversight Committee TOC](https://github.com/cncf/toc).
 
-
-
-
