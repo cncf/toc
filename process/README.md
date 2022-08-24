@@ -7,7 +7,7 @@ Project progression, movement from one stage to another, allows projects to part
 
 # II. Stages - Definitions & Expectations 
 
-CNCF projects have a maturity level of sandbox, incubating, or graduated. Archived is for projects no longer in active development. The maturity level is a signal by CNCF as to what sorts of enterprises should be adopting different projects. Projects increase their maturity by demonstrating their sustainability to CNCF’s Technical Oversight Committee: that they have adoption, a healthy rate of changes, committers from multiple organizations, have adopted the CNCF Code of Conduct, and have achieved and maintained the Core Infrastructure Initiative Best Practices Badge. 
+CNCF projects have a maturity level of sandbox, incubating, or graduated. Archived is for projects no longer in active development. The maturity level is a signal by CNCF as to what sorts of enterprises should be adopting different projects. Projects increase their maturity by demonstrating their sustainability to CNCF’s Technical Oversight Committee: that they have adoption, a healthy rate of changes, committers from multiple organizations, have adopted the CNCF Code of Conduct, and have achieved and maintained the OpenSSF Best Practices Badge. 
 
 ![Project Stages](https://github.com/cncf/toc/blob/main/process/project-stages.png)
 
@@ -75,7 +75,7 @@ Projects currently in progress for consideration at the Incubating stage are tra
 ## (3) Project Graduation Process: Incubating to Graduation 
 Projects that wish to move from Incubating to Graduation should open a PR confirming the following criteria: 
 * Have committers from at least two organizations.
-* Have achieved and maintained a [Core Infrastructure Initiative Best Practices Badge](https://bestpractices.coreinfrastructure.org/).
+* Have achieved and maintained a [OpenSSF Best Practices Badge](https://bestpractices.coreinfrastructure.org/).
 * Have completed an independent and third party security audit with results published of similar scope and quality as [this example](https://github.com/envoyproxy/envoy#security-audit) which includes all critical vulnerabilities and all critical vulnerabilities need to be addressed before graduation.
 * Explicitly define a project governance and committer process. The committer process should cover the full committer lifecycle including onboarding and offboarding or emeritus criteria. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
 * Explicitly define the criteria, process and offboarding or emeritus conditions for project maintainers; or those who may interact with the CNCF on behalf of the project. The list of maintainers should be preferably be stored in a MAINTAINERS.md file and audited at a minimum of an annual cadence.
