@@ -2,24 +2,30 @@
 
 ## Introduction
 
-The Paris Climate Accords outline the link between economic activity, greenhouse gas (GHG) emissions, and the impacts of climate change. GHG  emissions, primarily made from Carbon Dioxide, are released during the combustion of fossil fuels to produce electricity. To reach net zero goals, we need to first identify how to reduce the environmental footprints of increasingly large data centers and then help the community take action to mitigate these footprints.
+The Paris Climate Accords outline the link between economic activity, greenhouse gas (GHG) emissions, and the impacts of climate change. GHG  emissions, primarily made from Carbon Dioxide, are released during the combustion of fossil fuels to produce electricity. To reach net zero goals, we will first identify how to reduce the environmental footprints of increasingly large data centers and then help the community take action to mitigate these footprints.
+
+References:
+
+* https://www.iea.org/reports/net-zero-by-2050
+* https://www.whitehouse.gov/wp-content/uploads/2021/10/US-Long-Term-Strategy.pdf
+* https://www.worldbank.org/en/news/feature/2022/05/23/what-you-need-to-know-about-net-zero
 
 ## Mission Statement
-This TAG's goal is to advocate for, develop, support, and help evaluate environmental sustainability initiatives in Cloud Native Technologies.
+This TAG's goal is to advocate for, develop, support, and help evaluate environmental sustainability initiatives in Cloud Native Technologies.  We will identify values and possible incentives for service providers to reduce their consumption and carbon footprint through cloud native tooling.
 
-All activities of this TAG should aim to positively impact the community by working to help reach net-zero goals and simplifying the processes to do so.
+All activities of this TAG should aim to identify values and possible incentives for service providers to reduce their consumption and carbon footprint through cloud native tooling.
 
 ## Responsibilities & Deliverables
 
 ### Background
 We recognize that: 
 - the trade off between reducing resource consumption and higher performance is hard to balance
-- there is wide inconsistency in how emissions are calculated among projects
+- there is a lack of well supported and documented benchmarks for evaluating cloud native projects in their default or optimized configurations
 
 ### In-Scope
 
 - Identify, define, and develop tooling to assess and improve environmental sustainability approaches, including
-    - quantification of energy consumption of full-stack software including application, cloud native services
+    - Quantify the energy consumption of cloud native projects individually as well as in common integration patterns.
     - recommendations to manage full-stack software such that the overall energy consumption and associated carbon are reduced.
     - items to evaluate technological and architectural health of projects
 - Community outreach on any items within scope, for instance, social media/conferences/podcasts/meetups et cetera
@@ -32,25 +38,23 @@ We recognize that:
 - Focus outside of Cloud Native Technologies, according to the [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md)
 
 ## Deliverables to ToC
-- landscape for the carbon and energy metrics, measurements, and management
-- recommendations for new CNCF projects where there are clear use cases or where exploration is needed
-- review of upcoming project proposed for adoption and propose to CNCF according to interest
-- regular reporting to ToC on ongoing and completed work
-- recommend projects for sandbox and graduation status
-- suggestions for improvements for CNCF internal processes, for example, education for sustainability
+- Landscape for carbon and energy efficiency in the form of metrics, measurements, and management techniques
+- Provide environmental sustainment recommendations and optimizations to new and existing projects within the landscape and areas of gap in the environmental sustainment coverage of the landscape
+- Review upcoming project proposed for adoption and propose to CNCF according to interest
+- Regularly report to ToC on ongoing and completed work
+- Recommend projects for inclusion into the CNCF
+- Suggestions for improvements for CNCF internal processes, for example, education for sustainability
 
 ## Audiences
 
 - Education - audience is end users, developers, stakeholders
-- Project intelligence - audience is TOC / TOC Community
+- Project intelligence - audience is TOC/CNCF Community
 - External collaboration - organizations with the same mindset
 
 #### Operations
 
 Environmental Sustainability TAG operations are consistent with standard TAG operating guidelines provided by the [CNCF Technical Oversight Committee TOC](https://github.com/cncf/toc).
 
-## Acknowledgement
-The format of this proposal is inspired from [TAG security](https://github.com/cncf/tag-security/blob/main/governance/charter.md#operations).
-The initial doc was taken from the [Environmental WG charter](https://docs.google.com/document/d/1JaF7lSUmLQ2zmScmca6UF7PgbjMzSxjhhjx2LThThaY/edit#heading=h.x77xxicolnig) and modified by the community.
+
 
 
