@@ -11,23 +11,21 @@ References:
 * https://www.worldbank.org/en/news/feature/2022/05/23/what-you-need-to-know-about-net-zero
 
 ## Mission Statement
-This TAG's goal is to advocate for, develop, support, and help evaluate environmental sustainability initiatives in Cloud Native Technologies.  We will identify values and possible incentives for service providers to reduce their consumption and carbon footprint through cloud native tooling.
-
-All activities of this TAG should aim to identify values and possible incentives for service providers to reduce their consumption and carbon footprint through cloud native tooling.
+This TAG's goal is to advocate for, develop, support, and help evaluate environmental sustainability initiatives in Cloud Native Technologies.  This TAG will identify values and possible incentives for service providers to reduce their consumption and carbon footprint through cloud native tooling.
 
 ## Responsibilities & Deliverables
 
 ### Background
 We recognize that: 
 - the trade off between reducing resource consumption and higher performance is hard to balance
-- there is a lack of well supported and documented benchmarks for evaluating cloud native projects in their default or optimized configurations
+- there is a lack of well supported and documented approaches for evaluating cloud native projects in their default or optimized configurations
 
 ### In-Scope
 
 - Identify, define, and develop tooling to assess and improve environmental sustainability approaches, including
-    - Quantify the energy consumption of cloud native projects individually as well as in common integration patterns.
-    - recommendations to manage full-stack software such that the overall energy consumption and associated carbon are reduced.
-    - items to evaluate technological and architectural health of projects
+    - Quantify the energy consumption of cloud native implementations individually as well as in common integration patterns.
+    - Recommendations and strategies to develop, package, distribute, deploy, and operate cloud native implementations to reduce energy consumption and carbon as well as the various environments they operate in and which impact their consumption
+    - Capabilities, benchmarks, and processes to evaluate technological and architectural health of projects
 - Community outreach on any items within scope, for instance, social media/conferences/podcasts/meetups et cetera
 - Collaboration with other sustainability efforts
 
@@ -39,10 +37,9 @@ We recognize that:
 
 ## Deliverables to ToC
 - Landscape for carbon and energy efficiency in the form of metrics, measurements, and management techniques
-- Provide environmental sustainment recommendations and optimizations to new and existing projects within the landscape and areas of gap in the environmental sustainment coverage of the landscape
-- Review upcoming project proposed for adoption and propose to CNCF according to interest
-- Regularly report to ToC on ongoing and completed work
-- Recommend projects for inclusion into the CNCF
+- Environmental sustainability recommendations and optimizations to new and existing projects within the landscape
+- Reports on gaps in the environmental sustainability coverage of the landscape
+- Reviews, inputs, and recommendations for proposed projects for CNCF hosting and advancement
 - Suggestions for improvements for CNCF internal processes, for example, education for sustainability
 
 ## Audiences
