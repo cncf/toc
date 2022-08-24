@@ -48,7 +48,7 @@ We recognize that:
 - Project intelligence - audience is TOC/CNCF Community
 - External collaboration - organizations, initiatives, activities, and efforts outside of the foundation
 
-#### Operations
+## Operations
 
 Environmental Sustainability TAG operations are consistent with standard TAG operating guidelines provided by the [CNCF Technical Oversight Committee TOC](https://github.com/cncf/toc).
 
