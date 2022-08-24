@@ -94,6 +94,8 @@ The main member benefit is to support the cloud native ecosystem and to be publi
 
 ## Do I have to use my real name when contributing via DCO/CLA?
 
-Yes, no pseudonyms or anonymous contributions. The CNCF follows the same tried and true policy in the Linux Kernel and other LF projects. They have proven strong enough to defend the Linux kernel against legal attacks to date
+The DCO requires the use of a real name that can be used to identify someone in case there is an issue about a contribution they made.
 
-* https://github.com/torvalds/linux/blob/master/Documentation/process/submitting-patches.rst#developers-certificate-of-origin-11
+A real name does not require a legal name, nor a birth name, nor any name that appears on an official ID (e.g. a passport). Your real name is the name you convey to people in the community for them to use to identify you as you.
+
+See the full guidelines here: https://github.com/cncf/foundation/blob/main/dco-guidelines.md
