@@ -27,7 +27,7 @@ We recognize that:
     - Recommendations and strategies to develop, package, distribute, deploy, and operate cloud native implementations to reduce energy consumption and carbon as well as the various environments they operate in and which impact their consumption
     - Capabilities, benchmarks, and processes to evaluate technological and architectural health of projects
 - Community outreach on any items within scope, for instance, social media/conferences/podcasts/meetups et cetera
-- Collaboration with other sustainability efforts
+- Collaboration with other environmental or sustainability organizations, initiatives, activities, and efforts that may fall outside of the Foundation
 
 ### Out of scope
 - Form an umbrella organization beyond the CNCF
@@ -46,7 +46,7 @@ We recognize that:
 
 - Education - audience is end users, developers, stakeholders
 - Project intelligence - audience is TOC/CNCF Community
-- External collaboration - organizations with the same mindset
+- External collaboration - organizations, initiatives, activities, and efforts outside of the foundation
 
 #### Operations
 
