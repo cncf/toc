@@ -35,7 +35,7 @@ We recognize that:
 - Evaluate individual company infrastructures
 - Focus outside of Cloud Native Technologies, according to the [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md)
 
-## Deliverables to ToC
+## Deliverables to TOC
 - Landscape for carbon and energy efficiency in the form of metrics, measurements, and management techniques
 - Environmental sustainability recommendations and optimizations to new and existing projects within the landscape
 - Reports on gaps in the environmental sustainability coverage of the landscape
