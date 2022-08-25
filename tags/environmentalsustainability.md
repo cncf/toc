@@ -18,7 +18,8 @@ This TAG's goal is to advocate for, develop, support, and help evaluate environm
 ### Background
 We recognize that: 
 - the trade off between reducing resource consumption and higher performance is hard to balance
-- there is a lack of well supported and documented approaches for evaluating cloud native projects in their default or optimized configurations
+- there is a lack of well supported and documented approaches for evaluating the environmental sustainability of cloud native projects in their default or optimized configurations
+
 
 ### In-Scope
 
