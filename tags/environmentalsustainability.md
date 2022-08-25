@@ -33,7 +33,7 @@ We recognize that:
 - Form an umbrella organization beyond the CNCF
 - Establish a compliance and standards body beyond the CNCF space
 - Evaluate individual company infrastructures
-- Focus outside of Cloud Native Technologies, according to the [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md)
+- Focus outside of cloud native technologies, according to the [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md)
 
 ## Deliverables to TOC
 - Landscape for carbon and energy efficiency in the form of metrics, measurements, and management techniques
