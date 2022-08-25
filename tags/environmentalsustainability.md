@@ -23,7 +23,7 @@ We recognize that:
 ### In-Scope
 
 - Identify, define, and develop tooling to assess and improve environmental sustainability approaches, including
-    - Quantify the energy consumption of cloud native implementations individually as well as in common integration patterns.
+    - Quantify the energy consumption of cloud native implementations individually as well as in common integration patterns
     - Recommendations and strategies to develop, package, distribute, deploy, and operate cloud native implementations to reduce energy consumption and carbon as well as the various environments they operate in and which impact their consumption
     - Capabilities, benchmarks, and processes to evaluate technological and architectural health of projects
 - Community outreach and engagement on the work of this TAG.
