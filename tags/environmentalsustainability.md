@@ -11,7 +11,7 @@ References:
 * https://www.worldbank.org/en/news/feature/2022/05/23/what-you-need-to-know-about-net-zero
 
 ## Mission Statement
-This TAG's goal is to advocate for, develop, support, and help evaluate environmental sustainability initiatives in Cloud Native Technologies.  This TAG will identify values and possible incentives for service providers to reduce their consumption and carbon footprint through cloud native tooling.
+This TAG's goal is to advocate for, develop, support, and help evaluate environmental sustainability initiatives in cloud native technologies.  This TAG will identify values and possible incentives for service providers to reduce their consumption and carbon footprint through cloud native tooling.
 
 ## Responsibilities & Deliverables
 
