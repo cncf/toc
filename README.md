@@ -94,14 +94,6 @@ Currently, the following Technical Advisory Groups are active:
 * [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy)
 * [TAG Observability](https://github.com/cncf/tag-observability)
 
-
-## Working Groups
-
-The TOC has created the following working groups to investigate and discuss the following topics:
-
-| Working Group | Chair            | Meeting Time                          | Minutes/Recordings |
-|---------------|------------------|---------------------------------------|--------------------|
-| [CI](https://github.com/cncf/wg-ci)         |   | Inactive | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
-| [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/my/cncfserverlesswg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
+## Calendar
 
 All meetings are on the public CNCF calendar: https://goo.gl/eyutah
