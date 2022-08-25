@@ -46,7 +46,7 @@ We recognize that:
 
 - Education - audience is end users, developers, stakeholders
 - Project intelligence - audience is TOC/CNCF Community
-- External collaboration - organizations, initiatives, activities, and efforts outside of the foundation
+- External collaboration - organizations, initiatives, activities, and efforts outside of CNCF (Cloud Native Computing Foundation)
 
 ## Operations
 
