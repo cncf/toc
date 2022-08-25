@@ -27,7 +27,7 @@ We recognize that:
     - Recommendations and strategies to develop, package, distribute, deploy, and operate cloud native implementations to reduce energy consumption and carbon as well as the various environments they operate in and which impact their consumption
     - Capabilities, benchmarks, and processes to evaluate technological and architectural health of projects
 - Community outreach and engagement on the work of this TAG.
-- Collaboration with other environmental or sustainability organizations, initiatives, activities, and efforts that may fall outside of the Foundation
+- Collaboration with other environmental or sustainability organizations, initiatives, activities, and efforts that may fall outside of the CNCF (Cloud Native Computing Foundation)
 
 ### Out of scope
 - Form an umbrella organization beyond the CNCF
