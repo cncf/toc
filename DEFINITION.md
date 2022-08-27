@@ -3,7 +3,7 @@
 *Approved by TOC: 2018-06-11*
 
 [العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian)
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -186,3 +186,13 @@ A **Cloud Native Computing Foundation** nyílt forráskódú és szolgáltató-s
 ये तकनीक ढीले युग्मित सिस्टम को सक्षम करती हैं जो लचीला, प्रबंधनीय और अवलोकन योग्य हैं। मजबूत स्वचालन के साथ, वे इंजीनियरों को न्यूनतम परिश्रम के साथ बार-बार और अनुमानित रूप से उच्च-प्रभाव वाले परिवर्तन करने की अनुमति देते हैं।
 
 क्लाउड नेटिव कंप्यूटिंग फाउंडेशन खुले स्रोत, विक्रेता-तटस्थ परियोजनाओं के एक पारिस्थितिकी तंत्र को बढ़ावा देने और बनाए रखने के द्वारा इस प्रतिमान को अपनाने का प्रयास करता है। हम इन नवाचारों को सभी के लिए सुलभ बनाने के लिए अत्याधुनिक पैटर्न का लोकतंत्रीकरण करते हैं।
+
+## Nederlands:
+
+Cloud native technologieën stellen organisaties in staat om schaalbare applicaties te bouwen en te draaien in moderne, dynamische
+omgevingen zoals publieke, private en hybride cloud. Containers, service meshes, microservices, immutable infrastruktuur, en declaratieve APIs illusteren deze aanpak.
+
+Deze technieken maken los-gekoppelde systemen mogelijk, die veerkrachtig, beheersbaar en observeerbaar zijn. Gecombineerd met robuuste automatisering stellen ze software ontwikkelaars in staat met om met grote regelmaat  veranderingen met hoge impact aan te brengen, op een voorspelbare wijze en met minimale inpspanning.
+
+De Cloud Native Computing Foundation stelt zich als doel om de adoptie van dit paradigma te stimuleren door een eco-systeem van open source en vendor-neutrale projecten aan te moedigen en te faciliteren.
+Wij democratiseren state-of-the art software ontwikkel patterns, om deze innovaties voor iedereen toegankelijk te maken.
