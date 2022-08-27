@@ -192,7 +192,7 @@ A **Cloud Native Computing Foundation** nyílt forráskódú és szolgáltató-s
 Cloud native technologieën stellen organisaties in staat om schaalbare applicaties te bouwen en te draaien in moderne, dynamische
 omgevingen zoals publieke, private en hybride cloud. Containers, service meshes, microservices, immutable infrastructuur en declaratieve APIs illusteren deze aanpak.
 
-Deze technieken maken los-gekoppelde systemen mogelijk, die veerkrachtig, beheersbaar en observeerbaar zijn. Gecombineerd met robuuste automatisering stellen ze software ontwikkelaars in staat om met grote regelmaat veranderingen met hoge impact aan te brengen, op een voorspelbare wijze en met minimale inpspanning.
+Deze technieken maken los-gekoppelde systemen mogelijk, die veerkrachtig, beheersbaar en observeerbaar zijn. Gecombineerd met robuuste automatisering stellen ze software ontwikkelaars in staat om met grote regelmaat veranderingen met hoge impact aan te brengen, op een voorspelbare wijze en met minimale inspanning.
 
 De Cloud Native Computing Foundation stelt zich als doel om de adoptie van dit paradigma te stimuleren door een eco-systeem van open source en vendor-neutrale projecten aan te moedigen en te faciliteren.
 Wij democratiseren state-of-the art software ontwikkel patterns, om deze innovaties voor iedereen toegankelijk te maken.
