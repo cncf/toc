@@ -22,7 +22,11 @@ Overall, Pixie has over 50 contributors to date.
 | Michelle Nguyen  | [@aimichelle](https://github.com/aimichelle)  | New Relic   |
 | Vihang Mehta     | [@vihangm](https://github.com/vihangm)        | New Relic   |
 
-Our [governance policy](https://github.com/pixie-io/pixie/blob/main/GOVERNANCE.md) is managed in our repository.
+We have also identified potential maintainers from companies outside of New Relic. These maintainers will onboard in the coming months.
+
+Our [governance policy](https://github.com/pixie-io/pixie/blob/main/GOVERNANCE.md) is managed in our repository. We currently follow a BDFL model, however plan to restructure our governance based on input from the TAG Contributor strategy. 
+
+Pixie's governance board consists of two of Pixie's maintainers and end-users across several companies. We will resume monthly governance meetings in November, at 9am every first Thursday (timing subject to change).
 
 ## Adoption
  
@@ -35,6 +39,8 @@ Some users have implemented tools built on top of Pixie. For example:
 - [ChaosToolkit Pixie Driver](https://chaostoolkit.org/drivers/pixie/)
  
 There are also a handful of large companies that have started adopting Pixie and using it widely. See our [Adopters file](https://github.com/pixie-io/pixie/blob/main/ADOPTERS.md).
+
+We will resume our monthly community meetings in November, to be held at 9am every first Tuesday of the month (timing subject to change). 
 
 ## Current Goals
 
@@ -53,6 +59,12 @@ Pixie is actively used in production by thousands of clusters, this means that w
   - Expand matrix of supported K8s distributions, kernel versions, CPU Architectures (ARM), and related deprecation policies.
   - Expand our testing matrix to automatically cover supported environments. 
  
+As a part of our goal to grow the community, we are actively working towards making our issue and pull request process more open and transparent. This will ensure that users can identify the bugs and features being worked on, and that they can easily make their own contributions. This includes:
+
+- Moving our internal issue tracker (JIRA) fully to Github. This process will be completed by the end of September.                                                         
+- Moving from our internal code review tool (Phabricator) completely to Github PRs. This will be done by the end of November.
+
+
 Pixie’s detailed roadmap is located [here](https://docs.google.com/spreadsheets/d/1tS9BxGaiu8P2Iq-ucxhicyteOH2hjVDRR80jCrsBANw/edit#gid=0).
 
 ## How the CNCF Can Help
@@ -94,6 +106,6 @@ Everything else in Pixie is released using semver.
 
 ### Security
 
-Pixie has a [document](https://github.com/pixie-io/pixie/blob/main/SECURITY.md) describing the security reporting process. In addition, we have performed pen tests and vulnerability scans.
+Pixie has a [document](https://github.com/pixie-io/pixie/blob/main/SECURITY.md) describing the security reporting process. In addition, we have performed vulnerability scans using [Snyk](https://app.snyk.io/org/pixie).
 
 
