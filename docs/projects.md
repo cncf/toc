@@ -49,7 +49,7 @@
 [Volcano](https://volcano.sh)|Liz Rice, Sheng Liang, Alena Prokharchyk|[11/6/19](https://github.com/cncf/toc/pull/318) -  [SIG Runtime](https://github.com/cncf/sig-runtime/blob/master/recommendations/sandbox/volcano.md)|[4/10/20](https://github.com/volcano-sh/)|Sandbox
 [ArtifactHub](https://artifacthub.io)|TOC Vote|[4/1/20](https://github.com/cncf/toc/pull/409)|[6/23/20](https://github.com/artifacthub/hub)|Sandbox
 [BFE](https://www.bfe-networks.net)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/453)|[6/23/20](https://github.com/bfenetworks/bfe)|Sandbox
-[Cloud Custodian](https://cloudcustodian.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/issues/478)|[6/23/20](https://github.com/cloud-custodian/cloud-custodian)|Sandbox
+[Cloud Custodian](https://cloudcustodian.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/issues/478)|[6/23/20](https://github.com/cloud-custodian/cloud-custodian)|Incubating
 [Crossplane](https://www.crossplane.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/454)|[6/23/20](https://github.com/crossplane/crossplane)|Incubating
 [Dex](https://github.com/dexidp/dex)|TOC Vote|[3/4/20](https://github.com/cncf/toc/pull/379)|[6/23/20](https://github.com/dexidp/dex)|Sandbox
 [Keptn](https://keptn.sh)|TOC Vote|[6/4/19](https://github.com/cncf/toc/pull/250)|[6/23/20](https://github.com/keptn)|Sandbox
@@ -137,6 +137,13 @@
 [Konveyor](https://github.com/konveyor)|TOC Vote|[3/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/konveyor)|Sandbox
 [Armada](https://github.com/G-Research/armada)|TOC Vote|[3/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/G-Research/armada)|Sandbox
 [External Secrets Operator](https://github.com/external-secrets/external-secrets)|TOC Vote|[3/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/external-secrets/external-secrets)|Sandbox
+[Serverless Devs](https://github.com/Serverless-Devs/Serverless-Devs)|TOC Vote|[8/11/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/Serverless-Devs/Serverless-Devs)|Sandbox
+[ContainerSSH](https://github.com/containerssh)|TOC Vote|[5/30/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/containerssh)|Sandbox
+[OpenFGA](https://github.com/openfga)|TOC Vote|[6/13/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/openfga)|Sandbox
+[Kured](https://github.com/weaveworks/kured)|TOC Vote|[6/22/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/weaveworks/kured)|Sandbox
+[Carvel](https://github.com/vmware-tanzu/carvel)|TOC Vote|[7/15/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/vmware-tanzu/carvel)|Sandbox
+[Lima](https://github.com/lima-vm/lima)|TOC Vote|[7/26/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/lima-vm/lima)|Sandbox
+
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
@@ -186,8 +193,9 @@
 | [Volcano](https://volcano.sh)             | 4/10/2020 |    4/7/2022|  [Incubating](https://github.com/cncf/toc/pull/712)
 | [KubeVirt](https://kubevirt.io)         |  9/9/2019        | 4/19/2022           |[Incubating](https://github.com/cncf/toc/pull/715)|
 | [CubeFS](https://cubefs.io)         |  8/27/19        | 7/3/2022           |[Incubating](https://github.com/cncf/toc/pull/586)|
-| [Kyverno]() | 11/10/2020 |    7/12/2022   |[Incubating](https://github.com/cncf/toc/pull/784)|
+| [Kyverno](https://github.com/kyverno/kyverno/) | 11/10/2020 |    7/12/2022   |[Incubating](https://github.com/cncf/toc/pull/784)|
 | [Keptn](https://keptn.sh/) | 6/23/20   | 7/13/2022 | [Incubating](https://github.com/cncf/toc/pull/670)|
+| [Cloud Custodian](https://cloudcustodian.io) | 6/23/20   | 9/14/2022 | [Incubating](https://github.com/cncf/toc/pull/644)|
 
 ## Project Security Audits
 
