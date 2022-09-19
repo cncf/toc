@@ -49,7 +49,7 @@
 48,Argo,"Jeff Brewer, Michelle Noorali, Xiang Li",9/24/19 - SIG App Delivery,4/7/2020,2020,Incubation,CLA,No,Yes,No,Yes,https://argoproj.slack.com/,Netlify
 49,Volcano,"Alena Prokharchyk, Liz Rice, Sheng Liang",SIG-Runtime,4/10/20,2020,Incubation,No,Yes,Yes,No,Yes,CNCF,Netlify
 50,CNI-Genie,N/A,N/A,6/23/2020,2020,Sandbox,No,No,No,No,Yes,No,
-51,Keptn,N/A,N/A,6/23/2020,2020,Sandbox,No,Yes,No,No,Yes,slack.keptn.sh & CNCF channel,
+51,Keptn,N/A,N/A,6/23/2020,2020,Incubation,No,Yes,No,No,Yes,slack.keptn.sh & CNCF channel,
 52,Kudo,N/A,N/A,6/23/2020,2020,Sandbox,DCO,No,Yes,No,Yes,Kubernetes,
 53,Cloud Custodian,N/A,N/A,6/23/2020,2020,Sandbox,CLA - Capital One,No,Yes,No,Yes,Gitter,
 54,Dex,N/A,N/A,6/23/2020,2020,Sandbox,DCO,No,Yes - CoreOS,No,Yes. - CoreOS,Kubernetes,Netlify
