@@ -52,7 +52,7 @@
 [Cloud Custodian](https://cloudcustodian.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/issues/478)|[6/23/20](https://github.com/cloud-custodian/cloud-custodian)|Incubating
 [Crossplane](https://www.crossplane.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/454)|[6/23/20](https://github.com/crossplane/crossplane)|Incubating
 [Dex](https://github.com/dexidp/dex)|TOC Vote|[3/4/20](https://github.com/cncf/toc/pull/379)|[6/23/20](https://github.com/dexidp/dex)|Sandbox
-[Keptn](https://keptn.sh)|TOC Vote|[6/4/19](https://github.com/cncf/toc/pull/250)|[6/23/20](https://github.com/keptn)|Sandbox
+[Keptn](https://keptn.sh)|TOC Vote|[6/4/19](https://github.com/cncf/toc/pull/250)|[6/23/20](https://github.com/keptn)|Incubating
 [KUDO](https://kudo.dev)|TOC Vote|[6/25/19](https://github.com/cncf/toc/pull/261)|[6/23/20](https://github.com/kudobuilder)|Sandbox
 [Kuma](https://kuma.io)|TOC Vote|[4/24/20](https://github.com/cncf/toc/pull/437)|[6/23/20](https://github.com/kumaio)|Sandbox
 [LitmusChaos](https://litmuschaos.io)|TOC Vote|[3/13/20](https://github.com/cncf/toc/pull/391)|[6/23/20](https://github.com/litmuschaos/litmus)|Sandbox
