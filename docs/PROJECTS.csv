@@ -31,7 +31,7 @@
 30,etcd,Brian Grant,8/7/18,12/11/2018,2018,Graduation,No - DCO,No,Yes - needs review,No,Yes  - corporate addresses for reporting,IRC,Netlify
 31,TiKV,"Ben Hindman, Bryan Cantrill",7/3/18,8/28/2018,2018,Graduation,No - DCO ,Yes,No,No,Yes  -corporate email for reporting,tikv-wg.slack.com,Netlify
 32,KubeEdge,"Brendan Burns, Quinton Hoole",3/12/19,3/18/2019,2019,Incubation,No,No,No,No,Yes,https://kubeedge.slack.com/,Netlify
-33,Brigade,"Brendan Burns, Quinton Hoole",3/12/19,3/18/2019,2019,Sandbox,No - DCO,Yes,No,No,Yes,CNCF,Netlify
+33,Brigade,"Brendan Burns, Quinton Hoole",3/12/19,3/18/2019,2019,Archived,No - DCO,Yes,No,No,Yes,CNCF,Netlify
 34,Network Service Mesh,"Joe Beda, Matt Klein",4/9/19,4/11/2019,2019,Sandbox,No,No,No,No,No,CNCF,Netlify
 35,OpenTelemetry,"Brendan Burns, Brian Grant, Matt Klein",5/7/19,5/7/2019,2019,Incubation,Yes,Yes,No,No,Yes,https://gitter.im/open-telemetry/community,Netlify
 36,OpenEBS,"Alexis Richardson, Xiang Li",5/14/19,5/14/2019,2019,Sandbox,No - DCO ,Yes,No,No,Yes,CNCF + Kubernetes,Netlify
