@@ -9,6 +9,26 @@ This governance policy sets forth the proposal process for projects to be accept
 
 ![Project stages](project-stages.png)
 
+### Timelines
+
+The TOC makes no guarantees on if/when a project will join the CNCF or move levels.
+
+For sandbox proposals, applications are reviewed from oldest application to newest every two months and the TOC may not have time to get through every application each meeting. The up to date list can be found [here](https://sandbox.cncf.io/) and will be carried over from meeting to meeting if not every one is reviewed.
+
+For moving levels to incubation or graduation, projects should plan on at least 5 months or more between the initial application and approval. Due to the increased community demands around KubeCon + CloudNativeCon, new public comment periods and public votes will not launch within 6 weeks of a KubeCon + CloudNativeCon. Project should take this into account when planning completion of their due diligence.
+
+Q: Why doesn't the TOC get through the sandbox list every meeting?
+A: There are currently many projects that want to be a part of the CNCF and it is the TOC's job to carefully consider if they are the right fit for the foundation. This deliberation takes times and there are only so many applications that the TOC can get through each meeting. If anything, a delay from one meeting to the next is a benefit for the project because it allows more time to build community support.
+
+Q: Exactly how long will it take my project to move levels once my application is in?
+A: Just like in open source, it will get done when the work is done. This can range from 5 months to 15 months please coordinate with your TOC sponsor to keep everything on track.
+
+Q: Can my project still apply to move levels within 6 weeks of KubeCon?
+A: Yes, though getting a TOC sponsor, conducting any due dilligence, and any other steps of the process will be delayed until after KubeCon.
+
+Q: Why can't public comment periods or votes launch within 6 weeks of a KubeCon?
+A: Undergoing due diligence is non-insignificant amount of work. Conducting adopter interviews takes time and scheduling becomes increasingly difficult the closer to each KCCN we get. Being able to successfully complete due diligence to launch the public part of the process becomes very difficult as many community members have additional responsibilites related to the conference. By removing KCCN as a goal post for brand new requests to move levels, we hope to not burn out adopters, TOC, maintainers, and other community members.
+
 ### Sandbox process
 
 **Note: The TOC has changed the sandbox application process to a more transparent and streamlined workflow within the :package: [Sandbox Applications repository](https://github.com/cncf/sandbox) :package:.**
