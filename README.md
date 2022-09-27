@@ -86,13 +86,14 @@ This is our [voting policy](docs/voting.md). Only TOC members can cast binding v
 The TOC has approved the formation of [TAGs](tags/cncf-tags.md).
 Currently, the following Technical Advisory Groups are active: 
 
+* [TAG-App-Delivery](https://github.com/cncf/tag-app-delivery)
+* [TAG-Contributor-Strategy](https://github.com/cncf/tag-contributor-strategy)
+* [TAG-Environmental-Sustainability](https://github.com/cncf/tag-env-sustainability)
+* [TAG-Network](https://github.com/cncf/tag-network)
+* [TAG-Observability](https://github.com/cncf/tag-observability)
+* [TAG-Runtime](https://github.com/cncf/tag-runtime)
 * [TAG-Security](https://github.com/cncf/tag-security)
 * [TAG-Storage](https://github.com/cncf/tag-storage) 
-* [TAG-App-Delivery](https://github.com/cncf/tag-app-delivery)
-* [TAG-Network](https://github.com/cncf/tag-network)
-* [TAG-Runtime](https://github.com/cncf/tag-runtime)
-* [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy)
-* [TAG Observability](https://github.com/cncf/tag-observability)
 
 
 ## Working Groups
