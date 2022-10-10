@@ -1,0 +1,11 @@
+{{ template "header" }}
+
+# TOC Liaisons
+
+| TAG | TOC Liaison(s) |
+| ----| ---------------|
+{{- range .Tags}}
+{{- if .Contact.Liaisons }}
+| [TAG {{.Name}}]({{.Dir}}/README.md) |{{- range .Contact.Liaisons }}* {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**)<br>{{- end }}|
+{{- end }}
+{{- end -}}

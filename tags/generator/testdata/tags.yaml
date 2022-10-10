@@ -1,0 +1,60 @@
+tags:
+  - dir: tag-foo
+    name: Foo
+    charter_link: foo-charter
+    objective: covers foo
+    leadership:
+      chairs:
+      - github: tag-foo-chair
+        name: TAG Foo Chair
+        company: TAG Foo Chair's Company
+      tech_leads:
+      - github: tag-foo-tech-lead
+        name: TAG Foo Tech Lead
+        company: TAG Foo Tech Lead's Company
+    contact:
+      slack: tag-foo
+      mailing_list: lists.cncf.io/g/cncf-tag-foo
+      liaisons:
+      - github: tag-foo-liaison-1
+        name: TAG Foo TOC Liaison 1
+      - github: tag-foo-liaison-2
+        name: TAG Foo TOC Liaison 2
+    meetings:
+    - description: TAG Foo's Main Meeting
+      day: Thursday
+      time: "09:00"
+      tz: PT (Pacific Time)
+      frequency: biweekly
+      archive_url: google-docs-link
+    working_groups:
+    - name: Working Group Foo
+      description: covers wg-foo's work
+      charter_link: wg-foo-charter
+      leads:
+      - github: jane-doe
+        name: Jane Doe
+      contact:
+        slack: wg-foo
+        mailing_list: lists.cncf.io/g/cncf-wg-foo
+      meetings:
+      - description: WG Foo's Main Meeting
+        day: Thursday
+        time: "09:00"
+        tz: PT (Pacific Time)
+        frequency: biweekly
+        archive_url: google-docs-link
+  - dir: tag-bar
+    name: Bar
+    charter_link: charter-bar
+    objective: owns areas related to bar
+    leadership:
+      chairs:
+      - github: tag-bar-chair
+        name: TAG Bar Chair
+        company: TAG Bar Chair's Company
+      tech_leads:
+      - github: tag-bar-tech-lead
+        name: TAG Bar Tech Lead
+        company: TAG Bar Tech Lead's Company
+

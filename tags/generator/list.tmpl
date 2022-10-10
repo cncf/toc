@@ -1,0 +1,23 @@
+{{ template "header" }}
+
+Most community activity is organized into Technical Advisory Groups (TAGs).
+Each TAG may have several Working Groups (WGs).
+
+### Technical Advisory Groups (TAGs)
+
+| Name | Contact | Meetings | Working Group(s) |
+|------|---------|----------|------------------|
+{{- range .Tags}}
+|[{{.Name}}]({{.Dir}}/README.md)|* [Slack](https://kubernetes.slack.com/messages/{{.Contact.Slack}})<br>* [Mailing List]({{.Contact.MailingList}})|{{- range .Meetings -}}
+  * {{.Description}}: [{{.Day}}s at {{.Time}} {{.TZ}} ({{.Frequency}})]({{.URL}})<br>
+{{- end -}}
+{{- range .WorkingGroups -}}
+  {{ $name := .Name }}
+  {{- range .Meetings -}}
+    * {{ $name }}: [{{.Day}}s at {{.Time}} {{.TZ}} ({{.Frequency}})]({{.URL}})<br>
+  {{- end -}}
+{{- end -}}|
+{{- range .WorkingGroups -}}
+  * {{.Name}}
+{{- end -}}|
+{{- end }}
