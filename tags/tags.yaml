@@ -1,0 +1,289 @@
+tags:
+  - dir: tag-app-delivery
+    name: App Delivery
+    objective: |
+      The Application Delivery TAG focuses on delivering cloud native applications which involves multiple phases including building, deploying, managing, and operating. Additionally, the TAG produces supporting material and best practices for end-users, and provide guidance and coordination for CNCF projects working within the TAG’s scope.
+    charter_link: charter.md
+    leadership:
+      chairs:
+        - github: AloisReitbauer
+          name: Alois Reitbauer
+        - github: Jenniferstrej
+          name: Jennifer Strejevitch
+        - github: hongchaodeng
+          name: Hongchao Deng
+      tech_leads:
+        - github: AlexsJones
+          name: Alex Jones
+          company: Canonical
+        - github: thschue
+          name: Thomas Schuetz
+          company: Dynatrace
+    meetings:
+      - description: TAG App Delivery Meeting
+        day: Wednesday
+        time: "08:00"
+        tz: PT (Pacific Time)
+        frequency: 1st and 3rd Wednesday
+        archive_url: https://docs.google.com/document/d/1OykvqvhSG4AxEdmDMXilrupsX2n1qCSJUWwTc3I7AOs/edit
+        recordings_url: https://youtube.com/playlist?list=PLjNzvzqUSpxJ0JfD6vrdF5bsuBaJQ2BRT
+    contact:
+      slack: tag-app-delivery
+      mailing_list: https://lists.cncf.io/g/cncf-tag-app-delivery
+      liaisons:
+        - github: dims
+          name: Davanum Srinivas
+        - github: resouer
+          name: Lei Zhang
+        - github: cathyhongzhang
+          name: Cathy Zhang
+  - dir: tag-contributor-strategy
+    name: Contributor Strategy
+    objective: |
+      The Contributor Strategy TAG is responsible for contributor experience, sustainability, governance, and openness guidance to help CNCF community groups and projects with their own contributor strategies for a healthy project.
+    charter_link: charter.md
+    leadership:
+      chairs:
+        - github: geekygirldawn
+          name: Dawn Foster
+          company: VMware
+        - github: jberkus
+          name: Josh Berkus
+          company: Red Hat
+      tech_leads:
+        - github: carolynvs
+          name: Carolyn Van Slyck
+          company: Microsoft
+    meetings:
+      - description: TAG Contributor Strategy Meeting
+        day: Thursday
+        time: "10:00"
+        tz: PT (Pacific Time)
+        frequency: 1st Thursdays
+        archive_url: https://docs.google.com/document/d/1Xjw-yAqidQW67zv7OfMRErsfCotc-mfQ_248Te_YL0g/edit
+        recordings_url: https://youtube.com/playlist?list=PLgKVE_JHGShqKzw_Z93cWPSc4MJV7OOo1
+    contact:
+      slack: tag-contributor-strategy
+      mailing_list: https://lists.cncf.io/g/cncf-tag-contributor-strategy
+      liaisons:
+        - github: mattfarina
+          name: Matt Farina
+        - github: kgamanji
+          name: Katie Gamanji
+        - github: cathyhongzhang
+          name: Cathy Zhang
+    working_groups:
+      - name: Working Group Contributor Growth
+        meetings:
+          - description: WG Contributor Growth Meeting
+            day: Thursday
+            time: "10:00"
+            tz: PT (Pacific Time)
+            frequency: 4th Thursdays
+            archive_url: https://docs.google.com/document/d/1Kx7tZv5wTXQ7uRKxn5d9d2wLsI3Q3Q51A0i06nLvtdI/edit
+  - dir: tag-environmental-sustainability
+    name: Environmental Sustainability
+    objective: |
+      This Environmental Sustainability TAG's goal is to advocate for, develop, support, and help evaluate environmental sustainability initiatives in cloud native technologies
+    charter_link: charter.md
+    leadership:
+      chairs: []
+    meetings:
+      - description: TAG Environmental Sustainability Meeting
+        day: Wednesday
+        time: "08:00"
+        tz: PT (Pacific Time)
+        frequency: 1st and 3rd Wednesday
+        archive_url: https://docs.google.com/document/d/1TkmMyXJABC66NfYmivnh7z8Y_vpq9f9foaOuDVQS_Lo/edit
+    contact:
+      slack: tag-environmental-sustainability
+      mailing_list: https://lists.cncf.io/g/cncf-tag-env-sustainability
+      liaisons:
+        - github: erinboyd
+          name: Erin Boyd
+  - dir: tag-network
+    name: Network
+    objective: |
+      TAG Network's mission is to enable widespread and successful development, deployment and operation of resilient and intelligent network systems in cloud native environments.
+    charter_link: charter.md
+    leadership:
+      chairs:
+        - github: edwarnicke
+          name: Ed Warnicke
+          company: Cisco
+        - github: kenowens12
+          name: Ken Owens
+          company: Mastercard
+        - github: leecalcote
+          name: Lee Calcote
+          company: Layer5
+    meetings:
+      - description: TAG Network Meeting
+        day: Thursday
+        time: "11:00"
+        tz: PT (Pacific Time)
+        frequency: 1st and 3rd Thursdays
+        archive_url: https://docs.google.com/document/d/18hYemFKK_PC_KbT_TDBUgb0rknOuIhikkRxer4_bv4Q/edit#
+    contact:
+      slack: tag-network
+      mailing_list: https://lists.cncf.io/g/cncf-tag-network
+      liaisons:
+        - github: dims
+          name: Davanum Srinivas
+        - github: dzolotusky
+          name: Dave Zolotusky
+  - dir: tag-observability
+    name: Observability
+    objective: |
+      This TAG focuses on topics pertaining to the observation of cloud native workloads.
+    charter_link: charter.md
+    leadership:
+      chairs:
+        - github: RichiH
+          name: Richard Hartmann
+          company: Grafana Labs
+        - github: alolita
+          name: Alolita Sharma
+        - github: halcyondude
+          name: Matt Young
+      tech_leads:
+        - github: bwplotka
+          name: Bartłomiej Płotka
+          company: Red Hat
+    meetings:
+      - description: TAG Observability Meeting
+        day: Tuesday
+        time: "04:00"
+        tz: UTC
+        frequency: 2nd Tuesdays
+    contact:
+      slack: tag-observability
+      mailing_list: https://lists.cncf.io/g/cncf-tag-observability
+      liaisons:
+        - github: resouer
+          name: Lei Zhang
+        - github: cathyhongzhang
+          name: Cathy Zhang
+  - dir: tag-runtime
+    name: Runtime
+    objective: |
+      The Runtime TAG focuses on Workload execution and management systems, components and interfaces used in modern cloud-native environments.
+    charter_link: charter.md
+    leadership:
+      chairs:
+        - github: dfeddema
+          name: Diane Feddema
+          company: Red Hat
+        - github: quinton-hoole
+          name: Quinton Hoole
+        - github: raravena80
+          name: Ricardo Aravena
+      tech_leads:
+        - github: k82cn
+          name: Klaus Ma
+          company: openBCE
+    meetings:
+      - description: TAG Runtime Meeting
+        day: Thursday
+        time: "08:00"
+        tz: PT (Pacific Time)
+        frequency: 1st and 3rd Thursdays
+        archive_url: https://docs.google.com/document/d/1k7VNetgbuDNyIs_87GLQRH2W5SLgjgOhB6pDyv89MYk/edit
+    contact:
+      slack: tag-runtime
+      mailing_list: https://lists.cncf.io/g/cncf-tag-runtime
+      liaisons:
+        - github: rochaporto
+          name: Ricardo Rocha
+        - github: RichiH
+          name: Richard Hartmann
+        - github: dims
+          name: Davanum Srinivas
+  - dir: tag-security
+    name: Security
+    objective: |
+      The TAG's mission is to reduce risk that cloud native applications expose end user data or allow other unauthorized access.
+    charter_link: charter.md
+    leadership:
+      chairs:
+        - github: achetal01
+          name: Aradhna Chetal
+        - github: lumjjb
+          name: Brandon Lum
+          company: Google
+        - github: sublimino
+          name: Andrew Martin
+      tech_leads:
+        - github: JustinCappos
+          name: Justin Cappos
+          company: New York University
+        - github: anvega
+          name: Andres Vega
+          company: VMware
+        - github: ashutosh-narkar
+          name: Ash Narkar
+          company: Styra
+        - github: mlieberman85
+          name: Michael Lieberman
+        - github: mnm678
+          name: Marina Moore
+          company: New York University
+        - github: pushkarj
+          name: Pushkar Joglekar
+        - github: ragashreeshekar
+          name: Ragashree Shekar
+    meetings:
+      - description: TAG Security Meeting
+        day: Wednesday
+        time: "10:00"
+        tz: PT (Pacific Time)
+        frequency: weekly
+        archive_url: https://docs.google.com/document/d/170y5biX9k95hYRwprITprG6Mc9xD5glVn-4mB2Jmi2g/edit
+    contact:
+      slack: tag-security
+      mailing_list: https://lists.cncf.io/g/cncf-tag-security
+      liaisons:
+        - github: TheFoxAtWork
+          name: Emily Fox
+        - github: justincormack
+          name: Justin Cormack
+  - dir: tag-storage
+    name: Storage
+    objective: |
+      The Runtime TAG focuses on Storage systems and approaches suitable for and commonly used in modern cloud-native environments.
+    charter_link: charter.md
+    leadership:
+      chairs:
+        - github: chira001
+          name: Alex Chircop
+          company: StorageOS
+        - github: quinton-hoole
+          name: Quinton Hoole
+        - github: xing-yang
+          name: Xing Yang
+          company: VMware
+      tech_leads:
+        - github: lpabon
+          name: Luis Pabon
+          company: Pure Storage
+        - github: nconnolly1
+          name: Nick Connolly
+          company: DataCore Software
+        - github: sougou
+          name: Sugu Sougoumarane
+          company: Planet Scale
+    meetings:
+      - description: TAG Storage Meeting
+        day: Wednesday
+        time: "08:00"
+        tz: PT (Pacific Time)
+        frequency: 2nd and 4th Wednesdays
+        archive_url: https://bit.ly/cncf-storage-sig-minutes
+    contact:
+      slack: tag-runtime
+      mailing_list: https://lists.cncf.io/g/cncf-tag-runtime
+      liaisons:
+        - github: RichiH
+          name: Richard Hartmann
+        - github: erinboyd
+          name: Erin Boyd
