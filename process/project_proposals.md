@@ -1,5 +1,5 @@
 
-# CNCF Project Proposal Process v1.4
+# CNCF Project Proposal Process v1.5
 
 ## Introduction 
 
@@ -11,32 +11,20 @@ This governance policy sets forth the proposal process for projects to be accept
 
 ### Sandbox process
 
-Note: We have changed the sandbox proposal process to a streamlined process for Sandbox proposals.
+**Note: The TOC has changed the sandbox application process to a more transparent and streamlined workflow within the :package: [Sandbox Applications repository](https://github.com/cncf/sandbox) :package:.**
 
-All exceptions (and "no" outcomes) are handled by the TOC. Possible "no" outcomes include "not at this time", and the project may be encouraged to re-apply after addressing issues. Timeframes are approximate, to set expectations.
+All exceptions and "declined" or "postponed outcomes are handled by the TOC. Projects may be encouraged to re-apply after addressing areas called out in the application comments on the corresponding issue. 
 
-![Sandbox process](sandbox-process.png)
+![Sandbox process](sandbox-application-process-2022.png)
 
- *Project Proposal*
-   * Project proposed through a [form](https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit)
+#### Applying for Sandbox
+   * Project's apply for sandbox through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
 
- *TOC Review*
-   * TOC reviews proposal in spreadsheet and presentation, project passes for inclusion with a simple majority vote. 
-   * TOC may engage with project to ask further questions
-   * Projects may re-apply after six months
-   * Annual reviews are performed in order to check in with sandbox projects, ascertain their progress, and address any outstanding questions
-     * A TOC representative volunteers to lead the review once the project files a PR.
-     * The assigned member reviews the content of the PR and analyzes the project for community health indicators, their findings are placed within a thread in the private TOC channel for discussion
-       * findings should highlight important facts about the project that could influence the TOCs decision around the future of the project, its status in sandbox, its path to incubation, etc.
-       * the thread should always include whether the Project's view of themselves and the ask of the CNCF is reasonable to assist the project moving forward.
-     * Projects are invited to the public TOC meeting to engage in TOC led discussion around the project. Projects are not obligated to attend.
-     * The assigned TOC member provides a summary of the project and leverages the thread's content as the basis of discussion.
-       * Discussion typically focuses on what is going well with the project and areas to improve
-     * Project are invited to use this time to voice any concerns and requests for help they may have that are not captured in the PR (or highlight asks within the PR).
-     * At the conclusion of the public meeting, the TOC votes to approve all annual reviews covered. Should a concern registered on a project, the votes will be held separately.
-     * After the meeting wraps up, the assigned TOC member may summarize the discussion on the PR in the form of a comment to document information for the project and community.
+#### Annual Review of Sandbox projects
+
+Once in the Sandbox, projects are subject to an [Annual Review](https://github.com/cncf/toc/blob/master/process/sandbox-annual-review.md).
  
- *Governance / legal issues* 
+#### Governance / legal issues* 
    * CNCF staff handle governance / legal issues
    * Projects are encouraged to participate/attend TOC meetings and reach out to TAGs for advice or scheduling presentations and discussions.
 
@@ -50,7 +38,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 
 ![Incubation Process](incubation-process.png)
 
-*Project Proposal* 
+#### Project Proposal
    * Incubation proposed through a [GitHub pull request](https://github.com/cncf/toc/pulls)
    * The proposal moves to Due Diligence when a TOC member steps forward as an Incubation Sponsor - Please avoid contacting TOC members individually to serve as project sponsor.
    * The status of outstanding Incubation proposals is reported on a monthly basis in the TOC public meeting. This highlights projects looking for sponsorship, and provides a check-in on DD progress for sponsored projects. 
@@ -83,7 +71,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 
 ### Graduation process
 
-. *Submit Graduation Proposal Template*
+#### Submit Graduation Proposal Template
    * Project fills out and submits the [graduation proposal template](graduation-proposal-template.md) in a pull request in the [cncf/toc GitHub repo](https://github.com/cncf/toc).
    * The file containing the proposal should be located in [the graduation proposals directory](https://github.com/cncf/toc/tree/main/proposals/graduation).
    * The proposal addresses how the project has grown since incubation and any concerns from incubation DD in addition to the standard graduation requirements.
@@ -96,7 +84,7 @@ All exceptions (and "no" outcomes) are handled by the TOC.
 * If the TOC does not sponsor the project to move forward at that time, they will provide feedback to the project and the PR will be closed. 
 * If the Graduation DD document is not finalized, the TOC sponsor will begin the process to refresh the existing DD document and begin the public comment process.
 
-. *TOC vote*
+#### TOC vote
    * TOC members assess whether project meets the [Graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#graduation-stage)
    * Projects must have a 2/3 supermajority vote of the TOC to graduate
 
