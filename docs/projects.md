@@ -142,6 +142,7 @@
 [Kured](https://github.com/weaveworks/kured)|TOC Vote|[6/22/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/weaveworks/kured)|Sandbox
 [Carvel](https://github.com/vmware-tanzu/carvel)|TOC Vote|[7/15/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/vmware-tanzu/carvel)|Sandbox
 [Lima](https://github.com/lima-vm/lima)|TOC Vote|[7/26/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/lima-vm/lima)|Sandbox
+[Istio](https://istio.io/)|Dave Zolotusky|[4/25/2022](https://github.com/cncf/toc/pull/827)|[09/28/2022](https://lists.cncf.io/g/cncf-toc/message/7563)|Incubating
 
 
 ## Graduated Projects
