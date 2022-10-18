@@ -93,6 +93,7 @@ Currently, the following Technical Advisory Groups are active:
 * [TAG-Runtime](https://github.com/cncf/tag-runtime)
 * [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy)
 * [TAG Observability](https://github.com/cncf/tag-observability)
+* [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability)
 
 
 ## Working Groups
