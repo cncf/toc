@@ -61,7 +61,9 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Alolita Sharma](https://github.com/alolita)
 
 ### TAG Environmental Sustainability
-
+* [Max Körbächer](https://github.com/mkorbi)
+* [Leonard Vincent Simon Pahlke](https://github.com/leonardpahlke)
+* [Marlow Weston](https://github.com/catblade)
 
 ## Emeritus Chairs
 
