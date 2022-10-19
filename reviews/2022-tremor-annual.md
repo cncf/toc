@@ -24,29 +24,29 @@ Tremor has seven primary maintainers from three organisations.
 *	Ramona Luczkiewicz has been with the project since April 2022.
 *	Natali Vlatko of Wayfair’s OSPO and Ana Hobden of Hoverbear Consulting are also maintainers of tremor and assist with mentee selection for mentorships on tremor and with community moderation to ensure that the code of conduct is adhered to by all members of the tremor communities discord service.
 
-## Notable releases since the 2021 anual review
+## Notable releases since the 2021 annual review
 
-### v0.12 - new connectivity via connectors and added deployment language
+### v0.12 - New connectivity via connectors and added deployment language
 
-This is a community focused release. Feedback from our LFX mentorships was that writing connectors was hard - this promoted the connectors refactoring in the `0.12` release.
+This is a community focused release. Feedback from our LFX mentorships was that writing connectors was hard - this promoted the connectors refactoring in the `0.12` release. The release is a major rewrite of the connector internals and related runtime facilities to deliver better consistency to users and a better programming model for connector authors.
 
-The deployment language work was feedback from our production users and is tightly coupled to runtime changes that spring from the connectors rework.
+The deployment language work was feedback from production users that favored dropping YAML bsaed deployment configuration for unifying deployment configuration with the tremor language. The connectors refactoring allowed the introduction of the deployment language, associated runtime and API changes to be udertaken holistically.
 
-### v0.13 - QOL
+### v0.13 - Quality of Life improvements
 
-The currently work onprogress `0.13` release concentrates on Quality of Life improvements over `0.12` that while not being huge changes to concept would break backwards compatibility for applications.
+The work in progress `0.13` release concentrates on quality of Life improvements over `0.12` that introduce minor backwards compatibility breaks for application writers based on feedback from early adopters of the new deployment model that have migrated applications to the new model.
 
 ### v0.14 - Basic clustering for cloud-based autoscaling
 
 RAFT-based consensus mechanism for maintaining cluster state such as registered applications and pipelines.
 
-This provides the basic capabilities for nodes to join and leave the cluster and have a shared configuration.
+This provides the basic capabilities for nodes to join and leave the cluster enabling auto-scaling and a shared cluster-wide configuration.
 
 ## Notable community contributions
 
 ### [Plugin Development Kit](https://nullderef.com/blog/plugin-abi-stable/)
 
-The plugin development kid is a huge contribution to the tremor ecosystem. It allows for the creation of tremor connectors that are not part of the core binary. This makes contributing to tremor a significantly easier task and allows for the creation of connectors are seperately maintained.
+The plugin development kid is a huge contribution to the tremor ecosystem. It allows for the creation of tremor connectors that are not part of the core binary. This makes contributing to tremor a significantly easier task and allows for the creation of connectors are seperately maintained. The PDK will be productized into tremor in a future release once performance overhead is brought into line with the current release.
 
 ## Sandbox Activity
 
@@ -94,9 +94,9 @@ We have documented a number of use cases documented from our originating sponsor
 
 In addition to that we have a number of organic adoptions from the community.
 
-* [instadeq](https://www.youtube.com/watch?v=og3kIey0X5E)
-* [TietoEvry for the Norwegian postal service](https://www.youtube.com/watch?v=ZK6fGYTS-HM)
-* [A colaboration with TDEngine](https://tdengine.com/tdengine-and-tremor-solution-for-system-monitoring-and-alerting/)
+* [Instadeq](https://www.youtube.com/watch?v=og3kIey0X5E)
+* [TietoEvry for the Norwegian Postal Service](https://www.youtube.com/watch?v=ZK6fGYTS-HM)
+* [A collaboration with TDEngine](https://tdengine.com/tdengine-and-tremor-solution-for-system-monitoring-and-alerting/)
 * [Aiven](https://www.youtube.com/watch?v=6PdTvpydnJM)
 
 
@@ -136,7 +136,7 @@ In broad terms, and subject to community feedback and changes, there are:
 
 RAFT-based consensus mechanism for maintaining cluster state such as registered applications and pipelines.
 
-This provides the basic capabilities for nodes to join and leave the cluster and have a shared configuration.
+This provides the basic capabilities for nodes to join and leave the cluster enabling auto-scaling and a shared cluster-wide configuration.
 
 ### V0.15 - Clustering enhancements
 
