@@ -13,12 +13,12 @@ This governance policy sets forth the proposal process for projects to be accept
 
 **Note: The TOC has changed the sandbox application process to a more transparent and streamlined workflow within the :package: [Sandbox Applications repository](https://github.com/cncf/sandbox) :package:.**
 
-All exceptions and "declined" or "postponed outcomes are handled by the TOC. Projects may be encouraged to re-apply after addressing areas called out in the application comments on the corresponding issue. 
+All exceptions and "declined" or "postponed" outcomes are handled by the TOC. Projects may be encouraged to re-apply after addressing areas called out in the application comments on the corresponding issue. Please refer to the instructions in the [Sandbox repo README](https://github.com/cncf/sandbox) for more details on re-application.
 
 ![Sandbox process](sandbox-application-process-2022.png)
 
 #### Applying for Sandbox
-   * Project's apply for sandbox through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
+   * Projects apply for sandbox through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
 
 #### Annual Review of Sandbox projects
 
