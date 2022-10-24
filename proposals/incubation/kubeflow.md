@@ -57,7 +57,7 @@ Kubeflow has external dependencies licensed under the following CNCF-approved li
 
 The dependency for each sub-project and their license information are included in:
 
-* Kubeflow - [https://github.com/kubeflow/training-operator/tree/master/third_party_licenses](https://github.com/kubeflow/training-operator/tree/master/third_party_licenses)
+* Kubeflow - [https://github.com/kubeflow/kubeflow/search?q=in%3Apath+third_party+license](https://github.com/kubeflow/kubeflow/search?q=in%3Apath+third_party+license)
 * Pipelines - [https://github.com/kubeflow/pipelines/tree/master/third_party](https://github.com/kubeflow/pipelines/tree/master/third_party)
 * Training-operator - [https://github.com/kubeflow/training-operator/tree/master/third_party_licenses](https://github.com/kubeflow/training-operator/tree/master/third_party_licenses)
 * Katib - [https://github.com/kubeflow/katib/blob/master/go.mod](https://github.com/kubeflow/katib/blob/master/go.mod)
