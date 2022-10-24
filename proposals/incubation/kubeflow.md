@@ -90,7 +90,7 @@ The current snapshot of the maintainers as defined above (company affiliation ba
     * [Dushyanthsc](https://github.com/dushyanthsc) - 
     * [Eedorenko](https://github.com/eedorenko) - Eugene Fedorenko 
     * [Gaocegege](https://github.com/gaocegege) - Ce Gao (TensorChord)
-    * [Gaoning777](https://github.com/gaoning777) -  Ning (Google)
+    * [Gaoning777](https://github.com/gaoning777) -  Ning
     * [gkcalat](https://github.com/gkcalat) - Ablai Akhazhanov (Google)
     * [hilcj](https://github.com/hilcj) - Desmond Liu (Google)
     * [Hongye-sun](https://github.com/hongye-sun) - 
