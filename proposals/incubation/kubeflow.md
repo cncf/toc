@@ -28,6 +28,7 @@ To meet the evolving needs of its community, Kubeflow needs a vendor-neutral fou
 * Kubeflow - [https://github.com/kubeflow/kubeflow/blob/master/ROADMAP.md](https://github.com/kubeflow/kubeflow/blob/master/ROADMAP.md)
 * Pipelines - [https://github.com/kubeflow/pipelines/blob/master/ROADMAP.md](https://github.com/kubeflow/pipelines/blob/master/ROADMAP.md)
 * Katib - [https://github.com/kubeflow/katib/blob/master/ROADMAP.md](https://github.com/kubeflow/katib/blob/master/ROADMAP.md)
+* Notebooks - 
 
 ## Sponsors from TOC
 
@@ -74,6 +75,18 @@ The current snapshot of the maintainers as defined above (company affiliation ba
     * [pdmack](https://github.com/pdmack) - Pete MacKinnon (NVIDIA)
     * [james-jwu](https://github.com/james-jwu) - James Wu (Google)
     * [zijianjoy](https://github.com/zijianjoy) - James Liu (Google)
+* Kubeflow Notebooks & Common Kubeflow Components
+    * [elikatsis](https://github.com/elikatsis) - Ilias Katsakioris (Arrikto)
+    * [kimwnasptd](https://github.com/elikatsis) - Kimonas Sotirchos (Arrikto)
+    * [StefanoFioravanzo](https://github.com/StefanoFioravanzo) - Stefano Fioravanzo (Arrikto)
+    * [thesuperzapper](https://github.com/thesuperzapper) - Mathew Wicks
+    * [yanniszark](https://github.com/yanniszark) - Yannis Zarkadas (Arrikto)
+* Kubeflow Manifests
+    * [elikatsis](https://github.com/elikatsis) - Ilias Katsakioris (Arrikto)
+    * [kimwnasptd](https://github.com/elikatsis) - Kimonas Sotirchos (Arrikto)
+    * [PatrickXYS](https://github.com/PatrickXYS) - Yao Xiao (Google)
+    * [StefanoFioravanzo](https://github.com/StefanoFioravanzo) - Stefano Fioravanzo (Arrikto)
+    * [yanniszark](https://github.com/yanniszark) - Yannis Zarkadas (Arrikto)
 * Pipelines
     * [Adrian555](https://github.com/adrian555) - Adrian Zhuang (IBM)
     * [Akartsky](https://github.com/akartsky) - Kartik Kalamadi (AWS)
@@ -168,6 +181,7 @@ The Kubeflow community includes a variety of Slack forums for general discussion
 * Repo - [https://github.com/kubeflow/community](https://github.com/kubeflow/community)
 * Website - [https://www.kubeflow.org/docs/about/community/](https://www.kubeflow.org/docs/about/community/)
 * Workgroups & SIGs - [https://github.com/kubeflow/community/blob/master/wg-list.md](https://github.com/kubeflow/community/blob/master/wg-list.md)
+* Kubeflow Blog - [https://blog.kubeflow.org](https://blog.kubeflow.org)
 
 ## Code of Conduct
 
@@ -175,8 +189,8 @@ The Kubeflow community includes a variety of Slack forums for general discussion
 
 ## Social media accounts
 
-* Youtube - https://www.youtube.com/kubeflow
-* Twitter - https://twitter.com/kubeflow
+* Youtube - [https://www.youtube.com/kubeflow](https://www.youtube.com/kubeflow)
+* Twitter - [https://twitter.com/kubeflow](https://twitter.com/kubeflow)
 * LinkedIn - [https://www.linkedin.com/company/kubeflow](https://www.linkedin.com/company/kubeflow)
 * Google Groups - [https://groups.google.com/g/kubeflow-discuss](https://groups.google.com/g/kubeflow-discuss)
 * Google Workspace (used to manage community calendar, Drive, etc.) 
