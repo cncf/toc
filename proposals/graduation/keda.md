@@ -110,9 +110,9 @@ As an example of our growth in terms of end-users, when we opened our proposal f
 
 ![End-users from CNCF Incubation proposal](https://raw.githubusercontent.com/kedacore/governance/main/cncf/graduation/keda-end-users-from-incubation-proposal.jpg)
 
-In a little over a year, **we have grown to 34 listed end-users past August 2022 which is a 210% growth**:
+In a little over a year, **we have grown to 36 listed end-users past October 2022 which is a 227% growth**:
 
-![End-users](https://raw.githubusercontent.com/kedacore/governance/main/cncf/graduation/end-users-august-2022.png)
+![End-users](https://raw.githubusercontent.com/kedacore/governance/main/cncf/graduation/end-users-october-2022.png)
 
 And there are major KEDA adopters from the gaming and retail industry that we are eager to talk about, but cannot share publicly because of legal reasons. However, we should be able to get in contact for anonymous interviews if there is interest.
 
