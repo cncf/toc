@@ -39,6 +39,20 @@ Your annual review should answer the following questions:
 * How can the CNCF help you achieve your upcoming goals? 
 * Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage)? 
 
+## Annual Review by the TOC
+
+   * Annual reviews are performed in order to check in with sandbox projects, ascertain their progress, and address any outstanding questions
+     * A TOC representative volunteers to lead the review once the project files a PR.
+     * The assigned member reviews the content of the PR and analyzes the project for community health indicators, their findings are placed within a thread in the private TOC channel for discussion
+       * findings should highlight important facts about the project that could influence the TOCs decision around the future of the project, its status in sandbox, its path to incubation, etc.
+       * the thread should always include whether the Project's view of themselves and the ask of the CNCF is reasonable to assist the project moving forward.
+     * Projects are invited to the public TOC meeting to engage in TOC led discussion around the project. Projects are not obligated to attend.
+     * The assigned TOC member provides a summary of the project and leverages the thread's content as the basis of discussion.
+       * Discussion typically focuses on what is going well with the project and areas to improve
+     * Project are invited to use this time to voice any concerns and requests for help they may have that are not captured in the PR (or highlight asks within the PR).
+     * At the conclusion of the public meeting, the TOC votes to approve all annual reviews covered. Should a concern registered on a project, the votes will be held separately.
+     * After the meeting wraps up, the assigned TOC member may summarize the discussion on the PR in the form of a comment to document information for the project and community.
+
 
 
 
