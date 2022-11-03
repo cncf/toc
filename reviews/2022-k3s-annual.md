@@ -79,7 +79,7 @@ Github specific stats:
 | [GitHub Stars](https://github.com/k3s-io/k3s/stargazers) | ~14k | ~18k | ~21k | 
 | [Commits](https://github.com/k3s-io/k3s/commits/master) | ~75/month | ~65/month | [~100/month](https://github.com/k3s-io/k3s/pulse/monthly)  |
 | [Merged PRs](https://github.com/k3s-io/k3s/pulls) | ~35/month | ~45/month | [~66/month](https://github.com/k3s-io/k3s/pulse/monthly)  | 
-| [Releases (cumulative)](https://github.com/k3s-io/k3s/releases) | 100 | 171 | ?? |
+| [Releases ](https://github.com/k3s-io/k3s/releases) | 100 | 171 | 189 |
 
 ### How many maintainers do you have, and which organizations are they from?
 
@@ -195,7 +195,7 @@ The CNCF has been helpful thus far by contributing CI resources. As we work towa
 
 ### Do you think that your project meets the [criteria for incubation](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#incubating-stage)?
 
-At this time, we aren't ready to submit for incubation status. Our goal is to submit next year. We'll use this upcoming year to prep for that and improve the areas of the project that need it.
+We believe that we will meet the criteria for incubation in the coming months, if not sooner.  We have a very healthy contributor base outside of the core group as evidenced by devstats, and will continue to work to list adopters.  We hope to begin the process within the coming months, and look forward to working with the CNCF on it.
 
 
 ## Project Links
