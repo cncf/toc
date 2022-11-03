@@ -77,9 +77,9 @@ Github specific stats:
 | Statistic | Sandbox | 2021 | 2022 | 
 | -- | -- | -- | -- |
 | [GitHub Stars](https://github.com/k3s-io/k3s/stargazers) | ~14k | ~18k | ~21k | 
-| [Commits](https://github.com/k3s-io/k3s/commits/master) | ~75/month | ~65/month | ~93/month  |
-| [Merged PRs](https://github.com/k3s-io/k3s/pulls) | ~35/month | ~45/month | ~58/month  | 
-| [Releases](https://github.com/k3s-io/k3s/releases) | 100 | 171 | ?? |
+| [Commits](https://github.com/k3s-io/k3s/commits/master) | ~75/month | ~65/month | [~100/month](https://github.com/k3s-io/k3s/pulse/monthly)  |
+| [Merged PRs](https://github.com/k3s-io/k3s/pulls) | ~35/month | ~45/month | [~66/month](https://github.com/k3s-io/k3s/pulse/monthly)  | 
+| [Releases (cumulative)](https://github.com/k3s-io/k3s/releases) | 100 | 171 | ?? |
 
 ### How many maintainers do you have, and which organizations are they from?
 
@@ -151,7 +151,6 @@ Beyond these above items, here is a list of our accomplishment highlights over t
   - Encryption key secrets rotation
   - Performance testing
   - Cleanup deprecated flags
-  - SR-IOV support
   - Tooling to measure code coverage in e2e tests
   - Automated tooling to facilitate high quality releases
   - Many more - hundreds of issues closed across 40+ release since last October
