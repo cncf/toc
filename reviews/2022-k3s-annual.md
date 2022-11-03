@@ -14,7 +14,7 @@ sans images, embedded in a single binary that weighs in at under 70mb (with comp
 K3s is a [fully conformant](https://github.com/cncf/k8s-conformance/pulls?q=is%3Apr+k3s) production-ready distribution with some additional flavor:
 
 1. Packaged as a single binary.
-2. Support for sqlite3 as the default storage backend. Etcd3, MySQL,MariaDB, nats.io, and Postgres are also supported.
+2. Support for sqlite3 as the default storage backend. Etcd3, MySQL,MariaDB, NATS JetStream, and Postgres are also supported.
 3. Wraps Kubernetes and other components in a single, simple launcher.
 4. Secure by default with reasonable defaults for lightweight environments.
 5. Minimal to no OS dependencies (just a sane kernel and cgroup mounts needed).
@@ -58,13 +58,17 @@ K3s falls in the scope of [CNCF Runtime TAG](https://github.com/cncf/tag-runtime
 **Key features added**:
 
 - containerd v1.6.x
-- nats.io added as supported storage backend
+- etcd 3.5
+- NATS JetStream added as supported storage backend
 - MicroOS support
 - Increased focus on automated testing across multiple OS/configs
 - encryption key secret rotation
 - bootstrap reconciliation refactor
 - dual-stack support
 - IPv6-only support
+- Automatic detection of nvidia container runtime
+- Automatic detection of systemd cgroup manager
+- Control-plane egress proxy (similar to Konnectivity service) using existing agent websocket tunnel
 
 ## Annual Review Contents
 
