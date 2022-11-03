@@ -9,12 +9,12 @@
 ## Background
 
 K3s is a Lightweight Kubernetes distribution that ships all needed components and utilities,
-sans images, embedded in a single binary that weighs in at under 60mb (with compressed air-gap images adding ~150mb).
+sans images, embedded in a single binary that weighs in at under 70mb (with compressed air-gap images adding ~150mb).
 
 K3s is a [fully conformant](https://github.com/cncf/k8s-conformance/pulls?q=is%3Apr+k3s) production-ready distribution with some additional flavor:
 
 1. Packaged as a single binary.
-2. Support for sqlite3 as the default storage backend. Etcd3, MySQL, and Postgres are also supported.
+2. Support for sqlite3 as the default storage backend. Etcd3, MySQL,MariaDB, nats.io, and Postgres are also supported.
 3. Wraps Kubernetes and other components in a single, simple launcher.
 4. Secure by default with reasonable defaults for lightweight environments.
 5. Minimal to no OS dependencies (just a sane kernel and cgroup mounts needed).
@@ -58,7 +58,7 @@ K3s falls in the scope of [CNCF Runtime TAG](https://github.com/cncf/tag-runtime
 **Key features added**:
 
 - containerd v1.6.x
-- RHEL9 support
+- nats.io added as supported storage backend
 - MicroOS support
 - Increased focus on automated testing across multiple OS/configs
 - encryption key secret rotation
@@ -79,7 +79,7 @@ Github specific stats:
 | [GitHub Stars](https://github.com/k3s-io/k3s/stargazers) | ~14k | ~18k | ~21k | 
 | [Commits](https://github.com/k3s-io/k3s/commits/master) | ~75/month | ~65/month | [~100/month](https://github.com/k3s-io/k3s/pulse/monthly)  |
 | [Merged PRs](https://github.com/k3s-io/k3s/pulls) | ~35/month | ~45/month | [~66/month](https://github.com/k3s-io/k3s/pulse/monthly)  | 
-| [Releases ](https://github.com/k3s-io/k3s/releases) | 100 | 171 | 189 |
+| [Releases](https://github.com/k3s-io/k3s/releases) | 100 | 171 | 189 |
 
 ### How many maintainers do you have, and which organizations are they from?
 
