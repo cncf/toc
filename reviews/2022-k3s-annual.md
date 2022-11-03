@@ -73,8 +73,9 @@ Here is a link to our devstats page: https://k3s.devstats.cncf.io/d/8/dashboards
 
 
 Github specific stats:
+
 | Statistic | Sandbox | 2021 | 2022 | 
-|-|-|-|
+| -- | -- | -- | -- |
 | [GitHub Stars](https://github.com/k3s-io/k3s/stargazers) | ~14k | ~18k | ~21k | 
 | [Commits](https://github.com/k3s-io/k3s/commits/master) | ~75/month | ~65/month | ~93/month  |
 | [Merged PRs](https://github.com/k3s-io/k3s/pulls) | ~35/month | ~45/month | ~58/month  | 
@@ -107,6 +108,8 @@ Currently, the project has 17 maintainers, all with SUSE:
 
 Based on issues filed on GitHub and interactions on Slack, K3s continues to see a healthy adoption from many different types of users from hobbyists to large organizations. While we have setup an ADOPTERS.md, we've not yet start to reach out to known adopters in earnest to get them listed.  There are however several known adopters, specifically Civo Cloud, Rocketchat, and Gitpod.  We will continue to reach out to these and other adopters to ensure they are properly tracked in ADOPTERS.md.
 
+Additionally, through our devstats, you can see a healthy number of contributors from outside collaborators across several companies, in fact you can see in the last year, we've accepted contribtuions from over [180 different companies](https://k3s.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=contributions).
+
 
 K3s is also used as a building block for other projects and products. Here are a few that are independent of K3s, but leverage or build on top of it:
 * [k3d](https://github.com/k3d-io/k3d)
@@ -114,7 +117,7 @@ K3s is also used as a building block for other projects and products. Here are a
 * [Rancher Desktop](https://rancherdesktop.io/)
 * [RKE2](https://github.com/rancher/rke2)
 * [k3ai](https://k3ai.github.io/)
-
+* [Kairos](https://kairos.io)
 
 We also track downloads of our binaries from GitHub (the primary way to install K3s). Over the past year, our all-time number of downloads grew from around 2.7 million to over 4 million. Note that this number does not represent unique users or installations. It is simply the number of times the k3s binaries have been downloaded directly from GitHub.
 
