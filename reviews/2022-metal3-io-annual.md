@@ -189,6 +189,10 @@ Here is a summary of those goals and their status:
     project, but there are more to come in terms of securing and speeding the
     test processes to help contributors receive feedback faster.
 
+  - There is long-running cooperation between the `Openstack-Ironc` and the
+    `Metal3-io` communities, thus in the spirit of cooperation there is an
+    ongoing effort to run Metal3 CI jobs against [Ironic upstream](https://review.opendev.org/c/openstack/ironic/+/863873).
+
   - There is an ongoing process that will continue in the future to align
     the Metal3 e2e test better with the CAPI e2e tests as well as to rework
     the developer environment that is currently used to better fit the CI
