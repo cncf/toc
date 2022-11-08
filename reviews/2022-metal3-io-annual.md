@@ -6,7 +6,7 @@ This [DevStats](https://metal3.devstats.cncf.io/d/8/dashboards?orgId=1&from=now-
 graph shows that we have a fairly consistent number of contributions
 throughout the year.
 
-### Downloads per repository:
+### Downloads per repository
 We have fairly high number of downloads of our release manifests and
 artifacts. We showcase two examples below.
 
@@ -59,13 +59,10 @@ process.
 
 The project's adopters list can be found [here](https://github.com/metal3-io/metal3-docs/blob/main/ADOPTERS.md).
 
-**Adopters:**
-
 **Companies that are using Metal3 in production:**
 
-`IKEA IT AB`: "IKEA IT AB uses Metal3 to
-handle Bare Metal provisioning and lifecycle management in its CAPI-Based
-bare metal cloud infrastructure."
+`IKEA IT AB`: "IKEA IT AB uses Metal3 to handle Bare Metal provisioning and
+lifecycle management in its CAPI-Based bare metal cloud infrastructure."
 
 `Ericsson`: "We have chosen Metal3 as a bare metal provisioner for Ericsson’s
 Cloud Container Distribution since Metal3 is a forerunner when it comes to
@@ -224,19 +221,20 @@ Here is a summary of those goals and their status:
 The Metal3-io project's general security policy is located [here](https://metal3io.netlify.app/security_policy.html).
 
 In addition to the project's security policy, all the active repositories
-have a SECURITY_CONTACTS file. The SECURITY_CONTACTS file informs
-contributors about:
+should have a `SECURITY_CONTACTS` file.
+
+The `SECURITY_CONTACTS` file informs contributors about:
   - the project's security policy
   - basic rules of security vulnerability disclosure
 
-Optionally the SECURITY_CONTACTS may contain:
+Optionally the `SECURITY_CONTACTS` may contain:
   - repository specific security fix back porting information
   - repository specific security fix release information
 
 ## Incubation
 
-We think we meet the criteria of incubation. We have shown healthy number of
-contributions and sustainable process of feature additions in Metal3-io. Our
+We think the Metal3-io project meets the criteria of incubation. We have shown healthy
+number of contributions and sustainable process of feature additions in Metal3-io. Our
 adopters list is also growing steadily. We will be opening proposal for incubation
 very soon.
 
