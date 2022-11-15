@@ -101,11 +101,11 @@ Intencją **Cloud Native Computing Foundation** jest przyczynienie się do adopc
 
 ## Português Brasileiro:
 
-Tecnologias nativas ao cloud empoderam empresas a criarem e rodarem aplicações escaláveis em ambientes modernos e dinâmicos, como núvens públicas, privadas e híbridas. Containeres, service meshes, microsserviços, infraestruturas imutáveis e APIs declarativas são alguns exemplos dessa estratégia.
+Tecnologias *cloud native* empoderam organizações a construir e executar aplicações escaláveis em ambientes modernos e dinâmicos, tais como nuvens públicas, privadas e híbridas. Contêineres, *service meshes*, microsserviços, infraestrutura imutável e APIs declarativas exemplificam essa abordagem.
 
-Essas técnicas permitem criar sistemas de baixo acoplamento, resilientes, gerenciáveis e observáveis. Combinadas com automações robustas, elas permitem que os engenheiros façam alterações de alto impacto de forma frequente e previsível, com o mínimo de esforço.
+Essas técnicas permitem criar sistemas de baixo acoplamento que são resilientes, gerenciáveis e observáveis. Combinadas com automação robusta, elas permitem aos engenheiros fazer mudanças de alto impacto de forma frequente e previsível, com o mínimo de esforço.
 
-A Cloud Native Computing Foundation procura conduzir a adoção desse paradigma auxiliando e sustentando um ecosistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões estado-da-arte para fazer com que essas inovações sejam acessíveis a todos.
+A *Cloud Native Computing Foundation* procura impulsionar a adoção desse paradigma fomentando e sustentando um ecossistema de projetos de código aberto e não atrelados a nenhum fornecedor. Nós democratizamos padrões do estado-da-arte para tornar essas inovações acessíveis a todos.
 
 ## Português de Portugal:
 
