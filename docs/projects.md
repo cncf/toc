@@ -35,7 +35,7 @@
 [Network Service Mesh](https://github.com/networkservicemesh/)|Joe Beda, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/212)|[4/11/19](https://github.com/networkservicemesh/)|Sandbox
 [OpenTelemetry](https://github.com/open-telemetry/community)|Brendan Burns, Brian Grant, Matt Klein|[5/7/19](https://github.com/cncf/toc/pull/233)|[5/7/19](https://github.com/open-telemetry/community)|Incubating
 [OpenEBS](https://github.com/openebs/openebs)|Alexis Richardson, Xiang Li|[5/14/19](https://github.com/cncf/toc/pull/224)|[5/14/19](https://github.com/openebs/openebs)|Sandbox
-[Flux](https://github.com/fluxcd/flux2)|Michelle Noorali, Xiang Li|[6/11/19](https://github.com/cncf/toc/pull/232)|[7/15/19](https://github.com/fluxcd/flux2)|Incubating
+[Flux](https://github.com/fluxcd/flux2)|Michelle Noorali, Xiang Li|[6/11/19](https://github.com/cncf/toc/pull/232)|[7/15/19](https://github.com/fluxcd/flux2)|Graduated
 [Thanos](https://github.com/thanos-io/thanos)|Joe Beda, Xiang Li, Alexis Richardson, Liz Rice|[6/11/19](https://github.com/cncf/toc/pull/256)|[7/20/19](https://github.com/thanos-io/thanos)|Incubating
 [in-toto](https://github.com/in-toto/in-toto)|Michelle Noorali, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/252)|[8/21/19](https://github.com/in-toto/in-toto)|Sandbox
 [Strimzi](https://github.com/strimzi)|Alexis Richardson, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/266)|[8/28/19](https://github.com/strimzi)|Sandbox
@@ -164,6 +164,7 @@
 [OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|1/29/2020|Graduated
 [Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[7/28/21](https://www.cncf.io/announcements/2021/07/28/cloud-native-computing-foundation-announces-linkerd-graduation/)|Graduated
 [SPIFFE/SPIRE](https://github.com/spiffe)|Brian Grant, Sam Lambert, Ken Owens|[11/7/17](https://goo.gl/6nmyDn)|[9/20/2022](https://www.cncf.io/announcements/2022/09/20/spiffe-and-spire-projects-graduate-from-cloud-native-computing-foundation-incubator/)|Graduated
+[Flux](https://github.com/fluxcd/flux2)|Michelle Noorali, Xiang Li|[6/11/19](https://github.com/cncf/toc/pull/232)|[11/30/2022](https://fluxcd.io/blog/2022/11/flux-is-a-cncf-graduated-project/)|Graduated
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
