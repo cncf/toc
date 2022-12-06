@@ -44,7 +44,7 @@
 [ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
 [KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Incubating
 [Service Mesh Interface (SMI)](https://smi-spec.io)|Jeff Brewer, Brendan Burns, Matt Klein|[1/16/20](https://github.com/cncf/toc/pull/336) -  [SIG Network](https://github.com/cncf/sig-network/blob/master/recommendations/smi.md)|[3/16/20](https://github.com/deislabs/smi-spec)|Sandbox
-[Argo](https://argoproj.github.io)|Jeff Brewer, Michelle Noorali, Xiang Li|[9/24/19](https://github.com/cncf/toc/pull/299) -  [SIG App Delivery](https://github.com/cncf/sig-app-delivery/issues/18)|[4/7/20](https://github.com/argoproj/argo)|Incubating
+[Argo](https://argoproj.github.io)|Jeff Brewer, Michelle Noorali, Xiang Li|[9/24/19](https://github.com/cncf/toc/pull/299) -  [SIG App Delivery](https://github.com/cncf/sig-app-delivery/issues/18)|[4/7/20](https://github.com/argoproj/argo)|Graduated
 [Volcano](https://volcano.sh)|Liz Rice, Sheng Liang, Alena Prokharchyk|[11/6/19](https://github.com/cncf/toc/pull/318) -  [SIG Runtime](https://github.com/cncf/sig-runtime/blob/master/recommendations/sandbox/volcano.md)|[4/10/20](https://github.com/volcano-sh/)|Sandbox
 [ArtifactHub](https://artifacthub.io)|TOC Vote|[4/1/20](https://github.com/cncf/toc/pull/409)|[6/23/20](https://github.com/artifacthub/hub)|Sandbox
 [BFE](https://www.bfe-networks.net)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/453)|[6/23/20](https://github.com/bfenetworks/bfe)|Sandbox
@@ -162,9 +162,11 @@
 [Rook](https://github.com/tikv/tikv)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[10/7/2020](https://www.cncf.io/announcements/2020/10/07/cloud-native-computing-foundation-announces-rook-graduation/)|Graduated
 [etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[11/24/2020](https://www.cncf.io/announcements/2020/11/24/cloud-native-computing-foundation-announces-etcd-graduation/)|Graduated
 [OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|1/29/2020|Graduated
-[Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[7/28/21](https://www.cncf.io/announcements/2021/07/28/cloud-native-computing-foundation-announces-linkerd-graduation/)|Graduated
+[Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[7/28/2021](https://www.cncf.io/announcements/2021/07/28/cloud-native-computing-foundation-announces-linkerd-graduation/)|Graduated
 [SPIFFE/SPIRE](https://github.com/spiffe)|Brian Grant, Sam Lambert, Ken Owens|[11/7/17](https://goo.gl/6nmyDn)|[9/20/2022](https://www.cncf.io/announcements/2022/09/20/spiffe-and-spire-projects-graduate-from-cloud-native-computing-foundation-incubator/)|Graduated
 [Flux](https://github.com/fluxcd/flux2)|Michelle Noorali, Xiang Li|[6/11/19](https://github.com/cncf/toc/pull/232)|[11/30/2022](https://fluxcd.io/blog/2022/11/flux-is-a-cncf-graduated-project/)|Graduated
+[Argo](https://argoproj.github.io)|Jeff Brewer, Michelle Noorali, Xiang Li|[9/24/19](https://github.com/cncf/toc/pull/299)|[12/6/2022](https://www.cncf.io/announcements/2022/12/06/the-cloud-native-computing-foundation-announces-argo-has-graduated/)|Graduated
+
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
