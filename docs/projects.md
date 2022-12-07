@@ -237,6 +237,8 @@
 [etcd](https://github.com/etcd-io/etcd) | [3/11/2022](https://github.com/etcd-io/etcd/blob/main/security/FUZZING_AUDIT_2022.PDF) | [Announcement](https://etcd.io/blog/2022/etcd-integrates-continuous-fuzzing/) | CNCF | [ADA Logics](https://adalogics.com)
 [crio](https://github.com/cri-o/cri-o/) | [6/6/2022](https://github.com/cri-o/cri-o/pull/5938) | [Announcement](https://www.cncf.io/blog/2022/06/06/ada-logics-cri-o-holistic-security-audit-engagement/) | CNCF | [ADA Logics](https://adalogics.com)
 [linkerd](https://github.com/linkerd/linkerd2) | [6/28/2022](https://github.com/linkerd/linkerd2/tree/main/audits/2022) | [Announcement](https://www.cncf.io/blog/2022/06/28/announcing-the-completion-of-linkerds-2022-security-audit/) | CNCF | [Trail of Bits](https://trailofbits.com)
+[Backstage](https://github.com/cloudevents/spec) | [8/23/2022][(https://backstage.io/blog/assets/22-08-23/X41-Backstage-Audit-2022.pdf)) | [Announcement](https://backstage.io/blog/2022/08/23/backstage-security-audit) | CNCF | [X41 D-Sec](https://x41-dsec.de/)
+[CloudEvents](https://github.com/cloudevents/spec) | [11/28/2022][(https://github.com/linkerd/linkerd2/tree/main/audits/2022](https://ostif.org/wp-content/uploads/2022/11/CloudEvents.pdf)) | [Announcement](https://ostif.org/results-of-the-cloudevents-security-assessment/) | CNCF | [Trail of Bits](https://trailofbits.com)
 
 
 ## Archived Projects
