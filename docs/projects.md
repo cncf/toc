@@ -143,6 +143,18 @@
 [Carvel](https://github.com/vmware-tanzu/carvel)|TOC Vote|[7/15/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/vmware-tanzu/carvel)|Sandbox
 [Lima](https://github.com/lima-vm/lima)|TOC Vote|[7/26/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/lima-vm/lima)|Sandbox
 [Istio](https://istio.io/)|Dave Zolotusky|[4/25/2022](https://github.com/cncf/toc/pull/827)|[09/28/2022](https://lists.cncf.io/g/cncf-toc/message/7563)|Incubating
+[Merbridge](https://github.com/merbridge/merbridge)|TOC Vote|[7/27/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C80)|[12/13/2022](https://github.com/merbridge/merbridge)|Sandbox
+[DevSpace](https://github.com/loft-sh/devspace)|TOC Vote|[9/13/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C81)|[12/13/2022](https://github.com/loft-sh/devspace)|Sandbox
+[Open Policy Registry (OPCR)](https://github.com/opcr-io/policy)|TOC Vote|[8/16/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C82)|[12/13/2022](https://github.com/opcr-io/policy)|Sandbox
+[(werf)](https://github.com/werf/werf)|TOC Vote|[9/12/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C83)|[12/13/2022](https://github.com/werf/werf)|Sandbox
+[(werf)](https://github.com/werf/werf)|TOC Vote|[9/12/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C83)|[12/13/2022](https://github.com/werf/werf)|Sandbox
+[(Capsule)](https://github.com/clastix/capsule)|TOC Vote|[9/13/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C84)|[12/13/2022](https://github.com/clastix/capsule)|Sandbox
+[(zot)](https://github.com/project-zot/zot)|TOC Vote|[9/20/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C85)|[12/13/2022](https://github.com/project-zot/zot)|Sandbox
+[(Paralus)](https://github.com/paralus/paralus)|TOC Vote|[9/20/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C86)|[12/13/2022](https://github.com/paralus/paralus)|Sandbox
+[(Carina)](https://github.com/carina-io/carina)|TOC Vote|[10/10/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C87)|[12/13/2022](https://github.com/carina-io/carina)|Sandbox
+[(ko)](https://github.com/ko-build/ko)|TOC Vote|[10/18/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C88)|[12/13/2022](https://github.com/ko-build/ko)|Sandbox
+[(Kubescape)](https://github.com/kubescape/kubescape)|TOC Vote|[10/31/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C89)|[12/13/2022](https://github.com/kubescape/kubescape)|Sandbox
+
 
 
 ## Graduated Projects
