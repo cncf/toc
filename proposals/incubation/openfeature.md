@@ -27,6 +27,11 @@ The OpenFeature is currently looking for a TOC sponsor
 
 ### Technical
 
+#### SDK Progress
+
+#### Introduction of flagD
+
+#### Provider Growth
 
 ## Incubation Stage Requirements
 
