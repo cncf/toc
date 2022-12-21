@@ -7,8 +7,8 @@
 
 + Name: OpenFeature
 + Website: [openfeature.dev](https://openfeature.dev)
-+ Source Control: [OpenFeature on Gitbh](https://github.com/open-feature)
-+ Code of Conduct: [OPenFeature Code of conduct](https://github.com/open-feature/community#code-of-conduct)
++ Source Control: [OpenFeature on Github](https://github.com/open-feature)
++ Code of Conduct: [OpenFeature Code of conduct](https://github.com/open-feature/community#code-of-conduct)
 + License [Apache 2](https://github.com/backstage/backstage/blob/master/LICENSE)
 
 
