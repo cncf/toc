@@ -31,7 +31,7 @@ The CNCF provides a [list of services](https://www.cncf.io/services-for-projects
 
 Do you want to contribute to a project? We have [outlined the process](https://github.com/cncf/toc/blob/main/process/README.md) to get started. If you have any questions or don't know where to start, please open an [issue](https://github.com/cncf/toc/issues).
 
-## Meeting Time
+## Meeting Time.
 
 The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific Time; [Convert to local time zone](http://www.thetimezoneconverter.com/?t=8:00AM&tz=San%20Francisco)).  
 
