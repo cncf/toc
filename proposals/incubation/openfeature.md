@@ -18,12 +18,18 @@ OpenFeature is an open standard for feature flag management, created to support 
 
 ## Sponsors from the TOC
 
-The OpenFeature is currently looking for a TOC sponsor
+The OpenFeature project is currently looking for a TOC sponsor
 
 ## Progress Since Sandbox
 
 ### Community
 
+**Outreach:** As a project we hold regular community meetings each month, highlighting what is happening in the community with presentations from multiple adopters and discussions on current topics and interests in the community. Community sessions have on average **12 attendees**, are uploaded to a [Project meeting playlist hosted on Youtube]([https://www.youtube.com/watch?v=3dV3aZo6JN8&list=PLf1KFlSkDLIBmA5TLXn2BzEHmwWzckP8y](https://www.youtube.com/playlist?list=PLiQt8D1ofl8zR0u5kzFjrX_U4rGteyOVa)) and gained **over 750 views**.
+
+* [OpenFeature Community Hub on Github](https://github.com/open-feature/community)
+* [OpenFeature Community on Slack](https://cloud-native.slack.com/archives/C0344AANLA1)
+
+The community statistics are extracted from [CNCF devstats](https://openfeature.devstats.cncf.io/).
 
 ### Technical
 
