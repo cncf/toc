@@ -298,7 +298,7 @@ Flatcar has built up a broad community of adopters from large enterprises to sma
 
 Users can share their adoption of Flatcar, with details of their use cases, in the [ADOPTERS.md](https://github.com/flatcar/Flatcar/blob/main/adopters.md) file in the Flatcar repo. 
 
-GitHub stars: 426 (on the [https://github.com/flatcar/Flatcar](https://github.com/flatcar/Flatcar) repo)
+GitHub stars: 435 (on the [https://github.com/flatcar/Flatcar](https://github.com/flatcar/Flatcar) repo)
 
 Approximately 43,000 nodes access the public update server, an increase of 25% over the past 12 months. This only counts endpoints that contact the public server for updates. It excludes those behind a firewall, with updates disabled, using a private update server, or using full OS release images to update (node re-deployment / blue-green updates).
 
