@@ -52,9 +52,11 @@ As an existing Sandbox project this is already in place
 ## Statement on Alignment with the CNCF Mission
 
 OpenFeature provides a standardized, vendor-neutral specification and tooling for feature flagging.
-Feature flags are becoming an essential aspect of the modern software development lifecycle because they allow teams to make decouple deployments from feature releases. This reduces many risks associated with traditional deployments, allowing engineers to make high-impact changes frequently and predictably.
+Feature flags are becoming an essential aspect of the modern software development lifecycle because they allow teams to make decouple deployments from feature releases.
+This reduces many risks associated with traditional deployments, allowing engineers to make high-impact changes frequently and predictably.
 
-Standardizing feature flags unlocks increased observability at the feature level, providing additional pathways for increased automation, including intelligent deployment and rollback orchestration. This aligns with the [CNCF mission](https://github.com/cncf/foundation/blob/main/charter.md#1-mission-of-the-cloud-native-computing-foundation) of democratizing state-of-the-art patterns, making innovations in feature flagging, feature observability, and intelligent deployments accessible to everyone.
+Standardizing feature flags unlocks increased observability at the feature level, providing additional pathways for increased automation, including intelligent deployment and rollback orchestration.
+This aligns with the [CNCF mission](https://github.com/cncf/foundation/blob/main/charter.md#1-mission-of-the-cloud-native-computing-foundation) of democratizing state-of-the-art patterns, making innovations in feature flagging, feature observability, and intelligent deployments accessible to everyone.
 
 ### Alignment with Other CNCF Projects
 
