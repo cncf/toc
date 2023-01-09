@@ -191,9 +191,9 @@ Examples include:
 - [Roles][tagroles] for TAG Observability
   - TOC Liaison: Lei Zhang, Cathy Zhang
   - TAG Chairs:
+    - [Alolita Sharma] [alolita]
     - [Matthew Young][matthew young]
     - [Richard Hartmann][Richard Hartmann]
-    - TBD
   - Tech Leads ([definition][tagtldefinition], [TL election][tagtlprocess])
     - Bartłomiej Płotka
     - TBD more

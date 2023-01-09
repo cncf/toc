@@ -32,11 +32,10 @@
 [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet)|Alexis Richardson, Quinton Hoole|[9/18/18](https://github.com/cncf/toc/issues/154)|[12/4/18](https://github.com/virtual-kubelet/virtual-kubelet)|Sandbox
 [etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[12/11/18](https://www.cncf.io/blog/2018/12/11/cncf-to-host-etcd)|Graduated
 [KubeEdge](https://github.com/kubeedge/kubeedge)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/205)|[3/18/19](https://github.com/kubeedge/kubeedge)|Incubating
-[Brigade](https://github.com/brigadecore)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/203)|[3/18/19](https://github.com/brigadecore)|Sandbox
 [Network Service Mesh](https://github.com/networkservicemesh/)|Joe Beda, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/212)|[4/11/19](https://github.com/networkservicemesh/)|Sandbox
 [OpenTelemetry](https://github.com/open-telemetry/community)|Brendan Burns, Brian Grant, Matt Klein|[5/7/19](https://github.com/cncf/toc/pull/233)|[5/7/19](https://github.com/open-telemetry/community)|Incubating
 [OpenEBS](https://github.com/openebs/openebs)|Alexis Richardson, Xiang Li|[5/14/19](https://github.com/cncf/toc/pull/224)|[5/14/19](https://github.com/openebs/openebs)|Sandbox
-[Flux](https://github.com/fluxcd/flux)|Michelle Noorali, Xiang Li|[6/11/19](https://github.com/cncf/toc/pull/232)|[7/15/19](https://github.com/fluxcd/flux)|Incubating
+[Flux](https://github.com/fluxcd/flux2)|Michelle Noorali, Xiang Li|[6/11/19](https://github.com/cncf/toc/pull/232)|[7/15/19](https://github.com/fluxcd/flux2)|Graduated
 [Thanos](https://github.com/thanos-io/thanos)|Joe Beda, Xiang Li, Alexis Richardson, Liz Rice|[6/11/19](https://github.com/cncf/toc/pull/256)|[7/20/19](https://github.com/thanos-io/thanos)|Incubating
 [in-toto](https://github.com/in-toto/in-toto)|Michelle Noorali, Liz Rice|[7/9/19](https://github.com/cncf/toc/pull/252)|[8/21/19](https://github.com/in-toto/in-toto)|Sandbox
 [Strimzi](https://github.com/strimzi)|Alexis Richardson, Matt Klein|[4/9/19](https://github.com/cncf/toc/pull/266)|[8/28/19](https://github.com/strimzi)|Sandbox
@@ -45,14 +44,14 @@
 [ChubaoFS](https://github.com/chubaofs/chubaofs)|Alexis Richardson, Xiang Li|[8/27/19](https://github.com/cncf/toc/pull/282)|[12/17/19](https://github.com/chubaofs/chubaofs)|Sandbox
 [KEDA](https://keda.sh)|Liz Rice, Michelle Noorali, Xiang Li|[2/20/20](https://github.com/cncf/toc/issues/335) -  [SIG-Runtime](https://docs.google.com/presentation/d/11MssWPEyolaZwmJfg7sKE2BwSnGsmrXR3tdCscwf-WA/edit)|[3/9/20](https://github.com/keda/kedacore)|Incubating
 [Service Mesh Interface (SMI)](https://smi-spec.io)|Jeff Brewer, Brendan Burns, Matt Klein|[1/16/20](https://github.com/cncf/toc/pull/336) -  [SIG Network](https://github.com/cncf/sig-network/blob/master/recommendations/smi.md)|[3/16/20](https://github.com/deislabs/smi-spec)|Sandbox
-[Argo](https://argoproj.github.io)|Jeff Brewer, Michelle Noorali, Xiang Li|[9/24/19](https://github.com/cncf/toc/pull/299) -  [SIG App Delivery](https://github.com/cncf/sig-app-delivery/issues/18)|[4/7/20](https://github.com/argoproj/argo)|Incubating
+[Argo](https://argoproj.github.io)|Jeff Brewer, Michelle Noorali, Xiang Li|[9/24/19](https://github.com/cncf/toc/pull/299) -  [SIG App Delivery](https://github.com/cncf/sig-app-delivery/issues/18)|[4/7/20](https://github.com/argoproj/argo)|Graduated
 [Volcano](https://volcano.sh)|Liz Rice, Sheng Liang, Alena Prokharchyk|[11/6/19](https://github.com/cncf/toc/pull/318) -  [SIG Runtime](https://github.com/cncf/sig-runtime/blob/master/recommendations/sandbox/volcano.md)|[4/10/20](https://github.com/volcano-sh/)|Sandbox
 [ArtifactHub](https://artifacthub.io)|TOC Vote|[4/1/20](https://github.com/cncf/toc/pull/409)|[6/23/20](https://github.com/artifacthub/hub)|Sandbox
 [BFE](https://www.bfe-networks.net)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/453)|[6/23/20](https://github.com/bfenetworks/bfe)|Sandbox
-[Cloud Custodian](https://cloudcustodian.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/issues/478)|[6/23/20](https://github.com/cloud-custodian/cloud-custodian)|Sandbox
+[Cloud Custodian](https://cloudcustodian.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/issues/478)|[6/23/20](https://github.com/cloud-custodian/cloud-custodian)|Incubating
 [Crossplane](https://www.crossplane.io)|TOC Vote|[5/26/20](https://github.com/cncf/toc/pull/454)|[6/23/20](https://github.com/crossplane/crossplane)|Incubating
 [Dex](https://github.com/dexidp/dex)|TOC Vote|[3/4/20](https://github.com/cncf/toc/pull/379)|[6/23/20](https://github.com/dexidp/dex)|Sandbox
-[Keptn](https://keptn.sh)|TOC Vote|[6/4/19](https://github.com/cncf/toc/pull/250)|[6/23/20](https://github.com/keptn)|Sandbox
+[Keptn](https://keptn.sh)|TOC Vote|[6/4/19](https://github.com/cncf/toc/pull/250)|[6/23/20](https://github.com/keptn)|Incubating
 [KUDO](https://kudo.dev)|TOC Vote|[6/25/19](https://github.com/cncf/toc/pull/261)|[6/23/20](https://github.com/kudobuilder)|Sandbox
 [Kuma](https://kuma.io)|TOC Vote|[4/24/20](https://github.com/cncf/toc/pull/437)|[6/23/20](https://github.com/kumaio)|Sandbox
 [LitmusChaos](https://litmuschaos.io)|TOC Vote|[3/13/20](https://github.com/cncf/toc/pull/391)|[6/23/20](https://github.com/litmuschaos/litmus)|Sandbox
@@ -137,6 +136,25 @@
 [Konveyor](https://github.com/konveyor)|TOC Vote|[3/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/konveyor)|Sandbox
 [Armada](https://github.com/G-Research/armada)|TOC Vote|[3/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/G-Research/armada)|Sandbox
 [External Secrets Operator](https://github.com/external-secrets/external-secrets)|TOC Vote|[3/1/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[07/26/2022](https://github.com/external-secrets/external-secrets)|Sandbox
+[Serverless Devs](https://github.com/Serverless-Devs/Serverless-Devs)|TOC Vote|[8/11/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/Serverless-Devs/Serverless-Devs)|Sandbox
+[ContainerSSH](https://github.com/containerssh)|TOC Vote|[5/30/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/containerssh)|Sandbox
+[OpenFGA](https://github.com/openfga)|TOC Vote|[6/13/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/openfga)|Sandbox
+[Kured](https://github.com/weaveworks/kured)|TOC Vote|[6/22/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/weaveworks/kured)|Sandbox
+[Carvel](https://github.com/vmware-tanzu/carvel)|TOC Vote|[7/15/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/vmware-tanzu/carvel)|Sandbox
+[Lima](https://github.com/lima-vm/lima)|TOC Vote|[7/26/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[09/13/2022](https://github.com/lima-vm/lima)|Sandbox
+[Istio](https://istio.io/)|Dave Zolotusky|[4/25/2022](https://github.com/cncf/toc/pull/827)|[09/28/2022](https://lists.cncf.io/g/cncf-toc/message/7563)|Incubating
+[Merbridge](https://github.com/merbridge/merbridge)|TOC Vote|[7/27/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C80)|[12/13/2022](https://github.com/merbridge/merbridge)|Sandbox
+[DevSpace](https://github.com/loft-sh/devspace)|TOC Vote|[9/13/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C81)|[12/13/2022](https://github.com/loft-sh/devspace)|Sandbox
+[Open Policy Registry (OPCR)](https://github.com/opcr-io/policy)|TOC Vote|[8/16/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C82)|[12/13/2022](https://github.com/opcr-io/policy)|Sandbox
+[werf](https://github.com/werf/werf)|TOC Vote|[9/12/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C83)|[12/13/2022](https://github.com/werf/werf)|Sandbox
+[Capsule](https://github.com/clastix/capsule)|TOC Vote|[9/13/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C84)|[12/13/2022](https://github.com/clastix/capsule)|Sandbox
+[zot](https://github.com/project-zot/zot)|TOC Vote|[9/20/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C85)|[12/13/2022](https://github.com/project-zot/zot)|Sandbox
+[Paralus](https://github.com/paralus/paralus)|TOC Vote|[9/20/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C86)|[12/13/2022](https://github.com/paralus/paralus)|Sandbox
+[Carina](https://github.com/carina-io/carina)|TOC Vote|[10/10/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C87)|[12/13/2022](https://github.com/carina-io/carina)|Sandbox
+[ko](https://github.com/ko-build/ko)|TOC Vote|[10/18/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C88)|[12/13/2022](https://github.com/ko-build/ko)|Sandbox
+[Kubescape](https://github.com/kubescape/kubescape)|TOC Vote|[10/31/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C89)|[12/13/2022](https://github.com/kubescape/kubescape)|Sandbox
+
+
 
 ## Graduated Projects
 **Project**|**Sponsor**|**TOC Deck**|**Graduated**|**Maturity Level**
@@ -155,7 +173,11 @@
 [Rook](https://github.com/tikv/tikv)|Ben Hindman|[6/6/17](https://goo.gl/6nmyDn)|[10/7/2020](https://www.cncf.io/announcements/2020/10/07/cloud-native-computing-foundation-announces-rook-graduation/)|Graduated
 [etcd](https://github.com/etcd-io/etcd)|Brian Grant|[8/7/18](https://github.com/cncf/toc/pull/143)|[11/24/2020](https://www.cncf.io/announcements/2020/11/24/cloud-native-computing-foundation-announces-etcd-graduation/)|Graduated
 [OPA](https://github.com/open-policy-agent)|Brian Grant, Ken Owens|[11/14/17](https://goo.gl/vKbawR)|1/29/2020|Graduated
-[Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[7/28/21](https://www.cncf.io/announcements/2021/07/28/cloud-native-computing-foundation-announces-linkerd-graduation/)|Graduated
+[Linkerd](https://linkerd.io/)|Jonathan Boulle|[10/5/16](https://docs.google.com/presentation/d/19aamsOR__zGFNNFCmid2TjaJwEqNOXmHRa34EQwf3sA/edit#slide=id.g181e6fdb33_0_0)|[7/28/2021](https://www.cncf.io/announcements/2021/07/28/cloud-native-computing-foundation-announces-linkerd-graduation/)|Graduated
+[SPIFFE/SPIRE](https://github.com/spiffe)|Brian Grant, Sam Lambert, Ken Owens|[11/7/17](https://goo.gl/6nmyDn)|[9/20/2022](https://www.cncf.io/announcements/2022/09/20/spiffe-and-spire-projects-graduate-from-cloud-native-computing-foundation-incubator/)|Graduated
+[Flux](https://github.com/fluxcd/flux2)|Michelle Noorali, Xiang Li|[6/11/19](https://github.com/cncf/toc/pull/232)|[11/30/2022](https://fluxcd.io/blog/2022/11/flux-is-a-cncf-graduated-project/)|Graduated
+[Argo](https://argoproj.github.io)|Jeff Brewer, Michelle Noorali, Xiang Li|[9/24/19](https://github.com/cncf/toc/pull/299)|[12/6/2022](https://www.cncf.io/announcements/2022/12/06/the-cloud-native-computing-foundation-announces-argo-has-graduated/)|Graduated
+
 
 ## Sandbox to Incubation Project Moves
 | Project Name                            | Joined Sandbox | Moved to Incubation | New Stage  |
@@ -186,8 +208,9 @@
 | [Volcano](https://volcano.sh)             | 4/10/2020 |    4/7/2022|  [Incubating](https://github.com/cncf/toc/pull/712)
 | [KubeVirt](https://kubevirt.io)         |  9/9/2019        | 4/19/2022           |[Incubating](https://github.com/cncf/toc/pull/715)|
 | [CubeFS](https://cubefs.io)         |  8/27/19        | 7/3/2022           |[Incubating](https://github.com/cncf/toc/pull/586)|
-| [Kyverno]() | 11/10/2020 |    7/12/2022   |[Incubating](https://github.com/cncf/toc/pull/784)|
+| [Kyverno](https://github.com/kyverno/kyverno/) | 11/10/2020 |    7/12/2022   |[Incubating](https://github.com/cncf/toc/pull/784)|
 | [Keptn](https://keptn.sh/) | 6/23/20   | 7/13/2022 | [Incubating](https://github.com/cncf/toc/pull/670)|
+| [Cloud Custodian](https://cloudcustodian.io) | 6/23/20   | 9/14/2022 | [Incubating](https://github.com/cncf/toc/pull/644)|
 
 ## Project Security Audits
 
@@ -225,6 +248,8 @@
 [etcd](https://github.com/etcd-io/etcd) | [3/11/2022](https://github.com/etcd-io/etcd/blob/main/security/FUZZING_AUDIT_2022.PDF) | [Announcement](https://etcd.io/blog/2022/etcd-integrates-continuous-fuzzing/) | CNCF | [ADA Logics](https://adalogics.com)
 [crio](https://github.com/cri-o/cri-o/) | [6/6/2022](https://github.com/cri-o/cri-o/pull/5938) | [Announcement](https://www.cncf.io/blog/2022/06/06/ada-logics-cri-o-holistic-security-audit-engagement/) | CNCF | [ADA Logics](https://adalogics.com)
 [linkerd](https://github.com/linkerd/linkerd2) | [6/28/2022](https://github.com/linkerd/linkerd2/tree/main/audits/2022) | [Announcement](https://www.cncf.io/blog/2022/06/28/announcing-the-completion-of-linkerds-2022-security-audit/) | CNCF | [Trail of Bits](https://trailofbits.com)
+[Backstage](https://github.com/cloudevents/spec) | [8/23/2022](https://backstage.io/blog/assets/22-08-23/X41-Backstage-Audit-2022.pdf) | [Announcement](https://backstage.io/blog/2022/08/23/backstage-security-audit) | CNCF | [X41 D-Sec](https://x41-dsec.de/)
+[CloudEvents](https://github.com/cloudevents/spec) | [11/28/2022](https://ostif.org/wp-content/uploads/2022/11/CloudEvents.pdf) | [Announcement](https://ostif.org/results-of-the-cloudevents-security-assessment/) | CNCF | [Trail of Bits](https://trailofbits.com)
 
 
 ## Archived Projects
@@ -233,4 +258,5 @@
 :-----:|:-----:|:-----:|:-----:|:-----:
 [rkt](http://rkt.io)|Brian Grant|[3/15/17](https://docs.google.com/presentation/d/1KzA58_Zz30mKKzeLuSvXLh63aIC75KRdAOTw4PJ_10g/edit?usp=sharing)|[8/16/19](https://www.cncf.io/blog/2019/08/16/cncf-archives-the-rkt-project/)|Archived
 [OpenTracing](http://opentracing.io/)|Bryan Cantrill|[8/17/16](https://docs.google.com/presentation/d/1kQkmJtT0bjSRvUTP5YFTKaXSfIM3aL7zxja_KtZtbgw/edit#slide=id.g15fc45ec1a_0_165)|[01/31/22](https://www.cncf.io/blog/2022/01/31/cncf-archives-the-opentracing-project/)|Archived
+[Brigade](https://github.com/brigadecore)|Brendan Burns, Quinton Hoole|[3/12/19](https://github.com/cncf/toc/pull/203)|[3/18/19](https://github.com/brigadecore)|Archived
 

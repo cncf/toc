@@ -22,6 +22,7 @@ a pull request with document referencing the roles and charter, updating the lis
 | [TAG Runtime](https://github.com/cncf/tag-runtime) | Ricardo Rocha, Richard Hartmann, Davanum Srinivas |
 | [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Matt Farina, Katie Gamanji, Cathy Zhang |
 | [TAG Observability](https://github.com/cncf/tag-observability) | Lei Zhang, Cathy Zhang |
+| [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability/) | Erin Boyd |
 
 ## TAG Chairs as of March 2022
 
@@ -58,6 +59,11 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Matt Young](https://github.com/halcyondude)
 * [Richard Hartmann](https://github.com/RichiH)
 * [Alolita Sharma](https://github.com/alolita)
+
+### TAG Environmental Sustainability
+* [Max Körbächer](https://github.com/mkorbi)
+* [Leonard Vincent Simon Pahlke](https://github.com/leonardpahlke)
+* [Marlow Weston](https://github.com/catblade)
 
 ## Emeritus Chairs
 
