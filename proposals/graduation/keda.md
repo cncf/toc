@@ -169,7 +169,7 @@ KEDA provides a full overview of publicly listed end-users on [its website](http
 
 Here's a quick overview of the end-users at the time of writing:
 
-![End-users](https://raw.githubusercontent.com/kedacore/governance/main/cncf/graduation/end-users-august-2022.png)
+![End-users](https://raw.githubusercontent.com/kedacore/governance/main/cncf/graduation/keda-jan-2023.png)
 
 ## Incubation Details
 
