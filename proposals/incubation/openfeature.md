@@ -45,6 +45,8 @@ As an existing Sandbox project this is already in place
 
 ### **_Clear versioning scheme & release methodology_**
 
+As outlined by our [Repository requirements](https://github.com/open-feature/.github/blob/main/CONTRIBUTING.md#repository-requirements), OpenFeature artifacts adhere to semantic versioning and include meaningful change logs. The OpenFeature specification includes [Document status](https://github.com/open-feature/spec/tree/main/specification#document-statuses) definitions, which are used to indicate the stability level of each specification section.
+
 ### **_Demonstrate a substantial ongoing flow of commits and merged contributions._**
 
 ### **_Security_**
