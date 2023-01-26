@@ -127,5 +127,6 @@ Additionally, the TOC might recommend that you apply for Incubation stage. This 
 
 It is fine for a project to stay in the Sandbox indefinitely while it is still active, but if a project has genuinely stalled we can save everyone’s effort by archiving it.
 
+# Maturity resources for projects at all levels
 
-
+The [CNCF Technical Advisory Groups](/tags/README.md) have a wide variety of resources available to assist projects in building communities, securing their projects, and applying best practices across a variety of domains like networking, app-delivery, and much more! In addition to these resources, the TOC has as collection of [Cloud Native Milestones](project_milestones.md) which projects may leverage as guiding points along their journey — from sandbox to beyond graduation.
