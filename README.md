@@ -20,7 +20,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * **Nikhita Raghunath** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
 * **Dave Zolotusky** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [EndUser-appointed]
 * **Cathy Zhang** (term: 2 years 2-1-2023 - 2/1/2025) [GB-appointed]
-* **Duffy Cooley** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
+* **Duffie Cooley** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
 Election [schedule](process/election-schedule.md)
 
 ## Projects
