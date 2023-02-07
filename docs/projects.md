@@ -251,6 +251,7 @@
 [Backstage](https://github.com/cloudevents/spec) | [8/23/2022](https://backstage.io/blog/assets/22-08-23/X41-Backstage-Audit-2022.pdf) | [Announcement](https://backstage.io/blog/2022/08/23/backstage-security-audit) | CNCF | [X41 D-Sec](https://x41-dsec.de/)
 [CloudEvents](https://github.com/cloudevents/spec) | [11/28/2022](https://ostif.org/wp-content/uploads/2022/11/CloudEvents.pdf) | [Announcement](https://ostif.org/results-of-the-cloudevents-security-assessment/) | CNCF | [Trail of Bits](https://trailofbits.com)
 [Istio](https://github.com/istio) | [1/30/2023](https://istio.io/latest/blog/2023/ada-logics-security-assessment/Istio%20audit%20report%20-%20ADA%20Logics%20-%202023-01-30%20-%20v1.0.pdf) | [Announcement](https://www.cncf.io/blog/2023/01/30/istio-publishes-results-of-2022-security-audit) | CNCF | [ADA Logics](https://adalogics.com)
+[KEDA](https://github.com/kedacore/keda/) | [2/02/2023](https://github.com/trailofbits/publications/blob/master/reviews/2023-01-keda-securityreview.pdf)| [Announcement](https://www.cncf.io/blog/2023/02/02/results-of-the-keda-security-engagement/) | CNCF | [Trail of Bits](https://github.com/trailofbits/publications)
 
 
 ## Archived Projects
