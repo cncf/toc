@@ -66,12 +66,14 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * The TOC may agree that the project does not (yet) meet the [Incubation requirements](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubation-stage) and give feedback on why this is the case. If the project is not already in the CNCF, the TOC may suggest that project apply for Sandbox instead.
    * If a TOC Incubation Sponsor has not stepped forward within two months after the proposal PR is submitted, projects may request that their project proposal is discussed at a forthcoming TOC meeting by adding it to the [Working Doc](https://docs.google.com/document/d/1jpoKT12jf2jTf-2EJSAl4iTdA7Aoj_uiI19qIaECNFc/edit). The outcome of this is discussion is either that a sponsor steps forward, or that the TOC votes to admit the project to Sandbox, or the proposal is rejected (projects may reapply after six months). If, even after all those steps, a sponsor does not step forward, the proposal is rejected. 
    * DD will usually involve a presentation to a TAG, but an interested TAG is welcome to schedule a project presentation at any time. TAGs can discuss their recommendations or concerns about a project with their TOC liaison(s) if there isn't already a TOC Incubation Sponsor in place. 
-   * Although it is not necessary, projects are allowed to informally reach out to TOC members for advice, including asking about potential sponsorship. TOC members should keep each other informed about these approaches so that we can avoid falling prey to "lobbying" (directly contacting a TOC member to volunteer or manage an action or issue). There is a fine line between a project asking for help to make a successful application, and a project shopping around looking to pressurize a TOC member into sponsorship. 
-. *TOC Incubation Sponsor* 
+   * Although it is not necessary, projects are allowed to informally reach out to TOC members for advice, including asking about potential sponsorship. TOC members should keep each other informed about these approaches so that we can avoid falling prey to "lobbying" (directly contacting a TOC member to volunteer or manage an action or issue). There is a fine line between a project asking for help to make a successful application, and a project shopping around looking to pressurize a TOC member into sponsorship.
+
+#### TOC Incubation Sponsor
    * TOC Incubation Sponsor is responsible for driving the process, and co-ordinating with TAGs for review and input as they see fit. 
    * TOC Incubation Sponsor is a point of contact for the project throughout the process.
-   * TOC members may not sponsor a project for which they have a clear conflict of interest (for example, originating primarily from their organization). This doesn't mean that they can't have any involvement at all - for example, contributing pull requests, or being an [adopter](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter) of that project, can signal a healthy interest in and knowledge of a worthwhile project. 
-. *Due Diligence* _2-3 months_
+   * TOC members may not sponsor a project for which they have a clear conflict of interest (for example, originating primarily from their organization). This doesn't mean that they can't have any involvement at all - for example, contributing pull requests, or being an [adopter](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter) of that project, can signal a healthy interest in and knowledge of a worthwhile project.
+
+#### Due Diligence (2-3 months)
    * TOC Incubation Sponsor drives due diligence (see the [template](https://github.com/cncf/toc/blob/main/process/dd-review-template.md) and [guidelines](https://github.com/cncf/toc/blob/main/process/due-diligence-guidelines.md)).
    * TOC Incubation Sponsor can delegate DD work to CNCF TAGs and/or other TOC members.
    * Typically DD includes a presentation to a CNCF TAG, as identified by the TOC Sponsor. This step may be omitted if the TOC Sponsor feels there are readily-available and suitable presentations on video - for example, because the TAG has already recently held a presentation. (We do not want unnecessary levels of process or bureaucracy to delay a widely-known and adopted project from joining the CNCF). TOC Sponsor has discretion to arrange alternatives (for example, arranging a Q&A session at a TOC meeting) to ensure there is ample opportunity to ask questions.
@@ -81,10 +83,12 @@ All exceptions (and "no" outcomes) are handled by the TOC.
      * TOC members are not required to identify the kind of direct adopter an interviewed organization is, rather they should use their discretion and the guidelines defined in the [FAQs](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter) for selected organizations to be interviewed and the nature of the interview as it best assists projects, this may include conducting a combined interview of direct and transitive adopters to ascertain maturity and interaction.
    * TOC Incubation Sponsor confirms that project meets the [Incubation requirements](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage).
    * TOC Incubation Sponsor determines when DD is “done”. DD documentation should then be on GitHub, open to public comment on record.
-. *Due Diligence review* _2-6 weeks_
+
+#### Due Diligence review (2-6 weeks)
    * TOC Incubation Sponsor announces on the TOC mailing list when the DD documents are available for public review and comment, which can take place on GitHub, the TOC mailing list, or at TOC public meetings. 
    * TOC Incubation sponsor decides when to call TOC vote, allowing at least two weeks for public comment before calling vote
-. *TOC vote* _up to 6 weeks_
+
+#### TOC vote (up to 6 weeks)
    * TOC members assess whether project meets the [Incubation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage)
    * Projects get accepted to incubation via a 2/3 supermajority vote of the TOC.
    * If the vote is not conclusive after 6 weeks, TOC chair may extend vote, or conclude that silence = abstain
@@ -96,7 +100,9 @@ All exceptions (and "no" outcomes) are handled by the TOC.
    * The file containing the proposal should be located in [the graduation proposals directory](https://github.com/cncf/toc/tree/main/proposals/graduation).
    * The proposal addresses how the project has grown since incubation and any concerns from incubation DD in addition to the standard graduation requirements.
    * Projects will be reviewed on a rolling basis as they apply, instead of two meetings a year.    
-. * If a TOC member steps forward to support the project as a sponsor and determines the Graduation DD document is finalized, the TOC member kicks off two week period of time for public comment on the TOC mailing list
+
+#### Public comment
+If a TOC member steps forward to support the project as a sponsor and determines the Graduation DD document is finalized, the TOC member kicks off two week period of time for public comment on the TOC mailing list.
    * Please avoid contacting TOC members individually to serve as project sponsor.
    * The email should contain a link to the proposal pull request and graduation DD document.
    * All TAGs, adopters, TOC members, and community members are welcome to comment at this time on the mailing list.
