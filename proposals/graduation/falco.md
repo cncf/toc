@@ -69,9 +69,9 @@ Falco meets CII Best Practices passing level criteria (100%). More details [here
 ### Have completed an independent and third party security audit with results published of similar scope and quality as this example which includes all critical vulnerabilities and all critical vulnerabilities need to be addressed before graduation.
 
 
-Falco underwent a CNCF sponsored, independent security audit from Cure53 in July 2019, which is available in the Falco repository [here](https://github.com/falcosecurity/falco/blob/master/audits/SECURITY_AUDIT_2019_07.pdf). Issues found during the audit were then [tracked and addressed](https://github.com/falcosecurity/falco/security/advisoriess).
+Falco underwent a CNCF sponsored, independent security audit from Cure53 in July 2019, which is available in the Falco repository [here](https://github.com/falcosecurity/falco/blob/master/audits/SECURITY_AUDIT_2019_07.pdf). Issues found during the audit were then [tracked and addressed](https://github.com/falcosecurity/falco/security/advisories).
 
-The Falco Project is undergoing a second security audit and completion date is expected to be **2022-12-31**. 
+A further CNCF sponsored, independent security audit from Quarkslab was completed in January 2023, and no critical vulnerabilities were found. Other issues found were [tracked and addressed](https://github.com/falcosecurity/libs/security/advisories).
 
 ### Explicitly define a project governance and committer process. The committer process should cover the full committer lifecycle including onboarding and offboarding or emeritus criteria. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
 
