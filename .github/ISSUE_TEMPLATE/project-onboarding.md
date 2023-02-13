@@ -23,17 +23,16 @@ From the project side, please ensure that you:
 - [ ] Is your project in its own separate neutral github organization?
 - [ ] Submitted a Pull request to add your project as a sandbox project to <https://landscape.cncf.io>
 - [ ] Create maintainer list + add to aggregated <https://maintainers.cncf.io> list by submitting a PR to it
-- [ ] Have added your project to <https://github.com/cncf/contribute>
 - [ ] Artwork: Submit a pull request to <https://github.com/cncf/artwork> with your artwork
 - [ ] Domain: transfer domain to the CNCF - <https://jira.linuxfoundation.org/plugins/servlet/theme/portal/2/create/63>
 
 Things that CNCF will need from the project:
 
-- [ ] Provide emails for the maintainers added to <https://maintainers.cncf.io> in order to get access to the maintainers mailing list and ServiceDesk
+- [ ] Provide emails for the maintainers added to <https://maintainers.cncf.io> in order to get access to the maintainers mailing list and ServiceDesk - project-onboarding@cncf.io is the best email to send those to
 - [ ] Trademarks: transfer any trademark and logo mark assets over to the LF - <https://github.com/cncf/foundation/tree/master/agreements> has agreements
 - [ ] GitHub: ensure 'thelinuxfoundation' and 'caniszczyk' are added as initial org owners, this helps us make sure we have continuity of GH ownership
 - [ ] GitHub: ensure [DCO](https://github.com/apps/dco) or [CLA](https://github.com/cncf/cla) are enabled for all GitHub repositories of the project
-- [ ] GitHub: ensure that hat the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) (or your adopted version of it) are explicitly referenced at the project's README on GitHub
+- [ ] GitHub: ensure that that the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) (or your adopted version of it) are explicitly referenced at the project's README on GitHub
 - [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/website-guidelines.md) followed (if your project doesn't have a dedicated website, please adopt those guidelines to the README file of your project on GitHub).
 - [ ] Website: Analytics transferred to projects@cncf.io
 - [ ] OpenSSF Best Practices Badge: Start on an OpenSSF Best Practices Badge <https://bestpractices.coreinfrastructure.org/en>
@@ -44,6 +43,7 @@ Things that the CNCF will do or help the project to do:
 - [ ] Marketing: update relevant intro + slide decks
 - [ ] Events: update CFP + Registration + CFP Area forms
 - [ ] ServiceDesk: confirm maintainers have read <https://www.cncf.io/services-for-projects/>
-- [ ] CNCF Welcome Email Sent to confirm maintainer list access, welcome email has monthly project sync details
+- [ ] CNCF Welcome Email Sent to confirm maintainer list access
+- [ ] Book time with the team with <http://project-meetings.cncf.io>
 - [ ] Create space for meetings/events on <https://community.cncf.io>, e.g., <https://community.cncf.io/pravega-community/> - (<https://github.com/cncf/communitygroups/blob/main/README.md#cncf-projects>)
 - [ ] Adopt a license scanning tool, like [FOSSA](https://fossa.com/) or [Snyk](https://snyk.io/)
