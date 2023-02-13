@@ -16,3 +16,5 @@ Your annual review should answer the following questions:
 [] What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
 [] How can the CNCF help you achieve your upcoming goals?
 [] Do you think that your project meets the criteria for [incubation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage)?
+
+After you've submitted a pull request, please add the pull request URL and date to your project in the [landscape](https://github.com/cncf/landscape/), this is how we track annual reviews! 
