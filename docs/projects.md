@@ -71,7 +71,7 @@
 [Keylime](https://github.com/keylime)|TOC Vote|[8/26/2020](https://github.com/cncf/toc/pull/496)|[9/22/2020](https://github.com/keylime)|Sandbox
 [SchemaHero](https://github.com/schemahero/schemahero)|TOC Vote|[9/10/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/schemahero/schemahero)|Sandbox
 [cdk8s](https://github.com/awslabs/cdk8s)|TOC Vote|[10/19/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/awslabs/cdk8s)|Sandbox
-[cert-manager](https://github.com/jetstack/cert-manager)|TOC Vote|[10/27/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/jetstack/cert-manager)|Sandbox
+[cert-manager](https://github.com/cert-manager/cert-manager)|TOC Vote|[10/27/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/cert-manager/cert-manager)|Incubating
 [OpenKruise](https://github.com/openkruise/kruise)|TOC Vote|[11/3/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/openkruise/kruise)|Sandbox
 [Tinkerbell](https://github.com/tinkerbell)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/tinkerbell)|Sandbox
 [Pravega](https://github.com/pravega)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/pravega)|Sandbox
@@ -211,6 +211,8 @@
 | [Kyverno](https://github.com/kyverno/kyverno/) | 11/10/2020 |    7/12/2022   |[Incubating](https://github.com/cncf/toc/pull/784)|
 | [Keptn](https://keptn.sh/) | 6/23/20   | 7/13/2022 | [Incubating](https://github.com/cncf/toc/pull/670)|
 | [Cloud Custodian](https://cloudcustodian.io) | 6/23/20   | 9/14/2022 | [Incubating](https://github.com/cncf/toc/pull/644)|
+| [cert-manager](https://github.com/cert-manager/cert-manager)| 10/27/2020 | 10/19/2022 | [Incubating](https://github.com/cncf/toc/pull/786)
+
 
 ## Project Security Audits
 
@@ -250,6 +252,8 @@
 [linkerd](https://github.com/linkerd/linkerd2) | [6/28/2022](https://github.com/linkerd/linkerd2/tree/main/audits/2022) | [Announcement](https://www.cncf.io/blog/2022/06/28/announcing-the-completion-of-linkerds-2022-security-audit/) | CNCF | [Trail of Bits](https://trailofbits.com)
 [Backstage](https://github.com/cloudevents/spec) | [8/23/2022](https://backstage.io/blog/assets/22-08-23/X41-Backstage-Audit-2022.pdf) | [Announcement](https://backstage.io/blog/2022/08/23/backstage-security-audit) | CNCF | [X41 D-Sec](https://x41-dsec.de/)
 [CloudEvents](https://github.com/cloudevents/spec) | [11/28/2022](https://ostif.org/wp-content/uploads/2022/11/CloudEvents.pdf) | [Announcement](https://ostif.org/results-of-the-cloudevents-security-assessment/) | CNCF | [Trail of Bits](https://trailofbits.com)
+[Istio](https://github.com/istio) | [1/30/2023](https://istio.io/latest/blog/2023/ada-logics-security-assessment/Istio%20audit%20report%20-%20ADA%20Logics%20-%202023-01-30%20-%20v1.0.pdf) | [Announcement](https://www.cncf.io/blog/2023/01/30/istio-publishes-results-of-2022-security-audit) | CNCF | [ADA Logics](https://adalogics.com)
+[KEDA](https://github.com/kedacore/keda/) | [2/02/2023](https://github.com/trailofbits/publications/blob/master/reviews/2023-01-keda-securityreview.pdf)| [Announcement](https://www.cncf.io/blog/2023/02/02/results-of-the-keda-security-engagement/) | CNCF | [Trail of Bits](https://github.com/trailofbits/publications)
 
 
 ## Archived Projects
