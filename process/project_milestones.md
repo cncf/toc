@@ -19,7 +19,7 @@ Some milestones may not apply to all projects and should be leveraged as guiding
 * Project has a second organization contributing
   * May begin path to maintainership
 * Project begins solidifying a versioning schema and release cadence
-  * A roadmap or other document clearly defines project direct or initiatives that may align with releases
+  * A roadmap, long term planner, GitHub project board, or other document clearly defines project direction or initiatives that may align with releases
   * Releases begin to establish a pattern of regularity
 * Project has engaged a [Technical Advisory Group](/tags/README.md) for feedback on some portion of the project relevant to the domain
 * Project has a clearly discoverable governance doc that covers the basics of decision making and how to earn permissions to approve pull request, sometimes referred to as "the commit bit"
@@ -46,7 +46,10 @@ Incubation milestones are guiding points to highlight success areas a maturing p
 * Project contribution and community documentation clearly defines expectations when contributing (to include non-code contributions).
 * Project defines a process to “build the bench” of maintainers and project leaders such as a Contribution Ladder which considers succession planning and getting maintainers from multiple organizations
 * Project ensures all sub-projects are clearly defined in their maturity level, whether they ship with the core project or can be used independently but is subject to the same governance processes
-* Project refreshes their roadmap planning with a reasonable cadence
+* Project refreshes their long term planning with a reasonable cadence
+  * Long term planning can be a roadmap, vision/feature goals, GitHub project board, etc.
+  * Long term planning is an open and transparent effort by the project to describe their intended future work and is subject to change
+  * Long term planning is leveraged as part of the evaluation for moving levels, it is often leveraged by potential adopters to schedule or plan for adoption if a particular feature is wanted, and also helps communitiy members identify where they can contribture or align their interests.
 * Project has engaged with a few Technical Advisory Groups to ensure they are considering best practices across multiple technical and governance facets
 * Project has defined a process for managing the conduct of its community, either establishing its own group to do this, leveraging the existing leadership, or deferring to the CNCF
 * Project maintains a dependency graph so adopters fully understand the complexity and risk of use
