@@ -92,15 +92,15 @@ Frequency of reviews can be found on the [repo's README under "Frequency"](https
 
 Once in the Sandbox, projects are subject to an [Annual Review](https://github.com/cncf/toc/blob/master/process/sandbox-annual-review.md).
 
-### Sandbox departures
+### Sandbox archival
 
 Upon entering sandbox, projects are very early and often experimental. Not all projects that enter the sandbox will leave the sandbox to move on to incubation. Some projects may enter the sandbox and not grow or see widespread adoption or interest. This could be the result of a number of factors, such as being too early in the market, the problem targeted is being addressed in other ways, etc.
 
-The following criteria are leveraged by the TOC to identify when a Sandbox project is no longer viable and is not expected to move to incubation. The TOC will consider any of the criteria or a combination of them for Departure evaluation.
+The following criteria are leveraged by the TOC to identify when a Sandbox project is no longer viable and is not expected to move to incubation. The TOC will consider any of the criteria or a combination of them for Archival evaluation.
 * Missed Annual review by more than two months
 * Stale contributions over the course of 18 months - stale contributions include non-significant contributions (minor changes like color in the UI, or grammar corrections), lack of contributions, little discussion or activity on issues, etc. 
 * Missed reasonable [milestones] - subject to the nature of the project, project may miss milestones a reasonable person would assume to have been completed considering other factors about the project. 
 * Project has existed in sandbox for 4 years with little traction by adopters
 
-Sandbox projects identified for departure will adhere to the project [archival process](https://github.com/cncf/toc/blob/master/process/archiving.md) with the defined criteria listed in the issue when filed.
+Sandbox projects identified for archival will adhere to the project [archival process](https://github.com/cncf/toc/blob/master/process/archiving.md) with the defined criteria listed in the issue when filed.
 

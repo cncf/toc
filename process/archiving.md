@@ -10,7 +10,7 @@ When voting on a proposal to archive a project, TOC members may wish to consider
 
 To archive a project:
 
-* A proposal must be put forth to the TOC repo in the form of an issue
+* A proposal must be put forth to the TOC repo in the [form of an issue](https://github.com/cncf/toc/issues/new?assignees=caniszczyk%2C+amye%2C+idvoretskyi%2C+jeefy&labels=archive&template=archived.md&title=%5BARCHIVE%5D+project)
 * The TOC will inform the project maintainers, CNCF End-User community and wider community of all archiving proposals
 * The proposal must remain open for at least 2 weeks of discussion after the maintainers are informed.
 * A vote must be finalized with 2/3 approval from the TOC
