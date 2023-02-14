@@ -30,10 +30,35 @@ The community statistics are extracted from [CNCF devstats](https://openfeature.
 ### Technical
 
 #### SDK Progress
+Since achieveing sandbox we have progressed in the development of our SDKs:
+- [.NET](https://github.com/open-feature/dotnet-sdk) released v1.1.0
+- [Java](https://github.com/open-feature/java-sdk) released v1.2.0
+- [PHP](https://github.com/open-feature/php-sdk) released v2.0.0
+- [Python](https://github.com/open-feature/python-sdk) released v0.0.9
+- [JavaScript](https://github.com/open-feature/js-sdk) released v1.1.0
+- [GO](https://github.com/open-feature/go-sdk) released v1.2.0
+- [Ruby](https://github.com/open-feature/ruby-sdk) released v0.1.0
 
 #### Introduction of flagD
+[Released v0.3.7](https://github.com/open-feature/flagd)
+- A simple command line tool for fetching and evaluating feature flags for services, designed to conform with the OpenFeature specification.
+- OpenFeature compliant with providers available in many languages
+- Multiple flag configuration sources including files, http, and Kubernetes
+- Accessible over gRPC and HTTP
+- Supports subscriptions to real-time flag change events
+- Flexible targeting rules based on JSON Logic
+- Lightweight daemon, with an emphasis on performance
+ - Native support for metrics using Prometheus
 
 #### Provider Growth
+Providers are responsible for performing flag evaluations and provide an abstraction between the underlying flag management system and the OpenFeature SDK. Providers can wrap a vendor SDK, call a bespoke flag evaluation REST API, or even parse some locally stored file to resolve flag values. This allows the underlying flag evaluation logic to be changed without requiring a major code refactor.
+
+##### Providers
+- .NET: Cloudbees, fladg, Go feature, LaunchDarkly, Split
+- GO: Cloudbees, fladg, Flipt, Go feature, Split
+- Java: Cloudbees, fladg, Flagsmith, Go feature, Split
+- JavaScript: Cloudbees, fladg, Go feature, LaunchDarkly, PostHog, Split
+- PHP: Cloudbees, fladg, Split
 
 ## Incubation Stage Requirements
 
@@ -42,12 +67,29 @@ The community statistics are extracted from [CNCF devstats](https://openfeature.
 As an existing Sandbox project this is already in place
 
 ### **_Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope_**
+A list of public adopters can be found [here](https://github.com/open-feature/community/blob/main/ADOPTERS.md). There are ~ 10 companies in various stages of adopting, many of whom are non-public in their adoption.
+The following are some examples of adopters:
+
+- [Split](https://www.split.io) - Split is excited to announce participation in OpenFeature, an initiative led by Dynatrace and recently submitted to the Cloud Native Computing Foundation (CNCF) for consideration as a sandbox program - Check out the full article [here](https://www.split.io/blog/split-embraces-openfeature/) 
+- [Go Feature Flag](https://gofeatureflag.org) - GO Feature Flag believe in OpenSource and offer providers for the new standard for feature flags OpenFeature - check out a more detailed explanation [here](https://gofeatureflag.org/docs/next/openfeature_sdk/concepts)
+- [Ebay](https://www.ebay.com) - As part of eBay’s tech-led reimagination, we are investing heavily in improving software delivery so that we can launch features more rapidly and safely to our customers. Over the past few months, we have been developing feature flagging capabilities internally, powered by OpenFeature. - read more details [here](https://tech.ebayinc.com/engineering/openfeature-with-contributions-from-ebay-submitted-to-cncfs-sandbox-program/)
+- [Schweitzer Engineering Labs](https://selinc.com/)
+- [Tapico](https://tapico.io/)
+- [Utility Warehouse](https://uw.co.uk/)
 
 ### **_Clear versioning scheme & release methodology_**
 
 As outlined by our [Repository requirements](https://github.com/open-feature/.github/blob/main/CONTRIBUTING.md#repository-requirements), OpenFeature artifacts adhere to semantic versioning and include meaningful change logs. The OpenFeature specification includes [Document status](https://github.com/open-feature/spec/tree/main/specification#document-statuses) definitions, which are used to indicate the stability level of each specification section.
 
 ### **_Demonstrate a substantial ongoing flow of commits and merged contributions._**
+* [Commit Activity](https://openfeature.devstats.cncf.io/d/74/contributions-chart?orgId=1&from=now-1y&to=now&var-period=w&var-metric=contributions&var-repogroup_name=All&var-country_name=All&var-company_name=All&var-company=all) 
+    * In February 2023 there were a total of 691 contributions from 22 contributors. Up from a total of 64 contributions by 6 contributors the year before.
+* [New Contributors over past year](https://openfeature.devstats.cncf.io/d/52/new-contributors-table)
+    * On average we have 2 new contributors joining each week
+* There are on average 30 new PRs on the project per week
+* In the last 30 days the average time to close PRs was 14 hours 4 minutes
+
+Full details can be found at [CNCF devstats](https://openfeature.devstats.cncf.io/) dashboards for OpenFeature.
 
 ### **_Security_**
 
