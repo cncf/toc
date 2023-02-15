@@ -72,7 +72,7 @@ The following are some examples of adopters:
 
 - [Split](https://www.split.io) - Split is excited to announce participation in OpenFeature, an initiative led by Dynatrace and recently submitted to the Cloud Native Computing Foundation (CNCF) for consideration as a sandbox program - Check out the full article [here](https://www.split.io/blog/split-embraces-openfeature/) 
 - [Go Feature Flag](https://gofeatureflag.org) - GO Feature Flag believe in OpenSource and offer providers for the new standard for feature flags OpenFeature - check out a more detailed explanation [here](https://gofeatureflag.org/docs/next/openfeature_sdk/concepts)
-- [Ebay](https://www.ebay.com) - As part of eBay’s tech-led reimagination, we are investing heavily in improving software delivery so that we can launch features more rapidly and safely to our customers. Over the past few months, we have been developing feature flagging capabilities internally, powered by OpenFeature. - read more details [here](https://tech.ebayinc.com/engineering/openfeature-with-contributions-from-ebay-submitted-to-cncfs-sandbox-program/)
+- [eBay](https://www.ebay.com) - As part of eBay’s tech-led reimagination, we are investing heavily in improving software delivery so that we can launch features more rapidly and safely to our customers. Over the past few months, we have been developing feature flagging capabilities internally, powered by OpenFeature. - read more details [here](https://tech.ebayinc.com/engineering/openfeature-with-contributions-from-ebay-submitted-to-cncfs-sandbox-program/)
 - [Schweitzer Engineering Labs](https://selinc.com/)
 - [Tapico](https://tapico.io/)
 - [Utility Warehouse](https://uw.co.uk/)
