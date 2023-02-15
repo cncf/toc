@@ -48,7 +48,7 @@ Since achieveing sandbox we have progressed in the development of our SDKs:
 - Supports subscriptions to real-time flag change events
 - Flexible targeting rules based on JSON Logic
 - Lightweight daemon, with an emphasis on performance
- - Native support for metrics using Prometheus
+- Native support for metrics using Prometheus
 
 #### Provider Growth
 Providers are responsible for performing flag evaluations and provide an abstraction between the underlying flag management system and the OpenFeature SDK. Providers can wrap a vendor SDK, call a bespoke flag evaluation REST API, or even parse some locally stored file to resolve flag values. This allows the underlying flag evaluation logic to be changed without requiring a major code refactor.
