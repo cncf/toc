@@ -17,7 +17,7 @@
    * ???
 1. Project description (e.g. what it does, its value, origin, history):
    * ???
-1. URL to list of project adopters (e.g. ADOPTERS.md or logos on the project 
+1. URL to list of project adopters (e.g. ADOPTERS.md or logos on the project
    website. For a spec have a list of adopters for the implementation(s) of the
    spec):
    * ???
@@ -60,7 +60,7 @@
      * ???
    * Provide a list of adopters who are willing to chat with the TOC about
      their experiences with the project and its community (about 2-4. Questions
-     might include: how/why do you use it? its stengths and weaknesses? 
+     might include: how/why do you use it? its stengths and weaknesses?
      are community interactions positive/responsive/timely?):
      * ???name (???id at ???domainName)
    * Adopter quotes with attribution:
@@ -96,15 +96,25 @@
    (in plain English) how the project is self-governed and community driven):
    * ???
 
+1. If there are any votes taken (outside of PR reviews), please describe why
+   they occur and provide URLs that document the processes:
+   * ???
+
 1. Describe how the project is aligned with the
    [CNCF principles](https://github.com/cncf/toc/blob/main/PRINCIPLES.md):
    * ???
 
-1. URLs to maintainer and emeritus processes (The processes should cover the
-   full maintainer lifecycle including onboarding, offboarding and emeritus
-   criteria. This preferably is laid out in a GOVERNANCE.md file and references
-   an OWNERS.md file showing the current and emeritus maintainers):
-   * ???
+1. Maintainer and emeritus process:
+   * URLs to the processes (the processes should cover the full maintainer
+     lifecycle including onboarding, offboarding and emeritus criteria. This
+     preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md
+     file showing the current and emeritus maintainers):
+     * ???
+   * Summary of maintainer eligibility requirements (can copy from
+     GOVERNANCE.md):
+     * ???
+   * Summary of criteria for maintainer removal (can copy from GOVENANCE.md):
+     * ???
 
 1. Change and issue processes:
    * URL to issues:
@@ -158,6 +168,9 @@
 
 1. URL to the release methodology and mechanics (versioning model - e.g.
    semver):
+   * ???
+
+1. URL to feature deprecation process:
    * ???
 
 1. URLs to architectural high-level designs and feature overviews of the
