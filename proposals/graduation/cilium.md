@@ -17,7 +17,7 @@ The project maintainers believe that Cilium meets the requirements for Graduatio
 
 ### Have committers from at least two organizations.
 
-Cilium currently has [committers from](https://github.com/cilium/cilium/blob/master/MAINTAINERS.md) AMD, Datadog, Docker, Google, Independent, Isovalent, Palantir, Red Hat, and SUSE.
+Cilium currently has [committers from](https://github.com/cilium/cilium/blob/master/MAINTAINERS.md) AMD, Datadog, Deepfence, Google, Independent, Isovalent, Palantir, and Red Hat.
 
 ### Have achieved and maintained an [OpenSSF Best Practices Badge](https://bestpractices.coreinfrastructure.org/).
 
