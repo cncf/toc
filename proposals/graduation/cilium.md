@@ -25,7 +25,7 @@ Cilium has achieved an [OpenSSF Best Practices Badge](https://bestpractices.core
 
 ### Have completed an independent and third party security audit with results published of similar scope and quality as [this example](https://github.com/envoyproxy/envoy#security-audit) which includes all critical vulnerabilities and all critical vulnerabilities need to be addressed before graduation.
 
-A CNCF sponsored security audit has been started with OSTIF and Cilium has previously undergone an audit by Cure53 sponsored by Isovalent. A CNCF-sponsored fuzzing audit from ADA Logics is currently underway with a goal to be completed before the end of November. Finally, Cilium currently has an [LFX mentee](https://github.com/cncf/mentoring/tree/main/lfx-mentorship/2022/03-Sept-Nov#cilium) working on increasing the security of the release process including signed SBOMs and signed release artifacts.
+Cilium received independent security and fuzzing audits through CNCF from OSTIF. You can find the blog [here](https://www.cncf.io/blog/2023/02/13/a-well-secured-project-cilium-security-audits-2022-published/) and [each](https://github.com/cilium/cilium.io/blob/main/Security-Reports/CiliumSecurityAudit2022.pdf) [report](https://github.com/cilium/cilium.io/blob/main/Security-Reports/CiliumFuzzingAudit2022.pdf) respectively. All findings have been remediated. Finally, Cilium had an [LFX mentee](https://github.com/cncf/mentoring/tree/main/lfx-mentorship/2022/03-Sept-Nov#cilium) increase the security of the release process including signed SBOMs and signed release artifacts.
 
 ### Explicitly define a project governance and committer process. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
 
