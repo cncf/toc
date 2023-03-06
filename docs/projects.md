@@ -256,6 +256,7 @@
 [KEDA](https://github.com/kedacore/keda/) | [2/02/2023](https://github.com/trailofbits/publications/blob/master/reviews/2023-01-keda-securityreview.pdf)| [Announcement](https://www.cncf.io/blog/2023/02/02/results-of-the-keda-security-engagement/) | CNCF | [Trail of Bits](https://github.com/trailofbits/publications)
 [Cilium (fuzzing)](https://github.com/cilium/cilium) | [2/13/2023](https://github.com/cilium/cilium.io/blob/main/Security-Reports/CiliumFuzzingAudit2022.pdf)| [Announcement](https://www.cncf.io/blog/2023/02/13/a-well-secured-project-cilium-security-audits-2022-published/) | CNCF | [Ada Logics](https://adalogics.com)
 [Cilium](https://github.com/cilium/cilium) | [2/13/2023](https://github.com/cilium/cilium.io/blob/main/Security-Reports/CiliumSecurityAudit2022.pdf)| [Announcement](https://www.cncf.io/blog/2023/02/13/a-well-secured-project-cilium-security-audits-2022-published/) | CNCF | [Ada Logics](https://adalogics.com)
+[containerd (fuzzing)](https://github.com/containerd/containerd) | [3/2/2023](https://github.com/containerd/containerd.io/blob/main/static/img/ADA-fuzzing-audit-21-22.pdf)| [Announcement](https://www.cncf.io/blog/2023/03/02/containerd-completes-fuzzing-audit/) | CNCF | [Ada Logics](https://adalogics.com)
 
 
 ## Archived Projects
