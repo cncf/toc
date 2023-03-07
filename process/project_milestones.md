@@ -1,6 +1,6 @@
 # Cloud Native Milestones
 
-Milestones are intended to outline checkpoints for projects, that have assisted past projects as they grew and mature in the cloud native ecosystem. They are NOT requirements for moving between levels, please refer to [the graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md) for requirements. 
+Milestones are intended to outline checkpoints for projects, that have assisted past projects as they grew and matured in the cloud native ecosystem. They are NOT requirements for moving between levels, please refer to [the graduation criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md) for requirements. 
 
 When leveraged, projects may find their path towards Graduation is more structured, clear, achievable, and allows them to reach maturity in a more robust and well understood manner. Milestones do not guarantee a project’s graduation within the CNCF, rather, they are a collection of key activities that have helped other projects achieve maturity, stability, and adoption. Even after projects are graduated, they may leverage milestones as a mechanism to continue sustaining their project in a manner expected by their community and adopters particularly as they experience change and turnover. The community is welcome to submit PRs to improve and add additional milestones based on their experiences in maturing their projects.
 
@@ -22,8 +22,12 @@ Some milestones may not apply to all projects and should be leveraged as guiding
   * A roadmap, long term planner, GitHub project board, or other document clearly defines project direction or initiatives that may align with releases
   * Releases begin to establish a pattern of regularity
 * Project has engaged a [Technical Advisory Group](/tags/README.md) for feedback on some portion of the project relevant to the domain
-* Project has a clearly discoverable governance doc that covers the basics of decision making and how to earn permissions to approve pull request, sometimes referred to as "the commit bit"
+* Project has a clearly discoverable governance doc that covers the basics of decision making, including who approves PRs and how committers/maintainers are chosen
 * Project has an angel adopter that assists in stability and production runtime or deployment
+  * An angel adopter is a very early adopter of a cloud native project. They are invaluable to a projects growth and first experience in interacting with adopters. They often are characterized helping the project reach momentum towards incubation through:
+    * higher level of engagement with the project 
+    * ongoing injection of feedback and support via issues and contributions
+    * expertise or experience on traditionally difficult challenges for early stage technical development, performance, etc.
 * Project has 3 angel adopters
   * May be from different industry verticals
   * May have differing use cases
@@ -32,7 +36,7 @@ Some milestones may not apply to all projects and should be leveraged as guiding
 ## Incubation
 
 Incubation milestones are guiding points to highlight success areas a maturing project can accomplish before Graduation. They are not requirements. Not all Incubating projects will achieve every milestone, however many successful graduated projects have demonstrated these milestones prior to their Graduation. How each project achieves some or all of these milestones will vary widely. Projects do not need to meet this in order to graduate, rather these assist projects in meeting the Graduation criteria.
-* Project has a robust set of governance documentation that defines how the direction of the project is decided upon and managed which considers company diversity in decision making. [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) has many great [governance templates](https://github.com/cncf/project-template).
+* Project is evolving and developing a robust set of governance documentation that defines how the project is managed, and its roadmap is determined, which considers maintainer turnover and company diversity. [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) has many great [governance templates](https://github.com/cncf/project-template).
 * Project can demonstrate its application, practice, and adjustments to its governance documentation as a result of regular project operations
 * Project has a robust and mature security posture which could be achieved by one or more of the following:
   * Threat model
@@ -58,10 +62,11 @@ Incubation milestones are guiding points to highlight success areas a maturing p
 ## Graduation
 
 Graduation milestones are guiding points to highlight continuing success areas for highly mature project after they graduate. They are not requirements. Not all Graduated projects will achieve or perform these milestones, however many robust and mature projects will adopt these milestones as "regular business" to maintain the health and growth of the project and its community.
-* Project reviews it's governance process annually for improvements to improve clarity, consistency, and inclusivity
+* Project regularly updates its governance documentation to accurately reflect changes to processes, staffing, roles, and activities
 * Project has a well established and exercised contributor growth ladder or other community construct to "build the bench" of maintainers or project leaders
 * [Silver level](https://bestpractices.coreinfrastructure.org/en/criteria/1) of the [OpenSSF Best Practice Badge](https://bestpractices.coreinfrastructure.org/)
 * Project has an Adopters file and may record public production users and use cases
 * Project periodically evaluates their project health and practices.
   * Projects may leverage [CLOMonitor](https://clomonitor.io/) for this information
+* Project has demonstrated turnover in its leadership that showcases adherence to their governance
 * TBD - add more!
