@@ -98,6 +98,7 @@ Upon entering sandbox, projects are very early and often experimental. Not all p
 The following criteria are leveraged by the TOC to identify when a Sandbox project is no longer viable and is not expected to move to incubation. The TOC will consider any of the criteria or a combination of them for Archival evaluation.
 * Missed Annual review by more than two months
 * Stale contributions over the course of 18 months - stale contributions include non-significant contributions (minor changes like color in the UI, or grammar corrections), lack of contributions, little discussion or activity on issues, etc. 
-* Missed reasonable [milestones] - subject to the nature of the project, project may miss milestones a reasonable person would assume to have been completed considering other factors about the project. 
+    * Projects with stale contributions will experience significantly delayed maturity progress (subject to the nature of the project)
+    * Projects may refer to [project milestones for Sandbox projects](https://github.com/cncf/toc/blob/master/process/project_milestones.md#sandbox) for specific activities to build maturity in their project and potentially increase contributions. 
 * Project has existed in sandbox for 4 years with little traction by adopters
 Sandbox projects identified for archival will adhere to the project [archival process](_https://github.com/cncf/toc/blob/master/process/archiving.md_) with the defined criteria listed in the issue when filed.
