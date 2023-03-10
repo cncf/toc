@@ -17,6 +17,7 @@ KubeVela was accepted as a CNCF Sandbox project on June 22, 2021.
 
 * [Project Annual Review](https://github.com/cncf/toc/blob/main/reviews/2022-kubevela-annual.md)
 * [Sandbox presentation](https://docs.google.com/presentation/d/1CWCLcsKpDQB3bBDTfdv2BZ8ilGGJv2E8L-iOA5HMrV0/edit#slide=id.p)
+* [KubeVela Due Diligence for Incubation](https://docs.google.com/document/d/17owtXTes1TSkx0fwpV4_xRRrRL7D_jVN1c_iNsaRZ6M/edit)
 
 ## Progress Since Sandbox
 
