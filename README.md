@@ -10,7 +10,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 ## Members
 
 
-* **Davanum Srinivas** (term: 2 years - start date: 3/18/2021 - 3/18/2023) [TOC-appointed][TOC Chair]
+
 * **Justin Cormack** (term: 2 years - start date 2/4/2022 - 2/4/2024) [Maintainer-appointed]
 * **Ricardo Rocha** (term: 2/4/2022 - 2/4/2024) [EndUser-appointed]
 * **Emily Fox** (term: 2 years - start date: 2/4/2022 - 2/4/2024) [GB-appointed]
@@ -21,7 +21,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * **Dave Zolotusky** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [EndUser-appointed]
 * **Cathy Zhang** (term: 2 years 2-1-2023 - 2/1/2025) [GB-appointed]
 * **Duffie Cooley** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
-
+* **Erin Boyd** (term: 2 years - start date: 3/18/2023 - 3/18/2025) [TOC-appointed]
 
 Election [schedule](process/election-schedule.md)
 
