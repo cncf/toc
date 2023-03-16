@@ -14,8 +14,6 @@ Some milestones may not apply to all projects and should be leveraged as guiding
   * Use of GitHub discussions, issues, or a group messaging service (slack, wechat, etc.)
 * Project guides community contributions
   * PRs from community members receive timely feedback and discussion from the maintainers
-* Project works with an angel adopter
-  * Partners closely with the project to address organizational needs of the project early on
 * Project has a second organization contributing
   * May begin path to maintainership
 * Project begins solidifying a versioning schema and release cadence
@@ -23,7 +21,7 @@ Some milestones may not apply to all projects and should be leveraged as guiding
   * Releases begin to establish a pattern of regularity
 * Project has engaged a [Technical Advisory Group](/tags/README.md) for feedback on some portion of the project relevant to the domain
 * Project has a clearly discoverable governance doc that covers the basics of decision making, including who approves PRs and how committers/maintainers are chosen
-* Project has an angel adopter that assists in stability and production runtime or deployment
+* Project has an angel adopter that assists in stability and production use or deployment
   * An angel adopter is a very early adopter of a cloud native project. They are invaluable to a projects growth and first experience in interacting with adopters. They often are characterized helping the project reach momentum towards incubation through:
     * higher level of engagement with the project 
     * ongoing injection of feedback and support via issues and contributions
@@ -42,7 +40,7 @@ Incubation milestones are guiding points to highlight success areas a maturing p
   * Threat model
   * [Joint review](https://github.com/cncf/tag-security/tree/main/assessments#components-of-the-security-review-package)
   * [Passing level](https://bestpractices.coreinfrastructure.org/en/criteria/0) of the [OpenSSF Best Practice Badge](https://bestpractices.coreinfrastructure.org/)
-    * Note: Completion and maintenance of **a** OpenSSF Best Practice Badge is [a requirement for graduation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#graduation-stage)
+    * Note: Completion and maintenance of **an** OpenSSF Best Practice Badge is [a requirement for graduation](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#graduation-stage)
 * Project documentation includes getting started guides, operating/administration instruction, security call-outs, and other core elements necessary to ease adoption.
 * Project provides information on performance and scalability for deployment options/configurations, autoscaling, or may provide benchmarks in these areas for comparison or evaluation
 * Project captures use cases to showcase how it can be best used to solve common problems.
@@ -57,6 +55,9 @@ Incubation milestones are guiding points to highlight success areas a maturing p
 * Project has engaged with a few Technical Advisory Groups to ensure they are considering best practices across multiple technical and governance facets
 * Project has defined a process for managing the conduct of its community, either establishing its own group to do this, leveraging the existing leadership, or deferring to the CNCF
 * Project maintains a dependency graph so adopters fully understand the complexity and risk of use
+* Project has 3 or more adopters using the project in production to support completion of Due Diligence and adopter interviews
+* Project plans activities to increase project adoption trajectory 3 adopters
+* Project has more than 5 regular contributors, more than half of which are from different organizations
 * TBD - add more!
 
 ## Graduation
