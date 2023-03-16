@@ -35,7 +35,7 @@ There are several possible next steps for a project in Sandbox:
 
 * If it achieves sufficient momentum and maturity it can [apply for Incubation status](https://github.com/cncf/toc/blob/main/process/project_proposals.md#incubation-process)
 * Based on alignment with another project, it might make sense to merge with or become part of another project within the CNCF. This would be done based on a consensus between project maintainers and the TOC that this is best for both projects.  
-* Some projects and experiments may fail, or otherwise reach a state where they should be moved into the [Archive](https://github.com/cncf/toc/blob/master/process/archiving.md). See [sandbox departures](#sandbox-departures) for more information.
+* Some projects and experiments may fail, or otherwise reach a state where they should be moved into the [Archive](https://github.com/cncf/toc/blob/master/process/archiving.md).
 
 ## Sandbox Governance and Benefits
 
