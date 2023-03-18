@@ -25,5 +25,6 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Cornelia Davis (2/1/2021-5/9/2022)
 * Erin Boyd (2/1/2021-2/1/2023)
 * Lei Zhang (2/1/2021-2/1/2023)
+* Davanum Srinivas (3/17/2021 - 3/17/2023)
 
 We thank these members for their service to the CNCF community.
