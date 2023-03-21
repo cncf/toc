@@ -13,7 +13,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 
 * **Justin Cormack** (term: 2 years - start date 2/4/2022 - 2/4/2024) [Maintainer-appointed]
 * **Ricardo Rocha** (term: 2/4/2022 - 2/4/2024) [EndUser-appointed]
-* **Emily Fox** (term: 2 years - start date: 2/4/2022 - 2/4/2024) [GB-appointed]
+* **Emily Fox** (term: 2 years - start date: 2/4/2022 - 2/4/2024) [GB-appointed][TOC Chair]
 * **Matt Farina** (term: 2 years - start date 2/4/2022 - 2/4/2024) [GB-appointed]
 * **Richard Hartmann** (term: 2 years - start date 2/4/2022 - 2/4/2024) [GB-appointed]
 * **Katie Gamanji** (term: 2 years - start date: 3/18/2022 - 3/18/2024) [TOC-appointed]
