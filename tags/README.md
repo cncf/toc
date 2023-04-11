@@ -20,7 +20,7 @@ a pull request with document referencing the roles and charter, updating the lis
 | [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Katie Gamanji, Justin Cormack |
 | [TAG Network](https://github.com/cncf/tag-network) | Duffie Cooley, Ricardo Rocha |
 | [TAG Runtime](https://github.com/cncf/tag-runtime) | Nikhita Raghunath, Richard Hartmann, Cathy Zhang |
-| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Dave Zolotusky, Katie Gamanji |
+| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Dave Zolotusky, Emily Fox |
 | [TAG Observability](https://github.com/cncf/tag-observability) | Erin Boyd, Ricardo Rocha,  Cathy Zhang |
 | [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability/) | Erin Boyd, Matt Farina, Emily Fox |
 
