@@ -16,7 +16,7 @@ a pull request with document referencing the roles and charter, updating the lis
 | Name | TOC Liaisons - updated as of 4/11/2023 |
 |------|--------------| 
 | [TAG Security](https://github.com/cncf/tag-security) | Duffie Cooley, Dave Zolotusky|
-| [TAG Storage](https://github.com/cncf/tag-storage) | Emily Fox, Nikhita Raghunath  |
+| [TAG Storage](https://github.com/cncf/tag-storage) | Matt Farina, Nikhita Raghunath  |
 | [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Katie Gamanji, Justin Cormack |
 | [TAG Network](https://github.com/cncf/tag-network) | Duffie Cooley, Ricardo Rocha |
 | [TAG Runtime](https://github.com/cncf/tag-runtime) | Nikhita Raghunath, Richard Hartmann, Cathy Zhang |
