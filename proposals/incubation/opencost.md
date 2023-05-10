@@ -60,19 +60,19 @@ OpenCost was proposed and accepted as a Sandbox project in June 2022 ([Sandbox p
 
 Since joining the CNCF Sandbox, we have seen substantial growth in the OpenCost community. According to [OpenCost DevStats](https://opencost.devstats.cncf.io/) the following stats for the main [OpenCost repository](https://github.com/opencost/opencost/) have grown notably in the past year in CNCF:
 
-* [GitHub Stars](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1) increased from 2000 to over 3500
-* [GitHub Forks](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1) increased from 192 to over 400
-* [Contributors](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost) increased from 40 to 368
-* [Committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost) There are now 65 committers
-* There have been over 800 commits to the *develop* branch since launch
+* [GitHub Stars](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 2000 to over 3500
+* [GitHub Forks](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 192 to over 400
+* [Contributors](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): increased from 40 to 368
+* [Committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): there are now 65 committers
+* There have been over 800 commits to the primary *develop* branch since launch
 * [21 of the top 50 contributors are not Kubecost employees](https://opencost.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Last%20decade&var-metric=contributions&var-repogroup_name=OpenCost&var-country_name=All&var-companies=All)
-* [Number of new PRs](https://opencost.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&editPanel=1&from=now-1y&to=now&var-period=w&var-repogroup_name=OpenCost) now average **10 per week**
-* [Median PR Time to Engagement](https://opencost.devstats.cncf.io/d/10/pr-time-to-engagement?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): < 24 hours
-* [Median PR Open to Merge](https://opencost.devstats.cncf.io/d/16/opened-to-merged?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): < 24 hours
+* [Number of new PRs](https://opencost.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&editPanel=1&from=now-1y&to=now&var-period=w&var-repogroup_name=OpenCost): currently average **10 per week**
+* [Median PR Time to Engagement](https://opencost.devstats.cncf.io/d/10/pr-time-to-engagement?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 24 hours
+* [Median PR Open to Merge](https://opencost.devstats.cncf.io/d/16/opened-to-merged?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 24 hours
 * [LinkedIn followers](https://www.linkedin.com/showcase/opencost/): have increased from 70 to 176
-* There are now 528 Slack members in #opencost in [CNCF Slack](https://slack.cncf.io/)
+* [CNCF Slack](https://slack.cncf.io/): there are currently 528 Slack members in **#opencost**
 
-We actively host or take part in various community programs and events, tracked on the [OpenCost Community Calendar](https://bit.ly/opencost-calendar). The fortnightly [OpenCost Working Group Community Meeting](https://docs.google.com/document/d/1JFB_-sjF8F9UWet1c-dWixdMZY4hri23UlQG5FX5xfY/edit#), where community and development progress are discussed. Community members and external stakeholders are invited to discuss the project and their experiences with OpenCost to shape future development.
+We actively host or take part in various community programs and events, tracked on the [OpenCost Community Calendar](https://bit.ly/opencost-calendar). There is a fortnightly [OpenCost Community Meeting](https://docs.google.com/document/d/1JFB_-sjF8F9UWet1c-dWixdMZY4hri23UlQG5FX5xfY/edit#), where community members and external stakeholders are invited to discuss the project and their experiences with OpenCost to shape future development.
 
 ### Expanding Developer Ecosystem
 
@@ -95,13 +95,13 @@ The release cadence is:
 * Minor versions are released every month.
 * Patch versions are released as necessary.
 
-The releases are announced using [GitHub’s releases](https://github.com/opencost/opencost/releases), followed by Slack (CNCF/#opencost), Mastodon, Twitter, and discussion in the fortnightly Community Meetings.
+The releases are announced using [GitHub releases](https://github.com/opencost/opencost/releases), followed by Slack (CNCF/#opencost), Mastodon, Twitter, and discussion in the Community Meetings.
 
 #### Code Quality and Testing
 
-All incoming Pull Requests are tested with GitHub Actions to execute the unit tests defined in the test and pkg/* directories against amd64 and arm64 platforms with Docker. Code formatting is enforced with go fmt. Kubecost provides integration testing and performance testing as part of their release process.
+All incoming Pull Requests are tested with GitHub Actions to execute the unit tests defined in the test and pkg/* directories against amd64 and arm64 platforms with [Docker](https://github.com/opencost/opencost/blob/develop/Dockerfile). Code formatting is enforced with go fmt. Kubecost provides integration testing and performance testing as part of their release process. OpenCost currently has a "A+" score with [Go Report Card](https://goreportcard.com/report/github.com/opencost/opencost).
 
-The Helm chart is tested with the GitHub Action helm/chart-testing-action which provides linting with ct lint and integration testing with ct install against a Kubernetes in Docker cluster.
+The Helm chart is tested with the [GitHub Action](https://github.com/opencost/opencost-helm-chart/blob/main/.github/workflows/helm-test.yml) helm/chart-testing-action which provides linting with ct lint and integration testing with ct install against a Kubernetes in Docker cluster.
 
 The OpenCost website creates temporary sites on approved PRs with Vercel to evaluate the changes.
 
@@ -147,7 +147,7 @@ As previously documented, OpenCost follows Semantic Versioning 2.0.0 and release
 
 ### **_Demonstrate a substantial ongoing flow of commits and merged contributions._**
 
-As previously documented, [https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost)](OpenCost currently has 368 contributors and 65 committers).
+As previously documented, [OpenCost currently has 368 contributors and 65 committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost).
 
 Full details can be found at [CNCF devstats](https://opencost.devstats.cncf.io/) dashboards for OpenCost.
 
@@ -179,7 +179,7 @@ OpenCost is currently aligned with the following CNCF projects:
 
 ## Future Plans
 
-The [External Asset Costs Working Group](https://docs.google.com/document/d/1-d-Vvy1VGHW0sXKiTjTplIUEnrElIlnfMU8sUpEehlA/edit) intends to bring support for services not directly managed by the Kubernetes infrastructure. Examples include network costs, monitoring, and external database services. Supporting AWS’ S3 object storage is the prototype under development with documentation and a new specification being developed in parallel. These efforts should encourage external contributors from both vendors and users. Initial patches from Grafana Labs and Microsoft are refactoring cloud providers to make it easier to introduce new billing and data sources.
+The [External Asset Costs Working Group](https://docs.google.com/document/d/1-d-Vvy1VGHW0sXKiTjTplIUEnrElIlnfMU8sUpEehlA/edit) intends to bring support for services not directly managed by the Kubernetes infrastructure. Examples include network costs, monitoring, and external database services. Supporting AWS’ S3 object storage is the prototype under development with documentation and a new specification being developed in parallel. These efforts should encourage external contributors from both vendors and users. Initial merged patches from Grafana Labs and Microsoft are refactoring cloud providers to make it easier to introduce new billing and data sources.
 
 The FinOps Foundation is participating in the development conversations as OpenCost looks to standardize on the [FinOps Open Cost and Usage Specification](https://www.finops.org/focus/) (FOCUS). Initial FOCUS patches have already been merged.
 
