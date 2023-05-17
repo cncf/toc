@@ -25,7 +25,7 @@ This is a multi-step process with ample time for projects to react, discuss, and
 4. TOC informs project maintainers and the end user community. This step will usually be delegated to CNCF staff.
 5. A TOC vote is announced; the voting duration is two weeks. A 2/3 majority in favor of archiving is required.
 
-## Archiving Status
+## Archived Status
 
 What does archiving for a CNCF project mean?
 
