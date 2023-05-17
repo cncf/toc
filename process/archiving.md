@@ -23,7 +23,8 @@ This is a multi-step process with ample time for projects to react, discuss, and
 2. TOC opens an issue inquiring about the health of the project. While there's not fixed timeline, it will be in the order of months.
 3. A formal archival request is created in https://github.com/cncf/toc/issues and the issue tracker of the member project, cross-linking both.
 4. TOC informs project maintainers and the end user community. This step will usually be delegated to CNCF staff.
-5. A TOC vote is announced; the voting duration is two weeks. A 2/3 majority in favor of archiving is required.
+5. A mandatory two week discussion phase begins
+6. A TOC vote is announced; the voting duration is two weeks. A 2/3 majority in favor of archiving is required.
 
 ## Archived Status
 
