@@ -40,7 +40,7 @@ Besides engine and manager, Longhorn also has an intuitive GUI and a test suite 
 
 *Statement on alignment with CNCF mission:*
 
-Longhorn project aligns with CNCF's mission to make cloud-native computing ubiquitous. Today, persistent storage support varies from Kubernetes cluster to Kuberentes cluster. As a result, users cannot deploy stateful workloads that require persistent volumes and expect their stateful workloads to work on any Kubernetes cluster. By creating a portable and lightweight implementation of persistent storage volumes, Longhorn can make persistent storage support available on every Kubernetes cluster and thus can help drive the adoption of Kubernetes technology.
+Longhorn project aligns with CNCF's mission to make cloud-native computing ubiquitous. Today, persistent storage support varies from Kubernetes cluster to Kubernetes cluster. As a result, users cannot deploy stateful workloads that require persistent volumes and expect their stateful workloads to work on any Kubernetes cluster. By creating a portable and lightweight implementation of persistent storage volumes, Longhorn can make persistent storage support available on every Kubernetes cluster and thus can help drive the adoption of Kubernetes technology.
 
 *Sponsors from TOC:* Alexis Richardson and Liz Rice
 
