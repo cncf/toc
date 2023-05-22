@@ -7,7 +7,7 @@ Open source projects have a lifecycle and there are times that projects become i
 CNCF TOC may also look at a variety of signals, including but not limited to:
 * [CNCF Project health dashboard](https://projecthealth.cncf.io/)
 * If the project would currently meet criteria for acceptance to CNCF
-* Requests for archival by anyone in the wider CNCF community
+* Requests to archive by anyone in the wider CNCF community
 * Security posture of the project, in particular speedy reaction to and resolution of vulnerability reports
 * Project meetings schedules and notes
 * Public mailing list activity
