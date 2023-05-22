@@ -100,12 +100,7 @@ To archive a project:
 
 ### Archiving Process
 
-What does archiving for a CNCF project mean?
-* CNCF will no longer provide support for the project via service desk
-* CNCF will list archived projects online
-* Trademarks and domain names of archived projects are still hosted by the CNCF and the Linux Foundation
-* CNCF can provide services such as documentation updates to help transition users.
-* Other CNCF marketing activities will no longer be provided for the project
+See the [Archiving process](archiving.md).
 
 # IV. Annual Review Process 
 
