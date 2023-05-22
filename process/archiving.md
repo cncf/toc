@@ -17,7 +17,9 @@ Automated systems and the references above can trigger a review by the TOC. For 
 
 ## Archiving Process
 
-This is a multi-step process with ample time for projects to react, discuss, and improve built in. Being slow and deliberate is a bug, not a feature. The process can be stopped by TOC consensus at any time until a formal vote has been announced.
+This is a multi-step process with ample time for projects, adopters, and community members to react, discuss, and develop improvements. As a result, it may take an unspecified time. CNCF TOC's intent is to be deliberate in understanding the state of the project and if the project wants and can to return to an active state.
+
+The process can be stopped by TOC consensus at any time until a formal vote has been announced.
 
 1. Archival review is triggered (see above).
 2. TOC opens an issue inquiring about the health of the project. While there's not fixed timeline, it will be in the order of months.
