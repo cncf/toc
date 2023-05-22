@@ -35,6 +35,8 @@ What does archiving for a CNCF project mean?
 * Trademarks and domain names of archived projects are still hosted by the CNCF and the Linux Foundation
 * CNCF can provide services such as documentation updates to help transition users.
 * Other CNCF marketing activities will no longer be provided for the project
+* The project can not actively advertise being a CNCF project any more, In particular, previous statuses such as Sandbox, Incubating, or Graduated may not be used any more.
+* The project is free continue development in its repositories, ideally with a goal to reactivate itself
 
 ## Reactivating an Archived Project
 
