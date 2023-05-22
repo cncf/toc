@@ -13,7 +13,7 @@ CNCF TOC may also look at a variety of signals, including but not limited to:
 * Public mailing list activity
 * Adoption stats
 
-Automated systems and the references above can trigger a review by the TCO, for example a project might be very mature and close to feature complete, which would be different from general inactiveness. The archival process itself remains manual with close attention to the details by TOC.
+Automated systems and the references above can trigger a review by the TOC. For example a project might be very mature and close to feature complete, which would be different from general inactiveness. The archival process itself remains manual with close attention to the details by TOC.
 
 ## Archiving Process
 
