@@ -19,7 +19,7 @@ Automated systems and the references above can trigger a review by the TOC. For 
 
 This is a multi-step process with ample time for projects to react, discuss, and improve built in. Being slow and deliberate is a bug, not a feature. The process can be stopped by TOC consensus at any time until a formal vote has been announced.
 
-1. Archiving review is triggered (see above).
+1. Archival review is triggered (see above).
 2. TOC opens an issue inquiring about the health of the project. While there's not fixed timeline, it will be in the order of months.
 3. A formal archival request is created in https://github.com/cncf/toc/issues and the issue tracker of the member project, cross-linking both.
 4. TOC informs project maintainers and the end user community. This step will usually be delegated to CNCF staff.
