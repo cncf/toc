@@ -2,7 +2,7 @@
 
 Open source projects have a lifecycle and there are times that projects become inactive due to a variety of reasons. There are also cases where a project may no longer want to be supported by the TOC, or the TOC may no longer wish to recommend the use of a project.
 
-## Triggering Archiving review 
+## Triggering a Review to Archive 
 
 CNCF TOC may also look at a variety of signals, including but not limited to:
 * [CNCF Project health dashboard](https://projecthealth.cncf.io/)
