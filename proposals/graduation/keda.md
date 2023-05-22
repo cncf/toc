@@ -1,5 +1,11 @@
 # Kubernetes Event-driven Autoscaling (KEDA) Graduation Proposal
 
+Below you can find the original proposal, but since opening the PR we have started writing the due diligence document which has the most recent information.
+
+You can find our due diligence document [here](https://docs.google.com/document/d/1SiGx5xT_z-mXbs88m4FivdxopdZopR4IWbXV9lX1ugM/edit?usp=sharing).
+
+---
+
 **Kubernetes Event-Driven Autoscaling (KEDA)** is a single-purpose event-driven autoscaler for Kubernetes that can be easily added to your Kubernetes cluster to scale your applications. It aims to make application auto-scaling dead-simple and optimize for cost by supporting scale-to-zero.
 
 KEDA takes away all the scaling infrastructure and manages everything for you, allowing you to scale based on 50+ built-in scalers, use external scalers from the community or extend it with your own tailor-made scalers (pull-based, push-based, or REST API-driven). Learn more about the available scalers in our [documentation](https://keda.sh/docs/latest/scalers/).
