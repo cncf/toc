@@ -160,7 +160,7 @@
 [Kepler](https://github.com/sustainable-computing-io/kepler)| TOC Vote | [12/19/2022](https://github.com/sustainable-computing-io/kepler) |[05/17/2023](https://github.com/cncf/sandbox/issues/19)| Sandbox
 [SlimToolkit](https://github.com/slimtoolkit/slim)| TOC Vote | [1/3/2023](https://github.com/slimtoolkit/slim) |[05/17/2023](https://github.com/cncf/sandbox/issues/22)| Sandbox
 [Headlamp](https://github.com/headlamp-k8s/headlamp)| TOC Vote | [1/10/2023](https://github.com/headlamp-k8s/headlamp) |[05/17/2023](https://github.com/cncf/sandbox/issues/25)| Sandbox
-[Headlamp](https://github.com/mozilla/sops)| TOC Vote | [2/17/2023](https://github.com/mozilla/sops) |[05/17/2023](https://github.com/cncf/sandbox/issues/28)| Sandbox
+[SOPS](https://github.com/mozilla/sops)| TOC Vote | [2/17/2023](https://github.com/mozilla/sops) |[05/17/2023](https://github.com/cncf/sandbox/issues/28)| Sandbox
 
 
 
