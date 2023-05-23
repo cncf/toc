@@ -72,7 +72,7 @@
 [SchemaHero](https://github.com/schemahero/schemahero)|TOC Vote|[9/10/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/schemahero/schemahero)|Sandbox
 [cdk8s](https://github.com/awslabs/cdk8s)|TOC Vote|[10/19/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/awslabs/cdk8s)|Sandbox
 [cert-manager](https://github.com/cert-manager/cert-manager)|TOC Vote|[10/27/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/cert-manager/cert-manager)|Incubating
-[OpenKruise](https://github.com/openkruise/kruise)|TOC Vote|[11/3/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/openkruise/kruise)|Sandbox
+[OpenKruise](https://github.com/openkruise/kruise)|TOC Vote|[11/3/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/openkruise/kruise)|Incubating
 [Tinkerbell](https://github.com/tinkerbell)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/tinkerbell)|Sandbox
 [Pravega](https://github.com/pravega)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/pravega)|Sandbox
 [Kyverno](https://github.com/kyverno/kyverno/)|TOC Vote|[11/9/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/kyverno/kyverno/)|Sandbox
@@ -97,7 +97,7 @@
 [Pixie](https://github.com/pixie-labs/pixie)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/15/2021](https://github.com/pixie-labs/pixie)| Sandbox
 [Meshery](https://github.com/layer5io/meshery)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/21/2021](https://github.com/layer5io/meshery)| Sandbox
 [Service Mesh Performance](https://github.com/layer5io/service-mesh-performance)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/21/2021](https://github.com/layer5io/service-mesh-performance)| Sandbox
-[KubeVela](https://github.com/oam-dev/kubevela)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/4/2021](https://github.com/oam-dev/kubevela)| Sandbox
+[KubeVela](https://github.com/oam-dev/kubevela)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/4/2021](https://github.com/oam-dev/kubevela)| Incubating
 [kube-vip](https://github.com/kube-vip/kube-vip)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/kube-vip/kube-vip)| Sandbox
 [KubeDL](https://github.com/alibaba/kubedl)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/alibaba/kubedl)| Sandbox
 [Krustlet](https://github.com/deislabs/krustlet)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/24/2021](https://github.com/deislabs/krustlet)| Sandbox
@@ -156,6 +156,13 @@
 [Clusternet](https://github.com/clusternet)|TOC Vote|[11/14/2022](https://github.com/clusternet)|[03/07/2023](https://github.com/cncf/sandbox/issues/10)|Sandbox
 [Inspektor Gadget](https://github.com/inspektor-gadget)|TOC Vote|[10/27/2022](https://github.com/inspektor-gadget) | [03/07/2023](https://github.com/cncf/sandbox/issues/7)|Sandbox
 [Keycloak](https://github.com/keycloak)| Ricardo Rocha | [06/18/2020](https://github.com/cncf/toc/pull/463) |[04/11/2023](https://lists.cncf.io/g/cncf-toc/message/7960)| Incubating
+[PipeCD](https://github.com/pipe-cd)| TOC Vote | [11/18/2022](https://github.com/pipe-cd) |[05/17/2023](https://github.com/cncf/sandbox/issues/12)| Sandbox
+[Kepler](https://github.com/sustainable-computing-io/kepler)| TOC Vote | [12/19/2022](https://github.com/sustainable-computing-io/kepler) |[05/17/2023](https://github.com/cncf/sandbox/issues/19)| Sandbox
+[SlimToolkit](https://github.com/slimtoolkit/slim)| TOC Vote | [1/3/2023](https://github.com/slimtoolkit/slim) |[05/17/2023](https://github.com/cncf/sandbox/issues/22)| Sandbox
+[Headlamp](https://github.com/headlamp-k8s/headlamp)| TOC Vote | [1/10/2023](https://github.com/headlamp-k8s/headlamp) |[05/17/2023](https://github.com/cncf/sandbox/issues/25)| Sandbox
+[Headlamp](https://github.com/mozilla/sops)| TOC Vote | [2/17/2023](https://github.com/mozilla/sops) |[05/17/2023](https://github.com/cncf/sandbox/issues/28)| Sandbox
+
+
 
 
 
@@ -215,6 +222,8 @@
 | [Keptn](https://keptn.sh/) | 6/23/20   | 7/13/2022 | [Incubating](https://github.com/cncf/toc/pull/670)|
 | [Cloud Custodian](https://cloudcustodian.io) | 6/23/20   | 9/14/2022 | [Incubating](https://github.com/cncf/toc/pull/644)|
 | [cert-manager](https://github.com/cert-manager/cert-manager)| 10/27/2020 | 10/19/2022 | [Incubating](https://github.com/cncf/toc/pull/786)
+| [KubeVela](https://github.com/oam-dev/kubevela)| 6/22/2021 | 2/27/2023 | [Incubating](https://github.com/cncf/toc/pull/890)|
+| [OpenKruise](https://github.com/openkruise/kruise)| 11/3/2020 | 2/27/2023 | [Incubating](https://github.com/cncf/toc/pull/846)|
 
 
 ## Project Security Audits
