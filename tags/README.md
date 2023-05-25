@@ -54,6 +54,7 @@ a pull request with document referencing the roles and charter, updating the lis
 ### TAG Contributor Strategy
 * [Josh Berkus](https://github.com/jberkus)
 * [Dawn Foster](https://github.com/geekygirldawn)
+* [Catherine Paganini](https://github.com/CathPag)
 
 ### TAG Observability
 * [Matt Young](https://github.com/halcyondude)
