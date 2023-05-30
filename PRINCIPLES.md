@@ -180,7 +180,8 @@ Our goal with these is to foster a more inclusive and welcoming community for al
 
 In addition to adhering to these principles, all leaders must adhere to the CNCF Code of Conduct. 
 
-## Be welcoming
+#### Be welcoming
+
 Make a conscious effort to be welcoming in your interactions. If someone is new, express sincere interest in what brought them to the group. Check in with existing contributors to ensure they continue to feel welcome. Create space for new contributors and existing contributors to be curious and engaged with the work that we do in cloud native by building on common interests and outcomes. 
 
 #### Provide feedback and appreciation appropriately
