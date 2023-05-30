@@ -173,7 +173,8 @@ Project needs may include test automation and CI, cloud resources to test on, cl
 ## Purpose
 
 The Technical Oversight Committee has adopted these leadership principles to help guide the ecosystem in growth and maturity. These principles define the expectations of TOC members, project maintainers, TAG Chairs and Leads, chairs and leads of any group or committee, and other persons serving in any leadership role in the CNCF community.
-Principles
+
+### Principles
 
 Our goal with these is to foster a more inclusive and welcoming community for all, and we expect all leaders in the CNCF community  to participate in accordance with these principles. If a leader is not acting in accordance with these principles, community members should first address it with the other leaders of the project, TAG, committee, group, or body. Project and TAG governance documentation must explain procedures (including who is responsible) for response and resolution if these principles are not being followed. In general, if a leader is not following these principles, there should be a good faith effort to educate, inform, and provide the leader with an opportunity to improve before taking further action such as suspending or removing them from their leadership role. If the behavior that violates these principles persists, or if the other leaders of the applicable project, committee, or group do not take corrective action in response to a reported violation of these principles, projects should escalate the matter to the TOC.
 
