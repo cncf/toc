@@ -170,7 +170,7 @@ Project needs may include test automation and CI, cloud resources to test on, cl
 
 ## Technical Leadership Principles
 
-## Purpose
+### Purpose
 
 The Technical Oversight Committee has adopted these leadership principles to help guide the ecosystem in growth and maturity. These principles define the expectations of TOC members, project maintainers, TAG Chairs and Leads, chairs and leads of any group or committee, and other persons serving in any leadership role in the CNCF community.
 
