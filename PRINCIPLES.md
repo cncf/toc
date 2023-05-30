@@ -181,7 +181,7 @@ In addition to adhering to these principles, all leaders must adhere to the CNCF
 
 ## Be welcoming
 Make a conscious effort to be welcoming in your interactions. If someone is new, express sincere interest in what brought them to the group. Check in with existing contributors to ensure they continue to feel welcome. Create space for new contributors and existing contributors to be curious and engaged with the work that we do in cloud native by building on common interests and outcomes. 
-Provide feedback and appreciation appropriately
+## Provide feedback and appreciation appropriately
 Provide praise, gratitude, appreciation and encouragement in public. Look for opportunities to say “thank you” and recognize people when they are being helpful or making contributions. Be specific in what was done and describe the impact it had or continues to have.
 
 If you have negative or constructive feedback about an individual or group, provide it in a form that is meaningful and actionable in private with support from a neutral third-party. Having another individual present that serves as a neutral participant can assist in removing biased power dynamics or asymmetry in the discussion. Constructive feedback should be specific, with a recommended alternative, solution, or suggestion for improvement. If possible, make an effort to find out how the individual or group would like to receive feedback; not everyone is comfortable receiving feedback in person or over a virtual meeting, and ensure they are accepting of a neutral participant to support an engaging feedback conversation while providing a transparent and equitable process. 
