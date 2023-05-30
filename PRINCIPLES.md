@@ -191,7 +191,7 @@ If you have negative or constructive feedback about an individual or group, prov
 
 Be gracious, courteous, and kind in how you provide feedback and how you receive feedback from others.
 
-## Always do better
+#### Always do better
 
 Identify and give opportunities to improve while considering how feedback might be perceived by someone receiving it. Request from others and self-identify areas in your own interactions that could be improved and take steps to make those changes. Make a conscious effort to effect change in your own behaviors and be the model of that effort for others to strive towards.
 
