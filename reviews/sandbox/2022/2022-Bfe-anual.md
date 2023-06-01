@@ -34,7 +34,7 @@
 
   - [BFE forward engine](https://github.com/bfenetworks/bfe) released 2 new versions,  which introduce HTTP2 fingerprint, improved TCP KeepAlive configurations and other security, performance and CI/CD efficient improvement. 
   - [BFE Ingress](https://github.com/bfenetworks/ingress-bfe) released 1 new version and improved its deployment.
-  - The English version of book **"[BFE inside](https://github.com/baidu/bfe-book)"** is ready and we are now in communications with some publish houses to prepare the publish.
+  - The English version of book **"[In-depth Understanding of BFE](https://github.com/baidu/bfe-book)"** is ready and we are now in communications with some publish houses to prepare the publish.
   - An adopters' success story was published on CNCF Blog: [With BFE, China Merchants Bank has improved application availability and operation efficiency](https://www.cncf.io/blog/2023/01/13/with-bfe-china-merchants-bank-has-improved-application-availability-and-operation-efficiency/)
   - Two Internship programs have been finished with success. With mentoring from our senior contributors, two graduate students has successfully added new functions (Redirect and URL Rewrite) to BFE Ingress. During the program, we followed the best practice of software engineering and payed a lot of effort on requirement analysis, system designing, documentation and reviewing besides coding.
 
@@ -42,7 +42,7 @@
 
   At the moment, the main focus of the project is enhancing user experience and improving adoption.  We will also working on supporting new topologies and standards. Main goals includes:
 
-  - Publish English version of **"BFE inside"**
+  - Publish English version of book **"In-depth Understanding of BFE"**
   - Support Kubernetes Gateway API
   - Support for HTTP3/TLS1.3
   - Support for traffic mirroring
