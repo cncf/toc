@@ -32,7 +32,7 @@ To meet the evolving needs of its community, Kubeflow needs a vendor-neutral fou
 
 ## Sponsors from TOC
 
-No sponsor, yet.
+[Ricardo Rocha](https://github.com/rochaporto)
 
 ## Preferred maturity level
 
@@ -151,8 +151,8 @@ The current snapshot of the maintainers as defined above (company affiliation ba
 * Katib
     * [Andreyvelich](https://github.com/Andreyvelich) - Andrey Velichkevich (Apple)
     * [Gaocegege](https://github.com/Gaocegege) - Ce Gao (TensorChord)
-    * [Hougangliu](https://github.com/Hougangliu) - Hougang Liu (IBM)
     * [Johnugeorge](https://github.com/Johnugeorge) - Johnu George (Nutanix)
+    * [tenzen-y](https://github.com/tenzen-y) - Yuki Iwai (CyberAgent)
 
 ## Infrastructure requests (CI/CNCF Cluster)
 
