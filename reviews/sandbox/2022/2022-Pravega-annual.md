@@ -23,7 +23,7 @@
 
 The Pravega GitHub organization was active across 30 public repositories in 2022, including:
 - **Core Pravega**: The code base for the streaming storage engine, including the Java client, a CLI and long-term storage adapters;
-- **Connectors**: Apache Flink, Apache Spark, Presto, Trino, GStreamer;
+- **Connectors**: Apache Flink, Apache Spark, Presto, Trino, GStreamer, Debeizum;
 - **Helm charts and operators**: For Pravega, ZooKeeper, BookKeeper;
 - **Additional client bindings**: For C#, NodeJS, and Go;
 - **Schema Registry**: To enable schema management;
@@ -66,21 +66,20 @@ Number of committers (across all groups): 32 (+4 compared to 2021)
 > If you can list companies that are end users of your project, please do so. (Feel free to link to an existing 
 > ADOPTERS file if appropriate.)
 
-[Temporal.io](https://temporal.io/), an external company providing a workflow platform, has started using Pravega 
-in production services.
-
 Pravega is the core storage engine of Dell’s [Streaming Data Platform](https://www.delltechnologies.com/en-us/storage/streaming-data-platform.htm) 
 product. Dell is focusing on exploiting Pravega and Dell's Streaming Data Platform in the areas of storage products, 
-edge and video analytics, and data management.
+edge deployments, video analytics, and data management. What is more,
+[Atos](https://atos.net/en/2022/press-release_2022_05_04/atos-launches-innovative-edge-to-cloud-5g-and-ai-enabled-solution) 
+is one of the main partners working with Dell to exploit Dell's Streaming Data Platform even further.
+
+[Temporal.io](https://temporal.io/), an external company providing a workflow platform, has started using Pravega
+in internal services.
 
 Pravega has been adopted as core architectural part of two new European Research projects: 
 [NEARDATA (101092644)](https://neardata.eu/) and [CLOUDSKIN (101092646)](https://cloudskin.eu/).
 Pravega will be used to satisfy several use-cases, such as computer-assisted surgery, near real-time
 storage of genomic data, and smart agriculture, among others. We expect academic and industrial
 project partners to know and adopt Pravega even beyond the scope of the projects.
-
-**Change Data Capture with Pravega + Debezium**<br>
-https://cncf.pravega.io/blog/2022/08/16/change-data-capture-with-pravega-debezium/
 
 ## Project Performance
 > How has the project performed against its goals since the last review? (We won’t penalize you if your 
@@ -109,7 +108,8 @@ Prometheus support for metrics, new metrics, Large Events support, and security 
 
 ### Open Source
 
-This year, the Pravega project includes a more mature RUST client and three new client bindings (C#, NodeJS, and Go):
+This year, the Pravega project includes a more mature RUST client and three new client bindings (C#, NodeJS, and Go)
+as well as the Debezium sink:
 
 **New Pravega client binding for NodeJS**<br>
 https://github.com/pravega/pravega-client-rust/tree/master/nodejs
@@ -120,9 +120,11 @@ https://github.com/pravega/pravega-client-rust/tree/master/golang
 **New Pravega client binding for C# (in collaboration with Washington State University)**<br>
 https://github.com/pravega/pravega-client-csharp
 
+**New Debezium sink for Pravega**<br>
+https://debezium.io/documentation/reference/operations/debezium-server.html#_pravega
+
 **Added Pravega as a use case for Bookkeeper**<br>
-PR: https://github.com/openmessaging/benchmark/pull/199<br>
-README: https://bookkeeper.apache.org/docs/overview/
+PR: https://github.com/openmessaging/benchmark/pull/199 <br> README: https://bookkeeper.apache.org/docs/overview/
 
 ### Community Outreach
 
@@ -135,6 +137,15 @@ https://www.youtube.com/watch?v=uNOmAw5nL7o
 We have organized a summer internship with Washington State University to work on the C# Pravega binding:
 https://github.com/WSUCptSCapstone-Fall2022Spring2023/dell-pravegaapi
 
+Organization of a course for Pravega at Duke Kunshan University (China):
+https://mp.weixin.qq.com/s/ULZZOfhPmts9xqdn1Ds-kA
+
+Joint project with MatrixOne and Pravega for university students last summer (China): 
+https://summer-ospp.ac.cn/2022/#/org/prodetail/22fa00455
+
+The Zookeeper Operator repository is increasing its activity and concentrating external contributions:
+https://github.com/pravega/zookeeper-operator
+
 ### Blog posts
 
 In 2022, the following blog posts were published:
@@ -146,6 +157,9 @@ https://cncf.pravega.io/blog/2022/08/16/change-data-capture-with-pravega-debeziu
 
 Presentation of Pravega & ZIO at Scala.io (Oct. 2022):<br>
 https://www.youtube.com/watch?v=lXdkDg0RvNI
+
+Presentation of Pravega at SDC India 2022 (Aug. 2022):<br>
+https://www.youtube.com/watch?v=1YrhO8yWmus
 
 Presentation at WOSCx (Jun. 2022):<br>
 https://www.youtube.com/watch?v=0x_4rLiKbMo
