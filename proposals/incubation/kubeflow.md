@@ -88,60 +88,15 @@ The current snapshot of the maintainers as defined above (company affiliation ba
     * [StefanoFioravanzo](https://github.com/StefanoFioravanzo) - Stefano Fioravanzo (Arrikto)
     * [yanniszark](https://github.com/yanniszark) - Yannis Zarkadas (Arrikto)
 * Pipelines
-    * [Adrian555](https://github.com/adrian555) - Adrian Zhuang (IBM)
-    * [Akartsky](https://github.com/akartsky) - Kartik Kalamadi (AWS)
-    * [alinakuz](https://github.com/alinakuz) - Alina Kuzhiyil (Google)
-    * [Andreyvelich](https://github.com/andreyvelich) - Andrey Velichkevich (Apple)
     * [Animeshsingh](https://github.com/animeshsingh) - Animesh Singh (IBM)
-    * [Ark-kun](https://github.com/Ark-kun) - Alexey Volkov (Google)
-    * [Aronchick](https://github.com/aronchick) - David Aronchick (Protocol Labs)
-    * [Berndverst](https://github.com/berndverst) - Bernd Verst (Microsoft)
-    * [Chauhang](https://github.com/chauhang) - Geeta Chauhan
     * [chensun](https://github.com/chensun) - Chen Sun (Google)
     * [connor-mccarthy](https://github.com/connor-mccarthy) - Connor McCarthy (Google)
-    * [Dtzar](https://github.com/dtzar) - David Tesar (Microsoft)
-    * [Dushyanthsc](https://github.com/dushyanthsc) - 
-    * [Eedorenko](https://github.com/eedorenko) - Eugene Fedorenko 
-    * [Gaocegege](https://github.com/gaocegege) - Ce Gao (TensorChord)
-    * [Gaoning777](https://github.com/gaoning777) -  Ning
     * [gkcalat](https://github.com/gkcalat) - Ablai Akhazhanov (Google)
-    * [hilcj](https://github.com/hilcj) - Desmond Liu (Google)
-    * [Hongye-sun](https://github.com/hongye-sun) - 
-    * [Hougangliu](https://github.com/hougangliu) - Hougang Liu (IBM)
     * [IronPan](https://github.com/IronPan) - Yang Pan (Google)
-    * [Jagadeeshi2i](https://github.com/jagadeeshi2i) - Jagadeesh J (Ideas2IT Technologies)
     * [james-jwu](https://github.com/james-jwu) - James Wu (Google)
-    * [Jeffwan](https://github.com/Jeffwan) - Jiaxin Shan (Bytedance)
-    * [ji-yaqi](https://github.com/ji-yaqi) - 
     * [jlyaoyuli](https://github.com/jlyaoyuli) - Joe Li (Google)
-    * [JOCSTAA](https://github.com/JOCSTAA) - Josh Ogbonda (Google)
-    * [joeliedtke](https://github.com/joeliedtke) - Joe Liedtke (Google)
-    * [Johnugeorge](https://github.com/johnugeorge) - Johnu George (Nutanix)
     * [Linchin](https://github.com/Linchin) - Lingqing Gan (Google)
-    * [Luotigerlsx](https://github.com/luotigerlsx) - Shixin 
-    * [Mameshini](https://github.com/mameshini) - Igor Mameshin
-    * [Mbaijal](https://github.com/mbaijal) - Meghna Baijal (Amazon)
-    * [Neuromage](https://github.com/neuromage) - Ajay Gopinathan (Google)
-    * [NikeNano](https://github.com/NikeNano) - Niklas Hansson (Northvolt)
-    * [Numerology](https://github.com/numerology) - Jiaxiao Zheng (ByteDance)
-    * [Ojarjur](https://github.com/ojarjur) - Omar Jarjur
-    * [PatrickXYS](https://github.com/PatrickXYS) - Yao Xiao (Google)
-    * [RedbackThomson](https://github.com/RedbackThomson) - Nicholas Thomson (Amazon)
-    * [Rileyjbauer](https://github.com/rileyjbauer) - Riley Bauer
-    * [rui5i](https://github.com/rui5i) - Rui Fang (Google)
-    * [sasha-gitg](https://github.com/sasha-gitg) - Sasha Sobran (Google)
-    * [Saurabh24292](https://github.com/saurabh24292) - 
-    * [Shrinath-suresh](https://github.com/shrinath-suresh) - 
-    * [SinaChavoshi](https://github.com/SinaChavoshi) - Sina Chavoshi (Google)
-    * [StefanoFioravanzo](https://github.com/StefanoFioravanzo) - StefanoFioravanzo (Arrikto)
-    * [Sudivate](https://github.com/sudivate) - Sushant Divate
-    * [Surajkota](https://github.com/surajkota) - Suraj Kota (Amazon)
-    * [Tomcli](https://github.com/Tomcli) - Tommy Li (IBM)
-    * [Yhwang](https://github.com/yhwang) - Yihong Wang (IBM)
-    * [Yilun-msft](https://github.com/yilun-msft) - 
-    * [zichuan-scott-xu](https://github.com/zichuan-scott-xu) - 
     * [zijianjoy](https://github.com/zijianjoy) - James Liu (Google)
-    * [zpChris](https://github.com/zpChris) - 
 * Training-operator
     * [Gaocegege](https://github.com/Gaocegege) - Ce Gao (TensorChord)
     * [Jeffwan](https://github.com/Jeffwan) - Jiaxin Shan (Bytedance)
