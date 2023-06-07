@@ -11,7 +11,6 @@
     - [Open Source](#open-source)
     - [Community Outreach](#community-outreach)
     - [Blog posts](#blog-posts)
-    - [Hackathons](#hackathons)
     - [Conference presentations](#conference-presentations)
   - [Current Goals](#current-goals)
   - [Help with Goals](#help-with-goals)
@@ -71,9 +70,6 @@ product. Dell is focusing on exploiting Pravega and Dell's Streaming Data Platfo
 edge deployments, video analytics, and data management. What is more,
 [Atos](https://atos.net/en/2022/press-release_2022_05_04/atos-launches-innovative-edge-to-cloud-5g-and-ai-enabled-solution) 
 is one of the main partners working with Dell to exploit Dell's Streaming Data Platform even further.
-
-[Temporal.io](https://temporal.io/), an external company providing a workflow platform, has started using Pravega
-in internal services.
 
 Pravega has been adopted as core architectural part of two new European Research projects: 
 [NEARDATA (101092644)](https://neardata.eu/) and [CLOUDSKIN (101092646)](https://cloudskin.eu/).
