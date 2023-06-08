@@ -27,6 +27,7 @@ The goal of OpenCost is to be the default real-time cloud cost monitoring soluti
 - Source Control: [OpenCost on Github](https://github.com/opencost)
 - Code of Conduct: [OpenCost Code of Conduct](https://github.com/opencost/opencost/blob/develop/CODE_OF_CONDUCT.md)
 - License: [Apache 2](https://github.com/opencost/opencost/blob/develop/LICENSE)
+- Governance: [OpenCost Governance](https://github.com/opencost/opencost/blob/develop/GOVERNANCE.md)
 
 ### Sandbox Acceptance
 
@@ -60,23 +61,23 @@ OpenCost was proposed and accepted as a Sandbox project in June 2022 ([Sandbox p
 
 Since joining the CNCF Sandbox, we have seen substantial growth in the OpenCost community. According to [OpenCost DevStats](https://opencost.devstats.cncf.io/) the following stats for the main [OpenCost repository](https://github.com/opencost/opencost/) have grown notably in the past year in CNCF:
 
-* [GitHub Stars](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 2000 to over 3500
-* [GitHub Forks](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 192 to over 400
-* [Contributors](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): increased from 40 to 368
-* [Committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): there are now 65 committers
+* [GitHub Stars](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 2000 to over 3650
+* [GitHub Forks](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 192 to over 425
+* [Contributors](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): increased from 40 to 387
+* [Committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): there are now 67 committers
 * There have been over 800 commits to the primary *develop* branch since launch
 * [21 of the top 50 contributors are not Kubecost employees](https://opencost.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Last%20decade&var-metric=contributions&var-repogroup_name=OpenCost&var-country_name=All&var-companies=All)
 * [Number of new PRs](https://opencost.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&editPanel=1&from=now-1y&to=now&var-period=w&var-repogroup_name=OpenCost): currently average **10 per week**
 * [Median PR Time to Engagement](https://opencost.devstats.cncf.io/d/10/pr-time-to-engagement?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 24 hours
 * [Median PR Open to Merge](https://opencost.devstats.cncf.io/d/16/opened-to-merged?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 24 hours
-* [LinkedIn followers](https://www.linkedin.com/showcase/opencost/): have increased from 70 to 176
-* [CNCF Slack](https://slack.cncf.io/): there are currently 528 Slack members in **#opencost**
+* [LinkedIn followers](https://www.linkedin.com/showcase/opencost/): have increased from 70 to 181
+* [CNCF Slack](https://slack.cncf.io/): there are currently 580 Slack members in **#opencost**
 
 We actively host or take part in various community programs and events, tracked on the [OpenCost Community Calendar](https://bit.ly/opencost-calendar). There is a fortnightly [OpenCost Community Meeting](https://docs.google.com/document/d/1JFB_-sjF8F9UWet1c-dWixdMZY4hri23UlQG5FX5xfY/edit#), where community members and external stakeholders are invited to discuss the project and their experiences with OpenCost to shape future development.
 
 ### Expanding Developer Ecosystem
 
-OpenCost has documented our [contributing guidelines](https://github.com/opencost/opencost/blob/develop/CONTRIBUTING.md) and [security policy](https://github.com/opencost/opencost/blob/develop/SECURITY.md).
+OpenCost has documented our [contributing guidelines](https://github.com/opencost/opencost/blob/develop/CONTRIBUTING.md), [security policy](https://github.com/opencost/opencost/blob/develop/SECURITY.md), and [Governance](https://github.com/opencost/opencost/blob/develop/GOVERNANCE.md).
 
 #### Repositories
 
@@ -147,7 +148,7 @@ As previously documented, OpenCost follows Semantic Versioning 2.0.0 and release
 
 ### **_Demonstrate a substantial ongoing flow of commits and merged contributions._**
 
-As previously documented, [OpenCost currently has 368 contributors and 65 committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost).
+As previously documented, [OpenCost currently has 387 contributors and 67 committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost).
 
 Full details can be found at [CNCF devstats](https://opencost.devstats.cncf.io/) dashboards for OpenCost.
 
