@@ -62,7 +62,7 @@ The dependency for each sub-project and their license information are included i
 * Pipelines - [https://github.com/kubeflow/pipelines/tree/master/third_party](https://github.com/kubeflow/pipelines/tree/master/third_party)
 * Training-operator - [https://github.com/kubeflow/training-operator/tree/master/third_party_licenses](https://github.com/kubeflow/training-operator/tree/master/third_party_licenses)
 * Katib - [https://github.com/kubeflow/katib/blob/master/go.mod](https://github.com/kubeflow/katib/blob/master/go.mod)
-
+* MPI Operator - [https://github.com/kubeflow/mpi-operator/blob/master/go.mod](https://github.com/kubeflow/mpi-operator/blob/master/go.mod)
 When possible, sub-projects in Kubeflow will be brought in line with CNCF guidelines before submission or, in extreme circumstances, the Kubeflow project will seek CNCF governing board exceptions.
 
 ## Maintainers
