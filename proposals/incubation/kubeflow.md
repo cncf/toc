@@ -180,3 +180,4 @@ The Kubeflow project repo-level metrics:
 * [Pipelines](https://github.com/kubeflow/pipelines) - 3k stars, 1.3k forks 
 * [Training-operator](https://github.com/kubeflow/training-operator) - 1.2k stars, 500 forks 
 * [Katib](https://github.com/kubeflow/katib) - 1.2k stars, 362 forks 
+* [MPI Operator](https://github.com/kubeflow/mpi-operator) - 318 stars, 190 forks
