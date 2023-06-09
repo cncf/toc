@@ -133,6 +133,7 @@ The Kubeflow community includes a variety of Slack forums for general discussion
 * Pipelines - [https://github.com/kubeflow/pipelines/issues](https://github.com/kubeflow/pipelines/issues)
 * Training-operator -  [https://github.com/kubeflow/training-operator/issues](https://github.com/kubeflow/training-operator/issues)
 * Katib - [https://github.com/kubeflow/katib/issues](https://github.com/kubeflow/katib/issues)
+* MPI Operator - [https://github.com/kubeflow/mpi-operator/issues](https://github.com/kubeflow/mpi-operator/issues)
 
 ## Community
 
