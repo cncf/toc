@@ -164,6 +164,7 @@ None
 * Pipelines - [https://github.com/kubeflow/pipelines/network/dependents](https://github.com/kubeflow/kubeflow/network/dependents)
 * Training-operator -  [https://github.com/kubeflow/training-operator/network/dependents](https://github.com/kubeflow/training-operator/network/dependents)
 * Katib - [https://github.com/kubeflow/katib/network/dependents](https://github.com/kubeflow/katib/network/dependents)
+* MPI Operator - [https://github.com/kubeflow/mpi-operator/network/dependents](https://github.com/kubeflow/mpi-operator/network/dependents)
 
 ## Releases
 
