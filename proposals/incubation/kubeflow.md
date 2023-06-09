@@ -108,7 +108,10 @@ The current snapshot of the maintainers as defined above (company affiliation ba
     * [Gaocegege](https://github.com/Gaocegege) - Ce Gao (TensorChord)
     * [Johnugeorge](https://github.com/Johnugeorge) - Johnu George (Nutanix)
     * [tenzen-y](https://github.com/tenzen-y) - Yuki Iwai (CyberAgent)
-
+* MPI Operator
+    * [Terrytangyuan](https://github.com/Terrytangyuan) - Yuan Tang (Akuity)
+    * [Alculquicondor](https://github.com/terrytangyuan) - Aldo Culquicondor (Google)
+    * [tenzen-y](https://github.com/tenzen-y) - Yuki Iwai (CyberAgent)
 ## Infrastructure requests (CI/CNCF Cluster)
 
 Kubeflow uses AWS for its CI needs. The community is already working on streamlining the infrastructure provisioning and operations ([https://github.com/kubeflow/testing/issues/1006](https://github.com/kubeflow/testing/issues/1006)). If Kubeflow does get accepted for incubation in CNCF, the community will work towards migrating the ownership of this infrastructure to the CNCF.
