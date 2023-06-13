@@ -150,5 +150,3 @@ If a TOC member steps forward to support the project as a sponsor and determines
 * All “no” outcomes and other exceptions are discussed by the TOC, and then with project and TAG representatives. We will try to give feedback but it may simply be a lack of conviction in the project.
 * If the project is concerned about the timeline, feels they have waited too long, or needs to reach out, please reach out to the TOC via one of their mailing lists or contact the CNCF Staff.
 * Projects are encouraged to participate/attend TOC meetings and reaching out to TAGs for advice or scheduling presentations and discussions.
-
-
