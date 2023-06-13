@@ -56,7 +56,7 @@ While the details of the process are described in detail further for Incubating 
 
 * Applications to move levels is done in the form of a PR on the TOC repo
  * Who: Project
-* As prior applications are closed, the TOC select the next project from the backlog. TOC sponsor(s) is assigned and the project is moved to 'Due Diligence' or 'Active Review' on the project boards depending on which level is proposed.
+* As prior applications are closed, the TOC selects the next project from the backlog. A TOC sponsor(s) is assigned and the project is moved to 'Due Diligence' or 'Active Review' on the project boards depending on which level is proposed.
  * Who: TOC
 * Coordination with project on Due Diligence creation/refresh
  * Who: TOC Sponsor(s) and Project
