@@ -28,7 +28,7 @@ To meet the evolving needs of its community, Kubeflow needs a vendor-neutral fou
 * Kubeflow - [https://github.com/kubeflow/kubeflow/blob/master/ROADMAP.md](https://github.com/kubeflow/kubeflow/blob/master/ROADMAP.md)
 * Pipelines - [https://github.com/kubeflow/pipelines/blob/master/ROADMAP.md](https://github.com/kubeflow/pipelines/blob/master/ROADMAP.md)
 * Katib - [https://github.com/kubeflow/katib/blob/master/ROADMAP.md](https://github.com/kubeflow/katib/blob/master/ROADMAP.md)
-* Notebooks - 
+* Training Operator - [https://github.com/kubeflow/training-operator/blob/master/docs/roadmap.md](https://github.com/kubeflow/training-operator/blob/master/docs/roadmap.md)
 
 ## Sponsors from TOC
 
