@@ -1,0 +1,15 @@
+profiles:
+  default:
+    duration: 1w
+    pass_threshold: 66
+    allowed_voters:
+      teams:
+        - cncf-toc
+      exclude_team_maintainers: true
+  incubation:
+    duration: 26w
+    pass_threshold: 66
+    allowed_voters:
+      teams:
+        - cncf-toc
+      exclude_team_maintainers: true
