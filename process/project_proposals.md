@@ -70,12 +70,14 @@ While the details of the process are described in detail further for Incubating 
   * Who: TOC Sponsor(s) and Project
 * Assuming all outstanding issues are resolved, the TOC opens an internal comment period, about 1 week, for other TOC members to perform an independent review and verify all areas of the project have been evaluated
   * Who: TOC Sponsor(s) and TOC
-* If no further issues are identified, the TOC sponsor(s) open the public comment period on the TOC mailing list. The project is updated on the project board to 'Public Comment'.
+* If no further issues are identified, the TOC sponsor(s) open the public comment period on the TOC mailing list. The project is updated on the project board to 'Public Comment' and **the public comment period is open for two weeks**.
   * Who: TOC Sponsor(s)
-* Provided not additional items are identified during the public comment period, the TOC opens voting on the mailing list. The project is updated on the project board to 'In Voting'.
+* Provided no additional items are identified during the public comment period, the TOC opens voting on the mailing list shortly thereafter (usually about 2 days subject to availability). The project is updated on the project board to 'In Voting'.
   * Who: Initiate - CNCF Support Staff for the TOC, Voting - TOC and community members
 * If the vote passes, the results are emailed and the project is placed in the 'Done' state on the project board.
   * Who: CNCF Support Staff for the TOC
+* An announcement is made conveying the project name and its new level status.
+  * Who: CNCF
 
 #### Incubation process
 
