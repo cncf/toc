@@ -63,19 +63,19 @@ While the details of the process are described in detail further for Incubating 
 * Due Diligence creation or refresh
  * Who: TOC Sponsor(s), Project, TAG(s)
 * Adopter Interviews are conducted, depending on the freshness of prior interviews the TOC may choose to not conduct further interviews or conduct others to ensure coverage by a variety of adopters to explore all facets of the project. The project is updated on the project board.
- * Who: TOC Sponsor(s) and Adopters
+  * Who: TOC Sponsor(s) and Adopters
 * If multiple TOC members are sponsoring, they will conduct their own individual reviews and then coordinate with each other on overall observations, findings, and next steps.
- * TOC Sponsors
+  * TOC Sponsors
 * TOC sponsor(s) re-engages the project to discuss next steps, any blockers that prevent the project from moving, and any actions that need completed but are non-blocking.
- * Who: TOC Sponsor(s) and Project
+  * Who: TOC Sponsor(s) and Project
 * Assuming all outstanding issues are resolved, the TOC opens an internal comment period, about 1 week, for other TOC members to perform an independent review and verify all areas of the project have been evaluated
- * Who: TOC Sponsor(s) and TOC
+  * Who: TOC Sponsor(s) and TOC
 * If no further issues are identified, the TOC sponsor(s) open the public comment period on the TOC mailing list. The project is updated on the project board to 'Public Comment'.
- * Who: TOC Sponsor(s)
+  * Who: TOC Sponsor(s)
 * Provided not additional items are identified during the public comment period, the TOC opens voting on the mailing list. The project is updated on the project board to 'In Voting'.
- * Who: Initiate - CNCF Support Staff for the TOC, Voting - TOC and community members
+  * Who: Initiate - CNCF Support Staff for the TOC, Voting - TOC and community members
 * If the vote passes, the results are emailed and the project is placed in the 'Done' state on the project board.
- * Who: CNCF Support Staff for the TOC
+  * Who: CNCF Support Staff for the TOC
 
 #### Incubation process
 
