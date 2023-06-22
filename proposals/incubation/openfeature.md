@@ -54,10 +54,10 @@ Since achieveing sandbox we have progressed in the development of our SDKs:
 Providers are responsible for performing flag evaluations and provide an abstraction between the underlying flag management system and the OpenFeature SDK. Providers can wrap a vendor SDK, call a bespoke flag evaluation REST API, or even parse some locally stored file to resolve flag values. This allows the underlying flag evaluation logic to be changed without requiring a major code refactor.
 
 ##### Providers
-- .NET: Cloudbees, fladg, Go feature, LaunchDarkly, Split
-- GO: Cloudbees, fladg, Flipt, Go feature, Split
-- Java: Cloudbees, fladg, Flagsmith, Go feature, Split
-- JavaScript: Cloudbees, fladg, Go feature, LaunchDarkly, PostHog, Split
+- .NET: Cloudbees, fladg, Go feature flag, LaunchDarkly, Split
+- GO: Cloudbees, fladg, Flipt, Go feature flag, Split
+- Java: Cloudbees, fladg, Flagsmith, Go feature flag, Split
+- JavaScript: Cloudbees, fladg, Go feature flag, LaunchDarkly, PostHog, Split
 - PHP: Cloudbees, fladg, Split
 
 ## Incubation Stage Requirements
