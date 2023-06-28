@@ -1,0 +1,32 @@
+name: Repository creation in cncf-tags org
+description: Create a repository in the cncf-tags GitHub Org
+title: "[REPO CREATION] Create <github-repo> in cncf-tags"
+body:
+- id: repo_name
+  type: input
+  attributes:
+    label: Requested name for new repository
+    placeholder: e.g. container-device-interface
+  validations:
+    required: true
+- id: description
+  type: textarea
+  attributes:
+    label: What should the repo description be?
+  validations:
+    required: false
+- id: tag
+  type: input
+  attributes:
+    label: What TAG/WG does this fall under?
+    description: See https://github.com/cncf/toc/tree/main/tags if you need a reference.
+    placeholder: e.g. TAG Runtime (and WG COD)
+  validations:
+    required: true
+- id: context
+  type: textarea
+  attributes:
+    label: Additional context for request
+    placeholder: Any additional information or context to describe the request.
+  validations:
+    required: false
