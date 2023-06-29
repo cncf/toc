@@ -51,7 +51,7 @@ Sandbox projects should be early-stage projects that the CNCF TOC believes warra
 * Projects commissioned or sanctioned by the CNCF, including initial code for CNCF WG collaborations, and "experimental" projects
 * Any project that realistically intends to join CNCF Incubation in future and wishes to lay the foundations for that
 
-To apply for inclusion into the Sandbox, projects should use [this form](https://docs.google.com/forms/d/1bJhG1MuM981uQXcnBMv4Mj9yfV5_q5Kwk3qhBCLa_5A/edit).
+To apply for inclusion into the Sandbox, projects should use apply at [sandbox.cncf.io[(https://sandbox.cncf.io).
 The TOC will review on a rotating basis, currently every two months as of June 2020.
 
 ## Project Graduation Process: Sandbox to Incubating
