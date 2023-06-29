@@ -22,9 +22,9 @@ Below are some highlights of WasmEdge’s community growth in the sandbox.
 * The community has grown since WasmEdge entered the CNCF Sandbox.
     * We have held monthly meetings since October 2021. The meeting note can be found [_here_](https://docs.google.com/document/d/1iFlVl7R97Lze4RDykzElJGDjjWYDlkI8Rhf8g4dQ5Rk/edit), and the recording meeting video can be found [_here_](https://www.youtube.com/playlist?list=PL4H9HXvnb_jYbsHBOMk-jayEMGrl09VSO).
     * Number of maintainers: 4 → 14
-    * Number of contributors: [_6_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Before%20joining%20CNCF&var-repogroup_name=All) → [_168_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Since%20joining%20CNCF&var-repogroup_name=All)
-    * Number of stars: 819 → 6051
-    * Number of forks: 43 → 543
+    * Number of contributors: [_6_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Before%20joining%20CNCF&var-repogroup_name=All) → [_176_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Since%20joining%20CNCF&var-repogroup_name=All)
+    * Number of stars: 819 → 6200
+    * Number of forks: 43 → 558
 
 ### **Technical metrics**
 
