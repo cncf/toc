@@ -9,6 +9,3 @@ contact_links:
   - name: Explore Incubation Backlog
     url: https://github.com/cncf/toc/projects/7?query=is%3Aopen+sort%3Aupdated-desc
     about: View the current backlog of projects proposing to transition to CNCF Incubation
-  - name: Open a ticket with CNCF Service Desk
-    url: http://servicedesk.cncf.io/
-    about: Get support from CNCF through the service desk (https://github.com/cncf/servicedesk)
