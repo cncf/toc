@@ -18,12 +18,13 @@ You can find WasmEdge’s devstats page and dashboards [_here_](https://wasmedge
 
 Below are some highlights of WasmEdge’s community growth in the sandbox. 
 
-* WasmEdge now has [_168 contributors_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Last%202%20years&var-repogroup_name=All) including 14 maintainers from[_53 organizations_](https://wasmedge.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Since%20joining%20CNCF&var-metric=contributions)and [_22 countries and regions_](https://wasmedge.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&viewPanel=1). There are [_343.92 commits_](https://wasmedge.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=m&var-metric=commits&var-repogroup_name=All&var-country_name=All&var-company_name=All&var-company=all&from=1619712000000&to=now) per month, with [_44.32 PR_](https://wasmedge.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=m&var-metric=mergedprs&var-repogroup_name=All&var-country_name=All&var-company_name=All&var-company=all&from=1619712000000&to=now) merged from the day when WasmEdge joined the CNCF Sandbox project.
+* WasmEdge now has [_178 contributors_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Last%202%20years&var-repogroup_name=All) including 16 maintainers / committers / reviewers from[_53 organizations_](https://wasmedge.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Since%20joining%20CNCF&var-metric=contributions)and [_22 countries and regions_](https://wasmedge.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&viewPanel=1). There are [_343.92 commits_](https://wasmedge.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=m&var-metric=commits&var-repogroup_name=All&var-country_name=All&var-company_name=All&var-company=all&from=1619712000000&to=now) per month, with [_44.32 PR_](https://wasmedge.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=m&var-metric=mergedprs&var-repogroup_name=All&var-country_name=All&var-company_name=All&var-company=all&from=1619712000000&to=now) merged from the day when WasmEdge joined the CNCF Sandbox project.
 * The community has grown since WasmEdge entered the CNCF Sandbox.
     * We have held monthly meetings since October 2021. The meeting note can be found [_here_](https://docs.google.com/document/d/1iFlVl7R97Lze4RDykzElJGDjjWYDlkI8Rhf8g4dQ5Rk/edit), and the recording meeting video can be found [_here_](https://www.youtube.com/playlist?list=PL4H9HXvnb_jYbsHBOMk-jayEMGrl09VSO).
-    * Number of maintainers: 4 → 14
-    * Number of contributors: [_6_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Before%20joining%20CNCF&var-repogroup_name=All) → [_176_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Since%20joining%20CNCF&var-repogroup_name=All)
-    * Number of stars: 819 → 6200
+    * Number of maintainers: 4 → 4
+    * Number of maintainers / committers / reviewers: 4 → 16
+    * Number of contributors: [_6_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Before%20joining%20CNCF&var-repogroup_name=All) → [_178_](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Since%20joining%20CNCF&var-repogroup_name=All)
+    * Number of stars: 819 → 6204
     * Number of forks: 43 → 558
 
 ### **Technical metrics**
@@ -72,7 +73,7 @@ Below is a selected list of end-user organizations and products that are using W
 
 ***Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project.***
 
-There are 14 core team members for WasmEdge. Among them, 4 are maintainers, and 10 are committers/reviewers from 5 different organizations (Second State, ByteDance, SRA VJTI, Southeast University, and the University of Science and Technology of China).
+There are 14 core team members for WasmEdge. Among them, 4 are maintainers, and 12 are committers/reviewers from 5 different organizations (Second State, ByteDance, SRA VJTI, Southeast University, and the University of Science and Technology of China).
 
 Maintainers have admin access to the WasmEdge repo. committers/reviewers have write/triage access to the WasmEdge repo. See more differences [_here_](https://github.com/WasmEdge/WasmEdge/blob/master/docs/GOVERNANCE.md).
 
