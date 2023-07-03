@@ -1,6 +1,6 @@
 ## Projects Table
 
-**Project**|**Sponsor**|**TOC Deck**|**Accepted**|**Maturity Level**
+**Project**|**Sponsor**|**Applied**|**Accepted**|**Maturity Level**
 :-----:|:-----:|:-----:|:-----:|:-----:
 [Kubernetes](https://kubernetes.io/)|Alexis Richardson|N/A|[3/10/16](https://cncf.io/news/news/2015/07/techcrunch-kubernetes-hits-10-google-donates-technology-newly-formed-cloud-native)|Graduated
 [Prometheus](https://prometheus.io/)|Alexis Richardson|[3/4/16](https://docs.google.com/presentation/d/1GtVX-ppI95LhrijprGENsrpq78-I1ttcSWLzMVk5d8M/edit?usp=sharing)|[5/9/16](https://cncf.io/news/announcement/2016/05/cloud-native-computing-foundation-accepts-prometheus-second-hosted-project)|Graduated
@@ -72,7 +72,7 @@
 [SchemaHero](https://github.com/schemahero/schemahero)|TOC Vote|[9/10/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/schemahero/schemahero)|Sandbox
 [cdk8s](https://github.com/awslabs/cdk8s)|TOC Vote|[10/19/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/awslabs/cdk8s)|Sandbox
 [cert-manager](https://github.com/cert-manager/cert-manager)|TOC Vote|[10/27/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/cert-manager/cert-manager)|Incubating
-[OpenKruise](https://github.com/openkruise/kruise)|TOC Vote|[11/3/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/openkruise/kruise)|Sandbox
+[OpenKruise](https://github.com/openkruise/kruise)|TOC Vote|[11/3/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/openkruise/kruise)|Incubating
 [Tinkerbell](https://github.com/tinkerbell)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/tinkerbell)|Sandbox
 [Pravega](https://github.com/pravega)|TOC Vote|[11/6/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/pravega)|Sandbox
 [Kyverno](https://github.com/kyverno/kyverno/)|TOC Vote|[11/9/2020](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[11/10/2020](https://github.com/kyverno/kyverno/)|Sandbox
@@ -97,7 +97,7 @@
 [Pixie](https://github.com/pixie-labs/pixie)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/15/2021](https://github.com/pixie-labs/pixie)| Sandbox
 [Meshery](https://github.com/layer5io/meshery)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/21/2021](https://github.com/layer5io/meshery)| Sandbox
 [Service Mesh Performance](https://github.com/layer5io/service-mesh-performance)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[6/21/2021](https://github.com/layer5io/service-mesh-performance)| Sandbox
-[KubeVela](https://github.com/oam-dev/kubevela)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/4/2021](https://github.com/oam-dev/kubevela)| Sandbox
+[KubeVela](https://github.com/oam-dev/kubevela)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/4/2021](https://github.com/oam-dev/kubevela)| Incubating
 [kube-vip](https://github.com/kube-vip/kube-vip)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/kube-vip/kube-vip)| Sandbox
 [KubeDL](https://github.com/alibaba/kubedl)|TOC Vote|[6/22/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/14/2021](https://github.com/alibaba/kubedl)| Sandbox
 [Krustlet](https://github.com/deislabs/krustlet)|TOC Vote|[7/13/2021](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842)|[5/24/2021](https://github.com/deislabs/krustlet)| Sandbox
@@ -153,6 +153,16 @@
 [Carina](https://github.com/carina-io/carina)|TOC Vote|[10/10/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C87)|[12/13/2022](https://github.com/carina-io/carina)|Sandbox
 [ko](https://github.com/ko-build/ko)|TOC Vote|[10/18/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C88)|[12/13/2022](https://github.com/ko-build/ko)|Sandbox
 [Kubescape](https://github.com/kubescape/kubescape)|TOC Vote|[10/31/2022](https://docs.google.com/spreadsheets/d/1Nnh_usr0tSZxaUpxTusqeIqKxMmvuEViRkyO9e_Do40/edit#gid=1136111842&range=C89)|[12/13/2022](https://github.com/kubescape/kubescape)|Sandbox
+[Clusternet](https://github.com/clusternet)|TOC Vote|[11/14/2022](https://github.com/clusternet)|[03/07/2023](https://github.com/cncf/sandbox/issues/10)|Sandbox
+[Inspektor Gadget](https://github.com/inspektor-gadget)|TOC Vote|[10/27/2022](https://github.com/inspektor-gadget) | [03/07/2023](https://github.com/cncf/sandbox/issues/7)|Sandbox
+[Keycloak](https://github.com/keycloak)| Ricardo Rocha | [06/18/2020](https://github.com/cncf/toc/pull/463) |[04/11/2023](https://lists.cncf.io/g/cncf-toc/message/7960)| Incubating
+[PipeCD](https://github.com/pipe-cd)| TOC Vote | [11/18/2022](https://github.com/pipe-cd) |[05/17/2023](https://github.com/cncf/sandbox/issues/12)| Sandbox
+[Kepler](https://github.com/sustainable-computing-io/kepler)| TOC Vote | [12/19/2022](https://github.com/sustainable-computing-io/kepler) |[05/17/2023](https://github.com/cncf/sandbox/issues/19)| Sandbox
+[SlimToolkit](https://github.com/slimtoolkit/slim)| TOC Vote | [1/3/2023](https://github.com/slimtoolkit/slim) |[05/17/2023](https://github.com/cncf/sandbox/issues/22)| Sandbox
+[Headlamp](https://github.com/headlamp-k8s/headlamp)| TOC Vote | [1/10/2023](https://github.com/headlamp-k8s/headlamp) |[05/17/2023](https://github.com/cncf/sandbox/issues/25)| Sandbox
+[SOPS](https://github.com/mozilla/sops)| TOC Vote | [2/17/2023](https://github.com/mozilla/sops) |[05/17/2023](https://github.com/cncf/sandbox/issues/28)| Sandbox
+
+
 
 
 
@@ -212,13 +222,16 @@
 | [Keptn](https://keptn.sh/) | 6/23/20   | 7/13/2022 | [Incubating](https://github.com/cncf/toc/pull/670)|
 | [Cloud Custodian](https://cloudcustodian.io) | 6/23/20   | 9/14/2022 | [Incubating](https://github.com/cncf/toc/pull/644)|
 | [cert-manager](https://github.com/cert-manager/cert-manager)| 10/27/2020 | 10/19/2022 | [Incubating](https://github.com/cncf/toc/pull/786)
+| [KubeVela](https://github.com/oam-dev/kubevela)| 6/22/2021 | 2/27/2023 | [Incubating](https://github.com/cncf/toc/pull/890)|
+| [OpenKruise](https://github.com/openkruise/kruise)| 11/3/2020 | 2/27/2023 | [Incubating](https://github.com/cncf/toc/pull/846)|
 
 
 ## Project Security Audits
 
 **Project**|**Audit Date and Report**|**Announcement**|**Directed by**|**Audit Vendor**
 :------:|:--------:|:----------:|:------:|:--------:|
-[Kubernetes](https://kubernetes.io/)|[8/06/2019](https://github.com/kubernetes/community/tree/master/sig-security/security-audit-2019/findings)|[Announcement](https://www.cncf.io/blog/2019/08/06/open-sourcing-the-kubernetes-security-audit/)| CNCF (Security Audit WG) | [Trail of Bits](https://www.trailofbits.com/) & [Atredis Partners](https://www.atredis.com/)
+[Kubernetes](https://kubernetes.io/)|[8/06/2019](https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2019/findings)|[Announcement](https://www.cncf.io/blog/2019/08/06/open-sourcing-the-kubernetes-security-audit/)| CNCF (Security Audit WG) | [Trail of Bits](https://www.trailofbits.com/) & [Atredis Partners](https://www.atredis.com/)
+[Kubernetes](https://kubernetes.io/)|[4/19/2023](https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2021-2022/findings)|[Announcement](https://www.cncf.io/blog/2023/04/19/new-kubernetes-security-audit-complete-and-open-sourced/)| CNCF (Kubernetes SIG Security External Audit Subproject) | [NCC Group](https://www.nccgroup.com/)
 [Helm](https://github.com/helm)|[11/04/2019](https://github.com/helm/community/blob/master/security-audit/HLM-01-report.pdf)|[Announcement](https://helm.sh/blog/2019-11-04-helm-security-audit-results/)| CNCF (Security Audit WG) | [Cure53](https://cure53.de/) & [Trail of Bits](https://www.trailofbits.com/)
 [gRPC](http://www.grpc.io/)|[10/29/2019](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)|[Announcement](https://github.com/grpc/grpc/blob/master/doc/security_audit.md)| CNCF (Security Audit WG) | [Cure53](https://cure53.de/)
 [etcd](https://github.com/etcd-io/etcd)| [8/5/2020](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf) | [Announcement](https://www.cncf.io/blog/2020/08/05/etcd-security-audit/) | CNCF (Security Audit WG) | [Trail of Bits](https://www.trailofbits.com/)
@@ -259,6 +272,8 @@
 [Cilium](https://github.com/cilium/cilium) | [2/13/2023](https://github.com/cilium/cilium.io/blob/main/Security-Reports/CiliumSecurityAudit2022.pdf)| [Announcement](https://www.cncf.io/blog/2023/02/13/a-well-secured-project-cilium-security-audits-2022-published/) | CNCF | [Ada Logics](https://adalogics.com)
 [containerd (fuzzing)](https://github.com/containerd/containerd) | [3/2/2023](https://github.com/containerd/containerd.io/blob/main/static/img/ADA-fuzzing-audit-21-22.pdf)| [Announcement](https://www.cncf.io/blog/2023/03/02/containerd-completes-fuzzing-audit/) | CNCF | [Ada Logics](https://adalogics.com)
 [The Notary Project (fuzzing)](https://github.com/notaryproject) | [3/21/2023](https://github.com/notaryproject/notaryproject/blob/main/security/reports/fuzzing/ADA-fuzzing-audit-22-23.pdf)| [Announcement](https://www.cncf.io/blog/2023/03/21/the-notary-project-completes-fuzzing-security-audit/) | CNCF | [Ada Logics](https://adalogics.com)
+[Falco](https://github.com/falcosecurity/falco) | [3/22/2023](https://falco.org/blog/falco-security-audit-2023/) | [Announcement](https://falco.org/blog/falco-security-audit-2023/) | CNCF | [OSTIF](https://ostif.org/)
+[Vitess](https://github.com/vitessio/vitess) | [6/5/2023](https://github.com/vitessio/vitess/blob/main/doc/VIT-03-report-security-audit.pdf)| [Announcement](https://vitess.io/blog/2023-06-05-vitess-security-audit/) | CNCF | [Ada Logics](https://adalogics.com)
 
 
 ## Archived Projects

@@ -86,7 +86,12 @@ Some key points:
 ### Application into Sandbox 
 
 Projects apply through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
-Frequency of reviews can be found on the [repo's README under "Frequency"](https://github.com/cncf/sandbox/blob/main/README.md#Frequency).  
+Frequency of reviews can be found on the [repo's README under "Frequency"](https://github.com/cncf/sandbox/blob/main/README.md#Frequency).
+
+### Project onboarding
+
+Once the TOC decides to accept your project with an official vote, a list of tasks will be generated for submitters to work on. Look for tags `project onboarding` and `sandbox`
+to see [examples from previous projects](https://github.com/cncf/toc/issues?q=is%3Aissue+is%3Aopen+label%3A%22project+onboarding%22+label%3Asandbox)
 
 ### Annual review
 
