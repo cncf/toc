@@ -86,13 +86,13 @@ See the [Sandbox guidelines](https://github.com/cncf/toc/blob/main/process/sandb
 While the details of the process are described in detail further for Incubating and Graduting proposals, the high level steps that occur when a project moves levels are as follows:
 
 * Applications to move levels is done in the form of a PR on the TOC repo
- * Who: Project
+  * Who: Project
 * As prior applications are closed, the TOC selects the next project from the backlog. A TOC sponsor(s) is assigned and the project is moved to 'Due Diligence' or 'Active Review' on the project boards depending on which level is proposed.
- * Who: TOC
+  * Who: TOC
 * Coordination with project on Due Diligence creation/refresh
- * Who: TOC Sponsor(s) and Project
+  * Who: TOC Sponsor(s) and Project
 * Due Diligence creation or refresh
- * Who: TOC Sponsor(s), Project, TAG(s)
+  * Who: TOC Sponsor(s), Project, TAG(s)
 * Adopter Interviews are conducted, depending on the freshness of prior interviews the TOC may choose to not conduct further interviews or conduct others to ensure coverage by a variety of adopters to explore all facets of the project. The project is updated on the project board.
   * Who: TOC Sponsor(s) and Adopters
 * If multiple TOC members are sponsoring, they will conduct their own individual reviews and then coordinate with each other on overall observations, findings, and next steps.
