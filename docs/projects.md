@@ -275,6 +275,7 @@
 [Falco](https://github.com/falcosecurity/falco) | [3/22/2023](https://falco.org/blog/falco-security-audit-2023/) | [Announcement](https://falco.org/blog/falco-security-audit-2023/) | CNCF | [OSTIF](https://ostif.org/)
 [Vitess](https://github.com/vitessio/vitess) | [6/5/2023](https://github.com/vitessio/vitess/blob/main/doc/VIT-03-report-security-audit.pdf)| [Announcement](https://vitess.io/blog/2023-06-05-vitess-security-audit/) | CNCF | [Ada Logics](https://adalogics.com)
 [Dapr (fuzzing)](https://github.com/dapr) | [6/30/2023](https://docs.dapr.io/docs/Dapr-june-2023-fuzzing-audit-report.pdf)| [Announcement](https://blog.dapr.io/posts/2023/06/30/dapr-completes-fuzzing-audit/) | CNCF | [Ada Logics](https://adalogics.com)
+[Notation](https://github.com/notaryproject) | [7/11/2023](https://github.com/notaryproject/notaryproject/blob/main/security/reports/audit/ADA-notation-security-audit-23.pdf)| [Announcement](https://notaryproject.dev/blog/2023/notation-completes-security-audit/) | CNCF | [Ada Logics](https://adalogics.com)
 
 
 ## Archived Projects
