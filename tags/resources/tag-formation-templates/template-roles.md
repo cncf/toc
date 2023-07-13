@@ -8,8 +8,7 @@ Beyond the roles described in this document the TAG has many contributors, all s
 - [Roles within the `<TAG NAME>`](#roles-within-the-tag-name)
   - [Chairs](#chairs)
   - [Technical lead](#technical-lead)
-  - [Working Group Lead](#working-group-lead)
-  - [Project Lead](#project-lead)
+  - [Working Group or Project Lead](#working-group-or-project-lead)
   - [TOC liaison](#toc-liaison)
   - [Emeritus Chair](#emeritus-chair)
 
@@ -42,7 +41,7 @@ For more information on TAG Chair responsibilities and expectations, please refe
 ## Technical lead
 
 A technical lead (TL) expands the bandwidth of the leadership team in terms of covering technical areas, growing the community, organizing events or doing TAG communications.
-Proposals must have a TL or Chair working as an active sponsor.
+Applications must have a TL or Chair working as an active sponsor.
 TLs are experienced contributors within TAG, often recognized as successful past project leads, through their triage and planning, content and community management, or other attributes the Chairs determine to be valued for the TAG. TLs may be term limited akin to Chairs, the recommended time-frame is two years, but is dependent upon each TAG to define as their needs and activities warrant.
 Technical leads go through an [election process](https://github.com/cncf/toc/blob/master/tags/cncf-tags.md#elections) with a final CNCF TOC vote.
 The [leadership election process is described here](template-leadership-election-process.md#technical-lead).
@@ -60,40 +59,27 @@ The [leadership election process is described here](template-leadership-election
 
 ## Working Group or Project Lead
 
-Depending on the nature of the work being pursued by the TAG, the TAG Leadership may determine, with TOC liaison approval, that a particular project or effort warrants a working group. A working group or project lead(s) is an experienced contributor to the TAG that volunteers to lead a scoped activity and group alongside one or two others.  The number of leads may vary greatly depending on the defined scope and level of effort. Working Group or Project Leads are confirmed by the TAG Leadership and coordinate closely with the TAG Leadership sponsor for the group to keep them apprised of the group's progress and deliverables.
-Working groups as community governance structure are defined in the [CNCF TAG](https://github.com/cncf/toc/blob/master/tags) folder.
-TAG Leadership is responsible facilitating the working group applications and ensuring the group's work is done transparently, in a manner accessible and traceable for everyone.
-One of the TAG Leadership team (may be a Chair or TL) serves as the group sponsor and provides guidance to the group leads.
-Group leads are signed off by the TAG Chairs, the approval of the working group is given by TOC Liaisons. Should a group need to exist in perpetuity, the TAG Leadership is expected to provide term-limits or opportunities to rotate WG leadership as part of their governance.
+Depending on the nature of the work being pursued by the TAG, the TAG Leadership may determine, with TOC Liaison approval, that a particular project or effort warrants a longer term project.
+Working Groups as community governance structure are defined in the [CNCF TOC](https://github.com/cncf/toc/tree/main/workinggroups) repository.
+Unlike Working Groups, Projects require a predetermined time frame and are limited in scope and focused on a central deliverable.
 
-**A working group lead is expected to**:
-* Schedule, host, plan and facilitate meetings for the working group.
-* Provide technical direction unique to the working group.
-* Plan working group deliverables.
-* Report to the TAG on the working group status.
-* Evolve the working group.
+A Working Group or Project Lead(s) is an experienced contributor to the TAG that volunteers to lead a scoped activity and group alongside one or two others.
+The number of leads may vary greatly depending on the defined scope and level of effort.
+Working Group or Project Leads are confirmed by the TAG Leadership and coordinate closely with the TAG Leadership sponsor for the group to keep them apprised of the group's progress and deliverables.
+TAG Leadership is responsible for facilitating the group lead applications and ensuring the group's work is done transparently, in a manner accessible and traceable for everyone.
+One of the TAG Leadership team (maybe a Chair or TL) serves as the group sponsor and provides guidance to the group leads.
+Working Group or Project Lead(s) are signed off by the TAG Chairs, the approval is given by TOC Liaisons.
+Should a group need to exist in perpetuity, the TAG Leadership is expected to provide term-limits or opportunities to rotate group leadership as part of their governance.
+
+**The tasks of a working group lead or project lead may include the following**:
+* Schedule, host, plan and facilitate meetings for the group.
+* Provide technical direction unique to the group.
+* Plan group deliverables.
+* Report to the TAG on the group status.
 * Garner active participation.
 * Establish documents and correct permissions for contributions to occur.
-* Contribute content to the working group.
-* Onboard and setup the working group lead successor.
-
-## Project Lead
-
-A project lead manages a community group for a specified period of time and works to achieve a specific outcome that has been previously discussed and agreed upon.
-Unlike working groups, projects require a predetermined time frame and are limited in scope and focused on a central deliverable. The project proposal must be discussed at a meeting and actively communicated to the entire TAG community.
-A TAG Chair or TL acts as a sponsor of the project and dedicates a portion of their time to actively support the effort.
-TAG Chairs must sign off on the establishment of the project group.
-Due to the limited scope of the role, there are no specific requirements for structuring the selection process for the project lead.  
-The TAG Chairs are responsible for selecting a suitable project lead and must ensure that the establishment of the project is transparent, accessible, and understood by all.
-
-**A project lead is expected to**:
-* Schedule, host, plan and facilitate meetings for the project.
-* Provide technical direction unique to the project.
-* Plan the project deliverable.
-* Report to the TAG on the project status.
-* Garner active participation.
-* Establish documents and correct permissions for contributions to occur.
-* Contribute content to the project.
+* Contribute content to the group.
+* Onboard and setup the group lead successor.
 
 ## TOC liaison
 
