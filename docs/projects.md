@@ -166,7 +166,7 @@
 [HwameiStor](https://github.com/hwameistor/hwameistor)| TOC Vote | [03/06/2023](https://github.com/hwameistor/hwameistor) |[06/21/2023](https://github.com/cncf/sandbox/issues/29)| Sandbox
 [kpt](https://github.com/GoogleContainerTools/kpt)| TOC Vote | [04/02/2023](https://github.com/GoogleContainerTools/kpt) |[06/21/2023](https://github.com/cncf/sandbox/issues/34)| Sandbox
 [Microcks](https://github.com/microcks/microcks)| TOC Vote | [04/26/2023](https://github.com/microcks/microcks) |[06/22/2023](https://github.com/cncf/sandbox/issues/37)| Sandbox
-[Kubeclipper](https://github.com/kubeclipper/kubeclipper)| TOC Vote | [03/15/2023](https://github.com/microcks/microcks) |[06/29/2023](https://github.com/cncf/sandbox/issues/31)| Sandbox
+[Kubeclipper](https://github.com/kubeclipper/kubeclipper)| TOC Vote | [03/15/2023](https://github.com/kubeclipper/kubeclipper) |[06/29/2023](https://github.com/cncf/sandbox/issues/31)| Sandbox
 
 
 
