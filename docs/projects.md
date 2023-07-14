@@ -161,6 +161,12 @@
 [SlimToolkit](https://github.com/slimtoolkit/slim)| TOC Vote | [1/3/2023](https://github.com/slimtoolkit/slim) |[05/17/2023](https://github.com/cncf/sandbox/issues/22)| Sandbox
 [Headlamp](https://github.com/headlamp-k8s/headlamp)| TOC Vote | [1/10/2023](https://github.com/headlamp-k8s/headlamp) |[05/17/2023](https://github.com/cncf/sandbox/issues/25)| Sandbox
 [SOPS](https://github.com/mozilla/sops)| TOC Vote | [2/17/2023](https://github.com/mozilla/sops) |[05/17/2023](https://github.com/cncf/sandbox/issues/28)| Sandbox
+[Eraser](https://github.com/Azure/eraser)| TOC Vote | [1/6/2023](https://github.com/Azure/eraser) |[06/21/2023](https://github.com/cncf/sandbox/issues/24)| Sandbox
+[Xline](https://github.com/datenlord/xline)| TOC Vote | [1/6/2023](https://github.com/datenlord/xline) |[06/21/2023](https://github.com/cncf/sandbox/issues/11)| Sandbox
+[HwameiStor](https://github.com/hwameistor/hwameistor)| TOC Vote | [03/06/2023](https://github.com/hwameistor/hwameistor) |[06/21/2023](https://github.com/cncf/sandbox/issues/29)| Sandbox
+[kpt](https://github.com/GoogleContainerTools/kpt)| TOC Vote | [04/02/2023](https://github.com/GoogleContainerTools/kpt) |[06/21/2023](https://github.com/cncf/sandbox/issues/34)| Sandbox
+[Microcks](https://github.com/microcks/microcks)| TOC Vote | [04/26/2023](https://github.com/microcks/microcks) |[06/22/2023](https://github.com/cncf/sandbox/issues/37)| Sandbox
+[Kubeclipper](https://github.com/kubeclipper/kubeclipper)| TOC Vote | [03/15/2023](https://github.com/microcks/microcks) |[06/29/2023](https://github.com/cncf/sandbox/issues/31)| Sandbox
 
 
 
