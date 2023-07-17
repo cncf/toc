@@ -33,7 +33,7 @@ The CNCF provides a [list of services](https://www.cncf.io/services-for-projects
 
 Do you want to contribute to a project? We have a [guide](https://contribute.cncf.io/contributors/) to get you started.
 
-If you would like to know more about project lifecycle, we have [outlined the process](https://github.com/cncf/toc/blob/main/process/README.md). If you have any questions or don't know where to start, please open an [issue](https://github.com/cncf/toc/issues).
+If you would like to know more about the project lifecycle we use, we have [outlined the process](https://github.com/cncf/toc/blob/main/process/README.md). If you have any questions or don't know where to start, please open an [issue](https://github.com/cncf/toc/issues).
 
 ## Meeting Time
 
