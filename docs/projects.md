@@ -282,6 +282,7 @@
 [Vitess](https://github.com/vitessio/vitess) | [6/5/2023](https://github.com/vitessio/vitess/blob/main/doc/VIT-03-report-security-audit.pdf)| [Announcement](https://vitess.io/blog/2023-06-05-vitess-security-audit/) | CNCF | [Ada Logics](https://adalogics.com)
 [Dapr (fuzzing)](https://github.com/dapr) | [6/30/2023](https://docs.dapr.io/docs/Dapr-june-2023-fuzzing-audit-report.pdf)| [Announcement](https://blog.dapr.io/posts/2023/06/30/dapr-completes-fuzzing-audit/) | CNCF | [Ada Logics](https://adalogics.com)
 [Notation](https://github.com/notaryproject) | [7/11/2023](https://github.com/notaryproject/notaryproject/blob/main/security/reports/audit/ADA-notation-security-audit-23.pdf)| [Announcement](https://notaryproject.dev/blog/2023/notation-completes-security-audit/) | CNCF | [Ada Logics](https://adalogics.com)
+[Knative (fuzzing)](https://github.com/knative) | [7/13/2023](https://github.com/knative/docs/tree/main/reports/ADA-knative-fuzzing-audit-22-23.pdf)| [Announcement](https://knative.dev/blog/events/fuzzing-audit-2023/) | CNCF | [Ada Logics](https://adalogics.com)
 
 
 ## Archived Projects
