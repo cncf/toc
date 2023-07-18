@@ -3,7 +3,7 @@
 *Approved by TOC: 2018-06-11*
 
 [العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch)
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) 
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -196,3 +196,17 @@ Deze technieken maken los-gekoppelde systemen mogelijk, die veerkrachtig, beheer
 
 De Cloud Native Computing Foundation stelt zich als doel om de adoptie van dit paradigma te stimuleren door een eco-systeem van open source en vendor-neutrale projecten aan te moedigen en te faciliteren.
 Wij democratiseren state-of-the art software ontwikkel patterns, om deze innovaties voor iedereen toegankelijk te maken.
+
+## বাংলা:
+
+ক্লাউড নেটিভ প্রযুক্তি প্রতিষ্ঠানগুলিকে আধুনিক, গতিশীল পদ্ধতিতে স্কেলেবল অ্যাপ্লিকেশন তৈরি এবং চালানোর ক্ষমতা দেয়
+পরিবেশ যেমন সরকারী, ব্যক্তিগত, এবং হাইব্রিড মেঘ। কন্টেইনার, সার্ভিস মেশ, মাইক্রোসার্ভিস, অপরিবর্তনীয়
+অবকাঠামো, এবং ঘোষণামূলক এপিআই এই পদ্ধতির উদাহরণ দেয়।
+
+এই কৌশলগুলি শিথিলভাবে সংযুক্ত সিস্টেমগুলিকে সক্ষম করে যা স্থিতিস্থাপক, পরিচালনাযোগ্য এবং পর্যবেক্ষণযোগ্য। একত্রে বা মিশ্রিত
+শক্তিশালী অটোমেশন, তারা প্রকৌশলীদেরকে ঘন ঘন এবং অনুমানযোগ্যভাবে ন্যূনতম সাথে উচ্চ-প্রভাব পরিবর্তন করতে দেয়
+পরিশ্রম
+
+ক্লাউড নেটিভ কম্পিউটিং ফাউন্ডেশন এই দৃষ্টান্তটি গ্রহণ করার চেষ্টা করে
+ওপেন সোর্স, বিক্রেতা-নিরপেক্ষ প্রকল্পের বাস্তুতন্ত্র। আমরা এইগুলি তৈরি করার জন্য অত্যাধুনিক নিদর্শনগুলিকে গণতন্ত্রীকরণ করি৷
+প্রত্যেকের জন্য অ্যাক্সেসযোগ্য উদ্ভাবন।
