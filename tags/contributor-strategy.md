@@ -8,6 +8,6 @@ contributor, governance, and related [templates](https://github.com/cncf/project
 
 For people new to this space, you can learn more about the purpose, objectives, and responsibilities of [CNCF TAGs](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md).
 
-The [TAG Contributor Strategy charter]([/CHARTER.md](https://github.com/cncf/tag-contributor-strategy/blob/main/CHARTER.md)) outlines the scope of our group activities. To get involved, our [Contributing Guide](/CONTRIBUTING.md) lays out more details.
+The [TAG Contributor Strategy charter](https://github.com/cncf/tag-contributor-strategy/blob/main/CHARTER.md) outlines the scope of our group activities. To get involved, you can have a look at our [Contributing Guide](/CONTRIBUTING.md) which lays out more details.
 
 To learn more please vist us on [Github](https://github.com/cncf/tag-contributor-strategy/)
