@@ -4,7 +4,7 @@ Contributor Strategy is a [Technical Advisory Group](https://github.com/cncf/toc
 
 If you are looking for how-to resources produced by the TAG, please visit
 [contribute.cncf.io](https://contribute.cncf.io/) or have a look at the
-contributor, goverance, and related [templates](https://github.com/cncf/project-template).
+contributor, governance, and related [templates](https://github.com/cncf/project-template).
 
 For people new to this space, you can learn more about the purpose, objectives, and responsibilities of [CNCF TAGs](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md).
 
