@@ -10,4 +10,4 @@ For people new to this space, you can learn more about the purpose, objectives, 
 
 The [TAG Contributor Strategy charter](https://github.com/cncf/tag-contributor-strategy/blob/main/CHARTER.md) outlines the scope of our group activities. To get involved, you can have a look at our [Contributing Guide](/CONTRIBUTING.md) which lays out more details.
 
-To learn more please vist us on [Github](https://github.com/cncf/tag-contributor-strategy/)
+To learn more please visit our [GitHub repository](https://github.com/cncf/tag-contributor-strategy/).
