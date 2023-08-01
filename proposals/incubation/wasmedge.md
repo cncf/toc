@@ -64,7 +64,6 @@ The full list of companies and projects that have incorporated WasmEdge into the
 
 Below is a selected list of end-user organizations and products that are using WasmEdge for business workloads.
 
-* [**_Docker_**](https://docker.com/): Bundles WasmEdge in Docker Desktop 4.15+ as a container runtime to support Wasm images across the entire suite of Docker developer tools. Details of this use case can be found [_here_](https://docs.docker.com/desktop/wasm/).
 * [**_ByteDance_**](https://www.bytedance.com/en/): Uses WasmEdge to run custom logic in service mesh proxies and sidecars.
 * [**_ByteTrade_**](https://www.bytetradelab.io/): Uses WasmEdge to run microservices for marketing automation.
 * [**_XRPL Labs_**](https://github.com/XRPL-Labs): Use WasmEdge to execute smart contracts for the Ripple blockchain.
