@@ -4,7 +4,7 @@ CDK For Kubernetes (cdk8s) is an open-source software development framework for 
 applications and reusable abstractions. Users leverage familiar programming languages and rich object-oriented APIs to 
 create standard Kubernetes manifests which can be applied to any Kubernetes cluster.
 
-CDK8s joined the CNCF on November 10, 2022.
+CDK8s joined the CNCF on November 10, 2020.
 
 ## Annual Review
 
