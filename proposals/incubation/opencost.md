@@ -54,24 +54,25 @@ OpenCost was proposed and accepted as a Sandbox project in June 2022 ([Sandbox p
 * February 27, 2023: OpenCost announced as a [FinOps Certified Solution](https://www.opencost.io/blog/finops-certified-solution)
 * February 28, 2023: Kick-off for the [External Asset Costs Working Group](https://docs.google.com/document/d/1-d-Vvy1VGHW0sXKiTjTplIUEnrElIlnfMU8sUpEehlA/edit), which will bring support for services not directly managed by the Kubernetes infrastructure
 * March 9-12, 2023: OpenCost booth and [presentation](https://www.slideshare.net/mattray/scale-20x-kubernetes-cloud-cost-monitoring-with-opencost-optimization-strategies) at the Southern California Linux Expo
-* April 18, 2023: [Microsoft announces they have joined the OpenCost community](http://aka.ms/aks/OpenCost-AKS) with code and feature contributions and a new [Azure Billing Rate Card API supporting OpenCost](https://www.opencost.io/docs/azure-prices)
+* April 18, 2023: [Microsoft announces they have joined the OpenCost community](http://aka.ms/aks/OpenCost-AKS) with code and feature contributions and a new [Azure Billing Rate Card API supporting OpenCost](https://www.opencost.io/docs/configuration/azure-prices)
 * April 18-21, 2023: OpenCost has a full-time staffed kiosk at KubeCon EU in the Project Pavilion
+* June 27, 2023: OpenCost announces participation in the [FinOps Open Cost and Usage Specification](https://www.opencost.io/blog/focus) (FOCUS) while attending the FinOps X conference.
 
 ### Growing Community
 
 Since joining the CNCF Sandbox, we have seen substantial growth in the OpenCost community. According to [OpenCost DevStats](https://opencost.devstats.cncf.io/) the following stats for the main [OpenCost repository](https://github.com/opencost/opencost/) have grown notably in the past year in CNCF:
 
-* [GitHub Stars](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 2000 to over 3650
-* [GitHub Forks](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 192 to over 425
-* [Contributors](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): increased from 40 to 387
-* [Committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): there are now 67 committers
-* There have been over 800 commits to the primary *develop* branch since launch
-* [21 of the top 50 contributors are not Kubecost employees](https://opencost.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Last%20decade&var-metric=contributions&var-repogroup_name=OpenCost&var-country_name=All&var-companies=All)
-* [Number of new PRs](https://opencost.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&editPanel=1&from=now-1y&to=now&var-period=w&var-repogroup_name=OpenCost): currently average **10 per week**
+* [GitHub Stars](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 2000 to over 3950
+* [GitHub Forks](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 192 to over 436
+* [Contributors](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): increased from 40 to 413
+* [Committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): there are now 70 committers
+* There have been over 1000 commits to the primary *develop* branch of opencost/opencost since launch
+* [17 of the top 50 contributors are not Kubecost employees](https://opencost.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Last%20decade&var-metric=contributions&var-repogroup_name=OpenCost&var-country_name=All&var-companies=All)
+* [Number of new PRs](https://opencost.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&editPanel=1&from=now-1y&to=now&var-period=w&var-repogroup_name=OpenCost): currently average **8 per week**
 * [Median PR Time to Engagement](https://opencost.devstats.cncf.io/d/10/pr-time-to-engagement?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 24 hours
 * [Median PR Open to Merge](https://opencost.devstats.cncf.io/d/16/opened-to-merged?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 24 hours
-* [LinkedIn followers](https://www.linkedin.com/showcase/opencost/): have increased from 70 to 181
-* [CNCF Slack](https://slack.cncf.io/): there are currently 580 Slack members in **#opencost**
+* [LinkedIn followers](https://www.linkedin.com/showcase/opencost/): have increased from 70 to 203
+* [CNCF Slack](https://slack.cncf.io/): there are currently 659 Slack members in **#opencost**
 
 We actively host or take part in various community programs and events, tracked on the [OpenCost Community Calendar](https://bit.ly/opencost-calendar). There is a fortnightly [OpenCost Community Meeting](https://docs.google.com/document/d/1JFB_-sjF8F9UWet1c-dWixdMZY4hri23UlQG5FX5xfY/edit#), where community members and external stakeholders are invited to discuss the project and their experiences with OpenCost to shape future development.
 
@@ -125,13 +126,14 @@ Since joining the CNCF as a Sandbox Project in June of 2022, there have been mon
 * Version 1.99 also included initial support for China-based cloud provider Alibaba Cloud.
 * 1.0.0 release of the OpenCost Helm chart for expanded installation options.
 * 1.103 brought enhanced Azure billing integration and a daily CSV export of allocation data.
+* 1.104 Kubecost contributed non-k8s billing integration and cost monitoring to the project for future enhancements.
 
 ### Documentation Improvements
 Documentation currently exists in both the opencost and opencost-website repositories, but it is presented on http://opencost.io. Since joining the CNCF the website is now in the OpenCost GitHub organization and is aligned with the CNCF’s IP policy to ensure all documentation is under the Creative Commons Attribution 4.0 International License. There have been many updates to the documentation, highlights include:
-* Installation, upgrade, uninstall and [Helm Chart instructions](https://www.opencost.io/docs/install) have all been greatly expanded.
+* Installation, upgrade, uninstall and [Helm Chart instructions](https://www.opencost.io/docs/installation/helm) have all been greatly expanded.
 * A [swagger.json](https://raw.githubusercontent.com/opencost/opencost/develop/docs/swagger.json) OpenAPI document is now provided and API documentation was added to the OpenCost website. This should make API-based integrations much simpler.
-* Documentation for custom [on-premises pricing](https://www.opencost.io/docs/on-prem) is now available.
-* Configuring the [AWS Spot Instance Data Feed](https://www.opencost.io/docs/AWS#aws-spot-instance-data-feed-configuration) is now documented.
+* Documentation for custom [on-premises pricing](https://www.opencost.io/docs/configuration/on-prem) is now available.
+* Configuring the [AWS Spot Instance Data Feed](https://www.opencost.io/docs/configuration/AWS#aws-spot-instance-data-feed-configuration) is now documented.
 
 ## Incubation Stage Requirements
 
@@ -182,6 +184,6 @@ OpenCost is currently aligned with the following CNCF projects:
 
 The [External Asset Costs Working Group](https://docs.google.com/document/d/1-d-Vvy1VGHW0sXKiTjTplIUEnrElIlnfMU8sUpEehlA/edit) intends to bring support for services not directly managed by the Kubernetes infrastructure. Examples include network costs, monitoring, and external database services. Supporting AWS’ S3 object storage is the prototype under development with documentation and a new specification being developed in parallel. These efforts should encourage external contributors from both vendors and users. Initial merged patches from Grafana Labs and Microsoft are refactoring cloud providers to make it easier to introduce new billing and data sources.
 
-The FinOps Foundation is participating in the development conversations as OpenCost looks to standardize on the [FinOps Open Cost and Usage Specification](https://www.finops.org/focus/) (FOCUS). Initial FOCUS patches have already been merged.
+The FinOps Foundation is participating in the development conversations as OpenCost looks to standardize on the [FinOps Open Cost and Usage Specification](https://www.finops.org/focus/) (FOCUS). Initial FOCUS patches have already been merged and further integration is in progress.
 
 There is a [ROADMAP.md](https://github.com/opencost/opencost/blob/develop/ROADMAP.md) and issues are tagged with "enhancement" to signify potential new features for consideration.
