@@ -6,11 +6,12 @@ WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime.
 
 The unique features and advantages of WasmEdge include the following.
 
-* One of the [fastest](https://github.com/WasmEdge/WasmEdge#performance) WebAssembly VMs on the market (based on **LLVM AOT**)
+* One of the [fastest](https://github.com/WasmEdge/WasmEdge#performance) WebAssembly VMs on the market (based on **LLVM AOT**) See another bechmark [here](https://00f.net/2023/01/04/webassembly-benchmark-2023/).
 * WasmEdge feature extensions
   * **Network sockets** ([Rust](https://github.com/second-state/wasmedge_wasi_socket), C and [JavaScript](https://github.com/second-state/wasmedge-quickjs#http-request) SDKs)
   * **Async polling** (for Rust Future and JS async)
-  * Tensorflow, Pytorch, OpenVINO inference ([Tutorial](https://wasmedge.org/docs/category/ai-inference))
+  * Tensorflow, Pytorch, OpenVINO inference ([Tutorial](https://wasmedge.org/docs/category/neural-networks-for-wasi))
+    * [Mediapipe-rs support for Mediapipe models](https://github.com/WasmEdge/mediapipe-rs)
   * Key value storage
   * Database connector including MySQL-based databases, Redis and PostgreSQL. ([Tutorial](https://wasmedge.org/docs/category/database-drivers))
   * **Gas meters** for resource constraints
@@ -25,14 +26,14 @@ The unique features and advantages of WasmEdge include the following.
   * Dapr microservices with Dapr WasmEdge SDK ([Tutorial](https://github.com/second-state/dapr-sdk-wasmedge))
 * Cross-platform support
   * Linux OSes dated back to 2010 for both x86 and ARM CPUs
-  * Mac OS X for both x86 and m1 CPUs
+  * Mac OS X for both x86 and M1/M2 CPUs
   * Windows
   * Microkernel and RTOS (e.g., the highly secure [seL4 microkernel](https://github.com/second-state/wasmedge-sel4))
   * OpenWRT
   * RISC-V
   * Android
 * Easy extensibility
-  * Extend and enhance the runtime with custom functions in [C](https://wasmedge.org/docs/embed/c/reference/0.12.0#host-functions) or [GO](https://wasmedge.org/docs/embed/go/reference/0.12.0#host-functions))
+  * Extend and enhance the runtime with custom functions in [C](https://wasmedge.org/docs/embed/c/reference/latest#host-functions) or [GO](https://wasmedge.org/docs/embed/go/reference/latest#host-functions))
 * Easy to embed into a host application
   * Embed WasmEdge functions in [C](https://wasmedge.org/docs/category/c-sdk-for-embedding-wasm-functions), [Go](https://wasmedge.org/docs/category/go-sdk-for-embedding-wasm-functions), and [Rust](https://wasmedge.org/docs/category/rust-sdk-for-embedding-wasm-functionst)-based host applications.
   * Embed WasmEdge functions in service mesh proxies (e.g., [proxy-wasm](https://github.com/proxy-wasm/proxy-wasm-cpp-host/pull/193) for Envoy and MOSN proxies)
@@ -50,7 +51,7 @@ The WasmEdge devstats page and dashboard could be found [here](https://wasmedge.
 
 * [New PRs in last year](https://wasmedge.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1).
 * The community has grown since WasmEdge entered the CNCF Sandbox.
-    * We have held monthly meetings since October 2021. The meeting note could be found [here](https://docs.google.com/document/d/1iFlVl7R97Lze4RDykzElJGDjjWYDlkI8Rhf8g4dQ5Rk/edit), and the recording meeting video could be found [here](https://www.youtube.com/playlist?list=PL4H9HXvnb_jYbsHBOMk-jayEMGrl09VSO).
+    * We have held monthly meetings since October 2021. The meeting notes could be found [here](https://docs.google.com/document/d/1iFlVl7R97Lze4RDykzElJGDjjWYDlkI8Rhf8g4dQ5Rk/edit), and the recording meeting video could be found [here](https://www.youtube.com/playlist?list=PL4H9HXvnb_jYbsHBOMk-jayEMGrl09VSO).
     * Number of contributors: [6](https://wasmedge.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Before%20joining%20CNCF&var-repogroup_name=All) -> 140
     * Number of stars: 819 -> 6200
     * Number of forks: 43 -> 558
@@ -108,8 +109,9 @@ The WasmEdge community has expanded its collaboration with many open-source proj
 * youki, the OCI Container Runtime, supports WasmEdge as a container runtime.
 * Essa-rs ueses WasmEdge to execute serverless functions on the essa-rs platform.
 * The OpenGauss and libsql communities used WasmEdge to power UDFs (User Defined Functions) in database queries.
-* Docker Desktop integrates WasmEdge to support Wasm containers.
 * Apache Traffic Server uses WasmEdge as a plugin to process the traffic flow.
+
+Another highlighted collaboration is that Docker Desktop integrates WasmEdge to support Wasm containers.
 
 Furthermore, the WasmEdge project is used by numerous commercial companies including Docker, VMWare, FutureWei, Huawei, 5miles, and ByteDance. You can check out the full list [here](https://wasmedge.org/docs/contribute/users).
 
@@ -126,13 +128,13 @@ For the immediate future, WasmEdge will focus on the following areas.
     * Improve support for AI inference workloads in Wasm. We will continue adding support for popular models in computer vision, voice recognition, and document AI. We will also enable inference on LLMs such as Llama.
     * Support AI training on Wasm. We are collaborating with ByteDance and the Ray community to support WasmEdge on Ray nodes.
     * Support the complete Node.js API and NPM module ecosystem in WasmEdge's JavaScript runtime.
-    * Improve WasmEdge support in popular application frameworks such as Dapr, Suborbital, Fermyon, essa-rs, etc.
+    * Improve WasmEdge support in popular application frameworks such as Dapr, Spin, etc.
     * Better support for host SDKs in Rust, Go, Java, and Python for embedding WasmEdge in other applications.
     * Debugging, monitoring, and observability tools for WasmEdge.
     * Further optimize the developer experience and user experience for WasmEdge plugins. That would make it easy for the community to add new features to WasmEdge.
 
 
-Our 2023 roadmap could be found [here](https://github.com/WasmEdge/WasmEdge/blob/master/docs/roadmap.md).
+Our 2023 roadmap could be found [here](https://github.com/WasmEdge/WasmEdge/blob/master/docs/ROADMAP.md).
 
 * User adoption goals
     * Drive adoption through integrating more open-source projects. 
@@ -141,10 +143,11 @@ Our 2023 roadmap could be found [here](https://github.com/WasmEdge/WasmEdge/blob
 * Community and community collaborations
     * Recruit and support proposal maintainers from more companies other than Second State.
     * More community collaborations with open source projects in Linux Foundation and Apache Foundation.
+    * Attending continuously the mentorship programs like Google Summmer of Code, Google Season of Docs, LF mentorship and Open Source of Summer to drive community contributions by students.
 
 ## How the CNCF can help to achieve the upcoming goals
 
-In the past two year, the WasmEdge project has received significant support from the CNCF. That includes LFX Mentorship opportunities, publication of tech articles on the CNCF blog, Project Pavilion and Office Hour opportunities at Kubecon, and legal support for the WasmEdge trademark in the US and China. Going forward, we plan to work closely with the CNCF on the following additional areas.
+In the past two years, the WasmEdge project has received significant support from the CNCF. That includes LFX Mentorship opportunities, publication of tech articles on the CNCF blog, Project Pavilion and Office Hour opportunities at KubeCon, and legal support for the WasmEdge trademark in the US and China. Going forward, we plan to work closely with the CNCF on the following additional areas.
 
 * Strategy to recruit and retain contributors.
 * Guidance and support for the project's technical documentation.
