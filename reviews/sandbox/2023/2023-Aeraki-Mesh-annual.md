@@ -1,4 +1,4 @@
-# Aeraki Mesh Sandbox Annual Review 2023
+# Aeraki Mesh 2023 Sandbox Annual Review
 
 This is the annual review for the [Aeraki Mesh](https://aeraki.net) project for 2023.
 
@@ -65,9 +65,9 @@ We hope to see more diversity in the maintainer team.
 
 ## Adoption
 
-We encourage people to submit a comment on [Who is using Aerkai Mesh?](https://github.com/aeraki-mesh/aeraki/issues/105)
-to record their use cases. Till now, there're a dozen of companies that that we know have deployed Aeraki Mesh in their
-own infrastructure or integrated Aeraki Mesh as part of their products. Some of the most known names including:
+We encourage individuals to submit a comment on [Who is using Aerkai Mesh?](https://github.com/aeraki-mesh/aeraki/issues/105)
+to document their use cases. As of now, there're a dozen companies that we know have deployed Aeraki Mesh in their
+own infrastructure or integrated Aeraki Mesh as part of their products. Some of the most well-known names include:
 
 - Tencent
 - Huawei
