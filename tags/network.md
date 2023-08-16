@@ -94,7 +94,7 @@ This TAG follows the [standard operating model](https://github.com/cncf/toc/blob
 
 ## Chairs:
 
-- TOC Liaison: [Dave Zolotusky](https://twitter.com/dzolotusky), [Liz Rice](https://twitter.com/lizrice)
+- TOC Liaison: Duffie Cooley, Ricardo Rocha
 - TAG Chairs: [Lee Calcote](https://twitter.com/lcalcote), [Ken Owens](https://twitter.com/kenowens12)
 
 In accordance with the [elections and terms](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#elections) follow the [CNCF TAG definition](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#elections).
