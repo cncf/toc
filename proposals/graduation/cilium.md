@@ -33,7 +33,7 @@ Project governance including granting and revoking rights, expectations, and vot
 
 ### Explicitly define the criteria, process and offboarding or emeritus conditions for project maintainers; or those who may interact with the CNCF on behalf of the project. The list of maintainers should be preferably be stored in a MAINTAINERS.md file and audited at a minimum of an annual cadence.
 
-Commiters may be removed after 6 months of inactivity and are removed based on the [process outlined in the docs](https://docs.cilium.io/en/v1.12/community/governance/commit_access/#revoking-commit-access). Those removed will be changed to [emeritus in the MAINTAINERS.md](https://github.com/cilium/cilium/blob/master/MAINTAINERS.md#cilium--hubble-emeritus-committers)
+Commiters may be removed after 6 months of inactivity and are removed based on the [process outlined in the docs](https://docs.cilium.io/en/v1.12/community/governance/commit_access/#revoking-commit-access). Those removed will be changed to [emeritus in the MAINTAINERS.md](https://github.com/cilium/cilium/blob/main/MAINTAINERS.md#cilium--hubble-emeritus-committers)
 
 ### Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website). For a specification, have a list of adopters for the implementation(s) of the spec.
 
