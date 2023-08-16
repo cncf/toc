@@ -143,7 +143,7 @@ Our 2023 roadmap could be found [here](https://github.com/WasmEdge/WasmEdge/blob
 * Community and community collaborations
     * Recruit and support proposal maintainers from more companies other than Second State.
     * More community collaborations with open source projects in Linux Foundation and Apache Foundation.
-    * Attending continuously the mentorship programs like Google Summmer of Code, Google Season of Docs, LF mentorship and Open Source of Summer to drive community contributions by students.
+    * Attending continuously the mentorship programs like [Google Summmer of Code](https://summerofcode.withgoogle.com/), [Google Season of Docs](https://developers.google.com/season-of-docs), [LFX mentorship](https://lfx.linuxfoundation.org/tools/mentorship/) and [Open Source Program Plan](https://summer-ospp.ac.cn/) to drive community contributions by students.
 
 ## How the CNCF can help to achieve the upcoming goals
 
