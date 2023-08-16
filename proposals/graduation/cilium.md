@@ -29,7 +29,7 @@ Cilium received independent security and fuzzing audits through CNCF from OSTIF.
 
 ### Explicitly define a project governance and committer process. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers.
 
-Project governance including granting and revoking rights, expectations, and voting are outlined in [governance documents](https://docs.cilium.io/en/latest/community/governance/). All committers to the project can be found in [MAINTAINERS.md](https://github.com/cilium/cilium/blob/master/MAINTAINERS.md).
+Project governance including granting and revoking rights, expectations, and voting are outlined in [governance documents](https://docs.cilium.io/en/latest/community/governance/). All committers to the project can be found in [MAINTAINERS.md](https://github.com/cilium/cilium/blob/main/MAINTAINERS.md).
 
 ### Explicitly define the criteria, process and offboarding or emeritus conditions for project maintainers; or those who may interact with the CNCF on behalf of the project. The list of maintainers should be preferably be stored in a MAINTAINERS.md file and audited at a minimum of an annual cadence.
 
