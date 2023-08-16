@@ -37,7 +37,7 @@ Commiters may be removed after 6 months of inactivity and are removed based on t
 
 ### Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website). For a specification, have a list of adopters for the implementation(s) of the spec.
 
-See [USERS.md](https://github.com/cilium/cilium/blob/master/USERS.md) and the [Cilium website](https://cilium.io/adopters/).
+See [USERS.md](https://github.com/cilium/cilium/blob/main/USERS.md) and the [Cilium website](https://cilium.io/adopters/).
 
 ## Incubation Details
 
