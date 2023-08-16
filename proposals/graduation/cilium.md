@@ -9,7 +9,7 @@ Cilium itself has 14,400+ GitHub stars and 547 contributors and there are 21,000
 [Adobe](https://www.youtube.com/watch?v=7UQ2CU6UEGY), [Bell Canada](https://www.youtube.com/watch?v=vJaOKGWiyvU), [CapitolOne](https://www.youtube.com/watch?v=hwOpCKBaJ-w&ab_channel=eBPFSummit), 
 [Datadog](https://www.cncf.io/case-studies/datadog/)
 [IKEA](https://www.youtube.com/watch?v=sg-F_R-ZVNc), [Nexxiot](https://www.cncf.io/case-studies/nexxiot/) [Sky](https://www.youtube.com/watch?v=u-4naOMfs_w), [Utmost](https://www.cncf.io/case-studies/utmost/) 
-and [many more](https://github.com/cilium/cilium/blob/master/USERS.md). It is also the default CNI for managed Kubernetes on GKE, Anthos, EKS-A, AKS, and other cloud providers.
+and [many more](https://github.com/cilium/cilium/blob/main/USERS.md). It is also the default CNI for managed Kubernetes on GKE, Anthos, EKS-A, AKS, and other cloud providers.
 
 The project maintainers believe that Cilium meets the requirements for Graduation status. 
 
