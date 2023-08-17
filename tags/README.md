@@ -32,9 +32,9 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Alex Chircop](https://github.com/chira001)
 
 ### TAG Security 
-* [Brandon Lum](https://github.com/lumjjb)
 * [Aradhna Chetal](https://github.com/achetal01)
 * [Andrew Martin](https://github.com/sublimino)
+* [Pushkar Joglekar](https://github.com/pushkarj)
 
 ### TAG App-Delivery
 * [Alois Reitbauer](https://github.com/AloisReitbauer)
@@ -79,4 +79,5 @@ a pull request with document referencing the roles and charter, updating the lis
 | TAG Storage | [Erin Boyd](https://github.com/erinboyd) | 
 | TAG Security | [Emily Fox](https://github.com/TheFoxAtWork) |
 | TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman) |
-| TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus)
+| TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus) |
+| TAG Security | [Brandon Lum](https://github.com/lumjjb) |
