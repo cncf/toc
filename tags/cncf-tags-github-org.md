@@ -16,6 +16,7 @@ using the `Create a repository in the cncf-tags GitHub Org` issue template.
 The issue must be approved by:
 
 - TOC liaisons for the respective TAG.
+    - If a TAG has 3 TOC liaisons, the issue must be approved by at least 2 liaisons.
 - At least one of the TAG leads or any process spelled out in a TAG's charter.
 
 A publicly linkable written decision should be available for all approvals.
