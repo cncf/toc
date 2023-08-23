@@ -3,6 +3,7 @@
 <!--- **How to complete this template.**
 1. Update the placeholders and links marked with a ⚠️
 2. Review the process and extend / simplify it
+   1. The process is divided into two phases: The first phase is about writing and discussing the blog post abstract, and the second is about reviewing and publishing the blog post. The first phase can be omitted if the TAG wants an even smaller process for blog posts. Comments highlight the sections that needs to be updated.
 --->
 
 This document describes the process writing blogs for the CNCF `⚠️ <TAG NAME>` blog.
@@ -24,8 +25,9 @@ The diagram below gives an overview of the blog post process.
 ```mermaid
 %%{init: {'theme':'neutral'}}%%
 stateDiagram-v2
+    %% ⚠️ OPTIONAL: Steps abstract,reviews1, feedback1, taglead; decide if the TAG likes to review an abstract first ⚠️ %%
     issue : 1. Author opens an issue\n to track the blog post
-    abstract : 2. Author writes an outline
+    abstract : 2. Author writes an outline 
     reviews1 : 3. Author asks for outline reviews
     feedback1 : 4. Author incorporates feedback
     taglead : 5. TAG Lead approved outline and \n assigned itself to wrangle the blog
@@ -39,7 +41,7 @@ stateDiagram-v2
     [*] --> issue
     issue --> abstract
     state Outline {
-      abstract --> reviews1
+      abstract --> reviews1 
       reviews1 --> feedback1
       feedback1 --> reviews1
       feedback1 --> taglead
@@ -58,7 +60,8 @@ stateDiagram-v2
 ```
 
 1. Open up an [⚠️ issue](https://github.com/cncf/tag-xxx/issues/new/choose) with the template `blog`. This issue template guides you through the process.
-2. Write an outline for your blog. Follow this section [writing an outline](#writing-an-outline) for more insights.
+<!-- ⚠️ OPTIONAL: Steps 2 - 5; decide if the TAG likes to review an abstract first ⚠️ -->
+2. Write an outline for your blog. Follow this section [writing an outline](#writing-an-outline) for more insights. 
 3. The author asks for blog post outline reviews publicly. Follow this section [asking for reviews](#asking-for-reviews) for more insights.
 4. The author includes feedback. Follow this section [incorporating reviews](#incorporating-reviews) for more insights.
 5. As soon as the outline has been discussed feedback has been included the assigned TAG Lead will do the sign off.
