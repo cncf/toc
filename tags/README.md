@@ -38,8 +38,8 @@ a pull request with document referencing the roles and charter, updating the lis
 
 ### TAG App-Delivery
 * [Alois Reitbauer](https://github.com/AloisReitbauer)
-* [Jennifer Strejevitch](https://github.com/Jenniferstrej)
-* [Hongchao Deng](https://github.com/hongchaodeng)
+* [Josh Gavant](https://github.com/joshgav)
+* [Thomas Schuetz](https://github.com/thschue)
 
 ### TAG Network 
 * [Lee Calcote](https://github.com/leecalcote)
@@ -68,16 +68,18 @@ a pull request with document referencing the roles and charter, updating the lis
 
 ## Emeritus Chairs
 
-| TAG | Emeritus Chair |
-|---|---|
-| TAG App Delivery | [Bryan Liles](https://github.com/bryanl) |
-| TAG App Delivery | [Lei Zhang](https://github.com/resouer) |
-| TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred) |
-| TAG Security | [Sarah Allen](https://github.com/ultrasaurus) |
-| TAG Security | [Jeyappragash Jeyakeerthi](https://github.com/pragashj) |
-| TAG Security | [Dan Shaw](https://github.com/dshaw) |
-| TAG Storage | [Erin Boyd](https://github.com/erinboyd) | 
-| TAG Security | [Emily Fox](https://github.com/TheFoxAtWork) |
-| TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman) |
-| TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus) |
-| TAG Security | [Brandon Lum](https://github.com/lumjjb) |
+| TAG                      | Emeritus Chair                                           |
+|--------------------------|----------------------------------------------------------|
+| TAG App Delivery         | [Jennifer Strejevitch](https://github.com/Jenniferstrej) |
+| TAG App Delivery         | [Hongchao Deng](https://github.com/hongchaodeng)         |
+| TAG App Delivery         | [Bryan Liles](https://github.com/bryanl)                 |
+| TAG App Delivery         | [Lei Zhang](https://github.com/resouer)                  |
+| TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred)               |
+| TAG Security             | [Sarah Allen](https://github.com/ultrasaurus)            |
+| TAG Security             | [Jeyappragash Jeyakeerthi](https://github.com/pragashj)  |
+| TAG Security             | [Dan Shaw](https://github.com/dshaw)                     |
+| TAG Storage              | [Erin Boyd](https://github.com/erinboyd)                 | 
+| TAG Security             | [Emily Fox](https://github.com/TheFoxAtWork)             |
+| TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman)         |
+| TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus)      |
+| TAG Security             | [Brandon Lum](https://github.com/lumjjb)                 |
