@@ -20,12 +20,14 @@ that doesn’t show up on devstats, probably because the user isn’t associated
 
 ### How many maintainers do you have, and which organizations are they from?
 
-The project currently has 4 maintainers, all from AWS:
+The project currently has 6 maintainers, all from AWS:
 
-* [@iliapolo](https://github.com/iliapolo)
-* [@vinayak-kukreja](https://github.com/vinayak-kukreja)
-* [@sumupitchayan](https://github.com/sumupitchayan)
-* [@ryparker](https://github.com/ryparker)
+* Eli Polonsky [@iliapolo](https://github.com/iliapolo)
+* Vinayak Kukreja [@vinayak-kukreja](https://github.com/vinayak-kukreja)
+* Sumu Pitchayan [@sumupitchayan](https://github.com/sumupitchayan)
+* Evgeny Karasik [@evgenyka](https://github.com/evgenyka)
+* Uday Pant [@udaypant](https://github.com/udaypant)
+* Nathan Taber [@tabern](https://github.com/tabern)
 
 ### What do you know about adoption, and how has this changed since your last review / since you joined Sandbox?
 
