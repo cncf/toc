@@ -38,7 +38,9 @@ They show that over the last year, we have grown from ~12k to ~129k downloads a 
 GitHub stars have also increased from 2280 to [3492](https://star-history.com/#cdk8s-team/cdk8s&Date) stars in the course of the last 15 months. 
 
 In addition, the #cdk8s channel in the [cdk.dev](https://cdk.dev/) workspace now contains ~7k members and we 
-see consistent engagement and knowledge sharing. 
+see consistent engagement and knowledge sharing. The #cdk8s channel in the CNCF workspace has 54 members and is mostly dormant. 
+This is expected because [cdk.dev](https://cdk.dev/) existed before #cdk8s was accepted to the CNCF, and is the regarded as 
+the main communication channel for all the CDK eco-system.
 
 ### How has the project performed against its goals since the last review?
 
