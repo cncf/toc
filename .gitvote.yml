@@ -7,6 +7,7 @@ profiles:
       teams:
         - cncf-toc
       exclude_team_maintainers: true
+    close_on_passing: true
   1wk:
     duration: 1w
     pass_threshold: 66
@@ -14,3 +15,4 @@ profiles:
       teams:
         - cncf-toc
       exclude_team_maintainers: true
+    close_on_passing: true
