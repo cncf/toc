@@ -77,10 +77,9 @@ Areas of focus will included:
 
 ### Current Goals
 
-- **Kubernetes-native**: Telepresence is designed for Kubernetes and its traffic-manager can be installed in a cluster via helm or the directly with the command line.
-- **Intercepts**: An intercept replace the workload by the developper machine in the cluster. The developer can then send requests as it they were in the cluster, but also receive requests using the existing infrastructure.
-- **Volumes**: Telepresence is able to mount Kubernetes volumes to the local machine.
-- **Docker integration**: Telepresence integrates with Docker containers so it can run with better isolation, without requiering admin access.
+- **Kubernetes-native resources**: Telepresence intercepts should be easy to configure as resources in a Kubernetes cluster. There should be CRDs to configure intercepts and adequate RBAC to manage which users can intercept.
+- **UI integrations**: Telepresence should integrate with various UIs and IDEs so that users can easily invoke it from their existing flows. Plug-ins are being developed for various IDEs and frameworks.
+- **Containerization**: Telepresence can run in a docker container in the user's machine. This should become the primary way of running it, since it doesn't require admin permissions on a user's machine. UX changes and enhancements, as well as new UIs, are needed to make this easy.
 
 ### How can the CNCF help?
 
