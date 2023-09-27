@@ -19,7 +19,8 @@ Strimzi also integrates with many other CNCF projects such as:
 
 In addition, Strimzi is used by [Knative][knative] to provide its Kafka source.
 
-Strimzi can be installed using [Helm][helm] charts or using [OperatorHub.io][operatorhub], which is part of the [Operator Framework][operatorframework] project.
+Strimzi can be installed using [Helm][helm] charts or using Operator Lifecycle Manager, which is part of the [Operator Framework][operatorframework] project.
+Both the Helm charts and OLM bundles are available on [Artifact Hub][artifacthub].
 
 Strimzi joined CNCF Sandbox in September 2019
 
@@ -71,11 +72,11 @@ The full list can be found in our [GitHub repository](https://github.com/strimzi
 
 ### Commits and merged contributions
 
-At the time of opening this proposal:
+Current status of the Strimzi project:
 
-* 2336 commits in the last 12 months, and more in the last 3 months than the previous 3 months
-* 440 contributors in the last 12 months
-* more than 3k stars and ~850 forks on github.
+* 2133 commits in the last 12 months
+* 411 contributors in the last 12 months
+* more than 4k stars and ~1.2 forks on github.
 
 See our [devstats](https://all.devstats.cncf.io/d/54/project-health-table?orgId=1&var-repogroup_name=Strimzi) for more details.
 
@@ -132,3 +133,4 @@ We hope that expanding the number and diversity of organizations using Strimzi w
 [operatorframework]: https://operatorframework.io/
 [kip-500]: https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum
 [cc]: https://github.com/linkedin/cruise-control
+[artifacthub]: https://artifacthub.io/
