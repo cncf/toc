@@ -135,8 +135,9 @@ companies to add themselves to https://github.com/k8gb-io/k8gb/blob/master/ADOPT
 
 <!-- Do you think that your project meets the criteria for incubation? -->
 
-Currently, we have two [publicly confirmed](https://github.com/k8gb-io/k8gb/blob/master/ADOPTERS.md) adoption cases(+1 in 2023!), so we do not meet all the adoption criteria for the [incubating](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage) stage yet.
-The goal is to continue gathering the community around the project and get publicly available adopters. Most probably, we will be able to reach the threshold next year.
+Currently, we have 3 [publicly confirmed](https://github.com/k8gb-io/k8gb/blob/master/ADOPTERS.md) adoption cases(+2 in 2023!).
+
+According to the [incubating criteria](https://github.com/cncf/toc/blob/main/process/graduation_criteria.md#incubating-stage), we **do** meet all requirements for the Incubation.
 
 ## Project Links
 
