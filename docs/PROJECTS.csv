@@ -38,15 +38,15 @@
 37,CRI-O,Brendan Burns,3/12/19,4/18/19,2019,Incubation,No - DCO ,No,Yes,No,Yes,Kubernetes,GitHub Pages
 38,SPIRE,"Brian Grant, Sam Lambert, Ken Owens",11/7/17,3/29/18,2018,Graduation,Yes,Yes,No,No,Yes,https://spiffe.slack.com/,Netlify
 39,Thanos,"Liz Rice, Alexis Richardson, Xiang Li, Joe Beda",7/9/19,7/9/19,2019,Incubation,No,Yes,No,No,Yes,CNCF,Netlify
-40,Flux,"Michelle Noorali, Xiang Li",6/11/19,7/15/19,2019,Incubation,DCO,No,No,No,Yes,CNCF,Netlify
+40,Flux,"Michelle Noorali, Xiang Li",6/11/19,7/15/19,2019,Graduation,DCO,No,No,No,Yes,CNCF,Netlify
 41,In-Toto,"Liz Rice, Michelle Noorali",7/9/19,8/21/19,2019,Incubation,DCO,Yes,No,No,Yes,IRC,Netlify
 42,Strimzi,"Matt Klein, Alexis Richardson",4/9/19,8/28/19,2019,Sandbox,No,Yes,No,No,Yes,CNCF,GitHub Pages
 43,KubeVirt,"Brian Grant, Liz Rice",7/9/19,9/9/19,2019,Incubation,DCO,Yes,No,No,Yes,Kubernetes,Netlify
 44,Longhorn,"Alexis Richardson, Liz Rice",7/9/19,10/11/19,2019,Incubation,DCO,Yes,No,No,Yes,CNCF,Netlify
 45,ChubaoFS,"Alexis Richardson, ",12/3/19,12/17/19,2019,Sandbox,DCO,Yes,No,No,Yes,https://chubaofs.slack.com/#/,Netlify
-46,Keda,"Liz Rice, Michelle Noorali, Xiang Li",2/20/2020 -  SIG-Runtime,3/9/20,2020,Incubation,DCO,Yes,No,No,Yes,Kubernetes,Netlify
-47,Service Mesh Interface,"Jeff Brewer, Brendan Burns, Matt Klein",1/16/2020- SIG-Network,3/16/20,2020,Sandbox,DCO,Yes,No,No,Yes,CNCF,Netlify
-48,Argo,"Jeff Brewer, Michelle Noorali, Xiang Li",9/24/19 - SIG App Delivery,4/7/20,2020,Incubation,CLA,No,Yes,No,Yes,https://argoproj.slack.com/,Netlify
+46,Keda,"Liz Rice, Michelle Noorali, Xiang Li",2/20/2020 -  SIG-Runtime,3/9/20,2020,Graduation,DCO,Yes,No,No,Yes,Kubernetes,Netlify
+47,Service Mesh Interface,"Jeff Brewer, Brendan Burns, Matt Klein",1/16/2020- SIG-Network,3/16/20,2020,Archived,DCO,Yes,No,No,Yes,CNCF,Netlify
+48,Argo,"Jeff Brewer, Michelle Noorali, Xiang Li",9/24/19 - SIG App Delivery,4/7/20,2020,Graduation,CLA,No,Yes,No,Yes,https://argoproj.slack.com/,Netlify
 49,Volcano,"Alena Prokharchyk, Liz Rice, Sheng Liang",SIG-Runtime,4/10/20,2020,Incubation,No,Yes,Yes,No,Yes,CNCF,Netlify
 50,CNI-Genie,N/A,N/A,6/23/20,2020,Sandbox,No,No,No,No,Yes,No,
 51,Keptn,N/A,N/A,6/23/20,2020,Incubation,No,Yes,No,No,Yes,slack.keptn.sh & CNCF channel,
