@@ -10,7 +10,7 @@ Dapr meets the graduation stage requirements in the following ways:
 
 ### Have committers from at least two organizations.
 
-Dapr makes use of the term "[maintainer](https://github.com/dapr/community/blob/master/community-membership.md#maintainer)" as the noun for a member allowed to accept and merge code contributions. To date, the project has [14 active maintainers](https://github.com/dapr/community/blob/master/MAINTAINERS.md), representing 4 organizations.
+Dapr makes use of the term "[maintainer](https://github.com/dapr/community/blob/master/community-membership.md#maintainer)" as the noun for a member allowed to accept and merge code contributions. To date, the project has [14 active maintainers](https://github.com/dapr/community/blob/master/MAINTAINERS.md), representing 4 companies.
 
 ### Have achieved and maintained a Open Source Security Foundation Best Practices Badge.
 
