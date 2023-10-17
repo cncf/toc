@@ -98,7 +98,7 @@ If there are open reviews that are not addressed, then the blog will not be publ
 Reviews are meant to provide valuable insight and suggestions for improving the quality of your content. By taking this perspective, you can view reviews as constructive opportunities for growth rather than personal criticism. By keeping an open mind and taking feedback into account, you can refine your blog post, amplify its impact, and provide a more engaging experience for your readers. Emphasizing the collaborative nature of reviews fosters a positive environment where continuous improvement is the driving force behind your writing efforts.
 
 If the review does not meet our [review guidelines](#reviewguidelines), please make this transparent in GitHub and give the reviewer the opportunity to self-improve in the way they conduct reviews. Focus on resolving a conflict before they occur.
-If a conflict cannot be resolved, ask your Blog Post Sponsor for assistance.
+If a conflict cannot be resolved, ask your [Blog Post Sponsor](#sponsorship) for assistance.
 
 ## Sponsorship
 
