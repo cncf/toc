@@ -3,7 +3,7 @@ name: Project Onboarding - Sandbox Projects
 about: project onboarding
 title: "[SANDBOX PROJECT ONBOARDING] project"
 labels: project onboarding, sandbox
-assignees: caniszczyk, amye, idvoretskyi, jeefy
+assignees: caniszczyk, amye, idvoretskyi, jeefy, krook
 ---
 
 Welcome to CNCF Project Onboarding!
@@ -30,7 +30,7 @@ Things that CNCF will need from the project:
 
 - [ ] Provide emails for the maintainers added to <https://maintainers.cncf.io> in order to get access to the maintainers mailing list and ServiceDesk - <project-onboarding@cncf.io> is the best email to send those to
 - [ ] Trademarks: transfer any trademark and logo mark assets over to the LF - <https://github.com/cncf/foundation/tree/master/agreements> has agreements
-- [ ] GitHub: ensure 'thelinuxfoundation' and 'caniszczyk' are added as initial org owners, this helps us make sure we have continuity of GH ownership that we will onboard to our GitHub Enterprise instance: <https://github.com/enterprises/cncf>
+- [ ] GitHub: ensure `thelinuxfoundation`, `caniszczyk`, and `krook` are added as initial org owners, this helps us make sure we have continuity of GH ownership that we will onboard to our GitHub Enterprise instance: <https://github.com/enterprises/cncf>
 - [ ] GitHub: ensure [DCO](https://github.com/apps/dco) or [CLA](https://github.com/cncf/cla) are enabled for all GitHub repositories of the project
 - [ ] GitHub: ensure that that the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md) (or your adopted version of it) are explicitly referenced at the project's README on GitHub
 - [ ] Website: ensure LF footer is there and [website guidelines](https://github.com/cncf/foundation/blob/master/website-guidelines.md) followed (if your project doesn't have a dedicated website, please adopt those guidelines to the README file of your project on GitHub).
