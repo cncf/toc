@@ -1,0 +1,18 @@
+profiles:
+  default:
+    duration: 26w
+    pass_threshold: 66
+    periodic_status_check: "1 week"
+    allowed_voters:
+      teams:
+        - cncf-toc
+      exclude_team_maintainers: true
+    close_on_passing: true
+  1wk:
+    duration: 1w
+    pass_threshold: 66
+    allowed_voters:
+      teams:
+        - cncf-toc
+      exclude_team_maintainers: true
+    close_on_passing: true

@@ -9,17 +9,19 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 
 ## Members
 
-* **Erin Boyd** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [GB-appointed]
-* **Dave Zolotusky** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [EndUser-appointed]
-* **Cathy Zhang** (term: remainder of 2 years - start date: 7/1/2022 - 2/1/2023) [GB-appointed]
-* **Lei Zhang** (term: 2 years - start date: 2/1/2021 - 2/1/2023) [GB-appointed]
-* **Davanum Srinivas** (term: 2 years - start date: 3/18/2021 - 3/18/2023) [TOC-appointed][TOC Chair]
+
+
 * **Justin Cormack** (term: 2 years - start date 2/4/2022 - 2/4/2024) [Maintainer-appointed]
 * **Ricardo Rocha** (term: 2/4/2022 - 2/4/2024) [EndUser-appointed]
-* **Emily Fox** (term: 2 years - start date: 2/4/2022 - 2/4/2024) [GB-appointed]
+* **Emily Fox** (term: 2 years - start date: 2/4/2022 - 2/4/2024) [GB-appointed][TOC Chair]
 * **Matt Farina** (term: 2 years - start date 2/4/2022 - 2/4/2024) [GB-appointed]
 * **Richard Hartmann** (term: 2 years - start date 2/4/2022 - 2/4/2024) [GB-appointed]
 * **Katie Gamanji** (term: 2 years - start date: 3/18/2022 - 3/18/2024) [TOC-appointed]
+* **Nikhita Raghunath** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
+* **Dave Zolotusky** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [EndUser-appointed]
+* **Cathy Zhang** (term: 2 years 2-1-2023 - 2/1/2025) [GB-appointed]
+* **Duffie Cooley** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
+* **Erin Boyd** (term: 2 years - start date: 3/18/2023 - 3/18/2025) [TOC-appointed]
 
 Election [schedule](process/election-schedule.md)
 
@@ -29,7 +31,9 @@ See the [current CNCF projects](https://www.cncf.io/projects/) and a description
 
 The CNCF provides a [list of services](https://www.cncf.io/services-for-projects/) for incubating and graduated projects hosted in the foundation. A subset of these services is also available for [Sandbox](https://www.cncf.io/sandbox-projects/) level projects.
 
-Do you want to contribute to a project? We have [outlined the process](https://github.com/cncf/toc/blob/main/process/README.md) to get started. If you have any questions or don't know where to start, please open an [issue](https://github.com/cncf/toc/issues).
+Do you want to contribute to a project? We have a [guide](https://contribute.cncf.io/contributors/) to get you started.
+
+If you would like to know more about the project lifecycle we use, we have [outlined the process](https://github.com/cncf/toc/blob/main/process/README.md). If you have any questions or don't know where to start, please open an [issue](https://github.com/cncf/toc/issues).
 
 ## Meeting Time
 

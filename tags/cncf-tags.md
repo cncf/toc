@@ -114,14 +114,6 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 * Leads projects in the TAG’s area.
 * Has the time and ability to perform deep technical dives on projects.   Projects may include formal CNCF projects or other projects in the area covered by the TAG.
 
-
-#### TOC Liaison
-
-* Streamlines communications between TOC and TAG chairs, and helps TAG to set priorities.
-* Communicates performance of the TAG to TOC.
-* Helps with growth and development of the TAG.
-* Attends TAG meetings, as needed/requested.
-
 #### Other named roles
 
 * Named and defined by the TAG (e.g. scribe, PR lead, docs/training lead, etc)
@@ -132,6 +124,59 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 * Self-declared
 * May either have no explicit roles or responsibilities, or formally assigned roles (see above).
 * May not create the impression that they have any authority or formal responsibilities in the TAG other than assigned roles.
+
+### TOC Liaisons
+
+TOC is the technical governing body of the CNCF. It’s important that we ensure a good flow of governance information and feedback loops to and from the  TAGs. With several TAGs, it can be hard to connect for community wide consensus therefore each group is assigned at least one TOC liaison.
+
+TAG leads may call on liaisons to act as a point of contact from the TOC, be an advisor for governance or community health matters, or help the TAG prioritize what they’re doing to be in line with TOC needs.
+
+Liaisons do not make decisions for the TAG.
+
+Liaisons are assigned based on their expertise, interest, and specialized experience a given TAG may need at the time of assignment (adjustments can be made, if needed).
+The TOC relies on the Chairs, Leads, activities, members, and other TOC members to ascertain those needs through their interactions and observations.
+For instance, a TOC member with a strong background in Networking and Green Computing was previously assigned to TAG Network, they may rotate to TAG Environmental Sustainability.
+Alternatively, a TAG may need a TOC Liaison with specialized experience in growing contributors and sustaining communities, however their expertise is in App Delivery.
+In this instance they may rotate from App Delivery to the TAG that needs to grow their own contributors or sustain their member pool and activities - not necessarily rotating to TAG Contributor Strategy.
+
+#### Responsibilities
+
+- Streamline communications between TOC and TAG chairs, and helps TAG to set priorities.
+- Communicate activities of the TAG and it's WGs to TOC beyond the public monthly updates.
+- Provide updates regarding TAG activities and potential areas of improvement to the TOC at least once a quarter.
+- Support and guide growth and development of the TAG and it's WGs.
+- Approve creation of WGs for TAGs they are a liaison for.
+- Perform the final review and approval of technical content produced by the TAG.
+- Attend TAG meetings, as needed/requested.
+
+#### Expectations
+
+- Check-ins with their TAGs at least once a month (or more frequently as needed). This could mean a group DM with Chairs, a visit to a TAG meeting, or some other connection. Get a pulse on health of the following:
+  - Contributor base
+    - How are the chairs, technical leads and contributors doing?
+    - Are newcomers able to efficiently join and contribute?
+  - Operational Health
+    - Transparency of meetings and decision processes (eg: published meeting agendas, minutes, and video recordings)
+    - Communication best practices for shared status and decision making across a TAG and related WGs.
+    - Provide consultation on how to improve operational health.
+  - Gap Analysis
+    - Where is the TAG now and where do they want/need to be?
+  - Sustainability
+    - What is the TAG doing to ensure contributions are sustainable?
+    - Is the TAG leadership healthy?
+    - Are there mentorship opportunities for TAG members to grow into leadership roles?
+    - What does the TAG need in order to keep things going?
+    - Are there areas of concern?
+  - Project alignment and maturity within the domain
+    - Are projects engaged with the TAG?
+    - Is the TAG supporting technical maturity of the projects aligned in their domain?
+    - Is the TAG and the TOC aligned on the current maturity of all projects within the TAG’s domain?
+- Keep the TOC in the loop and keep track of trackable (i.e. not sensitive) work in public issues.
+- Communicate with the TAGs on important business that happens at the TOC in order for the TOC to achieve a pulse on the work they are doing and acknowledge governance changes.
+    - For example, if the TOC is crafting a new policy, check in with the chairs to see how it would fare with their groups.
+- Receive TOC liaison approval
+  - For creation of Working Groups - TOC liaisons verify WGs are appropriately scoped, in alignment with the charter, and capable of achieving their defined deliverables.
+  - For publication of any technical content - TOC liaisons perform the final review and approval of technical content produced by the TAG (e.g. whitepapers). This ensures the liaisons are aware of the deliverables as well as identify any gaps, missed clarity, and bring the content into alignment. This review should occur after all public comments are adjudicated and the TAG co-chairs have reviewed and concurred.
 
 ### Elections
 

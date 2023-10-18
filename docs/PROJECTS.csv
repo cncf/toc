@@ -137,7 +137,7 @@
 136,DevStream,,,6/13/22,2022,Sandbox,DCO,Yes,Yes,No,Yes,CNCF,https://github.com/devstream-io/devstream
 137,Hexa,,,7/26/22,2022,Sandbox,CLA,No,Yes,No,Yes,N/A,https://github.com/hexa-org/policy-orchestrator  
 138,Konveyor,,,7/26/22,2022,Sandbox,Red Hat-COP,No,No,No,Yes,Kubernetes,https://github.com/konveyor
-139,Armada,,,7/26/22,2022,Sandbox,No,No,No,No,Yes,GH discussions,https://github.com/G-Research/armada
+139,Armada,,,7/26/22,2022,Sandbox,No,No,No,No,Yes,GH discussions,https://github.com/armadaproject/armada
 140,External Secrets Operator,,,7/26/22,2022,Sandbox,No,No,Yes,No,Yes,N/A,https://github.com/external-secrets/external-secrets
 ,,,,Sandbox,,88,,,,,,,
 ,,,,Incubation,,35,,,,,,,

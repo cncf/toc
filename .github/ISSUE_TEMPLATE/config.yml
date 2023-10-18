@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Join the CNCF TOC mailing list
+    url: https://lists.cncf.io/g/cncf-toc
+    about: Join the public mailing list around CNCF Technical Oversight Committee (TOC)
+  - name: Explore Graduation Backlog
+    url: https://github.com/cncf/toc/projects/6?query=is%3Aopen+sort%3Aupdated-desc
+    about: View the current backlog of projects proposing to transition to CNCF Graduation
+  - name: Explore Incubation Backlog
+    url: https://github.com/cncf/toc/projects/7?query=is%3Aopen+sort%3Aupdated-desc
+    about: View the current backlog of projects proposing to transition to CNCF Incubation

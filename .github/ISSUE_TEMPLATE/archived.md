@@ -18,3 +18,4 @@ assignees: caniszczyk, amye, idvoretskyi, jeefy
 - [ ] Notify Speakers team to remove from CFPs	
 - [ ] Remove from service desk or archive	
 - [ ] Remove from CNCF store
+- [ ] Remove from [CLOMonitor data](https://raw.githubusercontent.com/cncf/clomonitor/main/data/cncf.yaml)

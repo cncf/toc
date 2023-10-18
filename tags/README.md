@@ -13,16 +13,16 @@ a pull request with document referencing the roles and charter, updating the lis
 
 ## Current TAGS
 
-| Name | TOC Liaisons |
+| Name | TOC Liaisons - updated as of 4/11/2023 |
 |------|--------------| 
-| [TAG Security](https://github.com/cncf/tag-security) | Emily Fox, Justin Cormack |
-| [TAG Storage](https://github.com/cncf/tag-storage) | Erin Boyd, Richard Hartmann |
-| [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Matt Farina, Lei Zhang, Katie Gamanji |
-| [TAG Network](https://github.com/cncf/tag-network) | Dave Zolotusky, Davanum Srinivas |
-| [TAG Runtime](https://github.com/cncf/tag-runtime) | Ricardo Rocha, Richard Hartmann, Davanum Srinivas |
-| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Matt Farina, Katie Gamanji, Cathy Zhang |
-| [TAG Observability](https://github.com/cncf/tag-observability) | Lei Zhang, Cathy Zhang |
-| [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability/) | Erin Boyd |
+| [TAG Security](https://github.com/cncf/tag-security) | Duffie Cooley, Dave Zolotusky|
+| [TAG Storage](https://github.com/cncf/tag-storage) | Matt Farina, Nikhita Raghunath  |
+| [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Katie Gamanji, Justin Cormack |
+| [TAG Network](https://github.com/cncf/tag-network) | Duffie Cooley, Ricardo Rocha |
+| [TAG Runtime](https://github.com/cncf/tag-runtime) | Nikhita Raghunath, Richard Hartmann, Cathy Zhang |
+| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Dave Zolotusky, Emily Fox |
+| [TAG Observability](https://github.com/cncf/tag-observability) | Erin Boyd, Ricardo Rocha,  Cathy Zhang |
+| [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability/) | Erin Boyd, Matt Farina, Emily Fox |
 
 ## TAG Chairs as of March 2022
 
@@ -32,14 +32,14 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Alex Chircop](https://github.com/chira001)
 
 ### TAG Security 
-* [Brandon Lum](https://github.com/lumjjb)
 * [Aradhna Chetal](https://github.com/achetal01)
 * [Andrew Martin](https://github.com/sublimino)
+* [Pushkar Joglekar](https://github.com/pushkarj)
 
 ### TAG App-Delivery
 * [Alois Reitbauer](https://github.com/AloisReitbauer)
-* [Jennifer Strejevitch](https://github.com/Jenniferstrej)
-* [Hongchao Deng](https://github.com/hongchaodeng)
+* [Josh Gavant](https://github.com/joshgav)
+* [Thomas Schuetz](https://github.com/thschue)
 
 ### TAG Network 
 * [Lee Calcote](https://github.com/leecalcote)
@@ -54,6 +54,7 @@ a pull request with document referencing the roles and charter, updating the lis
 ### TAG Contributor Strategy
 * [Josh Berkus](https://github.com/jberkus)
 * [Dawn Foster](https://github.com/geekygirldawn)
+* [Catherine Paganini](https://github.com/CathPag)
 
 ### TAG Observability
 * [Matt Young](https://github.com/halcyondude)
@@ -67,15 +68,18 @@ a pull request with document referencing the roles and charter, updating the lis
 
 ## Emeritus Chairs
 
-| TAG | Emeritus Chair |
-|---|---|
-| TAG App Delivery | [Bryan Liles](https://github.com/bryanl) |
-| TAG App Delivery | [Lei Zhang](https://github.com/resouer) |
-| TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred) |
-| TAG Security | [Sarah Allen](https://github.com/ultrasaurus) |
-| TAG Security | [Jeyappragash Jeyakeerthi](https://github.com/pragashj) |
-| TAG Security | [Dan Shaw](https://github.com/dshaw) |
-| TAG Storage | [Erin Boyd](https://github.com/erinboyd) | 
-| TAG Security | [Emily Fox](https://github.com/TheFoxAtWork) |
-| TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman) |
-| TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus)
+| TAG                      | Emeritus Chair                                           |
+|--------------------------|----------------------------------------------------------|
+| TAG App Delivery         | [Jennifer Strejevitch](https://github.com/Jenniferstrej) |
+| TAG App Delivery         | [Hongchao Deng](https://github.com/hongchaodeng)         |
+| TAG App Delivery         | [Bryan Liles](https://github.com/bryanl)                 |
+| TAG App Delivery         | [Lei Zhang](https://github.com/resouer)                  |
+| TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred)               |
+| TAG Security             | [Sarah Allen](https://github.com/ultrasaurus)            |
+| TAG Security             | [Jeyappragash Jeyakeerthi](https://github.com/pragashj)  |
+| TAG Security             | [Dan Shaw](https://github.com/dshaw)                     |
+| TAG Storage              | [Erin Boyd](https://github.com/erinboyd)                 | 
+| TAG Security             | [Emily Fox](https://github.com/TheFoxAtWork)             |
+| TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman)         |
+| TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus)      |
+| TAG Security             | [Brandon Lum](https://github.com/lumjjb)                 |
