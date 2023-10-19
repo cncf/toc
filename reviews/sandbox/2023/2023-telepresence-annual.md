@@ -88,4 +88,4 @@ We'd especially welcome contributors who have expertise with complex environment
 
 ### Incubation
 
-We are currently working through the process to apply to move to the incubation stage.  We have a open governance reveiw and we will be crating the PR in the fall to request our incubation review. 
+We are currently working through the process to apply to move to the incubation stage.  We have a open governance review and we will be creating the PR in the fall to request our incubation review. 
