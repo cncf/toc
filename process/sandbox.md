@@ -106,4 +106,5 @@ The following criteria are leveraged by the TOC to identify when a Sandbox proje
     * Projects with stale contributions will experience significantly delayed maturity progress (subject to the nature of the project)
     * Projects may refer to [project milestones for Sandbox projects](https://github.com/cncf/toc/blob/master/process/project_milestones.md#sandbox) for specific activities to build maturity in their project and potentially increase contributions.
 * Project has little traction with adopters 
+
 Sandbox projects identified for archival will adhere to the project [archival process](_https://github.com/cncf/toc/blob/master/process/archiving.md_) with the defined criteria listed in the issue when filed.
