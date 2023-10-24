@@ -2,7 +2,7 @@
 
 <!--
 This file is a template which can be used by TAGs to bootstrap their governance structure.
-Please review this file carefully and make adjustments to better fit your TAGs structures where needed.
+Please review this file carefully and make adjustments to better fit your TAG where needed.
 -->
 
 The TAG leadership as well as the leadership of working groups or projects follows a common set of rules to ensure a transparent, open and accessible role transition between contributors.
@@ -11,15 +11,15 @@ Roles within the TAG outlining expectations and responsibilities are defined in 
 
 ## Process of nominations
 
-Leadership roles are open to all interested participants within the community. Depending on the needs of the community, as determined by the current TAG leadership team (Chairs and TL), nominations may come from working group co-chairs, TAG co-chairs and/or tech leads and/or other community members.
+Leadership roles are open to all interested participants within the community. Depending on the needs of the community, as determined by the current TAG leadership team (Chairs and TLs), nominations may come from working group co-chairs, TAG co-chairs and/or tech leads and/or other community members. Each TAG is expected to define this for themselves.
 
 The `<TAG NAME>` does not have a current limit on the amount of leadership roles. <!-- ! UPDATE IF DISCUSSED OTHERWISE ! -->
 
 Final nominations will adhere to the [CNCF's TOC described process](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#elections) as well as to the leadership nomination requirements described below.
 
-Any individual who is a member of the `<TAG NAME>` list or other official communication channels may nominate another individual.
+Any individual who is a member of the `<TAG NAME>`, its working groups, or otherwise considered an active participant of the group may nominate another individual. <!-- Update if your TAG has a more restricted pool of nominators -->
 
-The process of endorsing and selecting individuals will consider the following factors to ensure both the need for proper community representation and the necessary technical expertise:
+The process of endorsing and selecting individuals will consider the following factors to ensure both the need for proper community representation and the necessary technical expertise: <!-- If the TAG has any additional items, such as leading a minimum number of projects, or facilitating a number meetings, they should be added to this list under "Body of work" -->
 
 * Gender diversity
 * Company diversity
@@ -42,11 +42,12 @@ Upon close of nominations, a decision should be made within the next month.
 
 ### Submitting a nomination
 
-Nominations are to be submitted to [TAG Co-Chair's email alias](mailto:cncf-tag-chairs@lists.cncf.io) with the details: <!-- ! UPDATE EMAIL ! -->
+Nominations are to be submitted to [TAG Co-Chair's email alias](mailto:cncf-tag-chairs@lists.cncf.io) with the details: <!-- ! UPDATE EMAIL with the TAG's Leadership's correct mailing list ! -->
 
 * Subject "NOMINATION $(TAG Chair, TAG TL, WG XYZ Chair): $NAME-OF-NOMINEE"
 * CC the nominee
 * Justification
+* Nominee Biography
 
 ## Nomination requirements
 
@@ -80,3 +81,7 @@ To ensure nominations are thoughtful and supported, in addition to the above req
 ## Announcing nomination results
 
 The TAG leadership will release aggregate information about the nominees at the end of the nomination process. Aggregate information will not include who nominated someone.
+
+## Next Steps
+
+If the role under nomination requires TOC approval or vote, the TAG Co-chairs are responsible for coordinating and executing that in accordance with the TOC's processes (defined previously).
