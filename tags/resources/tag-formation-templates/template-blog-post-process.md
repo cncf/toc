@@ -37,6 +37,7 @@ stateDiagram-v2
     tagleadreview : 9. TAG Lead reviews\n and approves the blog post
     signoff : 10. TAG Lead reaches out\n to a ToC Liaison for their final sign-off
     merge : 11. TAG Lead merges the blog
+    announcement : 12. TAG announces the blog through communication channels
     
     [*] --> issue
     issue --> abstract
@@ -54,8 +55,9 @@ stateDiagram-v2
       feedback2 --> tagleadreview
       tagleadreview --> signoff
       signoff --> merge
+      signoff --> announcement
     }
-    merge --> [*]
+    announcement --> [*]
 
 ```
 
@@ -71,6 +73,7 @@ stateDiagram-v2
 9. As soon as the blog post has been discussed feedback has been included the assigned TAG Lead will do the sign off.
 10. TAG Lead reaches out to one of the ToC Liaisons for their final sign-off
 11. TAG Lead merges the blog post. The blog post appears on the website [`⚠️ tag-xxx`.cncf.io/blog](https://cncf.io/).
+12. TAG Lead or a communications representative of the TAG announces the blog post.
 
 ### Writing an outline
 
