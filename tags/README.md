@@ -32,9 +32,9 @@ a pull request with document referencing the roles and charter, updating the lis
 * [Alex Chircop](https://github.com/chira001)
 
 ### TAG Security 
-* [Aradhna Chetal](https://github.com/achetal01)
 * [Andrew Martin](https://github.com/sublimino)
 * [Pushkar Joglekar](https://github.com/pushkarj)
+* [Marina Moore](https://github.com/mnm678)
 
 ### TAG App-Delivery
 * [Alois Reitbauer](https://github.com/AloisReitbauer)
@@ -83,3 +83,4 @@ a pull request with document referencing the roles and charter, updating the lis
 | TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman)         |
 | TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus)      |
 | TAG Security             | [Brandon Lum](https://github.com/lumjjb)                 |
+| TAG Security             | [Aradhna Chetal](https://github.com/achetal01)           |
