@@ -3,7 +3,7 @@
 *Approved by TOC: 2018-06-11*
 
 [العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) 
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) | [Farsi](#Farsi) (Persian)
 
 Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic
 environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable
@@ -206,6 +206,15 @@ Wij democratiseren state-of-the art software ontwikkel patterns, om deze innovat
 এই কৌশলগুলি শিথিলভাবে সংযুক্ত সিস্টেমগুলিকে সক্ষম করে যা স্থিতিস্থাপক, পরিচালনাযোগ্য এবং পর্যবেক্ষণযোগ্য। একত্রে বা মিশ্রিত
 শক্তিশালী অটোমেশন, তারা প্রকৌশলীদেরকে ঘন ঘন এবং অনুমানযোগ্যভাবে ন্যূনতম সাথে উচ্চ-প্রভাব পরিবর্তন করতে দেয়
 পরিশ্রম
+
+
+## Farsi
+
+فناوری‌های بومی ابری به سازمان‌ها امکان می‌دهند تا برنامه‌های کاربردی قابل مقیاس را در محیط‌های مدرن و پویا مانند ابرهای عمومی، خصوصی و ترکیبی ایجاد و اجرا کنند. کانتینرها، شبکه‌های خدمات، میکروسرویس‌ها، زیرساخت‌های غیرقابل تغییر و API‌های اظهاری این رویکرد را نمایان می‌کنند.
+
+این تکنیک‌ها امکان ایجاد سیستم‌هایی با وابستگی کم که قابل اعتماد، قابل مدیریت و قابل مشاهده هستند را فراهم می‌کنند. به همراه اتوماسیون قوی، این‌ها به مهندسان اجازه می‌دهند تا تغییرات با تأثیر بالا را به طور مکرر و قابل پیش‌بینی با حداقل زحمت انجام دهند.
+
+بنیاد محاسبات ابری بومی به دنبال افزایش پذیرش این پارادایم از طریق پرورش و حمایت از یک اکوسیستم از پروژه‌های متن‌باز و بی‌طرف تجاری است. ما الگوهای پیشرفته را برای همه قابل دسترس می‌کنیم تا این نوآوری‌ها را برای همگان در دسترس قرار دهیم.
 
 ক্লাউড নেটিভ কম্পিউটিং ফাউন্ডেশন এই দৃষ্টান্তটি গ্রহণ করার চেষ্টা করে
 ওপেন সোর্স, বিক্রেতা-নিরপেক্ষ প্রকল্পের বাস্তুতন্ত্র। আমরা এইগুলি তৈরি করার জন্য অত্যাধুনিক নিদর্শনগুলিকে গণতন্ত্রীকরণ করি৷
