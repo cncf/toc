@@ -109,13 +109,6 @@ We currently have 10 maintainers and 2 committers and have [a maintainer list on
   | Shumin Yuan | [vegetableysm](https://github.com/vegetableysm) | Alibaba | [yuanshumin.ysm@alibaba-inc.com](mailto:yuanshumin.ysm@alibaba-inc.com) |
   | Denghao Li | [lidh15](https://github.com/lidh15) | PingAn Tech | [lidhrandom@gmail.com](mailto:lidhrandom@gmail.com) |
 
-- **New Committers in this year**
-
-  | Name | GitHub ID | Affiliation | Email |
-  | --- | --- | --- | --- |
-  | Lihong Lin | [linlih](https://github.com/linlih) | PKU | [linlh@stu.pku.edu.cn](mailto:linlh@stu.pku.edu.cn) |
-  | Pei Li | [peilii](https://github.com/peilii) | CMU | [peili.dev@gmail.com](mailto:peili.dev@gmail.com) |
-
 ## Adoption
 
 > What do you know about adoption, and how has this changed since your last review / since
