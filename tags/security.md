@@ -10,7 +10,7 @@ final review by Liz Rice, Joe Beda and Zhipeng Huang.
 
 **TOC Liaisons:** Duffie Cooley, Dave Zolotusky
 
-**TAG Chairs:** [Aradhana Chetal](https://github.com/achetal01), [Andrew Martin](https://github.com/sublimino), [PushkarJ](https://github.com/pushkarj)
+**TAG Chairs:** [Andrew Martin](https://github.com/sublimino), [PushkarJ](https://github.com/pushkarj), [Marina Moore](https://github.com/mnm678)
 
 **Tech Leads:** 
 * Justin Cappos ([@JustinCappos](https://github.com/JustinCappos)), New York University
@@ -18,6 +18,5 @@ final review by Liz Rice, Joe Beda and Zhipeng Huang.
 * Andres Vega ([@anvega](https://github.com/anvega)
 * Ragashree Shekar ([@ragashreeshekar](https://github.com/ragashreeshekar)), Independent
 * Michael Lieberman ([@mlieberman85](https://github.com/mlieberman85)), Kusari
-* Marina Moore ([@mnm678](https://github.com/mnm678)), NYU
 
 For complete details on process and elaboration of rules, see [TAG-Security governance](https://github.com/cncf/tag-security/tree/main/governance)

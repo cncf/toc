@@ -71,7 +71,7 @@ To be accepted to incubating stage, a project must meet the sandbox stage requir
 
 ![Incubating](https://github.com/cncf/toc/blob/main/process/incubation-process.png)
 
-Projects currently in progress for consideration at the Incubating stage are tracked: https://github.com/cncf/toc/projects/7
+Projects currently in progress for consideration at the Incubating stage are tracked: https://github.com/orgs/cncf/projects/27/views/9
 
 ## (3) Project Graduation Process: Incubating to Graduation
 Projects that wish to move from Incubating to Graduation should open a PR confirming the following criteria:
@@ -83,7 +83,7 @@ Projects that wish to move from Incubating to Graduation should open a PR confir
 * Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website). For a specification, have a list of adopters for the implementation(s) of the spec.
 * Please include a short one-page narrative based off the Graduation template, no more than 500 words.
 
-Projects moving from incubation to graduation are tracked here: https://github.com/cncf/toc/projects/6
+Projects moving from incubation to graduation are tracked here: https://github.com/orgs/cncf/projects/27/views/9
 
 ## (4) Archiving Projects
 
@@ -101,12 +101,7 @@ To archive a project:
 
 ### Archiving Process
 
-What does archiving for a CNCF project mean?
-* CNCF will no longer provide support for the project via service desk
-* CNCF will list archived projects online
-* Trademarks and domain names of archived projects are still hosted by the CNCF and the Linux Foundation
-* CNCF can provide services such as documentation updates to help transition users.
-* Other CNCF marketing activities will no longer be provided for the project
+See the [Archiving process](archiving.md).
 
 # IV. Annual Review Process
 

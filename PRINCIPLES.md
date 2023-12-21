@@ -121,7 +121,7 @@ We should focus on areas of rough 'de facto' agreement, under the proviso that e
 
 The world has a number of recognized international standards bodies such as IETF and W3C. CNCF is not playing the role of a standards body. By contrast, OCI is a standards body.
 
-CNCF may develop written materials in the style of the current CNI interface document, or in the style of an IETF RFC for example. These CNCF “specification” materials are not “standards”. It is in future possible that an independent and recognized international standards body takes a CNCF document as “upstream” and evolves it into a standard via (e.g.) the IETF process. The CNCF is morally supportive of independent parties doing this, but does not see this work as its own responsibility. For that matter, to date, no such exercise is in process.
+CNCF may develop written materials in the style of the current CNI interface document, or in the style of an IETF RFC for example. These CNCF “specification” materials are not “standards”. It is possible in the future that an independent and recognized international standards body takes a CNCF document as “upstream” and evolves it into a standard (e.g. via the IETF process). The CNCF is morally supportive of independent parties doing this, but does not see this work as its own responsibility. For that matter, to date, no such exercise is in process.
 
 In general CNCF specifications will evolve as “living documents” side by side with the CNCF OSS projects that adopt them.   This means they are “dynamic and fast-moving” whereas a typical IETF standard is ”static” and not subject to frequent updates & new releases.
 
@@ -149,7 +149,7 @@ _Principle: Users shouldn't need to look beyond the CNCF for cloud native app to
 
 Grand vision: CNCF should identify, facilitate and promote a *complete toolset* for cloud native applications and stacks at scales from small to large. This enables customers to adopt good tools faster, and be less at risk of confusion and doubt.
 
-We need to flesh out the portfolio of projects needed by users to succeed with cloud native computing. It's pretty clear where remaining gaps in the project portfolio are. We should try to fill some of those, and at least document the rest. We can make more WGs to help with a few of those. (Note that “detailed architecture and stack” can be a Project)
+We need to flesh out the portfolio of projects needed by users to succeed with cloud native computing. It's pretty clear where remaining gaps in the project portfolio are. We should try to fill some of those, and at least document the rest. We can make more WGs to help with a few of those. (Note that “detailed architecture and stack” can be a project)
 
 ## Above All We Want To Help Projects
 

@@ -29,7 +29,7 @@ are in scope, including:
 
 *   generalized orchestration, autoscaling, scheduling, execution, container
     runtimes, sandboxing, virtualization, image packaging/distribution and specialized architectures thereof, e.g. 
-    *   those aimed specifically at Edge, IoT, Batch, Big Data, AI/ML, etc
+    *   those aimed specifically at Edge, IoT, Batch, Big Data, AI/ML/LLMs, etc
     *   those incorporating specialized computing elements beyond CPUs, including GPUs, TPUs, FPGAs, ASICs, etc.
 
 We strive to understand the fundamental characteristics of different approaches with respect to availability,
