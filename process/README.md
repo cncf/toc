@@ -105,20 +105,4 @@ See the [Archiving process](archiving.md).
 
 # IV. Annual Review Process
 
-Sandbox projects are subject to an annual review by the TOC. This is intended to be a lightweight process to ensure that projects are on track, and getting the support they need.
-
-Your annual review should answer the following questions:
-
-* Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity. Please feel free to add commentary to add colour to the numbers and graphs we will see on devstats.
-* How many maintainers do you have, and which organisations are they from? (Feel free to link to an existing MAINTAINERS file if appropriate.)
-* What do you know about adoption, and how has this changed since your last review / since you joined Sandbox? If you can list companies that are adopters of your project, please do so. (Feel free to link to an existing ADOPTERS file if appropriate.)
-* How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)
-* What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
-* How can the CNCF help you achieve your upcoming goals?
-* Do you think that your project meets the criteria for incubation?
-
-Based on this review the TOC will vote on whether to continue to sponsor the project in Sandbox. If the vote does not reach a simple majority, we will discuss archiving or other next steps with you.
-
-Additionally, the TOC might recommend that you apply for Incubation stage. This requires extra work and due diligence so it’s not a possible outcome to move directly to Incubation from this lightweight annual review.
-
-It is fine for a project to stay in the Sandbox indefinitely while it is still active, but if a project has genuinely stalled we can save everyone’s effort by archiving it.
+The TOC is deprecating the current annual review process as of September 2023 in favor of a proposed automated review system. 
