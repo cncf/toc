@@ -1,21 +1,14 @@
 # TOC Decision Making Process
 
-This document outlines a decision-making structure used by the TOC
-that takes into account feedback from members of the community
-and strives to find consensus, while avoiding deadlocks.
+This document outlines a decision-making structure used by the TOC that takes into account feedback from members of the community and strives to find consensus, while avoiding deadlocks.
 
-All discussions take place based on the Operating Model
-defined in the [charter](https://github.com/cncf/foundation/blob/main/charter.md#6-technical-oversight-committee-toc).
+All discussions take place based on the Operating Model defined in the [charter](https://github.com/cncf/foundation/blob/main/charter.md#6-technical-oversight-committee-toc).
 
-To ensure that the process is as efficient as possible,
-the amount of notice provided and the amount of consensus sought is driven by
-the estimation of how complicated an issue or PR is.
+To ensure that the process is as efficient as possible, the amount of notice provided and the amount of consensus sought is driven by the estimation of how complicated an issue or PR is.
 
 ## Major Changes
 
-To propose any change to the existing governance, principles or processes that
-impact the broader CNCF community (including projects, TAGs, etc),
-the following process shall be followed:
+To propose any change to the existing governance, principles or processes that impact the broader CNCF community (including projects, TAGs, etc), the following process shall be followed:
 
 - Open a GitHub issue in the `cncf/toc` repo describing the change.
 - Shepherd a public discussion about the topic in a TOC meeting.
@@ -42,18 +35,11 @@ for a _reasonable time_ to allow for any additional comments.
 
 ## Minor Changes
 
-The following process shall be followed for changes that are narrowly scoped.
-Some examples of these changes are typo fixes or improving the clarity of
-existing TOC processes as documented where there is no impact to projects,
-the community, the outcome of processes, or any such changes that modify
-the intent of their execution.
-It is expected these changes are made in good faith to enable velocity for
-projects by removing confusion and enable increased transparency.
+The following process shall be followed for changes that are narrowly scoped. Some examples of these changes are typo fixes or improving the clarity of existing TOC processes as documented where there is no impact to projects, the community, the outcome of processes, or any such changes that modify the intent of their execution.
+It is expected these changes are made in good faith to enable velocity for projects by removing confusion and enable increased transparency.
 
-- Open a GitHub issue or directly create a PR to the `cncf/toc` repo
-to propose the change.
-- For the PR to be approved, it needs approval from at least one TOC member
-_and_ the TOC Chair is to be informed to confirm previous consensus in
+- Open a GitHub issue or directly create a PR to the `cncf/toc` repo to propose the change.
+- For the PR to be approved, it needs approval from at least one TOC member _and_ the TOC Chair is to be informed to confirm previous consensus in
 applying the minor change.
 - If the PR is approved as per above, the PR can be merged.
 
@@ -70,8 +56,5 @@ Votes are managed through at least one of the following ways:
 - over email on the TOC mailing list
 - on call in a public TOC meeting
 
-The specific voting details are mentioned in each process' guidelines
-and the requirements laid out in the [charter](https://github.com/cncf/foundation/blob/main/charter.md#6-technical-oversight-committee-toc).
-Processes that pass votes do not require additional approvals and
-can be directly merged by the CNCF Staff.
-
+The specific voting details are mentioned in each process' guidelines and the requirements laid out in the [charter](https://github.com/cncf/foundation/blob/main/charter.md#6-technical-oversight-committee-toc).
+Processes that pass votes do not require additional approvals and can be directly merged by the CNCF Staff.
