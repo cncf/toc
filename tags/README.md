@@ -18,6 +18,14 @@ The purpose of this document is to provide insight into the objectives and life 
 
 Scale contributions by the CNCF technical and user community, while retaining integrity and increasing quality in support of our [mission](https://github.com/cncf/foundation/blob/main/charter.md#1-mission-of-the-cloud-native-computing-foundation).
 
+A CNCF TAG will oversee and coordinate the interests pertaining to a logical area of needs of end users and/or projects.  Examples of such areas include security, testing, observability, storage, networking, etc.  The area overseen by a TAG is typically met by a set of CNCF projects, and may also represent a cross-cutting feature group shared by several projects (like security and observability).  TAG’s are:
+
+* long lived groups that report to the Technical Oversight Committee
+* led primarily by recognised experts in the relevant field(s), supported by other contributors
+
+CNCF TAGs are modelled on Kubernetes SIGs.  Differences are intended to be minimal to avoid confusion - unavoidable differences are described [here](https://docs.google.com/document/d/1oSGhx5Hw7Hs_qawYB46BvRSPh0ZvFoxvHx-NWaf5Nsc/edit?usp=sharing).
+
+
 ## Specific Objectives
 
 * Strengthen the project ecosystem to meet the needs of end users and project contributors.
@@ -32,12 +40,6 @@ Scale contributions by the CNCF technical and user community, while retaining in
 
 ## Introduction
 
-A CNCF TAG will oversee and coordinate the interests pertaining to a logical area of needs of end users and/or projects.  Examples of such areas include security, testing, observability, storage, networking, etc.  The area overseen by a TAG is typically met by a set of CNCF projects, and may also represent a cross-cutting feature group shared by several projects (like security and observability).  TAG’s are:
-
-* long lived groups that report to the Technical Oversight Committee
-* led primarily by recognised experts in the relevant field(s), supported by other contributors
-
-CNCF TAGs are modelled on Kubernetes SIGs.  Differences are intended to be minimal to avoid confusion - unavoidable differences are described [here](https://docs.google.com/document/d/1oSGhx5Hw7Hs_qawYB46BvRSPh0ZvFoxvHx-NWaf5Nsc/edit?usp=sharing).
 
 ## Responsibilities & Empowerment of TAGs
 
@@ -100,7 +102,7 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 
 ### TAG Formation, Leadership and Membership Composition
 
-1. TAGs are formed by the TOC.  Initial TAGs are listed in [proposed TAGs](/tags/proposed.md), and will be adapted over time as required.  If members of the community believe that additional TAGs are desired, they should propose these to the TOC, with clear justification, and ideally volunteers to lead the TAG. The TOC wishes to have the smallest viable number of TAGs, and for all of them to be highly effective (as opposed to a "TAG sprawl" with large numbers of relatively ineffective TAGS).
+1. The Technical Oversight Committee (TOC) takes responsibility for the establishment of TAGs. In order to ensure the viability, sustainability, and relevance of a TAG, the TOC requires proposals for TAGs to first begin within an existing TAG as a working group. When a working group reaches sufficient momentum, interest, and growth that aligns with cloud native goals and objectives, has alignment with several cloud native projects, and shows continued execution in alignment with their charter, the TAG and Working Group Leadership may engage their TOC Liaisons to determine if the Working Group is eligible to be reconsidered as a TAG. This process may take a few years as these specific domains evolve and mature in similar fashion to cloud native projects evolution and maturity. The TOC may then vote to instantiate a new TAG. The TOC wishes to have the smallest viable number of TAGs, and for all of them to be highly effective (as opposed to a "TAG sprawl" with large numbers of relatively ineffective TAGS).
 2. TAG has three co-chairs, recognized as experts in that area, and for their ability to co-lead the TAG to produce the required unbiased outputs.
 3. TAG has at least one TOC liaison who is a voting member of the TOC acting as an additional non-executive chair on occasions when TOC input is deemed necessary by the TOC or the TAG chairs for TAG decision making.
 4. TAG has multiple tech leads who are recognized as (1) experts in the TAG area, (2) leaders of projects in the TAG’s area (3) demonstrating the ability to provide the balanced technical leadership required to produce the required unbiased outputs of the TAG. The reason for having separate chair and tech lead roles is to allow responsibility for primarily administrative functions to be separated from deep technical functions and associated time commitments and skill sets.  Where appropriate, an individual may perform both roles as shown in [TAG member roles](/tags/cncf-tags.md#TAG-Member-Roles).
