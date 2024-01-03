@@ -2,9 +2,9 @@
 
 This document serves to provide the TOC Chair with details on their responsibilities, role, and expectations that are in addition to those of a TOC member.
 
-## Selecting the Chair
+## Chair selection and time committment
 
-The TOC Chair is an member of the TOC that is chosen by each seated TOC to lead and presented the TOC in the execution of it's work. 
+The TOC Chair is an member of the TOC that is chosen by each seated TOC to lead and resent the TOC in the execution of it's work. The expected time commitment of a TOC member who is serving as Chair is roughly **20-25% of their monthly regular work time**, and may be higher or lower depending on existing community and project challenges, activity of the TOC, and other occurrences that may occupy their time (such as serving in an interim capacity on other groups). The Chair should also anticipate travel to conferences and offsites at least twice a year, with participation and attendence at various meetings during the CNCF flagship conference: KubeCon+CloudNativeCon (KCCN).
 
 ## Functions of the Chair
 
@@ -27,7 +27,8 @@ The Chair is expected to perform a variety of functions and can often be thought
 * Meet regularly with CNCF Leadership, CNCF Staff Supporting the TOC, and other Foundations' Technical Leadership to coordinate cross-foundation opportunities and awareness
 * Be available to field questions and concerns from community members and redirect as needed
 * Coordinate TOC Keynotes at KubeCon + CloudNativeCon (KCCN)
-* Participate in meetings, presentations, etc. as needed at KCCN 
+* Participate in meetings, presentations, etc. as needed at KCCN
+* Serve as technical public spokesperson on behalf of CNCF TOC
 
 ## Governing Board Meetings
 
