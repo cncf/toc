@@ -187,7 +187,7 @@ In this instance they may rotate from App Delivery to the TAG that needs to grow
 
 ### Elections
 
-* The TOC nominates Chairs
+* For new TAGs, the TOC nominates Chairs. For existing TAGs, the TOC relies on the TAG leadership to present candidates to the TOC.
 * Chairs are assigned following a 2/3 majority vote of the TOC
 * Terms last for 2 years but staggered such that at least 1 of the chairs is able to maintain continuity
 * The TOC and Chairs nominate Tech leads
