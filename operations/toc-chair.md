@@ -14,7 +14,7 @@ The Chair is expected to perform a variety of functions and can often be thought
 * Coordinate TOC activities
 * Ensure Liaisons are assigned and engaged for each TAG
 * Coordinate overarching TAG activities
-* Represent the TOC to the Governing Board
+* Serve on the Governing Board in the TOC Seat and represent the TOC to the Governing Board
 * Co-present CNCF technical strategy at Governing Board strategy sessions
 * Support onboarding new TOC members as needed
 * Ensure notes and actions are documented and issued for TOC meetings with follow-up
