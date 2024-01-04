@@ -20,7 +20,7 @@ The Chair is expected to perform a variety of functions and can often be thought
 * Ensure notes and actions are documented and issued for TOC meetings with follow-up
 * Verify appropriate workload distribution among the TOC members
 * Ensure TOC meetings have a facilitator and agenda
-* Foster discussion - ask questions, even obvious ones to move the conversation forward or to closure.
+* Foster discussion - ask questions, even obvious ones to move the conversation forward or to closure
 * Protect TOC time - People like to sign the TOC up for a lot of things, you are responsible for ensuring we’re involved in the things we need to be and which ones are not on us
 * Redirect work out of scope of the TOC to the appropriate group (Kubernetes Steering, Governing Board, Code of Conduct Committee, Legal Committee, etc.)
 * Bring project and group conflicts that escalate to the TOC level to closure, either through delegation to TOC members and awareness or through direct resolution while keeping the TOC informed
