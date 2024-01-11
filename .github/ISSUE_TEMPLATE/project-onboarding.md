@@ -39,7 +39,7 @@ Things that CNCF will need from the project:
 
 Things that the CNCF will do or help the project to do:
 
-- [ ] DevStats: add to Devstats <https://devstats.cncf.io/>
+- [ ] DevStats: add to DevStats <https://devstats.cncf.io/>
 - [ ] Insights: add to LFX Insights <https://insights.v3.lfx.linuxfoundation.org/>. This is an app added to the organization.
 - [ ] Marketing: update relevant intro + slide decks
 - [ ] Events: update CFP + Registration + CFP Area forms
