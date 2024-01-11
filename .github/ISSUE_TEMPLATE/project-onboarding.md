@@ -3,7 +3,7 @@ name: Project onboarding - Sandbox projects
 about: Create a checklist of tasks for a project to complete the onboarding process
 title: "[SANDBOX PROJECT ONBOARDING] project"
 labels: project onboarding, sandbox
-assignees: caniszczyk, amye, idvoretskyi, jeefy, krook
+assignees: caniszczyk, amye, idvoretskyi, jeefy, krook, Cmierly
 ---
 
 Welcome to CNCF Project Onboarding!
