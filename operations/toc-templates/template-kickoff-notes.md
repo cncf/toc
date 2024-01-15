@@ -34,7 +34,7 @@ Agenda:
 * Set expectations
 * General Steps & Timelines
 * DD template: https://github.com/cncf/toc/blob/main/process/dd-review-template.md
-* File Service Desk ticket to create a folder for OpenFeature in CNCF Google Drive
+* File Service Desk ticket to create a folder for $PROJECT in CNCF Google Drive
 * Adopter Interviews
 * Questions
 
