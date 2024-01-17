@@ -53,6 +53,7 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 
 #### Tech Leads
 * [Cara Delia](https://github.com/caradelia)
+* [Kristina Devochko](https://github.com/guidemetothemoon)
 
 ### TAG Network
 #### Chairs
