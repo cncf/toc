@@ -26,5 +26,8 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Erin Boyd (2/1/2021-2/1/2023)
 * Lei Zhang (2/1/2021-2/1/2023)
 * Davanum Srinivas (3/17/2021 - 3/17/2023)
+* Justin Cormack (2/4/2020 - 2/4/2024) 
+* Matt Farina (2/4/2022 - 2/4/2024)
+* Richard Hartmann (2/4/2022 - 2/4/2024)
 
 We thank these members for their service to the CNCF community.
