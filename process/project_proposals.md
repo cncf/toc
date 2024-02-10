@@ -75,7 +75,7 @@ All exceptions and "declined" or "postponed" outcomes are handled by the TOC. Pr
 ![Sandbox process](sandbox-application-process-2022.png)
 
 #### Applying for Sandbox
-   * Projects apply for sandbox through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
+   * Projects apply for sandbox through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new?assignees=&labels=New&projects=&template=application.yml&title=%5BSandbox%5D+%3CProject+Name%3E)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
 
 #### Annual Review of Sandbox projects
 
