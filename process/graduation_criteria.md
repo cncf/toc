@@ -10,7 +10,7 @@ Incubating and graduated projects have access to all resources listed at [cncf.i
 
 To be accepted in the sandbox a project must
 
-* Apply to join the sandbox using the [form](https://github.com/cncf/sandbox/issues/new?assignees=&labels=New&projects=&template=application.yml&title=%5BSandbox%5D+%3CProject+Name%3E/choose)
+* Apply to join the sandbox using the [form](https://github.com/cncf/sandbox/issues/new?assignees=&labels=New&projects=&template=application.yml&title=%5BSandbox%5D+%3CProject+Name%3E)
 * Adopt the CNCF [Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md)
 * Adhere to CNCF [IP Policy](https://github.com/cncf/foundation/blob/master/charter.md#11-ip-policy) (including trademark transferred)
 * List their sandbox status prominently on website/readme
