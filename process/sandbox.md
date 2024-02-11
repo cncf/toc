@@ -1,5 +1,6 @@
-# CNCF Sandbox Overview 
-![CNCF Sandbox](https://github.com/cncf/artwork/blob/master/other/cncf-sandbox/horizontal/color/cncf-sandbox-horizontal-color.png)
+# CNCF Sandbox Overview
+
+![CNCF Sandbox](https://raw.githubusercontent.com/cncf/artwork/main/other/cncf-sandbox/horizontal/color/cncf-sandbox-horizontal-color.png)
 
 The CNCF Sandbox is the entry point for early stage projects and has four goals:
 
@@ -83,9 +84,9 @@ Some key points:
 * Reviewed on an annual basis; submit a report to the TOC for review
 * CNCF Sandbox projects can stay in the sandbox indefinitely
 
-### Application into Sandbox 
+### Application into Sandbox
 
-Projects apply through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
+Projects apply through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new?assignees=&labels=New&projects=&template=application.yml&title=%5BSandbox%5D+%3CProject+Name%3E)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
 Frequency of reviews can be found on the [repo's README under "Frequency"](https://github.com/cncf/sandbox/blob/main/README.md#Frequency).
 
 ### Project onboarding
