@@ -17,9 +17,9 @@
 
 ## About OpenCost
 
-OpenCost is a vendor-neutral open source project for measuring and allocating Kubernetes infrastructure and container costs in real time. It was originally developed and open-sourced by [Kubecost](https://kubecost.com/). This project combines a [specification](https://github.com/opencost/opencost/blob/develop/spec) as well as a Golang implementation of these detailed requirements.
+OpenCost is a vendor-neutral open source project for measuring and allocating Kubernetes infrastructure and container costs in real time and providing visibility into cloud costs across multiple providers . It was originally developed and open-sourced by [Kubecost](https://kubecost.com/). This project combines a [specification](https://github.com/opencost/opencost/blob/develop/spec) as well as a Golang implementation of these detailed requirements.
 
-The goal of OpenCost is to be the default real-time cloud cost monitoring solution for Kubernetes. OpenCost currently fully supports Amazon Web Services, Microsoft Azure, Google Cloud Platform, and on-premises with partial support for Alibaba Cloud and Scaleway. There are easily thousands of deployments of OpenCost in production and potentially orders of magnitude greater when considering inclusion in Kubecost’s commercial offering.
+The goal of OpenCost is to be the default real-time cloud cost monitoring solution for Kubernetes and cloud spend. OpenCost currently fully supports Amazon Web Services, Microsoft Azure, Google Cloud Platform, and on-premises with partial support for Alibaba Cloud and Scaleway. There are easily thousands of deployments of OpenCost in production and potentially orders of magnitude greater when considering inclusion in Kubecost’s commercial offering.
 
 ### Essentials
 
@@ -57,22 +57,31 @@ OpenCost was proposed and accepted as a Sandbox project in June 2022 ([Sandbox p
 * April 18, 2023: [Microsoft announces they have joined the OpenCost community](http://aka.ms/aks/OpenCost-AKS) with code and feature contributions and a new [Azure Billing Rate Card API supporting OpenCost](https://www.opencost.io/docs/configuration/azure-prices)
 * April 18-21, 2023: OpenCost has a full-time staffed kiosk at KubeCon EU in the Project Pavilion
 * June 27, 2023: OpenCost announces participation in the [FinOps Open Cost and Usage Specification](https://www.opencost.io/blog/focus) (FOCUS) while attending the FinOps X conference.
+* June 27, 2023: Grafana Labs announces [inclusion of OpenCost](https://www.opencost.io/blog/focus) in their Grafana Cloud Kubernetes Monitoring platform
+* October 10, 2023: [OpenCost Backstage plugin](https://www.opencost.io/blog/focus) included in Backstage for monitoring Kubernetes cost allocations
+* October 31, 2023: Support for providing visibility into [cloud costs](https://www.opencost.io/blog/focus) through provider billing integration is announced, moving OpenCost beyond strictly Kubernetes-based cost monitoring
+* November 7-9, 2023: At KubeCon NA OpenCost has a Working Session, a full-time staffed kiosk in the Project Pavilion, and 2 OpenCost-related talks on the schedule.
+* November 16, 2023: Microsoft announces their [AKS Cost Analysis](https://aka.ms/aks/cost-analysis) tool built on top of OpenCost, the first Azure service to provide service-specific cost drill downs.
+* December 7, 2023: The [Prometheus OpenCost Exporter](https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-opencost-exporter) is merged into the Prometheus Community Helm Chart repository
+* December 8, 2023: [Artur Khantimirov from Microsoft](https://github.com/opencost/opencost/pull/2372) becomes the first OpenCost Maintainer not from Kubecost
+* December 14, 2023: CNCF On-Demand Webinar: [OpenCost Kubernetes cost monitoring deep dive](https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-on-demand-webinar-opencost-kubernetes-cost-monitoring-deep-dive/)
+* January 19, 2024: initial commit to community-contributed [opencost-parquet-exporter](https://github.com/opencost/opencost-parquet-exporter)
 
 ### Growing Community
 
-Since joining the CNCF Sandbox, we have seen substantial growth in the OpenCost community. According to [OpenCost DevStats](https://opencost.devstats.cncf.io/) the following stats for the main [OpenCost repository](https://github.com/opencost/opencost/) have grown notably in the past year in CNCF:
+Since joining the CNCF Sandbox, we have seen substantial growth in the OpenCost community. According to [OpenCost DevStats](https://opencost.devstats.cncf.io/) as of February 2024 the following stats for the main [OpenCost repository](https://github.com/opencost/opencost/) have grown notably:
 
-* [GitHub Stars](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 2000 to over 3950
-* [GitHub Forks](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 192 to over 436
-* [Contributors](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): increased from 40 to 413
-* [Committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): there are now 70 committers
-* There have been over 1000 commits to the primary *develop* branch of opencost/opencost since launch
-* [17 of the top 50 contributors are not Kubecost employees](https://opencost.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Last%20decade&var-metric=contributions&var-repogroup_name=OpenCost&var-country_name=All&var-companies=All)
-* [Number of new PRs](https://opencost.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&editPanel=1&from=now-1y&to=now&var-period=w&var-repogroup_name=OpenCost): currently average **8 per week**
-* [Median PR Time to Engagement](https://opencost.devstats.cncf.io/d/10/pr-time-to-engagement?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 24 hours
-* [Median PR Open to Merge](https://opencost.devstats.cncf.io/d/16/opened-to-merged?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 24 hours
-* [LinkedIn followers](https://www.linkedin.com/showcase/opencost/): have increased from 70 to 203
-* [CNCF Slack](https://slack.cncf.io/): there are currently 659 Slack members in **#opencost**
+* [GitHub Stars](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 2000 to over 4500
+* [GitHub Forks](https://opencost.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1): increased from 192 to over 490
+* [Contributors](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): increased from 40 to 417
+* [Committers](https://opencost.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=OpenCost): there are now 115 committers
+* There have been over 1500 commits to the primary *develop* branch of opencost/opencost since launch
+* [69 of the top 100 contributors are not Kubecost employees](https://opencost.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Last%20decade&var-metric=contributions&var-repogroup_name=OpenCost&var-country_name=All&var-companies=All)
+* [Number of new PRs](https://opencost.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&editPanel=1&from=now-1y&to=now&var-period=w&var-repogroup_name=OpenCost): currently average **15 per week**
+* [Median PR Time to Engagement](https://opencost.devstats.cncf.io/d/10/pr-time-to-engagement?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 7 hours
+* [Median PR Open to Merge](https://opencost.devstats.cncf.io/d/16/opened-to-merged?orgId=1&var-period=d7&var-repogroup_name=OpenCost&from=now-90d&to=now): currently < 7 hours
+* [LinkedIn followers](https://www.linkedin.com/showcase/opencost/): have increased from 70 to 563
+* [CNCF Slack](https://slack.cncf.io/): there are currently 928 Slack members in **#opencost**
 
 We actively host or take part in various community programs and events, tracked on the [OpenCost Community Calendar](https://bit.ly/opencost-calendar). There is a fortnightly [OpenCost Community Meeting](https://docs.google.com/document/d/1JFB_-sjF8F9UWet1c-dWixdMZY4hri23UlQG5FX5xfY/edit#), where community members and external stakeholders are invited to discuss the project and their experiences with OpenCost to shape future development.
 
@@ -82,28 +91,31 @@ OpenCost has documented our [contributing guidelines](https://github.com/opencos
 
 #### Repositories
 
-There are currently 3 OpenCost repositories:
+There are currently 4 OpenCost repositories:
 
 * [opencost/opencost](https://github.com/opencost/opencost/): The primary OpenCost repository containing the [OpenCost specification](https://github.com/opencost/opencost/blob/develop/spec) and the code for the cost-model and opencost-UI.
 * [opencost/opencost-helm-chart](https://github.com/opencost/opencost-helm-chart/): Helm chart for deploying and customizing OpenCost and the OpenCost UI.
+* [opencost/opencost-parquet-exporter](https://github.com/opencost/opencost-parquet-exporter/): Exports OpenCost data in parquet format.
 * [opencost/opencost-website](https://github.com/opencost/opencost-website/): This repository hosts the [OpenCost.io](https://opencost.io) website, documentation, and blog.
 
 #### Versioning and Releases
 
-OpenCost repositories follow the [Semantic Versioning 2.0.0](https://semver.org/) convention. So far we have 9 OpenCost releases, with the initial OpenCost 1.94 released in June 2022, and the current release is 1.103 from May 2023. The 1.x series are considered stable and have been in production for years.
+OpenCost repositories follow the [Semantic Versioning 2.0.0](https://semver.org/) convention. So far we have 15 OpenCost releases, with the initial OpenCost 1.94 released in June 2022, and the current release is 1.109 from February 2024. The 1.x series are considered stable and have been in production for years.
 
 The release cadence is:
 * There have been no additional major releases since OpenCost was added to the CNCF.
 * Minor versions are released every month.
 * Patch versions are released as necessary.
 
-The releases are announced using [GitHub releases](https://github.com/opencost/opencost/releases), followed by Slack (CNCF/#opencost), Mastodon, Twitter, and discussion in the Community Meetings.
+The releases are announced using [GitHub releases](https://github.com/opencost/opencost/releases), followed by Slack (CNCF/#opencost), LinkedIn, Mastodon, Twitter, and discussion in the Community Meetings.
 
 #### Code Quality and Testing
 
-All incoming Pull Requests are tested with GitHub Actions to execute the unit tests defined in the test and pkg/* directories against amd64 and arm64 platforms with [Docker](https://github.com/opencost/opencost/blob/develop/Dockerfile). Code formatting is enforced with go fmt. Kubecost provides integration testing and performance testing as part of their release process. OpenCost currently has a "A+" score with [Go Report Card](https://goreportcard.com/report/github.com/opencost/opencost).
+All incoming Pull Requests are tested with GitHub Actions to execute the unit tests defined in the test and pkg/* directories against amd64 and arm64 platforms with [Docker](https://github.com/opencost/opencost/blob/develop/Dockerfile). Code formatting is enforced with `go fmt`. Code quality is checked with `go vet`. Kubecost provides integration testing and performance testing as part of their release process. OpenCost currently has a "A+" score with [Go Report Card](https://goreportcard.com/report/github.com/opencost/opencost).
 
 The Helm chart is tested with the [GitHub Action](https://github.com/opencost/opencost-helm-chart/blob/main/.github/workflows/helm-test.yml) helm/chart-testing-action which provides linting with ct lint and integration testing with ct install against a Kubernetes in Docker cluster.
+
+The OpenCost parquet exporter test with `pylint`.
 
 The OpenCost website creates temporary sites on approved PRs with Vercel to evaluate the changes.
 
@@ -127,6 +139,8 @@ Since joining the CNCF as a Sandbox Project in June of 2022, there have been mon
 * 1.0.0 release of the OpenCost Helm chart for expanded installation options.
 * 1.103 brought enhanced Azure billing integration and a daily CSV export of allocation data.
 * 1.104 Kubecost contributed non-k8s billing integration and cost monitoring to the project for future enhancements.
+* 1.108 introduced support for Cloud Costs integration which provides cloud provider billing monitoring.
+* 1.109 brings support for Oracle Cloud Infrastructure and running without Kubernetes.
 
 ### Documentation Improvements
 Documentation currently exists in both the opencost and opencost-website repositories, but it is presented on http://opencost.io. Since joining the CNCF the website is now in the OpenCost GitHub organization and is aligned with the CNCF’s IP policy to ensure all documentation is under the Creative Commons Attribution 4.0 International License. There have been many updates to the documentation, highlights include:
@@ -134,6 +148,8 @@ Documentation currently exists in both the opencost and opencost-website reposit
 * A [swagger.json](https://raw.githubusercontent.com/opencost/opencost/develop/docs/swagger.json) OpenAPI document is now provided and API documentation was added to the OpenCost website. This should make API-based integrations much simpler.
 * Documentation for custom [on-premises pricing](https://www.opencost.io/docs/configuration/on-prem) is now available.
 * Configuring the [AWS Spot Instance Data Feed](https://www.opencost.io/docs/configuration/AWS#aws-spot-instance-data-feed-configuration) is now documented.
+* A UI [walk through](https://youtu.be/lCP4Ci9Kcdg) and [ingress instructions](https://www.opencost.io/docs/installation/ui#ingress-for-opencost-ui) were added.
+* [Cloud provider-specific pages](https://www.opencost.io/docs/configuration/) for configuring cloud costs and accessing other provider-specific features.
 
 ## Incubation Stage Requirements
 
@@ -159,6 +175,7 @@ Full details can be found at [CNCF devstats](https://opencost.devstats.cncf.io/)
 The security process for OpenCost is documented in the [SECURITY.md](https://github.com/opencost/opencost/blob/develop/SECURITY.md). Here is an abbreviated summary:
 * All code is version-controlled with known committers.
 * Dependencies are checked by Dependabot.
+* PRs are scanned by SonarCube for potential issues.
 * The current and previous releases are supported for security fixes.
 * Vulnerability reporting is handled through GitHub-provided private vulnerability reporting.
 * Vulnerabilities will be disclosed once confirmed and a public fix released.
@@ -176,14 +193,21 @@ OpenCost aligns with the mission of the CNCF by empowering organizations to moni
 OpenCost is currently aligned with the following CNCF projects:
 * Helm: OpenCost has an opencost-helm-chart repository that provides a Helm chart for deploying and upgrading OpenCost installations.
 * Kubernetes: OpenCost is installed on Kubernetes and relies on Kubernetes’ APIs for aligning Kubernetes resources with allocated cloud costs.
-* Prometheus: In default installations OpenCost stores metrics in Prometheus’ time series database and uses the Prometheus node-exporter to supplement monitoring data.
+* Prometheus: In default installations OpenCost stores metrics in Prometheus’ time series database and uses the Prometheus node-exporter to supplement monitoring data. The [prometheus-opencost-exporter](https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-opencost-exporter) has been added to the Prometheus Community Helm Charts repository.
 * Cortex: Storage option used as an alternative to Prometheus, supported by the OpenCost Helm chart.
 * Thanos: Storage option used as an alternative to Prometheus, supported by the OpenCost Helm chart and used by Kubecost with their commercial implementation.
+* Backstage: the [OpenCost Backstage plugin](https://github.com/backstage/backstage/tree/master/plugins/opencost) is included in Backstage for monitoring Kubernetes cost allocations.
 
 ## Future Plans
 
-The [External Asset Costs Working Group](https://docs.google.com/document/d/1-d-Vvy1VGHW0sXKiTjTplIUEnrElIlnfMU8sUpEehlA/edit) intends to bring support for services not directly managed by the Kubernetes infrastructure. Examples include network costs, monitoring, and external database services. Supporting AWS’ S3 object storage is the prototype under development with documentation and a new specification being developed in parallel. These efforts should encourage external contributors from both vendors and users. Initial merged patches from Grafana Labs and Microsoft are refactoring cloud providers to make it easier to introduce new billing and data sources.
+With the recent addition of direct cloud billing access with the Cloud Costs monitoring support we are targeting general cloud usage beyond just Kubernetes. There will be a push towards all cloud costs by adding more reporting capabilities as well as supporting running in non-Kubernetes environments through Docker or CLI deployments.
 
 The FinOps Foundation is participating in the development conversations as OpenCost looks to standardize on the [FinOps Open Cost and Usage Specification](https://www.finops.org/focus/) (FOCUS). Initial FOCUS patches have already been merged and further integration is in progress.
+
+Integrating carbon footprint costs through the [Cloud Carbon Footprint](https://github.com/cloud-carbon-footprint/cloud-carbon-footprint) project and Azure billing APIs is being discussed for release soon. This will be raised with TAG Environmental Sustainability for their feedback.
+
+The External Asset Costs Working Group intended to bring support for services not directly managed by Kubernetes infrastructure. Examples of currently untracked costs that could be linked to Kubernetes infrastructure include network costs, monitoring, and external database services. Initial merged patches from Grafana Labs and Microsoft refactored cloud providers to make it easier to introduce new billing and data sources. The initial External Asset Costs development was superseded by the Cloud Costs functionality, but will be revisited. These efforts should encourage external contributions from both vendors and users.
+
+OpenTelemetry integration has been requested and is under discussion as an publishing endpoint.
 
 There is a [ROADMAP.md](https://github.com/opencost/opencost/blob/develop/ROADMAP.md) and issues are tagged with "enhancement" to signify potential new features for consideration.
