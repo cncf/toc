@@ -39,7 +39,7 @@ N/A
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Review and acknowledgement of expectations for [graduated](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
+- [ ] **Review and acknowledgement of expectations for graduated projects and requirements for moving forward through the CNCF Maturity levels.**		
    - [ ] Met during Project's application on DD-MMM-YYYY.
 
 <!-- (Project assertion goes here) --> 
@@ -74,7 +74,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
+- [ ] **Document how the project makes decisions on leadership roles, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
 <!-- (Project assertion goes here) --> 
 

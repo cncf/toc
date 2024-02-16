@@ -51,9 +51,29 @@ The issue will contain a limited set of information about the project at the tim
 
 ### TOC member(s) step forward to be assigned
 
+Commonly referred to as the Project's Application Sponsor, TOC members assign themselves to projects to sponsor the application for moving levels. Sponsoring an application ensures a focused point of contact exists for both the project and the TOC in completeing the Due Diligence, public comment, and execution of voting. 
+
 TOC members ready to perform due diligence a project's application will socialize this internally with the TOC to provide opportunity for other members to participate. Once a TOC member or members is determined, those TOC members must assign themselves to the Issue and move the issue's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Assigned".
 
 TOC members may occassionally be contacted by projects asking the TOC member to sponsor their application to move levels. When this occurs, politely reminder projects of the TOC's first-in, first-started process and let them know it is subject to TOC availability. Follow up internally to the TOC that you were contacted and by which project so we may all be aware of which projects are reaching out as it may identify a backlog, timing, or communication issue.
+
+#### Conflicts of interest
+
+The Due Diligence process provides several mechansims that serve as check points for bias or uncomprehensive evaluation. The public comment period is the most open and transparent point at which the community and others may indepedently review the diligence performed by the TOC.  Additionally, TOC members conduct an internal review of the due diligence to verify all aspects of the project have been thoroughly reviewed.
+
+A TOC member will require a co-sponsor for a project if any of the following conflicts apply:
+* Hard Conflicts
+  * a project maintainer,
+  * direct report to a current maintainer,
+  * paid to work on the project
+  * has a significant financial interest directly tied to the success of the project,
+* Soft Conflicts
+  * belongs to the same organization of the project,
+  * or uses it in their work
+
+ This does not mean they can't have any involvement with a project at all as contributing to pull requests or adopting the project are signals of a healthy interest and knowledge of the project. To ensure appropriate evaluation without bias, a second, unconflicted TOC member must be assigned to co-sponsor the project with them.
+
+If a conflict of interest is present, the TOC member will state they have a conflict and seek a second sponsor on the project's application issue prior to proceeding. 
 
 ### Initial evaluation
 
@@ -65,7 +85,7 @@ Once the project is assigned a TOC member and the initial evaluation looks good 
 
 TOC members, with support from CNCF staff, should schedule a meeting with the project to the extent possible given availability and timezones. Asynchrounous kick-offs can occur, but may result in additional back and forth or delays. Each Kick-off meeting should have a central kick-off document that allows the TOC and the project to capture expectations, decisions, timelines, and other pertinent references needed for successful completion of the due diligence. A [kick-off meeting template](toc-templates/template-kickoff-notes.md) is located in the [toc-templates](toc-templates/) folder.
 
-Once the Kick-off is scheduled, the TOC member should move the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "In Due Diligence".
+Once the Kick-off is scheduled, the TOC member should move the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "In Due Diligence". It is *strongly* recommended that you inform the project to verify compliance with the CNCF's licensing policy (set forth in the [Section 11 of the Charter](https://github.com/cncf/foundation/blob/master/charter.md) with [additional information here](https://github.com/cncf/foundation/blob/main/allowed-third-party-license-policy.md)).
 
 ### Completing Due Diligence
 
@@ -79,7 +99,23 @@ As an example, let's say a project is asserting their sub-projects have leadersh
 
 Another example, if the TOC member is looking over the project's stated goals and objectives that have not changed since the project was accepted into the CNCF, and they are now applying to Graduate, the TOC member will ask the project to clarify or provide additional information as to why the project hasn't iniatiated any changes and if they still feel those goals and objectives are accurate for the future of the project. The TOC member will then summarize the response and record it in the PR under the corresponding criteria evaluation.
 
-It is expected that the TOC's evaluation of a project's completion of the criteria may reveal a mismatch in understanding or an unexpected implementation. Documenting the TOC evaluation in the Due Diligence PR provides the project, TAGs, community, adopters, and TOC with a point of reference to understand if the criteria are meeting the outcomes required of a project for a certain maturity level, or if compensating mechanisms that supplement or augment the criteria are in place that work best for that specific project. 
+It is expected that the TOC's evaluation of a project's completion of the criteria may reveal a mismatch in understanding or an unexpected implementation. Documenting the TOC evaluation in the Due Diligence PR provides the project, TAGs, community, adopters, and TOC with a point of reference to understand if the criteria are meeting the outcomes required of a project for a certain maturity level, or if compensating mechanisms that supplement or augment the criteria are in place that work best for that specific project.
+
+#### Sub-projects
+
+When reviewing a project, you may find multiple sub-projects within their organization or repositories. It is important that the Due Diligence document reflect the scope of  evaluation for a given project and what that includes. Sub-projects are often broken out into two categories: packaged with the project, and independent but related to the project (SDK reference implementations for instance). 
+
+Sub-projects packaged with the main project are within scope of the due diligence evaluation. Any sub-project not packaged is outside the scope of the due diligence evaluation and must be indicated in the due diligence as "un-evalauted" and the reason. TOC members must verify that the main project has sufficient governance of its sub-projects that allows adopters and contributors to understand the stability, maturity, and requirements or criteria to be a sub-project, their relation to the main project, and other information necessary commensurate with the maturity level of the project.
+
+#### Licensing
+
+In the course of conducting a project's due diligence, you may become aware of license isues, outstanding exception requests, or other matters concerning the licensing of the project and its dependencies. If in the course of Due Diligence you find the project appears to be missing a license exception for their code or dependencies (dynamic or staticly linked), notify the project to [file a license exception request](https://github.com/cncf/foundation/issues/new/choose). The project's application to move levels may not go to a vote until the exception has been approved, however activities such as adopter interviews and public comment may proceed. It is expected that sandbox projects, when accepted, undergo a licensing review to ensure compliance with [CNCF's licensing policy](https://github.com/cncf/foundation/blob/main/license-exceptions/README.md) and exceptions. Refer to the [allowed third party licensing policy](https://github.com/cncf/foundation/blob/main/allowed-third-party-license-policy.md) for more information.
+
+#### Graduated project security audits
+
+TOC members who sponsor projects seeking graduation are expected to review the results of the audit to confirm the project has resolved all critical and high findings at a minimum. Additional findings are expected to be tracked for resolution by the project. In reviewing the audit of the project, you may find additional recommendations or deltas in the project's operational security (incident response, PR reviewer guidelines, lack of regression tests, etc.) that should be addressed. These are typically non-blocking, however the you should take care to note them within the due diligence after conveying their need and importance of completion to the project. You may reach out to TAG Security for assistance in identifying these areas or reach out to a TOC member with a background in Security.
+
+### Finalizing the Due Diligence
 
 When the TOC has finished their criteria evaluation, they should move the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Active Review & Discussion" and re-engage the project to elevate and discuss any items neededing clarity, correction, or improvement. This includes notifying the project of any recommendations. Recommendations and discussion points may copied into the kick-off document to faciliate discussion and to provide for additional context and discussion with the project until they are finalized.
 
