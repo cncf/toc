@@ -19,7 +19,7 @@ The CNCF TOC is the technical governing body of the CNCF Foundation. It admits a
 * **Erin Boyd** (term: 2 years - start date: 3/18/2023 - 3/18/2025) [TOC-appointed]
 * **Lin Sun** (term: 2 years - start date 2/4/2024 - 2/4/2026) [GB-appointed]
 * **Kevin Wang** (term: 2 years - start date 2/4/2024 - 2/4/2026) [Maintainer-appointed]
-* **TBD** (term: 2 years - start date: 2/16/2024 - 2/16/2026) [TOC-appointed]
+* **Davanum Srinivas** (term: 2 years - start date: 2/16/2024 - 2/16/2026) [TOC-appointed]
 
 Election [schedule](process/election-schedule.md)
 
