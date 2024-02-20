@@ -69,7 +69,7 @@ If, for whatever reason, a TOC member feels they cannot sustain the commitment r
 
 ### Communicating effectively for consensus
 
-One of the most critical aspects of the TOC is our ability to facillitate effective communication, particular among ourselves. The TOC holds many discussions over Slack. Members do their best to summarize content and may use emojis  to indicate types of information for quick review or action. An effective tactic that is being normalized is:
+One of the most critical aspects of the TOC is our ability to facillitate effective communication, particular among ourselves. The TOC holds many discussions over Slack. Members do their best to summarize content and may use emojis to indicate types of information for quick review or action. An effective tactic that is being normalized is:
 * `:information_source:` (light blue square with an 'i' in it) This emoji is used to indicate the content is for information only and no action is needed.
 * `:reminder_ribbon:` (yellow ribbon shaped like an open bottom figure eight) This emoji is used to indicate the content was previously provided and is providing a courtesy reminder. It usually indicates some task or action needs completed if you havent already done so. It is also used to remind members of upcoming items such as topics on an upcoming Agenda.
 * `:exclamation:` (red exclamation point) This emoji is used to indicate an action is needed by the TOC, either for an individual or for the group.
