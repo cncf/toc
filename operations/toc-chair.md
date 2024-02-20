@@ -4,7 +4,7 @@ This document serves to provide the TOC Chair with details on their responsibili
 
 ## Chair selection and time committment
 
-The TOC Chair is an member of the TOC that is chosen by each seated TOC to lead and resent the TOC in the execution of it's work. When a new TOC is seated, any member may express their interest or nominate another interested member in serving as chair. If multiple individuals are nominated, the TOC will vote. If one individual is nominated and concurs, they are chosen as Chair. The expected time commitment of a TOC member who is serving as Chair is roughly **20-25% of their monthly regular work time**, and may be higher or lower depending on existing community and project challenges, activity of the TOC, and other occurrences that may occupy their time (such as serving in an interim capacity on other groups). 
+The TOC Chair is an member of the TOC that is chosen by each seated TOC to lead and represent the TOC in the execution of it's work. When a new TOC is seated, any member may express their interest or nominate another interested member in serving as chair. If multiple individuals are nominated, the TOC will vote. If one individual is nominated and concurs, they are chosen as Chair. The expected time commitment of a TOC member who is serving as Chair is roughly **20-25% of their monthly regular work time**, and may be higher or lower depending on existing community and project challenges, activity of the TOC, and other occurrences that may occupy their time (such as serving in an interim capacity on other groups). 
 
 ## Functions of the Chair
 
