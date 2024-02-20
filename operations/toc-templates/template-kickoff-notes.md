@@ -33,8 +33,7 @@ _This contains notes, observations, and discussion items. This document is share
 Agenda:
 * Set expectations
 * General Steps & Timelines
-* DD template: https://github.com/cncf/toc/blob/main/process/dd-review-template.md
-* File Service Desk ticket to create a folder for $PROJECT in CNCF Google Drive
+* Due Diligence evaluation
 * Adopter Interviews
 * Questions
 
