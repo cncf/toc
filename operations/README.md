@@ -6,4 +6,4 @@ This directory contains various files, procedures, responsibilties, and expectat
 
 * [TOC Onboarding](onboarding.md) - a collection of materials, general information, and other relevant details to support new and returning TOC members in getting up to speed.
 * [Decision Process](toc-decision-process.md) - General information on how we make decisions.
-* [TOC Chair](toc-chair.md) - Additional onboarding, responsibilities, expectations of the TOC Chair.
+* [TOC Chair & Vice Chair](toc-chair-vicechair.md) - Additional onboarding, responsibilities, expectations of the TOC Chair and Vice Chair.
