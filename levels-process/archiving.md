@@ -43,4 +43,4 @@ What does archiving for a CNCF project mean?
 
 ## Reactivating an Archived Project
 
-Any project can be reactivated into CNCF by following the normal [project proposal](https://github.com/cncf/toc/blob/main/process/project_proposals.md) and/or [sandbox](https://github.com/cncf/toc/blob/main/process/sandbox.md) process.
+Any project can be reactivated into CNCF by following the normal [project lifecycle](project-lifecycle.md) and/or [sandbox](sandbox.cncf.io) process.

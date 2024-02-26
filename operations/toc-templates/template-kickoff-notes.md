@@ -1,6 +1,6 @@
-# $PROJECT $APPLICATIONLEVEL Kick-off notes
+# $PROJECT $APPLICATIONLEVEL Kick-off & Meeting notes
 
-$PROJECT $APPLICATIONLEVEL Kick-off notes
+$PROJECT $APPLICATIONLEVEL Kick-off & Meeting notes
 
 ## Reference Links
 
@@ -28,7 +28,7 @@ _This contains notes, observations, and discussion items. This document is share
   * Looking over the contributing file (recommend linking this on the community contributor ladder as the initial starting point for potential contributors), it does not specify the requirements for acceptable contributions beyond DCO.  You'll need to add a section that defines the top level acceptable contributions and links to the community repos acceptable contributions as appropriate. 
 
 
-### Kick off
+### Kick off Meeting
 
 Agenda:
 * Set expectations
