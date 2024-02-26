@@ -10,10 +10,10 @@ CNCF Projects experience a project lifecycle that conveys their completion of a 
 
  The TOC defines 4 stages of the project lifecycle:
 
-* [Sandbox](sandbox.cncf.io) - experimental or innovative projects that are early in their life
-* Incubation - growing maturity projects that are on the precipice of "crossing the chasm"
-* Graduated - highly mature, robust projects whose adopters have demonstrated their production-readiness by their deployment to production environments
-* [Archived](archiving.md) - inactive or low activity projects that are no longer supported by the TOC or are not recommended for use due to a variety of factors (project specific)
+* **[Sandbox](sandbox.cncf.io)** - experimental or innovative projects that are early in their life
+* **Incubation** - growing maturity projects that are on the precipice of "crossing the chasm"
+* **Graduated** - highly mature, robust projects whose adopters have demonstrated their production-readiness by their deployment to production environments
+* **[Archived](archiving.md)** - inactive or low activity projects that are no longer supported by the TOC or are not recommended for use due to a variety of factors (project specific)
 
 ## Project stages
 
