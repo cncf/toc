@@ -88,7 +88,7 @@ While the details of the process are described in detail further for Incubating 
 
 Projects can find the criteria for Incubation by reviewing the [Incubation application template](../.github/ISSUE_TEMPLATE/template-incubation-application.md).
 
-Projects can find the criteria for Graduation by reviewing the [Graduation application template](../.github/ISSUE_TEMPLATE/template-graduation-application.md.)
+Projects can find the criteria for Graduation by reviewing the [Graduation application template](../.github/ISSUE_TEMPLATE/template-graduation-application.md).
 
 ### Timelines
 
