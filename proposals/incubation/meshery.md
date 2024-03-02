@@ -20,7 +20,7 @@ Since its entry into the CNCF Sandbox on June 22, 2021, Meshery has undergone si
 Since joining the CNCF Sandbox, Meshery has experienced notable community growth and engagement:
 
 * [Is the 10th fastest growing project in the CNCF](https://www.cncf.io/blog/2023/10/27/october-2023-where-we-are-with-velocity-of-cncf-lf-and-top-30-open-source-projects/).
-* Accumulated a total of 4,000 new GitHub stars
+* Accumulated a total of 5,000 new GitHub stars
 * Closed 9,000 [Pull Requests (PRs)](https://github.com/pulls?q=is%3Aissue+created%3A%3E%3D2021-06-21+org%3Ameshery), showcasing an active contributor community.
 * Addressed and resolved 3,000 [issues](https://github.com/issues?q=is%3Aissue+created%3A%3E%3D2021-06-21+org%3Ameshery+), ensuring ongoing project improvement.
 * Participated heavily in mentoring initiatives and is the #1 most popular LFX internship.
