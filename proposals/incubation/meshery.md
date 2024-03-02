@@ -50,7 +50,7 @@ Meshery follows a clear and [well-documented](https://docs.meshery.io/project/co
 
 ### Clearly documented security processes explaining how to report security issues to the project, and describing how the project provides updated releases or patches to resolve security vulnerabilities
 
-Meshery's [security reporting process](https://docs.meshery.io/project/security-vulnerabilities) is well-documented and has [previous and current CVEs](https://docs.meshery.io/project/security-vulnerabilities) published along with the reporting process and expectation setting of how reports are handled. This process is followed successfully with GitHub engineers being the most recent to report vulneraabilities and a Meshery maintainer (from Intel) to provide patches. Mainatiners strive to acknowledge reports within 24 hours of being received and offer an analysis and plan for a full response withing 10 days.
+Meshery's [security reporting process](https://docs.meshery.io/project/security-vulnerabilities) is well-documented and has [previous and current CVEs](https://docs.meshery.io/project/security-vulnerabilities) published along with the reporting process and expectation setting of how reports are handled. This process is followed successfully with GitHub engineers being the most recent to report vulnerabilities and a Meshery maintainer (from Intel) to provide patches. Maintainers strive to acknowledge reports within 24 hours of being received and offer an analysis and plan for a full response within 10 days.
 
 ## Alignment with the CNCF Mission
 
