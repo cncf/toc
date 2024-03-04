@@ -10,7 +10,7 @@ CNCF Projects experience a project lifecycle that conveys their completion of a 
 
  The TOC defines 4 stages of the project lifecycle:
 
-* **[Sandbox](sandbox.cncf.io)** - experimental or innovative projects that are early in their life
+* **[Sandbox](https://sandbox.cncf.io)** - experimental or innovative projects that are early in their life
 * **Incubation** - growing maturity projects that are on the precipice of "crossing the chasm"
 * **Graduated** - highly mature, robust projects whose adopters have demonstrated their production-readiness by their deployment to production environments
 * **[Archived](archiving.md)** - inactive or low activity projects that are no longer supported by the TOC or are not recommended for use due to a variety of factors (project specific)
@@ -49,7 +49,7 @@ While the details of the process are described in detail further for Incubating 
 *Who: TOC Sponsor(s) and Project*
 
 * The TOC will schedule time with the project to set expectations and layout out the process. The TOC will use the meeting notes document to capture blockers, recommendations, and other findings as they review the issue and the project's respositories, channels, release process, metrics, governance, and other sources of information that support the project's completion of the criteria. The TOC member will refer back to these notes to support their forumlation of the Due Diligence PR. The project is asked to identify 5-7 adopters for interviews. 
-* If the TOC sponsor(s) finds the project is not yet ready to move levels, they will re-engage the project discuss next steps, detail specific blockers that prevent the project from moving, and any actions that need completed but are non-blocking. The Application issue is updated with this summary once discussed the project and the issue is close.
+* If the TOC sponsor(s) finds that the project is not yet ready to move levels, they will re-engage with the project to discuss next steps, detail specific blockers that prevent the project from moving, and any actions that need to be completed but are non-blocking. The Application issue is updated with this summary once the project is discussed.
 
 #### Due Diligence creation or refresh
 *Who: TOC Sponsor(s)*
