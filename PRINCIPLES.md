@@ -6,21 +6,24 @@ Approved by GB on: Dec 5, 2017
 Last reviewed and concurred: Jul 27, 2022, [Issue 413](https://github.com/cncf/toc/issues/413)
 
 [TOC Operating Principles](#toc-operating-principles)  
-[We Are Project-Centric](#we-are-project-centric)  
-[Projects Are Self-Governing](#projects-are-self-governing)  
-[What We're Looking For](#what-were-looking-for)   
-[No Kingmakers & One Size Does Not Fit All](#no-kingmakers--one-size-does-not-fit-all)  
-[Not a Standards Body](#not-a-standards-body)  
-[We Want a Comprehensive Toolchain](#we-want-a-comprehensive-toolchain)    
-[Above All We Want To Help Projects](#above-all-we-want-to-help-projects)
+* [We Are Project-Centric](#we-are-project-centric)  
+* [Projects Are Self-Governing](#projects-are-self-governing)  
+* [What We're Looking For](#what-were-looking-for)   
+* [No Kingmakers & One Size Does Not Fit All](#no-kingmakers--one-size-does-not-fit-all)  
+* [Not a Standards Body](#not-a-standards-body)  
+* [We Want a Comprehensive Toolchain](#we-want-a-comprehensive-toolchain)    
+* [Above All We Want To Help Projects](#above-all-we-want-to-help-projects)
 
 
 [Technical Leadership Principles](#technical-leadership-principles)    
-[Purpose](#purpose)    
-[Be welcoming](#be-welcoming)    
-[Always do better](#always-do-better)    
-[Foster respectful resolution](#foster-respectful-resolution)    
-[Facilitate open, transparent, and inclusive decision-making](#facilitate-open-transparent-and-inclusive-decision-making)
+* [Purpose](#purpose)    
+* [Principles](#principles)
+  * [Be welcoming](#be-welcoming)    
+  * [Provide feedback and appreciation appropriately](#provide-feedback-and-appreciation-appropriately)
+  * [Always do better](#always-do-better)    
+  * [Lead inclusively and empower all voices and opinions to be heard](#lead-inclusively-and-empower-all-voices-and-opinions-to-be-heard)
+  * [Foster respectful resolution](#foster-respectful-resolution)    
+  * [Facilitate open, transparent, and inclusive decision-making](#facilitate-open-transparent-and-inclusive-decision-making)
 
 ## TOC Operating Principles
 
@@ -180,6 +183,8 @@ Our goal with these is to foster a more inclusive and welcoming community for al
 
 In addition to adhering to these principles, all leaders must adhere to the CNCF Code of Conduct. 
 
+These leadership principles are in addition to the TOC Operating Principles, shown above. 
+
 #### Be welcoming
 
 Make a conscious effort to be welcoming in your interactions. If someone is new, express sincere interest in what brought them to the group. Check in with existing contributors to ensure they continue to feel welcome. Create space for new contributors and existing contributors to be curious and engaged with the work that we do in cloud native by building on common interests and outcomes. 
@@ -207,5 +212,3 @@ Handle disagreements respectfully. Seek to resolve conflict and disagreement in 
 #### Facilitate open, transparent, and inclusive decision-making
 
 Although it is perfectly acceptable to discuss ideas, proposals, and agendas with other participants in private conversations, decisions of any official community group, committee, project, or governing body should be made in an open and transparent manner, in accordance with that body’s governance rules, and the reasoning or basis for such decision should be clearly documented. This not only allows others to understand the why, but also may serve as the basis of future discussions and activities that resulted from that decision and provide the opportunity to change it should circumstances change.
-
-These leadership principles are in addition to the TOC Operating Principles, shown above. 
