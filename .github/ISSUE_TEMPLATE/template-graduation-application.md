@@ -1,6 +1,13 @@
+---
+name: Project Graduation Application
+about: This template provides the project with a framework to inform the TOC of their conformance to the Graduation Level Criteria.
+title: "[Graduation] $PROJECT Graduation Application"
+labels: graduation
+---
+
 # $PROJECT Graduation Application
 v1.5
-This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria. 
+This template provides the project with a framework to inform the TOC of their conformance to the Graduation Level Criteria. 
 
 
 Project Repo(s): $URL

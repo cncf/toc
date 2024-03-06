@@ -1,3 +1,10 @@
+---
+name: Project Incubation Application
+about: This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria.
+title: "[Incubation] $PROJECT Incubation Application"
+labels: incubation
+---
+
 # $PROJECT Incubation Application
 v1.5
 This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria. 
