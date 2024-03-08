@@ -21,9 +21,16 @@ repositories are as follows:
 
 > Core components have been identified based on several factors, including GitHub Stars, opentelemetry.io docs traffic, and ecosystem importance.
 
-### Have committers from at least two organizations
+### Have committers (maintainers) from at least two organizations
 
-Per DevStats, over 150 organizations contribute to OpenTelemetry each month. [Link]((https://opentelemetry.devstats.cncf.io/d/7/companies-contributing-in-repository-groups?orgId=1)
+OpenTelemetry's governance process ensures that all governance functions include
+members from multiple organizations. A maximum of [two members of
+governance](https://github.com/open-telemetry/community/blob/main/governance-charter.md#maximal-representation)
+can be from the same organization, and [no more than 25% of the technical
+committee can be from the same
+organization](https://github.com/open-telemetry/community/blob/main/tech-committee-charter.md#no-over-representation).
+In addition, individual SIGs are encouraged to have broad representation from
+multiple organizations.
 
 ### Have achieved and maintained a [Core Infrastructure Initiative Best Practices Badge](https://bestpractices.coreinfrastructure.org/)
 
