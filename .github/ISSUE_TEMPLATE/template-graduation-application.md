@@ -187,7 +187,14 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document the project's release process.**
+- [ ] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
+
+  - [ ] Release expectations (scheduled or based on feature implementation)
+  - [ ] Tagging as stable, unstable, and security related releases
+  - [ ] Information on branch and tag strategies
+  - [ ] Branch and platform support and length of support
+  - [ ] Artifacts included in the release.
+  - Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.
 
 <!-- (Project assertion goes here) --> 
 
