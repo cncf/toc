@@ -74,9 +74,9 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 
 ### TAG Runtime 
 #### Chairs
-* [Diane Feddema](https://github.com/dfeddema)
-* [Quinton Hoole](https://github.com/quinton-hoole)
+* [Danielle Tal](https://github.com/miao0miao)
 * [Ricardo Aravena](https://github.com/raravena80)
+* [Stephen Rust](https://github.com/srust)
 
 #### Tech Leads
 * [Alexander Kanevskiy](https://github.com/kad)
