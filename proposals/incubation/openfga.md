@@ -13,8 +13,6 @@
   - [Healthy Committers](#healthy-committers)
   - [Flow Of Contributions](#flow-of-contributions)
   - [Security](#security)
-    - [Reporting a Vulnerability](#reporting-a-vulnerability)
-    - [Prevention](#prevention)
     - [License](#license)
 - [Future plans](#future-plans)
 
@@ -28,18 +26,10 @@ Inspired by Google Zanzibar, OpenFGA is a centralized authorization engine that 
 - **Works with existing code** - SDKs for several of the most popular languages have already been written, making it easy to integrate and grow alongside your applications.
 
 # Statement on Alignment with CNCF Mission
-*“CNCF’s mission is to make cloud-native computing ubiquitous…”*
 
 As the world continues to move to a more digital, collaborative ecosystem of applications with ever-increasing objects, developers are scrambling to keep up and evolve their authorization systems to be more relationship-focused. But authorization is difficult to get right. The OWASP’s number one vulnerability is [Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/). Just like [Open Policy Agent](https://www.cncf.io/projects/open-policy-agent-opa/) for cloud infrastructure, application developers want a cloud-native option to add fine-grained access control to their application logic without recreating a new solution every time they need to protect a new object type.  Centralizing authorization enables application developers to build against a single predictable pattern regardless of their authorization needs. This approach to authorization will continue to serve them regardless of scale or pivoting through a digital transformation journey.
 
- 
-
-Other CNCF projects that OpenFGA compares to:
-
-- [Open Policy Agent (OPA)](https://www.cncf.io/projects/open-policy-agent-opa/) is a general-purpose policy engine that has an emphasis on policy enforcement for cloud infrastructure. Since OPA is a policy engine, it doesn’t define an authorization “model” but supports and accepts arbitrary structured data from a variety of systems so they can be inspected during an authorization check. OpenFGA is different since it is built for application authorization. Since authorization logic is “pre-loaded” to a centralized system, it can quickly provide an authorization decision to the application based on the provided user/object relationship. There is potential to use OpenFGA with OPA 
-- [Paralus](https://www.cncf.io/projects/paralus/) is a tool that enables controlled, audited access to Kubernetes infrastructure. Paralus already incorporates some roles in their product to allow their users to manage access for their collaborators. There is potential collaboration between OpenFGA and Paralus to offer administrators the ability to manage access at a more granular level, which will improve their standing as a k8s access manager, especially for larger teams.
-
-We believe there’s an opportunity to create a large ecosystem around a fine-grained authorization system, and that enables OpenFGA integrations in authorization policies products like [OPA](https://www.openpolicyagent.org/), proxies like [Envoy](https://www.envoyproxy.io/), API gateways like [Kong](https://konghq.com/); identity providers ([Auth0](https://auth0.com), [Okta](https://www.okta.com/), [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)), infrastructure tools like [Ubuntu Pro](https://ubuntu.com/pro), SDKs for platforms and frameworks (Python, Java, [Spring](https://spring.io/), [Next.js](https://nextjs.org/)), etc.
+A list of other CNCF projects that OpenFGA compares to can be found at [openfga/community/related-projects.md](https://github.com/openfga/community/blob/main/related-projects.md).
 
 # Progress since sandbox
 OpenFGA was proposed and accepted as a CNCF sandbox project on September 14, 2022 at the Sandbox maturity level.
@@ -84,9 +74,8 @@ A couple of our favorite community blogs:
 
 # Incubation Stage Requirements
 ## Adopters In Production
-> *Document that it is being used successfully in production by at least three independent direct adopters which focus on adequate quality and scope defined*
 
-OpenFGA's list of [ADOPTERS.md](https://github.com/openfga/community/blob/main/ADOPTERS.md), and many more that haven’t been disclosed.
+A list of OpenFGA adopters can be found at [openfga/community/ADOPTERS.md](https://github.com/openfga/community/blob/main/ADOPTERS.md), plus many more that haven’t been disclosed.
 
 Three production examples to highlight:
 
@@ -105,14 +94,12 @@ Stacklok recently [revamped their authorization model and engine in Minder](http
 Configu is an open source software for streamlining, testing, and automating application configurations across environments. They [specifically picked OpenFGA](https://configu.com/blog/authorization-over-configurations-using-openfga/) because it was a CNCF backed third-party authorization system that allows them to build upon battle-tested authorization standards saving them valuable implementation time not recreating the wheel for a problem that has already been solved for developers. 
 
 ## Healthy Committers
-> *Have a healthy number of committers. A committer is defined as someone with the commit bit; i.e., someone who can accept contributions to some or all of the project*
 
 OpenFGA welcomes feedback and contributions from anyone in the community who might be interested in helping the project. Due to its multi-repo structure with distinct contributor roles, the project uses "maintainer" as the noun for a member with sufficient permissions to merge PR in specific repo. This is the group of people responsible for organizing the backlog of issues in OpenFGA and other issues across our repositories, reviewing pull requests, and all code within this repository.
 
 OpenFGA had [91 committers in the last 12 months](https://all.devstats.cncf.io/d/53/projects-health-table?orgId=1) and 19 active maintainers ([full list](https://github.com/openfga/community/blob/main/MAINTAINERS)).
 
 ## Flow Of Contributions 
-> *Demonstrate a substantial ongoing flow of commits and merged contributions with a clear versioning scheme*
 
 All notable changes in OpenFGA projects are documented in a [CHANGELOG](https://github.com/openfga/openfga/blob/main/CHANGELOG.md) file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). 
 
@@ -124,27 +111,16 @@ Detailed statistics can be found in the following openfga.devstats.cncf.io links
 
 
 ## Security
-> *Clearly documented security processes explaining how to report security issues to the project, and describing how the project provides updated releases or patches to resolve security vulnerabilities*
 
-Please review our security statement here - [SECURITY.md](http://security.md/) 
+You can review our security self assessment at [openfga/openfga/security-self-assessment.md](https://github.com/cncf/tag-security/blob/main/assessments/projects/openfga/self-assessment.md) 
 
-SECURITY.md content
+We have an [open PR](https://github.com/cncf/tag-security/pull/1235) pending to be reviewed by the TAG Security team.
 
-### Reporting a Vulnerability
-There are two ways to report a vulnerability:
-
-Create a “New issue” and select “Report a vulnerability” or click the following URL
-
-https://github.com/openfga/openfga/security/advisories/new 
-
-Send an email to our team at security@openfga.dev
-
-### Prevention
-OpenFGA uses Snyk, Fossa, semgrep, and Dependabot to proactively monitor for vulnerabilities and monitor our dependencies.
+OpenFGA vulnerability management is described in the official project security documentation [SECURITY.md](https://github.com/openfga/.github/blob/main/SECURITY.md).
 
 ### License
 
-OpenFGA is licensed under the Apache 2.0 license.
+OpenFGA is licensed under the [Apache 2.0 license](https://github.com/openfga/openfga/blob/main/LICENSE).
 
 # Future plans
 
