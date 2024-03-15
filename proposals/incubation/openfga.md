@@ -21,30 +21,34 @@ OpenFGA is a high-performance and flexible authorization solution that allows de
 
 Inspired by Google Zanzibar, OpenFGA is a centralized authorization engine that evaluates decisions by determining whether a relationship exists between an object and a user. Each check request references the authorization model against the known object relationships and returns an authorization decision (i.e. true or false).
 
-- **Model any authorization system** - OpenFGA takes the best ideas from Google's Zanzibar paper for Relationship-Based Access Control, and also solves problems for Role-based Access Control and some Attribute-Based Access Control use cases. The modeling language is powerful enough for engineers to create complex relationships but friendly enough for other stakeholders on the team to read and understand. 
+- **Model any authorization system** - OpenFGA is inspired by the [Google Zanzibar paper](https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/) for Relationship-Based Access Control, and also solves problems for Role-based Access Control and some Attribute-Based Access Control use cases. The modeling language is powerful enough for engineers to create complex relationships but friendly enough for other stakeholders on the team to read and understand. 
 - **Blazing fast** - OpenFGA is designed to answer authorization check calls in milliseconds across billions of relationships, which lets it scale with projects of any size. It works just as well for small startups building single applications as it does for enterprise companies building platforms on a global scale.
 - **Works with existing code** - SDKs for several of the most popular languages have already been written, making it easy to integrate and grow alongside your applications.
 
 # Statement on Alignment with CNCF Mission
 
-As the world continues to move to a more digital, collaborative ecosystem of applications with ever-increasing objects, developers are scrambling to keep up and evolve their authorization systems to be more relationship-focused. But authorization is difficult to get right. The OWASP’s number one vulnerability is [Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/). Just like [Open Policy Agent](https://www.cncf.io/projects/open-policy-agent-opa/) for cloud infrastructure, application developers want a cloud-native option to add fine-grained access control to their application logic without recreating a new solution every time they need to protect a new object type.  Centralizing authorization enables application developers to build against a single predictable pattern regardless of their authorization needs. This approach to authorization will continue to serve them regardless of scale or pivoting through a digital transformation journey.
+As the world continues to move to a more digital, collaborative ecosystem of applications with ever-increasing objects, developers are scrambling to keep up and evolve their authorization systems to be more relationship-focused. But authorization is difficult to get right. [OWASP's Top 10 security risks](https://owasp.org/API-Security/editions/2023/en/0x11-t10/) include 3 on Authorization, with the top vulnerability being [Broken Object Level Authorization](https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/). 
 
-A list of other CNCF projects that OpenFGA compares to can be found at [openfga/community/related-projects.md](https://github.com/openfga/community/blob/main/related-projects.md).
+Just like [Open Policy Agent](https://www.cncf.io/projects/open-policy-agent-opa/) for cloud infrastructure, application developers want a cloud-native option to add fine grained access control to their application logic without recreating a new solution every time they need to protect a new object type. Centralizing authorization enables application developers to build against a single predictable pattern regardless of their authorization needs. This approach to authorization will continue to serve them regardless of scale or pivoting through a digital transformation journey.
+
+A list of CNCF projects that target solving access control in different ways can be found at [openfga/community/related-projects.md](https://github.com/openfga/community/blob/main/related-projects.md).
 
 # Progress since sandbox
 OpenFGA was proposed and accepted as a CNCF sandbox project on September 14, 2022 at the Sandbox maturity level.
 
 Since then, OpenFGA has released:
 
-- Added support for MySQL as a storage backend ([#210](https://github.com/openfga/openfga/pull/210)). Thank you @MidasLamb!
-- An OpenTelemetry metrics integration ([#360](https://github.com/openfga/openfga/pull/360)). Thank you @AlexandreBrg!
+- Added support for [MySQL as a storage backend](https://openfga.dev/docs/getting-started/setup-openfga/docker#using-mysql) ([#210](https://github.com/openfga/openfga/pull/210)).
+- An [OpenTelemetry metrics integration](https://openfga.dev/docs/getting-started/setup-openfga/configure-openfga#telemetry) ([#360](https://github.com/openfga/openfga/pull/360)).
 - Support for ABAC Conditional Relationships ([#1220](https://github.com/openfga/openfga/pull/1220)).
-- A cross-platform [CLI](https://github.com/openfga/cli) to interact with an OpenFGA server .
+- A cross-platform [CLI](https://github.com/openfga/cli) to interact with an OpenFGA server.
 - [Visual Studio Code extension](https://github.com/openfga/vscode-ext) to improve developer experience during model creation.
 - A feature to list all the objects a user has a relationship ([#145](https://github.com/openfga/openfga/pull/145)).
-- Support for [types](https://openfga.dev/docs/concepts#what-is-a-type) in the DSL
-
- 
+- Support for [type restrictions](https://openfga.dev/docs/configuration-language#the-direct-relationship-type-restrictions) in the OpenFGA modeling language.
+- Released a [Python](https://github.com/openfga/python-sdk) and [Java](https://github.com/openfga/java-sdk) SDKs.
+- A [Helm Chart](https://github.com/openfga/helm-charts) to simplify deployment in Kubernetes clusters. 
+- GitHub Actions for [testing](https://github.com/marketplace/actions/openfga-model-testing-action) and [deploying](https://github.com/marketplace/actions/openfga-model-deploy-action) models through CI/CD.
+- An [ANTLR based language parser](https://github.com/openfga/language) with bindings for JS, Go and Java.
 
 # Developer Community
 It takes a lot of work from a lot of people to build a great, open-sourced authorization system. Which is why we value this community and receive genuine pleasure when we witness it rapidly growing. 
@@ -65,12 +69,11 @@ We host a monthly community meeting the 2nd Thursday of every month, at 11AM EST
 - [Youtube playlist](https://www.youtube.com/playlist?list=PLUR5l-oTFZqUAdAibhLw7l5IdqDnQ5gga) of presentations by the community
 
 
-A couple of our favorite community blogs:
+Highlighted community blogs:
+- [Introduction to OpenFGA](https://www.ericksegaar.com/2024/03/04/introduction-into-openfga/) by Erick Segaar
 - [Fine-grained authorization with OpenFGA and OAuth](https://www.godaddy.com/resources/news/authorization-oauth-openfga) by Jacob Brooks (GoDaddy)
 - [Keycloak integration with OpenFGA](https://embesozzi.medium.com/keycloak-integration-with-openfga-based-on-zanzibar-for-fine-grained-authorization-at-scale-d3376de00f9a) by Martin Besozzi
 - [Relation-based access control using Verifiable Credentials](https://medium.com/@excid/relation-based-access-control-using-verifiable-credentials-d8e542a0ce1) by ExcID
-
- 
 
 # Incubation Stage Requirements
 ## Adopters In Production
@@ -95,9 +98,9 @@ Configu is an open source software for streamlining, testing, and automating app
 
 ## Healthy Committers
 
-OpenFGA welcomes feedback and contributions from anyone in the community who might be interested in helping the project. Due to its multi-repo structure with distinct contributor roles, the project uses "maintainer" as the noun for a member with sufficient permissions to merge PR in specific repo. This is the group of people responsible for organizing the backlog of issues in OpenFGA and other issues across our repositories, reviewing pull requests, and all code within this repository.
+OpenFGA welcomes feedback and contributions from anyone in the community who might be interested in helping the project. Due to its multi-repo structure with distinct contributor roles, the project uses "maintainer" as the noun for a member with sufficient permissions to merge PR in specific repo. This is the group of people responsible for organizing the backlog of issues in OpenFGA and other issues across repositories, reviewing pull requests, and all code within this repository.
 
-OpenFGA had [91 committers in the last 12 months](https://all.devstats.cncf.io/d/53/projects-health-table?orgId=1) and 19 active maintainers ([full list](https://github.com/openfga/community/blob/main/MAINTAINERS)).
+OpenFGA had [91 committers in the last 12 months](https://all.devstats.cncf.io/d/53/projects-health-table?orgId=1) and [19 active maintainers](https://github.com/openfga/community/blob/main/MAINTAINERS).
 
 ## Flow Of Contributions 
 
@@ -112,7 +115,7 @@ Detailed statistics can be found in the following openfga.devstats.cncf.io links
 
 ## Security
 
-You can review our security self assessment at [openfga/openfga/security-self-assessment.md](https://github.com/cncf/tag-security/blob/main/assessments/projects/openfga/self-assessment.md) 
+View the [security self assessment](https://github.com/cncf/tag-security/blob/main/assessments/projects/openfga/self-assessment.md).
 
 We have an [open PR](https://github.com/cncf/tag-security/pull/1235) pending to be reviewed by the TAG Security team.
 
@@ -131,6 +134,6 @@ OpenFGA updates a [visible roadmap](https://github.com/orgs/openfga/projects/1) 
 Two major upcoming improvements:
 
 1. [Modular Authorization Models](https://github.com/orgs/openfga/projects/1?pane=issue&itemId=35518190) ([RFC](https://github.com/openfga/rfcs/blob/main/20231212-modular-models.md))- Splits a single authorization model into smaller “modules” allowing Large enterprise organizations with multiple teams to update their part of the authorization model maintained by that team without affecting other teams. 
-1. [ListUsers API endpoint](https://github.com/orgs/openfga/projects/1?pane=issue&itemId=24490812) ([RFC](https://github.com/openfga/rfcs/pull/15))- In the same way we provide a [ListObjects endpoint](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects) that list all resources for a specific user & relation, we will provide a way to list which users have a specific relationship with a specific resource
+1. [ListUsers API endpoint](https://github.com/orgs/openfga/projects/1?pane=issue&itemId=24490812) ([RFC](https://github.com/openfga/rfcs/pull/15))- In the same way we provide a [ListObjects endpoint](https://openfga.dev/api/service#/Relationship%20Queries/ListObjects) that list all resources for a specific user & relation, we will provide a way to list which users have a specific relationship with a specific resource.
 
-Plus, we plan to release a slew of updates to our SDKs, like [Java Springboot security improvements](https://github.com/orgs/openfga/projects/1/views/1?pane=issue&itemId=10720070) and [JetBrain IDE integration](https://github.com/orgs/openfga/projects/1/views/1?pane=issue&itemId=49602107). We also plan to release a [DynamoDB storage adapter](https://github.com/orgs/openfga/projects/1/views/1?pane=issue&itemId=49602035) to complement our Postgres and MySQL storage adapters.
+Plus, we plan to release a slew of updates to the SDKs, like [Java Springboot security improvements](https://github.com/orgs/openfga/projects/1/views/1?pane=issue&itemId=10720070) and [JetBrain IDE integration](https://github.com/orgs/openfga/projects/1/views/1?pane=issue&itemId=49602107). We also plan to release a [DynamoDB storage adapter](https://github.com/orgs/openfga/projects/1/views/1?pane=issue&itemId=49602035) to complement the Postgres and MySQL storage adapters.
