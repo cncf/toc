@@ -23,20 +23,20 @@ OpenFGA is a high-performance and flexible authorization solution that allows de
 
 Inspired by Google Zanzibar, OpenFGA is a centralized authorization engine that evaluates decisions by determining whether a relationship exists between an object and a user. Each check request references the authorization model against the known object relationships and returns an authorization decision (i.e. true or false).
 
-- **Model any authorization system** - OpenFGA takes the best ideas from Google's Zanzibar paper for Relationship-Based Access Control, and also solves problems for Role-based Access Control and Attribute-Based Access Control use cases. The modeling language is powerful enough for engineers to create complex relationships but friendly enough for other stakeholders on the team to read and understand. 
+- **Model any authorization system** - OpenFGA takes the best ideas from Google's Zanzibar paper for Relationship-Based Access Control, and also solves problems for Role-based Access Control and some Attribute-Based Access Control use cases. The modeling language is powerful enough for engineers to create complex relationships but friendly enough for other stakeholders on the team to read and understand. 
 - **Blazing fast** - OpenFGA is designed to answer authorization check calls in milliseconds across billions of relationships, which lets it scale with projects of any size. It works just as well for small startups building single applications as it does for enterprise companies building platforms on a global scale.
-- **Works with existing code** - SDKs for the most popular languages have already been written, making it easy to integrate and grow alongside your applications.
+- **Works with existing code** - SDKs for several of the most popular languages have already been written, making it easy to integrate and grow alongside your applications.
 
 # Statement on Alignment with CNCF Mission
 *“CNCF’s mission is to make cloud-native computing ubiquitous…”*
 
-As the world continues to move to a more digital, collaborative ecosystem of applications with ever-increasing objects, developers are scrambling to keep up and evolve their authorization systems to be more relationship-focused. But authorization is difficult to get right. The OWASP’s number one vulnerability is [Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/). Just like [Open Policy Agent](https://www.cncf.io/projects/open-policy-agent-opa/) for cloud infrastructure, application developers want a cloud-native option to add fine-grained access control to their application logic without recreating the wheel every time they need to protect a new object type.  Centralizing authorization enables application developers to build against a single predictable pattern regardless of their authorization needs. This approach to authorization will continue to serve them regardless of scale or pivoting through a digital transformation journey.
+As the world continues to move to a more digital, collaborative ecosystem of applications with ever-increasing objects, developers are scrambling to keep up and evolve their authorization systems to be more relationship-focused. But authorization is difficult to get right. The OWASP’s number one vulnerability is [Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/). Just like [Open Policy Agent](https://www.cncf.io/projects/open-policy-agent-opa/) for cloud infrastructure, application developers want a cloud-native option to add fine-grained access control to their application logic without recreating a new solution every time they need to protect a new object type.  Centralizing authorization enables application developers to build against a single predictable pattern regardless of their authorization needs. This approach to authorization will continue to serve them regardless of scale or pivoting through a digital transformation journey.
 
  
 
 Other CNCF projects that OpenFGA compares to:
 
-- [Open Policy Agent (OPA)](https://www.cncf.io/projects/open-policy-agent-opa/) is a general-purpose policy engine that has an emphasis on policy enforcement for cloud infrastructure. Since OPA is a policy engine, it doesn’t define an authorization “model” but supports and accepts arbitrary structured data from a variety of systems so they can be inspected during an authorization check. OpenFGA is different since it is built for application authorization. Since authorization logic is “pre-loaded” to a centralized system, it can quickly provide an authorization decision to the application based on the provided user/object relationship. 
+- [Open Policy Agent (OPA)](https://www.cncf.io/projects/open-policy-agent-opa/) is a general-purpose policy engine that has an emphasis on policy enforcement for cloud infrastructure. Since OPA is a policy engine, it doesn’t define an authorization “model” but supports and accepts arbitrary structured data from a variety of systems so they can be inspected during an authorization check. OpenFGA is different since it is built for application authorization. Since authorization logic is “pre-loaded” to a centralized system, it can quickly provide an authorization decision to the application based on the provided user/object relationship. There is potential to use OpenFGA with OPA 
 - [Paralus](https://www.cncf.io/projects/paralus/) is a tool that enables controlled, audited access to Kubernetes infrastructure. Paralus already incorporates some roles in their product to allow their users to manage access for their collaborators. There is potential collaboration between OpenFGA and Paralus to offer administrators the ability to manage access at a more granular level, which will improve their standing as a k8s access manager, especially for larger teams.
 
 We believe there’s an opportunity to create a large ecosystem around a fine-grained authorization system, and that enables OpenFGA integrations in authorization policies products like [OPA](https://www.openpolicyagent.org/), proxies like [Envoy](https://www.envoyproxy.io/), API gateways like [Kong](https://konghq.com/); identity providers ([Auth0](https://auth0.com), [Okta](https://www.okta.com/), [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)), infrastructure tools like [Ubuntu Pro](https://ubuntu.com/pro), SDKs for platforms and frameworks (Python, Java, [Spring](https://spring.io/), [Next.js](https://nextjs.org/)), etc.
@@ -69,7 +69,7 @@ Since accepted as a CNCF sandbox project on September 2022,
 - 676 [Discord](https://discord.com/channels/759188666072825867/930524706854031421) community members (actively migrating to the CNCF [#openfga](https://cloud-native.slack.com/archives/C06G1NNH47N) channel)
 - [CNCF DevStats Dashboard](https://openfga.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1)
 
-We host a monthly community meeting the 2nd Thursday of every month, at 3PM UTC (8AM PST/11AM EST). We have meet X times since September 2022, with about X attendees each meeting. 
+We host a monthly community meeting the 2nd Thursday of every month, at 11AM EST (8AM PST/3PM UTC). We have meet X times since September 2022, with about X attendees each meeting. 
 - [Meeting Minutes](https://docs.google.com/document/d/1Y6rbD0xpGLVl-7CmeMgxi56_a0ibIQ_RojvWBbT9MZk/edit#)
 - [Recordings](https://www.youtube.com/playlist?list=PLUR5l-oTFZqUneyHz-h4WzaJssgxBXdxB) of past meetings
 - [Youtube playlist](https://www.youtube.com/playlist?list=PLUR5l-oTFZqUAdAibhLw7l5IdqDnQ5gga) of presentations by the community
@@ -93,9 +93,9 @@ Three production examples to highlight:
 ### 1. Canonical
 They are embedding OpenFGA into several different layers of their Ubuntu Pro stack.
 
-- [LDX](https://discourse.ubuntu.com/t/lxd-5-20-has-been-released/40865#authorization-restructure-7) - a container and virtual machine manager
+- [LXD](https://discourse.ubuntu.com/t/lxd-5-20-has-been-released/40865#authorization-restructure-7) - a container and virtual machine manager
 - [MicroCloud](https://www.gamingdeputy.com/canonical-unveils-microcloud-a-toolkit-for-rapid-cluster-deployment/) - a deployment center for computing clusters with shared distributed data storage and a secure virtual network
-- [Jaas](https://github.com/canonical/openfga-operator) - a managed Juju orchestration engine as a service
+- [JAAS](https://github.com/canonical/openfga-operator) - a managed Juju orchestration engine as a service
  
 
 ### 2. Stacklok
@@ -140,7 +140,7 @@ https://github.com/openfga/openfga/security/advisories/new
 Send an email to our team at security@openfga.dev
 
 ### Prevention
-OpenFGA uses Snyk, Fossa, and semgrep to proactively monitor for vulnerabilities and monitor our dependencies.
+OpenFGA uses Snyk, Fossa, semgrep, and Dependabot to proactively monitor for vulnerabilities and monitor our dependencies.
 
 ### License
 
