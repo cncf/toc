@@ -59,7 +59,7 @@ Since then, OpenFGA has released:
 # Developer Community
 It takes a lot of work from a lot of people to build a great, open-sourced authorization system. Which is why we value this community and receive genuine pleasure when we witness it rapidly growing. 
 
-Since accepted as a CNCF sandbox project on September 2022, 
+Since accepted as a CNCF sandbox project on September 2022:
 
 - [Github stars](https://github.com/openfga/openfga/stargazers) grew from 398 → 2052 (**415%** increase)
 - [Github forks](https://github.com/openfga/openfga) grew from 25 → 140 (**460%** increase)
@@ -69,7 +69,7 @@ Since accepted as a CNCF sandbox project on September 2022,
 - 676 [Discord](https://discord.com/channels/759188666072825867/930524706854031421) community members (actively migrating to the CNCF [#openfga](https://cloud-native.slack.com/archives/C06G1NNH47N) channel)
 - [CNCF DevStats Dashboard](https://openfga.devstats.cncf.io/d/3/stars-and-forks-by-repository?orgId=1)
 
-We host a monthly community meeting the 2nd Thursday of every month, at 11AM EST (8AM PST/3PM UTC). We have meet X times since September 2022, with about X attendees each meeting. 
+We host a monthly community meeting the 2nd Thursday of every month, at 11AM EST (8AM PST/3PM UTC). We have meet 19 times since September 2022, with about ~16 attendees each meeting. 
 - [Meeting Minutes](https://docs.google.com/document/d/1Y6rbD0xpGLVl-7CmeMgxi56_a0ibIQ_RojvWBbT9MZk/edit#)
 - [Recordings](https://www.youtube.com/playlist?list=PLUR5l-oTFZqUneyHz-h4WzaJssgxBXdxB) of past meetings
 - [Youtube playlist](https://www.youtube.com/playlist?list=PLUR5l-oTFZqUAdAibhLw7l5IdqDnQ5gga) of presentations by the community
@@ -86,7 +86,7 @@ A couple of our favorite community blogs:
 ## Adopters In Production
 > *Document that it is being used successfully in production by at least three independent direct adopters which focus on adequate quality and scope defined*
 
-OpenFGA currently has [17 documented adopters](https://github.com/openfga/community/blob/main/ADOPTERS.md), and many more that haven’t been disclosed.
+OpenFGA's list of [ADOPTERS.md](https://github.com/openfga/community/blob/main/ADOPTERS.md), and many more that haven’t been disclosed.
 
 Three production examples to highlight:
 
@@ -109,7 +109,7 @@ Configu is an open source software for streamlining, testing, and automating app
 
 OpenFGA welcomes feedback and contributions from anyone in the community who might be interested in helping the project. Due to its multi-repo structure with distinct contributor roles, the project uses "maintainer" as the noun for a member with sufficient permissions to merge PR in specific repo. This is the group of people responsible for organizing the backlog of issues in OpenFGA and other issues across our repositories, reviewing pull requests, and all code within this repository.
 
-OpenFGA has 19 active maintainers ([full list](https://github.com/openfga/community/blob/main/MAINTAINERS)). 
+OpenFGA had [91 committers in the last 12 months](https://all.devstats.cncf.io/d/53/projects-health-table?orgId=1) and 19 active maintainers ([full list](https://github.com/openfga/community/blob/main/MAINTAINERS)).
 
 ## Flow Of Contributions 
 > *Demonstrate a substantial ongoing flow of commits and merged contributions with a clear versioning scheme*
