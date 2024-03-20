@@ -69,16 +69,16 @@ The current snapshot of the maintainers as defined above (company affiliation ba
 
 ### Committers:
 
-- [andyi2it] - Andrews Arokiam (Idea2IT)
-- [alexagriffith] - Alexa Griffith (Bloomberg)
-- [ckadner] - Christian Kadner (IBM)
-- [cmaddalozzo] - Curtis Maddalozzo (Bloomberg)
-- [israel-hdez] - Edgar Hernandez (Redhat)
-- [lizzzcai] - Lize Cai (SAP)
-- [sivanantha321] - Sivanantham (Idea2IT)
-- [terrytangyuan] - Yuan Tang (Redhat)
+- [andyi2it](https://github.com/andyi2it) - Andrews Arokiam (Idea2IT)
+- [alexagriffith](https://github.com/alexagriffith) - Alexa Griffith (Bloomberg)
+- [ckadner](https://github.com/ckadner) - Christian Kadner (IBM)
+- [cmaddalozzo](https://github.com/cmaddalozzo) - Curtis Maddalozzo (Bloomberg)
+- [israel-hdez](https://github.com/israel-hdez) - Edgar Hernandez (Redhat)
+- [lizzzcai](https://github.com/lizzzcai) - Lize Cai (SAP)
+- [sivanantha321](https://github.com/sivanantha321) - Sivanantham (Idea2IT)
+- [terrytangyuan](https://github.com/terrytangyuan) - Yuan Tang (Redhat)
 
-Infrastructure requests (CI/CNCF Cluster)
+## Infrastructure requests (CI/CNCF Cluster)
 
 KServe uses Github Action for its CI needs. If KServe does get accepted for incubation in CNCF, the community will work towards migrating the ownership of this infrastructure to the CNCF.
 
@@ -87,8 +87,9 @@ https://github.com/kserve/kserve/tree/master/.github
 ## Communication Channels
 
 The KServe community includes a variety of Slack forums for general discussion, feature requests, job postings, and sub-project, platform, or geo-specific channels. Popular KServe Slack channels are listed here 
-[Kubeflow kserve channel](https://kubeflow.slack.com/archives/CH6E58LNP)
-[CNCF kserve channel](https://cloud-native.slack.com/archives/C06AH2C3K8B)
+
+- [Kubeflow kserve channel](https://kubeflow.slack.com/archives/CH6E58LNP)
+- [CNCF kserve channel](https://cloud-native.slack.com/archives/C06AH2C3K8B)
 
 ## Issue tracker
 
