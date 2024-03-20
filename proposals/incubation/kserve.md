@@ -1,6 +1,6 @@
-KServe CNCF Incubator Project Proposal
+# KServe CNCF Incubator Project Proposal
 
-Name of Project:
+## Name of Project:
 
 KServe
 
@@ -63,20 +63,20 @@ The current snapshot of the maintainers as defined above (company affiliation ba
 
 ### Maintainers:
 
-[njhill](https://github.com/njhill) - Nick Hill (IBM)
-[rachitchauhan43](https://github.com/rachitchauhan43) - Rachit Chauhan(Intuit)
-[yuzisun](https://github.com/yuzisun) - Dan Sun(Bloomberg)
+- [njhill](https://github.com/njhill) - Nick Hill (IBM)
+- [rachitchauhan43](https://github.com/rachitchauhan43) - Rachit Chauhan(Intuit)
+- [yuzisun](https://github.com/yuzisun) - Dan Sun(Bloomberg)
 
 ### Committers:
 
-[andyi2it] - Andrews Arokiam (Idea2IT)
-[alexagriffith] - Alexa Griffith (Bloomberg)
-[ckadner] - Christian Kadner (IBM)
-[cmaddalozzo] - Curtis Maddalozzo (Bloomberg)
-[israel-hdez] - Edgar Hernandez (Redhat)
-[lizzzcai] - Lize Cai (SAP)
-[sivanantha321] - Sivanantham (Idea2IT)
-[terrytangyuan] - Yuan Tang (Redhat)
+- [andyi2it] - Andrews Arokiam (Idea2IT)
+- [alexagriffith] - Alexa Griffith (Bloomberg)
+- [ckadner] - Christian Kadner (IBM)
+- [cmaddalozzo] - Curtis Maddalozzo (Bloomberg)
+- [israel-hdez] - Edgar Hernandez (Redhat)
+- [lizzzcai] - Lize Cai (SAP)
+- [sivanantha321] - Sivanantham (Idea2IT)
+- [terrytangyuan] - Yuan Tang (Redhat)
 
 Infrastructure requests (CI/CNCF Cluster)
 
@@ -92,19 +92,20 @@ The KServe community includes a variety of Slack forums for general discussion, 
 
 ## Issue tracker
 
-KServe - [https://github.com/kserve/kserve/issues](https://github.com/kserve/kserve/issues)
-ModelMesh - [https://github.com/kserve/modelmesh-serving](https://github.com/kserve/modelmesh-serving)
-Community
+- KServe - [https://github.com/kserve/kserve/issues](https://github.com/kserve/kserve/issues)
+- ModelMesh - [https://github.com/kserve/modelmesh-serving](https://github.com/kserve/modelmesh-serving)
 
-Community Github Repo - [https://github.com/kserve/community](https://github.com/kserve/community)
-KServe Blog - [https://github.com/kserve/website/tree/main/docs/blog/articles](https://github.com/kserve/website/tree/main/docs/blog/articles)
+## Community
+
+- Community Github Repo - [https://github.com/kserve/community](https://github.com/kserve/community)
+- KServe Blog - [https://github.com/kserve/website/tree/main/docs/blog/articles](https://github.com/kserve/website/tree/main/docs/blog/articles)
 
 ## Code of Conduct
 
 ## Adopters
 
-KServe SDK: [https://github.com/kserve/kserve/network/dependents](https://github.com/kserve/kserve/network/dependents)
-KServe: [https://github.com/kserve/website/blob/main/docs/community/adopters.md](https://github.com/kserve/website/blob/main/docs/community/adopters.md)
+- KServe Python SDK: [https://github.com/kserve/kserve/network/dependents](https://github.com/kserve/kserve/network/dependents)
+- KServe: [https://github.com/kserve/website/blob/main/docs/community/adopters.md](https://github.com/kserve/website/blob/main/docs/community/adopters.md)
 
 ## Security Process:
 
