@@ -8,16 +8,16 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 
 ## Current TAGS
 (In alphabetical order by TAG)
-| Name | TOC Liaisons - updated as of 4/11/2023 |
+| Name | TOC Liaisons - updated as of 3/31/2024 |
 |------|--------------| 
-| [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Katie Gamanji, Justin Cormack |
-| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Dave Zolotusky, Emily Fox |
-| [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability/) | Erin Boyd, Matt Farina, Emily Fox |
+| [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Katie Gamanji, Lin Sun |
+| [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) | Davanum Srinivas, Emily Fox |
+| [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability/) | Erin Boyd, Kevin Wang, Emily Fox |
 | [TAG Network](https://github.com/cncf/tag-network) | Duffie Cooley, Ricardo Rocha |
 | [TAG Observability](https://github.com/cncf/tag-observability) | Erin Boyd, Ricardo Rocha,  Cathy Zhang |
-| [TAG Runtime](https://github.com/cncf/tag-runtime) | Nikhita Raghunath, Richard Hartmann, Cathy Zhang |
-| [TAG Security](https://github.com/cncf/tag-security) | Duffie Cooley, Dave Zolotusky|
-| [TAG Storage](https://github.com/cncf/tag-storage) | Matt Farina, Nikhita Raghunath  |
+| [TAG Runtime](https://github.com/cncf/tag-runtime) | Nikhita Raghunath, Davanum Srinivas, Cathy Zhang |
+| [TAG Security](https://github.com/cncf/tag-security) | Duffie Cooley, Lin Sun |
+| [TAG Storage](https://github.com/cncf/tag-storage) | Kevin Wang, Nikhita Raghunath  |
 
 ## TAG Leadership
 
