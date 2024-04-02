@@ -6,18 +6,21 @@ wasmCloud
 
 ## Project description
 
-wasmCloud helps you build globally distributed applications that reach from the cloud to the edge. Leveraging WebAssembly's security, portability, and performance, the platform helps you compose applications from tiny, independent building blocks loosely coupled to capabilities.
+wasmCloud is a universal application platform that helps you build and run globally distributed WebAssembly applications on any cloud and any edge.
 
-Deciding whether you're building a serverless function, a microservice, a globally distributed app, or a monolith is now a knob you can turn at runtime rather than a one-time decision you're stuck with until your application retires.
+Our goal is to make development more joyful and efficient by giving developers the tools to write only the code that matters—and making it easy to run that code anywhere.
+
+wasmCloud leverages WebAssembly's security, portability, and performance to compose applications from tiny, independent building blocks.
+
+These building blocks are managed declaratively and reconfigurable at runtime. You shouldn't need to recompile your whole app to upgrade a database client or patch a vulnerability. You shouldn't need to recompile anything to move your app from development to production.
 
 wasmCloud is designed around the following core tenets:
-
-- Dead simple distributed applications
-- Run anywhere
+- Distributed from day one
+- Run anywhere and everywhere
 - Secure by default
-- Productivity for both developers and operations
+- Faster iteration and lower maintenance
 
-**You should not have to change your design, architecture, or your programming environment as you move from concept to production.**
+**Move from concept to production without changing your design, architecture, or your programming environment.**
 
 ### Impact and Features
 
@@ -55,10 +58,10 @@ Our blogs, community meeting notes and documentation are available on [https://w
 
 wasmCloud joined the CNCF as a Sandbox Application Runtime project on July 13th, 2021. Since joining the CNCF as a sandbox project we've seen steady community growth and adoption.
 
-- GitHub organization stars: 2300+
-- Contributors: 440+
-- Pull Requests: 2000+
-- Commits: 9300+
+- GitHub organization stars: 2500+
+- Contributors: [80+](https://landscape.cncf.io/?item=orchestration-management--scheduling-orchestration--wasmcloud)
+- Pull Requests: [3000+](https://wasmcloud.devstats.cncf.io/d/24/prs-merged-repository-groups?orgId=1&var-period=y&var-repogroups=All&from=now-4y&to=now)
+- Commits: [18000+](https://wasmcloud.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&from=now-4y&to=now&var-period=y&var-repogroups=All)
 
 ### Company Contributors
 
@@ -141,6 +144,8 @@ We run what we call "wasmCloud Wednesdays" every Wednesday at 1pm EST and have n
 
 - Adobe published a case study [Better together: A Kubernetes and Wasm case study](https://www.cncf.io/blog/2022/11/17/better-together-a-kubernetes-and-wasm-case-study/) as a CNCF end-user blog detailing their experience using wasmCloud and Kubernetes in tandem for more efficient, secure applications.
 - OSTIF + Trail of Bits recently completed a security audit of wasmCloud and found no medium, high or critical vulnerabilities. The full report is available at [https://ostif.org/ostif-has-completed-a-security-audit-of-wasmcloud/](https://ostif.org/ostif-has-completed-a-security-audit-of-wasmcloud/).
+- Orange evolved their edge strategy with WebAssembly & wasmCloud, and spoke at KubeCon EU 2024 [https://www.youtube.com/watch?v=1sWQqgK-79c&list=PLj6h78yzYM2MQteKoXxICTWiUdZYEw6RI&index=6](https://www.youtube.com/watch?v=1sWQqgK-79c&list=PLj6h78yzYM2MQteKoXxICTWiUdZYEw6RI&index=6).
+- MachineMetrics uses wasmCloud and NATS to process high velocity machine data on the factory floor, highlighting this case study at their talk at KubeCon EU 2024 [https://www.youtube.com/watch?v=fQdkNGZqYZA&list=PLj6h78yzYM2MQteKoXxICTWiUdZYEw6RI&index=6](https://www.youtube.com/watch?v=fQdkNGZqYZA&list=PLj6h78yzYM2MQteKoXxICTWiUdZYEw6RI&index=6).
 
 ## Project logo in svg format
 
