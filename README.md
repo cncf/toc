@@ -1,11 +1,13 @@
 # CNCF Technical Oversight Committee (TOC)
 
-The CNCF TOC is the technical governing body of the CNCF Foundation. It admits and oversees all projects in the CNCF Foundation and has a mandate to facilitate driving neutral consensus for:
-* defining and maintaining the technical vision for the Cloud Native Computing Foundation,
-* approving new projects within the scope for CNCF set by the Governing Board (GB), and create a conceptual architecture for the projects, aligning projects, removing or archiving projects,
-* accepting feedback from end user committee and map to projects,
+The CNCF TOC is the technical governing body of the CNCF. It admits and oversees all projects in the CNCF  and has a mandate to facilitate driving neutral consensus for:
+* defining and maintaining the technical vision and [principles](https://github.com/cncf/toc/blob/main/PRINCIPLES.md) for the Cloud Native Computing Foundation,
+* approving new projects within the scope of  the CNCF set by the Governing Board (GB), creating  a conceptual architecture for the projects, aligning projects, removing or archiving projects,
+* accepting feedback from end user technical advisory board and map to projects,
 * aligning interfaces to components under management (code reference implementations before standardizing), and defining common practices to be implemented across CNCF projects, if any.
 
+## TOC Technical Vision
+The technical direction of the ecosystem is problem-centric. We encourage and support our projects to solve problems faced by adopters, to build the right ecosystem for innovation and embrace changes in the broader technical landscape. To exercise and increase the expertise within the technical community to compose solutions that stand the test of time.
 
 ## Members
 
