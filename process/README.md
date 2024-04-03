@@ -108,7 +108,7 @@ Due to the increased community demands around KubeCon + CloudNativeCon (KCCN), t
 
 For each KubeCon + CloudNativeCon's (KCCN) standalone event (where KCCN is the focus, not a joint event with OSS Summit or other such conference) — currently Europe and North America — the following freeze is applied:
 
-__Within 6 weeks of the event__
+__Within 4 weeks of the event__
 
 * TOC members will not take on new sponsorship of applications for moving levels
 * Many activities occur before, during, and after KCCN. Postponing new sponsorship until after KCCN reduces the likelihood that kicking off the process is overcome by such activities.
@@ -131,7 +131,7 @@ __2nd week following the event__
 
 TOC members may choose to continue working with projects on due diligence within the weeks before and after KCCN subject to their and others' availability. Projects should take all of this into account when planning completion of their due diligence. We ask projects to be understanding and considerate of our availability constraints around KCCN and remind everyone that the TOC is not a full-time body, we have primary work commitments in addition to our involvement on the TOC and any projects, TAGs, or community groups we are involved in.
 
-As the CNCF chooses to create new standalone occurrences of KCCN, this freeze should be reviewed to ensure ample time is available to conduct activities to support project moving levels. It may include restricting to just two freezes a year, or a complete re-evaluation of the freeze in light of whatever changes have transpired.
+As the CNCF chooses to create new standalone occurrences of KCCN, this freeze should be reviewed to ensure ample time is available to conduct activities to support project moving levels. It may include restricting to just two freezes a year, or a complete re-evaluation of the freeze in light of whatever changes have transpired. For other events besides KCCN Europe and North America, individual TOC member should continue to communicate to projects when they are not available while traveling on these events.
 
 #### Additional information
 
@@ -141,10 +141,10 @@ A: There are currently many projects that want to be a part of the CNCF and it i
 Q: Exactly how long will it take my project to move levels once my application is in?
 A: Just like in open source, it will get done when the work is done. This can range from 5 months to 15 months please coordinate with your TOC sponsor to keep everything on track.
 
-Q: Can my project still apply to move levels within 6 weeks of KubeCon?
+Q: Can my project still apply to move levels within 4 weeks of KubeCon?
 A: Yes, though getting a TOC sponsor, conducting any due diligence, and any other steps of the process will be delayed until after KubeCon.
 
-Q: Why can't public comment periods or votes launch within 6 weeks of a KubeCon?
+Q: Why can't public comment periods or votes launch within 4 weeks of a KubeCon?
 A: Undergoing due diligence is a non-insignificant amount of work. Conducting adopter interviews takes time and scheduling becomes increasingly difficult the closer to each KCCN we get. Being able to successfully complete due diligence to launch the public part of the process becomes very difficult as many community members have additional responsibilities related to the conference. By removing KCCN as a goal post for brand new requests to move levels, we hope to not burn out adopters, TOC, maintainers, and other community members.
 
 Q: I meet the criteria, why am I not graduating?
