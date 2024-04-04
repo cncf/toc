@@ -106,7 +106,7 @@ For moving levels to incubation or graduation, projects should plan on _at least
 
 Due to the increased community demands around KubeCon + CloudNativeCon (KCCN), the scheduling and production of content, and reduced availability of individuals involved in moving levels, the TOC leverages a freeze for projects in process for moving levels. Even if a project is approved to move levels 3 weeks before this event, projects should _not_ expect to receive benefits beyond those afforded for the level they were previously at. For example, if a sandbox project is approved to move to incubation 3 weeks prior to the event, the project and the event staff will not have enough time to record, edit, and produce an incubating project update to have it included within the keynote stage reel.
 
-For KubeCon + CloudNativeCon's (KCCN) standalone event — currently Europe and North America — the following freeze is applied:
+For KubeCon + CloudNativeCon's (KCCN) Europe and North America — the following freeze is applied:
 
 __Within 4 weeks of the event__
 
