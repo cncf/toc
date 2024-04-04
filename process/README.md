@@ -106,15 +106,12 @@ For moving levels to incubation or graduation, projects should plan on _at least
 
 Due to the increased community demands around KubeCon + CloudNativeCon (KCCN), the scheduling and production of content, and reduced availability of individuals involved in moving levels, the TOC leverages a freeze for projects in process for moving levels. Even if a project is approved to move levels 3 weeks before this event, projects should _not_ expect to receive benefits beyond those afforded for the level they were previously at. For example, if a sandbox project is approved to move to incubation 3 weeks prior to the event, the project and the event staff will not have enough time to record, edit, and produce an incubating project update to have it included within the keynote stage reel.
 
-For each KubeCon + CloudNativeCon's (KCCN) standalone event (where KCCN is the focus, not a joint event with OSS Summit or other such conference) — currently Europe and North America — the following freeze is applied:
+For KubeCon + CloudNativeCon's (KCCN) Europe and North America — the following freeze is applied:
 
-__Within 6 weeks of the event__
+__Within 4 weeks of the event__
 
 * TOC members will not take on new sponsorship of applications for moving levels
 * Many activities occur before, during, and after KCCN. Postponing new sponsorship until after KCCN reduces the likelihood that kicking off the process is overcome by such activities.
-
-__Within 2 weeks of the event__
-
 * Public Comment will not open
  * We want to ensure community members, adopters, and other stakeholders have time to participate in the public comment of projects, the 2 weeks leading up to the event are typically very busy for many individuals involved in the moving levels process.
 * Voting for projects will not open
@@ -129,7 +126,7 @@ __2nd week following the event__
 * Voting for projects who completed public comment may open and commence.
 * The week immediately following KCCN is commonly reserved as a recovery and digest period for attendees, event staff, community members, and TOC.
 
-TOC members may choose to continue working with projects on due diligence within the weeks before and after KCCN subject to their and others' availability. Projects should take all of this into account when planning completion of their due diligence. We ask projects to be understanding and considerate of our availability constraints around KCCN and remind everyone that the TOC is not a full-time body, we have primary work commitments in addition to our involvement on the TOC and any projects, TAGs, or community groups we are involved in.
+The above freeze only applies to KCCN NA and EU. Other events will be subject to the TOC members' availability who are expected to regularly check in with the projects. TOC members may choose to continue working with projects on due diligence within the weeks before and after KCCN subject to their and others' availability. Projects should take all of this into account when planning completion of their due diligence. We ask projects to be understanding and considerate of our availability constraints around KCCN and remind everyone that the TOC is not a full-time body, we have primary work commitments in addition to our involvement on the TOC and any projects, TAGs, or community groups we are involved in.
 
 As the CNCF chooses to create new standalone occurrences of KCCN, this freeze should be reviewed to ensure ample time is available to conduct activities to support project moving levels. It may include restricting to just two freezes a year, or a complete re-evaluation of the freeze in light of whatever changes have transpired.
 
@@ -141,10 +138,10 @@ A: There are currently many projects that want to be a part of the CNCF and it i
 Q: Exactly how long will it take my project to move levels once my application is in?
 A: Just like in open source, it will get done when the work is done. This can range from 5 months to 15 months please coordinate with your TOC sponsor to keep everything on track.
 
-Q: Can my project still apply to move levels within 6 weeks of KubeCon?
+Q: Can my project still apply to move levels within 4 weeks of KubeCon?
 A: Yes, though getting a TOC sponsor, conducting any due diligence, and any other steps of the process will be delayed until after KubeCon.
 
-Q: Why can't public comment periods or votes launch within 6 weeks of a KubeCon?
+Q: Why can't public comment periods or votes launch within 4 weeks of a KubeCon?
 A: Undergoing due diligence is a non-insignificant amount of work. Conducting adopter interviews takes time and scheduling becomes increasingly difficult the closer to each KCCN we get. Being able to successfully complete due diligence to launch the public part of the process becomes very difficult as many community members have additional responsibilities related to the conference. By removing KCCN as a goal post for brand new requests to move levels, we hope to not burn out adopters, TOC, maintainers, and other community members.
 
 Q: I meet the criteria, why am I not graduating?
