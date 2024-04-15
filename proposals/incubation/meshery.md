@@ -36,7 +36,7 @@ Meshery, committed to maintaining vendor neutrality, ensuring a diverse collecti
 Meshery's non-exhaustive, public list of [adaptors](https://github.com/meshery/meshery/blob/master/ADOPTERS.md) is available for reference. With thousands of users already leveraging its features, Meshery has proven its production-readiness and garnered positive feedback from adopters and the broader community.
 
 ### Have a healthy number of committers
-Meshery boasts a diverse and active community of maintainers, with [15 maintainers](https://github.com/meshery/meshery/blob/main/MAINTAINERS.md) overseeing the ~30 repositories included in the `meshery` GitHub organization.  and [extension modules](https://github.com/meshery/meshery/blob/main/EXTENSIONS.md). 
+Meshery boasts a diverse and active community of maintainers, with [15 maintainers](https://github.com/meshery/meshery/blob/master/MAINTAINERS.md) overseeing the ~30 repositories included in the `meshery` GitHub organization.  and [extension modules](https://github.com/meshery/meshery/blob/main/EXTENSIONS.md). 
 
 ### Demonstrates a substantial ongoing flow of commits and merged contributions
 
