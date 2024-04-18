@@ -4,6 +4,7 @@
 | TAG App Delivery         | [Hongchao Deng](https://github.com/hongchaodeng)         |
 | TAG App Delivery         | [Bryan Liles](https://github.com/bryanl)                 |
 | TAG App Delivery         | [Lei Zhang](https://github.com/resouer)                  |
+| TAG App Delivery         | [Alois Reitbauer](https://github.com/AloisReitbauer)     |
 | TAG App Delivery         | [Alex Jones](https://github.com/alexsjones)              |
 | TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred)               |
 | TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman)         |
