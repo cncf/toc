@@ -119,7 +119,7 @@ Lifecycle management of applications is a broad and mainstream topic of Cloud Na
 
 ## **Operations**
 
-* TOC Liaisons: Katie Gamanji, Justin Cormack
+* TOC Liaisons: Katie Gamanji, Lin Sun
 * TAG chairs: [Alois Reitbauer](https://github.com/AloisReitbauer), [Thomas Schuetz](https://github.com/thschue), [Josh Gavant](https://github.com/joshgav) 
 * Tech Leads: [Alex Jones](https://github.com/AlexsJones), [Lian Li](https://github.com/lianmakesthings) 
 * See [roles](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-chairs) for more information
