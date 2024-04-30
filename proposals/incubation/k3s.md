@@ -36,7 +36,7 @@ k3s (https://k3s.io/) joined the CNCF as a Sandbox project in 2020. As the k3s t
 
 ## What is k3s: Recap
 
-K3s is a fully compliant Kuberenetes distribution with the following enhancements:
+K3s is a fully compliant Kubernetes distribution with the following enhancements:
 
 * Distributed as a single binary or minimal container image.
 * Lightweight datastore based on sqlite3 as the default storage backend. etcd3, MySQL, and Postgres are also available.
