@@ -2,7 +2,7 @@
 
 *Approved by TOC/GB: 2024-02-26*
 
-[العربية](#العربية) (Arabic) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
+[العربية](#العربية) (Arabic) | [հայերեն](#հայերեն) (Armenian) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
 [Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) 
 
 ## Definition
@@ -30,6 +30,14 @@ The Cloud Native Computing Foundation seeks to drive adoption of this paradigm b
 تسعى Cloud Native Computing Foundation إلى دفع اعتماد هذا النموذج من خلال تعزيز نظام إيكولوجي ثابت و مفتوح المصدر و محايد من البائعين. اننا نقوم بإضفاء الديمقراطية على أحدث الأنماط لجعل هذه الابتكارات متاحه للجميع.
 
 </div>
+
+## հայերեն
+
+Ամպային բնիկ տեխնոլոգիաները հնարավորություն են տալիս կազմակերպություններին ստեղծել և գործարկել մասշտաբային հավելվածներ ժամանակակից, դինամիկ միջավայրերում, ինչպիսիք են հանրային, մասնավոր և հիբրիդային ամպերը: Կոնտեյներները, սպասարկման ցանցերը, միկրոսերվիսները, անփոփոխ ենթակառուցվածքը և դեկլարատիվ API-ներն այս մոտեցման օրինակն են:
+
+Այս տեխնիկան թույլ է տալիս թույլ միացված համակարգեր, որոնք ճկուն են, կառավարելի և դիտարկելի: Համակցված ամուր ավտոմատացման հետ՝ դրանք ինժեներներին թույլ են տալիս հաճախակի և կանխատեսելի փոփոխություններ կատարել բարձր ազդեցության՝ նվազագույն ջանքերով:
+
+Cloud Native Computing Foundation-ը ձգտում է խթանել այս պարադիգմի ընդունումը՝ խթանելով և պահպանելով բաց կոդով, վաճառողներից չեզոք նախագծերի էկոհամակարգը: Մենք ժողովրդավարացնում ենք ժամանակակից օրինաչափությունները՝ այս նորամուծությունները բոլորի համար հասանելի դարձնելու համար:
 
 ## 中文版本：
 
