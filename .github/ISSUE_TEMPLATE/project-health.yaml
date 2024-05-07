@@ -1,7 +1,7 @@
 name: Project Health
 description: Register a concern regarding project health and alignment
 title: "[HEALTH]: "
-label: ["health"]
+labels: ["health"]
 body:
 - type: input
   id: project
