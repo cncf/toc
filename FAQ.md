@@ -5,7 +5,7 @@ A FAQ geared towards CNCF TOC and project issues.
 ## How do I join the TOC?
 
 The TOC is a body elected by a variety of constituents. There is a public election schedule:
-https://github.com/cncf/toc/blob/main/process/election-schedule.md
+https://github.com/cncf/toc/blob/main/operations/election-schedule.md
 
 The best way to get involved is to start attending TOC meetings and especially by participating in TAG(s)/WG(s).
 
