@@ -10,7 +10,7 @@ $NAME,
 
 $TOCSPONSORS are the TOC sponsors for $PROJECT's  [Graduation / Incubation]. As part of this process, we interview multiple adopters of the project to ascertain the maturity and adoption of the project. These interviews can be anonymous or attributable - whatever you and the $ADOPTERORG are comfortable with.
 
-Here is a [link](toc-templates/adopter-questions.md) to the questions I'll be asking, in case you need approval to respond. I try to remain on topic with those questions but may deep dive on a few depending on responses. 
+Here is a [link](https://github.com/cncf/toc/blob/main/operations/toc-templates/template-adopter-questions.md) to the questions I'll be asking, in case you need approval to respond. I try to remain on topic with those questions but may deep dive on a few depending on responses. 
 
 We would like these interviews to be as transparent and public as possible, as it provides invaluable information to the project on improving their features, functionality, and engagement with adopters, but understand if you can only participate anonymously. 
 
@@ -28,4 +28,4 @@ Thank you in advance for your willingness to support open source through your pa
 
 $SIGNATUREBLOCK
 TOC Sponsor for $PROJECT
-Learn more about the [TOC](https://github.com/cncf/toc/tree/main#cncf-technical-oversight-committee-toc), the [CNCF](https://www.cncf.io/about/who-we-are/), and [the moving levels process](https://github.com/cncf/toc/tree/main/moving-levels/README.md).
+Learn more about the [TOC](https://github.com/cncf/toc/tree/main#cncf-technical-oversight-committee-toc), the [CNCF](https://www.cncf.io/about/who-we-are/), and [the moving levels process](https://github.com/cncf/toc/blob/main/process/README.md).
