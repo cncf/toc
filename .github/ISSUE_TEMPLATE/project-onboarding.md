@@ -10,7 +10,9 @@ Welcome to CNCF Project Onboarding!
 
 This is an issue created to help onboard your project into the CNCF after the TOC has voted to accept your project into the Sandbox.
 
-We would like to complete onboarding within one month of acceptance.
+We would like your project to complete onboarding within one month of acceptance.
+
+Please track your progress by using "Quote reply" to create your own copy of this checklist in an issue, so that you can update the status as you finish items.
 
 **From the project side, please ensure that:**
 
@@ -21,8 +23,8 @@ We would like to complete onboarding within one month of acceptance.
 - [ ] You understand the trademark guidelines: <https://www.linuxfoundation.org/en/trademark-usage/>
 - [ ] You understand the license allowlist: <https://github.com/cncf/foundation/blob/master/allowed-third-party-license-policy.md#approved-licenses-for-allowlist>
 - [ ] Your project is working on written, open governance. See <https://contribute.cncf.io/maintainers/governance/>
-- [ ] Your Slack channels are migrated to the Kubernetes or CNCF Slack workspace. See <https://slack.com/help/articles/217872578-Import-data-from-one-Slack-workspace-to-another> for more details)
-- [ ] Your project in its own separate neutral GitHub organization. This will make it transferable to the CNCF's GitHub Enterprise account.
+- [ ] Your Slack channels (if any) are migrated to the Kubernetes or CNCF Slack workspace. See <https://slack.com/help/articles/217872578-Import-data-from-one-Slack-workspace-to-another> for more details)
+- [ ] Your project is in its own separate neutral GitHub organization. This will make it transferable to the CNCF's GitHub Enterprise account.
 - [ ] You submit a pull request to add your project as a Sandbox project to <https://landscape.cncf.io>
 - [ ] You create maintainer list + add to aggregated <https://maintainers.cncf.io> list by submitting a PR to it
 - [ ] You submit a pull request to <https://github.com/cncf/artwork> with your artwork
@@ -49,4 +51,5 @@ We would like to complete onboarding within one month of acceptance.
 - [ ] CNCF sends a welcome email to confirm maintainer list access
 - [ ] Book time with the team using <http://project-meetings.cncf.io>
 - [ ] Create space for meetings/events on <https://community.cncf.io>, e.g., <https://community.cncf.io/pravega-community/> - (<https://github.com/cncf/communitygroups/blob/main/README.md#cncf-projects>)
+- [ ] Create new Slack channel(s) on Kubernetes or CNCF Slack workspace if needed
 - [ ] Adopt a license scanning tool, like [FOSSA](https://fossa.com/) or [Snyk](https://snyk.io/)
