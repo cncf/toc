@@ -1,0 +1,33 @@
+name: TAG Leadership Nomination
+description: Nominate a TAG Chair or Technical Leader
+title: "[VOTE]: "
+body:
+- type: input
+  id: TAG
+  attributes: 
+    label: TAG name
+    description: For which TAG is the nomination?
+  validations:
+    required: true
+- type: textarea
+  id: position
+  attributes:
+    label: position
+    description: For which position is the nomination?
+    placeholder: TAG Chair or Technical Leader
+  validations:
+    required: true
+- type: textarea
+  id: name
+  attributes:
+    label: name
+    description: Name and Github handle of nominee
+  validations:
+    required: true
+- type: textarea
+  id: motivation
+  attributes:
+    label: Motivation & Additional Information
+    description: Please provide a motivation why the nominee is a suitable candidate for the position.
+  validations:
+    required: true
