@@ -81,12 +81,12 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 * [Alexander Kanevskiy](https://github.com/kad)
 * [Klaus Ma](https://github.com/k82cn)
 * [Rajas Kakodkar](https://github.com/rajaskakodkar)
-  
+
 ### TAG Security
 #### Chairs
-* [Andrew Martin](https://github.com/sublimino)
 * [Marina Moore](https://github.com/mnm678)
 * [Pushkar Joglekar](https://github.com/pushkarj)
+* [Eddie Knight](https://github.com/eddie-knight)
 
 #### Tech Leads
 * [Ash Narkar](https://github.com/ashutosh-narkar)
