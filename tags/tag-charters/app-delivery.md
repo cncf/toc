@@ -119,9 +119,9 @@ Lifecycle management of applications is a broad and mainstream topic of Cloud Na
 
 ## **Operations**
 
-* TOC Liaisons: Katie Gamanji, Justin Cormack
-* TAG chairs: [Alois Reitbauer](https://github.com/AloisReitbauer), [Thomas Schuetz](https://github.com/thschue), [Josh Gavant](https://github.com/joshgav) 
-* Tech Leads: [Alex Jones](https://github.com/AlexsJones), [Lian Li](https://github.com/lianmakesthings) 
+* TOC Liaisons: Katie Gamanji, Lin Sun
+* TAG chairs: [Lian Li](https://github.com/lianmakesthings), [Thomas Schuetz](https://github.com/thschue), [Josh Gavant](https://github.com/joshgav)
+* Tech Leads: [Karena Angell](https://github.com/angellk)
 * See [roles](https://github.com/cncf/tag-security/blob/main/governance/roles.md#role-of-chairs) for more information
 * Slack channel: #tag-app-delivery in CNCF workspace - [https://cloud-native.slack.com/messages/CL3SL0CP5](https://cloud-native.slack.com/messages/CL3SL0CP5) 
 
