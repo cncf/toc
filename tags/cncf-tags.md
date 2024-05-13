@@ -26,14 +26,13 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 
 ### TAG App-Delivery
 #### Chairs
-* [Alois Reitbauer](https://github.com/AloisReitbauer)
+* [Lian Li](https://github.com/lianmakesthings)
 * [Josh Gavant](https://github.com/joshgav)
 * [Thomas Schuetz](https://github.com/thschue)
 
 #### Tech Leads
-* [Alex Jones](https://github.com/alexsjones)
 * [Karena Angell](https://github.com/angellk)
-* [Lian Li](https://github.com/lianmakesthings)
+
 
 ### TAG Contributor Strategy
 #### Chairs
