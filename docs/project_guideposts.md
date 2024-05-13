@@ -94,7 +94,7 @@ The community is welcome to submit PRs to improve and add additional Guide Posts
   * Projects may choose to defer to the CNCF's Code of Conduct Committee for resolving reported conduct issues.
 
 * Maintains or provides a dependency graph so adopters fully understand the complexity and risk of use
-  * Dependency graphs can provide maintainers with insights into new features or bugs introduced by their dependencies which may impact a projects stability, performance, and securiyt posture. They also provide a more comprehensive understanding of what packages a project depends on and how the project is constructed. This also allows adopters to know what they are getting _without installing the software_ to ensure it aligns with their organization's policies for licensing and dependencies.
+  * Dependency graphs can provide maintainers with insights into new features or bugs introduced by their dependencies which may impact a projects stability, performance, and security posture. They also provide a more comprehensive understanding of what packages a project depends on and how the project is constructed. This also allows adopters to know what they are getting _without installing the software_ to ensure it aligns with their organization's policies for licensing and dependencies.
 
 * Has 3 or more adopters using the project in production
   * Multiple adopters leveraging a project in a production environment shows increased use of a project. It demonstrates the project meets maturity, performance, security, and scalability expectations for a set of adopters who may provide feedback and contributions to continue advancing and refining the project to a point in which more adopters can rely on it.
