@@ -25,7 +25,7 @@ Please track your progress by using "Quote reply" to create your own copy of thi
 - [ ] Your project is working on written, open governance. See <https://contribute.cncf.io/maintainers/governance/>
 - [ ] Your Slack channels (if any) are migrated to the Kubernetes or CNCF Slack workspace. See <https://slack.com/help/articles/217872578-Import-data-from-one-Slack-workspace-to-another> for more details)
 - [ ] Your project is in its own separate neutral GitHub organization. This will make it transferable to the CNCF's GitHub Enterprise account.
-- [ ] You submit a pull request to add your project as a Sandbox project to <https://landscape.cncf.io>
+- [ ] You submit a [pull request](https://github.com/cncf/landscape/pulls) to add your project as a Sandbox project to <https://landscape.cncf.io> by updating the [landscape.yml](https://github.com/cncf/landscape/blob/master/landscape.yml) following these [instructions](https://github.com/cncf/landscape2/blob/main/docs/config/data.yml)
 - [ ] You create maintainer list + add to aggregated <https://maintainers.cncf.io> list by submitting a PR to it
 - [ ] You submit a pull request to <https://github.com/cncf/artwork> with your artwork
 - [ ] You transfer your domain to the CNCF - <https://jira.linuxfoundation.org/plugins/servlet/theme/portal/2/create/63>
