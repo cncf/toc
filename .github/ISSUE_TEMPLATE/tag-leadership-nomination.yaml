@@ -5,7 +5,8 @@ body:
 - type: input
   id: TAG
   attributes: 
-    label: ["TAG App Deliver", "TAG Contributor Strategy", "TAG Environmental Sustainability", "TAG Network", "TAG Observability", "TAG Runtime", "TAG Security", "TAG Storage"]
+    label: TAG
+    description: ["TAG App Delivery", "TAG Contributor Strategy", "TAG Environmental Sustainability", "TAG Network", "TAG Observability", "TAG Runtime", "TAG Security", "TAG Storage"]
   validations:
     required: true
 - type: textarea
