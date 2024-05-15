@@ -5,22 +5,20 @@ body:
 - type: input
   id: TAG
   attributes: 
-    label: TAG name
-    description: For which TAG is the nomination?
+    label: ["TAG App Deliver", "TAG Contributor Strategy", "TAG Environmental Sustainability", "TAG Network", "TAG Observability", "TAG Runtime", "TAG Security", "TAG Storage"]
   validations:
     required: true
 - type: textarea
   id: position
   attributes:
-    label: position
-    description: For which position is the nomination?
-    placeholder: TAG Chair or Technical Leader
+    label: Position
+    description: ["TAG Chair", "Technical Leader"]
   validations:
     required: true
 - type: textarea
   id: name
   attributes:
-    label: name
+    label: Name
     description: Name and Github handle of nominee
   validations:
     required: true
@@ -31,3 +29,4 @@ body:
     description: Please provide a motivation why the nominee is a suitable candidate for the position.
   validations:
     required: true
+    
