@@ -2,25 +2,37 @@ name: TAG Leadership Nomination
 description: Nominate a TAG Chair or Technical Leader
 title: "[VOTE]: "
 body:
-- type: input
+- type: dropdown
   id: TAG
-  attributes: 
-    label: TAG
-    description: ["TAG App Delivery", "TAG Contributor Strategy", "TAG Environmental Sustainability", "TAG Network", "TAG Observability", "TAG Runtime", "TAG Security", "TAG Storage"]
+  attributes:
+    label: Select your TAG
+    multiple: false
+    options: 
+        - TAG App Delivery
+        - TAG Contributor Strategy
+        - TAG Environmental Sustainability
+        - TAG Network
+        - TAG Observability
+        - TAG Runtime
+        - TAG Security
+        - TAG Storage
   validations:
     required: true
-- type: textarea
+- type: dropdown
   id: position
   attributes:
     label: Position
-    description: ["TAG Chair", "Technical Leader"]
+    multiple: false
+    options:
+        - TAG Chair / Co-Chair
+        - Tech Lead
   validations:
     required: true
 - type: textarea
   id: name
   attributes:
     label: Name
-    description: Name and Github handle of nominee
+    description: Name and Github handle of the nominee
   validations:
     required: true
 - type: textarea
