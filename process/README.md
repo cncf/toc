@@ -29,7 +29,7 @@ Evaluting projects against the criteria does take some time and the TOC has rece
 
 **Note: The TOC has changed the sandbox application process to a more transparent and streamlined workflow within the :package: [Sandbox Applications repository](https://github.com/cncf/sandbox) :package:.**
 
-Projects apply for sandbox through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
+Projects apply for sandbox through the Sandbox Repo's *[Issue Form](https://github.com/cncf/sandbox/issues/new?assignees=&labels=New&projects=&template=application.yml&title=%5BSandbox%5D+%3CProject+Name%3E)*. More information on this process is found on the main [Sandbox repo page](https://github.com/cncf/sandbox).
 All exceptions and "declined" or "postponed" outcomes are handled by the TOC. Projects may be encouraged to re-apply after addressing areas called out in the application comments on the corresponding issue. Please refer to the instructions in the [Sandbox repo README](https://github.com/cncf/sandbox) for more details on re-application.
 
 ### Applying to become an Incubating or Graduating project
