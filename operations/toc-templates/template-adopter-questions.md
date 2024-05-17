@@ -15,25 +15,31 @@ Expectations conveyance with interviewers: “I’ll record raw notes here, then
 1. How long has your organization used the project?
 
 
-2. What is your update cadence with the project?
+2. What were the main motivations to adopt the project and which key features do you use today?
 
 
-3. Can you walk me through what your experience was in either adopting it outright or integrating it with your existing services and applications? What challenges did you experience with the project?
+3. What is the current level of usage (pre-production, production) and scale?
 
 
-4. Did you find the information in the repo or the project docs valuable to your implementation? If so, where did you find the information and what specifically was useful?
+4. What is your update cadence with the project?
 
 
-5. Did you need to engage with the community members or maintainers? If so what was the context of the engagement and did it reach an acceptable outcome?
+5. Can you walk me through what your experience was in either adopting it outright or integrating it with your existing services and applications? What challenges did you experience with the project?
 
 
-6. Compared with other products in this space (proprietary and open) what drew you to the project?
+6. Did you find the information in the repo or the project docs valuable to your implementation? If so, where did you find the information and what specifically was useful?
 
 
-7. Has your implementation of the project provided measurable value? Such as reducing manual activities, faster integrations, supported federation/multi-cloud, ease of use, etc.
+7. Did you need to engage with the community members or maintainers? If so what was the context of the engagement, which communication channels did you use and did it reach an acceptable outcome?
 
 
-8. Is there something you feel that holds the project back from reaching its ultimate potential?
+8. Compared with other products in this space (proprietary and open) what drew you to the project?
 
 
-9. Do you have any future plans regarding the project? More involvement, feature requests, expansion, etc.
+9. Has your implementation of the project provided measurable value? Such as reducing manual activities, faster integrations, supported federation/multi-cloud, ease of use, cost savings, etc.
+
+
+10. Is there something you feel that holds the project back from reaching its ultimate potential?
+
+
+11. Do you have any future plans regarding the project? More involvement, feature requests, expansion, etc.
