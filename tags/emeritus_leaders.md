@@ -4,7 +4,6 @@
 | TAG App Delivery         | [Hongchao Deng](https://github.com/hongchaodeng)         |
 | TAG App Delivery         | [Bryan Liles](https://github.com/bryanl)                 |
 | TAG App Delivery         | [Lei Zhang](https://github.com/resouer)                  |
-| TAG App Delivery         | [Alois Reitbauer](https://github.com/AloisReitbauer)     |
 | TAG App Delivery         | [Alex Jones](https://github.com/alexsjones)              |
 | TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred)               |
 | TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman)         |
@@ -17,3 +16,5 @@
 | TAG Security             | [Aradhna Chetal](https://github.com/achetal01)           |
 | TAG Security             | [Andrew Martin](https://github.com/sublimino)            |
 | TAG Storage              | [Erin Boyd](https://github.com/erinboyd)                 | 
+| TAG Network              | [Lin Sun](https://github.com/linsun)                     |
+| TAG Network              | [Richard Hartmann](https://github.com/RichiH)            |
