@@ -120,6 +120,11 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 * Leads projects in the TAG’s area.
 * Has the time and ability to perform deep technical dives on projects.   Projects may include formal CNCF projects or other projects in the area covered by the TAG.
 
+### Working Group Lead
+* Lead the activities of the working group under the TAG.
+* Have the domain knowledge to lead the working group.
+* Approved by supermajority of the chairs and approved by the TAG liaison
+
 #### Other named roles
 
 * Named and defined by the TAG (e.g. scribe, PR lead, docs/training lead, etc)
