@@ -31,8 +31,9 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 * [Thomas Schuetz](https://github.com/thschue)
 
 #### Tech Leads
+* [Alois Reitbauer](https://github.com/AloisReitbauer)
 * [Karena Angell](https://github.com/angellk)
-
+* [Roberth Strand](https://github.com/roberthstrand)
 
 ### TAG Contributor Strategy
 #### Chairs
@@ -57,16 +58,16 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 ### TAG Network
 #### Chairs
 * [Lee Calcote](https://github.com/leecalcote)
-* [Lin Sun](https://github.com/linsun)
+* [Nic Jackson](https://github.com/nicholasjackson)
 * [Zack Butcher](https://github.com/ZackButcher)
 
 #### Tech Leads
+* [Zhonghu Xu](https://github.com/hzxuzhonghu)
 
 ### TAG Observability
 #### Chairs
 * [Alolita Sharma](https://github.com/alolita)
 * [Matt Young](https://github.com/halcyondude)
-* [Richard Hartmann](https://github.com/RichiH)
   
 #### Tech Leads
 * [Bartłomiej Płotka](https://github.com/bwplotka)
