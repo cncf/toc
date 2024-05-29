@@ -81,7 +81,7 @@ Once the TOC member is assigned the project, they should perform a cursory, ligh
 
 When the project is ready to reapply, they should link to the previous application so the TOC may leverage and reuse as much prior work as reasonable.
 
-Once the TOC member has conferred with the project, the project's application will be updated byu the TOC member with a comment that details where work still needs to be completed, next steps associated with completion of those, and an estimated timeframe that the project is likley to complete those items by. Once the comment is added, the application may be closed, the "not-ready" label affixed, and the application moved to the "Not-Ready-Will Return" column of the [TOC project board](https://github.com/orgs/cncf/projects/27/views/9)'s Applications to Move levels tab.
+Once the TOC member has conferred with the project, the project's application will be updated by the TOC member with a comment that details where work still needs to be completed, next steps associated with completion of those, and an estimated timeframe that the project is likley to complete those items by. Once the comment is added, the application may be closed, the "not-ready" label affixed, and the application moved to the "Not-Ready-Will Return" column of the [TOC project board](https://github.com/orgs/cncf/projects/27/views/9)'s Applications to Move levels tab.
 
 TOC members are expected to review this column on the board for projects that are returning from a previous not-ready application and select from here over the backlog to expedite the queue and make the best use of TOC time.
 
