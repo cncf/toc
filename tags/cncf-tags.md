@@ -12,12 +12,12 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 |------|--------------| 
 | [TAG App Delivery](https://github.com/cncf/tag-app-delivery) | Katie Gamanji, Lin Sun |
 | [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy) |  Dave Zolotusky, Davanum Srinivas, Emily Fox |
-| [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability/) | Erin Boyd, Kevin Wang, Emily Fox |
-| [TAG Network](https://github.com/cncf/tag-network) | Duffie Cooley, Ricardo Rocha |
+| [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability/) | Karena Angell, Kevin Wang, Emily Fox |
+| [TAG Network](https://github.com/cncf/tag-network) | Duffie Cooley, Ricardo Rocha, Nikhita Raghunath |
 | [TAG Observability](https://github.com/cncf/tag-observability) | Erin Boyd, Ricardo Rocha,  Cathy Zhang |
-| [TAG Runtime](https://github.com/cncf/tag-runtime) | Nikhita Raghunath, Davanum Srinivas, Cathy Zhang |
+| [TAG Runtime](https://github.com/cncf/tag-runtime) | Karena Angell, Davanum Srinivas, Cathy Zhang |
 | [TAG Security](https://github.com/cncf/tag-security) |  Dave Zolotusky, Duffie Cooley, Lin Sun |
-| [TAG Storage](https://github.com/cncf/tag-storage) | Kevin Wang, Nikhita Raghunath  |
+| [TAG Storage](https://github.com/cncf/tag-storage) | Kevin Wang, Nikhita Raghunath |
 
 ## TAG Leadership
 
@@ -32,7 +32,6 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 
 #### Tech Leads
 * [Alois Reitbauer](https://github.com/AloisReitbauer)
-* [Karena Angell](https://github.com/angellk)
 * [Roberth Strand](https://github.com/roberthstrand)
 
 ### TAG Contributor Strategy

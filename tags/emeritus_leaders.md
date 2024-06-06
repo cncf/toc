@@ -5,6 +5,7 @@
 | TAG App Delivery         | [Bryan Liles](https://github.com/bryanl)                 |
 | TAG App Delivery         | [Lei Zhang](https://github.com/resouer)                  |
 | TAG App Delivery         | [Alex Jones](https://github.com/alexsjones)              |
+| TAG App Delivery         | [Karena Angell](https://github.com/angellk)              |
 | TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred)               |
 | TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman)         |
 | TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus)      |
