@@ -5,7 +5,7 @@ A FAQ geared towards CNCF TOC and project issues.
 ## How do I join the TOC?
 
 The TOC is a body elected by a variety of constituents. There is a public election schedule:
-https://github.com/cncf/toc/blob/main/process/election-schedule.md
+https://github.com/cncf/toc/blob/main/operations/election-schedule.md
 
 The best way to get involved is to start attending TOC meetings and especially by participating in TAG(s)/WG(s).
 
@@ -36,7 +36,7 @@ This varied and [open governance](https://github.com/opengovernance/opengovernan
 
 All project assets like trademarks, domains, builds, registries, github are neutrally owned by the foundation members versus a single vendor.
 
-## Does the CNCF TOC control CNCF projects in anyway?
+## Does the CNCF TOC control CNCF projects in any way?
 
 Neither the CNCF Governing Board (GB) nor the Technical Oversight Committee (TOC) is responsible for managing CNCF-hosted projects. 
 
@@ -53,15 +53,15 @@ The CNCF provides a variety of services that are accessible by maintainers via t
 ## What is the definition of an adopter?
 Adopters of a CNCF project are any organization that successfully leverages that project in the manner it was intended or repackages it as a core component of a service offering. To increase understanding of how the project is adopted, we distinguish a direct adopter from a transitive adopter; i.e. a Service Provider using Kubernetes as the underlying container orchestrator for their Knative offering, in this scenario the Service Provider is a direct adopter of Kubernetes and their Knative users are direct adopters of Knative but transitive adopters of Kubernetes.
 
-Direct adopters of a project are responsible for the project's development, packaging, configuration, or deployment in their use of it. Transitive adopters of a project are not responsible for the project's development, packaging, configuration, or deployment, however they may receive the benefits that the project provides. In the case of the example above, the Service Provider's use of Kubernetes enables their customers to use Knative, which relies on Kubenertes as part of its architecture. However, if the Service Provider's implementation enables their customers to develop, package, configure, or deploy Kubernetes as part of the Knative offering, those customers are then also direct adopters.
+Direct adopters of a project are responsible for the project's development, packaging, configuration, or deployment in their use of it. Transitive adopters of a project are not responsible for the project's development, packaging, configuration, or deployment, however they may receive the benefits that the project provides. In the case of the example above, the Service Provider's use of Kubernetes enables their customers to use Knative, which relies on Kubernetes as part of its architecture. However, if the Service Provider's implementation enables their customers to develop, package, configure, or deploy Kubernetes as part of the Knative offering, those customers are then also direct adopters.
 
 The TOC’s intent in identifying adopters is to better understand the operational or production-level use of a given project (which can also be a specification) by its operators or users. We do this to ascertain the level of maturity the project has reached, its interactions with adopters, and its likelihood to continue growing within and supporting the ecosystem. Original sponsoring organizations, if any, may be included in the ADOPTERS.md file.  It is the discretion of the TOC to determine whether a given adopter, for the purposes of interviews, can provide quality feedback on where the project is and where it is going next in their use and interactions with the project.
 
 [Cloud native](https://github.com/cncf/toc/blob/main/DEFINITION.md) project adopters may be any one of the following. Please note that any single company can fall under several categories at once. If that's the case, it should enumerate all that apply and only be listed once. For the purposes of identifying the adopters of a project, we encourage the use of `adopter` to include all of the below, if a project needs to identify the category of adopter we encourage them to use the convention provided below.
-* A CNCF End-User member - Companies and organizations who are End-User members of the CNCF (https://www.cncf.io/enduser/ & https://landscape.cncf.io/card-mode?enduser=yes). TThis group is identified in the written form by the convention `End-User`, capitalizing the `E` in `End`, hyphenating the two words, and captializing the `U` in `User`.
+* A CNCF End-User member - Companies and organizations who are End-User members of the CNCF (https://www.cncf.io/enduser/ & https://landscape.cncf.io/card-mode?enduser=yes). This group is identified in the written form by the convention `End-User`, capitalizing the `E` in `End`, hyphenating the two words, and capitalizing the `U` in `User`.
 * Another project - an open source project that leverages a CNCF project as part of their solution, integrates with for compatibility and interoperability, or is used in the supply chain of another project
 * End users - companies and organizations that are not CNCF End-User members that use the project and cloud native technologies internally,  or build upon a cloud native open source project but do not sell the cloud native project externally as a service offering (those are Service Providers). This group is identified in the written form by the convention `end user`, uncapitalized and unhyphenated.
-* A Service Provider - a Service Provider is a organization that repackages an open source project as a core component of a service offering, sells cloud native services externally
+* A Service Provider - a Service Provider is an organization that repackages an open source project as a core component of a service offering, sells cloud native services externally
   * APIs
   * SaaS
   * A Service Provider’s customers are considered transitive adopters and should be excluded from identification within the ADOPTERS.md file.
@@ -82,7 +82,7 @@ CNCF uses revenues from events first and foremost to cover the cost of events. T
 
 ## Does CNCF make decisions based on “pay-to-play” considerations?
 
-**No**. CNCF’s charter [Section 3(c)](https://github.com/cncf/foundation/blob/main/charter.md) explicitly calls out fairness as a core value and requires us to ‘avoid undue influence, bad behavior or “pay-to-play” decision-making.’ Also projects are [openly governed](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/) and technical participation never requires any form of membership. The correct way to view this is that CNCF members **PAY TO SUSTAIN** and govern the shared budget which goes to sustain project activities such as events,scholarships and security audits.
+**No**. CNCF’s charter [Section 3(c)](https://github.com/cncf/foundation/blob/main/charter.md) explicitly calls out fairness as a core value and requires us to ‘avoid undue influence, bad behavior or “pay-to-play” decision-making.’ Also projects are [openly governed](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/) and technical participation never requires any form of membership. The correct way to view this is that CNCF members **PAY TO SUSTAIN** and govern the shared budget which goes to sustain project activities such as events, scholarships and security audits.
 
 ## Does membership or sponsorship level ever affect project-related decisions? 
 

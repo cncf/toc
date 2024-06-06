@@ -1,27 +1,27 @@
 # CNCF Technical Oversight Committee (TOC)
 
-The CNCF TOC is the technical governing body of the CNCF Foundation. It admits and oversees all projects in the CNCF Foundation and has a mandate to facilitate driving neutral consensus for:
-* defining and maintaining the technical vision for the Cloud Native Computing Foundation,
-* approving new projects within the scope for CNCF set by the Governing Board (GB), and create a conceptual architecture for the projects, aligning projects, removing or archiving projects,
-* accepting feedback from end user committee and map to projects,
+The CNCF TOC is the technical governing body of the CNCF. It admits and oversees all projects in the CNCF  and has a mandate to facilitate driving neutral consensus for:
+* defining and maintaining the technical vision and [principles](https://github.com/cncf/toc/blob/main/PRINCIPLES.md) for the Cloud Native Computing Foundation,
+* approving new projects within the scope of  the CNCF set by the Governing Board (GB), creating  a conceptual architecture for the projects, aligning projects, removing or archiving projects,
+* accepting feedback from end user technical advisory board and map to projects,
 * aligning interfaces to components under management (code reference implementations before standardizing), and defining common practices to be implemented across CNCF projects, if any.
 
+## TOC Technical Vision
+The technical direction of the ecosystem is problem-centric. We encourage and support our projects to solve problems faced by adopters, to build the right ecosystem for innovation and embrace changes in the broader technical landscape. To exercise and increase the expertise within the technical community to compose solutions that stand the test of time.
 
 ## Members
 
-
-
-* **Justin Cormack** (term: 2 years - start date 2/4/2022 - 2/4/2024) [Maintainer-appointed]
-* **Ricardo Rocha** (term: 2/4/2022 - 2/4/2024) [EndUser-appointed]
-* **Emily Fox** (term: 2 years - start date: 2/4/2022 - 2/4/2024) [GB-appointed][TOC Chair]
-* **Matt Farina** (term: 2 years - start date 2/4/2022 - 2/4/2024) [GB-appointed]
-* **Richard Hartmann** (term: 2 years - start date 2/4/2022 - 2/4/2024) [GB-appointed]
-* **Katie Gamanji** (term: 2 years - start date: 3/18/2022 - 3/18/2024) [TOC-appointed]
+* **Ricardo Rocha** (term: term: 2 years - start date: 2/4/2024 - 2/4/2026) [EndUser-appointed]
+* **Emily Fox** (term: 2 years - start date: 2/4/2024 - 2/4/2026) [GB-appointed][TOC Chair]
+* **Katie Gamanji** (term: 2 years - start date: 3/18/2022 - 2/4/2026) [GB-appointed]
 * **Nikhita Raghunath** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
 * **Dave Zolotusky** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [EndUser-appointed]
-* **Cathy Zhang** (term: 2 years 2-1-2023 - 2/1/2025) [GB-appointed]
+* **Cathy Zhang** (term: 2 years 2/1/2023 - 2/1/2025) [GB-appointed]
 * **Duffie Cooley** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
-* **Erin Boyd** (term: 2 years - start date: 3/18/2023 - 3/18/2025) [TOC-appointed]
+* **Lin Sun** (term: 2 years - start date 2/4/2024 - 2/4/2026) [GB-appointed]
+* **Kevin Wang** (term: 2 years - start date 2/4/2024 - 2/4/2026) [Maintainer-appointed]
+* **Davanum Srinivas** (term: 2 years - start date: 2/16/2024 - 2/16/2026) [TOC-appointed]
+* **Karena Angell** (term: <1 year - start date: 5/28/2024 - 3/18/2025) [TOC-appointed] (Shortened term due to vacated seat)
 
 Election [schedule](process/election-schedule.md)
 

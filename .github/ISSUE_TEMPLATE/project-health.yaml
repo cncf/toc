@@ -1,0 +1,35 @@
+name: Project Health
+description: Register a concern regarding project health and alignment
+title: "[HEALTH]: "
+labels: ["health"]
+body:
+- type: input
+  id: project
+  attributes: 
+    label: Project name
+    description: Which project does this concern pertain to?
+  validations:
+    required: true
+- type: textarea
+  id: concern
+  attributes:
+    label: Concern
+    description: Please describe the specific concern with links and references to information supporting or exemplifying the concern regarding this project's health and alignment.
+    placeholder: Links to devstats, issues, PRs, slack messages, etc. are all helpful but require your context to assist the TOC in understanding the concern.
+  validations:
+    required: true
+- type: textarea
+  id: toc-tag
+  attributes:
+    label: Prior engagement
+    description: To the best of your knowledge, has the TOC or the TAG for this project been engaged on this or related topics previosuly?
+    placeholder: If so, provide the name, any links, presentations, or other supportive information.
+  validations:
+    required: false
+- type: textarea
+  id: addt-info
+  attributes:
+    label: Additional Information
+    description: Please provide any additional information to assist the TOC in reaching out to the project to understand these concerns better.
+  validations:
+    required: false
