@@ -3,7 +3,7 @@
 *Approved by TOC/GB: 2024-02-26*
 
 [العربية](#العربية) (Arabic) | [հայերեն](#հայերեն) (Armenian) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) 
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) | [正體中文版本](#正體中文版本) (Tradtional Chinese) 
 
 ## Definition
 
@@ -219,3 +219,15 @@ Wij democratiseren state-of-the art software ontwikkel patterns, om deze innovat
 ক্লাউড নেটিভ কম্পিউটিং ফাউন্ডেশন এই দৃষ্টান্তটি গ্রহণ করার চেষ্টা করে
 ওপেন সোর্স, বিক্রেতা-নিরপেক্ষ প্রকল্পের বাস্তুতন্ত্র। আমরা এইগুলি তৈরি করার জন্য অত্যাধুনিক নিদর্শনগুলিকে গণতন্ত্রীকরণ করি৷
 প্রত্যেকের জন্য অ্যাক্সেসযোগ্য উদ্ভাবন।
+
+## 正體中文版本
+
+### 定義
+雲端原生的實踐賦予組織能夠在運算環境中（公有雲、私有雲、混合雲）以規模化、可程式化和可重複的方式開發、構建和部署工作負載，以滿足其組織需求。其特徵為鬆耦合的系統，這些系統以安全、彈性、可管理、可持續和可觀察的方式相互操作。
+雲端原生技術和架構通常由容器、服務網格、多租戶、微服務、不可變基礎設施、無伺服器和聲明式 API 等組成——此列表並非全部。
+
+### 雲端原生的益處
+搭配穩固的自動化，雲端原生的實踐讓組織以最少的勞動、清楚分離關注點，就能頻繁、可預測地進行重大變更。
+
+### CNCF關注點
+雲端原生運算基金會（Cloud Native Computing Foundation）旨在透過培育和維持一個開放原始碼、廠商中立的專案生態系統，以推動此範式的採用。我們將最先進的模式民主化，使這些創新對每個人都可用。
