@@ -204,12 +204,17 @@ This is documented in the [Slack Channel](https://kyverno.io/community/#slack-ch
 
 <!-- (Project assertion goes here) --> 
 
+Public channels:
+
 [Kyverno Slack](https://kyverno.io/community/#slack-channel):
 * #kyverno, #kyverno-dev under Kubernetes workspace
 * #kyverno under CNCF workspace
 
 [Kyverno Chainsaw Slack](https://github.com/kyverno/chainsaw?tab=readme-ov-file#slack-channels):
 * #kyverno-chainsaw under Kubernetes workspaceunder Kubernetes workspace
+
+Private channels:
+* #kyverno-maintainers under CNCF workspace
 
 - [ ] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
@@ -224,6 +229,8 @@ Meeting schedule can be found [here](https://kyverno.io/community/#community-mee
 [Contributing Guidelines](https://github.com/kyverno/kyverno/blob/main/CONTRIBUTING.md#contributing-guidelines-for-kyverno).
 
 - [ ] **Demonstrate contributor activity and recruitment.**
+
+New contributors are onboarded once they meet the requirements. We have integrated a welcome bot into the GitHub repository for their initial contributions.
 
 The contributor's list is actively growing: https://github.com/kyverno/kyverno/blob/main/CONTRIBUTORS.md.
 
