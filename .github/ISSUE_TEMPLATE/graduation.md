@@ -168,10 +168,11 @@ This is documented on Github [Code of Conduct](https://github.com/kyverno/kyvern
 <!-- (Project assertion goes here) --> 
 
 
-- [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
+- [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
 <!-- (Project assertion goes here) --> 
 
+This is clarified in the [Project Governance section](https://main.kyverno.io/community/#project-governance).
 
 ## Contributors and Community
 
