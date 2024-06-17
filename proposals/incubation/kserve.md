@@ -6,23 +6,23 @@ KServe
 
 ## Description
 
-KServe is a community driven open source project, aiming to deliver a cloud-native, scalable, extensible serverless ML inference platform. It provides an open standard control and data plane for serving production ML models including Scikit-learn, Tensorflow, PyTorch and Hugging face Transformer/large language models(LLMs).
+KServe is a community driven open source project, aiming to deliver a cloud-native, scalable, extensible serverless ML inference platform. It provides an open standard control plane and data plane for serving production ML models including Scikit-learn, Tensorflow, PyTorch and Hugging face Transformer/large language models(LLMs).
 It encapsulates the complexity of autoscaling, networking, health checking, and server configuration to bring cutting edge serving features like GPU Autoscaling, Scale to Zero, and Canary Rollouts to your ML deployments. It enables a simple, pluggable, and complete story for Production ML Serving including prediction, pre-processing, post-processing and explainability. 
 Features:
 
 KServe is a standard, cloud agnostic Model Inference Platform for serving predictive and generative AI models on Kubernetes, built for highly scalable use cases.
-Provides performant, standardized inference protocol across ML frameworks including OpenAI specification for generative models.
-Support modern serverless inference workload with request based auto-scaling including scale-to-zero on CPU and GPU.
-Provides high scalability, density packing and intelligent routing using ModelMesh.
-Simple and pluggable production serving for inference, pre/post processing, monitoring and explainability.
-Advanced deployments for canary rollout, pipeline, ensembles with InferenceGraph.
+- Provides performant, standardized inference protocol across ML frameworks including OpenAI specification for generative models.
+- Support modern serverless inference workload with request based auto-scaling including scale-to-zero on CPU and GPU.
+- Provides high scalability, density packing and intelligent routing using ModelMesh.
+- Simple and pluggable production serving for inference, pre/post processing, monitoring and explainability.
+- Advanced deployments for canary rollout, pipeline, ensembles with InferenceGraph.
 
-Statement on alignment with CNCF mission
-Since its inception in 2019, previously known as KFServing under Kubeflow, the KServe project has gained significant traction with support from leading industry players such as Bloomberg, IBM, RedHat, Intuit, SAP, AliCloud. It has fostered a diverse and inclusive community including both end users and cloud vendors. Embracing an open governance model, KServe has established a clear process for promoting reviewers and approvers, ensuring transparency and fairness in decision-making.
+## Statement on alignment with CNCF mission
+Since its inception in 2019, previously known as KFServing under Kubeflow, the KServe project has gained significant traction with support from leading industry players such as Bloomberg, RedHat, IBM, Nunanix, Intuit, SAP, AliCloud. It has fostered a diverse and inclusive community including both end users and cloud vendors. Embracing an open governance model, KServe has established a clear process for promoting reviewers and approvers, ensuring transparency and fairness in decision-making.
 
-As of Mar 2024, the community has 233 contributors from over 30 organizations, and hosts community meetings, and meetups across the world. KServe's powerful development experience helps data scientists, ML engineers deploy their ML models in the Kubernetes environments on production. 
+As of June 2024, the community has 233 contributors from over 30 organizations, and hosts community meetings, and meetups across the world. KServe's powerful development experience helps data scientists, ML engineers deploy their ML models in the Kubernetes environments on production. 
 
-The application to become a CNCF incubating project is the next big milestone for the KServe community, and we believe that CNCF is the right foundation for the project given KServe’s roots in the Kubernetes community and the Cloud native ecosystem (see: Kubernetes, Istio, Knative, OpenTelemetry, gRPC, Buildpack). Being part of CNCF will bring KServe closer to this cloud native ecosystem, with the potential to increase the velocity of feedback and innovation over time. In turn, KServe can bring years of community expertise in enabling deploy AI/ML workloads on production.
+The application to become a CNCF incubating project is the next big milestone for the KServe community, and we believe that CNCF is the right foundation for the project given KServe’s roots in the Kubernetes community and the cloud native ecosystem (see: Kubernetes, Istio, Knative, OpenTelemetry, gRPC, Buildpack). Being part of CNCF will bring KServe closer to this cloud native ecosystem, with the potential to increase the velocity of feedback and innovation over time. In turn, KServe can bring years of community expertise in enabling deploy AI/ML workloads on production.
 
 
 ## Roadmap
@@ -32,6 +32,7 @@ The application to become a CNCF incubating project is the next big milestone fo
 ## Sponsors from TOC
 
 Ricardo Arvaena
+Cathy Zhang
 
 ## Preferred maturity level
 
