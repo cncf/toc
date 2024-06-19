@@ -16,3 +16,7 @@ profiles:
         - cncf-toc
       exclude_team_maintainers: true
     close_on_passing: true
+  announcements:
+     discussions:
+       category: announcements 
+       
