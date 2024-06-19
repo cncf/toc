@@ -18,5 +18,4 @@ profiles:
     close_on_passing: true
   announcements:
      discussions:
-       category: announcements 
-       
+       category: announcements
