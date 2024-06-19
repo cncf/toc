@@ -8,6 +8,9 @@ profiles:
         - cncf-toc
       exclude_team_maintainers: true
     close_on_passing: true
+    announcements:
+      discussions:
+        category: announcements
   1wk:
     duration: 1w
     pass_threshold: 66
@@ -16,6 +19,3 @@ profiles:
         - cncf-toc
       exclude_team_maintainers: true
     close_on_passing: true
-  announcements:
-     discussions:
-       category: announcements
