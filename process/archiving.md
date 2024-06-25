@@ -22,12 +22,12 @@ This is a multi-step process with ample time for projects, adopters, and communi
 The process can be stopped by TOC consensus at any time until a formal vote has been announced.
 
 1. Archival review is triggered (see above).
-2. TOC opens an issue inquiring about the health of the project. While there's not fixed timeline, it will be in the order of months.
+2. TOC or community member opens an issue inquiring about the health of the project. While there's not fixed timeline, it will be in the order of months.
 3. A formal archival request is created in https://github.com/cncf/toc/issues and the issue tracker of the member project, cross-linking both.
 4. TOC informs project maintainers and the end user community. This step will usually be delegated to CNCF staff.
-5. Once enough information has been provided, CNCF TOC may announce a mandatory public comment period of two weeks. This period may be extended by TOC as needed.
-6. If this step is reached, a TOC vote is announced; the voting duration is two weeks. A 2/3 majority in favor of archiving is required.
-7. ```
+5. The TOC will analyze the project health and evaluate the project for archival. Project and community members are encouraged to discuss on the issue.
+6. Once enough information has been provided, the TOC will issue a summary statement and announce a final public comment period of two weeks. This period may be extended by TOC as needed.
+7. Once the two week final comment period has been reached, a TOC vote is announced; the voting duration is two weeks. A 2/3 majority in favor of archiving is required.
 
 ## Archived Status
 
