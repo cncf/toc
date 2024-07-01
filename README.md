@@ -23,7 +23,7 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 * **Davanum Srinivas** (term: 2 years - start date: 2/16/2024 - 2/16/2026) [TOC-appointed]
 * **Karena Angell** (term: <1 year - start date: 5/28/2024 - 3/18/2025) [TOC-appointed] (Shortened term due to vacated seat)
 
-Election [schedule](process/election-schedule.md)
+Election [schedule](operations/election-schedule.md)
 
 ## Projects
 
