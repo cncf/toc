@@ -43,11 +43,11 @@ Please track your progress by using "Quote reply" to create your own copy of thi
 - [ ] Create a maintainer list and add it to the [aggregated CNCF maintainer list](https://maintainers.cncf.io) via pull request.
 - [ ] Provide emails for the maintainers to get access to the maintainers mailing list and Service Desk. Email them to <project-onboarding@cncf.io>.
 - [ ] Start working on [written, open governance](https://contribute.cncf.io/maintainers/governance/).
-- [ ] Adopt a license scanning tool, like [FOSSA](https://fossa.com/) or [Snyk](https://snyk.io/). Staff can grant access.
 - [ ] Start on an [OpenSSF Best Practices Badge](https://www.bestpractices.dev/en).
 
 ## CNCF staff tasks
 
 - [ ] Add the project to [DevStats](https://devstats.cncf.io/).
 - [ ] Add the project to [LFX Insights](https://insights.lfx.linuxfoundation.org/). This is done by adding a read-only app to your GitHub organization once it's in CNCF GHE.
+- [ ] Add a license scanning tool, like [FOSSA](https://fossa.com/) or [Snyk](https://snyk.io/).
 - [ ] Send a welcome email to confirm maintainer list access.
