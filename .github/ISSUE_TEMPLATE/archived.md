@@ -3,19 +3,19 @@ name: Archiving checklist
 about: archiving
 title: "[ARCHIVE] project"
 labels: archive
-assignees: caniszczyk, amye, idvoretskyi, jeefy
+assignees: caniszczyk, mrbobbytables, idvoretskyi, jeefy, castrojo
 ---
 - [ ] TOC vote to archive passed
-- [ ] Move logo to archived on CNCF.io	
-- [ ] Remove from landscape		
-- [ ] Archive maintainers mailing list	
-- [ ] Remove ML from maintainers@ mailing group
-- [ ] Remove/Archive on maintainers.cncf.io
-- [ ] Remove logo from all slide decks	
-- [ ] Remove logo from event sites	
-- [ ] Move logo to archived in artwork	
-- [ ] Archive DevStats (or archive?)	
-- [ ] Notify Speakers team to remove from CFPs	
-- [ ] Remove from service desk or archive	
-- [ ] Remove from CNCF store
+- [ ] Move project (logo) to archived in the [artwork repo](https://github.com/cncf/artwork)
+- [ ] Move project to archived on [landscape](https://github.com/cncf/landscape)
+- [ ] Remove maintainer list from [project-maintainers.csv](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
+- [ ] Archive (lock) maintainers mailing list (groups.io)
+- [ ] Remove ML from maintainers@ mailing group (google groups)
+- [ ] Remove project (logo) from all slide decks (contact pr@cncf.io)
+- [ ] Remove project (logo) from event sites (contact events@cncf.io)
+- [ ] Notify DevEx team to remove from event Maintainer Project Opportunities
+- [ ] Remove from maintainers & project from service desk
+- [ ] Remove from CNCF store (reach out to staff or email store@cncf.io)
+- [ ] Archive DevStats data (open issue in [devstats repo](https://github.com/cncf/devstats/issues))
+- [ ] Archive project in LFX Insights (move to archive in PCC)
 - [ ] Remove from [CLOMonitor data](https://raw.githubusercontent.com/cncf/clomonitor/main/data/cncf.yaml)
