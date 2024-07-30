@@ -84,16 +84,22 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 
 ### TAG Security
 #### Chairs
-* [Marina Moore](https://github.com/mnm678)
-* [Pushkar Joglekar](https://github.com/pushkarj)
-* [Eddie Knight](https://github.com/eddie-knight)
+| Name                  | Organization            | Term                |
+|-----------------------|------------------------|---------------------|
+| [Pushkar Joglekar](https://github.com/PushkarJ)      | Independent            | June, 2023 - June, 2025 | @ |
+| [Marina Moore](https://github.com/mnm678)          | Independent                  | October, 2023 - October, 2025 | 
+| [Eddie Knight](https://github.com/eddie-knight)          | Sonatype               | May, 2024 - May, 2026 | @ |
 
-#### Tech Leads
-* [Ash Narkar](https://github.com/ashutosh-narkar)
-* [Andres Vega](https://github.com/anvega)
-* [Justin Cappos](https://github.com/JustinCappos)
-* [Michael Lieberman](https://github.com/mlieberman85)
-* [Ragashree Shekar](https://github.com/ragashreeshekar)
+### Tech Leads
+
+| Name                  | Organization           | 
+|-----------------------|------------------------|
+| [Justin Cappos](https://github.com/JustinCappos)       | New York University    |
+| [Ash Narkar](https://github.com/ashutosh-narkar)       | Styra                  |
+| [Andrés Vega](https://github.com/anvega)               | M42                    | 
+| [Ragashree Shekar](https://github.com/ragashreeshekar) | Independent            |
+| [Michael Lieberman](https://github.com/mlieberman85)   | Kusari                 | 
+| [John Kjell](https://github.com/kjell)                 | TestifySec             | 
   
 ### TAG Storage 
 #### Chairs

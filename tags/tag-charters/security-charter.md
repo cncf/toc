@@ -29,7 +29,7 @@ cause issues with evaluation of security software and designs.
 
 Distributed deployments across heterogeneous infrastructure are increasingly
 common for cloud native applications.
-Without common ways to programatically ensure consistent policy,
+Without common ways to programmatically ensure consistent policy,
 it is increasingly difficult to evaluate system architecture security at scale.
 Emerging common architectural patterns offer the opportunity
 improve overall security in cloud native systems.
@@ -128,3 +128,9 @@ provided by the CNCF Technical Oversight Committee
 [TOC](https://github.com/cncf/toc).
 
 Full details of process and roles are linked in the TAG Security [governance README](https://github.com/cncf/tag-security/tree/master/governance).
+
+## Attribution
+[Charter](security-charter.md) - reviewed by and contributed to by Jeyappragash JJ, Sarah Allen,
+Dan Shaw, Brandon Lum, with additional contributions by Alexis Richardson,
+Quinton Hoole and members of TAG-Security (formerly known as SAFE WG), with
+final review by Liz Rice, Joe Beda and Zhipeng Huang.
