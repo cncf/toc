@@ -38,7 +38,8 @@ Yes, we have achieved this for some repositories (such as the [Collector](https:
 
 ### Have completed an independent and third party security audit with results published of similar scope and quality as [this example](https://github.com/envoyproxy/envoy#security-audit) which includes all critical vulnerabilities and all critical vulnerabilities need to be addressed before graduation
 
-A formal security review is in progress with the CNCF. In addition, we are adopting SBOM best practices across the project via signed releases, etc. through [SIG Security](https://github.com/open-telemetry/sig-security)
+An independent, third-party security audit was completed of our core components, and all high-priority issues were dealt with during its duration.
+You can [read our announcement](https://opentelemetry.io/blog/2024/security-audit-results/) that contains a link to the audit report.
 
 ### Explicitly define a project governance and committer process. The committer process should cover the full committer lifecycle including onboarding and offboarding or emeritus criteria. This preferably is laid out in a GOVERNANCE.md file and references an OWNERS.md file showing the current and emeritus committers
 
