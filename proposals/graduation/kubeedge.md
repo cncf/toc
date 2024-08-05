@@ -210,3 +210,12 @@ This is documented in our community membership documentation available here for 
 KubeEdge provides a full overview of publicly listed end-users on the website, but there are others that are not yet published or in the application process to list but can be interviewed.
 
 **KubeEdge Supporters**: <https://kubeedge.io/#supporters>
+
+## Appendix
+
+### Adopter Interviews
+
+The following adopter interviews have been conducted:
+- [x] [China Telecom Cloud](https://www.chinatelecomglobal.com/): The TOC sponsors have interviewed Qidong Zhang from China Telecom Cloud in June 2024, refer here for the [interview report](https://docs.google.com/document/d/1UXuPK9bXqCZzYXLf1WdKXSgiqR8oiXrSkzxT0g6bY6c/edit?usp=sharing).
+- [x] [Nio](https://www.nio.com/): The TOC sponsors have interviewed Xuhui Jiang from Nio in July 2024, refer here for the [interview report](https://docs.google.com/document/d/1TgIyzYG8BL5K_osHuJfKuj2YCYdrI766OCSAL_-UUvw/edit?usp=sharing).
+- [x] [Zeblok Computational Inc](https://www.zeblok.com/): The TOC sponsors have interviewed Vikarna Tathe from Zeblok Computational Inc in July 2024, refer here for the [interview report](https://docs.google.com/document/d/186uAKT6suU7UR8bbpkiNxEA2nrMZFabDuKynErnjWPM/edit?usp=sharing).
