@@ -1,6 +1,7 @@
 name: TAG Leadership Nomination
 description: Nominate a TAG Chair or Technical Leader
 title: "[VOTE]: "
+labels: ["gitvote"]
 body:
 - type: dropdown
   id: TAG
