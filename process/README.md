@@ -83,6 +83,10 @@ While the details of the process are described in detail further for Incubating 
 
 * If the vote passes (2/3 supermajority vote of the TOC), the results are emailed and the project is placed in the 'Done' state on the project board.
 * An announcement is made conveying the project name and its new level status.
+* Projects are encouraged to [book a slot with the CNCF Project team](https://calendly.com/d/hkb-rf6-hzr/30-minutes-w-cncf-projects-team?month=2024-08) for a review of project benefits. This includes:
+  - Reviewing of all benefits to ensure maintainers understand the resources available for their project
+  - Introduction to the event team and other logistical information important for the project to be successful at CNCF Events
+  - Acts as a checkpoint between the project and CNCF Staff to ensure that the project is getting the support they need while moving to a new level.   
 
 #### Criteria
 
