@@ -55,6 +55,18 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 * [Kristina Devochko](https://github.com/guidemetothemoon)
 
 ### TAG Network
+| Name                  | Organization            | Term                |
+|-----------------------|------------------------|---------------------|
+| [Lee Calcote](https://github.com/leecalcote)      |             |  | @ |
+| [Nic Jackson](https://github.com/nicholasjackson)          |                   |  | 
+| [Zack Butcher](https://github.com/ZackButcher)          |                |  | @ |
+
+### Tech Leads
+
+| Name                  | Organization           | 
+|-----------------------|------------------------|
+| [Zhonghu Xu](https://github.com/hzxuzhonghu)       |     |
+| 
 #### Chairs
 * [Lee Calcote](https://github.com/leecalcote)
 * [Nic Jackson](https://github.com/nicholasjackson)
