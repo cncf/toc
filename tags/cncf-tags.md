@@ -68,13 +68,7 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 |-----------------------|------------------------|
 | [Zhonghu Xu](https://github.com/hzxuzhonghu)       |     |
 | 
-#### Chairs
-* [Lee Calcote](https://github.com/leecalcote)
-* [Nic Jackson](https://github.com/nicholasjackson)
-* [Zack Butcher](https://github.com/ZackButcher)
 
-#### Tech Leads
-* [Zhonghu Xu](https://github.com/hzxuzhonghu)
 
 ### TAG Observability
 #### Chairs
