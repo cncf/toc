@@ -55,13 +55,14 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 * [Kristina Devochko](https://github.com/guidemetothemoon)
 
 ### TAG Network
+#### Chairs
 | Name                  | Organization            | Term                |
 |-----------------------|------------------------|---------------------|
 | [Lee Calcote](https://github.com/leecalcote)      |             |  | @ |
 | [Nic Jackson](https://github.com/nicholasjackson)          |                   |  | 
 | [Zack Butcher](https://github.com/ZackButcher)          |                |  | @ |
 
-### Tech Leads
+#### Tech Leads
 
 | Name                  | Organization           | 
 |-----------------------|------------------------|
@@ -102,7 +103,7 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 | [Marina Moore](https://github.com/mnm678)          | Independent                  | October, 2023 - October, 2025 | 
 | [Eddie Knight](https://github.com/eddie-knight)          | Sonatype               | May, 2024 - May, 2026 | @ |
 
-### Tech Leads
+#### Tech Leads
 
 | Name                  | Organization           | 
 |-----------------------|------------------------|
