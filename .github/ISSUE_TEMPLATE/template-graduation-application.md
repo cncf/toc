@@ -17,7 +17,7 @@ Communication: $SLACK
 
 Project points of contacts: $NAME, $EMAIL
 
-- [ ] (Post Incubation only) [Book a meeting with CNCF staff](http://project-meetings.cncf.io) to understand project benefits and event resources. 
+- [ ] (Post Graduation only) [Book a meeting with CNCF staff](http://project-meetings.cncf.io) to understand project benefits and event resources. 
 
 ## Graduation Criteria Summary for $PROJECT
 
