@@ -22,7 +22,7 @@ Please track your progress by using "Quote reply" to create your own copy of thi
 - [ ] The [trademark guidelines](https://www.linuxfoundation.org/legal/trademark-usage).
 - [ ] The [license allowlist](https://github.com/cncf/foundation/blob/main/allowed-third-party-license-policy.md#approved-licenses-for-allowlist).
 - [ ] The [online program guidelines](https://github.com/cncf/foundation/blob/main/online-programs-guidelines.md).
-- [ ] Optional: [Book time with CNCF staff](http://project-meetings.cncf.io) for any onboarding questions.
+- [ ] [Book time with CNCF staff](http://project-meetings.cncf.io) to understand project benefits and event resources.
 
 ## Contribute and transfer
 
