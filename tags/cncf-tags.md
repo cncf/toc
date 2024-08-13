@@ -26,68 +26,96 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 
 ### TAG App-Delivery
 #### Chairs
-* [Lian Li](https://github.com/lianmakesthings)
-* [Josh Gavant](https://github.com/joshgav)
-* [Thomas Schuetz](https://github.com/thschue)
-
-#### Tech Leads
-* [Alois Reitbauer](https://github.com/AloisReitbauer)
-* [Roberth Strand](https://github.com/roberthstrand)
-
-### TAG Contributor Strategy
-#### Chairs
-* [Josh Berkus](https://github.com/jberkus)
-* [Catherine Paganini](https://github.com/CathPag)
-* [Dawn Foster](https://github.com/geekygirldawn)
-
-#### Tech Leads
-* [Ali Ok](https://github.com/aliok)
-* [Riaan Kleinhans](https://github.com/Riaankl)
-  
-### TAG Environmental Sustainability
-#### Chairs
-* [Leonard Vincent Simon Pahlke](https://github.com/leonardpahlke)
-* [Marlow Weston](https://github.com/catblade)
-* [Max Körbächer](https://github.com/mkorbi)
-
-#### Tech Leads
-* [Cara Delia](https://github.com/caradelia)
-* [Kristina Devochko](https://github.com/guidemetothemoon)
-
-### TAG Network
-#### Chairs
 | Name                  | Organization            | Term                |
 |-----------------------|------------------------|---------------------|
-| [Lee Calcote](https://github.com/leecalcote)      |             |  | @ |
-| [Nic Jackson](https://github.com/nicholasjackson)          |                   |  | 
-| [Zack Butcher](https://github.com/ZackButcher)          |                |  | @ |
+| [Lian Li](https://github.com/lianmakesthings) |   |   |
+| [Josh Gavant](https://github.com/joshgav)     |   |   | 
+| [Thomas Schuetz](https://github.com/thschue)  |   |   |
 
 #### Tech Leads
 
 | Name                  | Organization           | 
 |-----------------------|------------------------|
-| [Zhonghu Xu](https://github.com/hzxuzhonghu)       |     |
-| 
+| [Alois Reitbauer](https://github.com/AloisReitbauer)  |   |
+| [Roberth Strand](https://github.com/roberthstrand)    |   |
+
+
+### TAG Contributor Strategy
+#### Chairs
+| Name                  | Organization            | Term                |
+|-----------------------|------------------------|---------------------|
+| [Josh Berkus](https://github.com/jberkus)         |   |   |
+| [Catherine Paganini](https://github.com/CathPag)  |   |   | 
+| [Dawn Foster](https://github.com/geekygirldawn)   |   |   |
+
+#### Tech Leads
+
+| Name                  | Organization           | 
+|-----------------------|------------------------|
+| [Ali Ok](https://github.com/aliok)            |     |
+| [Riaan Kleinhans](https://github.com/Riaankl) |     |
+
+  
+### TAG Environmental Sustainability
+#### Chairs
+| Name                  | Organization            | Term                |
+|-----------------------|------------------------|---------------------|
+| [Leonard Vincent Simon Pahlke](https://github.com/leonardpahlke)  |   |   |
+| [Marlow Weston](https://github.com/catblade)                      |   |   | 
+| [Max Körbächer](https://github.com/mkorbi)                        |   |   |
+
+#### Tech Leads
+
+| Name                  | Organization           | 
+|-----------------------|------------------------|
+| [Cara Delia](https://github.com/caradelia)                |   |
+| [Kristina Devochko](https://github.com/guidemetothemoon)  |   |
+
+
+### TAG Network
+#### Chairs
+| Name                  | Organization            | Term                |
+|-----------------------|------------------------|---------------------|
+| [Lee Calcote](https://github.com/leecalcote)      |   |   |
+| [Nic Jackson](https://github.com/nicholasjackson) |   |   | 
+| [Zack Butcher](https://github.com/ZackButcher)    |   |   |
+#### Tech Leads
+
+| Name                  | Organization           | 
+|-----------------------|------------------------|
+| [Zhonghu Xu](https://github.com/hzxuzhonghu)  |   |
 
 
 ### TAG Observability
 #### Chairs
-* [Alolita Sharma](https://github.com/alolita)
-* [Matt Young](https://github.com/halcyondude)
-  
+| Name                  | Organization            | Term                |
+|-----------------------|------------------------|---------------------|
+| [Alolita Sharma](https://github.com/alolita)  |   |   |
+| [Matt Young](https://github.com/halcyondude)  |   |   | 
+
 #### Tech Leads
-* [Bartłomiej Płotka](https://github.com/bwplotka)
+
+| Name                  | Organization           | 
+|-----------------------|------------------------|
+| [Bartłomiej Płotka](https://github.com/bwplotka)| |
+
 
 ### TAG Runtime 
 #### Chairs
-* [Danielle Tal](https://github.com/miao0miao)
-* [Ricardo Aravena](https://github.com/raravena80)
-* [Stephen Rust](https://github.com/srust)
+| Name                  | Organization            | Term                |
+|-----------------------|------------------------|---------------------|
+| [Danielle Tal](https://github.com/miao0miao)      |   |   |
+| [Ricardo Aravena](https://github.com/raravena80)  |   |   | 
+| [Stephen Rust](https://github.com/srust)          |   |   |
 
 #### Tech Leads
-* [Alexander Kanevskiy](https://github.com/kad)
-* [Klaus Ma](https://github.com/k82cn)
-* [Rajas Kakodkar](https://github.com/rajaskakodkar)
+
+| Name                  | Organization           | 
+|-----------------------|------------------------|
+| [Alexander Kanevskiy](https://github.com/kad)         |   |
+| [Klaus Ma](https://github.com/k82cn)                  |   |
+| [Rajas Kakodkar](https://github.com/rajaskakodkar)    |   |
+ 
 
 ### TAG Security
 #### Chairs
@@ -107,17 +135,24 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 | [Ragashree Shekar](https://github.com/ragashreeshekar) | Independent            |
 | [Michael Lieberman](https://github.com/mlieberman85)   | Kusari                 | 
 | [John Kjell](https://github.com/kjell)                 | TestifySec             | 
-  
+
+
 ### TAG Storage 
 #### Chairs
-* [Alex Chircop](https://github.com/chira001)
-* [Raffaele Spazzoli](https://github.com/raffaelespazzoli)
-* [Xing Yang](https://github.com/xing-yang)
- 
+| Name                  | Organization            | Term                |
+|-----------------------|------------------------|---------------------|
+| [Alex Chircop](https://github.com/chira001)               |   |   |
+| [Raffaele Spazzoli](https://github.com/raffaelespazzoli)  |   |   |
+| [Xing Yang](https://github.com/xing-yang)                 |   |   |
+
 #### Tech Leads
-* [Luis Pabon](https://github.com/lpabon)
-* [Nick Connolly](https://github.com/nconnolly1)
-* [Sheng Yang](https://github.com/yasker)
+
+| Name                  | Organization           | 
+|-----------------------|------------------------|
+| [Luis Pabon](https://github.com/lpabon)       |   |
+| [Nick Connolly](https://github.com/nconnolly1)|   |
+| [Sheng Yang](https://github.com/yasker)       |   |
+
 
 ## Emeritus Leaders
 
