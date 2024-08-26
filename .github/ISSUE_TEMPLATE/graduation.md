@@ -46,6 +46,8 @@ N/A
 
 - [x]  **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
+Kyverno follows the CNCF vendor neutrality guidelines, [link](https://github.com/kyverno/community/blob/main/GOVERNANCE.md#vendor-neutrality).
+
 <!-- (Project assertion goes here) --> 
 
 - [x] **Review and acknowledgement of expectations for graduated projects and requirements for moving forward through the CNCF Maturity levels.**		
@@ -74,18 +76,18 @@ The strategies for major Project Governance were discussed and refined during th
 * 02-20-2024
 * 12-05-2023
 
-The Governance page has been maintained and updated through Kyverno website's Github repo, history:
+The Governance page has been maintained and updated through kyverno/community Github repo, link:
 
-https://github.com/kyverno/website/commits/main/content/en/community/_index.md
+https://github.com/kyverno/community/blob/main/GOVERNANCE.md
 
 ### Required
 
-- [ ] **Clear and discoverable project governance documentation.**
+- [x] **Clear and discoverable project governance documentation.**
 
 <!-- (Project assertion goes here) --> 
 
-* [Project Governance](https://kyverno.io/community/#project-governance).
-* https://github.com/kyverno/kyverno/blob/main/GOVERNANCE.md
+* [Project Governance](https://main.kyverno.io/community/#project-governance).
+* https://github.com/kyverno/community/blob/main/GOVERNANCE.md
 
 - [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
@@ -93,7 +95,9 @@ https://github.com/kyverno/website/commits/main/content/en/community/_index.md
 
 Governance docs are up to date and available at https://kyverno.io/community/.
 
-- [ ] **Governance clearly documents [vendor-neutrality](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
+- [x] **Governance clearly documents [vendor-neutrality](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
+
+Kyverno follows the CNCF vendor neutrality guidelines, [link](https://github.com/kyverno/community/blob/main/GOVERNANCE.md#vendor-neutrality).
 
 <!-- (Project assertion goes here) --> 
 
@@ -117,7 +121,7 @@ Governance docs are up to date and available at https://kyverno.io/community/.
 
 <!-- (Project assertion goes here) --> 
 
-The Kyverno project currently has eight (8) maintainers from four (4) affiliations.
+The Kyverno project had eight (8) maintainers from (4) affiliations at the time this PR was created, but with recent changes now has five (5) maintainers from one (1) affiliation. We are in actively discussing this situation to determine the best path forward.
 
 - [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
@@ -135,18 +139,18 @@ For example, [feat: add myself (vishal-chdhry) to maintainers list #9125](https:
 
 The same with offboarding process, and emeritus maintainers are listed at: 
 
-https://github.com/kyverno/kyverno/blob/main/MAINTAINERS.md#maintainers-emeritus
+https://github.com/kyverno/kyverno/blob/main/MAINTAINERS.md#maintainers
 
 
-- [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
+- [ ] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
 <!-- (Project assertion goes here) --> 
 
-Currently maintainers are from four (4) organizations including Nirmata, Stackwatch, Ohio Supercomputer Center, Giant Swarm GmbH.
+Currently maintainers are from one (1) organizations, Nirmata.
 
-- [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**   
+- [x] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**   
     - [x] [CODEOWNERS](https://github.com/kyverno/kyverno/blob/main/CODEOWNERS)
-    - [ ] doc owners?
+    - [x] [Doc Owners](https://github.com/kyverno/website/blob/main/OWNERS.md)
 
 <!-- (Project assertion goes here) --> 
 
@@ -172,7 +176,7 @@ This is documented on Github [Code of Conduct](https://github.com/kyverno/kyvern
 
 <!-- (Project assertion goes here) --> 
 
-This is clarified in the [Project Governance section](https://main.kyverno.io/community/#project-governance).
+This is clarified in the [Project Governance section](https://github.com/kyverno/community/blob/main/GOVERNANCE.md).
 
 ## Contributors and Community
 
