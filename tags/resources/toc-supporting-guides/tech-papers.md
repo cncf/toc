@@ -2,13 +2,13 @@
 
 This guide serves to provide technical groups in CNCF a consistent process and mechanism to create, collaborate, and publish technical content in the form of whitepapers that increase the technical accuracy and potency of content provided. It promotes visibility of these activites, fair and opportune community feedback, and rigor in technical review.
 
-This Paper process has been adopted from [CNCF's TAG Security Paper Process](https://github.com/cncf/tag-security/blob/main/publications/paper-process.md) and modified to cover TAGs and WGs under the oversight of the TOC. It is intended to complement existing TAG governance.
+This Paper process has been adopted from [CNCF's TAG Security Paper Process](https://github.com/cncf/tag-security/blob/main/community/publications/paper-process.md) and modified to cover TAGs and WGs under the oversight of the TOC. It is intended to complement existing TAG governance.
 
 ## Purpose of Technical Papers in cloud native
 
 Technical papers, commonly referred to as whitepapers, provide the target audience with technical understanding on a given topic. Within the CNCF, technical papers serve one of two primary purposes:
-* **Guiding the ecosystem in understanding and reasoning around a technology or technical domain area and any best practices associated with it.** Papers that serve as ecosystem guides inform cloud native projects and community members on a particular topic or series of related topics. The audience for these papers is usually other technologists and engineers that are actively involved in projects so they may incorporate recommendations, concepts, and guidance into their projects. These are may be future leaning, where the ecosystem currently lacks the technology or where the concepts are still emerging and projects may benefit from insights and guidance curated by domain experts.
-* **To inform adopters about a particular technology, technical domain, or concept and how cloud native can it addresses a desired use case.** Papers that provide adopters of cloud native projects and the broader industry with a more indepth understanding of a particular technology component such as APIs, technical concepts like sustainability footprints, and sub-domain topics like software supply chain security. These papers may establish decision or technology frameworks that allow adopters to reason about cloud native and open source projects to achieve a particular use case and will convey best practices for their use and integration.
+* **Guiding the ecosystem in understanding and reasoning around a technology or technical domain area and any best practices associated with it.** Papers that serve as ecosystem guides inform cloud native projects and community members on a particular topic or series of related topics. The audience for these papers is usually other technologists and engineers that are actively involved in projects so they may incorporate recommendations, concepts, and guidance into their projects. These may be future leaning, where the ecosystem currently lacks the technology or where the concepts are still emerging and projects may benefit from insights and guidance curated by domain experts.
+* **To inform adopters about a particular technology, technical domain, or concept and how cloud native can address a desired use case.** Papers that provide adopters of cloud native projects and the broader industry with a more indepth understanding of a particular technology component such as APIs, technical concepts like sustainability footprints, and sub-domain topics like software supply chain security. These papers may establish decision or technology frameworks that allow adopters to reason about cloud native and open source projects to achieve a particular use case and will convey best practices for their use and integration.
 
 Papers are intended to serve as *static* sources of information that can frequently be referred back to. When scoped and developed correctly, papers may only need refreshed or updated once a year or as new understandings of the topic emerge. If a particular topic area or technology is rapidly changing, and lacks industry consensus, a paper is not recommended and interested individuals should consider a presentation or blog post on the topic that reflects the pace of change and opportunities for clarity and alignment.
 
@@ -18,7 +18,7 @@ In order to ensure consistency in development, review, and publication, TAGs and
 
 ### Defining a need
 
-For any individual or group interested in developing a technical paper, there must be a defined need or observable opportunity to close a knowledge gap. When proposing a technical paper, an initial scope must be established to facillitate discussion and interest within the TAG via an Issue. It is expected that the Issue title and content will be adjusted and modified as the TAG and group refine the scope.
+For any individual or group interested in developing a technical paper, there must be a defined need or observable opportunity to close a knowledge gap. When proposing a technical paper, an initial scope must be established to facilitate discussion and interest within the TAG via an Issue. It is expected that the Issue title and content will be adjusted and modified as the TAG and group refine the scope.
 
 ### Presenting the paper idea to the TAG
 
@@ -30,7 +30,7 @@ A TAG leader (co-chair or tech lead) must step forward to sponsor the paper. Oth
 
 The paper sponsor is also expected to coordinate awareness of the paper development and timelines to other TAGs to ensure they are appropriately included and have the opportunity to contribute and participate.
 
-### Refining the scope and audience and participants
+### Refining the scope, audience and participants
 
 Interest in participating is expressed on the Issue by comments of those individuals. Soliciting interest and participation must allow for sufficient time (no less than two weeks) for fair opportunity to gather interest. Interested parties should then meet to define timelines, refine the scope, declare the audience, and determine paper lead. It is recommended that TAGs leverage communication channels to increase awareness of the proposed paper, its topic, and to solict potential contributors.
 
@@ -50,6 +50,7 @@ Once the group has met to define timelines, scope, audience, and determined the 
 | Final Group Review | 1 week |
 | Community Review | 2 weeks |
 | Public comment adjudication | 2 weeks (simultaneous with review) |
+| Leadership Review | 1-2 weeks |
 | CNCF publishing engagement | ~2-3 weeks |
 | Addition to the repo | 2 weeks |
 | Blog post and publishing coordination | 2-3 weeks |
