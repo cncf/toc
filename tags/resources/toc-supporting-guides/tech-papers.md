@@ -32,7 +32,7 @@ The paper sponsor is also expected to coordinate awareness of the paper developm
 
 ### Refining the scope, audience and participants
 
-Interest in participating is expressed on the Issue by comments of those individuals. Soliciting interest and participation must allow for sufficient time (no less than two weeks) for fair opportunity to gather interest. Interested parties should then meet to define timelines, refine the scope, declare the audience, and determine paper lead. It is recommended that TAGs leverage communication channels to increase awareness of the proposed paper, its topic, and to solict potential contributors.
+Interest in participating is expressed on the Issue by comments of those individuals. Soliciting interest and participation must allow for sufficient time (no less than two weeks) for fair opportunity to gather interest. Interested parties should then meet to define timelines, refine the scope, declare the audience, and determine paper lead. It is recommended that TAGs leverage communication channels to increase awareness of the proposed paper, its topic, and to solict potential contributors. If substantial interest has not been gained within one month, it is recommended the proposed paper be closed due to lack of interest - this does not prevent the group from pursuing it in the future.
 
 ## Managing paper development
 
@@ -57,6 +57,24 @@ Once the group has met to define timelines, scope, audience, and determined the 
 
 ### Milestones Details
 
+The milestones for developing a paper are designed to ensure planning, consideration, review are accounted for and addressed. They also allow contributors to apply this framework to producing a paper efficiently, by establishing varies feedback loops to continue enhancing and tightenting up the content.
+
+Each milestone provides an important value-add to the content of final paper:
+* Audience, Goals, and Refining Scope - these set the boundaries, depth, and desired outcome of the paper. These are referred to by later milestones to keep alignment with the intent behind the work.
+* Outline - Starting with an outline allows for the group to get a general idea of all the areas that _currently_ know need to be included. Later milestones may adjust the content included or excluded, but the outline serves as a starting point.
+* Tasking Assignment - Allows contributors to the paper to own portions of the content, and allows reviewers to identify an individual to assist in clarifying content and ideas.
+* Content Rough-in - Allows for the assigned contributor(s) to begin writing ideas and thoughts for the area. It provides flexibility in that the content doesnt need to be a complete thought, but more as a thought and idea that is capable for further refinement.
+* Collaborative Review - Lets the group come back to look at the entirety of the draft content. This could reveal gaps, duplicative informations, or even restructure and move content for better flow without heavily investing in content refinement should a section be removed.
+* Executive Summary and content wrap up - brings more polish the papers, transitioning from a concept into a full paper. The executive summary (if required) provides and overview of what is discussed.
+* Narrative Voice - ensures consistency in the tone, flow, and attitude of the paper. It makes sure the paper doesn't appear written by 20 different voices, but rather one that is unified and representative of the body producing the work; a TAG or WG within the CNCF.
+* Final Group Review - this is the last chance for the group to shore up the paper and address any areas of concern and comments before opening it to community review. When all preliminary milestones are complete, this step should permit the group to have an enjoyable read without interruption from questions or unclear topics.
+* Community Review - this allows the community's perspective to be documented on the written work. Factoring in additional considerations and views not represented by the contributors, so that all aspects can be reasonably included (provided they align with the scope, goals, and audience defined previously). It provides a place of discussion and information that may result in minor changes to the material.
+* Public comment adjudication - this allows the contributors to consider and weigh comments for incorporation or exclusion in the paper. It also supports later milestones for long term maintenance of the paper by understanding what kinds of questions are being asked so they can be addressed holistically.
+* Leadership review - essential and critical to ensuring the technical accuracy and quality of the material content in the paper. It also functions as a final check before publication to catch any potential issues that may have been missed.
+* Publishing engagement - initiates a formal, static artifact of the paper for linking and reference in a format consumable by the audience beyond git.
+* Addition to the repo - provides a markdown manageable artifacta and metadata for discovery, updates, and longevity of the material.
+* Blog post and publishing coordination - these functions increase awareness of the paper, in particular the blog post provides some context around why the paper is warranted and how the audience could leverage the paper for their architectures and organizations.
+
 #### Audience, Goals, and Refining Scope
 
 Define the following:
@@ -69,7 +87,7 @@ Define the following:
 
 #### Outline
 
-The outline needs crafted and placed in a shared document (google docs, hackmd, or other collaborative documentation tool). It will serve as the basis for paper structure and tasking. The Issue must be updated to link to the shared document.
+The outline needs to be crafted and placed in a shared document (google docs, hackmd, or other collaborative documentation tool). It will serve as the basis for paper structure and tasking. The Issue must be updated to link to the shared document.
 
 #### Tasking Assignment
 
@@ -85,11 +103,13 @@ Contributors refine raw content into drafts, comment on sections, expand ideas, 
 
 #### Executive Summary and Content Wrap-up
 
-If the paper exceeds five pages, write an executive summary no more than three paragraphs. Executive summaries are intended to be somewhat generalized and provide an overview of the paper without diving into the details. It allows readers to ascertain relevance of the content before committing to read it in entirety to ascertain value. Once complete, finalize content and discussions internal to the group.
+Adjudicators may choose to resolve community comments and suggestions as they are applied or may wait for the full comment period to close before adjudicating. Comments resulting in larger discussions should be decisively resolved and their resolution documented clearly, particularly if the comment concerns will not be included in the final paper. Adjudicators should make reasonable effort to ensure the comments and concerns raised are duly considered and incorporated, as appropriate.
 
 #### Narrative Voice
 
 Assign no more than three individuals for this task to ensure a unified voice. Ensure consistent language, phrasing, acronym use, footnotes, and citations. The final result of this unification should ensure the paper reads consistently, like it was written by a single entity. This also functions as the final edit before group review.
+
+Individuals performing narrative voice may come from the contributors, or may be the TAG sponsor, or another individual. The important item to consider is that in the course of performing narrative voice, you must be mindful of the content's intent  that you may be modifying, having the context for what the topic is, why it is present, and what it is hoping to achieve is beneficial. Its important to also note that individuals in this role may perform actions on the content (deleting sections for instance) that may negatively affect a contributor, therefore anyone performing narrative voice should be considered trustworthy with good rapport in the group and with a penchant for providing justification and consideration. It is not ideal to have comments or content removed without reason, and providing reasoning is part of the narrative voice (and adjudication) process.
 
 #### Final Group Review
 
@@ -104,6 +124,8 @@ When ready for commmunity review, lock the paper from editing (except for Adjudi
 #### Public Comment Adjudication
 
 Adjudicators are may choose to resolve community comments and suggestions as they are applied or may wait for the full comment period to close before adjudicating. Comments resulting in larger discussions should be decisively resolved and their resolution documented clearly, particularly if the comment concerns will not be included in the final paper. Adjudicators should make reasonable effort to ensure the comments and concerns raised are duly considered and incorporated, as appropriate.
+
+Adjudicators may be drawn from contributors to the paper, as they often have additional context that is assummed in the paper, but not declared until a commenter points it out. It is recommended that adjudicators be individuals most heavily involved in the operations of paper development, not necessarily tied to a specific topic or section (although perhaps they wrote many of them). They should be able to reason and apply the comment in the context of the section, as well as across the body of the paper, while still taking a step back to check assumptions in content.
 
 #### Leadership Review and Approval
 
