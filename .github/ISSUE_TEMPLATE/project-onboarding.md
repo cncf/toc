@@ -6,7 +6,7 @@ labels: project onboarding, sandbox
 assignees: caniszczyk, idvoretskyi, jeefy, krook, mrbobbytables, Cmierly
 ---
 
-# Welcome to CNCF Project Onboarding!
+# Welcome to CNCF Project Onboarding
 
 This is an issue created to help onboard your project into the CNCF after the TOC has voted to accept your project into the Sandbox.
 
@@ -48,6 +48,9 @@ Please track your progress by using "Quote reply" to create your own copy of thi
 ## CNCF staff tasks
 
 - [ ] Add the project to [DevStats](https://devstats.cncf.io/).
+- [ ] Add the project to [CLOmonitor](https://clomonitor.io/).
 - [ ] Add the project to [LFX Insights](https://insights.lfx.linuxfoundation.org/). This is done by adding a read-only app to your GitHub organization once it's in CNCF GHE.
+- [ ] Add the project to [LFX Project Control Center](https://projectadmin.lfx.linuxfoundation.org/project/a0941000002wBz4AAE).
 - [ ] Add a license scanning tool, like [FOSSA](https://fossa.com/) or [Snyk](https://snyk.io/).
+- [ ] Invite developers to the [#maintainers-circle](https://app.slack.com/client/T08PSQ7BQ/C014YQ8CDCG) Slack channel.
 - [ ] Send a welcome email to confirm maintainer list access.
