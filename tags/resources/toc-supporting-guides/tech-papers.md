@@ -121,6 +121,15 @@ The group should assign individuals to serve as comment adjudicators for public 
 
 When ready for commmunity review, lock the paper from editing (except for Adjudicators). Make it public for comments and suggestions. Announce a two week public comment period via the TAG's mailing list as well as the TOC's mailing list. TAGs and groups may wish to leverage a git workflow for this, by moving the paper to markdown and filing a PR which would allow public comments on the PR.
 
+This portion of the process is similar to a "peer review" and is essential to ensuring the validity and quality by the broader CNCF community. The TOC's public mailing list includes thousands of individuals across the ecosystem, to include current and former members of the TOC, TAGs, projects, and community members. The following sample text may be used to when sending out the message on the mailing list:
+
+> Hello CNCF Community!
+> The $GROUP has worked diligently in creating an initial draft paper on $TOPIC that provides the community with:
+> * Recommendations for $THING, whether the organisation produces or consumes cloud native software.
+> * Justifications and explanations for $THING
+> We are asking you, the community, to review the paper and provide comments/suggestions/improvements by $DATETWOWEEKSOUT so that we may incorporate your comments and finalize the initial version.
+> You may access the document at the below URL: $URL
+
 #### Public Comment Adjudication
 
 Adjudicators are may choose to resolve community comments and suggestions as they are applied or may wait for the full comment period to close before adjudicating. Comments resulting in larger discussions should be decisively resolved and their resolution documented clearly, particularly if the comment concerns will not be included in the final paper. Adjudicators should make reasonable effort to ensure the comments and concerns raised are duly considered and incorporated, as appropriate.
@@ -153,7 +162,9 @@ All approvals are to be reflected in the metadata heading of the document, the f
 
 #### CNCF Publishing Engagement
 
-TAG Leadership sponsor works with CNCF for final edits, PDF conversion, and graphics inclusion. Review drafts before the final version is added to the repo to ensure accuracy and clarity. Note: papers do not need to be PDFs, however the markdown must be present in the TAG repo.
+In order to initiate publishing of the paper, a TAG co-chair must file a Service Desk ticket using the [CNCF Service Desk](https://cncfservicedesk.atlassian.net/servicedesk/customer/portal/1/user/login?destination=portal%2F1). If a TAG co-chair does not have a service desk account, reach out to CNCF staff to have the account set up. In the service desk ticket, you'll need to let staff know what you're looking for, who is the primary (TAG Leadership sponsor) and secondary contact, and where the materials may be found for publication. 
+
+The TAG Leadership sponsor works with CNCF for final edits, PDF conversion, and graphics inclusion. Review drafts before the final version is added to the repo to ensure accuracy and clarity. Note: papers do not need to be PDFs, however the markdown must be present in the TAG repo.
 
 #### Addition to the Repo
 
@@ -170,7 +181,7 @@ The paper lead creates a README.md with:
 
 ### Blog Publishing and Coordination
 
-Coordinate with TAG leadership and CNCF for a blog post to increase visibility. Consider presenting at community events. Be sure to use TAG and TOC communication channels to increase awareness (TOC mailing list, TAG mailing list, TAG Slack channel, etc.)
+Coordinate with TAG leadership and CNCF for a blog post to increase visibility. Consider presenting at community events. Be sure to use TAG and TOC communication channels to increase awareness (TOC mailing list, TAG mailing list, TAG Slack channel, etc.).
 
 ## Authorship, Attribution, and Acknowledgements
 
