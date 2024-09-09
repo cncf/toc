@@ -172,17 +172,23 @@ The paper lead creates a README.md with:
 
 - Title
 - About: Brief summary
-- Updates: Maintenance intentions
-- Markdown: Maintained in markdown
-- Contributing updates: Guidance for contributors
-- Versioning and publishing: Criteria for updates
-- Original design decisions
+- Updates: Maintenance intentions; how the paper should be maintained, considerations for its scope, guidance on content, and unknown or opinionated content that was presented fairly and should be reviewed as changes occur
+- Markdown: Maintained in markdown; how to maintain the paper in markdown, storing images, linking, headers, line wrap, etc.
+- Contributing updates: Guidance for contributors; types of contributions appropriate to the paper, the background as to why it was created, who the audience is, topics that assist contributors not involved in original development of the paper but would be beneficial for determining appropriate updates
+- Versioning and publishing: Criteria for updates (major versus minor versions), annual/bi-annual reviews, triggers like the finalization of specification/standard, etc.
+- Original design decisions: Any big questions that came up during the development that provide more context around the paper and its contents, to include scoping
 - Links to files in the repo
 
 ### Blog Publishing and Coordination
 
-Coordinate with TAG leadership and CNCF for a blog post to increase visibility. Consider presenting at community events. Be sure to use TAG and TOC communication channels to increase awareness (TOC mailing list, TAG mailing list, TAG Slack channel, etc.).
+Coordinate with TAG leadership and CNCF for a blog post to increase visibility. Consider presenting at community events. Be sure to use TAG and TOC communication channels to increase awareness (TOC mailing list, TAG mailing list, TAG Slack channel, TAG Website, etc.).
 
 ## Authorship, Attribution, and Acknowledgements
 
 Papers created by a CNCF TAG or WG are authored by the group, with contributors and reviewers acknowledged. Major contributors are highlighted in the "Acknowledgements" section. Each document should contain "Contributors," "Reviewers," and "Acknowledgements" sections as appropriate.
+
+## Keeping the paper relevant
+
+The cloud native ecosystem and its domains are still rapidly evolving and the best practices of yesterday may not be the right best practices for a new technology of tomorrow. It is therefore important that the paper be review periodically (annual or bi-annually) to ensure continued accuracy of the content through a version update. In some cases, the paper may need to be archived as the content has been rendered obsolete in light of a major ecosystem development. After the annual or bi-annual review is completed, a simple update to the markdown file to convey "last reviewed" date is sufficient if no changes were determined as necessary.
+
+New papers on an existing paper topic are reasonable provided they can be referencable by the main paper and there is no pre-existing material on the subject. For example, a paper on software supply chain security may provide an initial architecture that later needs dedicated papers for development, build, distribution/storage, and deployment as more tooling is developed and as specifications emerge to solve issues the initial architecture didn't address. Where possible, link to existing material if content is already published and provide an enhancement, clarification, or caveats to such content in the context of the paper.
