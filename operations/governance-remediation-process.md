@@ -18,7 +18,7 @@ Project members and stakeholders should first attempt to resolve governance issu
 
 _Assist projects in developing governance structures to handle situations they are currently unequipped to manage._
 
-Missing governance can usually be remediated within the project by agreeing to adopt the missing governance. This is commonly amicable and not very contentious within a project as the cause or driving mechanism results from a lack of a clear path forward. In this case, missing governance is an opportunity for improvement. 
+It's normal that as a project grows, it will encounter circumstances that weren't previously covered by the governance documentation, such that there is a lack of a clear path forward. This "missing governance" can usually be remediated amicably and internally within the project, by discussing proposed governance changes, and the maintainers agreeing to adopt changes. In these cases, missing governance is an opportunity for improvement. 
 
 #### Correct Non-Practiced Governance 
 
