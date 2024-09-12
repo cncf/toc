@@ -8,7 +8,7 @@ Throughout these processes it is important to maintain clear documentation of al
 
 ## Pre-escalation expectations
 
-Project members and stakeholders should first attempt to resolve governance issues through normal project discussion and consensus. The Remediation process exists for when normal, in-project resolution fails, either because of a difference of opinion, or because the project lacks the tools to make sufficient changes themselves.
+Project members, stakeholders, and community members should first attempt to resolve governance issues through normal project discussion and consensus. The Remediation process exists for when normal, in-project resolution fails, either because of a difference of opinion, or because the project lacks the tools to make sufficient changes themselves.
 
 ## Governance Remediation
 
