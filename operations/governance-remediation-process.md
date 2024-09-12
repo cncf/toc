@@ -74,7 +74,7 @@ In rare cases, governance failure may be accompanied by possible CoC violations 
 
 1. Triage: The TOC will do an initial triage of the issue and assign a lead member and a supporting member to guide the process.
 
-2. Assessment Team Formation: The two TOC members will work with a member of WG Governance to form an assessment team.
+2. Assessment Team Formation: The two TOC members will work with a member of [Governance WG](https://contribute.cncf.io/about/governance/) to form an assessment team.
 
 3. Investigation: The assessment team will Interview the reporter, project maintainers, and other relevant contributors to determine if the governance is not being practiced and assess the project's ability to resolve it internally. This may include attendance by the project’s leadership team to a private TOC meeting to discuss the issue more in depth.
 
