@@ -26,11 +26,9 @@ _Ensure projects adhere to their documented governance._
 
 Non-practiced governance can either be someone willfully or inadvertently ignoring stated governance. Alternatively, occasions may arise where the defined governance _cannot_ be practiced as the project may be lacking people in a role to execute governance processes.
 
-In the case of inadvertent ignorance, these may be resolved internally to the project by pointing out the existing governance against which the behavior or processes must be brought into alignment. 
+When a governance conflict or unaccounted situation arises, and the project cannot reach a consensus to develop a path forward. The TOC will work with project stakeholders, TAG Contributor Strategy, the Code of Conduct Committee, and CNCF Staff to create a public remediation plan for the project.
 
-In circumstances where the project lacks the people in the defined roles to execute governance processes, the TOC with support from TAG Contributor Strategy serves as an independent advisor to recommend and guide the project to a fair, transparent outcome. In some cases, making specific recommendations to the project to resolve the issue.  If no other course is available, the TOC will directly approve changes to project governance in order to allow it to operate again.
-
-In cases where leaders of an open source project willfully disregard the project's published governance or CNCF principles around open governance, the TOC, with advice from the Governance WG, will prepare a remediation plan. This plan could involve supervised project administration, changes to the written governance, removal of specific project leaders, or whatever other measures are required to restore the project to a state where it is following its own governance rules, and that governance is in accord with CNCF principles. Should there be no way to restore the project to community operation, the TOC will consider archiving the project.
+This plan could involve changes to the written governance, removal of specific project leaders, or whatever other measures are required to restore the project to a state where it is following its own governance rules, and that governance is in accord with CNCF principles. Should there be no way to restore the project to community operation, the TOC can consider archiving the project.
 
 In rare cases, governance failure may be accompanied by possible CoC violations by individual project leaders. Should this happen, the assigned team will engage the CNCF Code of Conduct Committee and the two teams will coordinate their evaluation.
 
@@ -64,7 +62,7 @@ In rare cases, governance failure may be accompanied by possible CoC violations 
 
 2. Investigation: The assessment team will Interview the reporter, project maintainers, and other relevant contributors to determine if the governance issue is valid and assess the project's ability to resolve it internally.
 
-3. Recommendation Development: In collaboration with the project, the assessment team will draft new governance policies to address gaps. This will include an actionable plan for the project to follow, with specific milestones and deadlines.
+3. Recommendation Development: In collaboration with the assessment team, the project will draft new governance policies to address gaps. This will include an actionable plan for the project to follow, with specific milestones and deadlines.
 
 4. Implementation and Monitoring: The assessment team will regularly check in on the project's progress towards defined milestones, provide additional support as needed, and provide a public progress report at 3 and 6 month milestones.
 
@@ -78,6 +76,6 @@ In rare cases, governance failure may be accompanied by possible CoC violations 
 
 3. Investigation: The assessment team will Interview the reporter, project maintainers, and other relevant contributors to determine if the governance is not being practiced and assess the project's ability to resolve it internally. This may include attendance by the project’s leadership team to a private TOC meeting to discuss the issue more in depth.
 
-4. Recommendation Development: The assessment team will determine where the project is not following its documented governance and create recommendations on how to get back on track. This will include an actionable plan for the project to follow, with specific milestones and deadlines. These recommendations will then be shared with the whole TOC for further feedback and commentary. The TOC will make a final decision and provide directives to the project.
+4. Recommendation Development: The assessment team will determine where the project is not following its documented governance and work with the project to create recommendations on how to get back on track. This will include an actionable plan for the project to follow, with specific milestones and deadlines. These recommendations will then be shared with the whole TOC for further feedback and commentary.
 
 5. Implementation and Monitoring: The assessment team will regularly check in on the project's progress towards defined milestones, provide additional support as needed, and provide a public progress report at 3 and 6 month milestones.
