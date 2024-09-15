@@ -36,6 +36,8 @@ In rare cases, governance failure may be accompanied by possible CoC violations 
 
 **Conduct Issues**: Handled by the CNCF Code of Conduct [processes](https://github.com/cncf/foundation/blob/main/code-of-conduct.md#reporting). This includes behavior by project leaders which is a violation of the CNCF CoC; such behavior should be reported to the CoCC and not handled through Governance Remediation.
 
+**Leadership Issues**: Behavioral issues with individual project leaders may be addressed by contacting the TOC regarding violations of the [Technical Leadership Principles](https://github.com/cncf/toc/blob/main/PRINCIPLES.md#technical-leadership-principles).
+
 **Technical Disagreements**: Projects should use or establish governance to resolve such disputes independently.
 
 **Lifecycle Processes**: Elements already covered in the project's lifecycle review.
@@ -44,9 +46,9 @@ In rare cases, governance failure may be accompanied by possible CoC violations 
 
 **Public Reports: **In most cases, project governance issues will be reported publicly to the TOC by filing [an Issue in the TOC repository](https://github.com/cncf/toc/issues) of type Governance. Should a public issue be reported in some other venue (the project's issue tracker, mailing list, etc.) an issue in the TOC repo should be created for tracking and assignment.
 
-**Anonymous Reports**: Should the reporter not wish their name to be known, they should email &lt;TOC-confidential-email-here>.  The TOC team will then create an issue in the TOC repo tracking the remediation. The identity of the anonymous reporter will be known only to the TOC team.
+**Anonymous Reports**: Should the reporter not wish their name to be known, they should email private-toc@cncf.io.  The TOC team will then create an issue in the TOC repo tracking the remediation. The identity of the anonymous reporter will be known only to the TOC team.
 
-**Confidential Reports**: Should there be risks around the details of the remediation request being public, the reporter will email &lt;TOC-confidential-email-here>.  The TOC and the assessment team will then use privately shared documents to track the status of the remediation request.
+**Confidential Reports**: Should there be risks around the details of the remediation request being public, the reporter will email private-toc@cncf.io.  The TOC and the assessment team will then use privately shared documents to track the status of the remediation request.
 
 ## Governance Remediation Process
 
