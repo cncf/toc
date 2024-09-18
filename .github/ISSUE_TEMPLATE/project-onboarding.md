@@ -16,6 +16,7 @@ Please track your progress by using "Quote reply" to create your own copy of thi
 
 ## Review and understand
 
+- [ ] The [Technical Leadership Principles](https://github.com/cncf/toc/blob/main/PRINCIPLES.md#technical-leadership-principles) that outlines the expected behavior for any maintainer in a leadership role.
 - [ ] The [project proposal process and requirements](https://github.com/cncf/toc/blob/main/process/README.md).
 - [ ] The [services available for your project at the CNCF](https://contribute.cncf.io/resources/project-services/).
 - [ ] The [CNCF IP Policy](https://github.com/cncf/foundation/blob/main/charter.md#11-ip-policy).
