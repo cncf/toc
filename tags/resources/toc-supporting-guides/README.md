@@ -5,3 +5,4 @@ This folder contains guides on how TAGs can support the TOC.
 
 **Guides**:
 - [Project reviews](project-reviews.md)
+- [Technical Paper process](tech-papers.md)
