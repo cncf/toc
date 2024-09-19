@@ -1,0 +1,191 @@
+== Notary & TUF Proposal
+
+*Name of project:* Notary & TUF
+
+*Description:*
+
+The Update Framework (TUF) is a specification designed to solve specifically provenance and trust problems as part of a larger distribution framework.
+
+Notary is a content signing framework implementing the TUF specification in the Go language. The project provides both a client, and a pair of server applications to host signed metadata and perform limited online signing functions. It is the de facto image signing framework in use by Docker, Quay, VMWare, and others.
+
+Notary and TUF have been presented at [CNCF TOC meeting 6/20/2017](https://docs.google.com/presentation/d/1MvCZytMQpTgGW4IvJ1cM0hvnIr8IowH7hFaeXJZ6cp4/edit#slide=id.g2309ce468a_22_0)
+
+*Sponsor / Advisor from TOC:* Solomon Hykes
+
+*Preferred maturity level:* incubating
+
+*Unique identifier:*
+
+* Notary: notary
+* The Update Framework: tuf
+
+*License:*
+
+* Notary: Apache 2.0 
+* TUF: Dual licensed under MIT and Apache 2.0
+
+*Source control repositories:*
+
+* https://github.com/docker/notary
+* https://github.com/theupdateframework/tuf
+* https://github.com/theupdateframework/taps 
+
+*Initial Committers:*
+
+* https://github.com/docker/notary/blob/master/MAINTAINERS
+* https://github.com/theupdateframework/tuf/blob/develop/AUTHORS.txt 
+
+*Infrastructure requirements (CI / CNCF Cluster):*
+
+* CircleCI
+* CodeCov
+* Travis CI
+
+*Issue tracker:*
+
+* https://github.com/docker/notary/issues
+* https://github.com/theupdateframework/tuf/issues
+
+*Mailing lists:*
+
+* Slack: https://dockercommunity.slack.com/messages/notary
+* Google Groups: https://groups.google.com/forum/#!forum/theupdateframework 
+
+*Website:*
+
+* TUF: https://theupdateframework.github.io/
+
+*Release methodology and mechanics:*
+
+* Feature based releases
+
+*Social media accounts:* None
+
+*Existing sponsorship:* Docker for Notary, National Science Foundation and NYU for TUF
+
+*Contributor statistics:*
+
+The notary community is growing slowly with a very small but active base and a larger group of occasional contributors. Maintainers are from Docker, CoreOS and Huawei.
+
+TUF maintainers from NYU and CoreOS.
+
+*Adopters:* Docker, Quay, Huawei, Motorola Solutions, VMWare
+
+*External Dependencies:*
+
+* https://github.com/docker/notary/blob/master/vendor.conf 
+* Protobuf
+* GRPC
+* MySQL/PostgreSQL/rethinkDB
+* https://github.com/yubico/yubico-piv-tool
+* https://github.com/flynn/gotuf (forked and heavily modified under the "tuf" directory in the notary repository)
+
+*Statement on alignment with CNCF mission:*
+
+Notary is the most secure and widely adopted implementation of The Update Framework to date, and represents a 
+critical security building block for ensuring the provenance and integrity of data in the field of 
+cloud-native computing. As an implementer of The Update Framework it can provide its guarantees over any 
+arbitrary digital content, making it ultimately flexible to any use case requiring security guarantees 
+against attacks up to and including nation state level.
+
+Additional Material
+---
+
+*Notary/TUF vs Traditional Package Signing*
+
+Traditional package signing methods commonly revolve around GPG signing of various metadata fragments. In a 
+sense, GPG is a primitive used by traditional package signing systems. If there was strong enough desire, 
+GPG could be integrated into any existing TUF implementation as an available signing option. TUF recognizes 
+that the existing signing systems have not gone far enough to address the threats that are meaningful in the 
+context of software distribution. It proposes a complete system for secure software distribution that 
+addresses these threats.
+
+Over the years many package management signing systems have been developed and they continue to make the 
+mistakes of the past because the community has largely focused on the expertise required to develop 
+crypto primitives, without also acknowledging the expertise required to design systems. To quote Duncan 
+Coutts in his explanation of Haskell’s choice to use TUF, “TUF has been designed by academic experts in 
+the subject, based both on research and existing real-world systems. Our crypto-humility should cover 
+not just crypto algorithms but extend to whole system designs.”
+
+*TUF vs GPG*
+
+GPG currently has much greater recognition that TUF. This is expected given the age and lack of 
+competition it has received. This does not automatically make it a good solution to signing requirements. 
+GPG lacks the same features as our “Traditional Package Managers”, as they have largely added very little 
+if anything meaningful on top of the GPG primitives.
+
+Nominally one could argue that GPG private key management is simpler than TUF private key management 
+purely on the basis that there are slightly fewer keys to manage. This marginal difference is a poor 
+tradeoff in the face of ease of integration. GPG is well recognized as being difficult to use [1] (response 
+at [5]), and even more difficult to integrate with at the library level as a developer [2]. By comparison, 
+one user was able to write a tool to use Notary to sign and verify git tags during a hackathon with no \
+help from the Notary maintainers [3].
+
+*Why a joint submission?*
+
+We want the TUF specification to be accepted into CNCF because it will make a clear statement of the 
+importance and expectations the community must have for the security of their software distribution 
+channels. Furthermore we want there to be implementations in many languages to enable broad adoption. 
+A joint submission of TUF and Notary is a highly cohesive package that lays a solid foundation for 
+package signing in CNCF, providing both the spec for guidance, and an implementation in Golang, which 
+is the majority language among existing CNCF projects.
+
+We are at an inflection point in the methods used to develop and deploy software. The paradigm shift 
+happening right now must be capitalized on lest we risk extending the the unacceptable status quo in 
+software distribution security.
+
+*Use Cases*
+
+The most unequivocal use case for TUF and Notary is securing software update systems. This is the stated 
+scope and primary goal of TUF. It is also a stated goal that the framework should be usable with both 
+new and existing software update systems.
+
+We should define what we mean by “software update system” in this context: a software update system is 
+a process and utilities that allow one to download and install entirely new software, and upgrades to 
+existing software, within a specific environment. Some examples are Python’s PIP, Debian’s APT, and 
+RedHat’s YUM systems.
+
+Container images map very closely to a typical software update system payload. Like some of those 
+mentioned, it uses TAR files containing the collection of files to be installed on the requesting host. 
+It uses a manifest, a JSON file, to describe how those files are used to set up and run the container. 
+The manifest is the root of a Merkle tree, containing the SHA256 checksums of the layers that make up 
+the image. This efficiently allows us to sign only the manifest using Notary and a user can perform a 
+verification of everything they download for the image.
+
+We also see a future for Notary and TUF in signing service or pod definitions. This strengthens 
+protections around what software can run on a cluster. We envision a single Notary repository 
+maintained within a cluster to which recognized delegates can push updates. This would be the only 
+mechanism for a cluster to receive updates to its definitions and automatically acts as a second 
+factor of authentication (something you have: the private key) in the presence of traditional 
+username+password based auth.
+
+Finally, we recognize that there is a natural link between code identity and container, service, and 
+pod identity. We believe that runtime identity ought to be tied to code signatures, so that policies 
+can be set such that only particular images may assume a runtime identity. For example, a customer 
+might specify that a particular signing process for container images is necessary in order to call 
+particular APIs within a cluster. This link between image identity and container runtime identity 
+requires a cryptographically strong, commonly shared image signing and verification system.
+
+Use cases that we consider in scope and that are already implemented or can be accomplished now:
+
+* Container image signing
+* General software package signing (a demo of this was put together using Notary to sign PIP packages for a talk at PyCon 2016 [4])
+* OS/Kernel signing (already in use in LinuxKit)
+* CI pipeline signing 
+    * Every entity performing a step in a CI pipeline (build, test, security scan, etc…) should add a signature and all signatures should be verified at deployment time.
+
+Use cases that are achievable with some additional work:
+
+* Signing cluster/service/pod definitions
+* Binding code signatures to service/container/pod identity
+
+Out of scope:
+
+* Signing communications, i.e. emails
+* Signed logs (though TUF/Notary could be applicable to signing log files backed up offsite)
+
+1. https://blog.filippo.io/giving-up-on-long-term-pgp/
+2. https://www.mailpile.is/blog/2014-10-07_Some_Thoughts_on_GnuPG.html
+3. https://github.com/docker/global-hack-day-3/tree/master/docker-bdx 
+4. https://www.youtube.com/watch?v=fDvO9jwXCV4
+5. https://arstechnica.co.uk/information-technology/2016/12/signal-does-not-replace-pgp/ 
