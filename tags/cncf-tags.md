@@ -131,10 +131,11 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 |-----------------------|------------------------|
 | [Justin Cappos](https://github.com/JustinCappos)       | New York University    |
 | [Ash Narkar](https://github.com/ashutosh-narkar)       | Styra                  |
-| [Ragashree Shekar](https://github.com/ragashreeshekar) | Independent            |
 | [Michael Lieberman](https://github.com/mlieberman85)   | Kusari                 | 
 | [John Kjell](https://github.com/kjell)                 | TestifySec             | 
-
+| [Marco De Benedictis](https://github.com/mrcdb)        | ControlPlane           |
+| [Matt Flannery](https://github.commatthewflannery)     | ThreatCanary           |
+| [Brandt Keller](https://github.com/brandtkeller)       | Defense Unicorns       |
 
 ### TAG Storage 
 #### Chairs

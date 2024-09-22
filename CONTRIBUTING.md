@@ -2,7 +2,7 @@
 
 ## Contributing Projects to CNCF
 
-If you're interested in contributing a project to CNCF, please see the full project proposal process is located [here](https://github.com/cncf/toc/blob/main/process/project_proposals.md).
+If you're interested in contributing a project to CNCF, please see the full project proposal process is located [here](https://github.com/cncf/toc/blob/main/process/README.md).
 
 ## Contributing to Technical Advisory Groups and Working Groups
 
