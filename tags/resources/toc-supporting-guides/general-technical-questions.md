@@ -1,5 +1,15 @@
-# General Technical Review questions
+# General Technical Review Questionaire
 
+## Introduction
+
+The General Technical Review questions can be completed by a project in lieu of a presentation to a Technical Advisory Group (TAG) as well as to satisfy the Engineering Principle requirements of a Sandbox application or Due Dillegence for moving levels. 
+
+The questions are designed to prompt **_design thinking_** for projects that would like to one day be a graduated project.
+
+The intent is to understand how the project has adopted and aligned with the CNCF maturation levels as well as encourage good design & security best practices. 
+
+
+<!-- 
 The General Technical Review questions can be completed by a project team in lieu of a presentation to a Technical Advisory Group (TAG) as well as to satisfy several of the Engineering Principle requirements for applying to CNCF Sandbox as well as applying to move to Incubation and Graduation.
 
 For the purposes of the general technical review and further domain reviews, the questions are designed to prompt design thinking for ready-for-production projects and architecture. The intent is to understand and validate the cloud native software lifecycle of the project and whether it is in line with the CNCF Maturation process and levels. 
@@ -10,27 +20,58 @@ These questions are to gather knowledge about the project. Project maintainers a
 
 **Suggestion:** A recorded demo or diagram(s) may be easier to convey some of the concepts in the questions below. The project maintainers may provide a link to a recorded demo or add architectural diagrams along with your GTR questionnaire.
 
----
+-->
 
+### General Technical Review questions 
 
 The questions follow the cloud native software lifecycle day schemas:
 
-**Day 0 \- Planning Phase.** This phase covers design and architecture of the cloud native project.
+**Day 0 - Planning Phase. (Sandbox)** - This phase covers design and architecture of the cloud native project.
 
-**Day 1 \- Installation and Deployment Phase.** This phase covers initial installation and deployment of the design developed during Day 0 \- Planning Phase. 
+**Day 1 - Installation and Deployment Phase (Incubation)** - This phase covers initial installation and deployment of the design developed during Day 0 - Planning Phase. 
 
-**Day 2 \- Day-to-Day Operations Phase.** This phase covers post-deployment operations in production-ready environments to include monitoring, maintenance, auditing and troubleshooting.
+**Day 2 - Day-to-Day Operations Phase (Graduated)** - This phase covers post-deployment operations in production-ready environments to include monitoring, maintenance, auditing and troubleshooting.
 
-## Day 0 \- Planning Phase
+
+### How to use this template
+
+Make a copy of the template below and answer questions related to your project level to the best of your ability.
+_**Not every question will be addressable or relevant to every project.**_
+If this is the case for your project, please mark it as not-applicable (N/A) and provide a brief explanation. 
+
+**NOTE:** The questions are cumulative e.g. if you are applying for incubation or graduation, you should answer both day 0 and day 1 questions etc.
+
+#### Tips
+
+* Treat the GTR questionaire as a living document and keep a copy of it in your project's own repo. The GTR questions are helpful to both contributors and users and will make updating it in the future less work when you want to apply to move levels.
+* Answer more questions than the requirement for your level if it _makes sense for your project_. e.g. if you have documentaiton covering the different forms of observability in the Day-2 requirements.
+* You **CAN** link out to your own project's documentation, but be sure to link to it in a _versioned_ form. e.g. link to it at a specific commit instead of the `main` branch, or versioned website.
+* A recorded demo or diagram(s) may be easier to convey some of the concepts in the questions below. You may provide a link to a recorded demo or add architectural diagrams along with your GTR questionnaire.
+* If you are unsure or have a question about any section below, **please ask**. Chances are you're not the only one with a question and the template should be updated with additional guidance.
+
+---
+
+# General Technical Review - [Project Name] / [Level]
+
+- **Project:**
+- **Project Version:** 
+- **Website:**
+- **Date Updated:** YYYY-MM-DD
+- **Template Version:** v1.0
+- **Description:** <!-- Short project description --> 
+
+
+
+## Day 0 - Planning Phase
 
 ### Scope
 
-  * Describe the roadmap process, how scope is determined for mid to long term features, as well as how the roadmap maps back to current contributions and maintainer ladder?  
-  * Describe the target persona for the project?  
-  * Explain the primary use case for the project. What additional use cases are supported by the project?  
+  * Describe the roadmap process, how scope is determined for mid to long term features, as well as how the roadmap maps back to current contributions and maintainer ladder?
+  * Describe the target persona or user(s) for the project?
+  * Explain the primary use case for the project. What additional use cases are supported by the project?
   * Explain which use cases have been identified as unsupported by the project.  
   * Describe the intended types of organizations who would benefit from adopting this project. (i.e. financial services, any software manufacturer, organizations providing platform engineering services)?  
-  * Please describe completed end user research and link to any reports.
+  * Please describe any completed end user research and link to any reports.
 
 ### Usability
 
@@ -81,9 +122,9 @@ The questions follow the cloud native software lifecycle day schemas:
 
 ## Day 1 \- Installation and Deployment Phase
 
-### Project Configuration and Activation
+### Project Installation and Configuration
 
-  * Describe what project configuration and activation look like.
+  * Describe what project installation and configuration look like.
 
 ### Project Enablement and Rollback
 
@@ -117,7 +158,7 @@ The questions follow the cloud native software lifecycle day schemas:
 
 ### Observability Requirements
 
-  * Describe all of the signals the project is using or producing, including logs, metrics, profiles and traces. Please include supported formats, recommended configurations and data storage.  
+  * Describe the signals the project is using or producing, including logs, metrics, profiles and traces. Please include supported formats, recommended configurations and data storage.  
   * Describe how the project captures audit logging.  
   * Describe any dashboards the project uses or implements as well as any dashboard requirements.  
   * Describe how the project surfaces project resource requirements for adopters to monitor cloud and infrastructure costs, e.g. FinOps  
@@ -130,8 +171,8 @@ The questions follow the cloud native software lifecycle day schemas:
 ### Dependencies
 
   * Describe the specific running services the project depends on in the cluster.  
-  * Describe the project’s dependency lifecycle policy for each repo.  
-  * How does the project incorporate and consider source composition analysis as part of its development and security hygiene cadence? Describe how this source composition analysis (SCA) is tracked.?   
+  * Describe the project’s dependency lifecycle policy.  
+  * How does the project incorporate and consider source composition analysis as part of its development and security hygiene? Describe how this source composition analysis (SCA) is tracked.?   
   * Describe how the project implements changes based on source composition analysis (SCA) and the timescale? 
 
 ### Troubleshooting
