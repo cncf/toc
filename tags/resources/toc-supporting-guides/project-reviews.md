@@ -1,5 +1,7 @@
 # TAG Project Reviews
 
+v1.0
+
 CNCF Technical Advisory Groups (TAGs) help with Project Reviews for new projects interested in joining the CNCF, as well as projects moving between maturity levels.
 
 ## Project Reviews
@@ -78,7 +80,7 @@ Incubation and Graduation Project Review Assignments: tbd
 ### Who should conduct project reviews?
 
 A TAG or WG lead can either self-assign or be assigned by the TOC to conduct a project review.
-They **MAY** delegate the review to a community with domain expertise.
+They **MAY** delegate the review to a community member with domain expertise.
 
 ### How long should a review take?
 
