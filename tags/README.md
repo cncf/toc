@@ -52,14 +52,14 @@ Projects themselves may engage with the TAGs:
 * prior to submitting their application for CNCF consideration
 * after submitting their application for CNCF consideration
 * for guidance in moving levels within the CNCF
-upon direction by the CNCF Technical Oversight Committee (TOC) or Linux Foundation staff
+* upon direction by the CNCF Technical Oversight Committee (TOC) or Linux Foundation staff
 
 Project engagement within the Cloud Native ecosystem is a vital way to raise project visibility as well as gain insights from technical leaders in the CNCF community for project maintainers.
 
-As the Technical Advisory Groups (TAGs) are an entry point for many projects to engage with the Cloud Native ecosystem, TAGs are encouraged to guide projects to join the TAGs, Working Groups, collaborate with other projects as well as explore various avenues to further engage with the greater community.
+As the Technical Advisory Groups (TAGs) are an entry point for many projects to engage with the Cloud Native ecosystem, TAGs are encouraged to guide projects to join the TAGs, Working Groups, collaborate with other projects for development of specifications or promote interoperability as well as explore various avenues to further engage with the greater community.
 
 ### Technical Leadership
-The TAGs should strive to present the TOC with easily understandable and votable "propositions", each of which is supported by clear written evidence.  A proposition may be “to approve this project for incubation based on this “to approve this landscape document based on these clear goals and evidence that it achieves them”.  It is of utmost importance that the information and proposals provided to the TOC by TAGs be highly accurate and unbiased, driven by the goal to improve the CNCF as a whole, rather than benefit one project or company over another.  We believe that the rising tide lifts all boats, and that is our goal.
+The TAGs should strive to present the TOC with easily understandable and votable "propositions", each of which is supported by clear written evidence.  A proposition may be “to approve this project for incubation based on ..." or “to approve this landscape document under its clear goals and the evidence that it achieves them”.  It is of utmost importance that the information and proposals provided to the TOC by TAGs be highly accurate and unbiased, driven by the goal to improve the CNCF as a whole, rather than benefit one project or company over another.  We believe that the rising tide lifts all boats, and that is our goal.
 
 Key ideas here:
 
@@ -72,7 +72,7 @@ TAGs may choose to spawn focused and time-limited working groups to achieve some
 
 #### Project Handling:
 
-* Conduct [Domain Technical Reviews](resources/toc-supporting-guides/project-reviews.md) of projects to inform the TOC for Sandbox Review or as requested for projects moving levels
+* Conduct [Domain Technical Reviews](resources/toc-supporting-guides/project-reviews.md) of projects to inform the TOC for Sandbox Review or as requested for projects moving levels (by projects, or by TOC members if deemed beneficial)
 * Understand and document a high level roadmap of projects within this space, including CNCF and non-CNCF projects. Identify gaps in project landscape.
 * For projects that fall within the CNCF, perform health checks.
 * Perform discovery of and outreach to candidate projects
