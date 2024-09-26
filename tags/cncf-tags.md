@@ -121,7 +121,6 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 #### Chairs
 | Name                  | Organization            | Term                |
 |-----------------------|------------------------|---------------------|
-| [Pushkar Joglekar](https://github.com/PushkarJ)      | Independent            | June, 2023 - June, 2025 | @ |
 | [Marina Moore](https://github.com/mnm678)          | Independent                  | October, 2023 - October, 2025 | 
 | [Eddie Knight](https://github.com/eddie-knight)          | Sonatype               | May, 2024 - May, 2026 | @ |
 
