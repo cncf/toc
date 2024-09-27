@@ -171,12 +171,12 @@ Note: this section may be augmented by the completion of a Governance Review fro
 ## Engineering Principles
 
 - [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. *This requirement may also be satisfied by completing a General Technical Review.***
-- A General Technical Review was completed on DD-MMM-YYYY, and can be discovered at $LINK.
+- A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
 - [ ] **Document what the project does, and why it does it - including viable cloud native use cases. *This requirement may also be satisfied by completing a General Technical Review.***
-  - A General Technical Review was completed on DD-MMM-YYYY, and can be discovered at $LINK.
+  - A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
@@ -189,7 +189,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 <!-- (Project assertion goes here) --> 
 
 - [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
-  - A General Technical Review was completed on DD-MMM-YYYY, and can be discovered at $LINK.
+  - A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 

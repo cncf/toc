@@ -40,7 +40,7 @@ CNCF TAGs are modelled on Kubernetes SIGs.  Differences are intended to be minim
 
 ## Responsibilities & Empowerment of TAGs
 
-CNCF TAGs should, under guidance from the TOC, provide high-quality technical expertise, unbiased information and proactive leadership within their domain.  The TOC makes use of this input to act as an informed and effective executive board to select and promote appropriate CNCF projects and practices, and to disseminate high quality information to end users and the cloud-native community in general.  
+CNCF TAGs should, under guidance from the TOC, provide high-quality technical expertise, unbiased information and proactive leadership within their domain.  The TOC makes use of this input to act as an informed and effective executive board to select and promote appropriate CNCF projects and practices, and to disseminate high quality information to end users and the cloud native community in general.  
 
 TAGs explicitly have no direct authority over CNCF projects. In particular, the creation of CNCF TAG’s does not change the existing, successfully practiced [charter](https://github.com/cncf/foundation/blob/main/charter.md) goal that "Projects.. will be ‘lightly’ subject to the Technical Oversight Committee".
 

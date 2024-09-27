@@ -106,7 +106,6 @@ If this is the case for your project, please mark it as not-applicable (N/A) and
 
 ### Security
 
-  * Projects   
   * Please provide a link to the project’s cloud native [security self assessment](https://tag-security.cncf.io/community/assessments/).  
   * Please review the [Cloud Native Security Tenets](https://github.com/cncf/tag-security/blob/main/security-whitepaper/secure-defaults-cloud-native-8.md) from TAG Security.  
     * How are you satisfying the tenets of cloud native security projects?  
@@ -147,7 +146,7 @@ If this is the case for your project, please mark it as not-applicable (N/A) and
 
 ### Scalability/Reliability
 
-  * Describe how the project increases the size or count of existing API objects?  
+  * Describe how the project increases the size or count of existing API objects.
   * Describe how the project defines Service Level Objectives (SLOs) and Service Level Indicators (SLIs).  
   * Describe any operations that will increase in time covered by existing SLIs/SLOs.  
   * Describe the increase in resource usage in any components as a result of enabling this project, to include CPU, Memory, Storage, Throughput.  
@@ -165,20 +164,20 @@ If this is the case for your project, please mark it as not-applicable (N/A) and
   * Which parameters is the project covering to ensure the health of the application/service and its workloads?  
   * How can an operator determine if the project is in use by workloads?  
   * How can someone using this project know that it is working for their instance?  
-  * Describe the SLOs (Service Level Objectives) for this project?  
+  * Describe the SLOs (Service Level Objectives) for this project.
   * What are the SLIs (Service Level Indicators) an operator can use to determine the health of the service?
 
 ### Dependencies
 
   * Describe the specific running services the project depends on in the cluster.  
   * Describe the project’s dependency lifecycle policy.  
-  * How does the project incorporate and consider source composition analysis as part of its development and security hygiene? Describe how this source composition analysis (SCA) is tracked.?   
-  * Describe how the project implements changes based on source composition analysis (SCA) and the timescale? 
+  * How does the project incorporate and consider source composition analysis as part of its development and security hygiene? Describe how this source composition analysis (SCA) is tracked.
+  * Describe how the project implements changes based on source composition analysis (SCA) and the timescale.
 
 ### Troubleshooting
 
   * How does this project recover if a key component or feature becomes unavailable? e.g Kubernetes API server, etcd, database, leader node, etc.  
-  * Describe the known failure modes?
+  * Describe the known failure modes.
 
 ### Security
 
