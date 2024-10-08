@@ -33,7 +33,7 @@ N/A
 
 ### Required
 
-- [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
+- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
@@ -177,11 +177,11 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Required 
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. This can also be satisfied by completing a General Technical Review.**
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases.**
+- [ ] **Document what the project does, and why it does it - including viable cloud native use cases. This can also be satisfied by completing a General Technical Review.**
 
 <!-- (Project assertion goes here) --> 
 
@@ -189,7 +189,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. This can also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.**
 
 <!-- (Project assertion goes here) --> 
 
