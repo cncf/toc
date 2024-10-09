@@ -20,6 +20,11 @@ Project points of contacts: $NAME, $EMAIL
 
 ## Incubation Criteria Summary for $PROJECT
 
+### Application Level Assertion
+
+- [ ] This project is currently Sandbox, accepted on YYYYMMDD, and applying to Incubation.
+- [ ] This project is applying to join the CNCF at the Incubation level.
+
 ### Adoption Assertion
 
 _The project has been adopted by the following organizations in a testing and integration or production capacity:_
