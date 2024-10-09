@@ -6,7 +6,7 @@ labels: incubation
 ---
 
 # $PROJECT Incubation Application
-v1.5
+v1.6
 This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria. 
 
 Project Repo(s): $URL
