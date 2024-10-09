@@ -6,7 +6,7 @@ labels: graduation
 ---
 
 # $PROJECT Graduation Application
-v1.5
+v1.6
 This template provides the project with a framework to inform the TOC of their conformance to the Graduation Level Criteria. 
 
 
@@ -20,6 +20,10 @@ Project points of contacts: $NAME, $EMAIL
 - [ ] (Post Graduation only) [Book a meeting with CNCF staff](http://project-meetings.cncf.io) to understand project benefits and event resources. 
 
 ## Graduation Criteria Summary for $PROJECT
+
+### Application Level Assertion
+
+- [ ] This project is currently Incubating, accepted on YYYYMMDD, and applying to Graduate.
 
 ### Adoption Assertion
 
@@ -232,7 +236,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document Security Self-Assessment.**
+- [ ] **Document [Security Self-Assessment](https://tag-security.cncf.io/community/assessments/guide/self-assessment/).**
 
 <!-- (Project assertion goes here) --> 
 
