@@ -204,7 +204,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Security
 
-Note: this section may be augemented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security.
 
 ### Suggested
 
@@ -224,7 +224,7 @@ N/A
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document Security Self-Assessment.**
+- [ ] **Document [Security Self-Assessment](https://tag-security.cncf.io/community/assessments/guide/self-assessment/).**
 
 <!-- (Project assertion goes here) --> 
 
