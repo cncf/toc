@@ -183,8 +183,7 @@ Dapr treats each of its repositories [as a subproject](https://github.com/dapr/c
 
 - [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
-<!-- (TOC Evaluation goes here) --> 
-**TODO(dims)**: More work can be done here, dims to open a Issue
+The project currently lacks clarity on what constitutes a sub-project. Currently, each repo is considered a sub-project and therefore lists a volume of them. Having a better aggregation will help create named roles like "technical leads" which sets up folks better for going up the contributor ladder. It should further be noted in the event of substantial leadership departure ("bus factor"), having the next rung of leadership mentored and ready will alleviate any potential issues.
 
 ## Contributors and Community
 
