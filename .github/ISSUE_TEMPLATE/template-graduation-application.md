@@ -29,8 +29,6 @@ Project points of contacts: $NAME, $EMAIL
 
 _The project has been adopted by the following organizations in a testing and integration or production capacity:_
 
-### Criteria
-
 ## Application Process Principles
 
 ### Suggested
