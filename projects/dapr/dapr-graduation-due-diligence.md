@@ -254,9 +254,9 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   The [Dapr high-level roadmap](https://github.com/dapr/community/blob/master/roadmap.md) is maintained in the Dapr community repository and is updated quarterly. The current update cadence is not frequent enough, allowing for out of sync information - [tracking issue #4377](https://github.com/dapr/docs/issues/4377) in the Dapr docs repo has been created to track updates to this documentation. The current roadmap documentation also does not sufficiently reflect the current process and is being tracked by the same issue.
 
-- [ ] **Roadmap change process is documented.**
+- [x] **Roadmap change process is documented.**
 
-  There is no current roadmap change process documented. [Tracking issue #4377](https://github.com/dapr/docs/issues/4377) in the Dapr docs repo has been created to track Roadmap process improvements including creating and documenting a roadmap change process.
+  [Tracking issue #4377](https://github.com/dapr/docs/issues/4377) in the Dapr docs repo has been created to track Roadmap process improvements including creating and documenting a roadmap change process. The current changes by the Dapr maintainers are sufficient to meet the Graduation requirement, however, all recommendations should be completed soon after Graduation.
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
 
@@ -284,7 +284,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   
   There is a discrepancy between the Support Release Policy and the Release Process - [Issue #8188 in the Dapr repo](https://github.com/dapr/dapr/issues/8188) has been created to track clarifications to each. 
   
-  - [ ] Tagging as stable, unstable, and security related releases
+  - [x] Tagging as stable, unstable, and security related releases
 
   Releases aren't specifically tagged as stable, unstable or security. They are [tagged](https://github.com/dapr/dapr/tags) as either a stable release or a "Release Candidate", which is inherently unstable as it is still undergoing testing prior to stable release. 
   
@@ -293,12 +293,16 @@ Note: this section may be augmented by the completion of a Governance Review fro
   Bug fixes are included in both Release Candidates and Stable releases. They can be included in a major or minor release alongside other features, or solely in a minor release and are documented thoroughly. Example: [Dapr 1.14.4 release](https://github.com/dapr/dapr/releases/tag/v1.14.4).
   
   [Issue #8188 in the Dapr repo](https://github.com/dapr/dapr/issues/8188) has been created to track tagging policy clarification.
+
+  The current tagging strategy is sufficent to meet the requirements for Graduation with the recommendation to complete the issues identified soon after Graduation.
   
-  - [ ] Information on branch and tag strategies
+  - [x] Information on branch and tag strategies
 
   The Dapr project provides information on branch strategies in the [Maintainer guide](https://docs.dapr.io/contributing/docs-contrib/maintainer-guide/).
 
-  The project does not currently provide information on tag strategies. [Issue #8188 in the Dapr repo](https://github.com/dapr/dapr/issues/8188) has been created to track adding tag strategies to the Dapr process documentation. 
+  The project does not currently provide information on tag strategies. [Issue #8188 in the Dapr repo](https://github.com/dapr/dapr/issues/8188) has been created to track adding tag strategies to the Dapr process documentation.
+
+  The current information on branch strategies is sufficient to meet the requirements for Graduation. The recommendation is to add tag strategies shortly after Graduation to improve the end user experience.
 
   - [x] Branch and platform support and length of support
 
