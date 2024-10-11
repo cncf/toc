@@ -111,7 +111,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x]  **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
-The project fulfills this criteria. Recently two maintainers without activity have entered PRs to be removed. Earlier in the year there was a [cleanup of STC/Maintainers](https://github.com/dapr/community/issues/456) as well. This activity indicates the project governance is being adhered to. the STC was [bootstrapped in 2021](https://github.com/dapr/community/pull/83) and there was an [election in 2023](https://github.com/dapr/community/tree/master/elections/2023-STC) as the members have 2 year terms.
+The project fulfills this criteria. Recently two maintainers without activity have entered PRs to be removed. Earlier in the year there was a [cleanup of STC/Maintainers](https://github.com/dapr/community/issues/456) as well. This activity indicates the project governance is being adhered to. The STC was [bootstrapped in 2021](https://github.com/dapr/community/pull/83) and there was an [election in 2023](https://github.com/dapr/community/tree/master/elections/2023-STC) as the members have 2 year terms.
 
 ### Required
 
