@@ -422,13 +422,13 @@ Also compatibility with non-CNCF projects, including:
 
 August 2024
 
-Adopter 3 has requested the adopter interview be kept private. The notes are kept on file for CNCF TOC review and inform the findings of this Graduation Due Diligence and recommendation to proceed to CNCF Graduation level.
+Adopter 1 has requested the adopter interview be kept private. The notes are kept on file for CNCF TOC review and inform the findings of this Graduation Due Diligence and recommendation to proceed to CNCF Graduation level.
 
 ##### Adopter 2 - Healthcare
 
 August 2024
 
-Adopter 3 has requested the adopter interview be kept private. The notes are kept on file for CNCF TOC review and inform the findings of this Graduation Due Diligence and recommendation to proceed to CNCF Graduation level.
+Adopter 2 has requested the adopter interview be kept private. The notes are kept on file for CNCF TOC review and inform the findings of this Graduation Due Diligence and recommendation to proceed to CNCF Graduation level.
 
 ##### Adopter 3 - Financial Services
 
