@@ -25,4 +25,4 @@ TOC [meetings](https://github.com/cncf/toc#meeting-time) are only two hours a mo
 
 The TOC welcomes non-binding votes from members of the CNCF community to express their viewpoints.
 
-And, just as the biggest contributors to open source projects often become maintainers, becoming active in TOC and TAG business is one of the best paths to distinguish oneself ahead of TOC [elections](https://github.com/cncf/toc/blob/main/process/election-schedule.md).
+And, just as the biggest contributors to open source projects often become maintainers, becoming active in TOC and TAG business is one of the best paths to distinguish oneself ahead of TOC [elections](https://github.com/cncf/toc/blob/main/operations/election-schedule.md).
