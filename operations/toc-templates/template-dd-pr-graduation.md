@@ -162,6 +162,12 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Engineering Principles
 
+### Suggested
+
+N/A
+
+### Required
+
 - [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
 <!-- (TOC Evaluation goes here) --> 
