@@ -6,7 +6,7 @@
 
 ### Criteria Evaluation
 
-_Emily Fox (@TheFoxAtWork) conducted the due diligence of Kubescape who applied for Incubation Level. The project has completed the criteria that show its early maturity at Incubation level. While the project meets the expectations of an early-stage Incubating level project, it could greatly benefit from a dedicated focus on its community, documentation, and overall governance.
+Emily Fox (@TheFoxAtWork) conducted the due diligence of Kubescape who applied for Incubation Level. The project has completed the criteria that show its early maturity at Incubation level. While the project meets the expectations of an early-stage Incubating level project, it could greatly benefit from a dedicated focus on its community, documentation, and overall governance.
 
 The following actions were provided to the project that were considered blocking but since resolved:
 * Completion of the self-assessment
@@ -68,7 +68,7 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 The project provides adopters with appropriate documentation for installation and configuration of Kubescape given its maturity level, to include necessary [prerequisites](https://kubescape.io/docs/install-operator/), however it is important to note that the docs may introduce some confusion for adopters looking to get started as the [Getting Started guide](https://kubescape.io/docs/getting-started/) has different instructions than [the client](https://kubescape.io/docs/install-cli/) and [cluster install](https://kubescape.io/docs/install-operator/). 
 
-It is recommended the project convert the Getting Started page to be more tutorial-oriented. The getting started page makes several assumptions, such as access to a machine already running a cluster. In order to more efffectively allow potential adopters to try out Kubescape, providing them a tutorial they can run locally that expands on the Overview section, and potentially suggests how the output of Kubescape can be releveraged for achieving security outcomes (i.e. continuous monitoring for compliance with CIS benchmarks) with existing dashboards, tools, and other monitoring and visibility solutions (i.e. linking to the [preometheus operator instructions](https://kubescape.io/docs/operator/prometheus-integration/) or the[ VEX document generation](https://kubescape.io/docs/operator/generating-vex/#what-is-vex)).
+It is recommended the project convert the Getting Started page to be more tutorial-oriented. The getting started page makes several assumptions, such as access to a machine already running a cluster. In order to more efffectively allow potential adopters to try out Kubescape, providing them a tutorial they can run locally that expands on the Overview section, and potentially suggests how the output of Kubescape can be releveraged for achieving security outcomes (i.e. continuous monitoring for compliance with CIS benchmarks) with existing dashboards, tools, and other monitoring and visibility solutions (i.e. linking to the [prometheus operator instructions](https://kubescape.io/docs/operator/prometheus-integration/) or the[ VEX document generation](https://kubescape.io/docs/operator/generating-vex/#what-is-vex)).
 
 ## Governance and Maintainers
 
@@ -88,17 +88,17 @@ The following items are considered non-blocking for Incubation level but if unre
   * Determine appropriate scope for slack channels and actively promote that usage for those channels (within them and within the project docs/repo)
   * Define the use of “ideas” versus proposals and issues for the project, make better use of the [proposals folder structure](https://github.com/kubescape/kubescape/tree/d82e8daa25d616a8ea2ac75e6e723a29805db727/docs/proposals) and define this as part of the contributing file.
 
-The maintainers file (https://github.com/kubescape/kubescape/commit/74bfb57d3a135645f1c9ea9ab0e78d718dbf76f9) is complete with 5 individuals listed but is out of date as one maintainer currently works at Kaleido. The governance describes the expectations of maintainers and the requirements for consideration as maintainer. It also describes the conditions under which a maintainer is removed, this is limited to their activities on project work within a 12 month window. The governance also details a role known as committer and the method for proposing contributors to become committers. There is no contingency to be a committer prior to application as a maintainer.
+The [maintainers file](https://github.com/kubescape/kubescape/commit/74bfb57d3a135645f1c9ea9ab0e78d718dbf76f9) is complete with 5 individuals listed but is out of date as one maintainer currently works at Kaleido. The governance describes the expectations of maintainers and the requirements for consideration as maintainer. It also describes the conditions under which a maintainer is removed, this is limited to their activities on project work within a 12 month window. The governance also details a role known as committer and the method for proposing contributors to become committers. There is no contingency to be a committer prior to application as a maintainer.
 
 The governance details how changes are proposed and how conflicts are resolved with some duplication and additional information on roles and responsibilities of maintainers, committers, and community members. Not all expectations are shared equally among the roles, notably the community members only have a call out to abide by the code of conduct and project governance. This should be updated to ensure equal expectations.
 
-The project maintains a brief CONTRIBUTING file (https://github.com/kubescape/kubescape/commit/33577139034d2d9d248741dd83496c20a86e204b) that details two types of contributions to appropriately guide contributors on how contributions are made, but does not reference the Ideas category of discussions on the repo as a mechanism for proposing changes. The contributions file includes a link to instructions on building and testing locally which directs users to a Wiki on the project repo and additional transitive links to getting-started docs. The contributing file does not provide any information on communications channels or community meetings and should be updated to do so.
+The project maintains a brief [CONTRIBUTING file](https://github.com/kubescape/kubescape/commit/33577139034d2d9d248741dd83496c20a86e204b) that details two types of contributions to appropriately guide contributors on how contributions are made, but does not reference the Ideas category of discussions on the repo as a mechanism for proposing changes. The contributions file includes a link to instructions on building and testing locally which directs users to a Wiki on the project repo and additional transitive links to getting-started docs. The contributing file does not provide any information on communications channels or community meetings and should be updated to do so.
 
 The project does not have a contributor ladder independent of or as part of their contributing guide or governance document. It is recommended the project establish one.
 
 The governance does not detail how decision making by the maintainers occurs nor the manner by which submitted proposals warrant decisions by maintainers. The governance should be updated to incorporate these.
 
-The project does maintain a security.md file (https://github.com/kubescape/kubescape/commit/accc8a38347297ef41d72deef617af5a8995d22b)  that details how security issues are reported and responded. The project also has a security-insights file (https://github.com/kubescape/kubescape/commit/915d5d993b389c2243e0d6295c805f6a6fb5c358 ) for adopters and contributors to understand the security practices the project employs.
+The project does maintain a [security.md file](https://github.com/kubescape/kubescape/commit/accc8a38347297ef41d72deef617af5a8995d22b)  that details how security issues are reported and responded. The project also has a [security-insights file](https://github.com/kubescape/kubescape/commit/915d5d993b389c2243e0d6295c805f6a6fb5c358 ) for adopters and contributors to understand the security practices the project employs.
 
 Meetings are recorded and uploaded to Youtube. The meeting notes link was previously buried in a comment on a Kubescape discussion and has since been added to the README for the projec and linked in the Contributor guide. The meeting notes are titled "Kubescape Developer Sync", with the regular meeting attendees typically not more than two individuals who both employed by ARMO. The meeting notes document only goes back to February of 2024 with gaps in frequency.
 
@@ -146,7 +146,7 @@ The project does have several components but their leadership and governance rel
 
 - [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-Kubescape maintains its list of maintainers for the core repository at https://github.com/kubescape/kubescape/blob/master/MAINTAINERS.md. This file has been changed 6 times since its creation on 06-JAN-2022.
+Kubescape maintains its list of [maintainers for the core repository](https://github.com/kubescape/kubescape/blob/master/MAINTAINERS.md). This file has been changed 6 times since its creation on 06-JAN-2022 as of October 2024.
 
 The project has the following additional respositories with Maintainer files:
 * Helm-charts: https://github.com/kubescape/helm-charts/blob/main/MAINTAINERS.md
