@@ -9,20 +9,21 @@
 Emily Fox (@TheFoxAtWork) conducted the due diligence of Kubescape who applied for Incubation Level. The project has completed the criteria that show its early maturity at Incubation level. While the project meets the expectations of an early-stage Incubating level project, it could greatly benefit from a dedicated focus on its community, documentation, and overall governance.
 
 The following actions were provided to the project that were considered blocking but since resolved:
-* Completion of the self-assessment
+* Completion of the security self-assessment
 * Document the project's release process
 
 The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
-* Reorganization/improvided structure and interlinking of the documentation, repos, and files
+* Reorganization/improved structure and interlinking of the documentation, repos, and files
 * Increased detail and robustness of the existing community, contributing, and governance documentation that provides better focus for potential contributors
 * Provide a contributor ladder and improve the clarity around how contributors become committers and eventually maintainers. This should also include details about how and when maintainers and committers are removed from their roles
-* Engage with TAG Contributor Strategy for a comprehensive Governance Review and discussion on community engagement and expansion to increase company diveristy and variety of contributors to the project and complete the recommendations detailed in the governance and maintainer section as bullets and as full text to prior to initiating that engagement
-* Provide tutorials that walk through and explain how the project is used and removes assumptions in the Getting Started guide
-* Detail the sub-projects and repos of Kubescape to include a brief descriptor of what they are, if they are core to the project, their status, and who is responsbile for maintaining them
+* Engage with TAG Contributor Strategy for a comprehensive Governance Review and discussion on community engagement and expansion to increase company diversity and variety of contributors to the project.
+  * Complete the recommendations detailed in the governance and maintainer section (bullets and as full text) prior to initiating that engagement with TAG Contributor Strategy
+* Provide tutorials that walk through and explain how the project is used and removes implicit assumptions in the Getting Started guide, recommend reaching out to new adopters and new community members/contributors for feedback and improvements that could be made
+* Detail the sub-projects and repos of Kubescape to include a brief descriptor of what they are, if they are core to the project, their status, and who is responsbile for maintaining them, linking appropriately to the overall project governance
 
 ### Adoption Evaluation
 
-The adopter interviews reflect a project in appropriate use for the level which the project applied. Interviews with Adopters commend the project's ease of use, breadth of capability, and friendliness of its maintainers.
+The adopter interviews reflect a project in appropriate use for the level which the project applied. Interviews with Adopters commend the project's ease of use, breadth of capability, and friendliness of its maintainers as well as continually cite the comprehensiveness of its capabilities in supporting organizations looking to secure their clusters. 
 
 ### Final Assessment
 
@@ -160,7 +161,7 @@ The project has 5 maintainers listed on the main repo, 1 appears to be reasonabl
 
 The project's code and doc ownership appear to match the documented governance roles for the project, however several repos under the project are lacking maintainer and contributing files or links to the overarching files for the project.
 
-- [X]] **Document agreement that project will adopt CNCF Code of Conduct.**
+- [X] **Document agreement that project will adopt CNCF Code of Conduct.**
 
 [The project has adopted the CNCF Code of Conduct.](https://github.com/kubescape/kubescape/commit/0eb27389daeff7dc545258cfe0f488c6b8c7a2f4)
 
