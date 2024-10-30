@@ -34,6 +34,7 @@ The following recommendations were provided to the project that are non-blocking
 - To foster a more inclusive global community, TOC Reviewer recommends making a plan for global community development. This plan may include initiatives like English-language community meetings and cultivating contributors from various regions to better support adopters worldwide.
 - TOC Reviewer recommends to organizing dedicated TSC meeting, in order to keep TSC members engaged.
 - To enhance community decision-making transparency, the TOC Reviewer recommends the project provide explicit records of voting processes, e.g. manual vote counts or using [gitvote](https://github.com/cncf/gitvote).
+- TOC Reviewer recommends to add explicit descripion of platforms supported in the [RELEASE.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md)
 
 ### Adoption Evaluation
 
@@ -65,9 +66,9 @@ N/A
 - [x] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
   - **Neutral resources** - CubeFS has its own channels (community branded and managed), including:
-    - Homepage: <cubefs.io>
+    - Homepage: <https://cubefs.io>
     - Mailing list: <users@cubefs.groups.io>
-    - Slack: <cubefs.slack.com>
+    - Slack: <https://cubefs.slack.com>
     - WeChat: <https://github.com/cubefs/cubefs/issues/604>
     - Twitter: <https://x.com/cubefs_storage>
     - Community Meeting: <https://meeting.tencent.com/dm/IpNLDdT7uyEH>
@@ -135,20 +136,20 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
-  - Decision making process on leadership roles: [GOVERNANCE.md#decision-making-process](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#decision-making-process)
+  - Decision making process on leadership roles: [GOVERNANCE.md#the-tsc-decision-making-process](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#the-tsc-decision-making-process)
   - Contribution acceptance: [CONTRIBUTING.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/CONTRIBUTING.md)
   - Requests to the CNCF: [GOVERNANCE.md#cubefs-and-cncf](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#cubefs-and-cncf)
   - Changes to governance or project goals
     - Changes to governance or project goals: [GOVERNANCE.md#changes-in-project-governance](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-project-governance)
-    - Technical Steering Committee Member is responsible for formulation  roadmap: [GOVERNANCE.md#expectations-from-the-technical-steering-committeetsc](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-the-technical-steering-committeetsc)
+    - Technical Steering Committee Member is responsible for roadmap formulation: [GOVERNANCE.md#expectations-from-the-technical-steering-committeetsc](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-the-technical-steering-committeetsc)
 
 - [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
   Main CubeFS project role update according to governance doc:
+  - [Becoming a TSC member](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#becoming-a-tsc-member)
+  - [Changes in TSC](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-tsc)
   - [Becoming a Maintainer](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#becoming-a-maintainer)
   - [Changes in Maintainer membership](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-maintainership)
-  - [Expectations From the Technical Steering Committee](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-the-technical-steering-committeetsc)
-  - [Changes in TSC](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-tsc)
   - [Becoming a committer](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#becoming-a-committer)
   - [Changes in committer membership](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-commitership)
 
@@ -161,7 +162,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
-  CubeFS has 14 top level maintainers from: JD.com, BEIKE, OPPO, Bytedance, LinkedIn, XFusion. Ref: <https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/MAINTAINERS.md>
+  CubeFS currenlty has 14 top level maintainers from: JD.com, BEIKE, OPPO, Bytedance, LinkedIn, XFusion. Ref: <https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/MAINTAINERS.md>
 
   Activities of maintainers can be found at: [chubaofs.devstats.cncf.io](https://chubaofs.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Last%20year&var-metric=contributions&var-repogroup_name=All&var-country_name=All&var-companies=All)
 
@@ -188,7 +189,6 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
   CubeFS uses a github CODEOWNERS mechanism to manage the code access between different community roles. Ref: <https://github.com/cubefs/cubefs/tree/master/.github/CODEOWNERS>
-
 
 - [x] **Document agreement that project will adopt CNCF Code of Conduct.**
 
@@ -222,10 +222,12 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Contributor ladder with multiple roles for contributors.**
 
-  Cubefs have multiple roles for contributors
+  Cubefs has the following roles for contributors that are related to code and non-code contributions:
   - Technical Steering committee member: [GOVERNANCE.md#expectations-from-the-technical-steering-committeetsc](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-the-technical-steering-committeetsc)
   - Maintainer: [GOVERNANCE.md#expectations-from-maintainers](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-maintainers)
   - Commiter: [GOVERNANCE.md#expectations-from-committers](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-committers)
+  - SIG member: [GOVERNANCE.md#expectations-from-sigs-member](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-sigs-member)
+  - Product Security Committee (PSC): [security-release-process.md#product-security-committee-psc](https://github.com/cubefs/cubefs/blob/master/security/security-release-process.md#product-security-committee-psc)
 
 ### Required
 
@@ -260,16 +262,11 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   - Contributor activities measured by devstats: [chubaofs.devstats.cncf.io](https://chubaofs.devstats.cncf.io/d/66/developer-activity-counts-by-companies?orgId=1&var-period_name=Since%20joining%20CNCF&var-metric=contributions&var-repogroup_name=All&var-country_name=All&var-companies=All)  
   - Contributor activity measured by GitHub contributor dashboard: [The contributions of contributors](https://github.com/cubefs/cubefs/graphs/contributors)
-  - Example of recruiting new committers according to contributor's contributions:
-    - [shuqiang-zheng](https://github.com/shuqiang-zheng) :
-    - [Contribution pr record](https://github.com/cubefs/cubefs/pulls?q=is%3Apr+is%3Amerged+author%3Ashuqiang-zheng)
-    - [PR link](https://github.com/cubefs/cubefs/pull/3384) to add to Committers list
-    - [zhangchuanqing](https://github.com/zhangchuanqing5658) : 
-    - [Contribution main branch](https://github.com/cubefs/cubefs/tree/develop-v3.5.0-metanode_rocksdb)
-    - [PR link](https://github.com/cubefs/cubefs/pull/3386) to add to Committers list
+  - Examples of recruiting new committers according to contributor's contributions:
+    - Add [shuqiang-zheng](https://github.com/shuqiang-zheng) to Committers list: <https://github.com/cubefs/cubefs/pull/3384>
+    - Add [zhangchuanqing](https://github.com/zhangchuanqing5658) to Committers list: <https://github.com/cubefs/cubefs/pull/3386>
 
   - Recruiting new contributors by participating in developer events
-    - [Summer of Open Source](https://www.bilibili.com/video/BV1WV4y1Z7nw/)
     - [Developer activity 2024](https://github.com/cubefs/cubefs/issues/3105)
     - [Developer activity 2023](https://github.com/cubefs/cubefs/issues/1920)
 
@@ -324,23 +321,29 @@ N/A
 
 - [x] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:**
 
-  - [x] Release expectations (scheduled or based on feature implementation)
+  - [x] **Release expectations (scheduled or based on feature implementation)**
+
     CubeFS documents their release frequency as needed (beta and official releases), which can be regarded as based on feature implementation.
-  - [x] Tagging as stable, unstable, and security related releases
+  - [x] **Tagging as stable, unstable, and security related releases**
+
     CubeFS uses beta to mark their unstable releases. Ref: [RELEASE.md#types-of-releases](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md#types-of-releases).
     Security release process is documented at: [security-release-process.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/security/security-release-process.md)
-  - [x] Information on branch and tag strategies
+
+  - [x] **Information on branch and tag strategies**
 
     > | Type      | Versioning     | Branch               | Frequency                    |
     > | ----      | ----------     | ---------            | ---------                    |
     > | beta      | vX.Y.Z-beta    | release-X.Y.Z-Beta   | as needed (at branch time)   |
     > | official  | vX.Y.Z         | release-X.Y.Z        | as needed (post beta)        |
 
-  - [x] Branch and platform support and length of support
+  - [x] **Branch and platform support and length of support**
+
     No specific description of platform supported, according to the [artifacts-included-in-the-release](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md#artifacts-included-in-the-release), currently only amd64 binaries are maintained by the community.
     Length of support clearly documented, support latest 3 minor releases.
-  - [x] Artifacts included in the release.
-  - Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.
+
+  - [x] **Artifacts included in the release.**
+  - **Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.**
+
     Each release note specifies the artifacts included in the release. Example: [CubeFS v3.3.2 release notes](https://github.com/cubefs/cubefs/releases/tag/v3.3.2)
 
 - [x] **History of regular, quality releases.**
@@ -480,7 +483,7 @@ September, 2024
 
 Note: Adopter3 preferred to remain anonymous. The interview details are kept in a private file for CNCF TOC review.
 
-##### Adopter4 - Online Retailing
+##### Adopter4 - JD.com / Online Retailing
 
 JD.com has been using CubeFS since 2018 as the foundation for its entire storage infrastructure. This adoption supports a diverse range of unstructured storage needs across the company's retail operations, including middleware, online and offline business, big data, and AI training, etc. In production for more than 6 years, they have multiple clusters, with the largest one consisting of over 4,000 servers and a total storage capacity exceeding 300TB, serving over 1 million clients concurrently. They use the 2020 version from the community and manually backport bug fixes.
 
@@ -493,7 +496,6 @@ From the adopter's perspective, the CubeFS community has rational governance and
 JD.com has a positive view of the CubeFS community, with rational governance and responsive maintainers. JD.com participates by sharing internal solutions, having maintainers review PRs, and interacting via GitHub and WeChat groups. They will continue to actively engage, contribute solutions, propose features, seeing the relationship as mutually beneficial.
 
 Overall, CubeFS has strengths such as handling extreme scenarios and meeting enterprise requirements. JD.com suggests that the project could benefit from more community events and wider adoption promotion to reach its full potential.
-
 
 October, 2024
 
