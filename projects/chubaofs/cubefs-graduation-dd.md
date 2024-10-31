@@ -30,9 +30,11 @@ The following recommendations were provided to the project that are non-blocking
 - TOC Reviewer recommends finalizing the ongoing Governance Review by the TAG Contributor Strategy to achieve a more comprehensive community governance.
 - TOC Reviewer recommends to extend its current management rules to cover all repos under the GitHub organization, including non-subproject repos, and archive any repos that are no longer being maintained.
 - Make full use of `cubefs-community` repo, as the canonical location for community governance-related documents.
-- To better support project adopters, TOC Reviewer suggests keeping deep engagement with them and improving the project's extensibility and code history management. This will facilitate easier tracking of community updates.
+- TOC Reviewer recommends improving the project's extensibility and adding more pluggable framework designs. This would facilitate easier customization and easier decoupling of downstream enhancements by adopters.
+- TOC Reviewer recommends improving feature lifecycle management, including feature maturity, configuration, commit history, and release notes. This would make it easier for adopters to track community updates and backport patches as needed.
+- TOC Reviewer recommends to establish Adopters WG or other similar group, as a dedicated space for adopters to collaborate on shared features and functionality to continue improving and enhancing the project.
 - To foster a more inclusive global community, TOC Reviewer recommends making a plan for global community development. This plan may include initiatives like English-language community meetings and cultivating contributors from various regions to better support adopters worldwide.
-- TOC Reviewer recommends to organizing dedicated TSC meeting, in order to keep TSC members engaged.
+- TOC Reviewer recommends organizing dedicated TSC meeting, in order to keep TSC members engaged.
 - To enhance community decision-making transparency, the TOC Reviewer recommends the project provide explicit records of voting processes, e.g. manual vote counts or using [gitvote](https://github.com/cncf/gitvote).
 - TOC Reviewer recommends to add explicit descripion of platforms supported in the [RELEASE.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md)
 
