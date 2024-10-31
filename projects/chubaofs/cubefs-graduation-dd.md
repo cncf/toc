@@ -23,7 +23,7 @@ The following actions were provided to the project that were considered blocking
 - Removed the Project Lead role, previously held by one individual and considered conflicting with community neutrality. And instead, established a Technical Steering Committee (TSC) with a defined number of seats and neutrality requirements.
 - Updated the governance documents to clarify the management rules for subprojects.
 - Added a [RELEASE.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md) file, including updating the release process to reflect the latest engineering principles criteria.
-- Updated the governance documents to inlcude roadmap changing process.
+- Updated the governance documents to include roadmap changing process.
 
 The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
 
