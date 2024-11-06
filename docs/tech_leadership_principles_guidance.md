@@ -18,9 +18,11 @@ It is in this spirit of our operating principles that the TOC expects all projec
 
 ## Escalating to the TOC
 
-In the event that the project or group cannot resolve this conflict with the resources available to them, the project should escalate to the TOC through the TOC Chair, Vice Chair, or CNCF Staff using the email alias below:
+In the event that the project or group cannot resolve this conflict with the resources available to them, the project should escalate to the TOC through the private mailing list where the TOC Chair, Vice Chair, or CNCF Staff who will triage.
 
-$TLPTOCEMAIL _todo_
+To escalate to the TOC, please email: cncf-private-toc@lists.cncf.io 
+
+If the escalation concerns a current TOC member, please contact the TOC Chair, Vice Chair, and/or CNCF Staff directly.
 
 Once escalated, two TOC members will be assigned to guide and mentor the project or group and its leadership on methods and options to arrive at an agreeable resolution. Resolutions are crafted to allow for the best outcome for the project or group and its future. The TOC may suggest changes among the leadership roles, responsibilities, and project governance to support that outcome.
 
