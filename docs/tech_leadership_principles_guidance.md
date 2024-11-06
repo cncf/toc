@@ -4,7 +4,7 @@ This document serves as a guide for occasions where the Code of Conduct Committe
 
 ## Background
 
-The technical leadership principles were developed during the creation of the CNCF Code of Conduct Committee to establish the standard of excellence among leaders in our Groups, Committees, and Projects. They were subsequently approved by the TOC for inclusion in the CNCF TOC Principles.
+The **[technical leadership principles](https://github.com/cncf/toc/blob/main/PRINCIPLES.md#technical-leadership-principles)** were developed during the creation of the CNCF Code of Conduct Committee to establish the standard of excellence among leaders in our Groups, Committees, and Projects. They were subsequently approved by the TOC for inclusion in the CNCF TOC Principles.
 
 The harm and erosion of trust that can occur as a lack of embodiment of these principles detrimentally degrades our projects, groups, and communities. 
 
@@ -12,7 +12,7 @@ Where Code of Conduct violations impact one or more individuals directly, lack o
 
 ## Expectations for projects and groups
 
-As with all things, Projects and our groups are Self-governing towards the governance outcomes defined and expected by the TOC.
+As with all things, [Projects and our groups are Self-governing](https://github.com/cncf/toc/blob/main/PRINCIPLES.md#projects-are-self-governing) towards the governance outcomes defined and expected by the TOC.
 
 It is in this spirit of our operating principles that the TOC expects all projects, groups, and community bodies to self-enforce adherence to the Technical Leadership Principles. We further expect each project, group, and body to respectfully and reasonably address any behavior by an individual that is not in alignment with the Technical Leadership Principles prior to escalating to the TOC for resolution. Among the TOC, escalation is to the TOC Chair and Vice Chair. 
 
