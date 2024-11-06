@@ -37,6 +37,9 @@ The following recommendations were provided to the project that are non-blocking
 - TOC Reviewer recommends organizing dedicated TSC meeting, in order to keep TSC members engaged.
 - To enhance community decision-making transparency, the TOC Reviewer recommends the project provide explicit records of voting processes, e.g. manual vote counts or using [gitvote](https://github.com/cncf/gitvote).
 - TOC Reviewer recommends to add explicit descripion of platforms supported in the [RELEASE.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md)
+- TOC Reviewer recommends to cross reference the [roadmap governance(https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#roadmap)] and [change process](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-project-roadmap) on the [ROADMAP.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/ROADMAP.md) to make it easier to find for potential contributors.
+- And for the [roadmap change process](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-project-roadmap), it's recommneded to include collecting roadmap proposals through public channels, and use more community fashion phrasing, which would encourage contributors to join the discussion and better understand whhere the project is heading to.
+- TOC Reviewer recommends to update security policy to include an embargo and private disclosure period before doing public disclosure for security vulnerbilities. And tagging a release clearly as "security-fixes-only" will help users to prioritize an upgrade.
 
 ### Adoption Evaluation
 
@@ -329,7 +332,8 @@ N/A
   - [x] **Tagging as stable, unstable, and security related releases**
 
     CubeFS uses beta to mark their unstable releases. Ref: [RELEASE.md#types-of-releases](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md#types-of-releases).
-    Security release process is documented at: [security-release-process.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/security/security-release-process.md)
+
+    Security release process is documented at: [security-release-process.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/security/security-release-process.md). CubeFS doesn't have explict tagging rule for security releases. Though this is not required, tagging a release with "security-fixes-only" alike markers would be helpful for users to prioritize upgrades.
 
   - [x] **Information on branch and tag strategies**
 
