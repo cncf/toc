@@ -7,13 +7,13 @@
 
 ## Definition
 
-Cloud native practices empower organizations to develop, build, and deploy workloads in computing environments (public, private, hybrid cloud) to meet their organizational needs at scale in a programmatic and repeatable manner. It **is characterized by loosely coupled systems that interoperate in a manner that is secure, resilient, manageable, sustainable, and observable.**
+Cloud-native practices empower organizations to develop, build, and deploy workloads in computing environments (public, private, hybrid cloud) to meet their organizational needs at scale in a programmatic and repeatable manner. It **is characterized by loosely coupled systems that interoperate in a manner that is secure, resilient, manageable, sustainable, and observable.**
 
-Cloud native technologies and architectures typically consist of some combination  of containers, service meshes, multi-tenancy, microservices, immutable infrastructure, serverless, and declarative APIs — this list is non-exhaustive.
+Cloud-native technologies and architectures typically consist of some combination  of containers, service meshes, multi-tenancy, microservices, immutable infrastructure, serverless, and declarative APIs — this list is non-exhaustive.
 
 ## Benefits of Cloud Native
 
-Combined with robust automation, cloud native practices allow organizations to make high-impact changes frequently, predictably, with minimal toil and clear separation of concerns.
+Combined with robust automation, cloud-native practices allow organizations to make high-impact changes frequently, predictably, with minimal toil and clear separation of concerns.
 
 ## Focus of CNCF
 
@@ -93,7 +93,7 @@ La *Cloud Native Computing Foundation* cherche à favoriser l'adoption de ce par
 
 ## Deutsch:
 
-Cloud native Technologien ermöglichen es Unternehmen, skalierbare Anwendungen in modernen, dynamischen Umgebungen zu implementieren und zu betreiben. Dies können öffentliche, private und Hybrid-Clouds sein. Best Practices, wie Container, Service-Meshs, Microservices, immutable Infrastruktur und deklarative APIs, unterstützen diesen Ansatz.
+Cloud-native Technologien ermöglichen es Unternehmen, skalierbare Anwendungen in modernen, dynamischen Umgebungen zu implementieren und zu betreiben. Dies können öffentliche, private und Hybrid-Clouds sein. Best Practices, wie Container, Service-Meshs, Microservices, immutable Infrastruktur und deklarative APIs, unterstützen diesen Ansatz.
 
 Die zugrundeliegenden Techniken ermöglichen die Umsetzung von entkoppelten Systemen, die belastbar, handhabbar und beobachtbar sind. Kombiniert mit einer robusten Automatisierung können Softwareentwickler mit geringem Aufwand flexibel und schnell auf Änderungen reagieren.
 
@@ -110,7 +110,7 @@ Intencją **Cloud Native Computing Foundation** jest przyczynienie się do adopc
 
 ## Português Brasileiro:
 
-Tecnologias *cloud native* empoderam organizações a construir e executar aplicações escaláveis em ambientes modernos e dinâmicos, tais como nuvens públicas, privadas e híbridas. Contêineres, *service meshes*, microsserviços, infraestrutura imutável e APIs declarativas exemplificam essa abordagem.
+Tecnologias *cloud-native* empoderam organizações a construir e executar aplicações escaláveis em ambientes modernos e dinâmicos, tais como nuvens públicas, privadas e híbridas. Contêineres, *service meshes*, microsserviços, infraestrutura imutável e APIs declarativas exemplificam essa abordagem.
 
 Essas técnicas permitem criar sistemas de baixo acoplamento que são resilientes, gerenciáveis e observáveis. Combinadas com automação robusta, elas permitem aos engenheiros fazer mudanças de alto impacto de forma frequente e previsível, com o mínimo de esforço.
 
@@ -127,7 +127,7 @@ A Cloud Native Computing Foundation procura impulsionar a adoção deste paradig
 
 ## Русский:
 
-Нативные облачные (Cloud native) технологии позволяют организациям создавать и запускать масштабируемые приложения в современных динамических средах, таких как публичные, частные и гибридные облака. Контейнеры, сервисные сита (service meshes), микросервисы, неизменяемая инфраструктура и декларативные API являются примером такого подхода.
+Нативные облачные (Cloud-native) технологии позволяют организациям создавать и запускать масштабируемые приложения в современных динамических средах, таких как публичные, частные и гибридные облака. Контейнеры, сервисные сита (service meshes), микросервисы, неизменяемая инфраструктура и декларативные API являются примером такого подхода.
 
 Эти техники позволяют слабосвязанным системам быть устойчивыми, управляемыми и под постоянным контролем. В сочетании с надежной автоматизацией они позволяют инженерам часто и предсказуемо вносить значительные изменения с минимальными усилиями.
 
@@ -135,7 +135,7 @@ Cloud Native Computing Foundation ставит целью адаптироват
 
 ## Italiano:
 
-Le tecnologie **cloud native** permettono alle organizzazioni di costruire ed eseguire applicazioni scalabili in ambienti moderni e dinamici come cloud pubblici, privati e ibridi. I container, i micro-servizi, le infrastrutture immutabili e le API dichiarative esemplificano questo approccio.
+Le tecnologie **cloud-native** permettono alle organizzazioni di costruire ed eseguire applicazioni scalabili in ambienti moderni e dinamici come cloud pubblici, privati e ibridi. I container, i micro-servizi, le infrastrutture immutabili e le API dichiarative esemplificano questo approccio.
 
 Queste tecniche permettono che sistemi debolmente accoppiati siano resilienti, gestibili e osservabili. Combinati con un sistema robusto di automazione, permettono agli ingegneri di eseguire frequentemente e con minimo sforzo i cambi ad alto impatto
 
@@ -143,7 +143,7 @@ La **Cloud Native Computing Foundation** cerca di favorire l'adozione di questo 
 
 ## Bahasa Indonesia:
 
-Teknologi *cloud native* memperlengkapi organisasi-organisasi untuk membangun dan menjalankan aplikasi-aplikasi yang dapat diskalakan di dalam lingkungan yang modern dan dinamis seperti
+Teknologi *cloud-native* memperlengkapi organisasi-organisasi untuk membangun dan menjalankan aplikasi-aplikasi yang dapat diskalakan di dalam lingkungan yang modern dan dinamis seperti
 layanan *cloud* publik, privat, maupun hibrida. Kontainer, jaringan layanan (*service mesh*), layanan mikro (*microservice*), infrastruktur
 yang tidak dapat diubah (*immutable*), dan API-API yang deklaratif merupakan contoh-contoh pendekatan ini.
 
@@ -198,7 +198,7 @@ A **Cloud Native Computing Foundation** nyílt forráskódú és szolgáltató-s
 
 ## Nederlands:
 
-Cloud native technologieën stellen organisaties in staat om schaalbare applicaties te bouwen en te draaien in moderne, dynamische
+Cloud-native technologieën stellen organisaties in staat om schaalbare applicaties te bouwen en te draaien in moderne, dynamische
 omgevingen zoals publieke, private en hybride cloud. Containers, service meshes, microservices, immutable infrastructuur en declaratieve APIs illusteren deze aanpak.
 
 Deze technieken maken los-gekoppelde systemen mogelijk, die veerkrachtig, beheersbaar en observeerbaar zijn. Gecombineerd met robuuste automatisering stellen ze software ontwikkelaars in staat om met grote regelmaat veranderingen met hoge impact aan te brengen, op een voorspelbare wijze en met minimale inspanning.
