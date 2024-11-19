@@ -14,32 +14,28 @@ Expectations conveyance with interviewers: “I’ll record raw notes here, then
 
 1. How long has your organization used the project?
 
-
 2. What were the main motivations to adopt the project and which key features do you use today?
 
+3. Compared with other products and projects in this space (proprietary and open) what drew you to the project?
 
-3. What is the current level of usage (pre-production, production) and scale?
+4. What is the current level of usage (pre-production, production) and scale?
 
+5. What version of the project is currently in use and what is your update cadence with the project?
 
-4. What is your update cadence with the project?
+6. Can you walk me through what your experience was in either adopting it outright or integrating it with your existing services and applications? What challenges did you experience with the project?
 
+7. Did you find the information in the repo or the project docs valuable to your implementation? If so, where did you find the information and what specifically was useful?
 
-5. Can you walk me through what your experience was in either adopting it outright or integrating it with your existing services and applications? What challenges did you experience with the project?
-
-
-6. Did you find the information in the repo or the project docs valuable to your implementation? If so, where did you find the information and what specifically was useful?
-
-
-7. Did you need to engage with the community members or maintainers? If so what was the context of the engagement, which communication channels did you use and did it reach an acceptable outcome?
-
-
-8. Compared with other products in this space (proprietary and open) what drew you to the project?
-
+8. Did you need to engage with the community members or maintainers? If so what was the context of the engagement, which communication channels did you use and did it reach an acceptable outcome?
 
 9. Has your implementation of the project provided measurable value? Such as reducing manual activities, faster integrations, supported federation/multi-cloud, ease of use, cost savings, etc.
 
+10. If the project were to be archived now or in the future, what level of difficulty would your organization experience to remove it from your environments? If that were to happen, would you fork and maintain the project to keep functionality, step into a maintainership role within the project, or something else?
 
-10. Is there something you feel that holds the project back from reaching its ultimate potential?
+11. Is there something you feel that holds the project back from reaching its ultimate potential?
 
+12. In your opinion, what could the project improve?
 
-11. Do you have any future plans regarding the project? More involvement, feature requests, expansion, etc.
+13. What are the overall strengths of the project?
+
+14. Do you have any future plans regarding the project? More involvement, feature requests, expansion, etc.
