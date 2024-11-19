@@ -12,7 +12,7 @@ Expectations conveyance with interviewers: “I’ll record raw notes here, then
 
 ## Questions
 
-git1. How long has your organization used the project?
+1. How long has your organization used the project?
 
 
 2. What were the main motivations to adopt the project and which key features do you use today?
