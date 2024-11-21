@@ -11,13 +11,15 @@ Roles within the TAG outlining expectations and responsibilities are defined in 
 
 ## Process of nominations
 
-Leadership roles are open to all interested participants within the community. Depending on the needs of the community, as determined by the current TAG leadership team (Chairs and TLs), nominations may come from working group co-chairs, TAG co-chairs and/or tech leads and/or other community members. Each TAG is expected to define this for themselves.
+Leadership roles are open to all interested participants within the community. Depending on the needs of the community, as determined by the current TAG leadership team (Chairs and TLs), nominations may come from working group co-chairs, TAG co-chairs and/or tech leads and/or other community members. Each leadership role is on a 2 year term once appointed.
 
-The `<TAG NAME>` does not have a current limit on the amount of leadership roles. <!-- ! UPDATE IF DISCUSSED OTHERWISE ! -->
+Elections should be conducted by CNCF staff. TAG leadership Election should start 1-2 months after the TOC election finishes each year, pending CNCF staff’s availability to run the elections.
 
-Final nominations will adhere to the [CNCF's TOC described process](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#elections) as well as to the leadership nomination requirements described below.
+For the immediate election in 2025, roughly 50% of the roles should be made available for election where existing leaders can choose to rerun, starting with the longest serving leaders. The rest of the leads who are not up for election should plan to be up for elections in 2026.
 
-Any individual who is a member of the `<TAG NAME>`, its working groups, or otherwise considered an active participant of the group may nominate another individual. <!-- Update if your TAG has a more restricted pool of nominators -->
+co-chairs can be nominated by any existing co-chairs or TOC member. TL roles should be nominated by any existing co-chairs or TLs. WG leads can be nominated by any TAG leaders. TAGs may define their own process by which they field nominations for these roles, provided they adhere to CNCF and TOC expectations of openness, transparency, and accountability.
+
+Co-chair elections should be voted on by the TOC. Other TAG leads elections should be voted by TAG co-chairs, TLs, WG leads or other active contributors of the TAG.
 
 The process of endorsing and selecting individuals will consider the following factors to ensure both the need for proper community representation and the necessary technical expertise: <!-- If the TAG has any additional items, such as leading a minimum number of projects, or facilitating a number meetings, they should be added to this list under "Body of work" -->
 
@@ -30,15 +32,25 @@ The process of endorsing and selecting individuals will consider the following f
 
 In case there are no individuals expressing interest in taking up leadership positions, an evaluation process for the TAG / working group or project archival may be initiated, as [outlined by the TOC](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#retirement).
 
-### Community timeline
+### Leadership election timeline
 
-Community nominations will run for at least 1 month, with a maximum up to 2 months.
+* **TAG Chair**:
+  * Start: CNCF staff initiates election 1-2 months after the TOC election.
+  * ominations: Open for 1-2 months. Co-chairs or TOC members can nominate.
+  * Vote: TOC votes.
+* **TAG TL**:
+  * Start: TAG co-chairs initiate election after the end of the current term.
+  * Nominations: Open for 1-2 months. Co-chairs or TLs can nominate.
+  * Vote: TAG co-chairs, TLs, WG leads, or other active members of the TAG vote.
+* **Working Group Chairs and Leads (WG Chairs, WG TLs)**:
+  * Start: TAG co-chairs initiate election after the end of the current term.
+  * Nominations: Open for 1-2 months. TAG co-chairs, TLs, WG leads or other active contributors to the TAG can nominate.
+  * Vote: TAG co-chairs, TLs, WG leads, or other active members of the TAG vote.
 
-* For TAG Chair nominations, the TOC will take a vote as [described by the TOC](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#elections).
-* For TAG TL, TAG Chairs will vote and propose the nomination to the TOC. The TOC takes the final vote.
-* For Working Group and Project Chairs, the TAG Chairs and Leads will take a vote.
-
-Upon close of nominations, a decision should be made within the next month.
+* **Subsequent Steps for Any Role**:
+  * Announcement: Communicate the result of the election to the community.
+  * Update Resources: Update TAG meeting notes, README files, websites, [repository access](https://github.com/cncf/people/blob/main/config.yaml), and reach out to CNCF staff to share email, Google Drive, and YouTube access if needed.
+  * Emeritus: Add the outgoing community leader to the emeritus list and update documents and resources accordingly.
 
 ### Submitting a nomination
 
@@ -48,6 +60,11 @@ Nominations are to be submitted to [TAG Co-Chair's email alias](mailto:cncf-tag-
 * CC the nominee
 * Justification
 * Nominee Biography
+
+### Vacancies
+
+In the event that a TAG lead vacates their seat during their term, a by-election shall be conducted to fill the position for the remainder of the term in accordance with the regular election procedure.
+The TAG co-chairs may initiate a vote of no confidence in a TAG leader when the TAG leader has not performed any TAG leader tasks for 6 months. The leader shall be removed if the motion is approved by at least sixty percent (60%) of the TAG leaders along with the approval support from all of the TOC Liaisons for the TAG.
 
 ## Nomination requirements
 
@@ -77,11 +94,3 @@ To ensure nominations are thoughtful and supported, in addition to the above req
 * TAG Community involvement
 * Leadership and collaboration skills
 * Willingness to learn and expand existing technical knowledge
-
-## Announcing nomination results
-
-The TAG leadership will release aggregate information about the nominees at the end of the nomination process. Aggregate information will not include who nominated someone.
-
-## Next Steps
-
-If the role under nomination requires TOC approval or vote, the TAG Co-chairs are responsible for coordinating and executing that in accordance with the TOC's processes (defined previously).
