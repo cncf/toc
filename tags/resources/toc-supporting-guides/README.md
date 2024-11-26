@@ -5,6 +5,6 @@ This folder contains guides on how TAGs can support the TOC.
 
 **Guides**:
 * [Project Reviews and Engagement](project-reviews.md)
-    * [Domain Technical Review template](tag-domain-technical-review.md) 
+    * [Domain Technical Review template](tag-domain-technical-review-template.md) 
     * [General Technical Review questions](general-technical-questions.md)
 * [Technical Paper process](tech-papers.md)
