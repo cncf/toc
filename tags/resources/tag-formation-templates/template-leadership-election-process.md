@@ -84,7 +84,6 @@ If a given nominee does not meet all the requirements, the TAG leadership will s
 
 **Nominations must**:
 
-* Come from someone other than the nominee
 * Have justification from the nominator regarding the nominee's capabilities
 
 ### Justification for nominees
