@@ -36,7 +36,7 @@ In case there are no individuals expressing interest in taking up leadership pos
 
 * **TAG Chair**:
   * Start: CNCF staff initiates election 1-2 months after the TOC election.
-  * ominations: Open for 1-2 months. Co-chairs or TOC members can nominate.
+  * nominations: Open for 1-2 months. Co-chairs or TOC members can nominate.
   * Vote: TOC votes.
 * **TAG TL**:
   * Start: TAG co-chairs initiate election after the end of the current term.
