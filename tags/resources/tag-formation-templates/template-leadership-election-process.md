@@ -17,7 +17,7 @@ Elections should be conducted by CNCF staff. TAG leadership Election should star
 
 For the immediate election in 2025, roughly 50% of the roles should be made available for election where existing leaders can choose to rerun, starting with the longest serving leaders. The rest of the leads who are not up for election should plan to be up for elections in 2026.
 
-co-chairs can be nominated by any existing co-chairs or TOC member. TL roles should be nominated by any existing co-chairs or TLs. WG leads can be nominated by any TAG leaders. TAGs may define their own process by which they field nominations for these roles, provided they adhere to CNCF and TOC expectations of openness, transparency, and accountability.
+Co-chairs can be nominated by any existing co-chairs or TOC member. TL roles should be nominated by any existing co-chairs or TLs. WG leads can be nominated by any TAG leaders. TAGs may define their own process by which they field nominations for these roles, provided they adhere to CNCF and TOC expectations of openness, transparency, and accountability.
 
 Co-chair elections should be voted on by the TOC. Other TAG leads elections should be voted by TAG co-chairs, TLs, WG leads or other active contributors of the TAG.
 
