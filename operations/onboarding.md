@@ -36,12 +36,33 @@ TOC members rotate meeting facilitation as often as we can to ensure the TOC Cha
 
 In the course of performing our duties, TOC members are expected to:
 
+* Lead or participate in at least 1 Project Due Diligence that is brought to TOC internal review status
+    * Some Due Diligence efforts may result in the TOC internal review stating the project is not ready after adopter interviews, these are still considered as meeting this expectation. Lightweight reviews/triage would not.
 * Be available to field questions and concerns from community members and redirect as needed
     *  While every TOC member is expected to do this, there may be occasions or instances where there is a lot of back and forth and the Chair or Vice Chair will coordinate and provide the response as the central contact
 * Foster discussion - ask questions, even obvious ones to move the conversation forward or to closure
 * Bring project and group conflicts that escalate to the TOC level to closure, either through elevating awareness within the TOC for discussions and consensus, direct resolution while keeping the TOC informed, or escalation to the Chair and Vice Chair as appropriate
 * Participate in meetings, presentations, etc. as needed at KCCN or other events
 
+#### Competencies
+
+In addition to the expectations defined Composition 6(b)ii and Criteria 6(d) for nomination in the CNCF Charter, TOC members should be prepared to actively employ and mature the following competencies:
+
+* Leadership (ex. transformational, democratic, servant, and visionary are leadership styles that may be used depending on the situation)
+* Deep understanding of cloud native technologies and viability for use
+* Effective communication
+* Time and task management
+* Accountable autonomy
+* Context conveyance
+* Critical thinking and advanced problem-solving (ex. causal analysis, troubleshooting, logical reasoning)
+* Conflict resolution
+* Improvement-oriented mindset
+* Data-driven decision making 
+* Open-mindedness
+* Market awareness (technical and economic trends and impacts)
+* Software engineering methodologies and concepts
+* Systems and strategic thinking
+* Active listening
 
 ### Events and additional meetings
 
@@ -74,7 +95,16 @@ In addition to these meetings, TOC members are expected to meet synchronously or
 
 ### Inactivity of a TOC member
 
-If, for any reason, a TOC member is continuously absent without notice, see 6(f)iii, their voting privileges are *suspended* until such time as their consecutive attendance at two meetings. Due to the nature of our work, the inability of a TOC member to cast an *informed* vote (as occurs by meeting attendance *and* involvement in regular engagement as detailed above) penalizes the entire TOC's ability to regularly achieve quorum.  If after the 4th absence the TOC is not notified, the TOC Chair with support of CNCF Staff will make an attempt to address the absence with the TOC member.  If the Chair and Staff are unsuccessful, the Chair will bring the issue of absence to TOC vote in accordance with z6(f)ii at the next private meeting and provide notice to the Governing Board of the outcome. 
+If, for any reason, a TOC member is continuously absent without notice, see 6(f)iii, their voting privileges are *suspended* until such time as their consecutive attendance at two meetings. Due to the nature of our work, the inability of a TOC member to cast an *informed* vote (as occurs by meeting attendance *and* involvement in regular engagement as detailed above) penalizes the entire TOC's ability to regularly achieve quorum.  If after the 4th absence the TOC is not notified, the TOC Chair with support of CNCF Staff will make an attempt to address the absence with the TOC member. 
+
+If a TOC member is unable to fulfill the committed work and is unable to support due diligence to TOC internal review, that TOC member will be considered inactive, and the TOC Chair, with support of CNCF Staff will attempt to address the lack of progress with the TOC member.
+
+##### Removal
+
+If the Chair and Staff are unsuccessful, the Chair will bring the issue of absence or lack of progress to TOC vote in accordance with 6(f)ii at the next private meeting and provide notice to the Governing Board of the outcome.
+
+
+#### Stepping down
 
 If, for whatever reason, a TOC member feels they cannot sustain the commitment required of the role, they may proactively notify the TOC Chair or CNCF Staff of their decision to step down.  While uncommon, this is entirely reasonable to occur, particularly as lives and careers grow and shift. We thank each TOC member for their time of service to the community, however long or brief it may be.
 
