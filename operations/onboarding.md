@@ -36,7 +36,7 @@ TOC members rotate meeting facilitation as often as we can to ensure the TOC Cha
 
 In the course of performing our duties, TOC members are expected to:
 
-* Lead or participate in at least 1 Project Due Diligence that is brought to TOC internal review status
+* Lead or participate in at least 1 Project Due Diligence per year that is brought to TOC internal review status 
     * Some Due Diligence efforts may result in the TOC internal review stating the project is not ready after adopter interviews, these are still considered as meeting this expectation. Lightweight reviews/triage would not.
 * Be available to field questions and concerns from community members and redirect as needed
     *  While every TOC member is expected to do this, there may be occasions or instances where there is a lot of back and forth and the Chair or Vice Chair will coordinate and provide the response as the central contact
