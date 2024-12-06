@@ -9,6 +9,7 @@ Also reviewed and contributed to by:
 
 *   Liz Rice
 *   Brian Grant
+*   Ricardo Aravena
 
 ## Introduction
 
@@ -70,9 +71,7 @@ Specific TAG deliverables are as per the above, and the [general TAG responsibil
 set out by the CNCF TOC](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md#responsibilities--empowerment-of-tags).
 
 
-## Current CNCF Projects considered to be within the Scope of this SIG
-
-
+## Current CNCF Projects considered to be within the Scope of this TAG
 
 1. Kubernetes
 2. Containerd
@@ -134,12 +133,15 @@ provided by the TOC unless otherwise stated here.
 
 **TOC Liaisons:**  [Richardo Rocha](https://twitter.com/ahcorporto), [Alena Prokharchyk](https://github.com/alena1108), [Davanum Srinivas](https://twitter.com/dims)
 
-**SIG Chairs:** 
-  [Quinton Hoole](https://github.com/quinton-hoole),
+**TAG Chairs:** 
+  [Danielle Tal](https://github.com/miao0miao),
   [Ricardo Aravena](https://github.com/raravena80),
-  [Diane Feddema](https://github.com/dfeddema)
+  [Stephen Rust](https://github.com/srust)
 
-**Tech Leads:** [Klaus Ma](http://www.klaus1982.cn/about/), 2 TBD
+**Tech Leads:** 
+  [Rajas Kakodkar](https://github.com/rajaskakodkar)
+  [Klaus Ma](http://www.klaus1982.cn/about/)
+  [Alexander Kanevskiy](https://github.com/kad)
 
 **Other named roles: **None at present; will be identified and staffed as needed.
 
