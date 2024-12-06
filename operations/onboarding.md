@@ -49,8 +49,9 @@ In the course of performing our duties, TOC members are expected to:
 In addition to the expectations defined Composition 6(b)ii and Criteria 6(d) for nomination in the CNCF Charter, TOC members should be prepared to actively employ and mature the following competencies:
 
 * Leadership (ex. transformational, democratic, servant, and visionary are leadership styles that may be used depending on the situation)
+* Community management for guiding TAGs and projects
 * Deep understanding of cloud native technologies and viability for use
-* Effective communication
+* Communication (empathy, inclusivity, effectiveness, action-oriented)
 * Time and task management
 * Accountable autonomy
 * Context conveyance
@@ -62,6 +63,7 @@ In addition to the expectations defined Composition 6(b)ii and Criteria 6(d) for
 * Market awareness (technical and economic trends and impacts)
 * Software engineering methodologies and concepts
 * Systems and strategic thinking
+* Problem solving through automation-driven approaches
 * Active listening
 
 ### Events and additional meetings
