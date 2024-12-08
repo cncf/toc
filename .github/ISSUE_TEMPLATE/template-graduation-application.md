@@ -117,7 +117,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
+- [ ] **Document adoption of the CNCF Code of Conduct**
 
 <!-- (Project assertion goes here) --> 
 
