@@ -43,10 +43,17 @@ While the details of the process are described in detail further for Incubating 
 #### Applications to move levels are done by submitting an incubation or graduation [application issue](https://github.com/cncf/toc/issues/new/choose) on the TOC repo
 *Who: Project*
 
-* Projects seeking to move to incubation should submit the Incubation Application issue and detail how they meet the incubation level criteria, existing incubating projects seeking to move to graduation should submit the Graduation Application issue and detail how they meet the graduation level criteria. 
-* As prior applications are closed, the TOC selects the next project from the backlog. 
+* Projects seeking to move to incubation should submit the Incubation Application issue and detail how they meet the incubation level criteria with links to evidence of implementation, existing incubating projects seeking to move to graduation should submit the Graduation Application issue and detail how they meet the graduation level criteria with links to evidence of implementation.
+* **Project must complete the [Adopter Interview Form with 5-7 adopters willing to be interviewed](https://docs.google.com/forms/d/1n1oLC6IKj5-7S_xeEjIdEjbtS9SWniuAo7IIOyLFuK8/)**.
+* As prior applications are closed, the TOC selects the next project from the "ready for assignment" column of the [TOC project board](https://github.com/orgs/cncf/projects/27/views/9)'s **Applications to Move levels** tab. 
 
-#### A TOC sponsor(s) is assigned and the project is moved to 'Due Diligence' or 'Active Review' on the project boards depending on which level is proposed.
+#### The TOC triages project applications for completeness
+*Who: TOC*
+
+* Project applications that are found to be incomplete will be commented with the outstanding areas to be completed, closed, and moved to Not Ready- Will return in the [TOC project board](https://github.com/orgs/cncf/projects/27/views/9)'s **Applications to Move levels** tab. 
+* When a project has completed all outstanding areas, the project can re-apply, link to the previous application, and reuse any previous content as appropriate.
+
+#### A TOC sponsor(s) is assigned and the project is moved to 'TOC DD Eval' on the project board
 *Who: TOC*
 
 #### Application Kick off Meeting is scheduled and held
