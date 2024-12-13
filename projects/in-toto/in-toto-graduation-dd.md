@@ -299,7 +299,7 @@ Many adopters and integrations are [documented](https://github.com/in-toto/frien
 
 The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
-- [ ] **TOC verification of adopters.**
+- [x] **TOC verification of adopters.**
 
 Refer to the Adoption portion of this document.
 
@@ -315,9 +315,8 @@ This adopter interview is performed in Sept 2024 and recorded a very happy adopt
 
 ##### Adopter 2 - GitHub/Software company
 
-This adopter interview is performed in Oct 2024 and recorded a very adopter who has great expereience interacting with the in-toto community. Refer to the [interview summary](in-toto-adopter-interview-github.md) for more details.
+This adopter interview is performed in Oct 2024 and recorded a very happy adopter who has great expereience interacting with the in-toto community. Refer to the [interview summary](in-toto-adopter-interview-github.md) for more details.
 
 ##### Adopter 3 - $COMPANY/$INDUSTRY
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+This adopter interview is performed in Dec 2024 and recorded a very happy adopter who has great expereience interacting with the in-toto community. Refer to the [interview summary](in-toto-adopter-interview-chainguard.md) for more details.
