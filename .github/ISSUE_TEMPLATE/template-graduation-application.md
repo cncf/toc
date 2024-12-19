@@ -6,7 +6,7 @@ labels: graduation
 ---
 
 # $PROJECT Graduation Application
-v1.5
+v1.6
 This template provides the project with a framework to inform the TOC of their conformance to the Graduation Level Criteria. 
 
 
@@ -21,11 +21,13 @@ Project points of contacts: $NAME, $EMAIL
 
 ## Graduation Criteria Summary for $PROJECT
 
+### Application Level Assertion
+
+- [ ] This project is currently Incubating, accepted on YYYYMMDD, and applying to Graduate.
+
 ### Adoption Assertion
 
 _The project has been adopted by the following organizations in a testing and integration or production capacity:_
-
-### Criteria
 
 ## Application Process Principles
 
@@ -35,7 +37,8 @@ N/A
 
 ### Required
 
-- [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
+- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
+  - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
@@ -114,7 +117,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
+- [ ] **Document adoption of the CNCF Code of Conduct**
 
 <!-- (Project assertion goes here) --> 
 
@@ -169,11 +172,13 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Engineering Principles
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. *This requirement may also be satisfied by completing a General Technical Review.***
+- A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases.**
+- [ ] **Document what the project does, and why it does it - including viable cloud native use cases. *This requirement may also be satisfied by completing a General Technical Review.***
+  - A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
@@ -185,7 +190,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
+  - A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
@@ -206,7 +212,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Security
 
-Note: this section may be augemented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security.
 
 ### Suggested
 
@@ -228,7 +234,7 @@ Note: this section may be augemented by a joint-assessment performed by TAG Secu
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document Security Self-Assessment.**
+- [ ] **Document [Security Self-Assessment](https://tag-security.cncf.io/community/assessments/guide/self-assessment/).**
 
 <!-- (Project assertion goes here) --> 
 

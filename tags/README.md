@@ -1,14 +1,14 @@
-
 # CNCF Technical Advisory Groups ("TAGs")
 
 <!-- Primary Authors: Alexis Richardson, Quinton Hoole
 
 with contributions by TOC Contributors, November 2018 - January 2019 
 
-v1.0
+v1.1
 
 Starting an update and revisit of the TAG folder, files and document content - Dec 2023 >
 -->
+v1.1
 ## Introduction
 
 The purpose of this document is to provide insight into the objectives and life cycle of Technical Advisory Groups (TAGs) within the CNCF. Various TAGs exist, each within in the CNCF. More information about each TAG can found on the [TAG List](cncf-tags.md) and by following the links to the TAG's respective repositories.
@@ -40,9 +40,26 @@ CNCF TAGs are modelled on Kubernetes SIGs.  Differences are intended to be minim
 
 ## Responsibilities & Empowerment of TAGs
 
-It is the desire of the TOC that the CNCF TAGs, under guidance from the TOC, provide high-quality technical expertise, unbiased information and proactive leadership within their category.  The TOC makes use of this input to act as an informed and effective executive board to select and promote appropriate CNCF projects and practices, and to disseminate high quality information to end users and the cloud-native community in general.  TAGs explicitly have no direct authority over CNCF projects. In particular, the creation of CNCF TAG’s does not change the existing, successfully practiced [charter](https://github.com/cncf/foundation/blob/main/charter.md) goal that "Projects.. will be ‘lightly’ subject to the Technical Oversight Committee". 
+CNCF TAGs should, under guidance from the TOC, provide high-quality technical expertise, unbiased information and proactive leadership within their domain.  The TOC makes use of this input to act as an informed and effective executive board to select and promote appropriate CNCF projects and practices, and to disseminate high quality information to end users and the cloud native community in general.  
 
-The TAGs should strive to present the TOC with easily understandable and votable "propositions", each of which is supported by clear written evidence.  A proposition may be “to approve this project for incubation based on this [written due diligence investigation](https://github.com/cncf/toc/blob/main/process#due-diligence-creation-or-refresh)”, or “to approve this landscape document based on these clear goals and evidence that it achieves them”.  It is of utmost importance that the information and proposals provided to the TOC by TAGs be highly accurate and unbiased, driven by the goal to improve the CNCF as a whole, rather than benefit one project or company over another.  We believe that the rising tide lifts all boats, and that is our goal.
+TAGs explicitly have no direct authority over CNCF projects. In particular, the creation of CNCF TAG’s does not change the existing, successfully practiced [charter](https://github.com/cncf/foundation/blob/main/charter.md) goal that "Projects.. will be ‘lightly’ subject to the Technical Oversight Committee".
+
+### Project Engagement
+
+Projects themselves may engage with the TAGs:
+
+* when exploring engagement within the cloud native ecosystem
+* prior to submitting their application for CNCF consideration
+* after submitting their application for CNCF consideration
+* for guidance in moving levels within the CNCF
+* upon direction by the CNCF Technical Oversight Committee (TOC) or Linux Foundation staff
+
+Project engagement within the Cloud Native ecosystem is a vital way to raise project visibility as well as gain insights from technical leaders in the CNCF community for project maintainers.
+
+As the Technical Advisory Groups (TAGs) are an entry point for many projects to engage with the Cloud Native ecosystem, TAGs are encouraged to guide projects to join the TAGs, Working Groups, collaborate with other projects for development of specifications or promote interoperability as well as explore various avenues to further engage with the greater community.
+
+### Technical Leadership
+The TAGs should strive to present the TOC with easily understandable and votable "propositions", each of which is supported by clear written evidence.  A proposition may be “to approve this project for incubation based on ..." or “to approve this landscape document under its clear goals and the evidence that it achieves them”.  It is of utmost importance that the information and proposals provided to the TOC by TAGs be highly accurate and unbiased, driven by the goal to improve the CNCF as a whole, rather than benefit one project or company over another.  We believe that the rising tide lifts all boats, and that is our goal.
 
 Key ideas here:
 
@@ -55,11 +72,11 @@ TAGs may choose to spawn focused and time-limited working groups to achieve some
 
 #### Project Handling:
 
+* Conduct [Domain Technical Reviews](resources/toc-supporting-guides/project-reviews.md) of projects to inform the TOC for Sandbox Review or as requested for projects moving levels (by projects, or by TOC members if deemed beneficial)
 * Understand and document a high level roadmap of projects within this space, including CNCF and non-CNCF projects. Identify gaps in project landscape.
 * For projects that fall within the CNCF, perform health checks.
 * Perform discovery of and outreach to candidate projects
-* Help candidate projects prepare for presentation to the TOC
-* Every CNCF project will be assigned to one suitable TAG by the TOC.
+* Every CNCF project will be assigned to at least one suitable TAG by the TOC.
 
 #### End User Education (Outbound Communication)
 
@@ -79,7 +96,7 @@ TAGs may choose to spawn focused and time-limited working groups to achieve some
 
 #### As Trusted Expert Advisors to the TOC
 
-* Perform technical due diligence on new and graduating projects, and advise TOC on findings.
+* Perform [Domain Technical Reviews](resources/toc-supporting-guides/project-reviews.md) on upcoming Sandbox projects for review as well as projects moving levels as requested by the TOC, following the project reviews guidance.
 * Be involved with, or periodically check in with projects in their area, and advise TOC on health, status and proposed actions (if any) as necessary or on request.
 
 #### TAG Charter:
@@ -123,7 +140,7 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 #### Working Group Lead
 * Lead the activities of the working group under the TAG.
 * Have the domain knowledge to lead the working group.
-* Approved by supermajority of the chairs and approved by the TAG liaison
+* Approved by supermajority of the chairs, the TAG liaison, and the TOC liaisons to the TAG.
 
 #### Other named roles
 
@@ -138,7 +155,7 @@ As a starting point let’s be inspired by CNCF OSS Projects and by K8s SIGs.  T
 
 ### TOC Liaisons
 
-TOC is the technical governing body of the CNCF. It’s important that we ensure a good flow of governance information and feedback loops to and from the  TAGs. With several TAGs, it can be hard to connect for community wide consensus therefore each group is assigned at least one TOC liaison.
+TOC is the technical governing body of the CNCF. It’s important that we ensure a good flow of governance information and feedback loops to and from the TAGs. With several TAGs, it can be hard to connect for community wide consensus, therefore, each group is assigned at least one TOC liaison.
 
 TAG leads may call on liaisons to act as a point of contact from the TOC, be an advisor for governance or community health matters, or help the TAG prioritize what they’re doing to be in line with TOC needs.
 

@@ -6,7 +6,7 @@ labels: incubation
 ---
 
 # $PROJECT Incubation Application
-v1.5
+v1.6
 This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria. 
 
 Project Repo(s): $URL
@@ -19,6 +19,11 @@ Project points of contacts: $NAME, $EMAIL
 - [ ] (Post Incubation only) [Book a meeting with CNCF staff](http://project-meetings.cncf.io) to understand project benefits and event resources. 
 
 ## Incubation Criteria Summary for $PROJECT
+
+### Application Level Assertion
+
+- [ ] This project is currently Sandbox, accepted on YYYYMMDD, and applying to Incubation.
+- [ ] This project is applying to join the CNCF at the Incubation level.
 
 ### Adoption Assertion
 
@@ -33,7 +38,7 @@ N/A
 
 ### Required
 
-- [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
+- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
@@ -53,7 +58,7 @@ N/A
 
 - [ ] **Due Diligence Review.**
 
-Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
+Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisfies the Due Diligence Review criteria.
 
 - [ ] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
@@ -115,7 +120,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
+- [ ] **Document adoption of the CNCF Code of Conduct**
 
 <!-- (Project assertion goes here) --> 
 
@@ -177,11 +182,11 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Required 
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. This can also be satisfied by completing a General Technical Review.**
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases.**
+- [ ] **Document what the project does, and why it does it - including viable cloud native use cases. This can also be satisfied by completing a General Technical Review.**
 
 <!-- (Project assertion goes here) --> 
 
@@ -189,7 +194,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. This can also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.**
 
 <!-- (Project assertion goes here) --> 
 
@@ -199,7 +204,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Security
 
-Note: this section may be augemented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security.
 
 ### Suggested
 
@@ -219,7 +224,7 @@ N/A
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document Security Self-Assessment.**
+- [ ] **Document [Security Self-Assessment](https://tag-security.cncf.io/community/assessments/guide/self-assessment/).**
 
 <!-- (Project assertion goes here) --> 
 
