@@ -263,7 +263,7 @@ The project should make additional improvements to its repository security postu
 
 The [central SECURITY.md](https://github.com/kubescape/project-governance/blob/main/SECURITY.md) file explains that maintainers are responsbile for responding to reported vulnerabilities and will test to confirm the existence of the reported vulnerability. They further detail the issuance of Security advisory after confirmed and the expected timelines for disclosure.
 
-- [ ] **Document Security Self-Assessment.**
+- [X] **Document Security Self-Assessment.**
 
 The project [completed its security self-assessment](Completed with [PR #1424](https://github.com/cncf/tag-security/pull/1424)) and it is [available on the CNCF TAG Security's repo](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/kubescape/self-assessment.md).
 
