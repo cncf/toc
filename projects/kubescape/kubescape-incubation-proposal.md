@@ -9,17 +9,30 @@
 Emily Fox (@TheFoxAtWork) conducted the due diligence of Kubescape who applied for Incubation Level. The project has completed the criteria that show its early maturity at Incubation level. While the project meets the expectations of an early-stage Incubating level project, it could greatly benefit from a dedicated focus on its community, documentation, and overall governance.
 
 The following actions were provided to the project that were considered blocking but since resolved:
-* Completion of the security self-assessment
+* Complete the project's Security Self-Assessment
+ * Completed with [PR #1424](https://github.com/cncf/tag-security/pull/1424)
+* Ensure the maintainers file is up to date and reflects the current affiliation of the maintainers
+ * Fully completed with [Commit 5a0b97a](https://github.com/kubescape/project-governance/commit/5a0b97a374b630483e123dc8a37d787f8e556b63)
 * Document the project's release process
+ * Completed with [Commit d938389](https://github.com/kubescape/project-governance/commit/d938389e639db99544e0cc43ecd30d1a5dc47e28)
 
 The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
 * Reorganization/improved structure and interlinking of the documentation, repos, and files
-* Increased detail and robustness of the existing community, contributing, and governance documentation that provides better focus for potential contributors
+  * Captured for work and completed through the [project's pre-incubation board](https://github.com/orgs/kubescape/projects/7/views/1)
+* Improve the contributing guidelines to better explain how contributors can get involved and understand expectations
+ * Completed with [PR #23](https://github.com/kubescape/project-governance/pull/23)
+* Improve the project's Roadmap and cadence of planning to support project activities, like planning for moving levels, such that these boards are referenceable and understandable in the [Roadmap document](https://github.com/kubescape/project-governance/blob/main/ROADMAP.md) such that contributors can see what work is currently underway versus planned later.
+* Ensure the Kubescape site is updated to reflect the current capabilities of the project and provides adopters with clear information on getting started and engaging with the project.
+ * Completed with [PR #79](https://github.com/kubescape/kubescape.io/pull/79/files)
+* Clarify information on how contributors can become maintainers
+ * The [updated governance file](https://github.com/kubescape/project-governance/blob/main/GOVERNANCE.md) for the project provides information on decision making and how maintainers are added to the project.
+* Provide a high-level architecture diagram of each of the components, and how they work together, with links to their repos be provided on the Kubescape website and in the project's primary or project-governance repos to improve discovery. There are numerous architecture diagrams identified during the DD that cover various aspects of the project.
+* The [Security-Insights file has also been updated](https://github.com/kubescape/kubescape/commit/e87bf7b723fdad67037f0db741777cb1b721d50f) to reflect the listing of maintainers
+* Ensure the [project's OpenSSF Scorecard accurately reflects the security posture of the project's repositories](https://scorecard.dev/viewer/?uri=github.com%2Fkubescape%2Fkubescape) and for items that are incomplete, work to address them. Security projects are expected to be the exemplar of good security practices and security hygiene - to include ensuring existing reporting tools correctly reflect their posture
+ * Make additional improvements to its repository security posture by enforcing branch protection, ensuring code-reviews are performed on pull requests and changes are not committed directly to the project without review from a second individual who is not the author of the commit.
+ * It is noted that the best practices badging in the scorecard is inaccurately recorded as there appears to be an additional record being pulled.
 * Provide a contributor ladder and improve the clarity around how contributors become committers and eventually maintainers. This should also include details about how and when maintainers and committers are removed from their roles
 * Engage with TAG Contributor Strategy for a comprehensive Governance Review and discussion on community engagement and expansion to increase company diversity and variety of contributors to the project.
-  * Complete the recommendations detailed in the governance and maintainer section (bullets and as full text) prior to initiating that engagement with TAG Contributor Strategy
-* Provide tutorials that walk through and explain how the project is used and removes implicit assumptions in the Getting Started guide, recommend reaching out to new adopters and new community members/contributors for feedback and improvements that could be made
-* Detail the sub-projects and repos of Kubescape to include a brief descriptor of what they are, if they are core to the project, their status, and who is responsbile for maintaining them, linking appropriately to the overall project governance
 
 ### Adoption Evaluation
 
@@ -29,7 +42,7 @@ The adopter interviews reflect a project in appropriate use for the level which 
 
 The TOC has found the project to have satisfied the criteria for Incubation Level.
 
-The project could greatly benefit from several recommendations detailed throughout this Due Diligence, much of which would be addressed by reorganizing the project's website documentation, removing duplicative or out-of-date content, and establishing a dedicated area for governance, contributions, and community items for easier discoverability. It appears the structure for this has been started but not completed.
+The Kubescape project is considered a very early Incubation level project which meets the minimum expectations and criteria, with a few areas of increasing maturity. The project could greatly benefit from more comprehensive documentation and activity captures/messages of what specifically is transpiring, completed, and why. The current operations of the project indicate a closely knit group of maintainers which often operates with implicit knowledge and understanding that would provide substantial value to potential community members not in the group if properly captured in the repo as well-linked documents, as PRs linked and referenced in open issues which demonstrate clear, transparent, and reasoned paths to resolution: problem --> implementation --> closure, and include additional comments and decisions that make assumptions and project knowledge explicit to the uninformed community member.
 
 ## Application Process Principles
 
@@ -61,33 +74,25 @@ The project's communications, planning, and docs align with CNCF stated guidelin
 - [X] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
 - Met during Project's [initial application on 13-DEC-2022 to CNCF](https://github.com/cncf/toc/issues/978) and reflected through initial application to [Incubation on 13-NOV-2023](https://github.com/cncf/toc/pull/1209) and subsequent [application in the updated format on 4-APR-2024](https://github.com/cncf/toc/issues/1291)
 
-- [ ] **Due Diligence Review.**
+- [X] **Due Diligence Review.**
 
-Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
+Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisfies the Due Diligence Review criteria.
 
 - [X] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
-The project provides adopters with appropriate documentation for installation and configuration of Kubescape given its maturity level, to include necessary [prerequisites](https://kubescape.io/docs/install-operator/), however it is important to note that the docs may introduce some confusion for adopters looking to get started as the [Getting Started guide](https://kubescape.io/docs/getting-started/) has different instructions than [the client](https://kubescape.io/docs/install-cli/) and [cluster install](https://kubescape.io/docs/install-operator/). 
+The project provides adopters with appropriate documentation for installation and configuration of Kubescape given its maturity level, to include necessary [prerequisites](https://kubescape.io/docs/install-operator/). 
 
-It is recommended the project convert the Getting Started page to be more tutorial-oriented. The getting started page makes several assumptions, such as access to a machine already running a cluster. In order to more efffectively allow potential adopters to try out Kubescape, providing them a tutorial they can run locally that expands on the Overview section, and potentially suggests how the output of Kubescape can be releveraged for achieving security outcomes (i.e. continuous monitoring for compliance with CIS benchmarks) with existing dashboards, tools, and other monitoring and visibility solutions (i.e. linking to the [prometheus operator instructions](https://kubescape.io/docs/operator/prometheus-integration/) or the[ VEX document generation](https://kubescape.io/docs/operator/generating-vex/#what-is-vex)).
+The project recently made changes to their getting started page to provide greater clarity to individuals unfamiliar with the project and the documentation also includes three tutorials to assist individuals in becoming familiar with Kubescape, how to harden a cluster, and using kubescape to enforce security policies on github repositories.
 
 ## Governance and Maintainers
 
 Note: This section was completed leveraging TAG Contributor Strategy's Governance Review template and was conducted on the project's governance document from the following commit: [accc8a38347297ef41d72deef617af5a8995d22b](https://github.com/kubescape/kubescape/commit/accc8a38347297ef41d72deef617af5a8995d22b).
 
 The following items are considered non-blocking for Incubation level but if unresolved will see the community stagnate and the project fail to meet criteria for Graduation.
-* Cross link appropriate files, contributing, maintainers, and governance are all related topics and content and should be appropriately linked to answer community questions and provide a complete understanding of how the project operates and how individuals may grow, progress, and advance the project.
-* The maintainer file needs updated to reflect the correct maintainers and their affiliation
-* The governance should be updated to:
-  * reduce duplication of content, 
-  * ensure all names roles are held to the same expectations of conduct and adherence to governance, 
-  * define how and when decisions are made by the maintainers, 
-  * define a contributor ladder which leverages existing merit of contributions (such as committer role) for maintainership eligibility, 
-  * update security-insights to correctly reflect the maintainers of the project
+* Define a contributor ladder which leverages existing merit of contributions (such as committer role) for maintainership eligibility, 
 * Create a clear focus for community engagement
-  * Ensure the meeting DAY of the week and meeting notes are linked under ##Community on the read me as well as in the contributor guide.
-  * Determine appropriate scope for slack channels and actively promote that usage for those channels (within them and within the project docs/repo)
   * Define the use of “ideas” versus proposals and issues for the project, make better use of the [proposals folder structure](https://github.com/kubescape/kubescape/tree/d82e8daa25d616a8ea2ac75e6e723a29805db727/docs/proposals) and define this as part of the contributing file.
+
 
 The [maintainers file](https://github.com/kubescape/kubescape/commit/74bfb57d3a135645f1c9ea9ab0e78d718dbf76f9) is complete with 5 individuals listed but is out of date as one maintainer currently works at Kaleido. The governance describes the expectations of maintainers and the requirements for consideration as maintainer. It also describes the conditions under which a maintainer is removed, this is limited to their activities on project work within a 12 month window. The governance also details a role known as committer and the method for proposing contributors to become committers. There is no contingency to be a committer prior to application as a maintainer.
 
@@ -101,7 +106,7 @@ The governance does not detail how decision making by the maintainers occurs nor
 
 The project does maintain a [security.md file](https://github.com/kubescape/kubescape/commit/accc8a38347297ef41d72deef617af5a8995d22b)  that details how security issues are reported and responded. The project also has a [security-insights file](https://github.com/kubescape/kubescape/commit/915d5d993b389c2243e0d6295c805f6a6fb5c358 ) for adopters and contributors to understand the security practices the project employs.
 
-Meetings are recorded and uploaded to Youtube. The meeting notes link was previously buried in a comment on a Kubescape discussion and has since been added to the README for the projec and linked in the Contributor guide. The meeting notes are titled "Kubescape Developer Sync", with the regular meeting attendees typically not more than two individuals who both employed by ARMO. The meeting notes document only goes back to February of 2024 with gaps in frequency.
+Meetings are recorded and uploaded to Youtube. The meeting notes link was previously buried in a comment on a Kubescape discussion and has since been added to the README for the project and linked in the Contributor guide. The meeting notes are titled "Kubescape Developer Sync", with the regular meeting attendees typically not more than two individuals who both employed by ARMO. The meeting notes document only goes back to February of 2024 with gaps in frequency.
 
 The project’s slack channel’s are active, notable the #kubescape primary channel is used by potential adopters and contributors to ask questions of how the project operates or any issues/bugs/challenges experienced. The Kubescape-dev channel does get reminder notifications of the upcoming community meeting but it and the meeting notes document seem more focused on the development of the project which may deter some interested contributors as not being approachable (not devs of the project ergo the meeting may not be appropriate for them to attend). This channel also overlaps in troubleshooting and project functionality discussions which occur in the Kubescape channel generally.
 
@@ -109,15 +114,15 @@ The project’s slack channel’s are active, notable the #kubescape primary cha
 
 - [X] **Clear and discoverable project governance documentation.**
 
-The Governance document is located in the primary Kubescape repo (kubescape/kubescape/GOVERNANCE.md) It does not contain links or references to other documents. For individuals looking to discovery governance of the project, it is fairly straightforward to find. The project’s website does not provide links to or reference’s the project’s governance. The file is clearly named, and does not appear to be linked from the project’s other repositories. While the current governance is simple and clear, improvements are encouraged.
+The project's governance file is linked from the main project repository to a dedicated project-governance repo.  It contains sufficient information on how the project is governed for an early stage incubating project. The project could improve the current governance by linking their official resolutions and Maintainer Meeting notes in the governance so they are more readily discoverable (note they only exist in the [community.md file](https://github.com/kubescape/project-governance/blob/fda8a8122d1a0c0133d5bf216cae6ec092adb290/COMMUNITY.md?plain=1#L27)). It is also recommended the project evaluate existing governance templates (such as the [maintainer council template](https://contribute.cncf.io/maintainers/templates/governance-maintainer/)) to improve how the project is governed and formally develop a [contributor ladder](https://github.com/cncf/project-template/blob/main/CONTRIBUTOR_LADDER.md).
 
 - [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
 The governance appears largely unchanged since being added.
 
-- [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+- [X] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-The Governance shows some small drift and deviation but is not considered substantial. Improvements are recommended to bring the current governance execution into alignment with the next maturity level beyond Incubation.
+The governance file was updated to reflect quarterly Maintainer Meetings (of which only 1 meeting is recorded in the notes), and the current Maintainer Meeting notes references discoverable activities that show the application of its governance (i.e. [proposals for new maintainers](https://github.com/kubescape/project-governance/issues?q=label%3Aproject-candidacy+is%3Aclosed))
 
 - [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
@@ -125,7 +130,7 @@ While the governance is not explicit in calling out neutrality, the overall stru
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
-The governance does detail how the projects makes _some_ decisions on leadership but improvements could be made to ensure clarity of this process and its expectations. Contribution acceptance, requests, and changes to governance and goals should also be added.
+The [governance file](https://github.com/kubescape/project-governance/blob/main/GOVERNANCE.md) partially covers these items, specifically calling out how new maintainers are approved and how changes are proposed to the project and its governance.
 
 - [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
@@ -141,39 +146,33 @@ Not demonstrable with the current governance.
 
 - [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
-The project does have several components but their leadership and governance relationship with the core project is not detailed.
+The project does have several components which fall under the overall project governance but the project does not include any add/remove process for these components.
 
 ### Required
 
 - [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-Kubescape maintains its list of [maintainers for the core repository](https://github.com/kubescape/kubescape/blob/master/MAINTAINERS.md). This file has been changed 6 times since its creation on 06-JAN-2022 as of October 2024.
-
-The project has the following additional respositories with Maintainer files:
-* Helm-charts: https://github.com/kubescape/helm-charts/blob/main/MAINTAINERS.md
-* regolibrary: https://github.com/kubescape/regolibrary/blob/master/MAINTAINERS.md - added 05-NOV-2023, no changes since. No roles defined, clear association with regolibrary
+Kubescape maintains its list of maintainers for the core repository at https://github.com/kubescape/kubescape/blob/master/MAINTAINERS.md. This file has been changed 8 times since its creation on 06-JAN-2022.
 
 - [X] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
-The project has 5 maintainers listed on the main repo, 1 appears to be reasonably active within the past year, with additional 'committers' supporting the project. Overall activity of the repo appears to have slowed in the past year, with fewer new PRs at an increased rate of merging, indicative of increasing maturity and focus on stability of the project.
+The project's maintainer listing was refreshed with review dates. The project's level of activity show a reasonable distribution of 2 active maintainers and 1 active committer (per the project's governance documentation).
 
 - [X] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-The project's code and doc ownership appear to match the documented governance roles for the project, however several repos under the project are lacking maintainer and contributing files or links to the overarching files for the project.
+In November 2024, the project [reviewed their access controls and made changes](https://github.com/kubescape/project-governance/issues/14) to ensure ownership and access is carried by two primary groups. The project's code and doc ownership appear to match the documented governance roles for the project.
 
 - [X] **Document agreement that project will adopt CNCF Code of Conduct.**
 
-[The project has adopted the CNCF Code of Conduct.](https://github.com/kubescape/kubescape/commit/0eb27389daeff7dc545258cfe0f488c6b8c7a2f4)
+[The project has adopted the CNCF Code of Conduct.](https://github.com/kubescape/kubescape/commit/0eb27389daeff7dc545258cfe0f488c6b8c7a2f4) The project also has included an [additional modifier that is NOT in conflict with the CNCF CoC](https://github.com/kubescape/project-governance/blob/main/CODE_OF_CONDUCT.md)
 
 - [X] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
-The Code of Conduct is linked in the [Contributing file](https://github.com/kubescape/kubescape/blob/1cad446fe65f470add1ec68fdc602f1f4c144740/CONTRIBUTING.md?plain=1#L16) and the [Governance file](https://github.com/kubescape/kubescape/blob/d82e8daa25d616a8ea2ac75e6e723a29805db727/GOVERNANCE.md?plain=1#L7) for the project.
+The project's code of conduct, which links to CNCF's, is cross-linked through several project documents, to include the [governance file](https://github.com/kubescape/project-governance/blob/fda8a8122d1a0c0133d5bf216cae6ec092adb290/GOVERNANCE.md?plain=1#L9), the [README](https://github.com/kubescape/project-governance/blob/fda8a8122d1a0c0133d5bf216cae6ec092adb290/README.md?plain=1#L24) for project-governance, and the [contributing file](https://github.com/kubescape/project-governance/blob/fda8a8122d1a0c0133d5bf216cae6ec092adb290/CONTRIBUTING.md?plain=1#L20)
 
 - [X] **All subprojects, if any, are listed.**
 
-The project's organization contains repos for all sub-projects, but does not have a comprehensive singular listing of each and their purpose or status.
-
-The project should inventory its org and provide a navigation guide of its sub-projects, any maintainers of the sub-projects, the intent and focus of the project, as well as its state/status. With 55 repos, it is not immediately clear to contributors and adopters what is and is not supported. Additionally, the .github repo appears to be an initial attempt to move community and governance material to a dedicated area, highly recommend finalizing this.
+The Kubescape project does not have any known subprojects. The project does [maintain a listing of repositories in its org that are subject to its governance](https://github.com/kubescape/project-governance/blob/main/repositories-under-governance.json). These repositories contain components necessary for interoperability with other cloud native projects, installation tools, actions, and other elements essential to the project.
 
 ## Contributors and Community
 
@@ -183,33 +182,39 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **Contributor ladder with multiple roles for contributors.**
 
-It is recommended the project establish a contributor ladder that aligns with the roles described in the governance document.
+While the project defines several roles for contributors, additional enhancements would greatly improve understanding and actionability for how an individual may progressively become more involved in the project through the defined roles.
 
 ### Required
 
 - [X] **Clearly defined and discoverable process to submit issues or changes.**
 
-The Contributing file provides information for community members on suggesting changes but could be improved.
+The project's contributing file contains a variety of information on how to get started, however the [Community file](https://github.com/kubescape/project-governance/blob/main/COMMUNITY.md#github-issues) and [Governance file](https://github.com/kubescape/project-governance/blob/main/GOVERNANCE.md#processes) contain specific information on opening issues and proposing changes to the project.
 
 - [X] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
-The project lists its slack channels on its [README under Community](https://github.com/kubescape/kubescape/blob/d82e8daa25d616a8ea2ac75e6e723a29805db727/README.md?plain=1#L98). They are also included in the Contributing file.
+The project's [README](https://github.com/kubescape/kubescape?tab=readme-ov-file#community) and [project-governance/community file](https://github.com/kubescape/project-governance/blob/main/COMMUNITY.md) contain links to both the users and developers channel for the project. The project could benefit by linking the [kubescape-dev slack channel on the contributing file](https://github.com/kubescape/project-governance/blob/fda8a8122d1a0c0133d5bf216cae6ec092adb290/CONTRIBUTING.md?plain=1#L68).
 
 - [X] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
-The project has listed all their communication channels. 
+The project has listed and documented all communications channels in their relevant files of the repo. See the previous criteria evaluation for more information. There are no known non-public project communication channels.
 
 - [X] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-The project has regular meetings as reflected in the README and an automated notice of the meeting in their slack channel. Community members have recently requested adding the project meeting to the CNCF calendar, and the project is working towards this.
+The project regularly holds public meetings, with [public notes](https://github.com/kubescape/project-governance/blob/main/COMMUNITY.md#community-meetings) and [recordings](https://www.youtube.com/channel/UCgf472-CiLXkfeoPWBmh5hg). Information on meeting schedule is [available in the community file](https://www.youtube.com/channel/UCgf472-CiLXkfeoPWBmh5hg).
 
 - [X] **Documentation of how to contribute, with increasing detail as the project matures.**
 
 The project provides a simple and straightforward contributing guide that is sufficient for a project just entering incubation, however it is recommended this be developed further to be more robust and cover all aspects of contributing to the project, to include triage, PR reviews, etc. The project would benefit from linking the [third party dependency policy](https://github.com/kubescape/kubescape/blob/d82e8daa25d616a8ea2ac75e6e723a29805db727/docs/environment-dependencies-policy.md) with the Contributing file and the Governance file.
 
+The project's original contributing file had been modified 14 times since it was initially committed. After migrating the content to the project-governance/contributing file, it has been modified an additional 3 times. Through each iteration, the robustness and clarity in detail has been improved.
+
 - [X] **Demonstrate contributor activity and recruitment.**
 
-The project's slack channels are active with community members asking questions and the project's regular meetings are leveraged to serve as encouragement for more contributions. The project would greatly benefit from more active outreach to community members to take up open issues on the repo.
+In the past year, the project's contributor activity has decreased by approximately 31% (per LFX Insights query dtd 19 DEC 2024). Further analysis into the project shows fewer new contributors since June 2024, which show drift indicative of slowed activity and recruitment - likely the result of the project's current focus on stability, performance, and scaling improvements as these activities require more indepth understanding of the project's current capabilities. Looking into 8knot, the Kubescape project  receives the vast majority of contributions through repeat contributors, with first time contributors and contributor activity increasing annually in October before steadily decreasing again towards July on an annual basis.
+
+
+It is worth noting that the project calls out new contributors in addition to all contributors that contributed to a given release, with the [3.0.19 release (12 NOV 2024)](https://github.com/kubescape/kubescape/releases/tag/v3.0.19) being the most recent with a new contributor to the project.
+
 
 ## Engineering Principles
 
@@ -221,29 +226,31 @@ The project does not currently have a change process for its Roadmap documented 
 
 - [ ] **History of regular, quality releases.**
 
-Since 2022, the project has been increasing the rigor of their release process, providing better detail post-release and no adopters have reported any issues. The current release cadence does not appear to be set yet, but is approaching some normalcy.
+Since 2022, the project has been increasing the rigor of their release process, providing better detail post-release and no adopters have reported any issues. The current release cadence does not appear to be fixed yet, with documentation citing 6-8 weeks between releases and the release history showing more frequent releases than this.
 
 ### Required 
 
 - [X] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
-The project's goals are detailed in their README and in the project's documentation and provides its focus within the cloud native landscape.
+The project's goals and objectives are documented through it's website: _... offers hardening, posture management, and runtime security to ensure robust protection for Kubernetes environments. The project's website also describes additional open source projects in use by Kubescape and how they are used within the project to for specific use cases (i.e. image scanning with Grype, OPA for security control posture verification, etc.).
 
 - [X] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
-The project's README and docs describe what the project does and why. It also includes information on how the project is to be used in cloud native environments for achieving security outcomes like runtime threat detection and compliance.
+The project's website provides adopters and contributors with information about aspects of the project, what they do, and why. An overview for each of project's components is located on each readme and provides information on how it is used to achieve a targeted cloud native security outcome (image scanning, triggering actions from events, etc.)
 
 - [X] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
-The project maintains a [ROADMAP](https://github.com/kubescape/kubescape/blob/d82e8daa25d616a8ea2ac75e6e723a29805db727/docs/roadmap.md) but is difficult to find. It is recommended the project make this file easier to find both in the Project's website docs as well as in the repo.
+The project has [a primary documented public roadmap](https://github.com/kubescape/project-governance/blob/main/ROADMAP.md) and an [older roadmap](https://github.com/kubescape/kubescape/blob/e1db7f3704199441724a85c16786bbf85ec76948/docs/roadmap.md) that needs replaced or provide reference to the current one ([captured in issue #1777](https://github.com/kubescape/kubescape/issues/1777)). The Project has linked the current Roadmap in their README to improve discovery of it, and has created several project boards that show forward looking planning. It is recommended the project establish a practice to review the roadmap at least annually and leverage project boards to track defined goals and objectives to completion.
 
 - [X] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
 
-The project maintains an older [architecture document](https://github.com/kubescape/kubescape/blob/d82e8daa25d616a8ea2ac75e6e723a29805db727/docs/architecture.md) but should be updated to more appropriately reflects the current capabilities of the project and its sub-projects to match the more recent version of the [architecture located in the project's README](https://github.com/kubescape/kubescape/blob/d82e8daa25d616a8ea2ac75e6e723a29805db727/README.md#architecture).
+The project has two locations of architecture diagrams that demonstrate how components of the Kubescape work together and lower level detail how each work. The first architecture file is in the [kubescape/kubescape repo](https://github.com/kubescape/kubescape/blob/master/docs/architecture.md) and is two years old. It covers the general component architecture, the Kubescape CLI with the OPA engine, and the Operator. The second architecture diagram is a series of diagrams located in the [helm-charts for the kubescape-operator's readme's section on in-cluster components](https://github.com/kubescape/helm-charts/blob/main/charts/kubescape-operator/README.md#in-cluster-components-overview) and is far more expansive on content specific to the operator (the primary method to run Kubescape as a set of microservices inside a kubernetes cluster for cluster compliance and vulnerability management). An overview of the Kubescape architecture which references the operator, storage, and other components in the context of a cluster provides additional information. It is worth noting that [additional diagrams on the CLI and Operator are stored in the security self-assessment for the project](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/kubescape/self-assessment.md#actors).
 
-- [ ] **Document the project's release process.**
+It is recommended the project ensure that a high-level architecture diagram of each of the components, and how they work together, with links to their repos be provided on the Kubescape website and in the project's primary or project-governance repos to improve discovery.
 
-<!-- (TOC Evaluation goes here) --> 
+- [X] **Document the project's release process.**
+
+The project's release process is documented in the [release file](https://github.com/kubescape/project-governance/blob/main/RELEASE.md) of the project-governance repo. It includes the release schedule, steps with links to actions workflows, and items to be performed post-release. While the release process explains a schedule of every 6-8 weeks, the project issues releases more frequently.
 
 ## Security
 
@@ -257,23 +264,25 @@ N/A
 
 - [X] **Clearly defined and discoverable process to report security issues.**
 
-The project maintains a SECURITY.md file which contains the process for reporting security issues.
+The project maintains a [centralized security.md](https://github.com/kubescape/project-governance/blob/main/SECURITY.md) file which includes a straightforward process to report security issues and is linked to by other project repo's security.md files.
 
 - [X] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
-The project's maintainer accounts are protected with 2FA.
+The project performed a [review of its access controls](https://github.com/kubescape/project-governance/issues/14) as well as evaluated[ enforcement of 2FA on the project's maintainer accounts](https://github.com/kubescape/project-governance/issues/13).
+
+The project should make additional improvements to its repository security posture by enforcing branch protection, ensuring code-reviews are performed on pull requests and changes are not committed directly to the project without review from a second individual who is not the author of the commit.
 
 - [X] **Document assignment of security response roles and how reports are handled.**
 
-The SECURITY.md file includes
+The [central SECURITY.md](https://github.com/kubescape/project-governance/blob/main/SECURITY.md) file explains that maintainers are responsbile for responding to reported vulnerabilities and will test to confirm the existence of the reported vulnerability. They further detail the issuance of Security advisory after confirmed and the expected timelines for disclosure.
 
 - [ ] **Document Security Self-Assessment.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project [completed its security self-assessment](Completed with [PR #1424](https://github.com/cncf/tag-security/pull/1424)) and it is [available on the CNCF TAG Security's repo](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/kubescape/self-assessment.md).
 
 - [X] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
-The project maintains the [OpenSSF's best practices badge at the Passing level.](https://www.bestpractices.dev/en/projects/6944)
+The project has [achieved OpenSSF's best practices badge at the passing level](https://www.bestpractices.dev/en/projects/6944), however it appears an additional record is referenced by OpenSSF scorecards that does not accurately reflect its badge.
 
 ## Ecosystem
 
