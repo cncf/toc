@@ -46,6 +46,7 @@ Every TOC member is expected to conduct due diligence of CNCF projects and triag
 
 TOC members may not take on anymore than two (2) projects for due diligence at a given time unless one of the following conditions is true:
 * the TOC member is functioning as a guide to new TOC members learning this process
+* the TOC member is serving as a secondary to the primary TOC member conducting a due diligence in order to offer additional domain support or other relevant subject matter expertise
 * the TOC member has two projects in voting
 * the TOC member has one project in voting, and another in progress
 
@@ -64,7 +65,7 @@ All TOC members are expected to assist in the triaging of project applications t
 This light-weight triage/evaluation must cover the list below (it is not exhaustive and is a minimum triage set from the [incubation template retrieved 12 DEC 2025](https://github.com/cncf/toc/blob/c2943ffc98064dd88e9ef9c4afd5a8856898942f/.github/ISSUE_TEMPLATE/template-incubation-application.md)):
 * Adoption Assertion includes the Adopters file link, and the project has an entry in the Adopter's form responses to provide 5-7 adopters to reach out to.
 * Application Process Principles provides 
-  * the link to the Recording, issue, and/or meeting notes from a TAG meeting where the project presented with the domain specific TAG
+  * Either: the link to the Recording, issue, and/or meeting notes from a TAG meeting where the project presented with the domain specific TAG -or- completion of the [General Technical Review (GTR)](../tags/resources/toc-supporting-guides/general-technical-questions.md) or [Domain Technical Review (DTR)](../tags/resources/toc-supporting-guides/tag-domain-technical-review-template.md) in lieu of a TAG meeting
   * assertion of vendor neutrality
   * assertion of review and acknowledge of expectations of CNCF projects and requirements for moving forward through the CNCF maturity levels
   * provided any additional documentation links the project feels is appropriate for its type
@@ -100,7 +101,9 @@ This light-weight triage/evaluation must cover the list below (it is not exhaust
   * link to adopters file
   * link to integrations/ compatibility information of other projects and products
 
- If some of the criteria are not yet met, or missing, the TOC member triaging will add a comment detailing all items that are unmet or missing and close the application; affixing the "not-ready" label and move the card to the "Not-Ready-Will Return" column of the [TOC project board](https://github.com/orgs/cncf/projects/27/views/9)'s Applications to Move levels tab. Projects are expected to re-apply upon completion of outstanding items. When the project is ready to reapply, they should link to the previous application so the TOC may leverage and reuse as much prior work as reasonable.
+Projects should NOT be blocked if they do not have a Governance Review or a GTR/DTR completed. Both the Governance review and GTR/DTRs depend on the availability of our community members in our TAGs which cannot be guaranteed.
+
+If some of the criteria are not yet met, or missing, the TOC member triaging will add a comment detailing all items that are unmet or missing and close the application; affixing the "not-ready" label and move the card to the "Not-Ready-Will Return" column of the [TOC project board](https://github.com/orgs/cncf/projects/27/views/9)'s Applications to Move levels tab. Projects are expected to re-apply upon completion of outstanding items. When the project is ready to reapply, they should link to the previous application so the TOC may leverage and reuse as much prior work as reasonable.
 
 Once the TOC has triaged the application and found all criteria to have content, the TOC member performing triage comment the application is complete and ready for assignment. The TOC member will affix the "ready" label and move the project from the "new" column on the application's board. The project's application will be updated by the TOC member with a comment that details where work still needs to be completed, next steps associated with completion of those, and an estimated timeframe that the project is likely to complete those items by. 
 
@@ -110,7 +113,9 @@ TOC members are to priortize selecting projects from the ready for assignment co
 
 ### TOC member(s) step forward to be assigned
 
-Commonly referred to as the Project's Application Sponsor, TOC members assign themselves to projects to sponsor the application for moving levels. Sponsoring an application ensures a focused point of contact exists for both the project and the TOC in completeing the Due Diligence, public comment, and execution of voting. 
+Commonly referred to as the Project's Application Sponsor, TOC members assign themselves to projects to sponsor the application for moving levels. Sponsoring an application ensures a focused point of contact exists for both the project and the TOC in completing the Due Diligence, public comment, and execution of voting. 
+
+The TOC member that assigns themselves a project to sponsor the application for moving levels may request a secondary TOC member to support the due diligence according to eligibility.
 
 TOC members ready to perform due diligence a project's application will socialize this internally with the TOC to provide opportunity for other members to participate. Once a TOC member or members is determined, those TOC members must assign themselves to the Issue and move the issue's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Assigned".
 
@@ -132,11 +137,13 @@ A TOC member will require a co-sponsor for a project if any of the following con
 
  This does not mean they can't have any involvement with a project at all as contributing to pull requests or adopting the project are signals of a healthy interest and knowledge of the project. To ensure appropriate evaluation without bias, a second, unconflicted TOC member must be assigned to co-sponsor the project with them.
 
-If a conflict of interest is present, the TOC member will state they have a conflict and seek a second sponsor on the project's application issue prior to proceeding. 
+If a conflict of interest is present, the TOC member will state they have a conflict and seek a second _primary_ sponsor on the project's application issue prior to proceeding. 
 
 ### Kicking off the due diligence
 
-Once the project is assigned to the TOC member(s), the TOC member(s) engages the project's maintainers or leadership group to kick off the due diligence. This can be done by commenting on the Issue, starting a slack channel (public or private), slack group direct message, email exchange, or thread in the project's primary communication channel. We strive to keep these discussions transparent and visible but should consider any potential sensitive issues that come about as a result of the review (resolution of vulnerabilities for instance).
+Once the project is assigned to the TOC member(s), the TOC member(s) engages the project's maintainers or leadership group to kick off the due diligence. This can be done by commenting on the Issue, starting a slack channel (public or private), slack group direct message, email exchange, or thread in the project's primary communication channel. We strive to keep these discussions transparent and visible but should consider any potential sensitive issues that come about as a result of the review (resolution of vulnerabilities for instance). 
+
+Any form of communication must include _two members_ of CNCF staff to ensure consistency and continuity throughout the process. 
 
 TOC members, with support from CNCF staff, should schedule a meeting with the project to the extent possible given availability and timezones. Asynchrounous kick-offs can occur, but may result in additional back and forth or delays. Each Kick-off meeting should have a central kick-off document that allows the TOC and the project to capture expectations, decisions, timelines, and other pertinent references needed for successful completion of the due diligence. A [kick-off meeting template](toc-templates/template-kickoff-notes.md) is located in the [toc-templates](toc-templates/) folder.
 
@@ -174,7 +181,7 @@ TOC members who sponsor projects seeking graduation are expected to review the r
 
 ### Finalizing the Due Diligence
 
-When the TOC has finished their criteria evaluation, they should move the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Adopter Interviews & Project Discussion" and re-engage the project to elevate and discuss any items neededing clarity, correction, or improvement. This includes notifying the project of any recommendations. Recommendations and discussion points may copied into the kick-off document to faciliate discussion and to provide for additional context and discussion with the project until they are finalized.
+When the TOC has finished their criteria evaluation, they should move the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Adopter Interviews & Project Discussion" and re-engage the project to elevate and discuss any items neededing clarity, correction, or improvement. This includes notifying the project of any recommendations. Recommendations and discussion points may be copied into the kick-off document to faciliate discussion and to provide for additional context and discussion with the project until they are finalized.
 
 The TOC member(s) may then file the PR and place it in draft until the Adopter Interviews are completed.
 
@@ -190,9 +197,11 @@ In order to appropriately ascertain the adoption of a project, the TOC interview
 
 The TOC member(s) begin reaching out to the 5-7 potential adopters provided by the project to be interviewed and work with the TAB in conducting the interview. The TOC, with support from CNCF staff and the TAB, is responsible for engaging adopters, gathering publication consent, scheduling, conducting, summarizing, gathering final approval, and including the approved summary of the interview within the Due Diligence.
 
-The TOC maintains a core list of questions intended to initiate discussion with adopters, but may add additional questions, or skip questions depending on the course of the interview and the organization's level of comfort in providing responses.
+Projects should not coach or instruct adopters with answers to interview questions and may encourage adopters to be open and transparent during the interviews. All interview notes are kept private unless permission is received from the adopter's organization for the notes to be made public.
 
-Interviews typically do not take more than 30 minutes to complete, and TOC and TAB members should anticipate about 1 hour of time dedicated to summarizing adopter responses.
+The TOC maintains a [core list of questions](/operations/toc-templates/template-adopter-questions.md) intended to initiate discussion with adopters, but may add additional questions, or skip questions depending on the course of the interview and the organization's level of comfort in providing responses.
+
+Interviews typically do not take more than 30-60 minutes to complete, and TOC and TAB members should anticipate about 1 hour of time dedicated to summarizing adopter responses. Some interviews may take more or less time, it is dependent upon the interview, any prior interviews that may introduce conflicting stories among adopters, or other concerns noted by the TOC members and the community.
 
 #### Reaching out to Adopters
 
@@ -246,7 +255,7 @@ The TOC member(s) is responsible for updating the project with the change in sta
 
 ### Reapplication
 
-In the event a project was not ready to move levels after the due diligence was completed and the project has reapplied through an issue, the previous or new TOC member(s) assigned will initiate a new Due Diligence based on the previous one. The TOC should refresh the prior evaluations with corresponding dates to show changes and improvements and ammend the evaluation statements accordingly. 
+In the event a project was not ready to move levels after the due diligence was completed and the project has reapplied through an issue, the previous or new TOC member(s) assigned will initiate a new Due Diligence based on the previous one. The TOC should refresh the prior evaluations with corresponding dates to show changes and improvements and amend the evaluation statements accordingly. 
 
 ## Public Comment Period
 
