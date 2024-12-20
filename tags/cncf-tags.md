@@ -29,15 +29,14 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 | Name                  |
 |-----------------------|
 | [Lian Li](https://github.com/lianmakesthings) |
-| [Josh Gavant](https://github.com/joshgav)     |
-| [Thomas Schuetz](https://github.com/thschue)  |
+| [Roberth Strand](https://github.com/roberthstrand)     |
 
 #### Tech Leads
 
 | Name                  | 
 |-----------------------|
-| [Alois Reitbauer](https://github.com/AloisReitbauer)  |
-| [Roberth Strand](https://github.com/roberthstrand)    |
+| [Sarah Christoff](https://github.com/schristoff)  |
+| [Dylan Page](https://github.com/GenPage)    |
 
 
 ### TAG Contributor Strategy
