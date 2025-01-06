@@ -52,7 +52,7 @@ OpenYurt is a Kubernetes-native project designed to seamlessly extend Kubernetes
 
 During CNCF incubation, OpenYurt must provide evidence of API stability, scalability benchmarks, and fault tolerance in production-grade deployments. Expanding community engagement, demonstrating governance maturity, and showcasing broader adoption across industries will further validate its readiness. Additionally, improved documentation, including comparisons with similar projects like KubeEdge and an articulated roadmap for the next 12–24 months, will solidify its position as a leading solution for cloud-edge orchestration. With these enhancements, OpenYurt is well-positioned to drive innovation in distributed Kubernetes architectures and make a meaningful impact in the CNCF ecosystem.
 
-The CNCF TAG-Runtime recommends OpenYurt for incubation, recognizing its strong alignment with cloud-native principles and its potential to address critical challenges in cloud-edge orchestration. With its Kubernetes-native design, extensibility, and growing community, OpenYurt is well-positioned to impact the CNCF ecosystem as it matures significantly.
+The CNCF TAG-Runtime recommends OpenYurt for incubation, recognizing its strong alignment with cloud native principles and its potential to address critical challenges in cloud-edge orchestration. With its Kubernetes-native design, extensibility, and growing community, OpenYurt is well-positioned to impact the CNCF ecosystem as it matures significantly.
 
 - [x] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
