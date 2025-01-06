@@ -60,7 +60,7 @@ The CNCF TAG-Runtime recommends OpenYurt for incubation, recognizing its strong 
 
 - [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
 
-  Done during the project's apllication, onboarding completed [Mar 2, 2021](https://github.com/cncf/sandbox/issues/270).
+  Done during the project's application, onboarding completed [Mar 2, 2021](https://github.com/cncf/sandbox/issues/270).
 
 - [x] **Due Diligence Review.**
 
