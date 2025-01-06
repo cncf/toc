@@ -122,7 +122,7 @@ The CNCF TAG-Runtime recommends OpenYurt for incubation, recognizing its strong 
 
 - [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-  The full list of maintainers is well maintained in a [MAINTAINERS.md](https://github.com/openyurtio/openyurt/blob/master/MAINTAINERS.md) file along with their affiliation. The content is a subset of a more externsive list of reviewers, approvers and maintainers in a [OWNERS.md](https://github.com/openyurtio/community/blob/main/OWNERS.md) which also includes emeritus members.
+  The full list of maintainers is well maintained in a [MAINTAINERS.md](https://github.com/openyurtio/openyurt/blob/master/MAINTAINERS.md) file along with their affiliation. The content is a subset of a more extensive list of reviewers, approvers and maintainers in a [OWNERS.md](https://github.com/openyurtio/community/blob/main/OWNERS.md) which also includes emeritus members.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
