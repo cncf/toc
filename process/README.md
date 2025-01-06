@@ -23,6 +23,10 @@ Projects may enter the CNCF either by applying as a sandbox project or applying 
 
 Evaluting projects against the criteria does take some time and the TOC has recently modified the Due Diligence process to reduce duplication of work, streamline handoffs, and provide better transparency to the project and its adopters about its conformance and implementation of the criteria.
 
+##  Naming conventions for projects
+
+All CNCF projects are subject to the [Trademark Usage Policies](https://www.linuxfoundation.org/legal/trademark-usage) set by Linux Foundation. Specifically, new or incoming projects should avoid use existing trademarks in their proposed project names. In addition, if they are intending to use a popular prefix/suffix of an existing project (like "kube" or "k8s"), then they should consult the leadership group of the respective project to seek their approval and document the consensus reached. Existing projects are encouraged to document their naming guidelines to make this process smooth as well to avoid lengthy deliberation process for new project names.
+
 ### Project resources and guide posts
 
 The TOC, with support from the [Technical Advisory Groups](/tags/README.md), have a wide variety of resources available to assist projects.  Current and aspiring maintainers of cloud native projects can find a lot of information and templates on [contribute.cncf.io/maintainers](https://contribute.cncf.io/maintainers/). The TOC also maintains [project Guide Posts](../docs/project_guideposts.md) - a collection of guiding points that have assisted cloud native projects as they grow and mature in the ecosystem. These are not requirements for moving levels, those may be found in the respective application issue templates ([Incubation](../.github/ISSUE_TEMPLATE/template-incubation-application.md), [Graduation](../.github/ISSUE_TEMPLATE/template-graduation-application.md)). The [Guide Posts](../docs/project_guideposts.md) are a resources for projects to leverage that is beneficial in meeting or exceeding the criteria defined.
