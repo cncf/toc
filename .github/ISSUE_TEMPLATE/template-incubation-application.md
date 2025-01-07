@@ -5,6 +5,9 @@ title: "[Incubation] $PROJECT Incubation Application"
 labels: incubation
 ---
 
+# Review Project Moving Level Evaluation
+[ ] I have reviewed the project moving level evaluation guide and ensured the criterias are met for my project before opening the issue.
+
 # $PROJECT Incubation Application
 v1.6
 This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria. 
