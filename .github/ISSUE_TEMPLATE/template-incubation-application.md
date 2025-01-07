@@ -6,7 +6,7 @@ labels: incubation
 ---
 
 # Review Project Moving Level Evaluation
-[ ] I have reviewed the project moving level evaluation guide and ensured the criterias are met for my project before opening the issue.
+[ ] I have reviewed the project [moving level evaluation guide](/operations/dd-toc-guide.md#initial-triageevaluation-prior-to-assignment) and ensured the criterias are met for my project before opening the issue.
 
 # $PROJECT Incubation Application
 v1.6
