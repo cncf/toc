@@ -176,9 +176,9 @@ in-toto community meetings are scheduled on the first friday of each month at 11
 
 A contribution guide is placed at the toplevel [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md)
 
-- [ ] **Demonstrate contributor activity and recruitment.**
+- [X] **Demonstrate contributor activity and recruitment.**
 
-<!-- (Project assertion goes here) --> 
+Constant contributor activity observed on devstats, and based on community meeting notes, meetings are well attended. There has been recruitments at KubeCon and other conferences including but not limited to project booth, presenting a KubeCon NA keynote and other talks related to in-toto.
 
 ## Engineering Principles
 
