@@ -63,7 +63,7 @@ The issue will contain a limited set of information about the project at the tim
 All TOC members are expected to assist in the triaging of project applications to move levels to ensure that when a TOC member is ready to be assigned, the project is ready to be evaluated with no immediate blockers that would inhibit or delay the TOC's engagement.
 
 This light-weight triage/evaluation must cover the list below (it is not exhaustive and is a minimum triage set from the [incubation template retrieved 12 DEC 2025](https://github.com/cncf/toc/blob/c2943ffc98064dd88e9ef9c4afd5a8856898942f/.github/ISSUE_TEMPLATE/template-incubation-application.md)):
-* Adoption Assertion includes the Adopters file link, and the project has an entry in the Adopter's form responses to provide 5-7 adopters to reach out to.
+* Adoption Assertion includes the Adopters file link, and the project has an entry in the Adopter's form responses to provide 5-7 adopters to reach out to. [Check here](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter) for the definition of an Adopter.
 * Application Process Principles provides 
   * Either: the link to the Recording, issue, and/or meeting notes from a TAG meeting where the project presented with the domain specific TAG -or- completion of the [General Technical Review (GTR)](../tags/resources/toc-supporting-guides/general-technical-questions.md) or [Domain Technical Review (DTR)](../tags/resources/toc-supporting-guides/tag-domain-technical-review-template.md) in lieu of a TAG meeting
   * assertion of vendor neutrality
