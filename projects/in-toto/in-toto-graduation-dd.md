@@ -51,7 +51,7 @@ N/A
 
 - [X] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
 
-Presentation was given to the TAG security in July 2014, which was recorded in this [issue](https://github.com/cncf/tag-security/issues/1290). TODO: add a link to the presentation
+[Presentation](https://zoom.us/rec/share/H4AeeCUzrh7dVDzv7udMJmK-jWHvENmyWmcZvG4-1rZbVWUTn7RAByqKSfG3g9ya.OJnqcezJAXcGMce0?startTime=1721235498000) was given to the TAG security in July 2014, which was recorded in this [issue](https://github.com/cncf/tag-security/issues/1290).
 
 - [x]  **TAG provides insight/recommendation of the project in the context of the landscape**
 
@@ -59,7 +59,7 @@ Presentation was given to the TAG security in July 2014, which was recorded in t
 
 - [X]  **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
-No issues were found during due diligence, both code and documentation are vendor neutral. Based on the community meeting minutes, [contributor stats](https://intoto.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=contributions) and what adopters say about the project, in-toto is very diverse. It is one of the projects that started in academic and attracted a good range of interest from industries as well.
+No issues were found during due diligence, both code and documentation are vendor neutral. Vendor neutral is clearly mentioned twice in the governance doc. Based on the community meeting minutes, [contributor stats](https://intoto.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=contributions) and what adopters say about the project, in-toto is very diverse. It is one of the projects that started in academic and attracted a good range of interest from industries as well.
 
 - [x] **Review and acknowledgement of expectations for graduated projects and requirements for moving forward through the CNCF Maturity levels.**
    - [x] Met during Project's application on 21-06-2024.
@@ -76,9 +76,9 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [x]  **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+- [ ]  **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
-[Governance doc](https://github.com/in-toto/community/blob/main/GOVERNANCE.md) is clear.
+[Governance doc](https://github.com/in-toto/community/blob/main/GOVERNANCE.md) is clear. There is very few changes to it since it was created in Feb, 2023.
 
 ### Required
 
@@ -104,10 +104,38 @@ Documented [here](https://github.com/in-toto/community/tree/main/elections)
 
 - [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-[Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt)
+[Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) shows maintainers from Purdue University and New York University. Details below:
+
+  Santiago Torres
+    Email: santiagotorres@purdue.edu
+    GitHub username: @SantiagoTorres
+
+  Lukas Puehringer
+    Email: lukas.puehringer@nyu.edu
+    GitHub username: @lukpueh
+
+  Justin Cappos
+    Email: jcappos@nyu.edu
+    GitHub username: @JustinCappos
+
+  Marina Moore
+    Email: mm9693@nyu.edu
+    GitHub username: @mnm678
+
+  Sebastien Awwad
+    Email: sebastien.awwad@nyu.edu
+    GitHub username: @awwad
+
+  Aditya Sirish A Yelgundhalli
+    Email: aditya.sirish@nyu.edu
+    GitHub username: @adityasaky
+
+In addition, in-toto has a very diverse [steering committe members](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md), including members from TestifySec, ControlPlane and Datadog.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
+For the current cadence of changes in the project and backlog of work, the project has sufficient active maintainers to sustain its current and future momentum. Adopters I spoke to are all happy with either contributing to in-toto or getting support from the in-toto community.
+ 
 - [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
 The project maintains a description of different roles and their election process in its [community repository](https://github.com/in-toto/community)
