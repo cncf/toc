@@ -5,6 +5,9 @@ title: "[Incubation] $PROJECT Incubation Application"
 labels: incubation
 ---
 
+# Review Project Moving Level Evaluation
+[ ] I have reviewed the TOC's [moving level readiness triage guide](/operations/dd-toc-guide.md#initial-triageevaluation-prior-to-assignment), ensured the criteria for my project are met before opening this issue, and understand that unmet criteria will result in the project's application being closed.
+
 # $PROJECT Incubation Application
 v1.6
 This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria. 
