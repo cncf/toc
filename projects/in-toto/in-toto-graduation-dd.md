@@ -30,12 +30,13 @@ The following actions were provided to the project that were considered blocking
 
 ### Adoption Evaluation:
 
-The adopter interviews reflect the in-toto project is in use for the level which the project applied, which is CNCF graduation. It has a good range of adopters across different industries and vendors, including GitHub, DataDog, SLAS, Solarwinds, Lockheed Martins and more. Every adopter I interviewed is quite happy with in-toto.  Highlight some of the strength I heard:
+The adopter interviews reflect the in-toto project is in use for the level which the project applied, which is CNCF graduation. It has a good range of adopters across different industries and vendors, including GitHub, DataDog, SLAS, Solarwinds, Lockheed Martins and more. Every adopter I interviewed is quite happy with in-toto.  Highlight some of the project strengths I heard during adopter interviews:
+
 - "Beyond the community, and diversity of others using it, the spec is also very flexible. You can add to it, or expand it or create a unique solution with it."
 - "Community discussions are great and how they bring them (industry & academic & non profit OSS foundation). Really thinking ahead and anticipating needs before people need them. Continue to be an active community."
 - "It's also been great to see the cross-industry and academic collaboration for in-toto and other related projects - it's a large community effort."
 
-Only 1 adopter suggested 1 minor improvement, which is increased marketing effort. The other adopters seem quite happy with in-toto today.
+Only 1 adopter suggested 1 minor improvement, which is increased marketing effort. Other adopters seem happy with in-toto today.
 
 ### Final Assessment
 
@@ -104,7 +105,7 @@ Documented [here](https://github.com/in-toto/community/tree/main/elections)
 
 - [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-[Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) shows maintainers from Purdue University and New York University. Details below:
+In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) shows maintainers from Purdue University and New York University. Details below:
 
   Santiago Torres
     Email: santiagotorres@purdue.edu
@@ -146,9 +147,9 @@ Maintainers for subprojects have been managed by the ITSC and Sub-project mainta
 
 - [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
-As an intentionally minimal security specification / framework, we deliberately do not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as the Go implementation (used by tools like Trivy and Tekton), the Python reference implementation (used by Datadog), the Java implementation (used by the Jenkins plugin and Rabobank), and the specification (where all implementations coordinate for interoperability).
+As an minimal security specification / framework, the project does not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as the Go implementation (used by tools like Trivy and Tekton), the Python reference implementation (used by Datadog), the Java implementation (used by the Jenkins plugin and Rabobank), and the specification (where all implementations coordinate for interoperability).
 
-Since reaching the incubation stage, the in-toto project has switched its governance model to use a steering committee. The first in-toto Steering Committee (ITSC) was voted on by the in-toto community and comprises five members from organizations spanning industry and academia. The ITSC has oversight over all in-toto sub-projects such as the specification, the Attestation Framework, and implementations maintained by the community written in Python, Go, Java, and Rust. Each sub-project has its own set of maintainers recorded in a CODEOWNERS or MAINTAINERS file in its repository. Across our sub-projects, we have contributors from a diverse set of organizations like Google, Kusari, New York University, Purdue University, Verizon, Intel, and TestifySec.
+Since reaching the incubation stage, the project has switched its governance model to use a steering committee. The first in-toto Steering Committee (ITSC) was voted on by the in-toto community and comprises five members from organizations spanning industry and academia. The ITSC has oversight over all in-toto sub-projects such as the specification, the Attestation Framework, and implementations maintained by the community written in Python, Go, Java, and Rust. Each sub-project has its own set of maintainers recorded in a CODEOWNERS or MAINTAINERS file in its repository. Across sub-projects, the project has contributors from a diverse set of organizations like Google, Kusari, New York University, Purdue University, Verizon, Intel, and TestifySec.
 
 The current ITSC comprises of the following
 - Santiago Torres-Arias (Purdue University)
@@ -157,14 +158,14 @@ The current ITSC comprises of the following
 - Cole Kennedy (TestifySec)
 - Trishank Karthik Kuppusamy (Datadog)
 
-We have had active contributions from an array of contributors across the CNCF landscape.  One way to see this is via the substantial changes that made their way into the specification.
-
-Changes to the in-toto standard largely come in the form of ITEs (in-toto enhancements).  There is a substantial ITE, ITE-4, that standardized non-file artifact specifications for in-toto metadata. The stakeholders in it are Github, Conda, SPDX and Google's Grafeas. 
-
-Another significant ITE is [ITE-6](https://github.com/in-toto/ITE/blob/master/ITE/6/README.adoc). This enhancement introduced the in-toto Attestation Framework to record and disseminate software supply chain specific information like build provenance, code review results, test results, SBOMs, vulnerability scans, and more. in-toto attestations are now used by GitHub for NPM build provenance, OpenVEX, Docker buildx, scanners like Trivy that can generate signed SBOMs, Tekton Chains, Sigstore, GUAC, Witness, and Archivista. SolarWinds, in their next generated build system introduced after SUNBURST, also generate in-toto attestations.
-
 - [X] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
+
+On Jan 7, 2025, Justin Cappos walk through this with me during a screen sharing session where he confirmed that code and doc ownership in Github are assigned properly.
+
 - [X] **Document agreement that project will adopt CNCF Code of Conduct.**
+
+The project has CNCF CoC [recorded](https://github.com/in-toto/community/blob/main/CODE-OF-CONDUCT.md), which says "The in-toto community abides by the Cloud Native Computing Foundation's code of conduct."
+
 - [X] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
 The CoC and the assertion of adherence is referenced in the [GOVERNANCE.md](https://github.com/in-toto/community/blob/main/GOVERNANCE.md#code-of-conduct).
@@ -175,11 +176,13 @@ Subprojects are listed in the [README.md](https://github.com/in-toto/community/b
 
 - [X] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
-Subproject leadership is encoded in a subproject-level MAINTAINERS.txt file (e.g., [in-toto-rs](https://github.com/in-toto/in-toto-rs/blob/master/MAINTAINERS.txt)). Sub-project maturity is encoded in the project's README.md file (e.g., [in-toto-rs](https://github.com/in-toto/in-toto-rs/blob/master/README.md)). Add/remove processes are handled by the in-toto steering committee.
+Subproject leadership is encoded in a subproject-level MAINTAINERS.txt file (e.g., [in-toto-rs](https://github.com/in-toto/in-toto-rs/blob/master/MAINTAINERS.txt)). Sub-project maturity is encoded in the project's README.md file (e.g., [in-toto-rs](https://github.com/in-toto/in-toto-rs/blob/master/README.md)). Add/remove processes are handled by the in-toto steering committee as described [here](https://github.com/in-toto/community/blob/main/GOVERNANCE.md#onboarding-and-offboarding-all-roles).
 
 ## Contributors and Community
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Governance Review from TAG Contributor Strategy is performed in Oct 2024. 
+
+The team rated the review as "Mostly Satisfactory". The steering committee style governance is perceived favorable, along with the project's transparency in different areas such as public documentation, record, and communications. Refer to the [full review](https://github.com/cncf/tag-contributor-strategy/pull/740/files) for details.
 
 ### Suggested
 
@@ -191,7 +194,7 @@ The contributor ladder is encoded in the [GOVERNANCE.md document](https://github
 
 - [X] **Clearly defined and discoverable process to submit issues or changes.**
 
-A contribution guide is placed at the toplevel [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md). A security disclosure process is encoded on the a separate [SECURITY.md](https://github.com/in-toto/community/blob/main/SECURITY.md) file.
+A contribution guide is placed at the toplevel [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md). A security disclosure process is encoded on the a separate [SECURITY.md](https://github.com/in-toto/in-toto/blob/develop/SECURITY.md) file.
 
 - [X] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
@@ -199,15 +202,15 @@ Communication channels are encoded in the [website](https://in-toto.io/contact/)
 
 - [X] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
-Communication channels are encoded in the [website](https://in-toto.io/contact/) 
+Communication channels are encoded in the [website](https://in-toto.io/contact/). Non-public communication channels are described in in-toto's [security disclosure process](https://github.com/in-toto/in-toto/blob/develop/SECURITY.md).
 
 - [X] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-in-toto community meetings are scheduled on the first friday of each month at 11AM et, and is displayed in the [CNCF public calendar](https://tockify.com/cncf.public.events/monthly?search=in-toto).
+The in-toto community meetings are scheduled on the first friday of each month at 11AM et, and is displayed in the [CNCF public calendar](https://tockify.com/cncf.public.events/monthly?search=in-toto).
 
 - [X] **Documentation of how to contribute, with increasing detail as the project matures.**
 
-A contribution guide is placed at the toplevel [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md)
+A contribution guide is placed at the top level [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md)
 
 - [X] **Demonstrate contributor activity and recruitment.**
 
