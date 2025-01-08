@@ -315,6 +315,6 @@ This adopter interview is performed in Sept 2024 and recorded a very happy adopt
 
 This adopter interview is performed in Oct 2024 and recorded a very happy adopter who has great expereience interacting with the in-toto community. Refer to the [interview summary](in-toto-adopter-interview-github.md) for more details.
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+##### Adopter 3 - Chainguard/Software company
 
 This adopter interview is performed in Dec 2024 and recorded a very happy adopter who has great expereience interacting with the in-toto community. Refer to the [interview summary](in-toto-adopter-interview-chainguard.md) for more details.
