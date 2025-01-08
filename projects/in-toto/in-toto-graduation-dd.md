@@ -12,7 +12,7 @@ Project points of contacts: Santiago Torres, santiagotorres@purdue.edu
 
 ### Criteria Evaluation
 
-Lin Sun (@linsun) conducted the due diligence of in-toto who applied for Graduation. The project has completed the criteria that show its maturity at the applied level. The following criteria implementations are noteworthy to call out:
+Lin Sun (@linsun) conducted the due diligence and adopter interview for Graduation. The project has completed the criteria that show its maturity at the applied level. The following criteria implementations are noteworthy to call out:
 
 - A notable stable project with mature capabilities and a wide [adopter](https://github.com/in-toto/friends?tab=readme-ov-file#project-adopters) base.
 - The project has a wide range of interest across academic and cross different industries.
@@ -28,13 +28,18 @@ The following actions were provided to the project that were considered blocking
 - Document the release process.
 - Provide instructions of onboarding & offboarding members/roles in the community.
 
+### Adoption Evaluation:
+
+The adopter interviews reflect the in-toto project is in use for the level which the project applied, which is CNCF graduation. It has a good range of adopters across different industries and vendors, including GitHub, DataDog, SLAS, Solarwinds, Lockheed Martins and more. Every adopter I interviewed is quite happy with in-toto.  Highlight some of the strength I heard:
+- "Beyond the community, and diversity of others using it, the spec is also very flexible. You can add to it, or expand it or create a unique solution with it."
+- "Community discussions are great and how they bring them (industry & academic & non profit OSS foundation). Really thinking ahead and anticipating needs before people need them. Continue to be an active community."
+- "It's also been great to see the cross-industry and academic collaboration for in-toto and other related projects - it's a large community effort."
+
+Only 1 adopter suggested 1 minor improvement, which is increased marketing effort. The other adopters seem quite happy with in-toto today.
+
 ### Final Assessment
 
 The TOC has found the project to have satisfied the criteria for Graduation.
-
-### Adoption Assertion
-
-### Criteria
 
 ## Application Process Principles
 
@@ -46,20 +51,20 @@ N/A
 
 - [X] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
 
-Presentation was given to the TAG security in July 2014.
+Presentation was given to the TAG security in July 2014, which was recorded in this [issue](https://github.com/cncf/tag-security/issues/1290). TODO: add a link to the presentation
 
 - [x]  **TAG provides insight/recommendation of the project in the context of the landscape**
 
-[Very strong support](https://github.com/cncf/toc/pull/1162#issuecomment-2236636343) from TAG security on in-toto's CNCF graduation
+[Very strong support](https://github.com/cncf/toc/pull/1162#issuecomment-2236636343) from TAG security on in-toto's CNCF graduation:
 
 - [X]  **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
-Don't see any concern with vendor-neutral for in-toto project.
+No issues were found during due diligence, both code and documentation are vendor neutral. Based on the community meeting minutes, [contributor stats](https://intoto.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=contributions) and what adopters say about the project, in-toto is very diverse. It is one of the projects that started in academic and attracted a good range of interest from industries as well.
 
 - [x] **Review and acknowledgement of expectations for graduated projects and requirements for moving forward through the CNCF Maturity levels.**
    - [x] Met during Project's application on 21-06-2024.
 
-Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
+I met with the project lead and went over the expectation and requirements for graduated project, as recorded [here](https://github.com/cncf/toc/pull/1162#issuecomment-2190111991).
 
 - [X] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
