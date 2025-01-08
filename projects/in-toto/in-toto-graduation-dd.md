@@ -23,9 +23,10 @@ Lin Sun (@linsun) conducted the due diligence of in-toto who applied for Graduat
 
 The following actions were provided to the project that were considered blocking but have since been resolved:
 
-- Enable convenient linkage for community meeting notes.
 - Updating the list of subprojects in GitHub, found from the Governancy review.
 - Provide an updated roadmap document in GitHub.
+- Document the release process.
+- Provide instructions of onboarding & offboarding members/roles in the community.
 
 ### Final Assessment
 
@@ -80,19 +81,19 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 Able to find it easily.
 
-- [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+- [X] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-TODO: need some work here.
+Confirmed with the team the [Governance doc](https://github.com/in-toto/community/blob/main/GOVERNANCE.md) is up to date.
 
 - [X] **Governance clearly documents [vendor-neutrality](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
 Vendor neutral is clearly mentioned twice in the governance doc. Steering committee composition is also diverse at the moment.
 
-- [x] **Document how the project makes decisions on leadership roles, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
+- [X] **Document how the project makes decisions on leadership roles, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
 Documented [here](https://github.com/in-toto/community/tree/main/elections)
 
-- [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
+- [X]  **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
 [GOVERNANCE.md document](https://github.com/in-toto/community/blob/main/GOVERNANCE.md) shows various project roles and how decisions are made.
 
@@ -129,20 +130,17 @@ Changes to the in-toto standard largely come in the form of ITEs (in-toto enhanc
 
 Another significant ITE is [ITE-6](https://github.com/in-toto/ITE/blob/master/ITE/6/README.adoc). This enhancement introduced the in-toto Attestation Framework to record and disseminate software supply chain specific information like build provenance, code review results, test results, SBOMs, vulnerability scans, and more. in-toto attestations are now used by GitHub for NPM build provenance, OpenVEX, Docker buildx, scanners like Trivy that can generate signed SBOMs, Tekton Chains, Sigstore, GUAC, Witness, and Archivista. SolarWinds, in their next generated build system introduced after SUNBURST, also generate in-toto attestations.
 
-- [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
-
-TODO
-
-- [x] **Document agreement that project will adopt CNCF Code of Conduct.**
-- [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
+- [X] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
+- [X] **Document agreement that project will adopt CNCF Code of Conduct.**
+- [X] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
 The CoC and the assertion of adherence is referenced in the [GOVERNANCE.md](https://github.com/in-toto/community/blob/main/GOVERNANCE.md#code-of-conduct).
 
-- [x] **All subprojects, if any, are listed.**
+- [X] **All subprojects, if any, are listed.**
 
 Subprojects are listed in the [README.md](https://github.com/in-toto/community/blob/main/README.md#subprojects) file of in-toto/community.
 
-- [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
+- [X] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
 Subproject leadership is encoded in a subproject-level MAINTAINERS.txt file (e.g., [in-toto-rs](https://github.com/in-toto/in-toto-rs/blob/master/MAINTAINERS.txt)). Sub-project maturity is encoded in the project's README.md file (e.g., [in-toto-rs](https://github.com/in-toto/in-toto-rs/blob/master/README.md)). Add/remove processes are handled by the in-toto steering committee.
 
@@ -152,29 +150,29 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [x] **Contributor ladder with multiple roles for contributors.**
+- [X] **Contributor ladder with multiple roles for contributors.**
 
 The contributor ladder is encoded in the [GOVERNANCE.md document](https://github.com/in-toto/community/blob/main/GOVERNANCE.md)
 
 ### Required
 
-- [x] **Clearly defined and discoverable process to submit issues or changes.**
+- [X] **Clearly defined and discoverable process to submit issues or changes.**
 
 A contribution guide is placed at the toplevel [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md). A security disclosure process is encoded on the a separate [SECURITY.md](https://github.com/in-toto/community/blob/main/SECURITY.md) file.
 
-- [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
+- [X] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
 Communication channels are encoded in the [website](https://in-toto.io/contact/). It contains a developer facing mailing list, a public mailng list, a slack join link, github and IRC contacts.
 
-- [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
+- [X] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
 Communication channels are encoded in the [website](https://in-toto.io/contact/) 
 
-- [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
+- [X] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
 in-toto community meetings are scheduled on the first friday of each month at 11AM et, and is displayed in the [CNCF public calendar](https://tockify.com/cncf.public.events/monthly?search=in-toto).
 
-- [x] **Documentation of how to contribute, with increasing detail as the project matures.**
+- [X] **Documentation of how to contribute, with increasing detail as the project matures.**
 
 A contribution guide is placed at the toplevel [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md)
 
@@ -184,7 +182,7 @@ A contribution guide is placed at the toplevel [community repository](https://gi
 
 ## Engineering Principles
 
-- [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [X] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
 One of the most pressing security problems in cloud native is software supply chain security.  in-toto  addresses this issue by providing a secure and trustworthy means for representing all the operations within the cloud-native pipeline and verifying that they were carried out to the letter.
 A good way to understand the need for in-toto in the Cloud Native space is to understand the value of signed SBOMs vs in-toto metadata + layouts.  A signed SBOM indicates that some party (whose key you presumably have a reason to trust) states what the software contains.  In contrast, in-toto will have signed information about the individual steps of the supply chain cryptographically linking metadata together from various parties and validating this all against the software’s policies.  As a result, their protection modes would work quite differently in many cases.  For example, see the following table:
@@ -209,29 +207,29 @@ This is why projects like SLSA and FRSCA are built as an opinionated set of step
 
 These projects are solving different problems at different levels.  In-toto allows you to capture information about your steps, ensure policies about them are applied, handle trust of keys, etc.  Frameworks like SLSA and FRSCA use in-toto as a mechanism to capture and enforce a specific set of policies that result in more secure supply chains.  
 
-- [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
+- [X] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
 https://in-toto.io/in-toto/ & https://github.com/in-toto/friends explain well what the project does and many integrations with other projects in the ecosystem.
 
-- [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
+- [X] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
 Roadmap for project with pointers to subproject ROADMAPs are encoded in a [ROADMAP.md file](https://github.com/in-toto/community/blob/main/ROADMAP.md)
 
-- [x] **Roadmap change process is documented.**
+- [X] **Roadmap change process is documented.**
 
 Roadmap text [current roadmap](https://github.com/in-toto/community/tree/main/ROADMAP.md) outlines how and when the community-wide rodamap is updated (usually once a year). Each sub-project may also have their own ROADMAP that aligns to subproject-wide SLAs
 
-- [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [X] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
 
 The [friends](https://github.com/in-toto/friends) repository outlines how Cloud-native applications and integrations use in-toto and how the in-toto architecture aligns with its goals. Further, in-toto is published as a [peer-reviewed paper](https://www.usenix.org/conference/usenixsecurity19/presentation/torres-arias) which outlines how it can be used in cloud-native CI/CD platforms, as well as social coding platforms and distributed buildsystems.
 
-- [x] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
+- [X] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
 
-  - [x] Release expectations (scheduled or based on feature implementation)
-  - [x] Tagging as stable, unstable, and security related releases
-  - [ ] Information on branch and tag strategies
-  - [ ] Branch and platform support and length of support
-  - [x] Artifacts included in the release.
+  - [X] Release expectations (scheduled or based on feature implementation)
+  - [X] Tagging as stable, unstable, and security related releases
+  - [X] Information on branch and tag strategies
+  - [X] Branch and platform support and length of support
+  - [X] Artifacts included in the release.
   - Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.
 
 in-toto has multiple implementations with varied release cadences depending on the involved stakeholders. For example, the Python implementation offers a feature-stable offering, which focuses on releasing bug-fix releases, whereas the golang implementation provides a "sandbox" for new and experimental features. As such, each subproject manages their own release cadence.
@@ -248,34 +246,34 @@ Note: this section may be augemented by a joint-assessment performed by TAG Secu
 
 ### Suggested
 
-- [x] **Achieving OpenSSF Best Practices silver or gold badge.**
+- [X] **Achieving OpenSSF Best Practices silver or gold badge.**
 
 [in-toto achieves a gold OpenSSF Best Practice badge](https://www.bestpractices.dev/en/projects/1523?criteria_level=2)
 
 ### Required
 
-- [x] **Clearly defined and discoverable process to report security issues.**
+- [X] **Clearly defined and discoverable process to report security issues.**
 
 Repositories describe the disclosure process using a [SECURITY.md file](https://github.com/in-toto/in-toto/blob/develop/SECURITY.md)
 
 
-- [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
+- [X] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
 GitHub teams are used to provide granular access to different repositories within the organization. Protected branches are used to avoid pushes to master. Dependabot, and secret scanning is also added to all implementation repositories.
 
-- [x] **Document assignment of security response roles and how reports are handled.**
+- [X] **Document assignment of security response roles and how reports are handled.**
 
 Disclosure is handled by the ITSC. In addition, GitHub private vulnerability reporting is used (and has been successfully used before) to handle disclosures on implementations.
 
-- [x] **Document Security Self-Assessment.**
+- [X] **Document Security Self-Assessment.**
 
 in-toto was the [first project to carry out a security self-assessment](https://github.com/cncf/tag-security/commit/06b71c4db99ba07107cba6cf8f6fc6d4461fce82) with TAG security, and aided in developing the current process.
 
-- [x] **Third Party Security Review.**
+- [X] **Third Party Security Review.**
 
 See the in-toto [Security Audit ‘23](https://in-toto.io/security-audit-23/).
 
-- [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+- [X] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
 The in-toto project has a [Gold CII (now OpenSSF) Best Practices Badge](https://bestpractices.coreinfrastructure.org/en/projects/1523?criteria_level=2).  As of 31st of July, 2023, there are only 23 projects in the world to have such a distinction.  The only other CNCF project with a Gold Badge is the [TUF project (a graduated security project)](http://theupdateframework.io). 
 
@@ -289,21 +287,21 @@ N/A
 
 ### Required
 
-- [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
+- [X] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
 Adoptions are documented in the [in-toto friends repository](https://github.com/in-toto/friends)
 
-- [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
+- [X] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
 Many adopters and integrations are [documented](https://github.com/in-toto/friends).
 
 The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
-- [x] **TOC verification of adopters.**
+- [X] **TOC verification of adopters.**
 
 Refer to the Adoption portion of this document.
 
-- [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
+- [X] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
 Many integrations are [documented](https://github.com/in-toto/friends?tab=readme-ov-file#project-integrations).
 
