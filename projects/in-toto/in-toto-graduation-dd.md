@@ -338,7 +338,7 @@ The project's adopter interviews reflect the appropriate level of adoptions demo
 
 - [X] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
-Integrations are [documented](https://github.com/in-toto/friends?tab=readme-ov-file#project-integrations).
+Integrations are [documented](https://github.com/in-toto/friends?tab=readme-ov-file#project-integrations), including a good range of popular projects/platforms such as GitHub, GitLab, GUAC, Jenkins, Sigstore etc.
 
 #### Adoption
 
