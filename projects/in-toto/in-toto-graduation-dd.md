@@ -105,7 +105,7 @@ The [GOVERNANCE.md document](https://github.com/in-toto/community/blob/main/GOVE
 
 - [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) shows maintainers from Purdue University and New York University. Details below:
+In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) shows maintainers from Purdue University and New York University. I've confirmed the following maintainers are still active:
 
   Santiago Torres
     Email: santiagotorres@purdue.edu
@@ -118,14 +118,6 @@ In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAIN
   Justin Cappos
     Email: jcappos@nyu.edu
     GitHub username: @JustinCappos
-
-  Marina Moore
-    Email: mm9693@nyu.edu
-    GitHub username: @mnm678
-
-  Sebastien Awwad
-    Email: sebastien.awwad@nyu.edu
-    GitHub username: @awwad
 
   Aditya Sirish A Yelgundhalli
     Email: aditya.sirish@nyu.edu
