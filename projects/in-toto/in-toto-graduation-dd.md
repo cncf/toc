@@ -283,8 +283,7 @@ See the in-toto [Security Audit ‘23](https://in-toto.io/security-audit-23/).
 
 - [X] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
-The in-toto project has a [Gold CII (now OpenSSF) Best Practices Badge](https://bestpractices.coreinfrastructure.org/en/projects/1523?criteria_level=2).  As of 31st of July, 2023, there are only 23 projects in the world to have such a distinction.  The only other CNCF project with a Gold Badge is the [TUF project (a graduated security project)](http://theupdateframework.io). 
-
+The in-toto project has a [Gold CII (now OpenSSF) Best Practices Badge](https://bestpractices.coreinfrastructure.org/en/projects/1523?criteria_level=2).
 According to the OpenSSF Best Practices website, the in-toto project received its initial OpenSSF Best Practices badge on January 5th, 2018.
 
 ## Ecosystem
