@@ -160,7 +160,7 @@ The current ITSC comprises of the following
 
 - [X] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-On Jan 7, 2025, Justin Cappos walk through this with me during a screen sharing session where he confirmed that code and doc ownership in Github are assigned properly.
+On Jan 7, 2025, Justin Cappos walk through this with me during a screen sharing session where he confirmed that code and doc ownership in Github are assigned properly with two primary groups (maintainers and steering members). The project's code and doc ownership appear to match the documented governance roles for the project.
 
 - [X] **Document agreement that project will adopt CNCF Code of Conduct.**
 
