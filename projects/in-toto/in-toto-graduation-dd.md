@@ -188,13 +188,13 @@ The team rated the review as "Mostly Satisfactory". The steering committee style
 
 - [X] **Contributor ladder with multiple roles for contributors.**
 
-The contributor ladder is encoded in the [GOVERNANCE.md document](https://github.com/in-toto/community/blob/main/GOVERNANCE.md)
+The contributor ladder is encoded in the [GOVERNANCE.md document](https://github.com/in-toto/community/blob/main/GOVERNANCE.md).
 
 ### Required
 
 - [X] **Clearly defined and discoverable process to submit issues or changes.**
 
-A contribution guide is placed at the toplevel [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md). A security disclosure process is encoded on the a separate [SECURITY.md](https://github.com/in-toto/in-toto/blob/develop/SECURITY.md) file.
+A contribution guide is placed at the top level [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md). A security disclosure process is encoded on the a separate [SECURITY.md](https://github.com/in-toto/community/blob/main/SECURITY.md) file.
 
 - [X] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
@@ -202,7 +202,7 @@ Communication channels are encoded in the [website](https://in-toto.io/contact/)
 
 - [X] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
-Communication channels are encoded in the [website](https://in-toto.io/contact/). Non-public communication channels are described in in-toto's [security disclosure process](https://github.com/in-toto/in-toto/blob/develop/SECURITY.md).
+Communication channels are encoded in the [website](https://in-toto.io/contact/). Non-public communication channels are described in in-toto's [security disclosure process](https://github.com/in-toto/community/blob/main/SECURITY.md).
 
 - [X] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
@@ -210,7 +210,7 @@ The in-toto community meetings are scheduled on the first friday of each month a
 
 - [X] **Documentation of how to contribute, with increasing detail as the project matures.**
 
-A contribution guide is placed at the top level [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md)
+A contribution guide is placed at the top level [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md). I observed a few additional updates to the contribution guide this year, related to the newly added reference documentation policy and some refinement for it.
 
 - [X] **Demonstrate contributor activity and recruitment.**
 
@@ -292,7 +292,6 @@ Note: this section may be augemented by a joint-assessment performed by TAG Secu
 
 Repositories describe the disclosure process using a [SECURITY.md file](https://github.com/in-toto/in-toto/blob/develop/SECURITY.md)
 
-
 - [X] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
 GitHub teams are used to provide granular access to different repositories within the organization. Protected branches are used to avoid pushes to master. Dependabot, and secret scanning is also added to all implementation repositories.
@@ -325,21 +324,21 @@ N/A
 
 - [X] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-Adoptions are documented in the [in-toto friends repository](https://github.com/in-toto/friends)
+Adoptions are documented in the [in-toto friends repository](https://github.com/in-toto/friends).
 
 - [X] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-Many adopters and integrations are [documented](https://github.com/in-toto/friends).
+Adopters are [documented](https://github.com/in-toto/friends).
 
 The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
 - [X] **TOC verification of adopters.**
 
-Refer to the Adoption portion of this document.
+The project's adopter interviews reflect the appropriate level of adoptions demonstrating maturity of a graduation level project. Refer to the Adoption portion of this document for more details. 
 
 - [X] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
-Many integrations are [documented](https://github.com/in-toto/friends?tab=readme-ov-file#project-integrations).
+Integrations are [documented](https://github.com/in-toto/friends?tab=readme-ov-file#project-integrations).
 
 #### Adoption
 
