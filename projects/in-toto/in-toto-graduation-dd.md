@@ -56,7 +56,7 @@ N/A
 
 - [x]  **TAG provides insight/recommendation of the project in the context of the landscape**
 
-[Very strong support](https://github.com/cncf/toc/pull/1162#issuecomment-2236636343) from TAG security on in-toto's CNCF graduation:
+[Very strong support](https://github.com/cncf/toc/pull/1162#issuecomment-2236636343) from TAG security on in-toto's CNCF graduation.
 
 - [X]  **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
