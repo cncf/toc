@@ -85,7 +85,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [X] **Clear and discoverable project governance documentation.**
 
-Able to find it easily.
+I was able to find it easily.
 
 - [X] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
@@ -97,7 +97,7 @@ Vendor neutral is clearly mentioned twice in the governance doc. Steering commit
 
 - [X] **Document how the project makes decisions on leadership roles, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
-Documented [here](https://github.com/in-toto/community/tree/main/elections)
+Election process of the steering committee is documented [here](https://github.com/in-toto/community/tree/main/elections). [Decision making](https://github.com/in-toto/community/blob/main/GOVERNANCE.md#decision-making) and [change process](https://github.com/in-toto/community/blob/main/GOVERNANCE.md#change-review-process) are also documented.
 
 - [X]  **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
