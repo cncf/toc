@@ -27,6 +27,8 @@ The following actions were provided to the project that were considered blocking
 - Provide an updated roadmap document in GitHub.
 - Document the release process.
 - Provide instructions of onboarding & offboarding members/roles in the community.
+- Move inactive maintainers to emeritus maintainers.
+- Update list of adopters to be accurate. 
 
 ### Adoption Evaluation:
 
@@ -105,7 +107,7 @@ The [GOVERNANCE.md document](https://github.com/in-toto/community/blob/main/GOVE
 
 - [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) shows maintainers from Purdue University and New York University. I've confirmed the following maintainers are still active:
+In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) shows maintainers from Purdue University and New York University. I've confirmed the following maintainers are still active and worked with the project to move the inactive maintainers to emeritus maintainers:
 
   Santiago Torres
     Email: santiagotorres@purdue.edu
@@ -295,7 +297,7 @@ N/A
 
 - [X] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-Adoptions are documented in the [in-toto friends repository](https://github.com/in-toto/friends). Opened 2 issues to add [Lockhead Martins](https://github.com/in-toto/friends/issues/56) and [Chainguard](https://github.com/in-toto/friends/issues/55) to the list, pending the adopters to submit PRs to resolve it.
+Adoptions are documented in the [in-toto friends repository](https://github.com/in-toto/friends). Opened 1 issue to [add Chainguard](https://github.com/in-toto/friends/issues/55) to the list, pending the adopter to submit a PR to resolve it.
 
 - [X] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
