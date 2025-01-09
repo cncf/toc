@@ -324,11 +324,11 @@ N/A
 
 - [X] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-Adoptions are documented in the [in-toto friends repository](https://github.com/in-toto/friends).
+Adoptions are documented in the [in-toto friends repository](https://github.com/in-toto/friends). Opened 2 issues to add [Lockhead Martins](https://github.com/in-toto/friends/issues/56) and [Chainguard](https://github.com/in-toto/friends/issues/55) to the list, pending the adopters to submit PRs to resolve it.
 
 - [X] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-Adopters are [documented](https://github.com/in-toto/friends).
+Adopters are [documented](https://github.com/in-toto/friends) which includes at least 3 indepdendent adopters.  Adopter interviews also showed 3 independent adopters. All adopters I interviewed are using in-toto for production.
 
 The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
