@@ -79,7 +79,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ]  **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
-[Governance doc](https://github.com/in-toto/community/blob/main/GOVERNANCE.md) is clear. There is very few changes to it since it was created in Feb, 2023.
+The [Governance doc](https://github.com/in-toto/community/blob/main/GOVERNANCE.md) is clear. There is very few changes to it since it was created in Feb, 2023.
 
 ### Required
 
@@ -101,7 +101,7 @@ Election process of the steering committee is documented [here](https://github.c
 
 - [X]  **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
-[GOVERNANCE.md document](https://github.com/in-toto/community/blob/main/GOVERNANCE.md) shows various project roles and how decisions are made.
+The [GOVERNANCE.md document](https://github.com/in-toto/community/blob/main/GOVERNANCE.md) shows various project roles and how decisions are made.
 
 - [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
