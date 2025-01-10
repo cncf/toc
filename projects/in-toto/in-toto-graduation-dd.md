@@ -12,7 +12,7 @@ Project points of contacts: Santiago Torres, santiagotorres@purdue.edu
 
 ### Criteria Evaluation
 
-Lin Sun (@linsun) conducted the due diligence and adopter interview for Graduation. The project has completed the criteria that show its maturity at the applied level. The following criteria implementations are noteworthy to call out:
+Lin Sun (@linsun) conducted the due diligence and adopter interview for Graduation. The project has completed the criteria that show its maturity at the applied level. The following criteria are noteworthy to call out:
 
 - A notable stable project with mature capabilities and a wide [adopter](https://github.com/in-toto/friends?tab=readme-ov-file#project-adopters) base.
 - The project has a wide range of interest across academic and cross different industries.
