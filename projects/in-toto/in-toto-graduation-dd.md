@@ -28,7 +28,7 @@ The following actions were provided to the project that were considered blocking
 - Document the release process.
 - Provide instructions of onboarding & offboarding members/roles in the community.
 - Move inactive maintainers to emeritus maintainers.
-- Update list of adopters to be accurate. 
+- Added a few missing adopters. 
 
 ### Adoption Evaluation:
 
@@ -107,7 +107,7 @@ The [GOVERNANCE.md document](https://github.com/in-toto/community/blob/main/GOVE
 
 - [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) shows maintainers from Purdue University and New York University. I've confirmed the following maintainers are still active and worked with the project to move the inactive maintainers to emeritus maintainers:
+In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAINTAINERS.txt) shows maintainers from Purdue University and New York University. I've confirmed the following maintainers are still active and worked with the project to move the two inactive maintainers to emeritus maintainers:
 
   Santiago Torres
     Email: santiagotorres@purdue.edu
@@ -125,7 +125,7 @@ In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAIN
     Email: aditya.sirish@nyu.edu
     GitHub username: @adityasaky
 
-In addition, in-toto has a very diverse [steering committe members](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md), including members from TestifySec, ControlPlane and Datadog.
+In addition, in-toto has a very diverse [steering committe members](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md), including members from TestifySec, ControlPlane and Datadog, in addition to members from Purdue and NYU.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
@@ -141,11 +141,11 @@ Maintainers for subprojects have been managed by the ITSC and Sub-project mainta
 
 - [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
-As an minimal security specification / framework, the project does not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as the Go implementation (used by tools like Trivy and Tekton), the Python reference implementation (used by Datadog), the Java implementation (used by the Jenkins plugin and Rabobank), and the specification (where all implementations coordinate for interoperability).
+As an minimal security specification / framework, the in-toto project does not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as the Go implementation (used by tools like Trivy and Tekton), the Python reference implementation (used by Datadog), the Java implementation (used by the Jenkins plugin and Rabobank), and the specification (where all implementations coordinate for interoperability).
 
 Since reaching the incubation stage, the project has switched its governance model to use a steering committee. The first in-toto Steering Committee (ITSC) was voted on by the in-toto community and comprises five members from organizations spanning industry and academia. The ITSC has oversight over all in-toto sub-projects such as the specification, the Attestation Framework, and implementations maintained by the community written in Python, Go, Java, and Rust. Each sub-project has its own set of maintainers recorded in a CODEOWNERS or MAINTAINERS file in its repository. Across sub-projects, the project has contributors from a diverse set of organizations like Google, Kusari, New York University, Purdue University, Verizon, Intel, and TestifySec.
 
-The current ITSC comprises of the following
+The current ITSC comprises of the following:
 - Santiago Torres-Arias (Purdue University)
 - Justin Cappos (New York University)
 - Jack Kelly (Control Plane)
@@ -218,7 +218,7 @@ This is documented well at the project's readme, under a section that describes 
 
 - [X] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
-https://in-toto.io/in-toto/ & https://github.com/in-toto/friends explain well what the project does and many integrations with other projects in the ecosystem.
+https://in-toto.io/in-toto/ & https://github.com/in-toto/friends explain well what the project does and its integrations with other projects in the ecosystem.
 
 - [X] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
@@ -230,7 +230,7 @@ Roadmap text [current roadmap](https://github.com/in-toto/community/tree/main/RO
 
 - [X] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
 
-The [friends](https://github.com/in-toto/friends) repository outlines how Cloud-native applications and integrations use in-toto and how the in-toto architecture aligns with its goals. Further, in-toto is published as a [peer-reviewed paper](https://www.usenix.org/conference/usenixsecurity19/presentation/torres-arias) which outlines how it can be used in cloud-native CI/CD platforms, as well as social coding platforms and distributed buildsystems.
+The [friends](https://github.com/in-toto/friends) repository outlines how cloud native applications and integrations use in-toto and how the in-toto architecture aligns with its goals. Further, in-toto is published as a [peer-reviewed paper](https://www.usenix.org/conference/usenixsecurity19/presentation/torres-arias) which outlines how it can be used in cloud native CI/CD platforms, as well as social coding platforms and distributed buildsystems.
 
 - [X] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
 
@@ -296,7 +296,7 @@ N/A
 
 - [X] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-Adoptions are documented in the [in-toto friends repository](https://github.com/in-toto/friends). Opened 1 issue to [add Chainguard](https://github.com/in-toto/friends/issues/55) to the list, pending the adopter to submit a PR to resolve it.
+Adoptions are documented in the [in-toto friends repository](https://github.com/in-toto/friends). As part of the review, I worked with the project lead to add a few missing adopters to the list.
 
 - [X] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
