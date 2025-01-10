@@ -21,14 +21,15 @@ Lin Sun (@linsun) conducted the due diligence and adopter interview for Graduati
 - The project is not only vendor neutral but also has a very diversed set of maintainers, adopters and integrators.
 - The project does an excellent job of making sure that its public meetings are accessible, with notes, and easy to find meeting links.
 
-The following actions were provided to the project that were considered blocking but have since been resolved:
+The following actions were provided to the in-toto project that were considered blocking but have since been resolved:
 
 - Updating the list of subprojects in GitHub, found from the Governancy review.
 - Provide an updated roadmap document in GitHub.
 - Document the release process.
 - Provide instructions of onboarding & offboarding members/roles in the community.
 - Move inactive maintainers to emeritus maintainers.
-- Added a few missing adopters. 
+- Added a few missing adopters.
+- 1 High severity issue along with a few outstanding issues that were found from the security audit in 2023 have been addressed.
 
 ### Adoption Evaluation:
 
@@ -125,7 +126,7 @@ In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAIN
     Email: aditya.sirish@nyu.edu
     GitHub username: @adityasaky
 
-In addition, in-toto has a very diverse [steering committe members](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md), including members from TestifySec, ControlPlane and Datadog, in addition to members from Purdue and NYU.
+Given the in-toto project's scope is the in-toto framework and specification, the maintenance effort is low. The adopter interviews appeared to indicate activity/health of maintainership where the community has been very responsive to questions or any issues raised by adopters. In addition, in-toto has a very diverse [steering committe members](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md), including members from TestifySec, ControlPlane and Datadog, in addition to members from Purdue and NYU.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
@@ -141,7 +142,7 @@ Maintainers for subprojects have been managed by the ITSC and Sub-project mainta
 
 - [x] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
-As an minimal security specification / framework, the in-toto project does not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as the Go implementation (used by tools like Trivy and Tekton), the Python reference implementation (used by Datadog), the Java implementation (used by the Jenkins plugin and Rabobank), and the specification (where all implementations coordinate for interoperability).
+As an minimal security specification / framework, the in-toto project does not have a high degree of feature additions in the project.  Effort comes on either the implementations, such as the Go implementation (used by tools like Trivy and Tekton), the Python reference implementation (used by Datadog), the Java implementation (used by the Jenkins plugin and Rabobank), and the specification (where all implementations coordinate for interoperability). The graduation application is only for the in-toto project itself which is the framework/specification.
 
 Since reaching the incubation stage, the project has switched its governance model to use a steering committee. The first in-toto Steering Committee (ITSC) was voted on by the in-toto community and comprises five members from organizations spanning industry and academia. The ITSC has oversight over all in-toto sub-projects such as the specification, the Attestation Framework, and implementations maintained by the community written in Python, Go, Java, and Rust. Each sub-project has its own set of maintainers recorded in a CODEOWNERS or MAINTAINERS file in its repository. Across sub-projects, the project has contributors from a diverse set of organizations like Google, Kusari, New York University, Purdue University, Verizon, Intel, and TestifySec.
 
@@ -241,7 +242,7 @@ The [friends](https://github.com/in-toto/friends) repository outlines how cloud 
   - [X] Artifacts included in the release.
   - Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.
 
-in-toto has multiple implementations with varied release cadences depending on the involved stakeholders. For example, the Python implementation offers a feature-stable offering, which focuses on releasing bug-fix releases, whereas the golang implementation provides a "sandbox" for new and experimental features. As such, each subproject manages their own release cadence.
+The in-toto project has multiple implementations with varied release cadences depending on the involved stakeholders. For example, the Python implementation offers a feature-stable offering, which focuses on releasing bug-fix releases, whereas the golang implementation provides a "sandbox" for new and experimental features. As such, each subproject manages their own release cadence.
 
 All implementations follow semver to communicate their feature support, as well as backwards and forwards compatiblity.
 
@@ -279,7 +280,7 @@ in-toto was the [first project to carry out a security self-assessment](https://
 
 - [X] **Third Party Security Review.**
 
-See the in-toto [Security Audit ‘23](https://in-toto.io/security-audit-23/).
+See the in-toto [Security Audit ‘23](https://in-toto.io/security-audit-23/). The project has resolved the majority of findings from the security audit and created issues for resolution of any outstanding. All issues related to the in-toto framework or specification have been resolved.
 
 - [X] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
