@@ -126,7 +126,7 @@ In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAIN
     Email: aditya.sirish@nyu.edu
     GitHub username: @adityasaky
 
-Given the in-toto project's scope is the in-toto framework and specification, the maintenance effort is low. The adopter interviews appeared to indicate activity/health of maintainership where the community has been very responsive to questions or any issues raised by adopters. In addition, in-toto has a very diverse [steering committe members](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md), including members from TestifySec, ControlPlane and Datadog, in addition to members from Purdue and NYU.
+Given the in-toto project's scope is the in-toto framework and specification, the maintenance effort is low and the current list of maintainers appears to be sufficient. The maintainers also have a few active sub-project maintainers in the core maintainer pipeline if needed to promote one of them. The adopter interviews appeared to indicate activity/health of maintainership where the community has been very responsive to questions or any issues raised by adopters. In addition, in-toto has a very diverse [steering committe members](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md), including members from TestifySec, ControlPlane and Datadog, in addition to members from Purdue and NYU.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
@@ -281,6 +281,8 @@ in-toto was the [first project to carry out a security self-assessment](https://
 - [X] **Third Party Security Review.**
 
 See the in-toto [Security Audit ‘23](https://in-toto.io/security-audit-23/). The project has resolved the majority of findings from the security audit and created issues for resolution of any outstanding. All issues related to the in-toto framework or specification have been resolved.
+
+The witness implementation still has a few [outstanding issues](https://github.com/in-toto/witness/issues/268) to be resolved. This DD doc focuses on the in-toto framework and specification, thus we consider the issues related to the witness implementation out of scope.
 
 - [X] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
