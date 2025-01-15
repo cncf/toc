@@ -39,3 +39,15 @@ Expectations conveyance with interviewers: “I’ll record raw notes here, then
 13. What are the overall strengths of the project?
 
 14. Do you have any future plans regarding the project? More involvement, feature requests, expansion, etc.
+
+### Maturity Level Survey
+
+The following set of questions goes beyond the scope of the specific project adoption.
+
+Their goal is to benefit from having access to CNCF project adopters and survey their understanding of the CNCF project maturity levels and any reliance on their meaning for decision making. This information should allow the TOC to better document maturity levels targeting adopters.
+
+1. Do you feel you have a good understanding on the meaning of each maturity level for CNCF projects?
+
+2. Is there information missing regarding the meaning of each different level?
+
+3. Do you rely on those levels internally in any way, and if yes how?
