@@ -22,13 +22,13 @@ Sandbox projects are the initial stage in the CNCF's project maturity levels. Th
 **Incubation**:
 Incubating projects in the CNCF represent the middle stage of project maturity. These projects have progressed beyond the experimental phase of the Sandbox and are starting to demonstrate stability. Incubating projects exhibit a slower rate of change, with fewer breaking changes and more fixed APIs. This signifies that the project's core functionality is solid, making it more reliable for production use. Importantly, this stage marks the point where the CNCF's Technical Oversight Committee (TOC) begins to actively evaluate the project's adoption. The TOC assesses the project's usefulness to interested parties, gauging its potential for wider adoption and integration within the cloud-native ecosystem.
 
-
 **Graduation**:
 CNCF Graduated projects represent the pinnacle of project maturity within the Cloud Native Computing Foundation's ecosystem. These projects have successfully navigated the Sandbox and Incubating stages, demonstrating a high level of stability, functionality, and widespread adoption within their specific market area. Graduated projects are characterised by their adherence to mature and evolved practices, ensuring consistent and reliable performance. They offer a high degree of confidence to adopters and contributors alike, guaranteeing stability, robust performance, comprehensive security measures, and active engagement with the community. Reaching the Graduated level signifies that the project has proven its value and is considered a reliable and trusted solution within the cloud-native landscape.
 
 **Archived**:
 Archived projects are inactive or no longer recommended for use. This stage ensures the CNCF community focuses on active, impactful projects.
 Projects may enter the CNCF either by applying as a sandbox project or applying directly for incubation. As a project navigates their maturity journey, their completion of a given level's criteria is evaluated by the TOC in a process called Due Diligence to ensure the project's implementation of the criteria meets the desired outcome, intent, and expectations set forth by the TOC.
+
 ---
 
 **Project Lifecycle Process**
