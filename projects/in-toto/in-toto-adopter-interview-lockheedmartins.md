@@ -1,4 +1,4 @@
-# In-toto Adopter Interview - GitHub
+# In-toto Adopter Interview - Lockheed Martins
 
 Interviewee: Ian Dunbar-hall, Head of Open Source Program Office, Lockheed Martins
 Interview date: Sept 3, 2024
