@@ -26,7 +26,7 @@ The following actions were provided to the in-toto project that were considered 
 - Updating the list of subprojects in GitHub, found from the Governancy review.
 - Provide an updated roadmap document in GitHub.
 - Document the release process.
-- Provide instructions of onboarding & offboarding members/roles in the community.
+- Provide instructions for onboarding & offboarding members/roles in the community.
 - Move inactive maintainers to emeritus maintainers.
 - Added a few missing adopters.
 - 1 High severity issue along with a few outstanding issues that were found from the security audit in 2023 have been addressed.
