@@ -189,7 +189,7 @@ The contributor ladder is encoded in the [GOVERNANCE.md document](https://github
 
 - [X] **Clearly defined and discoverable process to submit issues or changes.**
 
-A contribution guide is placed at the top level [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md). A security disclosure process is encoded on the a separate [SECURITY.md](https://github.com/in-toto/community/blob/main/SECURITY.md) file.
+A contribution guide is placed at the top level [community repository](https://github.com/in-toto/community/blob/main/CONTRIBUTING.md). A security disclosure process is encoded in a separate [SECURITY.md](https://github.com/in-toto/community/blob/main/SECURITY.md) file.
 
 - [X] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
