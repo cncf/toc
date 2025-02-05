@@ -7,7 +7,7 @@ Interview date: Sept 3, 2024
 
 ### Can you give us an overview of your organization and what it does?
 
-[Lockheed Martins](https://www.lockheedmartin.com/en-us/contact.html) is a leading aerospace and defense company.
+[Lockheed Martin](https://www.lockheedmartin.com/en-us/contact.html) is a leading aerospace and defense company.
 
 ## Motivation
 
