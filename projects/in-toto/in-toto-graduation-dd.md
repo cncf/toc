@@ -55,7 +55,7 @@ N/A
 
 - [X] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
 
-[Presentation](https://zoom.us/rec/share/H4AeeCUzrh7dVDzv7udMJmK-jWHvENmyWmcZvG4-1rZbVWUTn7RAByqKSfG3g9ya.OJnqcezJAXcGMce0?startTime=1721235498000) was given to the TAG security in July 2014, which was recorded in this [issue](https://github.com/cncf/tag-security/issues/1290).
+[Presentation](https://zoom.us/rec/share/H4AeeCUzrh7dVDzv7udMJmK-jWHvENmyWmcZvG4-1rZbVWUTn7RAByqKSfG3g9ya.OJnqcezJAXcGMce0?startTime=1721235498000) was given to the TAG security in July 2024, which was recorded in this [issue](https://github.com/cncf/tag-security/issues/1290).
 
 - [x]  **TAG provides insight/recommendation of the project in the context of the landscape**
 
