@@ -252,7 +252,7 @@ A history of releases is [kept on our changelog](https://github.com/in-toto/in-t
 
 ## Security
 
-Note: this section may be augemented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security.
 
 ### Suggested
 
