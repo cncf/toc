@@ -33,7 +33,7 @@ The following actions were provided to the in-toto project that were considered 
 
 ### Adoption Evaluation:
 
-The adopter interviews reflect the in-toto project is in use for the level which the project applied, which is CNCF graduation. It has a good range of adopters across different industries and vendors, including GitHub, DataDog, SLAS, Solarwinds, Lockheed Martins and more. Every adopter I interviewed is quite happy with in-toto.  Highlight some of the project strengths I heard during adopter interviews:
+The adopter interviews reflect the in-toto project is in use for the level which the project applied, which is CNCF graduation. It has a good range of adopters across different industries and vendors, including GitHub, DataDog, SLAS, Solarwinds, Lockheed Martin and more. Every adopter I interviewed is quite happy with in-toto.  Highlighting some of the project strengths I heard during adopter interviews:
 
 - "Beyond the community, and diversity of others using it, the spec is also very flexible. You can add to it, or expand it or create a unique solution with it."
 - "Community discussions are great and how they bring them (industry & academic & non profit OSS foundation). Really thinking ahead and anticipating needs before people need them. Continue to be an active community."
