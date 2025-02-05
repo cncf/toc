@@ -63,7 +63,7 @@ N/A
 
 - [X]  **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
-No issues were found during due diligence, both code and documentation are vendor neutral. Vendor neutral is clearly mentioned twice in the governance doc. Based on the community meeting minutes, [contributor stats](https://intoto.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=contributions) and what adopters say about the project, in-toto is very diverse. It is one of the projects that started in academic and attracted a good range of interest from industries as well.
+No issues were found during due diligence, both code and documentation are vendor neutral. Vendor neutral is clearly mentioned twice in the governance doc. Based on the community meeting minutes, [contributor stats](https://intoto.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=contributions) and what adopters say about the project, in-toto is very diverse. It is one of the projects that started in academic and attracted a good range of interest from industry as well.
 
 - [x] **Review and acknowledgement of expectations for graduated projects and requirements for moving forward through the CNCF Maturity levels.**
    - [x] Met during Project's application on 21-06-2024.
