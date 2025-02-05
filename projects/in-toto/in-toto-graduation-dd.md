@@ -18,7 +18,7 @@ Lin Sun (@linsun) conducted the due diligence and adopter interview for Graduati
 - The project has a wide range of interest across academic and cross different industries.
 - The project [integrates](https://github.com/in-toto/friends?tab=readme-ov-file#project-integrations) with various other projects in the cloud native ecosystem such as GitHub, GitLab, GUAC, Tekton, etc.
 - Implementation of the steering committee to capture adopters' voice in the project development and roadmap.
-- The project is not only vendor neutral but also has a very diversed set of maintainers, adopters and integrators.
+- The project is not only vendor neutral but also has a very diverse set of maintainers, adopters and integrators.
 - The project does an excellent job of making sure that its public meetings are accessible, with notes, and easy to find meeting links.
 
 The following actions were provided to the in-toto project that were considered blocking but have since been resolved:
