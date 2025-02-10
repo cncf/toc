@@ -51,7 +51,6 @@ TOC and TOC Contributors have fulfilled TAG duties in the past and will continue
 
 | Name                  | Organization           | 
 |-----------------------|------------------------|
-| [Ali Ok](https://github.com/aliok)            |
 | [Riaan Kleinhans](https://github.com/Riaankl) |
 
   
