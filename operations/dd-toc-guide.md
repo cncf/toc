@@ -181,7 +181,7 @@ TOC members who sponsor projects seeking graduation are expected to review the r
 
 #### Specification project
 
-If a project is a specification project such as the TUF, SPIFFE and in-toto projects, there really is very little additional development that would need to happen and it is reasonable for the specification project have only a few maintainers. For specification project, it is required to have at least one implementation and that reference implementation DOES NOT need to be part of the project undergoing due diligence.
+If a project is a specification project such as the TUF, SPIFFE and in-toto projects, there really is very little additional development that would need to happen and it is reasonable for the specification project to have only a few maintainers. For a specification project, it is required to have at least one implementation and that reference implementation DOES NOT need to be part of the project undergoing due diligence.
 
 ### Finalizing the Due Diligence
 
