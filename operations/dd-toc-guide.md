@@ -179,6 +179,10 @@ In the course of conducting a project's due diligence, you may become aware of l
 
 TOC members who sponsor projects seeking graduation are expected to review the results of the audit to confirm the project has resolved all critical and high findings at a minimum. Additional findings are expected to be tracked for resolution by the project. In reviewing the audit of the project, you may find additional recommendations or deltas in the project's operational security (incident response, PR reviewer guidelines, lack of regression tests, etc.) that should be addressed. These are typically non-blocking, however the you should take care to note them within the due diligence after conveying their need and importance of completion to the project. You may reach out to TAG Security for assistance in identifying these areas or reach out to a TOC member with a background in Security.
 
+#### Specification project
+
+If a project is a specification project such as the TUF, SPIFFE and in-toto projects, there really is very little additional development that would need to happen and it is reasonable for the specification project have only a few maintainers. For specification project, it is required to have at least one implementation and that reference implementation DOES NOT need to be part of the project undergoing due diligence.
+
 ### Finalizing the Due Diligence
 
 When the TOC has finished their criteria evaluation, they should move the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Adopter Interviews & Project Discussion" and re-engage the project to elevate and discuss any items neededing clarity, correction, or improvement. This includes notifying the project of any recommendations. Recommendations and discussion points may be copied into the kick-off document to faciliate discussion and to provide for additional context and discussion with the project until they are finalized.
