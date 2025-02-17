@@ -6,7 +6,7 @@ labels: graduation
 ---
 
 # Review Project Moving Level Evaluation
-[ ] I have reviewed the TOC's [moving level readiness triage guide](/operations/dd-toc-guide.md#initial-triageevaluation-prior-to-assignment), ensured the criteria for my project are met before opening this issue, and understand that unmet criteria will result in the project's application being closed.
+[ ] I have reviewed the TOC's [moving level readiness triage guide](https://github.com/cncf/toc/blob/main/operations/dd-toc-guide.md#initial-triageevaluation-prior-to-assignment), ensured the criteria for my project are met before opening this issue, and understand that unmet criteria will result in the project's application being closed.
 
 # $PROJECT Graduation Application
 v1.6
