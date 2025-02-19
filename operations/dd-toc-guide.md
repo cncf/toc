@@ -163,7 +163,7 @@ As an example, let's say a project is asserting their sub-projects have leadersh
 
 Another example, if the TOC member(s) is looking over the project's stated goals and objectives that have not changed since the project was accepted into the CNCF, and they are now applying to Graduate, the TOC member(s) will ask the project to clarify or provide additional information as to why the project hasn't iniatiated any changes and if they still feel those goals and objectives are accurate for the future of the project. The TOC member(s) will then summarize the response and record it in the PR under the corresponding criteria evaluation.
 
-It is expected that the TOC's evaluation of a project's completion of the criteria may reveal a mismatch in understanding or an unexpected implementation. Documenting the TOC evaluation in the Due Diligence PR provides the project, TAGs, community, adopters, and TOC with a point of reference to understand if the criteria are meeting the outcomes required of a project for a certain maturity level, or if compensating mechanisms that supplement or augment the criteria are in place that work best for that specific project.
+It is expected that the TOC's evaluation of a project's completion of the criteria may reveal a mismatch in understanding or an unexpected implementation. Documenting the TOC evaluation in the Due Diligence PR provides the project, TAGs, community, adopters, and TOC with a point of reference to understand if the criteria are meeting the outcomes required of a project for a certain maturity level, or if compensating mechanisms that supplement or augment the criteria are in place that work best for that specific project. We do not hold projects back from moving levels on factors outside the project’s control that are probabilistic occurrences because many factors can change at a moment's notice.
 
 #### Sub-projects
 
@@ -178,6 +178,10 @@ In the course of conducting a project's due diligence, you may become aware of l
 #### Graduated project security audits
 
 TOC members who sponsor projects seeking graduation are expected to review the results of the audit to confirm the project has resolved all critical and high findings at a minimum. Additional findings are expected to be tracked for resolution by the project. In reviewing the audit of the project, you may find additional recommendations or deltas in the project's operational security (incident response, PR reviewer guidelines, lack of regression tests, etc.) that should be addressed. These are typically non-blocking, however the you should take care to note them within the due diligence after conveying their need and importance of completion to the project. You may reach out to TAG Security for assistance in identifying these areas or reach out to a TOC member with a background in Security.
+
+#### Specification project
+
+If a project is a specification project such as the TUF, SPIFFE and in-toto projects, there really is very little additional development that would need to happen and it is reasonable for the specification project to have only a few maintainers. For a specification project, it is required to have at least one implementation and that reference implementation DOES NOT need to be part of the project undergoing due diligence.
 
 ### Finalizing the Due Diligence
 
