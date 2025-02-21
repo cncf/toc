@@ -2,6 +2,15 @@
 # CNCF Project Lifecycle & Process 
 v1.6, previously "project proposal process v1.5"
 
+## Table of Contents
+- [Project Stages](#project-stages)
+- [Project Lifecycle Process](#project-lifecycle-process)
+- [How to Move Levels](#how-to-apply-to-move-levels)
+- [Timelines](#timelines)
+- [Project Resources and Guide Posts](#project-resources-and-guide-posts)
+- [Additional Information](#additional-information)
+
+
 ## Introduction 
 This document outlines the CNCF project lifecycle - a multi-stage evaluation which helps ensure cloud native projects meet defined standards of maturity, security, and production readiness for adopters. It includes the criteria for each stage and the process for transitioning between levels. 
 
@@ -41,19 +50,12 @@ To streamline the evaluation process, the TOC has:
 - Improved transparency for projects and their adopters.
 - Simplified handoffs during evaluations.
 
+For project resources on the lifecycle process, please refer to the section on 
+[Project Resources and Guide Posts](#project-resources-and-guide-posts).
+
 ##  Naming conventions for projects
 
 All CNCF projects are subject to the [Trademark Usage Policies](https://www.linuxfoundation.org/legal/trademark-usage) set by Linux Foundation. Specifically, new or incoming projects should avoid using existing trademarks in their proposed project names. In addition, if they are intending to use a popular prefix/suffix of an existing project (like "kube" or "k8s"), then they should consult the leadership group(TAG) of the respective project to seek their approval and document the consensus reached. Existing projects are encouraged to document their naming guidelines to make this process smooth as well to avoid lengthy deliberation processes for new project names.
-
-### Project resources and guide posts
-
-The TOC, with support from the [Technical Advisory Groups](/tags/README.md), have a wide variety of resources available to assist projects.  Current and aspiring maintainers of cloud native projects can find a lot of information and templates on [contribute.cncf.io/maintainers](https://contribute.cncf.io/maintainers/). The TOC also maintains [project Guide Posts](../docs/project_guideposts.md) - a collection of guiding points that have assisted cloud native projects as they grow and mature in the ecosystem. These are not requirements for moving levels, those may be found in the respective application issue templates ([Incubation](../.github/ISSUE_TEMPLATE/template-incubation-application.md), [Graduation](../.github/ISSUE_TEMPLATE/template-graduation-application.md)). The [Guide Posts](../docs/project_guideposts.md) are resources for projects to leverage that are beneficial in meeting or exceeding the criteria defined.
-
-Additionally, projects interested in preparing to apply to move levels are encouraged to pursue the following activities as the resulting artifacts can and often are leveraged in the TOC's completion of the Due Diligence in lieu of certain sections of the DD.
-
-* Pursue a [Goverance Review with TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy/issues/new?template=governance-review-request.yaml) - A governance review is an indepth look at how your project is governed, its documentation, its practices, and general project operations. For more information please [checkout the maintainer page on governance](https://contribute.cncf.io/maintainers/governance/overview/) or join the [Governance Review Group](https://github.com/cncf/tag-contributor-strategy/tree/main/governance).
-* Complete a [General Technical Review (GTR)](../tags/resources/toc-supporting-guides/general-technical-questions.md) or [Domain Technical Review (DTR)](../tags/resources/toc-supporting-guides/tag-domain-technical-review-template.md) - these reviews are provide a structured framework to explore the technical lifecycle aspects of a project experienced or sought by adopters as well as dive deep on the design and architecture of the project within its technical domain of focus. The results of these can support projects in identifying next steps to increase usability, resilience, scale, performance, and ease-of-use.
-* Collaborate with [TAG Security on a joint-review](https://github.com/cncf/tag-security/blob/main/community/assessments/guide/README.md#joint-assessment) - highly recommended for currently incubating projects, the joint review is a comprehensive assessment of a project's security, it helps project's prepare for a successful security audit.
 
 ---
 
@@ -195,4 +197,13 @@ A: There could be a number of reasons why a project is not yet ready to graduate
 Q: How can I ensure my project is on the right path to the next level?
 A: Projects are strongly encouraged to meet with their TAG to receive feedback on changes, improvements, and recommendations to assist the project to the next maturity level. Some of these may be domain specific recommendations to ensure a more robust project, or they may be more high level items and encompass engineering principles that need to be codified within the project. TOC members sponsoring a project will reach out to the project's TAG to understand more about the project and ensure they incorporate the TAG's recommendations, notes, and observations within the Due Diligence PR.
 
+---
+### Project resources and guide posts
 
+The TOC, with support from the [Technical Advisory Groups](/tags/README.md), have a wide variety of resources available to assist projects.  Current and aspiring maintainers of cloud native projects can find a lot of information and templates on [contribute.cncf.io/maintainers](https://contribute.cncf.io/maintainers/). The TOC also maintains [project Guide Posts](../docs/project_guideposts.md) - a collection of guiding points that have assisted cloud native projects as they grow and mature in the ecosystem. These are not requirements for moving levels, those may be found in the respective application issue templates ([Incubation](../.github/ISSUE_TEMPLATE/template-incubation-application.md), [Graduation](../.github/ISSUE_TEMPLATE/template-graduation-application.md)). The [Guide Posts](../docs/project_guideposts.md) are resources for projects to leverage that are beneficial in meeting or exceeding the criteria defined.
+
+Additionally, projects interested in preparing to apply to move levels are encouraged to pursue the following activities as the resulting artifacts can and often are leveraged in the TOC's completion of the Due Diligence in lieu of certain sections of the DD.
+
+* Pursue a [Goverance Review with TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy/issues/new?template=governance-review-request.yaml) - A governance review is an indepth look at how your project is governed, its documentation, its practices, and general project operations. For more information please [checkout the maintainer page on governance](https://contribute.cncf.io/maintainers/governance/overview/) or join the [Governance Review Group](https://github.com/cncf/tag-contributor-strategy/tree/main/governance).
+* Complete a [General Technical Review (GTR)](../tags/resources/toc-supporting-guides/general-technical-questions.md) or [Domain Technical Review (DTR)](../tags/resources/toc-supporting-guides/tag-domain-technical-review-template.md) - these reviews are provide a structured framework to explore the technical lifecycle aspects of a project experienced or sought by adopters as well as dive deep on the design and architecture of the project within its technical domain of focus. The results of these can support projects in identifying next steps to increase usability, resilience, scale, performance, and ease-of-use.
+* Collaborate with [TAG Security on a joint-review](https://github.com/cncf/tag-security/blob/main/community/assessments/guide/README.md#joint-assessment) - highly recommended for currently incubating projects, the joint review is a comprehensive assessment of a project's security, it helps project's prepare for a successful security audit.
