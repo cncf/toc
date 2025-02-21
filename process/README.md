@@ -31,7 +31,7 @@ Projects may enter the CNCF either by applying as a sandbox project or applying 
 
 ---
 
-**Project Lifecycle Process**
+## Project Lifecycle Process
 
 Projects may enter the CNCF at the Sandbox or Incubation stage. As projects navigate through the lifecycle, the TOC evaluates their readiness to move levels via the Due Diligence process. This process ensures the project meets the required criteria, intent, and expectations for the next stage.
 
