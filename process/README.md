@@ -27,13 +27,13 @@ CNCF Graduated projects represent the pinnacle of project maturity within the Cl
 
 **Archived**:
 Archived projects are inactive or no longer recommended for use. This stage ensures the CNCF community focuses on active, impactful projects.
-Projects may enter the CNCF either by applying as a sandbox project or applying directly for incubation. As a project navigates their maturity journey, their completion of a given level's criteria is evaluated by the TOC in a process called Due Diligence to ensure the project's implementation of the criteria meets the desired outcome, intent, and expectations set forth by the TOC.
+Refer to the archive process (here)[https://github.com/cncf/toc/blob/main/process/archiving.md]
 
 ---
 
 ## Project Lifecycle Process
 
-Projects may enter the CNCF at the Sandbox or Incubation stage. As projects navigate through the lifecycle, the TOC evaluates their readiness to move levels via the Due Diligence process. This process ensures the project meets the required criteria, intent, and expectations for the next stage.
+Projects may enter the CNCF either by applying as a sandbox project or applying directly for incubation. As a project navigates their maturity journey, their completion of a given level's criteria is evaluated by the TOC in a process called Due Diligence to ensure the project's implementation of the criteria meets the desired outcome, intent, and expectations set forth by the TOC.
 
 Due Diligence Enhancements:
 To streamline the evaluation process, the TOC has:
@@ -172,6 +172,7 @@ __2nd week following the event__
 The above freeze only applies to KCCN NA and EU. Other events will be subject to the TOC members' availability who are expected to regularly check in with the projects. TOC members may choose to continue working with projects on due diligence within the weeks before and after KCCN subject to their and others' availability. Projects should take all of this into account when planning completion of their due diligence. We ask projects to be understanding and considerate of our availability constraints around KCCN and remind everyone that the TOC is not a full-time body, we have primary work commitments in addition to our involvement on the TOC and any projects, TAGs, or community groups we are involved in.
 
 As the CNCF chooses to create new standalone occurrences of KCCN, this freeze should be reviewed to ensure ample time is available to conduct activities to support project moving levels. It may include restricting to just two freezes a year, or a complete re-evaluation of the freeze in light of whatever changes have transpired.
+
 ---
 
 #### Additional information
