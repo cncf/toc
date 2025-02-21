@@ -3,7 +3,7 @@
 v1.6, previously "project proposal process v1.5"
 
 ## Introduction 
-This document outlines the CNCF project lifecycle, the criteria for each stage, and the process for transitioning between levels. The CNCF project lifecycle helps ensure cloud-native projects meet defined standards of maturity, security, and production readiness for adopters.
+This document outlines the CNCF project lifecycle - a multi-stage evaluation which helps ensure cloud native projects meet defined standards of maturity, security, and production readiness for adopters. It includes the criteria for each stage and the process for transitioning between levels. 
 
  The TOC defines 4 stages of the project lifecycle:
 
