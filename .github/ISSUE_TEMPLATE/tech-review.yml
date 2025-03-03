@@ -1,0 +1,42 @@
+name: '[WIP] Technical Review'
+description: Project technical review request
+title: '[Tech Review]:'
+labels:
+  - kind/initiative
+  - kind/tech-review
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      placeholder: Name of initiative
+    validations:
+      required: true
+  - type: input
+    id: project-link
+    attributes:
+      label: Project link
+      placeholder: Link to project GitHub org or repo
+    validations:
+      required: true
+  - type: input
+    id: dd-link
+    attributes:
+      label: Due diligence link
+      placeholder: Link to due diligence tracking issue
+  - type: textarea
+    id: project-contact
+    attributes:
+      label: Project contact information
+      value: >-
+        list of emails, GitHub, or slack handles etc that the reviewers can
+        reach out to
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional information
+      value: >-
+        Please provide any additional information that may help with the
+        governance review (e.g. links to design docs)

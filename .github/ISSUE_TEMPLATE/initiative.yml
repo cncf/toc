@@ -1,0 +1,77 @@
+name: '[WIP] Initative'
+description: Initiative request form WIP
+title: '[Initiative]:'
+labels:
+  - kind/initiative
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Name of initiative
+    validations:
+      required: true
+  - type: input
+    id: short-description
+    attributes:
+      label: Short description
+      placeholder: One line description or "TL;DR" of the initiative
+    validations:
+      required: true
+  - type: dropdown
+    id: responsible-group
+    attributes:
+      label: Responsible group
+      description: What group does the initiative belong to? (TAG or  TOC)
+      multiple: true
+      options:
+        - TOC
+        - TAG Developer Experience
+        - TAG Infrastructure
+        - TAG Operational Resilience
+        - TAG Security and Compliance
+        - TAG Workloads Foundation
+    validations:
+      required: true
+  - type: dropdown
+    id: is-subproject
+    attributes:
+      label: Does the initiative belong to a subproject?
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true
+  - type: input
+    id: if-subproject
+    attributes:
+      label: Subproject name
+  - type: input
+    id: primary-contact
+    attributes:
+      label: Primary contact
+    validations:
+      required: true
+  - type: textarea
+    id: additional-contacts
+    attributes:
+      label: Additional contacts
+      placeholder: Any additional contacts that should be included
+  - type: textarea
+    id: long-description
+    attributes:
+      label: Initiative description
+      placeholder: >-
+        Please provide the details on the scope, timeline, and potential
+        deliverables
+    validations:
+      required: true
+  - type: textarea
+    id: exit-criteria
+    attributes:
+      label: Deliverable(s) or exit criteria
+      placeholder: >-
+        What are the explicit deliverables or conditions where the work would be
+        considered "complete". NOTE: CAN be copied from previous description.
+    validations:
+      required: true
