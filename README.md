@@ -12,16 +12,26 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 ## Members
 
 * **Ricardo Rocha** (term: term: 2 years - start date: 2/4/2024 - 2/4/2026) [EndUser-appointed]
-* **Emily Fox** (term: 2 years - start date: 2/4/2024 - 2/4/2026) [GB-appointed][TOC Chair]
+* **Chad Beaudin** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [EndUser-appointed]
+* **Emily Fox** (term: 2 years - start date: 2/4/2024 - 3/4/2026) [GB-appointed][TOC Chair]
 * **Katie Gamanji** (term: 2 years - start date: 3/18/2022 - 2/4/2026) [GB-appointed]
-* **Nikhita Raghunath** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
-* **Dave Zolotusky** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [EndUser-appointed]
-* **Cathy Zhang** (term: 2 years 2/1/2023 - 2/1/2025) [GB-appointed]
-* **Duffie Cooley** (term: 2 years - start date: 2/1/2023 - 2/1/2025) [GB-appointed]
 * **Lin Sun** (term: 2 years - start date 2/4/2024 - 2/4/2026) [GB-appointed]
+* **Faseela K** (term: 2 years 3/4/2025 - 3/4/2027) [GB-appointed]
+* **Jeremy Rickard** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [GB-appointed]
+* **Karena Angell** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [GB-appointed]
 * **Kevin Wang** (term: 2 years - start date 2/4/2024 - 2/4/2026) [Maintainer-appointed]
 * **Davanum Srinivas** (term: 2 years - start date: 2/16/2024 - 2/16/2026) [TOC-appointed]
-* **Karena Angell** (term: <1 year - start date: 5/28/2024 - 3/18/2025) [TOC-appointed] (Shortened term due to vacated seat)
+* **Alex Chircop**  (term: 2 years - start date: 3/4/2025 - 3/4/2027) [TOC-appointed]
+
+
+## TOC Shadows
+
+* **Ricardo Aravena** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [GB-appointed][shadow]
+* **Kevin Klues** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [TOC-appointed][shadow]
+
+
+
+
 
 Election [schedule](operations/election-schedule.md)
 
