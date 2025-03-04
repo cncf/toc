@@ -55,7 +55,7 @@ For project resources on the lifecycle process, please refer to the section on
 
 ##  Naming conventions for projects
 
-All CNCF projects are subject to the [Trademark Usage Policies](https://www.linuxfoundation.org/legal/trademark-usage) set by Linux Foundation. Specifically, new or incoming projects should avoid using existing trademarks in their proposed project names. In addition, if they are intending to use a popular prefix/suffix of an existing project (like "kube" or "k8s"), then they should consult the leadership group(TAG) of the respective project to seek their approval and document the consensus reached. Existing projects are encouraged to document their naming guidelines to make this process smooth as well to avoid lengthy deliberation processes for new project names.
+All CNCF projects are subject to the [Trademark Usage Policies](https://www.linuxfoundation.org/legal/trademark-usage) set by the Linux Foundation. Specifically, new or incoming projects should avoid using existing trademarks in their proposed project names. In addition, if they are intending to use a popular prefix/suffix of an existing project (like "kube" or "k8s"), then they should consult the leadership group(TAG) of the respective project to seek their approval and document the consensus reached. Existing projects are encouraged to document their naming guidelines to make this process smooth as well to avoid lengthy deliberation processes for new project names.
 
 ---
 
