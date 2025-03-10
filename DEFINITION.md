@@ -3,7 +3,7 @@
 *Approved by TOC/GB: 2024-02-26*
 
 [العربية](#العربية) (Arabic) | [հայերեն](#հայերեն) (Armenian) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) | [正體中文版本](#正體中文版本) (Tradtional Chinese) 
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) | [正體中文版本](#正體中文版本) (Tradtional Chinese) | [فارسی](#فارسی) (Persian)
 
 ## Definition
 
