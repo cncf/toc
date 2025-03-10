@@ -3,7 +3,7 @@
 *Approved by TOC/GB: 2024-02-26*
 
 [العربية](#العربية) (Arabic) | [հայերեն](#հայերեն) (Armenian) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) | [正體中文版本](#正體中文版本) (Tradtional Chinese) | [فارسی](#فارسی) (Persian)
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) | [正體中文版本](#正體中文版本) (Tradtional Chinese) | മലയാളം (Malayalam)
 
 ## Definition
 
@@ -241,3 +241,10 @@ Wij democratiseren state-of-the art software ontwikkel patterns, om deze innovat
 تکنولوژی ها و معماری های ابربومی معمولاٌ شامل ترکیبی از کانتینرها، سرویس مش ها، مالتی تننسی یا اجاره چندگانه ها، میکروسرویس ها، زیرساخت تغییرناپذیر، سرورلس یا رایانش بدون سرور و ای پی آی های بیانی (declarative APIs) هستند. البته این لیست کامل نیست.
 
 </div>
+
+### മലയാളം:
+കമ്പ്യൂട്ടിംഗ് പരിതസ്ഥിതികളിൽ (പൊതു, സ്വകാര്യ, ഹൈബ്രിഡ് ക്ലൗഡ്) വർക്ക്‌ലോഡുകൾ വികസിപ്പിക്കാനും നിർമ്മിക്കാനും വിന്യസിക്കാനും സ്ഥാപനങ്ങളെ പ്രാപ്തരാക്കുന്ന ക്ലൗഡ് നേറ്റീവ് സമീപനങ്ങൾ, പ്രോഗ്രാമാറ്റിക് ആയിട്ടും ആവർത്തിക്കാവുന്നതുമായ രീതിയിൽ അവരുടെ ഓർഗനൈസേഷണൽ ആവശ്യങ്ങൾ സ്കെയിലിൽ നിറവേറ്റുന്നതിന് സഹായിക്കുന്നു. സുരക്ഷിതവും, പ്രതിരോധശേഷിയുള്ളതും, കൈകാര്യം ചെയ്യാവുന്നതും, സുസ്ഥിരവും, നിരീക്ഷിക്കാവുന്നതുമായ രീതിയിൽ പരസ്പരം പ്രവർത്തിക്കുന്ന അയഞ്ഞ കപ്പിൾഡ് സിസ്റ്റങ്ങളാണ് ഇതിന്റെ സവിശേഷത.
+
+ക്ലൗഡ് നേറ്റീവ് സാങ്കേതികവിദ്യകളിലും ആർക്കിടെക്ചറുകളിലും സാധാരണയായി കണ്ടെയ്‌നറുകൾ, സർവീസ് മെഷുകൾ, മൾട്ടി-ടെനൻസി, മൈക്രോസർവീസുകൾ, മാറ്റാനാവാത്ത ഇൻഫ്രാസ്ട്രക്ചർ, സെർവർലെസ്, ഡിക്ലറേറ്റീവ് API-കൾ എന്നിവയുടെ ചില സംയോജനങ്ങൾ അടങ്ങിയിരിക്കുന്നു.
+
+ശക്തമായ ഓട്ടോമേഷനുമായി സംയോജിപ്പിച്ച്, ക്ലൗഡ് നേറ്റീവ് രീതികൾ ഓർഗനൈസേഷനുകളെ കുറഞ്ഞ അധ്വാനത്തോടെയും ആശങ്കകളുടെ വ്യക്തമായ വേർതിരിവോടെയും ഇടയ്ക്കിടെ, പ്രവചനാതീതമായി ഉയർന്ന സ്വാധീനം ചെലുത്തുന്ന മാറ്റങ്ങൾ വരുത്താൻ അനുവദിക്കുന്നു.ഈ നൂതനാശയങ്ങൾ എല്ലാവർക്കും ആക്‌സസ് ചെയ്യാവുന്ന തരത്തിൽ ഓപ്പൺ സോഴ്‌സ്, വെണ്ടർ-ന്യൂട്രൽ പ്രോജക്റ്റുകളുടെ ഒരു ആവാസവ്യവസ്ഥയെ വളർത്തിയെടുക്കുകയും നിലനിർത്തുകയും ചെയ്യുന്നതിലൂടെ. ഈ മാതൃക സ്വീകരിക്കാൻ ക്ലൗഡ് നേറ്റീവ് കമ്പ്യൂട്ടിംഗ് ഫൗണ്ടേഷൻ ശ്രമിക്കുന്നു.
