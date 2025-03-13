@@ -41,7 +41,8 @@ The TAG provided the following recommendation on the [presentation issue](https:
 - [ ] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
 The project's site does not explicitly convey vendor neutrality. The donating company's logo and statement of creation occurs at least twice on the home page. There is no mention of vendor neutrality or open source on the main site. The blogs heading on the site states "open source solutions for kubernetes security" but can easily be interpreted that KubeArmor is not open source. The only reference to Cloud Native is the community group link in the site header. Further, the inclusion of modelarmor on the kubearmor site directs users to accuknox but is listed on kubearmor's site as "open source". ModelArmor is in the KubeArmor org repo.  The project lacks web separation to ensure neutrality.
-<!-- (TOC Evaluation goes here) --> 
+
+Additionally, there are several references to AccuKnox, owning, initiating, or driving aspects of KubeArmor that need reconciled for the project to be considered vendor neutral. The [Policy-templates repo](https://github.com/kubearmor/policy-templates?tab=readme-ov-file#-contributions) is one such example where, in addition to the reference of AccuKnox driven initiative, also shows a dependency with [AccuKnox's travis-ci for KubeArmor](https://github.com/kubearmor/policy-templates/blob/c955043c5d16b6935e45a7b14e123fc14e80e9ac/README.md?plain=1#L4).
 
 - [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
 - While the project was onboarded on 16-NOV-2021, the KubeArmor security group is email address for `support@accuknox.com` persists and does not provide separation between the business/product/service, and the project (requirement for sandbox)
@@ -100,29 +101,31 @@ The project does not appear to have any subprojects at the time of application f
 
 ### Required
 
-- [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
+- [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-The Project's maintainer list includes eight maintainers, 5 from AccuKnox, 1 from CERN, 1 from Dankook University, and another identified as independent. Maintainers listed include links to their GitHub profiles. No domain of responsibility is defined (likely )
+The Project's maintainer list includes eight maintainers, 4 from AccuKnox, 2 from CERN, 1 from Dankook University, and another identified as independent. Maintainers listed include links to their GitHub profiles. No domain of responsibility is defined as the project is small enough the project's other repos are considered are joint responsibilities. As the project continues to grow, this will change.
 
-- [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
+- [X] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
-<!-- (TOC Evaluation goes here) --> 
+Yes, for now but without changes to its operations the project may become unhealthy (victim of its own success). The project has eight maintainers, of which at least two are regularly active. The project's current backlog of PRs (91 including fix(deps)) and open issues (155) as of March 2025 suggest that the current activity is slowing down on the project and there will need to be a focused effort by the project to onboard new maintainers (moving contributors to maintainers, formalizing that governance more), re-activate current maintainers, and generally continue to make progress on the project in driving down the open issues and PRs against their defined roadmap.
 
 - [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project does not have documented roles beyond maintainers listed however the CODEOWNERS file calls out three default reviewers (indicating a new role which needs documented) and does not define process to add new individuals to this role. One individual defined in the CODEOWNERS is not listed as a maintainer and they appear to no longer be active in the project as of March 2024.
 
 - [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project has adopted a separate code of conduct that is modified beyond the CNCF CoC, and the current link to the CNCF CoC is broken (indicating an older version was used). The KubeArmor CoC does include reporting information specific to the project. 
 
-- [ ] **CNCF Code of Conduct is cross-linked from other governance documents.**
+The project needs to adopt the CNCF CoC and may add provisions above and beyond what the CNCF CoC details, and is encouraged to maintain reporting information with a mechanism for reporting in the event the complaint is against one of the maintainers. The CoC needs to also link to those maintainers so reporters know who to contact.
 
-<!-- (TOC Evaluation goes here) --> 
+- [X] **CNCF Code of Conduct is cross-linked from other governance documents.**
+
+The Project's Governance links to their current CoC file, last updated 4 years ago.
 
 - [ ] **All subprojects, if any, are listed.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project does not define sub-projects and does not have a component/repo construct to assist adopters in understanding what is in scope of KubeArmor. There are some project repos that indicate a specialty sub-project (such as the policy-templates) which detail being "commuity-owned" but do not consider any additional governance or documentation associated with how they are maintained beyond annotation that it is an initiative from AccuKnox. This needs decoupled to provide clear separation between the Project, its Community, and the donating company. 
 
 ## Contributors and Community
 
