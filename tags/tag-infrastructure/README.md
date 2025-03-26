@@ -18,7 +18,7 @@ Data, Storage, Network, DNS, Compute, Service Mesh, Infrastructure-as-Code, Edge
 - **TAG Infrastructure Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
 
 ## Contact
-- Slack: [#https://cloud-native.slack.com/archives/C08KBH3RA1K](https://slack.cncf.io/messages/https://cloud-native.slack.com/archives/C08KBH3RA1K})
+- Slack: [Tag TAG Infrastructure Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08KBH3RA1K)
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-infrastructure)
 - TOC Liaison: Foo Bar (**[@foobar](https://github.com/foobar)**)
 
