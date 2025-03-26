@@ -34,7 +34,7 @@ tags: # Technical Advisory Groups
         recordings_url: https://www.youtube.com/playlist?foo # to be updated
     contact:
       slack: cncf/tag-developer-experience # to be updated
-      mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages
+      mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/
       toc_liaison:
         github: foobar
         name: Foo Bar
@@ -44,7 +44,7 @@ tags: # Technical Advisory Groups
           Foo-Baz_Bar
         contact:
           slack: tag-developer-experience # to be updated # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated # Using parent TAG's contact
+          mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/ # Using parent TAG's contact
     leadership:
       Subpproject Leads:
         - github: foo
@@ -87,7 +87,7 @@ tags: # Technical Advisory Groups
         recordings_url: https://www.youtube.com/playlist?foo # to be updated
     contact:
       slack: tag-infrastructure
-      mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated
+      mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure
       toc_liaison:
         github: foobar
         name: Foo Bar
@@ -96,7 +96,7 @@ tags: # Technical Advisory Groups
         mission_statement: Foo-Baz_Bar
         contact:
           slack: tag-infrastructure # to be updated # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated # Using parent TAG's contact
+          mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure # Using parent TAG's contact
     leadership:
       Subpproject Leads:
         - github: foo
@@ -139,7 +139,7 @@ tags: # Technical Advisory Groups
         recordings_url: https://www.youtube.com/playlist?foo # to be updated
     contact:
       slack: cncf/tag-operational-resilience # to be updated
-      mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated
+      mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience
       toc_liaison:
         github: foobar
         name: Foo Bar
@@ -149,7 +149,7 @@ tags: # Technical Advisory Groups
           Foo-Baz_Bar
         contact:
           slack: tag-operational-resilience # to be updated # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated # Using parent TAG's contact
+          mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience # Using parent TAG's contact
     leadership:
       Subpproject Leads:
         - github: foo
@@ -192,7 +192,7 @@ tags: # Technical Advisory Groups
         recordings_url: https://www.youtube.com/playlist?foo # to be updated
     contact:
       slack: tag-security-and-compliance
-      mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated
+      mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance
       toc_liaison:
         github: foobar
         name: Foo Bar
@@ -201,7 +201,7 @@ tags: # Technical Advisory Groups
         mission_statement: Foo-Baz_Bar
         contact:
           slack: tag-security-and-compliance # to be updated # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated # Using parent TAG's contact
+          mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance # Using parent TAG's contact
     leadership:
       Subpproject Leads:
         - github: foo
@@ -244,7 +244,7 @@ tags: # Technical Advisory Groups
         recordings_url: https://www.youtube.com/playlist?foo # to be updated
     contact:
       slack: tag-workloads-foundation
-      mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated
+      mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation
       toc_liaison:
         github: foobar
         name: Foo Bar
@@ -253,7 +253,7 @@ tags: # Technical Advisory Groups
         mission_statement: Foo-Baz_Bar
         contact:
           slack: tag-workloads-foundation # to be updated # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated # Using parent TAG's contact
+          mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation # Using parent TAG's contact
     leadership:
       Subpproject Leads:
         - github: foo
@@ -296,7 +296,7 @@ toc_subprojects: # TOC Subprojects
         recordings_url: https://www.youtube.com/playlist?foo # to be updated
     contact:
       slack: contributor-strategy-subproject
-      mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated
+      mailing_list: https://lists.cncf.io/g/contributor-strategy-subproject
       toc_liaison:
         github: foobar
         name: Foo Bar
@@ -334,7 +334,7 @@ toc_subprojects: # TOC Subprojects
         recordings_url: https://www.youtube.com/playlist?foo # to be updated
     contact:
       slack: cncf/mentoring-subproject
-      mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated
+      mailing_list: https://lists.cncf.io/g/tag-cs-mentoring-wg # to be updated with new name post kubecon
       toc_liaison:
         github: foobar
         name: Foo Bar
@@ -372,7 +372,7 @@ toc_subprojects: # TOC Subprojects
         recordings_url: https://www.youtube.com/playlist?foo # to be updated
     contact:
       slack: project-reviews-subproject
-      mailing_list: https://lists.cncf.io/g/cncf-tag-TBA/messages # to be updated
+      mailing_list: https://lists.cncf.io/g/cncf-project-reviews-subproject
       toc_liaison:
         github: foobar
         name: Foo Bar
