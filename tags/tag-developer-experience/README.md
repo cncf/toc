@@ -27,4 +27,4 @@ Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 ### Subproject Leads
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 ## Initiatives
-[TAG Developer Experience Initiatives](https://github.com/cncf/toc/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22TAG%20Developer%20Experience%20Initiative%22)
+[TAG Developer Experience Initiatives](https://github.com/cncf/toc/issues?q=label%3Atag%2Fdeveloper-experience-initiative)
