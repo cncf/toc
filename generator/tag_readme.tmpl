@@ -28,7 +28,7 @@
 {{- end }}
 
 ## Contact
-- Slack: [#{{.Contact.Slack}}](https://slack.cncf.io/messages/{{.Contact.Slack}}})
+- Slack: [Tag {{.Name}} Slack](https://cloud-native.slack.com/archives/{{.Contact.Slack}})
 - [Mailing List]({{.Contact.MailingList}})
 - TOC Liaison: {{.Contact.TOCLiaison.Name}} (**[@{{.Contact.TOCLiaison.GitHub}}](https://github.com/{{.Contact.TOCLiaison.GitHub}})**)
 
@@ -42,4 +42,9 @@
 {{- range .Leadership.SubprojectLeads }}
 - {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**){{if .Company}}, {{.Company}}{{end}}
 {{- end }}
+{{- end }}
+
+{{- if .TagInitiatives }}
+## Initiatives
+[{{.Name}} Initiatives]({{.TagInitiatives}})
 {{- end }}
