@@ -2,7 +2,7 @@ tags: # Technical Advisory Groups
   - dir: tag-developer-experience # TAG Developer Experience
     name: TAG Developer Experience
     mission_statement: >
-      Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
+      Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks
     charter_link: charter.md
     label: tag-developer-experience
     leadership:
