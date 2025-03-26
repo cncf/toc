@@ -1,7 +1,7 @@
 # TAG Developer Experience
 
 ## Mission Statement
-Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks
+Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 
 
 [Charter](./charter.md)
