@@ -18,7 +18,7 @@ Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks
 - **TAG Developer Experience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
 
 ## Contact
-- Slack: [#https://cloud-native.slack.com/archives/C08KGCXB458](https://slack.cncf.io/messages/https://cloud-native.slack.com/archives/C08KGCXB458})
+- Slack: [Tag TAG Developer Experience Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08KGCXB458)
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-developer-experience/)
 - TOC Liaison: Foo Bar (**[@foobar](https://github.com/foobar)**)
 
