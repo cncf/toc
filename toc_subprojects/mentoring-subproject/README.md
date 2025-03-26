@@ -21,4 +21,4 @@ Foo-Baz-Bar
 - [Mailing List](https://lists.cncf.io/g/tag-cs-mentoring-wg)
 - TOC Liaison: Foo Bar (**[@foobar](https://github.com/foobar)**)
 ## Initiatives
-[Mentoring Subproject Initiatives](https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TOC%20Mentoring%20Subproject%20Initiative%22)
+[Mentoring Subproject Initiatives](https://github.com/cncf/toc/issues?q=label%3Atoc%2Fmentoring-subproject-initiative)
