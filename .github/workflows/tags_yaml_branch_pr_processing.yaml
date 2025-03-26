@@ -1,0 +1,60 @@
+name: Generate README on Tags Change (Local Branch)
+
+on:
+  pull_request_target:
+    branches:
+      - main
+    paths:
+      - tags.yaml
+  workflow_dispatch:
+    inputs:
+      check_all_prs:
+        description: 'Check all open pull requests?'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-readme-local:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 'stable'
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Run readme_app.go
+        run: |
+          cd generator
+          go run readme_app.go
+          cd ..
+
+      - name: Commit and push changes if any
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add .
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Update README based on tags.yaml changes"
+            git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          else
+            echo "No changes to commit"
+          fi
