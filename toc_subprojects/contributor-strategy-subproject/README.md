@@ -20,3 +20,5 @@ Foo-Baz-Bar
 - Slack: [Tag Contributor Strategy Subproject Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08KGDKKHMY)
 - [Mailing List](https://lists.cncf.io/g/contributor-strategy-subproject)
 - TOC Liaison: Foo Bar (**[@foobar](https://github.com/foobar)**)
+## Initiatives
+[Contributor Strategy Subproject Initiatives](https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TOC%20Contributor%20Strategy%20Subproject%20Initiative%22)

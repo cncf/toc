@@ -26,3 +26,5 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - **Security and Compliance-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-security-and-compliance)
 ### Subproject Leads
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
+## Initiatives
+[TAG Security and Compliance Initiatives](https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TAG%20Security%20and%20Compliance%20Initiative%22)
