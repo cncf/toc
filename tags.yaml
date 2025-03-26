@@ -52,6 +52,7 @@ tags: # Technical Advisory Groups
           name: Foo Baz Bar
           company: Foo Baz Bar co.
           email: me@foobazbar.org
+    tag_initiatives: https://github.com/cncf/toc/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22TAG%20Developer%20Experience%20Initiative%22
   - dir: tag-infrastructure # TAG Infrastructure
     name: TAG Infrastructure
     mission_statement: >
@@ -104,6 +105,7 @@ tags: # Technical Advisory Groups
           name: Foo Baz Bar
           company: Foo Baz Bar co.
           email: me@foobazbar.org
+    tag_initiatives: https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TAG%20Infrastructure%20Initiative%22%20
   - dir: tag-operational-resilience # TAG Operational Resilience
     name: TAG Operational Resilience
     mission_statement: >
@@ -157,6 +159,7 @@ tags: # Technical Advisory Groups
           name: Foo Baz Bar
           company: Foo Baz Bar co.
           email: me@foobazbar.org
+    tag_initiatives: https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TAG%20Operational%20Resilience%20Initiative%22
   - dir: tag-security-and-compliance # TAG Security and Compliance
     name: TAG Security and Compliance
     mission_statement: >
@@ -209,6 +212,7 @@ tags: # Technical Advisory Groups
           name: Foo Baz Bar
           company: Foo Baz Bar co.
           email: me@foobazbar.org
+    tag_initiatives: https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TAG%20Security%20and%20Compliance%20Initiative%22
   - dir: tag-workloads-foundation # TAG Workloads Foundation
     name: TAG Workloads Foundation
     mission_statement: >
@@ -261,6 +265,7 @@ tags: # Technical Advisory Groups
           name: Foo Baz Bar
           company: Foo Baz Bar co.
           email: me@foobazbar.org
+    tag_initiatives: https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TAG%20Workloads%20Foundation%20Initiative%22
 toc_subprojects: # TOC Subprojects
   - dir: contributor-strategy-subproject # Contributor Strategy Subproject
     name: Contributor Strategy Subproject
@@ -300,6 +305,7 @@ toc_subprojects: # TOC Subprojects
       toc_liaison:
         github: foobar
         name: Foo Bar
+    subproject_initiatives: https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TOC%20Contributor%20Strategy%20Subproject%20Initiative%22
   - dir: mentoring-subproject # Mentoring Subproject
     name: Mentoring Subproject
     mission_statement: Foo-Baz-Bar
@@ -338,6 +344,7 @@ toc_subprojects: # TOC Subprojects
       toc_liaison:
         github: foobar
         name: Foo Bar
+    subproject_initiatives: https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TOC%20Mentoring%20Subproject%20Initiative%22
   - dir: project-reviews-subproject # Project Reviews Subproject
     name: Project Reviews Subproject
     mission_statement: Foo-Baz-bar
@@ -376,3 +383,4 @@ toc_subprojects: # TOC Subprojects
       toc_liaison:
         github: foobar
         name: Foo Bar
+    subproject_initiatives: https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3A%22TOC%20Project%20Reviews%20Subproject%20Initiative%22

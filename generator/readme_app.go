@@ -28,7 +28,7 @@ type Person struct {
 type Leadership struct {
 	Chairs          []Person `yaml:"chairs"`
 	TechLeads       []Person `yaml:"tech_leads"`
-	SubprojectLeads []Person `yaml:"Subpproject Leads"` // Corrected struct field name
+	SubprojectLeads []Person `yaml:"Subpproject Leads"`
 }
 
 // Meeting struct to hold meeting data.
@@ -50,22 +50,24 @@ type Tag struct {
 	Dir              string       `yaml:"dir"`
 	Name             string       `yaml:"name"`
 	MissionStatement string       `yaml:"mission_statement"`
-	Leadership       Leadership   `yaml:"leadership"` // Use the Leadership struct defined above
+	Leadership       Leadership   `yaml:"leadership"`
 	Meetings         []Meeting    `yaml:"meetings"`
 	Contact          Contact      `yaml:"contact"`
 	TagSubprojects   []Subproject `yaml:"tag_subprojects"`
 	CharterLink      string       `yaml:"charter_link"`
+	TagInitiatives   string       `yaml:"tag_initiatives"` // ADDED THIS LINE
 }
 
 // TOCSubproject struct to hold TOC subproject data, including CharterLink.
 type TOCSubproject struct {
-	Dir              string     `yaml:"dir"`
-	Name             string     `yaml:"name"`
-	MissionStatement string     `yaml:"mission_statement"`
-	Leadership       Leadership `yaml:"leadership"` // Use the Leadership struct
-	Meetings         []Meeting  `yaml:"meetings"`
-	Contact          Contact    `yaml:"contact"`
-	CharterLink      string     `yaml:"charter_link"`
+	Dir                   string     `yaml:"dir"`
+	Name                  string     `yaml:"name"`
+	MissionStatement      string     `yaml:"mission_statement"`
+	Leadership            Leadership `yaml:"leadership"`
+	Meetings              []Meeting  `yaml:"meetings"`
+	Contact               Contact    `yaml:"contact"`
+	CharterLink           string     `yaml:"charter_link"`
+	SubprojectInitiatives string     `yaml:"subproject_initiatives"` // ADDED THIS LINE
 }
 
 // Config struct to hold the entire configuration.
