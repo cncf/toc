@@ -171,7 +171,7 @@ The project includes a CONTRIBUTING.md and an additional file for first time con
 
 - [X] **Demonstrate contributor activity and recruitment.**
 
-The project has previously participated in Google Summer of code as well as LFX mentoring (term 3 cited in meeting notes). They've also held at least 1 live stream and actively zz
+The project has previously participated in Google Summer of code as well as LFX mentoring (term 3 cited in meeting notes). They've also held at least 1 live stream and actively engage potential contributors.
 
 ## Engineering Principles
 
@@ -256,7 +256,7 @@ The project does not have documentation regarding security response roles. It do
 * A project security team; unknown composition and assignment. Responsible for providing an initial response and fixing the vulnerability
 * A project maintainter; only engaged when breadth, scope, recreation, and confirmation are not readily apparent based on the initial report received by AccuKnox.
 
-It is recommended the project cease use of the support @ accuknox email for reporting security vulnerabilities, in favor of the native Security vulnerability reporting feature in GitHub and establish a dedicated mailing alias for the project security team.  The project is further recommended to establish a project security response committee made up of maintainters and contributors with security expertise. The Kubernetes Security Response Committee is an excellent example of such a group and includes detailed information for [onboarding and offboarding](https://github.com/kubernetes/committee-security-response/blob/main/src-onboarding-offboarding.md) in addition to [robust information regarding membership on the committee.]https://github.com/kubernetes/committee-security-response/blob/main/security-release-process.md#security-response-committee-membership)
+It is recommended the project cease use of the 'support@accuknox.com' email for reporting security vulnerabilities, in favor of the native Security vulnerability reporting feature in GitHub and establish a dedicated mailing alias for the project security team.  The project is further recommended to establish a project security response committee made up of maintainters and contributors with security expertise. The Kubernetes Security Response Committee is an excellent example of such a group and includes detailed information for [onboarding and offboarding](https://github.com/kubernetes/committee-security-response/blob/main/src-onboarding-offboarding.md) in addition to [robust information regarding membership on the committee.](https://github.com/kubernetes/committee-security-response/blob/main/security-release-process.md#security-response-committee-membership)
 
 - [X] **Document Security Self-Assessment.**
 
