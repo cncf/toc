@@ -230,19 +230,23 @@ The project has defined their process for reporting security issues in the [secu
 The project does not appear to have any public facing information regarding how it enforces access control against its codebase. A review of the OpenSSF Scorecard for the project appears to indicate, minimally, that branch protection is not adequate for the project:
 
 > **Reason**
-> branch protection is not maximal on development and all release branches
+```
+branch protection is not maximal on development and all release branches
+```
 
 > **Details**
-> Info: 'allow deletion' disabled on branch 'main'
-> Info: 'force pushes' disabled on branch 'main'
-> Info: 'branch protection settings apply to administrators' is required to merge on branch 'main'
-> Info: 'stale review dismissal' is required to merge on branch 'main'
-> Info: required approving review count is 2 on branch 'main'
-> Info: codeowner review is required on branch 'main'
-> Warn: 'last push approval' is disabled on branch 'main'
-> Info: 'up-to-date branches' is required to merge on branch 'main'
-> Info: status check found to merge onto on branch 'main'
-> Info: PRs are required in order to make changes on branch 'main'
+```
+Info: 'allow deletion' disabled on branch 'main'
+Info: 'force pushes' disabled on branch 'main'
+Info: 'branch protection settings apply to administrators' is required to merge on branch 'main'
+Info: 'stale review dismissal' is required to merge on branch 'main'
+Info: required approving review count is 2 on branch 'main'
+Info: codeowner review is required on branch 'main'
+Warn: 'last push approval' is disabled on branch 'main'
+Info: 'up-to-date branches' is required to merge on branch 'main'
+Info: status check found to merge onto on branch 'main'
+Info: PRs are required in order to make changes on branch 'main'
+```
 
 It is worth noting that Scorecard can be inaccurate and it is recommended the project review the scorecard documentation to ensure accurate reporting and corrections to permissions are made. A sampling of closed Pull Requests has identified several for which no review was required or conducted prior to merge, although these do not occur 2024 onward in the project.
 
