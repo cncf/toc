@@ -346,10 +346,3 @@ If the KubeArmor project were archived now or in the future, R6 Security would l
 R6 Security shared that KubeArmor overall is a robust project, but many differentiating features are available with the Enterprise edition from vendor Accuknox, who employs nearly all the maintainers. If and when these features and capabilities are contributed to KubeArmor, the project could experience more adoption, distinguishing itself from other runtime security projects in the ecosystem.  As a security project, the layered PR review process can sometimes slow down the incorporation of new features, but overall was the only remaining challenge R6 Security saw with the project once the documentation had been improved.
 
 The biggest strengths of KubeArmor, as shared by R6 Security, are the complex policies that it allows to be set and configured. Providing the findings as a json file is great for users who wish to manipulate or combine this dataset with other sources like Prometheus.
-
-
-
-##### Adopter 3 - $COMPANY/$INDUSTRY
-
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
