@@ -1,0 +1,50 @@
+# {{.Name}}
+
+## Mission Statement
+{{.MissionStatement}}
+
+[Charter](./charter.md)
+
+## Leadership
+{{- if .Leadership.Chairs }}
+### Chairs
+{{- range .Leadership.Chairs }}
+- {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**){{if .Company}}, {{.Company}}{{end}}
+{{- end }}
+{{- end }}
+
+{{- if .Leadership.TechLeads }}
+### Tech Leads
+{{- range .Leadership.TechLeads }}
+- {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**){{if .Company}}, {{.Company}}{{end}}
+{{- end }}
+{{- end }}
+
+## Meetings
+{{- range .Meetings }}
+- **{{.Description}}**: 
+  {{- if .TagCalendar }} [Calendar]({{.TagCalendar}}) {{- end }}
+  {{- if .RecordingsURL }} | [Recordings]({{.RecordingsURL}}) {{- end }}
+{{- end }}
+
+## Contact
+- Slack: [Tag {{.Name}} Slack](https://cloud-native.slack.com/archives/{{.Contact.Slack}})
+- [Mailing List]({{.Contact.MailingList}})
+- TOC Liaison: {{.Contact.TOCLiaison.Name}} (**[@{{.Contact.TOCLiaison.GitHub}}](https://github.com/{{.Contact.TOCLiaison.GitHub}})**)
+
+## Subprojects
+{{- range .TagSubprojects }}
+- **{{.Name}}**: [Mailing List]({{.Contact.MailingList}})
+{{- end }}
+
+{{- if .Leadership.SubprojectLeads }}
+### Subproject Leads
+{{- range .Leadership.SubprojectLeads }}
+- {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**){{if .Company}}, {{.Company}}{{end}}
+{{- end }}
+{{- end }}
+
+{{- if .TagInitiatives }}
+## Initiatives
+[{{.Name}} Initiatives]({{.TagInitiatives}})
+{{- end }}

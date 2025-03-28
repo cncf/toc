@@ -1,0 +1,90 @@
+name: Generate README on Tags Change (Forked PR)
+
+on:
+  pull_request_target:
+    branches:
+      - main
+    paths:
+      - tags.yaml
+  workflow_dispatch:
+    inputs:
+      check_all_prs:
+        description: 'Check all open pull requests?'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-readme-fork:
+    # This job runs only if the PR is coming from a fork.
+    if: ${{ github.event.pull_request.head.repo.full_name != github.repository }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}  # Ensure branch checkout
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 'stable'
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Create new PR, comment and close original (forked PR)
+        env:
+          # Use a different token here for fork PRs if needed.
+          GITHUB_TOKEN: ${{ secrets.TAGS_YAML_UPDATE_GHA }}
+        run: |
+          set -e
+          cp tags.yaml /tmp/tags.yaml
+          BRANCH_NAME=readme-update-fork-${{ github.event.pull_request.number }}
+          git remote set-url origin https://github.com/${{ github.repository }}.git
+          git fetch origin main
+          git checkout -B $BRANCH_NAME origin/main
+          cp /tmp/tags.yaml tags.yaml
+          cd generator
+          go run readme_app.go
+          cd ..
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          if ! git diff --staged --quiet; then
+            git commit -m "Update README based on tags.yaml changes"
+            git push origin $BRANCH_NAME --force
+            PR_TITLE="Update README based on tags.yaml changes from fork PR #${{ github.event.pull_request.number }}"
+            PR_BODY="This PR updates the README file based on changes in tags.yaml from fork PR #${{ github.event.pull_request.number }}."
+            API_URL=https://api.github.com/repos/${{ github.repository }}/pulls
+            PR_DATA=$(jq -n --arg title "$PR_TITLE" --arg head "$BRANCH_NAME" --arg base "${{ github.event.pull_request.base.ref }}" --arg body "$PR_BODY" '{title: $title, head: $head, base: $base, body: $body}')
+            RESPONSE=$(curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "$PR_DATA" $API_URL)
+            echo "PR creation response: $RESPONSE"
+            NEW_PR_NUMBER=$(echo "$RESPONSE" | jq -r '.number')
+            if [ "$NEW_PR_NUMBER" = "null" ]; then
+              echo "Error: PR not created. API response: $RESPONSE"
+              exit 1
+            fi
+            ORIGINAL_COMMENT="This PR has been superseded by [PR #$NEW_PR_NUMBER](https://github.com/${{ github.repository }}/pull/$NEW_PR_NUMBER). Closing this PR."
+            ORIGINAL_COMMENT_API_URL=https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments
+            ORIGINAL_COMMENT_DATA=$(jq -n --arg body "$ORIGINAL_COMMENT" '{body: $body}')
+            curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "$ORIGINAL_COMMENT_DATA" $ORIGINAL_COMMENT_API_URL
+            CLOSE_API_URL=https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}
+            curl -s -X PATCH -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d '{ "state": "closed" }' $CLOSE_API_URL
+            NEW_PR_COMMENT="This PR replaces fork PR [#${{ github.event.pull_request.number }}](https://github.com/${{ github.repository }}/pull/${{ github.event.pull_request.number }})."
+            NEW_PR_COMMENT_API_URL=https://api.github.com/repos/${{ github.repository }}/issues/$NEW_PR_NUMBER/comments
+            NEW_PR_COMMENT_DATA=$(jq -n --arg body "$NEW_PR_COMMENT" '{body: $body}')
+            curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "$NEW_PR_COMMENT_DATA" $NEW_PR_COMMENT_API_URL
+          else
+            echo "No changes to commit"
+          fi

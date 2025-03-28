@@ -2,40 +2,62 @@
 # CNCF Project Lifecycle & Process 
 v1.6, previously "project proposal process v1.5"
 
+## Table of Contents
+- [Project Stages](#project-stages)
+- [Project Lifecycle Process](#project-lifecycle-process)
+- [How to Move Levels](#how-to-apply-to-move-levels)
+- [Timelines](#timelines)
+- [Project Resources and Guide Posts](#project-resources-and-guide-posts)
+- [Additional Information](#additional-information)
+
+
 ## Introduction 
-
-This document provides high level information for projects to understand the project lifecycle, criteria, and the moving levels process for to demonstrate their completion of a defined criteria set.
-
-CNCF Projects experience a project lifecycle that conveys their completion of a defined set of criteria. These criteria are cumulative, building upon the previous maturity level criteria to enable cloud native projects to become highly maturity, secure, production ready projects for adopters.
+This document outlines the CNCF project lifecycle - a multi-stage evaluation which helps ensure cloud native projects meet defined standards of maturity, security, and production readiness for adopters. It includes the criteria for each stage and the process for transitioning between levels. 
 
  The TOC defines 4 stages of the project lifecycle:
 
-* **[Sandbox](https://sandbox.cncf.io)** - experimental or innovative projects that are early in their life
-* **Incubation** - growing maturity projects that are on the precipice of "crossing the chasm"
-* **Graduated** - highly mature, robust projects whose adopters have demonstrated their production-readiness by their deployment to production environments
-* **[Archived](archiving.md)** - inactive or low activity projects that are no longer supported by the TOC or are not recommended for use due to a variety of factors (project specific)
+* **[Sandbox](https://sandbox.cncf.io)** - Experimental or innovative projects early in their development.
+* **Incubation** - Projects gaining adoption, focusing on improving stability and maturity.
+* **Graduated** - Highly mature, robust projects whose adopters have demonstrated their production-readiness by their deployment to production environments.
+* **[Archived](archiving.md)** - Inactive or low activity projects that are no longer supported by the TOC or are not recommended for use due to a variety of factors (project specific)
 
 ## Project stages
 
 ![Project stages](project-stages.png)
 
-Projects may enter the CNCF either by applying as a sandbox project or applying directly for incubation. As project navigates their maturity journey, their completion of a given level's criteria is evaluated by the TOC in a process called Due Diligence to ensure the project's implementation of the criteria meets the desired outcome, intent, and expectations set forth by the TOC.
+**Sandbox**:
+Sandbox projects are the initial stage in the CNCF's project maturity levels. These projects represent innovative and experimental ideas, often involving new technologies or offering unique approaches to existing technologies. At this early stage, failure is a possibility, but the focus is on evaluating the project's potential impact and value to the ecosystem. Sandbox projects are expected to undergo significant changes, including breaking changes to their functionality. They are in a continuous state of evolution, refining their release processes and integrating feedback from both contributors and early adopters who are willing to experiment with less mature technology. They are experimental; they might still be used in production by a few organizations on a case to case basis.
 
-Evaluting projects against the criteria does take some time and the TOC has recently modified the Due Diligence process to reduce duplication of work, streamline handoffs, and provide better transparency to the project and its adopters about its conformance and implementation of the criteria.
+**Incubation**:
+Incubating projects in the CNCF represent the middle stage of project maturity. These projects have progressed beyond the experimental phase of the Sandbox and are starting to demonstrate stability. Incubating projects exhibit a slower rate of change, with fewer breaking changes and more stable, versioned APIs. This signifies that the project's core functionality is solid, making it more reliable for production use. Importantly, this stage marks the point where the CNCF's Technical Oversight Committee (TOC) begins to actively evaluate the project's adoption. The TOC assesses the project's usefulness to interested parties, gauging its potential for wider adoption and integration within the cloud native ecosystem.
+
+**Graduation**:
+CNCF Graduated projects represent the pinnacle of project maturity within the Cloud Native Computing Foundation's ecosystem. These projects have successfully navigated the previous stage(s), demonstrating a high level of stability, functionality, and widespread adoption within their specific market area. Graduated projects are characterised by their adherence to mature and evolved practices, ensuring consistent and reliable performance. They offer a high degree of confidence to adopters and contributors alike, demonstrating stability, robust performance, comprehensive security measures, and active engagement with the community. Reaching the Graduated level signifies that the project has proven its value and is considered a reliable and trusted solution within the cloud native landscape.
+
+**Archived**:
+Archived projects are inactive or no longer recommended for use. This stage ensures the CNCF community focuses on active, impactful projects.
+Refer to the archive process (here)[https://github.com/cncf/toc/blob/main/process/archiving.md]
+
+---
+
+## Project Lifecycle Process
+
+Projects may enter the CNCF either by applying as a sandbox project or applying directly for incubation. As a project navigates their maturity journey, their completion of a given level's criteria is evaluated by the TOC in a process called Due Diligence to ensure the project's implementation of the criteria meets the desired outcome, intent, and expectations set forth by the TOC.
+
+Due Diligence Enhancements:
+To streamline the evaluation process, the TOC has:
+- Reduced duplication of work.
+- Improved transparency for projects and their adopters.
+- Simplified handoffs during evaluations.
+
+For project resources on the lifecycle process, please refer to the section on 
+[Project Resources and Guide Posts](#project-resources-and-guide-posts).
 
 ##  Naming conventions for projects
 
-All CNCF projects are subject to the [Trademark Usage Policies](https://www.linuxfoundation.org/legal/trademark-usage) set by Linux Foundation. Specifically, new or incoming projects should avoid use existing trademarks in their proposed project names. In addition, if they are intending to use a popular prefix/suffix of an existing project (like "kube" or "k8s"), then they should consult the leadership group of the respective project to seek their approval and document the consensus reached. Existing projects are encouraged to document their naming guidelines to make this process smooth as well to avoid lengthy deliberation process for new project names.
+All CNCF projects are subject to the [Trademark Usage Policies](https://www.linuxfoundation.org/legal/trademark-usage) set by the Linux Foundation. Specifically, new or incoming projects should avoid using existing trademarks in their proposed project names. In addition, if they are intending to use a popular prefix/suffix of an existing project (like "kube" or "k8s"), then they should consult the leadership group(TAG) of the respective project to seek their approval and document the consensus reached. Existing projects are encouraged to document their naming guidelines to make this process smooth as well to avoid lengthy deliberation processes for new project names.
 
-### Project resources and guide posts
-
-The TOC, with support from the [Technical Advisory Groups](/tags/README.md), have a wide variety of resources available to assist projects.  Current and aspiring maintainers of cloud native projects can find a lot of information and templates on [contribute.cncf.io/maintainers](https://contribute.cncf.io/maintainers/). The TOC also maintains [project Guide Posts](../docs/project_guideposts.md) - a collection of guiding points that have assisted cloud native projects as they grow and mature in the ecosystem. These are not requirements for moving levels, those may be found in the respective application issue templates ([Incubation](../.github/ISSUE_TEMPLATE/template-incubation-application.md), [Graduation](../.github/ISSUE_TEMPLATE/template-graduation-application.md)). The [Guide Posts](../docs/project_guideposts.md) are a resources for projects to leverage that is beneficial in meeting or exceeding the criteria defined.
-
-Additionally, projects interested in preparing to apply to move levels are encouraged to pursue the following activities as the resulting artifacts can and often are leveraged in the TOC's completion of the Due Diligence in lieu of certain sections of the DD.
-
-* Pursue a [Goverance Review with TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy/issues/new?template=governance-review-request.yaml) - A governance review is an indepth look at how your project is governed, its documentation, its practices, and general project operations. For more information please [checkout the maintainer page on governance](https://contribute.cncf.io/maintainers/governance/overview/) or join the [Governance Review Group](https://github.com/cncf/tag-contributor-strategy/tree/main/governance).
-* Complete a [General Technical Review (GTR)](../tags/resources/toc-supporting-guides/general-technical-questions.md) or [Domain Technical Review (DTR)](../tags/resources/toc-supporting-guides/tag-domain-technical-review-template.md) - these reviews are provide a structured framework to explore the technical lifecycle aspects of a project experienced or sought by adopters as well as dive deep on the design and architecture of the project within its technical domain of focus. The results of these can support projects in identifying next steps to increase usability, resilience, scale, performance, and ease-of-use.
-* Collaborate with [TAG Security on a joint-review](https://github.com/cncf/tag-security/blob/main/community/assessments/guide/README.md#joint-assessment) - highly recommended for currently incubating projects, the joint review is a comprehensive assessment of a project's security, it helps project's prepare for a successful security audit.
+---
 
 ## How to apply to move levels
 
@@ -69,19 +91,19 @@ While the details of the process are described in detail further for Incubating 
 #### Application Kick off Meeting is scheduled and held
 *Who: TOC Sponsor(s) and Project*
 
-* The TOC will schedule time with the project to set expectations and layout out the process. The TOC will use the meeting notes document to capture blockers, recommendations, and other findings as they review the issue and the project's respositories, channels, release process, metrics, governance, and other sources of information that support the project's completion of the criteria. The TOC member will refer back to these notes to support their forumlation of the Due Diligence PR. The project is asked to identify 5-7 adopters for interviews. 
+* The TOC will schedule time with the project to set expectations and lay out the process. The TOC will use the meeting notes document to capture blockers, recommendations, and other findings as they review the issue and the project's repositories, channels, release process, metrics, governance, and other sources of information that support the project's completion of the criteria. The TOC member will refer back to these notes to support their formulation of the Due Diligence PR. The project is asked to identify 5-7 adopters for interviews. 
 * If the TOC sponsor(s) finds that the project is not yet ready to move levels, they will re-engage with the project to discuss next steps, detail specific blockers that prevent the project from moving, and any actions that need to be completed but are non-blocking. The Application issue is updated with this summary once the project is discussed.
 
 #### Due Diligence creation or refresh
 *Who: TOC Sponsor(s)*
 
-* Once all recommendations, blockers, and other findings are resolved, the TOC member will begin crafting the Due Diligence PR that provides their evaluation of the project's completion of the criteria, any compensating mechanisms in place, or other notables that may influnce the TOC's decision to move the project to the next level.
+* Once all recommendations, blockers, and other findings are resolved, the TOC member will begin crafting the Due Diligence PR that provides their evaluation of the project's completion of the criteria, any compensating mechanisms in place, or other notables that may influence the TOC's decision to move the project to the next level.
 
 #### Adopter Interviews are conducted
 *Who: TOC Sponsor(s) and Adopters*
 
 * Depending on the freshness of prior interviews the TOC may choose to not conduct further interviews or conduct others to ensure coverage by a variety of adopters to explore all facets of the project. The project is updated on the project board.
-* The TOC will reach out to adopters to inform them of how interviews are conducted and to address any anonomity or other concerns they may have. The TOC will ensure adopters have final approval of any published summaries of the interviews that are included in the due diligence PR. 
+* The TOC will reach out to adopters to inform them of how interviews are conducted and to address any anonymity or other concerns they may have. The TOC will ensure adopters have final approval of any published summaries of the interviews that are included in the due diligence PR. 
 * If multiple TOC members are sponsoring, they will conduct their own individual reviews and then coordinate with each other on overall observations, findings, and next steps.
 
 #### TOC internal comment period
@@ -110,6 +132,8 @@ While the details of the process are described in detail further for Incubating 
 Projects can find the criteria for Incubation by reviewing the [Incubation application template](../.github/ISSUE_TEMPLATE/template-incubation-application.md).
 
 Projects can find the criteria for Graduation by reviewing the [Graduation application template](../.github/ISSUE_TEMPLATE/template-graduation-application.md).
+
+---
 
 ### Timelines
 
@@ -151,6 +175,8 @@ The above freeze only applies to KCCN NA and EU. Other events will be subject to
 
 As the CNCF chooses to create new standalone occurrences of KCCN, this freeze should be reviewed to ensure ample time is available to conduct activities to support project moving levels. It may include restricting to just two freezes a year, or a complete re-evaluation of the freeze in light of whatever changes have transpired.
 
+---
+
 #### Additional information
 
 Q: Why doesn't the TOC get through the sandbox list every meeting?
@@ -166,7 +192,18 @@ Q: Why can't public comment periods or votes launch within 4 weeks of a KubeCon?
 A: Undergoing due diligence is a non-insignificant amount of work. Conducting adopter interviews takes time and scheduling becomes increasingly difficult the closer to each KCCN we get. Being able to successfully complete due diligence to launch the public part of the process becomes very difficult as many community members have additional responsibilities related to the conference. By removing KCCN as a goal post for brand new requests to move levels, we hope to not burn out adopters, TOC, maintainers, and other community members.
 
 Q: I meet the criteria, why am I not graduating?
-A: There could be a number of reasons why a project is not yet ready to graduate but appears to meet the criteria. The TOC has increased the clarity and desired outcomes the criteria should achieve for projects but require evaluation on a case-by-case basis for each project to understand the implications of their implementation. The TOC has final discretion but endevours to be transparent and enable projects to successfully and sustatinably achieve Graduation status while balancing the needs and expectations of adopters and CNCF members.
+A: There could be a number of reasons why a project is not yet ready to graduate but appears to meet the criteria. The TOC has increased the clarity and desired outcomes the criteria should achieve for projects but require evaluation on a case-by-case basis for each project to understand the implications of their implementation. The TOC has final discretion but endeavours to be transparent and enable projects to successfully and sustainably achieve Graduation status while balancing the needs and expectations of adopters and CNCF members.
 
 Q: How can I ensure my project is on the right path to the next level?
-A: Projects are strongly encouraged to meet with their TAG to receive feedback on changes, improvements, recommendations to assist the project to the next maturity level. Some of these may be domain specific recommendations to ensure a more robust project, or they may be more high level items and encompass engineering principles that need codified within the project. TOC members sponsoring a project will reach out to the project's TAG to understand more about the project and ensure they incorporate the TAG's recommendations, notes, and observations within the Due Diligence PR.
+A: Projects are strongly encouraged to meet with their TAG to receive feedback on changes, improvements, and recommendations to assist the project to the next maturity level. Some of these may be domain specific recommendations to ensure a more robust project, or they may be more high level items and encompass engineering principles that need to be codified within the project. TOC members sponsoring a project will reach out to the project's TAG to understand more about the project and ensure they incorporate the TAG's recommendations, notes, and observations within the Due Diligence PR.
+
+---
+### Project resources and guide posts
+
+The TOC, with support from the [Technical Advisory Groups](/tags/README.md), have a wide variety of resources available to assist projects.  Current and aspiring maintainers of cloud native projects can find a lot of information and templates on [contribute.cncf.io/maintainers](https://contribute.cncf.io/maintainers/). The TOC also maintains [project Guide Posts](../docs/project_guideposts.md) - a collection of guiding points that have assisted cloud native projects as they grow and mature in the ecosystem. These are not requirements for moving levels, those may be found in the respective application issue templates ([Incubation](../.github/ISSUE_TEMPLATE/template-incubation-application.md), [Graduation](../.github/ISSUE_TEMPLATE/template-graduation-application.md)). The [Guide Posts](../docs/project_guideposts.md) are resources for projects to leverage that are beneficial in meeting or exceeding the criteria defined.
+
+Additionally, projects interested in preparing to apply to move levels are encouraged to pursue the following activities as the resulting artifacts can and often are leveraged in the TOC's completion of the Due Diligence in lieu of certain sections of the DD.
+
+* Pursue a [Goverance Review with TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy/issues/new?template=governance-review-request.yaml) - A governance review is an indepth look at how your project is governed, its documentation, its practices, and general project operations. For more information please [checkout the maintainer page on governance](https://contribute.cncf.io/maintainers/governance/overview/) or join the [Governance Review Group](https://github.com/cncf/tag-contributor-strategy/tree/main/governance).
+* Complete a [General Technical Review (GTR)](../tags/resources/toc-supporting-guides/general-technical-questions.md) or [Domain Technical Review (DTR)](../tags/resources/toc-supporting-guides/tag-domain-technical-review-template.md) - these reviews provide a structured framework to explore the technical lifecycle aspects of a project experienced or sought by adopters as well as dive deep on the design and architecture of the project within its technical domain of focus. The results of these can support projects in identifying next steps to increase usability, resilience, scale, performance, and ease-of-use.
+* Collaborate with [TAG Security on a joint-review](https://github.com/cncf/tag-security/blob/main/community/assessments/guide/README.md#joint-assessment) - highly recommended for currently incubating projects, the joint review is a comprehensive assessment of a project's security, it helps project's prepare for a successful security audit.
