@@ -8,15 +8,25 @@
 
 ### Criteria Evaluation
 
-_$TOCMEMBER conducted the due diligence of KubeArmor who applied for $LEVEL. The project [has/has not] completed the criteria that show its maturity at $LEVEL. The following criteria implementations are noteworthy to call out... $NOTABLES. The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS. The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS._
+@TheFoxAtWork conducted the due diligence of KubeArmor who applied for Incubation. The project has not completed the criteria that show its maturity at Incubation. 
 
 ### Adoption Evaluation
 
-_The adopter interviews reflect a project [in use/too early] for the level which the project applied. They show ... $INTERVIEWSUMMARY._
+The adopter interviews reflect a project too early for the level which the project applied. The adopter interviews conducted did not demonstrate sufficient adoption and use of the project, adopters submitted for interview must have a current implementation of the project in at least dev/int/staging and at least one adopter must have the project in production for incubation level not in a manner that resells the open source project to an adopter-by-proxy (i.e. Marketplace provides instances of open source projects where the marketplace is the adopter submitted for interview). Only one adopter met this criteria.
 
 ### Final Assessment
 
-_[The TOC has found the project to have satisfied the criteria for $LEVEL/ The TOC's evaluation of the project shows a needed focus to complete the outstanding blockers and reapply when the following conditions are met ... $CONDITIONS]._
+The TOC's evaluation of the project shows a needed focus to complete the outstanding blockers and reapply when the following conditions are met:
+
+* All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) - Separate the project from AccuKnox and review all code, docs, groups, and other project assets to confirm separation and neutrality.
+  * Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels - Will be met when the above is resolved.
+* Code and Doc ownership in Github and elsewhere matches documented governance roles - update the project governance, codeowners, and maintainers files to ensure code and doc ownership are consistent and enforced in accordance with the documented governance of the project.
+* Document agreement that project will adopt CNCF Code of Conduct - adopt the CNCF code of conduct.
+* All subprojects, if any, are listed - There are some project repos that indicate a specialty sub-project (such as the policy-templates) which detail being "commuity-owned" but do not consider any additional governance or documentation associated with how they are maintained beyond annotation that it is an initiative from AccuKnox. This needs decoupled to provide clear separation between the Project, its Community, and the donating company. Improve the documentation so it is explicit to adopters what repos and efforts are sub-projects and how they are governed in relation to the main project.
+* Document the project's release process - Document the release process for the project.
+* Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.) - Review the security guidelines against current project permissions. Verify secure repo configuration. Resolve conflicts with Scorecards reporting regarding branch protection. Update maintainers governance to indicate access control requirements.
+* Document assignment of security response roles and how reports are handled - cease use of the support @ accuknox email for reporting security vulnerabilities, in favor of the native Security vulnerability reporting feature in GitHub and establish a dedicated mailing alias for the project security team.  The project is further recommended to establish a project security response committee made up of maintainters and contributors with security expertise.
+* Used in appropriate capacity by at least 3 independent + indirect/direct adopters - work with community members to identify additional direct adopters using the project in a production capacity. The available adopters were primarily using the project in staging or dev (early adoption) or did not have substantial adoption of the project within their environment to adequately convey the value of integrating it into their environment.
 
 ## Application Process Principles
 
@@ -135,33 +145,33 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **Contributor ladder with multiple roles for contributors.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project has not defined a contributor ladder.
 
 ### Required
 
-- [ ] **Clearly defined and discoverable process to submit issues or changes.**
+- [X] **Clearly defined and discoverable process to submit issues or changes.**
 
-<!-- (TOC Evaluation goes here) --> 
+KubeArmor's Contributing.md file includes a link to create a new issue within the project and a link to identify good-first-issues for new contributors to pick up. 
 
-- [ ] **Project must have, and document, at least one public communications channel for users and/or contributors.**
+- [X] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project's README includes a link to the KubeArmor slack channel in the CNCF slack workspace.
 
-- [ ] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
+- [X] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project's README provides links and information on public communication channels, with the exception of the AccuKnox security mailing list the project is currently using for reporting security vulnerabilities (this needs moved to a project managed list and not a vendor list).
 
-- [ ] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
+- [X] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project's README provides a link to its community meeting call and notes, with Google Calendar and ICS meeting invites as well.
 
-- [ ] **Documentation of how to contribute, with increasing detail as the project matures.**
+- [X] **Documentation of how to contribute, with increasing detail as the project matures.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project includes a CONTRIBUTING.md and an additional file for first time contributors to open source that details how to set up a contributing fork for KubeArmor. The README also links to a development guide and testing guide to further support contributors.
 
-- [ ] **Demonstrate contributor activity and recruitment.**
+- [X] **Demonstrate contributor activity and recruitment.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project has previously participated in Google Summer of code as well as LFX mentoring (term 3 cited in meeting notes). They've also held at least 1 live stream and actively zz
 
 ## Engineering Principles
 
@@ -169,33 +179,37 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **Roadmap change process is documented.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project manages its roadmap through GitHub projects, but does not currently have any documentation around how features, bugs, and changes are added, introduced, and managed in the project board.
 
 - [ ] **History of regular, quality releases.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project cuts stable releases approximately twice annualy but does not provide documentation or clarity on checks and tests that detail quality expectations. Release notes are available but don't consistently or readily convey what changes were introduced without in depth analysis into each PR or commit.
 
 ### Required 
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [X] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project's README provides an overview of how it works in addition to the introductory information about what it does and the focus areas for the project (infra hardening, least permissions, application behavior enforcement, and multiple deployment types supported). It also provides a differentiation.md file which contains more detail about the types of mitigations it provides, attack mitigations, and challenges with traditional detection tooling in cloud native environments.
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases.**
+- [X] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
-<!-- (TOC Evaluation goes here) --> 
+The differentiation file has a significant amount of information to address the what and why. However the project does not detail its use cases clearly.  The [documentation link to use cases](https://github.com/kubearmor/KubeArmor/commit/ff0baab25ed1506becd359efc04e2825bb9d835c) directs users to the hardening.md file which DOES detail the various types of specific uses for the project, how it works, the attack scenario it addresses, corresponding control mappings, and the policy used to address the use case.
 
-- [ ] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
+The use case information on the project website itself is different than what is contained in the repo; the repo only touches on hardening whereas the site includes least permissions, app behavior, and "advanced" which provides additional usecases that are covered in the repo's "hardening.md" file.
 
-<!-- (TOC Evaluation goes here) --> 
+It is recommended the project review and restructure its use cases to be consistent between both the repo and website.
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [X] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project uses GitHub Projects as its public roadmap, for which several exist including a [Backlog/Roadmap project board.](https://github.com/orgs/kubearmor/projects/9)
+
+- [X] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+
+The project's differnetiation file contains sufficient information on the project architecture and design to demonstrate cloud native use cases.  The use cases file also contains cloud native specifics.
 
 - [ ] **Document the project's release process.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project does not appear to have documented their release process.
 
 ## Security
 
@@ -207,25 +221,50 @@ N/A
 
 ### Required
 
-- [ ] **Clearly defined and discoverable process to report security issues.**
+- [X] **Clearly defined and discoverable process to report security issues.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project has defined their process for reporting security issues in the [security.md file](https://github.com/kubearmor/KubeArmor/commit/ee7d4957548658e230f619e3bd7e1125b6e08c7f), readily discoverable through the GitHub UI.
 
 - [ ] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
-<!-- (TOC Evaluation goes here) --> 
+The project does not appear to have any public facing information regarding how it enforces access control against its codebase. A review of the OpenSSF Scorecard for the project appears to indicate, minimally, that branch protection is not adequate for the project:
+
+> **Reason**
+> branch protection is not maximal on development and all release branches
+
+> **Details**
+> Info: 'allow deletion' disabled on branch 'main'
+> Info: 'force pushes' disabled on branch 'main'
+> Info: 'branch protection settings apply to administrators' is required to merge on branch 'main'
+> Info: 'stale review dismissal' is required to merge on branch 'main'
+> Info: required approving review count is 2 on branch 'main'
+> Info: codeowner review is required on branch 'main'
+> Warn: 'last push approval' is disabled on branch 'main'
+> Info: 'up-to-date branches' is required to merge on branch 'main'
+> Info: status check found to merge onto on branch 'main'
+> Info: PRs are required in order to make changes on branch 'main'
+
+It is worth noting that Scorecard can be inaccurate and it is recommended the project review the scorecard documentation to ensure accurate reporting and corrections to permissions are made. A sampling of closed Pull Requests has identified several for which no review was required or conducted prior to merge, although these do not occur 2024 onward in the project.
+
+It is recommended the project review the security recommendations for projects, particularly those on [access management](https://contribute.cncf.io/maintainers/security/security-guidelines/#11-access-management) to confirm appropriate settings.
 
 - [ ] **Document assignment of security response roles and how reports are handled.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project does not have documentation regarding security response roles. It does have information on how reports are handled within their security.md file ([steps 2 and 3](https://github.com/kubearmor/KubeArmor/security#please-use-the-below-process-to-report-a-vulnerability-to-the-project)). The security.md file seems to imply at least 3 distinct entities involved in the the security response process:
 
-- [ ] **Document Security Self-Assessment.**
+* A commerical entity - AccuKnox; indicating the project is not vendor neutral. Responsible for receiving vulnerability reports.
+* A project security team; unknown composition and assignment. Responsible for providing an initial response and fixing the vulnerability
+* A project maintainter; only engaged when breadth, scope, recreation, and confirmation are not readily apparent based on the initial report received by AccuKnox.
 
-<!-- (TOC Evaluation goes here) --> 
+It is recommended the project cease use of the support @ accuknox email for reporting security vulnerabilities, in favor of the native Security vulnerability reporting feature in GitHub and establish a dedicated mailing alias for the project security team.  The project is further recommended to establish a project security response committee made up of maintainters and contributors with security expertise. The Kubernetes Security Response Committee is an excellent example of such a group and includes detailed information for [onboarding and offboarding](https://github.com/kubernetes/committee-security-response/blob/main/src-onboarding-offboarding.md) in addition to [robust information regarding membership on the committee.]https://github.com/kubernetes/committee-security-response/blob/main/security-release-process.md#security-response-committee-membership)
 
-- [ ] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+- [X] **Document Security Self-Assessment.**
 
-<!-- (TOC Evaluation goes here) --> 
+As of this writing, [the project provided its self-assessment and it is currently pending changes request prior to approval and merging.](https://github.com/cncf/tag-security/pull/1430)
+
+- [X] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+
+The project currently has an [OpenSSF Best Practices Badge of Passing.](https://www.bestpractices.dev/en/projects/5401#all) 
 
 ## Ecosystem
 
@@ -235,25 +274,27 @@ N/A
 
 ### Required
 
-- [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
+- [X] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-<!-- (TOC Evaluation goes here) --> 
+The project has a [list of adopters](https://github.com/kubearmor/KubeArmor/commit/ebfee6073776b0c6d523a651e257bf856ca80a11) public on their repository. Many security projects experience challenges in listing adopters due to security concerns of exposure, which explains the brevity in the list. The project was able to provide a number of additional adopters for the purposes of interview scheduling.
 
 - [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-<!-- (TOC Evaluation goes here) --> 
+Of the four adopter interviews conducted, only one met the requirement of a direct adopter (but did not provide approval for publishing yet). The two of the adopters did not have sufficient internal adoptions to demonstrate appropriate capacity.
 
-The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
+The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation with increasing production use.
+
+The project provided additional adopters over the course of the Due Diligence, however many were unresponsive.
 
 - [ ] **TOC verification of adopters.**
 
-<!-- (TOC Evaluation goes here) --> 
+The TOC Sponsor for the project was able to verify use of the project by three of the four provided adopters, the remaining adopter was unable to provide timely or relevent experience within thier organization to convey appropriate capacity and is therefore not included within this Due Diligence. The information provided by this adopter was largely speculative, having not been involved in the adoption of the project beyond an initial proof of concept.
 
-Refer to the Adoption portion of this document.
+Refer to the Adoption portion of this document for more information.
 
-- [ ] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
+- [X] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
-<!-- (TOC Evaluation goes here) --> 
+The project's architecture overview identifies other projects it is compatible with and makes use of (largely LSMs and eBPF). The project does list potential use with OpenTelemetry and does list [a support matrix for Linux distros and cloud service providers (CSPs) Kubernetes offerings](https://docs.kubearmor.io/kubearmor/quick-links/support_matrix).
 
 #### Adoption
 
