@@ -30,9 +30,6 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 * **Kevin Klues** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [TOC-appointed][shadow]
 
 
-
-
-
 Election [schedule](operations/election-schedule.md)
 
 ## Projects
@@ -95,19 +92,26 @@ Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we ar
 
 This is our [voting policy](docs/voting.md). Only TOC members can cast binding votes. (+1 Binding)
 
+# TOC Subprojects
+
+The TOC has approved the formation of [TOC Subproject](./toc_subprojects/).
+Currently, the following Subprojects are active: 
+
+* [Contributor Strategy Subproject](./toc_subprojects/contributor-strategy-subproject/README.md)
+* [Mentoring Subproject](./toc_subprojects/mentoring-subproject/README.md)
+* [Project Reviews Subproject](./toc_subprojects/project-reviews-subproject/README.md)
+
+
 ## Technical Advisory Groups
 
-The TOC has approved the formation of [TAGs](tags/cncf-tags.md).
+The TOC has approved the formation of [TAGs](./tags/README.md).
 Currently, the following Technical Advisory Groups are active: 
 
-* [TAG-Security](https://github.com/cncf/tag-security)
-* [TAG-Storage](https://github.com/cncf/tag-storage) 
-* [TAG-App-Delivery](https://github.com/cncf/tag-app-delivery)
-* [TAG-Network](https://github.com/cncf/tag-network)
-* [TAG-Runtime](https://github.com/cncf/tag-runtime)
-* [TAG Contributor Strategy](https://github.com/cncf/tag-contributor-strategy)
-* [TAG Observability](https://github.com/cncf/tag-observability)
-* [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability)
+* [TAG Developer Experience](./tags/tag-developer-experience/README.md)
+* [TAG Infrastructure](./tags/tag-infrastructure/README.md)
+* [TAG Operational Resilience](./tags/tag-operational-resilience/README.md)
+* [TAG Security and Compliance](./tags/tag-security-and-compliance/README.md)
+* [TAG Workloads Foundation](./tags/tag-workloads-foundation/README.md)
 
 
 ## Working Groups
