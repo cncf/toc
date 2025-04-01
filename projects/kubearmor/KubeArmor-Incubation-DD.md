@@ -16,6 +16,8 @@ The adopter interviews reflect a project too early for the level which the proje
 
 ### Final Assessment
 
+The KubeArmor project remains an innovative approach to not only configure but enforce cloud native security in Kubernetes environments. While the project features, capabilities, and operation are what adopters desire and addresses many (but not all) of their needs, the governing and operational aspects of the project do not match the level of maturity of the project's the technical design and execution.
+
 The TOC's evaluation of the project shows a needed focus to complete the outstanding blockers and reapply when the following conditions are met:
 
 * All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) - Separate the project from AccuKnox and review all code, docs, groups, and other project assets to confirm separation and neutrality.
