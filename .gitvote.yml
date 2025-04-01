@@ -5,7 +5,7 @@ profiles:
     periodic_status_check: "1 week"
     allowed_voters:
       teams:
-        - cncf-toc
+        - cncf-toc-voters
       exclude_team_maintainers: true
     close_on_passing: true
     announcements:
@@ -16,6 +16,7 @@ profiles:
     pass_threshold: 66
     allowed_voters:
       teams:
-        - cncf-toc
+        - cncf-toc-voters
       exclude_team_maintainers: true
     close_on_passing: true
+
