@@ -33,7 +33,7 @@ This last year was arguably Brigade's most exciting, including:
 ## Annual Review Items
 
 - *Include a link to your project’s devstats page. We will be looking for signs of consistent or increasing contribution activity. Please feel free to add commentary to add colour to the numbers and graphs we will see on devstats.*
-  - Pulling frrom the main [Brigade devstats dashboard](https://brigade.devstats.cncf.io/d/8/dashboards?orgId=1&refresh=15m):
+  - Pulling from the main [Brigade devstats dashboard](https://brigade.devstats.cncf.io/d/8/dashboards?orgId=1&refresh=15m):
     - Participation from [50 companies](https://brigade.devstats.cncf.io/d/5/companies-table?orgId=1) and counting
     - [Consistent release cadence](https://brigade.devstats.cncf.io/d/47/github-events?orgId=1&from=1553666400000&to=now) of a feature release every 3-4 months since 1.0
     - Seeing an average of [5 new PRs a week](https://brigade.devstats.cncf.io/d/15/new-prs-in-repository-groups?orgId=1&from=1553666400000&to=now) in the last year

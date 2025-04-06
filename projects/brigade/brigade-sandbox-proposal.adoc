@@ -8,7 +8,7 @@ Brigade is an in-cluster runtime that interprets scripts and executes generic pi
 
 Brigade use cases:
 * carrying out CI/CD workflows
-* building opinioned CI/CD platforms
+* building opinionated CI/CD platforms
 * Meta-testing various codebases at regular intervals (language specific linters, code quality assessments, security scanning) and then automatically notifying responsible teams of the results.
 * Assembling weekly rollup reports using a Brigade pipeline by aggregating and analyzing data from multiple data systems.
 * Processing image data

@@ -20,7 +20,7 @@ computing technologies.
 ## DevStats
 
 The Confidential Containers project is a collection of logically and
-programatically bound sub-projects, hosted across multiple git repositories
+programmatically bound sub-projects, hosted across multiple git repositories
 under the Confidential Containers GitHub organization.
 
 Below is a chart of all GitHub activities across all Confidential Containers
@@ -111,7 +111,7 @@ enhancements:
   cadence.
 - A hardware backed CI, i.e. a CI that runs tests on actual confidential
   computing hardware instances like e.g. Intel TDX, AMD SEV, and Intel SGX.
-- A Kubernetes Operartor for easily deploying the Confidential Containers
+- A Kubernetes Operator for easily deploying the Confidential Containers
   runtime, stack, and payload on Kubernetes clusters.
 - Support for process-based TEEs like e.g. SGX.
 - Technical debt reduction, in particular the dependencies on `umoci` and
@@ -145,7 +145,7 @@ Containers solution; both members of our community and external. Our target is
 to have at least 3 direct adopters by the end of 2023, helping us to grow to
 the next level of incubation.
 
-Aside from customer adoption, we also need to improve our current vulnerabilty
+Aside from customer adoption, we also need to improve our current vulnerability
 management process. Based on the [CNCF Security Guidelines](https://contribute.cncf.io/maintainers/security/security-guidelines/),
 we have to define a more formal way of tracking security issues, from the
 initial reporting steps up to the project release management for rapidly

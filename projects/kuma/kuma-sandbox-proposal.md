@@ -19,7 +19,7 @@ Kuma is a modern control plane for Service Mesh and Microservices. It can run an
 
 By bundling the Envoy proxy as the underlying data-plane technology, Kuma can instrument any L4/L7 traffic to secure, observe, route and enhance connectivity between any service or database. It can be used natively in Kubernetes via CRDs, while at the same time providing a RESTful API, a native CLI tool and a built-in GUI that can be used to better integrate Kuma with the rest of the organization.
 
-While Kuma provides easy to use Policy abstractions for most use-cases, Kuma also allows for the configuration of the underlying Envoy data-planes in a more fine-grained manner via the `ProxyTemplate` policy. By doing so, Kuma can be used by both first-time users of Service Mesh, as well as the most experienced ones who want greater control of the underlying networing stack.
+While Kuma provides easy to use Policy abstractions for most use-cases, Kuma also allows for the configuration of the underlying Envoy data-planes in a more fine-grained manner via the `ProxyTemplate` policy. By doing so, Kuma can be used by both first-time users of Service Mesh, as well as the most experienced ones who want greater control of the underlying networking stack.
 
 ## Current Status
 
@@ -54,7 +54,7 @@ Kuma is currently being adopted by a few enterprise organizations to build zero-
 * WebAssembly support
 * Extending Health-Checking
 * Hooks for RBAC controls in RESTful API (+ CLI)
-* Internazionalization
+* Internationalization
 * Replicable benchmarks to demonstrate performance of Envoy as the sidecar proxy
 * ADA support for enterprise adoption
 * And more
@@ -97,7 +97,7 @@ We leverage the APIs of some projects (like Kubernetes) but we don't require _sp
 
 **_Does the project augment or benefit other CNCF projects?_**
 
-Kuma benefits the adoption of Envoy, Prometheus, Jager and of course Kubernetes.
+Kuma benefits the adoption of Envoy, Prometheus, Jaeger and of course Kubernetes.
 
 ## Anticipated use cases
 
@@ -342,7 +342,7 @@ Not at moment since we are in the process of donating, but it can obviously be a
 
 **_Are all defaults for upstream reporting either unset or community hosted infrastructure (i.e. doesn’t point to vendor hosted SaaS control plane or analytics server for usage data)? Is all project naming independent of vendors?_**
 
-We are using Google Analytics and Splunk on our accounts, but those can certainly be transfered.
+We are using Google Analytics and Splunk on our accounts, but those can certainly be transferred.
 
 **_Relevant Assets regarding vendor independence_**
 

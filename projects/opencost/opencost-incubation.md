@@ -105,7 +105,7 @@ Since becoming a CNCF Sandbox project last year OpenCost has continued to releas
 The initial OpenCost [governance model](https://github.com/opencost/opencost/blob/develop/GOVERNANCE.md) has been released, aligning with the [CNCF best practices](https://www.cncf.io/blog/2019/08/30/cncf-technical-principles-and-open-governance-success/). There are 3 levels of membership:
 
 * Contributors to the project may be invited to join the OpenCost community as Members, which adds them to the GitHub OpenCost organization.   
-* [Members](https://github.com/orgs/opencost/teams/opencost-community) with sustained contributions may be invited to become Commiters and review and manage issues for the project.   
+* [Members](https://github.com/orgs/opencost/teams/opencost-community) with sustained contributions may be invited to become Committers and review and manage issues for the project.   
 * [Committers](https://github.com/orgs/opencost/teams/opencost-committers) with sustained involvement with the project may be invited to become Maintainers, granting them further repository privileges and decision-making authority over the direction of the project.
 
 Currently Kubecost’s technical team contributes most of the code submissions to OpenCost based on the inputs and feedback from Kubecost Product Management and issues and PRs raised from the OpenCost community. 
@@ -338,7 +338,7 @@ The security process for OpenCost is documented in the [SECURITY.md](https://git
 * February 27, 2023: OpenCost announced as a [FinOps Certified Solution](https://www.opencost.io/blog/finops-certified-solution).  
 * February 28, 2023: Kick-off for the [External Asset Costs Working Group](https://docs.google.com/document/d/1-d-Vvy1VGHW0sXKiTjTplIUEnrElIlnfMU8sUpEehlA/edit), which will bring support for services not directly managed by the Kubernetes infrastructure.  
 * March 9-12, 2023: OpenCost booth and [presentation](https://www.slideshare.net/mattray/scale-20x-kubernetes-cloud-cost-monitoring-with-opencost-optimization-strategies) at the Southern California Linux Expo.  
-* April 18, 2023: [Microsoft announces they have joined the OpenCost communit](http://aka.ms/aks/OpenCost-AKS)y with code and feature contributions and a new [Azure Billing Rate Card API](https://www.opencost.io/docs/azure-prices) supporting OpenCost.  
+* April 18, 2023: [Microsoft announces they have joined the OpenCost community](http://aka.ms/aks/OpenCost-AKS)y with code and feature contributions and a new [Azure Billing Rate Card API](https://www.opencost.io/docs/azure-prices) supporting OpenCost.  
 * April 18-21, 2023: OpenCost has a full-time staffed kiosk at KubeCon EU in the Project Pavilion.  
 * June 27, 2023: [Grafana Cloud announces their inclusion of OpenCost](https://www.opencost.io/blog/grafana-cloud) in their commercially supported Kubernetes Monitoring product.  
 * June 27, 2023: OpenCost announces participation in the [FinOps Open Cost and Usage Specification](https://www.opencost.io/blog/focus) (FOCUS) while attending the FinOps X conference.  

@@ -29,7 +29,7 @@ Karmada presents its value in the following two aspects:
 
 Karmada was proposed and accepted as a sandbox project in September 2021 ([Sandbox project onboarding issue](https://github.com/cncf/toc/issues/721)).
 
-## Continous Community Momentum
+## Continuous Community Momentum
 
 In the past year, we joined hand with end users across industries and witnessed successful implementations of Karmada in many real-world projects.
 We have built channels to reach out to our users to know better what they want and need, such as meetups and online activities.

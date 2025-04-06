@@ -86,7 +86,7 @@ Additional Maintainers:
 
 _Development needs:_
 
-We currently use Travis and CircleCI for CI, but we may want to use CNCF resources to deploy jenkis for node e2e test.
+We currently use Travis and CircleCI for CI, but we may want to use CNCF resources to deploy jenkins for node e2e test.
 
 _Production needs:_
 

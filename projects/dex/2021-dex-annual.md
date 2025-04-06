@@ -115,7 +115,7 @@ We have a number of items on our roadmap that we'd like to accomplish next:
 - Get more maintainers and adopters
 - Run tests on ARM architecture (already in progress, thanks to CNCF infra)
 - OIDC certification
-- Connector middleware allowin users to inject custom logic into the auth process (eg. use custom claims)
+- Connector middleware allowing users to inject custom logic into the auth process (eg. use custom claims)
 - Custom connectors
 
 Our current priority is adoption, documentation and stabilization.

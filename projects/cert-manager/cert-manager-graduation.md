@@ -250,7 +250,7 @@ The project has six levels of responsibility, each one building on the previous:
 - [x] **Clearly defined and discoverable process to submit issues or changes.**
 
 <!-- (TOC Evaluation goes here) -->
-cert-manager makes use of GitHub issues and PRs. The following templates are avaialble:
+cert-manager makes use of GitHub issues and PRs. The following templates are available:
 - [Report a bug](https://github.com/cert-manager/cert-manager/blob/fc198e91979a5c1e869d2fc45750de2d6aacea7a/.github/ISSUE_TEMPLATE/bug.md)
 - [Feature request](https://github.com/cert-manager/cert-manager/blob/fc198e91979a5c1e869d2fc45750de2d6aacea7a/.github/ISSUE_TEMPLATE/feature-request.md)
 - [Submit a Pull Request ](https://github.com/cert-manager/cert-manager/blob/fc198e91979a5c1e869d2fc45750de2d6aacea7a/.github/PULL_REQUEST_TEMPLATE.md)
@@ -384,7 +384,7 @@ The [supported releases](https://cert-manager.io/docs/releases/) page lists proj
 
 ## Security
 
-Note: this section may be augemented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security.
 
 ### Suggested
 

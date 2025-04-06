@@ -89,7 +89,7 @@ With each release, WasmEdge delivers important features that are important to cl
 * Advanced networking with the WasmEdge sockets library. It supports non-blocking sockets, DNS, TLS. That allows WadmEdge to run modern HTTPS client and server applications. 
 * Support for the Rust Tokio library. It allows many Tokio-based async Rust applications, especially async networking apps, to run seamlessly on WasmEdge.
 * Container and K8s tooling. WasmEdge is an OCI-compliant runtime, so it could be managed and orchestrated by K8s and K8s tooling, like crun, youki, runwasi, containerd, CRI-O, K8s, Kind, OpenYurt, KubeEdge, SuperEdge.
-* An officil package in Fedora and Red Hat Enterprise Linux (RHEL) distributions. 
+* An official package in Fedora and Red Hat Enterprise Linux (RHEL) distributions. 
 * JavaScript support. WasmEdge now supports the full JavaScript language spec as well as common JavaScript module systems, including ES6, CommonJS (CJS), and NPM modules.
 * Support for WebAssembly feature extensions such as WASI-NN and WASI-Crypto.
 * Support for optional WebAssembly specs and proposals from the community, including the SIMD proposal, the Tail Call proposal, the extended-const proposal, the multi-memories proposal, the Import/Export mutable globals proposal, the Non-trapping float-to-int conversions proposal, the Sign-extension operators proposal, the Multi-value proposal, the Reference Types proposal, the Bulk memory operations proposal and the threads proposal.
@@ -143,7 +143,7 @@ Our 2023 roadmap could be found [here](https://github.com/WasmEdge/WasmEdge/blob
 * Community and community collaborations
     * Recruit and support proposal maintainers from more companies other than Second State.
     * More community collaborations with open source projects in Linux Foundation and Apache Foundation.
-    * Attending continuously the mentorship programs like [Google Summmer of Code](https://summerofcode.withgoogle.com/), [Google Season of Docs](https://developers.google.com/season-of-docs), [LFX mentorship](https://lfx.linuxfoundation.org/tools/mentorship/) and [Open Source Program Plan](https://summer-ospp.ac.cn/) to drive community contributions by students.
+    * Attending continuously the mentorship programs like [Google Summer of Code](https://summerofcode.withgoogle.com/), [Google Season of Docs](https://developers.google.com/season-of-docs), [LFX mentorship](https://lfx.linuxfoundation.org/tools/mentorship/) and [Open Source Program Plan](https://summer-ospp.ac.cn/) to drive community contributions by students.
 
 ## How the CNCF can help to achieve the upcoming goals
 

@@ -101,4 +101,4 @@ We appreciate the support provided by the CNCF and look forward to participating
 
 ## Incubation
 
-We have submitted a [proposal for OpenCost Incubuation](https://github.com/cncf/toc/pull/1046/) and are working with our TOC Sponsor Ricardo Rocha. We are presenting to the TAG Observability September 19, 2023.
+We have submitted a [proposal for OpenCost Incubation](https://github.com/cncf/toc/pull/1046/) and are working with our TOC Sponsor Ricardo Rocha. We are presenting to the TAG Observability September 19, 2023.

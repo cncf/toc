@@ -25,7 +25,7 @@ New Chairs should be nominated for TOC vote.
     * [ ] #tag-[InsertTAGHere]-toc-liaison - add new chair(s)
     * [ ] Co-chair meeting - add new co-chairs and add doc sharing
     * [ ] transfer ownership of co-chair meeting calendar invite and tech lead calendar invite - if applicable
-    * [ ] New meeting link will need created by new calendar owner if using Google meet.  meet.new will create this, just copy into invite ortransition to Zoom
+    * [ ] New meeting link will need created by new calendar owner if using Google meet.  meet.new will create this, just copy into invite or transition to Zoom
 * [ ] TOC Liaison meeting
     * [ ] Check if the time still works for new chair(s)
     * [ ] Transfer calender ownership if needed

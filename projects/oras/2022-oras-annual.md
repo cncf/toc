@@ -68,7 +68,7 @@ ORAS 0.15 and future milestones will provide more capabilities to easily manage 
 - Be able to manage repository, tag, manifest, and blob
 - Support and migrate to OCI reference types
 - Support push, discover, pull, copy artifacts from OCI Image Layout
-- Support all OCI-compatitable registries
+- Support all OCI-compatible registries
 - Add E2E testing to enhance the project quality and stability
 
 See the ORAS [Roadmap](https://github.com/oras-project/community/blob/main/Roadmap.md) for more details.

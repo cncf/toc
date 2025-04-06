@@ -14,7 +14,7 @@
 
 By bundling the Envoy proxy as the underlying data-plane technology, Kuma can instrument any L4/L7 traffic to secure, observe, route and enhance connectivity between any service or database. It can be used natively in Kubernetes via CRDs, while at the same time providing a RESTful API, a native CLI tool and a built-in GUI that can be used to better integrate Kuma with the rest of the organization.
 
-While Kuma provides easy to use Policy abstractions for most use-cases, Kuma also allows for the configuration of the underlying Envoy data-planes in a more fine-grained manner via the `ProxyTemplate` policy. By doing so, Kuma can be used by both first-time users of Service Mesh, as well as the most experienced ones who want greater control of the underlying networing stack.
+While Kuma provides easy to use Policy abstractions for most use-cases, Kuma also allows for the configuration of the underlying Envoy data-planes in a more fine-grained manner via the `ProxyTemplate` policy. By doing so, Kuma can be used by both first-time users of Service Mesh, as well as the most experienced ones who want greater control of the underlying networking stack.
 
 
 **Kuma was accepted as a CNCF Sandbox project on June, 2020.**

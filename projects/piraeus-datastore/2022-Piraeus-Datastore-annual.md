@@ -52,7 +52,7 @@ as faster execution in comparison to userspace solutions, at the cost of some po
 
 Last year we saw the first major contributions from a community member:
 
-* Automatically setting up secured communications betweenc components with generated TLS certificates. [piraeus-operator#263](https://github.com/piraeusdatastore/piraeus-operator/pull/263)
+* Automatically setting up secured communications between components with generated TLS certificates. [piraeus-operator#263](https://github.com/piraeusdatastore/piraeus-operator/pull/263)
 * Making our scheduler plugin independent of the STORK project. [github project](https://github.com/piraeusdatastore/linstor-scheduler-extender/)
 
 ###  Releases

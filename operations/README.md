@@ -1,6 +1,6 @@
 # TOC Operations
 
-This directory contains various files, procedures, responsibilties, and expectations of TOC members. Within this folder, TOC members and the community can understand more about how the TOC conducts themselves, what work they perform and how. As the TOC continues to refine and improve its processes, this directory will be updated.
+This directory contains various files, procedures, responsibilities, and expectations of TOC members. Within this folder, TOC members and the community can understand more about how the TOC conducts themselves, what work they perform and how. As the TOC continues to refine and improve its processes, this directory will be updated.
 
 ## Operations structure
 

@@ -8,7 +8,7 @@ Tremor
 primarily for log and metrics processing, distribution and ETL around the needs of Wayfair's
 shared logging and metrics production services.
 
-Tremor started as a quality of service enhancment to add proactive rate limiting and reactive
+Tremor started as a quality of service enhancement to add proactive rate limiting and reactive
 backpressure handling to the Logging and Metrics shared services that run within Wayfair's
 on-premise and GCP based cloud environments.
 
@@ -39,9 +39,9 @@ There are three processing element variants:
 
 * An user friendly environment with a focus on hygenic errors and testability.
 * A modular scripting and pipeline language designed to allow reusability for logic.
-* A code over configuraiton aproach with a minimal number of different operators in favour of a
+* A code over configuration approach with a minimal number of different operators in favour of a
   scripting language to reduce the surface area and learning curve.
-* Support for a JSONesque data moddle with decoders and encoders to allow represetnign a variaty
+* Support for a JSONesque data model with decoders and encoders to allow representing a variety
   of formats in a generalized form to reduce the number of different processing tools needed in the
   ETL department.
 

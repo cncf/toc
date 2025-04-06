@@ -51,7 +51,7 @@ We now have maintainers from 4 different companies.
 
 The Akri community has released five versions since joining CNCF, with 18 different contributors to these releases in total.
 
-Akri has also since participated in many CNCF talks and hosted booths at the Project Pavillion in KubeCon EU 2022 and 2023. You can view some of our talks here:
+Akri has also since participated in many CNCF talks and hosted booths at the Project Pavilion in KubeCon EU 2022 and 2023. You can view some of our talks here:
 
 - [Wasm Day 2021](https://www.youtube.com/watch?v=8hF9hnUJyCY)
 - [KubeCon EU 2022](https://www.youtube.com/watch?v=CMthyqMhuq4)

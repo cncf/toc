@@ -90,7 +90,7 @@ The figure below shows the key nodes in the evolution of the KubeEdge project：
   - Governance doc
     - <https://github.com/kubeedge/community/blob/master/GOVERNANCE.md>
   - Established Technical Steering Committee:
-    - **7 members** from **6 companies**, 1 Arm, 1 Google, 2 Huawei, 1 DaoCloud, 1 HarmonyCloud, 1 KubeShpere
+    - **7 members** from **6 companies**, 1 Arm, 1 Google, 2 Huawei, 1 DaoCloud, 1 HarmonyCloud, 1 KubeSphere
     - <https://github.com/kubeedge/community/tree/master/committee-technical-steering>
   - Multiple SIGs established:
     - SIG AI
@@ -167,7 +167,7 @@ KubeEdge has been widely used in industries such as intelligent transportation, 
 
 ### 1. Have committers from at least two organizations.
 
-KuhbeEdge community has 7 Technical Steering Committees from 6 companies, who are the governing body for the KubeEdge project, providing decision-making and oversight pertaining to the KubeEdge project bylaws. The Technical Steering Committee also defines the project values and structure.
+KubeEdge community has 7 Technical Steering Committees from 6 companies, who are the governing body for the KubeEdge project, providing decision-making and oversight pertaining to the KubeEdge project bylaws. The Technical Steering Committee also defines the project values and structure.
 
 KubeEdge has 10 core maintainers from 7 companies, who are responsible for maintaining code development for overall projects. And KubeEdge also has 15+ SIG maintainers who Focus on maintaining corresponding modules.
 

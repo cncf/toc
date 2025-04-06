@@ -53,7 +53,7 @@ The SPIFFE community holds regular meetups and community days, and runs an annua
 
   
 
-SPIRE has 5 committers from 3 different organizations. SPIFFE has 4 comitters from 3 different organizations. The steering committee has 5 members from 4 organizations.
+SPIRE has 5 committers from 3 different organizations. SPIFFE has 4 committers from 3 different organizations. The steering committee has 5 members from 4 organizations.
 
   
 

@@ -13,7 +13,7 @@ runtimes instead of providing the runtime itself.
 
 The maintainers work to get more users and contributors to join the project, that has paid of with the amount 
 of changes to the core have started to increase again in the last year with more efforts close more regression 
-issues that have intrudced with Kubernetes v1.24. In addition, the project started to get more contributions 
+issues that have introduced with Kubernetes v1.24. In addition, the project started to get more contributions 
 from new users, besides working on the stabilization and bug fixes now that Virtual Kubelet is running in more 
 environments and with different workloads.
 

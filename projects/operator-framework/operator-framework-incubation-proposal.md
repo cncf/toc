@@ -27,7 +27,7 @@ The Operator Framework expands the Kubernetes ecosystem to empower users with an
 
 *Unique identifier:* operator-framework
 
-*Prefered Maturity Level*: incubating
+*Preferred Maturity Level*: incubating
 
 *License*: Apache License v2.0
 

@@ -56,7 +56,7 @@ allowing them to learn but also take exams on their own device. Lernstick is
 using Keylime to guarantee the integrity of the system being loaded on student's
 computers. It is currently in a proof of concept stage, but once in use it will
 translate to hundreds of student machines using Keylime to prove to the exam
-server that they are runnnig a system that hasn't been tampered with.
+server that they are running a system that hasn't been tampered with.
 
 Using Keylime in a "bring your own device" (BYOD) context is a novel and interesting use, which we are excited about. 
 

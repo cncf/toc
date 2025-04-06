@@ -66,7 +66,7 @@ An informal usage poll was conducted recently through
 [twitter](https://twitter.com/kubevirt/status/1319251272772603904) and
 [Slack](https://kubernetes.slack.com/archives/C8ED7RKFE/p1603368795347300). Of
 the ~100 respondents, a majority expressed that they are _evaluating_ KubeVirt
-at the moment. About 20% metioned a _development or pre-production_ use case,
+at the moment. About 20% mentioned a _development or pre-production_ use case,
 and around 5% had _production_ workloads.
 
 As highlighted by devstats we have also seen an increase in companies

@@ -25,7 +25,7 @@ OpenTelemetry is an integrated set of APIs and libraries that generate, collect,
 
 The project is made up of three major components:
 
-- [Specification](https://github.com/open-telemetry/opentelemetry-specification) with the [protos/defintions](https://github.com/open-telemetry/opentelemetry-proto) 
+- [Specification](https://github.com/open-telemetry/opentelemetry-specification) with the [protos/definitions](https://github.com/open-telemetry/opentelemetry-proto) 
 - Client libraries (APIs, SDKs, and instrumentation) -- language-specific. For example [Java](https://github.com/open-telemetry/opentelemetry-java) 
 - [Collector](https://github.com/open-telemetry/opentelemetry-collector/blob/master/docs/design.md)
 
@@ -167,7 +167,7 @@ Per signal, the roadmaps are:
 - Tracing: 1.0 specification, 1.0 DotNet, 1.0 Java, RC1 Python today; goal is 1.0 stability for all beta instrumentation libraries in next month. Collector tracing stability by mid-year.
 - Metrics: specification is expected to reach 1.0 around mid-year.
   - Prometheus & OpenMetrics data model & wire format compatibility will be reached by middle of 2021
-  - Full semantic, etc Prometheus compatibility including stalesness handling & up handling will be reached by end of 2021 will include full Prometheus & OpenMetrics compatibility. GA for instrumentation libraries is planned in 2H2021 for the languages with tracing GA support.
+  - Full semantic, etc Prometheus compatibility including staleness handling & up handling will be reached by end of 2021 will include full Prometheus & OpenMetrics compatibility. GA for instrumentation libraries is planned in 2H2021 for the languages with tracing GA support.
   - For more information, please refer to this published [roadmap](https://medium.com/opentelemetry/opentelemetry-metrics-roadmap-f4276fd070cf)
 - Logs are currently not a focus area, and not expected to be finished within 2021
   - For more information, please refer to the Logging section within this [document](https://docs.google.com/document/d/1vV3teqg9vmpaxgMS8JiQDghUcnpd3Qunq_tJu9sQaRE/edit?usp=sharing)

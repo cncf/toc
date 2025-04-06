@@ -109,7 +109,7 @@ Apache License v2.0
 
 CNCF Serverless WG repository (workflow directory): https://github.com/cncf/wg-serverless/tree/master/workflow
 
-**External dependencie**:
+**External dependencies**:
 
 None
 

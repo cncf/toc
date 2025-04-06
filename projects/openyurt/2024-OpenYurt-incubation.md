@@ -11,7 +11,7 @@
 [Ricardo Rocha](https://github.com/rochaporto) conducted both due diligence and adopter interviews for Incubation. The project has completed the criteria that shows its maturity at the applied level.
 
 The TOC would like to highlight some areas from the project review:
-* OpenYurt has an active and diverse community, and adopters have highlighted this as one of its main strenghts
+* OpenYurt has an active and diverse community, and adopters have highlighted this as one of its main strengths
 * Its architecture extends instead of replacing existing core components in Kubernetes. This is an approach that differentiates it from other solutions in the ecosystem and that was also highlighted as a key strength by adopters
 * The governance and contributors guides are well defined but were last updated over 3 years ago. The TOC suggests a review together with TAG Contributor Strategy to consider if improvements can be made to the current member roles and contributor ladder
 
@@ -306,7 +306,7 @@ Interaction with the project happens mostly via GitHub issues, with TikTok and W
 
 ###### Strengths and Improvements
 
-Adopter 1 seeds the added networking stability to standard kubernetes as one of the main strenghs, particularly important for edge workloads. The additional primitive for managing `nodepools` is also a valuable addition to the standard `daemonset` and `deployment`.
+Adopter 1 seeds the added networking stability to standard kubernetes as one of the main strengths, particularly important for edge workloads. The additional primitive for managing `nodepools` is also a valuable addition to the standard `daemonset` and `deployment`.
 
 Adopter 1 sees installation as the main pain point and sees the same happening with other end users. No single installation method is ideal, leading to distinct methods depending on the use case.
 
@@ -336,13 +336,13 @@ Adopter 2 would like to see better multi-tenancy support, including tenant separ
 
 ##### Adopter 3 - Financial and Industrial Services
 
-Adotper 3 is an engineer working on Kubernetes for over 4 years and responsible for cloud edge products for over 2 years, in close contact with the OpenYurt project. Adopter 3 is responsible for financial and industrial products.
+Adopter 3 is an engineer working on Kubernetes for over 4 years and responsible for cloud edge products for over 2 years, in close contact with the OpenYurt project. Adopter 3 is responsible for financial and industrial products.
 
 ###### Usage
 
 Adopter 3 chose OpenYurt as it extends existing vanilla kubernetes deployments, allowing for an edge solution that is compatible with existing clusters. This gave a solution that is less intrusive than other projects such as KubeEdge.
 
-Adopter 3 runs OpenYurt for production workloads in multiple deployments, including a major electricity provider in China as well as smaller providers around the country. This includes the monitoring of 1000s of electicity sub-stations, with a setup where OpenYurt is deployed along KubeVirt. This solutions has been in place for almost 2 years.
+Adopter 3 runs OpenYurt for production workloads in multiple deployments, including a major electricity provider in China as well as smaller providers around the country. This includes the monitoring of 1000s of electricity sub-stations, with a setup where OpenYurt is deployed along KubeVirt. This solutions has been in place for almost 2 years.
 
 Adopter 3 follows the upstream releases closely.
 

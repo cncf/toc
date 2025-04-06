@@ -13,7 +13,7 @@ The Tremor devstats page can be found [here](https://tremor.devstats.cncf.io/d/8
 
 Tremor is a runtime environment that supports pluggable connectors to consume and contribute events to the outside world. Tremor supports a growing number of connectors to systems such as Kafka, InfluxDB via Telegraf, ElasticSearch through its REST API, the Open Telemetry suite and a number of Google Cloud services.
 
-Tremor's language is a holistic aproach to configuring the system starting from defining deployments, connecting components using a query-like syntax and an ETL focus that allows for the creation of pipelines that can be used to transform and enrich events.
+Tremor's language is a holistic approach to configuring the system starting from defining deployments, connecting components using a query-like syntax and an ETL focus that allows for the creation of pipelines that can be used to transform and enrich events.
 
 ## Maintainers
 
@@ -31,7 +31,7 @@ Tremor has seven primary maintainers from three organisations:
 
 This is a community-focused release. Feedback from our LFX mentorships was that writing connectors was hard - this promoted the connectors refactoring in the `0.12` release. The release is a major rewrite of the connector internals and related runtime facilities to deliver better consistency to users and a better programming model for connector authors.
 
-The deployment language work was feedback from production users that favored dropping YAML-based deployment configuration for unifying deployment configuration with the Tremor language. The connectors refactoring allowed for the introduction of the deployment language, associated runtime and API changes to be udertaken holistically.
+The deployment language work was feedback from production users that favored dropping YAML-based deployment configuration for unifying deployment configuration with the Tremor language. The connectors refactoring allowed for the introduction of the deployment language, associated runtime and API changes to be undertaken holistically.
 
 ### v0.13 - Quality of Life Improvements
 
@@ -57,7 +57,7 @@ Sandbox proposal [PR #492](https://github.com/cncf/toc/pull/492), [content](http
 
 ### Tremor Community
 
-Launch of the Tremor communityon [Discord](https://chat.tremor.rs/) - this has grown to **235** members, **30** of which are online on a daily basis.
+Launch of the Tremor community on [Discord](https://chat.tremor.rs/) - this has grown to **235** members, **30** of which are online on a daily basis.
 
 Most of the day to day coding, design work, refactoring, bug hunting sessions and planning are now conducted in the open on Discord in the `General` channel or the `Summer` or `Winter` voice/live presentation channels - and we are continuously evolving our governance so that our processes, practices and decision-making are by the community, for the community.
 
@@ -141,7 +141,7 @@ This provides the basic capabilities for nodes to join and leave the cluster ena
 
 ### V0.15 - Clustering Enhancements
 
-Introduction of a micro / macro architecture using a ring-based topology for the macro ring in the spirit of Riak's V-Nodes for ease of scalabiltiy
+Introduction of a micro / macro architecture using a ring-based topology for the macro ring in the spirit of Riak's V-Nodes for ease of scalability
 
 ### Release Strategy
 

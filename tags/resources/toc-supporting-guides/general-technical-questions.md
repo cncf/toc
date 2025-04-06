@@ -2,7 +2,7 @@
 v1.0
 ## Introduction
 
-The General Technical Review questions can be completed by a project in lieu of a presentation to a Technical Advisory Group (TAG) as well as to satisfy the Engineering Principle requirements of a Sandbox application or Due Dillegence for moving levels. 
+The General Technical Review questions can be completed by a project in lieu of a presentation to a Technical Advisory Group (TAG) as well as to satisfy the Engineering Principle requirements of a Sandbox application or Due Diligence for moving levels. 
 
 The questions are designed to prompt **_design thinking_** for projects that would like to one day be a graduated project.
 
@@ -44,7 +44,7 @@ If this is the case for your project, please mark it as not-applicable (N/A) and
 #### Tips
 
 * Treat the GTR questionnaire as a living document and keep a copy of it in your project's own repo. The GTR questions are helpful to both contributors and users and will make updating it in the future less work when you want to apply to move levels.
-* Answer more questions than the requirement for your level if it _makes sense for your project_. e.g. if you have documentaiton covering the different forms of observability in the Day-2 requirements.
+* Answer more questions than the requirement for your level if it _makes sense for your project_. e.g. if you have documentation covering the different forms of observability in the Day-2 requirements.
 * You **CAN** link out to your own project's documentation, but be sure to link to it in a _versioned_ form. e.g. link to it at a specific commit instead of the `main` branch, or versioned website.
 * A recorded demo or diagram(s) may be easier to convey some of the concepts in the questions below. You may provide a link to a recorded demo or add architectural diagrams along with your GTR questionnaire.
 * If you are unsure or have a question about any section below, **please ask**. Chances are you're not the only one with a question and the template should be updated with additional guidance.

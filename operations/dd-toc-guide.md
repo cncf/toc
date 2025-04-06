@@ -12,9 +12,9 @@ Wrapping it up: **[TOC internal review](#toc-internal-review)** | **[Public Comm
 
 ## What is due diligence?
 
-Due diligence is the process by which the TOC performs an independent review of CNCF projects to assess their posture, maturity, and adoption across a variety of technical, governance, and community focuses. The intent of the due diligence is to provide project and adopters with an independent senior technical evaluation of a project's readiness for production. Similar to how organizations have established software development processes and check points prior to software delivery or deployment that ensure the software meets the organization's goals and objectives, the due diligence is a point in time artifact of the project's acheivement for meeting the goals and objectives expected for their maturity level. By performing the due diligence on CNCF projects, the TOC supports our adopters in gaining confidence that the project has been reviewed against documented criteria for their maturity level, can understand any deviations from those criteria, and may not need to repeat this type of evaluation, rather they may incorporate or leverage the contents of the due diligence to guide and information their decision making. It also conveys to adopters the potential level of effort in adopting and integrating the project into their archicture and infrastructure.  For projects, the due diligence provides an evaluation of the project against the expectations of adopters across multiple focuses. It can and often will include additional recommendations to the project that may support them in reaching the next level of maturity, improving their documentation or architecture, and in some cases highlight opportunities to distinguish themselves and their features or functionality from other projects within the same area.
+Due diligence is the process by which the TOC performs an independent review of CNCF projects to assess their posture, maturity, and adoption across a variety of technical, governance, and community focuses. The intent of the due diligence is to provide project and adopters with an independent senior technical evaluation of a project's readiness for production. Similar to how organizations have established software development processes and check points prior to software delivery or deployment that ensure the software meets the organization's goals and objectives, the due diligence is a point in time artifact of the project's achievement for meeting the goals and objectives expected for their maturity level. By performing the due diligence on CNCF projects, the TOC supports our adopters in gaining confidence that the project has been reviewed against documented criteria for their maturity level, can understand any deviations from those criteria, and may not need to repeat this type of evaluation, rather they may incorporate or leverage the contents of the due diligence to guide and information their decision making. It also conveys to adopters the potential level of effort in adopting and integrating the project into their architecture and infrastructure.  For projects, the due diligence provides an evaluation of the project against the expectations of adopters across multiple focuses. It can and often will include additional recommendations to the project that may support them in reaching the next level of maturity, improving their documentation or architecture, and in some cases highlight opportunities to distinguish themselves and their features or functionality from other projects within the same area.
 
-Due Diligence is typically conducted when a project has applied to move levels, after the project completes and asserts their adherence to the criteria for the level they are seeking to move to. For example, an incubating project must complete the graduation criteria before applying to graduate. Part of the TOC's responsiblity is to not only independently verify those assertions, but to understand those assertions in the context of the individual project, its domain, its interoperability, and subsequent alignment with the Foundation, ecosystem, adopters, and overall industry.
+Due Diligence is typically conducted when a project has applied to move levels, after the project completes and asserts their adherence to the criteria for the level they are seeking to move to. For example, an incubating project must complete the graduation criteria before applying to graduate. Part of the TOC's responsibility is to not only independently verify those assertions, but to understand those assertions in the context of the individual project, its domain, its interoperability, and subsequent alignment with the Foundation, ecosystem, adopters, and overall industry.
 
 The criteria for moving levels sets the expectations for what projects are to complete prior to applying for the next level. Criteria are outcome oriented and have been developed to provide projects with maximum flexibility in implementation while demonstrating the characteristics and hallmarks of maturing projects. TOC members may exercise their discretion in evaluating conformance to the criteria, however deviations, waivers, and exceptions should be clearly articulated and reasoned such that the desired outcome is still met through compensating mechanisms or demonstrated to not be relevant.
 
@@ -54,7 +54,7 @@ We expect all TOC members to be mindful of their obligations and timelines, whet
 
 ### Project has applied to move levels
 
-**Projects apply to move levels by submitting an Issue on the TOC repo that details their conformance to the criteria.** These Issues go into the [TOC backlog](https://github.com/orgs/cncf/projects/27/views/9) and are worked on a first-in, first-out/started basis to the extent that is reasonably practical - each TOC member has subject matter expertise in one domain or another and each TOC member serves as a liasion to a Technical Advisory Group that may or may not align with that domain. The TOC strives to align their skills and background with the project applying they are assigned to ensure they have the context to understand the project within that domain. 
+**Projects apply to move levels by submitting an Issue on the TOC repo that details their conformance to the criteria.** These Issues go into the [TOC backlog](https://github.com/orgs/cncf/projects/27/views/9) and are worked on a first-in, first-out/started basis to the extent that is reasonably practical - each TOC member has subject matter expertise in one domain or another and each TOC member serves as a liaison to a Technical Advisory Group that may or may not align with that domain. The TOC strives to align their skills and background with the project applying they are assigned to ensure they have the context to understand the project within that domain. 
 
 The issue will contain a limited set of information about the project at the time of its application, commonly asserting its conformance to the stated criteria with links to where or descriptions as to how they are implemented.
 
@@ -109,7 +109,7 @@ Once the TOC has triaged the application and found all criteria to have content,
 
 TOC members are expected to triage projects in the "new" column on the board for projects that are returning from a previous not-ready application, verify completion, and move them to the top of the ready for assignment column. 
 
-TOC members are to priortize selecting projects from the ready for assignment column over the new column to expedite the queue and make the best use of TOC time.
+TOC members are to prioritize selecting projects from the ready for assignment column over the new column to expedite the queue and make the best use of TOC time.
 
 ### TOC member(s) step forward to be assigned
 
@@ -117,13 +117,13 @@ Commonly referred to as the Project's Application Sponsor, TOC members assign th
 
 The TOC member that assigns themselves a project to sponsor the application for moving levels may request a secondary TOC member to support the due diligence according to eligibility.
 
-TOC members ready to perform due diligence a project's application will socialize this internally with the TOC to provide opportunity for other members to participate. Once a TOC member or members is determined, those TOC members must assign themselves to the Issue and move the issue's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Assigned".
+TOC members ready to perform due diligence a project's application will socialize this internally with the TOC to provide opportunity for other members to participate. Once a TOC member or members is determined, those TOC members must assign themselves to the Issue and move the issue's card on the [Application to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Assigned".
 
-TOC members may occassionally be contacted by projects asking the TOC member to sponsor their application to move levels. When this occurs, politely reminder projects of the TOC's first-in, first-started process and let them know it is subject to TOC availability. Follow up internally to the TOC that you were contacted and by which project so we may all be aware of which projects are reaching out as it may identify a backlog, timing, or communication issue.
+TOC members may occasionally be contacted by projects asking the TOC member to sponsor their application to move levels. When this occurs, politely reminder projects of the TOC's first-in, first-started process and let them know it is subject to TOC availability. Follow up internally to the TOC that you were contacted and by which project so we may all be aware of which projects are reaching out as it may identify a backlog, timing, or communication issue.
 
 #### Conflicts of interest
 
-The Due Diligence process provides several mechansims that serve as check points for bias or uncomprehensive evaluation. The public comment period is the most open and transparent point at which the community and others may indepedently review the diligence performed by the TOC.  Additionally, TOC members conduct an internal review of the due diligence to verify all aspects of the project have been thoroughly reviewed.
+The Due Diligence process provides several mechanisms that serve as check points for bias or uncomprehensive evaluation. The public comment period is the most open and transparent point at which the community and others may independently review the diligence performed by the TOC.  Additionally, TOC members conduct an internal review of the due diligence to verify all aspects of the project have been thoroughly reviewed.
 
 A TOC member will require a co-sponsor for a project if any of the following conflicts apply:
 * Hard Conflicts
@@ -145,15 +145,15 @@ Once the project is assigned to the TOC member(s), the TOC member(s) engages the
 
 Any form of communication must include _two members_ of CNCF staff to ensure consistency and continuity throughout the process. 
 
-TOC members, with support from CNCF staff, should schedule a meeting with the project to the extent possible given availability and timezones. Asynchrounous kick-offs can occur, but may result in additional back and forth or delays. Each Kick-off meeting should have a central kick-off document that allows the TOC and the project to capture expectations, decisions, timelines, and other pertinent references needed for successful completion of the due diligence. A [kick-off meeting template](toc-templates/template-kickoff-notes.md) is located in the [toc-templates](toc-templates/) folder.
+TOC members, with support from CNCF staff, should schedule a meeting with the project to the extent possible given availability and timezones. Asynchronous kick-offs can occur, but may result in additional back and forth or delays. Each Kick-off meeting should have a central kick-off document that allows the TOC and the project to capture expectations, decisions, timelines, and other pertinent references needed for successful completion of the due diligence. A [kick-off meeting template](toc-templates/template-kickoff-notes.md) is located in the [toc-templates](toc-templates/) folder.
 
 Once the Kick-off is scheduled, the TOC member(s) should move the project's card on the [Application to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "In Due Diligence". It is *strongly* recommended that you inform the project to verify compliance with the CNCF's licensing policy (set forth in the [Section 11 of the Charter](https://github.com/cncf/foundation/blob/master/charter.md) with [additional information here](https://github.com/cncf/foundation/blob/main/allowed-third-party-license-policy.md)).
 
 ### Completing Due Diligence
 
-NOTE: the Due Diligence can be completed in conjuction with adopter interviews, some TOC members find completion of the DD as informative to conducting interviews, but not in all cases.
+NOTE: the Due Diligence can be completed in conjunction with adopter interviews, some TOC members find completion of the DD as informative to conducting interviews, but not in all cases.
 
-The TOC will use the appropriate Due Diligence for the project's applied level as the basis for a PR ([Incubation template](toc-templates/template-dd-pr-incubation.md), [Graduation template](toc-templates/template-dd-pr-graduation.md)) and will evaluate the project's assertions in the application issue against the discoverable and publically available sites, repos, files, and other artifacts of the project. The TOC's evaluation against each criteria goes in the corresponding area of the PR template.
+The TOC will use the appropriate Due Diligence for the project's applied level as the basis for a PR ([Incubation template](toc-templates/template-dd-pr-incubation.md), [Graduation template](toc-templates/template-dd-pr-graduation.md)) and will evaluate the project's assertions in the application issue against the discoverable and publicly available sites, repos, files, and other artifacts of the project. The TOC's evaluation against each criteria goes in the corresponding area of the PR template.
 
 Previously, the project was responsible for completing the due diligence such that it allowed the TOC member(s) to review and comment. Due to the extensive back and forth in this prior process and with recent changes to the criteria, the TOC has altered the process leverage a Due Diligence PR as the TOC's assessment of the projects completion of the criteria. Therefore TOC members are expected to complete the Due Diligence PR with support from the project and TAG(s).
 
@@ -161,7 +161,7 @@ As the TOC member(s) reviews the criteria, any deviations or implementation note
 
 As an example, let's say a project is asserting their sub-projects have leadership, contribution information, maturity statuses, and add/removal processes. The TOC member(s), in confirming this may determine that the sub-projects share the same contributor file on the org's evolution directory and may change the maturity level in accordance with their documented process, but the process is not clear as to what initiates that change or who. For a sandbox project seeking incubation, this may be non-blocking but the TOC may recommend the project improve the documented process. As such, the TOC member(s) will record their finding and corresponding recommendation.
 
-Another example, if the TOC member(s) is looking over the project's stated goals and objectives that have not changed since the project was accepted into the CNCF, and they are now applying to Graduate, the TOC member(s) will ask the project to clarify or provide additional information as to why the project hasn't iniatiated any changes and if they still feel those goals and objectives are accurate for the future of the project. The TOC member(s) will then summarize the response and record it in the PR under the corresponding criteria evaluation.
+Another example, if the TOC member(s) is looking over the project's stated goals and objectives that have not changed since the project was accepted into the CNCF, and they are now applying to Graduate, the TOC member(s) will ask the project to clarify or provide additional information as to why the project hasn't initiated any changes and if they still feel those goals and objectives are accurate for the future of the project. The TOC member(s) will then summarize the response and record it in the PR under the corresponding criteria evaluation.
 
 It is expected that the TOC's evaluation of a project's completion of the criteria may reveal a mismatch in understanding or an unexpected implementation. Documenting the TOC evaluation in the Due Diligence PR provides the project, TAGs, community, adopters, and TOC with a point of reference to understand if the criteria are meeting the outcomes required of a project for a certain maturity level, or if compensating mechanisms that supplement or augment the criteria are in place that work best for that specific project.
 
@@ -173,7 +173,7 @@ Sub-projects packaged with the main project are within scope of the due diligenc
 
 #### Licensing
 
-In the course of conducting a project's due diligence, you may become aware of license isues, outstanding exception requests, or other matters concerning the licensing of the project and its dependencies. If in the course of Due Diligence you find the project appears to be missing a license exception for their code or dependencies (dynamic or staticly linked), notify the project to [file a license exception request](https://github.com/cncf/foundation/issues/new/choose). The project's application to move levels may not go to a vote until the exception has been approved, however activities such as adopter interviews and public comment may proceed. It is expected that sandbox projects, when accepted, undergo a licensing review to ensure compliance with [CNCF's licensing policy](https://github.com/cncf/foundation/blob/main/license-exceptions/README.md) and exceptions. Refer to the [allowed third party licensing policy](https://github.com/cncf/foundation/blob/main/allowed-third-party-license-policy.md) for more information.
+In the course of conducting a project's due diligence, you may become aware of license issues, outstanding exception requests, or other matters concerning the licensing of the project and its dependencies. If in the course of Due Diligence you find the project appears to be missing a license exception for their code or dependencies (dynamic or statically linked), notify the project to [file a license exception request](https://github.com/cncf/foundation/issues/new/choose). The project's application to move levels may not go to a vote until the exception has been approved, however activities such as adopter interviews and public comment may proceed. It is expected that sandbox projects, when accepted, undergo a licensing review to ensure compliance with [CNCF's licensing policy](https://github.com/cncf/foundation/blob/main/license-exceptions/README.md) and exceptions. Refer to the [allowed third party licensing policy](https://github.com/cncf/foundation/blob/main/allowed-third-party-license-policy.md) for more information.
 
 #### Graduated project security audits
 
@@ -185,7 +185,7 @@ If a project is a specification project such as the TUF, SPIFFE and in-toto proj
 
 ### Finalizing the Due Diligence
 
-When the TOC has finished their criteria evaluation, they should move the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Adopter Interviews & Project Discussion" and re-engage the project to elevate and discuss any items neededing clarity, correction, or improvement. This includes notifying the project of any recommendations. Recommendations and discussion points may be copied into the kick-off document to faciliate discussion and to provide for additional context and discussion with the project until they are finalized.
+When the TOC has finished their criteria evaluation, they should move the project's card on the [Application to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Adopter Interviews & Project Discussion" and re-engage the project to elevate and discuss any items needing clarity, correction, or improvement. This includes notifying the project of any recommendations. Recommendations and discussion points may be copied into the kick-off document to facilitate discussion and to provide for additional context and discussion with the project until they are finalized.
 
 The TOC member(s) may then file the PR and place it in draft until the Adopter Interviews are completed.
 
@@ -237,9 +237,9 @@ Once you have summarized the interview, typically about 5 paragraphs in length d
 
 Once approval is received, the summarized content is copied into the Due Diligence PR in the appropriate section. Linking to the summary is NOT recommended as it may convey identifying information in the history if not properly access controlled which will circumvent anonymity assurances.
 
-### Summarizing the Due Diligence Evalution
+### Summarizing the Due Diligence Evaluation
 
-Once you have completed evaluating the project's implementation of the criteria and included the Adopter Interviews, you can summarize the overall evalution.
+Once you have completed evaluating the project's implementation of the criteria and included the Adopter Interviews, you can summarize the overall evaluation.
 
 Evaluation summary is composed of two parts: the Criteria and the Adoption. The evaluation summary should read like an executive summary of the due diligence, conveying any notable areas and the assessment of sufficient adoption for the level the project applied. An example structure is provided below:
 
@@ -251,7 +251,7 @@ Evaluation summary is composed of two parts: the Criteria and the Adoption. The 
 
 ## TOC Internal Review
 
-Once the TOC member(s) has completed the Due Diligence, they should create a PR in their personal TOC repo and share the link with the TOC for review. The TOC member(s) should move the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "TOC Review".
+Once the TOC member(s) has completed the Due Diligence, they should create a PR in their personal TOC repo and share the link with the TOC for review. The TOC member(s) should move the project's card on the [Application to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "TOC Review".
 
 The TOC member(s) should craft a slack message thread that provides the project name, level applied, links to the PR and issue, and thread any additional call outs, questions, or potential issues warranting further discussion not otherwise captured in the PR. The internal review is expected to last 1 week, assuming no issues are brought up. 
 
@@ -263,16 +263,16 @@ In the event a project was not ready to move levels after the due diligence was 
 
 ## Public Comment Period
 
-Assuming no issues have come up during the TOC internal review, the TOC member may put the due diligence out for public comment. The TOC member(s) should move the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Public Comment".
+Assuming no issues have come up during the TOC internal review, the TOC member may put the due diligence out for public comment. The TOC member(s) should move the project's card on the [Application to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Public Comment".
  
 TOC members are to leverage the [public comment template](toc-templates/template-dd-public-comment.md) and be mindful of the timeline to consider if a freeze is in effect or soon will be. All public comment messages are to be sent on the [TOC public mailing list](https://lists.cncf.io/g/cncf-toc/topics).  Once sent, they should be linked on the PR and the project notified.
 
 ## Voting
 
-Once the public comment period is complete, the TOC member needs to adjudicate any responses and comments on the PR. Provided no new or blocking information has been shared, the TOC member should request CNCF Staff to initiate voting on the PR, at which point the project's card on the [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Voting". 
+Once the public comment period is complete, the TOC member needs to adjudicate any responses and comments on the PR. Provided no new or blocking information has been shared, the TOC member should request CNCF Staff to initiate voting on the PR, at which point the project's card on the [Application to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Voting". 
 
 TOC members, especially those who filed the PR, need to record their vote by the thumbs up or thumbs down on the PR comment where gitvote was initiated.
 
 ## Press Coordination and Completion
 
-Once voting has passed, the CNCF Staff take over the remainder of the process, coordinating press releases and announcements for the prokject. CNCF Staff will update the project' card on the  [Appliction to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) accordingly.
+Once voting has passed, the CNCF Staff take over the remainder of the process, coordinating press releases and announcements for the project. CNCF Staff will update the project' card on the  [Application to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) accordingly.

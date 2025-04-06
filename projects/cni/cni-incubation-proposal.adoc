@@ -7,7 +7,7 @@
 The CNI (Container Network Interface) project consists of a specification and libraries for writing plugins to configure network interfaces
 in Linux containers, along with a number of supported plugins. CNI concerns itself only with network connectivity of containers and removing
 allocated resources when the container is deleted. Because of this focus, CNI has a wide range of support and the specification is simple to
-implement. CNI consists of 3 separate comonents:
+implement. CNI consists of 3 separate components:
 
 *  CNI Specification: defines an straightforward API between runtimes and network plugins for container network setup/teardown.  No more, no less.
 *  Plugins: provide network setup for a variety of use-cases and serve as reference examples of plugins conforming to the CNI specification
