@@ -20,7 +20,7 @@ https://volcano.sh/en/[Volcano] is a system for running high-performance workloa
 *Volcano provides:*
 
 [arabic]
-. Powful support to mainstream computing architectures such as Spark/Flink/Tensorflow/PyTorch.
+. Powerful support to mainstream computing architectures such as Spark/Flink/Tensorflow/PyTorch.
 . Rich advanced scheduling strategies including Gang Scheduling/Backfill/Bin-pack, etc.
 . Support mixed scheduling of heterogeneous resources, e.g. CPU, Memory, GPU, etc.
 
@@ -68,7 +68,7 @@ We have the list of public adopters in the repo and https://volcano.sh/en/[home 
 * https://www.iqiyi.com/[iQIYI] integrates Volcano with its Jarvis Deep Learning platform.
 * https://www.vip.com/?wxsdk=1[VIPS (VIP.com)] is using Volcano for AI training and reasoning in clusters with a large number of nodes.
 * https://www.ruitiancapital.com/#/[Ruitian Investment] has used Volcano at financial computing for nearly one year
-* https://www.xiaohongshu.com/[Xiaohongshu] is using Vocano for AI training and reasoning business and serves for hundreds of millions of users.
+* https://www.xiaohongshu.com/[Xiaohongshu] is using Volcano for AI training and reasoning business and serves for hundreds of millions of users.
 * https://www.didiglobal.com/[Didi] is using Volcano for AI business for a long time.
 
 More adopters under confirmation to publish their name.

@@ -126,7 +126,7 @@ In-toto's [Maintainer list](https://github.com/in-toto/in-toto/blob/develop/MAIN
     Email: aditya.sirish@nyu.edu
     GitHub username: @adityasaky
 
-Given the in-toto project's scope is the in-toto framework and specification, the maintenance effort is low and the current list of maintainers appears to be sufficient. The maintainers also have a few active sub-project maintainers in the core maintainer pipeline if needed to promote one of them. The adopter interviews appeared to indicate activity/health of maintainership where the community has been very responsive to questions or any issues raised by adopters. In addition, in-toto has a very diverse [steering committe members](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md), including members from TestifySec, ControlPlane and Datadog, in addition to members from Purdue and NYU.
+Given the in-toto project's scope is the in-toto framework and specification, the maintenance effort is low and the current list of maintainers appears to be sufficient. The maintainers also have a few active sub-project maintainers in the core maintainer pipeline if needed to promote one of them. The adopter interviews appeared to indicate activity/health of maintainership where the community has been very responsive to questions or any issues raised by adopters. In addition, in-toto has a very diverse [steering committee members](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md), including members from TestifySec, ControlPlane and Datadog, in addition to members from Purdue and NYU.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
@@ -193,7 +193,7 @@ A contribution guide is placed at the top level [community repository](https://g
 
 - [X] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
-Communication channels are encoded in the [website](https://in-toto.io/contact/). It contains a developer facing mailing list, a public mailng list, a slack join link, github and IRC contacts.
+Communication channels are encoded in the [website](https://in-toto.io/contact/). It contains a developer facing mailing list, a public mailing list, a slack join link, github and IRC contacts.
 
 - [X] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
@@ -227,7 +227,7 @@ Roadmap for project with pointers to subproject ROADMAPs are encoded in a [ROADM
 
 - [X] **Roadmap change process is documented.**
 
-Roadmap text [current roadmap](https://github.com/in-toto/community/tree/main/ROADMAP.md) outlines how and when the community-wide rodamap is updated (usually once a year). Each sub-project may also have their own ROADMAP that aligns to subproject-wide SLAs
+Roadmap text [current roadmap](https://github.com/in-toto/community/tree/main/ROADMAP.md) outlines how and when the community-wide roadmap is updated (usually once a year). Each sub-project may also have their own ROADMAP that aligns to subproject-wide SLAs
 
 - [X] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
 
@@ -244,7 +244,7 @@ The [friends](https://github.com/in-toto/friends) repository outlines how cloud 
 
 The in-toto project has multiple implementations with varied release cadences depending on the involved stakeholders. For example, the Python implementation offers a feature-stable offering, which focuses on releasing bug-fix releases, whereas the golang implementation provides a "sandbox" for new and experimental features. As such, each subproject manages their own release cadence.
 
-All implementations follow semver to communicate their feature support, as well as backwards and forwards compatiblity.
+All implementations follow semver to communicate their feature support, as well as backwards and forwards compatibility.
 
 - [x] **History of regular, quality releases.**
 
@@ -303,7 +303,7 @@ Adoptions are documented in the [in-toto friends repository](https://github.com/
 
 - [X] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-Adopters are [documented](https://github.com/in-toto/friends) which includes at least 3 indepdendent adopters.  Adopter interviews also showed 3 independent adopters. All adopters I interviewed are using in-toto for production.
+Adopters are [documented](https://github.com/in-toto/friends) which includes at least 3 independent adopters.  Adopter interviews also showed 3 independent adopters. All adopters I interviewed are using in-toto for production.
 
 The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
@@ -323,8 +323,8 @@ This adopter interview is performed in Sept 2024 and recorded a very happy adopt
 
 ##### Adopter 2 - GitHub/Software company
 
-This adopter interview is performed in Oct 2024 and recorded a very happy adopter who has great expereience interacting with the in-toto community. Refer to the [interview summary](in-toto-adopter-interview-github.md) for more details.
+This adopter interview is performed in Oct 2024 and recorded a very happy adopter who has great experience interacting with the in-toto community. Refer to the [interview summary](in-toto-adopter-interview-github.md) for more details.
 
 ##### Adopter 3 - Chainguard/Software company
 
-This adopter interview is performed in Dec 2024 and recorded a very happy adopter who has great expereience interacting with the in-toto community. Refer to the [interview summary](in-toto-adopter-interview-chainguard.md) for more details.
+This adopter interview is performed in Dec 2024 and recorded a very happy adopter who has great experience interacting with the in-toto community. Refer to the [interview summary](in-toto-adopter-interview-chainguard.md) for more details.

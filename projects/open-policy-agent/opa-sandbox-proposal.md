@@ -157,7 +157,7 @@ allow {
 The first rule allows employees to GET their own salary. The rule shows how you can use variables in rules. In that rule, employee_id is
 a variable that will be bound to the same value across the last two expressions.
 
-The second rule allow employees to GET the salary of their reports. The rule shows how you can access arbirary context (e.g., JSON data)
+The second rule allow employees to GET the salary of their reports. The rule shows how you can access arbitrary context (e.g., JSON data)
 inside the policy. The data may loaded into the policy engine (and cached) or it may be external and fetched dynamically.
 
 

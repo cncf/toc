@@ -39,7 +39,7 @@ Agenda:
 
 Discussion:
 * Covered recent changes in the TOC repo for expectations and freeze
-* Covered adopter list for interviews, looking for 5-7 across multiple industries for a total of 3 final interviews to be conducted (additional on the list ensures lack of availability doesnt delay interviews)
+* Covered adopter list for interviews, looking for 5-7 across multiple industries for a total of 3 final interviews to be conducted (additional on the list ensures lack of availability doesn't delay interviews)
 
 Actions:
 * Share links to other DD for examples

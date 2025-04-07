@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-Parsec is the Platform Abstraction for Security. Parsec is creating convenient and portable interfaces to hardware security on any platform in any programming language. Parsec is deployed as a local software service (or daemon), which executes in user space on Linux systems. The software service contains back-end provider modules that offer compatibility with various hardware or firmware services for secure storage and cryptography, including Trusted Platform Modules (TPM), Hardware Security Modules (HSM), secure elemements or trusted firmware. Applications consume these services using a convenient and portable API. The Parsec API can be made available in any programming language, given the availability of a suitable client library. The end result is that applications are able to consume the best-available hardware security of their host platform, without being tightly coupled to the often complex and specialised APIs and software stacks that are otherwise needed.
+Parsec is the Platform Abstraction for Security. Parsec is creating convenient and portable interfaces to hardware security on any platform in any programming language. Parsec is deployed as a local software service (or daemon), which executes in user space on Linux systems. The software service contains back-end provider modules that offer compatibility with various hardware or firmware services for secure storage and cryptography, including Trusted Platform Modules (TPM), Hardware Security Modules (HSM), secure elements or trusted firmware. Applications consume these services using a convenient and portable API. The Parsec API can be made available in any programming language, given the availability of a suitable client library. The end result is that applications are able to consume the best-available hardware security of their host platform, without being tightly coupled to the often complex and specialised APIs and software stacks that are otherwise needed.
 
 The main Parsec repository can be found [here](https://github.com/parallaxsecond/parsec). There are several satellite repositories in the same organisation.
 
@@ -32,7 +32,7 @@ Across the individual repositories that make up the project, a contribution summ
 
 - The number of individual GitHub repositories has grown from 9 to 14 as new client libraries and back-end provider integrations have been contributed.
 - A total of [559 pull requests](https://github.com/pulls?page=1&q=is%3Amerged+is%3Apr+user%3Aparallaxsecond+archived%3Afalse+merged%3A%3E%3D2020-07-01) were successfully merged from 19 separate contributors.
-- The number of contributing organisations has grown from three to six. The project has also seen some indepedent contributions in the community.
+- The number of contributing organisations has grown from three to six. The project has also seen some independent contributions in the community.
 
 ## Maintainers
 

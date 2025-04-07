@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-## Backgroud
-KubeDL is a suite of Kubernentes controllers that enable running machine learning workloads on Kubernentes, such as model training and inferences, configuration tuning for model deployments.
+## Background
+KubeDL is a suite of Kubernetes controllers that enable running machine learning workloads on Kubernetes, such as model training and inferences, configuration tuning for model deployments.
 Project website https://kubedl.io/
 
 ## DevStats
@@ -29,12 +29,12 @@ KubeDL has achieved great progress in adopting production usages. Many of the us
 KubeDL has also a number of contributors from research institutes and universities to innovate on forward-thinking features in ML infra to improve the scheduling and performance efficiency.
 
 ## Project Past
-KubeDL has added many significat features since last year.
+KubeDL has added many significant features since last year.
 - Accelerate training speed by natively integrating data cache.
 - Enhanced KubeDL dashboard for better interactive experiences.
 - Miscellaneous bug fixes and improvements.
 -
-KubeDL has also been under serveral summer of code projects, such as ASOC(link), xxx, where a number of students are actively participating.
+KubeDL has also been under several summer of code projects, such as ASOC(link), xxx, where a number of students are actively participating.
 
 KubeDL/Morphling project is honored to have a paper published at ACM SoCC 2021.
 
@@ -55,4 +55,4 @@ Community
 We focused a lot in enhancing the project quality to production grade, and continuously contribute our best practices in large production to the community. We have many users using KubeDL in production, but have not get many external contributors in community. We had short amount of resources. Next year, we will focus more on building more awareness of the project by writing more blogs, showcasing, and presentation in conferences, and hope to engage more users to contribute.
 
 ## Incubation
-KubeDL is not yet ready for incubation, though KubeDL has been used heavily at Alibaba in large scale. We would like to see more contributors and maintiners and more adopters.
+KubeDL is not yet ready for incubation, though KubeDL has been used heavily at Alibaba in large scale. We would like to see more contributors and maintainers and more adopters.

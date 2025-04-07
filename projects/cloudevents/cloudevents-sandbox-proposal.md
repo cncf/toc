@@ -71,14 +71,14 @@ CloudEvents org: https://github.com/cloudevents
 
 CloudEvents repo for the specification: https://github.com/cloudevents/spec
 
-**External dependencie**: None
+**External dependencies**: None
 
 **Initial Maintainers**:
 
 The CloudEvents group does not have "maintainers" that approve
 Pull Requests (PRs) like traditional GitHub projects. Rather, the group
 discusses/reviews PRs in the PRs themselves and then when consensus is reached
-they are approved during our weekly calls. If concensus can not be reached
+they are approved during our weekly calls. If consensus can not be reached
 then a formal vote is taken. 
 
 Voting rights: each member company designates a "primary" and "alternate"

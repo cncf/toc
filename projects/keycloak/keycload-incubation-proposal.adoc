@@ -20,10 +20,10 @@ Link to GitHub project: https://github.com/keycloak
 
 Getting Started / Trying out: https://www.keycloak.org/getting-started
 
-CNCF SIG Security assesment request:
+CNCF SIG Security assessment request:
 https://github.com/cncf/sig-security/issues/372
 
-CNCF SIG Security Self Assesment document with great level of details about the project:
+CNCF SIG Security Self Assessment document with great level of details about the project:
 https://docs.google.com/document/d/14IIGliP3BWjdS-0wfOk3l_1AU8kyoSiLUzpPImsz4R0/edit#
 
 Link to initial 2018 Presentation: (Oct 2018 TOC presentation - slide 26)
@@ -144,7 +144,7 @@ release while keeping backwards compatibility.
 Github and community stats (March 2020): 
 * Forks: 2.8k 
 * Stars: 6.4k 
-* Controbutors: 393 
+* Contributors: 393 
 * Commits: 12.5k 
 * Website visits: >60k unique users per month 
 * Developer mailing list: ~100 posts/month 
@@ -176,7 +176,7 @@ Production usage
 
 "Document that it is being used successfully in production by at least three independent end users which, in the TOC’s judgement, are of adequate quality and scope."
 
-Refering endorsements from Submission:
+Referring endorsements from Submission:
 
 * listed in: https://github.com/cncf/toc/issues/406
 * grouped and summarized in: https://github.com/cncf/toc/pull/405#issuecomment-623491056 and https://github.com/cncf/toc/pull/405#issuecomment-624043670 
@@ -378,10 +378,10 @@ External Identity Providers (SAML 2.0, OpenID Connect, custom)
 Alignment with SIG Reference Model
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-CNCF SIG Securiry assesment request:
+CNCF SIG Security assessment request:
 https://github.com/cncf/sig-security/issues/372
 
-CNCF SIG Security Self Assesment:
+CNCF SIG Security Self Assessment:
 https://docs.google.com/document/d/14IIGliP3BWjdS-0wfOk3l_1AU8kyoSiLUzpPImsz4R0/edit?usp=sharing
 
 High level architecture
@@ -422,7 +422,7 @@ Project and Code Quality. Other information
 -------------------------------------------
 
 Comprehensive overview of the project has been performed for SIG
-Security Assesment:
+Security Assessment:
 
 https://github.com/cncf/sig-security/issues/372
 

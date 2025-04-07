@@ -70,7 +70,7 @@ non Red Hat contributors, and a few drive-by contributions.
 
 An https://kubevirt.io/api-reference/ is generated from OpenAPI definitions.
 
-*Release methodology and mechanics*: semver, a time based release process, with container artifatcs, all defined in
+*Release methodology and mechanics*: semver, a time based release process, with container artifacts, all defined in
 https://github.com/kubevirt/kubevirt/blob/master/docs/release.md
 
 *Project logo*: https://raw.githubusercontent.com/kubevirt/community/master/logo/KubeVirt_logo.png

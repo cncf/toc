@@ -149,7 +149,7 @@ A https://github.com/sysdiglabs/falco-nats[proof of concept] was created showing
 Code is currently hosted by Sysdig:
 https://github.com/draios/falco[https://github.com/draios/falco]
 
-The code will move to a vendor netural github organization at:
+The code will move to a vendor neutral github organization at:
 https://github.com/falcosecurity[https://github.com/falcosecurity]
 
 

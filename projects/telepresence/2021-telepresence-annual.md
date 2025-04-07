@@ -89,12 +89,12 @@ Throughout our development efforts, we have put an emphasis on improving the use
 ### Current Goals
 
 With the work done in the past year, we believe we have created a strong foundation for the Telepresence project. Our focus this year is to grow adoption of Telepresence by removing the friction and limitations users may experience. To do this our initial areas of focus include:
-* Developing a native Windows client and support Windows as a first-class operation system along with macOS and Lunux
+* Developing a native Windows client and support Windows as a first-class operation system along with macOS and Linux
 * Improve deployment in Restricted Environments
 * Enable running Telepresence in CI for integration testing
 * Improve performance and scalability of Telepresence
 
-Over the past year, we have significantly increased our contribution to Telepresence. The devastats metrics above highlight the increasing number of commits over the past six months. Some of that contribution has been directed towards improving community accessibility. With an improved pipeline in place we would like to increase the number of contributors to Telepresence to accelerate development on Telepresence even more:
+Over the past year, we have significantly increased our contribution to Telepresence. The devstats metrics above highlight the increasing number of commits over the past six months. Some of that contribution has been directed towards improving community accessibility. With an improved pipeline in place we would like to increase the number of contributors to Telepresence to accelerate development on Telepresence even more:
 * Add non-Ambassador Labs maintainers
 * Improve developer focused documentation to enable committers
 * Increase outreach to our community and recruit committers

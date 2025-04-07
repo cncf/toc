@@ -102,7 +102,7 @@ This is the WasmEdge project's first Annual review after joining the CNCF Sandbo
 For the immediate future, WasmEdge will focus on the following areas.
 
 * Technical goals
-    * Support more WebAssemly proposals and specs. In particular, we will provide full support for the WebAssembly component model and `wit-bindgen`.
+    * Support more WebAssembly proposals and specs. In particular, we will provide full support for the WebAssembly component model and `wit-bindgen`.
     * Support TLS and HTTPS connections from WasmEdge apps.
     * Adopt popular application libraries and frameworks for the WasmEdge networking socket API. Examples including Rust's Tokio framework, database drivers, and client SDKs for common web services.
     * Support the entire Node.js API and NPM module ecosystem in WasmEdge's JavaScript runtime.

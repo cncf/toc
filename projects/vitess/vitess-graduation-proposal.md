@@ -2,7 +2,7 @@
 
 Since joining the CNCF in [February 2018](https://www.cncf.io/blog/2018/02/05/cncf-host-vitess/) as an incubation project, Vitess has built a healthy ecosystem of maintainers and production adoptions.
 
-On behalf of the maintainers team, we believe Vitess is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#graduation-stage) and meets the v1.2 criteria. As the criteria has evolved since February 2018, we include also answers for incubation criteria and address [due dilligence questions](https://docs.google.com/document/d/1TDlRdgfTiEWunpav-G8gkaQF7Zk84-9tNAXyv1I0Kws/edit) in a separate Google Docs document.
+On behalf of the maintainers team, we believe Vitess is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#graduation-stage) and meets the v1.2 criteria. As the criteria has evolved since February 2018, we include also answers for incubation criteria and address [due diligence questions](https://docs.google.com/document/d/1TDlRdgfTiEWunpav-G8gkaQF7Zk84-9tNAXyv1I0Kws/edit) in a separate Google Docs document.
 
 ### CNCF Incubation Criteria
 

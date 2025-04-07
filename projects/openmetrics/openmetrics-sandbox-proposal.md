@@ -47,7 +47,7 @@ Given the CNCF's stated role in "fostering the growth and evolution of the ecosy
 
 OpenMetrics currently depends on no external software components.
 
-Once the test suite is released, it will depend on Go and Python and some libraries. Proper licence hygiene will be ensured.
+Once the test suite is released, it will depend on Go and Python and some libraries. Proper license hygiene will be ensured.
 
 *Lead:* * Richard Hartmann (SpaceNet)
 

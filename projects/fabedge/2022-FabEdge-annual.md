@@ -32,7 +32,7 @@ This is the project’s first annual review, but since FabEdge joined CNCF, we h
 
 * Multi-cluster communication and cross-cluster DNS service.
 * Dual-stack network.
-* Hole-punching to enable edge nodes to establish VPN tunnels betwwen each other even if NAT network exists.
+* Hole-punching to enable edge nodes to establish VPN tunnels between each other even if NAT network exists.
 * Auto-networking on edge nodes in the same LAN. 
 * Provide coredns and kube-proxy capability on edge side.
 

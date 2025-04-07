@@ -32,7 +32,7 @@ once [multi-org support]((https://github.com/cncf/clowarden/issues/43)) is imple
 
 The following should have access:
 - TOC liaisons for the respective TAG and TAG leads should have admin access.
-- TAG leads may grant additional priviliges (write/admin access) to other TAG members.
+- TAG leads may grant additional privileges (write/admin access) to other TAG members.
 A publicly linkable written decision should be available for granting such access.
 
 ### Archiving a repo

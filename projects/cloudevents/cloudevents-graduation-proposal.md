@@ -86,7 +86,7 @@ resolved.
 Yes, see our
 [Governance](https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md)
 and
-[Contibuting](https://github.com/cloudevents/spec/blob/main/docs/CONTRIBUTING.md)
+[Contributing](https://github.com/cloudevents/spec/blob/main/docs/CONTRIBUTING.md)
 docs.
 
 ### * Explicitly define the criteria, process and offboarding or emeritus conditions for project maintainers; or those who may interact with the CNCF on behalf of the project. The list of maintainers should be preferably be stored in a MAINTAINERS.md file and audited at a minimum of an annual cadence.
@@ -94,7 +94,7 @@ docs.
 Yes, see first section of this doc and our
 [Governance](https://github.com/cloudevents/spec/blob/main/docs/GOVERNANCE.md)
 and
-[Contibuting](https://github.com/cloudevents/spec/blob/main/docs/CONTRIBUTING.md)
+[Contributing](https://github.com/cloudevents/spec/blob/main/docs/CONTRIBUTING.md)
 docs.
 
 ### * Have a public list of Project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the Project website). For a specification, have a list of adopters for the implementation(s) of the spec. Refer to [FAQs](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter) for guidelines on identifying adopters.

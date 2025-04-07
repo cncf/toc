@@ -96,7 +96,7 @@ The main goals of the project have been in the following categories:
 
 * **Availability**: Kyverno has added the ability to support multiple replicas for fault-tolerance and increased availability in Release 1.4.0 (June 2021).
 
-* **Scalability**: Several fixes and improvenents have been made to reduce memory usage and handle large clusters. This remains an on-going area of test and improvement.
+* **Scalability**: Several fixes and improvements have been made to reduce memory usage and handle large clusters. This remains an on-going area of test and improvement.
 
 * **Security**: Kyverno participated in the CNCF TAG Security [Security Pals](https://github.com/cncf/tag-security/issues/554) program. As a result, Kyverno has adopted recommended security best practices. The [Security](https://main.kyverno.io/docs/security/) section in the Kyverno documentation lists these and acts as a security guide for adopters.
 

@@ -16,7 +16,7 @@ This is the annual review for the [distribution](https://github.com/distribution
 
 Distribution provides an implementation of the Open Source Registry for storing and distributing container images [and other application content] via the [OCI Distribution Specification](https://github.com/opencontainers/distribution-spec). The goal of this project is to provide a simple, secure, and scalable base for building a large scale registry solution or running a simple private registry. It is a core building block for many registry operators including [Docker Hub](https://hub.docker.com/), GitHub Container Registry, [GitLab Container Registry](https://gitlab.com/gitlab-org/container-registry), [DigitalOcean Container Registry](https://www.digitalocean.com/products/container-registry), as well as the [CNCF Harbor Project](https://goharbor.io/), and VMware Harbor Registry.
 
-Additionally, the project provides various libraries (a.k.a. `Go` programming langauge packages) that are widely used across large number of actively maintained OSS projects such as [moby](https://github.com/moby/moby/), [argocd](https://github.com/argoproj-labs), etc.
+Additionally, the project provides various libraries (a.k.a. `Go` programming language packages) that are widely used across large number of actively maintained OSS projects such as [moby](https://github.com/moby/moby/), [argocd](https://github.com/argoproj-labs), etc.
 
 ## DevStats
 
@@ -36,7 +36,7 @@ There is very little doubt the project's adoption continue to be quite high and 
 
 ## Project goals
 
-The Distribution project has the long term goal of providing a secure tool chain for distributing contentt hat allow users to:
+The Distribution project has the long term goal of providing a secure tool chain for distributing content hat allow users to:
 * Take advantage of an efficient, secure and reliable way to store, manage, package and exchange content
 * Hack/roll their own on top of healthy open-source components
 * Implement their own home made solution through good specs, and solid extensions mechanism.

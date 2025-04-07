@@ -47,7 +47,7 @@ Dapr has a set of [building block APIs](https://docs.dapr.io/concepts/building-b
 
 The Dapr CLI provides a simple local development experience to develop, build and test cloud native applications. 
 
-Although Dapr can be used with localhost HTTP or gRPC calls, language SDKs provide a more familar developer experience and integration with language specific tooling.
+Although Dapr can be used with localhost HTTP or gRPC calls, language SDKs provide a more familiar developer experience and integration with language specific tooling.
 
 ## Statement on alignment with CNCF charter mission
 
@@ -57,7 +57,7 @@ Dapr is aligned with the CNCF mission to make cloud native computing ubiquitous 
 
 Similar projects outside of CNCF:
 
-- **[Micro](https://github.com/micro/micro)** is a microservices framework that has some similaries to Dapr. A significant difference is that Dapr is a set of APIs that can be used from any language or framework and is incremental in its adoption. Most microservice frameworks today like Micro are restricted to certain languages, require developers to rewrite their code and do not expose a set of common APIs that can be extended by the community.
+- **[Micro](https://github.com/micro/micro)** is a microservices framework that has some similarities to Dapr. A significant difference is that Dapr is a set of APIs that can be used from any language or framework and is incremental in its adoption. Most microservice frameworks today like Micro are restricted to certain languages, require developers to rewrite their code and do not expose a set of common APIs that can be extended by the community.
 
 - Service meshes such as CNCF **[Linkerd](https://github.com/linkerd/linkerd)** and non-CNCF **[Istio](https://github.com/istio/istio)** both have network routing, security and observability that Dapr also provides. The primary difference between Dapr and service meshes is that Dapr operates at the application level by exposing APIs for developers, whereas service meshes operate at the infrastructure networking layer.
 
@@ -81,7 +81,7 @@ Lei Zhang (Harry)
 
 Incubation
 
-Having built Dapr in conjunction with customers, adoptors and the community who are running production workloads, Dapr is ready for incubation level maturity.  
+Having built Dapr in conjunction with customers, adopters and the community who are running production workloads, Dapr is ready for incubation level maturity.  
 
 ## License
 

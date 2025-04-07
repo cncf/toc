@@ -36,10 +36,10 @@ The following recommendations were provided to the project that are non-blocking
 - To foster a more inclusive global community, TOC Reviewer recommends making a plan for global community development. This plan may include initiatives like English-language community meetings and cultivating contributors from various regions to better support adopters worldwide.
 - TOC Reviewer recommends organizing dedicated TSC meeting, in order to keep TSC members engaged.
 - To enhance community decision-making transparency, the TOC Reviewer recommends the project provide explicit records of voting processes, e.g. manual vote counts or using [gitvote](https://github.com/cncf/gitvote).
-- TOC Reviewer recommends to add explicit descripion of platforms supported in the [RELEASE.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md)
+- TOC Reviewer recommends to add explicit description of platforms supported in the [RELEASE.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md)
 - TOC Reviewer recommends to cross reference the [roadmap governance(https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#roadmap)] and [change process](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-project-roadmap) on the [ROADMAP.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/ROADMAP.md) to make it easier to find for potential contributors.
-- And for the [roadmap change process](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-project-roadmap), it's recommneded to include collecting roadmap proposals through public channels, and use more community fashion phrasing, which would encourage contributors to join the discussion and better understand whhere the project is heading to.
-- TOC Reviewer recommends to update security policy to include an embargo and private disclosure period before doing public disclosure for security vulnerbilities. And tagging a release clearly as "security-fixes-only" will help users to prioritize an upgrade.
+- And for the [roadmap change process](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#changes-in-project-roadmap), it's recommended to include collecting roadmap proposals through public channels, and use more community fashion phrasing, which would encourage contributors to join the discussion and better understand where the project is heading to.
+- TOC Reviewer recommends to update security policy to include an embargo and private disclosure period before doing public disclosure for security vulnerabilities. And tagging a release clearly as "security-fixes-only" will help users to prioritize an upgrade.
 
 ### Adoption Evaluation
 
@@ -99,7 +99,7 @@ N/A
 - [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
   - [CubeFS introduction documentation](https://cubefs.io/docs/master/overview/introduction.html) introduces the CubeFS architecture and main features.
-  - [CubeFS installation documentation](https://cubefs.io/docs/master/deploy/env.html) covers serveral ways of deployment.
+  - [CubeFS installation documentation](https://cubefs.io/docs/master/deploy/env.html) covers several ways of deployment.
   - [CubeFS end user documentation](https://cubefs.io/docs/master/user-guide/volume.html) includes basics operations as creating a volume, using volume and using cli tool.
 
 ## Governance and Maintainers
@@ -112,9 +112,9 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   CubeFS has been continuously updating governance doc to reflect project growth, some examples are:
   - CubeFS initial governance: <https://github.com/cubefs/cubefs/blob/v1.1.0/GOVERNANCE.md>
-  - Added Commiter role in May. 2023: <https://github.com/cubefs/cubefs/pull/1976>
+  - Added Committer role in May. 2023: <https://github.com/cubefs/cubefs/pull/1976>
   - Added Steering Committee in Apr. 2024: <https://github.com/cubefs/cubefs/pull/3312>
-  - Update maintainer list according to activity and add steering commitee member: <https://github.com/cubefs/cubefs/pull/3311>
+  - Update maintainer list according to activity and add steering committee member: <https://github.com/cubefs/cubefs/pull/3311>
   - Update the Governance Document to eliminate the role of the leader: <https://github.com/cubefs/cubefs/pull/3382>
     The description of 'project lead' implies a somewhat authoritarian role, but with the establishment of a Steering Committee, the Steering Committee should be considered the highest decision-making body.Thus CubeFS delete the role of 'project lead'.
   - Adding governance rules related to SIGs.: <https://github.com/cubefs/cubefs/pull/3430>
@@ -189,7 +189,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   According to the [Maintainers list](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/MAINTAINERS.md), CubeFS currently has top level maintainers from OPPO, JD.com, BEIKE, Bytedance, LinkedIn, and additional committers from BIGO, VIVO.
 
   Definition of Maintainers and Committers can be found in the [GOVERNANCE.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md).
-  Both Maintainers and Committers require diversed membership: `No single vendor can exceed 50% of the total number of personnel.`
+  Both Maintainers and Committers require diversified membership: `No single vendor can exceed 50% of the total number of personnel.`
 
 - [x] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
@@ -214,7 +214,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   According to [Governance.md#sub-projects](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#sub-projects), sub-projects can have their own repositories but follow the same governance mechanism as the main project
 
-  Subprojects Goverance descriptions can be found at:
+  Subprojects Governance descriptions can be found at:
   - cubefs-helm Governance: <https://github.com/cubefs/cubefs-csi#governance>
   - cubefs-csi Governance: <https://github.com/cubefs/cubefs-csi#governance>
   - cubefs-dashboard Governance: <https://github.com/cubefs/cubefs-dashboard#governance>
@@ -230,7 +230,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   Cubefs has the following roles for contributors that are related to code and non-code contributions:
   - Technical Steering committee member: [GOVERNANCE.md#expectations-from-the-technical-steering-committeetsc](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-the-technical-steering-committeetsc)
   - Maintainer: [GOVERNANCE.md#expectations-from-maintainers](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-maintainers)
-  - Commiter: [GOVERNANCE.md#expectations-from-committers](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-committers)
+  - Committer: [GOVERNANCE.md#expectations-from-committers](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-committers)
   - SIG member: [GOVERNANCE.md#expectations-from-sigs-member](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#expectations-from-sigs-member)
   - Product Security Committee (PSC): [security-release-process.md#product-security-committee-psc](https://github.com/cubefs/cubefs/blob/master/security/security-release-process.md#product-security-committee-psc)
 
@@ -317,7 +317,7 @@ N/A
 
 - [x] **Roadmap change process is documented.**
 
-  CubeFS documentes its roadmap rules and changing process in [GOVERNANCE.md#roadmap](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#roadmap)
+  CubeFS documents its roadmap rules and changing process in [GOVERNANCE.md#roadmap](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/GOVERNANCE.md#roadmap)
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
 
@@ -333,7 +333,7 @@ N/A
 
     CubeFS uses beta to mark their unstable releases. Ref: [RELEASE.md#types-of-releases](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/RELEASE.md#types-of-releases).
 
-    Security release process is documented at: [security-release-process.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/security/security-release-process.md). CubeFS doesn't have explict tagging rule for security releases. Though this is not required, tagging a release with "security-fixes-only" alike markers would be helpful for users to prioritize upgrades.
+    Security release process is documented at: [security-release-process.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/security/security-release-process.md). CubeFS doesn't have explicit tagging rule for security releases. Though this is not required, tagging a release with "security-fixes-only" alike markers would be helpful for users to prioritize upgrades.
 
   - [x] **Information on branch and tag strategies**
 
@@ -358,13 +358,13 @@ N/A
 
 ## Security
 
-Note: this section may be augemented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security.
 
 ### Suggested
 
 - [x] **Achieving OpenSSF Best Practices silver or gold badge.**
 
-  CubeFS has achieved the OpenSSF Best Practices siler badge: <https://www.bestpractices.dev/projects/6232>
+  CubeFS has achieved the OpenSSF Best Practices silver badge: <https://www.bestpractices.dev/projects/6232>
 
   [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/6232/badge)](https://www.bestpractices.dev/projects/6232)
 
@@ -416,7 +416,7 @@ N/A
 
 - [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-  The [ADOPTERS.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/ADOPTERS.md) documentes adopters with adoption level and success stories.
+  The [ADOPTERS.md](https://github.com/cubefs/cubefs/blob/206d5ddadf1f99abde6401b7aa18b57fc46e6bed/ADOPTERS.md) documents adopters with adoption level and success stories.
 
 - [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
@@ -493,7 +493,7 @@ Note: Adopter3 preferred to remain anonymous. The interview details are kept in 
 
 JD.com has been using CubeFS since 2018 as the foundation for its entire storage infrastructure. This adoption supports a diverse range of unstructured storage needs across the company's retail operations, including middleware, online and offline business, big data, and AI training, etc. In production for more than 6 years, they have multiple clusters, with the largest one consisting of over 4,000 servers and a total storage capacity exceeding 300TB, serving over 1 million clients concurrently. They use the 2020 version from the community and manually backport bug fixes.
 
-JD.com choses CubeFS because it is customizable for their specific scenarios and supports large-scale clusters. CubeFS supports operating on the same dataset with different protocols simultaneously, like POSIX and S3, while alternatives like CephFS support only one. The adopter has also evaulated MooseFS, however it didn't met their requirements in scalability and stability.
+JD.com choses CubeFS because it is customizable for their specific scenarios and supports large-scale clusters. CubeFS supports operating on the same dataset with different protocols simultaneously, like POSIX and S3, while alternatives like CephFS support only one. The adopter has also evaluated MooseFS, however it didn't met their requirements in scalability and stability.
 
 JD.com has found the project documentation invaluable, particularly the design documents, which facilitated a deeper understanding and customization of CubeFS. The adoption has led to significant value, including reduced maintenance and resource costs, and improved resource utilization, reaching up to 98% in some environments.
 

@@ -241,7 +241,7 @@ The project's release process is documented in the [release file](https://github
 
 ## Security
 
-Note: this section may be augemented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security.
 
 ### Suggested
 
@@ -261,7 +261,7 @@ The project should make additional improvements to its repository security postu
 
 - [X] **Document assignment of security response roles and how reports are handled.**
 
-The [central SECURITY.md](https://github.com/kubescape/project-governance/blob/main/SECURITY.md) file explains that maintainers are responsbile for responding to reported vulnerabilities and will test to confirm the existence of the reported vulnerability. They further detail the issuance of Security advisory after confirmed and the expected timelines for disclosure.
+The [central SECURITY.md](https://github.com/kubescape/project-governance/blob/main/SECURITY.md) file explains that maintainers are responsible for responding to reported vulnerabilities and will test to confirm the existence of the reported vulnerability. They further detail the issuance of Security advisory after confirmed and the expected timelines for disclosure.
 
 - [X] **Document Security Self-Assessment.**
 

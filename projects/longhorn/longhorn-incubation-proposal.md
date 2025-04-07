@@ -90,7 +90,7 @@ Longhorn has joined the CNCF in October 2019. Since then, we've seen the tremend
 
 Longhorn has reached v1.0 GA this May, and we're planning to release v1.1 this November.
 
-### Community acivity
+### Community activity
 
 We're hosting community meeting and office hour every month. The community meeting recordings can be found at https://www.youtube.com/channel/UCGk1f-LCVmccf1pX4OvF1Ig .
 

@@ -9,7 +9,7 @@ CubeFS, an open-source project that joined CNCF as a sandbox project in December
 **Multi-Engine Support** CubeFS supports two storage engines, multiple copies and erasure coding, and has made a lot of multidimensional optimizations for these engines. This enables the flexibly to meet the demands of different business scenarios for IO performance and storage cost.
 
 **Strong Scalability** The metadata of CubeFS has horizontal scalability, and a single cluster can easily support billions of files and exabytes of storage capacity.
-**High Performance** It supports multi-level caching, delicated optimizations for small files, and various high-performance replication protocols.
+**High Performance** It supports multi-level caching, dedicated optimizations for small files, and various high-performance replication protocols.
 
 **Multi-tenancy** CubeFS provides multi-tenant management and achieves access isolation and performance non-interference between tenants through namespace management and QoS.
 

@@ -14,7 +14,7 @@
 
 
 **Volcano provides:**
-1. Powful support to mainstream computing architectures such as Spark/Flink/Tensorflow/PyTorch.
+1. Powerful support to mainstream computing architectures such as Spark/Flink/Tensorflow/PyTorch.
 2. Rich advanced scheduling strategies including Gang Scheduling/Backfill/Bin-pack, etc.
 3. Support mixed scheduling of heterogeneous resources, e.g. CPU, Memory, GPU, etc.
 

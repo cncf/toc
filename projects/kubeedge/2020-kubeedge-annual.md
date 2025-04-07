@@ -106,9 +106,9 @@ KubeEdge falls in the scope of [CNCF Runtime SIG](https://github.com/cncf/sig-ru
         - EdgeSite
 
       - Added v1.1:
-        - CSI suuport on the Edge
-        - Device CRD validaton
-        - L4 Proxy suuport in EdgeMesh
+        - CSI support on the Edge
+        - Device CRD validation
+        - L4 Proxy support in EdgeMesh
 
       - Added v1.2:
         - Application layer reliable message delivery from cloud to edge

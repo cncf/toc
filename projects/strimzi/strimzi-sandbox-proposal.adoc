@@ -55,7 +55,7 @@ Apache Kafka is very popular as infrastructure technology for supporting cloud-n
 
 *Unique identifier:* strimzi
 
-*Prefered Maturity Level*: Sandbox
+*Preferred Maturity Level*: Sandbox
 
 *License*: Apache License v2.0
 

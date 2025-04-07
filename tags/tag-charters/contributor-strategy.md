@@ -52,7 +52,7 @@ The following, non exhaustive list of activities and deliverables are
 in-scope for the TAG:
 * Definition of a contributor. This is helpful across projects for metrics and
 establishing guidelines, programs, and workflows.
-* Contributor and goverance related proposed/suggested/modified project 
+* Contributor and governance related proposed/suggested/modified project 
 lifecycle requirements for graduation or incubation
 * “Contributing health checks”/’community health checks’ (name tbd) for project
 evaluations at graduation time  

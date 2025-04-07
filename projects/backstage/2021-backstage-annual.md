@@ -65,7 +65,7 @@ This is our first annual review, so we didn’t have any goals to focus on from 
 
 ### Project Visibility
 
-We’d like to give more talks at conferences like KubeCon and have open office hours during these conferences to really spread the word about Backstage and provide first class support for existing or upcoming adopters. Also having access to the Project Pavillion and having our own booth at these conferences would also help us here.
+We’d like to give more talks at conferences like KubeCon and have open office hours during these conferences to really spread the word about Backstage and provide first class support for existing or upcoming adopters. Also having access to the Project Pavilion and having our own booth at these conferences would also help us here.
 
 ### Security Reviews
 

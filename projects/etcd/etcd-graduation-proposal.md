@@ -27,7 +27,7 @@ The etcd project has a [documented governance](https://github.com/etcd-io/etcd/b
 
 ### * Have a public list of project adopters for at least the primary repo (e.g., ADOPTERS.md or logos on the project website). For a specification, have a list of adopters for the implementation(s) of the spec.
 
-The [AOPTERS.md](https://github.com/etcd-io/etcd/blob/master/ADOPTERS.md ) file shows the list of etcd project adopters.
+The [ADOPTERS.md](https://github.com/etcd-io/etcd/blob/master/ADOPTERS.md ) file shows the list of etcd project adopters.
 
 ## Incubation Details
 _**Project should address each area listed below**_
