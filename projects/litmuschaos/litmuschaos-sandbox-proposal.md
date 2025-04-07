@@ -120,7 +120,7 @@ Litmus adheres to the “Cloud Native” principles (as explained in this blog [
 
 **Does the project align and actively collaborate with other CNCF projects?**
 
-Litmus provides full-featured chaos experiments for most of the Kubernetes resources. Currently, there are eleven different generic ways to introduce and manage chaos on Kubernetes cluster. Apart from this through chaos hub, we bring application level chaos experients for other eco system projects such as CoreDNS, Kafka, OpenEBS. 
+Litmus provides full-featured chaos experiments for most of the Kubernetes resources. Currently, there are eleven different generic ways to introduce and manage chaos on Kubernetes cluster. Apart from this through chaos hub, we bring application level chaos experiments for other eco system projects such as CoreDNS, Kafka, OpenEBS. 
 As part of its near-term roadmap, Litmus also is in the process of creating chaos charts for other sandbox/incubating/graduated CNCF projects. We are working with cncf-ci workgroup to include chaos stage in the CNCF projects. A PR is already in review for CoreDNS project.
 
 Litmus chaos experiments are being extensively used as part of CI pipelines of the OpenEBS, a CNCF sandbox project that provides containerized storage solution for Kubernetes. Reference: https://openebs.ci/
@@ -143,7 +143,7 @@ The project benefits other CNCF projects by helping harden their resiliency unde
 
 ### CI/CD:
 
-- Organizations can add "Kuberentes generic" and “application specific” chaos experiments as part of a “chaos stage” in their CI pipelines thereby enabling a left shift in improving fault tolerance and failure response. 
+- Organizations can add "Kubernetes generic" and “application specific” chaos experiments as part of a “chaos stage” in their CI pipelines thereby enabling a left shift in improving fault tolerance and failure response. 
 
 ### Kubernetes Upgrade Testing:
 
@@ -292,7 +292,7 @@ Orchestrated by Kubernetes natively. Litmus has a chaos-runner that runs in a co
 **How will the project benefit from acceptance into the CNCF?**
 
 - This project will have a vendor neutral home. The project will generate interest in many CNCF project members to contribute application level chaos experiments to the chaos hub when it is accepted into CNCF.
-- CNCF projects themselves may adopt Litmus more activly when accepted into CNCF.
+- CNCF projects themselves may adopt Litmus more actively when accepted into CNCF.
 
 **Has a security assessment by the security SIG been done? If not, what is the status/progress of the assessment?**
 

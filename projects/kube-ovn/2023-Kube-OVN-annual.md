@@ -57,7 +57,7 @@ This year, we are continuing to add new features to Kube-OVN, as well as making 
 
 Some key features and refactors added to the project:
 - A brand new Document website with all documents rewrite.
-- More underlay network features and optimization like overlay/underlay interconnection, better performance and more reslient.
+- More underlay network features and optimization like overlay/underlay interconnection, better performance and more resilient.
 - Refactor the Virtual Private Cloud (VPC) Network Address Translation (NAT) Gateway implementation to gain greater flexibility.
 - More VPC network functions like DHCP, DNS, and LoadBalance.
 - Use libovsdb to replace all the connection to OVN to achieve better performance.  

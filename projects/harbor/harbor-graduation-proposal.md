@@ -8,7 +8,7 @@ On behalf of the maintainers team, we believe Harbor is ready for the CNCF [Grad
 
 *Project Description:* Harbor is an open source cloud native registry that provides trust, compliance, performance, and interoperability. As a private on-premises registry, Harbor fills a gap for organizations that prefer not to use a public or cloud-based registry or want a consistent experience across clouds. Harbor secures images with role-based access control, scans images for vulnerabilities, and signs images as trusted. A CNCF Incubating project, Harbor helps you consistently and securely manage images across cloud native compute platforms like Kubernetes and Docker.
 
-Harbor in essense solves common problems in organizations building cloud native applications by offering them a choice to deploy their own private on-premises registry and apply a consistent policy across artifact management in any cloud.
+Harbor in essence solves common problems in organizations building cloud native applications by offering them a choice to deploy their own private on-premises registry and apply a consistent policy across artifact management in any cloud.
 
 === CNCF Alignment & Why does CNCF need a container registry? 
 

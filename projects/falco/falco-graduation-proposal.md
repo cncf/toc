@@ -98,7 +98,7 @@ Maintainership-related decisions are taken with respect to the rules established
 
 Maintainers are defined by [OWNERS](https://www.kubernetes.dev/docs/guide/owners/) files on a per-repository basis. The [MAINTAINERS.md](https://github.com/falcosecurity/evolution/blob/main/MAINTAINERS.md) file summarizes the content of all OWNERS files across all repositories. The document is automatically updated by our infra and frequently audited using the PR review process.
 
-As per our governace, core maintainers (listed by [MAINTAINERS.md#core-maintainers](https://github.com/falcosecurity/evolution/blob/main/MAINTAINERS.md#core-maintainers)) are those maintaining the [core repositories](https://github.com/falcosecurity/evolution#official) of the project. Core maintainers are responsible for overseeing the overall project health and growth, and speaking on behalf of the project, and also entitled to interact with the CNCF.
+As per our governance, core maintainers (listed by [MAINTAINERS.md#core-maintainers](https://github.com/falcosecurity/evolution/blob/main/MAINTAINERS.md#core-maintainers)) are those maintaining the [core repositories](https://github.com/falcosecurity/evolution#official) of the project. Core maintainers are responsible for overseeing the overall project health and growth, and speaking on behalf of the project, and also entitled to interact with the CNCF.
 
 
 

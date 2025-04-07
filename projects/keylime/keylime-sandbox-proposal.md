@@ -76,9 +76,9 @@ Keylime can provide remote:
   - If a targeted node **fails** its trust attestation, a signed event will be
   sent to all other nodes monitored by Keylime, instructing them to perform
   specific actions. This uses an open framework where any action that is
-  programtically possible can be triggered, such as:
+  programmatically possible can be triggered, such as:
    - Revoke TLS Certificates
-   - Fail over a sysem
+   - Fail over a system
    - Shutdown network / VPN interfaces
    - Remove host from SSH `known_hosts`
    - Call various APIs
@@ -176,14 +176,14 @@ ensure nothing has occurred to change the hash measurement of the file originall
 checked in by a developer and measured by [in-toto](https://in-toto.io/).
 
 Users of Keylime have demonstrated Keylime bootstrapping a Kubernetes cluster
-and monitoring a etcd cluser. A demonstration of this can be seen on the following
+and monitoring a etcd cluster. A demonstration of this can be seen on the following
 [YouTube video](https://www.youtube.com/watch?v=Qhr_aVBCZPw)
 
 The CNCF sandbox [parsec](https://github.com/parallaxsecond/parsec) project and
 Keylime our in discussion to have Keylime use the parsec [TSS crate](https://github.com/keylime/rust-keylime/issues/74#issuecomment-650206630)
 and our exploring closer integration of the two projects, as both teams see lots
 of synergy between Keylime and Parsec. Keylime orchestrates trust and Parsec
-abstracts secruity for the platform, so both projects have their own specialised
+abstracts security for the platform, so both projects have their own specialised
 area and do not try to solve the same issue.
 
 We would also like to explore synergies with the Notary v2 project and other
@@ -404,7 +404,7 @@ is required to have the agent deployed first.
 Keylime will benefit from CNCF positioning the project as a Remote Attestation
 trust project for cloud native technologies. It would also benefit from having
 the Governance and support available from being a CNCF project. It will also
-help to attact more developers and users to the project and help foster
+help to attract more developers and users to the project and help foster
 collaboration with other CNCF projects.
 
 **Has a security assessment by the security SIG been done? If not, what is the status/progress of

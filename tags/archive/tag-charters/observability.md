@@ -136,7 +136,7 @@ that are in-scope for this TAG
 - Organizing and helping to provide visibility to Meetups, Blogs, and Podcasts
   related to the scope of the TAG.
 - Guidance for application development and architecture that is observable.
-- Replicatable reference architectures.
+- Replicable reference architectures.
 - Patterns for observing application delivery pipelines.
 - Education regarding instrumentation cloud native workloads.
 - Processing and Accessing relevant observability data at scale.

@@ -51,9 +51,9 @@ LitmusChaos is predominantly used by the following persona:
 - Support for complex chaos workflows via Argo integration 
 - Steady-state hypothesis validation via Litmus Probes
 - Different modes (namespaced, admin/cluster)  of operation
-- Ability to source chaos artifacts from a Git backend & synchornize changes into the chaos-center
+- Ability to source chaos artifacts from a Git backend & synchronize changes into the chaos-center
 - Support for chaos on containerd, cri-o runtime 
-- Introduction of newer chaos types for both Kubernetes & cloud infratructure (AWS,GCP,Azure,VMware)
+- Introduction of newer chaos types for both Kubernetes & cloud infrastructure (AWS,GCP,Azure,VMware)
 - Improved suite of prometheus metrics for chaos experiments 
 
 #### Governance Summary: 
@@ -128,7 +128,7 @@ When we started the Litmus project, the goal of this project was to create a com
 Over time, the monthly cadence releases added the following features. 
 - Chaos experiments become building blocks of a ChaosWorkflow, to allow users to create a larger chaos scenarios. 
 - A portal to centrally visualize the chaos workflows, get chaos analytics, get the teaming in place for collaboration of chaos workflows.
-- Chaos GitOps for highly scalable automation of chaos workflows. Chaos can now be trigged as a result of a change to an application. This integrates with other CD tools like ArgoCD and FluxCD
+- Chaos GitOps for highly scalable automation of chaos workflows. Chaos can now be triggered as a result of a change to an application. This integrates with other CD tools like ArgoCD and FluxCD
 - Chaos Interleaved dashboards. A step toward open observability that is interleaved with chaos incident details
 
 With all these features, Litmus is a comprehensive platform for chaos engineering.

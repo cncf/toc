@@ -8,7 +8,7 @@ Deploying applications on Kubernetes has become trivial, but that's only where i
 
 While Kubernetes provides application autoscaling out-of-the-box with Horizontal Pod Autoscalers (HPA), it is sometimes too limited as it only covers resource metrics while often you want to scale on external metrics instead. In reality, that means you have to deploy 3r party metric adapters based on the system you depend on, but you can only run one in the same cluster and have to manage it.
 
-In 2019, Kubernetes Event-driven Autoscaling (KEDA) was launched by Microsoft and Red Hat to build an open application-oriented scaling mechanism that is vendor-agnostic and acts as an external metric aggregater which allows you to use 0-to-n scaling based on a variety of external metrics for different vendors. On November 19th, 2019 KEDA v1.0 has been released which makes it production-ready and provides enterprise-grade security.
+In 2019, Kubernetes Event-driven Autoscaling (KEDA) was launched by Microsoft and Red Hat to build an open application-oriented scaling mechanism that is vendor-agnostic and acts as an external metric aggregator which allows you to use 0-to-n scaling based on a variety of external metrics for different vendors. On November 19th, 2019 KEDA v1.0 has been released which makes it production-ready and provides enterprise-grade security.
 
 With Kubernetes Event-driven Autoscaling (KEDA) we aim to make application autoscaling super simple, regardless of the data source that you are using, by abstracting away the metric adapters and allowing KEDA customers to only focus on their scaling needs of their platform.
 
@@ -18,9 +18,9 @@ Instead of reinventing the wheel, Kubernetes Event-driven Autoscaling (KEDA) is 
 
 Kubernetes Event-driven Autoscaling (KEDA) provides a variety of 15+ scalers which allows customers to automatically scale workloads based on external systems. Our portfolio includes AWS, GCP, Microsoft Azure & Huawei cloud as well as other technologies such as Kafka, Prometheus, NATS and more but new scalers can be added very easily.
 
-By leveraging scale-to-0, Kubernetes Event-driven Autoscaling (KEDA) allows customers to build resource-friendly applications by making the unused resouces available to other applications in the Kubernetes cluster that really need them.
+By leveraging scale-to-0, Kubernetes Event-driven Autoscaling (KEDA) allows customers to build resource-friendly applications by making the unused resources available to other applications in the Kubernetes cluster that really need them.
 
-Kubernetes Event-driven Autoscaling (KEDA) provides production-grade security by supporting pod identities, like Azure AD Pod Identity, to avoid secret management and allow for authentication re-use across multiple scalers. This allows existing deployments to run under the same minimal permissions while KEDA scalers can use higher-priviledged authentication to gain the required metrics. With this approach, we allow developers to focus on their workload while ops manages the authentication & configuration of the autoscaling, although it can be managed end-to-end by a full-stack as well.
+Kubernetes Event-driven Autoscaling (KEDA) provides production-grade security by supporting pod identities, like Azure AD Pod Identity, to avoid secret management and allow for authentication re-use across multiple scalers. This allows existing deployments to run under the same minimal permissions while KEDA scalers can use higher-privileged authentication to gain the required metrics. With this approach, we allow developers to focus on their workload while ops manages the authentication & configuration of the autoscaling, although it can be managed end-to-end by a full-stack as well.
 
 KEDA was presented at KubeCon 2019 (https://www.youtube.com/watch?v=ZK2SS_GXF-g).
 

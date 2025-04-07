@@ -1,6 +1,6 @@
 # Cloud Native Technical Papers process
 
-This guide serves to provide technical groups in CNCF a consistent process and mechanism to create, collaborate, and publish technical content in the form of whitepapers that increase the technical accuracy and potency of content provided. It promotes visibility of these activites, fair and opportune community feedback, and rigor in technical review.
+This guide serves to provide technical groups in CNCF a consistent process and mechanism to create, collaborate, and publish technical content in the form of whitepapers that increase the technical accuracy and potency of content provided. It promotes visibility of these activities, fair and opportune community feedback, and rigor in technical review.
 
 This Paper process has been adopted from [CNCF's TAG Security Paper Process](https://github.com/cncf/tag-security/blob/main/community/publications/paper-process.md) and modified to cover TAGs and WGs under the oversight of the TOC. It is intended to complement existing TAG governance.
 
@@ -32,7 +32,7 @@ The paper sponsor is also expected to coordinate awareness of the paper developm
 
 ### Refining the scope, audience and participants
 
-Interest in participating is expressed on the Issue by comments of those individuals. Soliciting interest and participation must allow for sufficient time (no less than two weeks) for fair opportunity to gather interest. Interested parties should then meet to define timelines, refine the scope, declare the audience, and determine paper lead. It is recommended that TAGs leverage communication channels to increase awareness of the proposed paper, its topic, and to solict potential contributors. If substantial interest has not been gained within one month, it is recommended the proposed paper be closed due to lack of interest - this does not prevent the group from pursuing it in the future.
+Interest in participating is expressed on the Issue by comments of those individuals. Soliciting interest and participation must allow for sufficient time (no less than two weeks) for fair opportunity to gather interest. Interested parties should then meet to define timelines, refine the scope, declare the audience, and determine paper lead. It is recommended that TAGs leverage communication channels to increase awareness of the proposed paper, its topic, and to solicit potential contributors. If substantial interest has not been gained within one month, it is recommended the proposed paper be closed due to lack of interest - this does not prevent the group from pursuing it in the future.
 
 ## Managing paper development
 
@@ -57,14 +57,14 @@ Once the group has met to define timelines, scope, audience, and determined the 
 
 ### Milestones Details
 
-The milestones for developing a paper are designed to ensure planning, consideration, review are accounted for and addressed. They also allow contributors to apply this framework to producing a paper efficiently, by establishing varies feedback loops to continue enhancing and tightenting up the content.
+The milestones for developing a paper are designed to ensure planning, consideration, review are accounted for and addressed. They also allow contributors to apply this framework to producing a paper efficiently, by establishing varies feedback loops to continue enhancing and tightening up the content.
 
 Each milestone provides an important value-add to the content of final paper:
 * Audience, Goals, and Refining Scope - these set the boundaries, depth, and desired outcome of the paper. These are referred to by later milestones to keep alignment with the intent behind the work.
 * Outline - Starting with an outline allows for the group to get a general idea of all the areas that _currently_ know need to be included. Later milestones may adjust the content included or excluded, but the outline serves as a starting point.
 * Tasking Assignment - Allows contributors to the paper to own portions of the content, and allows reviewers to identify an individual to assist in clarifying content and ideas.
-* Content Rough-in - Allows for the assigned contributor(s) to begin writing ideas and thoughts for the area. It provides flexibility in that the content doesnt need to be a complete thought, but more as a thought and idea that is capable for further refinement.
-* Collaborative Review - Lets the group come back to look at the entirety of the draft content. This could reveal gaps, duplicative informations, or even restructure and move content for better flow without heavily investing in content refinement should a section be removed.
+* Content Rough-in - Allows for the assigned contributor(s) to begin writing ideas and thoughts for the area. It provides flexibility in that the content doesn't need to be a complete thought, but more as a thought and idea that is capable for further refinement.
+* Collaborative Review - Lets the group come back to look at the entirety of the draft content. This could reveal gaps, duplicate information, or even restructure and move content for better flow without heavily investing in content refinement should a section be removed.
 * Executive Summary and content wrap up - brings more polish the papers, transitioning from a concept into a full paper. The executive summary (if required) provides and overview of what is discussed.
 * Narrative Voice - ensures consistency in the tone, flow, and attitude of the paper. It makes sure the paper doesn't appear written by 20 different voices, but rather one that is unified and representative of the body producing the work; a TAG or WG within the CNCF.
 * Final Group Review - this is the last chance for the group to shore up the paper and address any areas of concern and comments before opening it to community review. When all preliminary milestones are complete, this step should permit the group to have an enjoyable read without interruption from questions or unclear topics.
@@ -72,7 +72,7 @@ Each milestone provides an important value-add to the content of final paper:
 * Public comment adjudication - this allows the contributors to consider and weigh comments for incorporation or exclusion in the paper. It also supports later milestones for long term maintenance of the paper by understanding what kinds of questions are being asked so they can be addressed holistically.
 * Leadership review - essential and critical to ensuring the technical accuracy and quality of the material content in the paper. It also functions as a final check before publication to catch any potential issues that may have been missed.
 * Publishing engagement - initiates a formal, static artifact of the paper for linking and reference in a format consumable by the audience beyond git.
-* Addition to the repo - provides a markdown manageable artifacta and metadata for discovery, updates, and longevity of the material.
+* Addition to the repo - provides a markdown manageable artifacts and metadata for discovery, updates, and longevity of the material.
 * Blog post and publishing coordination - these functions increase awareness of the paper, in particular the blog post provides some context around why the paper is warranted and how the audience could leverage the paper for their architectures and organizations.
 
 #### Audience, Goals, and Refining Scope
@@ -95,11 +95,11 @@ Contributors should assign themselves to various outline areas. This allows focu
 
 #### Content Rough-in
 
-Assignees provide rough content through phrases, paragraphs, or bullets. If the assignee has drafted complete content (full sentences, ideas, well-expressed) they should indicate the content as "draft". This informs other collaborators that less effort may be needed to further develop the content and may facillitate comments to refine the material further or restructure as content is further developed.
+Assignees provide rough content through phrases, paragraphs, or bullets. If the assignee has drafted complete content (full sentences, ideas, well-expressed) they should indicate the content as "draft". This informs other collaborators that less effort may be needed to further develop the content and may facilitate comments to refine the material further or restructure as content is further developed.
 
 #### Collaborative Review
 
-Contributors refine raw content into drafts, comment on sections, expand ideas, and provide citations. It is recommended contributors use the corresponding Slack channel for larger thematic discussions. Groups may wish to establish a separate channel for technical paper discussions, but are not required to. The Issue should provide the link for the primary commnication channel should anyone have questions.
+Contributors refine raw content into drafts, comment on sections, expand ideas, and provide citations. It is recommended contributors use the corresponding Slack channel for larger thematic discussions. Groups may wish to establish a separate channel for technical paper discussions, but are not required to. The Issue should provide the link for the primary communication channel should anyone have questions.
 
 #### Executive Summary and Content Wrap-up
 
@@ -113,13 +113,13 @@ Individuals performing narrative voice may come from the contributors, or may be
 
 #### Final Group Review
 
-The group collectively reviews the polished paper before opening it for community review. This is the last cursory check before opening to public content. It is imperative that contributors verify all referencable items are linked, cited, concepts explained, acronyms spelled out, and any unclear content is corrected. If the group fails to gain consensus on any of the content presented they may choose to remove it or explain the different perspectives that allow the reader to draw their own conclusions, this is paritcularly important where a technical recommendation results in security or performance trade offs.
+The group collectively reviews the polished paper before opening it for community review. This is the last cursory check before opening to public content. It is imperative that contributors verify all referable items are linked, cited, concepts explained, acronyms spelled out, and any unclear content is corrected. If the group fails to gain consensus on any of the content presented they may choose to remove it or explain the different perspectives that allow the reader to draw their own conclusions, this is particularly important where a technical recommendation results in security or performance trade offs.
 
 The group should assign individuals to serve as comment adjudicators for public review at this point. These individuals will be responsible for validating commentary against the defined scope, assumptions, and audience.
 
 #### Community Review
 
-When ready for commmunity review, lock the paper from editing (except for Adjudicators). Make it public for comments and suggestions. Announce a two week public comment period via the TAG's mailing list as well as the TOC's mailing list. TAGs and groups may wish to leverage a git workflow for this, by moving the paper to markdown and filing a PR which would allow public comments on the PR.
+When ready for community review, lock the paper from editing (except for Adjudicators). Make it public for comments and suggestions. Announce a two week public comment period via the TAG's mailing list as well as the TOC's mailing list. TAGs and groups may wish to leverage a git workflow for this, by moving the paper to markdown and filing a PR which would allow public comments on the PR.
 
 This portion of the process is similar to a "peer review" and is essential to ensuring the validity and quality by the broader CNCF community. The TOC's public mailing list includes thousands of individuals across the ecosystem, to include current and former members of the TOC, TAGs, projects, and community members. The following sample text may be used to when sending out the message on the mailing list:
 
@@ -134,7 +134,7 @@ This portion of the process is similar to a "peer review" and is essential to en
 
 Adjudicators are may choose to resolve community comments and suggestions as they are applied or may wait for the full comment period to close before adjudicating. Comments resulting in larger discussions should be decisively resolved and their resolution documented clearly, particularly if the comment concerns will not be included in the final paper. Adjudicators should make reasonable effort to ensure the comments and concerns raised are duly considered and incorporated, as appropriate.
 
-Adjudicators may be drawn from contributors to the paper, as they often have additional context that is assummed in the paper, but not declared until a commenter points it out. It is recommended that adjudicators be individuals most heavily involved in the operations of paper development, not necessarily tied to a specific topic or section (although perhaps they wrote many of them). They should be able to reason and apply the comment in the context of the section, as well as across the body of the paper, while still taking a step back to check assumptions in content.
+Adjudicators may be drawn from contributors to the paper, as they often have additional context that is assumed in the paper, but not declared until a commenter points it out. It is recommended that adjudicators be individuals most heavily involved in the operations of paper development, not necessarily tied to a specific topic or section (although perhaps they wrote many of them). They should be able to reason and apply the comment in the context of the section, as well as across the body of the paper, while still taking a step back to check assumptions in content.
 
 #### Leadership Review and Approval
 
@@ -191,4 +191,4 @@ Papers created by a CNCF TAG or WG are authored by the group, with contributors 
 
 The cloud native ecosystem and its domains are still rapidly evolving and the best practices of yesterday may not be the right best practices for a new technology of tomorrow. It is therefore important that the paper be review periodically (annual or bi-annually) to ensure continued accuracy of the content through a version update. In some cases, the paper may need to be archived as the content has been rendered obsolete in light of a major ecosystem development. After the annual or bi-annual review is completed, a simple update to the markdown file to convey "last reviewed" date is sufficient if no changes were determined as necessary.
 
-New papers on an existing paper topic are reasonable provided they can be referencable by the main paper and there is no pre-existing material on the subject. For example, a paper on software supply chain security may provide an initial architecture that later needs dedicated papers for development, build, distribution/storage, and deployment as more tooling is developed and as specifications emerge to solve issues the initial architecture didn't address. Where possible, link to existing material if content is already published and provide an enhancement, clarification, or caveats to such content in the context of the paper.
+New papers on an existing paper topic are reasonable provided they can be referable by the main paper and there is no pre-existing material on the subject. For example, a paper on software supply chain security may provide an initial architecture that later needs dedicated papers for development, build, distribution/storage, and deployment as more tooling is developed and as specifications emerge to solve issues the initial architecture didn't address. Where possible, link to existing material if content is already published and provide an enhancement, clarification, or caveats to such content in the context of the paper.

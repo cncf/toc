@@ -21,7 +21,7 @@ and were using the project on the production from the earliest days. [This blog 
 describes the usage in detail here.
 * [Monzo](https://monzo.com/) is UK’s banking startup that was one of the earliest adopters and contributors to Thanos. 
 They described their success in detail [in this blog post](https://monzo.com/blog/2018/07/27/how-we-monitor-monzo).
-* [uSwitch](https://www.uswitch.com/) shared their expierience [on Medium](https://medium.com/uswitch-labs/making-prometheus-more-awesome-with-thanos-fbec8c6c28ad).
+* [uSwitch](https://www.uswitch.com/) shared their experience [on Medium](https://medium.com/uswitch-labs/making-prometheus-more-awesome-with-thanos-fbec8c6c28ad).
 * [Alibaba Cloud](https://us.alibabacloud.com/) presented their usage of Thanos during CNCF KubeCon China 2019. Video is available [here](https://www.youtube.com/watch?v=ZS6zMksfipc).
 * [Red Hat](https://www.redhat.com/) is using Thanos in production. One of the usages was described [here](https://blog.openshift.com/federated-prometheus-with-thanos-receive/). 
 * [HelloFresh](https://engineering.hellofresh.com/) and their blog post about the Thanos usage is available [here](https://engineering.hellofresh.com/monitoring-at-hellofresh-part-1-architecture-677b4bd6b728). 

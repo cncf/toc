@@ -47,7 +47,7 @@ Network Service Mesh does this without disturbing (and taking care not to break)
 by the runtime.  K8s Networking via CNI is untouched, and continues to work as expected.
 
 Network Service Mesh makes IP networking itself Cloud Native by loosely coupling with the existing 
-immutable infrastrcture in K8s to deliver whatever non-standard Networking needs a workload has with minimal toil.
+immutable infrastructure in K8s to deliver whatever non-standard Networking needs a workload has with minimal toil.
 
 NSM is a complement to higher level L7 Service Meshes (Linkerd), providing an additional 
 connectivity,security and observability at lower layers.
@@ -106,7 +106,7 @@ Network Service Mesh had three release in the last year:
        *  Ericsson Software Technology
        *  Red Hat
     * [Commits](https://networkservicemesh.devstats.cncf.io/d/2/commits-repository-groups?orgId=1&from=now-1y&to=now&var-period=d7&var-repogroups=All)
-      have remainded strong in the last year.
+      have remained strong in the last year.
     
 2.  _How many maintainers do you have, and which organisations are they from? (Feel free to link to an existing MAINTAINERS file if appropriate.)_
 
@@ -134,14 +134,14 @@ Network Service Mesh had three release in the last year:
 
 4. _How has the project performed against its goals since the last review? (We won't penalize you if your goals changed for good reasons.)_
    Goals from last time:
-      - *v1.0.0 release.* - Done. The refactor of NSM took longer than expected, but NSM has now settled into a regular 60 day release candence.
+      - *v1.0.0 release.* - Done. The refactor of NSM took longer than expected, but NSM has now settled into a regular 60 day release cadence.
       - *Continue to expand and broaden the NSM community.* - NSM has increased the breath of maintainers overall, particularly in sub-maintainers for particular repos
       - *Grow adoption across: Service Provider* - “Ericsson is actively contributing to NSM to enable 5G specific use cases for cloud native network functions. We have multiple NSM based solutions in our roadmap, targeting live deployments by the end of 2022.”
       - *Grow adoption across: Edge/IoT* - "NSM is being considered in the Intel Smart Edge Open roadmap for Service Function Chaining (SFC) of FD.io VPP based Container Network Functions (CNFs)"
       - *Grow adoption across: Enterprise* - The NSM vL3 and Application Service Mesh over vL3 (see below) features need to be delivered to enable traction in Enterprise.
 
 5. _What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?_
-    1. Maintaining a regular (currently 60 day)  release candence.  Next scheduled release is [NSM v1.3.0](https://networkservicemesh.io/docs/roadmap/v1.3.0/)
+    1. Maintaining a regular (currently 60 day)  release cadence.  Next scheduled release is [NSM v1.3.0](https://networkservicemesh.io/docs/roadmap/v1.3.0/)
     2. Build out Enterprise Network Services:
       1. vL3 - Virtual L3 - a flat IP networking domain to which workloads from different clusters/clouds/etc can connect and over which they can communicate
       2. Application Service Mesh (L7) over vL3 (Note: This goal involves *running* an existing service mesh like Linkerd/Istio/OpenServiceMesh/Kuma over a Network Service Mesh provided vL3.  NSM will *not* be writing its own L7 functionality)

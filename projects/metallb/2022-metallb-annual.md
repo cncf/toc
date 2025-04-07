@@ -52,7 +52,7 @@ There are three maintainers actively working on the project (alphabetically):
 ## Adoption
 
 MetalLB is probably the most popular solution for exposing services of type LoadBalancer in bare metal deployments. It is widely used by users running kubernetes in homelabs
-(an [issue opened](https://github.com/metallb/metallb/issues/1481#issuecomment-1176716132) agains MetalLB revealed a wide community of users in the k8s@home discord channel).
+(an [issue opened](https://github.com/metallb/metallb/issues/1481#issuecomment-1176716132) against MetalLB revealed a wide community of users in the k8s@home discord channel).
 MetalLB is part of [multiple tutorials and videos](https://www.google.com/search?q=metallb+kubernetes+tutorial) written by the community and suggested by multiple projects
 such as [kubespray](https://github.com/kubernetes-sigs/kubespray/blob/master/docs/metallb.md), [kind](https://kind.sigs.k8s.io/docs/user/loadbalancer/) and [microk8s](https://microk8s.io/docs/addon-metallb) (to mention some).
 
@@ -91,7 +91,7 @@ adding support for loadbalancer class.
 
 <!-- What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation? -->
 
-MetalLB must continue to evolve with two goals in mind. On one hand it must keep being the (nearly) zero configuration load balancer that enables loadbalancers on Kubernetes clusters running on RaspberryPIs, on the other it must offer optional configuration knobs to accomodate the requirements of enterprise customers that are using MetalLB on more complex scenarios and topologies.
+MetalLB must continue to evolve with two goals in mind. On one hand it must keep being the (nearly) zero configuration load balancer that enables loadbalancers on Kubernetes clusters running on RaspberryPIs, on the other it must offer optional configuration knobs to accommodate the requirements of enterprise customers that are using MetalLB on more complex scenarios and topologies.
 
 On top of that, the project must keep being contributor friendly and open to discuss new feature requests and responsive to contributors willing to help.
 

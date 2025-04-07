@@ -1,6 +1,6 @@
 **TiKV Graduation Proposal**
 
-TiKV is an open source distributed transactional key-value database. TiKV joined CNCF as a Sandbox project in [August 2018](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv-in-the-sandbox/), and was voted by CNCF TOC as an incubation project in [May 2019](https://www.cncf.io/blog/2019/05/21/toc-votes-to-move-tikv-into-cncf-incubator/). The TiKV project has grown signifantly over time since joining CNCF, in terms both fostering a healthy ecosystem of maintainers and contributors and production adoptions.
+TiKV is an open source distributed transactional key-value database. TiKV joined CNCF as a Sandbox project in [August 2018](https://www.cncf.io/blog/2018/08/28/cncf-to-host-tikv-in-the-sandbox/), and was voted by CNCF TOC as an incubation project in [May 2019](https://www.cncf.io/blog/2019/05/21/toc-votes-to-move-tikv-into-cncf-incubator/). The TiKV project has grown significantly over time since joining CNCF, in terms both fostering a healthy ecosystem of maintainers and contributors and production adoptions.
 
 To highlight some of the achievements:
 
@@ -8,7 +8,7 @@ To highlight some of the achievements:
 - Contributors in the TiKV core repository: 239
 - Forks: 1100+
 - Releases: 86 releases
-- Adoptors: 1000+ (including commercial users and community users)
+- Adopters: 1000+ (including commercial users and community users)
 - 4.0 GA released in May, 2020
 
 On behalf of the maintainers team, we believe TiKV is ready for [graduation stage](https://github.com/cncf/toc/blob/master/process/graduation_criteria.md#graduation-stage).

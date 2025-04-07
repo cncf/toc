@@ -24,7 +24,7 @@ may apply to cloud native technologies as well.
 * [Serverless Landscape](https://github.com/cncf/wg-serverless#landscape)
 * [CloudEvents Project](https://cloudevents.io/)
 * [Serverless Workflow Project](https://serverlessworkflow.io/)
-* Continue to evaluate new workstreams and cummunity pain-points
+* Continue to evaluate new workstreams and community pain-points
 
 ## Non Goals
 

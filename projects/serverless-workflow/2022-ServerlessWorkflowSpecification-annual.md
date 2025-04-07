@@ -47,7 +47,7 @@ This year was for stabilization and discussions around the upcoming 1.0 release.
 
 * Two new releases for the [sdk-java](https://github.com/serverlessworkflow/sdk-java/releases)
 * One new release for the [sdk-typescript](https://github.com/serverlessworkflow/sdk-typescript/releases)
-* Four new releses for the [sdk-go](https://github.com/serverlessworkflow/sdk-typescript/releases)
+* Four new releases for the [sdk-go](https://github.com/serverlessworkflow/sdk-typescript/releases)
 * Seven minor releases for the [sdk-net](https://github.com/serverlessworkflow/sdk-net/tags)
 * Four minor releases for the [Synapse](https://github.com/serverlessworkflow/synapse/releases) runtime
 * Added [sdk-python](https://github.com/serverlessworkflow/sdk-python), a Python SDK into our ecosystem
@@ -95,7 +95,7 @@ Most notable adoptions have been by:
 - [OpenShift Serverless Logic](https://developers.redhat.com/articles/2022/08/15/how-openshift-serverless-logic-evolved-improve-workflows), a Red Hat product under Tech Preview integrated with their flagship product, OpenShift
 - [Synapse](https://github.com/serverlessworkflow/synapse), a Kubernetes-based workflow runtime which has joined the Serverless Workflow ecosystem
 
-These are the companies that have adopeted the Serverless Workflow Specification:
+These are the companies that have adopted the Serverless Workflow Specification:
 
 <!-- Alphabetical order -->
 - [CAF](https://caf.io), Serverless Workflow is the core technology behind every KYC/KYB solution allowing them to customize it for their clients seamlessly.

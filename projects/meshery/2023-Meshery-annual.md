@@ -91,23 +91,23 @@ As a self-service engineering platform, Meshery enables collaborative design and
 
 Meshery has greatly expanded beyond it's initial service mesh-centric focus to support integrations (~220 currently) across the entire cloud native ecosystem. Meshery's configuration and orchestration abilities include a growing list of supported infrastructure.
 
-Meshery's [roadmap](https://github.com/meshery/meshery/blob/master/ROADMAP.md) has remained consistent over this past year. The community of contributors has been in execution mode, dialing now on it's final, planned architectural components to a v1.0. Signicant strides have been made with [Meshery's architecture](https://docs.meshery.io/concepts), including incorporation of WASM for OPA execution in it's UI client, a client-side user permissioning framework, delivery a [Docker Extension](https://docs.meshery.io/installation/platforms/docker-extension), the addition of support for Postgres, 6 new [extension points](https://docs.meshery.io/extensibility), self-documenting end-to-end test framework that includes a published [platform compability matrix](https://docs.meshery.io/installation/platforms), and a number of other features. Additionally, Meshery's community is blooming with Meshery LFX internship being the #1 most popular out of all of the LF.
+Meshery's [roadmap](https://github.com/meshery/meshery/blob/master/ROADMAP.md) has remained consistent over this past year. The community of contributors has been in execution mode, dialing now on it's final, planned architectural components to a v1.0. Signicant strides have been made with [Meshery's architecture](https://docs.meshery.io/concepts), including incorporation of WASM for OPA execution in it's UI client, a client-side user permissioning framework, delivery a [Docker Extension](https://docs.meshery.io/installation/platforms/docker-extension), the addition of support for Postgres, 6 new [extension points](https://docs.meshery.io/extensibility), self-documenting end-to-end test framework that includes a published [platform compatibility matrix](https://docs.meshery.io/installation/platforms), and a number of other features. Additionally, Meshery's community is blooming with Meshery LFX internship being the #1 most popular out of all of the LF.
 
 ## How can the CNCF help?
 
 ### Help promoting use of the [Cloud Native Playground](https://play.meshery.io)
 
-Under Meshery's mission to enable the ease by which and the collaborative nature by which cloud native infrastructure is managed, the Meshery project has created a cloud native playground - a CNCF playground -  in which all CNCF projects can be configured and deployed. This playground is being hosted in the CNCF labs. We could use the TOC's assistance in encouraging other CNCF projects to represent their deployment best practices in the [Meshery Catalog](https://meshery.io/catalog). Infrastructure designs available in the Meshery Catlaog represent patterns and templates that end users can quickly apply in their environments. Ideally, each CNCF project incoroprates their deployment models and suggested best practices into the catalog.
+Under Meshery's mission to enable the ease by which and the collaborative nature by which cloud native infrastructure is managed, the Meshery project has created a cloud native playground - a CNCF playground -  in which all CNCF projects can be configured and deployed. This playground is being hosted in the CNCF labs. We could use the TOC's assistance in encouraging other CNCF projects to represent their deployment best practices in the [Meshery Catalog](https://meshery.io/catalog). Infrastructure designs available in the Meshery Catalog represent patterns and templates that end users can quickly apply in their environments. Ideally, each CNCF project incorporates their deployment models and suggested best practices into the catalog.
 
 The Meshery Catalog is available in the cloud native playground and is an excellent resources for participating CNCF End User Organizations. It is of benefit to all projects and all end users.
 
 ### Uplifting of all Helm charts in Artifact Hub
 
-Meshery has the ability to visualize Helm charts and [screenshot the visualization](https://github.com/meshery/meshery/pull/8498#issuecomment-1681369650). We think this would be a valuable enhancement to users of Artifact Hub. Connecting the two projects for an exploratory discussion would be helfpul.
+Meshery has the ability to visualize Helm charts and [screenshot the visualization](https://github.com/meshery/meshery/pull/8498#issuecomment-1681369650). We think this would be a valuable enhancement to users of Artifact Hub. Connecting the two projects for an exploratory discussion would be helpful.
 
 ### Incubation Readiness Assessment and Project Sponsors
 
-The TOC can assist by highlighting any concerns in terms of Meshery's readyness for Incubation, identity Incubation sponsors, and to queue for due diligence, if appropriate.
+The TOC can assist by highlighting any concerns in terms of Meshery's readiness for Incubation, identity Incubation sponsors, and to queue for due diligence, if appropriate.
 
 ## Ready for Incubation?
 
@@ -126,7 +126,7 @@ Evidence of this can be seen under DevStats above.
 Meshery has had a clear versioning scheme (see [Build and Release](https://docs.meshery.io/project/contributing/build-and-release)) and a [regular release cadence](https://docs.meshery.io/project/releases).
 
 **Clearly documented security processes explaining how to report security issues**
-The [Security page](https://docs.meshery.io/project/security-vulnerabilities) in Meshery Docs page oulines the vulnerability reporting process, has a mailing list for reporting (security@meshery.dev), has a [published and resolved CVE](https://docs.meshery.io/project/security-vulnerabilities#list-of-announced-vulnerabilities).
+The [Security page](https://docs.meshery.io/project/security-vulnerabilities) in Meshery Docs page outlines the vulnerability reporting process, has a mailing list for reporting (security@meshery.dev), has a [published and resolved CVE](https://docs.meshery.io/project/security-vulnerabilities#list-of-announced-vulnerabilities).
 
 Meshery is at "[passing](https://bestpractices.coreinfrastructure.org/projects/3564)" level for Core Infrastructure Best Practices.
 

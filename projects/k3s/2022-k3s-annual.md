@@ -112,7 +112,7 @@ Currently, the project has 17 maintainers, all with SUSE:
 
 Based on issues filed on GitHub and interactions on Slack, K3s continues to see a healthy adoption from many different types of users from hobbyists to large organizations. While we have setup an ADOPTERS.md, we've not yet start to reach out to known adopters in earnest to get them listed.  There are however several known adopters, specifically Civo Cloud, Rocketchat, and Gitpod.  We will continue to reach out to these and other adopters to ensure they are properly tracked in ADOPTERS.md.
 
-Additionally, through our devstats, you can see a healthy number of contributors from outside collaborators across several companies, in fact you can see in the last year, we've accepted contribtuions from over [180 different companies](https://k3s.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=contributions).
+Additionally, through our devstats, you can see a healthy number of contributors from outside collaborators across several companies, in fact you can see in the last year, we've accepted contributions from over [180 different companies](https://k3s.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=contributions).
 
 
 K3s is also used as a building block for other projects and products. Here are a few that are independent of K3s, but leverage or build on top of it:

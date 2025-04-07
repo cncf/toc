@@ -20,7 +20,7 @@ a service mesh. It supports Dubbo, Thrift, Redis, Kafka, ZooKeeper, and any prop
 can be supported as well with the help of the MetaProtocol framework.
 
 ### What does Aeraki stand for ?
-Aeraki [Air-rah-ki] is the Greek word for 'breeze'. We hope this breeze can help Kubernets and Istio
+Aeraki [Air-rah-ki] is the Greek word for 'breeze'. We hope this breeze can help Kubernetes and Istio
 sail further in the cloud native adventure.
 
 ### Why Aeraki Mesh ?
@@ -41,7 +41,7 @@ Aeraki Mesh was launched in November 2020, and was accepted into the CNCF as a S
 
 ## DevStats
 
- [Aeraki Mesh Devstats](https://aerakimesh.devstats.cncf.io/d/1/activity-repository-groups?orgId=1&var-period=d7&var-repogroups=All&from=now-1y&to=now) shows that contributions have remainded strong in the last year. Since joining the CNCF, we have attracted 13 contributors from 11 organizations including Tecent, Huawei, Microsoft, AlaudaInc, etc.
+ [Aeraki Mesh Devstats](https://aerakimesh.devstats.cncf.io/d/1/activity-repository-groups?orgId=1&var-period=d7&var-repogroups=All&from=now-1y&to=now) shows that contributions have remained strong in the last year. Since joining the CNCF, we have attracted 13 contributors from 11 organizations including Tecent, Huawei, Microsoft, AlaudaInc, etc.
 
   - [13 contributors](https://aerakimesh.devstats.cncf.io/d/22/prs-authors-table?orgId=1&var-period_name=Last%20year&var-repogroup_name=All)
   - [11 Organizations](https://aerakimesh.devstats.cncf.io/d/5/companies-table?orgId=1&var-period_name=Last%20year&var-metric=commits)

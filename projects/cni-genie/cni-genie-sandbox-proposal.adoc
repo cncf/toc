@@ -26,7 +26,7 @@ CNI Genie consists of 3 major components
 
 
 *Statement on alignment with CNCF mission:*
-The Cloud Native CNI-Genie project is well-alligned with the CNCF's mission statement of supporting cloud native systems. Kubernetes is a leading open source container orchestration engine. Standard kubernetes allows pods to have only single network interface. But these pods can have use-cases to host containers supporting service provisioning applications or virtual network functions (VNFs) that may typically require multiple network interfaces. CNI-Genie supports that and can continue support for several new use-cases on these aspects 
+The Cloud Native CNI-Genie project is well-aligned with the CNCF's mission statement of supporting cloud native systems. Kubernetes is a leading open source container orchestration engine. Standard kubernetes allows pods to have only single network interface. But these pods can have use-cases to host containers supporting service provisioning applications or virtual network functions (VNFs) that may typically require multiple network interfaces. CNI-Genie supports that and can continue support for several new use-cases on these aspects 
 
 CNI Genie is open to engage community and enable more innovations towards multi-networking usecases
 

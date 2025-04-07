@@ -34,7 +34,7 @@ Here are several key concepts:
   dimensions, such as security, version management and data acceleration. We hope to start with data
   acceleration to support the management of datasets.
 * **Runtime**: The execution engine that enforces dataset security, provides version management and data
-  acceleration capabilities. The Runtime defines a set of interfaces to mangage DataSets in their
+  acceleration capabilities. The Runtime defines a set of interfaces to manage DataSets in their
   life cycle, so the management and acceleration of datasets can be implemented behind these
   interfaces.
 
@@ -95,7 +95,7 @@ the [MAINTAINERS_COMMITTERS.md](https://github.com/fluid-cloudnative/fluid/blob/
 
 # Project adoption
 
-Fluid has been adopted as the foundation of public cloud Kubernetes AI/Big Data solutions. Many companies have fully leveraged Fluid build their cloud native AI/Big Data platform accross hybrid, multi-cloud, serverless environments.
+Fluid has been adopted as the foundation of public cloud Kubernetes AI/Big Data solutions. Many companies have fully leveraged Fluid build their cloud native AI/Big Data platform across hybrid, multi-cloud, serverless environments.
 
 Beyond this, Fluid have **15 adopters** totally, and the whole adopters list can be found in the existing [ADOPTERS file](https://github.com/fluid-cloudnative/fluid/blob/master/ADOPTERS.md).
 
