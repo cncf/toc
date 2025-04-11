@@ -318,22 +318,22 @@ toc_subprojects: # TOC Subprojects
           name: Nate Waddington
           company: The Linux Foundation
           email: nwaddington@linuxfoundation.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-      tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+  #      - github: foo
+  #        lfx_id: baz
+  #        name: Foo Baz Bar
+  #        company: Foo Baz Bar co.
+  #        email: me@foobazbar.org
+  #    tech_leads:
+  #      - github: foo
+  #        lfx_id: baz
+  #        name: Foo Baz Bar
+  #        company: Foo Baz Bar co.
+  #        email: me@foobazbar.org
+  #      - github: foo
+  #        lfx_id: baz
+  #        name: Foo Baz Bar
+  #        company: Foo Baz Bar co.
+  #        email: me@foobazbar.org
     meetings:
       - description: Mentoring Subproject Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-mentoring-subproject?view=list
