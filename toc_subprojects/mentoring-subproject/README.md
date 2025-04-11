@@ -8,10 +8,6 @@ Foo-Baz-Bar
 ## Leadership
 ### Chairs
 - Nate Waddington (**[@nate-double-u](https://github.com/nate-double-u)**), The Linux Foundation
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-### Tech Leads
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 
 ## Meetings
 - **Mentoring Subproject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-mentoring-subproject?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
