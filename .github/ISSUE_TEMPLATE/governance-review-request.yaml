@@ -1,0 +1,158 @@
+name: Governance review request
+description: Ask for a governance review for your project from TAG Contributor Strategy
+title: "[Governance Review]: PROJECT NAME"
+labels: ["wg/governance", "project-governance-review"]
+assignees:
+  - jberkus
+  - geekygirldawn
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in having a governance review request from TAG Contributor Strategy. 
+        For more information on what a governance is, please visit our [governance documentation](https://contribute.cncf.io/maintainers/governance/overview/).
+        ---
+        This form helps CNCF TAG Contributor Strategy understand your project's governance structure and assess its readiness for a review.
+        For assistance, please contact us at [#tag-contributor-strategy](https://cloud-native.slack.com/archives/CT6CWS1JN) channel on CNCF Slack.
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Project information
+
+  - type: input
+    attributes:
+      label: Project Name
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Project Website
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Please provide at least 2 people who are able to help us understand the governance of your project, in case there is material that is not clear.
+
+  - type: input
+    attributes:
+      label: Contact Details 1
+      placeholder: ex. @githubHandle
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Contact Details 2
+      placeholder: ex. @githubHandle
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Links to communication channels
+      placeholder: ex. Slack, WhatsApp, etc.
+      description: |
+        Please provide us with the communication channel link to reach out to you if needed.
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Reason for governance review request
+      description: |
+        What is the reason for your governance review request? This will help us understand the context of your request, help us prioritize it and also help us understand what you are looking for from the review.
+      options:
+        - CNCF Sandbox acceptance application
+        - Application for moving levels from Sandbox to Incubation
+        - Application for moving levels from Incubation to Graduation
+        - Other (please specify in the “Additional Notes” input at the end of this form)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Governance Information
+
+  - type: textarea
+    attributes:
+      label: Governance model
+      description: |
+        If your project governance is based on one of the [CNCF governance templates](https://contribute.cncf.io/maintainers/templates/governance-intro/), please indicate which one it is here, with any differences for your project.
+        If not, please write a short description of your governance model.
+    validations:
+      required: true
+      
+  - type: textarea
+    attributes:
+      label: Link to Incubating/Graduation/Sandbox Application
+      description: |
+        If your project is in the process of moving levels or being accepted into the CNCF please link to the Issue or PR for that event.  If for Incubation or Graduation, please fill out all items in the appropriate sections of that application (Governance and Contributing) before applying for a governance review.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Governance documents
+      description: |
+        Please provide the governance documentation of your project in separate lines. This would include links to documents that explain:
+        - Project purpose
+        - Maintainer List (with employer information)
+        - How your project is making decisions
+        - How and when contributors are moving through the contributor ladder (e.g. becoming a maintainer)
+        - Maintainer life cycle with information about how and when maintainers are demoted
+        - Code of Conduct
+        - Contributor Guide
+        - How your community conduct communication and meetings
+        - How your community handles security reporting and response
+        - Who owns what code and docs
+        
+        These documents do NOT need to be separate documents. Single document or a few documents that explain everything above is good for us to read, understand and evaluate your project governance.
+        
+        If these documents are already linked from an Incubation or Graduation application, you may simply
+        refer to that document by linking it here, and fill in only the documents not listed there.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Governance Execution Examples
+      description: |
+        Do you have any examples of execution of the governance? Examples could be:
+        - Voting
+        - Promoting a contributor / demoting a maintainer
+        - Security response
+        - Meeting recordings
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Governance Evolution
+      description: |
+        Governance evolution is the observable changes and improvements the project makes to its governance over the project's lifespan. It is expected that changes will occur over the project's life and that such changes are iterative, tested, and adjusted.
+
+        If there are any major milestones in the project's governance over time, please describe them here with supporting URL links.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional information
+
+  - type: textarea
+    attributes:
+      label: Any specific aspects of your governance structure are you seeking feedback on?
+
+  - type: textarea
+    attributes:
+      label: Do you have any concerns or specific areas where you feel your governance could be improved?
+
+  - type: textarea
+    attributes:
+      label: Additional notes and resources
+      description: Please add any additional notes and resources here.
