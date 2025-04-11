@@ -267,11 +267,11 @@ tags: # Technical Advisory Groups
           email: me@foobazbar.org
     tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fworkloads-foundation-initiative
 toc_subprojects: # TOC Subprojects
-  - dir: contributor-strategy-subproject # Contributor Strategy Subproject
-    name: Contributor Strategy Subproject
+  - dir: contributor-strategy-subproject-and-advocacy # Contributor Strategy and Advocacy Subproject
+    name: Contributor Strategy Subproject and Advocacy 
     mission_statement: Foo-Baz-Bar
     charter_link: charter.md
-    label: contributor-strategy-subproject
+    label: contributor-strategy-subproject-and-advocacy 
     leadership:
       chairs:
         - github: foo
@@ -296,11 +296,11 @@ toc_subprojects: # TOC Subprojects
           company: Foo Baz Bar co.
           email: me@foobazbar.org
     meetings:
-      - description: Contributor Strategy Subproject Meetings
+      - description: Contributor Strategy Subproject and Advocacy Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-contributor-strategy-subproject?view=list
         recordings_url: https://www.youtube.com/playlist?foo # to be updated
     contact:
-      slack: https://cloud-native.slack.com/archives/C08KGDKKHMY
+      slack: https://cloud-native.slack.com/archives/C08N4CKUHB2
       mailing_list: https://lists.cncf.io/g/contributor-strategy-subproject
       toc_liaison:
         github: foobar
@@ -313,11 +313,11 @@ toc_subprojects: # TOC Subprojects
     label: mentoring-subproject
     leadership:
       chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: nate-double-u
+          lfx_id: natewaddington
+          name: Nate Waddington
+          company: The Linux Foundation
+          email: nwaddington@linuxfoundation.org
         - github: foo
           lfx_id: baz
           name: Foo Baz Bar
