@@ -7,7 +7,7 @@ Foo-Baz-Bar
 
 ## Leadership
 ### Chairs
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
+- Nate Waddington (**[@nate-double-u](https://github.com/nate-double-u)**), The Linux Foundation
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 ### Tech Leads
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
