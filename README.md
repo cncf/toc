@@ -23,15 +23,10 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 * **Davanum Srinivas** (term: 2 years - start date: 2/16/2024 - 2/16/2026) [TOC-appointed]
 * **Alex Chircop**  (term: 2 years - start date: 3/4/2025 - 3/4/2027) [TOC-appointed]
 
-
 ## TOC Shadows
 
 * **Ricardo Aravena** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [GB-appointed][shadow]
 * **Kevin Klues** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [TOC-appointed][shadow]
-
-
-
-
 
 Election [schedule](operations/election-schedule.md)
 
@@ -52,23 +47,7 @@ The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific T
 https://zoom.us/j/967220397
 Passcode: 77777
 
-Or Telephone:
-
-> Dial:  
-> +1 646 558 8656 (US Toll) or  
-> +1 408 638 0968 (US Toll)  
-> 
-> +1 855 880 1246 (US Toll Free)  
-> +1 877 369 0926 (US Toll Free)
-> 
-> International numbers available [here](https://zoom.us/zoomconference?m=ddKUsXGa2tGOHvCl4ccI0juqU7TZaCov).
->
-> Meeting ID: 263 858 603
->
-> NOTE: _Please use `*6` to mute/un-mute your phone during the call_
-
 Here is a [Google calendar for all public CNCF events](https://goo.gl/eyutah). This calendar is also available on the [CNCF Website](https://www.cncf.io/calendar/)
-
 
 ## Meeting Agenda and Minutes
 - [Meeting Agenda and Minutes](https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3Akind%2Fmeeting%20)
@@ -95,7 +74,7 @@ Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we ar
 
 This is our [voting policy](docs/voting.md). Only TOC members can cast binding votes. (+1 Binding)
 
-## Technical Advisory Groups
+## Current Technical Advisory Groups
 
 The TOC has approved the formation of [TAGs](tags/cncf-tags.md).
 Currently, the following Technical Advisory Groups are active: 
@@ -109,14 +88,20 @@ Currently, the following Technical Advisory Groups are active:
 * [TAG Observability](https://github.com/cncf/tag-observability)
 * [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability)
 
+The current Technical Advisory Groups would be spun down during 2025 and replace with new Technical Advisory Groups and TOC Sub Projects, listed below.
 
-## Working Groups
+## New Technical Advisory Groups and TOC Sub Projects
 
-The TOC has created the following working groups to investigate and discuss the following topics:
+### New Technical Advisory Groups
 
-| Working Group | Chair            | Meeting Time                          | Minutes/Recordings |
-|---------------|------------------|---------------------------------------|--------------------|
-| [CI](https://github.com/cncf/wg-ci)         |   | Inactive | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
-| [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/my/cncfserverlesswg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
+* [TAG Developer Experiance](./tags/tag-developer-experience/)
+* [TAG Infrastructure](./tags/tag-infrastructure/)
+* [TAG Operational REsilience](./tags/tag-operational-resilience/)
+* [TAG Security and Compliance](./tags/tag-security-and-compliance/)
+* [TG Workloads-foundation](./tags/tag-workloads-foundation/charter.md)
 
-All meetings are on the public CNCF calendar: https://goo.gl/eyutah
+### TOC Sub Projects
+
+* [Contributor Strategy Subproject and Advocacy](./toc_subprojects/contributor-strategy-subproject-and-advocacy/)
+* [Mentoring Subproject](./toc_subprojects/mentoring-subproject/)
+* [Project Reviews Subproject](./toc_subprojects/project-reviews-subproject/)
