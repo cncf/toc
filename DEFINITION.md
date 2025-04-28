@@ -3,7 +3,7 @@
 *Approved by TOC/GB: 2024-02-26*
 
 [العربية](#العربية) (Arabic) | [հայերեն](#հայերեն) (Armenian) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
-[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) | [正體中文版本](#正體中文版本) (Traditional Chinese) | [فارسی](#فارسی) (Persian) | മലയാളം (Malayalam)
+[Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) | [正體中文版本](#正體中文版本) (Traditional Chinese) | [فارسی](#فارسی) (Persian) | മലയാളം (Malayalam) | [Қазақ](#қазақ) (Kazakh)
 
 ## Definition
 
@@ -248,3 +248,12 @@ Wij democratiseren state-of-the art software ontwikkel patterns, om deze innovat
 ക്ലൗഡ് നേറ്റീവ് സാങ്കേതികവിദ്യകളിലും ആർക്കിടെക്ചറുകളിലും സാധാരണയായി കണ്ടെയ്‌നറുകൾ, സർവീസ് മെഷുകൾ, മൾട്ടി-ടെനൻസി, മൈക്രോസർവീസുകൾ, മാറ്റാനാവാത്ത ഇൻഫ്രാസ്ട്രക്ചർ, സെർവർലെസ്, ഡിക്ലറേറ്റീവ് API-കൾ എന്നിവയുടെ ചില സംയോജനങ്ങൾ അടങ്ങിയിരിക്കുന്നു.
 
 ശക്തമായ ഓട്ടോമേഷനുമായി സംയോജിപ്പിച്ച്, ക്ലൗഡ് നേറ്റീവ് രീതികൾ ഓർഗനൈസേഷനുകളെ കുറഞ്ഞ അധ്വാനത്തോടെയും ആശങ്കകളുടെ വ്യക്തമായ വേർതിരിവോടെയും ഇടയ്ക്കിടെ, പ്രവചനാതീതമായി ഉയർന്ന സ്വാധീനം ചെലുത്തുന്ന മാറ്റങ്ങൾ വരുത്താൻ അനുവദിക്കുന്നു.ഈ നൂതനാശയങ്ങൾ എല്ലാവർക്കും ആക്‌സസ് ചെയ്യാവുന്ന തരത്തിൽ ഓപ്പൺ സോഴ്‌സ്, വെണ്ടർ-ന്യൂട്രൽ പ്രോജക്റ്റുകളുടെ ഒരു ആവാസവ്യവസ്ഥയെ വളർത്തിയെടുക്കുകയും നിലനിർത്തുകയും ചെയ്യുന്നതിലൂടെ. ഈ മാതൃക സ്വീകരിക്കാൻ ക്ലൗഡ് നേറ്റീവ് കമ്പ്യൂട്ടിംഗ് ഫൗണ്ടേഷൻ ശ്രമിക്കുന്നു.
+
+
+## Қазақ:
+
+Арнайы бұлтты (Cloud Native) технологиялар ұйымдарға жалпыға ортақ, жеке және гибридті бұлттар сияқты заманауи динамикалық ортада масштабталатын қосымшаларды жасауға және іске қосуға мүмкіндік береді. Контейнерлер, сервистік електер (service meshes), микросервистер, өзгертілмейтін инфрақұрылым және декларативті API бұндай тәсілдің мысалы болып табылады.
+
+Бұл техникалар әлсіз байланысқан жүйелердің орнықты, басқарылатын және тұрақты бақылауда болуына мүмкіндік береді. Сенімді автоматтандырумен үйлесімділікте олар инженерлерге аз күш жұмсай отырып, жиі және болжамды түрде елеулі өзгерістер енгізуге мүмкіндік береді.
+
+Cloud Native Computing Foundation бұл парадигманы жобалардың экожүйесін дамыту және қолдау арқылы олардың жеткізушілеріне тәуелсіз ашық бастапқы кодқа бейімдеуді мақсат етеді. Біз бұл инновацияларды баршаға қолжетімді ету үшін заманауи үлгілерді демократияландырамыз.
