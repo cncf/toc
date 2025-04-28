@@ -74,7 +74,7 @@ Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we ar
 
 This is our [voting policy](docs/voting.md). Only TOC members can cast binding votes. (+1 Binding)
 
-## Current Technical Advisory Groups
+## Technical Advisory Groups being phased out
 
 The TOC has approved the formation of [TAGs](tags/cncf-tags.md).
 Currently, the following Technical Advisory Groups are active: 
