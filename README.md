@@ -69,7 +69,6 @@ Or Telephone:
 
 Here is a [Google calendar for all public CNCF events](https://goo.gl/eyutah). This calendar is also available on the [CNCF Website](https://www.cncf.io/calendar/)
 
-
 ## Meeting Agenda and Minutes
 - [Meeting Agenda and Minutes](https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3Akind%2Fmeeting%20)
 - [Archive (2018.10~2024.08) of Meeting Working Doc](https://docs.google.com/document/d/1jpoKT12jf2jTf-2EJSAl4iTdA7Aoj_uiI19qIaECNFc/edit#). This includes minutes from previous meetings.
@@ -95,9 +94,9 @@ Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we ar
 
 This is our [voting policy](docs/voting.md). Only TOC members can cast binding votes. (+1 Binding)
 
-## Technical Advisory Groups
+## Technical Advisory Groups Being Phased Out
 
-The TOC has approved the formation of [TAGs](tags/cncf-tags.md).
+The TOC has approved the formation of [TAGs](./.archive/README.md).
 Currently, the following Technical Advisory Groups are active: 
 
 * [TAG-Security](https://github.com/cncf/tag-security)
@@ -109,14 +108,21 @@ Currently, the following Technical Advisory Groups are active:
 * [TAG Observability](https://github.com/cncf/tag-observability)
 * [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability)
 
+The current Technical Advisory Groups will be spun down during 2025 and replaced with new Technical Advisory Groups and TOC SubProjects, listed below.
 
-## Working Groups
+## New Technical Advisory Groups and TOC SubProjects
 
-The TOC has created the following working groups to investigate and discuss the following topics:
+### New Technical Advisory Groups
 
-| Working Group | Chair            | Meeting Time                          | Minutes/Recordings |
-|---------------|------------------|---------------------------------------|--------------------|
-| [CI](https://github.com/cncf/wg-ci)         |   | Inactive | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2P3_A3ujWHSxOu1IO_bd7Zi)
-| [Serverless](https://github.com/cncf/wg-serverless) | Ken Owens        |  [Thu of every week at 9AM PT](https://zoom.us/my/cncfserverlesswg)                                     | [Youtube](https://www.youtube.com/playlist?list=PLj6h78yzYM2Ph7YoBIgsZNW_RGJvNlFOt)
+* [TAG Developer Experience](./tags/tag-developer-experience/)
+* [TAG Infrastructure](./tags/tag-infrastructure/)
+* [TAG Operational Resilience](./tags/tag-operational-resilience/)
+* [TAG Security and Compliance](./tags/tag-security-and-compliance/)
+* [TAG Workloads Foundation](./tags/tag-workloads-foundation/charter.md)
 
-All meetings are on the public CNCF calendar: https://goo.gl/eyutah
+### TOC SubProjects
+
+* [Artificial Intelligence SubProject](./toc_subprojects/artificial-intelligence-subproject)
+* [Contributor Strategy SubProject and Advocacy](./toc_subprojects/contributor-strategy-subproject-and-advocacy/)
+* [Mentoring SubProject](./toc_subprojects/mentoring-subproject/)
+* [Project Reviews SubProject](./toc_subprojects/project-reviews-subproject/)
