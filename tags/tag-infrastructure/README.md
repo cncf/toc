@@ -24,7 +24,5 @@ Data, Storage, Network, DNS, Compute, Service Mesh, Infrastructure-as-Code, Edge
 
 ## Subprojects
 - **Infrastructure-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-infrastructure)
-### Subproject Leads
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 ## Initiatives
 [TAG Infrastructure Initiatives](https://github.com/cncf/toc/labels/tag%2Finfrastructure-initiative)
