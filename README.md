@@ -94,7 +94,7 @@ Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we ar
 
 This is our [voting policy](docs/voting.md). Only TOC members can cast binding votes. (+1 Binding)
 
-## Technical Advisory Groups being phased out
+## Technical Advisory Groups Being Phased Out
 
 The TOC has approved the formation of [TAGs](./.archive/README.md).
 Currently, the following Technical Advisory Groups are active: 
@@ -108,19 +108,19 @@ Currently, the following Technical Advisory Groups are active:
 * [TAG Observability](https://github.com/cncf/tag-observability)
 * [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability)
 
-The current Technical Advisory Groups would be spun down during 2025 and replace with new Technical Advisory Groups and TOC SubProjects, listed below.
+The current Technical Advisory Groups will be spun down during 2025 and replaced with new Technical Advisory Groups and TOC SubProjects, listed below.
 
-## New Technical Advisory Groups and TOC Sub Projects
+## New Technical Advisory Groups and TOC SubProjects
 
 ### New Technical Advisory Groups
 
-* [TAG Developer Experiance](./tags/tag-developer-experience/)
+* [TAG Developer Experience](./tags/tag-developer-experience/)
 * [TAG Infrastructure](./tags/tag-infrastructure/)
-* [TAG Operational REsilience](./tags/tag-operational-resilience/)
+* [TAG Operational Resilience](./tags/tag-operational-resilience/)
 * [TAG Security and Compliance](./tags/tag-security-and-compliance/)
 * [TG Workloads-foundation](./tags/tag-workloads-foundation/charter.md)
 
-### TOC Sub Projects
+### TOC SubProjects
 
 * [Artificial Intelligence SubProject](./toc_subprojects/artificial-intelligence-subproject)
 * [Contributor Strategy SubProject and Advocacy](./toc_subprojects/contributor-strategy-subproject-and-advocacy/)
