@@ -88,7 +88,7 @@ Currently, the following Technical Advisory Groups are active:
 * [TAG Observability](https://github.com/cncf/tag-observability)
 * [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability)
 
-The current Technical Advisory Groups would be spun down during 2025 and replace with new Technical Advisory Groups and TOC Sub Projects, listed below.
+The current Technical Advisory Groups would be spun down during 2025 and replace with new Technical Advisory Groups and TOC SubProjects, listed below.
 
 ## New Technical Advisory Groups and TOC Sub Projects
 
@@ -105,4 +105,4 @@ The current Technical Advisory Groups would be spun down during 2025 and replace
 * [Artificial Intelligence SubProject](./toc_subprojects/artificial-intelligence-subproject)
 * [Contributor Strategy SubProject and Advocacy](./toc_subprojects/contributor-strategy-subproject-and-advocacy/)
 * [Mentoring SubProject](./toc_subprojects/mentoring-subproject/)
-* [Project Reviews Sub Project](./toc_subprojects/project-reviews-subproject/)
+* [Project Reviews SubProject](./toc_subprojects/project-reviews-subproject/)
