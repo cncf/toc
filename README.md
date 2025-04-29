@@ -118,7 +118,7 @@ The current Technical Advisory Groups will be spun down during 2025 and replaced
 * [TAG Infrastructure](./tags/tag-infrastructure/)
 * [TAG Operational Resilience](./tags/tag-operational-resilience/)
 * [TAG Security and Compliance](./tags/tag-security-and-compliance/)
-* [TG Workloads-foundation](./tags/tag-workloads-foundation/charter.md)
+* [TAG Workloads Foundation](./tags/tag-workloads-foundation/charter.md)
 
 ### TOC SubProjects
 
