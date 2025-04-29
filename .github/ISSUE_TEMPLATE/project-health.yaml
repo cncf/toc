@@ -3,11 +3,29 @@ description: Register a concern regarding project health and alignment
 title: "[HEALTH]: "
 labels: ["health"]
 body:
+- type: markdown
+  attributes:
+    value: |
+      **Purpose of This Issue**
+
+      This Project Health Issue has been filed to ascertain the current activity and health of the project so the TOC may identify the appropriate support and guidance for the project to return to an optimal state of health or determination of archival.
+
+      It is intended to **initiate a public discussion to seek understanding** and define a path forward. Perceptions or commentary counter to this are not constructive for the project or the community. 
+
+      Should maintainers have sensitive, confidential, or private factors and concerns that influence or affect the project, they are encouraged to contact the TOC directly through CNCF Staff, the private-toc mailing list, Slack, or email.
 - type: input
   id: project
   attributes: 
     label: Project name
     description: Which project does this concern pertain to?
+  validations:
+    required: true
+- type: input
+  id: project-issue-link
+  attributes:
+    label: Project Issue Link
+    description: Please provide a link to the issue filed in the project's repository that corresponds to this TOC tracking issue.
+    placeholder: e.g., https://github.com/project/repo/issues/123
   validations:
     required: true
 - type: textarea
