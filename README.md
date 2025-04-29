@@ -106,3 +106,8 @@ The current Technical Advisory Groups will be spun down during 2025 and replaced
 * [Contributor Strategy SubProject and Advocacy](./toc_subprojects/contributor-strategy-subproject-and-advocacy/)
 * [Mentoring SubProject](./toc_subprojects/mentoring-subproject/)
 * [Project Reviews SubProject](./toc_subprojects/project-reviews-subproject/)
+
+
+### Updating TAG or SubProject README files
+
+To modify the README files for individual TAGs or subprojects, please **do not edit them directly**. Instead, the source of truth for these files is the [`tags.yaml`](https://github.com/cncf/toc/blob/main/tags.yaml) file. To understand the process for updating these READMEs by modifying `tags.yaml`, please refer to the [Updating TOC TAG and Subproject README Files document](./generator/updating-tag-and-toc=subproject-readme-files.md).
