@@ -122,7 +122,7 @@ The current Technical Advisory Groups would be spun down during 2025 and replace
 
 ### TOC Sub Projects
 
-* [Artificial Intelligence Sub Project](./toc_subprojects/artificial-intelligence-sub-project)
-* [Contributor Strategy Sub Project and Advocacy](./toc_subprojects/contributor-strategy-subproject-and-advocacy/)
-* [Mentoring Sub Project](./toc_subprojects/mentoring-subproject/)
+* [Artificial Intelligence SubProject](./toc_subprojects/artificial-intelligence-subproject)
+* [Contributor Strategy SubProject and Advocacy](./toc_subprojects/contributor-strategy-subproject-and-advocacy/)
+* [Mentoring SubProject](./toc_subprojects/mentoring-subproject/)
 * [Project Reviews Sub Project](./toc_subprojects/project-reviews-subproject/)
