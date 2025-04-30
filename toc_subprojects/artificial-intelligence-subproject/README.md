@@ -14,7 +14,7 @@ Foo-Baz-Bar
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 
 ## Meetings
-- **Artificial Intelligence SubProject Meetings**: | [Recordings](https://www.youtube.com/playlist?foo)
+- **Artificial Intelligence SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/artificial-intelligence-subproject?view=week) | [Recordings](https://www.youtube.com/@CNCFTOCArtificialIntelligenceS)
 
 ## Contact
 - Slack: [Tag Artificial Intelligence SubProject Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08Q78J65A7)

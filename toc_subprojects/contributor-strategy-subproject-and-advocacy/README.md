@@ -14,7 +14,7 @@ Foo-Baz-Bar
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 
 ## Meetings
-- **Contributor Strategy SubProject and Advocacy Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-contributor-strategy-subproject?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
+- **Contributor Strategy SubProject and Advocacy Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-contributor-strategy-subproject?view=list) | [Recordings](https://www.youtube.com/@CNCFTOCContributorStrategySubP)
 
 ## Contact
 - Slack: [Tag Contributor Strategy SubProject and Advocacy Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08N4CKUHB2)

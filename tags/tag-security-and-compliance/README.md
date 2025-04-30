@@ -15,7 +15,7 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 
 ## Meetings
-- **TAG Security and Compliance Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
+- **TAG Security and Compliance Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGSecurityandCompliance)
 
 ## Contact
 - Slack: [Tag TAG Security and Compliance Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08JZ9YLAA3)

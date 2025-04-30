@@ -15,7 +15,7 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 
 ## Meetings
-- **TAG Operational Resilience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
+- **TAG Operational Resilience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list) | [Recordings](https://www.youtube.com/@TAGOperationalResilience)
 
 ## Contact
 - Slack: [Tag TAG Operational Resilience Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08KGDENK34)

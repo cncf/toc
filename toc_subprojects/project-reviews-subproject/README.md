@@ -14,7 +14,7 @@ Foo-Baz-bar
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 
 ## Meetings
-- **Project Reviews SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-project-reviews-subproject?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
+- **Project Reviews SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-project-reviews-subproject?view=list) | [Recordings](https://www.youtube.com/@CNCFTOCProjectReviewsSubProjec)
 
 ## Contact
 - Slack: [Tag Project Reviews SubProject Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08M8L74NAJ)
