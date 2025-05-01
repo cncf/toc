@@ -15,7 +15,7 @@ Containers, OS, Runtime, Virtual Machines, Serverless, Web Assembly, Batch, Sche
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 
 ## Meetings
-- **TAG Workloads Foundation Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
+- **TAG Workloads Foundation Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGWorkloadsFoundation)
 
 ## Contact
 - Slack: [Tag TAG Workloads Foundation Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08K71W9HAS)

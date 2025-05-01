@@ -10,7 +10,7 @@ Foo-Baz-Bar
 - Nate Waddington (**[@nate-double-u](https://github.com/nate-double-u)**), The Linux Foundation
 
 ## Meetings
-- **Mentoring SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-mentoring-subproject?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
+- **Mentoring SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-mentoring-subproject?view=list) | [Recordings](https://www.youtube.com/@CNCFTOCMentoringSubProject)
 
 ## Contact
 - Slack: [Tag Mentoring SubProject Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/CGPK98JNQ)

@@ -15,7 +15,7 @@ Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 - Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
 
 ## Meetings
-- **TAG Developer Experience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list) | [Recordings](https://www.youtube.com/playlist?foo)
+- **TAG Developer Experience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGDeveloperExperience)
 
 ## Contact
 - Slack: [Tag TAG Developer Experience Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08KGCXB458)
