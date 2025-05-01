@@ -135,9 +135,9 @@ and should rotate/take turns as “primary” chair to allow responsibilities to
 ensuring consistency, availability, and continuity over the course of Chair terms and availability.
 
 Chairs build unity in the purpose of the group for which they govern and oversee. This includes
-sufficient consideration of ideas, topics, and issues presented, facilitate healthy discussion,
-delegate tasks (as appropriate), and ensure adherence to the TOC’s technical leadership principles
-and the TOC’s operating principles within their group.
+sufficient consideration of ideas, topics, and issues presented, facilitation of healthy discussion,
+delegation of tasks (as appropriate), and ensuring their group's adherence to both the TOC’s
+technical leadership principles and the TOC’s operating principles.
 
 Chairs ensure agreed tasks are carried out and that group decisions have consensus. They are
 responsible for reporting progress to their parent body (TOC).
