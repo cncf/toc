@@ -139,15 +139,17 @@ TAG charter PR, and the TAG is formed after the vote is passed.
   with any role membership requirements and lifecycle.  
 - MUST maintain TAG “metadata” - a list of leads, subprojects, and initiatives.  
 - Where applicable, MUST participate in Project Reviews & Contributor Strategy
-  TOC suThe expected minimum time commitment is at least 10% of their working
-  hours, but expected to increase (e.g up to 20%) during times with a high
-  volume of requests for sandbox inclusion, due diligence for
-  incubation/graduation, or/and not limited to KubeCon preparations.
+  TOC subproject.
+- If applicable, MUST document services provided to other TAGs or projects.
+- MUST hold at least one regularly scheduled *public* monthly meeting, recorded
+  and uploaded to YouTube.
+- MUST provide periodic updates to the TOC and TOC liaisons on their health,
+  subprojects, and initiatives.
 - SHOULD provide timely review and completion of project and TOC requests related
   to the moving levels process.  
 - SHOULD provide regular ecosystem updates on the domain, such as through the
   regular CNCF community meeting, KubeCon presentations, or to the TOC directly.  
-- SHOULD organize KubeCon CloudNativeCon presence; such as CFPs, Project
+- SHOULD organize KubeCon + CloudNativeCon presence; such as CFPs, Project
   Pavilion booths etc.  
 - SHOULD form and document subprojects to organize specific ongoing work or
   services.  
@@ -222,7 +224,7 @@ incubation/graduation, and/or or/and KubeCon preparations.
   planning.  
 - MUST, in conjunction with the Tech Leads, regularly triage their issues & PRs
   but MAY delegate to other contributors to fulfill these responsibilities.  
-- MUST organize KubeCon CloudNativeCon presence (CFPs, Project Pavilion booth,
+- MUST organize KubeCon + CloudNativeCon presence (CFPs, Project Pavilion booth,
   etc) and approve content presented by or about the TAG, but MAY delegate to
   other contributors.  
 - MUST, in conjunction with the Tech Leads, regularly provide status updates on
