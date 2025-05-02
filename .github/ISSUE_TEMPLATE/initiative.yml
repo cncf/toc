@@ -1,5 +1,5 @@
 name: 'Initative'
-description: Initiative request form WIP
+description: Initiative request form
 title: '[Initiative]:'
 labels:
   - kind/initiative
