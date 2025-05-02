@@ -177,8 +177,8 @@ diligence for incubation/graduation, or/and not limited to KubeCon preparations.
 - SHOULD mentor future Leads as part of active and continuous succession planning.  
 - MUST, in conjunction with the Tech Leads, regularly triage their issues & PRs but MAY delegate to
   other contributors to fulfill these responsibilities.  
-- MUST organize KubeCon CloudNativeCon presence (CFPs, Project Pavilion booth etc) and approve
-  presented content but MAY delegate to other contributors.  
+- MUST organize KubeCon CloudNativeCon presence (CFPs, Project Pavilion booth, etc) and approve
+  content presented by or about the TAG, but MAY delegate to other contributors.  
 - MUST, in conjunction with the Tech Leads, regularly provide status updates on their groups,
   subprojects, and any other initiatives.   
 - MUST coordinate service desk requests on behalf of the TAG.  
