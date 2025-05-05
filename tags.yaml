@@ -267,11 +267,11 @@ tags: # Technical Advisory Groups
           email: me@foobazbar.org
     tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fworkloads-foundation-initiative
 toc_subprojects: # TOC SubProjects
-  - dir: contributor-strategy-subproject-and-advocacy # Contributor Strategy and Advocacy Sub Project
-    name: Contributor Strategy SubProject and Advocacy 
+  - dir: contributor-strategy-and-advocacy-subproject # Contributor Strategy and Advocacy Sub Project
+    name: Contributor Strategy and Advocacy SubProject 
     mission_statement: Foo-Baz-Bar
     charter_link: charter.md
-    label: contributor-strategy-subproject-and-advocacy 
+    label: contributor-strategy-and-advocacy-subproject
     leadership:
       chairs:
         - github: foo
