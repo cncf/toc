@@ -442,10 +442,7 @@ Election requirements: Super-majority vote of the parent governing body.
 - MUST regularly report subproject status to the parent governing body.
 - SHOULD be an escalation point for technical discussions and decisions in the
   subproject.
-- SHOULD set milestone priorities. Subprojects MAY have other roles, but are
-  REQUIRED to be documented in the subproject charter and adhere to the
-  requirements outlined in the Other Roles section of the CNCF Community Group
-  Leadership Requirements.
+- SHOULD set milestone priorities.
 - SHOULD ensure a healthy process for discussion and decision making is in
   place. MAY make decisions to resolve conflicts.
 
