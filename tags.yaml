@@ -267,45 +267,6 @@ tags: # Technical Advisory Groups
           email: me@foobazbar.org
     tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fworkloads-foundation-initiative
 toc_subprojects: # TOC SubProjects
-  - dir: artificial-intelligence-subproject # Artificial Intelligence SubProject
-    name: Artificial Intelligence SubProject
-    mission_statement: Foo-Baz-Bar
-    charter_link: charter.md
-    label: toc/artificial-intelligence-subproject
-    leadership:
-      chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-      tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-    meetings:
-      - description:  Artificial Intelligence SubProject Meetings
-        tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/artificial-intelligence-subproject?view=week
-        recordings_url: https://www.youtube.com/@CNCFTOCArtificialIntelligenceS
-    contact:
-      slack: https://cloud-native.slack.com/archives/C08Q78J65A7
-      mailing_list: # To be updated
-      toc_liaison:
-        github: foobar
-        name: Foo Bar
-    subproject_initiatives: https://github.com/cncf/toc/labels/toc%2Fartificial-intelligence-subproject-Initiative
   - dir: contributor-strategy-subproject-and-advocacy # Contributor Strategy and Advocacy Sub Project
     name: Contributor Strategy SubProject and Advocacy 
     mission_statement: Foo-Baz-Bar
