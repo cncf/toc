@@ -31,7 +31,7 @@ tags: # Technical Advisory Groups
     meetings:
       - description: TAG Developer Experience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list # Calendar from PCC
-        recordings_url: https://www.youtube.com/playlist?foo # to be updated
+        recordings_url: https://www.youtube.com/@CNCFTAGDeveloperExperience
     contact:
       slack: https://cloud-native.slack.com/archives/C08KGCXB458
       mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/
@@ -46,7 +46,7 @@ tags: # Technical Advisory Groups
           slack: https://cloud-native.slack.com/archives/C08KGCXB458 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/ # Using parent TAG's contact
     leadership:
-      Subpproject Leads:
+      SubProject Leads:
         - github: foo
           lfx_id: baz
           name: Foo Baz Bar
@@ -85,7 +85,7 @@ tags: # Technical Advisory Groups
     meetings:
       - description: TAG Infrastructure Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list
-        recordings_url: https://www.youtube.com/playlist?foo # to be updated
+        recordings_url: https://www.youtube.com/@CNCFTAGInfrastructure
     contact:
       slack: https://cloud-native.slack.com/archives/C08KBH3RA1K
       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure
@@ -99,7 +99,7 @@ tags: # Technical Advisory Groups
           slack: https://cloud-native.slack.com/archives/C08KBH3RA1K # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure # Using parent TAG's contact
     leadership:
-      Subpproject Leads:
+      SubProject Leads:
         - github: foo
           lfx_id: baz
           name: Foo Baz Bar
@@ -138,7 +138,7 @@ tags: # Technical Advisory Groups
     meetings:
       - description: TAG Operational Resilience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list # Calendar link from PCC
-        recordings_url: https://www.youtube.com/playlist?foo # to be updated
+        recordings_url: https://www.youtube.com/@TAGOperationalResilience
     contact:
       slack: https://cloud-native.slack.com/archives/C08KGDENK34
       mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience
@@ -153,7 +153,7 @@ tags: # Technical Advisory Groups
           slack: https://cloud-native.slack.com/archives/C08KGDENK34 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience # Using parent TAG's contact
     leadership:
-      Subpproject Leads:
+      SubProject Leads:
         - github: foo
           lfx_id: baz
           name: Foo Baz Bar
@@ -192,7 +192,7 @@ tags: # Technical Advisory Groups
     meetings:
       - description: TAG Security and Compliance Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list
-        recordings_url: https://www.youtube.com/playlist?foo # to be updated
+        recordings_url: https://www.youtube.com/@CNCFTAGSecurityandCompliance
     contact:
       slack: https://cloud-native.slack.com/archives/C08JZ9YLAA3
       mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance
@@ -206,7 +206,7 @@ tags: # Technical Advisory Groups
           slack: https://cloud-native.slack.com/archives/C08JZ9YLAA3 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance # Using parent TAG's contact
     leadership:
-      Subpproject Leads:
+      SubProject Leads:
         - github: foo
           lfx_id: baz
           name: Foo Baz Bar
@@ -245,7 +245,7 @@ tags: # Technical Advisory Groups
     meetings:
       - description: TAG Workloads Foundation Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list
-        recordings_url: https://www.youtube.com/playlist?foo # to be updated
+        recordings_url: https://www.youtube.com/@CNCFTAGWorkloadsFoundation
     contact:
       slack: https://cloud-native.slack.com/archives/C08K71W9HAS
       mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation
@@ -259,19 +259,19 @@ tags: # Technical Advisory Groups
           slack: https://cloud-native.slack.com/archives/C08K71W9HAS # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation # Using parent TAG's contact
     leadership:
-      Subpproject Leads:
+      SubProject Leads:
         - github: foo
           lfx_id: baz
           name: Foo Baz Bar
           company: Foo Baz Bar co.
           email: me@foobazbar.org
     tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fworkloads-foundation-initiative
-toc_subprojects: # TOC Subprojects
-  - dir: contributor-strategy-subproject # Contributor Strategy Subproject
-    name: Contributor Strategy Subproject
+toc_subprojects: # TOC SubProjects
+  - dir: contributor-strategy-subproject-and-advocacy # Contributor Strategy and Advocacy Sub Project
+    name: Contributor Strategy SubProject and Advocacy 
     mission_statement: Foo-Baz-Bar
     charter_link: charter.md
-    label: contributor-strategy-subproject
+    label: contributor-strategy-subproject-and-advocacy 
     leadership:
       chairs:
         - github: foo
@@ -296,48 +296,48 @@ toc_subprojects: # TOC Subprojects
           company: Foo Baz Bar co.
           email: me@foobazbar.org
     meetings:
-      - description: Contributor Strategy Subproject Meetings
+      - description: Contributor Strategy SubProject and Advocacy Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-contributor-strategy-subproject?view=list
-        recordings_url: https://www.youtube.com/playlist?foo # to be updated
+        recordings_url: https://www.youtube.com/@CNCFTOCContributorStrategySubP
     contact:
-      slack: https://cloud-native.slack.com/archives/C08KGDKKHMY
+      slack: https://cloud-native.slack.com/archives/C08N4CKUHB2
       mailing_list: https://lists.cncf.io/g/contributor-strategy-subproject
       toc_liaison:
         github: foobar
         name: Foo Bar
     subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative
-  - dir: mentoring-subproject # Mentoring Subproject
-    name: Mentoring Subproject
+  - dir: mentoring-subproject # Mentoring SubProject
+    name: Mentoring SubProject
     mission_statement: Foo-Baz-Bar
     charter_link: charter.md
     label: mentoring-subproject
     leadership:
       chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-      tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: nate-double-u
+          lfx_id: natewaddington
+          name: Nate Waddington
+          company: The Linux Foundation
+          email: nwaddington@linuxfoundation.org
+  #      - github: foo
+  #        lfx_id: baz
+  #        name: Foo Baz Bar
+  #        company: Foo Baz Bar co.
+  #        email: me@foobazbar.org
+  #    tech_leads:
+  #      - github: foo
+  #        lfx_id: baz
+  #        name: Foo Baz Bar
+  #        company: Foo Baz Bar co.
+  #        email: me@foobazbar.org
+  #      - github: foo
+  #        lfx_id: baz
+  #        name: Foo Baz Bar
+  #        company: Foo Baz Bar co.
+  #        email: me@foobazbar.org
     meetings:
-      - description: Mentoring Subproject Meetings
+      - description: Mentoring SubProject Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-mentoring-subproject?view=list
-        recordings_url: https://www.youtube.com/playlist?foo # to be updated
+        recordings_url: https://www.youtube.com/@CNCFTOCMentoringSubProject
     contact:
       slack: https://cloud-native.slack.com/archives/CGPK98JNQ
       mailing_list: https://lists.cncf.io/g/tag-cs-mentoring-wg # to be updated with new name post kubecon
@@ -345,8 +345,8 @@ toc_subprojects: # TOC Subprojects
         github: foobar
         name: Foo Bar
     subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fmentoring-subproject-initiative
-  - dir: project-reviews-subproject # Project Reviews Subproject
-    name: Project Reviews Subproject
+  - dir: project-reviews-subproject # Project Reviews SubProject
+    name: Project Reviews SubProject
     mission_statement: Foo-Baz-bar
     charter_link: charter.md
     label: project-reviews-subproject
@@ -374,11 +374,11 @@ toc_subprojects: # TOC Subprojects
           company: Foo Baz Bar co.
           email: me@foobazbar.org
     meetings:
-      - description: Project Reviews Subproject Meetings
+      - description: Project Reviews SubProject Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-project-reviews-subproject?view=list
-        recordings_url: https://www.youtube.com/playlist?foo # to be updated
+        recordings_url: https://www.youtube.com/@CNCFTOCProjectReviewsSubProjec
     contact:
-      slack: https://cloud-native.slack.com/archives/C08KBHCQDPF
+      slack: https://cloud-native.slack.com/archives/C08M8L74NAJ
       mailing_list: https://lists.cncf.io/g/cncf-project-reviews-subproject
       toc_liaison:
         github: foobar

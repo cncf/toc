@@ -52,7 +52,7 @@ There have also been a number of integrations with other software stacks includi
 * Kelda (https://kelda.io/docs/tutorials/telepresence/)
 * Ambassador Cloud/Developer Control Pane (https://www.getambassador.io/)
 
-From a user standpoint, we have been engaging with the Telepresence community and growing the user base. The #telepresence slack channel has around 7700 members now and continues to be a great way for us to keep in touch with the community and receive feedback. We hold a live troubleshoting session through the channel weekly and usually work through 1-2 users issues. We also hold a monthly Maintainers meeting attended by our development team and open to anyone to ask questions, discuss features, etc.
+From a user standpoint, we have been engaging with the Telepresence community and growing the user base. The #telepresence slack channel has around 7700 members now and continues to be a great way for us to keep in touch with the community and receive feedback. We hold a live troubleshooting session through the channel weekly and usually work through 1-2 users issues. We also hold a monthly Maintainers meeting attended by our development team and open to anyone to ask questions, discuss features, etc.
 
 Some feedback we have received through these channels include:
 

@@ -23,7 +23,7 @@ In short, the Falco project has seen terrific growth and project participation s
 
 #### Github
 
-The CNCF provides Falco Github metrics through its [devstats site](https://falco.devstats.cncf.io/d/65/summary-dashboard?orgId=1&from=now-3y&to=now-1w&var-period=m&var-repo_name=Falco&var-repogroup_name=All&var-repogroups=All). The devstats metrics show that the Falco team has maintained a constant flow of commits, and has increased the velocity of commits. This is due in part to Sysdig's sponsorship of the project, providing 4 full time employees for the project. Overall comitters increased by 40 to 56, showing that while the sponsorship does influence commit velocity, the project is taking commits from a wider group outside of Sysdig. This is also evidenced by the Contributing Companies metric increasing from a max of 7 to a max of 13.
+The CNCF provides Falco Github metrics through its [devstats site](https://falco.devstats.cncf.io/d/65/summary-dashboard?orgId=1&from=now-3y&to=now-1w&var-period=m&var-repo_name=Falco&var-repogroup_name=All&var-repogroups=All). The devstats metrics show that the Falco team has maintained a constant flow of commits, and has increased the velocity of commits. This is due in part to Sysdig's sponsorship of the project, providing 4 full time employees for the project. Overall committers increased by 40 to 56, showing that while the sponsorship does influence commit velocity, the project is taking commits from a wider group outside of Sysdig. This is also evidenced by the Contributing Companies metric increasing from a max of 7 to a max of 13.
 
 | GitHub |Pre-Sandbox* (< 10-2018) | Post-Sandbox (>= 10-2018) | | 
 |--------|-------------------------|---------------------------|-|
@@ -124,7 +124,7 @@ Falco shipped a number of features and improvements since Sandbox. Below is a pa
 * MITRE Tagged Rules
 * Minimal Images
 * Response Engine for AWS & Google Cloud
-* Publish Events to SNS or Pub/Sub, Respond with Lamba or Functions
+* Publish Events to SNS or Pub/Sub, Respond with Lambda or Functions
 * Falco Operator in Red Hat Operator Hub (operatorhub.io)
 * Falco in GKE Marketplace
 * Falco Training open sourced
@@ -181,6 +181,6 @@ Longer term improvements included:
 The Falco project maintainers propose that Falco move to Incubation based on:
 
 * Use in production by 3 end users of note (Shopify, BAH, Frame.io).
-* A healthly number of committers and a growing committer base. In addition, a healthy online community.
+* A healthy number of committers and a growing committer base. In addition, a healthy online community.
 * Demonstrating a substantial ongoing flow of commits and merged contributions that focused on delivering a defined project roadmap and integrations.
 * A clear versioning scheme with dev and stable releases.

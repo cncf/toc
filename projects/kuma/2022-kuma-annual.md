@@ -13,7 +13,7 @@
 
 By bundling the Envoy proxy as the underlying data-plane technology, Kuma can instrument any L4/L7 traffic to secure, observe, route and enhance connectivity between any service or database. It can be used natively in Kubernetes via CRDs, while at the same time providing a RESTful API, a native CLI tool and a built-in GUI that can be used to better integrate Kuma with the rest of the organization.
 
-While Kuma provides easy to use Policy abstractions for most use-cases, Kuma also allows for the configuration of the underlying Envoy data-planes in a more fine-grained manner via the `ProxyTemplate` policy. By doing so, Kuma can be used by both first-time users of Service Mesh, as well as the most experienced ones who want greater control of the underlying networing stack.
+While Kuma provides easy to use Policy abstractions for most use-cases, Kuma also allows for the configuration of the underlying Envoy data-planes in a more fine-grained manner via the `ProxyTemplate` policy. By doing so, Kuma can be used by both first-time users of Service Mesh, as well as the most experienced ones who want greater control of the underlying networking stack.
 
 
 **Kuma was accepted as a CNCF Sandbox project on June, 2020.**
@@ -75,11 +75,11 @@ The goals of Kuma remain building a simple service mesh that doesn't only work f
 We're still very much aligned with this goal.
 In 2022 we've shipped features like:
 
-- ZoneEgress, enabling users to funel traffic through some hosts, to accomodate restrictive networking setups
+- ZoneEgress, enabling users to funnel traffic through some hosts, to accommodate restrictive networking setups
 - New Policy API making our policies more flexible and easier to use.
 - Support for Gateway API
 - Native Gateway avoiding the need to run a 3rd party gateway
-- Fully rewrote transparent proxy to accomodate more non kubernetes use cases
+- Fully rewrote transparent proxy to accommodate more non kubernetes use cases
 - Move to a predictable versioning policy which frequent patches especially for security.
 
 ### What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?
@@ -87,7 +87,7 @@ In 2022 we've shipped features like:
   - Technical
     - Performance improvements and qualification (we want to demonstrate that Kuma scales to O(10K) dataplanes and O(100) zones)
     - Make our new policy API default
-    - Simplify deployment topology for multi-zone setups. With the possibility to run Global and Zone in the same kubernes cluster.
+    - Simplify deployment topology for multi-zone setups. With the possibility to run Global and Zone in the same kubernetes cluster.
 
   - Community
     - Further, grow the number of contributors

@@ -24,7 +24,7 @@ OpenEBS was approved as a [CNCF Sandbox Project on May 14th, 2019](https://githu
 
 ## Develoment metrics
 
-Here are a few highligths from the project's [devstats page](https://openebs.devstats.cncf.io/), looking at the 1 year period after
+Here are a few highlights from the project's [devstats page](https://openebs.devstats.cncf.io/), looking at the 1 year period after
 2020 annual review (Jul 2020 - Jun 2021):
 
  - This year we welcomed [101 new contributors](https://openebs.devstats.cncf.io/d/52/new-contributors-table?orgId=1&from=1593455400000&to=1625077799000) across our repositories.
@@ -78,20 +78,20 @@ Our goals from last year annual review were:
   - Enhance Jiva to make use of OpenEBS Local Volumes instead of `hostpath` volumes
   - Enhance Jiva and cStor volumes to deal with Read-only mounts and multi-attach errors that happen due a abrupt node reboots 
   - Support for multi-arch images - with native support for AMD64 and ARM64
-  - Enhance Local PV volumes to be backed by LVM and Device partitions in addition to hospath and ZFS from earlier releases
+  - Enhance Local PV volumes to be backed by LVM and Device partitions in addition to hostpath and ZFS from earlier releases
   - Enhance OpenEBS velero plugin to perform ZFS Local PV incremental backups 
   - Enhance Mayastor to handle Kubernetes node failure scenarios. Working closely with the upstream SPDK community to push NVMe and other fixes 
   - Migrating all the CI pipelines to GitHub Actions
   - Refactor and modularize our system (e2e) tests so that they can be run against a data engine. Helps to release each engines independently
   - Refactor and modularize the helm charts to release each data engine independently to allow users to install only the required components
-  - Split most of the mono repos into functionality based repos for better managebility and contributor experience
+  - Split most of the mono repos into functionality based repos for better manageability and contributor experience
    
 **What are the current goals of the project? For example, are you working on major new features? Or are you concentrating on adoption or documentation?**
 
 Our goals for the next year will be focused on:
   - Continue to progress on hitting the GA for all the data engines by listening to users and working on the [planned items](https://github.com/openebs/openebs/blob/master/ROADMAP.md) 
   - Focus more on community, reference architectures and solution documents that can increase the adoption of Kubernetes for running Stateful workloads. 
-  - Follow through with the feedback being recieved from the CNCF Storage TAG to help with Incubation of the project
+  - Follow through with the feedback being received from the CNCF Storage TAG to help with Incubation of the project
 
 
 ## CNCF membership
@@ -100,7 +100,7 @@ Our goals for the next year will be focused on:
 
 First off, thank you for all the help and support provided by CNCF team in the past year in the following areas for the OpenEBS project:
 * Guidance on the licensing related questions from CNCF legal and coaching from the CNCF Storage TAG on how to address some of the concerns. 
-* Providing venues during KubeCon for presening Project Office hours 
+* Providing venues during KubeCon for presenting Project Office hours 
 * CNCF Mentorship and Bugbash programs that have helped with increasing the contributions to the project. 
 * Helping on queries related to process and governance. 
 

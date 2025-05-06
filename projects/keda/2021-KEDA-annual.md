@@ -44,7 +44,7 @@ The full maintainer list can be found in our [GitHub repository](https://github.
 
 Since we have joined as a CNCF Sandbox project we've seen a **big growth in terms of our scalers, community, and users**.
 
-When we initially joined KEDA, we provided around ~15 scalers to our users which were targetting the major cloud providers (AWS, Azure, Google Cloud) as well as popular technologies such as Prometheus and Kafka. **Over the past year, we've grown to more than 30+ scalers** supporting more cloud providers, more technologies, added various features, and providing production-grade security. This effort was not only by our maintainers but mainly by our community who started contributing back more and more.
+When we initially joined KEDA, we provided around ~15 scalers to our users which were targeting the major cloud providers (AWS, Azure, Google Cloud) as well as popular technologies such as Prometheus and Kafka. **Over the past year, we've grown to more than 30+ scalers** supporting more cloud providers, more technologies, added various features, and providing production-grade security. This effort was not only by our maintainers but mainly by our community who started contributing back more and more.
 
 One of our focus points has been in **growing the community** by getting people to our community standups, listing who is using KEDA provide, and give it a [central place in our documentation](https://keda.sh/community/). This allows people who are considering to use KEDA to get trust in the technology and start using it themselves or learn how they are using it.
 

@@ -93,7 +93,7 @@ N/A
 
   The project maintainers have been highly responsive throughout the process.
 
-  Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
+  Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisfies the Due Diligence Review criteria.
 
 - [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
  
@@ -226,9 +226,9 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
-  The goal of the Dapr project is to codify the traditional 3-tier software architecture pattern - client/server/database - into a cloud native microservice architecture via software building blocks. The objective is to negate the traditional drawbacks of the 3-tier software pattern by enabling agility, redudancy, scale-out/scale-in, resiliency, platform independence and high availability through a cloud native software design.
+  The goal of the Dapr project is to codify the traditional 3-tier software architecture pattern - client/server/database - into a cloud native microservice architecture via software building blocks. The objective is to negate the traditional drawbacks of the 3-tier software pattern by enabling agility, redundancy, scale-out/scale-in, resiliency, platform independence and high availability through a cloud native software design.
   
-  An additional objective is to simplify building microservice applications for traditional and cloud native application developers by providing standardized service building blocks and familiar SDKs for multiple programming languages - allowing organizations with teams that utilize disparate programming languages a lower barrier to entry for writing and maintaining coud native microservice applications. 
+  An additional objective is to simplify building microservice applications for traditional and cloud native application developers by providing standardized service building blocks and familiar SDKs for multiple programming languages - allowing organizations with teams that utilize disparate programming languages a lower barrier to entry for writing and maintaining cloud native microservice applications. 
 
   The Dapr project is currently targeted for medium to large enterprises. The most common adoption pattern being seen mostly in financial service, retail and healthcare. The target persona is application developers, who interact with Dapr via SDKs, Rest APIs or native gRPC clients.
   
@@ -294,7 +294,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   
   [Issue #8188 in the Dapr repo](https://github.com/dapr/dapr/issues/8188) has been created to track tagging policy clarification.
 
-  The current tagging strategy is sufficent to meet the requirements for Graduation with the recommendation to complete the issues identified soon after Graduation.
+  The current tagging strategy is sufficient to meet the requirements for Graduation with the recommendation to complete the issues identified soon after Graduation.
   
   - [x] Information on branch and tag strategies
 
@@ -359,7 +359,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
   
   TOC reviewers do not view completing the TAG Security self-assessment as a blocker to Graduation given review of all presented materials.
   
-  TOC issue [1451](https://github.com/cncf/toc/pull/1451) was created and merged to link to the TAG Security self-assessment for future applicationa.
+  TOC issue [1451](https://github.com/cncf/toc/pull/1451) was created and merged to link to the TAG Security self-assessment for future applications.
 
 - [x] **Third Party Security Review.**
 

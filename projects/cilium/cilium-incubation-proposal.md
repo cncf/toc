@@ -140,7 +140,7 @@ cilium
 
 ## License
 
-* The main agent is licensered under [Apache 2.0](https://github.com/cilium/cilium/blob/master/LICENSE)
+* The main agent is licensed under [Apache 2.0](https://github.com/cilium/cilium/blob/master/LICENSE)
 * Portions of the eBPF datapath code are licensed under the [GPL](https://github.com/cilium/cilium/blob/master/bpf/COPYING)
 
 ## Maturity Level
@@ -262,7 +262,7 @@ N/A
 
 ## Statement on alignment with CNCF mission
 
-Cilium's misson is to provide open source networking and network security for
+Cilium's mission is to provide open source networking and network security for
 the cloud native ecosystem. Cilium is deeply integrated with Kubernetes, etcd,
 Prometheus, Envoy, and other CNCF projects. More and more users are adopting Cilium
 and making it a key part of their infrastructure. As such, there is a mutual
@@ -281,7 +281,7 @@ https://cilium.io/
 
 ## Release methodology and mechanics
 
-Cilium employs semantic versioning to name each release ([release process details](https://docs.cilium.io/en/v1.9/contributing/release/)) and compiled container images hosted on [Quay](https://quay.io/repository/cilium/cilium) and [Docker Hub](https://hub.docker.com/u/cilium). SHA256 checksums are provided for all distributed binaries. The release process is fully automated. A new minor release is released every 4 months with extensive release notes. In between minor releaess, micro releaes for the last 3 minor releases are provided regularly with backports of crucial bugfixes and security fixes.
+Cilium employs semantic versioning to name each release ([release process details](https://docs.cilium.io/en/v1.9/contributing/release/)) and compiled container images hosted on [Quay](https://quay.io/repository/cilium/cilium) and [Docker Hub](https://hub.docker.com/u/cilium). SHA256 checksums are provided for all distributed binaries. The release process is fully automated. A new minor release is released every 4 months with extensive release notes. In between minor releases, micro releases for the last 3 minor releases are provided regularly with backports of crucial bugfixes and security fixes.
 
 ## Security processes
 

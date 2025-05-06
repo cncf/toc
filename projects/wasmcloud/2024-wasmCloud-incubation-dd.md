@@ -84,7 +84,7 @@ N/A
 
   The project maintainers have been highly responsive throughout the process.
 
-  Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
+  Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisfies the Due Diligence Review criteria.
 
 - [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
   
@@ -98,7 +98,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Clear and discoverable project governance documentation.**
 
-  WasmCloud's governace is listed at the root of the wasmCloud repo in [GOVERNANCE.md](https://github.com/wasmCloud/wasmCloud/blob/e56ef1246475372803269be008babe7725c03733/GOVERNANCE.md)
+  WasmCloud's governance is listed at the root of the wasmCloud repo in [GOVERNANCE.md](https://github.com/wasmCloud/wasmCloud/blob/e56ef1246475372803269be008babe7725c03733/GOVERNANCE.md)
 
 - [x] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
@@ -116,7 +116,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
   WasmCloud has two processes for decision making scoped at the org (top) level or at the (sub)project level.
-  - [Org Level](https://github.com/wasmCloud/wasmCloud/blob/e56ef1246475372803269be008babe7725c03733/GOVERNANCE.md#decision-making-at-the-wasmcloud-org-level) - Adding, archiving, or removing subprojects, CoC type issuese etc.
+  - [Org Level](https://github.com/wasmCloud/wasmCloud/blob/e56ef1246475372803269be008babe7725c03733/GOVERNANCE.md#decision-making-at-the-wasmcloud-org-level) - Adding, archiving, or removing subprojects, CoC type issues etc.
   - [Project Level](https://github.com/wasmCloud/wasmCloud/blob/e56ef1246475372803269be008babe7725c03733/GOVERNANCE.md#decision-making-at-the-wasmcloud-project-level) - Day to day operations or [Architectural Decision Records](https://github.com/wasmCloud/wasmCloud/blob/e56ef1246475372803269be008babe7725c03733/CONTRIBUTING.md#proposing-an-idea)
 
   Both use a lazy consensus model, or where required a super/simple-majority. They do explicitly mention that when proposing a design change that there should be sufficient input from different invested parties (e.g. vendors) before a decision is made.
@@ -211,7 +211,7 @@ The [wasmcloud slack](https://slack.wasmcloud.com/) is linked from from their si
 
 - [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-  Their schedule and meeting agenda/notes are available on the project webiste under the [community section](https://wasmcloud.com/community). They also regularly [stream & post their meetings to YouTube](https://www.youtube.com/@wasmCloud/streams).
+  Their schedule and meeting agenda/notes are available on the project website under the [community section](https://wasmcloud.com/community). They also regularly [stream & post their meetings to YouTube](https://www.youtube.com/@wasmCloud/streams).
 
 - [x] **Documentation of how to contribute, with increasing detail as the project matures.**
 
@@ -279,7 +279,7 @@ N/A
 
 - [x] **Clearly defined and discoverable process to report security issues.**
 
-  Information on reporting a security issue is present in [SECUIRTY.md](https://github.com/wasmCloud/wasmCloud/blob/e56ef1246475372803269be008babe7725c03733/SECURITY.md) and it is cross-linked from their website.
+  Information on reporting a security issue is present in [SECURITY.md](https://github.com/wasmCloud/wasmCloud/blob/e56ef1246475372803269be008babe7725c03733/SECURITY.md) and it is cross-linked from their website.
 
 - [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
@@ -335,7 +335,7 @@ ADOPTER 1 works on a container platform team for an Information Technology servi
 
 ADOPTER 1 is currently a customer of Cosmonic who employs the majority of wasmCloud maintainers. The platform team had been been passively working with the wasmCloud maintainers for a year and more actively for the last 6 months. Their production applications are getting ready to deploy using Akamai and they plan to reach their edge devices with an existing CDN provider. After that, ADOPTER 1 plans to look at more deployments. The delay is not necessarily due to wasmCloud feature gaps - but Javascript compatibility in Wasm itself.
 
-ADOPTER 1 has an existing platform based on Apache OpenWhisk - an open source serverless platform - which supports third party developers. The platform also uses AWS Lambda as well as Apache Functions. Cloud providers generally limit long running workloads, however, ADOPTER 1 does not want to artificially create a limit to various long running workloads for their end users. ADOPTER 1 could use other providers but it would likely result in costly rewrites to their applications. The current plan to address the limitations is to deprecate the Apache OpenWhisk based version of the existing platfrom and move it to wasmCloud.
+ADOPTER 1 has an existing platform based on Apache OpenWhisk - an open source serverless platform - which supports third party developers. The platform also uses AWS Lambda as well as Apache Functions. Cloud providers generally limit long running workloads, however, ADOPTER 1 does not want to artificially create a limit to various long running workloads for their end users. ADOPTER 1 could use other providers but it would likely result in costly rewrites to their applications. The current plan to address the limitations is to deprecate the Apache OpenWhisk based version of the existing platform and move it to wasmCloud.
 
 The platform team is currently running wasmCloud version 1.14 and upgrade in place as wasmCloud releases -- which, at this time, is in an ad hoc manner in order to take advantage of testing new features and functionality. In the future, ADOPTER 1 will move to a more consistent release cadence. New releases are testing in ADOPTER 1's test/stage environment and they haven't had to roll back any releases so far. ADOPTER 1's team does have to rewrite application code in order to take advantage of new functionality and not due to any issues with compatibility.
 

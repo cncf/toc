@@ -86,7 +86,7 @@ Belows are just the list of companies that we know have deployed SuperEdge in th
 Since joining the CNCF, SuperEdge has published key features:
 
 - NodeUnit and NodeGroup enhancement to use CRD to manipulate the Node Pools
-- Lite-apiserver enhancement to cache critical resources with the puropse of reducing network traffic
+- Lite-apiserver enhancement to cache critical resources with the purpose of reducing network traffic
 - Application-grid-wrapper support to watch `Ingress` resource to enable `nginx-ingress-controller` at NodeUnit
 - Reconstruct `Tunnel` architecture to support Cloud and Edge Level 7 communication
 - Originally release `Kins` feature to support whole lifecycle management of edge K*s cluster

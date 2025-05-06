@@ -11,7 +11,7 @@ Current cloud native deployments build software using a complex process that
 is vulnerable to attack.  Building software involves a software supply chain 
 comprised of version control systems, build servers, CI/CD systems, test frameworks, 
 localization, etc. that must all be honest or else the software may be tampered with.  
-in-toto is the first framework to provide cryptograpically
+in-toto is the first framework to provide cryptographically
 verifiable, full-system provenance of all the artifacts (e.g., source code files, 
 executables, documentation, pictures, etc.) within the supply chain.  As a result,
 in-toto is able to defend against malicious parties that tamper with a company's
@@ -118,7 +118,7 @@ Blogposts related to in-toto are currently published in NYU's secure systems's l
 in-toto's release process for the reference implementation has a strict
 adherence with semver. The release schedule is as follows:
 
-* 2 months of feature develoment
+* 2 months of feature development
 * 1 one month of feature freeze
 * 1 month of release candidacy
 
@@ -139,6 +139,6 @@ ensure compliance and security for all tools, hence protecting cloud application
 
 in-toto aligns with the CNCF mission statement by:
 
-* being-container transparent: when designing in-toto, we considered the nature of all toolchains involved in contemporary applications. As such, in-toto can be used in and out of the cloud interchangably. Furthermore, in-toto can be used in hybrid cloud setups.
+* being-container transparent: when designing in-toto, we considered the nature of all toolchains involved in contemporary applications. As such, in-toto can be used in and out of the cloud interchangeably. Furthermore, in-toto can be used in hybrid cloud setups.
 * Helping to enforce cloud native best practices: in-toto layouts are a great place to locate cloud native policy information. With it, parties can judge and verify that a project is, in-fact, running a correct process in their cloud native pipeline. Our admission webhook can be used to enforce the admission of pods, daemonsets and statefulsets that strictly followed the layout assigned to them.
  

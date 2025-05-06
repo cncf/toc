@@ -10,7 +10,7 @@
 
 ## Background
 
-[Keptn](https://keptn.sh/) is a cloud-native application life-cycle orchestration tool. Its goal is not to replace tools that are already present in an organization but to connect and orchestrate them to support the life-cycle management of applications. Keptn enables DevOps engineers as well as Site Reliabiliy Engineers (SRE) to scale delivery and operations automation in their organizations. 
+[Keptn](https://keptn.sh/) is a cloud-native application life-cycle orchestration tool. Its goal is not to replace tools that are already present in an organization but to connect and orchestrate them to support the life-cycle management of applications. Keptn enables DevOps engineers as well as Site Reliability Engineers (SRE) to scale delivery and operations automation in their organizations. 
 
 Keptn builds upon declarative definitions for multi-stage environments, SLO-based quality gates, and auto-remediation and integrates with tools via an event-based approach. 
 

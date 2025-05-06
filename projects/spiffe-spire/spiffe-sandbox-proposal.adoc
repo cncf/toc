@@ -68,7 +68,7 @@ SPIFFE has the following primary mailing lists, nearly all of which were used pr
 
 * [Discussions] Developers & Contributors (link:https://groups.google.com/a/spiffe.io/forum/#!forum/dev-discussion[website]): used by The purpose of this Google Group is for SPIFFE developers and contributors to discuss design and implementation issues.
 
-* [Discussions] Users (link:https://groups.google.com/a/spiffe.io/forum/#!forum/user-discussion[website]): The purpose of this Groogle Group is to give feedback, ask questions, and interact with the SPIFFE community. You can also check out SPIFFE on GitHub.
+* [Discussions] Users (link:https://groups.google.com/a/spiffe.io/forum/#!forum/user-discussion[website]): The purpose of this Google Group is to give feedback, ask questions, and interact with the SPIFFE community. You can also check out SPIFFE on GitHub.
 
 * [SIG] Components (link:https://groups.google.com/a/spiffe.io/forum/#!forum/sig-components[website]): The purpose of this Google Group is to discuss items related to the components and APIs tied to SPIFFE's reference implementation (SPIRE) and its architecture. Topics such as role of Node Agent vs. Cluster CA, API semantics, and others serve as good examples of what's to be discussed.
 

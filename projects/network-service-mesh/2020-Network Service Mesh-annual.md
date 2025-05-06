@@ -47,7 +47,7 @@ Network Service Mesh does this without disturbing (and taking care not to break)
 by the runtime.  K8s Networking via CNI is untouched, and continues to work as expected.
 
 Network Service Mesh makes IP networking itself Cloud Native by loosely coupling with the existing 
-immutable infrastrcture in K8s to deliver whatever non-standard Networking needs a workload has with minimal toil.
+immutable infrastructure in K8s to deliver whatever non-standard Networking needs a workload has with minimal toil.
 
 NSM is a complement to higher level L7 Service Meshes (Linkerd), providing an additional 
 connectivity,security and observability at lower layers.

@@ -6,7 +6,7 @@
 
 Longhorn is an open source distributed block storage software for Kubernetes. It is a lightweight and portable implementation of persistent storage that works for any Kubernetes cluster. The project implements distributed block device volumes that can be mounted as read-write by a single node (ReadWriteOnce).
 
-Longhorn is designed to leverage the existing Linux technologies as much as possible, rather than building a complex storage technology stack from scratch. The software takes advange of modern high-speed and high capacity SSD and NVMe storage, and proven Linux storage features like sparse files and cgroups.
+Longhorn is designed to leverage the existing Linux technologies as much as possible, rather than building a complex storage technology stack from scratch. The software takes advantage of modern high-speed and high capacity SSD and NVMe storage, and proven Linux storage features like sparse files and cgroups.
 
 The most distinct feature of Longhorn is to implement each volume as an independent microservice. By leveraging Kubernetes to orchestrate the volumes, it implements a highly feature-rich enterprise-grade distributed block storage system with about 30K line of Golang code.
 
@@ -26,7 +26,7 @@ Longhorn consists of the following major components:
 
 ***Engine and Replicas***
 
-The Longhorn engine is the microservice used to implement each volume. The engine implements the data plane of reading and writing the block devices. Each Longhorn volume is implemented using one engine and multiple replicas. The engine always runs on the same node as the pod consuming the volume, whereas Longhorn replicas reside on different nodes to ensure redundency.
+The Longhorn engine is the microservice used to implement each volume. The engine implements the data plane of reading and writing the block devices. Each Longhorn volume is implemented using one engine and multiple replicas. The engine always runs on the same node as the pod consuming the volume, whereas Longhorn replicas reside on different nodes to ensure redundancy.
 
 Longhorn delivers added resiliency because the data plane for each volume is separate. A software bug that causes one volume to malfunction does not impact other volumes in the system.
 

@@ -10,7 +10,7 @@ ChaosBlade contains the following main components:
 ![ChaosBlade Architecture](https://chaosblade.io/img/chaosblade-main-components.png)
 
 - **ChaosBlade-Box Console**：The ChaosBlade visualization component mainly provides a set of user-friendly Web UI, through which users can arrange and manage chaos engineering experiments.
-- **ChaosBlade-Box Server**：The core logic component is mainly responsible for the management and arrangement of chaos engineering experiments, probe and application management. Including components, Chaos Engine: exercise engine, including process orchestration, security control, exercise report and other functions; Chaos Runner: exercise executor, compatible with a variety of execution tools; Chaos Experinece: exercise experience library, etc.
+- **ChaosBlade-Box Server**：The core logic component is mainly responsible for the management and arrangement of chaos engineering experiments, probe and application management. Including components, Chaos Engine: exercise engine, including process orchestration, security control, exercise report and other functions; Chaos Runner: exercise executor, compatible with a variety of execution tools; Chaos Experience: exercise experience library, etc.
 - **ChaosBlade-Agent**：The core logic component is deployed on the host of the user terminal or in the Kubernetes cluster. It is mainly responsible for establishing a connection with ChaosBlade-Box Server, reporting the heartbeat and serving as a command delivery channel.
 - **ChaosBlade**：The main execution tool can perform fault injection on different environments such as the Host and Kubernetes, and can perform fault interference on system network devices, file systems, kernels, and applications running on the system.
 
