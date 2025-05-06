@@ -1,5 +1,11 @@
 # CNCF Technical Group Governance
 
+**NOTE:** This document is a **starting point**. It is expected to change and
+be refined as we roll out the TAG restructuring and discover what works, what
+doesn't, and where we can reduce friction or overhead. Thank you for your
+patience and understanding while we work through this together.
+
+
 This document outlines the scope and responsibilities of the CNCF Technical
 Groups
 
@@ -8,14 +14,14 @@ different purposes or have different scopes:
 
 - **Technical Advisory Group (TAG)**: Primary organizational unit that is
   aligned with an industry problem domain or a group that serves a common need
-  across TAGs & CNCF Projects.   
+  across TAGs & CNCF Projects.
 - **Subproject**: An ongoing or “permanent” project as part of a TAG or the TOC
-  directly.  
+  directly.
 - **Initiative:** A lightweight organizational unit used for TAG or TOC work
-  that is tightly scoped and time-bound.  
+  that is tightly scoped and time-bound.
 - **Community Group:** A topic or domain focused group used to serve as a
   rallying point for community members to discuss, share knowledge, and
-  coordinate potential future initiatives. 
+  coordinate potential future initiatives.
 
 - [CNCF Technical Group Governance](#cncf-technical-group-governance)
 - [Keywords](#keywords)
@@ -66,13 +72,13 @@ standards bodies, such as the [Internet Engineering Task Force (IETF)] and the
 [Kubernetes project].
 
 - **MUST** - This word, or the terms "**REQUIRED**" or "**SHALL**," means that
-  the item is required.  
+  the item is required.
 - **MUST NOT** - This phrase, or the phrase "**SHALL NOT**", means that the item
-  is not permitted or must be avoided.  
+  is not permitted or must be avoided.
 - **SHOULD** -  This word, or the adjective "**RECOMMENDED**," means the item is
-  suggested but may be ignored for valid reasons.  
+  suggested but may be ignored for valid reasons.
 - **SHOULD NOT** - This phrase, or the phrase "**NOT RECOMMENDED**," means the
-  item is acceptable under certain circumstances.  
+  item is acceptable under certain circumstances.
 - **MAY** - This word, or the adjective "**OPTIONAL**," means the item is truly
   optional.
 
@@ -91,7 +97,7 @@ focused on industry problem domains that align with the projects within the CNCF
 and/or horizontal that support the other TAGs or the projects themselves.
 
 **Examples:**
-- **Vertical:** Infrastructure, Workloads  
+- **Vertical:** Infrastructure, Workloads
 - **Horizontal:** Security & Compliance, Operational Resilience
 
 
@@ -100,15 +106,15 @@ and/or horizontal that support the other TAGs or the projects themselves.
 - Strengthen the project ecosystem to meet the needs of end users and project
   contributors.
 - Serve as a “bridge” between projects to surface common problems and drive
-  alignment.  
+  alignment.
 - Identify gaps in the CNCF project portfolio. Find and attract projects to fill
-  these gaps.  
+  these gaps.
 - Reduce some project workload on TOC while retaining executive control & tonal
-  integrity with this elected body.  
+  integrity with this elected body.
 - Provide technical expertise during the evaluation of projects to join the CNCF
-  and as they move levels.  
+  and as they move levels.
 - Educate and inform users with unbiased, effective, and practically useful
-  information scoped to cloud native.  
+  information scoped to cloud native.
 - Focus attention & resources on helping foster project maturity, systematically
   across CNCF projects.
 
@@ -124,7 +130,7 @@ Due to the longevity of a TAG, existing groups interested in becoming a TAG need
 to engage the TOC, the TOC will review the request against the current needs and
 movement of the ecosystem and make a determination.
 
-Example:  
+Example:
 A domain-focused community group has regularly submitted and completed
 initiatives that cover gaps in the current TAG structure. After a discussion
 with the TOC, a draft charter with scopes is drafted. The TOC then votes on the
@@ -134,10 +140,11 @@ TAG charter PR, and the TAG is formed after the vote is passed.
 ### Requirements
 
 - MUST have a charter that outlines scope, potential overlaps with other TAGs,
-  and any operational deviations from TAGs.  
+  and any operational deviations from TAG Governance.
 - MUST enumerate any roles within the TAG and the responsibilities of each along
-  with any role membership requirements and lifecycle.  
-- MUST maintain TAG “metadata” - a list of leads, subprojects, and initiatives.  
+  with any role membership requirements and lifecycle.
+- MUST maintain TAG “[metadata]” - a list of leads, subprojects, and
+  initiatives.
 - Where applicable, MUST participate in Project Reviews & Contributor Strategy
   TOC subproject.
 - If applicable, MUST document services provided to other TAGs or projects.
@@ -145,17 +152,17 @@ TAG charter PR, and the TAG is formed after the vote is passed.
   and uploaded to YouTube.
 - MUST provide periodic updates to the TOC and TOC liaisons on their health,
   subprojects, and initiatives.
-- SHOULD provide timely review and completion of project and TOC requests related
-  to the moving levels process.  
+- SHOULD provide timely review and completion of project and TOC requests
+  related to the moving levels process.
 - SHOULD provide regular ecosystem updates on the domain, such as through the
-  regular CNCF community meeting, KubeCon presentations, or to the TOC directly.  
+  regular CNCF community meeting, KubeCon presentations, or to the TOC directly.
 - SHOULD organize KubeCon + CloudNativeCon presence; such as CFPs, Project
-  Pavilion booths etc.  
+  Pavilion booths etc.
 - SHOULD form and document subprojects to organize specific ongoing work or
-  services.  
+  services.
 - SHOULD produce well researched and informed technical white papers, best
-  practices, and other ecosystem supportive assets.  
-- SHOULD surface gaps or ecosystem trends to related projects.  
+  practices, and other ecosystem supportive assets.
+- SHOULD surface gaps or ecosystem trends to related projects.
 - SHOULD check in with graduated and incubating projects to understand their
   health, features, changes, etc. and notify the TOC of anything significant,
   any gaps, novelty, interesting, concerning.
@@ -167,10 +174,9 @@ TAG charter PR, and the TAG is formed after the vote is passed.
 
 A Chair is an individual who is responsible for overseeing and driving the
 planning, execution, and accountability of efforts within the TAG. TAG chairs
-are expected to equally share responsibilities, and should rotate/take turns as
-“primary” chair to allow responsibilities to be executed while ensuring
-consistency, availability, and continuity over the course of Chair terms and
-availability.
+are expected to share responsibilities equally. They should consider
+rotating/taking turns performing chair duties to ensure consistency,
+availability, and continuity over the course of Chair terms and availability.
 
 Chairs build unity in the purpose of the group for which they govern and
 oversee. This includes sufficient consideration of ideas, topics, and issues
@@ -194,75 +200,70 @@ incubation/graduation, and/or or/and KubeCon preparations.
 
 ##### Requirements
 
-- MUST be approved by the TOC.  
-- MUST adhere to the [Technical Leadership Principles].  
-- Membership MUST be tracked alongside the TAG metadata.  
+- MUST be approved by the TOC.
+- MUST adhere to the [Technical Leadership Principles].
+- Membership MUST be tracked alongside the TAG [metadata].
 - MUST have prior experience within the CNCF (e.g. as an active TAG community
-  member), but MAY be approved by their parent governing body for an explicitly
-  documented reason such as extensive domain expertise, formation of a new
-  governing body (e.g. new TAG or Working Group), or demonstrating significant
-  aptitude for people & community management.
+  member), but MAY be approved by the TOC for an explicitly documented reason
+  such as extensive domain expertise, formation of a new governing body (e.g.
+  new TAG or subproject), or demonstrating significant aptitude for people &
+  community management.
 
 
 ##### Duties
 
 - SHOULD drive charter changes (including creation) to get community buy-in but
-  MAY delegate content creation to other leads or community members.  
+  MAY delegate content creation to other leads or community members.
 - SHOULD define how priorities and commitments are managed and set a cap on
   concurrent efforts of the group per quarter. MAY delegate to other leads as
-  needed.  
+  needed.
 - MUST ensure leadership roles are documented, accurate, and updated in any
-  applicable locations (GitHub teams, mailing lists, etc).  
+  applicable locations (GitHub teams, mailing lists, etc).
 - MUST ensure all subprojects are documented and operate within the scope
-  defined in their charter.  
+  defined in their charter.
 - MUST coordinate communication and be a connector with other community groups
   like TAGs and the TOC, but MAY delegate the actual communication and creation
-  of content to other contributors where appropriate.  
+  of content to other contributors where appropriate.
 - SHOULD facilitate meetings but MAY delegate to other Leads or active community
-  members.  
+  members.
 - SHOULD mentor future Leads as part of active and continuous succession
-  planning.  
+  planning.
 - MUST, in conjunction with the Tech Leads, regularly triage their issues & PRs
-  but MAY delegate to other contributors to fulfill these responsibilities.  
+  but MAY delegate to other contributors to fulfill these responsibilities.
 - MUST organize KubeCon + CloudNativeCon presence (CFPs, Project Pavilion booth,
   etc) and approve content presented by or about the TAG, but MAY delegate to
-  other contributors.  
+  other contributors.
 - MUST, in conjunction with the Tech Leads, regularly provide status updates on
-  their groups, subprojects, and any other initiatives.   
-- MUST coordinate service desk requests on behalf of the TAG.  
+  their groups, subprojects, and any other initiatives.
+- MUST coordinate service desk requests on behalf of the TAG.
 - MUST keep the TOC liaisons informed of the group’s activities and progress
   against the charter.
 
 
 ##### Activity Expectations
 
-- Chairs serve 2-year terms and MAY submit for re-election.  
-- Chairs SHOULD remain active and responsive.  
+- Chairs serve 2-year terms and MAY submit for re-election.
+- Chairs SHOULD remain active and responsive.
 - Chairs MAY decide to step down at any time and propose a replacement to
-  complete their term.   
+  complete their term.
   - The candidate SHOULD be supported by a majority of the current active leads,
     with support backed up by documentation, such as links to GitHub activity
     or documented deliverables.
-  - The candidate is REQUIRED to be approved by the TOC.  
+  - The candidate is REQUIRED to be approved by the TOC.
 - Chairs taking an extended leave of 1 or more months MUST coordinate with
-  other leads to ensure the role is adequately covered during their leave.  
+  other leads to ensure the role is adequately covered during their leave.
 - Chairs going on leave for 1-3 months MUST work with other Chairs and Tech
   Leads to identify a temporary replacement.
-- Active Leads are REQUIRED to notify their parent governing body (e.g., TAG
-  notifying their TOC liaison) and receive confirmation of notice before
-  pursuing removal of an inactive or Lead found to be in dereliction of duty.
-- Inactive Leads MUST be removed through a super-majority vote of the parent
-  governing body if there is no other explicitly defined removal policy.
-- If there is no defined removal policy and not enough active parent governing
-  body leads to hold a vote, the active members MUST escalate to the next-level
-  parent governing body, where those members may count as additional voters.
+- Active Leads are REQUIRED to notify the TOC and receive confirmation of notice
+  before pursuing removal of an inactive or Chair found to be in dereliction of
+  duty.
+- Inactive Chairs MUST be removed through a super-majority vote of the TOC.
 
 
 ##### Escalations
 
-- Lead membership disagreements MAY be escalated to their parent governing body,
-  the CoCC as applicable, or in the event of further dispute, up to the top
-  governing body itself (TOC).
+- Lead membership disagreements MAY be escalated to the TOC or the CoCC as
+  applicable.
 
 
 #### Tech Lead
@@ -274,14 +275,14 @@ by the TOC or their TAG Chair. Tech Leads are accountable to the Chair or TOC
 for the group they are assigned.
 
 Tech Leads ensure timely delivery and completion of defined milestones and
-deliverables for TAGs or initiatives for which they are assigned. 
+deliverables for TAGs or initiatives for which they are assigned.
 
 Tech Leads are also responsible for guiding the technical aspects of efforts by
 a TAG or initiative. This includes ensuring neutrality (no kingmaking) in
 recommendations and enforcement of TOC operating principles in deliverables.
 They ensure quality and integrity in the deliverables of each group, providing
 technical mentorship and guidance to contributors of their group, and
-collaborating within and across groups to ensure consistency and concurrence.  
+collaborating within and across groups to ensure consistency and concurrence.
 
 The expected minimum time commitment is at least 10% of their working hours, but
 expected to increase (e.g up to 20%) during times with a high volume of requests
@@ -291,81 +292,72 @@ incubation/graduation, and/or or/and KubeCon preparations.
 
 ##### Requirements
 
-- SHOULD be nominated by Chairs.  
-- MUST be approved by the TOC.  
-- MUST adhere to the [Technical Leadership Principles].  
-- Membership MUST be tracked alongside the TAG metadata.  
+- SHOULD be nominated by Chairs.
+- MUST be approved by the TOC.
+- MUST adhere to the [Technical Leadership Principles].
+- Membership MUST be tracked alongside the TAG [metadata].
 - MUST have prior experience within the CNCF (e.g. as an active TAG community
-  member), but MAY be approved by their parent governing body for an explicitly
-  documented reason such as extensive domain expertise, formation of a new
-  governing body (e.g. new TAG or Working Group), or demonstrating significant
-  aptitude for people & community management. 
+  member), but MAY be approved by the TOC for an explicitly documented reason
+  such as extensive domain expertise, formation of a new governing body (e.g.
+  new TAG or subproject), or demonstrating significant aptitude for people &
+  community management.
 
 ##### Duties
 
-- MUST approve & facilitate the creation of new subprojects.  
-- MUST approve & facilitate decommissioning of existing subprojects.  
+- MUST approve & facilitate the creation of new subprojects.
+- MUST approve & facilitate decommissioning of existing subprojects.
 - If applicable MUST work with the TOC to evaluate the technical fit and state
   of projects applying to join the CNCF or move levels. MAY delegate to other
-  leads or domain experts.  
+  leads or domain experts.
 - MUST review technical outputs or artifacts from the group for accuracy. This
-  includes white papers, code, other forms of technical documentation, etc.  
+  includes white papers, code, other forms of technical documentation, etc.
 - SHOULD mentor future Leads as part of active and continuous succession
-  planning.  
+  planning.
 - MUST, in conjunction with the Chairs, regularly triage their issues & PRs but
-  MAY delegate to other contributors to fulfill these responsibilities.  
+  MAY delegate to other contributors to fulfill these responsibilities.
 - MUST, in conjunction with the Chairs, regularly provide updates on the status
-  of their groups, subprojects, and any other initiatives.   
+  of their groups, subprojects, and any other initiatives.
 - SHOULD attend regular group meetings.
+
 
 ##### Activity Expectations
 
-- Tech Leads serve 2 year terms, and MAY submit for re-election.  
+- Tech Leads serve 2 year terms, and MAY submit for re-election.
 - Tech Leads MAY decide to step down at any time and propose a replacement to
-  complete their term.   
+  complete their term.
   - The candidate SHOULD be supported by a majority of the current active leads,
     with support backed up by documentation, such as links to GitHub activity
     or documented deliverables.
-  - The candidate is REQUIRED to be approved by the TOC.  
+  - The candidate is REQUIRED to be approved by the TOC.
 - Tech Leads taking an extended leave of 1 or more months MUST coordinate with
-  other leads to ensure the role is adequately covered during their leave.  
+  other leads to ensure the role is adequately covered during their leave.
 - Tech Leads going on leave for 1-3 months MUST work with other Leads to
-  identify a temporary replacement.  
-- Active Leads are REQUIRED to notify their parent governing body (e.g., TAG
-  notifying their TOC liaison) and receive confirmation of notice before
-  pursuing removal of an inactive or Lead found to be in dereliction of duty.
-- Inactive Leads MUST be removed through a super-majority vote of the parent
-  governing body if there is no other explicitly defined removal policy.
-- If there is no defined removal policy and not enough active parent governing
-  body leads to hold a vote, the active members MUST escalate to the next-level
-  parent governing body, where those members may count as additional voters.
+  identify a temporary replacement.
+- Active Leads are REQUIRED to notify the TOC and receive confirmation of notice
+  before pursuing removal of an inactive or Tech Lead found to be in dereliction
+  of duty.
+- Inactive Tech Leads MUST be removed through a super-majority vote of the TOC.
+
 
 
 ##### Escalations
 
-- Lead membership disagreements MAY be escalated to their parent governing body,
-  the CoCC as applicable, or in the event of further dispute, up to the top
-  governing body itself (TOC).
+- Lead membership disagreements MAY be escalated to the TOC or the CoCC as
+  applicable.
 
 
 #### Other Roles
 
-TAGs MAY have other roles, but are REQUIRED to be documented in the TAG charter
-and adhere to the requirements outlined in the Other Roles section of the CNCF
-Community Group Leadership Requirements.
+TAGs MAY have other roles, but they are REQUIRED to be documented in the TAG
+charter and REQUIRE TOC approval.
 
-**NOTE:** Roles that assume some of the responsibilities of the Chair or Tech
-Lead role MUST be described in the TAG charter and REQUIRE TOC approval.
+All additional roles are REQUIRED to have the following minimum requirements:
 
-Roles that do not assume any Chair or Tech Lead responsibilities may be created
-at the TAG Leads discretion as long as they adhere to the following
-requirements:
-
-- MUST be documented with a description, scope, and responsibilities.  
+- MUST be documented with a description, scope, and responsibilities.
 - MUST have a documented lifecycle policy including how they are appointed, any
-  potential terms, and an inactivity policy.  
-- MUST be tracked alongside the other TAG metadata.  
-- MUST adhere to the [Technical Leadership Principles].  
+  potential terms, and an inactivity policy.
+- MUST be tracked alongside the other TAG [metadata].
+- MUST adhere to the [Technical Leadership Principles].
 - SHOULD remain active and responsive in their Roles.
 
 
@@ -374,26 +366,26 @@ requirements:
 Specific on-going work efforts within TAGs or under the TOC are divided into
 subprojects. Subprojects may be code, documentation, services, or any other
 persistent work effort. Subprojects have leads that function as the primary
-organizer, domain experts, or points of contact. 
+organizer, domain experts, or points of contact.
 
 ### Goals
 
-- Assist the projects, TOC, and other TAGs  
+- Assist the projects, TOC, and other TAGs
 - Remove ambiguity and provide guidance, increasing knowledge and understanding
-  on the subproject domain  
-- Support projects and end users in addressing items in scope of the subproject  
+  on the subproject domain
+- Support projects and end users in addressing items in scope of the subproject
 - Coordinate awareness, understanding, concurrence of the subproject
-  deliverables with projects, end users, and other defined stakeholders  
+  deliverables with projects, end users, and other defined stakeholders
 - Advance and accelerate the cloud native mission within the scope of the
-  subproject  
+  subproject
 - Enact the technical vision of the TOC within scope of the subproject
 
 
 ### Formation
 
 Subprojects require a charter describing their purpose, scope, roles, and any
-regular deliverables or services they provide.  This charter MUST be approved by
-the TOC. 
+regular deliverables (e.g. [Subproject Initiatives]) or services they provide.
+This charter MUST be approved by the TOC.
 
 It is strongly recommended to share a draft charter and work with the TOC early
 to ensure a streamlined approval process.
@@ -402,12 +394,12 @@ to ensure a streamlined approval process.
 ### Requirements
 
 - MUST be documented including purpose, scope, roles and any deliverables or
-  services they provide.  
+  services they provide.
 - MUST remain actively in use. A subproject that has gone 6+ months without
   delivering on its goal or providing a service should be considered for
-  retirement or put on “pause”.  
+  retirement or put on “pause”.
 - MUST regularly report on status to leads. Updates SHOULD occur at least
-  quarterly.  
+  quarterly.
 - SHOULD have at least 2 subproject leads. In the absence of defined subproject
   leads, responsibility for the subproject automatically falls to the Chairs and
   Tech Leads of the TAG. For TOC Subprojects, subproject leads fall to the TOC
@@ -423,59 +415,52 @@ organizing and shepherding the execution of the subproject. They adhere to the
 requirements, duties and expectations outlined in the Subproject Lead role
 description in CNCF Community Group Leadership Requirements.
 
-Recommended minimum number of leads: 2  
-Term: 1 year  
+Recommended minimum number of leads: 2
+Term: 1 year
 Election requirements: Super-majority vote of the parent governing body.
 
-Subproject Leads are the technical authority for a subproject. They MUST have
-demonstrated both good judgement and responsibility towards the health of that
-subproject.
-
-
-##### Requirements
-
-- MUST be approved by a super-majority vote of the parent governing body.  
-- MUST adhere to the [Technical Leadership Principles].  
+- MUST adhere to the [Technical Leadership Principles].
 - MUST be nominated by the TAG’s Tech Leads (minimum 1) for TAG led subprojects,
   or by the TOC (minimum 1) for TOC led subprojects.
-- Membership MUST be tracked alongside the parent governing body metadata.  
+- Membership MUST be tracked alongside the parent governing body [metadata].
 - SHOULD have prior experience within the CNCF (e.g. as an active TAG community
   member), but MAY be approved by their parent governing body for an explicitly
   documented reason such as extensive domain expertise, formation of a new
-  governing body (e.g. new TAG or Working Group), or demonstrating significant
-  aptitude for people & community management. 
+  governing body (e.g. new TAG or subproject), or demonstrating significant
+  aptitude for people & community management.
 
 
 ##### Duties
 
 - SHOULD set direction and make or approve design decisions for their
-  subproject - either directly or through delegation.   
+  subproject - either directly or through delegation.
   - Design decisions that make changes outside of the subproject’s defined scope
-    MUST be approved by the Tech Lead(s) of the TAG.  
+    MUST be approved by the Tech Lead(s) of the TAG for TAG level subprojects,
+    or by the TOC for TOC level subprojects.
 - MUST actively participate in triaging issues and reviewing PRs related to
-  their subproject.  
-- MUST regularly report subproject status to TAG leadership.  
+  their subproject.
+- MUST regularly report subproject status to the parent governing body.
 - SHOULD be an escalation point for technical discussions and decisions in the
-  subproject.  
-- SHOULD set milestone priorities.   
+  subproject.
+- SHOULD set milestone priorities.
 - SHOULD ensure a healthy process for discussion and decision making is in
   place. MAY make decisions to resolve conflicts.
 
 
 ##### Activity Expectations
 
-- Subproject Leads serve 1 year terms, and  MAY submit for re-election.  
+- Subproject Leads serve 1 year terms, and  MAY submit for re-election.
 - Subproject Leads MAY decide to step down at any time and propose a replacement
-  to complete their term.   
+  to complete their term.
   - The candidate SHOULD be supported by a majority of the current active leads,
     with support backed up by documentation, such as links to GitHub activity
-    or documented deliverables. 
+    or documented deliverables.
   - The candidate is REQUIRED to be approved by the parent TAG’s Tech Leads, or
     in the case of TOC lead subprojects, the TOC itself.
 - Subproject Leads taking an extended leave of 1 or more months MUST coordinate
-  with other leads to ensure the role is adequately covered during their leave.  
+  with other leads to ensure the role is adequately covered during their leave.
 - Subproject Leads going on leave for 1-3 months MAY work with other Leads to
-  identify a temporary replacement.  
+  identify a temporary replacement.
 - Active Leads are REQUIRED to notify their parent governing body (e.g., TAG
   notifying their TOC liaison) and receive confirmation of notice before
   pursuing removal of an inactive or Lead found to be in dereliction of duty.
@@ -495,24 +480,18 @@ subproject.
 
 #### Other Roles
 
-Subprojects MAY have other roles, but are REQUIRED to be documented in the
-subproject charter and adhere to the requirements outlined in the Other Roles
-section of the CNCF Community Group Leadership Requirements.
+Subprojects MAY have other roles, but they are REQUIRED to be documented in the
+subproject charter and require the approval of their parent governing body.
 
-**NOTE:** Roles that assume some of the responsibilities of the Subproject Lead
-role MUST be described in the Subproject charter and REQUIRE approval from the
-parent governing body.
+All additional roles are REQUIRED to have the following minimum requirements:
 
-Roles that do not assume any Subproject Lead responsibilities may be created at
-the Subproject Leads discretion as long as they adhere to the following
-requirements:
-
-- MUST be documented with a description, scope, and responsibilities.  
+- MUST be documented with a description, scope, and responsibilities.
 - MUST have a documented lifecycle policy including how they are appointed, any
-  potential terms, and an inactivity policy.  
-- MUST be tracked alongside the other TAG metadata.  
-- MUST adhere to the [Technical Leadership Principles].  
+  potential terms, and an inactivity policy.
+- MUST be tracked alongside the other group [metadata].
+- MUST adhere to the [Technical Leadership Principles].
 - SHOULD remain active and responsive in their Roles.
+
 
 
 ## Initiatives
@@ -529,9 +508,9 @@ governing group's charter.
 
 ### Goals
 
-- Serve as a lightweight organizational unit to coordinate work.  
+- Serve as a lightweight organizational unit to coordinate work.
 - Recognize community members who have helped execute and deliver on the
-  initiative.  
+  initiative.
 - Ensure high-velocity completion of scoped effort with clear outcomes aligned
   with the CNCF mission and TOC vision.
 
@@ -552,7 +531,7 @@ shepherding the initiative, but are still ultimately responsible for it.
 TAG initiatives can span multiple TAGs when something spans multiple tech
 domains, however one is ultimately assigned as the responsible group for
 execution and reporting. Initiatives that span many TAGs, or have no clear owner
-should be proposed as TOC initiatives. 
+should be proposed as TOC initiatives.
 
 
 #### Subproject Initiatives
@@ -573,17 +552,17 @@ initiative's status.
 ### Requirements
 
 - MUST be documented, including goals, milestones, deliverables, and any exit
-  criteria (e.g., a tracking GitHub issue).  
+  criteria (e.g., a tracking GitHub issue).
 - Initiatives MUST have more than two participants not including the assigned
-  lead for oversight.  
+  lead for oversight.
 - SHOULD actively be worked on. An initiative that has made little progress in
   3 months should be canceled or paused until other contributors can be
-  identified.   
+  identified.
 - Initiatives SHOULD not last longer than 2 quarters but MAY request an
-  extension from their parent governing body with reasonable justification.  
+  extension from their parent governing body with reasonable justification.
 - MUST check in at least monthly to assess the initiative's continued need,
-  progress, and ability to meet.  
-- SHOULD acknowledge everyone who actively helped complete the initiative.  
+  progress, and ability to meet.
+- SHOULD acknowledge everyone who actively helped complete the initiative.
 - Subproject based initiatives MAY have different requirements that are outlined
   in the subproject charter.
 
@@ -637,5 +616,6 @@ Bevy (Community Groups backing platform).
 
 <!-- Common Links -->
 
+[metadata]: https://github.com/cncf/toc/blob/main/tags.yaml
 [Technical Leadership Principles]: https://github.com/cncf/toc/blob/main/.md#technical-leadership-principles
 [CNCF Community Groups Program]: https://github.com/cncf/communitygroups
