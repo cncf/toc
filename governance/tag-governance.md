@@ -587,10 +587,17 @@ tailored for community management, making them the best place for
 discussion-oriented groups.
 
 Additionally, it is likely that future TAGs and subprojects will likely start as
-community groups. If they have proposed and completed numerous initiatives and
-cover a gap in the currently defined groups, then they may engage the TOC to
-determine if it makes sense to propose the formation of a TAG.
+community groups. 
 
+A community group applying to become a TAG or subproject:
+
+- MUST have completed numerous initiatives and cover a gap in the currently
+  defined groups
+- MUST have a documented history of collaboration with the parent group they
+  are applying to
+- MUST be approved by the TOC
+- MUST have its leadership established through the same processes outlined in
+  the respective section above for TAGs or subprojects
 
 [much broader exposure]: https://community.cncf.io/
 
