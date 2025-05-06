@@ -597,7 +597,7 @@ A community group applying to become a TAG or subproject:
   are applying to
 - MUST be approved by the TOC
 - MUST have its leadership established through the same processes outlined in
-  the respective section above for TAGs or subprojects
+  the respective section above for TAGs or subprojects, following approval
 
 [much broader exposure]: https://community.cncf.io/
 
