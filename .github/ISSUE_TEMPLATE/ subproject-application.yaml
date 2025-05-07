@@ -1,0 +1,99 @@
+name: 'Subproject Application'
+description: Subproject application form
+title: '[Subproject Application]:'
+labels:
+  - kind/subproject-application
+body:
+  - type: input
+    id: subproject-name
+    attributes:
+      label: Subproject Name
+      placeholder: Name of the proposed subproject
+    validations:
+      required: true
+  - type: dropdown
+    id: parent-group
+    attributes:
+      label: Parent Group
+      description: The Technical Advisory Group (TAG) or the TOC under which this subproject will reside
+      options:
+        - TOC or TOC SubProject
+        - TAG Developer Experience
+        - TAG Infrastructure
+        - TAG Operational Resilience
+        - TAG Security and Compliance
+        - TAG Workloads Foundation
+    validations:
+      required: true
+  - type: textarea
+    id: mission-purpose
+    attributes:
+      label: Mission/Purpose
+      placeholder: Describe the core problem or opportunity this subproject aims to address. What value will it bring to the CNCF community and its projects?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      placeholder: Clearly define the boundaries of the subproject. What specific areas will it cover? What is explicitly *out* of scope?
+    validations:
+      required: true
+  - type: textarea
+    id: goals-and-objectives
+    attributes:
+      label: Goals and Objectives
+      placeholder: List 3-5 specific, measurable, achievable, relevant, and time-bound (SMART) goals for this subproject. Use bullet points or numbered list.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-leads
+    attributes:
+      label: Proposed Leads
+      placeholder: Identify the proposed Technical Leads for this subproject. Include their names, affiliations, and a brief description of their relevant experience and why they are suitable for these roles. Use bullet points or numbered list.
+    validations:
+      required: true
+  - type: textarea
+    id: initial-participants
+    attributes:
+      label: Initial Participants/Contributors
+      placeholder: List any individuals or organizations who have expressed interest in actively contributing to this subproject. Use bullet points or numbered list.
+  - type: textarea
+    id: benefits-to-cncf
+    attributes:
+      label: Benefits to CNCF
+      placeholder: Explain the anticipated positive impact of this subproject on CNCF projects and/or the wider cloud native ecosystem.
+    validations:
+      required: true
+  - type: textarea
+    id: alignment-with-parent
+    attributes:
+      label: Alignment with Parent Group
+      placeholder: Demonstrate the synergy between the proposed subproject and its parent TAG or the TOC.
+    validations:
+      required: true
+  - type: textarea
+    id: communication-channels
+    attributes:
+      label: Proposed Communication Channels
+      placeholder: Specify the primary communication channels that will be used for this subproject (e.g., Slack channel, mailing list, GitHub repository). Use bullet points or numbered list.
+  - type: textarea
+    id: initial-deliverables
+    attributes:
+      label: Proposed Initial Deliverables (if applicable)
+      placeholder: Outline any concrete outputs or results expected in the initial phase of the subproject. Use bullet points or numbered list.
+  - type: textarea
+    id: potential-future-work
+    attributes:
+      label: Potential Future Work/Evolution
+      placeholder: Briefly describe how you envision this subproject might evolve over time.
+  - type: input
+    id: sponsorship-name
+    attributes:
+      label: Sponsoring CNCF Project or TOC Member (if applicable)
+      placeholder: Name of Sponsoring CNCF Project or TOC Member
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      placeholder: Include any other relevant details that support this application.
