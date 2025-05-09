@@ -624,5 +624,5 @@ Bevy (Community Groups backing platform).
 <!-- Common Links -->
 
 [metadata]: https://github.com/cncf/toc/blob/main/tags.yaml
-[Technical Leadership Principles]: https://github.com/cncf/toc/blob/main/.md#technical-leadership-principles
+[Technical Leadership Principles]: https://github.com/cncf/toc/blob/main/PRINCIPLES.md#technical-leadership-principles
 [CNCF Community Groups Program]: https://github.com/cncf/communitygroups
