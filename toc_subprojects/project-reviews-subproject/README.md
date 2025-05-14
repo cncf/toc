@@ -7,11 +7,7 @@ Foo-Baz-bar
 
 ## Leadership
 ### Chairs
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-### Tech Leads
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
+- Kevin Klues (**[@klueska](https://github.com/klueska)**), NVIDIA
 
 ## Meetings
 - **Project Reviews SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-project-reviews-subproject?view=list) | [Recordings](https://www.youtube.com/@CNCFTOCProjectReviewsSubProjec)

@@ -7,11 +7,7 @@ Foo-Baz-Bar
 
 ## Leadership
 ### Chairs
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-### Tech Leads
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
+- The Contributor Strategy and Advocacy Subproject are lead by CNCF staff to support projects and contributors (**[@](https://github.com/)**)
 
 ## Meetings
 - **Contributor Strategy SubProject and Advocacy Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-contributor-strategy-subproject?view=list) | [Recordings](https://www.youtube.com/@CNCFTOCContributorStrategySubP)
