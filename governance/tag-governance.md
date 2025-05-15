@@ -61,8 +61,8 @@ different purposes or have different scopes:
   - [Requirements](#requirements-5)
   - [Roles](#roles)
 - [Community Groups](#technical-community-groups)
-  - [Rules & Guidelines](#rules-&-guidelines)    - [Formation](#formation-3)
-    - [Formation](#formation-3)
+  - [Rules & Guidelines](#rules-&-guidelines)
+  - [Formation](#formation-3)
 
 ## Keywords
 
