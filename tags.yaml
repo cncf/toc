@@ -274,27 +274,27 @@ toc_subprojects: # TOC SubProjects
     label: contributor-strategy-and-advocacy-subproject
     leadership:
       chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-      tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: 
+          lfx_id: 
+          name: The Contributor Strategy and Advocacy Subproject are lead by CNCF staff to support projects and contributors
+          company: 
+          email: 
+  #     - github: foo
+  #       lfx_id: baz
+  #       name: Foo Baz Bar
+  #       company: Foo Baz Bar co.
+  #       email: me@foobazbar.org
+  #   tech_leads:
+  #     - github: foo
+  #       lfx_id: baz
+  #       name: Foo Baz Bar
+  #       company: Foo Baz Bar co.
+  #       email: me@foobazbar.org
+  #     - github: foo
+  #       lfx_id: baz
+  #       name: Foo Baz Bar
+  #       company: Foo Baz Bar co.
+  #       email: me@foobazbar.org
     meetings:
       - description: Contributor Strategy SubProject and Advocacy Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-contributor-strategy-subproject?view=list
@@ -352,27 +352,27 @@ toc_subprojects: # TOC SubProjects
     label: project-reviews-subproject
     leadership:
       chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-      tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: klueska
+          lfx_id:
+          name: Kevin Klues
+          company: NVIDIA
+          email: klueska@gmail.com
+ #      - github: foo
+ #        lfx_id: baz
+ #        name: Foo Baz Bar
+ #        company: Foo Baz Bar co.
+ #        email: me@foobazbar.org
+ #    tech_leads:
+ #      - github: foo
+ #        lfx_id: baz
+ #        name: Foo Baz Bar
+ #        company: Foo Baz Bar co.
+ #        email: me@foobazbar.org
+ #      - github: foo
+ #        lfx_id: baz
+ #        name: Foo Baz Bar
+ #        company: Foo Baz Bar co.
+ #        email: me@foobazbar.org
     meetings:
       - description: Project Reviews SubProject Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-project-reviews-subproject?view=list
