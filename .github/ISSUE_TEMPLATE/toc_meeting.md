@@ -2,7 +2,9 @@
 name: TOC meeting template
 about: Template for regular recurring TOC meetings
 title: "[TOC Meeting][Public] <date-here>"
-labels: "kind/meeting"
+labels: 
+        - "kind/meeting"
+        - "toc"
 assignees: 
 ---
 
