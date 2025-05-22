@@ -9,6 +9,7 @@ assignees: caniszczyk, mrbobbytables, idvoretskyi, jeefy, castrojo
 - [ ] Move project (logo) to archived in the [artwork repo](https://github.com/cncf/artwork)
 - [ ] Move project to archived on [landscape](https://github.com/cncf/landscape)
 - [ ] Remove maintainer list from [project-maintainers.csv](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
+- [ ] Remove from staff list of maintainer emails
 - [ ] Archive (lock) maintainers mailing list (groups.io)
 - [ ] Remove ML from maintainers@ mailing group (google groups)
 - [ ] Remove project (logo) from all slide decks (contact pr@cncf.io)
