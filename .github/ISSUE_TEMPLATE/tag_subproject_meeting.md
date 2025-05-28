@@ -13,8 +13,8 @@ assignees:
 ## Recurring Items
 
 * [LF Antitrust Policy](https://docs.google.com/presentation/d/1tNOOPWqZMMcUQjes7J-Fc8__5vGmNsxtZnfOw6dLlpc/edit?usp=sharing)
-* [TAG Folder](/tags/)
-* [TOC SubProjects Folder](/toc_subprojects/)
+* [TAG Folder](https://github.com/cncf/toc/tree/main/tags)
+* [TOC SubProjects Folder](https://github.com/cncf/toc/tree/main/toc_subprojects)
 *  Welcome new meeting attendees
 
 ## Agenda
