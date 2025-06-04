@@ -9,6 +9,9 @@
 | TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred)               |
 | TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman)         |
 | TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus)      |
+| TAG Observability        | [Alolita Sharma](https:github.com/alolita)               |
+| TAG Observability        | [Matt Young](https:github.com/halcyondude)               |
+| TAG Observability        | [Richard Hartmann](https://github.com/RichiH)            |
 | TAG Security             | [Sarah Allen](https://github.com/ultrasaurus)            |
 | TAG Security             | [Jeyappragash Jeyakeerthi](https://github.com/pragashj)  |
 | TAG Security             | [Dan Shaw](https://github.com/dshaw)                     |
@@ -18,4 +21,3 @@
 | TAG Security             | [Andrew Martin](https://github.com/sublimino)            |
 | TAG Storage              | [Erin Boyd](https://github.com/erinboyd)                 | 
 | TAG Network              | [Lin Sun](https://github.com/linsun)                     |
-| TAG Network              | [Richard Hartmann](https://github.com/RichiH)            |
