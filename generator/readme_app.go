@@ -17,11 +17,18 @@ type Subproject struct {
 	Contact Contact `yaml:"contact"`
 }
 
-// Person struct to hold person data, including company.
+// Term struct to hold start and end dates.
+type Term struct {
+	Start string `yaml:"start,omitempty"`
+	End   string `yaml:"end,omitempty"`
+}
+
+// Person struct to hold person data, including company and term.
 type Person struct {
 	Name    string `yaml:"name"`
 	GitHub  string `yaml:"github"`
 	Company string `yaml:"company,omitempty"`
+	Term    Term   `yaml:"term,omitempty"` // ADDED: Term for leadership roles
 }
 
 // Leadership struct to hold all leadership roles.
@@ -42,7 +49,7 @@ type Meeting struct {
 type Contact struct {
 	Slack       string   `yaml:"slack"`
 	MailingList string   `yaml:"mailing_list"`
-	TOCLiaison  []Person `yaml:"toc_liaison"` // FIXED: Changed from 'Person' to '[]Person'
+	TOCLiaison  []Person `yaml:"toc_liaison"`
 }
 
 // Tag struct to hold tag data, including CharterLink and Subprojects.
@@ -55,7 +62,7 @@ type Tag struct {
 	Contact          Contact      `yaml:"contact"`
 	TagSubprojects   []Subproject `yaml:"tag_subprojects"`
 	CharterLink      string       `yaml:"charter_link"`
-	TagInitiatives   string       `yaml:"tag_initiatives"` // ADDED THIS LINE
+	TagInitiatives   string       `yaml:"tag_initiatives"`
 }
 
 // TOCSubproject struct to hold TOC subproject data, including CharterLink.
@@ -67,7 +74,7 @@ type TOCSubproject struct {
 	Meetings              []Meeting  `yaml:"meetings"`
 	Contact               Contact    `yaml:"contact"`
 	CharterLink           string     `yaml:"charter_link"`
-	SubprojectInitiatives string     `yaml:"subproject_initiatives"` // ADDED THIS LINE
+	SubprojectInitiatives string     `yaml:"subproject_initiatives"`
 }
 
 // Config struct to hold the entire configuration.
