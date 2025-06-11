@@ -16,15 +16,15 @@
 {{- if .Leadership.TechLeads }}
 ### Tech Leads
 {{- range .Leadership.TechLeads }}
-- {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**){{if .Company}}, {{.Company}}{{end}}
+- {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**){{if .Company}}, {{.Company}}{{end}}{{if .Term.Start}} (Term: {{.Term.Start}} - {{.Term.End}}){{end}}
 {{- end }}
 {{- end }}
 
 ## Meetings
 {{- range .Meetings }}
-- **{{.Description}}**: 
-  {{- if .TagCalendar }} [Calendar]({{.TagCalendar}}) {{- end }}
-  {{- if .RecordingsURL }} | [Recordings]({{.RecordingsURL}}) {{- end }}
+- **{{.Description}}**: 
+  {{- if .TagCalendar }} [Calendar]({{.TagCalendar}}) {{- end }}
+  {{- if .RecordingsURL }} | [Recordings]({{.RecordingsURL}}) {{- end }}
 {{- end }}
 
 ## Contact
