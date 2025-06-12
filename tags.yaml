@@ -7,27 +7,55 @@ tags: # Technical Advisory Groups
     label: tag-developer-experience
     leadership:
       chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: danieloh30
+          lfx_id:
+          name: Daniel Oh
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: salaboy
+          lfx_id:
+          name: Mauricio Salatino
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: SwEngin
+          lfx_id:
+          name: Mona Borham
+          company: Mona Borham
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
       tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: julsemaan
+          lfx_id:
+          name: Julien Semaan
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: kdubois
+          lfx_id:
+          name: Kevin Dubois
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: cloudmelon
+          lfx_id:
+          name: Mélony QIN
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
     meetings:
       - description: TAG Developer Experience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list # Calendar from PCC
@@ -36,8 +64,8 @@ tags: # Technical Advisory Groups
       slack: https://cloud-native.slack.com/archives/C08KGCXB458
       mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/
       toc_liaison:
-        github: foobar
-        name: Foo Bar
+        - github: kgamanji
+          name: Katie Gamanji
     tag_subprojects:
       - name: Developer Experience-sub-foo
         mission_statement: >
@@ -61,27 +89,55 @@ tags: # Technical Advisory Groups
     label: tag-infrastructure
     leadership:
       chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: GenPage
+          lfx_id:
+          name: Dylan Page
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: kashifest
+          lfx_id:
+          name: Kashif Khan
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: xing-yang
+          lfx_id:
+          name: Xing Yang
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
       tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: aojea
+          lfx_id:
+          name: Antonio Ojea
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: nicholasjackson
+          lfx_id:
+          name: Nicholas Jackson
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: hzxuzhonghu
+          lfx_id:
+          name: Zhonghu Xu
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
     meetings:
       - description: TAG Infrastructure Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list
@@ -90,8 +146,10 @@ tags: # Technical Advisory Groups
       slack: https://cloud-native.slack.com/archives/C08KBH3RA1K
       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure
       toc_liaison:
-        github: foobar
-        name: Foo Bar
+        - github: rochaporto
+          name: Ricardo Rocha
+        - github: angellk
+          name: Karena Angell
     tag_subprojects:
       - name: Infrastructure-sub-foo
         mission_statement: Foo-Baz_Bar
@@ -114,27 +172,55 @@ tags: # Technical Advisory Groups
     label: tag-operational-resilience
     leadership:
       chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: mfahlandt
+          lfx_id:
+          name: Mario Fahlandt
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: brito-rafa
+          lfx_id:
+          name: Rafael Brito
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: saiyam1814
+          lfx_id:
+          name: Saiyam Pathak
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
       tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: raffaelespazzoli
+          lfx_id:
+          name: Raffaele Spazzoli
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: halcyondude
+          lfx_id:
+          name: Matt Young
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: palnabarun
+          lfx_id:
+          name: Nabarun Pal
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
     meetings:
       - description: TAG Operational Resilience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list # Calendar link from PCC
@@ -143,8 +229,8 @@ tags: # Technical Advisory Groups
       slack: https://cloud-native.slack.com/archives/C08KGDENK34
       mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience
       toc_liaison:
-        github: foobar
-        name: Foo Bar
+        - github: jeremyrickard
+          name: Jeremy Rickard
     tag_subprojects:
       - name: Operational Resilience-sub-foo
         mission_statement: >
@@ -168,27 +254,55 @@ tags: # Technical Advisory Groups
     label: tag-security-and-compliance
     leadership:
       chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: eddie-knight
+          lfx_id:
+          name: Eddie Knight
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: evankanderson
+          lfx_id:
+          name: Evan Anderson
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: mnm678
+          lfx_id:
+          name: Marina Moore
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
       tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: jpower432
+          lfx_id:
+          name: Jennifer Power
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: JustinCappos
+          lfx_id:
+          name: Justin Cappos
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: y-tabata
+          lfx_id:
+          name: Yoshiyuki Tabata
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
     meetings:
       - description: TAG Security and Compliance Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list
@@ -197,8 +311,10 @@ tags: # Technical Advisory Groups
       slack: https://cloud-native.slack.com/archives/C08JZ9YLAA3
       mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance
       toc_liaison:
-        github: foobar
-        name: Foo Bar
+        - github: kfaseela
+          name: Faseela K
+        - github: jeremyrickard
+          name: Jeremy Rickard
     tag_subprojects:
       - name: Security and Compliance-sub-foo
         mission_statement: Foo-Baz_Bar
@@ -221,27 +337,55 @@ tags: # Technical Advisory Groups
     label: tag-workloads-foundation
     leadership:
       chairs:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: miao0miao
+          lfx_id:
+          name: Danielle Tal
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: pacoxu
+          lfx_id:
+          name: Paco Xu
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: terrytangyuan
+          lfx_id:
+          name: Yuan Tang
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
       tech_leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github: kad
+          lfx_id:
+          name: Alexander D. Kanevskiy
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
+        - github: RainbowMango
+          lfx_id:
+          name: Hongcai Ren
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
+        - github: rajaskakodkar
+          lfx_id:
+          name: Rajas Kakodkar
+          company:
+          email:
+          term:
+            start: "2025-07-01"
+            end: "2027-06-30"
     meetings:
       - description: TAG Workloads Foundation Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list
@@ -250,8 +394,10 @@ tags: # Technical Advisory Groups
       slack: https://cloud-native.slack.com/archives/C08K71W9HAS
       mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation
       toc_liaison:
-        github: foobar
-        name: Foo Bar
+        - github: chira001
+          name: Alex Chircop
+        - github: kevin-wangzefeng
+          name: Kevin Wang
     tag_subprojects:
       - name: Workloads Foundation-sub-foo
         mission_statement: Foo-Baz_Bar
@@ -268,17 +414,17 @@ tags: # Technical Advisory Groups
     tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fworkloads-foundation-initiative
 toc_subprojects: # TOC SubProjects
   - dir: contributor-strategy-and-advocacy-subproject # Contributor Strategy and Advocacy Sub Project
-    name: Contributor Strategy and Advocacy SubProject 
+    name: Contributor Strategy and Advocacy SubProject
     mission_statement: Foo-Baz-Bar
     charter_link: charter.md
     label: contributor-strategy-and-advocacy-subproject
     leadership:
       chairs:
-        - github: 
-          lfx_id: 
+        - github:
+          lfx_id:
           name: The Contributor Strategy and Advocacy Subproject are lead by CNCF staff to support projects and contributors
-          company: 
-          email: 
+          company:
+          email:
   #     - github: foo
   #       lfx_id: baz
   #       name: Foo Baz Bar
@@ -302,9 +448,9 @@ toc_subprojects: # TOC SubProjects
     contact:
       slack: https://cloud-native.slack.com/archives/C08N4CKUHB2
       mailing_list: https://lists.cncf.io/g/contributor-strategy-subproject
-      toc_liaison:
-        github: foobar
-        name: Foo Bar
+  #    toc_liaison:
+  #      - github: foobar
+  #        name: Foo Bar
     subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative
   - dir: mentoring-subproject # Mentoring SubProject
     name: Mentoring SubProject
@@ -341,9 +487,9 @@ toc_subprojects: # TOC SubProjects
     contact:
       slack: https://cloud-native.slack.com/archives/CGPK98JNQ
       mailing_list: https://lists.cncf.io/g/tag-cs-mentoring-wg # to be updated with new name post kubecon
-      toc_liaison:
-        github: foobar
-        name: Foo Bar
+  #    toc_liaison:
+  #      - github: foobar
+  #        name: Foo Bar
     subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fmentoring-subproject-initiative
   - dir: project-reviews-subproject # Project Reviews SubProject
     name: Project Reviews SubProject
@@ -381,6 +527,6 @@ toc_subprojects: # TOC SubProjects
       slack: https://cloud-native.slack.com/archives/C08M8L74NAJ
       mailing_list: https://lists.cncf.io/g/cncf-project-reviews-subproject
       toc_liaison:
-        github: foobar
-        name: Foo Bar
+        - github: angellk
+          name: Karena Angell
     subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative
