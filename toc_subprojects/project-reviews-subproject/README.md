@@ -15,6 +15,5 @@ Foo-Baz-bar
 ## Contact
 - Slack: [Tag Project Reviews SubProject Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08M8L74NAJ)
 - [Mailing List](https://lists.cncf.io/g/cncf-project-reviews-subproject)
-- TOC Liaison: Foo Bar (**[@foobar](https://github.com/foobar)**)
 ## Initiatives
 [Project Reviews SubProject Initiatives](https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative)

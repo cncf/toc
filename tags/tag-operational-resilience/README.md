@@ -8,19 +8,23 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 
 ## Leadership
 ### Chairs
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
+- Mario Fahlandt (**[@mfahlandt](https://github.com/mfahlandt)**) (Term: 2025-07-01 - 2027-06-30)
+- Rafael Brito (**[@brito-rafa](https://github.com/brito-rafa)**) (Term: 2025-07-01 - 2026-06-30)
+- Saiyam Pathak (**[@saiyam1814](https://github.com/saiyam1814)**) (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
-- Foo Baz Bar (**[@foo](https://github.com/foo)**), Foo Baz Bar co.
+- Raffaele Spazzoli (**[@raffaelespazzoli](https://github.com/raffaelespazzoli)**)
+- Matt Young (**[@halcyondude](https://github.com/halcyondude)**)
+- Nabarun Pal (**[@palnabarun](https://github.com/palnabarun)**)
 
 ## Meetings
-- **TAG Operational Resilience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list) | [Recordings](https://www.youtube.com/@TAGOperationalResilience)
+- **TAG Operational Resilience Meetings**: 
+  [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list)
+  | [Recordings](https://www.youtube.com/@TAGOperationalResilience)
 
 ## Contact
 - Slack: [Tag TAG Operational Resilience Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08KGDENK34)
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-operational-resilience)
-- TOC Liaison: Foo Bar (**[@foobar](https://github.com/foobar)**)
+- TOC Liaison: Jeremy Rickard (**[@jeremyrickard](https://github.com/jeremyrickard)**)
 
 ## Subprojects
 - **Operational Resilience-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-operational-resilience)
