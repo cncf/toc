@@ -13,7 +13,7 @@ Containers, OS, Runtime, Virtual Machines, Serverless, Web Assembly, Batch, Sche
 - Yuan Tang (**[@terrytangyuan](https://github.com/terrytangyuan)**) (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
 - Alexander D. Kanevskiy (**[@kad](https://github.com/kad)**)
-- bHongcai Ren (**[@RainbowMango](https://github.com/RainbowMango)**)
+- Hongcai Ren (**[@RainbowMango](https://github.com/RainbowMango)**)
 - Rajas Kakodkar (**[@rajaskakodkar](https://github.com/rajaskakodkar)**)
 
 ## Meetings
