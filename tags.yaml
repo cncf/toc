@@ -372,7 +372,7 @@ tags: # Technical Advisory Groups
             end: "2026-06-30"
         - github: RainbowMango
           lfx_id:
-          name: bHongcai Ren
+          name: Hongcai Ren
           company:
           email:
           term:
@@ -526,7 +526,7 @@ toc_subprojects: # TOC SubProjects
     contact:
       slack: https://cloud-native.slack.com/archives/C08M8L74NAJ
       mailing_list: https://lists.cncf.io/g/cncf-project-reviews-subproject
- #     toc_liaison:
- #       github:
- #       name:
+      toc_liaison:
+        - github: angellk
+          name: Karena Angell
     subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative
