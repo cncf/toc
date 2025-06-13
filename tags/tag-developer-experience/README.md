@@ -12,14 +12,12 @@ Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 - Mauricio Salatino (**[@salaboy](https://github.com/salaboy)**) (Term: 2025-07-01 - 2026-06-30)
 - Mona Borham (**[@SwEngin](https://github.com/SwEngin)**), Mona Borham (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Julien Semaan (**[@julsemaan](https://github.com/julsemaan)**)
-- Kevin Dubois (**[@kdubois](https://github.com/kdubois)**)
-- Mélony QIN (**[@cloudmelon](https://github.com/cloudmelon)**)
+- Julien Semaan (**[@julsemaan](https://github.com/julsemaan)**) (Term: 2025-07-02 - 2027-06-30)
+- Kevin Dubois (**[@kdubois](https://github.com/kdubois)**) (Term: 2025-07-02 - 2026-06-30)
+- Mélony QIN (**[@cloudmelon](https://github.com/cloudmelon)**) (Term: 2025-07-02 - 2027-06-30)
 
 ## Meetings
-- **TAG Developer Experience Meetings**: 
-  [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list)
-  | [Recordings](https://www.youtube.com/@CNCFTAGDeveloperExperience)
+- **TAG Developer Experience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGDeveloperExperience)
 
 ## Contact
 - Slack: [Tag TAG Developer Experience Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08KGCXB458)

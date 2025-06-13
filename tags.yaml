@@ -38,7 +38,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2027-06-30"
         - github: kdubois
           lfx_id:
@@ -46,7 +46,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2026-06-30"
         - github: cloudmelon
           lfx_id:
@@ -54,7 +54,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2027-06-30"
     meetings:
       - description: TAG Developer Experience Meetings
@@ -120,7 +120,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2027-06-30"
         - github: nicholasjackson
           lfx_id:
@@ -128,7 +128,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2026-06-30"
         - github: hzxuzhonghu
           lfx_id:
@@ -136,7 +136,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2027-06-30"
     meetings:
       - description: TAG Infrastructure Meetings
@@ -203,7 +203,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2026-06-30"
         - github: halcyondude
           lfx_id:
@@ -211,7 +211,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2027-06-30"
         - github: palnabarun
           lfx_id:
@@ -219,7 +219,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2027-06-30"
     meetings:
       - description: TAG Operational Resilience Meetings
@@ -285,7 +285,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2026-06-30"
         - github: JustinCappos
           lfx_id:
@@ -293,7 +293,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2027-06-30"
         - github: y-tabata
           lfx_id:
@@ -301,7 +301,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2026-06-30"
     meetings:
       - description: TAG Security and Compliance Meetings
@@ -368,7 +368,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2026-06-30"
         - github: RainbowMango
           lfx_id:
@@ -376,7 +376,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2027-06-30"
         - github: rajaskakodkar
           lfx_id:
@@ -384,7 +384,7 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
+            start: "2025-07-02"
             end: "2027-06-30"
     meetings:
       - description: TAG Workloads Foundation Meetings
