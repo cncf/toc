@@ -12,14 +12,12 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 - Rafael Brito (**[@brito-rafa](https://github.com/brito-rafa)**) (Term: 2025-07-01 - 2026-06-30)
 - Saiyam Pathak (**[@saiyam1814](https://github.com/saiyam1814)**) (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Raffaele Spazzoli (**[@raffaelespazzoli](https://github.com/raffaelespazzoli)**)
-- Matt Young (**[@halcyondude](https://github.com/halcyondude)**)
-- Nabarun Pal (**[@palnabarun](https://github.com/palnabarun)**)
+- Raffaele Spazzoli (**[@raffaelespazzoli](https://github.com/raffaelespazzoli)**) (Term: 2025-07-02 - 2026-06-30)
+- Matt Young (**[@halcyondude](https://github.com/halcyondude)**) (Term: 2025-07-02 - 2027-06-30)
+- Nabarun Pal (**[@palnabarun](https://github.com/palnabarun)**) (Term: 2025-07-02 - 2027-06-30)
 
 ## Meetings
-- **TAG Operational Resilience Meetings**: 
-  [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list)
-  | [Recordings](https://www.youtube.com/@TAGOperationalResilience)
+- **TAG Operational Resilience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list) | [Recordings](https://www.youtube.com/@TAGOperationalResilience)
 
 ## Contact
 - Slack: [Tag TAG Operational Resilience Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08KGDENK34)

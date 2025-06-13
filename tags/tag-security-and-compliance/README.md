@@ -12,14 +12,12 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - Evan Anderson (**[@evankanderson](https://github.com/evankanderson)**) (Term: 2025-07-01 - 2026-06-30)
 - Marina Moore (**[@mnm678](https://github.com/mnm678)**) (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Jennifer Power (**[@jpower432](https://github.com/jpower432)**)
-- Justin Cappos (**[@JustinCappos](https://github.com/JustinCappos)**)
-- Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**)
+- Jennifer Power (**[@jpower432](https://github.com/jpower432)**) (Term: 2025-07-02 - 2026-06-30)
+- Justin Cappos (**[@JustinCappos](https://github.com/JustinCappos)**) (Term: 2025-07-02 - 2027-06-30)
+- Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**) (Term: 2025-07-02 - 2026-06-30)
 
 ## Meetings
-- **TAG Security and Compliance Meetings**: 
-  [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list)
-  | [Recordings](https://www.youtube.com/@CNCFTAGSecurityandCompliance)
+- **TAG Security and Compliance Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGSecurityandCompliance)
 
 ## Contact
 - Slack: [Tag TAG Security and Compliance Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08JZ9YLAA3)
