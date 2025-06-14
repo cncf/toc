@@ -74,7 +74,7 @@ This initiative will actively engage with the **OpenSSF and GUAC project communi
 
 ### M2.3: Deepen GUAC Observability & Acknowledge Community Support
 
-* **Helm Enhancements:** Augment the GUAC Helm chart (acknowledging the **GUAC team's recent fast turnaround in adding it, a testament to our collaborative engagement**) to include dependencies/configurations for linked observability tools (e.g., Prometheus, Grafana, potentially Loki/Fluentbit for logs).  
+* **Helm Enhancements:** Augment the GUAC Helm chart (acknowledging the **GUAC team's recent fast turnaround in adding it, a testament to our collaborative engagement**) to include dependencies/configurations for linked observability tools. Engage with CNCF Projects at all levels of the landscape to contribute configs for their projects, such as Perses (https://perses.dev) dashboards.).  
 * **OpenTelemetry Initiative:**  
   * **Action:** Create a formal GitHub issue within the GUAC project (or contribute to existing ones, per discussion with maintainers) to advocate for and specify deeper **OpenTelemetry integration**.  
   * **Scope:** Request comprehensive support beyond current metrics, including **standardized logging output, distributed tracing context propagation, and profiling hooks**, aligning with maintainer interest.
