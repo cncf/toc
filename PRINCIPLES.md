@@ -100,7 +100,7 @@ The TOC picks projects with a real chance of achieving widespread use, and it do
 
 The TOC does not pick a “winning stack” - i.e., vertically integrated set of projects as a solution for multiple application problems. This means that the CNCF is not promoting a single, monolithic stack of technologies.
 
-CNCF projects may have dependencies on other open source projects that comply with the [CNCF IP policy](https://github.com/cncf/foundation/blob/master/allowed-third-party-license-policy.md), which may be outside the CNCF. Widely-used dependencies are preferred; pluggable dependencies fit well with our principles but are not essential.  _Examples: Kubernetes' dependency on etcd, which was not a CNCF project at the time Kubernetes was brought into the CNCF; CNI, which enables pluggable networking dependencies._ 
+CNCF projects may have dependencies on other open source projects that comply with the [CNCF IP policy](https://github.com/cncf/foundation/blob/master/policies-guidance/allowed-third-party-license-policy.md), which may be outside the CNCF. Widely-used dependencies are preferred; pluggable dependencies fit well with our principles but are not essential.  _Examples: Kubernetes' dependency on etcd, which was not a CNCF project at the time Kubernetes was brought into the CNCF; CNI, which enables pluggable networking dependencies._ 
 
 The CNCF is a badge of quality and velocity. CNCF projects should be on a path to being tools that users can trust, broadly work together, and that meet other cloud native criteria. But the CNCF badge does not mean “this is the standard tool”.
 
