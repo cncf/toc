@@ -16,7 +16,7 @@ The adopter interviews reflect a project too early for the level which the proje
 
 ### Final Assessment
 
-The KubeArmor project remains an innovative approach to not only configure but enforce cloud native security in Kubernetes environments. While the project features, capabilities, and operation are what adopters desire and addresses many (but not all) of their needs, the governing and operational aspects of the project do not match the level of maturity of the project's the technical design and execution.
+The KubeArmor project remains an innovative approach to not only configure but enforce cloud native security in Kubernetes environments. While the project features, capabilities, and operation are what adopters desire and addresses many (but not all) of their needs, the governing and operational aspects of the project do not match the level of maturity of the project's technical design and execution.
 
 The TOC's evaluation of the project shows a needed focus to complete the outstanding blockers and reapply when the following conditions are met:
 
@@ -52,9 +52,9 @@ The TAG provided the following recommendation on the [presentation issue](https:
 
 - [ ] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
-The project's site does not explicitly convey vendor neutrality. The donating company's logo and statement of creation occurs at least twice on the home page. There is no mention of vendor neutrality or open source on the main site. The blogs heading on the site states "open source solutions for kubernetes security" but can easily be interpreted that KubeArmor is not open source. The only reference to Cloud Native is the community group link in the site header. Further, the inclusion of modelarmor on the kubearmor site directs users to accuknox but is listed on kubearmor's site as "open source". ModelArmor is in the KubeArmor org repo.  The project lacks web separation to ensure neutrality.
+The project's site does not explicitly convey vendor neutrality. The blogs heading on the site states "open source solutions for kubernetes security" but can easily be interpreted that KubeArmor is not open source. The only reference to Cloud Native is the community group link in the site header. The following was resolved on 19 MAY 2025: Further, the inclusion of modelarmor on the kubearmor site directs users to accuknox but is listed on kubearmor's site as "open source". ModelArmor is in the KubeArmor org repo.  The project lacks web separation to ensure neutrality.
 
-Additionally, there are several references to AccuKnox, owning, initiating, or driving aspects of KubeArmor that need reconciled for the project to be considered vendor neutral. The [Policy-templates repo](https://github.com/kubearmor/policy-templates?tab=readme-ov-file#-contributions) is one such example where, in addition to the reference of AccuKnox driven initiative, also shows a dependency with [AccuKnox's travis-ci for KubeArmor](https://github.com/kubearmor/policy-templates/blob/c955043c5d16b6935e45a7b14e123fc14e80e9ac/README.md?plain=1#L4).
+Additionally, there are several references to AccuKnox, owning, initiating, or driving aspects (beyond dontating or originating company) of KubeArmor that need reconciled for the project to be considered vendor neutral. The [Policy-templates repo](https://github.com/kubearmor/policy-templates?tab=readme-ov-file#-contributions) is one such example where, in addition to the reference of AccuKnox driven initiative, also shows a dependency with [AccuKnox's travis-ci for KubeArmor](https://github.com/kubearmor/policy-templates/blob/c955043c5d16b6935e45a7b14e123fc14e80e9ac/README.md?plain=1#L4).
 
 - [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
 - While the project was onboarded on 16-NOV-2021, the KubeArmor security group is email address for `support@accuknox.com` persists and does not provide separation between the business/product/service, and the project (requirement for sandbox)
