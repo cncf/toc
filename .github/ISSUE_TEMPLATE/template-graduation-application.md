@@ -58,7 +58,6 @@ N/A
 
 <!-- (Project assertion goes here) --> 
 
-
 - [ ] **Due Diligence Review.**
 
 Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
