@@ -61,7 +61,7 @@ tags: # Technical Advisory Groups
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list # Calendar from PCC
         recordings_url: https://www.youtube.com/@CNCFTAGDeveloperExperience
     contact:
-      slack: https://cloud-native.slack.com/archives/C08KGCXB458
+      slack: C08KGCXB458
       mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/
       toc_liaison:
         - github: kgamanji
@@ -71,7 +71,7 @@ tags: # Technical Advisory Groups
         mission_statement: >
           Foo-Baz_Bar
         contact:
-          slack: https://cloud-native.slack.com/archives/C08KGCXB458 # Using parent TAG's contact
+          slack: C08KGCXB458 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/ # Using parent TAG's contact
     leadership:
       SubProject Leads:
@@ -143,7 +143,7 @@ tags: # Technical Advisory Groups
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGInfrastructure
     contact:
-      slack: https://cloud-native.slack.com/archives/C08KBH3RA1K
+      slack: C08KBH3RA1K
       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure
       toc_liaison:
         - github: rochaporto
@@ -154,7 +154,7 @@ tags: # Technical Advisory Groups
       - name: Infrastructure-sub-foo
         mission_statement: Foo-Baz_Bar
         contact:
-          slack: https://cloud-native.slack.com/archives/C08KBH3RA1K # Using parent TAG's contact
+          slack: C08KBH3RA1K # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure # Using parent TAG's contact
     leadership:
       SubProject Leads:
@@ -226,7 +226,7 @@ tags: # Technical Advisory Groups
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list # Calendar link from PCC
         recordings_url: https://www.youtube.com/@TAGOperationalResilience
     contact:
-      slack: https://cloud-native.slack.com/archives/C08KGDENK34
+      slack: C08KGDENK34
       mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience
       toc_liaison:
         - github: jeremyrickard
@@ -236,7 +236,7 @@ tags: # Technical Advisory Groups
         mission_statement: >
           Foo-Baz_Bar
         contact:
-          slack: https://cloud-native.slack.com/archives/C08KGDENK34 # Using parent TAG's contact
+          slack: C08KGDENK34 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience # Using parent TAG's contact
     leadership:
       SubProject Leads:
@@ -308,7 +308,7 @@ tags: # Technical Advisory Groups
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGSecurityandCompliance
     contact:
-      slack: https://cloud-native.slack.com/archives/C08JZ9YLAA3
+      slack: C08JZ9YLAA3
       mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance
       toc_liaison:
         - github: kfaseela
@@ -319,7 +319,7 @@ tags: # Technical Advisory Groups
       - name: Security and Compliance-sub-foo
         mission_statement: Foo-Baz_Bar
         contact:
-          slack: https://cloud-native.slack.com/archives/C08JZ9YLAA3 # Using parent TAG's contact
+          slack: C08JZ9YLAA3 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance # Using parent TAG's contact
     leadership:
       SubProject Leads:
@@ -391,7 +391,7 @@ tags: # Technical Advisory Groups
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGWorkloadsFoundation
     contact:
-      slack: https://cloud-native.slack.com/archives/C08K71W9HAS
+      slack: C08K71W9HAS
       mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation
       toc_liaison:
         - github: chira001
@@ -402,7 +402,7 @@ tags: # Technical Advisory Groups
       - name: Workloads Foundation-sub-foo
         mission_statement: Foo-Baz_Bar
         contact:
-          slack: https://cloud-native.slack.com/archives/C08K71W9HAS # Using parent TAG's contact
+          slack: C08K71W9HAS # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation # Using parent TAG's contact
     leadership:
       SubProject Leads:
@@ -446,7 +446,7 @@ toc_subprojects: # TOC SubProjects
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-contributor-strategy-subproject?view=list
         recordings_url: https://www.youtube.com/@CNCFTOCContributorStrategySubP
     contact:
-      slack: https://cloud-native.slack.com/archives/C08N4CKUHB2
+      slack: C08N4CKUHB2
       mailing_list: https://lists.cncf.io/g/contributor-strategy-subproject
   #    toc_liaison:
   #      - github: foobar
@@ -485,7 +485,7 @@ toc_subprojects: # TOC SubProjects
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-mentoring-subproject?view=list
         recordings_url: https://www.youtube.com/@CNCFTOCMentoringSubProject
     contact:
-      slack: https://cloud-native.slack.com/archives/CGPK98JNQ
+      slack: CGPK98JNQ
       mailing_list: https://lists.cncf.io/g/tag-cs-mentoring-wg # to be updated with new name post kubecon
   #    toc_liaison:
   #      - github: foobar
@@ -524,7 +524,7 @@ toc_subprojects: # TOC SubProjects
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-project-reviews-subproject?view=list
         recordings_url: https://www.youtube.com/@CNCFTOCProjectReviewsSubProjec
     contact:
-      slack: https://cloud-native.slack.com/archives/C08M8L74NAJ
+      slack: C08M8L74NAJ
       mailing_list: https://lists.cncf.io/g/cncf-project-reviews-subproject
       toc_liaison:
         - github: angellk
