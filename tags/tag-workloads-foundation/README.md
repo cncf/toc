@@ -20,7 +20,7 @@ Containers, OS, Runtime, Virtual Machines, Serverless, Web Assembly, Batch, Sche
 - **TAG Workloads Foundation Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGWorkloadsFoundation)
 
 ## Contact
-- Slack: [Tag TAG Workloads Foundation Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08K71W9HAS)
+- Slack: [Tag TAG Workloads Foundation Slack](https://cloud-native.slack.com/archives/C08K71W9HAS)
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-workloads-foundation)
 - TOC Liaison: Alex Chircop (**[@chira001](https://github.com/chira001)**)
 - TOC Liaison: Kevin Wang (**[@kevin-wangzefeng](https://github.com/kevin-wangzefeng)**)
