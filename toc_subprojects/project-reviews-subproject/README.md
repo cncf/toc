@@ -13,7 +13,7 @@ Foo-Baz-bar
 - **Project Reviews SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-project-reviews-subproject?view=list) | [Recordings](https://www.youtube.com/@CNCFTOCProjectReviewsSubProjec)
 
 ## Contact
-- Slack: [Tag Project Reviews SubProject Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08M8L74NAJ)
+- Slack: [Tag Project Reviews SubProject Slack](https://cloud-native.slack.com/archives/C08M8L74NAJ)
 - [Mailing List](https://lists.cncf.io/g/cncf-project-reviews-subproject)
 - TOC Liaison: Karena Angell (**[@angellk](https://github.com/angellk)**)
 ## Initiatives

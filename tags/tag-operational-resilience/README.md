@@ -20,7 +20,7 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 - **TAG Operational Resilience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list) | [Recordings](https://www.youtube.com/@TAGOperationalResilience)
 
 ## Contact
-- Slack: [Tag TAG Operational Resilience Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08KGDENK34)
+- Slack: [Tag TAG Operational Resilience Slack](https://cloud-native.slack.com/archives/C08KGDENK34)
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-operational-resilience)
 - TOC Liaison: Jeremy Rickard (**[@jeremyrickard](https://github.com/jeremyrickard)**)
 
