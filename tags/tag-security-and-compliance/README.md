@@ -20,7 +20,7 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - **TAG Security and Compliance Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGSecurityandCompliance)
 
 ## Contact
-- Slack: [Tag TAG Security and Compliance Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/C08JZ9YLAA3)
+- Slack: [Tag TAG Security and Compliance Slack](https://cloud-native.slack.com/archives/C08JZ9YLAA3)
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-security-and-compliance)
 - TOC Liaison: Faseela K (**[@kfaseela](https://github.com/kfaseela)**)
 - TOC Liaison: Jeremy Rickard (**[@jeremyrickard](https://github.com/jeremyrickard)**)

@@ -13,7 +13,7 @@ Foo-Baz-Bar
 - **Mentoring SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-mentoring-subproject?view=list) | [Recordings](https://www.youtube.com/@CNCFTOCMentoringSubProject)
 
 ## Contact
-- Slack: [Tag Mentoring SubProject Slack](https://cloud-native.slack.com/archives/https://cloud-native.slack.com/archives/CGPK98JNQ)
+- Slack: [Tag Mentoring SubProject Slack](https://cloud-native.slack.com/archives/CGPK98JNQ)
 - [Mailing List](https://lists.cncf.io/g/tag-cs-mentoring-wg)
 ## Initiatives
 [Mentoring SubProject Initiatives](https://github.com/cncf/toc/issues?q=label%3Atoc%2Fmentoring-subproject-initiative)
