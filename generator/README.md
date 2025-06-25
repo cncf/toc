@@ -47,7 +47,9 @@ The process for updating README files is automated using a GitHub workflow, with
 5.  **Handling PRs:**
     * **PR from a Local Branch:** If the PR comes from a branch within the same repository, the automation will add a new commit to the PR, containing the updated README files.
     * **PR from a Fork:** If the PR comes from a fork, the automation will create a *new* PR with the updated README files, and close the original PR.  The automation will also comment on both the original PR and the new PR to provide a link between them.
-6.  **Review and Merge:**
+6. **Making further commits**
+   * If the automation has run and the automated commit with the updated README was created and you wish to make further changes, you would first have to pull the automated commit down to your branch, then you can make the additional changes, and commit the changes. The automation would overwrite the README files with your new changes. (This works for local branches - TODO: Test how this affects forked repos changes)
+8. **Review and Merge:**
     * **PR from a Local Branch:** Review the updated README files in the original PR. If everything is correct, merge the PR.
     * **PR from a Fork:** Review the *new* PR created by the automation. If the changes are correct, merge the *new* PR.
 
