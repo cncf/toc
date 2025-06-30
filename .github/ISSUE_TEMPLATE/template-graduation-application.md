@@ -58,6 +58,8 @@ N/A
 
 <!-- (Project assertion goes here) --> 
 
+- [ ] **Due Diligence Review.**
+
 Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisifies the Due Diligence Review criteria.
 
 - [ ] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
