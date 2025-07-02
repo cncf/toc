@@ -17,7 +17,7 @@ Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 - Mélony QIN (**[@cloudmelon](https://github.com/cloudmelon)**) (Term: 2025-07-02 - 2027-06-30)
 
 ## Meetings
-- **TAG Developer Experience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGDeveloperExperience)
+- **TAG Developer Experience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGDeveloperExperience) | [Meeting Agenda](https://docs.google.com/document/d/1dRS0DUzp3TY-u-iKmCdk_fuGZHaYfI4_TG1A6Ponxws/edit?usp=sharing)
 
 ## Contact
 - Slack: [Tag TAG Developer Experience Slack](https://cloud-native.slack.com/archives/C08KGCXB458)
