@@ -257,24 +257,24 @@ tags: # Technical Advisory Groups
         - github: eddie-knight
           lfx_id:
           name: Eddie Knight
-          company:
-          email:
+          company: Sonatype
+          email: eknight@sonatype.com
           term:
             start: "2025-07-01"
             end: "2026-06-30"
         - github: evankanderson
-          lfx_id:
+          lfx_id: eanderson
           name: Evan Anderson
-          company:
-          email:
+          company: Custcodian
+          email: evan.k.anderson@gmail.com
           term:
             start: "2025-07-01"
             end: "2026-06-30"
         - github: mnm678
           lfx_id:
           name: Marina Moore
-          company:
-          email:
+          company: Edera
+          email: mnm678@gmail.com
           term:
             start: "2025-07-01"
             end: "2027-06-30"
@@ -282,24 +282,24 @@ tags: # Technical Advisory Groups
         - github: jpower432
           lfx_id:
           name: Jennifer Power
-          company:
-          email:
+          company: Red Hat
+          email: barnabel.jennifer@gmail.com
           term:
             start: "2025-07-02"
             end: "2026-06-30"
         - github: JustinCappos
           lfx_id:
           name: Justin Cappos
-          company:
-          email:
+          company: New York University
+          email: justincappos@gmail.com
           term:
             start: "2025-07-02"
             end: "2027-06-30"
         - github: y-tabata
           lfx_id:
           name: Yoshiyuki Tabata
-          company:
-          email:
+          company: Hitachi
+          email: yoshiyuki.tabata.jy@hitachi.com
           term:
             start: "2025-07-02"
             end: "2026-06-30"
