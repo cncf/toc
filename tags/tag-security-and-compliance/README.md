@@ -8,13 +8,13 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 
 ## Leadership
 ### Chairs
-- Eddie Knight (**[@eddie-knight](https://github.com/eddie-knight)**) (Term: 2025-07-01 - 2026-06-30)
-- Evan Anderson (**[@evankanderson](https://github.com/evankanderson)**) (Term: 2025-07-01 - 2026-06-30)
-- Marina Moore (**[@mnm678](https://github.com/mnm678)**) (Term: 2025-07-01 - 2027-06-30)
+- Eddie Knight (**[@eddie-knight](https://github.com/eddie-knight)**), Sonatype (Term: 2025-07-01 - 2026-06-30)
+- Evan Anderson (**[@evankanderson](https://github.com/evankanderson)**), Custcodian (Term: 2025-07-01 - 2026-06-30)
+- Marina Moore (**[@mnm678](https://github.com/mnm678)**), Edera (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Jennifer Power (**[@jpower432](https://github.com/jpower432)**) (Term: 2025-07-02 - 2026-06-30)
-- Justin Cappos (**[@JustinCappos](https://github.com/JustinCappos)**) (Term: 2025-07-02 - 2027-06-30)
-- Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**) (Term: 2025-07-02 - 2026-06-30)
+- Jennifer Power (**[@jpower432](https://github.com/jpower432)**), Red Hat (Term: 2025-07-02 - 2026-06-30)
+- Justin Cappos (**[@JustinCappos](https://github.com/JustinCappos)**), New York University (Term: 2025-07-02 - 2027-06-30)
+- Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**), Hitachi (Term: 2025-07-02 - 2026-06-30)
 
 ## Meetings
 - **TAG Security and Compliance Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGSecurityandCompliance)
