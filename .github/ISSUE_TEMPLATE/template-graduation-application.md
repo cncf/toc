@@ -34,12 +34,6 @@ _The project has been adopted by the following organizations in a testing and in
 
 ## Application Process Principles
 
-### Suggested
-
-N/A
-
-### Required
-
 - [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
@@ -68,7 +62,7 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 ## Governance and Maintainers
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
@@ -98,19 +92,19 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
-
-<!-- (Project assertion goes here) --> 
-
-- [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
-
-<!-- (Project assertion goes here) --> 
-
 - [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
 <!-- (Project assertion goes here) --> 
 
 - [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+
+<!-- (Project assertion goes here) --> 
+
+- [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
+
+<!-- (Project assertion goes here) -->
+
+- [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
 <!-- (Project assertion goes here) --> 
 
@@ -140,7 +134,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Contributors and Community
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
@@ -151,7 +145,6 @@ Note: this section may be augmented by the completion of a Governance Review fro
 ### Required
 
 - [ ] **Clearly defined and discoverable process to submit issues or changes.**
-
 
 <!-- (Project assertion goes here) --> 
 
@@ -178,7 +171,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 ## Engineering Principles
 
 - [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. *This requirement may also be satisfied by completing a General Technical Review.***
-- A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
+  - A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
@@ -217,7 +210,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Security
 
-Note: this section may be augmented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
 
 ### Suggested
 
@@ -254,12 +247,6 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 <!-- (Project assertion goes here) --> 
 
 ## Ecosystem
-
-### Suggested
-
-N/A
-
-### Required
 
 - [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 

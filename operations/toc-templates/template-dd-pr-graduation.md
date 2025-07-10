@@ -22,15 +22,10 @@ _[The TOC has found the project to have satisfied the criteria for $LEVEL/ The T
 
 ## Application Process Principles
 
-### Suggested
+- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
+  - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
-N/A
-
-### Required
-
-- [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
-
-<!-- (TOC Evaluation goes here) --> 
+<!-- (Project assertion goes here) --> 
 
 - [ ]  **TAG provides insight/recommendation of the project in the context of the landscape**
 
@@ -53,7 +48,7 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 ## Governance and Maintainers
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
@@ -83,21 +78,21 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
-
-<!-- (TOC Evaluation goes here) --> 
-
-- [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
-
-<!-- (TOC Evaluation goes here) --> 
-
 - [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
 
 - [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
+
+- [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
+
+<!-- (TOC Evaluation goes here) -->
+
+- [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
+
+<!-- (TOC Evaluation goes here) -->   
 
 - [ ] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
@@ -107,7 +102,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
+- [ ] **Document adoption of the CNCF Code of Conduct**
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -125,7 +120,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Contributors and Community
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
@@ -136,7 +131,6 @@ Note: this section may be augmented by the completion of a Governance Review fro
 ### Required
 
 - [ ] **Clearly defined and discoverable process to submit issues or changes.**
-
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -162,19 +156,13 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Engineering Principles
 
-### Suggested
-
-N/A
-
-### Required
-
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. *This requirement may also be satisfied by completing a General Technical Review.***
+  - A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases.**
-
-<!-- (TOC Evaluation goes here) --> 
+- [ ] **Document what the project does, and why it does it - including viable cloud native use cases. *This requirement may also be satisfied by completing a General Technical Review.***
+  - A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 - [ ] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
@@ -184,7 +172,8 @@ N/A
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
+  - A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -205,7 +194,7 @@ N/A
 
 ## Security
 
-Note: this section may be augmented by a joint-assessment performed by TAG Security.
+Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
 
 ### Suggested
 
@@ -242,12 +231,6 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 <!-- (TOC Evaluation goes here) --> 
 
 ## Ecosystem
-
-### Suggested
-
-N/A
-
-### Required
 
 - [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 

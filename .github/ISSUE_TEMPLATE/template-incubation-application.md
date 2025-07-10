@@ -35,12 +35,6 @@ _The project has been adopted by the following organizations in a testing and in
 
 ## Application Process Principles
 
-### Suggested
-
-N/A
-
-### Required
-
 - [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
@@ -69,15 +63,15 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 ## Governance and Maintainers
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
-- [ ] **Clear and discoverable project governance documentation.**
+- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+- [ ] **Clear and discoverable project governance documentation.**
 
 <!-- (Project assertion goes here) --> 
 
@@ -137,7 +131,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Contributors and Community
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
@@ -207,13 +201,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Security
 
-Note: this section may be augmented by a joint-assessment performed by TAG Security.
-
-### Suggested
-
-N/A
-
-### Required
+Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
 
 - [ ] **Clearly defined and discoverable process to report security issues.**
 
@@ -236,12 +224,6 @@ N/A
 <!-- (Project assertion goes here) --> 
 
 ## Ecosystem
-
-### Suggested
-
-N/A
-
-### Required
 
 - [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 

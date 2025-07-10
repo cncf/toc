@@ -20,13 +20,7 @@ _[The TOC has found the project to have satisfied the criteria for $LEVEL/ The T
 
 ## Application Process Principles
 
-### Suggested
-
-N/A
-
-### Required
-
-- [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
+- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
@@ -54,15 +48,15 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 ## Governance and Maintainers
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
-- [ ] **Clear and discoverable project governance documentation.**
+- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+- [ ] **Clear and discoverable project governance documentation.**
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -108,7 +102,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
+- [ ] **Document adoption of the CNCF Code of Conduct**
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -122,7 +116,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Contributors and Community
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
@@ -194,12 +188,6 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 Note: this section may be augmented by a joint-assessment performed by TAG Security.
 
-### Suggested
-
-N/A
-
-### Required
-
 - [ ] **Clearly defined and discoverable process to report security issues.**
 
 <!-- (TOC Evaluation goes here) --> 
@@ -221,12 +209,6 @@ N/A
 <!-- (TOC Evaluation goes here) --> 
 
 ## Ecosystem
-
-### Suggested
-
-N/A
-
-### Required
 
 - [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
