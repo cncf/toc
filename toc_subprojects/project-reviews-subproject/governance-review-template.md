@@ -1,10 +1,10 @@
 # Governance Review Template
 
-What follows is a governance review and assessment for the ______ project. The
+What follows is a governance review and assessment for the $PROJECT project. The
 review may have been done because of a change in maturity level for the project,
 at the request of the TOC, or as a request by the project itself. Completed
-assessments should be merged into the project's directory within the
-[cncf/toc repo](https://github.com/cncf/toc/tree/main/projects).
+assessments are submitted as PR's to the TOC repo to be placed in the project's
+dedicated directory.
 
 ## Summary and Assessment
 
@@ -138,7 +138,8 @@ roles.**
 
 ### Code of Conduct
 
-**Document adoption of the CNCF Code of Conduct**
+**Document adoption and adherence to the CNCF Code of Conduct or the project's
+CoC which is based off the CNCF CoC and not in conflict with it.**
 <br>
 **Incubating:** Required | **Graduated:** Required
 
@@ -155,11 +156,22 @@ roles.**
 <br>
 **Incubating:** Required | **Graduated:** Required
 
+<!--
+If subprojects are not listed, use the table below to list the missing ones here.
+Suggest using a spreadsheet and then this site to format: https://www.tablesgenerator.com/markdown_tables
+
+| Area | Ownership and Operation | Communications | Project Alignment | Notes |
+|:-----|:-----------------------:|:---------------:|:------------------|:---|
+|*sub-project*| Complete/Partial/Missing | Complete/Partial/Other | Complete/Partial/Conflict | |
+
+-->
+
 
 **If the project has subprojects: subproject leadership, contribution, maturity
 status documented, including add/remove process.**
 <br>
 **Incubating:** Suggested | **Graduated:** Required
+
 
 
 
