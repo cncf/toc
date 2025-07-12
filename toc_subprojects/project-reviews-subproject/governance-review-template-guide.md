@@ -1,10 +1,11 @@
 # Governance Review Template Guide
 
-What follows is a governance review and assessment for the ______ project. The
+What follows is a governance review and assessment for the $PROJECT project. The
 review may have been done because of a change in maturity level for the project,
 at the request of the TOC, or as a request by the project itself. Completed
-assessments should be merged into the project's directory within the
-[cncf/toc repo](https://github.com/cncf/toc/tree/main/projects).
+assessments are submitted as PR's to the TOC repo to be placed in the project's
+dedicated directory.
+
 
 ## Summary and Assessment
 
@@ -31,7 +32,7 @@ to a state of good health and standing._
 
 _Short paragraph summarizing the general state of project governance.
 In the event the project governance requires attention, notify the TOC liaison
-for their awareness._
+or the project's TOC Sponsor(s)._
 
 
 ### Executing the Assessment
@@ -261,7 +262,8 @@ also good, but the absence of those isn't notable._
 
 ### Code of Conduct
 
-**Document adoption of the CNCF Code of Conduct**
+**Document adoption and adherence to the CNCF Code of Conduct or the project's
+CoC which is based off the CNCF CoC and not in conflict with it.**
 <br>
 **Incubating:** Required | **Graduated:** Required
 
@@ -297,14 +299,17 @@ _Ownership and Operation is "who runs this subproject", Communications includes
 meetings, channels and email, and Project Alignment is "what part of the project
 is this, and how mature is it"._
 
-The project includes the following sub-projects, plugins, and other notable
-divisions:
+_The project includes the following sub-projects, plugins, and other notable
+divisions:_
 
-_Subproject Name/Link_
-- Ownership & Operation: Complete / Partial / Missing
-- Communications: Complete / Partial / Other
-- Project Alignment: Complete / Partial / Conflict
-- Notes:
+_If subprojects are not listed, use the table below to list the missing ones
+here. Suggest using a spreadsheet and then this site to format:_
+https://www.tablesgenerator.com/markdown_tables
+
+| Area | Ownership and Operation | Communications | Project Alignment | Notes |
+|:-----|:-----------------------:|:---------------:|:------------------|:---|
+|*sub-project*| Complete/Partial/Missing | Complete/Partial/Other | Complete/Partial/Conflict | |
+
 
 
 **If the project has subprojects: subproject leadership, contribution, maturity
