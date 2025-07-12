@@ -35,6 +35,12 @@ _The project has been adopted by the following organizations in a testing and in
 
 ## Application Process Principles
 
+### Suggested
+
+N/A
+
+### Required
+
 - [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
@@ -117,7 +123,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document adoption of the CNCF Code of Conduct**
+- [ ] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
 
 <!-- (Project assertion goes here) --> 
 
@@ -179,7 +185,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Required 
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. This can also be satisfied by completing a General Technical Review.**
+- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This can also be satisfied by completing a General Technical Review._**
+  - _If applicable_ a General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
@@ -191,7 +198,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. This can also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.**
+- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This can also be satisfied by completing a General Technical Review and capturing the output in the project's documentation._**
+  - _If applicable_ a General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
