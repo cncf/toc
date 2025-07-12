@@ -20,8 +20,14 @@ _[The TOC has found the project to have satisfied the criteria for $LEVEL/ The T
 
 ## Application Process Principles
 
+### Suggested
+
+N/A
+
+### Required
+
 - [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
-  - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
+  - _If applicable_ this was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -102,7 +108,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document adoption of the CNCF Code of Conduct**
+- [ ] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -164,7 +170,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Required 
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
+  -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -176,7 +183,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
+  -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -186,7 +194,13 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Security
 
-Note: this section may be augmented by a joint-assessment performed by TAG Security.
+### Suggested
+
+N/A
+
+### Required
+
+Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
 
 - [ ] **Clearly defined and discoverable process to report security issues.**
 
@@ -209,6 +223,12 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 <!-- (TOC Evaluation goes here) --> 
 
 ## Ecosystem
+
+### Suggested
+
+N/A
+
+### Required
 
 - [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
