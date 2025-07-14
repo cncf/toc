@@ -255,6 +255,12 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 ## Ecosystem
 
+### Suggested
+
+N/A
+
+### Required
+
 - [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
 <!-- (Project assertion goes here) --> 
