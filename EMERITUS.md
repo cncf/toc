@@ -30,5 +30,9 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Matt Farina (2/4/2022 - 2/4/2024)
 * Richard Hartmann (2/4/2022 - 2/4/2024)
 * Erin Boyd (3/18/2023 - 5/1/2024)
+* Nikhita Raghunath (2/1/2023 - 2/1/2025)
+* Dave Zolotusky (2/1/2021 - 2/1/2025)
+* Cathy Zhang (7/1/2022 - 2/1/2025)
+* Duffie Cooley (2/1/2023 - 2/1/2025)
 
 We thank these members for their service to the CNCF community.
