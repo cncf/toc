@@ -26,8 +26,8 @@ N/A
 
 ### Required
 
-- [ ] **Give a presentation and engage with the domain specific TAG(s) to increase awareness**
-  - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
+- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
+  - _If applicable_ this was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -54,15 +54,15 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 ## Governance and Maintainers
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
-- [ ] **Clear and discoverable project governance documentation.**
+- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+- [ ] **Clear and discoverable project governance documentation.**
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -108,7 +108,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
+- [ ] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -122,7 +122,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Contributors and Community
 
-Note: this section may be augmented by the completion of a Governance Review from TAG Contributor Strategy.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
 ### Suggested
 
@@ -170,7 +170,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Required 
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
+  -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -182,7 +183,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
+  -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
 <!-- (TOC Evaluation goes here) --> 
 
@@ -192,13 +194,13 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Security
 
-Note: this section may be augmented by a joint-assessment performed by TAG Security.
-
 ### Suggested
 
 N/A
 
 ### Required
+
+Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
 
 - [ ] **Clearly defined and discoverable process to report security issues.**
 
