@@ -1,0 +1,29 @@
+name: Leadership Nomination
+description: Nominate a TAG Chair, Technical Lead, or Subproject Lead
+title: "[VOTE]: "
+labels:
+- kind/election
+- vote/nomination
+body:
+- type: textarea
+  id: group
+  attributes:
+    label: Position
+    description: Provide the group name and role of the leadership position
+  validations:
+    required: true
+- type: textarea
+  id: name
+  attributes:
+    label: Name
+    description: Name and Github handle of the nominee
+  validations:
+    required: true
+- type: textarea
+  id: motivation
+  attributes:
+    label: Motivation & Additional Information
+    description: Please provide a motivation why the nominee is a suitable candidate for the position.
+  validations:
+    required: true
+    
