@@ -5,7 +5,11 @@
 | TAG App Delivery         | [Bryan Liles](https://github.com/bryanl)                 |
 | TAG App Delivery         | [Lei Zhang](https://github.com/resouer)                  |
 | TAG App Delivery         | [Alex Jones](https://github.com/alexsjones)              |
+| TAG App Delivery         | [Josh Gavant](https://github.com/joshgav)                |
 | TAG App Delivery         | [Karena Angell](https://github.com/angellk)              |
+| TAG App Delivery         | [Thomas Schuetz](https://github.com/thschue)             |
+| TAG App Delivery         | [Lian Li](https://github.com/lianmakesthings)            |
+| TAG App Delivery         | [Roberth Strand](https://github.com/roberthstrand)       |
 | TAG Contributor Strategy | [Gerred Dillon](https://github.com/gerred)               |
 | TAG Contributor Strategy | [Paris Pittman](https://github.com/parispittman)         |
 | TAG Contributor Strategy | [Stephen Augustus](https://github.com/justaugustus)      |
@@ -21,3 +25,4 @@
 | TAG Security             | [Andrew Martin](https://github.com/sublimino)            |
 | TAG Storage              | [Erin Boyd](https://github.com/erinboyd)                 | 
 | TAG Network              | [Lin Sun](https://github.com/linsun)                     |
+
