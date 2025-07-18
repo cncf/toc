@@ -1,9 +1,10 @@
-name: '[WIP] Technical Review'
+name: 'Technical Review'
 description: Project technical review request
 title: '[Tech Review]:'
 labels:
   - kind/initiative
-  - kind/tech-review
+  - review/tech
+  - sub/project-review
 body:
   - type: input
     id: name
