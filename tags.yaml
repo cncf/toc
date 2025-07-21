@@ -206,10 +206,10 @@ tags: # Technical Advisory Groups
             start: "2025-07-02"
             end: "2026-06-30"
         - github: halcyondude
-          lfx_id:
+          lfx_id: halcyondude
           name: Matt Young
           company:
-          email:
+          email: halcyondude@gmail.com
           term:
             start: "2025-07-02"
             end: "2027-06-30"
