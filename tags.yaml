@@ -32,6 +32,22 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
+        - github: graz-dev
+          lfx_id:
+          name: Graziano Casto
+          company:
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2026-06-30"
+        - github: joshuabezaleel
+          lfx_id:
+          name: Joshua Bezaleel Abednego
+          company:
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2027-06-30"    
         - github: julsemaan
           lfx_id:
           name: Julien Semaan
@@ -39,7 +55,7 @@ tags: # Technical Advisory Groups
           email:
           term:
             start: "2025-07-02"
-            end: "2027-06-30"
+            end: "2027-06-30"  
         - github: kdubois
           lfx_id:
           name: Kevin Dubois
@@ -114,6 +130,14 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2026-06-30"
       tech_leads:
+        - github: alexagriffith
+          lfx_id:
+          name: Alexa Griffith
+          company:
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2027-06-30"
         - github: aojea
           lfx_id:
           name: Antonio Ojea
@@ -122,6 +146,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
+         - github: bschaatsbergen
+          lfx_id:
+          name: Bruno Schaatsbergen
+          company:
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2026-06-30"
         - github: nicholasjackson
           lfx_id:
           name: Nicholas Jackson
@@ -197,6 +229,22 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
+        - github: alolita
+          lfx_id:
+          name: Alolita Sharma
+          company:
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2026-06-30"
+         - github: krol3
+          lfx_id:
+          name: Carol Valencia
+          company:
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2027-06-30"
         - github: raffaelespazzoli
           lfx_id:
           name: Raffaele Spazzoli
@@ -279,6 +327,14 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
+        - github: brandkeller
+          lfx_id:
+          name: Brand Keller
+          company: Red Hat
+          email: barnabel.jennifer@gmail.com
+          term:
+            start: "2025-07-02"
+            end: "2026-06-30"
         - github: jpower432
           lfx_id:
           name: Jennifer Power
@@ -287,6 +343,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2026-06-30"
+        - github: jkjell
+          lfx_id:
+          name: John Kjell
+          company: 
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2027-06-30"
         - github: JustinCappos
           lfx_id:
           name: Justin Cappos
@@ -295,6 +359,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
+        - github: mlieberman85
+          lfx_id:
+          name: Michael Lieberman
+          company:
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2026-06-30"
         - github: y-tabata
           lfx_id:
           name: Yoshiyuki Tabata
@@ -378,6 +450,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
+        - github: kerthcet
+          lfx_id:
+          name: Kante Yin
+          company:
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2027-06-30"
         - github: rajaskakodkar
           lfx_id:
           name: Rajas Kakodkar
@@ -386,6 +466,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
+        - github: srust
+          lfx_id:
+          name: Stephen Rust
+          company:
+          email:
+          term:
+            start: "2025-07-02"
+            end: "2026-06-30"
     meetings:
       - description: TAG Workloads Foundation Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list
