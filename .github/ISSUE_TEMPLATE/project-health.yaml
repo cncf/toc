@@ -54,9 +54,9 @@ body:
 - type: textarea
   id: archiving-checklist
   attributes:
-    label: Archiving Checklist (If project is determined for archival)
+    label: Archiving Checklist (Only applicable if the project opts to self-archive, or archiving is initiated as a last possible option.)
     value: |
-      Once a project has been identified as unhealthy and a decision has been made to archive it, the following steps should be completed.
+      Once a project has been identified to be archived, the following steps should be completed.
       When the archiving process is initiated add the `archive` label and assign: caniszczyk, mrbobbytables, idvoretskyi, jeefy, castrojo
 
       ### Archiving Checklist
