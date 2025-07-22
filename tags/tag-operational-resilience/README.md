@@ -12,6 +12,8 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 - Rafael Brito (**[@brito-rafa](https://github.com/brito-rafa)**) (Term: 2025-07-01 - 2026-06-30)
 - Saiyam Pathak (**[@saiyam1814](https://github.com/saiyam1814)**) (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
+- Alolita Sharma (**[@alolita](https://github.com/alolita)**) (Term: 2025-07-02 - 2026-06-30)
+- Carol Valencia (**[@krol3](https://github.com/krol3)**) (Term: 2025-07-02 - 2027-06-30)
 - Raffaele Spazzoli (**[@raffaelespazzoli](https://github.com/raffaelespazzoli)**) (Term: 2025-07-02 - 2026-06-30)
 - Matt Young (**[@halcyondude](https://github.com/halcyondude)**) (Term: 2025-07-02 - 2027-06-30)
 - Nabarun Pal (**[@palnabarun](https://github.com/palnabarun)**) (Term: 2025-07-02 - 2027-06-30)
