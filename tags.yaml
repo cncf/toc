@@ -55,7 +55,7 @@ tags: # Technical Advisory Groups
           email:
           term:
             start: "2025-07-02"
-            end: "2027-06-30"  
+            end: "2027-06-30"
         - github: kdubois
           lfx_id:
           name: Kevin Dubois
@@ -146,7 +146,7 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
-         - github: bschaatsbergen
+        - github: bschaatsbergen
           lfx_id:
           name: Bruno Schaatsbergen
           company:
