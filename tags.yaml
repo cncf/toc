@@ -237,7 +237,7 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2026-06-30"
-         - github: krol3
+        - github: krol3
           lfx_id:
           name: Carol Valencia
           company:
