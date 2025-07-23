@@ -2,7 +2,11 @@
 name: Project Incubation Application
 about: This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria.
 title: "[Incubation] $PROJECT Incubation Application"
-labels: incubation
+labels:
+- dd/triage/needs-triage
+- level/incubation
+- kind/dd
+- toc
 ---
 
 # Review Project Moving Level Evaluation

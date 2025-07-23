@@ -1,7 +1,11 @@
 name: Project Health
 description: Register a concern regarding project health and alignment
 title: "[HEALTH]: "
-labels: ["health"]
+labels:
+- needs-triage
+- toc
+- kind/review
+- review/health
 body:
 - type: markdown
   attributes:
@@ -56,8 +60,10 @@ body:
   attributes:
     label: Archiving Checklist (If project is determined for archival)
     value: |
-      Once a project has been identified as unhealthy and a decision has been made to archive it, the following steps should be completed.
-      When the archiving process is initiated add the `archive` label and assign: caniszczyk, mrbobbytables, idvoretskyi, jeefy, castrojo
+      **NOTE:** Only applicable if the project opts to self-archive, or is initiated as a last possible option following a TOC vote.
+      To proceed with the archival checklist, add the `level/archive` label and assign: caniszczyk, mrbobbytables, idvoretskyi, jeefy, castrojo, krook
+      
+      <details>
 
       ### Archiving Checklist
       - [ ] TOC vote to archive passed
@@ -75,5 +81,8 @@ body:
       - [ ] Archive DevStats data (open issue in [devstats repo](https://github.com/cncf/devstats/issues))
       - [ ] Archive project in LFX Insights (move to archive in PCC)
       - [ ] Remove from [CLOMonitor data](https://raw.githubusercontent.com/cncf/clomonitor/main/data/cncf.yaml)
+
+      </details>
+      
   validations:
     required: false
