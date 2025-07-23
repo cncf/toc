@@ -330,8 +330,8 @@ tags: # Technical Advisory Groups
         - github: brandkeller
           lfx_id:
           name: Brand Keller
-          company: Red Hat
-          email: barnabel.jennifer@gmail.com
+          company:
+          email:
           term:
             start: "2025-07-02"
             end: "2026-06-30"
