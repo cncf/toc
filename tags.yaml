@@ -138,6 +138,22 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
+        - github: alexagriffith
+          lfx_id:
+          name: Alexa Griffith
+          company:
+          email:
+          term:
+            start: "2025-07-24"
+            end: "2027-06-30"
+        - github: bschaatsbergen
+          lfx_id:
+          name: Bruno Schaatsbergen
+          company:
+          email:
+          term:
+            start: "2025-07-24"
+            end: "2026-06-30"
     meetings:
       - description: TAG Infrastructure Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list

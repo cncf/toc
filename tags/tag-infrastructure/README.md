@@ -15,6 +15,8 @@ Data, Storage, Network, DNS, Compute, Service Mesh, Infrastructure-as-Code, Edge
 - Antonio Ojea (**[@aojea](https://github.com/aojea)**) (Term: 2025-07-02 - 2027-06-30)
 - Nicholas Jackson (**[@nicholasjackson](https://github.com/nicholasjackson)**) (Term: 2025-07-02 - 2026-06-30)
 - Zhonghu Xu (**[@hzxuzhonghu](https://github.com/hzxuzhonghu)**) (Term: 2025-07-02 - 2027-06-30)
+- Alexa Griffith (**[@alexagriffith](https://github.com/alexagriffith)**) (Term: 2025-07-24 - 2027-06-30)
+- Bruno Schaatsbergen (**[@bschaatsbergen](https://github.com/bschaatsbergen)**) (Term: 2025-07-24 - 2026-06-30)
 
 ## Meetings
 - **TAG Infrastructure Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGInfrastructure)
