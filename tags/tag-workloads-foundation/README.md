@@ -14,7 +14,9 @@ Containers, OS, Runtime, Virtual Machines, Serverless, Web Assembly, Batch, Sche
 ### Tech Leads
 - Alexander D. Kanevskiy (**[@kad](https://github.com/kad)**) (Term: 2025-07-02 - 2026-06-30)
 - Hongcai Ren (**[@RainbowMango](https://github.com/RainbowMango)**) (Term: 2025-07-02 - 2027-06-30)
+- Kante Yin (**[@kerthcet](https://github.com/kerthcet)**) (Term: 2025-07-02 - 2027-06-30)
 - Rajas Kakodkar (**[@rajaskakodkar](https://github.com/rajaskakodkar)**) (Term: 2025-07-02 - 2027-06-30)
+- Stephen Rust (**[@srust](https://github.com/srust)**) (Term: 2025-07-02 - 2026-06-30)
 
 ## Meetings
 - **TAG Workloads Foundation Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGWorkloadsFoundation)

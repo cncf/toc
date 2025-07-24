@@ -12,7 +12,9 @@ Data, Storage, Network, DNS, Compute, Service Mesh, Infrastructure-as-Code, Edge
 - Kashif Khan (**[@kashifest](https://github.com/kashifest)**) (Term: 2025-07-01 - 2027-06-30)
 - Xing Yang (**[@xing-yang](https://github.com/xing-yang)**) (Term: 2025-07-01 - 2026-06-30)
 ### Tech Leads
+- Alexa Griffith (**[@alexagriffith](https://github.com/alexagriffith)**) (Term: 2025-07-02 - 2027-06-30)
 - Antonio Ojea (**[@aojea](https://github.com/aojea)**) (Term: 2025-07-02 - 2027-06-30)
+- Bruno Schaatsbergen (**[@bschaatsbergen](https://github.com/bschaatsbergen)**) (Term: 2025-07-02 - 2026-06-30)
 - Nicholas Jackson (**[@nicholasjackson](https://github.com/nicholasjackson)**) (Term: 2025-07-02 - 2026-06-30)
 - Zhonghu Xu (**[@hzxuzhonghu](https://github.com/hzxuzhonghu)**) (Term: 2025-07-02 - 2027-06-30)
 
