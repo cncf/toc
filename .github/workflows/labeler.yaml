@@ -1,0 +1,52 @@
+name: Auto Label Issues and PRs
+
+on:
+  issues:
+    types: [opened, edited, reopened, transferred]
+  issue_comment:
+    types: [created, edited]
+  pull_request_target:
+    types: [opened, edited, reopened]
+
+jobs:
+  label:
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Get changed files
+        if: ${{ github.event.pull_request }}
+        id: changed-files
+        uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c
+        with:
+          separator: ","
+          
+      - name: Run labeler action for PR
+        if: ${{ github.event.pull_request }}
+        uses: cncf/automation/.github/actions/labeler-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          labels: ./.github/labels.yaml
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          issue_number: ${{ github.event.pull_request.number }}
+          comment_body: ${{ github.event.pull_request.body }}
+          changed_files: ${{ steps.changed-files.outputs.all_changed_files }}
+          
+      - name: Run labeler action for Issue
+        if: ${{ !github.event.pull_request }}
+        uses: cncf/automation/.github/actions/labeler-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          labels: ./.github/labels.yaml
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          issue_number: ${{ github.event.issue.number }}
+          comment_body: ${{ github.event.comment.body }}
