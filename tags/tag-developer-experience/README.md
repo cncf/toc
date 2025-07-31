@@ -1,8 +1,8 @@
 # TAG Developer Experience
 
 ## Mission Statement
-Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 
+The mission of the CNCF TAG Developer Experience (TAG: DevEx) is to improve the end-to-end experience for developers building, testing, deploying, and maintaining cloud native applications. We emphasize outcomes over dogma, focusing on unifying developers, platforms to drive modern software excellence, system resilience, and business value. We aim to provide guidance, foster collaboration, and support CNCF projects that enhance productivity, usability, user experience, and improve developer satisfaction within the cloud native ecosystem.
 
 [Charter](./charter.md)
 
