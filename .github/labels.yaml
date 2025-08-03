@@ -62,11 +62,11 @@ labels:
 - name: dd/tech-review/not-started
   description: Tech Review has not yet been started
   color: d93f0b
-- name: dd/triage/incomplete-application
-  description: Application incomplete; must be completed for application to be marked ready
+- name: dd/triage/needs-more-information
+  description: Incomplete application, or question needs additional information
   color: b60205
 - name: dd/triage/needs-adopters
-  description: Additional adopters needed for DD application to be marked ready.
+  description: Additional adopters needed for DD application to be marked ready
   color: b60205
 - name: gitvote
   description: ''
@@ -486,7 +486,7 @@ ruleset:
     - matchList:
       - dd/triage/needs-triage
       - dd/triage/needs-adopters
-      - dd/triage/incomplete-application
+      - dd/triage/needs-more-information
       - dd/triage/needs-security-assessment
   actions:
   - kind: remove-label
