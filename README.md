@@ -44,7 +44,7 @@ If you would like to know more about the project lifecycle we use, we have [outl
 
 The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific Time; [Convert to local time zone](http://www.thetimezoneconverter.com/?t=8:00AM&tz=San%20Francisco)).  
 
-Here is a [calendar for all public CNCF events]([https://goo.gl/eyutah](https://zoom-lfx.platform.linuxfoundation.org/meetings/cncf?view=week)). This calendar is also available on the [CNCF Website](https://www.cncf.io/calendar/) Meetings can be joined directly form the calendar.
+Here is a [calendar for all public CNCF events](https://zoom-lfx.platform.linuxfoundation.org/meetings/cncf?view=week). This calendar is also available on the [CNCF Website](https://www.cncf.io/calendar/) Meetings can be joined directly form the calendar.
 
 ## Meeting Agenda and Minutes
 - [Meeting Agenda and Minutes](https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3Akind%2Fmeeting%20)
