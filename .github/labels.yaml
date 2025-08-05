@@ -1,0 +1,808 @@
+autoCreateLabels: false
+autoDeleteLabels: false
+definitionRequired: true
+
+
+
+labels:
+- name: dd/adopters/complete
+  description: DD Adopter Interviews have been completed
+  color: 41cd40
+- name: dd/adopters/in-progress
+  description: DD Adopter Interviews are in progress
+  color: 61D6C3
+- name: dd/adopters/not-started
+  description: Adopter interviews have not yet been started
+  color: d93f0b
+- name: dd/gov-review/complete
+  description: DD Governance Review has been completed
+  color: 41cd40
+- name: dd/gov-review/in-progress
+  description: DD Governance Review is in progress
+  color: 61D6C3
+- name: dd/gov-review/not-started
+  description: Governance Review has not yet been started
+  color: d93f0b
+- name: dd/needs-triage
+  description: DD application has not been reviewed
+  color: ededed
+- name: dd/sec-review/complete
+  description: DD Security Review has been completed
+  color: 41cd40
+- name: dd/sec-review/in-progress
+  description: DD Security Review is in progress
+  color: 61D6C3
+- name: dd/sec-review/not-started
+  description: Security Review has not yet been started
+  color: d93f0b
+- name: dd/status/complete
+  description: DD has been completed
+  color: 41cd40
+- name: dd/status/in-comment-period
+  description: DD is in the public comment period
+  color: 0052cc
+- name: dd/status/in-progress
+  description: DD is in progress
+  color: 61D6C3
+- name: dd/status/in-voting
+  description: DD is currently in voting
+  color: 74a0f4
+- name: dd/status/ready-for-assignment
+  description: DD Prerequisites complete; ready to be assigned to a TOC member.
+  color: fbca04
+- name: dd/status/waiting
+  description: DD has been paused and will pick up at a later date
+  color: d93f01
+- name: dd/tech-review/complete
+  description: DD Tech Review has been completed
+  color: 41cd40
+- name: dd/tech-review/in-progress
+  description: DD Tech Review is in progress
+  color: 61D6C3
+- name: dd/tech-review/not-started
+  description: Tech Review has not yet been started
+  color: d93f0b
+- name: dd/triage/needs-more-information
+  description: Incomplete application, or question needs additional information
+  color: b60205
+- name: dd/triage/needs-adopters
+  description: Additional adopters needed for DD application to be marked ready
+  color: b60205
+- name: gitvote
+  description: ''
+  color: ededed
+- name: gitvote/closed
+  description: ''
+  color: ededed
+- name: gitvote/passed
+  description: ''
+  color: ededed
+- name: help wanted
+  description: ''
+  color: '159818'
+- name: init/complete
+  description: Initiative has been completed
+  color: 41cd40
+- name: init/in-progress
+  description: Initiative is in progress and actively being worked on
+  color: 61D6C3
+- name: init/not-started
+  description: Initiative has been accepted, but not started (in the backlog)
+  color: d93f0b
+- name: init/stale
+  description: Initiative is no longer actively being worked on
+  color: b60205
+- name: kind/dd
+  description: Project DD or item related to the DD process
+  color: 61D6C3
+- name: kind/docs
+  description: Docs related changes or updates
+  color: 61D6C3
+- name: kind/enhancement
+  description: General items related to enhancements or improvements.
+  color: 61D6C3
+- name: kind/initiative
+  description: An initiative or an item related to imitative processes
+  color: 61D6C3
+- name: kind/meeting
+  description: Item related to a meeting
+  color: 61D6C3
+- name: kind/review
+  description: Item related to a governance, tech, or other review
+  color: 61D6C3
+- name: kind/subproject
+  description: Item related to a subproject or subproject related process
+  color: 61D6C3
+- name: level/archived
+  description: Item related to an archived level project or the archive criteria/process itself
+  color: d93f0b
+- name: level/graduation
+  description: Item related to a graduation level project or the graduation criteria/process itself
+  color: 0052cc
+- name: level/incubation
+  description: Item related to an incubation level project or the incubation criteria/process itself
+  color: ed0e81
+- name: level/sandbox
+  description: Item related to a sandbox level project or the sandbox criteria/process itself
+  color: e884e1
+- name: needs-group
+  description: Indicates an issue or PR that has not been assigned a group (toc or tag/foo label applied)
+  color: ededed
+- name: needs-kind
+  description: Indicates an issue or PR that is missing an issue type or kind (a kind/foo label)
+  color: ededed
+- name: needs-triage
+  description: Indicates an issue or PR that has not been triaged yet (has a 'triage/foo' label applied)
+  color: ededed
+- name: review/governance
+  description: Project Governance Review
+  color: '5319e7'
+- name: review/health
+  description: Project Health Review
+  color: '5319e7'
+- name: review/security
+  description: Project Security Review
+  color: '5319e7'
+- name: review/tech
+  description: Project Tech Review
+  color: '5319e7'
+- name: sub/contributor-strategy-and-advocacy
+  description: TOC Contributor Strategy and Advocacy SubProject
+  color: 924F23
+- name: sub/mentoring
+  description: TOC Mentoring Subproject
+  color: 6DCC2C
+- name: sub/project-reviews
+  description: TOC Project Review Subproject
+  color: '3E4469'
+- name: tag/developer-experience
+  description: TAG Developer Experience
+  color: c2e0c6
+- name: tag/infrastructure
+  description: TAG Infrastructure
+  color: D786DA
+- name: tag/operational-resilience
+  description: TAG Operational Resilience
+  color: 83075D
+- name: tag/security-and-compliance
+  description: TAG Security and Compliance
+  color: 78C971
+- name: tag/workloads-foundation
+  description: TAG Workloads Foundation
+  color: 6AE2DC
+- name: toc
+  description: toc specific issue
+  color: CF0CBE
+- name: toc/initiative/AI
+  description: TOC Artificial Intelligence Initiative
+  color: d4c5f9
+- name: triage/duplicate
+  description: Duplicate issue or PR, can be closed
+  color: ebf84a
+- name: triage/needs-information
+  description: Needs additional information provided before it can be worked on
+  color: b60205
+- name: triage/not-planned
+  description: Out of scope, or not planned to be worked on
+  color: d93f0b
+- name: triage/valid
+  description: Issue or PR is valid with enough information to be actionable
+  color: 0e8a16
+- name: vote open
+  description: ''
+  color: ededed
+- name: vote/closed
+  description: An election that has been completed
+  color: 5c2908
+- name: vote/nomination
+  description: A nomination or call for nominations
+  color: E00EEF
+- name: vote/open
+  description: An election is open
+  color: 0e8a16
+
+
+
+ruleset:
+
+##############################################################################
+# Remove command rules
+#
+# Rules are executed in order, to be evaluated correctly removals rules need
+# to be executed first.
+##############################################################################
+
+- name: remove-dd-triage
+  kind: match
+  spec:
+    command: /remove-dd/triage
+  actions:
+  - kind: remove-label
+    spec: 
+      match: dd/{{ argv.0 }}
+
+- name: remove-help
+  kind: match
+  spec:
+   command: /remove-help
+  actions:
+  - kind: remove-label
+    spec:
+      match: "help wanted"
+
+- name: remove-init
+  kind: match
+  spec:
+    command: /remove-init
+  actions:
+  - kind: remove-label
+    spec: 
+      match: init/{{ argv.0 }} 
+
+- name: remove-kind
+  kind: match
+  spec:
+    command: /remove-kind
+  actions:
+  - kind: remove-label
+    spec: 
+      match: kind/{{ argv.0 }}
+
+- name: remove-level
+  kind: match
+  spec:
+    command: /remove-level
+  actions:
+  - kind: remove-label
+    spec: 
+      match: level/{{ argv.0 }}
+
+- name: remove-review
+  kind: match
+  spec:
+    command: /remove-review
+  actions:
+  - kind: remove-label
+    spec: 
+      match: review/{{ argv.0 }}
+
+- name: remove-sub
+  kind: match
+  spec:
+    command: /remove-sub
+  actions:
+  - kind: remove-label
+    spec:
+      match: sub/{{ argv.0 }}
+
+- name: remove-tag
+  kind: match
+  spec:
+    command: /remove-tag
+  actions:
+  - kind: remove-label
+    spec: 
+      match: tag/{{ argv.0 }}
+
+- name: test
+  kind: filePath
+  spec:
+    matchPath: "utilities/labeler/*"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: toc
+
+# has to come before /toc otherwise it will try and match as "toc/{{argv.0}}"
+- name: remove-toc-init
+  kind: match
+  spec:
+    command: /remove-toc/initiative
+  actions:
+  - kind: remove-label
+    spec:
+      match: toc/initiative/{{ argv.0 }}
+
+- name: remove-toc
+  kind: match
+  spec:
+    command: /remove-toc
+  actions:
+  - kind: remove-label
+    spec: 
+      match: toc
+
+- name: remove-triage
+  kind: match
+  spec:
+   command: /remove-triage
+  actions:
+  - kind: remove-label
+    spec:
+      match: triage/{{ argv.0 }}
+
+- name: remove-vote
+  kind: match
+  spec:
+    command: /remove-vote
+  actions:
+  - kind: remove-label
+    spec:
+      match: vote/*
+
+
+##############################################################################
+# Label state rules & needs-<foo> rules
+##############################################################################
+
+- name: needs-triage
+  kind: label
+  spec:
+    match: triage/*
+    matchCondition: NOT
+  actions:
+  - kind: apply-label
+    spec:
+      label: needs-triage
+
+- name: needs-kind
+  kind: label
+  spec:
+    match: kind/*
+    matchCondition: NOT
+  actions:
+  - kind: apply-label
+    spec:
+      label: needs-kind
+
+- name: needs-group
+  kind: label
+  spec:
+    match: "{toc,tag/*,sub/*}"
+    matchCondition: NOT
+  actions:
+  - kind: apply-label
+    spec:
+      label: "needs-group"
+
+- name: apply-kind
+  kind: match
+  spec:
+    command: /kind
+    rules:
+    - matchList:
+      - needs-kind
+      - kind/dd
+      - kind/docs
+      - kind/enhancement
+      - kind/initiative
+      - kind/meeting
+      - kind/review
+      - kind/subproject
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-kind
+  - kind: apply-label
+    spec:
+      label: kind/{{ argv.0 }}
+
+- name: apply-triage
+  kind: match
+  spec:
+    command: /triage
+    rules:
+    - matchList:
+      - needs-triage
+      - triage/valid
+      - triage/needs-information
+      - triage/duplicate
+      - triage/not-planned
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-triage
+  - kind: remove-label
+    spec:
+      match: triage/*
+  - kind: apply-label
+    spec:
+      label: triage/{{ argv.0 }}
+
+
+##############################################################################
+# Group (toc/tag/sub) apply commands
+##############################################################################
+
+- name: apply-tag
+  kind: match
+  spec:
+    command: /tag
+    rules:
+    - matchList:
+      - needs-group
+      - tag/developer-experience
+      - tag/infrastructure
+      - tag/operational-resilience
+      - tag/security-compliance
+      - tag/workloads-foundation
+  actions:
+  - kind: remove-label 
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: tag/{{ argv.0 }} 
+
+- name: apply-toc
+  kind: match
+  spec:
+    command: /toc
+    rules:
+    - match: "toc"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: toc
+
+- name: apply-sub
+  kind: match
+  spec:
+    command: /sub
+    rules:
+    - matchList:
+      - needs-group
+      - sub/contributor-strategy-and-advocacy
+      - sub/mentoring
+      - sub/project-reviews
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: sub/{{ argv.0 }}
+
+
+##############################################################################
+# DD commands
+##############################################################################
+
+# triage for DD only includes items that are 'blockers'. Any project that has a 
+# complete app, submitted adopters, and has completed their security assessment
+# is ready to be evaluated and dd/status/ready-for-review
+
+- name: apply-dd-triage
+  kind: match
+  spec:
+    command: /dd/triage
+    rules:
+    - matchList:
+      - dd/triage/needs-triage
+      - dd/triage/needs-adopters
+      - dd/triage/needs-more-information
+      - dd/triage/needs-security-assessment
+  actions:
+  - kind: remove-label
+    spec:
+      match: dd/triage/needs-triage
+  - kind: apply-label
+    spec:
+      label: dd/triage/{{ argv.0 }}
+
+# when ready for assignment, clear previous triage state labels and status
+- name: apply-dd-ready
+  kind: match
+  spec:
+    command: /dd/status
+    rules:
+    - match: ready-for-assignment
+  actions:
+  - kind: remove-label
+    spec:
+      match: dd/triage/*
+  - kind: apply-label
+    spec:
+      label: dd/status/ready-for-assignment
+  
+- name: apply-dd-status
+  kind: match
+  spec:
+    command: /dd/status
+    rules:
+    - matchList:
+      - dd/status/ready-for-assignment
+      - dd/status/in-progress
+      - dd/status/in-comment-period
+      - dd/status/in-voting
+      - dd/status/complete
+      - dd/status/waiting
+  actions:
+  - kind: remove-label
+    spec:
+      match: dd/triage/*
+  - kind: remove-label
+    spec:
+      match: dd/status/*
+  - kind: apply-label
+    spec:
+      label: dd/adopters/not-started
+  - kind: apply-label
+    spec:
+      label: dd/gov-review/not-started
+  - kind: apply-label
+    spec:
+      label: dd/tech-review/not-started
+  - kind: apply-label
+    spec:
+      label: dd/sec-review/not-started
+  - kind: apply-label
+    spec:
+      label: dd/status/{{ argv.0 }}
+    
+- name: apply-dd-adopters
+  kind: match
+  spec:
+    command: /dd/adopters
+    rules:
+    - matchList:
+      - dd/adopters/not-started
+      - dd/adopters/in-progress
+      - dd/adopters/complete
+  actions:
+  - kind: remove-label
+    spec:
+      match: dd/adopters/*
+  - kind: apply-label
+    spec:
+      label: dd/adopters/{{ argv.0 }}
+
+- name: apply-dd-gov-review
+  kind: match
+  spec:
+    command: /dd/gov-review
+    rules:
+    - matchList:
+      - dd/gov-review/not-started
+      - dd/gov-review/in-progress
+      - dd/gov-review/complete
+  actions:
+  - kind: remove-label
+    spec:
+      match: dd/gov-review/*
+  - kind: apply-label
+    spec:
+      label: dd/gov-review/{{ argv.0 }}   
+
+- name: apply-dd-tech-review
+  kind: match
+  spec:
+    command: /dd/tech-review
+    rules:
+    - matchList:
+      - dd/tech-review/not-started
+      - dd/tech-review/in-progress
+      - dd/tech-review/complete
+  actions:
+  - kind: remove-label
+    spec:
+      match: dd/tech-review/*
+  - kind: apply-label
+    spec:
+      label: dd/tech-review/{{ argv.0 }}
+
+- name: apply-dd-sec-review
+  kind: match
+  spec:
+    command: /dd/sec-review
+    rules:
+    - matchList:
+      - dd/sec-review/not-started
+      - dd/sec-review/in-progress
+      - dd/sec-review/complete
+  actions:
+  - kind: remove-label
+    spec:
+      match: dd/sec-review/*
+  - kind: apply-label
+    spec:
+      label: dd/sec-review/{{ argv.0 }} 
+
+
+##############################################################################
+# Initiatives
+##############################################################################
+
+- name: apply-toc-init
+  kind: match
+  spec:
+    command: /toc/initiative
+    rules:
+    - matchList:
+      - toc/initiative/AI
+  actions:
+  - kind: apply-label
+    spec:
+      label: toc/initiative/{{ argv.0 }}
+
+
+- name: apply-init-lifecycle
+  kind: match
+  spec:
+    command: /init
+    rules:
+    - matchList:
+      - init/not-started
+      - init/in-progress
+      - init/complete
+      - init/stale
+  actions:
+  - kind: remove-label
+    spec:
+      match: init/*
+  - kind: apply-label
+    spec:
+      label: init/{{ argv.0 }}
+
+
+##############################################################################
+# Vote / Election Commands
+##############################################################################
+
+- name: vote-open-closed
+  kind: match
+  spec:
+    command: /vote
+    rules:
+    - matchList:
+      - vote/open
+      - vote/closed
+  actions:
+  - kind: remove-label
+    spec:
+      match: vote/open
+  - kind: remove-label
+    spec:
+      match: vote/closed
+  - kind: apply-label
+    spec:
+      label: vote/{{ argv.0 }}
+
+- name: vote-nomination
+  kind: match
+  spec:
+    command: /vote
+    rules:
+    - match: nomination
+  actions:
+  - kind: apply-label
+    spec:
+      label: vote/nomination
+
+
+##############################################################################
+# Misc Commands
+##############################################################################
+
+- name: help
+  kind: match
+  spec:
+    command: /help
+    rules:
+    - match: ""
+  actions:
+  - kind: apply-label
+    spec:
+      label: "help wanted"
+
+
+##############################################################################
+# filepath rules
+##############################################################################
+
+
+- name: charter
+  kind: filePath
+  spec:
+    matchPath: "tags/*/charter.md"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: toc
+- name: tag-developer-experience-dir
+  kind: filePath
+  spec:
+    matchPath: "tags/tag-developer-experience/*"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: tag/developer-experience
+- name: tag-infrastructure-dir
+  kind: filePath
+  spec:
+    matchPath: "tags/tag-infrastructure/*"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: tag/infrastructure
+- name: tag-operational-resilience-dir
+  kind: filePath
+  spec:
+    matchPath: "tags/tag-operational-resilience/*"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: tag/operational-resilience
+- name: tag-security-and-compliance-dir
+  kind: filePath
+  spec:
+    matchPath: "tags/tag-security-and-compliance/*"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: tag/security-and-compliance
+- name: tag-workloads-foundation-dir
+  kind: filePath
+  spec:
+    matchPath: "tags/tag-workloads-foundation/*"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: tag/workloads-foundation
+- name: sub-contrib-strat-dir
+  kind: filePath
+  spec:
+    matchPath: "toc_subprojects/contributor-strategy-and-advocacy/*"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: sub/contributor-strategy-and-advocacy
+- name: sub-mentoring-dir
+  kind: filePath
+  spec:
+    matchPath: "toc_subprojects/mentoring/*"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: sub/mentoring
+- name: sub-project-reviews-dir
+  kind: filePath
+  spec:
+    matchPath: "toc_subprojects/project-reviews/*"
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
+  - kind: apply-label
+    spec:
+      label: sub/project-reviews
