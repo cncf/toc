@@ -2,7 +2,7 @@
 name: Joint security review
 about: To request a joint review or track progress on active review
 title: "[Security Review] Project Name"
-labels: "triage-required"
+labels: "tag/security-and-compliance, needs-triage"
 assignees: ''
 
 ---
