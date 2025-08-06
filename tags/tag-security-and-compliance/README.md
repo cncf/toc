@@ -14,7 +14,7 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 ### Tech Leads
 - Brand Keller (**[@brandkeller](https://github.com/brandkeller)**) (Term: 2025-07-02 - 2026-06-30)
 - Jennifer Power (**[@jpower432](https://github.com/jpower432)**), Red Hat (Term: 2025-07-02 - 2026-06-30)
-- John Kjell (**[@jkjell](https://github.com/jkjell)**) (Term: 2025-07-02 - 2027-06-30)
+- John Kjell (**[@jkjell](https://github.com/jkjell)**), ControlPlane (Term: 2025-07-02 - 2027-06-30)
 - Justin Cappos (**[@JustinCappos](https://github.com/JustinCappos)**), New York University (Term: 2025-07-02 - 2027-06-30)
 - Michael Lieberman (**[@mlieberman85](https://github.com/mlieberman85)**) (Term: 2025-07-02 - 2026-06-30)
 - Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**), Hitachi (Term: 2025-07-02 - 2026-06-30)
