@@ -27,9 +27,13 @@ The following recommendations were provided to the project that are non-blocking
 
 ### Adoption Evaluation
 
-The adopter interviews reflect the project use for the Incubation level to which the project has applied.
+The adopter interviews reflect the project use for the Incubation level to which the project has applied. We have conducted the interviews of 3 organizations that span across different usages, scalability and feature requirements.
 
-TODO
+Noteworthy highlights, are that Alibaba Group has been running Fluid in their production environment for over 3 years, with over 5,000 dataset creations and deletions per day. Fluid provided measurable value for Alibaba Group, with significant changes in terms of efficiency improvements and cost savings. Alibaba Group also benefited from the zero-downtime upgrades of the underlying storage engine, ensuring uninterrupted model training across more than 10,000 nodes.
+
+On the other side, Adopter 2 has been using the project for just under 1 year, with over 5,000 nodes, 600+ dataset creations and deletions on demand every day. Fluid delivered measurable value by slashing new storage integration time by 70% and accelerating training cycles 3x through distributed caching – turning multi-cloud data bottlenecks into a competitive advantage. 
+
+
 
 ### Final Assessment
 
@@ -345,6 +349,44 @@ Refer to the Adoption portion of this document.
 
 #### Adoption
 
+##### Alibaba Group - technology company
+
+Alibaba Group has been running Fluid in their production environment for over 3 years, with over 5,000 dataset creations and deletions per day on OSS/HDFS/NAS. The organization is currently using version 1.0.1, with a small portion still running on 0.9.2.
+
+The project optimized Alibaba Group's large-scale AI training pipelines by speeding up training sample and model loading. The automatic scaling of the distributed cache improved GPU utilization for over 2,000 concurrent tasks. Data-aware scheduling increased throughput by 40% and reduced GPU idle cycles by 30%. The organization also uses Fluid for scheduling and co-locating multiple data cache clusters along with the application Pods that utilize them.
+
+Alibaba Group chose Fluid over alternatives like Datashim and Alluxio’s operator due to its superior storage versatility. It supports diverse data sources (JuiceFS, PVC, GPFS, Lustre) without cloud platform constraints, working seamlessly with both CSI and sidecar modes. Additionally, through Kubernetes CRDs, it simplifies operations like cache scaling, data preloading, migration, and custom operations, integrating perfectly with existing infrastructure. More importantly， Fluid can support large scale deployments. According to their test, Fluid can reliably manage a cluster with over 10 thousand nodes. In 24 hours, there were more than 5,000 Fluid Dataset CRs and over 6,000 AI jobs accessing data produced via mounted Fluid Datasets.
+
+The adopter's experience in using and integrating Fluid with existing services has been mainly positive. In most cases, the documentation provided in the GitHub repository was sufficient to get the examples working. For other scenarios, the team referenced some best-practice blog posts written by the community. The main challenges encountered were stability at a large scale (which Alibaba Group addressed by implementing real-time monitoring of storage mount statuses, allowing Fluid to automatically repair abnormal mount points to ensure data access availability and reduce manual intervention) and the evolving needs of AI users, which demanded a high level of API abstraction.
+
+The adopter was able to engage with the community members through available channels, mainly to report issues they encountered and to propose new feature requests. Alibaba Group used GitHub issues and pull requests to discuss with the wider community and maintainers.
+
+Overall, Fluid has provided measurable value for Alibaba Group, with significant changes in terms of efficiency improvements and cost savings. The adopter also benefited from the zero-downtime upgrades of the underlying storage engine, ensuring uninterrupted model training across more than 10,000 nodes.
+
+August 2025
+
+##### Adopter 2- technology company
+
+Adopter 2 has been using the project for just under 1 year. The company operates a multi-cloud architecture, making Fluid essential for cross-cloud data access compatibility for containers and storage, performance optimization for data-intensive workloads, and cost reduction on cross-cloud dedicated lines. Fluid operates in production with over 5,000 nodes, 600+ dataset creations and deletions on demand every day. The current version used is 1.0.5.
+
+Some of the key features that the organization leverages are unified storage orchestration via ThinRuntime that allows for integrating diverse storage systems (self-developed storage, JuiceFS, GPFS, cloud provider‘s storage) and eliminates storage-specific CSI plugins, which reduces management overhead (ref: https://github.com/fluid-cloudnative/fluid/blob/master/addons/readme.md). PVC-based acceleration for all storage types enables acceleration of existing PersistentVolumeClaims (PVCs) without migration and delivers consistent performance for heterogeneous storage (ref: https://fluid-cloudnative.github.io/docs/next/tutorials/storage-acceleration/accelerate-pvc-with-fluid). While cross-namespace cache sharing enables multiple teams to share cached datasets across Kubernetes namespaces, which eliminates redundant data copies with an overall 40% bandwidth cost reduction (ref: https://fluid-cloudnative.github.io/docs/next/tutorials/dataset-creation/share-data-across-namespace-csi).
+
+Adopter 2 has chosen Fluid over storage-specific operators or proprietary solutions after thorough research. Fluid provides unified management through a single control plane, orchestrating diverse storage systems and eliminating fragmented, operator-based management. It also offers vendor agnosticism, as Fluid avoids cache/cloud provider lock-in, critical for adopters' hybrid environment spanning Alibaba Cloud, Baidu Cloud, Tencent Cloud, and on-premises IDCs. Finally, the project enables large-scale production validation.  With over 5,000 nodes in production, Fluid’s battle-tested scalability and optimizations were essential, and it's an area where the project excels.
+
+Overall, the main technical flexibility that sealed Adopter 2's decision was dual runtime modes. Fluid supports both CSI driver and FUSE sidecar modes, allowing the adopter to use CSI for standard Kubernetes clusters, leveraging sidecar mode for serverless containers where CSI is unsupported and a consistent data plane - a flexibility that enables the organization to maintain uniform data access across all environments without platform-specific reengineering.
+
+The adopter's experience in using and integrating Fluid with existing services has been mainly positive. The team found Fluid’s documentation helpful (https://fluid-cloudnative.github.io/docs). The primary adoption challenge centered on troubleshooting complexity in production environments. Issues could originate from Fluid's control plane, underlying storage systems (e.g. JuiceFS/GPFS), or Kubernetes' PersistentVolume (PV) layer – requiring expertise across all domains to isolate failures. The adopter has actively engaged with Fluid’s community to resolve their production challenges. They communicated with community maintainers via the DingTalk group, reporting issues they encountered and expressing their needs for new functionalities.
+
+The project delivered measurable value by slashing new storage integration time by 70% and accelerating training cycles 3x through distributed caching – turning multi-cloud data bottlenecks into a competitive advantage. If Fluid were archived, the organization would face significant operational disruption due to its deep integration into its hybrid cloud infrastructure, as 100% of cross-cloud data workflows (caching, multi-storage access, serverless integration) is based on Fluid. Features like ThinRuntime abstraction and data operations(scale, data load) lack drop-in alternatives. In this scenario, the organization would fork Fluid’s codebase to maintain critical functionality for a long time, with a dedicated contributor team of 2-3 people.
+
+Based on Adopter 2's hybrid cloud practice, the most critical growth opportunity for Fluid is deep integration with multi-cluster orchestration ecosystems like Karmada, Clusternet, and Open Cluster Management. The project could introduce some improvements by reducing maintainers' workloads. Fluid should enrich docs with a deep technical dive (e.g. how ThinRuntime abstracts storage under the hood) and battle-tested best practices (like the 5,000-node tuning checklist). This would transform tribal knowledge into self-service answers.
+
+Resulting from the adopter's production experience and strategic roadmap, their future engagement with Fluid will focus on Data-Aware Multi-Cluster Scheduling, Cost-Optimized Runtime Switching, and Fluid at Scale Group. The main vectors of work are focused on co-developing cache-aware placement policies with multi-cluster orchestration projects (e.g. Karmada/OpenClusterManagement), enabling intelligent workload scheduling based on dataset availability and performance thresholds.
+
+The team also plans to implement dynamic runtime selection that automatically matches storage engines (JuiceFS/Jindo/Alluxio) to workload patterns – optimizing for performance, cost, or data characteristics without manual intervention.
+Through Fluid at Scale Group, Adopter 2 aims to publish enterprise-grade blueprints for 10,000+ node deployments and co-maintain disaster recovery protocols for mission-critical environments.
+
+August 2025
 
 ##### Adopter 3 - $COMPANY/$INDUSTRY
 
