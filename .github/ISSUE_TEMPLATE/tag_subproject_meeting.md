@@ -2,7 +2,9 @@
 name: TAG / TOC SubProject meeting template
 about: Template for regular TAG or TOC Subproject meetings
 title: "[TAG  <name-here> / TOC <name-here> SubProject Meeting] <date-here>"
-labels: "kind/meeting"
+labels:
+- triage/valid
+- kind/meeting
 assignees: 
 ---
 

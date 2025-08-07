@@ -2,6 +2,7 @@ name: 'Governance Review'
 description: Governance review request WIP
 title: '[Gov. Review]:'
 labels:
+  - needs-triage
   - kind/initiative
   - review/governance 
   - sub/project-review
