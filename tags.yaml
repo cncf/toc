@@ -303,7 +303,7 @@ tags: # Technical Advisory Groups
     leadership:
       chairs:
         - github: eddie-knight
-          lfx_id:
+          lfx_id: eddieknight
           name: Eddie Knight
           company: Sonatype
           email: eknight@sonatype.com
@@ -327,11 +327,11 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
-        - github: brandkeller
+        - github: brandtkeller
           lfx_id:
-          name: Brand Keller
-          company:
-          email:
+          name: Brandt Keller
+          company: Defense Unicorns
+          email: brandt.keller@defenseunicorns.com
           term:
             start: "2025-07-02"
             end: "2026-06-30"
@@ -344,10 +344,10 @@ tags: # Technical Advisory Groups
             start: "2025-07-02"
             end: "2026-06-30"
         - github: jkjell
-          lfx_id:
+          lfx_id: jkjell
           name: John Kjell
-          company: 
-          email:
+          company: Control-Plane.io
+          email: john.kjell@control-plane.io
           term:
             start: "2025-07-02"
             end: "2027-06-30"
@@ -362,8 +362,8 @@ tags: # Technical Advisory Groups
         - github: mlieberman85
           lfx_id:
           name: Michael Lieberman
-          company:
-          email:
+          company: Kusari
+          email: mlieberman85@gmail.com
           term:
             start: "2025-07-02"
             end: "2026-06-30"
