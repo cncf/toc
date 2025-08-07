@@ -2,7 +2,9 @@ name: 'Subproject Application'
 description: Subproject application form
 title: '[Subproject Application]:'
 labels:
-  - kind/subproject-application
+  - needs-triage
+  - needs-group
+  - kind/subproject
 body:
   - type: input
     id: subproject-name
@@ -17,7 +19,7 @@ body:
       label: Parent Group
       description: The Technical Advisory Group (TAG) or the TOC under which this subproject will reside
       options:
-        - TOC or TOC SubProject
+        - TOC or TOC Subproject
         - TAG Developer Experience
         - TAG Infrastructure
         - TAG Operational Resilience

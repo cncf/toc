@@ -2,6 +2,8 @@ name: 'Initative'
 description: Initiative request form
 title: '[Initiative]:'
 labels:
+  - needs-triage
+  - needs-group
   - kind/initiative
 body:
   - type: input

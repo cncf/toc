@@ -2,7 +2,11 @@
 name: Project Graduation Application
 about: This template provides the project with a framework to inform the TOC of their conformance to the Graduation Level Criteria.
 title: "[Graduation] $PROJECT Graduation Application"
-labels: graduation
+labels:
+- dd/triage/needs-triage
+- level/graduation
+- kind/dd
+- toc
 ---
 
 # Review Project Moving Level Evaluation
