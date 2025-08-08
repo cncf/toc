@@ -10,7 +10,7 @@ This Technical Advisory Group [(TAG)](https://github.com/cncf/toc/blob/main/gove
 
 ## Mission Statement
 
-To define and advance practices and standards for building, operating, adopting  and managing resilient, observable, and efficient cloud native systems, applications, and architectures. 
+To define and advance practices and standards for building, operating, adopting and managing resilient, observable, and efficient cloud native systems, applications, and architectures beyond their initial deployment. 
 
 ## Responsibilities & Deliverables
 
