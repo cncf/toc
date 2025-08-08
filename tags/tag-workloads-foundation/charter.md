@@ -15,7 +15,7 @@ This TAG covers the following sub-domains and topics within its scope:
 - Web Assembly
 - Batch
 - Serving
-- Scheduler
+- Scheduling
 - Orchestrator
 - Deployment
 - Dynamic Scaling
