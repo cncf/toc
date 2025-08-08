@@ -1,6 +1,6 @@
 # TAG Operational Resilience Charter
 
-Review and contributions from: [Rafa Brito](https://github.com/brito-rafa), [Mario Fahlandt](https://github.com/mfahlandt), [Nabarun Pal](https://www.github.com/palnabarun), [Saiyam Pathak](https://github.com/saiyam1814) [Raffaele Spazzoli](https://github.com/raffaelespazzoli) and [Matt Young](https://github.com/halcyondude)
+Review and contributions from: [Rafa Brito](https://github.com/brito-rafa), [Mario Fahlandt](https://github.com/mfahlandt), [Nabarun Pal](https://www.github.com/palnabarun), [Saiyam Pathak](https://github.com/saiyam1814), [Raffaele Spazzoli](https://github.com/raffaelespazzoli) and [Matt Young](https://github.com/halcyondude)
 
 ## Introduction
 
