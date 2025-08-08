@@ -4,7 +4,7 @@ Review and contributions from: [Rafa Brito](https://github.com/brito-rafa), [Mar
 
 ## Introduction
 
-In today's digital landscape, the resilience and efficient operation of cloud-native systems are both a technical requirement and a business necessity. 
+In today's digital landscape, the resilience and efficient operation of cloud native systems are both a technical requirement and necessity for widespread adoption. 
 As organizations rely on cloud native architectures to deliver services, the impact of downtime or performance degradation has grown significantly. 
 This Technical Advisory Group [(TAG)](https://github.com/cncf/toc/blob/main/governance/tag-governance.md) is established to address the complex challenges of maintaining system availability, performance, and reliability. By focusing on "Day 2 Operations," the period after a system is deployed, this TAG aims to provide the community with the principles, practices, and tools needed to build and operate robust and efficient cloud native services. The TAG will also assist the CNCF TOC with any project due diligences and necessary reviews within the scope of the TAG.
 
