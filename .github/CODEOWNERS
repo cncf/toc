@@ -1,0 +1,46 @@
+# Teams
+#
+# cncf/cncf-projects - cncf projects team staff
+# cncf/cncf-toc - both TOC & TOC Shadows
+# cncf/cncf-toc-voters - JUST the TOC
+# cncf/tag-*-leads - TAG leads for each TAG
+#
+# teams config: https://github.com/cncf/people/blob/main/config.yaml
+
+
+# default for catch all approvals
+* @cncf/cncf-projects @cncf/cncf-toc-voters 
+
+
+# items related to the generator
+/generator @cncf/cncf-projects
+go.mod @cncf/cncf-projects
+go.sum @cncf/cncf-projects
+
+
+# TOC
+# other items in the root should default to catch-all
+/governance @cncf/cncf-toc
+/operations @cncf/cncf-toc
+/process @cncf/cncf-toc
+/projects @cncf/cncf-toc
+/resources @cncf/cncf-toc
+/tags @cncf/cncf-toc
+/toc_subprojects @cncf/cncf-toc
+
+
+# TAGs have ownership of their subdirectories
+/tags/tag-developer-experience @cncf/tag-developer-experience-leads
+/tags/tag-infrastructure @cncf/tag-infrastructure-leads
+/tags/tag-operational-resilience @cncf/tag-operational-resilience-leads
+/tags/tag-security-and-compliance @cncf/tag-security-compliance-leads
+/tags/tag-workloads-foundation @cncf/tag-workloads-foundation-leads
+
+
+# all charters should be reviewed by the TOC
+**/charter.md @cncf/cncf-toc
+
+
+# Projects team should be the only group to approve CODEOWNERS changes
+# All general permissions should be handled through github group membership
+/.github/CODEOWNERS @cncf/cncf-projects
