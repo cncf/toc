@@ -33,10 +33,6 @@ N/A
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ]  **TAG provides insight/recommendation of the project in the context of the landscape**
-
-<!-- (TOC Evaluation goes here) --> 
-
 - [ ]  **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
 <!-- (TOC Evaluation goes here) --> 
