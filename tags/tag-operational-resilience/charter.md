@@ -56,7 +56,7 @@ The anticipated deliverables for TAG Operational Resilience include:
 * **Suggestions for improvements:** Recommend improvements for CNCF internal processes. Examples include suggestions for:
     * New educational initiatives, such as for sustainability.
     * Centralized conformance and supply chain tooling for projects.
-* **Conformance Programs**: Supporting the creation of, and providing oversight for, conformance programs that fall within the TAG's scope. These programs help ensure the quality and resilience of vendor and project software in the CNCF landscape.
+* **Conformance Programs**: Supporting the creation of, and providing oversight for, conformance programs that fall within the TAG's scope. These programs help ensure the quality and resilience projects in the CNCF landscape.
 * Project reviews and due diligence: The TAG will support TOC with the due diligence activities pertaining to the scope of the TAG.
 
 ## Audiences
