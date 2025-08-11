@@ -61,7 +61,7 @@ The anticipated deliverables for TAG Operational Resilience include:
 
 ## Audiences
 
-* **End Users & Developers:** End users, developers, and system operators will benefit from educational materials, best practices, and tools that help them build and maintain more resilient systems.
+* **Adopters, Developers, and Operators:** Adopters, developers, and system operators will benefit from educational materials, best practices, and tools that help them build and maintain more resilient systems.
 * **CNCF Projects & Community:** The TAG will provide project intelligence and support to the CNCF TOC and the broader community, helping to align projects and initiatives.
 * **External Organizations:** The TAG will engage in collaboration with external organizations, initiatives, and efforts to share knowledge and advance the state of operational resilience.
 
