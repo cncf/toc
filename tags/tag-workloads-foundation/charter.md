@@ -25,7 +25,6 @@ This TAG covers the following sub-domains and topics within its scope:
 ## Out of Scope
 
 - Anything not explicitly mentioned in the scope above is out of scope.
-- This TAG will collaborate with other TAGs on overlapping areas, but will not focus on topics explicitly owned by other TAGs and initiatives.
 - This TAG will not cover technologies that are not cloud-native (defined in [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md))
 
 ## Anticipated Deliverables
