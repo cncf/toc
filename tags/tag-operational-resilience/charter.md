@@ -34,7 +34,7 @@ This TAG covers the following sub-domains and topics within its scope:
 
 ### Out of Scope
 
-* This TAG will collaborate with other TAGs on overlapping areas, but will not primarily focus on topics explicitly owned by different TAGs
+* Topics in scope of other tags (collaboration on such topics with other TAGs where it touches on this TAG's charter is in scope)
 * Form an umbrella organization beyond the CNCF
 * Evaluate individual company infrastructures and provide advice
 * Focus outside of cloud native technologies, according to the [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md)
