@@ -8,19 +8,20 @@ To define and advance practices and standards for fundamental cloud native workl
 
 This TAG covers the following sub-domains and topics within its scope:
 
-- Containers (e.g. buildpacks, etc.)
+- Containers
 - OS
-- Container Runtime(e.g. containerd, CRI-O, Kata, etc.)
-- Virtual Machines (e.g. KubeVirt, Firecracker, etc.)
-- Serverless (e.g. Knative, etc.)
-- Web Assembly (e.g. WasmEdge, etc.)
-- Batch (e.g. Kueue, JobSet, KJob, etc. )
-- Serving (e.g. KServe, Gateway API Inference Extension etc.)
-- Scheduling (e.g. Volcano, HAMi, etc.)
-- Orchestrator (e.g. Kubernetes, Karmada, etc.)
-- Deployment (e.g. Helm, kustomize, etc.)
-- Dynamic Scaling (e.g. KEDA, Karpenter, Cluster Autoscaler, etc.)
-- CI/CD (e.g. ArgoCD, Flux, etc.)
+- Runtime
+- Virtual Machines
+- Serverless
+- Web Assembly
+- Databases
+- Batch
+- Serving
+- Scheduling
+- Orchestrator
+- Deployment
+- Dynamic Scaling
+- CI/CD
 
 ## Out of Scope
 
