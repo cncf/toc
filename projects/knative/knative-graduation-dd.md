@@ -319,7 +319,7 @@ Knative has completed a [security self-assessment](https://github.com/cncf/tag-s
 
   - [ ] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings, such as: improving project contribution guide providing a PR review guide to look for memory leaks and other vulnerabilities the project may be susceptible to by design or language choice ensuring adequate test coverage on all PRs.
 
-Knative underwent a [Third Party Security Audit](https://github.com/knative/docs/blob/main/reports/ADA-knative-security-audit-2023.pdf) by Ada Logics in 2023. The audit found 16 security issues, 15 of which were fixed with upstream patches. 
+Knative underwent a [Third Party Security Audit](https://github.com/knative/docs/blob/main/reports/ADA-knative-security-audit-2023.pdf) by Ada Logics in 2023. The audit found 16 security issues, 15 of which were fixed with upstream patches. The remaining issue was not addressed, because it was only exploitable if fundamental security assumptions of the cluster were already broken.
 
 - [X] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
@@ -340,11 +340,11 @@ A list of public adopters can be found in the [ADOPTERS.md](https://github.com/k
 
 - [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-The project provided the TOC with a list of adopters for verification of use of the project in production. The project is used by a many global organizations and the TOC was able to verify confirm production use with all interviwed adopters.  
+The project provided the TOC with a list of adopters for verification of use of the project in production. The project is used by a many global organizations and the TOC was able to verify confirm production use with all interviewed adopters.  
 
 - [x] **TOC verification of adopters.**
 
-The Knative maintainers provided the TOC with a list of 20 adopters from different geographic regions and business segments who agreed to be interviewed for the Graduation Due Diligence process. 6 of these adopters were interviewed. The adoption portion of this document contains interview summaries from adopters who approved public attribution.
+The Knative maintainers provided the TOC with a list of 20 adopters from different geographic regions and business segments who agreed to be interviewed for the Graduation Due Diligence process. 5 of these adopters were interviewed. The adoption portion of this document contains interview summaries from adopters who approved public attribution. All adopters recommended Knative for graduation and commented on project maturity. Scalability and stability were common strengths identified by adopters. The Knative Serving project especially was highlighted as providing a great deal of value to adopters.
 
 Refer to the Adoption portion of this document.
 
@@ -372,24 +372,85 @@ Several of these integrations were mentioned during adoption interviewes as well
 
 ##### Adopter 1 - YMeadows
 
-June 2025
+Y Meadows provides AI-Driven Automation for Business Operations, such as order operations, customer inquiries, and account management.
+
+YMeadows was interviewed as a Knative adopter on June 4, 2025. They have been using Knative in production for about five years, supporting all of their customers. 
+
+YMeadows originally adopted Knative for it's "scale to zero" features in order to control costs. The open source nature of the project, along with it's minimal dependencies, and active community presence were also strong factors in adopting the project.
+
+When adopting Knative, YMeadows encountered some scaling issues, which were resolved by replacing the ingress component they were using. They generally found the documentation for the project to be adequate, however they had some issues related to supporting high availability and to address timeouts due to the size of workloads being used. 
+
+YMeadows has a positive opinion of the Knative community and views the project as having open and transparent governance, as well as a helpful community with responsive maintainers. 
+
+YMeadows would like to see internal TLS as a default configuration, more support for Kourier as a default networking plugin, and a smoother operator upgrade experience.
+
+Overall, YMeadows recommended Knative for graduation and highlighted the cost reduction benefits the project helped deliver and highlighted the stability, scalability, documentation, and alignment with the general Kubernetes philosophy as overall strengths of the project.   
+
+The entire adopter interview can be found here: [YMeadows Adopter Interview](knative-adopter-interview-ymeadows.md)
 
 ##### Adopter 2 - SVA System Vertrieb Alexander GmbH
 
-June 2025
+Note: This adopter uses Knative via the Red Hat OpenShift Serverless product for compliance reasons. 
 
-##### Adopter 3 - gojek
+SVA System Vertrieb Alexander GmbH is one of the leading system integrators in Germany.
 
-June 2025
+SVA System Vertrieb Alexander GmbH was interviewed as a Knative adopter on June 18, 2025. They adopted Knative in 2022, and are currently running the project in production, handling over a million events daily with 99.9% availability across 11 organizational units.
 
-##### Adopter 4 - CoreWeave
+SVA System Vertrieb Alexander GmbH chose Knative for its open standards, clean abstraction layers, extensible architecture, and strong governance. The plug-and-play nature and integration with messaging systems like Kafka were key factors. 
 
-June 2025
+SVA System Vertrieb Alexander GmbH found Knative easy to adopt and saw dramatically reduced onboarding times for customers and were able to implement improved compliance controls in regulated environments. When adopting Knative, SVA System Vertrieb Alexander GmbH faced some challenges relating to documentation, particularly around administrative topics. 
 
-##### Adopter 5 - Cloud Service Provider
+SVA System Vertrieb Alexander GmbH indicated they have a positive perception of the governance of Knative, although they would like to see increased contributor diversity. 
 
-July 2025
+Overall, they recommended the project for graduation in part due to it's stability, performance, ease of adoption. 
 
-##### Adopter 6 - IBM Cloud
+The entire adopter interview can be found here: [SVA System Vertrieb Alexander GmbH Adopter Interview](knative-adopter-interview-sva.md)
 
-July 2025
+##### Adopter 3 - Gojek
+
+Gojek is a technology company in Indonesia, offering ride-hailing, e-commerce, and delivery services to millions of users across Indonesia and Singapore.
+
+Gojek initially started using Knative in 2020 via the KServe project, before migrating directly to Knative. It is currently used in production at a very large scale, supporting millions of users and 100,000+ requests per second at peak times. 
+
+Gojek adopted Knative while building a self-serve ML model-serving and experimentation platform for data scientists. They chose Knative for it's ease of use, flexibility, and because it was an active open-source project. 
+
+While adopting, they had a positive experience overall. They saw immediate value and were able to deliver a platforms that were scalable, flexible, and had stable APIs. After the COVID-19 pandemic, cost optimization became a focus and they wanted to explore vertical autoscaling, but Knative primarily supported horizontal scaling at the time. They proposed a feature request to integrate VPA into Knative, but it wasn't finalized. This was not due to the project's unwillingness; rather, the complexity of integrating it into Knative was very high. 
+
+Gojek views the project as mature and effective, and did not offer any areas for improvement. 
+
+The entire adopter interview can be found here: [Gojek Adopter Interview](knative-adopter-interview-gojek.md)
+
+
+##### Adopter 4 - Cloud Service Provider
+
+Adopter 4 provides a platform for AI workloads. They elected to provide this adopter interview anonymously.
+
+Adopter 4 has run Knative in production for about four years, as part of their hosted platform. When building their platform, they wanted to provide the following features:
+
+* Autoscaling
+* Throughput and latency for metrics
+* Scale to zero 
+
+Knative provided these capabilities, which meant that they did not have to build a solution on their own. Adoption for them was straightforward, with very few issues. Problems they did encounter were easily to identify and resolve using project documentation and by reviewing Github issues. 
+
+Adopter 4 does not actively participate in the community, finding they rarely need to engage with the community because the project is mature. Adopter 4 did comment that while the documentation is generally good, and in some areas excellent, some advanced topics were harder to find in documentation adn required some review of code and markdown files in order to find answers to some questions.
+
+Overall, Adopter 4 feels that Knative is very mature for the problems that it solves, but commented that Knative might not be the right solution for emerging workloads and the project should consider how to evolve to support changes in the space. 
+
+The entire adopter interview can be found here: [Adopter 4 Adopter Interview](knative-adopter-interview-adopter-4.md)
+
+##### Adopter 5 - IBM Cloud
+
+IBM Cloud offers a serverless platform called IBM Cloud Code Engine, that supports multiple containerized workload types, and is partially based on Knative.
+
+Within IBM Cloud Code Engine, Knative has been used in production for over five years, and supports thousands of Knative services per cluster and region. The platform primarily uses Knative Serving, but also some features from Knative Eventing.
+
+IBM Cloud chose Knative because of it's Kubernetes-native design, as well as it's support for scale to zero for workloads. At the time of adoption, Knative was the most promising option available. 
+
+IBM Cloud encountered no major obstacles with Knative itself; most challenges were related to Istio integration and scaling. IBM uses custom patches for scale-related issues. Container startup latency, especially for larger workloads, was another issue that was faced while providing support for function based workloads. 
+
+IBM Cloud views the Knative community as very open and feels that the project generally has good governance. Maintainer response is generally good, but they have had some instances where issues took longer to resolve than anticipated.
+
+Generally, they view Knative as very mature and support graduation of the project.
+
+The entire adopter interview can be found here: [IBM Cloud Adopter Interview](knative-adopter-interview-adopter-ibm.md)
