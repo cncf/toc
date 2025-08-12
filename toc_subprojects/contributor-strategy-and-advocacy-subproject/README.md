@@ -15,5 +15,6 @@ Foo-Baz-Bar
 ## Contact
 - Slack: [Tag Contributor Strategy and Advocacy SubProject Slack](https://cloud-native.slack.com/archives/C08N4CKUHB2)
 - [Mailing List](https://lists.cncf.io/g/contributor-strategy-subproject)
+
 ## Initiatives
-[Contributor Strategy and Advocacy SubProject Initiatives](https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative)
+[Contributor Strategy and Advocacy SubProject Initiatives](https://github.com/cncf/toc/issues?q=is%3Aopen%20label%3Akind%2Finitiative%20label%3Asub%2Fcontributor-strategy-and-advocacy)

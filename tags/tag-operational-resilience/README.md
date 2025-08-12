@@ -28,5 +28,6 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 
 ## Subprojects
 - **Operational Resilience-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-operational-resilience)
+
 ## Initiatives
-[TAG Operational Resilience Initiatives](https://github.com/cncf/toc/issues?q=label%3Atag%2Foperational-resilience-initiative)
+[TAG Operational Resilience Initiatives](https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Akind%2Finitiative%20label%3Atag%2Foperational-resilience)

@@ -12,9 +12,9 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - Evan Anderson (**[@evankanderson](https://github.com/evankanderson)**), Custcodian (Term: 2025-07-01 - 2026-06-30)
 - Marina Moore (**[@mnm678](https://github.com/mnm678)**), Edera (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Brandt Keller (**[@brandtkeller](https://github.com/brandtkeller)**), Defense Unicorns (Term: 2025-07-02 - 2026-06-30)
+- Brand Keller (**[@brandkeller](https://github.com/brandkeller)**) (Term: 2025-07-02 - 2026-06-30)
 - Jennifer Power (**[@jpower432](https://github.com/jpower432)**), Red Hat (Term: 2025-07-02 - 2026-06-30)
-- John Kjell (**[@jkjell](https://github.com/jkjell)**), ControlPlane (Term: 2025-07-02 - 2027-06-30)
+- John Kjell (**[@jkjell](https://github.com/jkjell)**) (Term: 2025-07-02 - 2027-06-30)
 - Justin Cappos (**[@JustinCappos](https://github.com/JustinCappos)**), New York University (Term: 2025-07-02 - 2027-06-30)
 - Michael Lieberman (**[@mlieberman85](https://github.com/mlieberman85)**) (Term: 2025-07-02 - 2026-06-30)
 - Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**), Hitachi (Term: 2025-07-02 - 2026-06-30)
@@ -30,5 +30,6 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 
 ## Subprojects
 - **Security and Compliance-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-security-and-compliance)
+
 ## Initiatives
-[TAG Security and Compliance Initiatives](https://github.com/cncf/toc/issues?q=label%3Atag%2Fsecurity-and-compliance-initiative)
+[TAG Security and Compliance Initiatives](https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Akind%2Finitiative%20label%3Atag%2Fsecurity-and-compliance)

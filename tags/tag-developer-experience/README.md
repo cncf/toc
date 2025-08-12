@@ -28,5 +28,6 @@ Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 
 ## Subprojects
 - **Developer Experience-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-developer-experience/)
+
 ## Initiatives
-[TAG Developer Experience Initiatives](https://github.com/cncf/toc/issues?q=label%3Atag%2Fdeveloper-experience-initiative)
+[TAG Developer Experience Initiatives](https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Akind%2Finitiative%20label%3Atag%2Fdeveloper-experience)
