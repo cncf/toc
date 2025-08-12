@@ -8,19 +8,20 @@ To define and advance practices and standards for fundamental cloud native workl
 
 This TAG covers the following sub-domains and topics within its scope:
 
-- Containers (e.g. buildpacks, etc.)
-- OS
-- Container Runtime(e.g. containerd, CRI-O, Kata, etc.)
-- Virtual Machines (e.g. KubeVirt, Firecracker, etc.)
-- Serverless (e.g. Knative, etc.)
-- Web Assembly (e.g. WasmEdge, etc.)
-- Batch (e.g. Kueue, JobSet, KJob, etc. )
-- Serving (e.g. KServe, Gateway API Inference Extension etc.)
-- Scheduling (e.g. Volcano, HAMi, etc.)
-- Orchestrator (e.g. Kubernetes, Karmada, etc.)
-- Deployment (e.g. Helm, kustomize, etc.)
-- Dynamic Scaling (e.g. KEDA, Karpenter, Cluster Autoscaler, etc.)
-- CI/CD (e.g. ArgoCD, Flux, etc.)
+- Containers
+- OS (Special Purpose Operating Systems)
+- Runtime
+- Virtual Machines
+- Serverless
+- Web Assembly
+- Databases
+- Batch
+- Serving
+- Scheduling
+- Orchestrator
+- Deployment
+- Dynamic Scaling
+- CI/CD
 
 ## Out of Scope
 
@@ -47,11 +48,11 @@ TAGs are expected to make incremental progress in identifying and addressing kno
 
 The TAG Workloads Foundation will coordinate with various stakeholders within the CNCF ecosystem:
 
-- CNCF Projects: The TAG provides services to projects and its work helps align projects within the CNCF ecosystem.This coordination ensures alignment across the foundation and provides pathways for community focuses to be supported
-- Other TAGs: Coordination is essential as TAGs serve needs across projects and other TAGs. 
+- CNCF Projects: The TAG provides services to projects and its work helps align projects within the CNCF ecosystem. This coordination ensures alignment across the foundation and provides pathways for community focuses to be supported
+- Other TAGs: Coordination is essential as TAGs serve needs across projects and other TAGs.
 - TOC Subprojects: TAG leadership participates in TOC Subprojects like Project Reviews and Contributor Strategy.
 - Community Groups: Community Groups are encouraged to discuss initiative ideas and may submit applications for initiatives within a TAG.
 
 ## Alignment with the CNCF TOC Charter
 
-The TAG Workloads Foundation charter is directly aligned with the CNCF TOC charter. The TOC is the technical governing body responsible for maintaining the technical vision and driving common practices across projects. The TOC's vision is problem-centric, encouraging projects to solve challenges faced by adopters. By focusing on foundational workload types (Containers, VMs, Serverless, Wasm) and key related aspects (Runtime, OS, Scheduling, Orchestration, CI/CD, Deployment), the TAG Workloads Foundation directly addresses significant problems faced by cloud native adopters in executing and managing their applications. The TAG's work in defining best practices and frameworks (as shown in example initiatives) contributes to driving common practices and aligning projects within the ecosystem, as mandated by the TOC.  The TAG's work in defining best practices, frameworks, and performing assessments contributes to driving common practices and aligning projects within the ecosystem, as mandated by the TOC. 
+The TAG Workloads Foundation charter is directly aligned with the CNCF TOC charter. The TOC is the technical governing body responsible for maintaining the technical vision and driving common practices across projects. The TOC's vision is problem-centric, encouraging projects to solve challenges faced by adopters. By focusing on foundational workload types (Containers, VMs, Serverless, Wasm) and key related aspects (Runtime, OS, Scheduling, Orchestration, CI/CD, Deployment), the TAG Workloads Foundation directly addresses significant problems faced by cloud native adopters in executing and managing their applications. The TAG's work in defining best practices, frameworks (as shown in example initiatives) contributes to driving common practices and aligning projects within the ecosystem, as mandated by the TOC.
