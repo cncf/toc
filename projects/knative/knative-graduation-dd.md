@@ -39,7 +39,10 @@ The following recommendations were provided to the project that are non-blocking
 
 ### Adoption Evaluation
 
-_The adopter interviews reflect a project in use for the level which the project applied. They showed various adopters use knative in production and endorse knative favorably._
+The adopter interviews showed project usage at a level compatible with CNCF graduation. Adopters interviewed deploy Knative in production systems as part of managed platform offerings, supporting a variety of workload types. The Serving sub-project tas the most adoption and was cited repeatedly for it's scalability and stability, and have realized value in terms of cost-savings. 
+
+Adopters indicated that Knative is quite mature for the use cases that it solves, has an active community, and has reliable documentation. Several adopters expressed a desire to see additional documentation around advanced administrative concepts and several additionally highlighted an opportunity for Knative to evolve to support emerging workloads within the A.I. space, particularly around supporting new developments in inference serving. 
+
 
 ### Final Assessment
 
