@@ -2,13 +2,11 @@
 
 - Link to [Graduation application issue](https://github.com/cncf/toc/issues/1509)
 - Based on the [graduation DD template](https://github.com/cncf/toc/blob/main/operations/toc-templates/template-dd-pr-graduation.md)
-
-Project Repo(s): github.com/knative, github.com/knative-extensions
-Project Site: https://www.knative.dev
-Sub-Projects: Serving, Eventing, Functions, Client
-Communication: https://cloud-native.slack.com/ #knative and various channels with #knative- prefix
-
-Project points of contacts: steering@knative.team
+- Project Repo(s): github.com/knative, github.com/knative-extensions
+- Project Site: https://www.knative.dev
+- Sub-Projects: Serving, Eventing, Functions, Client
+- Communication: https://cloud-native.slack.com/ #knative and various channels with #knative- prefix
+- Project points of contacts: steering@knative.team
 
 ## Graduation Evaluation Summary for Knative
 
