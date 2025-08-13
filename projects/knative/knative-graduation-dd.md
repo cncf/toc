@@ -16,24 +16,21 @@ Lin Sun & Jeremy Rickard conducted the due diligence of Knative who applied for 
 - Knative is a mature project that are endorsed by multiple adopters.
 - The project is not only vendor neutral but also has a very diverse set of maintainers, adopters and integrators. The steering committee is composed of members from 4 different set of organizations.
 - Knative documentation is fairly clear and easy to follow.
-- The project does an excellent job of making sure that its public meetings are well documented.
+- The project does an excellent job of making sure that its working group public meetings are well documented.
 
 The following actions were provided to the project that were considered blocking but since resolved:
 
-- Add a governance.md file to the community repo to make it visible and easy discover.
-- Add more production doc
-- Clarify subproject documentation
-- Clarify maintainer affliation.
-- Cross link CNCF code of conduct
-- Make docs on propose changes to the project clear and easily discoverable.
-- Achieved 100% passing on OpenSSF best practice badge.
+- Add a [governance.md file](https://github.com/knative/community/pull/1685) to the community repo to make it visible and easy discover.
+- Clarify [subproject documentation](https://github.com/knative/community/pull/1703)
+- Clarify [maintainer affliation](https://github.com/knative/community/pull/1694).
+- [Updated maintainer list](https://github.com/knative/community/pull/1700) to be accurate.
+- Achieved [100% passing on OpenSSF best practice badge](https://www.bestpractices.dev/en/projects/5913#analysis).
+- [Removed mentioning of community meetings](https://github.com/knative/community/pull/1704) as it is not active any more.
 
 The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
 
-- GTR review is being started by the project
-- Make wokring group meeting minutes open to the public.
-- Resume community meetings, last public meeting is 2022.
-- Asked the knative team to add more production readiness documentation and guildance.
+- [GTR review](https://github.com/knative/community/issues/1706) is being started by the project.
+- Asked the knative team to [add more production readiness documentation](https://github.com/knative/community/issues/1707).
 
 ### Adoption Evaluation
 
@@ -90,11 +87,11 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [X] **Clear and discoverable project governance documentation.**
 
-I was able to discover the [governance file](https://github.com/knative/community/blob/main/GOVERNANCE.md) easily after suggesting the team to add one.
+The TOC was able to discover the [governance file](https://github.com/knative/community/blob/main/GOVERNANCE.md) easily after suggesting the team to add one.
 
 - [X] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-Based on the governance file, I was able to locate the leadership team, recent meetings with notes and recording, past election results.
+Based on the governance file, the TOC was able to locate the leadership team, recent meetings with notes and recording, past election results.
 
 - [X] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
@@ -198,16 +195,16 @@ Details on how to contribute are documented [here](https://github.com/knative/co
 
 - [X] **Demonstrate contributor activity and recruitment.**
 
-https://github.com/cncf/mentoring/tree/main/programs
-There's lots of Knative projects if you look at that list, multiple projects every year
+The project has run quite a bunch of [LF mentorship programs](:https://github.com/cncf/mentoring/tree/main/programs) and other programs to recruit more contributors. There's lots of Knative projects if you look at the LF mentorship program list, multiple projects every year:
 
-CNCF - Knative: Design and Implement Levels for Educational Game (2025 Term 1)
-CNCF - Knative: Improve Knative Eventing Onboarding (2024 Term 2)
-CNCF - Knative: Applying pre-prepared website design (2024 Term 2)
-Knative - Contributor Journey Research (2024 Term 1)
-Knative - Cross Namespace Event Links (2024 Term 1)
-CNCF - Knative: Porting Knative Serving to Microshift (2023 Term 2)
-Prior to the CNCF acceptance, we participated Google Summer of Code directly:
+* CNCF - Knative: Design and Implement Levels for Educational Game (2025 Term 1)
+* CNCF - Knative: Improve Knative Eventing Onboarding (2024 Term 2)
+* CNCF - Knative: Applying pre-prepared website design (2024 Term 2)
+* Knative - Contributor Journey Research (2024 Term 1)
+* Knative - Cross Namespace Event Links (2024 Term 1)
+* CNCF - Knative: Porting Knative Serving to Microshift (2023 Term 2)
+
+Prior to the CNCF acceptance, the project also participated Google Summer of Code directly:
 https://github.com/knative/community/blob/main/google-summer-of-code/gsoc-2022.md
 https://github.com/knative/community/blob/main/google-summer-of-code/gsoc-2023.md
 
