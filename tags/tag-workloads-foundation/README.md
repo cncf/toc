@@ -1,5 +1,7 @@
 # TAG Workloads Foundation
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 Containers, OS, Runtime, Virtual Machines, Serverless, Web Assembly, Batch, Scheduler, Orchestrator, Deployment, Dynamic Scaling, CI/CD
 

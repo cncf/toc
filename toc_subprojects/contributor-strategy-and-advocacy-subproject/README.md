@@ -1,5 +1,7 @@
 # Contributor Strategy and Advocacy SubProject
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 Foo-Baz-Bar
 

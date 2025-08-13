@@ -1,5 +1,7 @@
 # TAG Operational Resilience
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 Observability, Management, Business Continuity, Resource Optimization, Cost Efficiency, Energy, Performance, Troubleshooting, Reliability, Day 2 Ops
 

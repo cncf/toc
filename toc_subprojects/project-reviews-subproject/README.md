@@ -1,5 +1,7 @@
 # Project Reviews SubProject
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 Foo-Baz-bar
 

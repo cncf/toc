@@ -1,5 +1,7 @@
 # TAG Security and Compliance
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure Software Supply Chain
 

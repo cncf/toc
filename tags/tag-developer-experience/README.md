@@ -1,5 +1,7 @@
 # TAG Developer Experience
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 
