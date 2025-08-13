@@ -195,7 +195,7 @@ Details on how to contribute are documented [here](https://github.com/knative/co
 
 - [X] **Demonstrate contributor activity and recruitment.**
 
-The project has run quite a bunch of [LF mentorship programs](:https://github.com/cncf/mentoring/tree/main/programs) and other programs to recruit more contributors. There's lots of Knative projects if you look at the LF mentorship program list, multiple projects every year:
+The project has run quite a bunch of [LF mentorship programs](https://github.com/cncf/mentoring/tree/main/programs) and other programs to recruit more contributors. There's lots of Knative projects:
 
 * CNCF - Knative: Design and Implement Levels for Educational Game (2025 Term 1)
 * CNCF - Knative: Improve Knative Eventing Onboarding (2024 Term 2)
