@@ -37,10 +37,12 @@ N/A
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Review and acknowledgement of expectations for [graduated](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
+- [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
    - [ ] Met during Project's application on DD-MMM-YYYY.
 
 <!-- (TOC Evaluation goes here) --> 
+
+- [ ] **Due Diligence Review.**
 
 Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisfies the Due Diligence Review criteria.
 

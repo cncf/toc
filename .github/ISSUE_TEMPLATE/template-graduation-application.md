@@ -58,7 +58,7 @@ N/A
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Review and acknowledgement of expectations for graduated projects and requirements for moving forward through the CNCF Maturity levels.**		
+- [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
    - [ ] Met during Project's application on DD-MMM-YYYY.
 
 <!-- (Project assertion goes here) --> 
