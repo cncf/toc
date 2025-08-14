@@ -18,11 +18,11 @@ Our work involves identifying gaps, promoting best practices, and supporting CNC
 More specifically, we:
 
 * Provide guidance and thought leadership on improving developer workflows and experience in cloud native application development
-* Promote secure-by-default developer workflows by integrating security and compliance considerations into the developer experience
+* Collaborate with TAG Security to improve the developer experience of integrating security considerations into the developer workflow
 * Collaborate with CNCF projects to surface and resolve developer experience challenges
-* Conduct studies, gathering feedback from end users and contributors, and providing recommendations
+* In collaboration with the TAB, conduct studies, gather feedback from end users and contributors, and provide recommendations
 * Facilitate interoperability and standardization across developer tools in the CNCF ecosystem
-* Act as a bridge to empower developers and project maintainers
+* Act as a bridge to empower developers and project maintainers by improving the user experience through clear communication of feedback and input
 
 # Out of Scope
 
@@ -37,7 +37,7 @@ More specifically, we:
 * Help CNCF projects better understand and serve developer needs
 * Publish guidance and reference materials for effective developer workflows
 * Encourage cross-project collaboration to improve consistency and interoperability of tooling
-* Foster collaboration around integrating security and compliance into cloud native development workflows to reduce friction and improve adoption of best practices
+* In collaboration with other TAGs, integrate best practices into cloud-native development workflows to reduce friction and improve adoption
 * Reduce barriers to entry and help democratize access to cloud native development by promoting inclusive, accessible, and low-friction developer experiences
 
 # Non-Goals
@@ -54,14 +54,14 @@ These subprojects and initiatives will operate under the oversight of TAG: DevEx
 
 # Alignment with CNCF TOC
 
-TAG: DevEx will actively coordinate with the CNCF Technical Oversight Committee (TOC) to ensure our efforts align and complement their work. We will also engage with SIGs and CNCF project maintainers to understand how developer experience can be integrated into existing CNCF initiatives.
+TAG: DevEx will actively coordinate with the CNCF Technical Oversight Committee (TOC) to ensure our efforts align and complement their work. We will also engage with other TAGs, subprojects, initiatives, and CNCF project maintainers to understand how developer experience can be integrated into existing CNCF initiatives.
 
 # Get Involved
 
 Everyone is welcome to join TAG: DevEx. Our work is public and community-driven. To participate:
 
-* Join our meetings and mailing list
-* Engage in GitHub discussions
-* Propose topics, contribute to documents, or join a subgroup
+* Join our meetings and mailing list: https://lists.cncf.io/g/cncf-tag-developer-experience/
+* Charter and TAG page: https://github.com/cncf/toc/tree/main/tags/tag-developer-experience 
+* Propose topics, contribute to documents, or join a subgroup on Slack: https://cloud-native.slack.com/archives/C08KGCXB458
 
 For more details, visit our GitHub repository and calendar of meetings.
