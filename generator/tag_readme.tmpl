@@ -1,5 +1,7 @@
 # {{.Name}}
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 {{.MissionStatement}}
 
@@ -46,7 +48,5 @@
 {{- end }}
 {{- end }}
 
-{{- if .TagInitiatives }}
 ## Initiatives
-[{{.Name}} Initiatives]({{.TagInitiatives}})
-{{- end }}
+[{{.Name}} Initiatives](https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Akind%2Finitiative%20label%3Atag%2F{{.TagLabel}})

@@ -53,7 +53,7 @@ jobs:
         run: |
           git add .
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Update README based on tags.yaml changes"
+            git commit -sm "Update README based on tags.yaml changes"
             git push origin HEAD:${{ github.event.pull_request.head.ref }}
           else
             echo "No changes to commit"

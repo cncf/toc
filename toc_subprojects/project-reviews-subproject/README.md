@@ -1,5 +1,7 @@
 # Project Reviews SubProject
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 Foo-Baz-bar
 
@@ -16,5 +18,6 @@ Foo-Baz-bar
 - Slack: [Tag Project Reviews SubProject Slack](https://cloud-native.slack.com/archives/C08M8L74NAJ)
 - [Mailing List](https://lists.cncf.io/g/cncf-project-reviews-subproject)
 - TOC Liaison: Karena Angell (**[@angellk](https://github.com/angellk)**)
+
 ## Initiatives
-[Project Reviews SubProject Initiatives](https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative)
+[Project Reviews SubProject Initiatives](https://github.com/cncf/toc/issues?q=is%3Aopen%20label%3Akind%2Finitiative%20label%3Asub%2Fproject-reviews)

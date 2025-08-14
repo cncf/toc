@@ -62,7 +62,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add .
           if ! git diff --staged --quiet; then
-            git commit -m "Update README based on tags.yaml changes"
+            git commit -sm "Update README based on tags.yaml changes"
             git push origin $BRANCH_NAME --force
             PR_TITLE="Update README based on tags.yaml changes from fork PR #${{ github.event.pull_request.number }}"
             PR_BODY="This PR updates the README file based on changes in tags.yaml from fork PR #${{ github.event.pull_request.number }}."
