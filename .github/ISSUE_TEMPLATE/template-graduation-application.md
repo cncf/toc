@@ -50,15 +50,11 @@ N/A
 
 <!-- (Project assertion goes here) --> 
 
-- [ ]  **TAG provides insight/recommendation of the project in the context of the landscape**
-
-<!-- (Project assertion goes here) --> 
-
 - [ ]  **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Review and acknowledgement of expectations for graduated projects and requirements for moving forward through the CNCF Maturity levels.**		
+- [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
    - [ ] Met during Project's application on DD-MMM-YYYY.
 
 <!-- (Project assertion goes here) --> 
