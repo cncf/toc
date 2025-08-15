@@ -21,6 +21,17 @@ body:
       placeholder: e.g., https://github.com/org/project-name
     validations:
       required: true
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Project Security Contacts
+      description: |
+        List the GitHub usernames of the security representatives from the project that
+        will particpate in the review
+      placeholder: |
+        @contact1
+        @contact2
   - type: markdown
     attributes:
       value: "## Getting Started"
@@ -40,11 +51,12 @@ body:
   - type: input
     id: self-assessment
     attributes:
-      label: Self Asessement Link
+      label: Self Assessement Link
       description: |
-        Please provide a link to your self-assessment here. While the final assessment will be a Markdown file in the `cncf/toc` repository, using a collaborative editing
-        tool for the draft can help streamline the process. The link to that document can be provided here.
-      placeholder: e.g. https://github.com/cncf/toc/projects/project-name/assessments/self-assessment.md
+        Please provide a link to your self-assessment document here. 
+        While the final assessment will be represented in a Markdown file in the `cncf/toc` repository, we recommend using a Google Doc
+        for the initial draft to streamline the process. This link will be the primary location for our joint review.
+      placeholder: Link to Google Doc
     validations:
       required: true
   - type: textarea
@@ -72,7 +84,8 @@ body:
       required: false
     attributes:
       label: Security Review Checklist
-      description: Check off these items during the joint review process to track progress.
+      description: |
+        This checklist will be used after the issue is submitted by TAG Security and Compliance to track the review progress.
       value: |
         - [ ] Identify team
           - [ ] Project security lead
@@ -81,11 +94,10 @@ body:
           - [ ] Every reviewer has read [security reviewer guidelines](https://tag-security.cncf.io/community/assessments/guide/security-reviewer/) and stated declaration of conflict
           - [ ] Sign off by facilitator on reviewer conflicts
         - [ ] Create slack channel (e.g. #sec-assess-projectname)
-        - [ ] Project lead provides draft document - see [outline](https://tag-security.cncf.io/community/assessments/guide/joint-readme-template/)
         - [ ] "Naive question phase" Lead Security Reviewer asks clarifying questions
         - [ ] Assign issue to security reviewers
         - [ ] Initial review
         - [ ] Presentation & discussion
         - [ ] Share draft findings with project
-        - [ ] Assessment summary and doc checked into /assessments/projects/project-name (require at least 1 co-chair approval)
+        - [ ] Assessment summary and doc checked into `/projects/project-name/assessments/` (require at least 1 co-chair approval)
         - [ ] CNCF TOC presentation (if requested by TOC)
