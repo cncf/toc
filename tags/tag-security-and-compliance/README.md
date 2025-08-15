@@ -31,7 +31,7 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - TOC Liaison: Jeremy Rickard (**[@jeremyrickard](https://github.com/jeremyrickard)**)
 
 ## Subprojects
-- **Security and Compliance-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-security-and-compliance)
+- **Security Assessmentns**: [Mailing List](https://lists.cncf.io/g/cncf-tag-security-and-compliance)
 
 ## Initiatives
 [TAG Security and Compliance Initiatives](https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Akind%2Finitiative%20label%3Atag%2Fsecurity-and-compliance)
