@@ -575,12 +575,12 @@ oversight of initiatives depending on the parent governing body.
 
 ## Technical Community Groups
 
-Technical Community Groups are a part of the broader
-[CNCF Community Groups Program]. They are topic and domain-focused or
-locality-based groups used as a rallying point for community members to discuss,
-share knowledge, and coordinate potential future initiatives. They are free to
-propose and shepherd initiatives when there is an explicit deliverable or
-objective they wish to work on.
+Technical Community Groups (TCGs) are a part of the broader
+[CNCF Community Groups Program]. They are a lightweight topic or domain-focused
+group used as a rallying point for community members to discuss, share knowledge,
+and coordinate potential future initiatives. They are free to propose and
+shepherd initiatives when there is an explicit deliverable or objective they
+wish to work on.
 
 Community Groups have [much broader exposure], and have a suite of tools
 tailored for community management, making them the best place for
@@ -602,21 +602,75 @@ A community group applying to become a TAG or subproject:
 [much broader exposure]: https://community.cncf.io/
 
 
-### Rules & Guidelines
-
-Adhere to the rules and guidelines outlined in the
-[Cloud Native Community Groups Program].
-
-
 ### Formation
 
-Community Groups follow the formation process outlined in
-[Community Groups README].
+TCG's have minimal governance requirements and follow the formation process
+outlined in [Community Groups README], with the additional step of requiring
+TOC approval.
 
-**NOTE:** Currently Technology focused groups do not have an issue template.
-These groups will require TOC approval, and will be provisioned with a GitHub
-discussion category for async communication instead of the built-in forum within
-Bevy (Community Groups backing platform).
+
+### Roles, Terms, and Elections
+
+#### Organizer
+
+An Organizer is an individual domain expert who is responsible for the overall
+administration and execution of the TCG, such as scheduling and hosting
+meetings, promoting the group, and coordinating the creation of initiatives.
+
+
+#### Requirements
+
+- MUST adhere to the [Technical Leadership Principles].
+- MUST adhere to the [Community Group Organizer Requirements].
+- SHOULD remain active and responsive in their role.
+
+
+[Community Group Organizer Requirements]: https://github.com/cncf/communitygroups/blob/main/organizer_roles.md
+
+
+#### Duties
+
+- SHOULD facilitate meetings but MAY delegate to other Leads or active community
+  members.
+- SHOULD mentor future Leads as part of active and continuous succession
+  planning.
+- MUST coordinate communication and be a connector with other community groups
+  like TAGs and the TOC, but MAY delegate the actual communication and creation
+  of content to other contributors where appropriate.
+
+
+#### Activity Expectations
+
+- Organizers serve 2-year terms.
+- Organizers SHOULD remain active and responsive.
+- Organizers MAY decide to step down at any time and propose a replacement to
+  complete their term.
+  - The candidate SHOULD be supported by a majority of the current active
+    organizers.
+- Organizers taking an extended leave of 1 or more months MUST coordinate with
+  other Organizers to ensure the role is adequately covered during their leave.
+- Organizers going on leave for 1-3 months MUST work with the other Organizers
+  to identify a temporary replacement.
+- Active Organizers are REQUIRED to notify the community group organizers at
+  community-groups@cncf.io and receive confirmation of notice before pursuing
+  removal of an inactive or Organizer found to be in dereliction of duty.
+
+#### Escalations
+
+- Organizers disagreements MAY be escalated to to the TOC, CoCC or CNCF Staff
+  facilitating the Community Groups program as applicable.
+
+#### Other Roles
+
+TCG's MAY have other roles, but they are REQUIRED to be documented in an
+easily discovered area, such as the groups's page on Bevy; the platform used
+by Community Groups.
+
+- MUST be documented with a description, scope, and responsibilities.
+- MUST adhere to the [Technical Leadership Principles].
+- SHOULD remain active and responsive in their roles.
+
+
 
 [Community Groups README]: https://github.com/cncf/communitygroups?tab=readme-ov-file#how-to-apply
 
