@@ -14,11 +14,11 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - Evan Anderson (**[@evankanderson](https://github.com/evankanderson)**), Custcodian (Term: 2025-07-01 - 2026-06-30)
 - Marina Moore (**[@mnm678](https://github.com/mnm678)**), Edera (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Brand Keller (**[@brandkeller](https://github.com/brandkeller)**) (Term: 2025-07-02 - 2026-06-30)
+- Brandt Keller (**[@brandtkeller](https://github.com/brandtkeller)**), Defense Unicorns (Term: 2025-07-02 - 2026-06-30)
 - Jennifer Power (**[@jpower432](https://github.com/jpower432)**), Red Hat (Term: 2025-07-02 - 2026-06-30)
-- John Kjell (**[@jkjell](https://github.com/jkjell)**) (Term: 2025-07-02 - 2027-06-30)
+- John Kjell (**[@jkjell](https://github.com/jkjell)**), Control-Plane.io (Term: 2025-07-02 - 2027-06-30)
 - Justin Cappos (**[@JustinCappos](https://github.com/JustinCappos)**), New York University (Term: 2025-07-02 - 2027-06-30)
-- Michael Lieberman (**[@mlieberman85](https://github.com/mlieberman85)**) (Term: 2025-07-02 - 2026-06-30)
+- Michael Lieberman (**[@mlieberman85](https://github.com/mlieberman85)**), Kusari (Term: 2025-07-02 - 2026-06-30)
 - Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**), Hitachi (Term: 2025-07-02 - 2026-06-30)
 
 ## Meetings
