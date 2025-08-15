@@ -88,7 +88,6 @@ body:
         This checklist will be used after the issue is submitted by TAG Security and Compliance to track the review progress.
       value: |
         - [ ] Identify team
-          - [ ] Project security lead
           - [ ] Lead security reviewer
           - [ ] 1 or more additional reviewer(s)
           - [ ] Every reviewer has read [security reviewer guidelines](https://tag-security.cncf.io/community/assessments/guide/security-reviewer/) and stated declaration of conflict
