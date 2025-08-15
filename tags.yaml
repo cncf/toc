@@ -388,7 +388,7 @@ tags: # Technical Advisory Groups
         - github: jeremyrickard
           name: Jeremy Rickard
     tag_subprojects:
-      - name: Security Assessmentns
+      - name: Security Assessments
         mission_statement: |
           The TAG-Security Security Assessment Subproject is designed to accelerate
           the adoption of cloud native technologies based on the below goals and
