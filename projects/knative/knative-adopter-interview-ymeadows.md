@@ -64,11 +64,11 @@ The community has been helpful to us when we interact on Slack and GitHub.
 
 #### Governance
 
-The maintainers work together in the open on Slack and GitHub and seem to be maintaing the project well.
+The maintainers work together in the open on Slack and GitHub and seem to be maintaining the project well.
 
 #### Community growth potential
 
-I believe that to cost effectively use the cloud you need to be able to autoscale and the ideal of autoscaling is to scale to zero. KNative is an excellent way of achieving that. I think that there is a lot of potential to grow usage and the ccommunity.
+I believe that to cost effectively use the cloud you need to be able to autoscale and the ideal of autoscaling is to scale to zero. KNative is an excellent way of achieving that. I think that there is a lot of potential to grow usage and the community.
 
 #### Maintainer diversity and ladder
 

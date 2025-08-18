@@ -1,11 +1,11 @@
 ---
-title: KNative Adopter Interview - gojek
+title: Knative Adopter Interview - Gojek
 
 ---
 
-# KNative Adopter Interview - gojek
+# Knative Adopter Interview - Gojek
 
-Interviewee: Roman Wozniak, Head of Engineering, gojek
+Interviewee: Roman Wozniak, Head of Engineering, Gojek
 
 
 ## Organization Intro
@@ -40,7 +40,7 @@ Knative has been used in production since very early in our adoption, and at ver
 
 ### What version is used and what is your update cadence with the project?
 
-The update cadence follows latest minus one. Basically everytime a new Knative and kserve release happens, we begin adopting N-1.
+The update cadence follows latest minus one. Basically every time a new Knative and kserve release happens, we begin adopting N-1.
 
 
 ### Can you walk me through what your experience was in either adopting it outright or integrating it with your existing services and applications? What challenges did you experience with the project?
@@ -101,7 +101,7 @@ We have interacted with the community via community calls, slack, and on github.
 
 ### In your opinion, what are the overall strengths of the project?
 
-Scalability is the primary strength. The abstractions defined are good and provided lots of flexibility and allowed us to build a fairly stable API on top of it so we  could focus on the problems we wanted to solve. Another stength is the the stable API. There are not frequent breaking changes. 
+Scalability is the primary strength. The abstractions defined are good and provided lots of flexibility and allowed us to build a fairly stable API on top of it so we  could focus on the problems we wanted to solve. Another strength is the the stable API. There are not frequent breaking changes. 
 
 
 ## Project Improvements
@@ -112,4 +112,4 @@ Nothing comes to mind.
 
 ### In your opinion, what can the project do better?
 
-Nothing is ideal, but the project is good and nothing actionable comes to mind. 
+The project is good and nothing actionable comes to mind. 

@@ -1,4 +1,4 @@
-# KNative Adopter Interview - SVA
+# Knative Adopter Interview - SVA
 
 Interviewee: Norris Sam Osarenkhoe, Principal Solutions Architect, SVA System Vertrieb Alexander GmbH.
 
@@ -15,15 +15,15 @@ SVA System Vertrieb Alexander GmbH is one of the leading system integrators in G
 
 ### Compared with other products in this space (proprietary and open), what drew you to the project?
 
-Open Standards are a big factor, as well as digital sovereignty. The cloud events spec was important. 2022 - we started evaluating different options, and realizing that hyperscalers were widely adopting the cloudevent spec. On top of that, Knatives' architecture seems well thought in terms of separation of concerns between its components. E.g. in Eventing the architecture is cleanly cut into roughly three distinct areas: 
- * eventing-core - Implements the general, non-specifc Knative Eventing API (Ingress, Routing, Egress)
+Open Standards are a big factor, as well as digital sovereignty. The cloud events spec was important. 2022 - we started evaluating different options, and realizing that hyperscalers were widely adopting the Cloud Events spec. On top of that, Knatives' architecture seems well thought in terms of separation of concerns between its components. E.g. in Eventing the architecture is cleanly cut into roughly three distinct areas: 
+ * eventing-core - Implements the general, non-specific Knative Eventing API (Ingress, Routing, Egress)
  * eventing-messaging - Implements a generic Knative Eventing messaging model API, like Broker/Trigger or Channel/Subscription
  * eventing-messaging-bindings - Integrates a specific messaging technology on top of the messaging model API (like Kafka)
 We knew if something were to happen at each level we could fix it or at least had the flexibility to swap in another solution. Additionally, Eventing offered integration with well known messaging solutions such as Kafka, NATS and RabbitMQ, which all were relevant for us. Cloud providers using these solutions as well, meant we would easily find specialist if needed.
 
 Knative has a very plug and play architecture, which attracted us. It is very easy to onboard users. Eventing is very easy to explain, and allows building pretty complex use cases. 
 
-We did look at some other projects, but their governance wasn’t clear. Knatives' governance stood out to us. It feels like it will be a project that will be around for some time and will have maintainers for some time. 
+We did look at some other projects, but their governance wasn’t clear. The Knative governance stood out to us. It feels like it will be a project that will be around for some time and will have maintainers for some time. 
 
 
 ## Usage Scenario
@@ -32,7 +32,7 @@ We did look at some other projects, but their governance wasn’t clear. Knative
 
 We started using it in 2022. It appeared to be the right tool for our problem. In order to validate our assumption we started prototyping and did lots of performance testing to better understand failure modes, performance KPIs and the inner workings.
 
-In the summer of 2022, we started said testing and prototyping. In parallel, we started to built up other environments. As of March 2023, we have successfully released our customized knative-backed event-mesh on our customer project infrastructure. 
+In the summer of 2022, we started said testing and prototyping. In parallel, we started to built up other environments. As of March 2023, we have successfully released our customized Knative-backed event-mesh on our customer project infrastructure. 
 
 2 FTEs were involved in this. 
 
@@ -92,7 +92,7 @@ We have built some observability tooling around Knative Eventing, and would like
 
 #### Community openness
 
-The community is very open. For the number of people involved, the Knative community achieves a lot. Lots of subprojects under the umbrella (e.g. knative-extensions).
+The community is very open. For the number of people involved, the Knative community achieves a lot. Lots of sub-projects under the umbrella (e.g. knative-extensions).
 
 #### Governance
 

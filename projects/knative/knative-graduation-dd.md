@@ -347,7 +347,7 @@ The project provided the TOC with a list of adopters for verification of use of 
 
 - [x] **TOC verification of adopters.**
 
-The Knative maintainers provided the TOC with a list of 20 adopters from different geographic regions and business segments who agreed to be interviewed for the Graduation Due Diligence process. 5 of these adopters were interviewed. The adoption portion of this document contains interview summaries from adopters who approved public attribution. All adopters recommended Knative for graduation and commented on project maturity. Scalability and stability were common strengths identified by adopters. The Knative Serving project especially was highlighted as providing a great deal of value to adopters.
+The Knative maintainers provided the TOC with a list of 20 adopters from different geographic regions and business segments who agreed to be interviewed for the Graduation Due Diligence process. 4 of these adopters were interviewed. The adoption portion of this document contains interview summaries from adopters who approved public attribution. All adopters recommended Knative for graduation and commented on project maturity. Scalability and stability were common strengths identified by adopters. The Knative Serving project especially was highlighted as providing a great deal of value to adopters.
 
 Refer to the Adoption portion of this document.
 
@@ -442,18 +442,3 @@ Overall, Adopter 4 feels that Knative is very mature for the problems that it so
 
 The entire adopter interview can be found here: [Adopter 4 Adopter Interview](knative-adopter-interview-adopter-4.md)
 
-##### Adopter 5 - IBM Cloud
-
-IBM Cloud offers a serverless platform called IBM Cloud Code Engine, that supports multiple containerized workload types, and is partially based on Knative.
-
-Within IBM Cloud Code Engine, Knative has been used in production for over five years, and supports thousands of Knative services per cluster and region. The platform primarily uses Knative Serving, but also some features from Knative Eventing.
-
-IBM Cloud chose Knative because of it's Kubernetes-native design, as well as it's support for scale to zero for workloads. At the time of adoption, Knative was the most promising option available. 
-
-IBM Cloud encountered no major obstacles with Knative itself; most challenges were related to Istio integration and scaling. IBM uses custom patches for scale-related issues. Container startup latency, especially for larger workloads, was another issue that was faced while providing support for function based workloads. 
-
-IBM Cloud views the Knative community as very open and feels that the project generally has good governance. Maintainer response is generally good, but they have had some instances where issues took longer to resolve than anticipated.
-
-Generally, they view Knative as very mature and support graduation of the project.
-
-The entire adopter interview can be found here: [IBM Cloud Adopter Interview](knative-adopter-interview-adopter-ibm.md)
