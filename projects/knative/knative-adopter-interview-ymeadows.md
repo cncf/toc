@@ -84,7 +84,7 @@ We have contributed to discussions on Slack and GitHub, providing our perspectiv
 
 ### Did you need to engage with the community members or maintainers? If so, what was the context of the engagement and did it reach an acceptable outcome?
 
-We had communications with Dave Protasowski on CNCF slack, he was helpful and jumped on a call with us - really going above and beyond. We have also looked up GitHub issues for guidance. Most communications were in Slack.
+We had communications with [Dave Protasowski](@dprotaso) on CNCF slack, he was helpful and jumped on a call with us - really going above and beyond. We have also looked up GitHub issues for guidance. Most communications were in Slack.
 
 ## Project Strengths
 

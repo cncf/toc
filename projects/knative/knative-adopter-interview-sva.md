@@ -116,7 +116,7 @@ Via Slack and Github
 
 ### Did you need to engage with the community members or maintainers? If so, what was the context of the engagement and did it reach an acceptable outcome?
 
-We have had good experience providing feedback via Red Hat.
+We have had good experience providing feedback to the community via Red Hat.
 
 ## Project Strengths
 
