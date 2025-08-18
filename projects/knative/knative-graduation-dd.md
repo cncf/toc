@@ -219,23 +219,28 @@ N/A
 
 - [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
-The goal of Knative is to provide a platform-agnostic solution for running serverless deployments. It does this with two main subprojects: _serving_ and _eventing_. 
+The [Knative website](https://knative.dev/docs/) identifies the goal of the project is to be: 
+_"The easiest way to build and run serverless workloads on Kubernetes."
 
-The serving project is intended to provide a set of Kubernetes Custom Resource Definitions (CRDs) that  provide a common toolkit and API framework for serverless workloads. 
+The website identifies two main subprojects: _serving_ and _eventing_. 
 
-The goal of the Knative Eventing subproject is to define common primitives to enable composing event-processing applications through configuration, rather than application code.
+There is a good overview of the both the [serving subproject](https://github.com/knative/specs/blob/main/specs/serving/overview.md) and the [eventing subproject](https://github.com/knative/specs/tree/main/specs/eventing) in the project Github repository. The Knative Github repository includes both motivation and goals for both subprojects. This information can also be found on the project website.
 
-Another Knative objective is to provide loose coupling of all components. It provides an robust [duck typing](https://knative.dev/docs/concepts/duck-typing/#example) system for it's components.
+The stated [goal for serving](https://github.com/knative/specs/blob/main/specs/serving/motivation.md): 
 
+_"The goal of the Knative Serving project is to provide a common toolkit and API framework for serverless workloads."_
+
+The stated [goal for eventing](https://github.com/knative/specs/blob/main/specs/eventing/motivation.md#motivation):
+
+_"The goal of the Knative Eventing project is to define common primitives to enable composing event-processing applications through configuration, rather than application code."_
 
 - [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
-There is a good overview of the [serving components](https://github.com/knative/specs/blob/main/specs/serving/overview.md) in the project Github repository. One of the primary goals of Knative is to provide a capability to scale workloads to zero when there is no demand for them. This feature helps reduces costs and helps better utilize resources. This use case was identified by all adopters that were interviewed as part of the due diligence process.
+The project website contains a good[overview](https://knative.dev/docs/concepts/) of what the project does, and the [resources](https://knative.dev/docs/concepts/serving-resources/revisions/) that are used to implement the project goals.
 
-The eventing subproject builds on the [Cloud Events Specification](https://github.com/cloudevents/spec) in order to enable loose coupling and late-binding of event producers and consumers. The [components](https://github.com/knative/specs/blob/main/specs/eventing/overview.md) of and [motivation](https://github.com/knative/specs/blob/main/specs/eventing/motivation.md) for eventing is clearly documented. The ability to integrate legacy systems in an event based architecture with Knative was identified as a key feature by more than one adopter interviewed for this due diligence.
+The website also has a detailed overview of the project's approach to [resource modeling](https://knative.dev/docs/concepts/duck-typing/) and why the approach was taken.
 
-The project documentation also has an extensive [testimonials](https://knative.dev/docs/about/testimonials/) and [case studies](https://knative.dev/docs/about/case-studies/) highlighting viable cloud native use cases.
-
+The project documentation has an extensive [testimonials](https://knative.dev/docs/about/testimonials/) and [case studies](https://knative.dev/docs/about/case-studies/) highlighting viable cloud native use cases.
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
