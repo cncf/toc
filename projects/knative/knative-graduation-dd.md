@@ -95,7 +95,7 @@ The Steering Committee file provides the general information on how the project 
 
 - [X] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
-It is clearly documented in the governance doc: https://github.com/knative/community/blob/main/GOVERNANCE.md
+It is clearly documented in the governance doc: https://github.com/knative/community/blob/main/GOVERNANCE.md, where it states "Knative is a vendor-neutral project under the [CNCF](https://cncf.io/)". It also mentioned in the governance doc who are eligible for participation of SC elections of knative, which shapes the project direction. The current composition of SC looks relative vendor neutral to me as well.
 
 - [X] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
