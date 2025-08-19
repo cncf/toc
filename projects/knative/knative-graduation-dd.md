@@ -145,10 +145,9 @@ Subprojects are managed by Knative working groups (https://github.com/knative/co
 * Serving
 * Eventing
 * Functions
-Which are documented as top-level tabs on https://knative.dev/ (though we are also doing a tech docs assessment and landing page redesign to help highlight these more clearly).
+Which are documented as top-level tabs on [https://knative.dev/docs/concepts/](https://knative.dev/docs/concepts/).
 
-A PR has been opened to add additional subproject info on this.  https://github.com/knative/community/pull/1703
-
+A [PR](https://github.com/knative/community/pull/1703) has been opened to add additional subproject info on this.
 
 - [X] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
