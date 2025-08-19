@@ -103,7 +103,7 @@ The Knative [steering committee doc](https://github.com/knative/community/blob/m
 
 - [X] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
-[Community roles doc](https://github.com/knative/community/blob/main/ROLES.md) explain different roles and what to do when a given role becomes inative. Also the project has clear [security policy](https://github.com/knative/community/tree/main?tab=security-ov-file#readme) defined.
+[Community roles doc](https://github.com/knative/community/blob/main/ROLES.md) explain different roles and what to do when a given role becomes inactive. Also the project has clear [security policy](https://github.com/knative/community/tree/main?tab=security-ov-file#readme) defined.
 
 - [X] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
