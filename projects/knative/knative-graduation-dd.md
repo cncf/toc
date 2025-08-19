@@ -235,7 +235,7 @@ _"The goal of the Knative Eventing project is to define common primitives to ena
 
 - [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
-The project website contains a good[overview](https://knative.dev/docs/concepts/) of what the project does, and the [resources](https://knative.dev/docs/concepts/serving-resources/revisions/) that are used to implement the project goals.
+The project website contains a good [overview](https://knative.dev/docs/concepts/) of what the project does, and the [resources](https://knative.dev/docs/concepts/serving-resources/revisions/) that are used to implement the project goals.
 
 The website also has a detailed overview of the project's approach to [resource modeling](https://knative.dev/docs/concepts/duck-typing/) and why the approach was taken.
 
