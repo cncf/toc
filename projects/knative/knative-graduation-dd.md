@@ -37,7 +37,11 @@ The following recommendations were provided to the project that are non-blocking
 
 The adopter interviews showed project usage at a level compatible with CNCF graduation. Adopters interviewed deploy Knative in production systems as part of managed platform offerings, supporting a variety of workload types. The Serving sub-project has the most adoption and was cited repeatedly for it's scalability and stability, and have realized value in terms of cost-savings. 
 
-Adopters indicated that Knative is quite mature for the use cases that it solves, has an active community, and has reliable documentation. Several adopters expressed a desire to see additional documentation around advanced administrative concepts and several additionally highlighted an opportunity for Knative to evolve to support emerging workloads within the A.I. space, particularly around supporting new developments in inference serving. 
+Adopters indicated that Knative is mature for the use cases that it solves, with API stability, performance, and the length of time adopters have successfully used it in production being key indicators. Several adopters highlighted an opportunity for Knative to evolve to support emerging workloads within the A.I. space, particularly around supporting new developments in inference serving. 
+
+Many adopters also indicated that Knative has an active community and has suitable documentation, however several adopters expressed a desire to see additional documentation around advanced administrative concepts. 
+
+
 
 
 ### Final Assessment
@@ -224,7 +228,7 @@ _"The easiest way to build and run serverless workloads on Kubernetes."
 
 The website identifies two main subprojects: _serving_ and _eventing_. 
 
-There is a good overview of the both the [serving subproject](https://github.com/knative/specs/blob/main/specs/serving/overview.md) and the [eventing subproject](https://github.com/knative/specs/tree/main/specs/eventing) in the project Github repository. The Knative Github repository includes both motivation and goals for both subprojects. This information can also be found on the project website.
+There is a good overview of the [serving subproject](https://github.com/knative/specs/blob/main/specs/serving/overview.md) and the [eventing subproject](https://github.com/knative/specs/tree/main/specs/eventing) in the project Github repository. The Knative Github repository includes both motivation and goals for both subprojects. This information can also be found on the project website.
 
 The stated [goal for serving](https://github.com/knative/specs/blob/main/specs/serving/motivation.md): 
 
