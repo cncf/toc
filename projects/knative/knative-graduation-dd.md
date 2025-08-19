@@ -17,6 +17,7 @@ Lin Sun & Jeremy Rickard conducted the due diligence of Knative who applied for 
 - The project is not only vendor neutral but also has a very diverse set of maintainers, adopters and integrators. The steering committee is composed of members from 4 different set of organizations.
 - Knative documentation is fairly clear and easy to follow. The documentation contains not only knative architecture, get started, install, upgrade, troubleshooting but also administrator topics such as [configuring HA for serving](https://knative.dev/docs/serving/config-ha/) or [configuring application security with security guard](https://knative.dev/docs/serving/app-security/security-guard-about/)
 - The project does an excellent job of making sure that its working group public meetings are well documented.
+- According to the most recent [CNCF project velocity report](https://docs.google.com/spreadsheets/d/116ZU_ltVkJip7G073ocULHxKhy4F1OgWjNjtZ1IPBWk/edit?gid=0#gid=0), knative is the 36th most active project in CNCF, with over 120 authors and over 4000 commits) for the past 12 months.
 
 The following actions were provided to the project that were considered blocking but since resolved:
 
