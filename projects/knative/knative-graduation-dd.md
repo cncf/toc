@@ -63,7 +63,7 @@ TAG App Delivery - Presentation Nov 8th, 2023 ([slides](https://docs.google.com/
 
 The project's GitHub repos and project site are aligned with the TOC expectations for vendor neutrality.
 
-- [X] **Review and acknowledgement of expectations for [graduated](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
+- [X] **Review and acknowledgement of expectations for [sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
    - [X] We [met](https://github.com/cncf/toc/issues/1509#issuecomment-2844841621) with the project lead and went over the expectation and requirements for graduated project on 01-May-2025.
 
 - [x] **Due Diligence Review.**
