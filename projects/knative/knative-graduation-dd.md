@@ -87,7 +87,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [X] **Clear and discoverable project governance documentation.**
 
-The TOC was able to discover the [governance file](https://github.com/knative/community/blob/main/GOVERNANCE.md) easily after suggesting the team to add one.
+The TOC was able to discover the [governance file](https://github.com/knative/community/blob/main/GOVERNANCE.md) easily after suggesting the team to add one to improve discoverability. The project's overall governance is directly captured in the [Steering Committee](https://github.com/knative/community/commits/main/STEERING-COMMITTEE.md) file, which is linked from the GOVERNANCE.md.
 
 - [X] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
