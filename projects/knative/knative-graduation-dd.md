@@ -91,7 +91,7 @@ The TOC was able to discover the [governance file](https://github.com/knative/co
 
 - [X] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-Based on the governance file, the TOC was able to locate the leadership team, recent meetings with notes and recording, past election results.
+The Steering Committee file provides the general information on how the project is governed, and reflects their current project activities and demonstrates conformance to their governance.
 
 - [X] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
