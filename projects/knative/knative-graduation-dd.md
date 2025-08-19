@@ -129,7 +129,7 @@ Confirmed that knative has maintainers from at least 2 organizations based on th
 
 - [X] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-Based on my limited browsing of the repository, it does seem to match, nothing is flagged. 
+Based on my limited browsing of the repository, it does seem to match, nothing is flagged. The project leadership team also recently updated the maintainer list to accurately reflect the current list of maintainers and their affliations. The owner alias files, for example https://github.com/knative/serving/blob/main/OWNERS_ALIASES or https://github.com/knative/eventing/blob/main/OWNERS_ALIASES are well maintained based on my research.
 
 - [X] **Document agreement that project will adopt CNCF Code of Conduct.**
 
