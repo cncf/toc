@@ -125,7 +125,7 @@ From a few most recent PRs, this appears to be managed well. For example:
 
 - [X] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
-Confirmed that knative has maintainers from at least 2 organizations based on the [steering committee](https://github.com/knative/community/blob/main/STEERING-COMMITTEE.md#committee-members) and [working group leads](https://github.com/knative/community/blob/main/working-groups/WORKING-GROUPS.md#working-groups) documents.
+Confirmed that knative has maintainers from at least 2 organizations based on the [steering committee](https://github.com/knative/community/blob/main/STEERING-COMMITTEE.md#committee-members) and [working group leads](https://github.com/knative/community/blob/main/working-groups/WORKING-GROUPS.md#working-groups) documents. The [maintainer file](https://github.com/knative/community/blob/main/MAINTAINERS.md) also show a diverse set of maintainers from multiple companies (Red Hat, IBM, AWS, Bloomberg, Vmware, etc).
 
 - [X] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
