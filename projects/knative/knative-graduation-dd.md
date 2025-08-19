@@ -15,7 +15,7 @@
 Lin Sun & Jeremy Rickard conducted the due diligence of Knative who applied for graduation. The project has completed the criteria that show its maturity at graduation. The following criteria implementations are noteworthy to call out:
 - Knative is a mature project that are endorsed by multiple adopters.
 - The project is not only vendor neutral but also has a very diverse set of maintainers, adopters and integrators. The steering committee is composed of members from 4 different set of organizations.
-- Knative documentation is fairly clear and easy to follow.
+- Knative documentation is fairly clear and easy to follow. The documentation contains not only knative architecture, get started, install, upgrade, troubleshooting but also administrator topics such as [configuring HA for serving](https://knative.dev/docs/serving/config-ha/) or [configuring application security with security guard](https://knative.dev/docs/serving/app-security/security-guard-about/)
 - The project does an excellent job of making sure that its working group public meetings are well documented.
 
 The following actions were provided to the project that were considered blocking but since resolved:
