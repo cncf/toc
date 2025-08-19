@@ -71,7 +71,7 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 - [X] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
-Knative the installation doc explained multiple ways to install clearly. Saw plenty of code samples. Saw limited production recommendation doc and asked the team to add more.
+Knative provides a few additional types of documentation to support adopters. The installation doc provided a variety of options that is easy to understand with code samples. The project also has a production recommendations doc with some limited content and the TOC has suggested adding more to assist adopters in covering their production challenges and opportunities with Knative at scale.
 
 ## Governance and Maintainers
 
