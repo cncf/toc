@@ -324,9 +324,9 @@ Knative has completed a [security self-assessment](https://github.com/cncf/tag-s
 
 - [x] **Third Party Security Review.**
 
-  - [ ] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings, such as: improving project contribution guide providing a PR review guide to look for memory leaks and other vulnerabilities the project may be susceptible to by design or language choice ensuring adequate test coverage on all PRs.
+  - [x] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings, such as: improving project contribution guide providing a PR review guide to look for memory leaks and other vulnerabilities the project may be susceptible to by design or language choice ensuring adequate test coverage on all PRs.
 
-Knative underwent a [Third Party Security Audit](https://github.com/knative/docs/blob/main/reports/ADA-knative-security-audit-2023.pdf) by Ada Logics in 2023. The audit found 16 security issues, 15 of which were fixed with upstream patches. The remaining issue was not addressed, because it was only exploitable if fundamental security assumptions of the cluster were already broken.
+Knative underwent a [Third Party Security Audit](https://github.com/knative/docs/blob/main/reports/ADA-knative-security-audit-2023.pdf) by Ada Logics in 2023. The audit found 16 security issues, 15 of which were fixed with upstream patches. The remaining issue was not addressed, because it was only exploitable if fundamental security assumptions of the cluster were already broken. This is not planned to be fixed. 
 
 - [X] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
