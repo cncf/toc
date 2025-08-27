@@ -1,19 +1,12 @@
----
-adopter: CyberAgent, Inc.
-organization: CyberAgent, Inc.
-project: KServe
-date: 2025-07-16
-status: Approved
-toc_sponsors:
-  - Kevin Wang
-  - Faseela K
-attendees:
-  - Yuki Iwai (CyberAgent, Inc.)
-  - Kevin Wang (TOC Sponsor, KServe)
-  - Faseela K (TOC Sponsor, KServe)
----
-
 # KServe Adopter Interview – CyberAgent, Inc.
+
+**Meeting Time:** July 16, 2025  
+**Attendees:**  
+- **TOC:** Kevin Wang, TOC Sponsor of KServe  
+- **TOC:** Faseela K, TOC Sponsor of KServe  
+- **Adopter:** Yuki Iwai (CyberAgent, Inc.)
+
+---
 
 ## Organization Introduction
 
