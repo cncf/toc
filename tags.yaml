@@ -302,14 +302,6 @@ tags: # Technical Advisory Groups
     label: tag-security-and-compliance
     leadership:
       chairs:
-        - github: eddie-knight
-          lfx_id: eddieknight
-          name: Eddie Knight
-          company: Sonatype
-          email: eknight@sonatype.com
-          term:
-            start: "2025-07-01"
-            end: "2026-06-30"
         - github: evankanderson
           lfx_id: eanderson
           name: Evan Anderson
@@ -318,6 +310,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-01"
             end: "2026-06-30"
+        - github: jkjell
+          lfx_id: jkjell
+          name: John Kjell
+          company: Control-Plane.io
+          email: john.kjell@control-plane.io
+          term:
+            start: "2025-07-02"
+            end: "2027-06-30"
         - github: mnm678
           lfx_id:
           name: Marina Moore
@@ -335,6 +335,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2026-06-30"
+        - github: eddie-knight
+          lfx_id: eddieknight
+          name: Eddie Knight
+          company: Sonatype
+          email: eknight@sonatype.com
+          term:
+            start: "2025-07-01"
+            end: "2026-06-30"
         - github: jpower432
           lfx_id:
           name: Jennifer Power
@@ -343,14 +351,6 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2026-06-30"
-        - github: jkjell
-          lfx_id: jkjell
-          name: John Kjell
-          company: Control-Plane.io
-          email: john.kjell@control-plane.io
-          term:
-            start: "2025-07-02"
-            end: "2027-06-30"
         - github: JustinCappos
           lfx_id:
           name: Justin Cappos
