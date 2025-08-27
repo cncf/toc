@@ -2,8 +2,6 @@
 
 - Link to [Incubation application issue](https://github.com/cncf/toc/issues/1367)
 
-<!-- This template provides the TOC with the outline for completing due diligence of a project to move levels. This universal template is designed to capture all criteria so the TOC may ensure prior level criteria do not regress. As part of completing the due diligence, the TOC member should update the template to convey the level the project applied for the criteria by bolding the level indicated where the criteria is relevant. -->
-
 ## Incubation Evaluation Summary for KServe
 
 ### Criteria Evaluation
