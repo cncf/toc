@@ -470,7 +470,7 @@ N/A
   CyberAgent’s future plans include active community participation and feature requests such as Gateway API Inference Extension, zero-scale for raw deployment mode, vertical pod autoscaling, and Dynamic Resource Allocation support. While praising KServe’s governance, maintainer responsiveness, and strong technical foundations, CyberAgent noted opportunities to improve technical decision transparency and global collaboration through more asynchronous communication. KServe remains a critical component in enabling CyberAgent’s large-scale, cost-efficient AI infrastructure.
 
   August 2025
-  Reference: [KServer Adopter Interview - CyberAgent](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cyberagent.md)
+  Reference: [KServer Adopter Interview - CyberAgent](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-dd-report/projects/kserve/kserve-adopter-interview-cyberagent.md)
 
 ##### Adopter 2 - Nutanix/Cloud Service Provider
 
@@ -483,7 +483,7 @@ N/A
   Nutanix is also an active contributor to the KServe project, with five engineers engaged, including three official reviewers. They have expressed a strong commitment to continue contributing and to deepen their collaboration with other CNCF ecosystem projects such as Envoy and components within the model inference domain. This level of production usage, community involvement, and sustained commitment from a major enterprise vendor like Nutanix reflects positively on KServe’s readiness for CNCF incubation.
 
   July 2025
-  Reference: [KServer Adopter Interview - Nutanix](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-nutanix.md)
+  Reference: [KServer Adopter Interview - Nutanix](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-dd-report/projects/kserve/kserve-adopter-interview-nutanix.md)
 
 ##### Adopter 3 -  Cloudera (Enterprise Data Platform Provider)
 
@@ -496,7 +496,7 @@ N/A
   Cloudera views KServe’s community governance, technical quality, and growth potential positively, though it notes challenges such as a small maintainer pool, slow PR review cycles, and constrained CI infrastructure. Future plans include deepened community involvement, governance participation, and continued upstreaming of customer-driven features to avoid maintaining internal forks. Cloudera believes CNCF incubation could help address resource constraints, improve build/test infrastructure, and expand maintainer diversity across time zones.
 
   July 2025
-  Reference: [KServer Adopter Interview - Cloudera](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-cloudera.md)
+  Reference: [KServer Adopter Interview - Cloudera](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-dd-report/projects/kserve/kserve-adopter-interview-cloudera.md)
 
 ##### Adopter 4 – SAP (Enterprise AI Platform Provider)
 
@@ -509,4 +509,4 @@ N/A
   SAP continues to contribute to KServe with active development and feature requests, with multiple engineers participating in the project. The community is praised for its responsiveness and diversity under CNCF governance, though meeting times favor US contributors. SAP looks forward to deeper involvement, improved adopter visibility, and reduced operational complexity in future project iterations.
 
   August 2025
-  Reference: [KServer Adopter Interview - SAP](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-wip/projects/kserve/kserve-adopter-interview-sap.md)
+  Reference: [KServer Adopter Interview - SAP](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-dd-report/projects/kserve/kserve-adopter-interview-sap.md)
