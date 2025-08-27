@@ -1,8 +1,12 @@
 # KServe Adopter Interview – Nutanix
 
-**Interview Date:** July 3, 2025  
-**Interviewee:** Johnu George
+**Meeting Time:** July 3, 2025  
+**Attendees:**  
+- **TOC:** Kevin Wang, TOC Sponsor of KServe  
+- **TOC:** Faseela K, TOC Sponsor of KServe  
+- **Adopter:** Johnu George (Technical Director, Nutanix)
 
+---
 ---
 
 ## About the Adopter Interview
