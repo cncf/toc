@@ -4,8 +4,8 @@
 **Attendees:**  
 - **TOC:** Kevin Wang, TOC Sponsor of KServe  
 - **TOC:** Faseela K, TOC Sponsor of KServe  
-- **Adopter:** Zoram Thanga
-- **Adopter:** Cory Johannsen 
+- **Adopter:** Zoram Thanga (Senior Principal Engineer, Cloudera)
+- **Adopter:** Cory Johannsen (Principal Engineer, Cloudera) 
 
 ---
 
