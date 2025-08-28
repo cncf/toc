@@ -30,7 +30,7 @@ This TAG covers the following sub-domains and topics within its scope:
 * **Reliability:** The ability of a system to perform its required functions under stated conditions for a specified period of time.
 * **Day 2 Ops:** A focus on the post-deployment activities required to keep a system running smoothly, including maintenance, scaling, updating and upgrading.
 * **Chaos Engineering:** The practice of experimenting on a system to build confidence in its capability to withstand turbulent and unexpected conditions.
-* **Conformance Programs:** Relevant ownership and development of conformance programs to help end users adapt and choose platforms and tools that adhere to established operational resilience standards
+* **Conformance Programs:** Lead the design and ownership of conformance initiatives that enable end users to adopt and select platforms and tools aligned with established standards for operational resilience.
 
 ### Out of Scope
 
@@ -38,7 +38,7 @@ This TAG covers the following sub-domains and topics within its scope:
 * Form an umbrella organization beyond the CNCF
 * Evaluate individual company infrastructures and provide advice
 * Focus outside of cloud native technologies, according to the [CNCF Cloud Native definition](https://github.com/cncf/toc/blob/main/DEFINITION.md)
-
+* creation of certifications for Conformance
 
 ## Deliverables to TOC
 
@@ -51,7 +51,7 @@ The anticipated deliverables for TAG Operational Resilience include:
   * Specific assessments for Resource Optimization or Cost Efficiency best practices
   * Guidelines for performance testing best practices
 * **Whitepapers and Guides:** In-depth documents that provide frameworks and guidelines consistent with advancing practices in the TAG's scope. These serve projects, other TAGs, and the TOC. 
-* **Landscape Analysis:** A curated view of the projects, tools, and standards within the operational resilience ecosystem, similar to the Cloud Native Landscape, to identify gaps and opportunities.
+* **Landscape Analysis:** Curated information and overview of the projects, tools, and standards within the operational resilience ecosystem to identify gaps and opportunities, inform adopters of useful and novel ways of addressing use cases, and developing practices and guidance for enterprise scale.
 * **Knowledge Gap Identification:** Reports and presentations to the TOC on identified gaps within the cloud native ecosystem related to operational resilience. 
 * **Suggestions for improvements:** Recommend improvements for CNCF internal processes. Examples include suggestions for:
     * New educational initiatives, such as for sustainability.
