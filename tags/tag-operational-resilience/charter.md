@@ -24,7 +24,7 @@ This TAG covers the following sub-domains and topics within its scope:
 * **Resource Optimization:** The efficient use of computational, storage, and network resources to balance performance and cost. 
 * **Cost Efficiency:** Methodologies for optimizing expenditures without compromising system reliability or performance. 
 * **Energy Efficiency:** Focusing on and providing guidance for reducing the energy consumption of cloud native services.
-* **Performance:** Ensuring the speed, responsiveness, and stability of cloud native applications under various load conditions.
+* **Performance:** Ensuring cloud native applications and systems consistently and efficiently execute their functions while managing and optimizing resources with the overall reliability and stability under varying conditions.
 * **Troubleshooting:** The systematic process of identifying, diagnosing, and resolving issues within a distributed system.
 * **Testing:** Verifying the reliability and resilience of applications
 * **Reliability:** The ability of a system to perform its required functions under stated conditions for a specified period of time.
