@@ -20,7 +20,7 @@ This TAG covers the following sub-domains and topics within its scope:
 
 * **Observability:** Monitoring, logging, and tracing to gain deep insights into system behavior and health.
 * **Management:** The processes and tools essential for managing the complete lifecycle of cloud native applications and infrastructure.
-* **Business Continuity:** Strategies and practices to ensure that business operations can continue in the event of a disruption.
+* **Operational Continuity:** Strategies and practices to ensure that technical operations can continue in the event of a disruption.
 * **Resource Optimization:** The efficient use of computational, storage, and network resources to balance performance and cost. 
 * **Cost Efficiency:** Methodologies for optimizing expenditures without compromising system reliability or performance. 
 * **Energy Efficiency:** Focusing on and providing guidance for reducing the energy consumption of cloud native services.
