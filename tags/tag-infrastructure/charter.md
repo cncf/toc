@@ -23,7 +23,7 @@ This TAG covers the following sub-domains and topics within its scope:
   - Cost
   - Operational complexity
 - Networking: Core connectivity and traffic management in cloud-native systems. This can include:
-  - DNS, load balancing, and service discovery
+  - DNS, gateways, load balancing, and service discovery
   - Service mesh for inter-service communication
   - Connectivity and traffic management across environments
   - Policy enforcement for network security and compliance
