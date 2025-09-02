@@ -2,7 +2,7 @@ profiles:
   default:
     duration: 26w
     pass_threshold: 66
-    periodic_status_check: "1 week"
+    periodic_status_check: "1 day"
     allowed_voters:
       teams:
         - cncf-toc-voters
