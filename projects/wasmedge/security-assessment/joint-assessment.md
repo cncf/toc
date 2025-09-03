@@ -35,7 +35,7 @@ The project has built a reasonably secure system with appropriate security contr
 6. Please explain clearly about how one would use things like non-human identities, monitoring, security filtering, etc. Is everything completely compatible with SPIFFE/SPIRE?  Are there any differences in use in comparison to e.g.:    [https://wasmcloud.com/blog/2025-03-04-why-were-adopting-spiffe-for-webassembly-workload-identity/](https://wasmcloud.com/blog/2025-03-04-why-were-adopting-spiffe-for-webassembly-workload-identity/)
 7. What should users be thinking about with respect to data residency and jurisdictional constraints when processing sensitive data in WasmEdge?  How does being at the edge change this equation?  
 8. Please, add to the main body of the document (and on github)  
-   \- how you ensure continuous verification/testing of the WASM specification of all components (the Verifier, the Loader, the Engine \- every main component in scope of WASM-Edge).  
+   \- how you ensure continuous verification/testing of the WASM specification of all components (the Verifier, the Loader, the Engine \- every main component in scope of WasmEdge).  
    Example:
    Where Side Channel Attacks are tested against and how the code verifiably written in  “side-channel resistant” way.  [https://github.com/WebAssembly/constant-time/blob/main/proposals/constant-time/Overview.md](https://github.com/WebAssembly/constant-time/blob/main/proposals/constant-time/Overview.md)
    Can you add to the document for each major attack-class: how is it being tested/fuzzed and can you show in your repo/artifacts, and comment how you’d resolve any failures.  
