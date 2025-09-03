@@ -161,7 +161,7 @@ security audit.
   * Type Safety: WebAssembly is strongly typed, with type checks performed both at compile-time and runtime. This reduces the risk of security vulnerabilities caused by type errors.
   * No Direct System Calls: Wasm does not allow direct system calls, meaning that even if the code is compromised, it is difficult to directly harm the host system.
 * If users want to access the host OS's filesystem within the WasmEdge runtime, they can add the `--dir guest_path:host_path` option in the WasmEdge CLI.
-* If users want to prevent host files from being modified, they can add the :readonly flag in the option, like `--dir guest_path:host_path:readonly`. The WasmEdge runtime will manage the filesystem usage to grant only read-only access to the wasm program.
+* If users want to prevent host files from being modified, they can add the `:readonly` flag in the option, like `--dir guest_path:host_path:readonly`. The WasmEdge runtime will manage the filesystem usage to grant only read-only access to the wasm program.
 * Currently, only the `--dir` option allows the host's filesystem to be accessed by the wasm program through the WASI, using the virtual filesystem provided by WasmEdge. This part is implemented in accordance with the [WASI-filesystem](https://github.com/WebAssembly/wasi-filesystem) API.
 
 ## Project compliance
