@@ -198,7 +198,7 @@ security audit.
     * **#wasmedge** channel on the [CNCF Slack](https://slack.cncf.io/).
     * Mailing list <wasmedge@googlegroups.com>.
     * We host a monthly community meeting to showcase new features, demo new use cases, and a Q&A part.
-      * The first Tuesday of each month at 11 PM Hong Kong Time/ 7 AM PST.
+      * The first Tuesday of each month at 11 PM Hong Kong Time/7 AM PST.
 * Ecosystem
 
   WasmEdge is a highly optimized WebAssembly runtime environment that seamlessly integrates into the cloud-native ecosystem, particularly in terms of container runtimes. WasmEdge can serve as a WebAssembly image runtime in Kubernetes, which gives it a unique advantage in cloud-native infrastructure.
