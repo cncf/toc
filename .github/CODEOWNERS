@@ -36,6 +36,8 @@ go.sum @cncf/cncf-projects
 /tags/tag-security-and-compliance @cncf/tag-security-compliance-leads
 /tags/tag-workloads-foundation @cncf/tag-workloads-foundation-leads
 
+# TAG Security and Compliance should review project Security Assessments
+/projects/*/security-assessment @cncf/tag-security-compliance-leads
 
 # all charters should be reviewed by the TOC
 **/charter.md @cncf/cncf-toc
