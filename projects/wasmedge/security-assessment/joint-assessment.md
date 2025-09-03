@@ -45,7 +45,6 @@ The project has built a reasonably secure system with appropriate security contr
 
 ### Additional recommendations
 
-* Consider implementing Uptane or TUF for secure updates of core functionality on edge devices
 * Evaluate implementing software attestation for edge device workloads
 * Provide clearer guidance on data residency and jurisdictional constraints for sensitive data processing
 
