@@ -45,7 +45,6 @@ The project has built a reasonably secure system with appropriate security contr
 
 ### Additional recommendations
 
-* Evaluate implementing software attestation for edge device workloads
 * Provide clearer guidance on data residency and jurisdictional constraints for sensitive data processing
 
 Tracking issue: <https://github.com/WasmEdge/WasmEdge/issues/4237>
