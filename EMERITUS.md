@@ -34,5 +34,6 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Dave Zolotusky (2/1/2021 - 2/1/2025)
 * Cathy Zhang (7/1/2022 - 2/1/2025)
 * Duffie Cooley (2/1/2023 - 2/1/2025)
+* Kevin Klues (3/4/2025 - 9/9/2026)
 
 We thank these members for their service to the CNCF community.
