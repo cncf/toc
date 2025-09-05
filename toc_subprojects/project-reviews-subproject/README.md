@@ -9,7 +9,7 @@ Foo-Baz-bar
 
 ## Leadership
 ### Chairs
-- Kevin Klues (**[@klueska](https://github.com/klueska)**), NVIDIA
+-  (**[@](https://github.com/)**)
 
 ## Meetings
 - **Project Reviews SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-project-reviews-subproject?view=list) | [Recordings](https://www.youtube.com/@CNCFTOCProjectReviewsSubProjec)
