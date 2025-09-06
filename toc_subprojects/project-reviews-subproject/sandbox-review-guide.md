@@ -19,7 +19,7 @@ If the project has already completed the [General Technical Questions][gtr], thi
 
 If the project has not completed the technical questionnaire, copy the [General Technical Questions document][gtr] into a _new_ https://notes.cncf.io/ document for sharing with co-reviewers or the project.  Note that only the "Day 0" contents are required for sandbox applications.
 
-Iterate on the questionnaire answers until you and any co-reviewer are satisfied that the questionnaire is complete.  If you need information or clarification from the project, prefer public written (best!) or recorded (e.g. TAG presentation) formats over private channels such as DMs or 1:1 video meetings.  Maintaining public channels makes it easier for interested participants and onlookers to understand and engage with the process, and fosters transparency.
+Iterate on the questionnaire answers until you and any co-reviewer are satisfied that the questionnaire is complete.  If you need information or clarification from the project, prefer public written in the application Issue (best!) or recorded (e.g. TAG presentation) formats over private channels such as DMs or 1:1 video meetings.  Maintaining public channels makes it easier for interested participants and onlookers to understand and engage with the process, and fosters transparency.
 
 When the questionnaire is complete, _COPY_ all of the https://notes.cncf.io contents into a **comment** on the sandbox application issue.
 
