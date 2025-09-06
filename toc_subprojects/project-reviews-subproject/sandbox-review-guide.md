@@ -34,6 +34,7 @@ When the questionnaire is complete, _COPY_ all of the https://notes.cncf.io cont
 
 When reviewing a donation from a corporate entity which also intends to sell some portion of the service, ensure that the issue makes clear which code (preferably, as entire repositories) **will** and **will not** be donated.  See [this comment](https://github.com/cncf/sandbox/issues/392#issuecomment-3173237281) for an example of such a clarification.
 
+Keep also an eye on Gouvernance and potential license concerns, as Sandbox applications will not cover a full gouvernance review. Some examples could be, amount of *active* maintainers. Name violations or usages by other projects of commercials tools. Maintainership concerns when it comes to code contribution. 
 
 [sandbox]: https://github.com/cncf/sandbox
 [sandbox-status]: https://github.com/cncf/sandbox/blob/main/README.md#the-tocs-sandbox-review-meeting
