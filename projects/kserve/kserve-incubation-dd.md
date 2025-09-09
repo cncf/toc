@@ -6,7 +6,7 @@
 
 ### Criteria Evaluation
 
-Kevin Wang and Faseela K conducted the due diligence of KServe who applied for incubation. The project has completed the criteria that show its maturity at incubation.
+Kevin Wang and Faseela K conducted the due diligence of KServe, which applied for incubation. The project has completed the criteria that demonstrate its maturity at incubation.
 
 #### Noteworthy Implementations
 
@@ -86,7 +86,7 @@ N/A
   - KServe Github: <https://github.com/kserve/kserve>
   - KServe Slack: <https://cloud-native.slack.com/archives/C06AH2C3K8B>
   - Testing - KServe CI Configuration: <https://github.com/kserve/kserve/tree/master/.github/workflows>
-  - KServe Communigy Governance: <https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md>
+  - KServe Community Governance: <https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md>
   Ref: <https://github.com/kserve/community/issues/26#issuecomment-2866903229>
 
 - [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**
@@ -218,7 +218,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   <!-- (TOC Evaluation goes here) -->
   KServe has documented their adoption of CNCF Code of Conduct, in [CONTRIBUTING.md#code-of-conduct](https://github.com/kserve/community/blob/main/CONTRIBUTING.md#code-of-conduct) and [KSERVE-TECHNICAL-CHARTER.md#4-compliance-with-policies](https://github.com/kserve/community/blob/main/KSERVE-TECHNICAL-CHARTER.md#4-compliance-with-policies)
 
-  The Kserve community has also created a `CODE_OF_CONDUCT.md` file at the root level of each repository.
+  The KServe community has also created a `CODE_OF_CONDUCT.md` file at the root level of each repository.
   Ref: <https://github.com/kserve/community/issues/29>
 
 - [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
@@ -390,7 +390,7 @@ N/A
 
   <!-- (TOC Evaluation goes here) -->
   Access control is enforced via OWNERS and CODEOWNERS files:
-  - <https://github.com/kserve/kserve/blob/master/OWNERS> for Kserve repo
+  - <https://github.com/kserve/kserve/blob/master/OWNERS> for KServe repo
   - <https://github.com/kserve/community/blob/main/.github/CODEOWNERS> for community repo
 
   And the respective roles are specified in <https://github.com/kserve/community/blob/main/membership.md#community-membership>.  
