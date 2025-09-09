@@ -12,6 +12,16 @@ This Technical Advisory Group [(TAG)](https://github.com/cncf/toc/blob/main/gove
 
 To define and advance practices and standards for building, operating, adopting and managing resilient, observable, and efficient cloud native systems, applications, and architectures beyond their initial deployment. 
 
+To accomplish this in alignment with TOC's guidance, we will adopt their specific [Goals for Technical Advisory Groups](https://github.com/cncf/toc/blob/main/governance/tag-governance.md#goals)
+
+- Strengthen the project ecosystem to meet the needs of end users and project  contributors.
+- Serve as a “bridge” between projects to surface common problems and drive alignment.
+- Identify gaps in the CNCF project portfolio. Find and attract projects to fill these gaps.
+- Reduce some project workload on TOC while retaining executive control & tonal integrity with this elected body.
+- Provide technical expertise during the evaluation of projects to join the CNCF and as they move levels.
+- Educate and inform users with unbiased, effective, and practically useful information scoped to cloud native.
+- Focus attention & resources on helping foster project maturity, systematically across CNCF projects.
+
 ## Responsibilities & Deliverables
 
 ### In-Scope
