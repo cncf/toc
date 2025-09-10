@@ -627,11 +627,11 @@ toc_subprojects: # TOC SubProjects
     label: project-reviews-subproject
     leadership:
       chairs:
-        - github: klueska
+        - github:
           lfx_id:
-          name: Kevin Klues
-          company: NVIDIA
-          email: klueska@gmail.com
+          name:
+          company:
+          email:
  #      - github: foo
  #        lfx_id: baz
  #        name: Foo Baz Bar
