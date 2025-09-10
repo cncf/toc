@@ -13,7 +13,7 @@ This TAG covers the following sub-domains and topics within its scope:
   - Performance metrics
   - Configuration settings
   - Permanent records like database entries
-- Storage: Storage used in cloud-native environments include block stores, file systems, object stores, databases, key-value stores, streaming and messaging, and related caching mechanisms. Our focus is on understanding the following fundamental characteristics and relating them to cloud-native use cases.
+- Storage: Storage used in cloud native environments include block stores, file systems, object stores, databases, key-value stores, streaming and messaging, and related caching mechanisms. Our focus is on understanding the following fundamental characteristics and relating them to cloud native use cases.
   - Availability
   - Scalability
   - Performance
@@ -22,13 +22,13 @@ This TAG covers the following sub-domains and topics within its scope:
   - Ease-of-use
   - Cost
   - Operational complexity
-- Networking: Core connectivity and traffic management in cloud-native systems. This can include:
-  - DNS, load balancing, and service discovery
+- Networking: Core connectivity and traffic management in cloud native systems. This can include:
+  - DNS, gateways, load balancing, and service discovery
   - Service mesh for inter-service communication
   - Connectivity and traffic management across environments
   - Policy enforcement for network security and compliance
   - Observability and monitoring of network behavior
-- Compute: Encompasses kernel and hypervisor-level compute primitives that underpin cloud-native infrastructure (workloads running in Public/Private Cloud, Edge, IoT, Batch, Big Data, AI/ML/LLMs, etc). This can include:
+- Compute: Encompasses kernel and hypervisor-level compute primitives that underpin cloud native infrastructure (workloads running in Public/Private Cloud, Edge, IoT, Batch, Big Data, AI/ML/LLMs, etc). This can include:
   - Internal components of container runtimes (at the kernel/user boundary)
   - System-level resource isolation (namespaces, cgroups)
   - Hypervisor interactions, and node-level bootstrap agents
@@ -42,20 +42,21 @@ This TAG covers the following sub-domains and topics within its scope:
   - Automation of operations
   - Observability and monitoring
   - Languages, schemas, and protocols enabling infrastructure-as-code tooling
-- Edge: Edge computing extends cloud-native principles to resource-constrained, distributed environments, often characterized by intermittent connectivity, diverse hardware, and location-aware workloads. This can include:
+- Edge: Edge computing extends cloud native principles to resource-constrained, distributed environments, often characterized by intermittent connectivity, diverse hardware, and location-aware workloads. This can include:
   - Edge-ready infrastructure
   - Cross-architecture workloads
   - Resilient multi-cluster deployments
   - Low latency, power efficiency (carbon footprint), remote ops
   - Cloud–edge interoperability
-- Sovereignty: Ensures cloud-native systems operate within jurisdictional, regulatory, and organizational constraints. This can include:
+- Sovereignty: Ensures cloud native systems operate within jurisdictional, regulatory, and organizational constraints. This can include:
   - Infrastructure and data portability across regions and providers
   - Runtime policy enforcement for compliance and governance
   - Operational continuity in disconnected or restricted environments
 
 ## Out of Scope
+- Scheduling, batch, serving, etc. are part of the TAG Workloads Foundation charter.
 - Hardware design and procurement are out of scope for this charter
-- Non cloud-native technologies (according to the CNCF Cloud Native definition)
+- Non cloud native technologies (according to the CNCF Cloud Native definition)
 - Anything not explicitly mentioned in the scope above is out of scope.
 
 ## Anticipated Deliverables
