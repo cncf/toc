@@ -15,7 +15,7 @@ project.
 **Status:** Exemplary
 
 Open Telemetry is a large project and has appropriate governance for a project
-of it's size. They delegates ownership to Special Interest Groups (SIGs), with
+of its size. They delegate ownership to Special Interest Groups (SIGs), with
 each SIG responsible for subprojects in their respective domain.
 
 They have exceptional contributor documentation, end-user engagement, and a
@@ -47,7 +47,7 @@ examples for other projects to copy:**
   - Very few projects do this, but they should. As a follow-up, a template
     should be created based off of it that other projects should be able to use.
 
-- OTel has a high contributor diversity, with the  "[top contributors]" for the
+- OTel has a high contributor diversity, with the "[top contributors]" for the
   last year only account for 2-3% of all contributions.
   - This is a strong indicator of a healthy project with the effort and
     contributions being very well distributed across the organization.
@@ -72,7 +72,7 @@ general discoverability:
 - Publish the OTel meeting recordings to YouTube.
   - The OTel meetings are tracked in a [spreadsheet] that link directly to the
     recordings. The spreadsheet is linked from many locations within the OTel
-    GitHub Org and website, however publishing to a a service like YouTube
+    GitHub Org and website, however publishing to a service like YouTube
     would make them much more discoverable to the broader community.
 
 
@@ -110,7 +110,7 @@ Groups:
 
 [Governance Committee]: https://github.com/open-telemetry/community/blob/fe12ecb89802550b4d3daa9a30646157c540b391/governance-charter.md#scope
 [tc]: https://github.com/open-telemetry/community/blob/ffa1e82df098d2bf7140e67e8ef18d2de3c14fdc/tech-committee-charter.md#responsibilities-of-the-technical-committee
-[Special Interst Group]: https://github.com/open-telemetry/community/blob/142fbd7bc301247933df044db3833338e538aba6/guides/contributor/processes.md#special-interest-groups-sigs
+[Special Interest Group]: https://github.com/open-telemetry/community/blob/142fbd7bc301247933df044db3833338e538aba6/guides/contributor/processes.md#special-interest-groups-sigs
 
 
 ### Governance Evolution
@@ -347,7 +347,7 @@ the addition or replacement of maintainers as project events have required.**
 **Incubating:** Suggested | **Graduated:** Required
 
 Multiple examples of the maintainer lifecycle can be found in the PRs &
-[commit history] of OTels [Community Member List].
+[commit history] of OTel's [Community Member List].
 
 [commit history]: https://github.com/open-telemetry/community/commits/main/community-members.md
 
@@ -357,7 +357,7 @@ information, domain of responsibility, and affiliation.**
 <br>
 **Incubating:** Required | **Graduated:** Required
 
-OTel lists their members, affiliation, and responsibilities in the their
+OTel lists their members, affiliation, and responsibilities in their
 [Community Member List].
 
 
@@ -536,7 +536,7 @@ Examples:
 <br>
 **Incubating:** Required | **Graduated:** Required
 
-OTel has a [very active contributor community], and has shows regular growth
+OTel has a [very active contributor community], and has shown regular growth
 with [contributors being promoted to org members].
 
 
