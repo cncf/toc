@@ -7,11 +7,12 @@ The mission of the CNCF TAG Developer Experience (TAG: DevEx) is to improve the 
 TAG: Developer Experience (DevEx) focuses on enhancing the end-to-end experience of developers building cloud native applications. Our scope encompasses key concerns across various areas, including microservices, databases, streaming and messaging systems, AI, API management, and developer programming languages and frameworks, in addition to traditional developer experience.
 We explore and guide on:
 
+* Engaging with CNCF project maintainers to improve the developer experience and advise on features with the good impact.
 * Cloud Native application excellence
 * Inner/outer loop best practices
 * Observability and debugging from a developer’s perspective
-* Usability, DevEX research, and DevEX metrics across CNCF projects
-* AI development-related Developer Experience 
+* Usability, DevEx research, and DevEx metrics across CNCF projects
+* Developer Experience related to emerging technologies and practices, such as Artificial Intelligence (AI)
 
 Our work involves identifying gaps, promoting best practices, and supporting CNCF projects and communities to enhance the productivity and satisfaction of developers working with cloud native technologies. We aim to bridge tools, platforms, and practices to create a cohesive and frictionless developer experience across the cloud native ecosystem.
 
@@ -22,18 +23,19 @@ More specifically, we:
 * Collaborate with CNCF projects to surface and resolve developer experience challenges
 * In collaboration with the TAB, conduct studies, gather feedback from end users and contributors, and provide recommendations
 * Facilitate interoperability and standardization across developer tools in the CNCF ecosystem
-* Act as a bridge to empower developers and project maintainers by improving the user experience through clear communication of feedback and input
+* Act as a bridge, empowering developers and project maintainers by improving the user experience through clear communication of feedback and specific technical guidance back to the projects
 
 # Out of Scope
 
 * Prescriptive mandates on tooling choices or project roadmaps
 * Evaluating or endorsing specific commercial developer tools outside of CNCF projects
 * Replacing or duplicating efforts by other TAGs unless explicitly partnered
+* Any end-user directed activities and initiatives
 
 # Goals
 
-* Develop shared vocabulary, metrics, and frameworks to evaluate DevEX
-* Provide a central forum for discussing the developer experience within CNCF
+* Develop shared vocabulary, metrics, and frameworks to evaluate DevEx
+* Provide a central forum within the CNCF for discussing developer experience
 * Help CNCF projects better understand and serve developer needs
 * Publish guidance and reference materials for effective developer workflows
 * Encourage cross-project collaboration to improve consistency and interoperability of tooling
@@ -42,7 +44,7 @@ More specifically, we:
 
 # Non-Goals
 
-* Acting as a certification or compliance body for DevEX tooling
+* Acting as a certification or compliance body for DevEx tooling
 * Becoming a support forum for individual developer issues
 
 # Subprojects & Initiatives
