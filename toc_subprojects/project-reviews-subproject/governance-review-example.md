@@ -155,7 +155,7 @@ governance requirements to reduce the toil of the current maintainers.
 <br>
 **Incubating:** Suggested | **Graduated:** Required
 
-Otel's governance documentation is easily found in the project's
+OTel's governance documentation is easily found in the project's
 [community repo]. It's a pinned repo and linked from the root of the project's
 [GitHub Org].
 
@@ -211,7 +211,7 @@ https://www.youtube.com/@otel-official/videos
 <br>
 **Incubating:** Suggested | **Graduated:** Required
 
-Otel has both documented and demonstrated good vendor-neutral practices.
+OTel has both documented and demonstrated good vendor-neutral practices.
 
 - OTel's [Mission, Vision, and Values] explicitly call our vendor-neutrality as
   a core tenant of their.
@@ -225,7 +225,7 @@ Otel has both documented and demonstrated good vendor-neutral practices.
   of their marketing rules.
 
 <!-- 
-Bob Comment: Otel has done a good job of integrating vendor-neutrality into
+Bob Comment: OTel has done a good job of integrating vendor-neutrality into
 their governance. The marketing guidelines and documenting how to respond are
 EXCELLENT and something that would be great for more projects to adopt.
 -->
@@ -248,7 +248,7 @@ acceptance, requests to the CNCF, and changes to governance or project goals.**
 within OTel's governance. They have several methods for decision making
 depending on scope.
 
-- For large-scale technical decisions, Otel has an [RFC process called OTEPs] or
+- For large-scale technical decisions, OTel has an [RFC process called OTEPs] or
   OpenTelemetry Enhancement Proposals.
 - For leadership roles, both the GC and TC have their own election methods.
   - [GC] - GC is a 9 member body that serve 2 year terms, and is responsible
@@ -472,7 +472,7 @@ community repo.
 From a random sampling of 5 repos, they all had issue templates for the general
 set of things like features, bugs, etc.
 
-For large-scale technical decisions, Otel has an [RFC process called OTEPs] or
+For large-scale technical decisions, OTel has an [RFC process called OTEPs] or
 OpenTelemetry Enhancement Proposals. The process and steps itself are very well
 documented, but not as easily discoverable. There are no specific links or
 references in the community repo and contributor/maintainer guide except for
@@ -517,7 +517,7 @@ matures.**
 <br>
 **Incubating:** Required | **Graduated:** Required
 
-Otel has documentation for contributors both within their community repo and
+OTel has documentation for contributors both within their community repo and
 published on their website. They have documentation targeted towards
 maintainers in their community repo, and these are supported by additional
 documentation (e.g. contributing.md) in each repo.
