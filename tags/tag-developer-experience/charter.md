@@ -21,7 +21,6 @@ More specifically, we:
 * Provide guidance and thought leadership on improving developer workflows and experience in cloud native application development
 * Collaborate with TAG Security to improve the developer experience of integrating security considerations into the developer workflow
 * Collaborate with CNCF projects to surface and resolve developer experience challenges
-* In collaboration with the TAB, conduct studies, gather feedback from end users and contributors, and provide recommendations
 * Facilitate interoperability and standardization across developer tools in the CNCF ecosystem
 * Act as a bridge, empowering developers and project maintainers by improving the user experience through clear communication of feedback and specific technical guidance back to the projects
 
