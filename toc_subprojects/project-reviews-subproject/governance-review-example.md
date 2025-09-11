@@ -213,7 +213,7 @@ https://www.youtube.com/@otel-official/videos
 
 OTel has both documented and demonstrated good vendor-neutral practices.
 
-- OTel's [Mission, Vision, and Values] explicitly call our vendor-neutrality as
+- OTel's [Mission, Vision, and Values] explicitly call out vendor-neutrality as
   a core tenant of their.
 - Their leadership roles have [maximal representation] rules that apply a limit
   of no more than 2 elected members may be from the same company.
