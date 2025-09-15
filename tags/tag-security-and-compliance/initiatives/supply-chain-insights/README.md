@@ -4,7 +4,7 @@ Creation issue: [#1709](https://github.com/cncf/toc/issues/1709)
 
 ## Objective
 
-Pravide a template for particpants wishing to run a scalable system to automate the collection, correlation, and understanding of CNCF Projects' supply chain metadata.  This initiative is related to, but separate from the CNCF staff efforts to establish a GUAC-based supply chain metadata instance to answer CNCF priorities, but may be informed by that effort to enable other organizations to replicate and expand upon the work.
+Provide a template for particpants wishing to run a scalable system to automate the collection, correlation, and understanding of CNCF Projects' supply chain metadata.  This initiative is related to, but separate from the CNCF staff efforts to establish a GUAC-based supply chain metadata instance to answer CNCF priorities, but may be informed by that effort to enable other organizations to replicate and expand upon the work.
 
 ### Desired outcomes
 
