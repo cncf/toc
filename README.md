@@ -25,7 +25,6 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 
 ## TOC Shadows
 
-* **Kevin Klues** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [TOC-appointed][shadow]
 * **Ricardo Aravena** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [GB-appointed][shadow]
 
 Election [schedule](operations/election-schedule.md)
