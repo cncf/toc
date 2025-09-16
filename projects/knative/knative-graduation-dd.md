@@ -440,7 +440,7 @@ Adopter 4 has run Knative in production for about four years, as part of their h
 
 Knative provided these capabilities, which meant that they did not have to build a solution on their own. Adoption for them was straightforward, with very few issues. Problems they did encounter were easily to identify and resolve using project documentation and by reviewing Github issues. 
 
-Adopter 4 does not actively participate in the community, finding they rarely need to engage with the community because the project is mature. Adopter 4 did comment that while the documentation is generally good, and in some areas excellent, some advanced topics were harder to find in documentation adn required some review of code and markdown files in order to find answers to some questions.
+Adopter 4 does not actively participate in the community, finding they rarely need to engage with the community because the project is mature. Adopter 4 did comment that while the documentation is generally good, and in some areas excellent, some advanced topics were harder to find in documentation and required some review of code and markdown files in order to find answers to some questions.
 
 Overall, Adopter 4 feels that Knative is very mature for the problems that it solves, but commented that Knative might not be the right solution for emerging workloads and the project should consider how to evolve to support changes in the space. 
 
