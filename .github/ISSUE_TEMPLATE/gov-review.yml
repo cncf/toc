@@ -3,7 +3,7 @@ description: Governance review request WIP
 title: '[Gov. Review]:'
 labels:
   - needs-triage
-  - kind/initiative
+  - kind/review
   - review/governance 
   - sub/project-review
 body:
@@ -11,7 +11,7 @@ body:
     id: name
     attributes:
       label: Project name
-      placeholder: Name of initiative
+      placeholder: Name of the project
     validations:
       required: true
   - type: input
