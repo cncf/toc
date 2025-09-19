@@ -470,7 +470,7 @@ N/A
   CyberAgent’s future plans include active community participation and feature requests such as Gateway API Inference Extension, zero-scale for raw deployment mode, vertical pod autoscaling, and Dynamic Resource Allocation support. While praising KServe’s governance, maintainer responsiveness, and strong technical foundations, CyberAgent noted opportunities to improve technical decision transparency and global collaboration through more asynchronous communication. KServe remains a critical component in enabling CyberAgent’s large-scale, cost-efficient AI infrastructure.
 
   August 2025
-  Reference: [KServer Adopter Interview - CyberAgent](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-dd-report/projects/kserve/kserve-adopter-interview-cyberagent.md)
+  Reference: [KServer Adopter Interview - CyberAgent](/projects/kserve/kserve-adopter-interview-cyberagent.md)
 
 ##### Adopter 2 - Nutanix/Cloud Service Provider
 
