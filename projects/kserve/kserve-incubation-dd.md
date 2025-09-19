@@ -483,7 +483,7 @@ N/A
   Nutanix is also an active contributor to the KServe project, with five engineers engaged, including three official reviewers. They have expressed a strong commitment to continue contributing and to deepen their collaboration with other CNCF ecosystem projects such as Envoy and components within the model inference domain. This level of production usage, community involvement, and sustained commitment from a major enterprise vendor like Nutanix reflects positively on KServe’s readiness for CNCF incubation.
 
   July 2025
-  Reference: [KServer Adopter Interview - Nutanix](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-dd-report/projects/kserve/kserve-adopter-interview-nutanix.md)
+  Reference: [KServer Adopter Interview - Nutanix](/projects/kserve/kserve-adopter-interview-nutanix.md)
 
 ##### Adopter 3 -  Cloudera (Enterprise Data Platform Provider)
 
