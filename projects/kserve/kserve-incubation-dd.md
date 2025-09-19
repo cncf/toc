@@ -496,7 +496,7 @@ N/A
   Cloudera views KServe’s community governance, technical quality, and growth potential positively, though it notes challenges such as a small maintainer pool, slow PR review cycles, and constrained CI infrastructure. Future plans include deepened community involvement, governance participation, and continued upstreaming of customer-driven features to avoid maintaining internal forks. Cloudera believes CNCF incubation could help address resource constraints, improve build/test infrastructure, and expand maintainer diversity across time zones.
 
   July 2025
-  Reference: [KServer Adopter Interview - Cloudera](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-dd-report/projects/kserve/kserve-adopter-interview-cloudera.md)
+  Reference: [KServer Adopter Interview - Cloudera](/projects/kserve/kserve-adopter-interview-cloudera.md)
 
 ##### Adopter 4 – SAP (Enterprise AI Platform Provider)
 
