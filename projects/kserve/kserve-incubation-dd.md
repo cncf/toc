@@ -509,4 +509,4 @@ N/A
   SAP continues to contribute to KServe with active development and feature requests, with multiple engineers participating in the project. The community is praised for its responsiveness and diversity under CNCF governance, though meeting times favor US contributors. SAP looks forward to deeper involvement, improved adopter visibility, and reduced operational complexity in future project iterations.
 
   August 2025
-  Reference: [KServer Adopter Interview - SAP](https://github.com/kevin-wangzefeng/toc/blob/kserve-incubation-dd-report/projects/kserve/kserve-adopter-interview-sap.md)
+  Reference: [KServer Adopter Interview - SAP](/projects/kserve/kserve-adopter-interview-sap.md)
