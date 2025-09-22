@@ -3,8 +3,8 @@
 <!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
 
 ## Mission Statement
-Containers, OS, Runtime, Virtual Machines, Serverless, Web Assembly, Batch, Scheduler, Orchestrator, Deployment, Dynamic Scaling, CI/CD
 
+To define and advance practices and standards for fundamental cloud native workload execution environments and their related lifecycle management within cloud native systems, applications, and architectures. This supports the CNCF's technical vision by addressing critical problems faced by adopters and contributing to a robust cloud native ecosystem.
 
 [Charter](./charter.md)
 
