@@ -445,7 +445,7 @@ tags: # Technical Advisory Groups
   - dir: tag-workloads-foundation # TAG Workloads Foundation
     name: TAG Workloads Foundation
     mission_statement: >
-      Containers, OS, Runtime, Virtual Machines, Serverless, Web Assembly, Batch, Scheduler, Orchestrator, Deployment, Dynamic Scaling, CI/CD
+      To define and advance practices and standards for fundamental cloud native workload execution environments and their related lifecycle management within cloud native systems, applications, and architectures. This supports the CNCF's technical vision by addressing critical problems faced by adopters and contributing to a robust cloud native ecosystem.
     charter_link: charter.md
     label: tag-workloads-foundation
     leadership:
@@ -627,11 +627,11 @@ toc_subprojects: # TOC SubProjects
     label: project-reviews-subproject
     leadership:
       chairs:
-        - github:
+        - github: klueska
           lfx_id:
-          name:
-          company:
-          email:
+          name: Kevin Klues
+          company: NVIDIA
+          email: klueska@gmail.com
  #      - github: foo
  #        lfx_id: baz
  #        name: Foo Baz Bar
