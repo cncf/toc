@@ -391,7 +391,7 @@ GitHub issues are the main source for communication, complemented by slack. Very
 
 Abiola sees the clear instructions and ease of contributions as a main strength of the project, together with it being an unique project offering virtual machine support for Mac environments.
 
-Suggested improvements to the project include maturing the Windows support, as not all features are currently available across all platforms. Not a project weakness but expected as the project matures. Recent changes to cleanup the distribution channels has also slightly complicated the setup on Mac environments, with tools such as qemu having to be installed independently.
+Suggested improvements to the project include maturing the Windows support, as not all features are currently available across all platforms. Not a project weakness but expected as the project matures. Recent changes to cleanup the distribution channels has also slightly complicated the setup on Mac environments, with `lima-additional-guestagents` having to be installed independently for running VM with a non-native architecture (e.g., Intel on ARM).
 
 ##### Garner
 
