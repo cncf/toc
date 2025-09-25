@@ -170,7 +170,8 @@ If this is the case for your project, please mark it as not-applicable (N/A) and
 ### Dependencies
 
   * Describe the specific running services the project depends on in the cluster.  
-  * Describe the project’s dependency lifecycle policy.  
+  * Describe the project’s dependency lifecycle policy.
+  * How does the project handle licensing and copyright attribution for its third-party dependencies, including those in its container images? Please detail the process for aligning with CNCF [recommendations](https://github.com/cncf/foundation/blob/main/policies-guidance/recommendations-for-attribution.md) for attribution notices.
   * How does the project incorporate and consider source composition analysis as part of its development and security hygiene? Describe how this source composition analysis (SCA) is tracked.
   * Describe how the project implements changes based on source composition analysis (SCA) and the timescale.
 
