@@ -67,27 +67,25 @@ body:
 
       ### Archiving Checklist
       - [ ] TOC vote to archive passed
-      
-      Email requests
-      - [ ] Remove project (logo) from all slide decks (contact pr@cncf.io)
-      - [ ] Remove project (logo) from event sites (contact events@cncf.io)
-      - [ ] Remove from CNCF store (reach out to staff or email store@cncf.io)
-      - [ ] Archive project in LFX Insights (move to archive in PCC - email formation@linuxfoundation.org)
-
-      Pull requests
+      #### PRs
       - [ ] Move project (logo) to archived in the [artwork repo](https://github.com/cncf/artwork)
       - [ ] Move project to archived on [landscape](https://github.com/cncf/landscape)
       - [ ] Remove maintainer list from [project-maintainers.csv](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
-
-      Files, PCC, Mailing lists and other
-      - [ ] Archive (lock) maintainers mailing list (groups.io)
-      - [ ] Remove mailing list from maintainers@ mailing group (google groups)
-      - [ ] Remove from Sandbox / Incubating /Graduated mailing list (google groups)
-      - [ ] Remove from staff list of maintainer emails [sheet](https://docs.google.com/spreadsheets/d/1qfPpAO5pcZFPsSXJ0OPtkvtS4BuawC33j0d-5_p6YFg/edit?gid=262035321#gid=262035321&fvid=2120158369)
-      - [ ] Remove from maintainers & project from [service desk (Jira)](https://cncfservicedesk.atlassian.net/jira/servicedesk/projects/CNCFSD/organizations)
       - [ ] Archive DevStats data (open issue in [devstats repo](https://github.com/cncf/devstats/issues))
-      - [ ] Remove from [CLOMonitor data](https://raw.githubusercontent.com/cncf/clomonitor/main/data/cncf.yaml)
-      - [ ] Notify DevEx team to remove from event Maintainer Project Opportunities 
+      - [ ] Remove from [CLOMonitor data](https://github.com/cncf/clomonitor/blob/main/data/cncf.yaml)
+      #### Mailing lists
+      - [ ] Remove from staff list of [maintainer emails list](https://docs.google.com/spreadsheets/d/1qfPpAO5pcZFPsSXJ0OPtkvtS4BuawC33j0d-5_p6YFg/edit?gid=262035321#gid=262035321&fvid=2120158369)
+      - [ ] Archive (lock) maintainers mailing list (groups.io)
+      - [ ] Remove mailing list from maintainers@ mailing group
+      - [ ] Remove from cncf-`maturity-level` -projects@cncf.io  (google groups)
+      #### Send emails
+      - [ ] Remove project (logo) from all slide decks (contact pr@cncf.io)
+      - [ ] Remove project (logo) from event sites (contact events@cncf.io)
+      - [ ] Remove from CNCF store (reach out to staff or email store@cncf.io)
+      - [ ] Archive project in LFX Insights (move to archive in PCC - Email Formation team)
+      #### Other:
+      - [ ] Remove from maintainers & project from service desk
+      - [ ] Check with LF IT for any CI/CD or other infrastructure the needs to be removed
 
       </details>
       
