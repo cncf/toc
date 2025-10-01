@@ -388,7 +388,18 @@ Through Fluid at Scale Group, Adopter 2 aims to publish enterprise-grade bluepri
 
 August 2025
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+##### Adopter 3 -  financial services
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+Adopter has been using the project for 3 years in production having previously tested for 6 months in dev environments.   Adoption was at an early stage in the project development, has received lots help from the community and has seen the project mature over time.
+
+The project is in use in two areas of the business covering financial trading as well as analytics processes on up to 1000 nodes in production.   It was adopted as a solution that was able to cache different types of data, deal with very high levels of throughput, whilst providing a common interface for different teams and applications.  Adoption started in a cloud environment, and needed to be able to work with different cloud providers as well as operate in on-prem infrastructure.
+
+Fluid supports multiple backends with a standard API, including JuiceFS, which was an important factor in the adoption process.  Other projects were considered, but they did not have the flexibility, reliability, or the ability to scale to 1000 nodes.
+
+Documentation was limited early in the project, and the active community was important to the adoption.  Over time, the documentation has improved, but there is still work to do.  That said, the documentation is good enough for new teams to be able adopt the project effectively.   The code is also very well documented and the code documention often acts as a guide for project usage.
+
+Integrations with the ecosystem and backend components have improved over time, and the early problems have been addressed, so the system is very reliable in production.   Multiple plugins now provide a similar experience and maturity level.   As Fluid is now tightly integrated with multiple important stateful applications in the adopter's environment, upgrades are performed once a year.
+
+The adopter has committed to the project, and is planning to continue using the project in product into the future, and has commented that the project could benefit from broadening the community outside of China.
+
+August 2025
