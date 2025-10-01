@@ -9,7 +9,10 @@
 ### Criteria Evaluation
 
 Katie Gamanji (@kgamanji) and Alex Chircop (@chira001) conducted the due diligence of Fluid who applied for Incubation. The project has completed the criteria that show its maturity at Incubation. The following criteria implementations are noteworthy to call out:
-- TODO ... $NOTABLES. 
+- The project is mature and deployed in large scale production systems for a number of years
+- Fluid offers standardised ways for multiple applications to access different datasets and cache them via standardised APIs
+- Integration with a good number of backend systems for data access and caching allows applications to scale in a standard way across complex systems
+- A healthy ecosystem and community exists, and the future roadmap is based on feedback from adopters
 
 The following actions were provided to the project that were considered blocking but since resolved:
 - the project presented to TAG Storage over 1y ago. Considering the ongoing TAG Reboot initiative, maintainers were advised to complete the General Technical Review for the project
