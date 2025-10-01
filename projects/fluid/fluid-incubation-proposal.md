@@ -100,15 +100,22 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **Clear and discoverable project governance documentation.**
 
-<!-- (TOC Evaluation goes here) --> 
+Governance documentation is located here: https://github.com/fluid-cloudnative/fluid/blob/master/GOVERNANCE.md
+
 
 - [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
-<!-- (TOC Evaluation goes here) --> 
+Fluid has maintainers from 5 organisations, and committers from many others.
+
+Updated list: https://github.com/fluid-cloudnative/fluid/blob/master/MAINTAINERS_COMMITTERS.md
+
+Regular meetings are held bi-weekly: https://github.com/fluid-cloudnative/community/wiki/Meeting-Schedule
+
+Contributors are regularly promoted using the established voting/approval process: https://github.com/fluid-cloudnative/community/issues?q=is%3Aissue%20state%3Aclosed
 
 - [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-<!-- (TOC Evaluation goes here) --> 
+Yes - as per above
 
 - [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
