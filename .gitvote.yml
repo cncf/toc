@@ -1,3 +1,5 @@
+audit:
+  enabled: true
 profiles:
   default:
     duration: 26w
@@ -19,4 +21,3 @@ profiles:
         - cncf-toc-voters
       exclude_team_maintainers: true
     close_on_passing: true
-
