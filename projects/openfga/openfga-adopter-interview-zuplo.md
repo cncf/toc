@@ -6,10 +6,7 @@
 **Attendees:**  
 - **TOC:** Faseela K, TOC Sponsor of KServe  
 - **TOC Shadow:** Ricardo Aravena  
-- **Adopter:** Nate Totten, Co-founder & CTO, Zuplo 
-
-## About the Adopter Interview  
-The purpose of this interview is to assess the maturity and adoption of the OpenFGA project by its adopters. The content may be shared publicly or kept private as per the adopter's preference. The TOC will record raw notes here, which will then be cleaned up and shared with the adopter for review, correction, and final approval. Once approved, they will be included in OpenFGA’s due diligence document.  
+- **Adopter:** Nate Totten, Co-founder & CTO, Zuplo
 
 ## Organization Overview  
 

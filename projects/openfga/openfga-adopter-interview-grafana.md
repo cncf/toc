@@ -5,14 +5,7 @@
 **Attendees:**  
 - **TOC:** Faseela K, TOCa Sponsor of KServe  
 - **TOC Shadow:** Ricardo Aravena  
-- **Adopter:** Joao Guerreiro, Senior Engineering Manager, Grafana Labs  
-
----
-
-## About the Adopter interview  
-The intent of the interview is to ascertain the maturity and adoption of the OpenFGA project by adopters of the project. It’s OK to be public or private.  
-
-TOC will record raw notes here, then the notes will be cleaned up and shared with you for your review, correction, and final approval. Once approved, they’ll go into OpenFGA’s due diligence document.  
+- **Adopter:** Joao Guerreiro, Senior Engineering Manager, Grafana Labs
 
 ---
 

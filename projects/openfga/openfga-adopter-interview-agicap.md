@@ -10,13 +10,6 @@
 
 ---
 
-## About the Adopter Interview
-The intent of the interview is to ascertain the maturity and adoption of the OpenFGA project by adopters of the project. It’s OK to be public or private.
-
-TOC will record raw notes here, then the notes will be cleaned up and shared with you for your review, correction, and final approval. Once approved, they’ll go into OpenFGA’s due diligence document.
-
----
-
 ## Organization Intro
 
 ### Can you give us an overview of your organization and what it does?

@@ -1,8 +1,10 @@
 # OpenFGA Incubation Due Diligence
 
 - Link to [Incubation application issue](https://github.com/cncf/toc/issues/1287)
-
-<!-- This template provides the TOC with the outline for completing due diligence of a project to move levels. This universal template is designed to capture all criteria so the TOC may ensure prior level criteria do not regress. As part of completing the due diligence, the TOC member should update the template to convey the level the project applied for the criteria by bolding the level indicated where the criteria is relevant. -->
+- Based on the [incubation DD template](https://github.com/cncf/toc/blob/main/operations/toc-templates/template-dd-pr-incubation.md)
+- Project Repo(s): https://github.com/openfga
+- Project Site: https://openfga.dev/
+- Communication: https://cloud-native.slack.com/archives/C06G1NNH47N
 
 ## Incubation Evaluation Summary for OpenFGA
 
@@ -10,7 +12,7 @@
 
 # Criteria Evaluation
 
-$TOCMember conducted the due diligence of **OpenFGA**, which applied for incubation. The project has <TBD> the criteria that demonstrate its maturity at incubation.
+Faseela K and Ricardo Aravena conducted the due diligence of **OpenFGA**, which applied for incubation. The project has completed the criteria that demonstrate its maturity at incubation.
 
 ## Noteworthy Implementations
 
@@ -41,32 +43,36 @@ The OpenFGA team has shown substantial progress across CNCF incubation criteria:
 ## Blockers (Previously Raised, Now Resolved)
 
 - **Security Review**: Completion of [security self-assessment](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/openfga/self-assessment.md) and [joint assessment](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/openfga/joint-assessment.md), addressing design and threat modeling gaps.  
-- **Governance Documentation**: Expanded governance and maintainer details in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) and [MAINTAINERS.md](https://github.com/openfga/.github/blob/main/MAINTAINERS.md), ensuring clarity in contributor pathways and decision-making.  
+- **Governance Documentation**: Expanded governance and maintainer details in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) and [MAINTAINERS.md](https://github.com/openfga/community/blob/main/MAINTAINERS.md), ensuring clarity in contributor pathways and decision-making.
 - **Adopter Verification**: Multiple independent production adopters documented in [ADOPTERS.md](https://github.com/openfga/community/blob/main/ADOPTERS.md), confirming real-world use cases.
 
 ## Recommended Enhancements (Non-Blocking)
 
 The following items remain open and may not block incubation, but should be completed before graduation:
 
-- **Maintainer Diversity and Neutrality**: Expand the maintainer base beyond Okta to reduce single-vendor dependence and strengthen long-term neutrality. *(Tracking issue: TBD)*
+- **Maintainer Diversity and Neutrality**: Expand the maintainer base beyond Okta to reduce single-vendor dependence and strengthen long-term neutrality. *(Tracking issue: https://github.com/openfga/community/issues/503)*
 
 - **Transparency in Support**: Adopter feedback revealed reliance on **private support channels with Okta maintainers**, which creates inequity and goes against CNCF’s recommendation for open, transparent community support. The project should discourage private support channels and ensure all discussions happen in public forums.
 
-- **Governance Evolution**: Document clearer processes for roadmap approvals, leadership decisions, and potential subproject governance. *(Tracking issue : TBD)*
+- **Governance Evolution**: Document clearer processes for roadmap approvals, leadership decisions, and potential subproject governance. *(Tracking issue : https://github.com/openfga/community/issues/504)*
 
-- **Maintainer Lifecycle**: Define and demonstrate onboarding, offboarding, and emeritus processes. *(Tracking issue : TBD)*
+- **Better Vendor Neutrality**: *(Tracking issue: https://github.com/openfga/community/issues/506)*
 
-- **Developer Experience**: Address adopter feedback on DSL tooling improvements, batch operations, and idempotent writes. *(Tracking issue : TBD)*
+- **Clarity on Contributor Ladder**: *(Tracking issue: https://github.com/openfga/community/issues/507)*
+- 
+- **Maintainer Lifecycle**: Define and demonstrate onboarding, offboarding, and emeritus processes. *(Tracking issue : https://github.com/openfga/community/issues/505)*
 
-- **Community Outreach**: Increase visibility through case studies, blogs, and talks to grow adoption beyond early contributors. *(Tracking issue: TBD)*
+- **Developer Experience**: Address adopter feedback on DSL tooling improvements, batch operations, and idempotent writes. Idempotent writes are already completed via https://github.com/openfga/roadmap/issues/79. Bulk Deletes and Bulk Import are added to the roadmap and tracked under https://github.com/openfga/roadmap/issues/34 and https://github.com/openfga/roadmap/issues/52. DSL improvement discussions are already started and soon to be included to the roadmap.
+
+- **Community Outreach**: Increase visibility through case studies, blogs, and talks to grow adoption beyond early contributors.
 
 ### Adoption Evaluation
 
-_The adopter interviews reflect a project [in use/too early] for the level which the project applied. They show ... $INTERVIEWSUMMARY._
+The adopter interviews showed project usage at a level compatible with CNCF incubation. OpenFGA is in production use across diverse technology organizations including Agicap (fintech), Docker (developer tooling), Grafana (observability), Read.AI (AI), and Zuplo (API infrastructure) and many others as noted in https://github.com/openfga/community/blob/main/ADOPTERS.md. Adopters rely on OpenFGA to handle complex, fine-grained authorization that traditional RBAC cannot support. Its flexible ReBAC model allows expressive relationship-based permissions, while being open source and self-hosted gives organizations control, compliance, and the ability to contribute upstream. Clear documentation, SDKs, and DSL reduce onboarding friction, and the responsive community quickly addresses bugs and feature requests. Typical deployments serve as a central authorization layer across multiple services, handling hundreds of requests per second, with several adopters contributing fixes upstream, reflecting confidence in the platform. Reported benefits include faster development, consistent enforcement across services, and reduced maintenance overhead compared to bespoke or proprietary alternatives. Challenges noted include performance under read-heavy workloads, limited idempotent batch operations, and migration complexity from existing systems, with support currently community-driven and maintainer concentration skewed toward Okta. Overall, production-scale adoption, active community engagement, and cross-industry use position OpenFGA as a credible and growing solution for fine-grained authorization.
 
 ### Final Assessment
 
-_[The TOC has found the project to have satisfied the criteria for $LEVEL/ The TOC's evaluation of the project shows a needed focus to complete the outstanding blockers and reapply when the following conditions are met ... $CONDITIONS]._
+The TOC has found the project to have satisfied the criteria for Incubation.
 
 ### Due Diligence
 
@@ -108,31 +114,31 @@ OpenFGA has documented iterative governance updates in the community repository.
 
 - [x] **Clear and discoverable project governance documentation.**
 
-Governance is publicly documented, defining TSC roles, maintainers, contributor responsibilities, and decision-making processes. See [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) 
+Governance is publicly documented, defining roles, maintainers, contributor responsibilities, and decision-making processes. See [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) Howevere there is scope for improvement for the documentation and is tracked under https://github.com/openfga/community/issues/504
 
 - [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-Some governance updates are partially documented; discussions tracked in [TOC issue #1287](https://github.com/cncf/toc/issues/1287)
+[Governance document](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) partially covers some of these aspects, but clarity on election and approval process is requested via https://github.com/openfga/community/issues/504
 
 - [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
-Vendor-neutral practices are implemented for hosting, communication, and architecture decisions. See [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) 
+Vendor-neutral practices are implemented for hosting, communication, and architecture decisions. See [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) . However, The TOC reviewers suggest adding rules such as "a limitation on the number/percentage of seats that a single vendor/company could take," "the total number of seats for Core members," and "the term of office for the Core" into the governance. These rules should be demonstrated before applying for graduation. This is being tracked under https://github.com/openfga/community/issues/506
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
-Decision-making is partially documented in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) 
+Decision-making is partially documented in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md#governance-related-policies-and-procedures), but better clarity is requested under https://github.com/openfga/community/issues/504
 
 - [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
-Some documentation exists in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) regarding assignment and onboarding. 
+Roles and responsibilities are specified under https://github.com/openfga/.github/blob/main/GOVERNANCE.md#roles-and-responsibilities, however Maintainer lifecyles or member onboarding/leaving is not properly documented and is tracked under https://github.com/openfga/community/issues/505.
 
 - [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
-Maintainer lifecycle partially documented in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) 
+Maintainer lifecycle is not documented and tracked under https://github.com/openfga/community/issues/505
 
 - [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
 
-Maintainer changes are tracked in [MAINTAINERS.md](https://github.com/openfga/community/blob/main/MAINTAINERS.md) 
+Maintainer lifecycle is not documented and hence a proper demonstration of how a new maintainer is added is also not clear. PRs like https://github.com/openfga/community/pull/475 seem to be adding maintainers without much clarity on the eligibility criteria.
 
 - [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
@@ -172,7 +178,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Contributor ladder with multiple roles for contributors.**
 
-OpenFGA defines multiple contributor roles in its governance documentation, including maintainers, committers, and reviewers, with responsibilities outlined in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md#roles-and-responsibilities).
+OpenFGA defines multiple contributor roles in its governance documentation, including maintainers, committers, and reviewers, with responsibilities outlined in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md#roles-and-responsibilities). However the eligibility criteria and process on how a new member can move levels is not clearly defined. This is tracked under https://github.com/openfga/community/issues/507
 
 ### Required
 
@@ -208,7 +214,7 @@ OpenFGA had 109 committers in the last 12 months as reported on [CNCF DevStats](
   - OpenFGA follows a structured [RFC (Request for Comments) process](https://github.com/openfga/rfcs) for substantial changes to the project or roadmap. This ensures that contributors can review, comment, and approve significant changes, providing transparency and community input.
 
 - [x] **History of regular, quality releases.**
-  - OpenFGA maintains a track record of high-quality releases, with detailed metrics available through DevStats:
+  - OpenFGA maintains a track record of [high-quality releases](https://github.com/openfga/openfga/releases), with detailed metrics available through DevStats:
     - [Contribution activity](https://openfga.devstats.cncf.io/d/74/contributions-chart?orgId=1&var-period=m&var-metric=contributions&var-repogroup_name=All&var-country_name=All&var-company_name=All&var-company=all&from=now-1y&to=now-2d): average 1450 contributions per month
     - [Issues opened/closed](https://openfga.devstats.cncf.io/d/12/issues-opened-closed-by-repository-group?orgId=1&var-period=m&var-repogroup_name=All): 46.5 issues opened and 28 closed per month
     - [PRs opened/closed](https://openfga.devstats.cncf.io/d/12/issues-opened-closed-by-repository-group?orgId=1&var-period=m&var-repogroup_name=All): 159 opened and 144 closed per month
@@ -217,10 +223,13 @@ OpenFGA had 109 committers in the last 12 months as reported on [CNCF DevStats](
 ### Required 
 
 - [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outline how this project fulfills an outstanding need and/or solves a problem differently.**
+  - https://openfga.dev/docs/fga covers the high level project goals and objectives
   - OpenFGA addresses a critical gap in application authorization by providing high-performance, relationship-based access control inspired by Google Zanzibar. It helps developers implement fine-grained access control, centralizing authorization logic to reduce errors, increase security, and scale reliably. Security risks like [Broken Object Level Authorization](https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/) are mitigated using OpenFGA’s approach.
   - Related CNCF projects can be found at [related-projects.md](https://github.com/openfga/community/blob/main/related-projects.md).
+  - [OpenFGA and Cedar comparison](https://github.com/openfga/openfga-cedar-comparison/blob/main/README.md)
 
 - [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
+  - https://openfga.dev/docs/fga and https://openfga.dev/docs/concepts cover the project overview
   - OpenFGA is a flexible authorization solution that evaluates object-user relationships for access decisions. It supports modeling Role-Based, Attribute-Based, and Relationship-Based Access Control systems.
     - [Google Zanzibar paper](https://research.google/pubs/zanzibar-googles-consistent-global-authorization-system/) inspired modeling
     - SDKs for multiple languages allow easy integration into cloud-native applications.
@@ -234,16 +243,31 @@ OpenFGA had 109 committers in the last 12 months as reported on [CNCF DevStats](
   - **Additional information from Project Reviews Subproject and General Technical Review:**  
     - The project team was engaged in a technical review on **August 8**, using OpenFGA as an example for the Project Reviews Subproject. 
     - The project team was noted to be flexible and easy to work with during this process, facilitating smooth evaluation.
-    - The General Technical Review covered the full **cloud native software lifecycle**:  
-      - **Day 0 – Planning Phase:** Roadmap process, target personas (developers, architects, platform teams), primary use cases (authorization engine), and differentiation from other solutions like OPA.  
-      - **Day 1 – Installation and Deployment Phase:** Helm chart deployment, enabling/disabling in live clusters, configuration management, rollout, upgrade and rollback strategies including immutability and shadow checks.  
-      - **Day 2 – Day-to-Day Operations Phase:** Scalability, reliability, observability (logs, metrics, dashboards), SLOs/SLIs, dependency management, and troubleshooting known failure modes.  
-    - Security principles followed: secure by design and secure by default, support for multiple AuthN strategies, incremental TLS enablement, immutable authorization models, and structured access control.  
+    - The General Technical Review covered the full **cloud native software lifecycle** ([Google Doc link](https://docs.google.com/document/d/11TpHAupCcvbGgi0NNmHcRB1SntDZ6Q4erHigLOmmJGE/edit?usp=sharing)):  
+
+      **Day 0 – Planning Phase**  
+      - Roadmap driven by community input (issues, surveys, RFCs).  
+      - Target personas: developers, architects, platform/security engineers.  
+      - Core use cases: policy modeling, APIs, scale; non-goals: authentication, UI, infra policy.  
+      - Design principles: correctness, reliability, performance; API-first, secure-by-default.  
+
+      **Day 1 – Installation & Deployment**  
+      - Simple setup (Docker, Homebrew, Helm) with health checks.  
+      - Deployment via Helm/Terraform/GitOps; upgrade and rollback strategies with schema migrations and metrics-based safeguards.  
+
+      **Day 2 – Operations**  
+      - Scalability via horizontal scaling and HA DB.  
+      - Observability with logs, metrics, tracing, profiling, Grafana dashboards.  
+      - SLIs/SLOs around request success rate and latency.  
+      - Known failure modes: DB outages, misconfigurations, recursion in models; mitigated by HA DB and pod rescheduling.  
+
+    - Security principles: secure by design/default, multiple AuthN strategies, TLS enablement, immutable models, structured access control.  
+    - Dependency and supply-chain hygiene: Dependabot, Snyk, OSSF Scorecard, CodeQL, >90% coverage, CVE handling.
     - Links to supporting assessments and documentation:  
       - [Self Assessment](https://github.com/cncf/toc/blob/main/projects/openfga/security-assessment/self-assessment.md)  
       - [Joint Assessment](https://github.com/cncf/toc/blob/main/projects/openfga/security-assessment/joint-assessment.md)  
       - [Cloud Native Threat Model](https://github.com/cncf/toc/blob/main/projects/openfga/security-assessment/joint-assessment.md#threat-model)  
-    - Meeting notes and additional review documentation are available in the [Google Doc](https://docs.google.com/document/d/1BxXhJbfhHc0WxF-EXAMPLELINK/edit) for reference.
+    - Meeting notes and additional review documentation are available in the [Google Doc of the General Technical Review](https://docs.google.com/document/d/11TpHAupCcvbGgi0NNmHcRB1SntDZ6Q4erHigLOmmJGE/edit?usp=sharing).
 
 - [x] **Document the project's release process.**
   - OpenFGA’s [release process](https://github.com/openfga/openfga/blob/main/RELEASES.md) defines versioning, QA procedures, and release steps to ensure reliable delivery of updates.
@@ -267,13 +291,18 @@ N/A
   - Repository permissions are strictly managed, with role-based access control and separation of duties for code and documentation contributions.
 
 - [x] **Document assignment of security response roles and how reports are handled.**
-  - Security response roles are defined in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md) and the [security policy](https://github.com/openfga/community/security/policy), detailing how reports are handled, triaged, and escalated.  
+  - Security response roles are defined in [GOVERNANCE.md](https://github.com/openfga/.github/blob/main/GOVERNANCE.md#core) and the [security policy](https://github.com/openfga/community/security/policy), detailing how reports are handled, triaged, and escalated.
   - OpenFGA rotates security team responsibilities to ensure diverse coverage and minimize single points of failure.
 
 - [x] **Document Security Self-Assessment.**
   - OpenFGA completed a self-assessment documented at [Self-Assessment](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/openfga/self-assessment.md) and a joint assessment at [Joint Assessment](https://github.com/cncf/tag-security/blob/main/community/assessments/projects/openfga/joint-assessment.md), reviewing security practices, threat modeling, and compliance with CNCF recommendations.  
   - The assessments validate adherence to cloud-native security principles, including secure defaults, configurable authentication/authorization strategies, and robust dependency management.  
   - OpenFGA’s immutable authorization models, “deny by default” approach, and incremental TLS enablement reduce risk and support secure deployments at scale.
+  - OpenFGA has come up with a detailed [Supply Chain Security assessment](https://docs.google.com/document/d/19UCsVeDE6T4n4EBATAuwFZYAkp5l0F3HlFJ1K3AZWk0/edit?usp=sharing) document with the best practices they are following. Some of the highlights include:
+    - SBOMs are generated for all releases(openfga and cli repos) using Syft, providing a detailed inventory of all components and dependencies.
+    - All container images are cryptographically attested before being published.
+    - All release artifacts are signed, providing cryptographic proof of authenticity and integrity.
+    - Automated vulnerability scanning of source code dependencies and container images (using Dependabot/Snyk/socket.dev/govulncheck).
 
 - [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
   - OpenFGA holds the [OpenSSF Best Practices Badge](https://www.bestpractices.dev/en/projects/6374), demonstrating adherence to key security practices including vulnerability management, secure development, supply chain security, and community awareness.  
