@@ -8,7 +8,7 @@
 
 ### Criteria Evaluation
 
-Kevin Wang conducted the due diligence of Dragonfly who applied for graduation. The project has completed the criteria that show its maturity at graduation.
+Kevin Wang completed the due diligence for Dragonfly's graduation, building on the initial work of Karena Angell and Nikhita Raghunath. This effort was also supported by a [Governance Review from Bob Killen](https://github.com/cncf/toc/pull/1885) and a [joint security assessment from TAG Security](https://github.com/cncf/tag-security/pull/1443). The project has met the graduation criteria, demonstrating its maturity.
 
 - The following criteria implementations are noteworthy to call out.
   - Dragonfly is a mature project endorsed by multiple production adopters across diverse industries, demonstrating significant business value with reported cost reductions up to 90% and bandwidth savings up to 70% in large-scale deployments.
@@ -117,7 +117,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Clear and discoverable project governance documentation.**
 
   <!-- (TOC Evaluation goes here) -->
-  The Dragonfly project governance doc can be easily found at <https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md>, and cross linked by other relavent locations.
+  The Dragonfly project governance doc can be easily found at <https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md>, and cross linked by other relevant locations.
 
   Other community governance relevant content e.g. contributor ladder (COMMUNITY_LADDER.md) and contribution guide (CONTRIBUTING.md) are also cross-linked in the GOVERNANCE.md doc.
 
@@ -134,8 +134,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
   <!-- (TOC Evaluation goes here) -->
-  Dragonfly documents its commitemnt in the [GOVERNANCE.md](https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md).  
-  And [COMMUNITY_MEBMERSHIP.md#maximum-representation](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#maximum-representation) explicitly documents maximum representation of maintainers from the same company:
+  Dragonfly documents its commitment in the [GOVERNANCE.md](https://github.com/dragonflyoss/community/blob/master/GOVERNANCE.md).  
+  And [COMMUNITY_MEMBERSHIP.md#maximum-representation](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#maximum-representation) explicitly documents maximum representation of maintainers from the same company:
   > To ensure balanced representation, no more than four active Maintainers may be from the same company. If more than four candidates from one company are elected, only the top four vote-getters will serve, with additional slots filled by the next highest vote recipients from other organizations.
 
 - [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
@@ -143,14 +143,14 @@ Note: this section may be augmented by the completion of a Governance Review fro
   <!-- (TOC Evaluation goes here) -->
   Dragonfly documents detailed project leadership management rules at <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#managing-membership>
 
-  THe contribution acceptance is documented in the contributing guide at <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#contributing-code-and-docs>.
+  The contribution acceptance is documented in the contributing guide at <https://github.com/dragonflyoss/community/blob/master/CONTRIBUTING.md#contributing-code-and-docs>.
 
   The process for CNCF requests is documented at <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#cncf-requests-and-communications>
 
 - [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for speci fic teams (example: Security Response Committee).**
 
   <!-- (TOC Evaluation goes here) -->
-  Dragonfly describes the basic roles, responsibilies, and how to become on the role in the [community ladder](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md).
+  Dragonfly describes the basic roles, responsibilities, and how to become on the role in the [community ladder](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md).
 
 - [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
