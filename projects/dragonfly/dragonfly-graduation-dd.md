@@ -129,7 +129,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Added detailed governance and lifecycle management rules for subprojects. PRs: [dragonflyoss/community#107](https://github.com/dragonflyoss/community/pull/107), [dragonflyoss/community#101](https://github.com/dragonflyoss/community/pull/101)
   - Add repository guidelines and list. PRs: [dragonflyoss/community#100](https://github.com/dragonflyoss/community/pull/100)
   - Updated community roles and responsibilities to improve clarity. PRs: [dragonflyoss/community#104](https://github.com/dragonflyoss/community/pull/104)
-  - The Dragonfly project now uses label `governance-change` in the community repo to track all governance relavant changes, to provide easier searching experieneces. [Search all "governance-change" PRs](https://github.com/dragonflyoss/community/pulls?q=is%3Apr+label%3Agovernance-change)
+  - The Dragonfly project now uses label `governance-change` in the community repo to track all governance relevant changes, to provide easier searching experiences. [Search all "governance-change" PRs](https://github.com/dragonflyoss/community/pulls?q=is%3Apr+label%3Agovernance-change)
 
 - [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
@@ -147,7 +147,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
   The process for CNCF requests is documented at <https://github.com/dragonflyoss/community/blob/master/COMMUNITY_MEMBERSHIP.md#cncf-requests-and-communications>
 
-- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for speci fic teams (example: Security Response Committee).**
+- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
   <!-- (TOC Evaluation goes here) -->
   Dragonfly describes the basic roles, responsibilities, and how to become on the role in the [community ladder](https://github.com/dragonflyoss/community/blob/master/COMMUNITY_LADDER.md).
@@ -169,7 +169,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
   <!-- (TOC Evaluation goes here) -->
-  Dragonfly documents current maintainers and emeritus maintainers at <https://github.com/dragonflyoss/community/blob/master/roles/Maintainers.md>. All maintainers share all domains of responsbility.
+  Dragonfly documents current maintainers and emeritus maintainers at <https://github.com/dragonflyoss/community/blob/master/roles/Maintainers.md>. All maintainers share all domains of responsibility.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
@@ -272,7 +272,7 @@ The [Contributing guide](https://github.com/dragonflyoss/community/blob/master/C
 - [x] **Demonstrate contributor activity and recruitment.**
 
   <!-- (TOC Evaluation goes here) -->
-  The dragonfly maintainer provided some exmaples as the following:
+  The dragonfly maintainer provided some examples as the following:
   - Participating OSPP 2025: <https://summer-ospp.ac.cn/org/orgdetail/72e6f975-d2b8-4fa3-a377-441c1038db10?lang=en>
   - Participating GLCC 2025 <https://www.ccf.org.cn/kyfzwyh/wyhdt/2025-06-30/846039.shtml>
 
@@ -400,7 +400,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 - [x] **Document Security Self-Assessment.**
 
   <!-- (TOC Evaluation goes here) -->
-  Dragonlfy's Security Self-Assessment can be found at: <https://github.com/cncf/tag-security/blob/main/community/assessments/projects/dragonfly/self-assessment.md>.
+  Dragonfly's Security Self-Assessment can be found at: <https://github.com/cncf/tag-security/blob/main/community/assessments/projects/dragonfly/self-assessment.md>.
 
   Non-blocking Suggestion: The TOC reviewer suggests add a copy to [dragonflyoss/community](https://github.com/dragonflyoss/community)
 
@@ -441,7 +441,7 @@ N/A
 - [x] **TOC verification of adopters.**
 
   <!-- (TOC Evaluation goes here) -->
-  The Dragonfly maintainers provided the TOC with a list of adopters from different business segments who agreed to be interviewed for the Graduation Due Diligence process. 4 of these adopters were interviewed. The [adoption portion](#adoption) of this document contains interview summaries, and their (the adopters preferred remain anonymous) interview details kept in private files for CNCF TOC review. All interviewed adopters demonstrated production-level usage and commented on project maturity. Stability at scale, P2P distribution efficiency, and substantial cost savings from bandwidth reduction were common strengths identified by adopters. The cloud-native deployment model and seamless container registry integration were especially highlighted as providing significant value to adopters.
+  The Dragonfly maintainers provided the TOC with a list of adopters from different business segments who agreed to be interviewed for the Graduation Due Diligence process. 4 of these adopters were interviewed. The [adoption portion](#adoption) of this document contains interview summaries, their interview details (the adopters preferred to remain anonymous) are kept in private files for CNCF TOC review. All interviewed adopters demonstrated production-level usage and commented on project maturity. Stability at scale, P2P distribution efficiency, and substantial cost savings from bandwidth reduction were common strengths identified by adopters. The cloud-native deployment model and seamless container registry integration were especially highlighted as providing significant value to adopters.
 
 - [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
