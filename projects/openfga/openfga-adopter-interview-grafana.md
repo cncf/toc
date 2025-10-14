@@ -3,7 +3,7 @@
 **Meeting Time:** 9/18/2025  
 **Meeting Record:** TBD  
 **Attendees:**  
-- **TOC:** Faseela K, TOCa Sponsor of KServe  
+- **TOC:** Faseela K, TOC Sponsor  
 - **TOC Shadow:** Ricardo Aravena  
 - **Adopter:** Joao Guerreiro, Senior Engineering Manager, Grafana Labs
 
