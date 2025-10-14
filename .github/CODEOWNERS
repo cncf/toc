@@ -46,3 +46,6 @@ go.sum @cncf/cncf-projects
 # Projects team should be the only group to approve CODEOWNERS changes
 # All general permissions should be handled through github group membership
 /.github/CODEOWNERS @cncf/cncf-projects
+
+# Initiatives may set up additional codeowners for their own subdirectories
+/tags/tag-security-and-compliance/initiatives/supply-chain-insights/ evankanderson halcyondude jpower432 krol3 brandtkeller
