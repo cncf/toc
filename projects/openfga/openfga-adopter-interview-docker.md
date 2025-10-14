@@ -3,7 +3,7 @@
 **Meeting Time:** 9/11/2025  
 **Meeting Record:** TBD  
 **Attendees:**  
-- TOC: Faseela K, TOC Sponsor of KServe  
+- TOC: Faseela K, TOC Sponsor
 - TOC Shadow: Ricardo Aravena  
 - Adopter: Gurleen Sethi, Senior Software Engineer at Docker, Inc.
 
