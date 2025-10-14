@@ -4,7 +4,7 @@
 **Meeting Record:** TBD  
 
 **Attendees:**  
-- TOC: Faseela K, TOC Sponsor of KServe  
+- TOC: Faseela K, TOC Sponsor  
 - TOC Shadow: Ricardo Aravena  
 - Adopter: Pauline Jamin, Head of Engineering – Finance and Core, Agicap (pauline.jamin@agicap.com)  
 
