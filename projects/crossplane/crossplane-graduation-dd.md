@@ -1,6 +1,7 @@
 # Crossplane Graduation Due Diligence
 
 - Link to [Graduation application issue](https://github.com/cncf/toc/issues/1788)
+- Link to [Governance Review](https://github.com/cncf/toc/issues/1887)
 
 <!-- This template provides the TOC with the outline for completing due diligence of a project to move levels. This universal template is designed to capture all criteria so the TOC may ensure prior level criteria do not regress. As part of completing the due diligence, the TOC member should update the template to convey the level the project applied for the criteria by bolding the level indicated where the criteria is relevant. -->
 
@@ -8,40 +9,56 @@
 
 ### Criteria Evaluation
 
-TOC Members, Karena Angell and Dims, conducted the due diligence of Crossplane who applied for CNCF Graduation. TAG Leads Josh Gavant and Mario Fahlandt conducted the governance review of Crossplane. The project has completed the criteria that show its maturity at the level of Graduation. The following criteria implementations are noteworthy to call out:
+TOC Members, Karena Angell and Dims, conducted the due diligence of Crossplane who applied for CNCF Graduation. TAG Leads Josh Gavant and Mario Fahlandt conducted the governance review of Crossplane. The project has completed the criteria that show its maturity at the level of Graduation. 
 
-$NOTABLES. 
+The following criteria implementations are noteworthy to call out:
+
+* Innovative architectural approach to building your own custom cloud native control plane to manage an entire cloud native implementation
+* Provides custom defined platform APIs to expose infrastructure resources for application developers
+* The project maintainers have been incredibly responsive to any suggestion and/or recommendation from the TOC and Project Reviews subproject members conducting the due diligence and governance reviews
+* The project maintainers have been open and receptive to contructive feedback, demonstrating a commitment to open source values
 
 The following actions were provided to the project that were considered blocking but since resolved:
 
 * Vendor Neutrality: The project needs to demonstrate a stronger separation between upstream/downstream concerns and commercial vendors should only appear in an upstream context in accordance with CNCF policies.
     * The project has done considerable work to ensure a clean separation between upstream and downstream and clarified within its documentation.
-    * Add Community Extension Projects list page #999
+    * Add Community Extension Projects list page [#999](https://github.com/crossplane/docs/pull/999)
     * The TOC recommends the project meet with the end user TAB and TOC in a joint session after the next Steering Committee vote as a touch point in commitment to additional vendor neutrality initiatives put in place this year.
 * Survivability: The project needs to demonstrate long term survivability and resilience to sponsoring vendors shutting down.
-    * 
+    * The project migrated critical project release processes and artifacts to vendor neutral CNCF owned accounts.
+      * If the top supporting vendor were to go out of business, the community could continue to release new versions of the project's software without major obstacles.
+    * The vendor neutral community registry (xpkg.crossplane.io) previously mentioned also promotes survivability of the project's extension ecosystem, as their Crossplane package artifacts are published to the neutral registry by default.
+    * The project maintainers have also proactively audited and migrated other project accounts as needed that are not on the critical path for software releases (e.g. community calendar) to vendor neutral CNCF owned accounts.
+    * [add guide for building and installing Crossplane from source code](https://github.com/crossplane/docs/pull/1005)
 * Project Lifecycle Policies: There is confusion around the status and health of Crossplane ecosystem projects which negatively affects the community's ability to adopt the project.
+  * The project has defined clear governance, policies, and lifecycle for Crossplane's "Community Extension Projects", which includes strict guidelines for project health and archival of projects that are no longer actively maintained.
+  * The project has worked with extension project maintainers to bring their projects into compliance, and for projects where that is not possible, has carried out the archival process.
 * Project status list
-  * Tracked in Provide a list of active extensions and their maturity crossplane/crossplane#6834
-  * Fixed in Add Community Extension Projects list page crossplane/docs#999 and governance: community extension projects list crossplane/crossplane#6836
+  * Tracked in [Provide a list of active extensions and their maturity crossplane/crossplane#6834](https://github.com/crossplane/crossplane/issues/6834)
+  * Fixed in [Add Community Extension Projects list page crossplane/docs#999](https://github.com/crossplane/docs/pull/999) and [governance: community extension projects list crossplane/crossplane#6836](https://github.com/crossplane/crossplane/pull/6836)
   * Live on https://docs.crossplane.io/latest/learn/community-extension-projects/
 * CNCF project maintainers list out of date
-  * Mentioned in Crossplane Governance Review for Graduation Application #1887 (comment)
-  * PR opened to fix in Update Crossplane maintainers in project-maintainers.csv foundation#1143
+  * Mentioned in [Crossplane Governance Review for Graduation Application #1887](https://github.com/cncf/toc/issues/1887) 
+  * PR opened to fix in [Update Crossplane maintainers in project-maintainers.csv foundation#1143](https://github.com/cncf/foundation/pull/1143)
 
 The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
 
-* Link release docs to release processes #1004
-* Remove stale note about default registry #1002
-* Update header navigation community link to commercial #995
+* Link release docs to release processes [#1004](https://github.com/crossplane/docs/pull/1004)
+* Add link to Crossplane release process from extension release guide [#1006](https://github.com/crossplane/docs/pull/1006)
+* Remove stale note about default registry [#1002](https://github.com/crossplane/docs/pull/1002)
+* Update header navigation community link to commercial [#995](https://github.com/crossplane/docs/pull/995)
 * "community" link on docs.crossplane.io
-  * Tracked in Top banner "Community" link goes to "Commercial" crossplane/docs#994
-  * Fixed in Update header navigation community link to commercial crossplane/docs#995
+  * Tracked in Top banner "Community" link goes to "Commercial" [crossplane/docs#994](https://github.com/crossplane/docs/pull/994)
+  * Fixed in Update header navigation community link to commercial [crossplane/docs#995](https://github.com/crossplane/docs/pull/995)
   * Live on https://docs.crossplane.io/
 * Clarify purpose of SIGs
-  * Tracked in Define "SIG" in Crossplane crossplane/crossplane#6833
-  * Fixed in README: clarify purpose of SIGs crossplane/crossplane#6835
+  * Tracked in Define "SIG" in Crossplane [crossplane/crossplane#6833](https://github.com/crossplane/crossplane/pull/6833)
+  * Fixed in README: clarify purpose of SIGs [crossplane/crossplane#6835](https://github.com/crossplane/crossplane/pull/6835)
   * Live on https://github.com/crossplane/crossplane?tab=readme-ov-file#special-interest-groups-sig
+* Achieve the OpenSSF Best Practices gold badge
+* Meet with the TOC and End User Technical Advisory Board (TAB) within 2 months after the next Steering Committee election to verify: 
+  * vendor neutrality initiatives put in place are being implemented
+  * an appropriately maintained successor to the [Earthly](https://earthly.dev/get-earthly) project has been identified and is on the roadmap for [building from source](https://docs.crossplane.io/v2.0/guides/install-from-source/), either by reverting to [make](https://www.gnu.org/software/make/) or an [alternative](https://github.com/crossplane/crossplane/issues/6394)
 
 
 ### Adoption Evaluation
@@ -169,10 +186,11 @@ The steering committee membership and details can be found in https://github.com
 
 The maintainers of each repository in the crossplane and crossplane-contrib organizations are listed in the OWNERS.md file in each individual repository. For example:
 
-core Crossplane: https://github.com/crossplane/crossplane/blob/main/OWNERS.md
-crossplane-runtime: https://github.com/crossplane/crossplane-runtime/blob/main/OWNERS.md
-provider-sql: https://github.com/crossplane-contrib/provider-sql/blob/master/OWNERS.md
-provider-palette: https://github.com/crossplane-contrib/provider-palette/blob/main/OWNERS.md
+* core Crossplane: https://github.com/crossplane/crossplane/blob/main/OWNERS.md
+* crossplane-runtime: https://github.com/crossplane/crossplane-runtime/blob/main/OWNERS.md
+* provider-sql: https://github.com/crossplane-contrib/provider-sql/blob/master/OWNERS.md
+* provider-palette: https://github.com/crossplane-contrib/provider-palette/blob/main/OWNERS.md
+
 Community Extension Projects must keep these lists up to date, as part of the defined policies and lifecycle expectations.
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
@@ -234,25 +252,32 @@ Both [issues](https://github.com/crossplane/crossplane/tree/main/.github/ISSUE_T
 
 The [Contributing guide](https://github.com/crossplane/crossplane/tree/main/contributing) also describes how changes are accepted, what the contributor can expect to experience, and tips for making a successful contribution.
 
-- [ ] **Project must have, and document, at least one public communications channel for users and/or contributors.**
+- [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
-<!-- (TOC Evaluation goes here) --> 
+All communication channels are listed in the main project README: https://github.com/crossplane/crossplane/tree/main?tab=readme-ov-file#get-involved. The most commonly used channels are https://slack.crossplane.io/ and https://github.com/crossplane/crossplane.
 
-- [ ] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
+- [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
-<!-- (TOC Evaluation goes here) --> 
+All communication channels are listed in the main project README: https://github.com/crossplane/crossplane/tree/main?tab=readme-ov-file#get-involved
 
-- [ ] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
+- [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-<!-- (TOC Evaluation goes here) --> 
+All meetings within the Crossplane community and ecosystem are tracked in the community calendar. This calendar as well as other ways to get involved are highlighted prominently in the project's main README.
 
-- [ ] **Documentation of how to contribute, with increasing detail as the project matures.**
+- [x] **Documentation of how to contribute, with increasing detail as the project matures.**
 
-<!-- (TOC Evaluation goes here) --> 
+The Contributing guide describes the process of how to contribute to the project, what the maintainers are expecting, and guidance for how to make a successful contribution.
 
-- [ ] **Demonstrate contributor activity and recruitment.**
+A similar guide is also available for contributing specifically to the docs at https://docs.crossplane.io/contribute/.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Demonstrate contributor activity and recruitment.**
+
+Project health metrics tracked by the CNCF consistently demonstrate that the community has continued to thrive with both adoption of the technology as well as a strong base of contributors to the project:
+
+* The project is currently in the [top 10% of all CNCF projects](https://www.cncf.io/blog/2025/07/18/a-mid-year-2025-look-at-cncf-linux-foundation-and-the-top-30-open-source-projects/) for contributor authors, at position [13 out of 231](https://docs.google.com/spreadsheets/d/116ZU_ltVkJip7G073ocULHxKhy4F1OgWjNjtZ1IPBWk/edit?gid=0#gid=0)
+* This number of PR authors has grown 5x from 184 at the time of Incubation to over [1,000](https://crossplane.devstats.cncf.io/d/22/prs-authors-table?orgId=1) currently
+* The diversity of companies contributing quadrupled from 105 to [468](https://crossplane.devstats.cncf.io/d/5/companies-table?orgId=1).
+* The overall number of contributors to the project is now over [3,000](https://crossplane.devstats.cncf.io/d/18/overall-project-statistics-table?orgId=1&var-period_name=Last%20decade&var-repogroup_name=All).
 
 ## Engineering Principles
 
@@ -262,41 +287,63 @@ N/A
 
 ### Required
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
+- [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
   - _If applicable_ A General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
-<!-- (TOC Evaluation goes here) --> 
+Crossplane is a framework for building cloud native control planes without needing to write code, and the Crossplane project and community is a neutral place for vendors and individuals to come together in enabling these control planes. The project's goals and objectives are thoroughly documented in the [official project charter](https://github.com/crossplane/crossplane/blob/main/CHARTER.md).
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases. _This requirement may also be satisfied by completing a General Technical Review._**
+There do not appear to be any other projects in the CNCF landscape that provide the building blocks to build a custom cloud native control plane that manages all of an adopter's infrastructure, or exposes infrastructure resources for application developers through custom defined platform APIs. There are complementary projects as listed in the CNCF and non-CNCF integrations section.
+
+- [x] **Document what the project does, and why it does it - including viable cloud native use cases. _This requirement may also be satisfied by completing a General Technical Review._**
   - _If applicable_ a General Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
-- [ ] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
+The official project charter, explaining what Crossplane is and what it is not, can be found at https://github.com/crossplane/crossplane/blob/main/CHARTER.md.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
-- [ ] **Roadmap change process is documented.**
+The Crossplane public roadmap can be found at https://github.com/crossplane/crossplane/blob/main/ROADMAP.md.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Roadmap change process is documented.**
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
+The expectations and process for updating the public roadmap over time is outlined in https://github.com/crossplane/crossplane/blob/main/ROADMAP.md.
+
+- [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
   -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
-<!-- (TOC Evaluation goes here) --> 
+The Crossplane docs provide an overview of the architecture and components of Crossplane that enable cloud native control planes:
 
-- [ ] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
+* Architecture introduction: https://docs.crossplane.io/v1.20/getting-started/introduction
+  * Updated overview for upcoming v2.0: https://docs.crossplane.io/v2.0-preview/whats-crossplane/
+* Core Concepts (linking to component deep dives): https://docs.crossplane.io/v1.20/concepts/
 
-  - [ ] Release expectations (scheduled or based on feature implementation)
-  - [ ] Tagging as stable, unstable, and security related releases
-  - [ ] Information on branch and tag strategies
-  - [ ] Branch and platform support and length of support
-  - [ ] Artifacts included in the release.
+There are also specifications for certain components in Crossplane that inform specific implementations on the expectations and requirements for extending Crossplane:
+
+* [Functions spec](https://github.com/crossplane/crossplane/blob/main/contributing/specifications/functions.md)
+* [Packages spec](https://github.com/crossplane/crossplane/blob/main/contributing/specifications/xpkg.md)
+
+The original public v0.1 release of Crossplane also included a public vision and architecture document. This document has not kept up with the specific implementation details of Crossplane v1.0+, but is of interest nonetheless: https://docs.google.com/document/d/1whncqdUeU2cATGEJhHvzXWC9xdK29Er45NJeoemxebo/edit?usp=sharing
+
+- [x] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
+
+  - [x] Release expectations (scheduled or based on feature implementation)
+  - [x] Tagging as stable, unstable, and security related releases
+  - [x] Information on branch and tag strategies
+  - [x] Branch and platform support and length of support
+  - [x] Artifacts included in the release.
   - Additional information on topics such as LTS and edge releases are optional. Release expectations are a social contract between the project and its end users and hence changes to these should be well thought out, discussed, socialized and as necessary agreed upon by project leadership before getting rolled out.
 
-<!-- (TOC Evaluation goes here) --> 
+* General overview of the release/patch cycle and LTS policy: https://docs.crossplane.io/latest/learn/release-cycle/
+* In-depth release process details: https://github.com/crossplane/release/blob/main/README.md
+supported by release/patch issue template checklists: releases, patch releases
+* Feature maturity lifecycle: https://docs.crossplane.io/latest/learn/feature-lifecycle/
+* Build Crossplane from Source Guide: https://docs.crossplane.io/v2.0/guides/install-from-source/
+* Releasing Crossplane Extensions: [https://docs.crossplane.io/v2.0/guides/extensions-release-process/](https://docs.crossplane.io/v2.0/guides/extensions-release-process/)
 
-- [ ] **History of regular, quality releases.**
+- [x] **History of regular, quality releases.**
 
-<!-- (TOC Evaluation goes here) --> 
+* All Crossplane releases and detailed release notes can be found in https://github.com/crossplane/crossplane/releases.
+* Crossplane follows a quarterly release process as described in the [release lifecycle](https://docs.crossplane.io/latest/learn/release-cycle/) documentation.
+* The currently supported (eligible for patch releases) releases are listed in the main project README: https://github.com/crossplane/crossplane/blob/main/README.md#releases
 
 ## Security
 
@@ -310,31 +357,41 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 ### Required
 
-- [ ] **Clearly defined and discoverable process to report security issues.**
+- [x] **Clearly defined and discoverable process to report security issues.**
 
-<!-- (TOC Evaluation goes here) --> 
+Crossplane's security and vulnerability disclosure policy is outlined in detail at https://github.com/crossplane/crossplane/security/policy.
 
-- [ ] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
+- [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
-<!-- (TOC Evaluation goes here) --> 
+The Crossplane organization has enabled the GitHub setting for "Require two-factor authentication for everyone in the Crossplane organization.". 
 
-- [ ] **Document assignment of security response roles and how reports are handled.**
+- [x] **Document assignment of security response roles and how reports are handled.**
 
-<!-- (TOC Evaluation goes here) --> 
+The response process for security vulnerability disclosure reports is outlined in detail in https://github.com/crossplane/crossplane/security/policy.
 
-- [ ] **Document Security Self-Assessment.**
+- [x] **Document Security Self-Assessment.**
 
-<!-- (TOC Evaluation goes here) --> 
+A security self-assessment has been published to the security folder in the main Crossplane repository at https://github.com/crossplane/crossplane/blob/main/security/self-assessment.md. 
 
-- [ ] **Third Party Security Review.**
+- [x] **Third Party Security Review.**
 
-  - [ ] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings, such as: improving project contribution guide providing a PR review guide to look for memory leaks and other vulnerabilities the project may be susceptible to by design or language choice ensuring adequate test coverage on all PRs.
+  - [x] Moderate and low findings from the Third Party Security Review are planned/tracked for resolution as well as overall thematic findings, such as: improving project contribution guide providing a PR review guide to look for memory leaks and other vulnerabilities the project may be susceptible to by design or language choice ensuring adequate test coverage on all PRs.
 
-<!-- (TOC Evaluation goes here) --> 
+Crossplane completed two separate security audits within 2023, both of which were performed by ADA Logics. The first audit focused on [fuzzing](https://blog.crossplane.io/fuzzing-security-audit/) and was completed in March 2023, followed by a more intense [general security audit](https://blog.crossplane.io/security-audit-2023/) that was broader in scope and completed in July 2023. The full report details can be found in the security folder of the main Crossplane repo:
 
-- [ ] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+* [Fuzzing audit](https://github.com/crossplane/crossplane/blob/main/security/ADA-fuzzing-audit-22.pdf)
+* [General security audit](https://github.com/crossplane/crossplane/blob/main/security/ADA-security-audit-23.pdf)
 
-<!-- (TOC Evaluation goes here) --> 
+In the general security audit, the ADA Logics team identified a total 16 issues, with 7 being deemed Low severity, 8 Medium, and 1 of High severity. All issues were reported in accordance with Crossplane’s responsible disclosure security policy. CVEs were published for 2 of these 16 issues:
+
+* https://nvd.nist.gov/vuln/detail/CVE-2023-37900
+* https://nvd.nist.gov/vuln/detail/CVE-2023-38495
+
+At the time of publishing the audit report, 15 of the 16 issues had been fixed in the codebase and patch releases were published for all currently supported versions of Crossplane. The final 16th issue was in alpha code that was subsequently removed, thus resolving 100% of the issues found during the security audit.
+
+- [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+
+Crossplane's OpenSSF Best Practices passing badge can be found at https://www.bestpractices.dev/en/projects/3260. This badge is displayed prominently on the main project [README](https://github.com/crossplane/crossplane/blob/main/README.md).
 
 ## Ecosystem
 
@@ -346,17 +403,15 @@ N/A
 
 - [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-<!-- (TOC Evaluation goes here) --> 
+Adopters of the Crossplane project that have chosen to share their adoption story publicly can be found in the [ADOPTERS.md](https://github.com/crossplane/crossplane/blob/main/ADOPTERS.md) file in the main Crossplane repository. Currently, there are over 60 public adopters of the project, and there are more that are willing to share their story with the TOC privately. Some notable Crossplane public adopters include Nike, Autodesk, Grafana, NASA Science Cloud, Elastic, Akamai, SAP, IBM, VMWare Tanzu, and Nokia.
 
 - [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-<!-- (TOC Evaluation goes here) --> 
+The public Crossplane [adopters list](https://github.com/crossplane/crossplane/blob/main/ADOPTERS.md) explicitly mentions over 25 production use cases. 
 
 The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
 - [x] **TOC verification of adopters.**
-
-<!-- (TOC Evaluation goes here) --> 
 
 Refer to the Adoption portion of this document.
 
@@ -383,17 +438,32 @@ The Crossplane project has integrations with many other CNCF and non-CNCF projec
 
 #### Adoption
 
-##### Adopter 1 - $COMPANY/$INDUSTRY
+##### Adopter 1 - Software Development
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+Adopter interview notes held privately for TOC review and verification.
 
-##### Adopter 2 - $COMPANY/$INDUSTRY
+January 2025
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+##### Adopter 2 - Healthcare
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+Adopter interview notes held privately for TOC review and verification.
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+January 2025 AND September 2025
+
+##### Adopter 3 - Insurance
+
+Adopter interview notes held privately for TOC review and verification.
+
+October 2025
+
+##### Adopter 4 - Apparel
+
+Adopter interview notes held privately for TOC review and verification.
+
+October 2025
+
+##### Adopter 5 - Telco
+
+Adopter interview notes held privately for TOC review and verification.
+
+October 2025
