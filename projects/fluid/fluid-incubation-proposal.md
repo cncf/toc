@@ -98,12 +98,12 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [ ] **Clear and discoverable project governance documentation.**
+- [x] **Clear and discoverable project governance documentation.**
 
 Governance documentation is located here: https://github.com/fluid-cloudnative/fluid/blob/master/GOVERNANCE.md
 
 
-- [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+- [x] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
 Fluid has maintainers from 5 organisations, and committers from many others.
 
@@ -113,59 +113,85 @@ Regular meetings are held bi-weekly: https://github.com/fluid-cloudnative/commun
 
 Contributors are regularly promoted using the established voting/approval process: https://github.com/fluid-cloudnative/community/issues?q=is%3Aissue%20state%3Aclosed
 
-- [ ] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+- [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-Yes - as per above
+Latest elected members are listed [here](https://github.com/fluid-cloudnative/community/issues?q=is%3Aissue+is%3Aclosed), including 9 new committers in the last year.
 
-- [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
-
-<!-- (TOC Evaluation goes here) --> 
-
-- [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
+- [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
 <!-- (TOC Evaluation goes here) --> 
+Decisions are made by maintainers who are actively involved in the project, and and there is a clear path outlined for people to become maintainers. Current maintainers are spread across several companies and the project is also encouraging new maintainers to join. Contibuting members and thier respective companies are listed [here](https://github.com/fluid-cloudnative/fluid/blob/master/MAINTAINERS_COMMITTERS.md).
 
-- [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
-
-<!-- (TOC Evaluation goes here) --> 
-
-- [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
+- [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
 <!-- (TOC Evaluation goes here) --> 
+The [Technical Oversight Committee（TOC)](https://github.com/fluid-cloudnative/fluid/blob/master/GOVERNANCE.md#groups-and-leadership) is in charge of making decisions related to the future of the project, such as governance policies, management of sub-structures, and security processes. The TOC is might be required to participate in the vote in various situations. A vote is passed with 2/3 of the votes.
 
-- [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+In addition, the project decisions are discussed in open issues and we use vote process to make the final decision. For example: [Agree to accept New Committers](https://github.com/fluid-cloudnative/community/issues/60).
+
+- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
 <!-- (TOC Evaluation goes here) --> 
+The project has [5 levels of responsibility](https://github.com/fluid-cloudnative/fluid/blob/ea2351bd72437af66d6f18577209f4878d62e01e/GOVERNANCE.md#groups-and-leadership), each one building on the previous:
 
-- [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
+- Contributor: comments on an issue or pull request, people who add value to the project (whether it’s triaging issues, writing code, or organizing events), or anybody with a merged pull request
+- Committer: community members who have shown that they are committed to the continued development of the project through ongoing engagement with the community
+- Maintainer: Maintainers are expected to contribute increasingly complicated PRs/designs and review PRs/designs, under the guidance of the existing maintainers. One who wants to be a maintainer should have been working for the project for at least 3 months.
+- Technical Oversight Committee (TOC): The TOC functions as the core management team that oversees the community. The TOC has additional responsibilities over and above those of Maintainers
+- Community Chair: Community chair is primarily responsible for performing community development work and administrative functions.
+
+Fluid also has a [fluid-security team](https://github.com/fluid-cloudnative/fluid/blob/master/SECURITY.md) responses to the any security related issues.
+
+
+
+- [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
 <!-- (TOC Evaluation goes here) --> 
+All maintainers share all domains of responsibility. Current list of maintainers can be found [here](https://github.com/fluid-cloudnative/fluid/blob/master/MAINTAINERS_COMMITTERS.md), including ways to become a contributing member of the project through the listed [Governance](https://github.com/fluid-cloudnative/fluid/blob/ea2351bd72437af66d6f18577209f4878d62e01e/GOVERNANCE.md#groups-and-leadership) roles and responsabilities.
+
+- [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+
+<!-- (TOC Evaluation goes here) --> 
+An example of adding new maintainers and also moving existing maintainers to emeritus status is listed [here](https://github.com/fluid-cloudnative/fluid/commit/96b140d99a58efb9a260c543f3206dda90b2a5bc).
+
+- [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
+
+<!-- (TOC Evaluation goes here) --> 
+N/A
 
 ### Required
 
-- [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
+- [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
 <!-- (TOC Evaluation goes here) --> 
+The list of current maintainers is [here](https://github.com/fluid-cloudnative/fluid/blob/ea2351bd72437af66d6f18577209f4878d62e01e/MAINTAINERS_COMMITTERS.md).
 
 - [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
 <!-- (TOC Evaluation goes here) --> 
+There are 7 active maintainers involved in the project development, from various organizations, such as Nanjing University, Alibaba, Alluxio, JuiceData and China Telecom. 
 
-- [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-<!-- (TOC Evaluation goes here) --> 
-
-- [ ] **Document agreement that project will adopt CNCF Code of Conduct.**
+- [x] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **CNCF Code of Conduct is cross-linked from other governance documents.**
+This is covered in the [contrubuiting guide](https://github.com/fluid-cloudnative/fluid/blob/ea2351bd72437af66d6f18577209f4878d62e01e/CONTRIBUTING.md) for Fluid.
+
+- [x] **Document agreement that project will adopt CNCF Code of Conduct.**
 
 <!-- (TOC Evaluation goes here) --> 
+The Code of Conduct can be found [here](hhttps://github.com/fluid-cloudnative/fluid/blob/ea2351bd72437af66d6f18577209f4878d62e01e/CODE_OF_CONDUCT.md), which referenced the CNCF Code of Conduct.
 
-- [ ] **All subprojects, if any, are listed.**
+- [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
 <!-- (TOC Evaluation goes here) --> 
+[Contributing guide](https://github.com/fluid-cloudnative/fluid/blob/ea2351bd72437af66d6f18577209f4878d62e01e/CONTRIBUTING.md#code-of-conduct) refers to the agreed Code of Conduct.
+
+- [x] **All subprojects, if any, are listed.**
+
+<!-- (TOC Evaluation goes here) --> 
+N/A
 
 ## Contributors and Community
 
