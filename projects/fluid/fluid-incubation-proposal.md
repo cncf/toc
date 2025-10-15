@@ -363,25 +363,41 @@ N/A
 
 ### Required
 
-- [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
+- [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
+
+<!-- (TOC Evaluation goes here) --> 
+Adopters are documented her: https://github.com/fluid-cloudnative/fluid/blob/master/ADOPTERS.md
+
+Additional case studies are also listed in the project documentation including:
+
+- [Alibaba](https://fluid-cloudnative.github.io/docs/case-study/alibaba-case-study)
+- [Weibo](https://fluid-cloudnative.github.io/docs/case-study/weibo-case-study)
+- [Metabit Trading](https://fluid-cloudnative.github.io/docs/case-study/metabit-trading-case-study)
+- [HAOMO](https://fluid-cloudnative.github.io/docs/case-study/haomo-case-study)
+- [Zuoyebang](https://fluid-cloudnative.github.io/docs/case-study/zuoyebang-case-study)
+
+
+
+- [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
+The project provided the TOC with a list of adopters for verification of use of the project. Fluid has been adopted in production at scale at each of the adopters interviewed by the TOC.
 
-<!-- (TOC Evaluation goes here) --> 
-
-The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
-
-- [ ] **TOC verification of adopters.**
+- [x] **TOC verification of adopters.**
 
 <!-- (TOC Evaluation goes here) --> 
 
 Refer to the Adoption portion of this document.
 
-- [ ] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
+- [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
 <!-- (TOC Evaluation goes here) --> 
+- Fluid is deployed using [Helm](https://fluid-cloudnative.github.io/docs/get-started/installation#install-fluid-with-helm)
+- Integration with backends like [Vineyard](https://github.com/fluid-cloudnative/fluid-client-python/blob/master/examples/03_dataflow_with_vineyard/vineyard-en.ipynb) and [CubeFS](https://github.com/fluid-cloudnative/fluid/blob/master/addons/cubefs/v3.2/dev-guide/cubefs-v3.2.md) are documented with examples
+- Integration with other projects to use Fluid for caching and data acceleration include [Kserve](https://github.com/kserve/kserve/blob/master/docs/samples/fluid/README.md), [KubeDL](https://github.com/kubedl-io/kubedl/blob/master/docs/cache_backend.md) and [Knative](https://github.com/fluid-cloudnative/fluid/blob/master/docs/en/samples/knative.md) and are documented with example
+- Observability is implemented with [Prometheus](https://github.com/fluid-cloudnative/fluid/blob/master/docs/en/operation/monitoring.md) integration and is documented
+
 
 #### Adoption
 
