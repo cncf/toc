@@ -267,35 +267,46 @@ Also, over the last 2 years the project has a consistent ratio of contribution v
 
 ### Suggested
 
-- [ ] **Roadmap change process is documented.**
+- [x] **Roadmap change process is documented.**
 
 <!-- (TOC Evaluation goes here) --> 
+The [Roadmap](https://github.com/fluid-cloudnative/fluid/blob/master/ROADMAP.md) is documented and changes are recorded in the repo:
+- [2025 roadmap](https://github.com/fluid-cloudnative/fluid/pull/4487)
+- [2024 roadmap](https://github.com/fluid-cloudnative/fluid/pull/3676)
 
-- [ ] **History of regular, quality releases.**
+- [x] **History of regular, quality releases.**
 
 <!-- (TOC Evaluation goes here) --> 
+Releases are regular on a [quarterly](https://github.com/fluid-cloudnative/fluid/tags) basis, and releases have good [change logs](https://github.com/fluid-cloudnative/fluid/releases)
 
 ### Required 
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
+- [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently.**
 
 <!-- (TOC Evaluation goes here) --> 
+Fluid provides a platform for managing distributed datasets in cloud native enviornments with a standardised API and K8s integrations, supporting multiple backends.   
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases.**
+Project [goals & objectives](https://fluid-cloudnative.github.io/docs/next) are documented.
 
-<!-- (TOC Evaluation goes here) --> 
-
-- [ ] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
-
-<!-- (TOC Evaluation goes here) --> 
-
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+- [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
 <!-- (TOC Evaluation goes here) --> 
+Project goals and why are [documented](https://fluid-cloudnative.github.io/docs/next#why--fluid)
 
-- [ ] **Document the project's release process.**
+- [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
 <!-- (TOC Evaluation goes here) --> 
+Roadmaps are public, and include annual updates are [documented](https://github.com/fluid-cloudnative/fluid/blob/master/ROADMAP.md)
+
+- [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.**
+
+<!-- (TOC Evaluation goes here) --> 
+The project's overview, architecture, integrations and concepts are [documented](https://fluid-cloudnative.github.io/docs/next/core-concepts/architecture-and-concepts)
+
+- [x] **Document the project's release process.**
+
+<!-- (TOC Evaluation goes here) --> 
+The project release process is [documented](https://github.com/fluid-cloudnative/community/blob/master/operations/release.md)
 
 ## Security
 
