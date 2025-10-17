@@ -40,7 +40,6 @@ This TAG covers the following sub-domains and topics within its scope:
   * **Reliability:** The ability of a system to perform its required functions under stated conditions for a specified period of time.
   * **Day 2 Ops:** A focus on the post-deployment activities required to keep a system running smoothly, including maintenance, scaling, updating and upgrading.
   * **Chaos Engineering:** The practice of experimenting on a system to build confidence in its capability to withstand turbulent and unexpected conditions.
-* **Conformance Programs:** Lead the design and ownership of conformance initiatives that enable end users to adopt and select platforms and tools aligned with established standards for operational resilience.
 
 ### Out of Scope
 
