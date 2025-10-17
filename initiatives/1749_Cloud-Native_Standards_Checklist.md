@@ -2,7 +2,7 @@
 
 This paper aligns to the definition of Containerization of Agentic AI as: 
 
-***A microservice based application which can consist of one or more containers. Performing standalone or collaborative (distributed) function through the interaction with at least one entity (container) or quorum, accessing AI or Machine Learning capabilities. To perform tasks based upon the reasoning and execution of actions within event based systems triggered or reacted upon via signals. Key attributes include the ability to perform system and/or user tasks autonomously, in conjunction with the ability to plan and control the continuation of execution or completion”***
+**A microservice based application which can consist of one or more containers. Performing standalone or collaborative (distributed) function through the interaction with at least one entity (container) or quorum, accessing AI or Machine Learning capabilities. To perform tasks based upon the reasoning and execution of actions within event based systems triggered or reacted upon via signals. Key attributes include the ability to perform system and/or user tasks autonomously, in conjunction with the ability to plan and control the continuation of execution or completion”**
 
 Overview
 
@@ -10,7 +10,7 @@ Within the Cloud Native space, there has been an explosion in Agentic AI. Rapid 
 
 Agentic systems provide the means to perform multi-hop reasoning, and subsequent action calling based upon signals to augment and provide dynamism to conventional programming sequences.  
 
-This paper explores six key areas which are associated with components that are in need of standardization to ensure interoperability, security, and observability are applied from the beginning. The focus of this document is not on how a particular agentic protocol itself is programmed, which language is used or its speed or efficiency of execution, but rather an agnostic view of what should be considered as the best practices to apply as to ensure that deployments in this space can securely scale and remain explainable, through a common and effective foundation. 
+This paper explores four key areas which are associated with components that are in need of standardization to ensure interoperability, security, and observability are applied from the beginning. The focus of this document is not on how a particular agentic protocol itself is programmed, which language is used or its speed or efficiency of execution, but rather an agnostic view of what should be considered as the best practices to apply as to ensure that deployments in this space can securely scale and remain explainable, through a common and effective foundation. 
 
 The recommendations described herein are exclusively focused on Cloud Native Kubernetes deployments. This extends to scenarios where Kubernetes may be deployed in public, private, hybrid or edge compute type scenarios, as there are nuances in the domain of security associated with these environments and systems. 
 
@@ -21,6 +21,7 @@ This document provides a foundational checklist for agentic standards, but is no
 # General 
 
 This section outlines foundational container and observability best practices for Cloud Native workloads, including Agentic AI systems. Evolving challenges include the rapid advancement of agent environments and capabilities, which require governance frameworks to adapt continuously. Future research and standardization efforts should focus on nuanced reward functions, layered reasoning architectures with built-in controls, and robust safety and alignment techniques to manage increasingly capable and autonomous systems.
+
 
 ## General best practices for containers:
 
@@ -44,9 +45,9 @@ General best practices include: **Security**, which covers minimizing attack sur
 - [ ] Use a standard observability stack (MELT). Consolidating metrics, logs, and traces to ensure viable explainability and achievable debugability of the system.   
 - [ ] Incorporate network observability by collecting flow logs for security, performance monitoring, and troubleshooting.  
 - [ ] Monitor resource-specific metrics  
-      - [ ] Disk Usage: Monitor disk usage on nodes and persistent volumes to prevent outages caused by storage exhaustion.  
-      - [ ] CPU / GPU: Monitor usage at the node and container level to detect bottlenecks  
-      - [ ] Monitor control plane and node health in the cluster.  
+- [ ] Disk Usage: Monitor disk usage on nodes and persistent volumes to prevent outages caused by storage exhaustion.  
+- [ ] CPU / GPU: Monitor usage at the node and container level to detect bottlenecks  
+- [ ] Monitor control plane and node health in the cluster.  
 - [ ] Instrument workloads with relevant metrics and expose application-level and business-critical metrics in addition to system-level metrics.  
 - [ ] Set up alerting based on SLOs/SLA thresholds.  
 - [ ] Implement cost observability to support GPU and LLM benchmarking.  
@@ -62,11 +63,16 @@ General best practices include: **Security**, which covers minimizing attack sur
 - [ ] Use Horizontal Pod Autoscaler (HPA) to scale workloads dynamically using CPU, Memory, or custom metrics such as request volume.  
 - [ ] Inference extensions provided via the Gateway API ensure that path-based rules are to be applied with a focus on inference served AI Models. This capability supports more dynamic deployment scenarios used by agents.
 
+NOTE: The above items are general in nature, and while applicable to smart load-balancing to inference models, does not pertain to more comprehensive MCP / Agent to Agent or LLM tooling. 
+
 ![][image1]
 
 Sample request flow with Kubernetes Gateway API Inference Extensions InferencePool endpoints running a model server framework
 
 Source: [https://gateway-api-inference-extension.sigs.k8s.io/](https://gateway-api-inference-extension.sigs.k8s.io/) 
+
+
+PLEASE NOTE: The General Section is not an exhausive list of every best practice, rather it is included as a primer on a number of adjacent foundation topics relevant to the main body of this document that is focused towards agents. Links to more exhastive overviews of such topics and practices, can be found in the footnote section. Further up to date literature, white papers, and documentation from the CNCF and Linux Foundation should also be considered to ensure the best decisions are made around this constantly moving technology space. 
 
 Footnotes:
 
@@ -78,7 +84,7 @@ Footnotes:
 
 # Control and Communication 
 
-Microservice architectures have long followed the principles and practices of information hiding, minimal endpoint exposure for only the requisite and needed services, and clear contract-based communications. These same principles should be followed in the context of Agentic architectures. As multi-agent systems grow, the intricacy of ensuring effective coordination and communication rises significantly. While Kubernetes provides the platform, the complexities of inter-agent communication protocols (like MCP, A2A, ACP) and managing "tool sprawl issues" require specific attention within the agent application layer itself. 
+Microservice architectures have long followed the principles and practices of information hiding, minimal endpoint exposure for only the requisite and needed services, and clear contract-based communications. These same principles should be followed in the context of Agentic architectures. As multi-agent systems grow, the intricacy of ensuring effective coordination and communication rises significantly. While Kubernetes provides the platform, the complexities of inter-agent communication protocols (like MCP, A2A) and managing "tool sprawl issues", require specific attention within the agent application layer itself. Furthermore, pre-empting the unpredictable nature of agent behaviour, requires increased operational rigor, and focus around secure communications. 
 
 ## Communication Related Attributes
 
@@ -97,17 +103,18 @@ It should be noted, that for this section, the **change revision is very high**,
 
 
 - [ ] **Agent Connectivity to AI Models**  
-      - [ ] Agents need to communicate with AI models, either within an on-premise environment or within a private or public cloud. In multi-agent architectures that may involve varied models,, which processes can proceed with the loss of a given models,, and which processes need to stop. A **Kubernetes custom watcher pod/controller** should be considered to monitor critical resources (such as a model provider), allowing for alternative deployments to be applied in the case of communication disruptions.   
+      - [ ] Agents need to communicate with AI models, either within an on-premise environment or within a private or public cloud. In multi-agent architectures that may involve varied models,, which processes can proceed with the loss of a given models,, and which processes need to stop. A **Kubernetes custom watcher pod/controller** may considered in select scenarios to monitor critical resources (such as a model provider), allowing for alternative deployments to be applied in the case of communication disruptions. Observability of such faults, allowing for intervention, can also be achieved through the use of a gateway and/or proxy coupled with robust observability mechanisms. 
 - [ ] **Agents to Other Agents**  
       - [ ] Protocols like Google’s A2A (described below) aim to enable secure, dynamic, and structured peer-to-peer agent interaction, even across heterogeneous agent ecosystems.  
 - [ ] **Filtering and input/output schema validation**   
       - [ ] Given the unpredictable nature of generative AI, defining schemas using JSON Schema, Protobuf, or OpenAPI to validate payloads during tool calls and external service invocations can increase system predictability and avoid cascading failures. Data constraints can be enforced to avoid malformed input, malicious content injection, or drift caused by inconsistent formats.
 
 - [ ] **Protocols today (MCP,  A2A, etc…)**   
-      While there is a broad array of competing technologies in the industry today, numerous protocols have gained a level of interest for preliminary evaluation in the field in the domain of Agentic AI. Each of these protocols aims at addressing a specific problem space within the domain, ranging from tool exposure to inter-framework communications or agent discovery, trust and identification services.  
-      - [ ] MCP from Anthropic: Provides a key focus on “tool exposure” providing a means to define an “MCP Server” which is responsible for providing tool access to an “MCP Client”, in many scenarios the use of MCP can support both single and multi-agent frameworks in achieving standardized access to specific tooling, without the need to define and program the logic from scratch. Considerations should be taken in terms of only applying narrowly scoped MCP server tooling access for the given tools required, for both security and optimal system performance reasons.   
+      While there is a broad array of complimentary technologies in the industry today, numerous protocols have gained a level of interest for preliminary evaluation in the field in the domain of Agentic AI. Each of these protocols aims at addressing a specific problem space within the domain, ranging from tool exposure to inter-framework communications or agent discovery, trust and identification services.  
+      - [ ] MCP from Anthropic: Provides a key focus on “tool exposure” providing a means to define an “MCP Server” which is responsible for providing tool access to an “MCP Client”, in many scenarios the use of MCP can support both single and multi-agent frameworks in achieving standardized access to specific tooling, without the need to define and program the logic from scratch. Considerations should be taken in terms of only applying narrowly scoped MCP server tooling access for the given tools required, for both security and optimal system performance reasons. MCP utilizes JSON-RPC 2.0 over HTTPS and Server-Sent Events (SSE).
       - [ ] A2A from Google: Offers a means for agents to communicate with one another directly, analogous to peer-to-peer communications. Providing an optimal means for agents which may even exist in disparate domains or that utilize disparate frameworks, with the means to establish communications with one another. A2A utilizes JSON-RPC 2.0 over HTTPS and Server-Sent Events (SSE).   
-      - [ ] Identity: The Agntcy identity framework (recently donated to the Linux Foundation) takes the approach of allowing varied identity providers to be used in a BYOI (Bring Your Own Identity) construct. What is notably different with this approach for identity is that it also supports the Web3 DID based standard, which supports distributed identity concepts. A novel approach towards the deployment of Identity within Agent-based architectures. 
+      - [ ] Identity: The Agntcy identity framework (recently donated to the Linux Foundation) takes the approach of allowing varied identity providers to be used in a BYOI (Bring Your Own Identity) construct. What is notably different with this approach for identity is that it also supports the Web3 DID based standard, which supports distributed identity concepts. A novel approach towards the deployment of Identity within Agent-based architectures.
+      - [ ] SPIFFE/SPIRE: Focused towards workload security, this technology stack provides a means to secure cryptographic identity of worksloads through the use of SVIDs in the form of JWT or X.509 documents. The solution allows for workload attestation and federation. (This technology is covered more comprehensively in the security section) 
 
 - [ ] **Message and Communication Design Considerations with REST, GRPC & Kafka**   
       - [ ] To accommodate the data, the usage of known event-driven bus architectures such as Kafka and Flink should be considered. Event buses are especially useful when asynchronous communication is desired (e.g. long-running tasks) or when building an event-driven architecture (e.g. emitting telemetry, decision logs, or coordination signals). Kafka guarantees high reliability and delivery guarantees, useful for data de-duplication in data management pipelines (at-least-once delivery), and Flink may be considered for stream processing use-cases to manipulate data in transit.  
