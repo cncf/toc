@@ -50,7 +50,7 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 ## Governance and Maintainers
 
-Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject if completed as a suggested item prior to application.
 
 ### Suggested
 
@@ -193,8 +193,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 <!-- (TOC Evaluation goes here) --> 
 
 ## Security
+
 Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance if completed as a suggested item prior to application.
-Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
 
 ### Suggested
 
