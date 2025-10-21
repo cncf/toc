@@ -54,6 +54,10 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
+- [ ] **Complete a Governance Review with the Project Reviews subproject**
+
+<!-- (TOC Evaluation goes here) --> 
+
 - [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
 <!-- (TOC Evaluation goes here) --> 
@@ -189,6 +193,8 @@ Note: this section may be augmented by the completion of a Governance Review fro
 <!-- (TOC Evaluation goes here) --> 
 
 ## Security
+
+Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
 
 ### Suggested
 

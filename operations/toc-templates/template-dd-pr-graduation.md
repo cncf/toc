@@ -56,6 +56,10 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
+- [ ] **Complete a Governance Review with the Project Reviews subproject**
+
+<!-- (TOC Evaluation goes here) --> 
+
 - [ ]  **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
 <!-- (TOC Evaluation goes here) --> 
@@ -204,9 +208,14 @@ N/A
 
 ## Security
 
+Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
+
 ### Suggested
 
 - [ ] **Achieving OpenSSF Best Practices silver or gold badge.**
+
+<!-- (TOC Evaluation goes here) --> 
+
 - [ ] **Complete a joint security assessment with TAG Security and Compliance**
 
 <!-- (TOC Evaluation goes here) --> 
