@@ -204,11 +204,10 @@ N/A
 
 ## Security
 
-Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
-
 ### Suggested
 
 - [ ] **Achieving OpenSSF Best Practices silver or gold badge.**
+- [ ] **Complete a joint security assessment with TAG Security and Compliance**
 
 <!-- (TOC Evaluation goes here) --> 
 

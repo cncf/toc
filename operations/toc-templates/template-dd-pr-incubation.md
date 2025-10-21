@@ -192,11 +192,11 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-N/A
+- [ ] **Complete a joint security assessment with TAG Security and Compliance**
+
+<!-- (TOC Evaluation goes here) --> 
 
 ### Required
-
-Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
 
 - [ ] **Clearly defined and discoverable process to report security issues.**
 
