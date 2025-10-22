@@ -1,7 +1,5 @@
 # Governance Reviewer Role Handbook
 
-WIP: This guide is not complete, but the instructions it contains are a starting point.
-
 # Goals
 
 The goal of the Governance Review process is to help projects improve their own governance.  As a reviewer, it is your goal to:
@@ -10,7 +8,6 @@ The goal of the Governance Review process is to help projects improve their own 
 2. Assist projects in identifying areas where their governance could use improvement and carrying out that improvement  
 
 A successful Governance Review results in projects discovering, and fixing, issues around their governance processes or documentation, and to make a plan to gradually improve their governance continuously over the life of the project.
-
 
 # Requirements
 
@@ -24,18 +21,28 @@ Governance reviewers should fulfill the following requirements:
 
 # Process
 
-For anybody interested in doing governance reviews, I wanted to write a summary of how to get started with that work:
+The following is the process for initiating, executing and completing a governance review:
 
-* Projects send a request by filling in a [form](https://github.com/cncf/tag-contributor-strategy/issues/new?assignees=jberkus%2Cgeekygirldawn&labels=wg%2Fgovernance&projects=&template=governance-review-request.yaml&title=%5BGovernance+Review%5D%3A+PROJECT+NAME) (some open requests are [here](https://github.com/cncf/tag-contributor-strategy/issues?q=is%3Aissue+is%3Aopen+label%3Awg%2Fgovernance+%22governance+review%22))  
-* That form should have pointers to governance documents, activities and other things necessary for your assessment.  
-* The review should follow this [template](https://github.com/cncf/tag-contributor-strategy/blob/main/governance/reviews/template.md). There are markdown comments in that template, not shown in GitHub UI. See the [raw](https://raw.githubusercontent.com/cncf/tag-contributor-strategy/main/governance/reviews/template.md) file for that.  
-* When the template is filled with the assessment, the output should be in a PR, to be put in the TAG repository under [governance/assessments/projects](https://github.com/cncf/tag-contributor-strategy/tree/main/governance/assessments/projects).  Each project gets a folder, and reviews are saved under the date the first draft of the review was completed.
-* The assessment is to be done for a snapshot of a project governance. No need to wait for things to be fixed to get the PR merged.  
+### Getting Started
+
+* Projects request a governance review by filling in [this form](https://github.com/cncf/toc/issues/new?template=gov-review.yml)
+    * Open requests are labeled ['governance/review'](https://github.com/cncf/toc/issues?q=is%3Aissue%20state%3Aopen%20label%3Areview%2Fgovernance).
+    * If the review is triggered by a matriculation application then the reviewer may open the issue themselves or may request the project do so.
+* A reviewer should comment on the governance issue to note that they are starting the review. A simple `/assign @githubname` is sufficient - the purpose is to notify readers.
+* The review must be based on a copy of the template at [github.com/cncf/toc/toc_subprojects/project-reviews-subproject/governance-review-template.md](https://github.com/cncf/toc/blob/main/toc_subprojects/project-reviews-subproject/governance-review-template.md). There are markdown comments in that template not shown in the rendered version in GitHub so be sure to copy the [raw](https://raw.githubusercontent.com/cncf/toc/refs/heads/main/toc_subprojects/project-reviews-subproject/governance-review-template.md) version.
+   * Reviewers can collaborate in any efficient way, such as by opening a page in [notes.cncf.io](https://notes.cncf.io) or sharing a Google Doc.
+
+### Executing the Review
+
+* Questions and answers required for the governance review may have been answered in a matriculation application for a project. Be sure to review that first. The reviewer's job is to a) review and confirm what has been submitted and b) research the project's repos and structure to be sure answers are accurate and complete.
+* Questions, issues and clarifications required during the process of the review should be put in the Governance Review issue so that they are public for future viewers and TOC members to consider.
+* At the reviewers' discretion they may contact project submitters and maintainers in CNCF Slack for deeper conversations, but remember to record significant items in the public issue.
+
+### Completing the Review
+
+* When the assessment has been completed it must be submitted as a PR to the TOC repository under [projects](https://github.com/cncf/toc/tree/main/projects). Each project has a folder within which a "governance-review" folder should exist or be created, as in `projects/crossplane/governance-review`. The review should be saved as a dated markdown document in that folder, e.g., `projects/crossplane/governance-review/2025-10-10.md`.
+* The assessment is a current point-in-time snapshot of the project's governance. No need to wait for things to be fixed to get the PR merged.
 * The PR can only be merged after the TOC Liaison approves the PR.
-
-You can collaborate with other TAG members using Google Docs.  
-The discussions (disagreements about a certain governance aspect that you find unsatisfactory for example) with projects should be done on the PR when it is opened.  
-That doesn't mean you can't interact with the projects of course and ask them questions and get their help to find out where something is (e.g. meeting recordings, governance docs, etc)
 
 # Conflicts of Interest
 
