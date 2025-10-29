@@ -35,8 +35,7 @@ OpenFGA was adopted in February 2024 and has been running in production since Ma
 
 ### What is the current level of usage (pre-production, production) and scale?  
 - Production usage.  
-- 100–150 RPS.  
-- [Internal note, not for publication]: Running on 10 containers (1 CPU, 1Gi memory each), although 4–5 would be sufficient.  
+- 100–150 RPS.
 
 ### What version is used and what is your update cadence with the project?  
 - Always deploy the latest release.  
