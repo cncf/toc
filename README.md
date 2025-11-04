@@ -68,7 +68,7 @@ Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we ar
 
 ## Voting
 
-This is our [voting policy](docs/voting.md). Only TOC members can cast binding votes. (+1 Binding)
+This is our [voting policy](https://github.com/cncf/toc/blob/main/operations/toc-decision-process.md#voting). Only TOC members can cast binding votes. (+1 Binding)
 
 ## Technical Advisory Groups Being Phased Out
 
