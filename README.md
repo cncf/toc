@@ -70,10 +70,26 @@ Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we ar
 
 This is our [voting policy](https://github.com/cncf/toc/blob/main/operations/toc-decision-process.md#voting). Only TOC members can cast binding votes. (+1 Binding)
 
-## Technical Advisory Groups Being Phased Out
+## Technical Advisory Groups and TOC SubProjects
+
+### Technical Advisory Groups
+
+* [TAG Developer Experience](./tags/tag-developer-experience/)
+* [TAG Infrastructure](./tags/tag-infrastructure/)
+* [TAG Operational Resilience](./tags/tag-operational-resilience/)
+* [TAG Security and Compliance](./tags/tag-security-and-compliance/)
+* [TAG Workloads Foundation](./tags/tag-workloads-foundation/charter.md)
+
+### TOC SubProjects
+
+* [Contributor Strategy and Advocacy  SubProject](./toc_subprojects/contributor-strategy-and-advocacy-subproject)
+* [Mentoring SubProject](./toc_subprojects/mentoring-subproject/)
+* [Project Reviews SubProject](./toc_subprojects/project-reviews-subproject/)
+
+## Technical Advisory Groups - Archived
 
 The TOC has approved the formation of [TAGs](./.archive/README.md).
-Currently, the following Technical Advisory Groups are active: 
+The following Technical Advisory Groups have been archived: 
 
 * [TAG-Security](https://github.com/cncf/tag-security)
 * [TAG-Storage](https://github.com/cncf/tag-storage) 
@@ -84,25 +100,7 @@ Currently, the following Technical Advisory Groups are active:
 * [TAG Observability](https://github.com/cncf/tag-observability)
 * [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability)
 
-The current Technical Advisory Groups will be spun down during 2025 and replaced with new Technical Advisory Groups and TOC SubProjects, listed below.
-
-## New Technical Advisory Groups and TOC SubProjects
-
-### New Technical Advisory Groups
-
-* [TAG Developer Experience](./tags/tag-developer-experience/)
-* [TAG Infrastructure](./tags/tag-infrastructure/)
-* [TAG Operational Resilience](./tags/tag-operational-resilience/)
-* [TAG Security and Compliance](./tags/tag-security-and-compliance/)
-* [TAG Workloads Foundation](./tags/tag-workloads-foundation/charter.md)
-
-### TOC SubProjects
-
-* [Artificial Intelligence SubProject](./toc_subprojects/artificial-intelligence-subproject)
-* [Contributor Strategy and Advocacy  SubProject](./toc_subprojects/contributor-strategy-and-advocacy-subproject)
-* [Mentoring SubProject](./toc_subprojects/mentoring-subproject/)
-* [Project Reviews SubProject](./toc_subprojects/project-reviews-subproject/)
-
+These Technical Advisory Groups have been spun down and replaced with new Technical Advisory Groups and TOC SubProjects, listed above.
 
 ### Updating TAG or SubProject README files
 
