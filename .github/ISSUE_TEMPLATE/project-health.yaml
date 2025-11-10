@@ -27,8 +27,8 @@ body:
 - type: input
   id: project-issue-link
   attributes:
-    label: Project Issue Link
-    description: Please provide a link to the issue filed in the project's repository that corresponds to this TOC tracking issue.
+    label: Project Health Notification Link (issue, message to mailing list etc)
+    description: Please provide a link to an issue filed in the project's repository, mailing list etc that corresponds to this TOC tracking issue.
     placeholder: e.g., https://github.com/project/repo/issues/123
   validations:
     required: true
