@@ -10,6 +10,7 @@ profiles:
         - cncf-toc-voters
       exclude_team_maintainers: true
     close_on_passing: true
+    close_on_passing_min_wait: "2 day"
     announcements:
       discussions:
         category: announcements
