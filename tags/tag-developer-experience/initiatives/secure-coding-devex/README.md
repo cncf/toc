@@ -1,6 +1,6 @@
 # Improving Developer Experience for Secure Coding in CNCF Projects
 
-Creation issue: TBD
+Creation issue: [Create GitHub issue with labels: `kind/initiative`, `tag/developer-experience`]
 
 ## Objective
 
@@ -18,17 +18,17 @@ To ensure practicality, the framework will also draw lessons from CNCF projects 
 
 ## Logistics
 
-**Primary Contact:** jul.semaan@gmail.com
+**Primary Contact:** Julien Semaan (jul.semaan@gmail.com, [@julsemaan](https://github.com/julsemaan))
 
 **Responsible Group:** TAG Developer Experience
 
-**Tech Lead Sponsor:** TBD (requires assignment of at least one TAG-DevEx Tech Lead)
+**Tech Lead Sponsor:** Julien Semaan ([@julsemaan](https://github.com/julsemaan))
 
-**Meeting Schedule:** TBD
+**Meeting Schedule:** To be scheduled - will coordinate with [TAG Developer Experience meetings](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list)
 
-* [Meeting notes](TBD)
-* [GitHub project/tracking](TBD)
-* [Slack channel](TBD - consider #tag-developer-experience)
+* [Meeting notes](./MEETING_NOTES.md)
+* [GitHub project/tracking](https://github.com/cncf/toc/issues?q=label%3Akind%2Finitiative+label%3Atag%2Fdeveloper-experience+secure+coding)
+* [Slack channel](https://cloud-native.slack.com/archives/C08KGCXB458) - #tag-developer-experience
 
 ## Deliverables & Exit Criteria
 

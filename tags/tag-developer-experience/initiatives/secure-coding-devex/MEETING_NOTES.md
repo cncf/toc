@@ -3,9 +3,9 @@
 ## Meeting Schedule
 
 **Frequency:** TBD (recommended: bi-weekly or weekly during active phases)  
-**Time:** TBD  
-**Location:** Zoom link TBD  
-**Calendar:** TAG Developer Experience calendar
+**Time:** TBD - will coordinate with TAG Developer Experience schedule  
+**Location:** [TAG Developer Experience Zoom](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list)  
+**Calendar:** [TAG Developer Experience Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list)
 
 ---
 
@@ -85,7 +85,7 @@ Track action items that span multiple meetings:
 
 ## Communication Channels
 
-- **Email:** jul.semaan@gmail.com (Primary Contact)
-- **Slack:** TBD
-- **GitHub Discussions:** TBD
-- **Mailing List:** TBD
+- **Email:** jul.semaan@gmail.com (Primary Contact: Julien Semaan)
+- **Slack:** [#tag-developer-experience](https://cloud-native.slack.com/archives/C08KGCXB458)
+- **GitHub Issues:** [TAG Developer Experience Initiatives](https://github.com/cncf/toc/issues?q=label%3Akind%2Finitiative+label%3Atag%2Fdeveloper-experience)
+- **Mailing List:** [cncf-tag-developer-experience](https://lists.cncf.io/g/cncf-tag-developer-experience/)

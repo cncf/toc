@@ -13,9 +13,9 @@ This initiative aims to improve the developer experience for secure coding in CN
 - **[Initiative README](./README.md)** - Full initiative details and objectives
 - **[Meeting Notes](./MEETING_NOTES.md)** - Agenda, notes, and action items
 - **[Progress Tracker](./PROGRESS.md)** - Detailed progress and milestones
-- **GitHub Issue:** TBD
-- **Slack Channel:** TBD (likely #tag-developer-experience)
-- **Recordings:** TBD (YouTube playlist)
+- **GitHub Issue:** [Create with labels: kind/initiative, tag/developer-experience](https://github.com/cncf/toc/issues/new)
+- **Slack Channel:** [#tag-developer-experience](https://cloud-native.slack.com/archives/C08KGCXB458)
+- **Recordings:** [TAG DevEx YouTube](https://www.youtube.com/@CNCFTAGDeveloperExperience)
 
 ## 🚀 Getting Started
 
@@ -52,9 +52,8 @@ Contact jul.semaan@gmail.com or join our meetings!
 
 | Role | Name | Responsibilities |
 |------|------|------------------|
-| Primary Contact | jul.semaan@gmail.com | Initiative coordination, communication |
-| Tech Lead Sponsor | TBD | Oversight, TAG-DevEx liaison |
-| Contributors | Open | Content creation, research, validation |
+| Primary Contact & Tech Lead | Julien Semaan ([@julsemaan](https://github.com/julsemaan)) | Initiative coordination, communication, oversight |
+| Contributors | Open - Join us! | Content creation, research, validation |
 
 **Want to help?** Contact the primary contact or attend a meeting!
 
@@ -78,9 +77,9 @@ This initiative follows the [CNCF TAG Governance for Initiatives](../../../gover
 
 ## 📞 How to Reach Us
 
-- **Email:** jul.semaan@gmail.com
-- **Slack:** TBD
-- **GitHub:** TBD (create issues or discussions)
+- **Email:** jul.semaan@gmail.com (Julien Semaan)
+- **Slack:** [#tag-developer-experience](https://cloud-native.slack.com/archives/C08KGCXB458)
+- **GitHub:** [TAG DevEx Initiatives](https://github.com/cncf/toc/issues?q=label%3Akind%2Finitiative+label%3Atag%2Fdeveloper-experience)
 - **Meetings:** See [MEETING_NOTES.md](./MEETING_NOTES.md) for schedule
 
 ## ❓ FAQ

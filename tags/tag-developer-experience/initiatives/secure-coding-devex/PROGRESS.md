@@ -90,9 +90,8 @@ _No current blockers_
 ## Resource Allocation
 
 ### Current Contributors
-- Primary Contact: jul.semaan@gmail.com
-- Tech Lead Sponsor: TBD
-- Additional contributors: TBD
+- Primary Contact & Tech Lead: Julien Semaan ([@julsemaan](https://github.com/julsemaan)) - jul.semaan@gmail.com
+- Additional contributors: Seeking volunteers! Join via Slack or meetings
 
 ### Needed Resources
 - [ ] Technical writers for documentation
