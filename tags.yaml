@@ -264,8 +264,8 @@ tags: # Technical Advisory Groups
         - github: palnabarun
           lfx_id:
           name: Nabarun Pal
-          company:
-          email:
+          company: Broadcom
+          email: pal.nabarun95@gmail.com
           term:
             start: "2025-07-02"
             end: "2027-06-30"
