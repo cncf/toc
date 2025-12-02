@@ -18,7 +18,7 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 - Carol Valencia (**[@krol3](https://github.com/krol3)**) (Term: 2025-07-02 - 2027-06-30)
 - Raffaele Spazzoli (**[@raffaelespazzoli](https://github.com/raffaelespazzoli)**) (Term: 2025-07-02 - 2026-06-30)
 - Matt Young (**[@halcyondude](https://github.com/halcyondude)**) (Term: 2025-07-02 - 2027-06-30)
-- Nabarun Pal (**[@palnabarun](https://github.com/palnabarun)**) (Term: 2025-07-02 - 2027-06-30)
+- Nabarun Pal (**[@palnabarun](https://github.com/palnabarun)**), Broadcom (Term: 2025-07-02 - 2027-06-30)
 
 ## Meetings
 - **TAG Operational Resilience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list) | [Recordings](https://www.youtube.com/@TAGOperationalResilience)
