@@ -18,6 +18,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
+            (async () => {
             // --- Constants ---
             const FIELD_LABELS = {
               name: [
@@ -189,3 +190,4 @@ jobs:
                 `❌ Failed to create tech review issue: ${error.message}`);
               throw error;
             }
+            })();
