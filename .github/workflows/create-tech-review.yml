@@ -105,6 +105,9 @@ jobs:
             const issueNumber = issue.number;
             const issueBody = issue.body;
 
+            console.log(`🔍 Processing issue #${issueNumber}`);
+            console.log(`📄 Issue body length: ${issueBody ? issueBody.length : 0}`);
+
             // Extract fields
             const projectName = extractFormField(issueBody, 'name');
             const projectLink = extractFormField(issueBody, 'projectLink');
@@ -112,13 +115,23 @@ jobs:
             const projectContact = extractFormField(issueBody, 'projectContact');
             const additionalInfo = extractFormField(issueBody, 'additionalInfo');
 
+            console.log(`📋 Extracted fields:
+              projectName: ${projectName || 'NOT FOUND'}
+              projectLink: ${projectLink || 'NOT FOUND'}
+              ddLink: ${ddLink || 'NOT FOUND'}
+              projectContact: ${projectContact || 'NOT FOUND'}
+              additionalInfo: ${additionalInfo ? 'FOUND' : 'NOT FOUND'}
+            `);
+
             // Validate required fields
             if (!projectName) {
+              console.log('❌ Missing project name - commenting and exiting');
               await commentOnce(issueNumber, COMMENT_MARKERS.missingProjectName,
                 `❌ Could not extract project name from issue body. Please ensure the issue was created from a template with a "Project name" field.`);
               return;
             }
             if (!projectLink) {
+              console.log('❌ Missing project link - commenting and exiting');
               await commentOnce(issueNumber, COMMENT_MARKERS.missingProjectLink,
                 `❌ Could not extract project link from issue body. Please ensure the issue contains a "Project link" or "GitHub URL" field.`);
               return;
@@ -128,8 +141,10 @@ jobs:
             const projectNameLower = normalize(projectName);
 
             // Check if tech review already created for this issue
-            if (await hasExistingComment(issueNumber, COMMENT_MARKERS.techReviewCreated)) {
-              console.log('ℹ️  Tech review issue already created for this issue.');
+            const hasExistingCommentCheck = await hasExistingComment(issueNumber, COMMENT_MARKERS.techReviewCreated);
+            console.log(`🔍 Checked for existing comment: ${hasExistingCommentCheck}`);
+            if (hasExistingCommentCheck) {
+              console.log('ℹ️  Tech review issue already created for this issue - exiting');
               return;
             }
 
@@ -156,9 +171,12 @@ jobs:
               });
 
               if (existingIssue) {
+                console.log(`ℹ️  Found existing tech review issue #${existingIssue.number} - commenting and exiting`);
                 await commentOnce(issueNumber, COMMENT_MARKERS.techReviewExists,
                   `A tech review issue already exists for this project: [#${existingIssue.number} - ${existingIssue.title}](${existingIssue.html_url})`);
                 return;
+              } else {
+                console.log('✅ No existing tech review issue found - proceeding to create');
               }
             } catch (error) {
               console.log('⚠️  Error checking for existing issues:', error.message);
@@ -174,6 +192,7 @@ jobs:
             issueBodyContent += `---\n\n_This issue was automatically created from [issue #${issueNumber}](${originalIssueUrl})_`;
 
             // Create tech review issue
+            console.log(`🚀 Attempting to create tech review issue for: ${normalizedProjectName}`);
             try {
               const newIssue = await github.rest.issues.create({
                 owner: context.repo.owner,
@@ -183,9 +202,12 @@ jobs:
                 labels: LABELS_TECH_REVIEW
               });
 
+              console.log(`✅ Successfully created issue #${newIssue.data.number}`);
               await commentOnce(issueNumber, COMMENT_MARKERS.techReviewCreated,
                 `✅ Created tech review issue: [#${newIssue.data.number} - ${newIssue.data.title}](${newIssue.data.html_url})`);
             } catch (error) {
+              console.error(`❌ Error creating issue: ${error.message}`);
+              console.error(`❌ Error stack: ${error.stack}`);
               await commentOnce(issueNumber, COMMENT_MARKERS.createTechReviewFailed,
                 `❌ Failed to create tech review issue: ${error.message}`);
               throw error;
