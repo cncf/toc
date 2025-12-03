@@ -11,278 +11,181 @@ jobs:
     permissions:
       issues: write
       contents: read
-    
+
     steps:
       - name: Extract issue information and create tech review
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const issue = context.payload.issue;
-            const issueNumber = issue.number;
-            const issueBody = issue.body;
-            
-            // Helper function to check if we've already commented on this issue
-            async function hasExistingComment(issueNumber, commentMarker) {
+            // --- Constants ---
+            const FIELD_LABELS = {
+              name: [
+                'Project name', 'Name', 'name', 'project name', 'project-name', 'subproject-name', 'Project Name', 'Subproject Name'
+              ],
+              projectLink: [
+                'Project link', 'project-link', 'project link', 'github-url', 'GitHub URL', 'Project link'
+              ],
+              ddLink: [
+                'Due diligence link', 'dd-link', 'due diligence link', 'Due diligence', 'Due diligence link'
+              ],
+              projectContact: [
+                'Project contact', 'project-contact', 'project contact', 'Project contact information', 'Project Security Contacts', 'Project contact information'
+              ],
+              additionalInfo: [
+                'Additional information', 'additional-information', 'additional information', 'Additional Information', 'Additional information'
+              ]
+            };
+
+            const LABELS_TECH_REVIEW = [
+              'needs-triage', 'kind/initiative', 'review/tech', 'sub/project-review'
+            ];
+
+            const COMMENT_MARKERS = {
+              techReviewCreated: 'Created tech review issue:',
+              techReviewExists: 'tech review issue already exists',
+              missingProjectName: 'Could not extract project name',
+              missingProjectLink: 'Could not extract project link',
+              createTechReviewFailed: 'Failed to create tech review issue'
+            };
+
+            // --- Helper Functions ---
+            async function hasExistingComment(issueNumber, marker) {
               try {
                 const comments = await github.paginate(github.rest.issues.listComments, {
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issueNumber,
                 });
-                
-                return comments.some(comment => 
-                  comment.user.type === 'Bot' && 
-                  comment.body.includes(commentMarker)
+                return comments.some(comment =>
+                  comment.user.type === 'Bot' &&
+                  comment.body.includes(marker)
                 );
               } catch (error) {
                 console.log('⚠️  Error checking for existing comments:', error.message);
                 return false;
               }
             }
-            
-            // Helper function to extract form field value from issue body
-            function extractFormField(body, fieldId) {
+
+            async function commentOnce(issueNumber, marker, body) {
+              if (!(await hasExistingComment(issueNumber, marker))) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  body
+                });
+              }
+            }
+
+            function extractFormField(body, fieldKey) {
               if (!body) return null;
-              
-              // GitHub issue templates format: ### Field Label\n\nvalue
-              // The value can be on the next line(s) until the next ### or end of string
-              
-              // Map field IDs to possible label variations
-              const fieldLabels = {
-                'name': ['Project name', 'Name', 'name', 'project name', 'project-name', 'subproject-name', 'Project Name', 'Subproject Name'],
-                'project-link': ['Project link', 'project-link', 'project link', 'github-url', 'GitHub URL', 'Project link'],
-                'dd-link': ['Due diligence link', 'dd-link', 'due diligence link', 'Due diligence', 'Due diligence link'],
-                'project-contact': ['Project contact', 'project-contact', 'project contact', 'Project contact information', 'Project Security Contacts', 'Project contact information'],
-                'additional-information': ['Additional information', 'additional-information', 'additional information', 'Additional Information', 'Additional information']
-              };
-              
-              const labels = fieldLabels[fieldId] || [fieldId];
-              
-              // Try each label variation
+              const labels = FIELD_LABELS[fieldKey] || [fieldKey];
               for (const label of labels) {
-                // Escape special regex characters in the label
                 const escapedLabel = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                
-                // Pattern: ### Label (with optional description/colon) \n\n value (until next ### or end)
-                // This handles both single-line and multi-line values
                 const pattern = new RegExp(
                   `###\\s+${escapedLabel}[^\\n]*\\n\\n([\\s\\S]*?)(?=\\n###|$)`,
                   'i'
                 );
-                
                 const match = body.match(pattern);
-                if (match && match[1]) {
-                  const value = match[1].trim();
-                  // Return null if the value is empty or just whitespace
-                  if (value && value.length > 0) {
-                    return value;
-                  }
+                if (match && match[1] && match[1].trim().length > 0) {
+                  return match[1].trim();
                 }
               }
-              
               return null;
             }
-            
-            // Extract project information from the source issue
-            const projectName = extractFormField(issueBody, 'name') || 
-                               extractFormField(issueBody, 'project-name') ||
-                               extractFormField(issueBody, 'subproject-name');
-            
-            const projectLink = extractFormField(issueBody, 'project-link') ||
-                               extractFormField(issueBody, 'github-url');
-            
-            const ddLink = extractFormField(issueBody, 'dd-link');
-            
-            const projectContact = extractFormField(issueBody, 'project-contact');
-            
-            const additionalInfo = extractFormField(issueBody, 'additional-information');
-            
+
+            function normalize(str) {
+              return (str || '').trim().toLowerCase();
+            }
+
+            // --- Main Logic ---
+            const issue = context.payload.issue;
+            const issueNumber = issue.number;
+            const issueBody = issue.body;
+
+            // Extract fields
+            const projectName = extractFormField(issueBody, 'name');
+            const projectLink = extractFormField(issueBody, 'projectLink');
+            const ddLink = extractFormField(issueBody, 'ddLink');
+            const projectContact = extractFormField(issueBody, 'projectContact');
+            const additionalInfo = extractFormField(issueBody, 'additionalInfo');
+
             // Validate required fields
             if (!projectName) {
-              const errorMsg = `❌ Could not extract project name from issue body. Please ensure the issue was created from a template with a "Project name" field.`;
-              console.log(errorMsg);
-              
-              // Check if we've already commented about this error
-              if (!(await hasExistingComment(issueNumber, 'Could not extract project name'))) {
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issueNumber,
-                  body: errorMsg
-                });
-              }
+              await commentOnce(issueNumber, COMMENT_MARKERS.missingProjectName,
+                `❌ Could not extract project name from issue body. Please ensure the issue was created from a template with a "Project name" field.`);
               return;
             }
-            
             if (!projectLink) {
-              const errorMsg = `❌ Could not extract project link from issue body. Please ensure the issue contains a "Project link" or "GitHub URL" field.`;
-              console.log(errorMsg);
-              
-              // Check if we've already commented about this error
-              if (!(await hasExistingComment(issueNumber, 'Could not extract project link'))) {
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issueNumber,
-                  body: errorMsg
-                });
-              }
+              await commentOnce(issueNumber, COMMENT_MARKERS.missingProjectLink,
+                `❌ Could not extract project link from issue body. Please ensure the issue contains a "Project link" or "GitHub URL" field.`);
               return;
             }
-            
-            // Normalize project name for better matching (trim and lowercase)
+
             const normalizedProjectName = projectName.trim();
-            const projectNameLower = normalizedProjectName.toLowerCase();
-            
-            if (!projectContact) {
-              console.log('⚠️  Could not extract project contact from issue body, will use placeholder');
-            }
-            
-            console.log(`Extracted information:
-              Project Name: ${normalizedProjectName}
-              Project Link: ${projectLink}
-              DD Link: ${ddLink || 'N/A'}
-              Project Contact: ${projectContact || 'N/A'}
-            `);
-            
-            // Check if a tech review issue already exists for this project
-            // First check if we've already created one for this specific issue
-            const commentMarker = 'Created tech review issue:';
-            if (await hasExistingComment(issueNumber, commentMarker)) {
-              console.log('ℹ️  Tech review issue was already created for this issue (found existing comment)');
+            const projectNameLower = normalize(projectName);
+
+            // Check if tech review already created for this issue
+            if (await hasExistingComment(issueNumber, COMMENT_MARKERS.techReviewCreated)) {
+              console.log('ℹ️  Tech review issue already created for this issue.');
               return;
             }
-            
-            // List all issues with the review/tech label and check if any match this project
+
+            // Check for existing tech review issues for this project
+            let existingIssue = null;
             try {
               const allIssues = await github.paginate(github.rest.issues.listForRepo, {
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                state: 'all', // Check both open and closed issues
+                state: 'all',
                 labels: 'review/tech',
                 per_page: 100
               });
-              
-              // Filter to find issues that match this project
-              // Use exact project name matching from the form field for accuracy
-              const existingIssues = allIssues.filter(item => {
-                // Skip the current issue if it somehow has the label
-                if (item.number === issueNumber) {
-                  return false;
-                }
-                
-                if (!item.title.includes('[Tech Review]:')) {
-                  return false;
-                }
-                
-                // Extract project name from existing issue body for exact comparison
-                const existingProjectName = extractFormField(item.body, 'name') || 
-                                          extractFormField(item.body, 'project-name') ||
-                                          extractFormField(item.body, 'subproject-name');
-                
-                if (existingProjectName) {
-                  const existingProjectNameLower = existingProjectName.trim().toLowerCase();
-                  // Exact match is preferred
-                  if (existingProjectNameLower === projectNameLower) {
-                    return true;
-                  }
-                }
-                
-                // Fallback: check if title contains the project name (exact word match preferred)
+
+              existingIssue = allIssues.find(item => {
+                if (item.number === issueNumber) return false;
+                if (!item.title.includes('[Tech Review]:')) return false;
+                const existingProjectName = extractFormField(item.body, 'name');
+                if (normalize(existingProjectName) === projectNameLower) return true;
+                // Fallback: check title for exact word match
                 const titleLower = item.title.toLowerCase();
-                // Use word boundaries to avoid partial matches (e.g., "kubernetes" shouldn't match "kubernetes-client")
                 const projectNameRegex = new RegExp(`\\b${projectNameLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-                if (projectNameRegex.test(titleLower)) {
-                  return true;
-                }
-                
-                return false;
+                return projectNameRegex.test(titleLower);
               });
-              
-              if (existingIssues.length > 0) {
-                const existingIssue = existingIssues[0];
-                console.log(`✅ Tech review issue already exists: #${existingIssue.number} - ${existingIssue.title}`);
-                console.log(`   Link: ${existingIssue.html_url}`);
-                
-                // Only comment if we haven't already
-                if (!(await hasExistingComment(issueNumber, 'tech review issue already exists'))) {
-                  await github.rest.issues.createComment({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    issue_number: issueNumber,
-                    body: `A tech review issue already exists for this project: [#${existingIssue.number} - ${existingIssue.title}](${existingIssue.html_url})`
-                  });
-                }
+
+              if (existingIssue) {
+                await commentOnce(issueNumber, COMMENT_MARKERS.techReviewExists,
+                  `A tech review issue already exists for this project: [#${existingIssue.number} - ${existingIssue.title}](${existingIssue.html_url})`);
                 return;
               }
             } catch (error) {
               console.log('⚠️  Error checking for existing issues:', error.message);
-              // Continue to create the issue anyway, but log the error
             }
-            
-            // Build the issue body using the tech-review.yml template format
+
+            // Build tech review issue body
             let issueBodyContent = `### Project name\n\n${normalizedProjectName}\n\n`;
             issueBodyContent += `### Project link\n\n${projectLink}\n\n`;
-            
-            if (ddLink) {
-              issueBodyContent += `### Due diligence link\n\n${ddLink}\n\n`;
-            } else {
-              issueBodyContent += `### Due diligence link\n\n\n\n`;
-            }
-            
+            issueBodyContent += `### Due diligence link\n\n${ddLink || ''}\n\n`;
             issueBodyContent += `### Project contact information\n\n${projectContact || 'To be provided'}\n\n`;
-            
-            if (additionalInfo) {
-              issueBodyContent += `### Additional information\n\n${additionalInfo}\n\n`;
-            } else {
-              issueBodyContent += `### Additional information\n\n\n\n`;
-            }
-            
-            // Add a reference to the source issue with a proper link
+            issueBodyContent += `### Additional information\n\n${additionalInfo || ''}\n\n`;
             const originalIssueUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${issueNumber}`;
             issueBodyContent += `---\n\n_This issue was automatically created from [issue #${issueNumber}](${originalIssueUrl})_`;
-            
-            // Create the tech review issue
+
+            // Create tech review issue
             try {
               const newIssue = await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 title: `[Tech Review]: ${normalizedProjectName}`,
                 body: issueBodyContent,
-                labels: ['needs-triage', 'kind/initiative', 'review/tech', 'sub/project-review']
+                labels: LABELS_TECH_REVIEW
               });
-              
-              console.log(`✅ Created tech review issue: #${newIssue.data.number} - ${newIssue.data.title}`);
-              console.log(`   Link: ${newIssue.data.html_url}`);
-              
-              // Add a comment to the source issue with a link to the created issue
-              // Check first to avoid duplicate comments
-              if (!(await hasExistingComment(issueNumber, commentMarker))) {
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issueNumber,
-                  body: `✅ Created tech review issue: [#${newIssue.data.number} - ${newIssue.data.title}](${newIssue.data.html_url})`
-                });
-              } else {
-                console.log('ℹ️  Comment already exists, skipping duplicate comment');
-              }
-              
+
+              await commentOnce(issueNumber, COMMENT_MARKERS.techReviewCreated,
+                `✅ Created tech review issue: [#${newIssue.data.number} - ${newIssue.data.title}](${newIssue.data.html_url})`);
             } catch (error) {
-              console.error('❌ Error creating tech review issue:', error);
-              
-              // Notify user about the error
-              const errorMsg = `❌ Failed to create tech review issue: ${error.message}`;
-              if (!(await hasExistingComment(issueNumber, 'Failed to create tech review issue'))) {
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issueNumber,
-                  body: errorMsg
-                });
-              }
-              
+              await commentOnce(issueNumber, COMMENT_MARKERS.createTechReviewFailed,
+                `❌ Failed to create tech review issue: ${error.message}`);
               throw error;
             }
-
