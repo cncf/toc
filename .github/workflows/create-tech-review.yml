@@ -18,20 +18,19 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            (async () => {
             // --- Constants ---
             const FIELD_LABELS = {
               name: [
                 'Project name', 'Name', 'name', 'project name', 'project-name', 'subproject-name', 'Project Name', 'Subproject Name'
               ],
               projectLink: [
-                'Project link', 'project-link', 'project link', 'github-url', 'GitHub URL', 'Project link'
+                'Project Repo(s)', 'Project Repo', 'Project link', 'project-link', 'project link', 'github-url', 'GitHub URL', 'Project link', 'Project Site'
               ],
               ddLink: [
                 'Due diligence link', 'dd-link', 'due diligence link', 'Due diligence', 'Due diligence link'
               ],
               projectContact: [
-                'Project contact', 'project-contact', 'project contact', 'Project contact information', 'Project Security Contacts', 'Project contact information'
+                'Project points of contacts', 'Project points of contact', 'Project contact', 'project-contact', 'project contact', 'Project contact information', 'Project Security Contacts', 'Communication'
               ],
               additionalInfo: [
                 'Additional information', 'additional-information', 'additional information', 'Additional Information', 'Additional information'
@@ -82,17 +81,38 @@ jobs:
             function extractFormField(body, fieldKey) {
               if (!body) return null;
               const labels = FIELD_LABELS[fieldKey] || [fieldKey];
+              
+              // First try GitHub template format: ### Field Label\n\nvalue
               for (const label of labels) {
                 const escapedLabel = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                const pattern = new RegExp(
+                const templatePattern = new RegExp(
                   `###\\s+${escapedLabel}[^\\n]*\\n\\n([\\s\\S]*?)(?=\\n###|$)`,
                   'i'
                 );
-                const match = body.match(pattern);
-                if (match && match[1] && match[1].trim().length > 0) {
-                  return match[1].trim();
+                const templateMatch = body.match(templatePattern);
+                if (templateMatch && templateMatch[1] && templateMatch[1].trim().length > 0) {
+                  return templateMatch[1].trim();
                 }
               }
+              
+              // Fallback: Try plain text format: Field Label: value
+              for (const label of labels) {
+                const escapedLabel = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                // Match "Field Label:" or "Field Label" followed by colon and value
+                const plainPattern = new RegExp(
+                  `^${escapedLabel}\\s*:?\\s+(.+)$`,
+                  'im'
+                );
+                const plainMatch = body.match(plainPattern);
+                if (plainMatch && plainMatch[1] && plainMatch[1].trim().length > 0) {
+                  // Extract value, stopping at newline or end
+                  const value = plainMatch[1].trim().split(/\n/)[0].trim();
+                  if (value.length > 0) {
+                    return value;
+                  }
+                }
+              }
+              
               return null;
             }
 
@@ -212,4 +232,3 @@ jobs:
                 `❌ Failed to create tech review issue: ${error.message}`);
               throw error;
             }
-            })();
