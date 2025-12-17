@@ -22,7 +22,7 @@ This template outlines the administrative steps required when a project moves fr
 - [ ] TOC vote passed 
 - [ ] Moving levels PR merged 
 - [ ] Email Formation team to move the project's level in PCC.
-- [ ] Ensure the project is in Google Group mailing lists maintainer@cncf.io
+- [ ] Ensure the project is in Google Group mailing lists maintainers@cncf.io
 - [ ] Update the project's level and maintainer list in the aggregated [CNCF maintainer list](https://maintainers.cncf.io/).
 - [ ] Move the project to its new level on the [CNCF Landscape](https://github.com/cncf/landscape/blob/master/landscape.yml).
 - [ ] Move the project to the new level in [Clomonitor](https://github.com/cncf/clomonitor/blob/main/data/cncf.yaml)
