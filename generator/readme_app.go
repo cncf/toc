@@ -62,10 +62,10 @@ type Tag struct {
 	Meetings         []Meeting    `yaml:"meetings"`
 	Contact          Contact      `yaml:"contact"`
 	TagSubprojects   []Subproject `yaml:"tag_subprojects"`
+	TagInitiatives   string       `yaml:"tag_initiatives"`
 	// The following are all generated, and the fields in the YAML file are ignored.
-	CharterLink    string `yaml:"charter_link"`
-	TagLabel       string `yaml:"tag_label"`
-	TagInitiatives string `yaml:"tag_initiatives"`
+	CharterLink string `yaml:"charter_link"`
+	TagLabel    string `yaml:"tag_label"`
 }
 
 // TOCSubproject struct to hold TOC subproject data, including CharterLink.
