@@ -29,6 +29,5 @@ Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 - TOC Liaison: Katie Gamanji (**[@kgamanji](https://github.com/kgamanji)**)
 
 ## Subprojects
-- **Developer Experience-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-developer-experience/)
 ## Initiatives
 [TAG Developer Experience Initiatives](https://github.com/cncf/toc/issues?q=label%3Atag%2Fdeveloper-experience-initiative)
