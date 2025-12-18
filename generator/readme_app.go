@@ -14,8 +14,9 @@ import (
 
 // Subproject struct to hold subproject data.
 type Subproject struct {
-	Name    string  `yaml:"name"`
-	Contact Contact `yaml:"contact"`
+	Name             string  `yaml:"name"`
+	MissionStatement string  `yaml:"mission_statement,omitempty"`
+	Contact          Contact `yaml:"contact"`
 }
 
 // Term struct to hold start and end dates.

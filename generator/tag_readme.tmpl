@@ -38,7 +38,11 @@
 
 ## Subprojects
 {{- range .TagSubprojects }}
-- **{{.Name}}**: [Mailing List]({{.Contact.MailingList}})
+### {{.Name}}
+{{- if .MissionStatement }}
+{{.MissionStatement}}
+{{- end }}
+- [Mailing List]({{.Contact.MailingList}})
 {{- end }}
 
 {{- if .Leadership.SubprojectLeads }}
