@@ -17,6 +17,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 jobs:
   update-readme-fork:
@@ -45,8 +46,10 @@ jobs:
 
       - name: Create new PR, comment and close original (forked PR)
         env:
-          # Use a different token here for fork PRs if needed.
-          GITHUB_TOKEN: ${{ secrets.TAGS_YAML_UPDATE_GHA }}
+          # Use github.token which has write permissions in pull_request_target context
+          # This should allow closing PRs from forks. If TAGS_YAML_UPDATE_GHA secret is set,
+          # it will be used instead (must have 'repo' scope for full permissions)
+          GITHUB_TOKEN: ${{ secrets.TAGS_YAML_UPDATE_GHA || github.token }}
         run: |
           set -e
           cp tags.yaml /tmp/tags.yaml
@@ -75,19 +78,24 @@ jobs:
               echo "Error: PR not created. API response: $RESPONSE"
               exit 1
             fi
-            ORIGINAL_COMMENT="This PR has been superseded by [PR #$NEW_PR_NUMBER](https://github.com/${{ github.repository }}/pull/$NEW_PR_NUMBER). Closing this PR."
-            ORIGINAL_COMMENT_API_URL=https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments
-            ORIGINAL_COMMENT_DATA=$(jq -n --arg body "$ORIGINAL_COMMENT" '{body: $body}')
-            curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "$ORIGINAL_COMMENT_DATA" $ORIGINAL_COMMENT_API_URL
+            # Try to close the original PR first
             CLOSE_API_URL=https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}
             CLOSE_RESPONSE=$(curl -s -w "\n%{http_code}" -X PATCH -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d '{ "state": "closed" }' $CLOSE_API_URL)
             HTTP_CODE=$(echo "$CLOSE_RESPONSE" | tail -n1)
-            if [ "$HTTP_CODE" != "200" ]; then
-              echo "Error: Failed to close PR. HTTP code: $HTTP_CODE"
+            
+            if [ "$HTTP_CODE" = "200" ]; then
+              echo "Successfully closed PR #${{ github.event.pull_request.number }}"
+              ORIGINAL_COMMENT="This PR has been superseded by [PR #$NEW_PR_NUMBER](https://github.com/${{ github.repository }}/pull/$NEW_PR_NUMBER) and has been automatically closed."
+            else
+              echo "Warning: Could not automatically close PR #${{ github.event.pull_request.number }} (HTTP code: $HTTP_CODE)"
               echo "Response: $CLOSE_RESPONSE"
-              exit 1
+              ORIGINAL_COMMENT="This PR has been superseded by [PR #$NEW_PR_NUMBER](https://github.com/${{ github.repository }}/pull/$NEW_PR_NUMBER). Please close this PR manually."
             fi
-            echo "Successfully closed PR #${{ github.event.pull_request.number }}"
+            
+            # Add comment to original PR
+            ORIGINAL_COMMENT_API_URL=https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments
+            ORIGINAL_COMMENT_DATA=$(jq -n --arg body "$ORIGINAL_COMMENT" '{body: $body}')
+            curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "$ORIGINAL_COMMENT_DATA" $ORIGINAL_COMMENT_API_URL
             NEW_PR_COMMENT="This PR replaces fork PR [#${{ github.event.pull_request.number }}](https://github.com/${{ github.repository }}/pull/${{ github.event.pull_request.number }})."
             NEW_PR_COMMENT_API_URL=https://api.github.com/repos/${{ github.repository }}/issues/$NEW_PR_NUMBER/comments
             NEW_PR_COMMENT_DATA=$(jq -n --arg body "$NEW_PR_COMMENT" '{body: $body}')
