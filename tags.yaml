@@ -528,18 +528,57 @@ tags: # Technical Advisory Groups
         - github: kevin-wangzefeng
           name: Kevin Wang
     tag_subprojects:
-      - name: Workloads Foundation-sub-foo
-        mission_statement: Foo-Baz_Bar
+      - name: Batch
+        mission_statement: |
+          To enhance collaboration among projects, improve interoperability, and empower users to efficiently leverage batch systems in cloud-native environments.
+
+          In scope:
+
+          To reduce fragmentation in the k8s batch ecosystem: congregate leads and users from different external and internal projects and user groups (CNCF TAGs, k8s sub-projects focused on batch-related features such as topology-aware scheduling) in the batch ecosystem to gather requirements, validate designs and encourage reutilization of core K8s APIs.
+
+          The following recommendations for enhancements:
+
+          * Additions to the batch API group, currently including Job and CronJob resources that benefit batch use cases such as HPC, AI/ML, data analytics and CI.
+          * Primitives for job-level queueing, not limited to the k8s Job resource. Long-term, this could include multi-cluster support.
+          * Primitives to control and maximize utilization of resources in fixed-size clusters (on-prem) and elastic clusters (cloud).
+          * Benchmarking models for Batch systems
+          * Data Locality
+          * User Stories
+          * Scheduling support for specialized hardware (Accelerators, NUMA, Networking, etc.)
+
+          Out of scope:
+
+          * Addition of new API kinds that serve a specialized type of workload. The focus should be on general APIs that specialized controllers can build on top of.
+          * Uses of the batch APIs as support for serving workloads (eg. backups, upgrades, migrations). These can be served by existing SIGs.
+          * Proposals that duplicate the functionality of core kubernetes components (job-controller, kube-scheduler, cluster-autoscaler).
+          * Job workflows or pipelines. Mature third party frameworks serve these use cases with the current kubernetes primitives. But additional primitives to support these frameworks could be in scope.
+
+          Deliverable(s) or exit criteria:
+
+          * Maintaining a landscape document for currently available projects (already published-relocated and maintained)
+          * Data Locality project-deliverables TBD, but something that helps in this space (already in process)
+          * Benchmarking suite for Batch systems (already in process)
+          * User stories published doc for Batch systems (already in process)
         contact:
           slack: C08K71W9HAS # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation # Using parent TAG's contact
     leadership:
       SubProject Leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+        - github:
+          lfx_id:
+          name: Alex Scammon
+          company:
+          email: alex@gr-oss.io
+        - github: catblade
+          lfx_id:
+          name: Marlow Warnicke
+          company:
+          email: catblade@gmail.com
+        - github:
+          lfx_id:
+          name: Abishek Malvankar
+          company:
+          email: abhishekmalvankar9@gmail.com
     tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fworkloads-foundation-initiative
 toc_subprojects: # TOC SubProjects
   - dir: contributor-strategy-and-advocacy-subproject # Contributor Strategy and Advocacy Sub Project

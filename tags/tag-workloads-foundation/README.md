@@ -30,7 +30,6 @@ To define and advance practices and standards for fundamental cloud native workl
 - TOC Liaison: Kevin Wang (**[@kevin-wangzefeng](https://github.com/kevin-wangzefeng)**)
 
 ## Subprojects
-- **Workloads Foundation-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-workloads-foundation)
-
+- **Batch**: [Mailing List](https://lists.cncf.io/g/cncf-tag-workloads-foundation)
 ## Initiatives
-[TAG Workloads Foundation Initiatives](https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Akind%2Finitiative%20label%3Atag%2Fworkloads-foundation)
+[TAG Workloads Foundation Initiatives](https://github.com/cncf/toc/issues?q=label%3Atag%2Fworkloads-foundation-initiative)
