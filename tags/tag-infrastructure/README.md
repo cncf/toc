@@ -30,6 +30,5 @@ Data, Storage, Network, DNS, Compute, Service Mesh, Infrastructure-as-Code, Edge
 - TOC Liaison: Karena Angell (**[@angellk](https://github.com/angellk)**)
 
 ## Subprojects
-- **Infrastructure-sub-foo**: [Mailing List](https://lists.cncf.io/g/cncf-tag-infrastructure)
 ## Initiatives
 [TAG Infrastructure Initiatives](https://github.com/cncf/toc/labels/tag%2Finfrastructure-initiative)
