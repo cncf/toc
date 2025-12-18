@@ -82,20 +82,20 @@ tags: # Technical Advisory Groups
       toc_liaison:
         - github: kgamanji
           name: Katie Gamanji
-    tag_subprojects:
-      - name: Developer Experience-sub-foo
-        mission_statement: >
-          Foo-Baz_Bar
-        contact:
-          slack: C08KGCXB458 # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/ # Using parent TAG's contact
-    leadership:
-      SubProject Leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+    # tag_subprojects:
+    #   - name: Developer Experience-sub-foo
+    #     mission_statement: >
+    #       Foo-Baz_Bar
+    #     contact:
+    #       slack: C08KGCXB458 # Using parent TAG's contact
+    #       mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/ # Using parent TAG's contact
+    # leadership:
+    #   SubProject Leads:
+    #     - github: foo
+    #       lfx_id: baz
+    #       name: Foo Baz Bar
+    #       company: Foo Baz Bar co.
+    #       email: me@foobazbar.org
     tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fdeveloper-experience-initiative
   - dir: tag-infrastructure # TAG Infrastructure
     name: TAG Infrastructure
@@ -182,19 +182,19 @@ tags: # Technical Advisory Groups
           name: Ricardo Rocha
         - github: angellk
           name: Karena Angell
-    tag_subprojects:
-      - name: Infrastructure-sub-foo
-        mission_statement: Foo-Baz_Bar
-        contact:
-          slack: C08KBH3RA1K # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure # Using parent TAG's contact
-    leadership:
-      SubProject Leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+    # tag_subprojects:
+    #   - name: Infrastructure-sub-foo
+    #     mission_statement: Foo-Baz_Bar
+    #     contact:
+    #       slack: C08KBH3RA1K # Using parent TAG's contact
+    #       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure # Using parent TAG's contact
+    # leadership:
+    #   SubProject Leads:
+    #     - github: foo
+    #       lfx_id: baz
+    #       name: Foo Baz Bar
+    #       company: Foo Baz Bar co.
+    #       email: me@foobazbar.org
     tag_initiatives: https://github.com/cncf/toc/labels/tag%2Finfrastructure-initiative
   - dir: tag-operational-resilience # TAG Operational Resilience
     name: TAG Operational Resilience
@@ -279,20 +279,20 @@ tags: # Technical Advisory Groups
       toc_liaison:
         - github: jeremyrickard
           name: Jeremy Rickard
-    tag_subprojects:
-      - name: Operational Resilience-sub-foo
-        mission_statement: >
-          Foo-Baz_Bar
-        contact:
-          slack: C08KGDENK34 # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience # Using parent TAG's contact
-    leadership:
-      SubProject Leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
+    # tag_subprojects:
+    #   - name: Operational Resilience-sub-foo
+    #     mission_statement: >
+    #       Foo-Baz_Bar
+    #     contact:
+    #       slack: C08KGDENK34 # Using parent TAG's contact
+    #       mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience # Using parent TAG's contact
+    # leadership:
+    #   SubProject Leads:
+    #     - github: foo
+    #       lfx_id: baz
+    #       name: Foo Baz Bar
+    #       company: Foo Baz Bar co.
+    #       email: me@foobazbar.org
     tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Foperational-resilience-initiative
   - dir: tag-security-and-compliance # TAG Security and Compliance
     name: TAG Security and Compliance
