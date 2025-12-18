@@ -80,7 +80,14 @@ jobs:
             ORIGINAL_COMMENT_DATA=$(jq -n --arg body "$ORIGINAL_COMMENT" '{body: $body}')
             curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d "$ORIGINAL_COMMENT_DATA" $ORIGINAL_COMMENT_API_URL
             CLOSE_API_URL=https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}
-            curl -s -X PATCH -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d '{ "state": "closed" }' $CLOSE_API_URL
+            CLOSE_RESPONSE=$(curl -s -w "\n%{http_code}" -X PATCH -H "Authorization: token $GITHUB_TOKEN" -H "Content-Type: application/json" -d '{ "state": "closed" }' $CLOSE_API_URL)
+            HTTP_CODE=$(echo "$CLOSE_RESPONSE" | tail -n1)
+            if [ "$HTTP_CODE" != "200" ]; then
+              echo "Error: Failed to close PR. HTTP code: $HTTP_CODE"
+              echo "Response: $CLOSE_RESPONSE"
+              exit 1
+            fi
+            echo "Successfully closed PR #${{ github.event.pull_request.number }}"
             NEW_PR_COMMENT="This PR replaces fork PR [#${{ github.event.pull_request.number }}](https://github.com/${{ github.repository }}/pull/${{ github.event.pull_request.number }})."
             NEW_PR_COMMENT_API_URL=https://api.github.com/repos/${{ github.repository }}/issues/$NEW_PR_NUMBER/comments
             NEW_PR_COMMENT_DATA=$(jq -n --arg body "$NEW_PR_COMMENT" '{body: $body}')
