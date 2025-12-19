@@ -6,21 +6,6 @@ Creation Issue: https://github.com/cncf/toc/issues/1910
 
 The objective is to refresh the existing [Cloud Native Security Controls Catalog](https://docs.google.com/spreadsheets/d/1GUohOTlLw9FKUQ3O23X7ypvJLXN-B3veJGe6YE6JYfU/edit) artifact to enhance its consistency and maintenance by expressing the content in a standardized, machine-readable format.
 
-### Desired Outcomes
-
-1. Determine whether a community-maintained controls catalog is worth establishing as a long-term subproject.
-
-2. Assist CNCF project maintainers to build technology-specific best practices guides which could accelerate joint security assessments and streamline project promotions.
-
-3. Establish strategic alignment with other organizations (e.g., FINOS Common Cloud Controls) to reuse control definitions, avoid duplication, and potentially contribute completed sections back to external projects.
-
-### Proposed Deliverables
-
-* A standardized, machine-readable [Gemara](https://gemara.openssf.org/) guidance document that can be rendered to various human-readable formats for consumption.
-* A proof-of-concept granular, technology-specific (or project-specific) controls catalog that is measurable against automated assessments and functions as security acceptance criteria.
-* Deployment and maintenance tooling to support publishing on `contribute.cncf.io` website under TAG Security and Compliance [publications](https://contribute.cncf.io/community/tags/security-and-compliance/#publications).
-* A contributing guide for continued community-driven maintenance (if moving to Milestone 2)
-
 ## Logistics
 
 The initiative meets weekly on Fridays at 17:30 UTC on the [TAG Security and Compliance calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list).
@@ -30,27 +15,33 @@ The initiative meets weekly on Fridays at 17:30 UTC on the [TAG Security and Com
 
 ## Planned Milestones
 
-### Milestone 1
+### Milestone 1: CNSC Gemara-compatible Release Process
 
-**Goal:** Convert existing controls into a standardized, machine-readable format to test the tooling and community commitment.
+**Goal:** Convert existing controls into a standardized, machine-readable format that can automatically generate artifacts in a continuous release pipeline, such as markdown, PDF, and/or web page.
 
-| **Milestone** | **Activity Description**                                                                              | **Output Artifact**             |
-|:--------------|:------------------------------------------------------------------------------------------------------|:--------------------------------|
-| 1.1           | Parse and format existing controls to a [Gemara](https://gemara.openssf.org/)-based Guidance Document | Draft Layer 1 Guidance Document |
-| 1.2           | Set up basic tooling and pipeline                                                                     | Working Conversion Pipeline     |
+| **Checkpoint** | **Activity Description**                                                                              |
+|:---------------|:------------------------------------------------------------------------------------------------------|
+| 1.1            | Parse and format existing controls to a [Gemara](https://gemara.openssf.org/)-based Guidance Document |
+| 1.2            | Set up basic tooling and pipeline for release artifacts                                               |
 
-**Checkpoint**: Based on the successful delivery of the guidance document, is there sufficient contributor interest and resource commitment to take on the ongoing 
-maintenance required breaking it down into granular, technology-specific controls?
+### Milestone 2: Project-specific Gemara Compatibility Assessment
 
-### Milestone 2
+**Goal:** Determine the value of a longstanding sub-project aimed at creating technology-specific artifacts, pausing to assess practicality after creating detailed threat catalogs.
 
-**Goal:** Begin the high-effort work of creating granular, technology-specific controls and assessment requirements by aligning with external projects and collaborating with CNCF maintainers.
+| **Checkpoint** | **Activity Description**                                                       |
+|:---------------|:-------------------------------------------------------------------------------|
+| 2.1            | Identify a project to create "Layer 2" Gemara artifacts for (e.g. Kyverno)     |
+| 2.2            | Create a capabilities document to identify the features of the technology      |
+| 2.3            | Create a threats document to map common threats to the technology capabilities |
+| 2.4            | Assess gaps and progress to determine whether to continue to Milestone 3       |
 
-| **Milestone** | **Activity Description**                                                                                           | **Output Artifacts**                     |
-|:--------------|:-------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
-| 2.1           | Categorize Layer 1 controls for future Layer 2 scope (e.g., Cluster, Container Workloads)                          | Draft Layer 2 Controls Catalog Documents |
-| 2.2           | Formalize reuse/contribution strategy with FINOS CCC, the OSPS Baseline, and other external catalogs               | Draft Layer 2 Controls Catalog Documents |
-| 2.3           | Select a pilot project to begin refining granular Layer 2 controls for their project's technology and capabilities | Layer 2 Controls Catalog Document POC    |
-| 2.4           | Expand tooling to all desired formats as requested by the community                                                | Conversion Tooling and Documentation     |
+### Milestone 3: Project-specific CNSC Artifacts
 
-**Checkpoint**: Have we successfully demonstrated the model for collaboration and creation of a sustainable, measurable Controls Catalog artifact?
+**Goal:** Determine the value of a longstanding sub-project aimed at creating technology-specific control catalogs.
+
+| **Checkpoint** | **Activity Description**                                                                         |
+|:---------------|:-------------------------------------------------------------------------------------------------|
+| 3.1            | Identify integration points between Milestone 1 and Milestone 2 artifacts                        |
+| 3.2            | Create control objectives which mitigate the threats identified in Milestone 2                   |
+| 3.3            | Create assessment requirements to guide implementation and evaluation of the control objectives  |
+| 2.4            | Assess gaps and progress to determine whether to propose a sub-project for this type of activity |
