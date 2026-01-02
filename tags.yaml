@@ -279,20 +279,39 @@ tags: # Technical Advisory Groups
       toc_liaison:
         - github: jeremyrickard
           name: Jeremy Rickard
-    # tag_subprojects:
-    #   - name: Operational Resilience-sub-foo
-    #     mission_statement: >
-    #       Foo-Baz_Bar
-    #     contact:
-    #       slack: C08KGDENK34 # Using parent TAG's contact
-    #       mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience # Using parent TAG's contact
-    # leadership:
-    #   SubProject Leads:
-    #     - github: foo
-    #       lfx_id: baz
-    #       name: Foo Baz Bar
-    #       company: Foo Baz Bar co.
-    #       email: me@foobazbar.org
+    tag_subprojects:
+      - name: Green Reviews
+        mission_statement: >
+          The purpose of the Green Reviews Subproject is to help CNCF projects to
+          review their cloud native sustainability footprint. Through this review,
+          projects aiming for graduation can show how their project uses resources
+          at scale. The Green Reviews pipeline can integrate an environmental
+          sustainability project review in each release cycle. Furthermore, this
+          project strives to empower end users to assess the sustainability of the
+          cloud native workloads within their systems.
+
+          To support CNCF projects, project maintainers and contributors, there is
+          a need for a systematic approach to assess every project's sustainability
+          footprint and energy consumption. Implementing a structured review process
+          for this purpose would greatly benefit the CNCF ecosystem, establishing it
+          as a best practice. Such a process would enable stakeholders to evaluate
+          and enhance the sustainability of CNCF projects, promoting their long-term
+          viability and environmental responsibility.
+        contact:
+          slack: C08KGDENK34 # Using parent TAG's contact
+          mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience # Using parent TAG's contact
+    leadership:
+      SubProject Leads:
+        - github: nikimanoledaki
+          lfx_id:
+          name: Niki Manoledaki
+          company: Grafana Labs
+          email: niki.manoledaki@grafana.com
+        - github: AntonioDiTuri
+          lfx_id:
+          name: Antonio Di Turi
+          company: Data Reply DE
+          email: antonio.dituri@datareply.de
     tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Foperational-resilience-initiative
   - dir: tag-security-and-compliance # TAG Security and Compliance
     name: TAG Security and Compliance
