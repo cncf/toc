@@ -166,7 +166,7 @@ N/A
 <!-- (TOC Evaluation goes here) --> 
 The list of current maintainers is [here](https://github.com/fluid-cloudnative/fluid/blob/ea2351bd72437af66d6f18577209f4878d62e01e/MAINTAINERS_COMMITTERS.md).
 
-- [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
+- [X] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
 <!-- (TOC Evaluation goes here) --> 
 There are 7 active maintainers involved in the project development, from various organizations, such as Nanjing University, Alibaba, Alluxio, JuiceData and China Telecom. 
