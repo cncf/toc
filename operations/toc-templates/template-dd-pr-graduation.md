@@ -52,9 +52,13 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 ## Governance and Maintainers
 
-Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
+Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject if completed as a suggested item prior to application.
 
 ### Suggested
+
+- [ ] **Complete a Governance Review with the Project Reviews subproject**
+
+<!-- (TOC Evaluation goes here) --> 
 
 - [ ]  **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
@@ -204,11 +208,16 @@ N/A
 
 ## Security
 
-Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
+Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance if completed as a suggested item prior to application.
+
 
 ### Suggested
 
 - [ ] **Achieving OpenSSF Best Practices silver or gold badge.**
+
+<!-- (TOC Evaluation goes here) --> 
+
+- [ ] **Complete a joint security assessment with TAG Security and Compliance**
 
 <!-- (TOC Evaluation goes here) --> 
 
