@@ -143,7 +143,7 @@ Releases are signed by GitHub's verified signature. All release artifacts are bu
 ### Communication Channels
 
 Communication happens in the public Slacks:
-- CNCF Slack [#k3s channel](https://cloud-native.slack.com/archives/C0196ULKX8S ).
+- CNCF Slack [#k3s channel](https://cloud-native.slack.com/archives/C0196ULKX8S).
 - Rancher-users Slack [#k3s channel ](https://rancher-users.slack.com/archives/CGGQEHPPW).
 - Rancher-users Slack [#k3s-contributor channel](https://rancher-users.slack.com/archives/CGXR87T8B).
 
