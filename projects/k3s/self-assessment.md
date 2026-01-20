@@ -166,7 +166,7 @@ The K3s security policy can be quickly found through both the [README.md](https:
 
 ### Responsible Disclosure Practice
 
-The K3s project does not accept vulnerability reports through the [GitHub Vulnerability Reporting](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability) tool. Users attempting to report an security issue via the Create Issue or Vulnerability Reporting workflows will be redirected to our security policy document, which requests that they make contact via e-mail.
+The K3s project does not accept vulnerability reports through the [GitHub Vulnerability Reporting](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability) tool. Users attempting to report a security issue via the Create Issue or Vulnerability Reporting workflows will be redirected to our security policy document, which requests that they make contact via e-mail.
 
 Anyone can make a report by e-mailing security@k3s.io. In the event that a report is received, a maintainer will communicate directly with the reporter until it is resolved. Reporters concerned about the privacy or security of their e-mail communications may request GPG keys prior to communicating vulnerability details, which can be validated against public keyservers and the maintainer's public keys published on GitHub (`https://github.com/<USERNAME>.gpg`).
 
