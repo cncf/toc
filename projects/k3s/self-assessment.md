@@ -79,7 +79,7 @@ Upgrades performed via the installation script or using our [automated upgrades 
 - Enable cloud-native adoption in new environments - K3s expands the reach of Kubernetes to use cases where standard Kubernetes is not a practical solution due to resource limitations.
 
 ### Non-Goals
-- K3s does **not** aim to be replacement for full Kubernetes distributions - K3s isn’t meant to replace upstream Kubernetes or large-scale managed services like EKS, AKS, GKE.
+- K3s does **not** aim to be a replacement for full Kubernetes distributions - K3s isn’t meant to replace upstream Kubernetes or large-scale managed services like EKS, AKS, GKE.
 - Not focused on complex multi-cluster or hybrid-cloud management
 - Not trying to be minimal at the expense of compliance - K3s removes unneeded features (e.g., cloud provider integrations, legacy alpha APIs) but keeps full Kubernetes API compliance.
 
