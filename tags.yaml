@@ -716,4 +716,6 @@ toc_subprojects: # TOC SubProjects
       toc_liaison:
         - github: angellk
           name: Karena Angell
+        - github: kevin-wangzefeng
+          name: Kevin Wang
     subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative
