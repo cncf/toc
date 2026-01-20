@@ -44,7 +44,7 @@ Security reviewers:
 
 ## Overview
 
-K3s is a lightweight and fully certified Kubernetes distribution that prioritizes a minimal footprint and simplified operations, while offering lightweight default implementations of pluggable components such as LoadBalancer Services, Ingress, and Persistent Volumes. This design offers inherent advantages for resource-constrained or ephemeral environments.
+K3s is a lightweight and [fully certified](#appendix) Kubernetes distribution that prioritizes a minimal footprint and simplified operations, while offering lightweight default implementations of pluggable components such as LoadBalancer Services, Ingress, and Persistent Volumes. This design offers inherent advantages for resource-constrained or ephemeral environments.
 
 ### Background
 
@@ -177,9 +177,19 @@ In the event that a vulnerability is reported, the maintainer team will collabor
 
 Patches will be made to all versions that are currently supported under the project's security policy. Information will be disseminated to the community through all appropriate outbound channels as soon as possible based on the circumstance.
 
-
 ## Appendix
 FOSSA Badge - [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B25850%2Fgithub.com%2Fk3s-io%2Fk3s.svg?type=shield)](https://app.fossa.com/projects/custom%2B25850%2Fgithub.com%2Fk3s-io%2Fk3s?ref=badge_shield)
 OpenSSF Best Practices - [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/6835/badge)](https://www.bestpractices.dev/projects/6835)
 OpenSSF Scorecard[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/k3s-io/k3s/badge)](https://scorecard.dev/viewer/?uri=github.com/k3s-io/k3s)
 CLOMonitor - [![CLOMonitor](https://img.shields.io/endpoint?url=https://clomonitor.io/api/projects/cncf/k3s/badge)](https://clomonitor.io/projects/cncf/k3s)
+
+### Fully Certified
+The Cloud Native Computing Foundation (CNCF) maintains a certification program for Kubernetes distributions. A distribution is “Kubernetes certified” if it passes a set of rigorous conformance tests, ensuring that it behaves exactly like upstream Kubernetes. This means:
+- Standard Kubernetes APIs work the same way.
+- Kubernetes resources (like pods, services, deployments) behave predictably.
+- Tools and applications written for standard Kubernetes will run on it without modification.
+
+https://www.cncf.io/training/certification/software-conformance/
+
+At the time of writing v1.35:
+https://github.com/cncf/k8s-conformance/tree/master/v1.35/k3s
