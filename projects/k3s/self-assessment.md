@@ -41,6 +41,7 @@ Security reviewers:
 |-----------|------|
 | Security policy | https://github.com/k3s-io/k3s?tab=security-ov-file#security-policy |
 | CVE scanning | https://scans.k3s.io/
+
 ## Overview
 
 K3s is a lightweight and fully certified Kubernetes distribution that prioritizes a minimal footprint and simplified operations, while offering lightweight default implementations of pluggable components such as LoadBalancer Services, Ingress, and Persistent Volumes. This design offers inherent advantages for resource-constrained or ephemeral environments.
