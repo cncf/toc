@@ -245,7 +245,11 @@ Community members are able to join community meetings on a bi-weekly basis. The 
 
 Community meetings are held in Mandarin, and are a great way to engage with the maintainers and get involved in project development. 
 
-TODO: calendar for meetings
+**Meeting Schedule:**
+- **Time:** 16:00 Thursday, bi-weekly (Beijing/Shanghai timezone)
+- **Platform:** DingTalk (Meeting Id: 351 670 2037)
+- **Language:** Simplified Chinese
+- **Full schedule and meeting minutes:** [Fluid Community Meeting Schedule](https://github.com/fluid-cloudnative/community/wiki/Meeting-Schedule)
 
 
 - [x] **Documentation of how to contribute, with increasing detail as the project matures.**
