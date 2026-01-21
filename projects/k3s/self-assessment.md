@@ -183,7 +183,7 @@ OpenSSF Best Practices - [![OpenSSF Best Practices](https://www.bestpractices.de
 OpenSSF Scorecard[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/k3s-io/k3s/badge)](https://scorecard.dev/viewer/?uri=github.com/k3s-io/k3s)
 CLOMonitor - [![CLOMonitor](https://img.shields.io/endpoint?url=https://clomonitor.io/api/projects/cncf/k3s/badge)](https://clomonitor.io/projects/cncf/k3s)
 
-### Fully Certified
+### Kubernetes Conformance Certification
 The Cloud Native Computing Foundation (CNCF) maintains a certification program for Kubernetes distributions. A distribution is “Kubernetes certified” if it passes a set of rigorous conformance tests, ensuring that it behaves exactly like upstream Kubernetes. This means:
 - Standard Kubernetes APIs work the same way.
 - Kubernetes resources (like pods, services, deployments) behave predictably.
