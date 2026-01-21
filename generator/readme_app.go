@@ -42,9 +42,10 @@ type Leadership struct {
 
 // Meeting struct to hold meeting data.
 type Meeting struct {
-	Description   string `yaml:"description"`
-	RecordingsURL string `yaml:"recordings_url"`
-	TagCalendar   string `yaml:"tag_calendar,omitempty"`
+	Description     string `yaml:"description"`
+	RecordingsURL   string `yaml:"recordings_url"`
+	TagCalendar     string `yaml:"tag_calendar,omitempty"`
+	MeetingNotesURL string `yaml:"meeting_notes_url,omitempty"`
 }
 
 // Contact struct to hold contact information.
