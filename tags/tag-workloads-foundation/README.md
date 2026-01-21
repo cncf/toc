@@ -21,7 +21,7 @@ To define and advance practices and standards for fundamental cloud native workl
 - Stephen Rust (**[@srust](https://github.com/srust)**) (Term: 2025-07-02 - 2026-06-30)
 
 ## Meetings
-- **TAG Workloads Foundation Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGWorkloadsFoundation)
+- **TAG Workloads Foundation Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGWorkloadsFoundation) | [Meeting Notes and Agenda](https://notes.cncf.io/s/1aNdplhtl)
 
 ## Contact
 - Slack: [Tag TAG Workloads Foundation Slack](https://cloud-native.slack.com/archives/C08K71W9HAS)
