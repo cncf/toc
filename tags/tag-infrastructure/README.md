@@ -31,4 +31,4 @@ Data, Storage, Network, DNS, Compute, Service Mesh, Infrastructure-as-Code, Edge
 
 ## Subprojects
 ## Initiatives
-[TAG Infrastructure Initiatives](https://github.com/cncf/toc/labels/tag%2Finfrastructure-initiative)
+[TAG Infrastructure Initiatives](https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Finfrastructure%20label%3Akind%2Finitiative)

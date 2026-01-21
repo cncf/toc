@@ -97,7 +97,7 @@ tags: # Technical Advisory Groups
     #       name: Foo Baz Bar
     #       company: Foo Baz Bar co.
     #       email: me@foobazbar.org
-    tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fdeveloper-experience-initiative
+    tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fdeveloper-experience%20label%3Akind%2Finitiative
   - dir: tag-infrastructure # TAG Infrastructure
     name: TAG Infrastructure
     mission_statement: >
@@ -197,7 +197,7 @@ tags: # Technical Advisory Groups
     #       name: Foo Baz Bar
     #       company: Foo Baz Bar co.
     #       email: me@foobazbar.org
-    tag_initiatives: https://github.com/cncf/toc/labels/tag%2Finfrastructure-initiative
+    tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Finfrastructure%20label%3Akind%2Finitiative
   - dir: tag-operational-resilience # TAG Operational Resilience
     name: TAG Operational Resilience
     mission_statement: >
@@ -315,7 +315,7 @@ tags: # Technical Advisory Groups
           name: Antonio Di Turi
           company: Data Reply DE
           email: antonio.dituri@datareply.de
-    tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Foperational-resilience-initiative
+    tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Foperational-resilience%20label%3Akind%2Finitiative
   - dir: tag-security-and-compliance # TAG Security and Compliance
     name: TAG Security and Compliance
     mission_statement: >
@@ -603,7 +603,7 @@ tags: # Technical Advisory Groups
           name: Abishek Malvankar
           company:
           email: abhishekmalvankar9@gmail.com
-    tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fworkloads-foundation-initiative
+    tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fworkloads-foundation%20label%3Akind%2Finitiative
 toc_subprojects: # TOC SubProjects
   - dir: contributor-strategy-and-advocacy-subproject # Contributor Strategy and Advocacy Sub Project
     name: Contributor Strategy and Advocacy SubProject
@@ -643,7 +643,7 @@ toc_subprojects: # TOC SubProjects
   #    toc_liaison:
   #      - github: foobar
   #        name: Foo Bar
-    subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative
+    subproject_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atoc%2Fcontributor-strategy-and-advocacy-subproject%20label%3Akind%2Finitiative
   - dir: mentoring-subproject # Mentoring SubProject
     name: Mentoring SubProject
     mission_statement: Foo-Baz-Bar
@@ -682,7 +682,7 @@ toc_subprojects: # TOC SubProjects
   #    toc_liaison:
   #      - github: foobar
   #        name: Foo Bar
-    subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fmentoring-subproject-initiative
+    subproject_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atoc%2Fmentoring-subproject%20label%3Akind%2Finitiative
   - dir: project-reviews-subproject # Project Reviews SubProject
     name: Project Reviews SubProject
     mission_statement: Foo-Baz-bar
@@ -723,4 +723,4 @@ toc_subprojects: # TOC SubProjects
           name: Karena Angell
         - github: kevin-wangzefeng
           name: Kevin Wang
-    subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative
+    subproject_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atoc%2Fproject-reviews-subproject%20label%3Akind%2Finitiative
