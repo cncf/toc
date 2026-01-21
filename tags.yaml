@@ -76,6 +76,7 @@ tags: # Technical Advisory Groups
       - description: TAG Developer Experience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list # Calendar from PCC
         recordings_url: https://www.youtube.com/@CNCFTAGDeveloperExperience
+        # meeting_notes_url: # TODO: add Meeting Notes and Agenda URL when available
     contact:
       slack: C08KGCXB458
       mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/
@@ -174,6 +175,7 @@ tags: # Technical Advisory Groups
       - description: TAG Infrastructure Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGInfrastructure
+        # meeting_notes_url: # TODO: add Meeting Notes and Agenda URL when available
     contact:
       slack: C08KBH3RA1K
       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure
@@ -273,6 +275,7 @@ tags: # Technical Advisory Groups
       - description: TAG Operational Resilience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list # Calendar link from PCC
         recordings_url: https://www.youtube.com/@TAGOperationalResilience
+        # meeting_notes_url: # TODO: add Meeting Notes and Agenda URL when available
     contact:
       slack: C08KGDENK34
       mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience
@@ -398,6 +401,7 @@ tags: # Technical Advisory Groups
       - description: TAG Security and Compliance Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGSecurityandCompliance
+        # meeting_notes_url: # TODO: add Meeting Notes and Agenda URL when available
     contact:
       slack: C08JZ9YLAA3
       mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance
@@ -538,6 +542,7 @@ tags: # Technical Advisory Groups
       - description: TAG Workloads Foundation Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGWorkloadsFoundation
+        meeting_notes_url: https://notes.cncf.io/s/1aNdplhtl
     contact:
       slack: C08K71W9HAS
       mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation
