@@ -44,7 +44,7 @@ Security reviewers:
 
 ## Overview
 
-K3s is a lightweight and [fully certified](#appendix) Kubernetes distribution that prioritizes a minimal footprint and simplified operations, while offering lightweight default implementations of pluggable components such as LoadBalancer Services, Ingress, and Persistent Volumes. This design offers inherent advantages for resource-constrained or ephemeral environments.
+K3s is a lightweight and [CNCF certified](#appendix) Kubernetes distribution that prioritizes a minimal footprint and simplified operations, while offering lightweight default implementations of pluggable components such as LoadBalancer Services, Ingress, and Persistent Volumes. This design offers inherent advantages for resource-constrained or ephemeral environments.
 
 ### Background
 
