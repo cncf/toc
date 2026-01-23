@@ -36,7 +36,7 @@ TOC members rotate meeting facilitation as often as we can to ensure the TOC Cha
 
 In the course of performing our duties, TOC members are expected to:
 
-* Lead or meaningfully contribute to at least 3 or more Project Due Diligence per year that is brought to TOC internal review status. The TOC Chair or Vice Chair (with support of Staff) will determine if the DD brought forward meets the TOC's DD criteria above and beyond the technical review by the TOC.
+* Lead or meaningfully contribute to at least three Project Due Diligence per year that is brought to TOC internal review status. The TOC Chair or Vice Chair (with support from CNCF Staff) will determine if the DD brought forward meets the TOC's DD criteria above and beyond the technical review by the TOC.
     * Some Due Diligence efforts may result in the TOC internal review stating the project is not ready after adopter interviews, these are still considered as meeting this expectation as determined by the Chair or Vice Chair. 
     * Lightweight reviews/triage of DD applications, while also required, do not meet the expectations of leading or participating in a Project DD.
 * Be available to field questions and concerns from community members and redirect as needed
