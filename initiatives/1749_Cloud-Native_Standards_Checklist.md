@@ -2,7 +2,7 @@
 
 This paper aligns to the definition of Containerization of Agentic AI as: 
 
-**A microservice based application which can consist of one or more containers. Performing standalone or collaborative (distributed) function through the interaction with at least one entity (container) or quorum, accessing AI or Machine Learning capabilities. To perform tasks based upon the reasoning and execution of actions within event based systems triggered or reacted upon via signals. Key attributes include the ability to perform system and/or user tasks autonomously, in conjunction with the ability to plan and control the continuation of execution or completion”**
+**A microservice based application which can consist of one or more containers based upon defined system architectual requirements. Performing standalone or collaborative (distributed) function through the interaction with at least one entity (container) or quorum, accessing AI or Machine Learning capabilities. To perform tasks based upon the reasoning and execution of actions within event based systems triggered or reacted upon via signals. Key attributes include the ability to perform system and/or user tasks autonomously, in conjunction with the ability to plan and control the continuation of execution or completion”**
 
 Overview
 
@@ -43,10 +43,10 @@ General best practices include: **Security**, which covers minimizing attack sur
 **Observability**
 
 - [ ] Use a standard observability stack (MELT). Consolidating metrics, logs, and traces to ensure viable explainability and achievable debugability of the system.   
-- [ ] Incorporate network observability by collecting flow logs for security, performance monitoring, and troubleshooting.  
-- [ ] Monitor resource-specific metrics  
+- [ ] Incorporate network observability by collecting flow logs for security, performance monitoring, and troubleshooting.
+- [ ] Monitor resource-specific metrics and relevant network metrics for system robustness on the data path between key components
 - [ ] Disk Usage: Monitor disk usage on nodes and persistent volumes to prevent outages caused by storage exhaustion.  
-- [ ] CPU / GPU: Monitor usage at the node and container level to detect bottlenecks  
+- [ ] CPU / GPU: Monitor usage at the node and container level to detect bottlenecks, and prepare for potential In-Place pods resizing overhead
 - [ ] Monitor control plane and node health in the cluster.  
 - [ ] Instrument workloads with relevant metrics and expose application-level and business-critical metrics in addition to system-level metrics.  
 - [ ] Set up alerting based on SLOs/SLA thresholds.  
