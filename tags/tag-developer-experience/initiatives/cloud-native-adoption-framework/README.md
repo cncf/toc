@@ -6,7 +6,7 @@ A developer centric framework to assess, improve, and scale Cloud Native adoptio
 
 ## Initiative description
 
-Improving Developer Experience (DevX) in Cloud Native environments requires more than individual tools, it requires a shared understanding of how developers work, where friction exists, and how to iterate toward better workflows using CNCF projects.
+Improving Developer Experience (DevEX) in Cloud Native environments requires more than individual tools, it requires a shared understanding of how developers work, where friction exists, and how to iterate toward better workflows using CNCF projects.
 
 This initiative aims to map the modern Cloud Native developer workflow and use it as a foundation for:
 • DevX maturity assessments across organizations

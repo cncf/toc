@@ -6,7 +6,7 @@ This initiative collects and analyzes real-world success stories from CNCF proje
 
 ## Initiative description
 
-CNCF projects must adopt strong security practices while allowing for a smooth developer experience. This initiative aims to understand both sides of that spectrum. It will identify and document success stories from CNCF projects that have effectively followed TAG Security’s best practices and uncover the pain points and friction that contributors experience when attempting to adopt similar practices.
+CNCF projects must adopt strong security practices while allowing for a smooth developer experience. This initiative aims to understand both sides of that spectrum. It will identify and document success stories from CNCF projects that have effectively followed TAG Security and Compliance’s best practices and uncover the pain points and friction that contributors experience when attempting to adopt similar practices.
 
 Rather than proposing a new framework, the initiative emphasizes learning from what already works—and understanding what doesn’t. It will surface:
 
