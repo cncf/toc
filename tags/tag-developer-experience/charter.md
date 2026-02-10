@@ -10,16 +10,16 @@ We explore and guide on:
 * Engaging with CNCF project maintainers to improve the developer experience and advise on features with the good impact.
 * Cloud Native application excellence
 * Inner/outer loop best practices
-* Observability and debugging from a developer’s perspective
+* Debugging with a focus on the end-user experience and application system observability
 * Usability, DevEx research, and DevEx metrics across CNCF projects
-* Developer Experience related to emerging technologies and practices, such as Artificial Intelligence (AI)
+* Developer Experience related to emerging technologies and practices, such as Agentic AI, Serverless 
 
 Our work involves identifying gaps, promoting best practices, and supporting CNCF projects and communities to enhance the productivity and satisfaction of developers working with cloud native technologies. We aim to bridge tools, platforms, and practices to create a cohesive and frictionless developer experience across the cloud native ecosystem.
 
 More specifically, we:
 
 * Provide guidance and thought leadership on improving developer workflows and experience in cloud native application development
-* Collaborate with TAG Security to improve the developer experience of integrating security considerations into the developer workflow
+* Collaborate with TAG Security and TAG Operational Resilience to improve the developer experience of integrating security considerations into the developer workflow
 * Collaborate with CNCF projects to surface and resolve developer experience challenges
 * Facilitate interoperability and standardization across developer tools in the CNCF ecosystem
 * Act as a bridge, empowering developers and project maintainers by improving the user experience through clear communication of feedback and specific technical guidance back to the projects
@@ -29,11 +29,11 @@ More specifically, we:
 * Prescriptive mandates on tooling choices or project roadmaps
 * Evaluating or endorsing specific commercial developer tools outside of CNCF projects
 * Replacing or duplicating efforts by other TAGs unless explicitly partnered
-* Any end-user directed activities and initiatives
+* Any end-user directed activities and initiatives (e.g, Influence on Project Roadmaps)
 
 # Goals
 
-* Develop shared vocabulary, metrics, and frameworks to evaluate DevEx
+* Develop shared vocabulary, milestones, and frameworks to evaluate DevEx
 * Provide a central forum within the CNCF for discussing developer experience
 * Help CNCF projects better understand and serve developer needs
 * Publish guidance and reference materials for effective developer workflows
@@ -66,3 +66,6 @@ Everyone is welcome to join TAG: DevEx. Our work is public and community-driven.
 * Propose topics, contribute to documents, or join a subgroup on Slack: https://cloud-native.slack.com/archives/C08KGCXB458
 
 For more details, visit our GitHub repository and calendar of meetings.
+
+* GitHub repository: https://github.com/cncf/toc/tree/main/tags/tag-developer-experience
+* Calendar of meetings: https://www.cncf.io/calendar/
