@@ -1,0 +1,234 @@
+name: Create Tech Review Issue
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  create-tech-review:
+    if: github.event.label.name == 'review/tech'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Extract issue information and create tech review
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            // --- Constants ---
+            const FIELD_LABELS = {
+              name: [
+                'Project name', 'Name', 'name', 'project name', 'project-name', 'subproject-name', 'Project Name', 'Subproject Name'
+              ],
+              projectLink: [
+                'Project Repo(s)', 'Project Repo', 'Project link', 'project-link', 'project link', 'github-url', 'GitHub URL', 'Project link', 'Project Site'
+              ],
+              ddLink: [
+                'Due diligence link', 'dd-link', 'due diligence link', 'Due diligence', 'Due diligence link'
+              ],
+              projectContact: [
+                'Project points of contacts', 'Project points of contact', 'Project contact', 'project-contact', 'project contact', 'Project contact information', 'Project Security Contacts', 'Communication'
+              ],
+              additionalInfo: [
+                'Additional information', 'additional-information', 'additional information', 'Additional Information', 'Additional information'
+              ]
+            };
+
+            const LABELS_TECH_REVIEW = [
+              'needs-triage', 'kind/initiative', 'review/tech', 'sub/project-review'
+            ];
+
+            const COMMENT_MARKERS = {
+              techReviewCreated: 'Created tech review issue:',
+              techReviewExists: 'tech review issue already exists',
+              missingProjectName: 'Could not extract project name',
+              missingProjectLink: 'Could not extract project link',
+              createTechReviewFailed: 'Failed to create tech review issue'
+            };
+
+            // --- Helper Functions ---
+            async function hasExistingComment(issueNumber, marker) {
+              try {
+                const comments = await github.paginate(github.rest.issues.listComments, {
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                });
+                return comments.some(comment =>
+                  comment.user.type === 'Bot' &&
+                  comment.body.includes(marker)
+                );
+              } catch (error) {
+                console.log('⚠️  Error checking for existing comments:', error.message);
+                return false;
+              }
+            }
+
+            async function commentOnce(issueNumber, marker, body) {
+              if (!(await hasExistingComment(issueNumber, marker))) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  body
+                });
+              }
+            }
+
+            function extractFormField(body, fieldKey) {
+              if (!body) return null;
+              const labels = FIELD_LABELS[fieldKey] || [fieldKey];
+              
+              // First try GitHub template format: ### Field Label\n\nvalue
+              for (const label of labels) {
+                const escapedLabel = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const templatePattern = new RegExp(
+                  `###\\s+${escapedLabel}[^\\n]*\\n\\n([\\s\\S]*?)(?=\\n###|$)`,
+                  'i'
+                );
+                const templateMatch = body.match(templatePattern);
+                if (templateMatch && templateMatch[1] && templateMatch[1].trim().length > 0) {
+                  return templateMatch[1].trim();
+                }
+              }
+              
+              // Fallback: Try plain text format: Field Label: value
+              for (const label of labels) {
+                const escapedLabel = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                // Match "Field Label:" or "Field Label" followed by colon and value
+                const plainPattern = new RegExp(
+                  `^${escapedLabel}\\s*:?\\s+(.+)$`,
+                  'im'
+                );
+                const plainMatch = body.match(plainPattern);
+                if (plainMatch && plainMatch[1] && plainMatch[1].trim().length > 0) {
+                  // Extract value, stopping at newline or end
+                  const value = plainMatch[1].trim().split(/\n/)[0].trim();
+                  if (value.length > 0) {
+                    return value;
+                  }
+                }
+              }
+              
+              return null;
+            }
+
+            function normalize(str) {
+              return (str || '').trim().toLowerCase();
+            }
+
+            // --- Main Logic ---
+            const issue = context.payload.issue;
+            const issueNumber = issue.number;
+            const issueBody = issue.body;
+
+            console.log(`🔍 Processing issue #${issueNumber}`);
+            console.log(`📄 Issue body length: ${issueBody ? issueBody.length : 0}`);
+
+            // Extract fields
+            const projectName = extractFormField(issueBody, 'name');
+            const projectLink = extractFormField(issueBody, 'projectLink');
+            const ddLink = extractFormField(issueBody, 'ddLink');
+            const projectContact = extractFormField(issueBody, 'projectContact');
+            const additionalInfo = extractFormField(issueBody, 'additionalInfo');
+
+            console.log(`📋 Extracted fields:
+              projectName: ${projectName || 'NOT FOUND'}
+              projectLink: ${projectLink || 'NOT FOUND'}
+              ddLink: ${ddLink || 'NOT FOUND'}
+              projectContact: ${projectContact || 'NOT FOUND'}
+              additionalInfo: ${additionalInfo ? 'FOUND' : 'NOT FOUND'}
+            `);
+
+            // Validate required fields
+            if (!projectName) {
+              console.log('❌ Missing project name - commenting and exiting');
+              await commentOnce(issueNumber, COMMENT_MARKERS.missingProjectName,
+                `❌ Could not extract project name from issue body. Please ensure the issue was created from a template with a "Project name" field.`);
+              return;
+            }
+            if (!projectLink) {
+              console.log('❌ Missing project link - commenting and exiting');
+              await commentOnce(issueNumber, COMMENT_MARKERS.missingProjectLink,
+                `❌ Could not extract project link from issue body. Please ensure the issue contains a "Project link" or "GitHub URL" field.`);
+              return;
+            }
+
+            const normalizedProjectName = projectName.trim();
+            const projectNameLower = normalize(projectName);
+
+            // Check if tech review already created for this issue
+            const hasExistingCommentCheck = await hasExistingComment(issueNumber, COMMENT_MARKERS.techReviewCreated);
+            console.log(`🔍 Checked for existing comment: ${hasExistingCommentCheck}`);
+            if (hasExistingCommentCheck) {
+              console.log('ℹ️  Tech review issue already created for this issue - exiting');
+              return;
+            }
+
+            // Check for existing tech review issues for this project
+            let existingIssue = null;
+            try {
+              const allIssues = await github.paginate(github.rest.issues.listForRepo, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'all',
+                labels: 'review/tech',
+                per_page: 100
+              });
+
+              existingIssue = allIssues.find(item => {
+                if (item.number === issueNumber) return false;
+                if (!item.title.includes('[Tech Review]:')) return false;
+                const existingProjectName = extractFormField(item.body, 'name');
+                if (normalize(existingProjectName) === projectNameLower) return true;
+                // Fallback: check title for exact word match
+                const titleLower = item.title.toLowerCase();
+                const projectNameRegex = new RegExp(`\\b${projectNameLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+                return projectNameRegex.test(titleLower);
+              });
+
+              if (existingIssue) {
+                console.log(`ℹ️  Found existing tech review issue #${existingIssue.number} - commenting and exiting`);
+                await commentOnce(issueNumber, COMMENT_MARKERS.techReviewExists,
+                  `A tech review issue already exists for this project: [#${existingIssue.number} - ${existingIssue.title}](${existingIssue.html_url})`);
+                return;
+              } else {
+                console.log('✅ No existing tech review issue found - proceeding to create');
+              }
+            } catch (error) {
+              console.log('⚠️  Error checking for existing issues:', error.message);
+            }
+
+            // Build tech review issue body
+            let issueBodyContent = `### Project name\n\n${normalizedProjectName}\n\n`;
+            issueBodyContent += `### Project link\n\n${projectLink}\n\n`;
+            issueBodyContent += `### Due diligence link\n\n${ddLink || ''}\n\n`;
+            issueBodyContent += `### Project contact information\n\n${projectContact || 'To be provided'}\n\n`;
+            issueBodyContent += `### Additional information\n\n${additionalInfo || ''}\n\n`;
+            const originalIssueUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${issueNumber}`;
+            issueBodyContent += `---\n\n_This issue was automatically created from [issue #${issueNumber}](${originalIssueUrl})_`;
+
+            // Create tech review issue
+            console.log(`🚀 Attempting to create tech review issue for: ${normalizedProjectName}`);
+            try {
+              const newIssue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `[Tech Review]: ${normalizedProjectName}`,
+                body: issueBodyContent,
+                labels: LABELS_TECH_REVIEW
+              });
+
+              console.log(`✅ Successfully created issue #${newIssue.data.number}`);
+              await commentOnce(issueNumber, COMMENT_MARKERS.techReviewCreated,
+                `✅ Created tech review issue: [#${newIssue.data.number} - ${newIssue.data.title}](${newIssue.data.html_url})`);
+            } catch (error) {
+              console.error(`❌ Error creating issue: ${error.message}`);
+              console.error(`❌ Error stack: ${error.stack}`);
+              await commentOnce(issueNumber, COMMENT_MARKERS.createTechReviewFailed,
+                `❌ Failed to create tech review issue: ${error.message}`);
+              throw error;
+            }

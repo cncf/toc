@@ -1,0 +1,247 @@
+<!--
+Issue: https://github.com/cncf/toc/issues/1988
+Submission: https://github.com/cncf/toc/issues/1967
+-->
+
+# General Technical Review - Kyverno / Graduation
+
+- **Project:** Kyverno
+- **Review target:** CNCF Graduation (application: [cncf/toc#1967](https://github.com/cncf/toc/issues/1967))
+- **Project version (review basis):** Kyverno docs currently published for **v1.16.0** 
+- **Website:** https://kyverno.io
+- **Date Updated:** 2026-02-02
+- **Template Version:** v1.0
+- **Description:** Kyverno is a Kubernetes-native policy engine that applies policies at admission time and via background processing (validation, mutation, generation, image verification, reporting, cleanup).
+
+This is a living technical review draft based on publicly available sources (docs, repos, and the Graduation application issue). Any gaps are marked as **TODO** for follow-up.
+
+---
+
+## Day 0 - Planning Phase
+
+### Scope
+
+- **Roadmap / planning process**
+  - Primary planning artifacts appear to be maintained in GitHub with design proposals (KDPs) and release notes.
+  - Regular community cadence is documented via community meeting notes/schedule.
+
+- **Target personas / how they use Kyverno**
+  - Platform engineers / cluster operators author and apply policies as YAML CRDs, typically via GitOps.
+  - Security and compliance teams consume outcomes via policy reports and higher-level UIs (notably Policy Reporter).
+
+- **Primary and additional use cases**
+  - Primary: enforce and validate Kubernetes policy at admission (and optionally audit in background).
+  - Additional: reporting and UI integrations through **Policy Reporter (Stable)** and a **Backstage plugin (Beta)**.
+
+- **Unsupported / out-of-scope use cases**
+  - Kyverno is not a general-purpose “run policies on arbitrary JSON anywhere” solution in core; the out-of-cluster JSON mode is a **deprecated** subproject (**Kyverno JSON**).
+  - TODO: confirm the project’s explicit “non-goals” list (if any) beyond subproject statements.
+
+- **Intended organizations**
+  - Any Kubernetes adopters wanting policy-as-code (security posture, best-practice enforcement, compliance controls), including regulated industries. The sample policy library targets broad real-world use.
+
+- **End user research**
+  - TODO: request links to formal UX/user research reports, surveys, or adopter interviews (if maintained publicly or shareable).
+
+### Usability
+
+- **Interaction model**
+  - Users interact via Kubernetes CRDs (policies) and standard tooling (kubectl/GitOps). Policy testing is supported via CLI-based workflows.
+  - Kyverno dynamically manages admission webhooks based on installed policies; policy shape affects runtime cost and webhook behavior.
+
+- **UX / UI**
+  - Core UX is “Kubernetes-native” (YAML + CI testing + GitOps). UI is mostly via add-ons like **Policy Reporter (Stable)** and its ecosystem integrations.
+
+- **Production integration**
+  - Integrates with cluster lifecycle tooling via Helm/YAML install, policy libraries, and observability backends via Prometheus/OpenTelemetry.
+
+### Design
+
+- **Design principles**
+  - Kubernetes-native CRDs + controllers; policy-as-code with admission control and background reconciliation patterns.
+
+- **Architecture expectations by environment**
+  - PoC/dev: single replica and minimal policies can be sufficient.
+  - Production: requires performance sizing around policy match scope and admission volume; wildcard matching policies can dramatically increase load.
+  - HA: multiple replicas and controller-specific scaling patterns are documented.
+
+- **In-cluster dependencies**
+  - Requires the Kubernetes API server (admission requests + CRDs) and etcd storage for Kyverno-managed resources (including reports). No external database is required by default.
+  - Some features may call external services (for example, image verification against registries and transparency logs), depending on user configuration.
+
+- **Identity & Access Management**
+  - Uses Kubernetes RBAC (service accounts/roles) for controller access. The project has reduced overly broad wildcard RBAC defaults in prior upgrades (documented as breaking/security-related change).
+
+- **Sovereignty**
+  - Default posture is “in-cluster control plane component” with no required SaaS dependency; outbound calls are feature/config-dependent (example: image verification).
+
+- **Compliance considerations**
+  - Kyverno is a mechanism to implement compliance controls; sample policies demonstrate common best-practice/compliance patterns.
+
+- **High availability**
+  - HA guidance covers controller replica strategies and operational requirements.
+
+- **Resource and storage requirements**
+  - Resource needs depend strongly on policy match scope and admission volume; wildcard policies and broad matches can create high CPU/latency pressure.
+  - Policy reports can increase etcd footprint; scaling guidance includes report controller scale testing and etcd size impacts.
+
+- **API design and release process**
+  - Kyverno extends Kubernetes via CRDs and supports versioned releases with documented cadence and support expectations (including Kubernetes compatibility policy).
+  - TODO: capture a concise list of “core CRDs/APIs” and stability policy per API group (if there is a single authoritative page).
+
+### Installation
+
+- **How Kyverno is installed/initialized**
+  - Supported via Helm chart or manifests; installation creates controllers, CRDs, and admission webhooks.
+  - Default failure behavior has changed over time; docs note “fail closed” by default in newer Helm chart versions.
+
+- **How adopters validate installation**
+  - Verify deployments are ready and webhooks registered; apply a known-safe sample policy and confirm expected admission or reports.
+  - Policy behavior can be tested in CI using Kyverno CLI workflows.
+
+### Security
+
+- **Security self assessment**
+  - CNCF TAG-Security self-assessment is published. See: [Kyverno security self-assessment](https://tag-security.cncf.io/community/assessments/projects/kyverno/self-assessment/).
+
+- **Security posture vs. cloud native tenets**
+  - Kyverno is a control-plane admission component that leans on Kubernetes identity (RBAC) and declarative configuration; security controls depend on policy definitions and operational defaults.
+
+- **Security defaults and how to change them**
+  - Installation docs highlight failure-policy behaviors and operational tradeoffs; operators can tune these via chart/config settings.
+  - Prior upgrades document security-driven default changes (example: policy exceptions namespace scoping).
+
+- **Security hygiene (process + evidence)**
+  - Published security documentation includes SBOM guidance and supply chain verification details.
+  - Third-party security audits are referenced on Kyverno’s security docs and in the Graduation application.
+  - Kyverno also documents SLSA-focused build provenance work publicly.
+
+- **Threat modeling and minimal privileges**
+  - RBAC guidance and changes suggest active review of privilege minimization over time.
+  - TODO: request a consolidated threat model (or pointer to one) if maintained outside the self-assessment.
+
+- **Certificate rotation**
+  - TODO: link the definitive doc section describing webhook cert issuance/rotation and operational guidance (if separate from general docs).
+
+- **Secure software supply chain**
+  - Kyverno security docs describe signatures and SBOM publication per release.
+  - Public artifacts and provenance efforts are described in SLSA materials.
+
+## Day 1 - Installation and Deployment Phase
+
+### Project Installation and Configuration
+
+- Typical deployment is a Helm release with configurable replicas/resources; policy management is through CRDs and GitOps workflows.
+- Configuration must be sized to workload: broad policy matches can increase admission traffic and controller load.
+
+### Project Enablement and Rollback
+
+- Enablement is primarily “install Kyverno + apply policies”; disablement is “remove policies and/or uninstall Kyverno.”
+- Uninstall guidance exists and includes cleanup considerations (webhooks, CRDs).
+- TODO: clarify recommended “temporary disable” patterns for production incidents (for example, scale to zero vs. change failure behavior vs. selective policy disable).
+
+### Rollout, Upgrade and Rollback Planning
+
+- **Compatibility and cadence**
+  - Kyverno documents Kubernetes compatibility expectations (N-2 style policy) and release process guidance.
+- **Upgrades**
+  - Upgrades require more than image tag bumps due to CRD/resource changes; documentation emphasizes reading release notes and outlines Helm/YAML upgrade patterns.
+- **Rollback**
+  - Helm rollback should work for many cases, but CRD changes can be a hard constraint; operators need clear downgrade guidance per release.
+  - TODO: request explicit “supported downgrade matrix” and a tested upgrade→downgrade→upgrade story across recent minors.
+- **How rollout/rollback can fail**
+  - Primary operational risks: admission webhook timeouts/latency and failure-policy tradeoffs; troubleshooting guidance exists.
+- **Rollback metrics**
+  - Admission latency and request volume metrics are available; operators can monitor these plus controller errors/drops.
+- **Alpha/beta capabilities**
+  - Subprojects have clear maturity markers: **Authz Server (Alpha)**, **Chainsaw (Beta)**, **Policy Reporter (Stable)**, **Backstage plugin (Beta)**, **Kyverno JSON (Deprecated)**.
+
+## Day 2 - Day-to-Day Operations Phase
+
+### Scalability/Reliability
+
+- Scaling is explicitly documented as both vertical and horizontal; workload and policy design are the main drivers of resource use.
+- Kyverno provides load-testing assets and shares scale test methodology/results (k6-based).
+- Reliability depends on admission path behavior and failure settings; “fail closed” defaults and tuning are described in install docs.
+- TODO: capture formal SLOs/SLIs (if the project has published targets) and map them to existing metrics.
+
+### Observability Requirements
+
+- Metrics: extensive Prometheus metrics are documented, and a Grafana dashboard is provided.
+- Tracing: OpenTelemetry support and tracing docs/tutorials are available.
+- Logs: operators rely on controller logs plus Kubernetes events/reports; troubleshooting guidance is provided.
+- Determining “in use” and “working”
+  - Monitor admission request counts/latency plus policy execution metrics; validate expected PolicyReport/ClusterPolicyReport outcomes (via ecosystem tools like Policy Reporter).
+- TODO: document recommended alerting thresholds (latency/error/drops) and provide reference dashboards/runbooks.
+
+### Dependencies
+
+- In-cluster hard dependency: Kubernetes API server + etcd (CRDs, webhooks, report objects).
+- Supply chain dependencies: SBOMs are published per release; provenance/signing practices are documented.
+- TODO: document dependency lifecycle/SCA workflow end-to-end (tooling, tracking, SLAs for vulnerability remediation) beyond SBOM publication.
+
+### Troubleshooting
+
+- Operational troubleshooting guides exist (timeouts, webhook issues, controller behavior).
+- Recovery behavior is tightly coupled to admission webhook settings and controller availability.
+  - TODO: summarize “safe-mode” recommendations for production incidents (preferred steps, expected blast radius) from maintainer guidance.
+
+### Compliance
+
+- Licensing/attribution baseline: project is open source with published artifacts and SBOMs per release.
+- TODO: provide explicit process for third-party notices in source and in distributed artifacts (and how it aligns with CNCF attribution guidance).
+
+### Security
+
+- Access control relies on Kubernetes RBAC; privilege reduction is reflected in upgrade notes.
+- Security reporting / response processes should be anchored in SECURITY.md and community governance.
+  - TODO: link the current security response process (reporting, triage, rotation) and evidence of diverse representation in the response team.
+
+## Key risks / open questions
+
+- **Downgrade clarity:** CRD evolution can block rollbacks
+    - TODO: need explicit downgrade support policy and tested paths.
+- **Operational targets:** SLOs/SLIs and recommended alert thresholds are not clearly consolidated in docs. 
+    - TODO: request published targets and runbooks.
+- **Dependency/SCA lifecycle:** beyond SBOM publication, document how SCA is tracked and acted on. 
+    - TODO: request process details
+- **End user research:** 
+    - TODO: request adopters list, surveys, or UX research artifacts supporting usability claims.
+- **Incident “safe mode”:** 
+    - TODO: confirm best-practice steps for temporarily reducing admission impact (without creating unsafe gaps).
+
+---
+
+## References
+
+[cncf-toc-1967](https://github.com/cncf/toc/issues/1967)
+[kyverno-site](https://kyverno.io/)
+[kyverno-docs](https://kyverno.io/docs/)
+[kyverno-install](https://kyverno.io/docs/installation/)
+[kyverno-ha](https://kyverno.io/docs/high-availability/)
+[kyverno-scaling](https://kyverno.io/docs/installation/scaling/)
+[kyverno-upgrading](https://kyverno.io/docs/installation/upgrading/)
+[kyverno-uninstall](https://kyverno.io/docs/installation/uninstallation/)
+[kyverno-troubleshooting](https://kyverno.io/docs/troubleshooting/)
+[kyverno-releases](https://kyverno.io/docs/releases/)
+[kyverno-grafana](https://kyverno.io/docs/monitoring/bonus-grafana-dashboard/)
+[kyverno-otel](https://kyverno.io/docs/monitoring/opentelemetry/)
+[kyverno-tracing](https://kyverno.io/docs/tracing/)
+[kyverno-security](https://kyverno.io/docs/security/)
+[kyverno-self-assessment](https://tag-security.cncf.io/community/assessments/projects/kyverno/self-assessment/)
+[kyverno-testing](https://kyverno.io/docs/testing-policies/)
+[kyverno-policies](https://kyverno.io/policies/)
+[kyverno-policies-repo](https://github.com/kyverno/policies)
+[kyverno-load-testing](https://github.com/kyverno/load-testing)
+[kyverno-kdp](https://github.com/kyverno/KDP)
+[kyverno-community-meetings](https://github.com/kyverno/community/blob/main/MEETINGS.md)
+
+[subproject-json](https://kyverno.io/docs/subprojects/kyverno-json/)
+[subproject-authz](https://kyverno.io/docs/subprojects/kyverno-authz/)
+[subproject-chainsaw](https://kyverno.io/docs/subprojects/kyverno-chainsaw/)
+[subproject-policy-reporter](https://kyverno.io/docs/subprojects/kyverno-policy-reporter/)
+[subproject-backstage](https://kyverno.io/docs/subprojects/backstage-plugin/)
+
+[audit-blog](https://main.kyverno.io/blog/kyverno-completes-a-comprehensive-third-party-security-audit/)
+[fuzz-blog](https://main.kyverno.io/blog/kyverno-completes-fuzzing-security-audit/)
+[slsa-blog](https://main.kyverno.io/blog/kyverno-and-slsa-3/)

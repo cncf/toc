@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 	"text/template"
 
 	"gopkg.in/yaml.v2"
@@ -13,8 +14,9 @@ import (
 
 // Subproject struct to hold subproject data.
 type Subproject struct {
-	Name    string  `yaml:"name"`
-	Contact Contact `yaml:"contact"`
+	Name             string  `yaml:"name"`
+	MissionStatement string  `yaml:"mission_statement,omitempty"`
+	Contact          Contact `yaml:"contact"`
 }
 
 // Term struct to hold start and end dates.
@@ -40,9 +42,10 @@ type Leadership struct {
 
 // Meeting struct to hold meeting data.
 type Meeting struct {
-	Description   string `yaml:"description"`
-	RecordingsURL string `yaml:"recordings_url"`
-	TagCalendar   string `yaml:"tag_calendar,omitempty"`
+	Description     string `yaml:"description"`
+	RecordingsURL   string `yaml:"recordings_url"`
+	TagCalendar     string `yaml:"tag_calendar,omitempty"`
+	MeetingNotesURL string `yaml:"meeting_notes_url,omitempty"`
 }
 
 // Contact struct to hold contact information.
@@ -61,20 +64,24 @@ type Tag struct {
 	Meetings         []Meeting    `yaml:"meetings"`
 	Contact          Contact      `yaml:"contact"`
 	TagSubprojects   []Subproject `yaml:"tag_subprojects"`
-	CharterLink      string       `yaml:"charter_link"`
 	TagInitiatives   string       `yaml:"tag_initiatives"`
+	// The following are all generated, and the fields in the YAML file are ignored.
+	CharterLink string `yaml:"charter_link"`
+	TagLabel    string `yaml:"tag_label"`
 }
 
 // TOCSubproject struct to hold TOC subproject data, including CharterLink.
 type TOCSubproject struct {
-	Dir                   string     `yaml:"dir"`
-	Name                  string     `yaml:"name"`
-	MissionStatement      string     `yaml:"mission_statement"`
-	Leadership            Leadership `yaml:"leadership"`
-	Meetings              []Meeting  `yaml:"meetings"`
-	Contact               Contact    `yaml:"contact"`
-	CharterLink           string     `yaml:"charter_link"`
-	SubprojectInitiatives string     `yaml:"subproject_initiatives"`
+	Dir              string     `yaml:"dir"`
+	Name             string     `yaml:"name"`
+	MissionStatement string     `yaml:"mission_statement"`
+	Leadership       Leadership `yaml:"leadership"`
+	Meetings         []Meeting  `yaml:"meetings"`
+	Contact          Contact    `yaml:"contact"`
+	// The following are all generated, and the fields in the YAML file are ignored.
+	CharterLink           string `yaml:"charter_link"`
+	SubprojectInitiatives string `yaml:"subproject_initiatives"`
+	SubprojectLabel       string `yaml:"subproject_label"`
 }
 
 // Config struct to hold the entire configuration.
@@ -136,21 +143,27 @@ func main() {
 			log.Fatalf("Failed to create folder for tag %s: %v", tag.Name, err)
 		}
 
+		charterPath := filepath.Join(tagFolderPath, "charter.md")
+		if _, err := os.Stat(charterPath); os.IsNotExist(err) {
+			if err := os.WriteFile(charterPath, []byte("Charter content here"), 0o644); err != nil {
+				log.Fatalf("Failed to write %s: %v", charterPath, err)
+			}
+		}
+		// Autofill template fields that should be invariant.
+		tag.CharterLink = charterPath
+		// TagLabel is the part of the label after the "tag/" prefix.
+		tag.TagLabel = strings.ReplaceAll(
+			strings.TrimSpace(
+				strings.TrimPrefix(strings.ToLower(tag.Name), "tag")), " ", "-")
+
 		var tagBuf bytes.Buffer
 		if err := tagTmpl.Execute(&tagBuf, tag); err != nil {
 			log.Fatalf("Tag template execution failed: %v", err)
 		}
 
 		tagFilePath := filepath.Join(tagFolderPath, "README.md")
-		if err := os.WriteFile(tagFilePath, tagBuf.Bytes(), 0644); err != nil {
+		if err := os.WriteFile(tagFilePath, tagBuf.Bytes(), 0o644); err != nil {
 			log.Fatalf("Failed to write %s: %v", tagFilePath, err)
-		}
-		// create charter.md
-		if tag.CharterLink != "" {
-			charterPath := filepath.Join(tagFolderPath, "charter.md")
-			if err := os.WriteFile(charterPath, []byte("Charter content here"), 0644); err != nil {
-				log.Fatalf("Failed to write %s: %v", charterPath, err)
-			}
 		}
 	}
 
@@ -161,21 +174,27 @@ func main() {
 			log.Fatalf("Failed to create folder for TOC subproject %s: %v", tocSubproject.Name, err)
 		}
 
+		charterPath := filepath.Join(tocSubprojectFolderPath, "charter.md")
+		if _, err := os.Stat(charterPath); os.IsNotExist(err) {
+			if err := os.WriteFile(charterPath, []byte("Charter content here"), 0o644); err != nil {
+				log.Fatalf("Failed to write %s: %v", charterPath, err)
+			}
+		}
+		// Autofill template fields that should be invariant.
+		tocSubproject.CharterLink = charterPath
+		// SubprojectLabel is the part of the label after the "sub/" prefix.
+		tocSubproject.SubprojectLabel = strings.ReplaceAll(
+			strings.TrimSpace(
+				strings.TrimSuffix(strings.ToLower(tocSubproject.Name), "subproject")), " ", "-")
+
 		var tocBuf bytes.Buffer
 		if err := tocTmpl.Execute(&tocBuf, tocSubproject); err != nil {
 			log.Fatalf("TOC template execution failed: %v", err)
 		}
 
 		tocReadmePath := filepath.Join(tocSubprojectFolderPath, "README.md")
-		if err := os.WriteFile(tocReadmePath, tocBuf.Bytes(), 0644); err != nil {
+		if err := os.WriteFile(tocReadmePath, tocBuf.Bytes(), 0o644); err != nil {
 			log.Fatalf("Failed to write %s: %v", tocReadmePath, err)
-		}
-		//Create charter.md
-		if tocSubproject.CharterLink != "" {
-			charterPath := filepath.Join(tocSubprojectFolderPath, "charter.md")
-			if err := os.WriteFile(charterPath, []byte("Charter content here"), 0644); err != nil {
-				log.Fatalf("Failed to write %s: %v", charterPath, err)
-			}
 		}
 	}
 
@@ -184,8 +203,8 @@ func main() {
 
 // ensureDir ensures the directory exists.
 func ensureDir(dirPath string) error {
-	if err := os.MkdirAll(dirPath, 0755); err != nil {
-		return fmt.Errorf("failed to create directory %s: %v", dirPath, err)
+	if err := os.MkdirAll(dirPath, 0o755); err != nil {
+		return fmt.Errorf("failed to create directory %s: %w", dirPath, err)
 	}
 	return nil
 }

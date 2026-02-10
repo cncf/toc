@@ -1,5 +1,7 @@
 # {{.Name}}
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 {{.MissionStatement}}
 
@@ -25,6 +27,7 @@
 - **{{.Description}}**: 
   {{- if .TagCalendar }} [Calendar]({{.TagCalendar}}) {{- end }}
   {{- if .RecordingsURL }} | [Recordings]({{.RecordingsURL}}) {{- end }}
+  {{- if .MeetingNotesURL }} | [Meeting Notes and Agenda]({{.MeetingNotesURL}}) {{- end }}
 {{- end }}
 
 ## Contact
@@ -36,7 +39,11 @@
 
 ## Subprojects
 {{- range .TagSubprojects }}
-- **{{.Name}}**: [Mailing List]({{.Contact.MailingList}})
+### {{.Name}}
+{{- if .MissionStatement }}
+{{.MissionStatement}}
+{{- end }}
+- [Mailing List]({{.Contact.MailingList}})
 {{- end }}
 
 {{- if .Leadership.SubprojectLeads }}

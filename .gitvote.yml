@@ -1,13 +1,16 @@
+audit:
+  enabled: true
 profiles:
   default:
     duration: 26w
     pass_threshold: 66
-    periodic_status_check: "1 week"
+    periodic_status_check: "1 day"
     allowed_voters:
       teams:
         - cncf-toc-voters
       exclude_team_maintainers: true
     close_on_passing: true
+    close_on_passing_min_wait: "2 days"
     announcements:
       discussions:
         category: announcements
@@ -19,4 +22,3 @@ profiles:
         - cncf-toc-voters
       exclude_team_maintainers: true
     close_on_passing: true
-

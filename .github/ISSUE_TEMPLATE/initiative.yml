@@ -2,6 +2,8 @@ name: 'Initative'
 description: Initiative request form
 title: '[Initiative]:'
 labels:
+  - needs-triage
+  - needs-group
   - kind/initiative
 body:
   - type: input
@@ -75,3 +77,20 @@ body:
         considered "complete". NOTE: CAN be copied from previous description.
     validations:
       required: true
+  - type: input
+    id: initiative-notes
+    attributes:
+      label: Tracking document for meeting and progress
+      description: >-
+        Please provide the link to the meeting notes from
+        https://notes.cncf.io/ to track the project meetings and progress.
+      placeholder: https://notes.cncf.io/...
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: '**Initiative progress tracking board**'
+  - type: markdown
+    attributes:
+      value: >-
+        Please use the [Initiative Progress Tracking Board](https://github.com/orgs/cncf/projects/65/views/2) to track the progress of this initiative.

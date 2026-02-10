@@ -2,6 +2,8 @@ name: Leadership Nomination
 description: Nominate a TAG Chair, Technical Lead, or Subproject Lead
 title: "[VOTE]: "
 labels:
+- needs-triage
+- needs-group
 - kind/election
 - vote/nomination
 body:

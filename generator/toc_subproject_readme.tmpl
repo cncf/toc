@@ -1,5 +1,7 @@
 # {{.Name}}
 
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
 ## Mission Statement
 {{.MissionStatement}}
 
@@ -25,6 +27,7 @@
 - **{{.Description}}**: 
   {{- if .TagCalendar }} [Calendar]({{.TagCalendar}}) {{- end }}
   {{- if .RecordingsURL }} | [Recordings]({{.RecordingsURL}}) {{- end }}
+  {{- if .MeetingNotesURL }} | [Meeting Notes and Agenda]({{.MeetingNotesURL}}) {{- end }}
 {{- end }}
 
 ## Contact
@@ -41,7 +44,5 @@
 {{- end }}
 {{- end }}
 
-{{- if .SubprojectInitiatives }}
 ## Initiatives
-[{{.Name}} Initiatives]({{.SubprojectInitiatives}})
-{{- end }}
+[{{.Name}} Initiatives](https://github.com/cncf/toc/issues?q=is%3Aopen%20label%3Akind%2Finitiative%20label%3Asub%2F{{.SubprojectLabel}})

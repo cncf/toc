@@ -179,6 +179,15 @@ If this is the case for your project, please mark it as not-applicable (N/A) and
   * How does this project recover if a key component or feature becomes unavailable? e.g Kubernetes API server, etcd, database, leader node, etc.  
   * Describe the known failure modes.
 
+### Compliance
+
+  * What steps does the project take to ensure that all third-party code and components have correct and complete attribution and license notices?
+  * Describe how the project ensures alignment with CNCF [recommendations](https://github.com/cncf/foundation/blob/main/policies-guidance/recommendations-for-attribution.md) for attribution notices.
+    <!--Note that each question describes a use case covered by the referenced policy document.-->
+    * How are notices managed for third-party code incorporated directly into the project's source files?
+    * How are notices retained for unmodified third-party components included within the project's repository?
+    * How are notices for all dependencies obtained at build time included in the project's distributed build artifacts (e.g. compiled binaries, container images)?
+
 ### Security
 
   * Security Hygiene  

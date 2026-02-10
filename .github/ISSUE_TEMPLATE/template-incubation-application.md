@@ -2,7 +2,11 @@
 name: Project Incubation Application
 about: This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria.
 title: "[Incubation] $PROJECT Incubation Application"
-labels: incubation
+labels:
+- dd/triage/needs-triage
+- level/incubation
+- kind/dd
+- toc
 ---
 
 # Review Project Moving Level Evaluation
@@ -43,10 +47,6 @@ N/A
 
 - [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
-
-<!-- (Project assertion goes here) --> 
-
-- [ ] **TAG provides insight/recommendation of the project in the context of the landscape**
 
 <!-- (Project assertion goes here) --> 
 

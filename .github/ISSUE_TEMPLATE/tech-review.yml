@@ -2,9 +2,10 @@ name: 'Technical Review'
 description: Project technical review request
 title: '[Tech Review]:'
 labels:
+  - needs-triage
   - kind/initiative
   - review/tech
-  - sub/project-review
+  - sub/project-reviews
 body:
   - type: input
     id: name

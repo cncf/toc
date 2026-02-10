@@ -1,7 +1,11 @@
 name: Project Health
 description: Register a concern regarding project health and alignment
 title: "[HEALTH]: "
-labels: ["health"]
+labels:
+- needs-triage
+- toc
+- kind/review
+- review/health
 body:
 - type: markdown
   attributes:
@@ -23,8 +27,8 @@ body:
 - type: input
   id: project-issue-link
   attributes:
-    label: Project Issue Link
-    description: Please provide a link to the issue filed in the project's repository that corresponds to this TOC tracking issue.
+    label: Project Health Notification Link (issue, message to mailing list etc)
+    description: Please provide a link to an issue filed in the project's repository, mailing list etc that corresponds to this TOC tracking issue.
     placeholder: e.g., https://github.com/project/repo/issues/123
   validations:
     required: true
@@ -56,24 +60,34 @@ body:
   attributes:
     label: Archiving Checklist (If project is determined for archival)
     value: |
-      Once a project has been identified as unhealthy and a decision has been made to archive it, the following steps should be completed.
-      When the archiving process is initiated add the `archive` label and assign: caniszczyk, mrbobbytables, idvoretskyi, jeefy, castrojo
+      **NOTE:** Only applicable if the project opts to self-archive, or is initiated as a last possible option following a TOC vote.
+      To proceed with the archival checklist, add the `level/archive` label and assign: caniszczyk, mrbobbytables, idvoretskyi, jeefy, castrojo, krook
+      
+      <details>
 
       ### Archiving Checklist
       - [ ] TOC vote to archive passed
+      #### PRs
       - [ ] Move project (logo) to archived in the [artwork repo](https://github.com/cncf/artwork)
       - [ ] Move project to archived on [landscape](https://github.com/cncf/landscape)
       - [ ] Remove maintainer list from [project-maintainers.csv](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
-      - [ ] Remove from staff list of maintainer emails
+      - [ ] Archive DevStats data (open issue in [devstats repo](https://github.com/cncf/devstats/issues))
+      - [ ] Remove from [CLOMonitor data](https://github.com/cncf/clomonitor/blob/main/data/cncf.yaml)
+      #### Mailing lists
+      - [ ] Remove from staff list of [maintainer emails list](https://docs.google.com/spreadsheets/d/1qfPpAO5pcZFPsSXJ0OPtkvtS4BuawC33j0d-5_p6YFg/edit?gid=262035321#gid=262035321&fvid=2120158369)
       - [ ] Archive (lock) maintainers mailing list (groups.io)
-      - [ ] Remove ML from maintainers@ mailing group (google groups)
+      - [ ] Remove mailing list from maintainers@ mailing group
+      - [ ] Remove from cncf-`maturity-level` -projects@cncf.io  (google groups)
+      #### Send emails
       - [ ] Remove project (logo) from all slide decks (contact pr@cncf.io)
       - [ ] Remove project (logo) from event sites (contact events@cncf.io)
-      - [ ] Notify DevEx team to remove from event Maintainer Project Opportunities
-      - [ ] Remove from maintainers & project from service desk
       - [ ] Remove from CNCF store (reach out to staff or email store@cncf.io)
-      - [ ] Archive DevStats data (open issue in [devstats repo](https://github.com/cncf/devstats/issues))
-      - [ ] Archive project in LFX Insights (move to archive in PCC)
-      - [ ] Remove from [CLOMonitor data](https://raw.githubusercontent.com/cncf/clomonitor/main/data/cncf.yaml)
+      - [ ] Archive project in LFX Insights (move to archive in PCC - Email Formation team)
+      #### Other:
+      - [ ] Remove from maintainers & project from service desk
+      - [ ] Check with LF IT for any CI/CD or other infrastructure the needs to be removed
+
+      </details>
+      
   validations:
     required: false

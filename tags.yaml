@@ -76,27 +76,28 @@ tags: # Technical Advisory Groups
       - description: TAG Developer Experience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list # Calendar from PCC
         recordings_url: https://www.youtube.com/@CNCFTAGDeveloperExperience
+        # meeting_notes_url: # TODO: add Meeting Notes and Agenda URL when available
     contact:
       slack: C08KGCXB458
       mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/
       toc_liaison:
         - github: kgamanji
           name: Katie Gamanji
-    tag_subprojects:
-      - name: Developer Experience-sub-foo
-        mission_statement: >
-          Foo-Baz_Bar
-        contact:
-          slack: C08KGCXB458 # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/ # Using parent TAG's contact
-    leadership:
-      SubProject Leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-    tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fdeveloper-experience-initiative
+    # tag_subprojects:
+    #   - name: Developer Experience-sub-foo
+    #     mission_statement: >
+    #       Foo-Baz_Bar
+    #     contact:
+    #       slack: C08KGCXB458 # Using parent TAG's contact
+    #       mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/ # Using parent TAG's contact
+    # leadership:
+    #   SubProject Leads:
+    #     - github: foo
+    #       lfx_id: baz
+    #       name: Foo Baz Bar
+    #       company: Foo Baz Bar co.
+    #       email: me@foobazbar.org
+    tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fdeveloper-experience%20label%3Akind%2Finitiative
   - dir: tag-infrastructure # TAG Infrastructure
     name: TAG Infrastructure
     mission_statement: >
@@ -174,6 +175,7 @@ tags: # Technical Advisory Groups
       - description: TAG Infrastructure Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGInfrastructure
+        # meeting_notes_url: # TODO: add Meeting Notes and Agenda URL when available
     contact:
       slack: C08KBH3RA1K
       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure
@@ -182,20 +184,20 @@ tags: # Technical Advisory Groups
           name: Ricardo Rocha
         - github: angellk
           name: Karena Angell
-    tag_subprojects:
-      - name: Infrastructure-sub-foo
-        mission_statement: Foo-Baz_Bar
-        contact:
-          slack: C08KBH3RA1K # Using parent TAG's contact
-          mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure # Using parent TAG's contact
-    leadership:
-      SubProject Leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-    tag_initiatives: https://github.com/cncf/toc/labels/tag%2Finfrastructure-initiative
+    # tag_subprojects:
+    #   - name: Infrastructure-sub-foo
+    #     mission_statement: Foo-Baz_Bar
+    #     contact:
+    #       slack: C08KBH3RA1K # Using parent TAG's contact
+    #       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure # Using parent TAG's contact
+    # leadership:
+    #   SubProject Leads:
+    #     - github: foo
+    #       lfx_id: baz
+    #       name: Foo Baz Bar
+    #       company: Foo Baz Bar co.
+    #       email: me@foobazbar.org
+    tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Finfrastructure%20label%3Akind%2Finitiative
   - dir: tag-operational-resilience # TAG Operational Resilience
     name: TAG Operational Resilience
     mission_statement: >
@@ -264,8 +266,8 @@ tags: # Technical Advisory Groups
         - github: palnabarun
           lfx_id:
           name: Nabarun Pal
-          company:
-          email:
+          company: Broadcom
+          email: pal.nabarun95@gmail.com
           term:
             start: "2025-07-02"
             end: "2027-06-30"
@@ -273,6 +275,7 @@ tags: # Technical Advisory Groups
       - description: TAG Operational Resilience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list # Calendar link from PCC
         recordings_url: https://www.youtube.com/@TAGOperationalResilience
+        # meeting_notes_url: # TODO: add Meeting Notes and Agenda URL when available
     contact:
       slack: C08KGDENK34
       mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience
@@ -280,20 +283,39 @@ tags: # Technical Advisory Groups
         - github: jeremyrickard
           name: Jeremy Rickard
     tag_subprojects:
-      - name: Operational Resilience-sub-foo
+      - name: Green Reviews
         mission_statement: >
-          Foo-Baz_Bar
+          The purpose of the Green Reviews Subproject is to help CNCF projects to
+          review their cloud native sustainability footprint. Through this review,
+          projects aiming for graduation can show how their project uses resources
+          at scale. The Green Reviews pipeline can integrate an environmental
+          sustainability project review in each release cycle. Furthermore, this
+          project strives to empower end users to assess the sustainability of the
+          cloud native workloads within their systems.
+
+          To support CNCF projects, project maintainers and contributors, there is
+          a need for a systematic approach to assess every project's sustainability
+          footprint and energy consumption. Implementing a structured review process
+          for this purpose would greatly benefit the CNCF ecosystem, establishing it
+          as a best practice. Such a process would enable stakeholders to evaluate
+          and enhance the sustainability of CNCF projects, promoting their long-term
+          viability and environmental responsibility.
         contact:
           slack: C08KGDENK34 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience # Using parent TAG's contact
     leadership:
       SubProject Leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-    tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Foperational-resilience-initiative
+        - github: nikimanoledaki
+          lfx_id:
+          name: Niki Manoledaki
+          company: Grafana Labs
+          email: niki.manoledaki@grafana.com
+        - github: AntonioDiTuri
+          lfx_id:
+          name: Antonio Di Turi
+          company: Data Reply DE
+          email: antonio.dituri@datareply.de
+    tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Foperational-resilience%20label%3Akind%2Finitiative
   - dir: tag-security-and-compliance # TAG Security and Compliance
     name: TAG Security and Compliance
     mission_statement: >
@@ -302,14 +324,6 @@ tags: # Technical Advisory Groups
     label: tag-security-and-compliance
     leadership:
       chairs:
-        - github: eddie-knight
-          lfx_id:
-          name: Eddie Knight
-          company: Sonatype
-          email: eknight@sonatype.com
-          term:
-            start: "2025-07-01"
-            end: "2026-06-30"
         - github: evankanderson
           lfx_id: eanderson
           name: Evan Anderson
@@ -318,6 +332,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-01"
             end: "2026-06-30"
+        - github: jkjell
+          lfx_id: jkjell
+          name: John Kjell
+          company: Control-Plane.io
+          email: john.kjell@control-plane.io
+          term:
+            start: "2025-07-02"
+            end: "2027-06-30"
         - github: mnm678
           lfx_id:
           name: Marina Moore
@@ -327,13 +349,21 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
-        - github: brandkeller
+        - github: brandtkeller
           lfx_id:
-          name: Brand Keller
-          company:
-          email:
+          name: Brandt Keller
+          company: Defense Unicorns
+          email: brandt.keller@defenseunicorns.com
           term:
             start: "2025-07-02"
+            end: "2026-06-30"
+        - github: eddie-knight
+          lfx_id: eddieknight
+          name: Eddie Knight
+          company: Sonatype
+          email: eknight@sonatype.com
+          term:
+            start: "2025-07-01"
             end: "2026-06-30"
         - github: jpower432
           lfx_id:
@@ -343,14 +373,6 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2026-06-30"
-        - github: jkjell
-          lfx_id:
-          name: John Kjell
-          company: 
-          email:
-          term:
-            start: "2025-07-02"
-            end: "2027-06-30"
         - github: JustinCappos
           lfx_id:
           name: Justin Cappos
@@ -362,8 +384,8 @@ tags: # Technical Advisory Groups
         - github: mlieberman85
           lfx_id:
           name: Michael Lieberman
-          company:
-          email:
+          company: Kusari
+          email: mlieberman85@gmail.com
           term:
             start: "2025-07-02"
             end: "2026-06-30"
@@ -379,6 +401,7 @@ tags: # Technical Advisory Groups
       - description: TAG Security and Compliance Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGSecurityandCompliance
+        # meeting_notes_url: # TODO: add Meeting Notes and Agenda URL when available
     contact:
       slack: C08JZ9YLAA3
       mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance
@@ -388,23 +411,64 @@ tags: # Technical Advisory Groups
         - github: jeremyrickard
           name: Jeremy Rickard
     tag_subprojects:
-      - name: Security and Compliance-sub-foo
-        mission_statement: Foo-Baz_Bar
+      - name: Security Assessments
+        mission_statement: |
+          The TAG-Security Security Assessment Subproject is designed to accelerate
+          the adoption of cloud native technologies based on the below goals and
+          assumptions:
+
+          1. Reduce risk across the ecosystem
+
+             The primary goal is to minimize the risk of malicious attacks and
+             accidental privacy breaches. This process achieves this in two ways:
+
+              * Improve detection and resolution of vulnerabilities through a clear
+                communication process.
+              * Enhance domain expertise in participating projects via collaborative
+                assessments.
+
+          2. Accelerate adoption of cloud native technologies
+
+             Security assessments are essential but time-intensive processes that
+             each company, organization, and project must perform to meet their
+             unique commitments to users and stakeholders. In open source, finding
+             security-related information can be overwhelmingly difficult and
+             time-consuming. The CNCF TAG-Security Security Assessment Process,
+             hereafter “TSSA” Process, aims to enhance the discovery of security
+             information and streamline internal and external assessments in multiple
+             ways:
+
+              * Consistent documentation to reduce assessment time.
+              * Baseline of security information to minimize Q&A.
+              * A clear security profile rubric for organizations to align their
+                risk profiles with the project’s and allocate resources effectively
+                (for assessment and needed project contribution).
+              * Structured metadata for navigation, grouping, and cross-linking.
+
+          This process is expected to raise awareness of how open source projects
+          impact cloud native security; however, separate activities may be needed
+          to achieve that purpose using materials generated by the TSSA, known as
+          artifacts or the TSSA package.
         contact:
           slack: C08JZ9YLAA3 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance # Using parent TAG's contact
     leadership:
       SubProject Leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-    tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fsecurity-and-compliance-initiative
+        - github: JustinCappos
+          lfx_id: 
+          name: Justin Cappos
+          company: New York University
+          email: jcappos@nyu.edu
+        - github: eddie-knight
+          lfx_id:
+          name: Eddie Knight
+          company: Sonatype
+          email: eddie.knight@sonatype.com
+    tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fsecurity-and-compliance%20label%3Akind%2Finitiative
   - dir: tag-workloads-foundation # TAG Workloads Foundation
     name: TAG Workloads Foundation
     mission_statement: >
-      Containers, OS, Runtime, Virtual Machines, Serverless, Web Assembly, Batch, Scheduler, Orchestrator, Deployment, Dynamic Scaling, CI/CD
+      To define and advance practices and standards for fundamental cloud native workload execution environments and their related lifecycle management within cloud native systems, applications, and architectures. This supports the CNCF's technical vision by addressing critical problems faced by adopters and contributing to a robust cloud native ecosystem.
     charter_link: charter.md
     label: tag-workloads-foundation
     leadership:
@@ -478,6 +542,7 @@ tags: # Technical Advisory Groups
       - description: TAG Workloads Foundation Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGWorkloadsFoundation
+        meeting_notes_url: https://notes.cncf.io/s/1aNdplhtl
     contact:
       slack: C08K71W9HAS
       mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation
@@ -487,19 +552,58 @@ tags: # Technical Advisory Groups
         - github: kevin-wangzefeng
           name: Kevin Wang
     tag_subprojects:
-      - name: Workloads Foundation-sub-foo
-        mission_statement: Foo-Baz_Bar
+      - name: Batch
+        mission_statement: |
+          To enhance collaboration among projects, improve interoperability, and empower users to efficiently leverage batch systems in cloud-native environments.
+
+          In scope:
+
+          To reduce fragmentation in the k8s batch ecosystem: congregate leads and users from different external and internal projects and user groups (CNCF TAGs, k8s sub-projects focused on batch-related features such as topology-aware scheduling) in the batch ecosystem to gather requirements, validate designs and encourage reutilization of core K8s APIs.
+
+          The following recommendations for enhancements:
+
+          * Additions to the batch API group, currently including Job and CronJob resources that benefit batch use cases such as HPC, AI/ML, data analytics and CI.
+          * Primitives for job-level queueing, not limited to the k8s Job resource. Long-term, this could include multi-cluster support.
+          * Primitives to control and maximize utilization of resources in fixed-size clusters (on-prem) and elastic clusters (cloud).
+          * Benchmarking models for Batch systems
+          * Data Locality
+          * User Stories
+          * Scheduling support for specialized hardware (Accelerators, NUMA, Networking, etc.)
+
+          Out of scope:
+
+          * Addition of new API kinds that serve a specialized type of workload. The focus should be on general APIs that specialized controllers can build on top of.
+          * Uses of the batch APIs as support for serving workloads (eg. backups, upgrades, migrations). These can be served by existing SIGs.
+          * Proposals that duplicate the functionality of core kubernetes components (job-controller, kube-scheduler, cluster-autoscaler).
+          * Job workflows or pipelines. Mature third party frameworks serve these use cases with the current kubernetes primitives. But additional primitives to support these frameworks could be in scope.
+
+          Deliverable(s) or exit criteria:
+
+          * Maintaining a landscape document for currently available projects (already published-relocated and maintained)
+          * Data Locality project-deliverables TBD, but something that helps in this space (already in process)
+          * Benchmarking suite for Batch systems (already in process)
+          * User stories published doc for Batch systems (already in process)
         contact:
           slack: C08K71W9HAS # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation # Using parent TAG's contact
     leadership:
       SubProject Leads:
-        - github: foo
-          lfx_id: baz
-          name: Foo Baz Bar
-          company: Foo Baz Bar co.
-          email: me@foobazbar.org
-    tag_initiatives: https://github.com/cncf/toc/issues?q=label%3Atag%2Fworkloads-foundation-initiative
+        - github:
+          lfx_id:
+          name: Alex Scammon
+          company:
+          email: alex@gr-oss.io
+        - github: catblade
+          lfx_id:
+          name: Marlow Warnicke
+          company:
+          email: catblade@gmail.com
+        - github:
+          lfx_id:
+          name: Abishek Malvankar
+          company:
+          email: abhishekmalvankar9@gmail.com
+    tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fworkloads-foundation%20label%3Akind%2Finitiative
 toc_subprojects: # TOC SubProjects
   - dir: contributor-strategy-and-advocacy-subproject # Contributor Strategy and Advocacy Sub Project
     name: Contributor Strategy and Advocacy SubProject
@@ -539,7 +643,7 @@ toc_subprojects: # TOC SubProjects
   #    toc_liaison:
   #      - github: foobar
   #        name: Foo Bar
-    subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative
+    subproject_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atoc%2Fcontributor-strategy-and-advocacy-subproject%20label%3Akind%2Finitiative
   - dir: mentoring-subproject # Mentoring SubProject
     name: Mentoring SubProject
     mission_statement: Foo-Baz-Bar
@@ -578,7 +682,7 @@ toc_subprojects: # TOC SubProjects
   #    toc_liaison:
   #      - github: foobar
   #        name: Foo Bar
-    subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fmentoring-subproject-initiative
+    subproject_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atoc%2Fmentoring-subproject%20label%3Akind%2Finitiative
   - dir: project-reviews-subproject # Project Reviews SubProject
     name: Project Reviews SubProject
     mission_statement: Foo-Baz-bar
@@ -586,11 +690,11 @@ toc_subprojects: # TOC SubProjects
     label: project-reviews-subproject
     leadership:
       chairs:
-        - github: klueska
+        - github:
           lfx_id:
-          name: Kevin Klues
-          company: NVIDIA
-          email: klueska@gmail.com
+          name:
+          company:
+          email:
  #      - github: foo
  #        lfx_id: baz
  #        name: Foo Baz Bar
@@ -617,4 +721,6 @@ toc_subprojects: # TOC SubProjects
       toc_liaison:
         - github: angellk
           name: Karena Angell
-    subproject_initiatives: https://github.com/cncf/toc/issues?q=label%3Atoc%2Fcontributor-strategy-subproject-initiative
+        - github: kevin-wangzefeng
+          name: Kevin Wang
+    subproject_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atoc%2Fproject-reviews-subproject%20label%3Akind%2Finitiative

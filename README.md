@@ -25,7 +25,6 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 
 ## TOC Shadows
 
-* **Kevin Klues** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [TOC-appointed][shadow]
 * **Ricardo Aravena** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [GB-appointed][shadow]
 
 Election [schedule](operations/election-schedule.md)
@@ -44,10 +43,7 @@ If you would like to know more about the project lifecycle we use, we have [outl
 
 The TOC meets on the 1st and 3rd Tuesday of every month at 8AM PT (USA Pacific Time; [Convert to local time zone](http://www.thetimezoneconverter.com/?t=8:00AM&tz=San%20Francisco)).  
 
-https://zoom.us/j/967220397
-Passcode: 77777
-
-Here is a [Google calendar for all public CNCF events](https://goo.gl/eyutah). This calendar is also available on the [CNCF Website](https://www.cncf.io/calendar/)
+Here is a [calendar for all public CNCF events](https://zoom-lfx.platform.linuxfoundation.org/meetings/cncf?view=week). This calendar is also available on the [CNCF Website](https://www.cncf.io/calendar/) Meetings can be joined directly form the calendar.
 
 ## Meeting Agenda and Minutes
 - [Meeting Agenda and Minutes](https://github.com/cncf/toc/issues?q=is%3Aissue%20label%3Akind%2Fmeeting%20)
@@ -72,12 +68,28 @@ Public CNCF TOC channel: Join the [CNCF slack](https://slack.cncf.io/) and we ar
 
 ## Voting
 
-This is our [voting policy](docs/voting.md). Only TOC members can cast binding votes. (+1 Binding)
+This is our [voting policy](https://github.com/cncf/toc/blob/main/operations/toc-decision-process.md#voting). Only TOC members can cast binding votes. (+1 Binding)
 
-## Technical Advisory Groups Being Phased Out
+## Technical Advisory Groups and TOC SubProjects
+
+### Technical Advisory Groups
+
+* [TAG Developer Experience](./tags/tag-developer-experience/)
+* [TAG Infrastructure](./tags/tag-infrastructure/)
+* [TAG Operational Resilience](./tags/tag-operational-resilience/)
+* [TAG Security and Compliance](./tags/tag-security-and-compliance/)
+* [TAG Workloads Foundation](./tags/tag-workloads-foundation/charter.md)
+
+### TOC SubProjects
+
+* [Contributor Strategy and Advocacy  SubProject](./toc_subprojects/contributor-strategy-and-advocacy-subproject)
+* [Mentoring SubProject](./toc_subprojects/mentoring-subproject/)
+* [Project Reviews SubProject](./toc_subprojects/project-reviews-subproject/)
+
+## Technical Advisory Groups - Archived
 
 The TOC has approved the formation of [TAGs](./.archive/README.md).
-Currently, the following Technical Advisory Groups are active: 
+The following Technical Advisory Groups have been archived: 
 
 * [TAG-Security](https://github.com/cncf/tag-security)
 * [TAG-Storage](https://github.com/cncf/tag-storage) 
@@ -88,25 +100,7 @@ Currently, the following Technical Advisory Groups are active:
 * [TAG Observability](https://github.com/cncf/tag-observability)
 * [TAG Environmental Sustainability](https://github.com/cncf/tag-env-sustainability)
 
-The current Technical Advisory Groups will be spun down during 2025 and replaced with new Technical Advisory Groups and TOC SubProjects, listed below.
-
-## New Technical Advisory Groups and TOC SubProjects
-
-### New Technical Advisory Groups
-
-* [TAG Developer Experience](./tags/tag-developer-experience/)
-* [TAG Infrastructure](./tags/tag-infrastructure/)
-* [TAG Operational Resilience](./tags/tag-operational-resilience/)
-* [TAG Security and Compliance](./tags/tag-security-and-compliance/)
-* [TAG Workloads Foundation](./tags/tag-workloads-foundation/charter.md)
-
-### TOC SubProjects
-
-* [Artificial Intelligence SubProject](./toc_subprojects/artificial-intelligence-subproject)
-* [Contributor Strategy and Advocacy  SubProject](./toc_subprojects/contributor-strategy-and-advocacy-subproject)
-* [Mentoring SubProject](./toc_subprojects/mentoring-subproject/)
-* [Project Reviews SubProject](./toc_subprojects/project-reviews-subproject/)
-
+These Technical Advisory Groups have been spun down and replaced with new Technical Advisory Groups and TOC SubProjects, listed above.
 
 ### Updating TAG or SubProject README files
 
