@@ -1,8 +1,8 @@
-# Kubernetes Agentic Standards
+# Cloud Native Agentic Standards
 
 This paper aligns to the definition of Containerization of Agentic AI as: 
 
-**A microservice based application which can consist of one or more containers based upon defined system architectual requirements. Performing standalone or collaborative (distributed) function through the interaction with at least one entity (container) or quorum, accessing AI or Machine Learning capabilities. To perform tasks based upon the reasoning and execution of actions within event based systems triggered or reacted upon via signals. Key attributes include the ability to perform system and/or user tasks autonomously, in conjunction with the ability to plan and control the continuation of execution or completion”**
+**A microservice-based application, composed of one or more containers as dictated by system architecture, that operates either independently or as part of a distributed collaboration—interacting with at least one other entity (container) or achieving quorum-based consensus. It leverages AI or Machine Learning capabilities to reason and execute actions within event-driven systems, where behavior is triggered or modulated by signals. Its defining attributes: encompass differing levels of autonomy in executing system or user tasks, coupled with the ability to plan, orchestrate, and govern the continuation or completion of its own execution.**
 
 Overview
 
@@ -12,7 +12,7 @@ Agentic systems provide the means to perform multi-hop reasoning, and subsequent
 
 This paper explores four key areas which are associated with components that are in need of standardization to ensure interoperability, security, and observability are applied from the beginning. The focus of this document is not on how a particular agentic protocol itself is programmed, which language is used or its speed or efficiency of execution, but rather an agnostic view of what should be considered as the best practices to apply as to ensure that deployments in this space can securely scale and remain explainable, through a common and effective foundation. 
 
-The recommendations described herein are exclusively focused on Cloud Native Kubernetes deployments. This extends to scenarios where Kubernetes may be deployed in public, private, hybrid or edge compute type scenarios, as there are nuances in the domain of security associated with these environments and systems. 
+The recommendations described herein are exclusively focused on Cloud Native projects like Kubernetes deployments. This extends to scenarios where Kubernetes may be deployed in public, private, hybrid or edge compute type scenarios, as there are nuances in the domain of security associated with these environments and systems. 
 
 The target audience for this paper are individuals who aim to deploy agentic tooling in Cloud Native, microservice-based environments who are looking for a central and concise view of important points to consider in order to build a successful system deployment. 
 
