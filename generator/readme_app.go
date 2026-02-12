@@ -92,6 +92,7 @@ type Config struct {
 
 func main() {
 	// Define paths.
+	log.Fatalf("error")
 	configPath := filepath.Join("..", "tags.yaml")
 	tagsDir := filepath.Join("..", "tags")
 	tocDir := filepath.Join("..", "toc_subprojects")
