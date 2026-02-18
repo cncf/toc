@@ -1,4 +1,4 @@
-# Tekton Adopter Interview - Dailymotion
+# Tekton Adopter Interview - Adopter 3
 
 Meeting Time: December 18th
 Meeting Record: TBA
@@ -8,9 +8,9 @@ Attendees:
   - Jeremy Rickard
   - Chad Boudin
 	Adopter: 
-  - Jordan , Developer Experience Engineer, Dailymotion
-  - Maximillen, Developer Experience Engineer, Dailymotion
-  - Quintin, Developer Experience Team Manager, Dailymotion
+  - Developer Experience Engineer, Adopter 3
+  - Developer Experience Engineer, Adopter 3
+  - Developer Experience Team Manager, Adopter 3
 
 ## About the Adopter interview
 
@@ -21,7 +21,7 @@ TOC will record raw notes here, then the notes will be cleaned up and shared wit
 ## Organization Intro
 _Can you give us an overview of your organization and what it does?_
 
-Dailymotion is a video streaming platform and advertising platform to display video on embedded sites.
+Adopter 3 is a video streaming and advertising platform.
 
 
 ## Motivation
@@ -49,7 +49,7 @@ The adopter is mainily using the Tekton Pipeline subproject, and is heavily usin
 
 _What is the current level of usage (pre-production, production) and scale?_
 
-Tekton is used in production by the adopter, as well as in staging environments. Tekton handles all pull requests within Dailymotion and creates 40,000 pods a month in CI/CD pipelines.
+Tekton is used in production by the adopter, as well as in staging environments. Tekton handles all pull requests within Adopter 3 and creates 40,000 pods a month in CI/CD pipelines.
 
 
 _What version is used and what is your update cadence with the project?_

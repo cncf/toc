@@ -8,7 +8,7 @@
 
 ### Criteria Evaluation
 
-Jeremy Rickard (@jeremyrickard) and Chad Boudin (@chadbeaudin) conducted the due diligence of Tekton who applied for incubation. Tekton is currently a graduated project in the Continuous Delivery Foundation (CDF). Tekton is applying to join the Cloud Native Computing Foundation (CNCF) at the incubating level, so a the following actions will be required upon acceptance to the CNCF:
+Jeremy Rickard (@jeremyrickard) and Chad Beaudin (@chadbeaudin) conducted the due diligence of Tekton who applied for incubation. Tekton is currently a graduated project in the Continuous Delivery Foundation (CDF). Tekton is applying to join the Cloud Native Computing Foundation (CNCF) at the incubating level, so a the following actions will be required upon acceptance to the CNCF:
 
 - [ ] Adoption of the CNCF Code of Conduct 
 
@@ -201,7 +201,7 @@ The Tekton subprojects utilize Github projects to track roadmaps. The pipeline r
 
 - [x] **History of regular, quality releases.**
 
-The Tekton project has demonsrated a history of [regular releases](https://github.com/tektoncd/pipeline/blob/main/releases.md), dating back to 2019, for the Pipelines subproject. Releases include detailed [release notes](https://github.com/tektoncd/pipeline/releases/tag/v1.2.0) and include information on how to verify release attestations.
+The Tekton project has demonstrated a history of [regular releases](https://github.com/tektoncd/pipeline/blob/main/releases.md), dating back to 2019, for the Pipelines subproject. Releases include detailed [release notes](https://github.com/tektoncd/pipeline/releases/tag/v1.2.0) and include information on how to verify release attestations.
 
 ### Required 
 
@@ -310,11 +310,11 @@ This adopter identified the native integration with Kubernetes and the ability t
 The adopter feels that there could be more awareness of the project and that it potentially lacks marketing. The adopter thinks that there could be more positioning within the CI/CD space and is optimistic that the project could grow it's community after joining the CNCF. They also feel that the project should also focus on providing a better UI experience to increase adoption. 
 
 
-##### Adopter 3 - Dailymotion
+##### Adopter 3 
 
 December 2025
 
-Dailymotion is a video streaming and ad sales platform. They were also previously a JenkinsX user that migrated to using Tekton natively. Tekton is used in production by the adopter, as well as in staging environments. Tekton handles all pull requests within Dailymotion and creates 40,000 pods a month in CI/CD pipelines.
+Adopter 3 is a video streaming and ad sales platform. They were also previously a JenkinsX user that migrated to using Tekton natively. Tekton is used in production by the adopter, as well as in staging environments. Tekton handles all pull requests within Adopter 3 and creates 40,000 pods a month in CI/CD pipelines.
 
 Overall, the adopter cited ease of integration, ease of customization and native Kubernetes integration as key strengths. The also cited the openness of project to accept contributions as another strength, and plan to contribute a new feature to the project in 2026. 
 
