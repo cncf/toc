@@ -8,12 +8,13 @@
 
 ### Criteria Evaluation
 
-Jeremy Rickard (@jeremyrickard) and Chad Beaudin (@chadbeaudin) conducted the due diligence of Tekton who applied for incubation. Tekton is currently a graduated project in the Continuous Delivery Foundation (CDF). Tekton is applying to join the Cloud Native Computing Foundation (CNCF) at the incubating level, so a the following actions will be required upon acceptance to the CNCF:
+Jeremy Rickard (@jeremyrickard) and Chad Beaudin (@chadbeaudin) conducted the due diligence of Tekton who applied for incubation. Tekton is currently a graduated project in the Continuous Delivery Foundation (CDF). Tekton is applying to join the Cloud Native Computing Foundation (CNCF) at the incubating level, so the following actions will be required upon onboarding to the CNCF:
 
 - [ ] Adoption of the CNCF Code of Conduct 
 
+This would be a normal onboarding activity, so we have not created a tracking issue for this. The project should complete the normal sandbox onboarding steps as part of their acceptance to the CNCF. 
 
-Additionally, it would be good for the project to update some documentation around security processes, including how memebers of the security response team are selected. 
+Additionally, it would be good for the project to update some documentation around security processes, including how members of the security response team are selected and include a SECURITY.md file. This is also part of the sandbox onboarding process.
 
 The project has completed the criteria that show its maturity at the incubating level.
  
@@ -22,7 +23,7 @@ The project has completed the criteria that show its maturity at the incubating 
 
 The adopter interviews reflect a project that exceeds the expectations for a project at the incubating level. The project is used by end users across a number of industries and is also a key dependency of Shipwright project, a CNCF sandbox project.
 
-Adopters highlighted the Kubernetes native design of the project and the ability to adopt GitOps models for management of pipelines and to shorten onboarding times for new projects through high levels of reuse and the ability to integrate with other cloud native tools via it's Kubernetes native design. 
+Adopters highlighted the Kubernetes native design of the project and the ability to adopt GitOps models for management of pipelines and to shorten onboarding times for new projects through high levels of reuse and the ability to integrate with other cloud native tools via its Kubernetes native design. 
 
 In general, adopters felt that the project is quite mature. Adopters identified areas for improvement in usability and documentation. 
 
@@ -47,17 +48,15 @@ The Tekton website and project repositories are vendor neutral.
 
 - [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**	
 
-Tekton is not currently a CNCF project. The project is applying directly to incubation status. The project is currently hosted by the [Continuous Delivery Foundation](https://cd.foundation) and has reached the graduated maturity within that foundation. 
-
-However, the project meets the expectations for a sandbox project within the CNCF.   
+Tekton is not currently a CNCF project. The project is applying directly to incubation status. The project is currently hosted by the [Continuous Delivery Foundation](https://cd.foundation) and has reached the graduated maturity within that foundation. However, the project currently exceeds the expectations for a sandbox project within the CNCF.   
 
 - [x] **Due Diligence Review.**
 
 The initial application was initially submitted May 01, 2024.
 
-An initial set of resources were provided to support the DD with the project's [incuabtion application issue](https://github.com/cncf/toc/issues/1310).
+An initial set of resources were provided to support the DD with the project's [incubation application issue](https://github.com/cncf/toc/issues/1310).
 
-A due dillegence review was performed at the end of 2025. The maintainers of the project were responsive and provided additional information as needed. 
+A due diligence review was performed at the end of 2025. The maintainers of the project were responsive and provided additional information as needed. 
 
 - [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
@@ -73,7 +72,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [x] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
 
-The initial governance documentation was added in [March 2019](https://github.com/tektoncd/community/commit/f78c3f7d7ef9233a16980803d70650619b92abc5), when Tekton was part of the Knative project. It has been updated and refined several times as the project matured and separated from the Knative project, including creation of a bootstrap governing board and ongoing updates to the Tekton Governance Committee. The project has futher demonstrated adherence to it's governance through reoccuring elections. 
+The initial governance documentation was added in [March 2019](https://github.com/tektoncd/community/commit/f78c3f7d7ef9233a16980803d70650619b92abc5), when Tekton was part of the Knative project. It has been updated and refined several times as the project matured and separated from the Knative project, including creation of a bootstrap governing board and ongoing updates to the Tekton Governance Committee. The project has further demonstrated adherence to its governance through recurring elections. 
 
 - [x] **Clear and discoverable project governance documentation.**
 
@@ -85,11 +84,11 @@ The governance documentation has been regularly updated to reflect leadership po
 
 - [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
-The project governance documentation specifies [maximum represenation](https://github.com/tektoncd/community/blob/main/governance.md#maximum-representation) for membership of the governing committee and explicitly states that governing committee members must represent a cross-section of interests, not just one company. 
+The project governance documentation specifies [maximum representation](https://github.com/tektoncd/community/blob/main/governance.md#maximum-representation) for membership of the governing committee and explicitly states that governing committee members must represent a cross-section of interests, not just one company. 
 
 - [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
-The Tekton [contributor ladder](https://github.com/tektoncd/community/blob/main/process/contributor-ladder.md) specifies how the project accepts contributions. The [process](https://github.com/tektoncd/community/tree/main/process) folder of the community repository provides additional information on the proccess surrounding contribution acceptance. 
+The Tekton [contributor ladder](https://github.com/tektoncd/community/blob/main/process/contributor-ladder.md) specifies how the project accepts contributions. The [process](https://github.com/tektoncd/community/tree/main/process) folder of the community repository provides additional information on the process surrounding contribution acceptance. 
 
 The project uses a [mailing list](tekton-governance@googlegroups.com) for making governance decisions and taking votes, while leadership changes are handled using [CIVS](https://civs.cs.cornell.edu/). 
 
@@ -116,11 +115,11 @@ Project leadership is defined in an OWNERS file for each project. For example, [
 
 - [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-The current governing committee members, including contact information and affilitation, is defined in [community/governance.md](https://github.com/tektoncd/community/blob/main/governance.md#current-members).
+The current governing committee members, including contact information and affiliation, is defined in [community/governance.md](https://github.com/tektoncd/community/blob/main/governance.md#current-members).
 
 Maintainers for subprojects and area of responsibility can be found in [community/org/org.yml](https://github.com/tektoncd/community/blob/main/org/org.yaml). 
 
-Affilitiation for maintainers outside the governing committe is not recorded, but is available from [devstats](https://tekton.devstats.cd.foundation/d/8/dashboards?orgId=1&refresh=15m).  
+Affiliation for maintainers outside the governing committee is not recorded, but is available from [devstats](https://tekton.devstats.cd.foundation/d/8/dashboards?orgId=1&refresh=15m).  
 
 - [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
@@ -189,7 +188,10 @@ Each subproject in the repository has a CONTRIBUTING.md file. The Tekton Pipelin
 
 The Tekton Devstats dashboard shows more than 20 contributors having 20 or more contributions for [the last 6 months](https://tekton.devstats.cd.foundation/d/9/developer-activity-counts-by-repository-group-table?orgId=1&var-period_name=Last%206%20months&var-metric=contributions&var-repogroup_name=All&var-country_name=All).
 
-The [community README](https://github.com/tektoncd/community?tab=readme-ov-file#want-to-get-involved) details way to get involved in the project and the contributor ladder has a low barrier to entry, which indicate efforts to grow the contributor base.  
+LFX Insights also has some data for the [Tekton project](https://insights.linuxfoundation.org/project/tekton?timeRange=past365days&start=2025-02-18&end=2026-02-18). Most contributions come from IBM/Redhat affiliated contributors, however unaffiliated contributors represent 14% of contributions for the previous year. There have been numerous small contributions from a large number of companies, indicating that there is ongoing active contributions outside of IBM/Redhat. LFX Insights also indicates a geographic distribution of commits, with at least 25% occurring outside of the United States.
+
+The [community README](https://github.com/tektoncd/community?tab=readme-ov-file#want-to-get-involved) details way to get involved in the project and the contributor ladder has a low barrier to entry, which indicate efforts to grow the contributor base.
+
 
 ## Engineering Principles
 
@@ -225,7 +227,7 @@ The core use case of Tekton is providing CI/CD in a Kubernetes native way. The T
 
 - [x] **Document the project's release process.**
 
-The Tekton project utilizes a mix of Github Actions and Tekton piplines to release. The repository contains comprehensive [release process documentation](https://github.com/tektoncd/pipeline/tree/main/tekton#create-an-official-release). 
+The Tekton project utilizes a mix of Github Actions and Tekton pipelines to release. The repository contains comprehensive [release process documentation](https://github.com/tektoncd/pipeline/tree/main/tekton#create-an-official-release). 
 
 ## Security
 
@@ -243,7 +245,7 @@ The Tekton project documents a process for [reporting security issues](https://g
 
 - [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
-The [contributor ladder](https://github.com/tektoncd/community/blob/83f4a856fe227ade7c885825f5f850f41e9dfab7/process/contributor-ladder.md?plain=1#L92) documentation specifies that all contributors must have two-factor authentication enabled on their Github account. The project uses Prow for enforcement of OWNER files for a separation of reviewe and approver roles. 
+The [contributor ladder](https://github.com/tektoncd/community/blob/83f4a856fe227ade7c885825f5f850f41e9dfab7/process/contributor-ladder.md?plain=1#L92) documentation specifies that all contributors must have two-factor authentication enabled on their Github account. The project uses Prow for enforcement of OWNER files for a separation of reviewer and approver roles. 
 
 - [x] **Document assignment of security response roles and how reports are handled.**
 
@@ -257,7 +259,7 @@ Additionally, the Tekton project also engaged in a security audit while in the C
 
 - [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
 
-The Tekton project has achieecd the OpenSSF Best Practices [passing badge](https://www.bestpractices.dev/en/projects/4020/passing).
+The Tekton project has achieved the OpenSSF Best Practices [passing badge](https://www.bestpractices.dev/en/projects/4020/passing).
 
 ## Ecosystem
 
@@ -269,23 +271,23 @@ N/A
 
 - [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-The Tekton project mains a list of [adopters](https://github.com/tektoncd/community/blob/main/adopters.md) in their community repository. 
+The Tekton project maintains a list of [adopters](https://github.com/tektoncd/community/blob/main/adopters.md) in their community repository. 
 
 - [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-The adopter list provided in the Tekton community repository eight end-user adopters. 
+The adopter list provided in the Tekton community repository has eight end-user adopters. 
 
 The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
 - [x] **TOC verification of adopters.**
 
-The Tekton project provided a list of adopters to the TOC in support of the incubation due dilligence review. Three adopters were interviewed.  
+The Tekton project provided a list of adopters to the TOC in support of the incubation due diligence review. Three adopters were interviewed.  
 
 Refer to the Adoption portion of this document.
 
 - [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
-The Tekton adopter file includes several open source projects, including projects in the CNCF that provide integration with Tekton. The project additionally maintains a list of [Tekton Friends](https://github.com/tektoncd/friends/) that highlight integrations with other projects. Additionally, the project documentation includes information about compatability with supply chain security projects, like cosign and metrics projects like Prometheus. 
+The Tekton adopter file includes several open source projects, including projects in the CNCF that provide integration with Tekton. The project additionally maintains a list of [Tekton Friends](https://github.com/tektoncd/friends/) that highlight integrations with other projects. Additionally, the project documentation includes information about compatibility with supply chain security projects, like cosign and metrics projects like Prometheus. 
 
 #### Adoption
 
@@ -295,19 +297,24 @@ October 2025
 
 [Shipwright](https://github.com/shipwright-io/build) is a CNCF project that enables building container images directly on Kubernetes. That goal is to build the container images where you are using them, so you don't need local Docker builds everywhere on developer machines. 
 
-Shipwright, from it's inception, built on core Tekton features like `TaskRuns` and `Parameters`. The Shipwright project made the decision to build on Tekton in early 2020 based on the need for a Kubernetes native way to sequentially execute tasks or build steps. Tekton was really the only project at this time that satisfied the requirements. The maintainers estimated that adopting Tekton saved several developer months of time and accelerated the project. They have found Tekton to be very mature and stable over the last five years, particularly as the various APIs in the project matured. 
+Shipwright, from its inception, built on core Tekton features like `TaskRuns` and `Parameters`. The Shipwright project made the decision to build on Tekton in early 2020 based on the need for a Kubernetes native way to sequentially execute tasks or build steps. Tekton was really the only project at this time that satisfied the requirements. The maintainers estimated that adopting Tekton saved several developer months of time and accelerated the project. They have found Tekton to be very mature and stable over the last five years, particularly as the various APIs in the project matured. 
 
 The Shipwright maintainers did see room for improvement in the project documentation, including enhancement of the Tekton custom resources to better support `kubectl explain` for those adopting Tekton. 
+
+Reference: [Tekton Adopter Interview - Shipwright](/projects/tekton/tekton-adopter-interview-shipwright.md)
+
 
 ##### Adopter 2 - Travel and Hospitality
 
 October 2025
 
-Adopter 2 operates a devops platform for all of their developers to use. They were formerly a JenkinsX user, but encountered issues scaling as their IT organization continued to grow. They also experienced pain and friction around onboarding new projects and had a centrally managed support system that was seeing an increasing number of requests for help. To address these concerns, they wanted to adopt a an open source technology that would allow them to provide declarative pipelines as code in order to shift to a self-service onboarding model. Tekton fit this model well. They have now been using Tekton in production for several years and perform over 70,000 deployments per year using Tekton.
+Adopter 2 operates a devops platform for all of their developers to use. They were formerly a JenkinsX user, but encountered issues scaling as their IT organization continued to grow. They also experienced pain and friction around onboarding new projects and had a centrally managed support system that was seeing an increasing number of requests for help. To address these concerns, they wanted to adopt an open source technology that would allow them to provide declarative pipelines as code in order to shift to a self-service onboarding model. Tekton fit this model well. They have now been using Tekton in production for several years and perform over 70,000 deployments per year using Tekton.
 
 This adopter identified the native integration with Kubernetes and the ability to run the pipelines within Kubernetes on vetted infrastructure as key strengths.  
 
-The adopter feels that there could be more awareness of the project and that it potentially lacks marketing. The adopter thinks that there could be more positioning within the CI/CD space and is optimistic that the project could grow it's community after joining the CNCF. They also feel that the project should also focus on providing a better UI experience to increase adoption. 
+The adopter feels that there could be more awareness of the project and that it potentially lacks marketing. The adopter thinks that there could be more positioning within the CI/CD space and is optimistic that the project could grow its community after joining the CNCF. They also feel that the project should focus on providing a better UI experience to increase adoption. 
+
+Reference: [Tekton Adopter Interview - Adopter 2](/projects/tekton/tekton-adopter-interview-adopter2.md)
 
 
 ##### Adopter 3 
@@ -316,6 +323,8 @@ December 2025
 
 Adopter 3 is a video streaming and ad sales platform. They were also previously a JenkinsX user that migrated to using Tekton natively. Tekton is used in production by the adopter, as well as in staging environments. Tekton handles all pull requests within Adopter 3 and creates 40,000 pods a month in CI/CD pipelines.
 
-Overall, the adopter cited ease of integration, ease of customization and native Kubernetes integration as key strengths. The also cited the openness of project to accept contributions as another strength, and plan to contribute a new feature to the project in 2026. 
+Overall, the adopter cited ease of integration, ease of customization and native Kubernetes integration as key strengths. They also cited the openness of project to accept contributions as another strength, and plan to contribute a new feature to the project in 2026. 
 
 The adopter identified the ability to persist log information outside the cluster as an area that could be improved. At scale, they find it difficult to manage long term storage of pipeline results as they are tied to pod lifecycle and at scale tend to be lost as pods are deleted.
+
+Reference: [Tekton Adopter Interview - Adopter 3](/projects/tekton/tekton-adopter-interview-adopter3.md)

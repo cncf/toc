@@ -6,7 +6,7 @@ Meeting Record: TBA
 Attendees:
 	TOC: 
   - Jeremy Rickard
-  - Chad Boudin
+  - Chad Beaudin
 	Adopter: 
   - Developer Experience Engineer, Adopter 3
   - Developer Experience Engineer, Adopter 3
@@ -44,7 +44,7 @@ The project has been in use for 3-5 years. Initially the project was used in Jen
 
 _What were the main motivations to adopt the project and which key features do you use today?_ 
 
-The adopter is mainily using the Tekton Pipeline subproject, and is heavily using the  `StepAction` and the `pipelineRef` features. This allows them to generically reuse things from their internal catalog. They are not using the Tekton Catalog directly. The are also using the `Matrix` feature in order to increase the parallelism of their CI/CD.
+The adopter is mainly using the Tekton Pipeline subproject, and is heavily using the  `StepAction` and the `pipelineRef` features. This allows them to generically reuse things from their internal catalog. They are not using the Tekton Catalog directly. They are also using the `Matrix` feature in order to increase the parallelism of their CI/CD.
 
 
 _What is the current level of usage (pre-production, production) and scale?_
@@ -54,14 +54,14 @@ Tekton is used in production by the adopter, as well as in staging environments.
 
 _What version is used and what is your update cadence with the project?_
 
-The adopter upgrades one or two times per month, but is generally running one version behind the latest. The generally confident in adopting new versions and can test before rolling out. 
+The adopter upgrades one or two times per month, but is generally running one version behind the latest. They are generally confident in adopting new versions and can test before rolling out. 
 
 
 _Can you walk me through what your experience was in either adopting it outright or integrating it with your existing services and applications? What challenges did you experience with the project?_ 
 
 The project initially adopted Tekton via JenkinsX, but JenkinsX hid most of the Tekton capability. They noticed that Tekton was moving faster and had more maintainers and proposed moving to the native Tekton references. The adoption was a challenge because they had to rebuild all the pipelines to use Tekton directly, but moving to Tekton allowed adoption of Tekton features more quickly.
 
-The initial adoption probably took six months, but allowed the organization to consolidate into a shared pipeline through the use of the `pipelineRef` feature in Tekton. They were able to move from updating 100s of pipeline definitios to a single pull request when they needed to make changes.
+The initial adoption probably took six months, but allowed the organization to consolidate into a shared pipeline through the use of the `pipelineRef` feature in Tekton. They were able to move from updating 100s of pipeline definitions to a single pull request when they needed to make changes.
 
 The main challenge when doing the migration was that they were initially using an older version of Tekton and the documentation was not easy to find anymore at that point. Upgrading to the newer versions was also a challenge because the API versions changed from a beta API to stable API.
 
@@ -91,7 +91,7 @@ The adopter views the community as kind and open and open to new ideas and exper
 
 The adopter thinks there is a lot of potential growth in the community, as there are lot of end users still using JenkinsX directly that could benefit from moving to native Tekton. 
 
-The adopter feels that the project has a diverse set of maintainers from a mix of big companies and smaller companies. Maintainers are very responsive when pull requests are opened. They also feel tha it is easy to start contributing to the project.  
+The adopter feels that the project has a diverse set of maintainers from a mix of big companies and smaller companies. Maintainers are very responsive when pull requests are opened. They also feel that it is easy to start contributing to the project.  
 
 
 _How are you participating in the project community?_
@@ -119,7 +119,7 @@ _In your opinion, what can the project do better?_
 
 Tekton could provide a better capability to obtain logs. Logs are generally within the pod that ran, and when the pod is removed the logs are no longer available. The adopter is waiting for the ability to store pipeline results outside the cluster. The adopter is considering contributing something to Tekton to help improve this.
 
-The adopter also thinks that the project could provide a better way of discovering when syncronous meetings occur. 
+The adopter also thinks that the project could provide a better way of discovering when synchronous meetings occur. 
 
 
 

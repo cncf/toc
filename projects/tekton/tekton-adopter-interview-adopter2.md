@@ -45,7 +45,7 @@ Used in development and production, Tekton is a mission critical platform. Avera
 
 _What version is used and what is your update cadence with the project?_
 
-The adopter is using 0.59, which is an older verison. The new features were not critical, so they have stuck with the older version.
+The adopter is using 0.59, which is an older version. The new features were not critical, so they have stuck with the older version.
 
 
 _Can you walk me through what your experience was in either adopting it outright or integrating it with your existing services and applications? What challenges did you experience with the project?_ 
@@ -55,12 +55,12 @@ The adopter did not find any significant technical challenges. The main challeng
 
 _Did you find the information in the repo or the project docs valuable to your implementation? If so, where did you find the information and what specifically was useful?_
 
-The adopter had to occassionally look to the Github repository for additional information, but generally found the project documenation really good. No complaints with the documentation. 
+The adopter had to occasionally look to the Github repository for additional information, but generally found the project documentation really good. No complaints with the documentation. 
 
 
 _Has your implementation of the project provided measurable value? Such as reducing manual activities, faster integrations, supported federation/multi-cloud, ease of use, cost savings, etc._
 
-The adopter indicated that Tekton has provided measurable value, particuarly in the ability for teams to self service their own pipelines and a large reduction in support activities that their devops organization needed to engage in. The ability for developers to run their pipelines from within their IDE accelerated the development lifecycle. Tekton also accelerated their adoption of Backstage significantly.
+The adopter indicated that Tekton has provided measurable value, particularly in the ability for teams to self service their own pipelines and a large reduction in support activities that their devops organization needed to engage in. The ability for developers to run their pipelines from within their IDE accelerated the development lifecycle. Tekton also accelerated their adoption of Backstage significantly.
 
 _Do you have any future plans regarding the project? More involvement, feature requests, expansion, etc._
 
@@ -75,7 +75,7 @@ Community growth potential
 Maintainer diversity and ladder
 Maintainer response_
 
-The adopter percieves the Tekton community to be open and very welcoming. The project has invited the adopter to contribute to the project. 
+The adopter perceives the Tekton community to be open and very welcoming. The project has invited the adopter to contribute to the project. 
 
 The adopter was not familiar with the governance of the project.
 
@@ -102,7 +102,7 @@ The integration with Kubernetes is a primary strength. The ability to run the pi
 ## Project Improvements
 _Is there something you feel that holds the project back from reaching its ultimate potential?_ 
 
-The adopter feels that there could be more awareness of the project and potentially lacks marketing. The adopter thinks that there could be more positioning within the CI/CD space and is optimistic that the project could grow it's community after joining the CNCF.
+The adopter feels that there could be more awareness of the project and potentially lacks marketing. The adopter thinks that there could be more positioning within the CI/CD space and is optimistic that the project could grow its community after joining the CNCF.
 
 
 _In your opinion, what can the project do better?_
