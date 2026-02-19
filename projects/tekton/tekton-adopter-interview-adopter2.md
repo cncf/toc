@@ -7,13 +7,8 @@ Attendees:
 	TOC: 
   - Jeremy Rickard
 	Adopter: 
-  - Adopter wishes to remain anonymous
+  - DevOps/MLOps Lead, Adopter 2
 
-## About the Adopter interview
-
-The intent of the interview is to ascertain the maturity and adoption of the Tekton by adopters of the project. It’s OK to be public or private.
-
-TOC will record raw notes here, then the notes will be cleaned up and shared with you for your review, correction, and final approval. Once approved, they’ll go into Tekton due diligence document.
 
 ## Organization Intro
 _Can you give us an overview of your organization and what it does?_
