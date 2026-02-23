@@ -221,25 +221,59 @@ N/A
 
 Note: this section may be augmented by a joint-assessment performed by TAG Security and Compliance.
 
-- [ ] **Clearly defined and discoverable process to report security issues.**
+- [x] **Clearly defined and discoverable process to report security issues.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project has a published security policy via the GitHub org-wide security policy:
+  - Security policy (`SECURITY.md`): <https://github.com/confidential-containers/.github/blob/main/SECURITY.md>
+
+  The policy instructs reporters to use GitHub’s “Report a vulnerability” (private reporting) mechanism rather than filing public issues.
 
 - [ ] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  **Maintainers’ input (from application):** The incubation application references a maintainers list as evidence that maintainers use 2FA:
+  - Maintainers list: <https://github.com/confidential-containers/confidential-containers/blob/main/MAINTAINERS>
+
+  **TOC reviewer assessment / gap (from confidential-containers/confidential-containers#349):**
+  - A maintainer list does **not** by itself provide auditable evidence that 2FA is **required and enforced** for GitHub org members/maintainers.
+  - Reviewers need a **clear, stable, public** reference describing:
+    - how access is granted/revoked,
+    - what controls prevent unauthorized changes (e.g., CODEOWNERS / required reviews / branch protection expectations),
+    - whether 2FA is required/enforced for privileged roles.
+
+  **Action / follow-up requested:** Project to document the access control model and explicitly document 2FA requirements and/or org enforcement:
+  - <https://github.com/confidential-containers/confidential-containers/issues/349>
 
 - [ ] **Document assignment of security response roles and how reports are handled.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  **Maintainers’ input (from application):**
+  - The project points to the org-level `SECURITY.md` as the place describing handling of reports:
+    - <https://github.com/confidential-containers/.github/blob/main/SECURITY.md>
 
-- [ ] **Document Security Self-Assessment.**
+  **TOC reviewer assessment / gap (from confidential-containers/confidential-containers#350):**
+  - While `SECURITY.md` describes the reporting mechanism, it historically referenced “maintainers and security champions” without a clearly defined, discoverable role model elsewhere (e.g., in governance/community docs).
+  - Reviewers need more explicit documentation of:
+    - who the security responders are (org-wide vs per subproject),
+    - how membership/ownership is determined and maintained (onboarding/offboarding/continuity),
+    - high-level responsibilities (triage/coordination/communication), without duplicating the mechanics already in `SECURITY.md`.
+  - Also recommended: cross-link security reporting guidance from contributing documentation (and other relevant guides), so users can easily find the security reporting process.
 
-<!-- (TOC Evaluation goes here) --> 
+  **Action / follow-up requested:**
+  - <https://github.com/confidential-containers/confidential-containers/issues/350>
 
-- [ ] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+- [x] **Document Security Self-Assessment.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project has published a Security Self-Assessment:
+  - <https://tag-security.cncf.io/community/assessments/projects/confidential-containers/self-assessment/>
+
+- [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
+
+  <!-- (TOC Evaluation goes here) -->
+  The project holds an OpenSSF Best Practices passing badge:
+  - <https://www.bestpractices.dev/projects/5719>
 
 ## Ecosystem
 
