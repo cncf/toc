@@ -76,6 +76,7 @@ tags: # Technical Advisory Groups
       - description: TAG Developer Experience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list # Calendar from PCC
         recordings_url: https://www.youtube.com/@CNCFTAGDeveloperExperience
+        website_url: https://contribute.cncf.io/community/tags/developer-experience/
         # meeting_notes_url: # TODO: add Meeting Notes and Agenda URL when available
     contact:
       slack: C08KGCXB458
