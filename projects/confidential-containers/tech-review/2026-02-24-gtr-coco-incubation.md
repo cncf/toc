@@ -298,7 +298,7 @@
       
     * Describe how the project is following and implementing [secure software supply chain best practices](https://project.linuxfoundation.org/hubfs/CNCF\_SSCP\_v1.pdf) 
     
-      The project has achieved [SLSA Build Level 2](https://confidentialcontainers.org/blog/2025/02/17/coco-and-slsa/), automatically generating signed provenance in `in-toto` format via GitHub Actions for components like `kata-containers`, `guest-components`, and `cloud-api-adaptor`. Images are encrypted and signed via Cosign/Skopeo.
+      The project has achieved SLSA Build Level 2 (see [blog](https://confidentialcontainers.org/blog/2025/02/17/confidential-containerscoco-and-supply-chain-levels-for-software-artifacts-slsa), automatically generating signed provenance in `in-toto` format via GitHub Actions for components like `kata-containers`, `guest-components`, and `cloud-api-adaptor`.
  
 
 ## Day 1 \- Installation and Deployment Phase
