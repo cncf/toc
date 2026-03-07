@@ -15,15 +15,17 @@ Karena Angell, TOC Member and Chair, conducted the due diligence of Kyverno who 
 The project has completed the criteria that show its maturity at Graduation. The following criteria implementations are noteworthy to call out:
 * The ability to write policies in YAML or CEL lowers the learning curve for adopters and allows platforms teams to use existing GitOps and Helm workflows
 * The Kyverno CLI allows teams to 'shift-left' by being able to validate policy changes in the CI/CD pipelines prior to reaching production. Recent optimizations have adopters reporting hightly improved execution time in large clusters
-* [Documented AI Policy](https://github.com/kyverno/community/blob/main/AI_USAGE_POLICY.md)
+* [Documented AI Usage Policy](https://github.com/kyverno/community/blob/main/AI_USAGE_POLICY.md)
 * Highly responsive and collaborative maintainers that continue to incorporate community feedback into new releases and are quick to respond to criticadl bug fixes
 * Addressed the previous maintainer ladder concerns and continue to evaluate organizational and maintainer diversity
 * Granular policy enforcement to help manage specific security deviations in complex environments
 * Extensive documentation allowing easy and fast implementation
 * Operational stability at scale with reliability required by large adopting organizations
+* Useful subprojects such as [Kyverno Chainsaw](https://github.com/kyverno/chainsaw) that enables declarative end-to-end testing in a Kubernetes cluster
 
 The following actions were provided to the project that were considered blocking but since resolved:
-* Build a robust maintainer ladder and update governance - and show in action for at least 6 months - to address organizational diversity concerns
+* Build a robust maintainer ladder and update governance - and show in action for at least 6 months - to address organizational diversity concerns. See Governance Section\
+* 
 * [Update CODEOWNERS file to reflect accurate maintainer list](https://github.com/kyverno/kyverno/issues/15110)
 * [Vendor Neutrality: Remove references to the contributing organization](https://github.com/kyverno/kyverno/issues/15113)
 * [Link Release Procedure to main Release page](https://github.com/kyverno/website/issues/1867)
@@ -47,18 +49,18 @@ The following recommendations were provided to the project that are non-blocking
   * Sample network policies for common platforms
 
 * [TOC Project Reviews Subproject - Kyverno General Technical Review Assesment](https://github.com/kyverno/kyverno/issues/15473)
-  * confirm the project’s explicit “non-goals” list (if any) beyond subproject statements.
-  * request links to formal UX/user research reports, surveys, or adopter interviews (if maintained publicly or shareable).
-  * capture a concise list of “core CRDs/APIs” and stability policy per API group (if there is a single authoritative page).
-  * request a consolidated threat model (or pointer to one) if maintained outside the self-assessment.
-  * link the definitive doc section describing webhook cert issuance/rotation and operational guidance (if separate from general docs).
-  * clarify recommended “temporary disable” patterns for production incidents (for example, scale to zero vs. change failure behavior vs. selective policy disable).
-  * capture formal SLOs/SLIs (if the project has published targets) and map them to existing metrics.
-  * document recommended alerting thresholds (latency/error/drops) and provide reference dashboards/runbooks.
-  * document dependency lifecycle/SCA workflow end-to-end (tooling, tracking, SLAs for vulnerability remediation) beyond SBOM publication.
-  * summarize “safe-mode” recommendations for production incidents (preferred steps, expected blast radius) from maintainer guidance.
-  * provide explicit process for third-party notices in source and in distributed artifacts (and how it aligns with CNCF attribution guidance).
-  * link the current security response process (reporting, triage, rotation) and evidence of diverse representation in the response team.
+  * Confirm the project’s explicit “non-goals” list (if any) beyond subproject statements.
+  * Request links to formal UX/user research reports, surveys, or adopter interviews (if maintained publicly or shareable).
+  * Capture a concise list of “core CRDs/APIs” and stability policy per API group (if there is a single authoritative page).
+  * Request a consolidated threat model (or pointer to one) if maintained outside the self-assessment.
+  * Link the definitive doc section describing webhook cert issuance/rotation and operational guidance (if separate from general docs).
+  * Clarify recommended “temporary disable” patterns for production incidents (for example, scale to zero vs. change failure behavior vs. selective policy disable).
+  * Capture formal SLOs/SLIs (if the project has published targets) and map them to existing metrics.
+  * Document recommended alerting thresholds (latency/error/drops) and provide reference dashboards/runbooks.
+  * Document dependency lifecycle/SCA workflow end-to-end (tooling, tracking, SLAs for vulnerability remediation) beyond SBOM publication.
+  * Summarize “safe-mode” recommendations for production incidents (preferred steps, expected blast radius) from maintainer guidance.
+  * Provide explicit process for third-party notices in source and in distributed artifacts (and how it aligns with CNCF attribution guidance).
+  * Link the current security response process (reporting, triage, rotation) and evidence of diverse representation in the response team.
 
 ### Adoption Evaluation
 
@@ -73,7 +75,7 @@ However, several areas for improvement were identified to support long-term ente
 
 ### Final Assessment
 
-The TOC has found the project to have satisfied the criteria for Graduation. The TOC requests the project to meet with the TOC in 3 months time to review the non-blocking issues and findings from the TAG Security and Compliance Joint Security Assessment and General Technical Review Assessment.
+The TOC has found the project to have satisfied the criteria for Graduation. The TOC requests the project meet with the TOC in 3 months time to review the non-blocking issues and findings from the TAG Security and Compliance Joint Security Assessment and General Technical Review Assessment. At that time the TOC would like to see the roadmap for any remaining non-blocking concerns from both assessments.
 
 ### Criteria
 
@@ -88,16 +90,15 @@ N/A
 - [x] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
   - This was completed and occurred on 05-NOV-2025, and can be discovered at the [TAG's meeting recording](https://zoom.us/rec/play/Vs086CY6n9shLtswCRCZ8um01rRbSGRRBDBwrDXNt8mGjfVbW-ZExVNgknug7rrlFYtsVkiIvnmhdX-4.83cpFEK7O_eTSNw3?eagerLoadZvaPages=sidemenu.billing.plan_management&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fzoom.us%2Frec%2Fshare%2FR38A1sMm5PpzxJGhy3oY27JMWmmOJ1CSe3mG4AYjZurs3GQHRWcItW8PNaSELzxN.A19PcH1eMKZTYOCl&autoplay=true&startTime=1762365863000) beginning at 34 minutes.
 
-<!-- (TOC Evaluation goes here) --> 
 
 - [x]  **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 
 The project has addressed all outstanding issues regarding vendor neutrality.
 
-- [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
-   - [x] Met during Project's application on DD-MMM-YYYY.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
+   - [x] N/A - Met during Project's application on DD-MMM-YYYY.
+
 
 - [x] **Due Diligence Review.**
 
@@ -285,6 +286,7 @@ Note: This report is augmented by a [Governance Review](https://github.com/cncf/
 
 
 ## Engineering Principles
+
 Note: This report is augmented by a [General Technical Review](https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md) that was performed by Dylan Page in early 2026.
 
 ### Suggested
@@ -294,12 +296,11 @@ N/A
 ### Required
 
 - [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
-  * a General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md).
-
-<!-- (TOC Evaluation goes here) --> 
+  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md).
+ 
 
 - [x] **Document what the project does, and why it does it - including viable cloud native use cases. _This requirement may also be satisfied by completing a General Technical Review._**
-  * a General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md).
+  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md).
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
@@ -313,7 +314,7 @@ The project maintains a [public roadmap](https://github.com/kyverno/kyverno/blob
 The project has documented the Roadmap change process in the ROADMAP.md.
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
-  * a General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md).
+  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md).
 
 The TOC has confirmed project Kyverno’s [documentation](https://kyverno.io/docs/introduction/how-kyverno-works/#kubernetes-admission-controls) describes the architecture (policy controller, admission webhooks, background scan controller) and provides diagrams explaining how it interacts with Kubernetes. The new policy types (ValidatingPolicy, ImageValidatingPolicy, MutatingPolicy, GeneratingPolicy, DeletingPolicy) are explained in [release blogs](https://kyverno.io/blog/releases/) and [documentation](https://kyverno.io/docs/policy-types/).
 
