@@ -10,7 +10,7 @@ Within the Cloud Native space, there has been an explosion in agentic AI. Rapid 
 
 Agentic systems provide the means to perform multi-hop reasoning, and subsequent action calling based upon signals to augment and provide dynamism to conventional programming sequences.  
 
-This paper explores four key areas which are associated with components that are in need of standardization to ensure interoperability, security, and observability are applied from the beginning. The focus of this document is not on how a particular agentic protocol itself is programmed, which language is used or its speed or efficiency of execution, but rather an agnostic view of what should be considered as the best practices to apply as to ensure that deployments in this space can securely scale and remain explainable, through a common and effective foundation. 
+This paper explores four key areas where standardization is needed to ensure interoperability, security, and observability from the outset. The focus of this document is not on how specific agentic protocols are implemented, which programming languages are used, or their execution efficiency. Instead, it provides an agnostic view of best practices that enable deployments in this space to scale securely while remaining observable and explainable through a common foundational framework.
 
 The recommendations described herein are exclusively focused on Cloud Native projects like Kubernetes deployments. This extends to scenarios where Kubernetes may be deployed in public, private, hybrid or edge compute type scenarios, as there are nuances in the domain of security associated with these environments and systems. 
 
@@ -134,7 +134,7 @@ It should be noted, that for this section, the **change revision is very high**,
 
 **Footnotes:** 
 - *Agent Protocols Paper:  [https://arxiv.org/pdf/2504.16736](https://arxiv.org/pdf/2504.16736)*
-- *OWAPS Secure Agent Registry: [https://genai.owasp.org/secure-agent-registry/](https://genai.owasp.org/secure-agent-registry/)*
+- *OWASP Secure Agent Registry: [https://genai.owasp.org/secure-agent-registry/](https://genai.owasp.org/secure-agent-registry/)*
 - *Agentic Directory Agntcy: [https://agent-directory.outshift.com/explore](https://agent-directory.outshift.com/explore)*
 - *Linux Foundation Agntcy project: [https://docs.agntcy.org/](https://docs.agntcy.org/dir/overview/)*
 - *Google A2A Project: [https://github.com/a2aproject/A2A](https://github.com/a2aproject/A2A)*
@@ -188,7 +188,7 @@ This section defines the critical governance mechanisms necessary to ensure the 
 
 - [ ] **Agentic Governance Foundations**  
     - [ ] Governance is considered a mandatory foundational layer and factor that must be applied in Cloud Native agentic deployments   
-    - [ ] Counter to existing software governance practices, adherence to a **more dynamic and flexible governance approach** to deal with emergent behaviours in multi-agent systems (LLM-MA’s)  
+    - [ ] Counter to existing software governance practices, adherence to a more dynamic and flexible governance approach is essential to deal with emergent behaviours in multi-agent systems (LLM-MA’s). 
     - [ ] Provision for **regulatory adherence**, to avoid future system design changes, design the system correctly from the beginning, including transparency and accountability, to avoid costly refactoring and redesigns later  
             
 
