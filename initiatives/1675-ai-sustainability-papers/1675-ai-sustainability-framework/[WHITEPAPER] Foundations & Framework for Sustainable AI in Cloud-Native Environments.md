@@ -2,7 +2,11 @@
 
 # Foundations & Framework for Sustainable AI in Cloud Native Environments
 
+<div align="center">
+
 ![][image1]
+
+</div>
 
 | TAG / Group Home: [https://tag-runtime.cncf.io/wgs/cnaiwg/](https://tag-runtime.cncf.io/wgs/cnaiwg/)  Authors (listed alphabetically): Adel Zaalouk Andrew Block, Red Hat Marisol Palmero Nimisha Mehta Payam Mohajeri Prateek Kumar Viktor Lu Vincent Caldeira, Red Hat | GitHub Issues: [CNCF TOC Issue 1675](https://github.com/cncf/toc/issues/1675) |
 | :---- | :---- |
@@ -45,7 +49,11 @@ At the same time, the computational intensity of AI systems continues to rise. T
 
 The impact is global. The International Energy Agency projects that data-center electricity demand will nearly double to around 945 TWh by 2030, approaching 3% of global electricity consumption, with significant growth across North America, Europe, and Asia-Pacific.3
 
+<div align="center">
+
 ![][image2]
+
+</div>
 
 ## CNCF’s Role in Sustainable Cloud Native AI {#cncf’s-role-in-sustainable-cloud-native-ai}
 
@@ -192,7 +200,11 @@ To make sustainability actionable, telemetry must be used to trigger concrete op
 6. Instrument and standardize telemetry
 
 The practical outcome of this approach is a measurable loop: telemetry reveals waste (idle accelerators, oversized services, inefficient placement), and platform controls convert those insights into action (autoscaling, scheduling, placement, and time shifting). This makes sustainability improvements repeatable across teams and workloads, while aligning operational behavior with the growing scale of AI and evolving governance expectations.3 5 21  
+<div align="center">
+
 ![][image3]
+
+</div>
 
 [^1]:  [CNCF Environmental Sustainability TAG](https://tag-env-sustainability.cncf.io/)
 
