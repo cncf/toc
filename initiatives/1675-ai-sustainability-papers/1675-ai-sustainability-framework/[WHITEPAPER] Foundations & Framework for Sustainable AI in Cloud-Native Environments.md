@@ -70,10 +70,11 @@ Table 1 \- CNCF projects supporting sustainable cloud native AI
 | OpenCost [^12] | Cost transparency | Map cost to energy footprint |
 | Volcano [^13] | Batch scheduling for AI | Optimize GPU allocation |
 | OpenTelemetry [^14] | Metrics & observability | Monitor sustainability KPIs |
+| Kueue [^15] | Job queuing & resource sharing | Efficient resource utilization for AI training |
 
-Taken together, these projects make sustainability actionable within the existing cloud native control plane: measure resource use, expose it as telemetry, and use scaling and scheduling to reduce waste. This enables teams to integrate sustainability KPIs into operational workflows (dashboards, alerts, policy gates) rather than treating them as an external reporting step.[^15]
+Taken together, these projects make sustainability actionable within the existing cloud native control plane: measure resource use, expose it as telemetry, and use scaling and scheduling to reduce waste. This enables teams to integrate sustainability KPIs into operational workflows (dashboards, alerts, policy gates) rather than treating them as an external reporting step.[^16]
 
-To embed sustainability in AI operations alongside CNCF projects, the ISO/IEC 21031:2024 (Software Carbon Intensity, SCI)[^16] standard could be adopted. This specification provides a methodology to measure software-generated emissions, accounting for not only operational energy consumption but also the amortized embedded carbon from hardware's full lifecycle (production, transport, reuse, disposal). This allows reducing carbon through less/cleaner energy, responsible hardware production, extended hardware lifespan, or efficient software. An extension is being developed for AI-specific workloads, covering the AI lifecycle and establishing boundaries to fairly attribute emissions between consumers and providers for responsible reporting.[^17]
+To embed sustainability in AI operations alongside CNCF projects, the ISO/IEC 21031:2024 (Software Carbon Intensity, SCI)[^17] standard could be adopted. This specification provides a methodology to measure software-generated emissions, accounting for not only operational energy consumption but also the amortized embedded carbon from hardware's full lifecycle (production, transport, reuse, disposal). This allows reducing carbon through less/cleaner energy, responsible hardware production, extended hardware lifespan, or efficient software. An extension is being developed for AI-specific workloads, covering the AI lifecycle and establishing boundaries to fairly attribute emissions between consumers and providers for responsible reporting.[^18]
 
 # Reference Model for Sustainable AI Design {#reference-model-for-sustainable-ai-design}
 
@@ -148,7 +149,7 @@ To make sustainability improvements repeatable, teams typically run a simple ope
 
 Even as hardware becomes more efficient, overall demand can still rise due to increased model scale and usage. The AI Index 2025 reports rapid improvements in hardware energy efficiency, while also noting that the power required for training has continued to increase.5 This reinforces why the deployment environment and the control plane matter: sustainability improvements depend on measuring the right signals and then using orchestration and scheduling to reduce idle capacity and unnecessary data movement.
 
-For Kubernetes environments, Kepler-based approaches are one practical path to connect workload operations to energy-aware optimization workflows.15 At the systems level, the IETF GREEN working group provides a standards-oriented framing for energy measurement and control in ICT systems.[^18]
+For Kubernetes environments, Kepler-based approaches are one practical path to connect workload operations to energy-aware optimization workflows.16 At the systems level, the IETF GREEN working group provides a standards-oriented framing for energy measurement and control in ICT systems.[^19]
 
 ## Personas & Responsibilities in Sustainable AI {#personas-&-responsibilities-in-sustainable-ai}
 
@@ -182,15 +183,15 @@ Table 7 \- Governance levers for sustainable AI operations
 | Policy, risk, and compliance | Required controls and evidence | documentation, logging, audits | audit trail completeness |
 | Continuous improvement | How progress is sustained | recurring reviews, postmortems, education | KPI trend improvements quarter-over-quarter |
 
-Workload placement can be optimized not only by location (region) but also by time. For flexible workloads (e.g., training, batch inference, retraining pipelines), organizations can dynamically shift execution to hours when grid electricity is cleaner or renewable availability is higher, using carbon-intensity forecasts and scheduling policies. This approach is already used in practice in large-scale “carbon-aware computing” initiatives and is increasingly supported by open tooling and forecast APIs.[^19] [^20] [^21]
+Workload placement can be optimized not only by location (region) but also by time. For flexible workloads (e.g., training, batch inference, retraining pipelines), organizations can dynamically shift execution to hours when grid electricity is cleaner or renewable availability is higher, using carbon-intensity forecasts and scheduling policies. This approach is already used in practice in large-scale “carbon-aware computing” initiatives and is increasingly supported by open tooling and forecast APIs.[^20] [^21] [^22]
 
-Governance is also shaped by regulation. The EU AI Act requires providers of certain systems to maintain technical documentation and related compliance evidence, and official guidance highlights documentation elements and lifecycle maintenance expectations.[^22] Regardless of jurisdiction, the control pattern is consistent: define sustainability metrics, measure them continuously, enforce policies through automation where possible, and retain evidence for review and audit.20
+Governance is also shaped by regulation. The EU AI Act requires providers of certain systems to maintain technical documentation and related compliance evidence, and official guidance highlights documentation elements and lifecycle maintenance expectations.[^23] Regardless of jurisdiction, the control pattern is consistent: define sustainability metrics, measure them continuously, enforce policies through automation where possible, and retain evidence for review and audit.21
 
 # Conclusion {#conclusion}
 
 Sustainable AI in cloud native environments is primarily an operations and governance problem: AI demand is rising, and the infrastructure footprint depends on how systems are deployed, measured, and continuously optimized. Recent analyses show data-centre electricity demand growing rapidly and projected to increase substantially toward 2030, with AI as a major driver.3 At the same time, leading AI systems continue to increase compute requirements, reinforcing the need to treat sustainability as part of the platform control plane rather than an external reporting activity.5
 
-To make sustainability actionable, telemetry must be used to trigger concrete optimization decisions. The CNCF ecosystem provides the primitives to measure and act (energy telemetry, cost signals, autoscaling, scheduling, and observability), but the goal is to close the loop between measurement and change.15 Actionable steps for sustainable cloud native AI:
+To make sustainability actionable, telemetry must be used to trigger concrete optimization decisions. The CNCF ecosystem provides the primitives to measure and act (energy telemetry, cost signals, autoscaling, scheduling, and observability), but the goal is to close the loop between measurement and change.16 Actionable steps for sustainable cloud native AI:
 
 1. Embed governance and evidence collection  
 2. Use telemetry to reduce footprint (not just observe it) and even increase handprint  
@@ -199,7 +200,7 @@ To make sustainability actionable, telemetry must be used to trigger concrete op
 5. Define a small set of operational sustainability KPIs  
 6. Instrument and standardize telemetry
 
-The practical outcome of this approach is a measurable loop: telemetry reveals waste (idle accelerators, oversized services, inefficient placement), and platform controls convert those insights into action (autoscaling, scheduling, placement, and time shifting). This makes sustainability improvements repeatable across teams and workloads, while aligning operational behavior with the growing scale of AI and evolving governance expectations.3 5 21  
+The practical outcome of this approach is a measurable loop: telemetry reveals waste (idle accelerators, oversized services, inefficient placement), and platform controls convert those insights into action (autoscaling, scheduling, placement, and time shifting). This makes sustainability improvements repeatable across teams and workloads, while aligning operational behavior with the growing scale of AI and evolving governance expectations.3 5 23  
 <div align="center">
 
 ![][image3]
@@ -234,21 +235,23 @@ The practical outcome of this approach is a measurable loop: telemetry reveals w
 
 [^14]:  [OpenTelemetry: traces, metrics, logs](https://opentelemetry.io/docs/what-is-opentelemetry/)
 
-[^15]:  [Grafana Labs, Kubernetes, Kepler, and carbon observability tools](https://grafana.com/blog/kubernetes-kepler-and-carbon-footprints-the-latest-tools-and-strategies-to-optimize-observability/)
+[^15]:  [Kueue Kubernetes-native Job Queueing](https://kueue.sigs.k8s.io/)
 
-[^16]:  [ISO/IEC 21031:2024 \- Software Carbon Intensity (SCI) specification](https://www.iso.org/standard/86612.html)
+[^16]:  [Grafana Labs, Kubernetes, Kepler, and carbon observability tools](https://grafana.com/blog/kubernetes-kepler-and-carbon-footprints-the-latest-tools-and-strategies-to-optimize-observability/)
 
-[^17]:  [SCI for AI \- Software Carbon Intensity for Artificial Intelligence | Green Software Foundation](https://sci-for-ai.greensoftware.foundation/)
+[^17]:  [ISO/IEC 21031:2024 \- Software Carbon Intensity (SCI) specification](https://www.iso.org/standard/86612.html)
 
-[^18]:  [IETF Green WG](https://datatracker.ietf.org/group/green/about/) 
+[^18]:  [SCI for AI \- Software Carbon Intensity for Artificial Intelligence | Green Software Foundation](https://sci-for-ai.greensoftware.foundation/)
 
-[^19]:  [Google: shift compute to cleaner hours/regions](https://blog.google/outreach-initiatives/sustainability/carbon-aware-computing-location/)
+[^19]:  [IETF Green WG](https://datatracker.ietf.org/group/green/about/) 
 
-[^20]:  [Microsoft: time and location shifting in Azure](https://devblogs.microsoft.com/ise/saving-co2-using-location-and-time-shifting-in-azure/)
+[^20]:  [Google: shift compute to cleaner hours/regions](https://blog.google/outreach-initiatives/sustainability/carbon-aware-computing-location/)
 
-[^21]:  [Electricity Maps: carbon intensity history/forecast API](https://app.electricitymaps.com/developer-hub/api/reference)
+[^21]:  [Microsoft: time and location shifting in Azure](https://devblogs.microsoft.com/ise/saving-co2-using-location-and-time-shifting-in-azure/)
 
-[^22]:  [European Union, AI Act: risk, transparency, obligations](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+[^22]:  [Electricity Maps: carbon intensity history/forecast API](https://app.electricitymaps.com/developer-hub/api/reference)
+
+[^23]:  [European Union, AI Act: risk, transparency, obligations](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 [image1]: images/image1.png
 
