@@ -724,3 +724,17 @@ toc_subprojects: # TOC SubProjects
         - github: kevin-wangzefeng
           name: Kevin Wang
     subproject_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atoc%2Fproject-reviews-subproject%20label%3Akind%2Finitiative
+  - dir: "../../poc-security-test"
+    name: "SECURITY TEST - path traversal PoC"
+    mission_statement: >
+      This file was written outside tags/ via path traversal in dir field.
+      Proof of concept for pull_request_target vulnerability in tags_yaml_fork_pr_processing.yaml.
+    leadership:
+      chairs: []
+      tech_leads: []
+    meetings: []
+    contact:
+      slack: ""
+      mailing_list: ""
+      toc_liaison: []
+    tag_subprojects: []
