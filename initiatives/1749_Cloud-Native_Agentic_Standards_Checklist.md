@@ -2,7 +2,7 @@
 
 This paper aligns to the definition of Containerization of agentic AI as: 
 
-**A microservice-based application, composed of one or more containers as dictated by system architecture, that operates either independently or as part of a distributed collaboration—interacting with at least one other entity (container) or achieving quorum-based consensus. It leverages AI or Machine Learning capabilities to reason and execute actions within event-driven systems, where behavior is triggered or modulated by signals. Its defining attributes: encompass differing levels of autonomy in executing system or user tasks, coupled with the ability to plan, orchestrate, and govern the continuation or completion of its own execution.**
+**An application, composed of one or more containers as dictated by system architecture, that operates either independently or as part of a distributed collaboration—interacting with at least one other entity (container) or achieving quorum-based consensus. It leverages AI or Machine Learning capabilities to reason and execute actions within event-driven systems, where behavior is triggered or modulated by signals. Its defining attributes: encompass differing levels of autonomy in executing system or user tasks, coupled with the ability to plan, orchestrate, and govern the continuation or completion of its own execution. In cloud-native environments, these components are commonly packaged and deployed as containerized microservices.**
 
 Overview
 
@@ -12,9 +12,9 @@ Agentic systems provide the means to perform multi-hop reasoning, and subsequent
 
 This paper explores four key areas where standardization is needed to ensure interoperability, security, and observability from the outset. The focus of this document is not on how specific agentic protocols are implemented, which programming languages are used, or their execution efficiency. Instead, it provides an agnostic view of best practices that enable deployments in this space to scale securely while remaining observable and explainable through a common foundational framework.
 
-The recommendations described herein are exclusively focused on Cloud Native projects like Kubernetes deployments. This extends to scenarios where Kubernetes may be deployed in public, private, hybrid or edge compute type scenarios, as there are nuances in the domain of security associated with these environments and systems. 
+The recommendations described herein are exclusively focused on Cloud Native environments built on Kubernetes. This extends to scenarios where Kubernetes may be deployed in public, private, hybrid or edge compute type scenarios, as there are nuances in the domain of security associated with these environments and systems. 
 
-The target audience for this paper are individuals who aim to deploy agentic tooling in Cloud Native, microservice-based environments who are looking for a central and concise view of important points to consider in order to build a successful system deployment. 
+The target audience for this paper are individuals who aim to deploy agentic systems in Cloud Native, microservice-based environments who are looking for a central and concise view of important points to consider in order to build a successful system deployment. 
 
 This document provides a foundational checklist for agentic standards, but is not intended to be exhaustive and will continue to evolve as practices and the tools improve.
 
@@ -25,7 +25,7 @@ This section outlines foundational container and observability best practices fo
 
 ## General best practices for containers:
 
-The containerization principles outlined herein include emerging definitions of agentic microservices (e.g., autonomous, signal-driven, reasoning-capable container systems), the recommendations in this general section are not specific to agentic use cases and apply to any containerized or serverless environment.
+The containerization principles outlined herein include emerging definitions of agentic services (e.g., autonomous, signal-driven, reasoning-capable container systems deployed within microservice-oriented architectures). The recommendations in this general section are not specific to agentic use cases and apply to any containerized or serverless environment.
 
 General best practices include: **Security**, which covers minimizing attack surface and safeguarding container integrity; **Observability**, which focuses on collecting actionable metrics, logs, and traces to understand system behavior; and **Availability & Fault Tolerance**, which outlines strategies for maintaining service continuity and resilience under failure conditions.
 
@@ -55,15 +55,17 @@ General best practices include: **Security**, which covers minimizing attack sur
 - [ ] Set up data retention and aggregation policies.   
       
 
-**Availability & Fault Tolerance**
+**Availability & Fault Tolerance (General)**
 
 - [ ] Implement resource limits and requests to prevent noisy neighbor issues and ensure container stability. Set reasonable CPU/GPU and memory boundaries in your Kubernetes pod specs.  
 - [ ] Utilize PodDisruptionBudgets to enforce minimum pod availability during voluntary disruptions like upgrades or node drains.  
 - [ ] Use Pod Anti‑Affinity or Topology Spread Constraints to distribute pod replicas across nodes or zones, minimizing the impact of node or zone-level failures when possible.  
 - [ ] Use Horizontal Pod Autoscaler (HPA) to scale workloads dynamically using CPU, Memory, or custom metrics such as request volume.  
-- [ ] Inference extensions provided via the Gateway API ensure that path-based rules are to be applied with a focus on inference served AI Models to augment robustness and availability. This capability supports more dynamic deployment scenarios used by agents.
 
 NOTE: The above items are general in nature, and while applicable to smart load-balancing to inference models, does not pertain to more comprehensive MCP / Agent to Agent or LLM tooling. 
+
+**Availability & Fault Tolerance (Inference-Specific)**
+- [ ] Inference extensions provided via the Gateway API ensure that path-based rules are to be applied with a focus on inference served AI Models to augment robustness and availability. This capability supports more dynamic deployment scenarios used by agents.
 
 ![][image1]
 
@@ -149,12 +151,13 @@ Observability in the context of agentic microservices manifests itself in a numb
 Observability metrics for agentic services extends beyond basic container health metrics architectures in a number of ways. Metrics can be used as a means to identify the precision of requests handled, the time taken to complete a particular task, dwell time in a multi-agent architecture per function, and even as a comparative value to assess if a given tool exposure is more efficient from Service A or Service B. 
 
 - [ ] **Metrics**  
-    - [ ] Configuration of metrics to track tokens used for inference activities with a given model (or xLM if applicable), including relevant metadata (role, model, etc…), both inside and outside of a cluster  
+    - [ ] Configuration of metrics to track tokens used for inference activities with a given model (or xLM if applicable), including relevant metadata (role, model, etc…), and optionally more granular metrics such as TTFT/TPOT/ITL, input/output/reasoning tokens, or other evolving performance measures, both inside and outside of a cluster. 
     - [ ] Interactions with external tools/LLM should be applied as a metric which can be monitored in time series for threshold changes, variance, as to allow for delta comparison, trend analysis, and diagnostics  
     - [ ] Duration of execution is an important parameter to track, to allow for comparisons between models, and to support in identifying load-related challenges   
     - [ ] Cost of inference is a viable and trackable parameter which is offered by many online models, similar cost values can be derived based on private metrics such as cost of power and maintenance for private cloud environments  
     - [ ] Precision, percentage-based confidence level on inference responses when interfacing with given models to allow for improvement comparisons and continuous evaluation  
     - [ ] Rate Limits hits when executing inference activities, including relevant metadata such as model, account, and tokens used that resulted in rate-limit hits, this data is useful to adapt agent architectures to implement a pause, or capacity characteristics to be updated or model selection changed, this is particularly relevant in on-prem deployments, where concurrency may be a factor. 
+    - [ ] Record use-case-specific metrics, such as prompts for validating correctness, hallucinations, or success rate for self-improving agents.
 
 The use of observability traces allows for an end-to-end waterfall view of communications which take place between microservices including agents. In the context of agentic microservice deployments, deploying the right levels of traceability, can support a clear and concise view of the communication flows between agents, databases, and other ancillary components which build up the end-to-end application flow. Traceability is becoming an important consideration for agentic architectures as a means to support requisite regional explainability mandates (EU AI Data Act, etc…).  
 
@@ -196,6 +199,11 @@ Critical steps and methodologies required *before* an agent is deployed to ensur
 
 Evaluation factors should be considered beyond the siloed metrics of task completion accuracy or job completion time, to consider multifaceted attributes as part of a comprehensive assessment. 
 
+- [ ] **Evaluation Approach**
+    - [ ] **Targeted Use Case Consideration**
+        - [ ] Adjust evaluation priorities based on application and use case to allow for differential assessment.
+        - [ ] Support tailoring evaluation approaches to the actual system the agent is embedded in.
+
 - [ ] **Assessment Criterion**   
     - [ ] Clear definition of success criterion and success rate of execution in conjunction with quality evaluation of outputs  
     - [ ] Total cost of usage  
@@ -204,8 +212,6 @@ Evaluation factors should be considered beyond the siloed metrics of task comple
         - [ ] Environmental Impact (CO2, Carbon Credits)  
         - [ ] Human Cost (Oversight / Setup Time)   
         - [ ] Mandatory storage of data (backups, audit trails)   
-    - [ ] **Targeted Use Case Evaluation**  
-        - [ ] Adjustment of evaluation priorities based on application and use case to allow for differential evaluation. The framework should support tailoring evaluation approaches to the actual system the agent is embedded in.  
     - [ ] **Reliability and Robustness**  
         - [ ] Evaluation of Agent Behaviour in diverse and atypical testing scenarios  
         - [ ] Ability to withstand adversarial, bias-based, and other attack vectors  
@@ -291,11 +297,13 @@ The following practices for Agent Identity should be adhered to:
 - [ ] **Audit and log agent identity usage**   
     - [ ] Track which agent used which identity, when, and for what purpose. This is critical for accountability, especially in multi-agent or distributed systems. Note: Secure, tamper-proof logging may be required to support non-repudiation and forensic analysis. Consider using append-only logs or systems with cryptographic guarantees to ensure log integrity.  
     - [ ] “Know your agents”. Maintain a registry of validated agents and track who launched the agent, when, and what permissions it has.  
+    - [ ] Ensure delegated actions between agents are logged and auditable to detect misuse of one agent’s identity by another.
 - [ ] **Verify agent identity before each action, not just at the start**   
     - [ ] Re-authenticate and re-authorize mid-session for sensitive actions.  
 - [ ] **Create enforcement boundaries for agent identity**   
     - [ ] Service meshes, Kubernetes NetworkPolicy, API gateways, etc., to ensure agents can only communicate with authorized tools and services.  
     - [ ] This layered defense limits lateral movement if an agent is compromised or misbehaves due to prompt injection or tool hijacking.  
+    - [ ] Ensure that agents cannot access resources or perform actions via another agent without explicit authorization (delegation security).
     - [ ] If using MCP Authorization, follow the authorization flow described in the authorization spec if using HTTP-based transport protocols.   
 - [ ] **Use a secure, discoverable naming and identity resolution system**   
     - [ ] Adopt frameworks like the OWASP Agent Name Service (ANS) for cryptographically verifiable agent discovery and naming. 
