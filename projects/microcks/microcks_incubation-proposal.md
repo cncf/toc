@@ -13,12 +13,14 @@ Katie Gamanji conducted the due diligence of Microcks who applied for Incubation
 - ... $NOTABLES. 
 
 The following actions were provided to the project that were considered blocking but since resolved:
+- The TOC also recommends considering a format of a steering committee (SC) to collect feedback from adopters and community members. The 2 main maintainers are from the same company, and a diversification of maintainers will be beneficial in the long run. Whilst adding maintainers might be challenging, an SC might be easier to set up to ensure there is a pathway to contribute to the project roadmap. 
 - For the main project, update the list of maintainers to include active contributors and develop a plan for onboarding new members.  
 - For subprojects, identify reasons for stalled contributions and encourage activity or implement archiving initiatives as needed. 
 - Onboard at least 1 maintainer to ensure the voting clause on project maintainers and deliverables is fulfilled. The other option is to update the voting guidelines. 
 - Clearly outline the project goals and objectives and/or out-of-scope items. This can be solved by completing the GTR or separately in the project documentation. Similar example already available as part of the security [self-assessment](https://github.com/yada/tag-security/blob/main/community/assessments/projects/microcks/self-assessment.md#goals).
 - Provide timelines for release milestone.
 - Provide clear guidelines on how to cut/deploy a release, including cadence, versioning, etc., under a Release.md or similar file.
+
 
 The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
 - The project presented to TAG App Delivery last year, hence their feedback and review are relevant as it's pretty recent. The extra recommendation is to liaise with the new TAGs and present to TAG Workloads Foundation and TAG Developer Experience. The other option is to complete the self-assessment [GTR](https://github.com/cncf/toc/blob/main/toc_subprojects/project-reviews-subproject/general-technical-questions.md).
@@ -420,10 +422,15 @@ Available integrations:
 
 #### Adoption
 
-##### Adopter 1 - $COMPANY/$INDUSTRY
+##### Adopter 1 - Finance
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+Adopter 1 has been using Microcks for 3 years across development, QA, and integration environments. The project is not used in pre-production or production, as mocking is not practiced in those environments. They are currently on version 1.11.12 and update approximately once a year. The two core motivations for adoption were API-first practices, specifically decoupling dependencies between API providers and consumers, and reducing mainframe consumption during performance testing of microservices that interact with mainframe applications. Microcks was chosen over alternatives due to being an open source project, simple to use, scalable, and compatible with Postman.
+
+The main adoption challenge was organizational rather than technical. The initial approach of asking API providers to supply their mocks was rejected due to change management concerns. The current model allows each stakeholder to implement their own mock, which resolved the immediate blocker but introduced a lack of centralized mock governance and reuse. Documentation was found to be comprehensive and relevant, with Postman integration and shared examples called out as particularly useful. Community engagement has not taken place due to time constraints, despite there being interest. The overall adoption value has been observed through a noticeable decrease in mainframe consumption and an increase in team decoupling, though this is not formally measured.
+
+The standout strengths are that Microcks is open source, easy to use, and simple to install. The key improvement suggested is the ability to capture real API usage and feed it back into enriching existing mocks. Adopter 1 also noted that if Microcks ever became a paid product, they would look for another solution, as the open-source, cost-free nature is the fundamental reason to why it was selected. If the project were to be archived, Adopter 1 would need to find an alternative or maintain it internally, as this type of tooling is considered essential and cannot simply be removed from the CNCF ecosystem.
+
+March 2026
 
 ##### Adopter 2 - $COMPANY/$INDUSTRY
 
