@@ -92,6 +92,12 @@ If you’re unsure about scope, versioning, or review requirements:
 - Open an issue labeled **question** (or equivalent)
 - Tag/mention the maintainer and proposed SME reviewer(s)
 
+---
+
+## Editing Images 
+
+Some of the images in the paper were created with the open source whiteboarding tool [Excalidraw](https://excalidraw.com/). To edit these images for future revisions, upload the SVG into Excalidraw.  
+
 --- 
 
 ## Checklist for PR/MR Authors
