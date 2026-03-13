@@ -73,13 +73,14 @@ HAMi addresses the need to share expensive heterogeneous accelerators (e.g., NVI
 **Kubernetes API Server**: While HAMi operates within kubernetes, It uses kubernetes API server to handles requests and responses between users and the HAMi scheduler. It’s a critical interface and thus a separate actor due to its role in processing and validating job submissions.
 
 **Scheduler Extender (hami-scheduler)**  
-Runs in the cluster and is called by the default Kubernetes scheduler for Filter and Score. It holds a view of node devices and pod allocations, and decides which nodes can fit device requests. It is isolated as a separate service; compromise could affect scheduling decisions but never in-container isolation.
+hami-scheduler uses scheduler-extender to perform device-specified filter and Score.
+It registers to default Kubernetes scheduler, and is called during Filter and Score phase. hami-scheduler holds a view of node devices and pod allocations, and decides which nodes can fit device requests. It is isolated as a separate service; compromise could affect scheduling decisions but never in-container isolation.
 
 **Mutating Webhook**  
-Running as part of the scheduler deployment and mutates pods before admission to add 'schedulerName: hami-scheduler' to each pod it manages. It must be configured with TLS (self-signed or cert-manager). Compromise could lead to job failure.
+Running as part of the scheduler deployment and mutates pods before admission to add 'schedulerName: hami-scheduler' to each pod it manages. It must be configured with TLS (self-signed or cert-manager, or SPIFFE/SPIRE). Compromise could lead to job failure.
 
 **Device Plugins (e.g., hami-device-plugin)**  
-Run on each node, register device resources with the kubelet, and respond to Allocate requests. They interact with vendor drivers and host paths. Compromise could affect which devices are exposed to which pods or allow escape from resource limits if combined with a bug in in-container enforcement.
+Run on each node, register device resources with the kubelet, and respond to Allocate requests. During initialization, they interact with vendor drivers to query the specs of each devices, patch them in node annotations for scheduler to access. They also extract in-container virtualization library, and put them in a hostpath, for it can be later mounted in a GPU container. Compromise could affect which devices are exposed to which pods or allow escape from resource limits if combined with a bug in in-container enforcement.
 
 **In-Container Virtualization Libraries**  
 Per-device-type components (e.g., libvgpu for NVIDIA, vendor-specific libs for Ascend, MLU) run inside the container and enforce memory/core limits. They are critical for isolation; a flaw could allow a workload to exceed its quota or affect other tenants on the same device. In worst case, it could crash a pod.
@@ -165,13 +166,13 @@ Operators and admins consume metrics (e.g. device usage, allocation counts per n
 
 ### Goals
 
-- **Resource isolation:** Workloads cannot use more device memory or compute cores than requested and allocated; enforcement is hard where supported by the vendor stack.
-- **Multi-vendor support:** Unified interface for NVIDIA, Ascend, Cambricon, Hygon, Iluvatar, Moore Threads, Enflame, MetaX, etc., with consistent scheduling, allocating and monitoring semantics.
+- **Preventing resource leakage:** Processes running in containers cannot change the container's device memory, compute, or visible GPUs by modifying environment variables or config files.
+- **Gradual rollout:** Upgrading or uninstalling HAMi components does not affect workloads that have already been started by HAMi.
+- **Fault isolation:** A failure of one GPU workload does not affect other workloads sharing the same GPU.
 
 ### Non-goals
 
-- **Heterogeneous compute adaptation:** HAMi does not handle task-level heterogeneous compute adaptation; users are responsible for resolving image and device compatibility themselves.
-- **Multi-node scheduling optimization:** HAMi provides pod-based scheduling optimization only and does not support multi-node jobs.
+- **Privileged containers:** HAMi does not schedule privileged tasks (`privileged: true`), because such tasks always see all GPU devices regardless of resource configuration; privileged containers fall back to the default scheduler.
 
 ---
 
@@ -225,7 +226,9 @@ Not Applicable.
 - **Testing:** Unit tests for device logic, scheduler, and webhook; E2E for integration. Contributors are asked to add tests for new code.
 - **Code review:** HAMi employs a rigorous code review process, with multiple maintainers from different organizations and automated checks, as well as AI assistance. This ensures high standards of code quality and security.
 - **AI assistance:** Contributors must disclose AI assistance in PRs; undisclosed use is not acceptable.
-- **Contributer Sign-off:** The project does require DCO or signed commits; governance and maintainer list are documented in [community](https://github.com/Project-HAMi/community).
+- **Code Signing:** The project requires DCO as part of PR checks, all commits must be signed-off before integrated.
+- **Code Protection:** Forbid directly commits, all codes modification must be done with PR.
+- **SBOM and attestations:** SBOM is documented in [community](https://github.com/Project-HAMi/community/blob/main/sbom.md). The project is evaluating or adopting supply-chain attestations (e.g., in-toto, SLSA) where applicable.
 
 ### Communication Channels
 
