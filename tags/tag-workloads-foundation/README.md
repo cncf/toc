@@ -35,12 +35,12 @@ To enhance collaboration among projects, improve interoperability, and empower u
 
 In scope:
 
-To reduce fragmentation in the k8s batch ecosystem: congregate leads and users from different external and internal projects and user groups (CNCF TAGs, k8s sub-projects focused on batch-related features such as topology-aware scheduling) in the batch ecosystem to gather requirements, validate designs and encourage reutilization of core K8s APIs.
+To reduce fragmentation in the Kubernetes batch ecosystem: congregate leads and users from different external and internal projects and user groups (CNCF TAGs, Kubernetes sub-projects focused on batch-related features such as topology-aware scheduling) in the batch ecosystem to gather requirements, validate designs and encourage reutilization of core Kubernetes APIs.
 
 The following recommendations for enhancements:
 
 * Additions to the batch API group, currently including Job and CronJob resources that benefit batch use cases such as HPC, AI/ML, data analytics and CI.
-* Primitives for job-level queueing, not limited to the k8s Job resource. Long-term, this could include multi-cluster support.
+* Primitives for job-level queueing, not limited to the Kubernetes Job resource. Long-term, this could include multi-cluster support.
 * Primitives to control and maximize utilization of resources in fixed-size clusters (on-prem) and elastic clusters (cloud).
 * Benchmarking models for Batch systems
 * Data Locality
