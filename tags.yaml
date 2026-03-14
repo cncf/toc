@@ -554,16 +554,16 @@ tags: # Technical Advisory Groups
     tag_subprojects:
       - name: Batch
         mission_statement: |
-          To enhance collaboration among projects, improve interoperability, and empower users to efficiently leverage batch systems in cloud-native environments.
+          The cloud-native batch scheduling ecosystem is fragmented — different projects tackle job scheduling, queueing, and resource management in incompatible ways. The Batch subproject brings together maintainers and users across the ecosystem to reduce that fragmentation: aligning on common Kubernetes APIs and primitives, developing best practices, and improving outcomes for batch workloads — whether HPC, AI/ML, data analytics, or CI — in cloud-native environments.
 
           In scope:
 
-          To reduce fragmentation in the k8s batch ecosystem: congregate leads and users from different external and internal projects and user groups (CNCF TAGs, k8s sub-projects focused on batch-related features such as topology-aware scheduling) in the batch ecosystem to gather requirements, validate designs and encourage reutilization of core K8s APIs.
+          To reduce fragmentation in the Kubernetes batch ecosystem: congregate leads and users from different external and internal projects and user groups (CNCF TAGs, Kubernetes sub-projects focused on batch-related features such as topology-aware scheduling) in the batch ecosystem to gather requirements, validate designs and encourage reutilization of core Kubernetes APIs.
 
           The following recommendations for enhancements:
 
           * Additions to the batch API group, currently including Job and CronJob resources that benefit batch use cases such as HPC, AI/ML, data analytics and CI.
-          * Primitives for job-level queueing, not limited to the k8s Job resource. Long-term, this could include multi-cluster support.
+          * Primitives for job-level queueing, not limited to the Kubernetes Job resource. Long-term, this could include multi-cluster support.
           * Primitives to control and maximize utilization of resources in fixed-size clusters (on-prem) and elastic clusters (cloud).
           * Benchmarking models for Batch systems
           * Data Locality
@@ -577,18 +577,16 @@ tags: # Technical Advisory Groups
           * Proposals that duplicate the functionality of core kubernetes components (job-controller, kube-scheduler, cluster-autoscaler).
           * Job workflows or pipelines. Mature third party frameworks serve these use cases with the current kubernetes primitives. But additional primitives to support these frameworks could be in scope.
 
-          Deliverable(s) or exit criteria:
+          Deliverables:
 
-          * Maintaining a landscape document for currently available projects (already published-relocated and maintained)
-          * Data Locality project-deliverables TBD, but something that helps in this space (already in process)
-          * Benchmarking suite for Batch systems (already in process)
-          * User stories published doc for Batch systems (already in process)
+          * Project Landscape — a living catalogue of batch scheduling projects in the cloud-native ecosystem, maintained at bsi-landscape.netlify.app.
+          * Whitepapers and Technical Research — the subproject produces papers and research on topics relevant to cloud-native batch scheduling, such as benchmarking of batch systems, data locality, scheduling best practices, and user stories. An initial series of five whitepapers is complete, with more planned as the space evolves.
         contact:
           slack: C08K71W9HAS # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation # Using parent TAG's contact
     leadership:
       SubProject Leads:
-        - github:
+        - github: stackedsax
           lfx_id:
           name: Alex Scammon
           company:
@@ -598,9 +596,9 @@ tags: # Technical Advisory Groups
           name: Marlow Warnicke
           company:
           email: catblade@gmail.com
-        - github:
+        - github: asm582
           lfx_id:
-          name: Abishek Malvankar
+          name: Abhishek Malvankar
           company:
           email: abhishekmalvankar9@gmail.com
     tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fworkloads-foundation%20label%3Akind%2Finitiative
