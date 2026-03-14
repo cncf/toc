@@ -29,7 +29,6 @@ type Subproject struct {
 	Dir                  string               `yaml:"dir"`
 	Name                 string               `yaml:"name"`
 	MissionStatement     string               `yaml:"mission_statement,omitempty"`
-	Description          string               `yaml:"description,omitempty"`
 	Leadership           SubprojectLeadership `yaml:"leadership"`
 	Meetings             []SubprojectMeeting  `yaml:"meetings"`
 	Contact              Contact              `yaml:"contact"`
