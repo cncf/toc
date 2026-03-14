@@ -12,11 +12,30 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
+// SubprojectMeeting struct to hold tag subproject meeting data.
+type SubprojectMeeting struct {
+	Schedule        string `yaml:"schedule"`
+	ZoomURL         string `yaml:"zoom_url"`
+	MeetingNotesURL string `yaml:"meeting_notes_url,omitempty"`
+}
+
+// SubprojectLeadership struct for tag subprojects.
+type SubprojectLeadership struct {
+	SubprojectLeads []Person `yaml:"subproject_leads"`
+}
+
 // Subproject struct to hold subproject data.
 type Subproject struct {
-	Name             string  `yaml:"name"`
-	MissionStatement string  `yaml:"mission_statement,omitempty"`
-	Contact          Contact `yaml:"contact"`
+	Dir                  string               `yaml:"dir"`
+	Name                 string               `yaml:"name"`
+	MissionStatement     string               `yaml:"mission_statement,omitempty"`
+	Leadership           SubprojectLeadership `yaml:"leadership"`
+	Meetings             []SubprojectMeeting  `yaml:"meetings"`
+	Contact              Contact              `yaml:"contact"`
+	LandscapeURL         string               `yaml:"landscape_url,omitempty"`
+	LandscapePreviewImage string              `yaml:"landscape_preview_image,omitempty"`
+	// The following are generated, and the fields in the YAML file are ignored.
+	CharterLink string
 }
 
 // Term struct to hold start and end dates.
@@ -50,9 +69,10 @@ type Meeting struct {
 
 // Contact struct to hold contact information.
 type Contact struct {
-	Slack       string   `yaml:"slack"`
-	MailingList string   `yaml:"mailing_list"`
-	TOCLiaison  []Person `yaml:"toc_liaison"`
+	Slack        string   `yaml:"slack"`
+	SlackChannel string   `yaml:"slack_channel,omitempty"`
+	MailingList  string   `yaml:"mailing_list"`
+	TOCLiaison   []Person `yaml:"toc_liaison"`
 }
 
 // Tag struct to hold tag data, including CharterLink and Subprojects.
@@ -97,6 +117,7 @@ func main() {
 	tocDir := filepath.Join("..", "toc_subprojects")
 	tagTemplatePath := filepath.Join("..", "generator", "tag_readme.tmpl")
 	tocTemplatePath := filepath.Join("..", "generator", "toc_subproject_readme.tmpl")
+	subprojectTemplatePath := filepath.Join("..", "generator", "tag_subproject_readme.tmpl")
 
 	// Read YAML file.
 	data, err := os.ReadFile(configPath)
@@ -126,6 +147,15 @@ func main() {
 	tocTmpl, err := template.New("toc_readme").Parse(string(tocTmplContent))
 	if err != nil {
 		log.Fatalf("Failed to parse toc template: %v", err)
+	}
+
+	subprojectTmplContent, err := os.ReadFile(subprojectTemplatePath)
+	if err != nil {
+		log.Fatalf("Failed to read subproject template: %v", err)
+	}
+	subprojectTmpl, err := template.New("subproject_readme").Parse(string(subprojectTmplContent))
+	if err != nil {
+		log.Fatalf("Failed to parse subproject template: %v", err)
 	}
 
 	// Ensure directories exist.
@@ -164,6 +194,35 @@ func main() {
 		tagFilePath := filepath.Join(tagFolderPath, "README.md")
 		if err := os.WriteFile(tagFilePath, tagBuf.Bytes(), 0o644); err != nil {
 			log.Fatalf("Failed to write %s: %v", tagFilePath, err)
+		}
+
+		// Process each tag subproject.
+		for _, sp := range tag.TagSubprojects {
+			if sp.Dir == "" {
+				sp.Dir = strings.ToLower(strings.ReplaceAll(sp.Name, " ", "-"))
+			}
+			spFolderPath := filepath.Join(tagFolderPath, "subprojects", sp.Dir)
+			if err := ensureDir(spFolderPath); err != nil {
+				log.Fatalf("Failed to create folder for subproject %s: %v", sp.Name, err)
+			}
+
+			spCharterPath := filepath.Join(spFolderPath, "charter.md")
+			if _, err := os.Stat(spCharterPath); os.IsNotExist(err) {
+				if err := os.WriteFile(spCharterPath, []byte("Charter content here"), 0o644); err != nil {
+					log.Fatalf("Failed to write %s: %v", spCharterPath, err)
+				}
+			}
+			sp.CharterLink = spCharterPath
+
+			var spBuf bytes.Buffer
+			if err := subprojectTmpl.Execute(&spBuf, sp); err != nil {
+				log.Fatalf("Subproject template execution failed: %v", err)
+			}
+
+			spFilePath := filepath.Join(spFolderPath, "README.md")
+			if err := os.WriteFile(spFilePath, spBuf.Bytes(), 0o644); err != nil {
+				log.Fatalf("Failed to write %s: %v", spFilePath, err)
+			}
 		}
 	}
 

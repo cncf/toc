@@ -1,0 +1,41 @@
+# CNCF {{.Name}} Subproject
+
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
+
+## Mission Statement
+{{.MissionStatement}}
+[Charter](./charter.md)
+{{- if .Leadership.SubprojectLeads }}
+
+## Leadership
+### Subproject Leads
+{{- range .Leadership.SubprojectLeads }}
+- {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**)
+{{- end }}
+{{- end }}
+{{- if .Meetings }}
+
+## 📅 Meetings
+{{- range .Meetings }}
+- 🔁 {{.Schedule}}
+- 📹 [Join via Zoom]({{.ZoomURL}})
+{{- if .MeetingNotesURL }}
+- 📝 [Meeting Notes]({{.MeetingNotesURL}})
+{{- end }}
+{{- end }}
+{{- end }}
+
+## 💬 Contact
+- <img src="./assets/slack.svg" height="16"> [{{.Contact.SlackChannel}}](https://cloud-native.slack.com/archives/{{.Contact.Slack}}) on cloud-native.slack.com
+- 📧 [Mailing List]({{.Contact.MailingList}})
+{{- range .Contact.TOCLiaison }}
+- 🔗 TOC Liaison: {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**)
+{{- end }}
+{{- if .LandscapeURL }}
+
+## 🗺️ Landscape
+{{- if .LandscapePreviewImage }}
+[![{{.Name}} Landscape Preview]({{.LandscapePreviewImage}})](./landscape/index.md)
+{{- end }}
+- [View the full CNCF {{.Name}} Landscape](./landscape/index.md)
+{{- end }}

@@ -1,6 +1,6 @@
 # CNCF Batch Subproject
 
-<!-- See also /tags.yaml -->
+<!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
 
 ## Mission Statement
 The cloud-native batch scheduling ecosystem is fragmented — different projects tackle job scheduling, queueing, and resource management in incompatible ways. The Batch subproject brings together maintainers and users across the ecosystem to reduce that fragmentation: aligning on common Kubernetes APIs and primitives, developing best practices, and improving outcomes for batch workloads — whether HPC, AI/ML, data analytics, or CI — in cloud-native environments.
