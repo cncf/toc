@@ -299,7 +299,7 @@ N/A
  
 
 - [x] **Document what the project does, and why it does it - including viable cloud native use cases. _This requirement may also be satisfied by completing a General Technical Review._**
-  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E).
+  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E).
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
