@@ -28,7 +28,7 @@ The following actions were provided to the project that were considered blocking
 * [Update CODEOWNERS file to reflect accurate maintainer list](https://github.com/kyverno/kyverno/issues/15110)
 * [Vendor Neutrality: Remove references to the contributing organization](https://github.com/kyverno/kyverno/issues/15113)
 * [Link Release Procedure to main Release page](https://github.com/kyverno/website/issues/1867)
-* [Update the ROADMAP file to include the Roadmap change process](https://github.com/kyverno/website/issues/1907)
+* [Update the ROADMAP file to include the Roadmap change process](https://github.com/kyverno/kyverno/issues/15478)
 
 The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
 
