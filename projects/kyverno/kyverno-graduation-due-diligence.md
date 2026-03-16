@@ -14,9 +14,9 @@ Karena Angell, TOC Member and Chair, conducted the due diligence of Kyverno who 
 
 The project has completed the criteria that show its maturity at Graduation. The following criteria implementations are noteworthy to call out:
 * The ability to write policies in YAML or CEL lowers the learning curve for adopters and allows platforms teams to use existing GitOps and Helm workflows
-* The Kyverno CLI allows teams to 'shift-left' by being able to validate policy changes in the CI/CD pipelines prior to reaching production. Recent optimizations have adopters reporting hightly improved execution time in large clusters
+* The Kyverno CLI allows teams to 'shift-left' by being able to validate policy changes in the CI/CD pipelines prior to reaching production. Recent optimizations have adopters reporting highly improved execution time in large clusters
 * [Documented AI Usage Policy](https://github.com/kyverno/community/blob/main/AI_USAGE_POLICY.md)
-* Highly responsive and collaborative maintainers that continue to incorporate community feedback into new releases and are quick to respond to criticadl bug fixes
+* Highly responsive and collaborative maintainers that continue to incorporate community feedback into new releases and are quick to respond to critical bug fixes
 * Addressed the previous maintainer ladder concerns and continue to evaluate organizational and maintainer diversity
 * Granular policy enforcement to help manage specific security deviations in complex environments
 * Extensive documentation allowing easy and fast implementation
@@ -24,8 +24,7 @@ The project has completed the criteria that show its maturity at Graduation. The
 * Useful subprojects such as [Kyverno Chainsaw](https://github.com/kyverno/chainsaw) that enables declarative end-to-end testing in a Kubernetes cluster
 
 The following actions were provided to the project that were considered blocking but since resolved:
-* Build a robust maintainer ladder and update governance - and show in action for at least 6 months - to address organizational diversity concerns. See Governance Section\
-* 
+* Build a robust maintainer ladder and update governance - and show in action for at least 6 months - to address organizational diversity concerns. See Governance Section.
 * [Update CODEOWNERS file to reflect accurate maintainer list](https://github.com/kyverno/kyverno/issues/15110)
 * [Vendor Neutrality: Remove references to the contributing organization](https://github.com/kyverno/kyverno/issues/15113)
 * [Link Release Procedure to main Release page](https://github.com/kyverno/website/issues/1867)
@@ -33,7 +32,7 @@ The following actions were provided to the project that were considered blocking
 
 The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:
 
-* [TAG Security & Compliance - Kyverno Security Assesment](https://github.com/kyverno/kyverno/issues/15335)
+* [TAG Security & Compliance - Kyverno Security Assessment](https://github.com/kyverno/kyverno/issues/15335)
   * fix blog post links in https://kyverno.io/docs/guides/security/#security-audits #15336
   * Explicitly state risks associated with external data lookups and recommend using authentication and encryption
   * Add checks to restrict cache lookups within namespaced policies ([[Feature] Restrict Global Context access and implement cache bounds #15359](https://github.com/kyverno/kyverno/issues/15359))
@@ -48,7 +47,7 @@ The following recommendations were provided to the project that are non-blocking
   * CLI command to generate a network policy for kyverno
   * Sample network policies for common platforms
 
-* [TOC Project Reviews Subproject - Kyverno General Technical Review Assesment](https://github.com/kyverno/kyverno/issues/15473)
+* [TOC Project Reviews Subproject - Kyverno General Technical Review Assessment](https://github.com/kyverno/kyverno/issues/15473)
   * Confirm the project’s explicit “non-goals” list (if any) beyond subproject statements.
   * Request links to formal UX/user research reports, surveys, or adopter interviews (if maintained publicly or shareable).
   * Capture a concise list of “core CRDs/APIs” and stability policy per API group (if there is a single authoritative page).
@@ -77,7 +76,7 @@ However, several areas for improvement were identified to support long-term ente
 
 The TOC has found the project to have satisfied the criteria for Graduation. The TOC requests the project meet with the TOC in 3 months time to review the non-blocking issues and findings from the TAG Security and Compliance Joint Security Assessment and General Technical Review Assessment. At that time the TOC would like to see the roadmap for any remaining non-blocking concerns from both assessments.
 
-### Criteria
+## Criteria
 
 ## Application Process Principles
 
@@ -96,7 +95,7 @@ N/A
 The project has addressed all outstanding issues regarding vendor neutrality.
 
 
-- [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
+- [x] **Review and acknowledgement of expectations for [Sandbox](https://sandbox.cncf.io/) projects and requirements for moving forward through the CNCF Maturity levels.**		
    - [x] N/A - Met during Project's application on DD-MMM-YYYY.
 
 
@@ -107,7 +106,7 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 - [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
 Additional documentation provided by the project increases the likelihood of end user adoption:
-* Kyverno provides comprehensive user documentation (installation guides, configuration, API reference), policy samples, and tutorials on http://kyverno.io.
+* Kyverno provides comprehensive user documentation (installation guides, configuration, API reference), policy samples, and tutorials on https://kyverno.io.
 * The [Releases page](https://kyverno.io/docs/releases/) explains versioning, branch strategies, and release cadence, while the Roadmap file links to release tracker boards and design proposals.
 * Sample policies are hosted in a [dedicated repository](https://github.com/kyverno/policies/) and rendered on the [website](https://kyverno.io/policies/).
 
@@ -121,7 +120,7 @@ Note: This report is augmented by a [Governance Review](https://github.com/cncf/
 
   The Kyverno project has made multiple governance revisions; notably in 2024 they added a [Community Repo](https://github.com/kyverno/community) to serve as a focal point for project governance.
   
-  For example, they [added roles in July 2024](https://github.com/kyverno/community/pull/7), and further exapanded it to a [contributor ladder in May 2025](https://github.com/kyverno/community/pull/48).
+  For example, they [added roles in July 2024](https://github.com/kyverno/community/pull/7), and further expanded it to a [contributor ladder in May 2025](https://github.com/kyverno/community/pull/48).
 
 
 ### Required
@@ -135,7 +134,7 @@ Note: This report is augmented by a [Governance Review](https://github.com/cncf/
 
 - [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
-  Kyverno's governace is up to date, and has been updated following suggestions from the [previous governance review](https://github.com/cncf/toc/blob/main/projects/kyverno/governance-review/2025-12-16.md).
+  Kyverno's governance is up to date, and has been updated following suggestions from the [previous governance review](https://github.com/cncf/toc/blob/main/projects/kyverno/governance-review/2025-12-16.md).
   Their meetings are held and notes taken as described on the [community page](https://kyverno.io/community/#meetings) and other documents.
   Elections of new contributors and maintainers are executed via GitVote as configured [here](https://github.com/kyverno/community/blob/main/.gitvote.yml).
 
@@ -165,7 +164,7 @@ Note: This report is augmented by a [Governance Review](https://github.com/cncf/
 
   Both onboarding and offboarding processes are outlined in the [Maintainer section of GOVERNANCE.md](https://github.com/kyverno/community/blob/4994f36ca91d19e848ea51f66c832e5ba56b1fee/GOVERNANCE.md#maintainers), along with [general offboarding guidance](https://github.com/kyverno/community/blob/4994f36ca91d19e848ea51f66c832e5ba56b1fee/GOVERNANCE.md#off-boarding-guidance) provided in the doc as well.
   
-  Examples of of both may be found in the [commit history of MAINTAINERS.md](https://github.com/kyverno/community/commits/cfa604580b15f3f971d6c7b5b4bc395a758940e2/MAINTAINERS.md)
+  Examples of both may be found in the [commit history of MAINTAINERS.md](https://github.com/kyverno/community/commits/cfa604580b15f3f971d6c7b5b4bc395a758940e2/MAINTAINERS.md)
 
 
 - [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
@@ -282,12 +281,12 @@ Note: This report is augmented by a [Governance Review](https://github.com/cncf/
 
   New contributors are listed with each [release](https://github.com/kyverno/kyverno/releases). For example the [v1.17 release](https://github.com/kyverno/kyverno/releases/tag/v1.17.0) had 14 new contributors.
 
-  Additional maintainer recruitment can be seein the commit history of [MAINTAINERS.md](https://github.com/kyverno/community/commits/cfa604580b15f3f971d6c7b5b4bc395a758940e2/MAINTAINERS.md).
+  Additional maintainer recruitment can be seen in the commit history of [MAINTAINERS.md](https://github.com/kyverno/community/commits/cfa604580b15f3f971d6c7b5b4bc395a758940e2/MAINTAINERS.md).
 
 
 ## Engineering Principles
 
-Note: This report is augmented by a [General Technical Review](https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md) that was performed by Dylan Page in early 2026.
+Note: This report is augmented by a [General Technical Review](https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E) that was performed by Dylan Page in early 2026.
 
 ### Suggested
 
@@ -296,11 +295,11 @@ N/A
 ### Required
 
 - [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
-  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md).
+  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E).
  
 
 - [x] **Document what the project does, and why it does it - including viable cloud native use cases. _This requirement may also be satisfied by completing a General Technical Review._**
-  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md).
+  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E).
 
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
@@ -314,9 +313,9 @@ The project maintains a [public roadmap](https://github.com/kyverno/kyverno/blob
 The project has documented the Roadmap change process in the ROADMAP.md.
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
-  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md).
+  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E).
 
-The TOC has confirmed project Kyverno’s [documentation](https://kyverno.io/docs/introduction/how-kyverno-works/#kubernetes-admission-controls) describes the architecture (policy controller, admission webhooks, background scan controller) and provides diagrams explaining how it interacts with Kubernetes. The new policy types (ValidatingPolicy, ImageValidatingPolicy, MutatingPolicy, GeneratingPolicy, DeletingPolicy) are explained in [release blogs](https://kyverno.io/blog/releases/) and [documentation](https://kyverno.io/docs/policy-types/).
+The TOC has confirmed project Kyverno’s [documentation](https://kyverno.io/docs/introduction/how-kyverno-works/) describes the architecture (policy controller, admission webhooks, background scan controller) and provides diagrams explaining how it interacts with Kubernetes. The new policy types (ValidatingPolicy, ImageValidatingPolicy, MutatingPolicy, GeneratingPolicy, DeletingPolicy) are explained in [release blogs](https://kyverno.io/blog/releases/) and [documentation](https://kyverno.io/docs/policy-types/).
 
 - [x] **Document the project's release process and guidelines publicly in a RELEASES.md or equivalent file that defines:** 
 
@@ -337,7 +336,7 @@ The Kyverno project has a [documented history](https://github.com/kyverno/kyvern
 
 ## Security
 
-Note: This report is augmented by a [General Technical Review](https://docs.google.com/document/d/1JJVlYu6LNpWs2ukirOmoHMEhCsuOEoseBq6dq-Kcgjc/edit?tab=t.0#heading=h.9i73ao98ff5y) that was driven by Andrew Martin with members of TAG Security and Compliance.
+Note: This report is augmented by a [Kyverno Security Joint Assessment](https://docs.google.com/document/d/1JJVlYu6LNpWs2ukirOmoHMEhCsuOEoseBq6dq-Kcgjc/edit?tab=t.0#heading=h.9i73ao98ff5y) that was driven by Andrew Martin with members of TAG Security and Compliance.
 
 ### Suggested
 
@@ -417,9 +416,9 @@ LinkedIn’s platform team (Shan Valleru and Nicholas Wedlake) provided feedback
 **Project Strengths**
 
 - **YAML-First Authoring:** The ability to write policies in YAML is a major differentiator. It allows security teams to present controls in a format that application developers can easily understand without specialized training in domain-specific languages.
-Granular Control: The project offers high-level precision, allowing for specific scoping against kinds, namespaces, and pod elements to effectively block or audit behaviors.
+- **Granular Control:** The project offers high-level precision, allowing for specific scoping against kinds, namespaces, and pod elements to effectively block or audit behaviors.
 - **Strong CI/CD Integration:** The Kyverno CLI is a key asset. It is used effectively to validate policy changes within the CI/CD pipelines (e.g., against Kind clusters) before they reach production.
-Modular Deployment: The evolution toward a simplified Helm chart is highly valued. It allows adopters to toggle off unnecessary components (like background controllers or scan reports) to optimize resource usage.
+- **Modular Deployment:** The evolution toward a simplified Helm chart is highly valued. It allows adopters to toggle off unnecessary components (like background controllers or scan reports) to optimize resource usage.
 - **Responsive Community:** The maintainers were commended for their quick response times in fixing critical bugs, particularly those related to admission review latency and memory utilization.
 
 **Areas for Improvement**
@@ -438,7 +437,7 @@ Adopter interview notes held privately for TOC review and verification.
 
 Adopter interview notes held privately for TOC review and verification.
 
-JANUARY 2025
+JANUARY 2026
 
 ##### Adopter 3 - Securities
 
