@@ -424,8 +424,8 @@ LinkedIn’s platform team (Shan Valleru and Nicholas Wedlake) provided feedback
 **Areas for Improvement**
 
 - **Regression & Performance Testing:** 
-Internal Regressions: There is a need for more robust internal testing to catch regressions before release (e.g., the instance where a metrics refresh flag stopped functioning after a migration).
-Proactive Scale Testing: Rather than relying on large-scale users to find limits, the project should perform more proactive, high-scale performance testing internally.
+  - **Internal Regressions:** There is a need for more robust internal testing to catch regressions before release (e.g., the instance where a metrics refresh flag stopped functioning after a migration).
+  - **Proactive Scale Testing:** Rather than relying on large-scale users to find limits, the project should perform more proactive, high-scale performance testing internally.
 - **Documentation for Advanced Use Cases:**
   - **Complex Logic:** There is a lack of documentation for complex, real-world scenarios, such as enforcing pod-level policies based specifically on namespace labels.
   - **Block Nuance:** The documentation needs to better clarify the functional differences and best practices for using validate vs. deny blocks.
