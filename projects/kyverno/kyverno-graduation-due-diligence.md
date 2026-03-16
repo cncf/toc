@@ -313,7 +313,7 @@ The project maintains a [public roadmap](https://github.com/kyverno/kyverno/blob
 The project has documented the Roadmap change process in the ROADMAP.md.
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation.  *This requirement may also be satisfied by completing a General Technical Review and capturing the output in the project's documentation.***
-  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E).
+  * A General Technical Review was completed on 02-FEB-2026, and can be discovered at [https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E).
 
 The TOC has confirmed project Kyverno’s [documentation](https://kyverno.io/docs/introduction/how-kyverno-works/) describes the architecture (policy controller, admission webhooks, background scan controller) and provides diagrams explaining how it interacts with Kubernetes. The new policy types (ValidatingPolicy, ImageValidatingPolicy, MutatingPolicy, GeneratingPolicy, DeletingPolicy) are explained in [release blogs](https://kyverno.io/blog/releases/) and [documentation](https://kyverno.io/docs/policy-types/).
 
