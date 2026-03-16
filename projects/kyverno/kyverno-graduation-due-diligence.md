@@ -286,7 +286,7 @@ Note: This report is augmented by a [Governance Review](https://github.com/cncf/
 
 ## Engineering Principles
 
-Note: This report is augmented by a [General Technical Review](https://github.com/cncf/toc/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E) that was performed by Dylan Page in early 2026.
+Note: This report is augmented by a [General Technical Review](https://github.com/cncf/toc/blob/main/projects/kyverno/tech-review/2026-02-02.md%E2%80%8E) that was performed by Dylan Page in early 2026.
 
 ### Suggested
 
