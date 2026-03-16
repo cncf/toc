@@ -429,7 +429,7 @@ LinkedIn’s platform team (Shan Valleru and Nicholas Wedlake) provided feedback
 - **Documentation for Advanced Use Cases:**
   - **Complex Logic:** There is a lack of documentation for complex, real-world scenarios, such as enforcing pod-level policies based specifically on namespace labels.
   - **Block Nuance:** The documentation needs to better clarify the functional differences and best practices for using validate vs. deny blocks.
-Administrative User Experience: While policy authoring is "low-code," the administrative experience of managing Kyverno at scale is still perceived as requiring "power user" expertise. Simplifying the operational management of the controllers would be beneficial.
+- Administrative User Experience: While policy authoring is "low-code," the administrative experience of managing Kyverno at scale is still perceived as requiring "power user" expertise. Simplifying the operational management of the controllers would be beneficial.
 - **Project Governance:** Continuing to diversify the maintainer base beyond a single primary company and strengthening the technical leadership ladder remains a point of interest for long-term stability.
 Adopter interview notes held privately for TOC review and verification.
 
