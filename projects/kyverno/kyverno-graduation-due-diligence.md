@@ -24,7 +24,7 @@ The project has completed the criteria that show its maturity at Graduation. The
 * Useful subprojects such as [Kyverno Chainsaw](https://github.com/kyverno/chainsaw) that enables declarative end-to-end testing in a Kubernetes cluster
 
 The following actions were provided to the project that were considered blocking but since resolved:
-* Build a robust maintainer ladder and update governance - and show in action for at least 6 months - to address organizational diversity concerns. See Governance Section.
+* Build a robust maintainer ladder and update governance - and show in action for at least 6 months - to address organizational diversity concerns. See [Governance Section](#governance-and-maintainers).
 * [Update CODEOWNERS file to reflect accurate maintainer list](https://github.com/kyverno/kyverno/issues/15110)
 * [Vendor Neutrality: Remove references to the contributing organization](https://github.com/kyverno/kyverno/issues/15113)
 * [Link Release Procedure to main Release page](https://github.com/kyverno/website/issues/1867)
