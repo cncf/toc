@@ -13,7 +13,7 @@
 Karena Angell, TOC Member and Chair, conducted the due diligence of Kyverno who applied for Graduation. The due diligence is supplemented by a Governance Review conducted by Josh Gavant, TOC Subproject Project Reviews member, and a General Technical Review conducted by Dylan Page, CNCF TAG Infrastructure Co-Chair. 
 
 The project has completed the criteria that show its maturity at Graduation. The following criteria implementations are noteworthy to call out:
-* The ability to write policies in YAML or CEL lowers the learning curve for adopters and allows platforms teams to use existing GitOps and Helm workflows
+* The ability to write policies in YAML or CEL lowers the learning curve for adopters and allows platform teams to use existing GitOps and Helm workflows
 * The Kyverno CLI allows teams to 'shift-left' by being able to validate policy changes in the CI/CD pipelines prior to reaching production. Recent optimizations have adopters reporting highly improved execution time in large clusters
 * [Documented AI Usage Policy](https://github.com/kyverno/community/blob/main/AI_USAGE_POLICY.md)
 * Highly responsive and collaborative maintainers that continue to incorporate community feedback into new releases and are quick to respond to critical bug fixes
