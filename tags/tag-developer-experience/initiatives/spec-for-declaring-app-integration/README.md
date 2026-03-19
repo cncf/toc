@@ -15,7 +15,13 @@ The terms project agnostic specification is used to build this as part of a solu
 ## Deliverable(s) or exit criteria
 
 * first deliverable is research and report on existing specs and previous attempts that have failed (and maybe could be resurrected) to better understand the problem space
-the 
+  * the outcome of this first step will dictate the direction of subsequent steps, but the following should still apply regardless
+  * this is the first potential exit point if, for whatever reason, the conclusion in the report is that this is too complex and we recommend that a spec not be created
 * after the report has been delivered to the TAG, identify (and potentially extend) and existing spec, or as a last resort create a specification that indicates what services must be available to an application to ensure that it can run successfully
+  * First release will be scoped to a specific integration set, e.g. external APIs, or required data stores (DB, cache)
+    * TBD based on group discussion
+  * The specification must exist in a format that can be consumed programmatically by spec consumers, e.g. JSON, YAML, etc.
 * A plan and project description for automatic generation of dependency declarations that adhere to the spec during application development
+  * to be clear, this is the description or recommendation of a project, not the project itself
 * Guidance for consumers of dependency declarations for how to consume the spec and interpret it for downstream use
+  * likely in the form of a short white paper
