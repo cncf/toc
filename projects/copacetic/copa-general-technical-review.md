@@ -1,4 +1,4 @@
-# # General Technical Review - Project Copacetic / Sandbox
+# General Technical Review - Project Copacetic / Sandbox
 
 - **Project:** Copacetic
 - **Project Version:** v0.12.0-rc.2
