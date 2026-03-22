@@ -41,12 +41,13 @@ _The project has been adopted by the following organizations in a testing and in
 
 ### Suggested
 
-N/A
+- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation **
+  - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
 ### Required
 
-- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
-  - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
+- [ ] ** Complete a General Technical Review Including Day 0 and Day 1 (Day 2 is optional)**
+      - Link to General Technical Review in the project
 
 <!-- (Project assertion goes here) --> 
 
