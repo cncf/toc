@@ -179,33 +179,50 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [ ] **Roadmap change process is documented.**
+- [x] **Roadmap change process is documented.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project adopts a [use-case driven development approach](https://confidentialcontainers.org/blog/2024/02/16/introduction-to-confidential-containers-coco/#foundational-principles), focusing community efforts on key scenarios rather than feature-centric models. The roadmap and scope are determined via consensus in the [Steering Committee and weekly community meetings](https://docs.google.com/document/d/1E3GLCzNgrcigUlgWAZYlgqNTdVwiMwCRTJ0QnJhLZGA/edit), with changes documented in the public [roadmap.md](https://github.com/confidential-containers/confidential-containers/blob/main/roadmap.md).
 
-- [ ] **History of regular, quality releases.**
+- [x] **History of regular, quality releases.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project documents historical releases with change notes at: <https://github.com/confidential-containers/confidential-containers/tree/main/releases>
 
-### Required 
+### Required
 
-- [ ] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
-  -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
+- [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
+  -  The general Technical Review was updated on 24-Feb-2026 (currently in Draft status), and can be discovered at <https://github.com/cncf/toc/pull/2051>.
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project's goals and differentiation are documented through its [website](https://confidentialcontainers.org): _"...enables cloud native data in use protection by leveraging hardware Trusted Execution Environments (TEEs)."_ The project's documentation and draft GTR also describe how it solves this problem differently by encapsulating unmodified Kubernetes pods inside confidential VMs, completely shielding workloads from host operating systems, cluster administrators, and cloud providers.
 
-- [ ] **Document what the project does, and why it does it - including viable cloud native use cases.**
+- [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project clearly documents its core function, motivation, and practical applications:
 
-- [ ] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
+  - What the project does: <https://confidentialcontainers.org/docs/overview/#what-is-the-confidential-containers-project>
+  - Why it does it: <https://confidentialcontainers.org/blog/2024/02/16/introduction-to-confidential-containers-coco/#motivation>
+  - Viable use cases include the following: (Ref: <https://confidentialcontainers.org/docs/use-cases/>)
+    - Confidential AI
+    - Switchboard Oracles: Securing Web3 Data with Confidential Containers
+    - Secure Supply Chain (Trusted Pipeline)
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
+
+  <!-- (TOC Evaluation goes here) -->
+  According to the [roadmap.md](https://github.com/confidential-containers/confidential-containers/blob/main/roadmap.md) the project maintains its：
+  - short-term roadmap at the GitHub boards (including the [Confidential containers github board](https://github.com/orgs/confidential-containers/projects/6) and [Trustee github board](https://github.com/orgs/confidential-containers/projects/10)), and
+  - its mid/long-term roadmap at the project's website based on use-case driven development. Ref: <https://confidentialcontainers.org/docs/use-cases/>
+
+  **TODO for maintainers**: the short-term roadmap Confidential containers github board link is unavailable with outdated "view", needs to be fixed.
 
 - [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
   -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
 
-<!-- (TOC Evaluation goes here) --> 
+    <!-- (TOC Evaluation goes here) -->
+    The project maintains a detailed architectural overview on its [website](https://confidentialcontainers.org/docs/architecture/design-overview/), demonstrating a robust and viable cloud-native design. It effectively outlines key mechanisms such as Pod-Centric Virtualization, host deprivileging, and its sophisticated remote attestation (Trustee) architecture.
 
 - [ ] **Document the project's release process.**
 
