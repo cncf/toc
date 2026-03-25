@@ -43,7 +43,6 @@ jobs:
 
             const COMMENT_MARKERS = {
               techReviewCreated: 'Created tech review issue:',
-              techReviewExists: 'tech review issue already exists',
               missingProjectName: 'Could not extract project name',
               missingProjectLink: 'Could not extract project link',
               createTechReviewFailed: 'Failed to create tech review issue'
@@ -123,10 +122,28 @@ jobs:
             // --- Main Logic ---
             const issue = context.payload.issue;
             const issueNumber = issue.number;
+            const issueTitle = issue.title || '';
             const issueBody = issue.body;
+            const issueLabels = (issue.labels || [])
+              .map(l => (typeof l === 'string' ? l : l?.name))
+              .filter(Boolean);
 
             console.log(`🔍 Processing issue #${issueNumber}`);
             console.log(`📄 Issue body length: ${issueBody ? issueBody.length : 0}`);
+            console.log(`🏷️  Issue labels: ${issueLabels.join(', ')}`);
+
+            // Guardrail: this workflow should run ONLY on "intake" issues that request a tech review.
+            // It should NOT run on tech review issues themselves (including ones created by this workflow),
+            // otherwise it can create duplicates.
+            const AUTO_CREATED_MARKER = '_This issue was automatically created from [issue #';
+            const isTechReviewTitle = /^\s*\[Tech Review\]\s*:/i.test(issueTitle);
+            const isAutoCreatedTechReview = typeof issueBody === 'string' && issueBody.includes(AUTO_CREATED_MARKER);
+            if (isTechReviewTitle || isAutoCreatedTechReview) {
+              console.log(
+                `ℹ️  Skipping: issue appears to already be a Tech Review issue (title=${isTechReviewTitle}, autoCreated=${isAutoCreatedTechReview}).`
+              );
+              return;
+            }
 
             // Extract fields
             const projectName = extractFormField(issueBody, 'name');
@@ -171,29 +188,43 @@ jobs:
             // Check for existing tech review issues for this project
             let existingIssue = null;
             try {
-              const allIssues = await github.paginate(github.rest.issues.listForRepo, {
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                state: 'all',
-                labels: 'review/tech',
-                per_page: 100
-              });
+              // GitHub label/issue listing can be eventually consistent right after issue creation/labeling.
+              // Retry a few times with backoff to reduce accidental duplicates.
+              const backoffMs = [0, 3000, 7000, 15000];
+              for (let attempt = 0; attempt < backoffMs.length; attempt++) {
+                const waitMs = backoffMs[attempt];
+                if (waitMs > 0) {
+                  console.log(`⏳ Retry ${attempt + 1}/${backoffMs.length}: waiting ${waitMs}ms before checking for existing tech review issues...`);
+                  await new Promise(resolve => setTimeout(resolve, waitMs));
+                } else {
+                  console.log(`🔎 Checking for existing tech review issues (attempt ${attempt + 1}/${backoffMs.length})...`);
+                }
 
-              existingIssue = allIssues.find(item => {
-                if (item.number === issueNumber) return false;
-                if (!item.title.includes('[Tech Review]:')) return false;
-                const existingProjectName = extractFormField(item.body, 'name');
-                if (normalize(existingProjectName) === projectNameLower) return true;
-                // Fallback: check title for exact word match
-                const titleLower = item.title.toLowerCase();
-                const projectNameRegex = new RegExp(`\\b${projectNameLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-                return projectNameRegex.test(titleLower);
-              });
+                const allIssues = await github.paginate(github.rest.issues.listForRepo, {
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  state: 'all',
+                  labels: 'review/tech',
+                  per_page: 100
+                });
+
+                existingIssue = allIssues.find(item => {
+                  if (item.number === issueNumber) return false;
+                  // Only consider issues that look like tech review issues.
+                  if (!/^\s*\[Tech Review\]\s*:/i.test(item.title || '')) return false;
+                  const existingProjectName = extractFormField(item.body, 'name');
+                  if (normalize(existingProjectName) === projectNameLower) return true;
+                  // Fallback: check title for exact word match
+                  const titleLower = (item.title || '').toLowerCase();
+                  const projectNameRegex = new RegExp(`\\b${projectNameLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+                  return projectNameRegex.test(titleLower);
+                });
+
+                if (existingIssue) break;
+              }
 
               if (existingIssue) {
-                console.log(`ℹ️  Found existing tech review issue #${existingIssue.number} - commenting and exiting`);
-                await commentOnce(issueNumber, COMMENT_MARKERS.techReviewExists,
-                  `A tech review issue already exists for this project: [#${existingIssue.number} - ${existingIssue.title}](${existingIssue.html_url})`);
+                console.log(`ℹ️  Found existing tech review issue #${existingIssue.number} - exiting without commenting to avoid end-user noise`);
                 return;
               } else {
                 console.log('✅ No existing tech review issue found - proceeding to create');
