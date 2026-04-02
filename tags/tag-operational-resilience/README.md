@@ -34,5 +34,8 @@ The purpose of the Green Reviews Subproject is to help CNCF projects to review t
 To support CNCF projects, project maintainers and contributors, there is a need for a systematic approach to assess every project's sustainability footprint and energy consumption. Implementing a structured review process for this purpose would greatly benefit the CNCF ecosystem, establishing it as a best practice. Such a process would enable stakeholders to evaluate and enhance the sustainability of CNCF projects, promoting their long-term viability and environmental responsibility.
 
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-operational-resilience)
+#### Subproject Leads
+- Niki Manoledaki (**[@nikimanoledaki](https://github.com/nikimanoledaki)**)
+- Antonio Di Turi (**[@AntonioDiTuri](https://github.com/AntonioDiTuri)**)
 ## Initiatives
 [TAG Operational Resilience Initiatives](https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Foperational-resilience%20label%3Akind%2Finitiative)

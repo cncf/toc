@@ -84,19 +84,20 @@ tags: # Technical Advisory Groups
         - github: kgamanji
           name: Katie Gamanji
     # tag_subprojects:
-    #   - name: Developer Experience-sub-foo
+    #   - dir: developer-experience-sub-foo
+    #     name: Developer Experience-sub-foo
     #     mission_statement: >
     #       Foo-Baz_Bar
     #     contact:
     #       slack: C08KGCXB458 # Using parent TAG's contact
     #       mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/ # Using parent TAG's contact
-    # leadership:
-    #   SubProject Leads:
-    #     - github: foo
-    #       lfx_id: baz
-    #       name: Foo Baz Bar
-    #       company: Foo Baz Bar co.
-    #       email: me@foobazbar.org
+    #     leadership:
+    #       subproject_leads:
+    #         - github: foo
+    #           lfx_id: baz
+    #           name: Foo Baz Bar
+    #           company: Foo Baz Bar co.
+    #           email: me@foobazbar.org
     tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fdeveloper-experience%20label%3Akind%2Finitiative
   - dir: tag-infrastructure # TAG Infrastructure
     name: TAG Infrastructure
@@ -185,18 +186,19 @@ tags: # Technical Advisory Groups
         - github: angellk
           name: Karena Angell
     # tag_subprojects:
-    #   - name: Infrastructure-sub-foo
+    #   - dir: infrastructure-sub-foo
+    #     name: Infrastructure-sub-foo
     #     mission_statement: Foo-Baz_Bar
     #     contact:
     #       slack: C08KBH3RA1K # Using parent TAG's contact
     #       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure # Using parent TAG's contact
-    # leadership:
-    #   SubProject Leads:
-    #     - github: foo
-    #       lfx_id: baz
-    #       name: Foo Baz Bar
-    #       company: Foo Baz Bar co.
-    #       email: me@foobazbar.org
+    #     leadership:
+    #       subproject_leads:
+    #         - github: foo
+    #           lfx_id: baz
+    #           name: Foo Baz Bar
+    #           company: Foo Baz Bar co.
+    #           email: me@foobazbar.org
     tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Finfrastructure%20label%3Akind%2Finitiative
   - dir: tag-operational-resilience # TAG Operational Resilience
     name: TAG Operational Resilience
@@ -283,7 +285,8 @@ tags: # Technical Advisory Groups
         - github: jeremyrickard
           name: Jeremy Rickard
     tag_subprojects:
-      - name: Green Reviews
+      - dir: green-reviews
+        name: Green Reviews
         mission_statement: >
           The purpose of the Green Reviews Subproject is to help CNCF projects to
           review their cloud native sustainability footprint. Through this review,
@@ -303,18 +306,18 @@ tags: # Technical Advisory Groups
         contact:
           slack: C08KGDENK34 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience # Using parent TAG's contact
-    leadership:
-      SubProject Leads:
-        - github: nikimanoledaki
-          lfx_id:
-          name: Niki Manoledaki
-          company: Grafana Labs
-          email: niki.manoledaki@grafana.com
-        - github: AntonioDiTuri
-          lfx_id:
-          name: Antonio Di Turi
-          company: Data Reply DE
-          email: antonio.dituri@datareply.de
+        leadership:
+          subproject_leads:
+            - github: nikimanoledaki
+              lfx_id:
+              name: Niki Manoledaki
+              company: Grafana Labs
+              email: niki.manoledaki@grafana.com
+            - github: AntonioDiTuri
+              lfx_id:
+              name: Antonio Di Turi
+              company: Data Reply DE
+              email: antonio.dituri@datareply.de
     tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Foperational-resilience%20label%3Akind%2Finitiative
   - dir: tag-security-and-compliance # TAG Security and Compliance
     name: TAG Security and Compliance
@@ -411,7 +414,8 @@ tags: # Technical Advisory Groups
         - github: jeremyrickard
           name: Jeremy Rickard
     tag_subprojects:
-      - name: Security Assessments
+      - dir: security-assessments
+        name: Security Assessments
         mission_statement: |
           The TAG-Security Security Assessment Subproject is designed to accelerate
           the adoption of cloud native technologies based on the below goals and
@@ -452,18 +456,18 @@ tags: # Technical Advisory Groups
         contact:
           slack: C08JZ9YLAA3 # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance # Using parent TAG's contact
-    leadership:
-      SubProject Leads:
-        - github: JustinCappos
-          lfx_id: 
-          name: Justin Cappos
-          company: New York University
-          email: jcappos@nyu.edu
-        - github: eddie-knight
-          lfx_id:
-          name: Eddie Knight
-          company: Sonatype
-          email: eddie.knight@sonatype.com
+        leadership:
+          subproject_leads:
+            - github: JustinCappos
+              lfx_id:
+              name: Justin Cappos
+              company: New York University
+              email: jcappos@nyu.edu
+            - github: eddie-knight
+              lfx_id:
+              name: Eddie Knight
+              company: Sonatype
+              email: eddie.knight@sonatype.com
     tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fsecurity-and-compliance%20label%3Akind%2Finitiative
   - dir: tag-workloads-foundation # TAG Workloads Foundation
     name: TAG Workloads Foundation
@@ -552,7 +556,8 @@ tags: # Technical Advisory Groups
         - github: kevin-wangzefeng
           name: Kevin Wang
     tag_subprojects:
-      - name: Batch
+      - dir: batch
+        name: Batch
         mission_statement: |
           To enhance collaboration among projects, improve interoperability, and empower users to efficiently leverage batch systems in cloud-native environments.
 
@@ -586,23 +591,23 @@ tags: # Technical Advisory Groups
         contact:
           slack: C08K71W9HAS # Using parent TAG's contact
           mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation # Using parent TAG's contact
-    leadership:
-      SubProject Leads:
-        - github:
-          lfx_id:
-          name: Alex Scammon
-          company:
-          email: alex@gr-oss.io
-        - github: catblade
-          lfx_id:
-          name: Marlow Warnicke
-          company:
-          email: catblade@gmail.com
-        - github:
-          lfx_id:
-          name: Abishek Malvankar
-          company:
-          email: abhishekmalvankar9@gmail.com
+        leadership:
+          subproject_leads:
+            - github:
+              lfx_id:
+              name: Alex Scammon
+              company:
+              email: alex@gr-oss.io
+            - github: catblade
+              lfx_id:
+              name: Marlow Warnicke
+              company:
+              email: catblade@gmail.com
+            - github:
+              lfx_id:
+              name: Abishek Malvankar
+              company:
+              email: abhishekmalvankar9@gmail.com
     tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fworkloads-foundation%20label%3Akind%2Finitiative
 toc_subprojects: # TOC SubProjects
   - dir: contributor-strategy-and-advocacy-subproject # Contributor Strategy and Advocacy Sub Project
