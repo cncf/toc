@@ -1,36 +1,8 @@
-# TAG Workloads Foundation
+# CNCF Batch Subproject
 
 <!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
 
 ## Mission Statement
-To define and advance practices and standards for fundamental cloud native workload execution environments and their related lifecycle management within cloud native systems, applications, and architectures. This supports the CNCF's technical vision by addressing critical problems faced by adopters and contributing to a robust cloud native ecosystem.
-
-
-[Charter](./charter.md)
-
-## Leadership
-### Chairs
-- Danielle Tal (**[@miao0miao](https://github.com/miao0miao)**) (Term: 2025-07-01 - 2026-06-30)
-- Paco Xu (**[@pacoxu](https://github.com/pacoxu)**) (Term: 2025-07-01 - 2027-06-30)
-- Yuan Tang (**[@terrytangyuan](https://github.com/terrytangyuan)**) (Term: 2025-07-01 - 2027-06-30)
-### Tech Leads
-- Alexander D. Kanevskiy (**[@kad](https://github.com/kad)**) (Term: 2025-07-02 - 2026-06-30)
-- Hongcai Ren (**[@RainbowMango](https://github.com/RainbowMango)**) (Term: 2025-07-02 - 2027-06-30)
-- Kante Yin (**[@kerthcet](https://github.com/kerthcet)**) (Term: 2025-07-02 - 2027-06-30)
-- Rajas Kakodkar (**[@rajaskakodkar](https://github.com/rajaskakodkar)**) (Term: 2025-07-02 - 2027-06-30)
-- Stephen Rust (**[@srust](https://github.com/srust)**) (Term: 2025-07-02 - 2026-06-30)
-
-## Meetings
-- **TAG Workloads Foundation Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGWorkloadsFoundation) | [Meeting Notes and Agenda](https://notes.cncf.io/s/1aNdplhtl)
-
-## Contact
-- Slack: [Tag TAG Workloads Foundation Slack](https://cloud-native.slack.com/archives/C08K71W9HAS)
-- [Mailing List](https://lists.cncf.io/g/cncf-tag-workloads-foundation)
-- TOC Liaison: Alex Chircop (**[@chira001](https://github.com/chira001)**)
-- TOC Liaison: Kevin Wang (**[@kevin-wangzefeng](https://github.com/kevin-wangzefeng)**)
-
-## Subprojects
-### Batch
 To enhance collaboration among projects, improve interoperability, and empower users to efficiently leverage batch systems in cloud-native environments.
 
 In scope:
@@ -61,10 +33,14 @@ Deliverable(s) or exit criteria:
 * Benchmarking suite for Batch systems (already in process)
 * User stories published doc for Batch systems (already in process)
 
-- [Mailing List](https://lists.cncf.io/g/cncf-tag-workloads-foundation)
-#### Subproject Leads
-- Alex Scammon
+[Charter](./charter.md)
+
+## Leadership
+### Subproject Leads
+- Alex Scammon (**[@](https://github.com/)**)
 - Marlow Warnicke (**[@catblade](https://github.com/catblade)**)
-- Abishek Malvankar
-## Initiatives
-[TAG Workloads Foundation Initiatives](https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fworkloads-foundation%20label%3Akind%2Finitiative)
+- Abishek Malvankar (**[@](https://github.com/)**)
+
+## 💬 Contact
+- [Slack Channel](https://cloud-native.slack.com/archives/C08K71W9HAS) on cloud-native.slack.com
+- 📧 [Mailing List](https://lists.cncf.io/g/cncf-tag-workloads-foundation)
