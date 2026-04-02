@@ -11,6 +11,7 @@ on:
     types: [opened, synchronize, reopened]
     paths:
       - tags/*/README.md
+      - tags/*/subprojects/*/README.md
       - toc_subprojects/*/README.md
 
 permissions:
@@ -48,6 +49,7 @@ jobs:
               .map(f => f.filename)
               .filter(f =>
                 /^tags\/[^/]+\/README\.md$/.test(f) ||
+                /^tags\/[^/]+\/subprojects\/[^/]+\/README\.md$/.test(f) ||
                 /^toc_subprojects\/[^/]+\/README\.md$/.test(f)
               );
 
