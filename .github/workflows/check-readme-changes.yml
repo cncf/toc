@@ -9,6 +9,9 @@ name: Check README Changes
 on:
   pull_request_target:
     types: [opened, synchronize, reopened]
+    paths:
+      - tags/*/README.md
+      - toc_subprojects/*/README.md
 
 permissions:
   contents: read
@@ -16,6 +19,7 @@ permissions:
 
 jobs:
   check-readme-changes:
+    if: ${{ github.event.pull_request.user.login != 'github-actions[bot]' && !startsWith(github.event.pull_request.head.ref, 'readme-update-fork-') && !contains(github.event.pull_request.title, 'Update README based on tags.yaml changes') }}
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write

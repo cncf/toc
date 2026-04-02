@@ -2,17 +2,11 @@ name: Generate README on Tags Change (Local Branch)
 
 on:
   pull_request_target:
+    types: [opened, synchronize, reopened]
     branches:
       - main
     paths:
       - tags.yaml
-  workflow_dispatch:
-    inputs:
-      check_all_prs:
-        description: 'Check all open pull requests?'
-        type: boolean
-        required: false
-        default: false
 
 permissions:
   contents: write
