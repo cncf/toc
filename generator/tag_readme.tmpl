@@ -44,12 +44,15 @@
 {{.MissionStatement}}
 {{- end }}
 - [Mailing List]({{.Contact.MailingList}})
-{{- end }}
-
 {{- if .Leadership.SubprojectLeads }}
-### Subproject Leads
+#### Subproject Leads
 {{- range .Leadership.SubprojectLeads }}
-- {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**){{if .Company}}, {{.Company}}{{end}}
+{{- if .GitHub }}
+- {{.Name}} (**[@{{.GitHub}}](https://github.com/{{.GitHub}})**)
+{{- else }}
+- {{.Name}}
+{{- end }}
+{{- end }}
 {{- end }}
 {{- end }}
 
