@@ -434,8 +434,23 @@ March 2026
 
 ##### Adopter 2 - $COMPANY/$INDUSTRY
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+Adopter 2 is a technical consultant at a 700-person IT consultancy specialising in technical, architectural, and organisational consulting. They adopted Microcks in November 2024 for a production deployment at a retail client, where it underpins a critical Keycloak extension serving millions of end users. The respondent is also an active advocate for the project, presenting at conferences and tracking the latest releases up to 1.13.2 as of March 2026.
+
+The motivation for adoption was highly specific: a Keycloak extension required integration with two external systems that provided only OpenAPI specifications with no access to a test environment. This made direct integration testing impossible, requiring a specification-driven mocking solution that could also support custom business logic for reverse-engineered black-box behaviour, integrate with Testcontainers, and fit into an Azure DevOps CI/CD pipeline. No formal evaluation of alternatives was conducted, as Microcks was selected based on its unique combination of specification-first mocking, native Testcontainers support, lightweight custom extensions, CNCF backing (governance confidence and long-term viability), and open-source availability. When asked at conferences why not WireMock, the respondent cites Microcks' protocol versatility and superior Testcontainers integration as the key differentiators.
+
+Adoption was remarkably fast, from decision to a working CI/CD integration within one week. The project started on version 1.9.0 and was updated frequently during implementation, reflecting a philosophy of always running the most recent version given the security-critical nature of the Keycloak infrastructure. Challenges encountered included documentation gaps around custom logic and advanced Testcontainers scenarios in late 2024, and a bug in the Testcontainers integration. Both were resolved through direct engagement with maintainers on GitHub, where the first response came within minutes, and the bug was fixed within a single day, which was described as an exceptional experience by the end user.
+
+Documentation was found useful for getting started, Docker deployment, and OpenAPI imports, with the well-structured source code serving as an effective supplement where docs fell short. The most notable improvement suggested is better organisation and completeness of documentation, particularly for advanced topics and custom logic extensions.
+
+Measurable value was clear: a custom-built alternative would have taken two to four weeks to develop and required ongoing maintenance as API specs evolved. Microcks delivered a working solution in one week, unblocked the critical path, enabled automated CI/CD testing that was previously impossible, and provided production confidence for authentication infrastructure at scale.
+
+If the project were archived, the technical migration would be low to medium difficulty due to loose coupling via Testcontainers and portable OpenAPI specifications. However, replicating the combination of specification-driven mocking, lightweight custom extensions, and Testcontainers integration would be conceptually difficult. The preferred response would be migration to an alternative, such as WireMock, rather than forking, with forking only considered if no viable alternative existed. Adopter 2 expressed confidence that archival risk is low given CNCF Sandbox status, active development, and responsive maintainers.
+
+The key barriers to the project reaching its full potential were identified as documentation organisation, competition from well-established tools like Postman and WireMock, and a lack of business-level case studies that would help decision-makers understand the value proposition. Adopter 2 highlighted Microcks' cloud-native design as a core strength, with Docker and Kubernetes-native deployment, native Testcontainers support enabling seamless local-to-CI/CD workflows, and a specification-driven approach that automatically generates and maintains mocks from OpenAPI contracts. Protocol versatility across REST/OpenAPI, AsyncAPI, gRPC, and GraphQL positions it as a unified mocking solution well-suited to modern, diversified API landscapes. CNCF Sandbox backing and an exceptionally responsive maintainer community further reinforce it as a trustworthy, production-ready cloud-native tool.
+
+Looking ahead, Adopter 2 plans to continue advocating for Microcks through conference presentations at events including JavaLand and JUG Hamburg, a blog series, and an article in Java Aktuell. They would adopt the project again for similar use cases and are open to contributing documentation improvements when time allows.
+
+April 2026
 
 ##### Adopter 3 - $COMPANY/$INDUSTRY
 
