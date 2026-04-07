@@ -3,44 +3,26 @@
 <!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
 
 ## Mission Statement
-To enhance collaboration among projects, improve interoperability, and empower users to efficiently leverage batch systems in cloud-native environments.
-
-In scope:
-
-To reduce fragmentation in the k8s batch ecosystem: congregate leads and users from different external and internal projects and user groups (CNCF TAGs, k8s sub-projects focused on batch-related features such as topology-aware scheduling) in the batch ecosystem to gather requirements, validate designs and encourage reutilization of core K8s APIs.
-
-The following recommendations for enhancements:
-
-* Additions to the batch API group, currently including Job and CronJob resources that benefit batch use cases such as HPC, AI/ML, data analytics and CI.
-* Primitives for job-level queueing, not limited to the k8s Job resource. Long-term, this could include multi-cluster support.
-* Primitives to control and maximize utilization of resources in fixed-size clusters (on-prem) and elastic clusters (cloud).
-* Benchmarking models for Batch systems
-* Data Locality
-* User Stories
-* Scheduling support for specialized hardware (Accelerators, NUMA, Networking, etc.)
-
-Out of scope:
-
-* Addition of new API kinds that serve a specialized type of workload. The focus should be on general APIs that specialized controllers can build on top of.
-* Uses of the batch APIs as support for serving workloads (eg. backups, upgrades, migrations). These can be served by existing SIGs.
-* Proposals that duplicate the functionality of core kubernetes components (job-controller, kube-scheduler, cluster-autoscaler).
-* Job workflows or pipelines. Mature third party frameworks serve these use cases with the current kubernetes primitives. But additional primitives to support these frameworks could be in scope.
-
-Deliverable(s) or exit criteria:
-
-* Maintaining a landscape document for currently available projects (already published-relocated and maintained)
-* Data Locality project-deliverables TBD, but something that helps in this space (already in process)
-* Benchmarking suite for Batch systems (already in process)
-* User stories published doc for Batch systems (already in process)
+The cloud-native batch scheduling ecosystem is fragmented — different projects tackle job scheduling, queueing, and resource management in incompatible ways. The Batch subproject brings together maintainers and users across the ecosystem to reduce that fragmentation: aligning on common Kubernetes APIs and primitives, developing best practices, and improving outcomes for batch workloads — whether HPC, AI/ML, data analytics, or CI — in cloud-native environments.
 
 [Charter](./charter.md)
 
 ## Leadership
 ### Subproject Leads
-- Alex Scammon (**[@](https://github.com/)**)
+- Alex Scammon (**[@stackedsax](https://github.com/stackedsax)**)
 - Marlow Warnicke (**[@catblade](https://github.com/catblade)**)
-- Abishek Malvankar (**[@](https://github.com/)**)
+- Abhishek Malvankar (**[@asm582](https://github.com/asm582)**)
+
+## 📅 Meetings
+- 🔁 Every other Tuesday at 8am PDT/PST
+- 📹 [Join via Zoom](https://zoom-lfx.platform.linuxfoundation.org/meeting/99965231171?password=2a169dd5-e375-4b5a-9b40-b2b5db5bfe91)
+- 📝 [Meeting Notes](https://docs.google.com/document/d/1GuZGyBkRGG0lEeiPA8q0PfvFlwUlwa5k-ZfXafCTdBY/edit?tab=t.0)
 
 ## 💬 Contact
-- [Slack Channel](https://cloud-native.slack.com/archives/C08K71W9HAS) on cloud-native.slack.com
+- [#batch-wg](https://cloud-native.slack.com/archives/C02Q5DFF3MM) on cloud-native.slack.com
 - 📧 [Mailing List](https://lists.cncf.io/g/cncf-tag-workloads-foundation)
+- 🔗 TOC Liaison: Ricardo Rocha (**[@rochaporto](https://github.com/rochaporto)**)
+
+## 🗺️ Landscape
+[![Batch Landscape Preview](./landscape/batch-landscape-preview.png)](./landscape/index.md)
+- [View the full CNCF Batch Landscape](./landscape/index.md)
