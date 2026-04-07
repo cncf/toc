@@ -563,26 +563,26 @@ tags: # Technical Advisory Groups
         leadership:
           subproject_leads:
             - github: stackedsax
-              lfx_id:
+              lfx_id: stackedsax1
               name: Alex Scammon
-              company:
+              company: G-Research and Insight Softmax Consulting
               email: alex@gr-oss.io
             - github: catblade
               lfx_id:
               name: Marlow Warnicke
-              company:
+              company: NVIDIA
               email: catblade@gmail.com
             - github: asm582
               lfx_id:
               name: Abhishek Malvankar
-              company:
+              company: Red Hat
               email: abhishekmalvankar9@gmail.com
         meetings:
           - schedule: Every other Tuesday at 8am PDT/PST
             zoom_url: https://zoom-lfx.platform.linuxfoundation.org/meeting/99965231171?password=2a169dd5-e375-4b5a-9b40-b2b5db5bfe91
             meeting_notes_url: https://docs.google.com/document/d/1GuZGyBkRGG0lEeiPA8q0PfvFlwUlwa5k-ZfXafCTdBY/edit?tab=t.0
         contact:
-          slack: C08K71W9HAS
+          slack: C02Q5DFF3MM
           slack_channel: "#batch-wg"
           mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation
           toc_liaison:
