@@ -77,6 +77,13 @@ landscape:
         name: K8s-Connectors
         items:
           - item:
+            name: OpenGRIS
+            homepage_url: https://github.com/finos/opengris
+            repo_url: https://github.com/finos/opengris
+            logo: opengris.svg
+            twitter: https://twitter.com/finosfoundation
+            crunchbase: https://www.crunchbase.com/organization/finos
+          - item:
             name: Fluxion
             homepage_url: https://flux-framework.org/
             repo_url: https://github.com/flux-framework/flux-sched
