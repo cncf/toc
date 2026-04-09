@@ -422,7 +422,7 @@ Available integrations:
 
 #### Adoption
 
-##### Adopter 1 - Finance
+##### Adopter 1 - Financial Industry
 
 Adopter 1 has been using Microcks for 3 years across development, QA, and integration environments. The project is not used in pre-production or production, as mocking is not practiced in those environments. They are currently on version 1.11.12 and update approximately once a year. The two core motivations for adoption were API-first practices, specifically decoupling dependencies between API providers and consumers, and reducing mainframe consumption during performance testing of microservices that interact with mainframe applications. Microcks was chosen over alternatives due to being an open source project, simple to use, scalable, and compatible with Postman.
 
@@ -432,7 +432,7 @@ The standout strengths are that Microcks is open source, easy to use, and simple
 
 March 2026
 
-##### Adopter 2 - $COMPANY/$INDUSTRY
+##### Adopter 2 - IT Consulting
 
 Adopter 2 is a technical consultant at a 700-person IT consultancy specialising in technical, architectural, and organisational consulting. They adopted Microcks in November 2024 for a production deployment at a retail client, where it underpins a critical Keycloak extension serving millions of end users. The respondent is also an active advocate for the project, presenting at conferences and tracking the latest releases up to 1.13.2 as of March 2026.
 
@@ -452,7 +452,20 @@ Looking ahead, Adopter 2 plans to continue advocating for Microcks through confe
 
 April 2026
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+##### Adopter 3 - Financial Industry
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+Adopter 3 works at a large financial institution with a significant internal IT footprint, operating within a Kubernetes-first, infrastructure-as-code organisation. They have been using Microcks since 2022, almost four years, in production, where it serves as the default mocking engine behind their internal API developer portal and API management platform. The project was discovered through the CNCF community, with the respondent being an active member in the cloud native space. Currently, over 250 APIs are mocked through Microcks, with a target of reaching 400, updated on a bi-monthly cadence, always tracking the latest release.
+
+The initial motivation for adoption was the need for a developed mocking solution capable of handling OpenAPI, GraphQL, AsyncAPI, and gRPC under a single engine. At the time, alternatives were either narrowly scoped to a single protocol or tightly coupled to a vendor. The organisation had previously built internal mocking capabilities, but migrated to Microcks as it proved more mature, community-maintained, and architecturally aligned with their Kubernetes-native, declarative infrastructure approach. Microcks' protocol versatility across all major API standards was the core differentiator that made it the only viable choice at the time, and a key advantage that has only grown in relevance since. A further operational strength was the ability to serve all APIs through a single mocking engine rather than requiring a dedicated pod per API, a significant efficiency gain at the scale of 400 APIs.
+
+The main technical challenge encountered was the absence of a Kubernetes operator for declaratively deploying API specifications and generating mocks on top of Microcks. The organisation built its own operator to fill this gap, collaborating closely with the maintainers throughout. A second challenge was Microcks' inability to generate random mock responses out of the box, placing a burden on developer teams to manually create and maintain example responses, a time-consuming and low-value activity at scale. This pain point has since been addressed by the Copilot feature, which leverages LLM capabilities to generate meaningful synthetic data directly from API contracts. This is described as a potential game changer for the organisation, solving a long-standing industry problem that consistently gets deprioritised due to resource constraints.
+
+Documentation was found to be at the right level and easy to consume, with the product's lean and well-structured design making it inherently straightforward to use. The well-organised codebase also serves as a natural supplement to official documentation, something the organisation uses as a maturity signal for any open-source project they consider adopting. Community engagement has taken place primarily via GitHub, as Discord is not accessible within the organisation's network. Maintainer responsiveness was described as quick and collaborative, with active co-design of features and a clear product vision that the maintainers have consistently upheld.
+
+Measurable value has come primarily from consolidating API mocking into a single community-maintained component, significantly reducing internal maintenance overhead. While formal metrics are not tracked, the reduction in effort is tangible, and the Copilot-driven synthetic data generation is expected to deliver further productivity gains in the near term. Adopter 3 noted that Microcks' feature set is currently ahead of their organisation's internal API maturity, and that the ongoing priority is levelling up internal API practices to fully leverage what the project already provides.
+
+If the project were archived, Adopter 3 would continue running it until security concerns arose, at which point they would seek an alternative or fork and maintain the project themselves, given the absence of comparable open-source alternatives. The capability is considered essential to their API management ecosystem and cannot simply be removed.
+
+Looking ahead, the organisation plans to expand usage of the Copilot synthetic data generation feature, with the goal of enabling behavioural mocking driven by workflow-level API descriptions, and is also evaluating Microcks' CI testing capabilities for automated contract testing. CNCF incubation is seen as a positive step that would increase the project's visibility, attract new contributors, and accelerate its growth, and the organisation's own OSPO actively considers CNCF maturity levels as part of their open-source project evaluation process.
+
+April 2026
