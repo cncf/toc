@@ -5,6 +5,12 @@ definitionRequired: true
 
 
 labels:
+- name: contribution-agreement/signed
+  description: Contributor has signed the required contribution agreement
+  color: 0e8a16
+- name: contribution-agreement/unsigned
+  description: Contributor has not yet signed the required contribution agreement
+  color: b60205
 - name: dd/adopters/complete
   description: DD Adopter Interviews have been completed
   color: 41cd40
