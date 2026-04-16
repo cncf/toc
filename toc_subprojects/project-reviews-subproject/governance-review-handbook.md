@@ -36,7 +36,6 @@ The following is the process for initiating, executing and completing a governan
 
 * Questions and answers required for the governance review may have been answered in a matriculation application for a project. Be sure to review that first. The reviewer's job is to a) review and confirm what has been submitted and b) research the project's repos and structure to be sure answers are accurate and complete.
 * Questions, issues and clarifications required during the process of the review should be put in the Governance Review issue so that they are public for future viewers and TOC members to consider.
-* At the reviewers' discretion they may contact project submitters and maintainers in CNCF Slack for deeper conversations, but remember to record significant items in the public issue.
 
 ### Completing the Review
 
@@ -53,4 +52,4 @@ The following kinds of projects may impose a conflict of interest on reviewers, 
 * The reviewer has had personal conflicts with one or more leaders of the project
 * The reviewer has some other close personal relationship with one or more leaders of the project
 
-If you are assigned a project that triggers a conflict of interest, please alert one of the leads for the Governance WG so that you can be re-assigned.
+If you are assigned a project that triggers a conflict of interest, please alert one of the leads for the Project Reviews WG so that you can be re-assigned.
