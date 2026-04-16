@@ -7,6 +7,8 @@ $PROJECT $APPLICATIONLEVEL Kick-off & Meeting notes
 Issue: $LINK
 Comms: $SLACK $WHATSAPP
 Past DD (if applicable): $LINK
+General Technical Review (GTR): $LINK
+Governance Review: $LINK
 Other: $LINK
 
 ## Adopter Interviews Outreach
@@ -33,6 +35,7 @@ _This contains notes, observations, and discussion items. This document is share
 Agenda:
 * Set expectations
 * General Steps & Timelines
+* Technical, governance and security reviews
 * Due Diligence evaluation
 * Adopter Interviews
 * Questions
