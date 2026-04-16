@@ -78,6 +78,14 @@ jobs:
               }
             }
 
+            async function commentExistingTechReview(issueNumber, existingIssue) {
+              await commentOnce(
+                issueNumber,
+                COMMENT_MARKERS.techReviewExists,
+                `Tech review issue: [#${existingIssue.number} - ${existingIssue.title}](${existingIssue.html_url})`
+              );
+            }
+
             function extractFormField(body, fieldKey) {
               if (!body) return null;
               const labels = FIELD_LABELS[fieldKey] || [fieldKey];
@@ -145,6 +153,16 @@ jobs:
               return (str || '').trim().toLowerCase();
             }
 
+            function extractTechReviewProjectNameFromTitle(title) {
+              if (!title) return null;
+              const match = title.match(/^\s*\[Tech\s*Review\]:\s*(.+?)\s*$/i);
+              return match && match[1] ? match[1].trim() : null;
+            }
+
+            function escapeForSearchQuery(value) {
+              return (value || '').replace(/"/g, '\\"').trim();
+            }
+
             // --- Main Logic ---
             const issue = context.payload.issue;
             const issueNumber = issue.number;
@@ -194,32 +212,64 @@ jobs:
               return;
             }
 
-            // Check for existing tech review issues for this project
+            // Safety check #1: GitHub search for existing OPEN tech review issue by project
             let existingIssue = null;
             try {
-              const allIssues = await github.paginate(github.rest.issues.listForRepo, {
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                state: 'all',
-                labels: 'review/tech',
+              const searchQuery = [
+                `repo:${context.repo.owner}/${context.repo.repo}`,
+                'is:issue',
+                'is:open',
+                'in:title',
+                '"[Tech Review]:"',
+                `"${escapeForSearchQuery(normalizedProjectName)}"`
+              ].join(' ');
+
+              const searchResults = await github.paginate(github.rest.search.issuesAndPullRequests, {
+                q: searchQuery,
                 per_page: 100
               });
 
-              existingIssue = allIssues.find(item => {
+              existingIssue = searchResults.find(item => {
                 if (item.number === issueNumber) return false;
-                if (!item.title.includes('[Tech Review]:')) return false;
-                const existingProjectName = extractFormField(item.body, 'name');
-                if (normalize(existingProjectName) === projectNameLower) return true;
-                // Fallback: check title for exact word match
-                const titleLower = item.title.toLowerCase();
-                const projectNameRegex = new RegExp(`\\b${projectNameLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-                return projectNameRegex.test(titleLower);
+                if (item.pull_request) return false;
+                const projectNameFromTechReviewTitle = extractTechReviewProjectNameFromTitle(item.title);
+                return normalize(projectNameFromTechReviewTitle) === projectNameLower;
+              });
+
+              if (existingIssue) {
+                console.log(`ℹ️  Found existing tech review issue via search #${existingIssue.number} - commenting and exiting`);
+                await commentExistingTechReview(issueNumber, existingIssue);
+                return;
+              }
+            } catch (error) {
+              console.log('⚠️  Error checking for existing issues via search:', error.message);
+            }
+
+            // Safety check #2: scan open issues as fallback
+            try {
+              const openIssues = await github.paginate(github.rest.issues.listForRepo, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                per_page: 100
+              });
+
+              existingIssue = openIssues.find(item => {
+                if (item.number === issueNumber) return false;
+                if (item.pull_request) return false;
+
+                const projectNameFromTechReviewTitle = extractTechReviewProjectNameFromTitle(item.title);
+                if (!projectNameFromTechReviewTitle) return false;
+
+                if (normalize(projectNameFromTechReviewTitle) === projectNameLower) return true;
+
+                const existingProjectNameFromBody = extractFormField(item.body, 'name');
+                return normalize(existingProjectNameFromBody) === projectNameLower;
               });
 
               if (existingIssue) {
                 console.log(`ℹ️  Found existing tech review issue #${existingIssue.number} - commenting and exiting`);
-                await commentOnce(issueNumber, COMMENT_MARKERS.techReviewExists,
-                  `A tech review issue already exists for this project: [#${existingIssue.number} - ${existingIssue.title}](${existingIssue.html_url})`);
+                await commentExistingTechReview(issueNumber, existingIssue);
                 return;
               } else {
                 console.log('✅ No existing tech review issue found - proceeding to create');
