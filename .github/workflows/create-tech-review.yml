@@ -116,6 +116,31 @@ jobs:
               return null;
             }
 
+            function extractProjectNameFallback(issueTitle, issueBody) {
+              // Handle DD app titles like:
+              // [Graduation] KubeVirt Graduation Application
+              // [Incubation] HAMi Incubation Application
+              if (issueTitle) {
+                const titlePattern = /^\s*\[(?:Tech\s*Review|Graduation|Incubation|Sandbox)\]\s*(.+?)\s*(?:Tech\s*Review|Graduation\s*Application|Incubation\s*Application|Sandbox\s*Application)?\s*$/i;
+                const titleMatch = issueTitle.match(titlePattern);
+                if (titleMatch && titleMatch[1] && titleMatch[1].trim().length > 0) {
+                  return titleMatch[1].trim();
+                }
+              }
+
+              // Handle markdown heading bodies like:
+              // # KubeVirt Graduation Application
+              if (issueBody) {
+                const headingPattern = /^#\s+(.+?)\s+(?:Graduation|Incubation|Sandbox)\s+Application\s*$/im;
+                const headingMatch = issueBody.match(headingPattern);
+                if (headingMatch && headingMatch[1] && headingMatch[1].trim().length > 0) {
+                  return headingMatch[1].trim();
+                }
+              }
+
+              return null;
+            }
+
             function normalize(str) {
               return (str || '').trim().toLowerCase();
             }
@@ -123,13 +148,14 @@ jobs:
             // --- Main Logic ---
             const issue = context.payload.issue;
             const issueNumber = issue.number;
+            const issueTitle = issue.title;
             const issueBody = issue.body;
 
             console.log(`🔍 Processing issue #${issueNumber}`);
             console.log(`📄 Issue body length: ${issueBody ? issueBody.length : 0}`);
 
             // Extract fields
-            const projectName = extractFormField(issueBody, 'name');
+            const projectName = extractFormField(issueBody, 'name') || extractProjectNameFallback(issueTitle, issueBody);
             const projectLink = extractFormField(issueBody, 'projectLink');
             const ddLink = extractFormField(issueBody, 'ddLink');
             const projectContact = extractFormField(issueBody, 'projectContact');
