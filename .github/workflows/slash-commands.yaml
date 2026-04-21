@@ -55,7 +55,6 @@ jobs:
           echo "issue_number=${{ github.event.issue.number }}"
           echo "is_pr_comment=${{ github.event.issue.pull_request != null }}"
           echo "comment_id=${{ github.event.comment.id }}"
-          echo "comment_first_line=${{ github.event.comment.body }}"
 
       - name: Dispatch supported slash commands from issues and PRs
         uses: peter-evans/slash-command-dispatch@v5
@@ -104,7 +103,6 @@ jobs:
           echo "event_action=${{ github.event.action }}"
           echo "event_type=${{ github.event.action }}"
           echo "command=${{ github.event.client_payload.slash_command.command }}"
-          echo "args_all=${{ github.event.client_payload.slash_command.args.all }}"
           echo "issue_number=${{ github.event.client_payload.github.payload.issue.number }}"
           echo "comment_id=${{ github.event.client_payload.github.payload.comment.id }}"
 
