@@ -21,7 +21,7 @@ Data, Storage, Network, DNS, Compute, Service Mesh, Infrastructure-as-Code, Edge
 - Zhonghu Xu (**[@hzxuzhonghu](https://github.com/hzxuzhonghu)**) (Term: 2025-07-02 - 2027-06-30)
 
 ## Meetings
-- **TAG Infrastructure Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGInfrastructure)
+- **TAG Infrastructure Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGInfrastructure) | [Meeting Notes and Agenda](https://notes.cncf.io/6iwUCAaIQ72QAKr4MTCnUQ)
 
 ## Contact
 - Slack: [Tag TAG Infrastructure Slack](https://cloud-native.slack.com/archives/C08KBH3RA1K)
