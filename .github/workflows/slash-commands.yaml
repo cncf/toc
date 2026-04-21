@@ -1,0 +1,120 @@
+name: Slash Commands
+
+on:
+  issue_comment:
+    types: [created, edited]
+  repository_dispatch:
+    types:
+      - remove-dd/triage-command
+      - remove-help-command
+      - remove-init-command
+      - remove-kind-command
+      - remove-level-command
+      - remove-review-command
+      - remove-sub-command
+      - remove-tag-command
+      - remove-toc/initiative-command
+      - remove-toc-command
+      - remove-triage-command
+      - remove-vote-command
+      - kind-command
+      - triage-command
+      - tag-command
+      - toc-command
+      - sub-command
+      - dd/triage-command
+      - dd/status-command
+      - dd/adopters-command
+      - dd/gov-review-command
+      - dd/tech-review-command
+      - dd/sec-review-command
+      - toc/initiative-command
+      - init-command
+      - vote-command
+      - help-command
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: slash-command-${{ github.event.issue.number || github.event.client_payload.github.payload.issue.number || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  dispatch-slash-command:
+    name: Dispatch Slash Command
+    if: ${{ github.event_name == 'issue_comment' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug dispatch context (temporary)
+        run: |
+          echo "event_name=${{ github.event_name }}"
+          echo "action=${{ github.event.action }}"
+          echo "issue_number=${{ github.event.issue.number }}"
+          echo "is_pr_comment=${{ github.event.issue.pull_request != null }}"
+          echo "comment_id=${{ github.event.comment.id }}"
+          echo "comment_first_line=${{ github.event.comment.body }}"
+
+      - name: Dispatch supported slash commands from issues and PRs
+        uses: peter-evans/slash-command-dispatch@v5
+        with:
+          token: ${{ secrets.SLASH_COMMANDS_PAT }}
+          commands: |
+            remove-dd/triage
+            remove-help
+            remove-init
+            remove-kind
+            remove-level
+            remove-review
+            remove-sub
+            remove-tag
+            remove-toc/initiative
+            remove-toc
+            remove-triage
+            remove-vote
+            kind
+            triage
+            tag
+            toc
+            sub
+            dd/triage
+            dd/status
+            dd/adopters
+            dd/gov-review
+            dd/tech-review
+            dd/sec-review
+            toc/initiative
+            init
+            vote
+            help
+          issue-type: both
+          permission: write
+          allow-edits: true
+
+  process-slash-command:
+    name: Process Slash Command
+    if: ${{ github.event_name == 'repository_dispatch' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug repository dispatch context (temporary)
+        run: |
+          echo "event_name=${{ github.event_name }}"
+          echo "event_action=${{ github.event.action }}"
+          echo "event_type=${{ github.event.action }}"
+          echo "command=${{ github.event.client_payload.slash_command.command }}"
+          echo "args_all=${{ github.event.client_payload.slash_command.args.all }}"
+          echo "issue_number=${{ github.event.client_payload.github.payload.issue.number }}"
+          echo "comment_id=${{ github.event.client_payload.github.payload.comment.id }}"
+
+      - name: Run TOC labeler action for issue/PR command
+        uses: cncf/automation/.github/actions/labeler-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          labels: https://raw.githubusercontent.com/cncf/toc/refs/heads/main/.github/labels.yaml
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          issue_number: ${{ github.event.client_payload.github.payload.issue.number }}
+          comment_body: ${{ github.event.client_payload.github.payload.comment.body }}
