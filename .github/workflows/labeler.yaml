@@ -37,12 +37,20 @@ jobs:
           echo "issue_number=${{ github.event.issue.number }}"
           echo "pr_number=${{ github.event.pull_request.number }}"
         
-      - name: Get changed files
+      - name: Get changed files from PR API
         if: ${{ github.event.pull_request }}
         id: changed-files
-        uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c
+        uses: actions/github-script@v8
         with:
-          separator: ","
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+              per_page: 100
+            });
+            core.setOutput("all_changed_files", files.map(f => f.filename).join(","));
           
       - name: Run labeler action for PR
         if: ${{ github.event.pull_request }}
