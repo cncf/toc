@@ -14,8 +14,20 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout PR head for changed-files
+        if: ${{ github.event.pull_request }}
         uses: actions/checkout@v5
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Checkout repository for issue events
+        if: ${{ !github.event.pull_request }}
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - name: Debug event context (temporary)
         run: |
@@ -34,7 +46,7 @@ jobs:
           
       - name: Run labeler action for PR
         if: ${{ github.event.pull_request }}
-        uses: cncf/automation/.github/actions/labeler-action@main
+        uses: cncf/automation/.github/actions/labeler-action@66a552b17f013289688a4e238f7a64b0d8e334a6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -47,7 +59,7 @@ jobs:
           
       - name: Run labeler action for Issue
         if: ${{ !github.event.pull_request }}
-        uses: cncf/automation/.github/actions/labeler-action@main
+        uses: cncf/automation/.github/actions/labeler-action@66a552b17f013289688a4e238f7a64b0d8e334a6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
