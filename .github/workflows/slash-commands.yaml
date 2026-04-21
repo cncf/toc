@@ -107,7 +107,7 @@ jobs:
           echo "comment_id=${{ github.event.client_payload.github.payload.comment.id }}"
 
       - name: Run TOC labeler action for issue/PR command
-        uses: cncf/automation/.github/actions/labeler-action@main
+        uses: cncf/automation/.github/actions/labeler-action@66a552b17f013289688a4e238f7a64b0d8e334a6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

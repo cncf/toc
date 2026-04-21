@@ -34,7 +34,7 @@ jobs:
           
       - name: Run labeler action for PR
         if: ${{ github.event.pull_request }}
-        uses: cncf/automation/.github/actions/labeler-action@main
+        uses: cncf/automation/.github/actions/labeler-action@66a552b17f013289688a4e238f7a64b0d8e334a6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -47,7 +47,7 @@ jobs:
           
       - name: Run labeler action for Issue
         if: ${{ !github.event.pull_request }}
-        uses: cncf/automation/.github/actions/labeler-action@main
+        uses: cncf/automation/.github/actions/labeler-action@66a552b17f013289688a4e238f7a64b0d8e334a6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
