@@ -1,0 +1,49 @@
+name: Labeler Backfill (manual)
+
+# TEMPORARY: one-shot workflow to re-run the auto-labeler across every open
+# PR and issue in the base repo. Added to recover labels for items whose
+# original labeler run failed (e.g. fork PRs whose "Re-run jobs" is pinned
+# to an old workflow file). Revert this file (and scripts/labeler-backfill.sh)
+# once the backfill has been applied.
+#
+# Run from the Actions tab -> "Labeler Backfill (manual)" -> Run workflow.
+# Leave dry_run=true for the first run to preview; re-run with dry_run=false
+# to apply labels.
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: What to relabel
+        type: choice
+        options:
+          - all
+          - prs
+          - issues
+        default: all
+      dry_run:
+        description: Dry run (log only, no API writes)
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Run labeler backfill
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          SCOPE: ${{ inputs.scope }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+        run: ./scripts/labeler-backfill.sh
