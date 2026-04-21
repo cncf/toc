@@ -74,6 +74,9 @@ labels:
 - name: dd/triage/needs-adopters
   description: Additional adopters needed for DD application to be marked ready
   color: b60205
+- name: dd/triage/needs-security-assessment
+  description: Security assessment must be completed before DD can proceed
+  color: b60205
 - name: gitvote
   description: ''
   color: ededed
@@ -433,7 +436,7 @@ ruleset:
       - tag/developer-experience
       - tag/infrastructure
       - tag/operational-resilience
-      - tag/security-compliance
+      - tag/security-and-compliance
       - tag/workloads-foundation
   actions:
   - kind: remove-label 
