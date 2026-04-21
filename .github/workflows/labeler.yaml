@@ -14,8 +14,20 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout PR head for changed-files
+        if: ${{ github.event.pull_request }}
         uses: actions/checkout@v5
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Checkout repository for issue events
+        if: ${{ !github.event.pull_request }}
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - name: Debug event context (temporary)
         run: |
