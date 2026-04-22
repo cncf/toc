@@ -48,18 +48,11 @@ jobs:
     if: ${{ github.event_name == 'issue_comment' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Debug dispatch context (temporary)
-        run: |
-          echo "event_name=${{ github.event_name }}"
-          echo "action=${{ github.event.action }}"
-          echo "issue_number=${{ github.event.issue.number }}"
-          echo "is_pr_comment=${{ github.event.issue.pull_request != null }}"
-          echo "comment_id=${{ github.event.comment.id }}"
-
       - name: Dispatch supported slash commands from issues and PRs
         uses: peter-evans/slash-command-dispatch@v5
         with:
           token: ${{ secrets.SLASH_COMMANDS_PAT }}
+          reactions: false
           commands: |
             remove-dd/triage
             remove-help
@@ -97,15 +90,6 @@ jobs:
     if: ${{ github.event_name == 'repository_dispatch' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Debug repository dispatch context (temporary)
-        run: |
-          echo "event_name=${{ github.event_name }}"
-          echo "event_action=${{ github.event.action }}"
-          echo "event_type=${{ github.event.action }}"
-          echo "command=${{ github.event.client_payload.slash_command.command }}"
-          echo "issue_number=${{ github.event.client_payload.github.payload.issue.number }}"
-          echo "comment_id=${{ github.event.client_payload.github.payload.comment.id }}"
-
       - name: Run TOC labeler action for issue/PR command
         uses: cncf/automation/.github/actions/labeler-action@66a552b17f013289688a4e238f7a64b0d8e334a6
         env:

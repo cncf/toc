@@ -1,0 +1,27 @@
+name: Validate Label Schema
+
+on:
+  pull_request:
+    paths:
+      - .github/labels.yaml
+      - .github/ISSUE_TEMPLATE/**
+      - scripts/validate-label-schema.py
+      - .github/workflows/validate-label-schema.yml
+  push:
+    branches:
+      - main
+    paths:
+      - .github/labels.yaml
+      - .github/ISSUE_TEMPLATE/**
+      - scripts/validate-label-schema.py
+      - .github/workflows/validate-label-schema.yml
+
+jobs:
+  validate-label-schema:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - name: Validate issue template labels against labels.yaml
+        run: python3 scripts/validate-label-schema.py

@@ -13,61 +13,61 @@ labels:
   color: b60205
 - name: dd/adopters/complete
   description: DD Adopter Interviews have been completed
-  color: 41cd40
+  color: 2DA44E
 - name: dd/adopters/in-progress
   description: DD Adopter Interviews are in progress
-  color: 61D6C3
+  color: 1F6FEB
 - name: dd/adopters/not-started
   description: Adopter interviews have not yet been started
-  color: d93f0b
+  color: D97706
 - name: dd/gov-review/complete
   description: DD Governance Review has been completed
-  color: 41cd40
+  color: 2DA44E
 - name: dd/gov-review/in-progress
   description: DD Governance Review is in progress
-  color: 61D6C3
+  color: 1F6FEB
 - name: dd/gov-review/not-started
   description: Governance Review has not yet been started
-  color: d93f0b
+  color: D97706
 - name: dd/needs-triage
   description: DD application has not been reviewed
-  color: ededed
+  color: FBCA04
 - name: dd/sec-review/complete
   description: DD Security Review has been completed
-  color: 41cd40
+  color: 2DA44E
 - name: dd/sec-review/in-progress
   description: DD Security Review is in progress
-  color: 61D6C3
+  color: 1F6FEB
 - name: dd/sec-review/not-started
   description: Security Review has not yet been started
-  color: d93f0b
+  color: D97706
 - name: dd/status/complete
   description: DD has been completed
-  color: 41cd40
+  color: 2DA44E
 - name: dd/status/in-comment-period
   description: DD is in the public comment period
-  color: 0052cc
+  color: 8250DF
 - name: dd/status/in-progress
   description: DD is in progress
-  color: 61D6C3
+  color: 1F6FEB
 - name: dd/status/in-voting
   description: DD is currently in voting
-  color: 74a0f4
+  color: 0969DA
 - name: dd/status/ready-for-assignment
   description: DD Prerequisites complete; ready to be assigned to a TOC member.
-  color: fbca04
+  color: 9A6700
 - name: dd/status/waiting
   description: DD has been paused and will pick up at a later date
-  color: d93f01
+  color: B62324
 - name: dd/tech-review/complete
   description: DD Tech Review has been completed
-  color: 41cd40
+  color: 2DA44E
 - name: dd/tech-review/in-progress
   description: DD Tech Review is in progress
-  color: 61D6C3
+  color: 1F6FEB
 - name: dd/tech-review/not-started
   description: Tech Review has not yet been started
-  color: d93f0b
+  color: D97706
 - name: dd/triage/needs-more-information
   description: Incomplete application, or question needs additional information
   color: b60205
@@ -79,55 +79,55 @@ labels:
   color: b60205
 - name: gitvote
   description: ''
-  color: ededed
+  color: 6E7781
 - name: gitvote/closed
   description: ''
-  color: ededed
+  color: 6E7781
 - name: gitvote/open
   description: ''
-  color: ededed
+  color: 6E7781
 - name: gitvote/passed
   description: ''
-  color: ededed
+  color: 6E7781
 - name: help wanted
   description: ''
   color: '159818'
 - name: init/complete
   description: Initiative has been completed
-  color: 41cd40
+  color: 2DA44E
 - name: init/in-progress
   description: Initiative is in progress and actively being worked on
-  color: 61D6C3
+  color: 1F6FEB
 - name: init/not-started
   description: Initiative has been accepted, but not started (in the backlog)
-  color: d93f0b
+  color: D97706
 - name: init/stale
   description: Initiative is no longer actively being worked on
   color: b60205
 - name: kind/dd
   description: Project DD or item related to the DD process
-  color: 61D6C3
+  color: 8250DF
 - name: kind/docs
   description: Docs related changes or updates
-  color: 61D6C3
+  color: 8250DF
 - name: kind/election
   description: Election related item
-  color: 61D6C3
+  color: 8250DF
 - name: kind/enhancement
   description: General items related to enhancements or improvements.
-  color: 61D6C3
+  color: 8250DF
 - name: kind/initiative
   description: An initiative or an item related to imitative processes
-  color: 61D6C3
+  color: 8250DF
 - name: kind/meeting
   description: Item related to a meeting
-  color: 61D6C3
+  color: 8250DF
 - name: kind/review
   description: Item related to a governance, tech, or other review
-  color: 61D6C3
+  color: 8250DF
 - name: kind/subproject
   description: Item related to a subproject or subproject related process
-  color: 61D6C3
+  color: 8250DF
 - name: level/archived
   description: Item related to an archived level project or the archive criteria/process itself
   color: d93f0b
@@ -142,13 +142,13 @@ labels:
   color: e884e1
 - name: needs-group
   description: Indicates an issue or PR that has not been assigned a group (toc or tag/foo label applied)
-  color: ededed
+  color: FBCA04
 - name: needs-kind
   description: Indicates an issue or PR that is missing an issue type or kind (a kind/foo label)
-  color: ededed
+  color: FBCA04
 - name: needs-triage
   description: Indicates an issue or PR that has not been triaged yet (has a 'triage/foo' label applied)
-  color: ededed
+  color: FBCA04
 - name: review/governance
   description: Project Governance Review
   color: '5319e7'
@@ -163,34 +163,34 @@ labels:
   color: '5319e7'
 - name: sub/contributor-strategy-and-advocacy
   description: TOC Contributor Strategy and Advocacy SubProject
-  color: 924F23
+  color: 1D76DB
 - name: sub/mentoring
   description: TOC Mentoring Subproject
-  color: 6DCC2C
+  color: 1D76DB
 - name: sub/project-reviews
   description: TOC Project Review Subproject
-  color: '3E4469'
+  color: 1D76DB
 - name: tag/developer-experience
   description: TAG Developer Experience
-  color: c2e0c6
+  color: 0E8A8A
 - name: tag/infrastructure
   description: TAG Infrastructure
-  color: D786DA
+  color: 0E8A8A
 - name: tag/operational-resilience
   description: TAG Operational Resilience
-  color: 83075D
+  color: 0E8A8A
 - name: tag/security-and-compliance
   description: TAG Security and Compliance
-  color: 78C971
+  color: 0E8A8A
 - name: tag/workloads-foundation
   description: TAG Workloads Foundation
-  color: 6AE2DC
+  color: 0E8A8A
 - name: toc
   description: toc specific issue
-  color: CF0CBE
+  color: C13B8A
 - name: toc/initiative/AI
   description: TOC Artificial Intelligence Initiative
-  color: d4c5f9
+  color: C13B8A
 - name: triage/duplicate
   description: Duplicate issue or PR, can be closed
   color: ebf84a
@@ -199,22 +199,22 @@ labels:
   color: b60205
 - name: triage/not-planned
   description: Out of scope, or not planned to be worked on
-  color: d93f0b
+  color: D97706
 - name: triage/valid
   description: Issue or PR is valid with enough information to be actionable
   color: 0e8a16
 - name: vote open
   description: ''
-  color: ededed
+  color: 6E7781
 - name: vote/closed
   description: An election that has been completed
-  color: 5c2908
+  color: 6E7781
 - name: vote/nomination
   description: A nomination or call for nominations
-  color: E00EEF
+  color: 6E7781
 - name: vote/open
   description: An election is open
-  color: 0e8a16
+  color: 6E7781
 
 
 
