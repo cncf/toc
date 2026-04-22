@@ -1,5 +1,5 @@
 autoCreateLabels: true
-autoDeleteLabels: false
+autoDeleteLabels: true
 definitionRequired: true
 
 
