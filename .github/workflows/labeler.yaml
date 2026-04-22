@@ -29,14 +29,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Debug event context (temporary)
-        run: |
-          echo "event_name=${{ github.event_name }}"
-          echo "action=${{ github.event.action }}"
-          echo "has_pull_request=${{ github.event.pull_request != null }}"
-          echo "issue_number=${{ github.event.issue.number }}"
-          echo "pr_number=${{ github.event.pull_request.number }}"
-        
       - name: Get changed files from PR API
         if: ${{ github.event.pull_request }}
         id: changed-files
