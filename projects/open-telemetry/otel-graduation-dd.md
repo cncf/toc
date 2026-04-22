@@ -85,7 +85,7 @@ OTEL's [Governance review was performed in August 2025](https:github.com/cncf/to
 
 > **Status:** Exemplary
 
-> Open Telemetry is a large project and has appropriate governance for a project of it's size. They delegates ownership to Special Interest Groups (SIGs), with each SIG responsible for subprojects in their respective domain.
+> OpenTelemetry is a large project and has appropriate governance for a project of it's size. They delegates ownership to Special Interest Groups (SIGs), with each SIG responsible for subprojects in their respective domain.
 
 > They have exceptional contributor documentation, end-user engagement, and a
 steady pipeline of new contributors.
