@@ -83,6 +83,9 @@ labels:
 - name: gitvote/closed
   description: ''
   color: ededed
+- name: gitvote/open
+  description: ''
+  color: ededed
 - name: gitvote/passed
   description: ''
   color: ededed
@@ -106,6 +109,9 @@ labels:
   color: 61D6C3
 - name: kind/docs
   description: Docs related changes or updates
+  color: 61D6C3
+- name: kind/election
+  description: Election related item
   color: 61D6C3
 - name: kind/enhancement
   description: General items related to enhancements or improvements.
@@ -293,18 +299,6 @@ ruleset:
     spec: 
       match: tag/{{ argv.0 }}
 
-- name: test
-  kind: filePath
-  spec:
-    matchPath: "utilities/labeler/*"
-  actions:
-  - kind: remove-label
-    spec:
-      match: needs-group
-  - kind: apply-label
-    spec:
-      label: toc
-
 # has to come before /toc otherwise it will try and match as "toc/{{argv.0}}"
 - name: remove-toc-init
   kind: match
@@ -386,6 +380,7 @@ ruleset:
       - needs-kind
       - kind/dd
       - kind/docs
+      - kind/election
       - kind/enhancement
       - kind/initiative
       - kind/meeting
@@ -493,14 +488,14 @@ ruleset:
     command: /dd/triage
     rules:
     - matchList:
-      - dd/triage/needs-triage
+      - dd/needs-triage
       - dd/triage/needs-adopters
       - dd/triage/needs-more-information
       - dd/triage/needs-security-assessment
   actions:
   - kind: remove-label
     spec:
-      match: dd/triage/needs-triage
+      match: dd/needs-triage
   - kind: apply-label
     spec:
       label: dd/triage/{{ argv.0 }}

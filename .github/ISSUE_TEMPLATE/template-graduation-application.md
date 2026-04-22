@@ -3,7 +3,7 @@ name: Project Graduation Application
 about: This template provides the project with a framework to inform the TOC of their conformance to the Graduation Level Criteria.
 title: "[Graduation] $PROJECT Graduation Application"
 labels:
-- dd/triage/needs-triage
+- dd/needs-triage
 - level/graduation
 - kind/dd
 - toc
