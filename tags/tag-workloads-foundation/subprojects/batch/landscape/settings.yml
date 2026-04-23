@@ -1,0 +1,47 @@
+# Landscape2 settings
+#
+# This settings file allows customizing some aspects of the landscape.
+
+# Foundation (required)
+foundation: CNCF
+
+# Url (required)
+#
+# Url where the landscape will be hosted.
+url: https://bsi-landscape.netlify.app
+
+# Colors (optional)
+colors:
+  color1: "rgba(0, 107, 204, 1)"
+  color2: "rgba(214, 34, 147, 1)"
+  color3: "rgba(96, 149, 214, 1)"
+  color4: "rgba(0, 42, 81, 0.7)"
+  color5: "rgba(62, 121, 176, 1)"
+  color6: "rgba(0, 42, 81, 0.7)"
+  color7: "rgba(180, 219, 255, 1)"
+
+# Footer (optional)
+footer:
+  links:
+    github: "https://github.com/cncf/toc/tree/main/tags/tag-workloads-foundation/subprojects/batch"
+    homepage: "https://github.com/cncf/toc/tree/main/tags/tag-workloads-foundation/subprojects/batch"
+  logo: "https://raw.githubusercontent.com/cncf/artwork/master/other/cncf/horizontal/white/cncf-white.svg"
+  text: |
+    Copyright © 2024 The Linux Foundation®. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our [Trademark Usage page](https://www.linuxfoundation.org/trademark-usage). Linux is a registered trademark of Linus Torvalds. [Privacy Policy](https://www.linuxfoundation.org/privacy) and [Terms of Use](https://www.linuxfoundation.org/terms). This website contains data received from Crunchbase. This data is not licensed pursuant to the Apache License. It is subject to Crunchbase's Data Access Terms, available at <https://data.crunchbase.com/docs/terms>, and is only permitted to be used with Linux Foundation landscape projects.
+
+# Grid items size (optional)
+grid_items_size: large
+
+# Header (optional)
+header:
+  links:
+    github: "https://github.com/cncf/toc/tree/main/tags/tag-workloads-foundation/subprojects/batch/landscape"
+  logo: "https://raw.githubusercontent.com/cncf/artwork/master/other/cncf-landscape/horizontal/color/cncf-landscape-horizontal-color.svg"
+
+# Images (optional)
+images:
+  favicon: "https://raw.githubusercontent.com/cncf/artwork/master/other/cncf-landscape/icon/color/cncf-landscape-icon-color.png"
+  open_graph: "https://landscape.cncf.io/images/social.jpg"
+
+# Screenshot width (optional)
+screenshot_width: 1024

@@ -1,0 +1,3 @@
+[build]
+  command = "landscape2 build --data-file ./landscape.yml --settings-file ./settings.yml --logos-path ./hosted_logos/ --output-dir ./build/"
+  publish = "build"
