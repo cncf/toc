@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   assign-tag-chairs:
-    if: ${{ github.actor != 'github-actions[bot]' }}
+    if: ${{ github.event.pull_request.user.login != 'github-actions[bot]' && !startsWith(github.event.pull_request.head.ref, 'readme-update-fork-') && !contains(github.event.pull_request.title, 'Update README based on tags.yaml changes') }}
     runs-on: ubuntu-latest
     steps:
       - name: Assign and request TAG chairs
