@@ -300,39 +300,82 @@ N/A
 
 ### Required
 
-- [ ] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
+- [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
 
-<!-- (TOC Evaluation goes here) --> 
+The list of adopters can be found in the project repo: https://github.com/confidential-containers/confidential-containers/blob/main/ADOPTERS.md which includes the usage level. Most adopters are at the beta level.
 
-- [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
+- [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-<!-- (TOC Evaluation goes here) --> 
+The project provided the TOC with a list of adopters for verification of use of the project at the level expected, dev/test for incubation. The TOC was able to verify confirm at least dev/test use with all interviewed adopters.
 
-The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
+- [x] **TOC verification of adopters.**
 
-- [ ] **TOC verification of adopters.**
-
-<!-- (TOC Evaluation goes here) --> 
+The CoC maintainers provided the TOC with a list of 5-6 adopters who agreed to be interviewed for the Incubation Due Diligence process. 4 of these adopters were interviewed. The adoption portion of this document contains interview summaries from adopters who approved public attribution. All adopters are verified using CoC at the level appropriate for incubation.
 
 Refer to the Adoption portion of this document.
 
-- [ ] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
+- [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
 
-<!-- (TOC Evaluation goes here) --> 
+This is documented in the [alignment documentation](https://github.com/confidential-containers/confidential-containers/blob/main/alignment.md) in the project repo. This document contains the list of CNCF projects that are directly related to CoCo, list of non CNCF projects that are directly related to CoCo along with other potential related projects.
 
 #### Adoption
 
-##### Adopter 1 - $COMPANY/$INDUSTRY
+##### Adopter 1 - IBM/Technology
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+In a March 2, 2026 interview, Nicolas Mäding explained that IBM has been contributing to and promoting Confidential Containers since 2021, including running internal trials. IBM considers it the most mature option within the Cloud Native Computing Foundation ecosystem, largely due to strong industry participation. Their work emphasizes s390x, IBM Secure Execution, and Trustee.
 
-##### Adopter 2 - $COMPANY/$INDUSTRY
+Production adoption depends on two key factors: support for bare metal and a standardized Trustee model. Both are still evolving following a Q4 2025 tech preview that IBM plans to harden. The team currently runs version 0.16.0, contributes upstream, and intends to stay aligned with future releases since the project underpins their Kubernetes product.
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+A key tension lies in roadmap priorities—particularly the emphasis on x86 and public cloud versus on-premises environments and IBM Z/LinuxONE systems. IBM advocates for a more balanced approach across architectures and deployment models.
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+Documentation is considered solid, especially architecture diagrams, though improved threat modeling would be beneficial as the project matures. Maintainers are highly engaged via Slack, GitHub, and Zoom. IBM sees the project’s primary value as enabling a unified hybrid-cloud approach across diverse hardware. Archiving the project would have a significant negative impact.
 
-_If the Adopting organization needs to remain anonymous, stating the industry vertical is sufficient._
-MONTH YEAR
+Improvement area: greater openness to non-x86 architectures and alternative deployment models.
+
+Refer to the full [interview report](IBM-interview.md) for more details.
+
+##### Adopter 2 - AccuKnox/Technology
+
+In a February 10, 2026 interview, AccuKnox (represented by Rahul Jadhav, interviewed by Lin Sun) described using Confidential Containers (CoCo) in 5G security—specifically for intent-based security in 5G ORAN and Core environments.
+
+A key use case is protecting the 5G UDR (Unified Data Repository), which stores highly sensitive data such as subscription keys. Because this data often resides in public cloud environments—where cloud service provider root access must be assumed as a threat—CoCo provides a mechanism to secure these workloads using hardware-backed isolation.
+
+AccuKnox views CoCo as uniquely capable of delivering a full Trusted Execution Environment (TEE) pathway for containerized workloads. Features such as cloud API adapters have been particularly valuable, especially after early integration challenges with AWS.
+
+Their current usage remains pre-production which matches the expected level for incubation. They are running version 0.13.0 (approximately one year behind) and have not kept related components like 5g-blueprint-controls fully updated. While documentation was helpful, they relied heavily on Slack support from community members such as Pradeepta.
+
+They presented their 5GSEC work to the community and were encouraged to list themselves as adopters. AccuKnox frames CoCo’s value in terms of improving security posture in untrusted cloud environments, where TEE-based solutions are often the only viable option.
+
+Gaps identified: Limited hardware availability, Interface instability and High cost. They recommend clearer messaging and better articulation of real-world use cases, rather than focusing solely on deep technical detail. Their enterprise future plan includes integrating CoCo into AccuKnox Enterprise, particularly for government and federal deployments.
+
+Refer to the full [interview report](AccuKnox-interview.md) for more details.
+
+##### Adopter 3 - NVIDIA/Technology
+
+In a January 23, 2026 interview, Dan Middleton from NVIDIA described roughly two years of involvement with Confidential Containers as maintainers, ecosystem contributors, and adopters. He explained confidential computing as leveraging CPU and GPU features to create protected memory regions—similar to VM-level isolation—shielded from other tenants. CoCo enables this capability in a Kubernetes-native way.
+
+NVIDIA’s motivations fall into three categories:
+- Enabling GPU support so AI workloads can leverage confidential computing
+- Building products on top of CoCo (e.g., integration with Red Hat OpenShift)
+- Meeting internal and external datacenter security requirements with a cloud-native confidential stack
+
+NVIDIA views CoCo as the leading cloud-native confidential computing project due to its momentum, feature set, and broad ecosystem support across cloud providers, hardware vendors, and ISVs. Current status is pre-production which matches the expected level for incubation. They expect early access external offerings, with GA targeted for late Q1 2026. They are using version: 0.18, and tracking releases closely (downstream users follow OpenShift cadence).
+
+Adoption was relatively smooth due to internal expertise. Initial integration challenges—mainly around compatibility with other CNCF components like container runtimes—have largely been resolved. Documentation has improved significantly, especially with the introduction of a unified docs site.
+
+NVIDIA actively engages through community meetings, GitHub, and Slack. Key strengths of the project is strong security-first design, broad and diverse maintainer base and faster and less complex integration compared to alternatives (e.g., kubelet-in-confidential-VM).
+
+Key improvement areas are more end-user feedback and visibility, easier usability and simplified per-tenant security configuration.
+
+Refer to the full [interview report](NVIDIA-interview.md) for more details.
+
+##### Adopter 4 - TDC/Technology
+
+In a January 29, 2026 interview, TDC (Denmark)—Nino Wael, Lasse, and Martin Rasmussen, interviewed by Lin Sun—describes a small IT-security-focused group that knew CoCo earlier but seriously evaluated it from early 2025. The main pull is running AI workloads securely, then broader confidential workloads. They previously looked at Gramine (Intel SGX-centric) and moved toward CoCo for broader hardware options (including Intel TDX) and multi-vendor contributors—seen as a major advantage. The current stage is pre-production / POC only, so no measurable business value yet; subjectively, CoCo is much easier than Gramine. They try to stay on the latest release (CoCo 0.18) and follow upgrade paths.
+
+Pain points is that basic tutorials exist, but combining features often breaks without extra config, pushing them to read source. Docs sometimes 404, go stale, or describe removed code; some endpoints lack documentation for their small integration layer. Slack is helpful but insufficient alone. They treat community engagement as mandatory given complexity and a steep learning curve.
+Scope critique: they feel the project sometimes sprawls into areas better handled elsewhere (e.g. Keycloak for authz), including non-core items like a Trustee admin web UI—they’d prefer deeper CNCF integration over building everything in-tree.
+
+Strengths of the project is its hardware flexibility, strong vendor participation, approachable contribution, and a single pane to confidential containers versus stitching per-vendor docs. Improvements areas are a compatibility matrix, clearer marking of unsupported paths (e.g. Azure CSI wrapper), and cleaner, truthful documentation.
+
+Refer to the full [interview report](TDC-DK-interview.md) for more details.
