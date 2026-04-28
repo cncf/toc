@@ -1,0 +1,200 @@
+name: Assign TAG Chairs on PRs
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+    paths:
+      - "tags/**"
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  assign-tag-chairs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign and request TAG chairs
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            if (!pr) {
+              core.info("No pull request payload found. Exiting.");
+              return;
+            }
+
+            if (pr.draft) {
+              core.info(`PR #${pr.number} is draft. Skipping.`);
+              return;
+            }
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Gather changed files for the PR.
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner,
+              repo,
+              pull_number: pr.number,
+              per_page: 100
+            });
+
+            // Extract TAG directories from paths like tags/<tag-dir>/...
+            const changedTagDirs = new Set();
+            for (const file of files) {
+              const match = file.filename.match(/^tags\/([^/]+)(?:\/|$)/);
+              if (match && match[1]) {
+                changedTagDirs.add(match[1].trim());
+              }
+            }
+
+            if (changedTagDirs.size === 0) {
+              core.info("No files changed under tags/<tag-dir>. Nothing to do.");
+              return;
+            }
+
+            core.info(`Changed TAG dirs: ${Array.from(changedTagDirs).join(", ")}`);
+
+            // Read tags.yaml from the PR base branch.
+            const tagsYamlResponse = await github.rest.repos.getContent({
+              owner,
+              repo,
+              path: "tags.yaml",
+              ref: pr.base.ref
+            });
+
+            if (!("content" in tagsYamlResponse.data)) {
+              core.setFailed("Could not read tags.yaml content.");
+              return;
+            }
+
+            const tagsYaml = Buffer.from(tagsYamlResponse.data.content, "base64").toString("utf8");
+
+            // Parse only the top-level tags[*].dir and tags[*].leadership.chairs[*].github.
+            function parseTagChairs(yamlText) {
+              const map = new Map();
+              const lines = yamlText.split(/\r?\n/);
+
+              let currentDir = null;
+              let inLeadership = false;
+              let inChairs = false;
+
+              for (const rawLine of lines) {
+                const line = rawLine.replace(/\t/g, "    ");
+
+                if (/^toc_subprojects:\s*/.test(line)) {
+                  break;
+                }
+
+                const tagDirMatch = line.match(/^  - dir:\s*([^\s#]+)/);
+                if (tagDirMatch) {
+                  currentDir = tagDirMatch[1].trim();
+                  if (!map.has(currentDir)) {
+                    map.set(currentDir, []);
+                  }
+                  inLeadership = false;
+                  inChairs = false;
+                  continue;
+                }
+
+                if (!currentDir) {
+                  continue;
+                }
+
+                if (/^    leadership:\s*$/.test(line)) {
+                  inLeadership = true;
+                  inChairs = false;
+                  continue;
+                }
+
+                if (!inLeadership) {
+                  continue;
+                }
+
+                if (/^      chairs:\s*$/.test(line)) {
+                  inChairs = true;
+                  continue;
+                }
+
+                if (/^      [a-zA-Z0-9_]+:\s*$/.test(line) && !/^      chairs:\s*$/.test(line)) {
+                  inChairs = false;
+                  continue;
+                }
+
+                if (inChairs) {
+                  const chairMatch = line.match(/^        - github:\s*([^\s#]+)/);
+                  if (chairMatch && chairMatch[1]) {
+                    const login = chairMatch[1].trim();
+                    if (login) {
+                      map.get(currentDir).push(login);
+                    }
+                  }
+                }
+              }
+
+              return map;
+            }
+
+            const chairsByTagDir = parseTagChairs(tagsYaml);
+            const chairsToAdd = new Set();
+
+            for (const dir of changedTagDirs) {
+              const chairs = chairsByTagDir.get(dir) || [];
+              if (chairs.length === 0) {
+                core.info(`No chairs found in tags.yaml for ${dir}.`);
+              }
+              for (const chair of chairs) {
+                if (chair) {
+                  chairsToAdd.add(chair);
+                }
+              }
+            }
+
+            if (chairsToAdd.size === 0) {
+              core.info("No TAG chairs resolved from tags.yaml. Nothing to assign.");
+              return;
+            }
+
+            const prAuthor = pr.user && pr.user.login ? pr.user.login : null;
+            const requestedReviewerLogins = (pr.requested_reviewers || []).map((u) => u.login);
+            const existingAssigneeLogins = (pr.assignees || []).map((u) => u.login);
+
+            const finalChairs = Array.from(chairsToAdd).filter((login) => login !== prAuthor);
+            const reviewersToRequest = finalChairs.filter((login) => !requestedReviewerLogins.includes(login));
+            const assigneesToAdd = finalChairs.filter((login) => !existingAssigneeLogins.includes(login));
+
+            core.info(`Resolved chairs: ${finalChairs.join(", ")}`);
+
+            if (reviewersToRequest.length > 0) {
+              try {
+                await github.rest.pulls.requestReviewers({
+                  owner,
+                  repo,
+                  pull_number: pr.number,
+                  reviewers: reviewersToRequest
+                });
+                core.info(`Requested reviewers: ${reviewersToRequest.join(", ")}`);
+              } catch (error) {
+                core.warning(`Failed requesting reviewers: ${error.message}`);
+              }
+            } else {
+              core.info("No new reviewer requests needed.");
+            }
+
+            if (assigneesToAdd.length > 0) {
+              try {
+                await github.rest.issues.addAssignees({
+                  owner,
+                  repo,
+                  issue_number: pr.number,
+                  assignees: assigneesToAdd
+                });
+                core.info(`Assigned users: ${assigneesToAdd.join(", ")}`);
+              } catch (error) {
+                core.warning(`Failed adding assignees: ${error.message}`);
+              }
+            } else {
+              core.info("No new assignees needed.");
+            }
