@@ -4,7 +4,7 @@ name: Assign TAG Chairs on PRs
 # of the base repository with write permissions. This is safe ONLY because:
 # 1. We do NOT checkout any code from the PR
 # 2. We only read file metadata and tags.yaml content via the GitHub API
-# 3. We only request reviewers/assignees (no execution of PR-controlled code)
+# 3. We only request reviewers (no execution of PR-controlled code)
 # DO NOT add a checkout step or execute any PR-controlled scripts in this workflow!
 on:
   pull_request_target:
@@ -15,14 +15,13 @@ on:
 permissions:
   contents: read
   pull-requests: write
-  issues: write
 
 jobs:
   assign-tag-chairs:
     if: ${{ github.event.pull_request.user.login != 'github-actions[bot]' && !startsWith(github.event.pull_request.head.ref, 'readme-update-fork-') && !contains(github.event.pull_request.title, 'Update README based on tags.yaml changes') }}
     runs-on: ubuntu-latest
     steps:
-      - name: Assign and request TAG chairs
+      - name: Request TAG chairs as reviewers
         uses: actions/github-script@v7
         with:
           script: |
@@ -160,17 +159,15 @@ jobs:
             }
 
             if (chairsToAdd.size === 0) {
-              core.info("No TAG chairs resolved from tags.yaml. Nothing to assign.");
+              core.info("No TAG chairs resolved from tags.yaml. Nothing to request.");
               return;
             }
 
             const prAuthor = pr.user && pr.user.login ? pr.user.login : null;
             const requestedReviewerLogins = (pr.requested_reviewers || []).map((u) => u.login);
-            const existingAssigneeLogins = (pr.assignees || []).map((u) => u.login);
 
             const finalChairs = Array.from(chairsToAdd).filter((login) => login !== prAuthor);
             const reviewersToRequest = finalChairs.filter((login) => !requestedReviewerLogins.includes(login));
-            const assigneesToAdd = finalChairs.filter((login) => !existingAssigneeLogins.includes(login));
 
             core.info(`Resolved chairs: ${finalChairs.join(", ")}`);
 
@@ -188,20 +185,4 @@ jobs:
               }
             } else {
               core.info("No new reviewer requests needed.");
-            }
-
-            if (assigneesToAdd.length > 0) {
-              try {
-                await github.rest.issues.addAssignees({
-                  owner,
-                  repo,
-                  issue_number: pr.number,
-                  assignees: assigneesToAdd
-                });
-                core.info(`Assigned users: ${assigneesToAdd.join(", ")}`);
-              } catch (error) {
-                core.warning(`Failed adding assignees: ${error.message}`);
-              }
-            } else {
-              core.info("No new assignees needed.");
             }
