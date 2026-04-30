@@ -17,3 +17,21 @@ Training workloads in cloud-native environments impose distinct requirements on 
 - **Data Versioning and Lineage**: Reproducibility is a core tenet of MLOps. Storage must support immutable snapshots or integration with versioning tools to ensure that the exact dataset used for a specific training run can be audited or retrained in the future.
 
 - **Scratch Space and Intermediate State**: During the training process, temporary data such as shuffled buffers or gradients are often stored in "scratch" space. This requires high-speed, ephemeral storage, often HostPath or Local Persistent Volumes (PVs), to minimize the latency of intermediate calculations.
+
+#### References
+
+**Data Formats:**
+- [Apache Parquet - Columnar Storage Format](https://parquet.apache.org/)
+- [TFRecord - TensorFlow Data Format](https://www.tensorflow.org/tutorials/load_data/tfrecord)
+- [WebDataset - High-Performance Data Loading for PyTorch](https://github.com/webdataset/webdataset)
+
+**Training Frameworks:**
+- [PyTorch - Deep Learning Framework](https://pytorch.org/)
+- [TensorFlow - End-to-End ML Platform](https://www.tensorflow.org/)
+- [DeepSpeed - Deep Learning Optimization Library](https://www.deepspeed.ai/)
+- [Horovod - Distributed Training Framework](https://horovod.readthedocs.io/)
+
+**Data Versioning & MLOps:**
+- [DVC (Data Version Control) - ML Experiment Management](https://dvc.org/)
+- [Kubeflow Training Operator - Distributed Training on Kubernetes](https://www.kubeflow.org/docs/components/trainer/)
+- [Ray Data - Scalable Data Processing for AI](https://docs.ray.io/en/latest/data/data.html)
