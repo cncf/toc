@@ -18,12 +18,12 @@ While training focuses on the high-throughput ingestion of massive datasets to c
 
 6. **Cold Starts, Scaling, and Storage Locality**: Inference workloads exhibit highly variable traffic, often triggering rapid scale-out events. Without local model caching, new replicas may simultaneously fetch large model artifacts from remote storage, increasing startup latency and storage contention. Production systems mitigate this through node pre-warming, warm replica pools, and init containers or sidecars that stage models on local storage. Ensuring storage locality between model data and compute resources is critical for predictable inference latency during scale-out.
 
-#### References
+## References
 
-- [Disaggregated Serving - NVIDIA Glossary](https://www.nvidia.com/en-us/glossary/disaggregated-serving/)
-- [BentoML - LLM Inference](https://bentoml.com/llm/)
-- [KServe - Standardized AI Model Serving](https://kserve.github.io/website/)
-- [vLLM - High-throughput and Memory-efficient LLM Inference](https://docs.vllm.ai/)
-- [llm-d - Kubernetes-Native Distributed LLM Inference](https://llm-d.ai/)
-- [Seldon Core - MLOps Framework for Production ML](https://docs.seldon.io/projects/seldon-core/en/latest/)
-- [NVIDIA TensorRT - High-Performance Deep Learning Inference](https://developer.nvidia.com/tensorrt)
+1. https://www.nvidia.com/en-us/glossary/disaggregated-serving/
+2. https://bentoml.com/llm/
+3. https://kserve.github.io/website/
+4. https://docs.vllm.ai/
+5. https://llm-d.ai/
+6. https://docs.seldon.io/projects/seldon-core/en/latest/
+7. https://developer.nvidia.com/tensorrt
