@@ -1,0 +1,43 @@
+name: Batch Landscape
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'tags/tag-workloads-foundation/subprojects/batch/landscape/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'tags/tag-workloads-foundation/subprojects/batch/landscape/**'
+
+defaults:
+  run:
+    shell: bash
+    working-directory: tags/tag-workloads-foundation/subprojects/batch/landscape
+
+jobs:
+  build:
+    name: Validate and build the landscape
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install landscape2 with cached Homebrew
+        uses: tecolicom/actions-use-homebrew-tools@v1
+        with:
+          tools: cncf/landscape2/landscape2
+
+      - name: Validate the landscape
+        run: |
+          landscape2 validate data --data-file ./landscape.yml
+          landscape2 validate settings --settings-file ./settings.yml
+
+      - name: Build the landscape
+        run: landscape2 build --data-file ./landscape.yml --settings-file ./settings.yml --logos-path ./hosted_logos/ --output-dir ./build/
+        env:
+          GITHUB_TOKENS: ${{ secrets.GITHUB_TOKENS }}
+          CRUNCHBASE_API_KEY: ${{ secrets.CRUNCHBASE_API_KEY }}
