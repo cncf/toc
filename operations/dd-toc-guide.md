@@ -65,9 +65,11 @@ All TOC members are expected to assist in the triaging of project applications t
 This light-weight triage/evaluation must cover the list below (it is not exhaustive and is a minimum triage set from the [incubation template retrieved 12 DEC 2025](https://github.com/cncf/toc/blob/c2943ffc98064dd88e9ef9c4afd5a8856898942f/.github/ISSUE_TEMPLATE/template-incubation-application.md)):
 * Adoption Assertion includes the Adopters file link, and the project has an entry in the Adopter's form responses to provide 5-7 adopters to reach out to. [Check here](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter) for the definition of an Adopter.
 * Application Process Principles provides 
-  * Either: the link to the Recording, issue, and/or meeting notes from a TAG meeting where the project presented with the domain specific TAG -or- completion of the [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md) or [Domain Technical Review (DTR)](../toc_subprojects/project-reviews-subproject/tag-domain-technical-review-template.md) in lieu of a TAG meeting
+  * link to a completed [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md)
+  * link to a completed [Governance Review](../toc_subprojects/project-reviews-subproject/governance-review-template.md)
+  * (optional) link to a technical presentation to a CNCF TAG, or links to notes or issues about such a presentation
   * assertion of vendor neutrality
-  * assertion of review and acknowledge of expectations of CNCF projects and requirements for moving forward through the CNCF maturity levels
+  * assertion of review and acknowledgement of expectations of CNCF projects and requirements for moving forward through the CNCF maturity levels
   * provided any additional documentation links the project feels is appropriate for its type
 * Governance and Maintainers provides
   * link to the project's governance
@@ -101,7 +103,7 @@ This light-weight triage/evaluation must cover the list below (it is not exhaust
   * link to adopters file
   * link to integrations/ compatibility information of other projects and products
 
-Projects should NOT be blocked if they do not have a Governance Review or a GTR/DTR completed. Both the Governance review and GTR/DTRs depend on the availability of our community members in our TAGs which cannot be guaranteed.
+Projects should complete Technical and Governance reviews themselves and store them in a .project folder or GitHub repository in their own organization. CNCF associates will review and upload vetted snapshots of the project's copies to [github.com/cncf/toc/projects](../projects), but projects should not be blocked by this process, as it depends on availability of community members in CNCF TAGs which cannot be guaranteed.
 
 If some of the criteria are not yet met, or missing, the TOC member triaging will add a comment detailing all items that are unmet or missing and close the application; affixing the "not-ready" label and move the card to the "Not-Ready-Will Return" column of the [TOC project board](https://github.com/orgs/cncf/projects/27/views/9)'s Applications to Move levels tab. Projects are expected to re-apply upon completion of outstanding items. When the project is ready to reapply, they should link to the previous application so the TOC may leverage and reuse as much prior work as reasonable.
 
@@ -115,7 +117,7 @@ TOC members are to prioritize selecting projects from the ready for assignment c
 
 Commonly referred to as the Project's Application Sponsor, TOC members assign themselves to projects to sponsor the application for moving levels. Sponsoring an application ensures a focused point of contact exists for both the project and the TOC in completing the Due Diligence, public comment, and execution of voting. 
 
-The TOC member that assigns themselves a project to sponsor the application for moving levels may request a secondary TOC member to support the Due Diligence according to eligibility.
+The TOC member that assigns themselves a project to sponsor the application for moving levels may request a secondary TOC member to support the Due Diligence according to eligibility. They may also request that a member of the project-reviews subproject verify and commit the project's Technical and Governance reviews to the TOC repo.
 
 TOC members ready to perform Due Diligence a project's application will socialize this internally with the TOC to provide opportunity for other members to participate. Once a TOC member or members is determined, those TOC members must assign themselves to the Issue and move the issue's card on the [Application to Move Levels board](https://github.com/orgs/cncf/projects/27/views/9) to "Assigned".
 
