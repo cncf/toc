@@ -43,6 +43,8 @@ its governance, these are considered non-blocking:**
 **The following review primarily consists of an audit on the project's
 self-assessment in their Graduation application.**
 
+The project's self-assessment is available at $LINK.
+
 
 ### Governance Summary
 
