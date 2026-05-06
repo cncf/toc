@@ -48,7 +48,7 @@ _The project has been adopted by the following organizations in a testing and in
 ### Required
 
 
-- [ ] **Complete a [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
+- [ ] **Complete a [General Technical Review (GTR)](../../toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
   - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
