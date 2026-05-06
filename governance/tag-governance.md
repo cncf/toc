@@ -663,7 +663,7 @@ meetings, promoting the group, and coordinating the creation of initiatives.
 #### Other Roles
 
 TCG's MAY have other roles, but they are REQUIRED to be documented in an
-easily discovered area, such as the groups's page on Open Community Groups; the platform used
+easily discovered area, such as the groups's page on [Open Community Groups](https://ocgroups.dev/cncf); the platform used
 by Cloud Native Community Groups.
 
 - MUST be documented with a description, scope, and responsibilities.
