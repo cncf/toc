@@ -1,0 +1,106 @@
+name: Label Drift Check
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+jobs:
+  drift-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Compare labels.yaml with GitHub labels
+        id: compare
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+          import subprocess
+          from pathlib import Path
+
+          labels_yaml = Path(".github/labels.yaml").read_text(encoding="utf-8")
+          labels_section = labels_yaml.split("\nruleset:\n", 1)[0]
+          yaml_labels = set(re.findall(r"^- name: (.+)$", labels_section, flags=re.M))
+
+          gh_raw = subprocess.check_output(
+              ["gh", "label", "list", "--repo", os.environ["GITHUB_REPOSITORY"], "--limit", "500", "--json", "name"],
+              text=True,
+          )
+          gh_labels = {item["name"] for item in json.loads(gh_raw)}
+
+          only_yaml = sorted(yaml_labels - gh_labels)
+          only_gh = sorted(gh_labels - yaml_labels)
+          has_drift = bool(only_yaml or only_gh)
+
+          summary = [
+              f"yaml_count={len(yaml_labels)}",
+              f"github_count={len(gh_labels)}",
+              f"only_in_yaml={len(only_yaml)}",
+              f"only_in_github={len(only_gh)}",
+          ]
+          print("\n".join(summary))
+
+          out = Path(os.environ["GITHUB_OUTPUT"])
+          out.write_text(f"has_drift={'true' if has_drift else 'false'}\n", encoding="utf-8")
+          with out.open("a", encoding="utf-8") as f:
+              f.write("only_yaml<<EOF\n")
+              f.write("\n".join(only_yaml))
+              f.write("\nEOF\n")
+              f.write("only_gh<<EOF\n")
+              f.write("\n".join(only_gh))
+              f.write("\nEOF\n")
+          PY
+
+      - name: Open drift issue
+        if: steps.compare.outputs.has_drift == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ONLY_YAML: ${{ steps.compare.outputs.only_yaml }}
+          ONLY_GH: ${{ steps.compare.outputs.only_gh }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          now="$(date -u +"%Y-%m-%d %H:%M:%SZ")"
+          body="$(cat <<'EOF'
+          Label drift was detected between `.github/labels.yaml` and live repository labels.
+
+          **Detected at:** __NOW__
+          **Workflow run:** __RUN_URL__
+
+          ## Labels only in .github/labels.yaml
+          __ONLY_YAML__
+
+          ## Labels only in GitHub
+          __ONLY_GH__
+          EOF
+          )"
+
+          only_yaml_render="${ONLY_YAML:-}"
+          only_gh_render="${ONLY_GH:-}"
+          if [ -z "$only_yaml_render" ]; then only_yaml_render="(none)"; fi
+          if [ -z "$only_gh_render" ]; then only_gh_render="(none)"; fi
+          only_yaml_render="$(printf '%s\n' "$only_yaml_render" | sed 's/^/- /')"
+          only_gh_render="$(printf '%s\n' "$only_gh_render" | sed 's/^/- /')"
+
+          body="${body/__NOW__/$now}"
+          body="${body/__RUN_URL__/$RUN_URL}"
+          body="${body/__ONLY_YAML__/$only_yaml_render}"
+          body="${body/__ONLY_GH__/$only_gh_render}"
+
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Label drift detected ($now)" \
+            --body "$body"
+
+      - name: Fail when drift exists
+        if: steps.compare.outputs.has_drift == 'true'
+        run: |
+          echo "Label drift detected. See issue opened by this workflow."
+          exit 1

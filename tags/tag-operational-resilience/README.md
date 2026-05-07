@@ -21,7 +21,7 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 - Nabarun Pal (**[@palnabarun](https://github.com/palnabarun)**), Broadcom (Term: 2025-07-02 - 2027-06-30)
 
 ## Meetings
-- **TAG Operational Resilience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list) | [Recordings](https://www.youtube.com/@TAGOperationalResilience)
+- **TAG Operational Resilience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list) | [Recordings](https://www.youtube.com/@TAGOperationalResilience) | [Meeting Notes and Agenda](https://notes.cncf.io/s/oWHc3r0r7)
 
 ## Contact
 - Slack: [Tag TAG Operational Resilience Slack](https://cloud-native.slack.com/archives/C08KGDENK34)

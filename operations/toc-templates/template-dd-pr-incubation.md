@@ -22,14 +22,23 @@ _[The TOC has found the project to have satisfied the criteria for $LEVEL/ The T
 
 ### Suggested
 
-N/A
+- [ ] **Engage with domain-specific TAG(s) to present the technical architecture of the project.**
+  - This occurred on DD-MMM-YYYY and can be discovered at $LINK.
+
+<!-- (Project assertion goes here) --> 
 
 ### Required
 
-- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
-  - _If applicable_ this was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
 
-<!-- (TOC Evaluation goes here) --> 
+- [ ] **Complete a [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
+  - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
+
+<!-- (Project assertion goes here) --> 
+
+- [ ] **Complete a [Governance Review](../toc_subprojects/project-reviews-subproject/governance-review-template.md).**
+  - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
+
+<!-- (Project assertion goes here) -->
 
 - [ ] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 

@@ -3,7 +3,7 @@ name: Project Incubation Application
 about: This template provides the project with a framework to inform the TOC of their conformance to the Incubation Level Criteria.
 title: "[Incubation] $PROJECT Incubation Application"
 labels:
-- dd/triage/needs-triage
+- dd/needs-triage
 - level/incubation
 - kind/dd
 - toc
@@ -41,14 +41,23 @@ _The project has been adopted by the following organizations in a testing and in
 
 ### Suggested
 
-N/A
+- [ ] **Engage with domain-specific TAG(s) to present the technical architecture of the project.**
+  - This occurred on DD-MMM-YYYY and can be discovered at $LINK.
+
+<!-- (Project assertion goes here) --> 
 
 ### Required
 
-- [ ] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
-  - This was completed and occurred on DD-MMM-YYYY, and can be discovered at $LINK.
+
+- [ ] **Complete a [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
+  - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
+
+- [ ] **Complete a [Governance Review](../toc_subprojects/project-reviews-subproject/governance-review-template.md).**
+  - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
+
+<!-- (Project assertion goes here) -->
 
 - [ ] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
 

@@ -22,7 +22,7 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**), Hitachi (Term: 2025-07-02 - 2026-06-30)
 
 ## Meetings
-- **TAG Security and Compliance Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGSecurityandCompliance)
+- **TAG Security and Compliance Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGSecurityandCompliance) | [Meeting Notes and Agenda](https://docs.google.com/document/d/1M4bPKmjothdFFnhV3ox7uiur50faDDh909UlEpdk5JQ/edit?tab=t.0)
 
 ## Contact
 - Slack: [Tag TAG Security and Compliance Slack](https://cloud-native.slack.com/archives/C08JZ9YLAA3)
