@@ -11,6 +11,7 @@ jobs:
     permissions:
       contents: read
       issues: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v5
 
@@ -104,3 +105,63 @@ jobs:
         run: |
           echo "Label drift detected. See issue opened by this workflow."
           exit 1
+
+      - name: Fix stale helper labels on open issues and PRs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import subprocess
+
+          REPO = os.environ["GITHUB_REPOSITORY"]
+
+          def list_items(kind):
+              return json.loads(subprocess.check_output(
+                  ["gh", kind, "list", "--repo", REPO, "--state", "open",
+                   "--limit", "500", "--json", "number,labels"],
+                  text=True,
+              ))
+
+          def remove_label(kind, number, label):
+              subprocess.run(
+                  ["gh", kind, "edit", str(number), "--repo", REPO, "--remove-label", label],
+                  check=True,
+              )
+              print(f"  [{kind} #{number}] removed '{label}'")
+
+          def matches(label_names, pattern):
+              if pattern == "{toc,tag/*,sub/*}":
+                  return any(
+                      l == "toc" or l.startswith("tag/") or l.startswith("sub/")
+                      for l in label_names
+                  )
+              if pattern.endswith("/*"):
+                  prefix = pattern[:-1]
+                  return any(l.startswith(prefix) for l in label_names)
+              return pattern in label_names
+
+          # (trigger pattern, stale label to remove)
+          RULES = [
+              ("triage/*",                        "needs-triage"),
+              ("kind/*",                          "needs-kind"),
+              ("{toc,tag/*,sub/*}",               "needs-group"),
+              ("dd/triage/*",                     "dd/needs-triage"),
+              ("contribution-agreement/signed",   "contribution-agreement/unsigned"),
+              ("contribution-agreement/unsigned", "contribution-agreement/signed"),
+          ]
+
+          total_fixed = 0
+          for kind in ("issue", "pr"):
+              for item in list_items(kind):
+                  number = item["number"]
+                  label_names = {l["name"] for l in item["labels"]}
+                  for trigger, stale in RULES:
+                      if stale in label_names and matches(label_names, trigger):
+                          remove_label(kind, number, stale)
+                          label_names.discard(stale)
+                          total_fixed += 1
+
+          print(f"\nTotal label corrections made: {total_fixed}")
+          PY
