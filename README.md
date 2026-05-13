@@ -25,6 +25,7 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 
 ## TOC Shadows
 
+* **Katie Gamanji** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][shadow]
 * **Ricardo Aravena** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][shadow]
 
 Election [schedule](operations/election-schedule.md)
