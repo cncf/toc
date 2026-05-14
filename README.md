@@ -11,21 +11,22 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 
 ## Members
 
-* **Alex Chircop**  (term: 2 years - start date: 3/4/2025 - 3/4/2027) [TOC-appointed]
+* **Ahmed Bebars** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [EndUser-appointed]
+* **Alex Chircop** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [TOC-appointed]
+* **Brandt Keller** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [TOC-appointed]
 * **Chad Beaudin** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [EndUser-appointed]
-* **Davanum Srinivas** (term: 2 years - start date: 2/16/2024 - 2/16/2026) [TOC-appointed]
-* **Emily Fox** (term: 2 years - start date: 2/4/2024 - 3/4/2026) [GB-appointed]
-* **Faseela K** (term: 2 years 3/4/2025 - 3/4/2027) [GB-appointed]
+* **Faseela K** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [GB-appointed]
 * **Jeremy Rickard** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [GB-appointed]
+* **Joseph Sandoval** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [GB-appointed]
 * **Karena Angell** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [GB-appointed][TOC Chair]
-* **Katie Gamanji** (term: 2 years - start date: 3/18/2022 - 2/4/2026) [GB-appointed]
-* **Kevin Wang** (term: 2 years - start date 2/4/2024 - 2/4/2026) [Maintainer-appointed]
-* **Lin Sun** (term: 2 years - start date 2/4/2024 - 2/4/2026) [GB-appointed]  
-* **Ricardo Rocha** (term: term: 2 years - start date: 2/4/2024 - 2/4/2026) [EndUser-appointed]
+* **Kevin Wang** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [GB-appointed]
+* **Mario Fahlandt** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [GB-appointed]
+* **Mauricio Salatino** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [Maintainer-appointed]
 
 ## TOC Shadows
 
-* **Ricardo Aravena** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [GB-appointed][shadow]
+* **Katie Gamanji** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][shadow]
+* **Ricardo Aravena** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][shadow]
 
 Election [schedule](operations/election-schedule.md)
 
