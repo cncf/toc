@@ -13,7 +13,7 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Joe Beda (1/29/2019 - 1/29/2020) 
 * Brian Grant (1/29/2016 - 3/17/2020)
 * Jeff Brewer (1/29/2019 - 9/1/2020)
-* Katie Gamanji (2/4/2020 - 11/2/2020)
+* Katie Gamanji (2/4/2020 - 11/2/2020, 3/18/2022 - 2/4/2026)
 * Brendan Burns (1/29/2019 - 1/29/2021)
 * Matt Klein (1/29/2019 - 1/29/2021)
 * Xiang Li (1/29/2019 - 1/29/2021)
@@ -25,7 +25,7 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Cornelia Davis (2/1/2021-5/9/2022)
 * Erin Boyd (2/1/2021-2/1/2023)
 * Lei Zhang (2/1/2021-2/1/2023)
-* Davanum Srinivas (3/17/2021 - 3/17/2023)
+* Davanum Srinivas (3/17/2021 - 3/17/2023, 2/16/2024 - 5/12/2026)
 * Justin Cormack (2/4/2020 - 2/4/2024) 
 * Matt Farina (2/4/2022 - 2/4/2024)
 * Richard Hartmann (2/4/2022 - 2/4/2024)
@@ -34,6 +34,9 @@ We would like to acknowledge previous TOC members and their huge contributions t
 * Dave Zolotusky (2/1/2021 - 2/1/2025)
 * Cathy Zhang (7/1/2022 - 2/1/2025)
 * Duffie Cooley (2/1/2023 - 2/1/2025)
+* Emily Fox (2/4/2022 - 5/12/2026)
 * Kevin Klues (3/4/2025 - 9/9/2026)
+* Lin Sun (2/4/2024 - 2/4/2026)
+* Ricardo Rocha (2/4/2024 - 2/4/2026)
 
 We thank these members for their service to the CNCF community.
