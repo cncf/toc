@@ -16,6 +16,6 @@ Future deliverables could include a subproject for Infrastructure Lifecycle or a
 
 ## Logistics
 
-This initiative is driven by Bruno Schaatsbergen (@bschaatsbergen) and Thomas Schuetz (@thschue) led by Dylan Page (@GenPage). The initiative meets every second Monday at 1600GMT on the [TAG Infrastructure Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list).
+This initiative is driven by Bruno Schaatsbergen (@bschaatsbergen) and Thomas Schuetz (@thschue) led by Dylan Page (@GenPage). The initiative meets every second Monday at 1400UTC on the [TAG Infrastructure Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list).
 
 * [Meeting notes](https://notes.cncf.io/LukfhXyOTECuwntqmTIA6g)
