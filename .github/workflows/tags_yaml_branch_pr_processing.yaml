@@ -44,11 +44,12 @@ jobs:
       - name: Commit and push changes if any
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            PR_HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
           git add .
           if [ -n "$(git status --porcelain)" ]; then
             git commit -sm "Update README based on tags.yaml changes"
-            git push origin HEAD:${{ github.event.pull_request.head.ref }}
+            git push origin HEAD:$PR_HEAD_REF
           else
             echo "No changes to commit"
           fi
