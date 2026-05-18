@@ -2,11 +2,11 @@
 
 https://github.com/cncf/toc/issues/1740
 
-Integrating the AI developer inner loop into an end-to-end CI/CD process leveraging cloud-native technologies and tooling
+Integrating the AI developer inner loop into an end-to-end CI/CD process leveraging cloud native technologies and tooling
 
 ## Initiative description
 
-Focus on the developer inner loop, everything an AI engineer does on a laptop/desktop before code or models ever reach CI/CD in a cloud-native environment:
+Focus on the developer inner loop, everything an AI engineer does on a laptop/desktop before code or models ever reach CI/CD in a cloud native environment:
 
 * Local container workspaces: Reference inner loop workflow using desktop tooling such as Podman Desktop / Podman AI Lab for root-less, GPU-aware experimentation, including template images for PyTorch/LLM stacks and volume-mounted datasets. ​
 * Unified model build & run CLI: Hardening inference on developer machine and agentic frameworks to leverage container-based tooling so engineers can easily spin-up inference, RAG and multi-agent services locally with one command.
@@ -16,17 +16,17 @@ Focus on the developer inner loop, everything an AI engineer does on a laptop/de
 
 ## Deliverable(s) or exit criteria
 
-* An technical POC showing <10 min “idea-to-inference” path for cloud-native agent development on a developer laptop.
+* An technical POC showing <10 min “idea-to-inference” path for cloud native agent development on a developer laptop.
 * Clearly documented standards for OCI artefact standardization across runtimes and registries.
 * Specification / procedure to achieve MOF Class III compliant model distributions via any OCI registry.
 * Standardised process for leveraging model signing with artefacts-level provenance to support a verified end-to-end CI/CD reference pipeline including outer loop for AI engineering.
 
-## Project Scope & Intent - Cloud-Native AI Developer Workflow Interoperability
+## Project Scope & Intent - Cloud Native AI Developer Workflow Interoperability
 
 ### Overview and Intent
-AI developers today frequently work in fragmented local environments that are disconnected from cloud-native operational workflows. While emerging standards like ModelPack and OCI-aligned AI artifact initiatives provide the “packaging” foundations, there is no unified interoperability specification that defines how these artifacts must be structured, secured, and described to move seamlessly from a developers laptop into a Kubernetes-based production system.
+AI developers today frequently work in fragmented local environments that are disconnected from cloud native operational workflows. While emerging standards like ModelPack and OCI-aligned AI artifact initiatives provide the “packaging” foundations, there is no unified interoperability specification that defines how these artifacts must be structured, secured, and described to move seamlessly from a developers laptop into a Kubernetes-based production system.
 
-The goal of this initiative is to define a minimal Interoperability Specification (a “Compliance Profile”) for AI Artifacts. Rather than rebuilding the OCI layer structure, this initiative defines the **Standardized Metadata Contract** that must exist on top of packaging formats like **ModelPack**. This ensures that any <a href="https://github.com/cncf/foundation/blob/main/style-guide.md#1-cloud-native-and-open-source" target="_blank">“Cloud-Native Ready”</a> AI artifact contains the mandatory identity, security, and runtime information required that enables a cohesive developer inner loop and GitOps-driven delivery.
+The goal of this initiative is to define a minimal Interoperability Specification (a “Compliance Profile”) for AI Artifacts. Rather than rebuilding the OCI layer structure, this initiative defines the **Standardized Metadata Contract** that must exist on top of packaging formats like **ModelPack**. This ensures that any <a href="https://github.com/cncf/foundation/blob/main/style-guide.md#1-cloud-native-and-open-source" target="_blank">“Cloud Native Ready”</a> AI artifact contains the mandatory identity, security, and runtime information required that enables a cohesive developer inner loop and GitOps-driven delivery.
 
 This initiative intentionally builds on existing OCI-aligned packaging efforts rather than redefining artifact storage or layer mechanics.
 
@@ -42,7 +42,7 @@ The initiative is intended to encourage ecosystem alignment and workflow interop
 
 ### In-Scope Areas
 #### 1. The Interoperability Specification
-Define a structured, minimal specification for AI artifacts to be considered “Cloud-Native Interoperable”. This does not define OCI layering but specifies the mandatory metadata:
+Define a structured, minimal specification for AI artifacts to be considered “Cloud Native Interoperable”. This does not define OCI layering but specifies the mandatory metadata:
 * **Annotation Conventions:** Standardize keys for runtime frameworks (e.g., vllm), hardware accelerators (e.g., nvidia-gpu), and lifecycle status.
 * **Agentic Assets:** Standardizing the packaging of “skills”, prompt templates and workflow definitions. 
   * To ensure interoperability, the internal format for skills will align with the <a href="https://agentskills.io/home" target="_blank">agentskills.io</a> community standard. 
@@ -76,7 +76,7 @@ Define the operational patterns that allow the specification to be utilized in a
 * **Rapid Iteration Flow:** Validation of the spec through a reference implementation targeting a sub-10-minute "idea-to-inference" experience.
 
 #### 5. GitOps and Kubernetes Integration Patterns
-Define the "Handoff" patterns for how artifacts transition into production cloud-native systems.
+Define the "Handoff" patterns for how artifacts transition into production cloud native systems.
 * **GitOps Delivery Patterns:** Reference architectures for pulling compliant artifacts into Flux or Argo CD workflows.
 * **Runtime Integration:** Standardized patterns for the seamless deployment of artifacts into serving platforms (e.g., <a href="https://kserve.github.io/website/" target="_blank">KServe</a>, <a href="https://github.com/vllm-project/vllm" target="_blank">vLLM</a>) and registration into model registries (e.g., Kubeflow Model Registry).
 * **Enterprise Requirements:** Ensuring the promotion spec accounts for air-gapped, regulated, and hybrid-cloud infrastructure constraints.
@@ -108,7 +108,7 @@ The intent is to align efforts across communities rather than define a solution 
 * Standardize outer-loop pipelines beyond reference integration patterns
 
 ### Definition of Success
-* **A Published Interoperability Spec:** A validated specification that existing tools can adopt to ensure cloud-native readiness.
+* **A Published Interoperability Spec:** A validated specification that existing tools can adopt to ensure cloud native readiness.
 * **Cross-Tool Portability:** Demonstrated ability for an artifact built by one tool to be verified and deployed by a different runtime.
 * **The "10-Minute Flow":** A successful reference implementation demonstrating the journey from a local idea to a running inference service on Kubernetes.
 * **Ecosystem Alignment:** Broad adoption of the "Compliance Profile" metadata across CNCF and LF AI & Data communities.
