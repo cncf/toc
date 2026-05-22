@@ -23,10 +23,10 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 * **Mario Fahlandt** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [GB-appointed]
 * **Mauricio Salatino** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [Maintainer-appointed]
 
-## TOC Shadows
+## TOC Alternates
 
-* **Katie Gamanji** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][shadow]
-* **Ricardo Aravena** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][shadow]
+* **Katie Gamanji** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][alternate]
+* **Ricardo Aravena** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][alternate]
 
 Election [schedule](operations/election-schedule.md)
 
