@@ -9,7 +9,7 @@ The CNCF TOC is the technical governing body of the CNCF. It admits and oversees
 ## TOC Technical Vision
 The technical direction of the ecosystem is problem-centric. We encourage and support our projects to solve problems faced by adopters, to build the right ecosystem for innovation and embrace changes in the broader technical landscape. To exercise and increase the expertise within the technical community to compose solutions that stand the test of time.
 
-## Members
+## TOC Members
 
 * **Ahmed Bebars** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [EndUser-appointed]
 * **Alex Chircop** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [TOC-appointed]
@@ -27,6 +27,8 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 
 * **Katie Gamanji** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][alternate]
 * **Ricardo Aravena** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][alternate]
+
+Note: TOC Alternates are non-voting members of the TOC
 
 Election [schedule](operations/election-schedule.md)
 
