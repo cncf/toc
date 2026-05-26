@@ -53,7 +53,7 @@ _The project has been adopted by the following organizations in a testing and in
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Complete a [Governance Review](../toc_subprojects/project-reviews-subproject/governance-review-template.md).**
+- [ ] **Complete a [Governance Review](../../toc_subprojects/project-reviews-subproject/governance-review-template.md).**
   - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) -->
