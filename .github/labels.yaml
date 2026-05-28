@@ -272,6 +272,24 @@ ruleset:
     spec: 
       match: level/{{ argv.0 }}
 
+- name: apply-level
+  kind: match
+  spec:
+    command: /level
+    rules:
+    - matchList:
+      - level/archived
+      - level/graduation
+      - level/incubation
+      - level/sandbox
+  actions:
+  - kind: remove-label
+    spec:
+      match: level/*
+  - kind: apply-label
+    spec:
+      label: level/{{ argv.0 }}
+
 - name: remove-review
   kind: match
   spec:
@@ -341,6 +359,26 @@ ruleset:
 # Label state rules & needs-<foo> rules
 ##############################################################################
 
+- name: contribution-agreement-signed
+  kind: label
+  spec:
+    match: contribution-agreement/signed
+    matchCondition: AND
+  actions:
+  - kind: remove-label
+    spec:
+      match: contribution-agreement/unsigned
+
+- name: contribution-agreement-unsigned
+  kind: label
+  spec:
+    match: contribution-agreement/unsigned
+    matchCondition: AND
+  actions:
+  - kind: remove-label
+    spec:
+      match: contribution-agreement/signed
+
 - name: needs-triage
   kind: label
   spec:
@@ -350,6 +388,16 @@ ruleset:
   - kind: apply-label
     spec:
       label: needs-triage
+
+- name: remove-needs-triage
+  kind: label
+  spec:
+    match: triage/*
+    matchCondition: AND
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-triage
 
 - name: needs-kind
   kind: label
@@ -361,6 +409,16 @@ ruleset:
     spec:
       label: needs-kind
 
+- name: remove-needs-kind
+  kind: label
+  spec:
+    match: kind/*
+    matchCondition: AND
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-kind
+
 - name: needs-group
   kind: label
   spec:
@@ -370,6 +428,16 @@ ruleset:
   - kind: apply-label
     spec:
       label: "needs-group"
+
+- name: remove-needs-group
+  kind: label
+  spec:
+    match: "{toc,tag/*,sub/*}"
+    matchCondition: AND
+  actions:
+  - kind: remove-label
+    spec:
+      match: needs-group
 
 - name: apply-kind
   kind: match
@@ -472,6 +540,17 @@ ruleset:
   - kind: apply-label
     spec:
       label: sub/{{ argv.0 }}
+
+
+- name: remove-dd-needs-triage
+  kind: label
+  spec:
+    match: dd/triage/*
+    matchCondition: AND
+  actions:
+  - kind: remove-label
+    spec:
+      match: dd/needs-triage
 
 
 ##############################################################################

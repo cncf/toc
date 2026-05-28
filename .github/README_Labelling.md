@@ -26,6 +26,9 @@ Use slash commands in a normal issue/PR comment to apply or remove labels.
 - `/sub <value>`
   - values: `contributor-strategy-and-advocacy`, `mentoring`, `project-reviews`
 - `/toc`
+- `/level <value>`
+  - values: `archived`, `graduation`, `incubation`, `sandbox`
+  - applying one removes any other `level/*` label (mutually exclusive)
 
 #### DD lifecycle
 
@@ -76,6 +79,47 @@ At a high level it does the following:
 - Applies labels when issues/PRs are opened or edited.
 - Uses changed file paths in PRs to infer group labels (for example, TOC/TAG/subproject areas).
 - Maintains helper labels like `needs-kind`, `needs-triage`, and `needs-group` when required categories are missing.
-- Keeps label state clean by removing/replacing mutually exclusive labels in command-driven flows.
+- Keeps label state clean by removing/replacing mutually exclusive labels in both command-driven and state-driven flows.
 
-In short: use `/` commands when you want explicit control, and rely on automatic labeling for baseline triage and path-based routing.
+### `needs-*` helper labels
+
+These labels are added automatically when a required category is absent, and removed automatically when the corresponding label is present — whether applied via a `/` command, the GitHub UI, or a file-path rule.
+
+| Helper label | Removed when |
+|---|---|
+| `needs-triage` | Any `triage/*` label is present |
+| `needs-kind` | Any `kind/*` label is present |
+| `needs-group` | Any `toc`, `tag/*`, or `sub/*` label is present |
+| `dd/needs-triage` | Any `dd/triage/*` label is present |
+
+### Mutually exclusive label groups
+
+The following label groups enforce mutual exclusivity automatically. When a label in the group is applied (by any means), conflicting labels in the same group are removed.
+
+| Group | Labels |
+|---|---|
+| `contribution-agreement` | `contribution-agreement/signed` ↔ removes `contribution-agreement/unsigned` (and vice versa) |
+| `level/*` | `level/archived`, `level/graduation`, `level/incubation`, `level/sandbox` — applying one removes the others |
+| `triage/*` | Enforced via `/triage` command |
+| `kind/*` | Enforced via `/kind` command |
+| `dd/status/*` | Enforced via `/dd/status` command |
+| `init/*` | Enforced via `/init` command |
+| `vote/open` + `vote/closed` | Enforced via `/vote` command |
+
+### File path rules (PR-based)
+
+When a PR modifies files in the paths below, `needs-group` is removed and the corresponding group label is applied automatically.
+
+| Path pattern | Label applied |
+|---|---|
+| `tags/*/charter.md` | `toc` |
+| `tags/tag-developer-experience/*` | `tag/developer-experience` |
+| `tags/tag-infrastructure/*` | `tag/infrastructure` |
+| `tags/tag-operational-resilience/*` | `tag/operational-resilience` |
+| `tags/tag-security-and-compliance/*` | `tag/security-and-compliance` |
+| `tags/tag-workloads-foundation/*` | `tag/workloads-foundation` |
+| `toc_subprojects/contributor-strategy-and-advocacy/*` | `sub/contributor-strategy-and-advocacy` |
+| `toc_subprojects/mentoring/*` | `sub/mentoring` |
+| `toc_subprojects/project-reviews/*` | `sub/project-reviews` |
+
+In short: use `/` commands when you want explicit control, and rely on automatic labeling for baseline triage, path-based routing, and mutual exclusivity enforcement.

@@ -9,23 +9,26 @@ The CNCF TOC is the technical governing body of the CNCF. It admits and oversees
 ## TOC Technical Vision
 The technical direction of the ecosystem is problem-centric. We encourage and support our projects to solve problems faced by adopters, to build the right ecosystem for innovation and embrace changes in the broader technical landscape. To exercise and increase the expertise within the technical community to compose solutions that stand the test of time.
 
-## Members
+## TOC Members
 
-* **Alex Chircop**  (term: 2 years - start date: 3/4/2025 - 3/4/2027) [TOC-appointed]
+* **Ahmed Bebars** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [EndUser-appointed]
+* **Alex Chircop** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [TOC-appointed]
+* **Brandt Keller** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [TOC-appointed]
 * **Chad Beaudin** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [EndUser-appointed]
-* **Davanum Srinivas** (term: 2 years - start date: 2/16/2024 - 2/16/2026) [TOC-appointed]
-* **Emily Fox** (term: 2 years - start date: 2/4/2024 - 3/4/2026) [GB-appointed]
-* **Faseela K** (term: 2 years 3/4/2025 - 3/4/2027) [GB-appointed]
+* **Faseela K** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [GB-appointed]
 * **Jeremy Rickard** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [GB-appointed]
+* **Joseph Sandoval** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [GB-appointed]
 * **Karena Angell** (term: 2 years - start date: 3/4/2025 - 3/4/2027) [GB-appointed][TOC Chair]
-* **Katie Gamanji** (term: 2 years - start date: 3/18/2022 - 2/4/2026) [GB-appointed]
-* **Kevin Wang** (term: 2 years - start date 2/4/2024 - 2/4/2026) [Maintainer-appointed]
-* **Lin Sun** (term: 2 years - start date 2/4/2024 - 2/4/2026) [GB-appointed]  
-* **Ricardo Rocha** (term: term: 2 years - start date: 2/4/2024 - 2/4/2026) [EndUser-appointed]
+* **Kevin Wang** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [GB-appointed]
+* **Mario Fahlandt** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [GB-appointed]
+* **Mauricio Salatino** (term: 2 years - start date: 5/12/2026 - 5/12/2028) [Maintainer-appointed]
 
-## TOC Shadows
+## TOC Alternates
 
-* **Ricardo Aravena** (term: 1 year - start date: 3/4/2025 - 3/4/2026) [GB-appointed][shadow]
+* **Katie Gamanji** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][alternate]
+* **Ricardo Aravena** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][alternate]
+
+Note: TOC Alternates are non-voting members of the TOC
 
 Election [schedule](operations/election-schedule.md)
 
