@@ -2,6 +2,8 @@
 
 This template is intended to be leveraged by TOC members in the scheduling of adopter interviews for projects moving levels.
 
+> **Before sending:** Aim to interview contacts who work with the project in an operational or user capacity. Interviews with current project maintainers or others in project governance roles are welcome and can provide useful background context, particularly for identifying problem areas. However, they do **not** count toward the required adopter interview total. Ensure the required minimum is met with qualifying non-conflicted participants. If you need more diverse perspectives, ask for additional interviewees. See the [DD guide](../dd-toc-guide.md#conducting-adopter-interviews) for details.
+
 Subject: Adopter Interview Request: CNCF $PROJECT
 
 Message Body
