@@ -219,6 +219,8 @@ To ease scheduling with adopters, TOC members are recommended to either include 
 
 It is anticipated that a minimum of three adopter interviews are required to appropriately ascertain adoption of a project. However in the course of interviewing, you may find that you need additional adopters or types of adopters to be interviewed.
 
+> **Note on Interview Participant Composition:** TOC members should prioritize interviewing adopter contacts who work with the project in an operational or user capacity. If the primary contact is a project maintainer or holds a project governance role, ask them to include a colleague from the same organization who uses the project operationally. Contributors from adopting organizations who have become maintainers can reflect strong community engagement, which is a positive signal. However, if such interviewees make up a meaningful proportion of the pool, overall results may skew overly positive. If you do not feel you have collected enough diverse perspectives, request interviews with additional adopters.
+
 For projects moving from Incubation to Graduation, if considerable time has passed since Incubation (according to the TOC's judgement), the TOC should refresh the Adopter interviews. This may be done by reaching out to previous interviewees, by engaging a new group of adopters for interviews, or some combination thereof. If the time period between Incubation and Graduation is fairly recent, the TOC member(s) should exercise their judgement in choosing to pursue additional interviews. That decision should be recorded with justification in the adoption section of the template.
 
 #### Recording Responses
