@@ -63,6 +63,10 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
+<!-- Chair: Link the Governance Review issue or merged `projects/$PROJECT/governance-review/` file in the DD header. Map review **Must-Fix** and **Areas for Improvement** to checkboxes using [governance-review-template.md](../toc_subprojects/project-reviews-subproject/governance-review-template.md). -->
+
+<!-- Chair: Under each (TOC Evaluation), use **Recommendation (non-blocking):** where appropriate; cite tracking issues or graduation follow-ups explicitly. -->
+
 ### Suggested
 
 - [ ]  **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
@@ -109,7 +113,9 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **Project maintainers from at least 2 organizations that demonstrates survivability.**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
+
+<!-- Chair: Cite steering committee / MAINTAINERS affiliations across at least two organizations; optional metrics (e.g. LFX Insights, devstats). --> 
 
 - [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 

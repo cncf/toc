@@ -61,6 +61,10 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
 
+<!-- Chair: If `projects/$PROJECT/governance-review/` exists on [cncf/toc](https://github.com/cncf/toc) `main`, replace this note with "augmented by the Governance Review" and link the merged file. If absent, state the TOC assignee completes this section from the application issue and public governance artifacts (do not leave Required boxes empty). Map review sections to checkboxes using [governance-review-template.md](../toc_subprojects/project-reviews-subproject/governance-review-template.md). -->
+
+<!-- Chair: Under each (TOC Evaluation), use **Recommendation (non-blocking):** for incubation gaps; **Before graduation:** for items deferred to graduation; **Tracked under** &lt;issue URL&gt; when the project owns follow-up. -->
+
 ### Suggested
 
 - [ ] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
@@ -77,7 +81,9 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 - [ ] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
-<!-- (TOC Evaluation goes here) --> 
+<!-- (TOC Evaluation goes here) -->
+
+<!-- Chair: May cite neutral container image metadata (e.g. org.opencontainers.image.authors / project-collective MAINTAINER) vs single-vendor contact email in Dockerfiles. --> 
 
 - [ ] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
