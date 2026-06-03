@@ -1,6 +1,6 @@
 # Introduction
 
-## Goal of this brief
+## Goal
 
 The goal of this brief is to provide a concise overview of infrastructure
 lifecycle management within the Cloud Native Computing Foundation (CNCF)
