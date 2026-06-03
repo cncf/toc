@@ -28,12 +28,18 @@ By bridging the gap between isolated experimentation and collective intelligence
 
 ## Deliverables
 
-- [ ] **Initial Survey**: https://forms.gle/wCqi5xyBMEjgt5Aj7
+- [X] **Initial Survey**: https://forms.gle/wCqi5xyBMEjgt5Aj7
     - Opening: 25/03/2026
     - Closing: 18/05/2026
 - [X] **Blog Post**: https://www.cncf.io/blog/2026/04/29/the-state-of-ai-in-cncf-projects-a-first-look-at-the-data/
     - A blog post to promote the survey, reach more contributors and maintainers, and provide visibility into our initial data collection.
-- [ ] **Survey Raw Data**:
+- [X] **Survey Raw Data**:
+    - [survey raw answers (anonymized).csv](assets/survey-results/survey%20raw%20answers%20(anonymized).csv)
+- [X] **Survey Results**:
+    - [survey results report (pdf)](assets/survey-results/survey%20results%20report.pdf)
+    - [survey results report (html)](assets/survey-results/survey%20results%20report.html)
+    - [survey results charts](assets/survey-results/charts)
 - [ ] **Interview Schedule and Notes**:
 - [ ] **Whitepaper**:
-- [ ] **Events sessions**:
+- [X] **Events sessions**:
+    - Applied to *Maintainer Track* at Kubecon NA 2026
