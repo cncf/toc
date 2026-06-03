@@ -10,10 +10,9 @@ cloud-native principles. This framework will guide end-users in managing
 infrastructure to ensure it is secure, resilient, manageable, sustainable, and
 observable.
 
-Working has already begun on writing the whitepaper, as we are a Working Group
-under the TAG App Delivery We have progressed recently from the outline stage
-to the content stage as per TOC tech paper guideline, and would like to continue
-this work.
+Working has already begun on writing the whitepaper, We have progressed recently
+from the outline stage to the content stage as per TOC tech paper guideline, and
+would like to continue this work.
 
 ## Objective
 
