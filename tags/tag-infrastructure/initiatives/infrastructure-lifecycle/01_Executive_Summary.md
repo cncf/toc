@@ -21,6 +21,6 @@ This brief provides an overview of the concepts, patterns,
 and practices that define effective infrastructure lifecycle management.
 It highlights common provisioning approaches, trade-offs, and practical use
 cases, as well as a snapshot of the tools that support these practices in the
-current Cloud Native Computing Foundation’ (CNCF) landscape. The intent is to
+current Cloud Native Computing Foundation’s (CNCF) landscape. The intent is to
 give operators an accessible perspective on how to manage infrastructure from
 creation to retirement.
