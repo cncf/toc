@@ -19,7 +19,7 @@ Rather than proposing a new framework, the initiative emphasizes learning from w
 
 * Secure DevEx Pain Point & Usability Report: Findings from maintainers and contributors, with actionable recommendations.
 * ~~Maturity Case Studies: Extracted lessons from established CNCF projects to illustrate effective approaches others can adopt.~~
-  * Due to the lack of respondents, we are not moving forward with this deliverable.
+  * Due to the low amount of respondents, we are not moving forward with this deliverable.
 
 ## Tracking document for meeting and progress
 
