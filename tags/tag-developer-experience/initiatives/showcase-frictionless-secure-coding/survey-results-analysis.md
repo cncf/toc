@@ -12,7 +12,7 @@ The survey has been communicated extensively in ~20 Slack channels of maintainer
 
 The data suggests five headline findings:
 
-1. **Awareness of TAG S&C guidance is low.** Most respondents rated their familiarity at the low end of the scale.
+1. **Awareness of TAG Security & Compliance guidance is low.** Most respondents rated their familiarity at the low end of the scale.
 2. **Projects often have security practices, but they are usually informal.** Only one response clearly indicated an established and documented standard.
 3. **The main adoption barrier is maintainer bandwidth.** Time and contributor capacity dominated both structured and free-text answers.
 4. **Low-friction wins are mostly automation and repository guardrails.** Dependabot, CodeQL, branch protections, audits, and signing were the clearest success stories.
@@ -55,7 +55,7 @@ Interpretation: this survey mostly reflects the views of **hands-on contributors
 
 ## Detailed findings
 
-### 1) TAG Security awareness is low
+### 1) TAG Security & Compliance awareness is low
 
 | Familiarity rating (1 to 5) | Responses |
 | --- | ---: |
@@ -69,7 +69,7 @@ Interpretation: this survey mostly reflects the views of **hands-on contributors
 - Median: **1.5 / 4**
 - Even among low-familiarity respondents, **5/10** still reported at least informal standards
 
-Takeaway: projects appear to be doing some security work, but often without linking it to TAG S&C guidance.
+Takeaway: projects appear to be doing some security work, but often without linking it to TAG Security & Compliance guidance.
 
 ## 2) Standards mostly exist as informal practice
 
@@ -136,7 +136,7 @@ Recurring themes:
 - **Bandwidth:** repeated mentions of time pressure, competing priorities, unclear starting point
 - **Tool trust:** false positives and blunt criticism of tool quality
 - **Workflow mismatch:** incident response and GHSA/private-fix flows do not fit normal CI/review patterns
-- **Awareness gap:** one respondent learned about TAG S&C only from survey itself
+- **Awareness gap:** one respondent learned about TAG Security & Compliance only from survey itself
 
 Takeaway: blockers are operational, not philosophical.
 
@@ -173,7 +173,7 @@ Only one respondent provided a contact method, and it is redacted in sanitized d
 
 ## Cross-cutting insights
 
-- **Practice maturity is ahead of TAG S&C guidance awareness.**
+- **Practice maturity is ahead of TAG Security & Compliance guidance awareness.**
 - **Low-friction security means automation by default.**
 - **Real friction is operational overhead:** time, triage, integration, remediation.
 - **Noise reduction matters as much as detection.** False positives are recurring DX problem.
@@ -202,7 +202,7 @@ Based on this survey, the initiative should prioritize:
    - CI-compatible incident response practices
    - Review patterns that work in open source projects
 
-5. **Awareness-building for TAG S&C guidance**
+5. **Awareness-building for TAG Security & Compliance guidance**
    - The awareness gap is large enough that publishing guidance alone is unlikely to be sufficient
    - The distribution channels need to be rethought to ensure it reaches the intended audience
 
