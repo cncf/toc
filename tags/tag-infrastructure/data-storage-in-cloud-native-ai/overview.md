@@ -8,7 +8,7 @@ The Cloud Native AI whitepaper¹ delves into the interaction of Cloud Native (CN
 
 In this paper, we aim at highlighting the characteristics of data analytics and AI/ML workloads and the patterns and trends in data storage to meet the new challenges.
 
-There are different stages of AI/ML with different utilization patterns. The batch, training/fine tuning workloads have sustained utilization of resources and are long running jobs. On the other hand, the inference workloads have spiky utilization of resources and need immediate access².
+There are different stages of AI/ML with different utilization patterns. The batch, training/fine-tuning workloads have sustained utilization of resources and are long-running jobs. On the other hand, the inference workloads have spiky utilization of resources and need immediate access².
 
 Different stages of AI/ML workloads have different requirements for data storage.
 

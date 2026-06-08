@@ -12,14 +12,14 @@ There are 3 major patterns that an organization can adopt as a roadmap:
 - For near real-time analytics: Real-time streaming from operational data stores to analytics databases or lakehouses typically using change data capture and Kafka.
 
 Infrastructures that support one or more of the above patterns are:
-- **Data flow orchestration**: Platforms designed to create, schedule and monitor workflows for many enterprise data centric use cases - business ops, ETL/ELT, MLOps and Infrastructure management. They Include directed acyclic graphs (DAG), built-in retries, and idempotency (examples Apache Airflow, Apache NiFi, Prefect, Dagster, and Knative).
-- **Change Data capture**: Captures database change events (insert/update/delete) and publishes them to a stream, allowing near real-time replication of operational data into analytical systems (examples Debezium, GoldenGate, StreamSets, and navtiveCDC in Postgres)
+- **Data flow orchestration**: Platforms designed to create, schedule and monitor workflows for many enterprise data centric use cases - business ops, ETL/ELT, MLOps and Infrastructure management. They include directed acyclic graphs (DAGs), built-in retries, and idempotency (examples Apache Airflow, Apache NiFi, Prefect, Dagster, and Knative).
+- **Change data capture**: Captures database change events (insert/update/delete) and publishes them to a stream, allowing near real-time replication of operational data into analytical systems (examples Debezium, GoldenGate, StreamSets, and native CDC in Postgres).
 - **Event streaming platforms**: High-throughput, fault-tolerant event bus that decouples data producers from consumers. Enables real-time distribution of changes from databases, sensors, logs, and other data sources to multiple subscribers with minimal latency. Notable ones are Apache Kafka, Apache Flink, and Strimzi.
 - **Data Quality**: Critical criteria for analytics and training data (examples Great Expectations, Deequ, and Soda)
 - **Apache Iceberg Data Lakehouse**: Legacy data lake with ACID compliance. It's a vendor neutral standard with open table format and REST-based API catalog interface. The table format handles schema evolution, partition evolution, and time travel, and partitioning without sacrificing openness.
 - **Query Engines**: Required for data processing in both batch and stream modes. Typical capabilities are distributed, multi-language, handle large datasets, high throughput, low latency (examples Apache Spark, Trino, DuckDB, and PySpark)
 
-The top three architecture patterns for tackling data movement and transformation with pipelines is documented with proof of concept (POC) in this github site⁷.
+The top three architecture patterns for tackling data movement and transformation with pipelines are documented with proof of concept (POC) in this GitHub site⁷.
 
 ---
 
