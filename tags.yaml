@@ -15,14 +15,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-01"
             end: "2027-06-30"
-        - github: salaboy
+        - github: graz-dev
           lfx_id:
-          name: Mauricio Salatino
+          name: Graziano Casto
           company:
           email:
           term:
-            start: "2025-07-01"
-            end: "2026-06-30"
+            start: "2026-06-09"
+            end: "2028-06-30"
         - github: SwEngin
           lfx_id:
           name: Mona Borham
@@ -32,14 +32,6 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
-        - github: graz-dev
-          lfx_id:
-          name: Graziano Casto
-          company:
-          email:
-          term:
-            start: "2025-07-02"
-            end: "2026-06-30"
         - github: joshuabezaleel
           lfx_id:
           name: Joshua Bezaleel Abednego
@@ -129,8 +121,8 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-01"
-            end: "2026-06-30"
+            start: "2026-06-09"
+            end: "2028-06-30"
       tech_leads:
         - github: alexagriffith
           lfx_id:
@@ -208,22 +200,22 @@ tags: # Technical Advisory Groups
     label: tag-operational-resilience
     leadership:
       chairs:
-        - github: mfahlandt
+        - github: alolita
           lfx_id:
-          name: Mario Fahlandt
+          name: Alolita Sharma
           company:
           email:
           term:
-            start: "2025-07-01"
-            end: "2027-06-30"
-        - github: brito-rafa
+            start: "2026-06-09"
+            end: "2028-06-30"
+        - github: krol3
           lfx_id:
-          name: Rafael Brito
+          name: Carol Valencia
           company:
           email:
           term:
-            start: "2025-07-01"
-            end: "2026-06-30"
+            start: "2026-06-09"
+            end: "2028-06-30"
         - github: saiyam1814
           lfx_id:
           name: Saiyam Pathak
@@ -233,22 +225,6 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
-        - github: alolita
-          lfx_id:
-          name: Alolita Sharma
-          company:
-          email:
-          term:
-            start: "2025-07-02"
-            end: "2026-06-30"
-        - github: krol3
-          lfx_id:
-          name: Carol Valencia
-          company:
-          email:
-          term:
-            start: "2025-07-02"
-            end: "2027-06-30"
         - github: raffaelespazzoli
           lfx_id:
           name: Raffaele Spazzoli
@@ -333,8 +309,8 @@ tags: # Technical Advisory Groups
           company: Custcodian
           email: evan.k.anderson@gmail.com
           term:
-            start: "2025-07-01"
-            end: "2026-06-30"
+            start: "2026-06-09"
+            end: "2028-06-30"
         - github: jkjell
           lfx_id: jkjell
           name: John Kjell
@@ -477,14 +453,14 @@ tags: # Technical Advisory Groups
     label: tag-workloads-foundation
     leadership:
       chairs:
-        - github: miao0miao
+        - github: catblade
           lfx_id:
-          name: Danielle Tal
-          company:
-          email:
+          name: Marlow Warnicke
+          company: NVIDIA
+          email: catblade@gmail.com
           term:
-            start: "2025-07-01"
-            end: "2026-06-30"
+            start: "2026-06-09"
+            end: "2028-06-30"
         - github: pacoxu
           lfx_id:
           name: Paco Xu
