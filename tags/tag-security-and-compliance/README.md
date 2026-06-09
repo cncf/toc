@@ -10,7 +10,7 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 
 ## Leadership
 ### Chairs
-- Evan Anderson (**[@evankanderson](https://github.com/evankanderson)**), Custcodian (Term: 2025-07-01 - 2026-06-30)
+- Evan Anderson (**[@evankanderson](https://github.com/evankanderson)**), Custcodian (Term: 2026-06-09 - 2028-06-30)
 - John Kjell (**[@jkjell](https://github.com/jkjell)**), Control-Plane.io (Term: 2025-07-02 - 2027-06-30)
 - Marina Moore (**[@mnm678](https://github.com/mnm678)**), Edera (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
