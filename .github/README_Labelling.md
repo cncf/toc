@@ -18,13 +18,16 @@ Use slash commands in a normal issue/PR comment to apply or remove labels.
 #### Core triage/grouping
 
 - `/kind <value>`
-  - values: `dd`, `docs`, `enhancement`, `initiative`, `meeting`, `review`, `subproject`
+  - values: `dd`, `docs`, `enhancement`, `initiative`, `meeting`, `publication`, `review`, `subproject`
 - `/triage <value>`
   - values: `valid`, `needs-information`, `duplicate`, `not-planned`
 - `/tag <value>`
   - values: `developer-experience`, `infrastructure`, `operational-resilience`, `security-and-compliance`, `workloads-foundation`
 - `/sub <value>`
   - values: `contributor-strategy-and-advocacy`, `mentoring`, `project-reviews`
+- `/pub <value>`
+  - values: `blog`, `tech-paper`
+  - applying one removes any other `pub/*` label (mutually exclusive)
 - `/toc`
 - `/level <value>`
   - values: `archived`, `graduation`, `incubation`, `sandbox`
@@ -61,6 +64,7 @@ Use slash commands in a normal issue/PR comment to apply or remove labels.
 - `/remove-triage <value>`
 - `/remove-tag <value>`
 - `/remove-sub <value>`
+- `/remove-pub <value>`
 - `/remove-toc`
 - `/remove-toc/initiative <value>`
 - `/remove-init <value>`
@@ -100,6 +104,7 @@ The following label groups enforce mutual exclusivity automatically. When a labe
 |---|---|
 | `contribution-agreement` | `contribution-agreement/signed` ↔ removes `contribution-agreement/unsigned` (and vice versa) |
 | `level/*` | `level/archived`, `level/graduation`, `level/incubation`, `level/sandbox` — applying one removes the others |
+| `pub/*` | `pub/blog`, `pub/tech-paper` — applying one removes the others |
 | `triage/*` | Enforced via `/triage` command |
 | `kind/*` | Enforced via `/kind` command |
 | `dd/status/*` | Enforced via `/dd/status` command |

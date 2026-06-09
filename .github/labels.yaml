@@ -122,6 +122,9 @@ labels:
 - name: kind/meeting
   description: Item related to a meeting
   color: 8250DF
+- name: kind/publication
+  description: Item related to a publication (blog, tech-paper, etc.)
+  color: 8250DF
 - name: kind/review
   description: Item related to a governance, tech, or other review
   color: 8250DF
@@ -149,6 +152,12 @@ labels:
 - name: needs-triage
   description: Indicates an issue or PR that has not been triaged yet (has a 'triage/foo' label applied)
   color: FBCA04
+- name: pub/blog
+  description: Blog post publication
+  color: B57614
+- name: pub/tech-paper
+  description: Technical paper / whitepaper publication
+  color: B57614
 - name: review/governance
   description: Project Governance Review
   color: '5319e7'
@@ -271,6 +280,15 @@ ruleset:
   - kind: remove-label
     spec: 
       match: level/{{ argv.0 }}
+
+- name: remove-pub
+  kind: match
+  spec:
+    command: /remove-pub
+  actions:
+  - kind: remove-label
+    spec:
+      match: pub/{{ argv.0 }}
 
 - name: apply-level
   kind: match
@@ -452,6 +470,7 @@ ruleset:
       - kind/enhancement
       - kind/initiative
       - kind/meeting
+      - kind/publication
       - kind/review
       - kind/subproject
   actions:
@@ -540,6 +559,22 @@ ruleset:
   - kind: apply-label
     spec:
       label: sub/{{ argv.0 }}
+
+- name: apply-pub
+  kind: match
+  spec:
+    command: /pub
+    rules:
+    - matchList:
+      - pub/blog
+      - pub/tech-paper
+  actions:
+  - kind: remove-label
+    spec:
+      match: pub/*
+  - kind: apply-label
+    spec:
+      label: pub/{{ argv.0 }}
 
 
 - name: remove-dd-needs-triage
