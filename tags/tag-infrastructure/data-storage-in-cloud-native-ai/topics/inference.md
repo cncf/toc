@@ -1,8 +1,8 @@
-### Inference and its Storage Usage Patterns
+# Inference and its Storage Usage Patterns
 
 While training focuses on the high-throughput ingestion of massive datasets to create a model, inference is the "production" phase where the model is used to make predictions on new data. In a Kubernetes environment, inference workloads are often deployed as microservices (e.g., using KServe, vLLM, Seldon Core, and more). These workloads are characterized by sensitivity to latency, spiky traffic patterns, and the need for rapid model loading during scaling events.
 
-#### Key Storage Usage Patterns in Inference
+## Key Storage Usage Patterns in Inference
 
 1. **Model Repository Access (Read-Heavy)**: The primary storage interaction is loading model weights (often several GBs to TBs for LLMs) from a central repository or object store (S3, GCS) into the GPU/CPU memory.
    - Model Caching is a common implementation to store the model locally and reduce service startup time by loading the model directly from the cache.

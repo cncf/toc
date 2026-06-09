@@ -52,4 +52,4 @@ Different phases of AI workloads have distinct storage requirements and usage pa
 1. https://www.cncf.io/wp-content/uploads/2024/03/cloud_native_ai24_031424a-2.pdf
 2. https://sched.co/1YhIO
 3. Designing Data Intensive Applications, Martin Kleppmann, O'Reilly Media, 2 May 2017
-4. From data warehouse to data fabric: the evolution of data architecture, CNCF Blog, 21 July 2023
+4. [From data warehouse to data fabric: the evolution of data architecture, CNCF Blog, 21 July 2023](https://www.cncf.io/blog/2023/07/21/from-data-warehouse-to-data-fabric-the-evolution-of-data-architecture/)
