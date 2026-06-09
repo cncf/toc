@@ -14,11 +14,11 @@ Container Object Storage Interface (COSI) is a Kubernetes storage project that i
 
 ## FUSE CSI Driver
 
-FUSE (Filesystem in Userspace) is an interface that allows non-privileged users to expose their filesystem to Unix and Unix-like operating systems. In other words, by implementing the interface, a storage system can be translated into a virtual file system. Users are able to access the storage system as if accessing the local filesystem. The FUSE process can be a long-running process inside its own pod and the filesystem can be mounted onto the host machine or VM. Whenever an application pod gets scheduled on the host, it uses the hostPath volume to access the storage system.
+FUSE (Filesystem in Userspace) is an interface that allows non-privileged users to expose their filesystem to Unix and Unix-like operating systems. In other words, by implementing the interface, a storage system can be translated into a virtual file system. Users are able to access the storage system as if accessing the local filesystem. The FUSE process can be a long-running process inside its own pod and the filesystem can be mounted onto the host machine or Virtual Machine (VM). Whenever an application pod gets scheduled on the host, it uses the hostPath volume to access the storage system.
 
 However, the FUSE process may not always be favored because different workloads may cause underutilization of resources such as CPU and memory. This is where CSI drivers play their role. Only when the application pods get scheduled, the CSI drivers will get triggered to start the FUSE process, either in a separate pod or in a sidecar mode, that is, injecting another container into the application pod using webhook. Whether the CSI drivers support pod or sidecar depends on the individual implementations.
 
-Major cloud providers have been supporting FUSE CSI Drivers for their object storage services. For example, Azure Blob CSI Driver was released at the end of 2022, GCS Fuse CSI Driver was released in 2023, and AWS mountpoint S3 CSI Driver was released in 2023.
+Major cloud providers have been supporting FUSE CSI Drivers for their object storage services. For example, Azure Blob CSI Driver was released at the end of 2022, Google Cloud Service (GCS) FUSE CSI Driver was released in 2023, and Amazon Web Service (AWS) mountpoint S3 CSI Driver was released in 2023.
 
 ---
 

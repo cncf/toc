@@ -12,7 +12,7 @@ Training workloads in cloud-native environments impose distinct requirements on 
 
 - **Randomized Data Access and Shuffling**: To improve model generalization, training pipelines typically shuffle data and perform pseudo-random access across datasets. This disrupts sequential read optimizations and produces high fan-out random read patterns. Storage systems must tolerate non-sequential access, high IOPS across distributed workers, and concurrent metadata lookups. Cloud-native storage solutions often use distributed file systems (parallel FS) or specialized CSI drivers with local NVMe caching to provide the low-latency random seeks required for diverse data loaders.
 
-- **Metadata Overhead**: Training datasets often consist of millions of small files (e.g., individual JPEGs or JSON snippets). This puts immense pressure on the storage metadata server. Architectures often move toward "containerized" data formats like TFRecord, WebDataset, or Parquet to aggregate small files into larger, more manageable chunks, reducing metadata operations.
+- **Metadata Overhead**: Training datasets often consist of millions of small files (e.g., individual JPEGs or JSON snippets). This puts immense pressure on the storage metadata server. Architectures often move toward "containerized" data formats like TFRecord, WebDataset, or Apache Parquet to aggregate small files into larger, more manageable chunks, reducing metadata operations.
 
 - **Data Versioning and Lineage**: Reproducibility is a core tenet of MLOps. Storage must support immutable snapshots or integration with versioning tools to ensure that the exact dataset used for a specific training run can be audited or retrained in the future.
 
