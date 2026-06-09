@@ -4,10 +4,12 @@ Networking is an increasingly important consideration for object storage as well
 
 For example, object storage services often apply aggressive rate limiting policies, which lead to either performance throttling or failures at high load. Read and write requests to object storage consume application network bandwidth, hence may produce contention between applications running on the same Kubernetes worker node.
 
-Many design patterns for communication depend on the ability to connect between regions and AZs using private networking services like AWS PrivateLink¹. These design patterns include routing traffic between databases running in separate AZs. They also include design patterns to apply cheap compute to object storage, for example using AWS Direct Connect, which greatly reduces transit costs out of object storage.
+Many design patterns for communication depend on the ability to connect between regions and availability zones using private networking services. These services include AWS PrivateLink¹, Azure Private Link², and Google Cloud Private Service Connect³. These design patterns include routing traffic between databases running in separate availability zones. They also include design patterns to apply compute resources to object storage using dedicated network connections, such as AWS Direct Connect, Azure ExpressRoute, or Google Cloud Interconnect, which can significantly reduce transit costs and improve performance when accessing object storage.
 
 ---
 
 ## References
 
-1. https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html
+1. [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html)
+2. [Azure Private Link](https://docs.microsoft.com/en-us/azure/private-link/)
+3. [Google Cloud Private Service Connect](https://cloud.google.com/vpc/docs/private-service-connect)

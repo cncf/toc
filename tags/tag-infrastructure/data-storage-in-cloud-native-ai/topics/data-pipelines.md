@@ -19,7 +19,7 @@ Infrastructures that support one or more of the above patterns are:
 - **Apache Iceberg Data Lakehouse**: Legacy data lake with ACID compliance. It's a vendor neutral standard with open table format and REST-based API catalog interface. The table format handles schema evolution, partition evolution, and time travel, and partitioning without sacrificing openness.
 - **Query Engines**: Required for data processing in both batch and stream modes. Typical capabilities are distributed, multi-language, handle large datasets, high throughput, low latency (examples Apache Spark, Trino, DuckDB, and PySpark)
 
-The top three architecture patterns for tackling data movement and transformation with pipelines are documented with proof of concept (POC) in this GitHub site³.
+Three architecture patterns for tackling data movement and transformation with pipelines are documented with proof of concept (POC) in this GitHub site³.
 
 ---
 

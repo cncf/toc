@@ -23,7 +23,7 @@ Several strategies can be used to achieve data locality, with each offering adva
 - **Challenges**: Management can be difficult. Users must manually delete training data after use, and cache space is limited. For very large datasets, the benefits can be limited by local storage capacity.
 
 ### Local Cache Layer for Data Reuse
-- **Examples**: Tools like S3FS with built-in local cache and Alluxio Fuse SDK.
+- **Examples**: Tools like [S3FS-FUSE](https://github.com/s3fs-fuse/s3fs-fuse) with built-in local cache and [Alluxio FUSE](https://github.com/Alluxio/alluxio/tree/master-2.x/integration/fuse) (Filesystem in Userspace interface).
 - **Benefits**: Reused data remains local, and the cache layer handles data management, eliminating the need for manual supervision.
 - **Challenges**: Cache space remains limited, thus for large datasets, the benefits might still be constrained.
 
