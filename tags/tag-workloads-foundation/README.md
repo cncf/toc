@@ -10,7 +10,7 @@ To define and advance practices and standards for fundamental cloud native workl
 
 ## Leadership
 ### Chairs
-- Danielle Tal (**[@miao0miao](https://github.com/miao0miao)**) (Term: 2025-07-01 - 2026-06-30)
+- Marlow Warnicke (**[@catblade](https://github.com/catblade)**), NVIDIA (Term: 2026-06-09 - 2028-06-30)
 - Paco Xu (**[@pacoxu](https://github.com/pacoxu)**) (Term: 2025-07-01 - 2027-06-30)
 - Yuan Tang (**[@terrytangyuan](https://github.com/terrytangyuan)**) (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads

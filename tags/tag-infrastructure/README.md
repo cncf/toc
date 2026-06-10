@@ -12,7 +12,7 @@ Data, Storage, Network, DNS, Compute, Service Mesh, Infrastructure-as-Code, Edge
 ### Chairs
 - Dylan Page (**[@GenPage](https://github.com/GenPage)**) (Term: 2025-07-01 - 2027-06-30)
 - Kashif Khan (**[@kashifest](https://github.com/kashifest)**) (Term: 2025-07-01 - 2027-06-30)
-- Xing Yang (**[@xing-yang](https://github.com/xing-yang)**) (Term: 2025-07-01 - 2026-06-30)
+- Xing Yang (**[@xing-yang](https://github.com/xing-yang)**) (Term: 2026-06-09 - 2028-06-30)
 ### Tech Leads
 - Alexa Griffith (**[@alexagriffith](https://github.com/alexagriffith)**) (Term: 2025-07-02 - 2027-06-30)
 - Antonio Ojea (**[@aojea](https://github.com/aojea)**) (Term: 2025-07-02 - 2027-06-30)
