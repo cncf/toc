@@ -65,7 +65,7 @@ All TOC members are expected to assist in the triaging of project applications t
 This light-weight triage/evaluation must cover the list below (it is not exhaustive and is a minimum triage set from the [incubation template retrieved 12 DEC 2025](https://github.com/cncf/toc/blob/c2943ffc98064dd88e9ef9c4afd5a8856898942f/.github/ISSUE_TEMPLATE/template-incubation-application.md)):
 * Adoption Assertion includes the Adopters file link, and the project has an entry in the Adopter's form responses to provide 5-7 adopters to reach out to. [Check here](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter) for the definition of an Adopter.
 * Application Process Principles provides 
-  * link to a completed [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md)
+  * link to a completed [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md). The GTR snapshot should be submitted as a PR into `projects/<project-name>/tech-review/` in this repo, named `YYYY-MM-DD.md` to reflect the date of the snapshot. Projects may maintain a working copy in their own repository, but the TOC repo entry is the required artifact for the DD.
   * link to a completed [Governance Review](../toc_subprojects/project-reviews-subproject/governance-review-template.md)
   * (optional) link to a technical presentation to a CNCF TAG, or links to notes or issues about such a presentation
   * assertion of vendor neutrality

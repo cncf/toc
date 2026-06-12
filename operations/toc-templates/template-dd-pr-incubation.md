@@ -31,7 +31,7 @@ _[The TOC has found the project to have satisfied the criteria for $LEVEL/ The T
 
 
 - [ ] **Complete a [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
-  - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
+  - This was most recently revised on DD-MMM-YYYY. The snapshot is available in this repo at `projects/$PROJECT/tech-review/YYYY-MM-DD.md` ($LINK).
 
 <!-- (Project assertion goes here) --> 
 
