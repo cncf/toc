@@ -18,15 +18,25 @@ Training workloads in cloud-native environments impose distinct requirements on 
 
 - **Scratch Space and Intermediate State**: During the training process, temporary data such as shuffled buffers or gradients are often stored in "scratch" space. This requires high-speed, ephemeral storage, often HostPath or Local Persistent Volumes (PVs), to minimize the latency of intermediate calculations.
 
+## Practical Considerations for Organizations
+
+When implementing training storage infrastructure, organizations need to balance performance, cost, and operational complexity. Common patterns include:
+
+- **Hybrid Storage Architecture**: Use object storage (S3-compatible, GCS, Azure Blob) for dataset storage and checkpoints, combined with local NVMe or SSD for active training data and scratch space.
+- **Data Pipeline Optimization**: Convert small-file datasets to chunked formats (TFRecord, Parquet, WebDataset) early in the pipeline to reduce metadata overhead and improve throughput.
+- **Checkpoint Strategy**: Implement incremental checkpointing and use storage classes with high write performance for checkpoint bursts. Consider checkpoint compression and deduplication for cost optimization.
+
+**Common Pitfalls**: Over-provisioning expensive high-IOPS storage for the entire dataset when only active training data needs low latency; insufficient scratch space leading to training failures; lack of data versioning causing reproducibility issues; and inadequate checkpoint strategies resulting in long recovery times after failures.
+
 ## References
 
-1. https://parquet.apache.org/
-2. https://www.tensorflow.org/tutorials/load_data/tfrecord
-3. https://github.com/webdataset/webdataset
-4. https://pytorch.org/
-5. https://www.tensorflow.org/
-6. https://www.deepspeed.ai/
-7. https://horovod.readthedocs.io/
-8. https://dvc.org/
-9. https://www.kubeflow.org/docs/components/trainer/
-10. https://docs.ray.io/en/latest/data/data.html
+1. [Apache Parquet - Columnar Storage Format](https://parquet.apache.org/)
+2. [TensorFlow TFRecord Format and Examples](https://www.tensorflow.org/tutorials/load_data/tfrecord)
+3. [WebDataset - Efficient Data Loading for ML](https://github.com/webdataset/webdataset)
+4. [PyTorch Data Loading and Processing](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html)
+5. [TensorFlow Data Performance Guide](https://www.tensorflow.org/guide/data_performance)
+6. [DeepSpeed Training Optimization](https://www.deepspeed.ai/training/)
+7. [Horovod Distributed Deep Learning Framework](https://horovod.readthedocs.io/en/stable/)
+8. [DVC - Data Version Control for ML](https://dvc.org/doc/use-cases/versioning-data-and-model-files)
+9. [Kubeflow Trainer](https://www.kubeflow.org/docs/components/trainer/)
+10. [Ray Data - Distributed Data Processing](https://docs.ray.io/en/latest/data/data.html)

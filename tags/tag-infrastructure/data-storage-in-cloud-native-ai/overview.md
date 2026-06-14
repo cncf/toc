@@ -1,6 +1,8 @@
 # Data on Kubernetes - Data Analytics and AI/ML Workloads
 
-**Authors:** Alexa Griffith, Chunxu Tang, Joe Huang, Lu Qiu, Raghu Shankar, Robert Hodges, Shawn Sun, Victor Lu, Wannes Rosiers, Xing Yang
+**Authors (in alphabetical order):**
+
+Alexa Griffith, Chunxu Tang, Joe Huang, Lu Qiu, Raghu Shankar, Robert Hodges, Shawn Sun, Victor Lu, Wannes Rosiers, Xing Yang
 
 ## Overview
 
