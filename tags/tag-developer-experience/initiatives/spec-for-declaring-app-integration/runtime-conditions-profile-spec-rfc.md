@@ -139,7 +139,7 @@ conditions:
       type: relational
 
   - name: payments-api
-    kind: service
+    kind: api
     interface:
       type: http
       operations:
@@ -156,12 +156,21 @@ Each Condition represents an **independent required runtime dependency**.
 ## Condition Fields
 
 
-| Field       | Required | Description                                |
-| ----------- | -------- | ------------------------------------------ |
-| `kind`      | YES      | Required capability classification         |
-| `interface` | YES      | Interface definition required for matching |
-| `name`      | NO       | Unique identifier within profile           |
+| Field       | Required | Description                                       |
+| ----------- | -------- | ------------------------------------------------- |
+| `kind`      | YES      | Required capability classification                |
+| `interface` | YES      | Interface definition required for matching        |
+| `name`      | NO       | Unique identifier within profile                  |
+| `optional`  | NO       | Whether the Condition is optional. Defaults to `false` |
 
+
+## Optional Conditions
+
+The `optional` field is a boolean that indicates whether a Condition is optional.
+
+When `optional` is omitted, it MUST be understood as `false`, meaning the Condition is required. It MAY be defined explicitly, but only setting `optional: true` changes downstream behavior.
+
+The logic for determining what makes a Condition optional is beyond the scope of this specification. It is the responsibility of both the developer and the platform team to decide how optional integration Conditions are handled.
 
 ---
 
@@ -175,7 +184,7 @@ Kinds represent **broad capability families**, not specific technologies.
 
 The following core kinds are defined:
 
-- `service` — External service integrations such as APIs
+- `api` — External service integrations such as APIs
 - `datastore` — Persistent data storage systems
 - `cache` — Volatile data storage optimized for fast access
 
@@ -219,39 +228,101 @@ This section describes the **structure and purpose** of core interface types. Th
 
 ---
 
-## 8.1 Service Interface
+## 8.1 API Interface
 
-Service interfaces describe callable external services such as APIs.
+API interfaces describe callable external services such as APIs.
 
-Service interfaces typically define:
+API interfaces typically define:
 
 - Request methods
 - Request paths
 - Optional request schemas
 - Optional response schemas
+- An optional reference to an external API specification document
 
 Example:
 
 ```yaml
-kind: service
+kind: api
 interface:
   type: http
+  spec:
+    format: openapi
+    uri: https://github.com/example-org/example-service/openapi.yaml
+    version: ^1.2.0
   operations:
     - method: POST
       path: /charge
-      requestBodySchema: {}
-      responseSchema: {}
+      requestBodySchema:
+        amount: integer
+        currency: string
+      responseSchema:
+        id: string
+        status: string
 ```
 
-### Service Interface Fields
+### API Interface Fields
 
 
-| Field  | Required | Description                              |
-| ------ | -------- | ---------------------------------------- |
-| `type` | YES      | Identifies the service interaction model |
+| Field        | Required | Description                                         |
+| ------------ | -------- | --------------------------------------------------- |
+| `type`       | YES      | Identifies the API interaction model                |
+| `spec`       | NO       | Reference to an external API specification document |
+| `operations` | NO       | Explicit list of operations the workload depends on |
 
 
 Allowed values for `interface.type` are defined in Section 9.2.
+
+At least one of `spec` or `operations` MUST be present. Both MAY be declared together. When both are present and disagree, the `operations` declaration takes precedence over `spec`.
+
+### API Specification Fields
+
+The `spec` block references an external API specification document describing the API the workload integrates with.
+
+```yaml
+spec:
+  format: openapi
+  uri: https://github.com/example-org/example-service/openapi.yaml
+  version: ^1.2.0
+```
+
+
+| Field     | Required | Description                                            |
+| --------- | -------- | ------------------------------------------------------ |
+| `format`  | YES      | API specification format. Only `openapi` is currently supported  |
+| `uri`     | YES      | Location of the external specification document        |
+| `version` | NO       | Required version of the referenced document, as an exact version or version constraint |
+
+
+Only the OpenAPI specification is currently supported. Other API specification formats exist and MAY be supported in future versions.
+
+### Version Constraint Syntax
+
+`interface.spec.version` declares which version of the referenced specification document the workload requires. It accepts either an exact version or a version constraint expression, using the operators commonly found in dependency manifests such as `package.json`.
+
+Versions MUST follow Semantic Versioning, expressed as `MAJOR.MINOR.PATCH`.
+
+The following constraint operators are supported:
+
+
+| Syntax     | Name                | Meaning                                          |
+| ---------- | ------------------- | ------------------------------------------------ |
+| `1.2.3`    | Exact               | Matches only `1.2.3`                             |
+| `=1.2.3`   | Exact               | Equivalent to `1.2.3`                            |
+| `>1.2.3`   | Greater than        | Matches any version higher than `1.2.3`          |
+| `>=1.2.3`  | Minimum             | Matches `1.2.3` and any higher version           |
+| `<1.2.3`   | Less than           | Matches any version lower than `1.2.3`           |
+| `<=1.2.3`  | Maximum             | Matches `1.2.3` and any lower version            |
+| `^1.2.3`   | Compatible (caret)  | Matches `>=1.2.3` and `<2.0.0` (no major change) |
+| `~1.2.3`   | Approximate (tilde) | Matches `>=1.2.3` and `<1.3.0` (no minor change) |
+
+
+When `version` is omitted, no version constraint is applied and any version of the referenced document is acceptable.
+
+Validation rules:
+
+- If `version` is present, it MUST be a valid Semantic Versioning version or a supported constraint expression
+- Constraint operators MUST be drawn from the supported set above
 
 ### Operation Fields
 
@@ -260,16 +331,56 @@ Allowed values for `interface.type` are defined in Section 9.2.
 | ------------------- | -------- | ------------------- |
 | `method`            | YES      | HTTP method         |
 | `path`              | YES      | Request path        |
-| `requestBodySchema` | NO       | Request body schema |
-| `responseSchema`    | NO       | Response schema     |
+| `requestBodySchema` | NO       | Minimum required request body fields and their types |
+| `responseSchema`    | NO       | Minimum required response fields and their types     |
 
+
+### Schema Fields
+
+`requestBodySchema` and `responseSchema` describe the data structures an operation depends on. Each is expressed as a map whose keys are field names and whose values declare the JSON Schema type of each field.
+
+The declared fields represent the **minimum set of fields that MUST be present** in the external API. The external service MAY expose additional fields beyond those declared; only the declared fields participate in matching.
+
+Because the structure is expressed using field names and JSON Schema types rather than a specific API specification format, a Condition can be matched programmatically against any specification the external service publishes — including, but not limited to, the OpenAPI document referenced through `interface.spec`.
+
+A type declaration is one of:
+
+- A JSON Schema type keyword: `string`, `number`, `integer`, `boolean`, or `null`
+- A nested object, declared by mapping field names to further type declarations
+- An array, declared as a single-element list containing the element type declaration
+
+Example:
+
+```yaml
+operations:
+  - method: POST
+    path: /charge
+    requestBodySchema:
+      amount: integer
+      currency: string
+      customer:
+        id: string
+        email: string
+      lineItems:
+        - sku: string
+          quantity: integer
+    responseSchema:
+      id: string
+      status: string
+      paid: boolean
+```
 
 ### Validation Expectations
 
-- `operations` MUST be non-empty
+- At least one of `spec` or `operations` MUST be present
+- If `operations` is present, it MUST be non-empty
 - `method` MUST be a valid HTTP method
 - `path` MUST be a non-empty string
-- Schema fields remain open-ended
+- If present, `requestBodySchema` and `responseSchema` MUST be maps whose fields declare supported JSON Schema types
+- Declared schema fields represent the minimum required set of fields and MAY be a subset of the fields exposed by the external API
+- If `spec` is present, `spec.format` and `spec.uri` MUST be present
+- `spec.format` MUST be `openapi`
+- If `spec.version` is present, it MUST be a valid semantic version or supported version constraint expression
 
 ---
 
@@ -355,7 +466,7 @@ If a `name` field is provided, it MUST be unique within the profile.
 
 Each `kind` supports a defined set of valid `interface.type` values.
 
-### Service
+### API
 
 Allowed interface types:
 
@@ -363,8 +474,11 @@ Allowed interface types:
 
 Additional validation rules:
 
-- `operations` MUST be present
-- `operations` MUST NOT be empty
+- At least one of `spec` or `operations` MUST be present
+- If `operations` is present, it MUST NOT be empty
+- If `spec` is present, `spec.format` and `spec.uri` MUST be present
+- `spec.format` MUST be `openapi`
+- If `spec.version` is present, it MUST be a valid semantic version or supported version constraint expression
 
 Allowed HTTP Methods:
 
@@ -411,8 +525,17 @@ Additional validation rules:
 
 Allowed interface types:
 
+- `key_value`
+
+Allowed `engine` values for `type: key_value`:
+
 - `redis`
 - `memcached`
+
+Additional validation rules:
+
+- `engine` is OPTIONAL
+- If `engine` is present, it MUST be valid for the declared cache type
 
 ---
 
@@ -435,10 +558,10 @@ interface:
   type: relational
 ```
 
-Invalid service definition:
+Invalid api definition:
 
 ```yaml
-kind: service
+kind: api
 interface:
   type: http
   operations: []
@@ -497,13 +620,14 @@ spec:
 
   typeExtensions:
     - targetKind: cache
-      addTypes:
+      targetType: key_value
+      addEngines:
         - valkey
 
   validationRules:
     - id: cache-valkey
       appliesToKind: cache
-      rule: type in ["redis","memcached","valkey"]
+      rule: engine in ["redis","memcached","valkey"]
 ```
 
 ---
@@ -558,7 +682,7 @@ interface:
 ```
 
 ```yaml
-kind: service
+kind: api
 interface:
   type: acme.soap
 ```
@@ -621,9 +745,10 @@ conditions:
 
   - kind: cache
     interface:
-      type: redis
+      type: key_value
+      engine: redis
 
-  - kind: service
+  - kind: api
     interface:
       type: http
       operations:
