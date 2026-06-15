@@ -1,14 +1,13 @@
-# Tool Landscape
+# Use Cases & Landscape
 
-## Types of Tools
+## Case 1: Declarative Tooling
 
-### Event-Driven
+## Case 2: Microservices - Continuously reconciled
 
-### Declarative vs. Imperative
+## Case 3: Programming Language driven
 
-### DSL vs. Programming Language
+## Case 4: ...
 
-## Tools
+## Landscape
 
-## Use Cases
-
+## Summary
