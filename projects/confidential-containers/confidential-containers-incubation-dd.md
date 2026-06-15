@@ -8,15 +8,47 @@
 
 ### Criteria Evaluation
 
-_$TOCMEMBER conducted the due diligence of Confidential Containers who applied for $LEVEL. The project [has/has not] completed the criteria that show its maturity at $LEVEL. The following criteria implementations are noteworthy to call out... $NOTABLES. The following actions were provided to the project that were considered blocking but since resolved... $BLOCKERS. The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project... $RECOMMENDATIONS._
+Kevin Wang, Faseela K, and Lin Sun conducted the due diligence of Confidential Containers, which applied for Incubation. This effort was also supported by a [General Technical Review from Matt Young](https://github.com/cncf/toc/pull/2051) and a [Governance Review from Josh Gavant](https://github.com/cncf/toc/pull/2081). The project has completed the criteria that show its maturity at Incubation.
+
+#### Noteworthy Implementations
+
+- **Vendor neutrality enforced on the Steering Committee**: The Steering Committee caps each organization at two seats and currently spans seven companies (Alibaba, IBM, Intel, AMD, Red Hat, NVIDIA, Microsoft), with a process to keep membership tracking the project's major contributors.
+- **Governance iterated over time**: The governance document has changed as the project has run, with examples including inactive-maintainer removal rules and provisions for members who change employer or leave ([#235](https://github.com/confidential-containers/confidential-containers/pull/235), [#329](https://github.com/confidential-containers/confidential-containers/pull/329), [#348](https://github.com/confidential-containers/confidential-containers/pull/348), [#339](https://github.com/confidential-containers/confidential-containers/pull/339), [#338](https://github.com/confidential-containers/confidential-containers/pull/338)).
+- **Alignment with its main dependency, Kata Containers**: Kata Containers contributors sit on the CoCo Steering Committee, and the 6-week release cadence follows the Kata lifecycle.
+- **Subproject-to-repository mapping**: Each subproject lives in its own repository, and the mapping of components to subprojects is documented on the project [website](https://confidentialcontainers.org/docs/architecture/design-overview/#components).
+- **Secure-by-default architecture**: The design denies the host access to container images (pulled inside the guest enclave via `image-rs`), releases secrets only after attestation through Trustee, and applies deny-by-default OPA policies on the Kata Agent API to block host interference.
+- **Signed build provenance at SLSA Build Level 2**: The project generates signed `in-toto` provenance via GitHub Actions for components such as `kata-containers`, `guest-components`, and `cloud-api-adaptor`.
+- **Consistent, well-documented release process**: The project releases on a 6-week cadence and runs each release against a standardized checklist.
+
+#### Blockers (Previously Raised, Now Resolved)
+
+- **Access Control and 2FA Enforcement**: The project was asked to document and enforce 2FA for privileged roles and make the access-control model publicly auditable. This was resolved in [confidential-containers/confidential-containers#351](https://github.com/confidential-containers/confidential-containers/pull/351), which updated `governance.md` to explicitly require 2FA for org members, maintainers, Steering Committee members, and Security Managers, and to describe how maintainer access is granted and revoked via GitHub teams.
+- **Security Response Role Documentation**: The project was asked to formally define security response roles and document how vulnerability reports are handled. This was resolved through [confidential-containers/confidential-containers#351](https://github.com/confidential-containers/confidential-containers/pull/351) and [confidential-containers/.github#25](https://github.com/confidential-containers/.github/pull/25), which introduced the Security Manager role in `governance.md`, aligned `SECURITY.md` with the governance language, and added a link from `CONTRIBUTING.md` to the security reporting guidance.
+
+#### Recommended Enhancements (Non-Blocking)
+
+- **Publish a public maintainer and team-membership list**: Maintainer and functional-role assignments are managed through private GitHub teams referenced in `CODEOWNERS`, so they are not publicly readable. The TOC reviewers recommend publishing this membership through declarative configuration using a tool such as [cilium/team-manager](https://github.com/cilium/team-manager) or [CLOWarden](https://github.com/cncf/clowarden).
+- **State vendor neutrality explicitly in governance**: Vendor neutrality is enforced through the two-seat-per-organization Steering Committee limit, but the governance documents do not state it as a principle. The reviewers recommend adding a vendor-neutrality clause before graduation.
+- **Move governance and community docs into a community repository**: With 10+ active non-fork repositories, the reviewers suggest a dedicated community repository to hold governance and community documentation.
+- **Document subproject governance details**: The subproject removal process, per-subproject maturity status, and a public per-subproject maintainer list are not yet documented and should be completed before graduation.
+- **Integrate with the official CNCF calendar**: Weekly community meetings are documented in a public Google Doc; adding them to the official CNCF calendar would make them easier to find.
+- **Keep the contributing guide current**: The contributing guide has not been updated since 2024 and should be reviewed periodically to match the current state of the project.
+- **Fix the short-term roadmap board link**: The short-term roadmap link to the Confidential Containers GitHub board in `roadmap.md` is broken (outdated "view") and should be corrected.
+- **Recruit more adopters and case studies**: Adopter verification was met through interviews; the project should keep recruiting adopters and encouraging public case studies.
 
 ### Adoption Evaluation
 
-_The adopter interviews reflect a project [in use/too early] for the level which the project applied. They show ... $INTERVIEWSUMMARY._
+The TOC interviewed four adopters of Confidential Containers — IBM, NVIDIA, AccuKnox, and TDC — spanning hardware vendors, cloud and security vendors, telecom, and enterprise IT across multiple geographies. All four reported pre-production or dev/test usage on recent releases (versions 0.13 through 0.18), which matches the level of adoption expected for Incubation. Several adopters also contribute upstream or hold maintainer roles, and most track the project closely as the foundation for downstream products.
+
+Adopters consistently described Confidential Containers as the primary cloud-native project offering a full Trusted Execution Environment pathway for containerized workloads. The most commonly cited strengths were its multi-vendor maintainer base and hardware flexibility — covering Intel TDX, IBM Secure Execution, and NVIDIA GPUs — which drew adopters away from single-vendor alternatives such as Intel SGX-based Gramine. Adopters also valued the security-first design and the active maintainer engagement through Slack, GitHub, and the weekly community meeting.
+
+Reported value centered on securing sensitive workloads in untrusted environments, a unified hybrid-cloud approach across diverse hardware, and faster integration compared with building a confidential stack in-house. Because the interviewees are still pre-production, few could quantify business value yet, though several noted that archiving the project would have a significant negative impact on their products.
+
+Common areas for improvement were documentation (stale or broken links, a missing threat model, and the lack of a compatibility matrix), ease of configuration, clearer use-case messaging over deep technical detail, and concern that the project's scope is expanding into areas already served by other CNCF projects. Overall, Confidential Containers is in active use at a level appropriate for Incubation, with a diverse and engaged adopter base and a clear path to deeper production adoption as hardware availability and documentation mature.
 
 ### Final Assessment
 
-_[The TOC has found the project to have satisfied the criteria for $LEVEL/ The TOC's evaluation of the project shows a needed focus to complete the outstanding blockers and reapply when the following conditions are met ... $CONDITIONS]._
+The TOC has found the project to have satisfied the criteria for Incubation.
 
 ## Application Process Principles
 
@@ -45,14 +77,14 @@ N/A
   <!-- (TOC Evaluation goes here) -->
   - The project contacts and TOC Reviewers had a kick-off meeting on Jan. 16th, set expectations and discussed general steps & timelines.
 
-- [ ] **Due Diligence Review.**
+- [x] **Due Diligence Review.**
 
 Completion of this due diligence document, resolution of concerns raised, and presented for public comment satisfies the Due Diligence Review criteria.
 
-- [ ] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
+- [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
 
   <!-- (TOC Evaluation goes here) -->
-  The project provides approriate documents for installation and configuration, e.g.: <https://confidentialcontainers.org/docs/getting-started/>
+  The project provides appropriate documents for installation and configuration, e.g.: <https://confidentialcontainers.org/docs/getting-started/>
 
 ## Governance and Maintainers
 
@@ -67,18 +99,17 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - Update governance doc to include rules of removing inactive maintainers <https://github.com/confidential-containers/confidential-containers/pull/235>
   - Add provisions to the governance document for members who move from one company to another or who become inactive or leave the project. <https://github.com/confidential-containers/confidential-containers/pull/329>
 
-
 - [x] **Clear and discoverable project governance documentation.**
 
   <!-- (TOC Evaluation goes here) -->
   The [project governance doc](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md) is maintained in the main repository.
 
-  **Suggestion by Kevin:** Since CoCo has 10+ active non-fork repos, TOC reviewers suggest to consider creating a community repository and maintain governance and community relavent docs there.
+  Since CoCo has 10+ active non-fork repos, TOC reviewers suggest to consider creating a community repository and maintain governance and community relavent docs there.
 
 - [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
   <!-- (TOC Evaluation goes here) -->
-  The project maintains an active and up-to-date governance framework that accurately reflects the current project state. The documentation is regularly updated to capture Steering Committee leadership transitions, organizational representation changes, and refinements to maintainer lifecycle processes.
+  The governance documentation is kept up to date with the current project state, including Steering Committee leadership transitions, organizational representation changes, and changes to maintainer lifecycle processes.
 
   Some examples are:
   - removed AMD rep Ryan Savino from SC and added to emeritus <https://github.com/confidential-containers/confidential-containers/pull/348>
@@ -90,54 +121,73 @@ Note: this section may be augmented by the completion of a Governance Review fro
   <!-- (TOC Evaluation goes here) -->
   As outlined in [GOVERNANCE.md](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md), the CoCo project effectively operationalizes vendor neutrality through structural mechanisms, specifically the two-seat limit per organization on the Steering Committee.
 
-  **Suggestion by Kevin:** It is noted that the documentation currently lacks an explicit definition of 'vendor neutrality' as a core principle. The TOC reviewers recommend explicitly codifying a Vendor Neutrality clause to align with CNCF best practices before the project advances to graduation.
+  The TOC reviewers note that the governance documents do not state 'vendor neutrality' as an explicit principle, and recommend adding a vendor-neutrality clause before the project advances to graduation.
 
 - [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
   <!-- (TOC Evaluation goes here) -->
   [GOVERNANCE.md#decision-making](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md#decision-making) explicitly documents a consensus-driven framework. It establishes a clear voting protocol for critical decisions, specifically leadership changes and governance modifications, requiring a defined supermajority threshold (2/3rds of current SC members) when consensus is not achieved.
 
-- [ ] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
+- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project's [GOVERNANCE.md](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md#becoming-a-project-maintainer) defines how maintainer roles are assigned via GitHub teams. Functional roles like "security managers" are also documented. However, the TOC reviewers noted that since these assignments are managed via private GitHub teams, a public list of these roles is not currently available.
 
-- [ ] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
+  The TOC reviewers suggest the project either maintain a public list manually or use a tool such as [team-manager](https://github.com/cilium/team-manager) to improve openness and transparency.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
 
-- [ ] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+  <!-- (TOC Evaluation goes here) -->
+  The [GOVERNANCE.md](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md) documents the complete lifecycle, including onboarding (building trust/contributions) and removal processes for both Maintainers and the Steering Committee.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
+
+  <!-- (TOC Evaluation goes here) -->
+  The project demonstrates maintainer lifecycle outcomes through recorded updates in various sub-projects, such as [Trustee](https://github.com/confidential-containers/trustee/issues?q=is%3Aissue++in%3Atitle+maintainer) and [guest-components](https://github.com/confidential-containers/guest-components/issues?q=is%3Aissue++in%3Atitle+maintainer).
 
 - [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Subproject leadership and contribution follow the organization-level [governance](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md).
+
+  The TOC reviewers note that the following subproject governance details are not yet documented and recommend completing them before graduation:
+  - The subproject removal process.
+  - The maturity status of individual subprojects.
+  - A public per-subproject maintainer list.
 
 ### Required
 
-- [ ] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
+- [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project documents maintainers list with all the relevant information at <https://github.com/confidential-containers/confidential-containers/blob/main/MAINTAINERS>.
 
-- [ ] **A number of active maintainers which is appropriate to the size and scope of the project.**
+- [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Based on [LFX Insights](https://insights.linuxfoundation.org/project/confcont/contributors), the project has a broad group of active contributors from multiple organizations, which is appropriate for its scale.
 
-- [ ] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
+- [x] **Code and Doc ownership in Github and elsewhere matches documented governance roles.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project uses `CODEOWNERS` files across its repositories to enforce ownership in alignment with the documented GitHub team-based governance.
 
-- [ ] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
+  While `CODEOWNERS` files reference GitHub teams, the membership of those teams is only visible to members of the organization and not publicly accessible. The TOC reviewers suggest considering a tool that manages org and team membership declaratively via public configuration, such as [cilium/team-manager](https://github.com/cilium/team-manager) ([config example](https://github.com/cilium/community/tree/main/ladder)), [CLOWarden](https://github.com/cncf/clowarden) ([config example](https://github.com/cncf/people)), or a similar tool, to improve transparency and auditability of project membership.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
 
-- [ ] **CNCF Code of Conduct is cross-linked from other governance documents.**
+  <!-- (TOC Evaluation goes here) -->
+  The project has adopted the CNCF Code of Conduct, as documented in its [CODE_OF_CONDUCT.md](https://github.com/confidential-containers/confidential-containers/blob/main/CODE_OF_CONDUCT.md).
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
 
-- [ ] **All subprojects, if any, are listed.**
+  <!-- (TOC Evaluation goes here) -->
+  The Code of Conduct is discoverable in the `.github` repository and linked from the project's metadata.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **All subprojects, if any, are listed.**
+
+  <!-- (TOC Evaluation goes here) -->
+  The project lists its subprojects and components on its [website](https://confidentialcontainers.org/docs/architecture/design-overview/#components), including Trustee, guest-components, cloud-api-adaptor, operator, trustee-operator, and td-shim.
 
 ## Contributors and Community
 
@@ -145,35 +195,44 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ### Suggested
 
-- [ ] **Contributor ladder with multiple roles for contributors.**
+- [x] **Contributor ladder with multiple roles for contributors.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The contributor ladder and roles are defined in the [governance document](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md#community-members-and-roles).
 
 ### Required
 
-- [ ] **Clearly defined and discoverable process to submit issues or changes.**
+- [x] **Clearly defined and discoverable process to submit issues or changes.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The process for submitting changes is clearly defined in the [CONTRIBUTING.md](https://github.com/confidential-containers/.github/blob/main/CONTRIBUTING.md) and on the project's [website](https://confidentialcontainers.org/docs/contributing/#making-contributions).
 
-- [ ] **Project must have, and document, at least one public communications channel for users and/or contributors.**
+- [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project uses the `#confidential-containers` channel on CNCF Slack as its primary public communication channel.
 
-- [ ] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
+- [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.).  List any non-public communications channels and what their special purpose is.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Communication channels, including Slack and the weekly community meeting, are documented in the [contributing guide](https://confidentialcontainers.org/docs/contributing/#connecting-with-the-community).
 
-- [ ] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
+- [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  Weekly community meetings are held and documented in a [public Google Doc](https://docs.google.com/document/d/1E3GLCzNgrcigUlgWAZYlgqNTdVwiMwCRTJ0QnJhLZGA/).
 
-- [ ] **Documentation of how to contribute, with increasing detail as the project matures.**
+  The TOC reviewers recommend integrating the meetings with the official CNCF calendar to improve discoverability.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Documentation of how to contribute, with increasing detail as the project matures.**
 
-- [ ] **Demonstrate contributor activity and recruitment.**
+  <!-- (TOC Evaluation goes here) -->
+  A [contributing guide](https://confidentialcontainers.org/docs/contributing/) is maintained. The TOC reviewers noted it should be reviewed periodically to match the current state of the project.
 
-<!-- (TOC Evaluation goes here) --> 
+- [x] **Demonstrate contributor activity and recruitment.**
+
+  <!-- (TOC Evaluation goes here) -->
+  Contributor activity is actively tracked and demonstrated via [LFX Insights](https://insights.linuxfoundation.org/project/confcont) and [CNCF DevStats](https://confidentialcontainers.devstats.cncf.io/). 
 
 ## Engineering Principles
 
@@ -192,7 +251,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 ### Required
 
 - [x] **Document project goals and objectives that illustrate the project’s differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
-  -  The general Technical Review was updated on 24-Feb-2026 (currently in Draft status), and can be discovered at <https://github.com/cncf/toc/pull/2051>.
+  - The General Technical Review was updated on 24-Feb-2026 (currently under review), and can be discovered at <https://github.com/cncf/toc/pull/2051>.
 
   <!-- (TOC Evaluation goes here) -->
   The project's goals and differentiation are documented through its [website](https://confidentialcontainers.org): _"...enables cloud native data in use protection by leveraging hardware Trusted Execution Environments (TEEs)."_ The project's documentation and draft GTR also describe how it solves this problem differently by encapsulating unmodified Kubernetes pods inside confidential VMs, completely shielding workloads from host operating systems, cluster administrators, and cloud providers.
@@ -212,21 +271,26 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
 
   <!-- (TOC Evaluation goes here) -->
-  According to the [roadmap.md](https://github.com/confidential-containers/confidential-containers/blob/main/roadmap.md) the project maintains its：
+  According to the [roadmap.md](https://github.com/confidential-containers/confidential-containers/blob/main/roadmap.md), the project maintains its:
   - short-term roadmap at the GitHub boards (including the [Confidential containers github board](https://github.com/orgs/confidential-containers/projects/6) and [Trustee github board](https://github.com/orgs/confidential-containers/projects/10)), and
   - its mid/long-term roadmap at the project's website based on use-case driven development. Ref: <https://confidentialcontainers.org/docs/use-cases/>
 
-  **TODO for maintainers**: the short-term roadmap Confidential containers github board link is unavailable with outdated "view", needs to be fixed.
+  The short-term roadmap Confidential containers github board link is unavailable with an outdated "view", needs to be fixed. Ref: <https://github.com/confidential-containers/confidential-containers/blob/15cbeeff8282e6cea15f66900f66b5936ab0971e/roadmap.md#L10>
 
-- [ ] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
-  -  _If applicable_ a general Technical Review was completed/updated on DD-MMM-YYYY, and can be discovered at $LINK.
+- [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
+  - The General Technical Review was updated on 24-Feb-2026 (currently under review), and can be discovered at <https://github.com/cncf/toc/pull/2051>.
 
     <!-- (TOC Evaluation goes here) -->
-    The project maintains a detailed architectural overview on its [website](https://confidentialcontainers.org/docs/architecture/design-overview/), demonstrating a robust and viable cloud-native design. It effectively outlines key mechanisms such as Pod-Centric Virtualization, host deprivileging, and its sophisticated remote attestation (Trustee) architecture.
+    The project maintains a detailed architectural overview on its [website](https://confidentialcontainers.org/docs/architecture/design-overview/), covering key mechanisms such as Pod-Centric Virtualization, host deprivileging, and the remote attestation (Trustee) architecture.
 
-- [ ] **Document the project's release process.**
+- [x] **Document the project's release process.**
 
-<!-- (TOC Evaluation goes here) --> 
+  <!-- (TOC Evaluation goes here) -->
+  The project maintains a well-documented and consistent release process.
+  
+  It follows a [6-week release cadence](https://github.com/confidential-containers/confidential-containers/blob/main/README.md) aligned with the Kata Containers lifecycle.
+  
+  The community utilizes a standardized release checklist ([.github/ISSUE_TEMPLATE/release-check-list.md](https://github.com/confidential-containers/confidential-containers/blob/main/.github/ISSUE_TEMPLATE/release-check-list.md)) to ensure quality and consistency across releases.
 
 ## Security
 
@@ -246,39 +310,25 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
   The policy instructs reporters to use GitHub’s “Report a vulnerability” (private reporting) mechanism rather than filing public issues.
 
-- [ ] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
+- [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
 
   <!-- (TOC Evaluation goes here) -->
-  **Maintainers’ input (from application):** The incubation application references a maintainers list as evidence that maintainers use 2FA:
-  - Maintainers list: <https://github.com/confidential-containers/confidential-containers/blob/main/MAINTAINERS>
+  This was initially found blocking but fixed by [confidential-containers/confidential-containers#351](https://github.com/confidential-containers/confidential-containers/pull/351).
 
-  **TOC reviewer assessment / gap (from confidential-containers/confidential-containers#349):**
-  - A maintainer list does **not** by itself provide auditable evidence that 2FA is **required and enforced** for GitHub org members/maintainers.
-  - Reviewers need a **clear, stable, public** reference describing:
-    - how access is granted/revoked,
-    - what controls prevent unauthorized changes (e.g., CODEOWNERS / required reviews / branch protection expectations),
-    - whether 2FA is required/enforced for privileged roles.
+  According to the updated [governance.md](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md), the project now explicitly requires 2FA for GitHub org members, maintainers, Steering Committee members, and Security Managers. It also documents that maintainer access is managed through GitHub teams referenced in each repository's `CODEOWNERS` file, while clarifying that GitHub org membership is not a formal governance tier.
 
-  **Action / follow-up requested:** Project to document the access control model and explicitly document 2FA requirements and/or org enforcement:
-  - <https://github.com/confidential-containers/confidential-containers/issues/349>
+  Issue [#349](https://github.com/confidential-containers/confidential-containers/issues/349) was then closed as completed on Mar 3, 2026.
 
-- [ ] **Document assignment of security response roles and how reports are handled.**
+- [x] **Document assignment of security response roles and how reports are handled.**
 
   <!-- (TOC Evaluation goes here) -->
-  **Maintainers’ input (from application):**
-  - The project points to the org-level `SECURITY.md` as the place describing handling of reports:
-    - <https://github.com/confidential-containers/.github/blob/main/SECURITY.md>
+  This was initially found blocking but fixed by [confidential-containers/confidential-containers#351](https://github.com/confidential-containers/confidential-containers/pull/351) and [confidential-containers/.github#25](https://github.com/confidential-containers/.github/pull/25).
 
-  **TOC reviewer assessment / gap (from confidential-containers/confidential-containers#350):**
-  - While `SECURITY.md` describes the reporting mechanism, it historically referenced “maintainers and security champions” without a clearly defined, discoverable role model elsewhere (e.g., in governance/community docs).
-  - Reviewers need more explicit documentation of:
-    - who the security responders are (org-wide vs per subproject),
-    - how membership/ownership is determined and maintained (onboarding/offboarding/continuity),
-    - high-level responsibilities (triage/coordination/communication), without duplicating the mechanics already in `SECURITY.md`.
-  - Also recommended: cross-link security reporting guidance from contributing documentation (and other relevant guides), so users can easily find the security reporting process.
+  According to the updated [governance.md](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md), the project now defines the Security Manager role directly, including who holds that role, how additional Security Managers are added or removed, and how they may coordinate with affected external parties on a need-to-know basis during pending advisories.
 
-  **Action / follow-up requested:**
-  - <https://github.com/confidential-containers/confidential-containers/issues/350>
+  In parallel, [confidential-containers/.github#25](https://github.com/confidential-containers/.github/pull/25) aligned `SECURITY.md` with the governance language, replaced the older "security champions" terminology, and added a link from `CONTRIBUTING.md` to the security reporting guidance so the reporting path is easier to find.
+
+  Taken together, these changes address the documentation gap raised in issue [#350](https://github.com/confidential-containers/confidential-containers/issues/350).
 
 - [x] **Document Security Self-Assessment.**
 
