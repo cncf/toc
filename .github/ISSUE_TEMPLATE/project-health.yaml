@@ -86,6 +86,7 @@ body:
       #### Other:
       - [ ] Remove from maintainers & project from service desk
       - [ ] Check with LF IT for any CI/CD or other infrastructure the needs to be removed
+      - [ ] Revoke maintainer access to Copilot
 
       </details>
       
