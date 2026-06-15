@@ -21,7 +21,7 @@ themselves or by their community, which makes it easier for end-users to interac
 
 ## Declarative vs. Imperative Configuration
 
-While it would be tempting to think that these APIs, SDKs, and providers can be used directly in, e.g., HTTP requests, there are many things to take care of when delivering infrastructure. As an example,
+While these APIs, SDKs, and providers can be used directly in, e.g., HTTP requests, there are many things to take care of when delivering infrastructure. As an example,
 backend services for load balancers are often needed before a frontend can be deployed. Similarly, service accounts or IAM roles might be needed before compute resources can be created. Therefore, over
 time, some tools emerged that cover all of these infrastructure specifics and "hide" them from their users. They can be grouped into two major groups: those with a declarative and those with
 an imperative configuration.
@@ -34,6 +34,12 @@ order, and in a consistent way. The major benefit of this way of dealing with co
 is that the developer usually doesn't have to care about the implementation of the configuration
 itself, only about the desired state, while "someone else" (the author of the underlying software /
 provider) takes care of the implementation of certain API specifics.
+
+The alternative - imperative configuration - behaves a bit different. It can be seen as a sequence of 
+commands configuring the related infrastructure. While this way of configuration is more transparent
+and controllable, the end-user has to implement control mechanisms and failure-handling. In contrast
+to declarative configuration, some programming constructs - such as loops and conditionals - can be
+implemented in an easier way.
 
 ## On-Demand vs. Continuously Reconciled
 
