@@ -13,7 +13,7 @@ since then.
 
 #### 2. What were the main motivations to adopt the project and which key features do you use today?
 
-From my point of view this is the most mature CNCF project in this area and has key industry participants contributing and collaborating. We primarly use the s390x and IBM Secure Execution for Linux versions of the project as well as the
+From my point of view this is the most mature CNCF project in this area and has key industry participants contributing and collaborating. We primarily use the s390x and IBM Secure Execution for Linux versions of the project as well as the
 Trustee component.
 
 #### 3. Compared with other products and projects in this space (proprietary and open) what drew you to the project?
@@ -76,7 +76,7 @@ As stated, the contributions from so many participants across the industry and t
 
 #### 14. Do you have any future plans regarding the project? More involvement, feature requests, expansion, etc.
 
-We intend to contribute, request features for different solutions, improved user experience, and plan to continue our involvement as products depend on this project and the underlaying technology.
+We intend to contribute, request features for different solutions, improved user experience, and plan to continue our involvement as products depend on this project and the underlying technology.
 
 ---
 ## Maturity Level Survey

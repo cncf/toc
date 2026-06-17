@@ -49,7 +49,7 @@ I presented the work we did in 5Gsec to the CoCo community and that's when they 
 #### 9. Has your implementation of the project provided measurable value? Such as reducing manual activities, faster integrations, supported federation/multi-cloud, ease of use, cost savings, etc.
 
 Measurable value is improved security posture. There is no alternative to TEE/CoCo based execution for certain threat models 
-wherein if one cannot trust the cloud platform provider than the only hope left is to deploy using CoCo the sensitive workloads.
+wherein if one cannot trust the cloud platform provider, then the only hope left is to deploy using CoCo the sensitive workloads.
 
 #### 10. If the project were to be archived now or in the future, what level of difficulty would your organization experience to remove it from your environments? If that were to happen, would you fork and maintain the project to keep functionality, step into a maintainership role within the project, or something else?
 

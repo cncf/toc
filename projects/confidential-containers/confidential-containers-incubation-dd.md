@@ -104,7 +104,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   <!-- (TOC Evaluation goes here) -->
   The [project governance doc](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md) is maintained in the main repository.
 
-  Since CoCo has 10+ active non-fork repos, TOC reviewers suggest to consider creating a community repository and maintain governance and community relavent docs there.
+  Since CoCo has 10+ active non-fork repos, TOC reviewers suggest to consider creating a community repository and maintain governance and community relevant docs there.
 
 - [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
@@ -275,7 +275,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
   - short-term roadmap at the GitHub boards (including the [Confidential containers github board](https://github.com/orgs/confidential-containers/projects/6) and [Trustee github board](https://github.com/orgs/confidential-containers/projects/10)), and
   - its mid/long-term roadmap at the project's website based on use-case driven development. Ref: <https://confidentialcontainers.org/docs/use-cases/>
 
-  The short-term roadmap Confidential containers github board link is unavailable with an outdated "view", needs to be fixed. Ref: <https://github.com/confidential-containers/confidential-containers/blob/15cbeeff8282e6cea15f66900f66b5936ab0971e/roadmap.md#L10>
+  The short-term roadmap Confidential Containers GitHub board link is unavailable with an outdated "view", needs to be fixed. Ref: <https://github.com/confidential-containers/confidential-containers/blob/15cbeeff8282e6cea15f66900f66b5936ab0971e/roadmap.md#L10>
 
 - [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
   - The General Technical Review was updated on 24-Feb-2026 (currently under review), and can be discovered at <https://github.com/cncf/toc/pull/2051>.
@@ -356,11 +356,11 @@ The list of adopters can be found in the project repo: https://github.com/confid
 
 - [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
 
-The project provided the TOC with a list of adopters for verification of use of the project at the level expected, dev/test for incubation. The TOC was able to verify confirm at least dev/test use with all interviewed adopters.
+The project provided the TOC with a list of adopters for verification of use of the project at the level expected, dev/test for incubation. The TOC was able to confirm at least dev/test use with all interviewed adopters.
 
 - [x] **TOC verification of adopters.**
 
-The CoC maintainers provided the TOC with a list of 5-6 adopters who agreed to be interviewed for the Incubation Due Diligence process. 4 of these adopters were interviewed. The adoption portion of this document contains interview summaries from adopters who approved public attribution. All adopters are verified using CoC at the level appropriate for incubation.
+The CoCo maintainers provided the TOC with a list of 5-6 adopters who agreed to be interviewed for the Incubation Due Diligence process. 4 of these adopters were interviewed. The adoption portion of this document contains interview summaries from adopters who approved public attribution. All adopters are verified using CoCo at the level appropriate for incubation.
 
 Refer to the Adoption portion of this document.
 
