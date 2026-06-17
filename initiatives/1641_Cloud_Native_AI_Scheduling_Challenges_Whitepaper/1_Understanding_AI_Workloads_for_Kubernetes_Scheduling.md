@@ -81,7 +81,9 @@ Data preparation transforms raw data into a format suitable for model training. 
 * Data transformation: Normalizing, encoding categorical variables, feature scaling  
 * Data splitting: Dividing data into training, validation, and test sets
 
-From a scheduling perspective, data preparation is typically CPU and I/O intensive rather than GPU-intensive. That said, GPU-accelerated frameworks can significantly speed up large-scale data processing tasks such as filtering, joining, and aggregating datasets. Jobs are often parallelizable—you can clean different partitions of a dataset independently. Event-driven scheduling is common: new data arriving triggers a preparation pipeline.
+From a scheduling perspective, data preparation is typically CPU and I/O intensive rather than GPU-intensive. That said, GPU-accelerated frameworks can significantly speed up large-scale data processing tasks such as filtering, joining, and aggregating datasets. Additionally, GPUs work well for unstructured data like images because image processing involves massive parallel math operations.
+
+Jobs are often parallelizable—you can clean different partitions of a dataset independently. Event-driven scheduling is common: new data arriving triggers a preparation pipeline.
 
 Kubernetes resources like Jobs and CronJobs handle these workloads reasonably well. Workflow orchestrators (Airflow, Argo Workflows, Flyte) coordinate multi-step pipelines.
 
@@ -113,7 +115,7 @@ Training jobs are:
 * Tightly coupled: All workers must run simultaneously  
 * Sensitive to topology: Communication speed depends on GPU interconnects
 
-The default Kubernetes scheduler cannot handle these requirements. It will start pods as resources become available, potentially leaving a job stuck with partial resources indefinitely.
+These characteristics require additional Kubernetes scheduler capabilities to support efficient all-or-nothing placement and topology-aware scheduling.
 
 ### Model Inference
 
@@ -146,7 +148,7 @@ AI workloads break these assumptions:
 
 * **Long-running jobs.** A training run is not a request that completes in milliseconds. It is a job that runs for days or weeks. Interrupting it wastes all the work done since the last checkpoint. The scheduler must account for job duration, not just instantaneous resource needs.  
 * **Massive resource consumption.** Training large models requires hundreds or thousands of GPUs running simultaneously. A single job can consume the majority of a cluster's capacity for extended periods. This is not "scale horizontally by adding pods"—it is "reserve a large fraction of the cluster for one workload."  
-* **Tightly coupled distribution.** Distributed training uses collective communication patterns where all workers must participate. You cannot start with 7 of 8 workers and add the 8th later. You cannot lose one worker and continue with the remaining 7\. Either all workers are running, or the job cannot proceed. This is fundamentally different from web services, where losing one replica just shifts load to the others.  
+* **Tightly coupled distribution.** Distributed training uses collective communication patterns where all workers must participate. You cannot start with 7 of 8 workers and add the 8th later. You cannot lose one worker and continue with the remaining 7. Either all workers are running, or the job cannot proceed. This is fundamentally different from web services, where losing one replica just shifts load to the others.  
 * **A large amount of state.** AI inference workloads answer user queries by creating and maintaining substantial state in GPU memory. This state management is key to consider when scaling AI inference server pods up or down while maintaining latency and SLOs.  
 * **GPU memory constraints.** LLM models consume all available GPU memory. A model that requires 80GB of VRAM cannot share a GPU with another workload—there is no memory left. This makes GPU sharing difficult. Loading and unloading models is slow (tens of GB transferred from storage), so swapping models for different requests is impractical for real-time inference.  
 * **I/O patterns.** AI workloads have distinct I/O phases:  
@@ -166,8 +168,8 @@ The following table summarizes the resource profile of each lifecycle stage:
 | Feature Engineering | CPU, memory, storage I/O | Minutes to hours | Similar to data preparation |
 | Model Development | CPU (notebooks), minimal GPU for experiments | Interactive sessions | Long-running pods, modest resources |
 | Training (small models) | 1-8 GPUs | Hours to days | Standard job scheduling |
-| Training (large models) | 100s-1000s of GPUs | Days to months | Gang scheduling, topology awareness, checkpointing |
-| Fine-tuning | 1-64 GPUs | Hours to days | Similar to small model training |
+| Pre-Training (large models) | 100s-1000s of GPUs | Days to months | Gang scheduling, topology awareness, checkpointing |
+| Post-Training (fine-tuning) | 1-64 GPUs | Hours to days | Similar as pre-training |
 | Batch Inference | Variable GPU count | Hours to days | Parallelizable, throughput-oriented |
 | Real-time Inference | GPUs with models preloaded | Continuous | Low latency, autoscaling, model serving |
 

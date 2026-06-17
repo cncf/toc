@@ -84,7 +84,7 @@ These tools add job queuing, fair sharing, and gang scheduling on top of Kuberne
 These tools provide higher-level abstractions for ML workflows:
 
 * **Kubeflow**  
-  * **Kubeflow Trainer** supports distributed training across frameworks (PyTorch, TensorFlow, PaddlePaddle, XGBoost). Provides job abstractions that handle worker coordination, including gang scheduling requirements.  
+  * **Kubeflow Trainer** is a Kubernetes-native distributed AI platform for scalable LLM fine-tuning and training of AI models across a wide range of frameworks, including PyTorch, MLX, HuggingFace, DeepSpeed, JAX, XGBoost, and more. Provides job abstractions that handle worker coordination, including gang scheduling requirements and HPC workloads orchestration such as MPI and Flux.
   * **Kubeflow MPI Operator** enables MPI-based collective communication for distributed training. Essential for workloads using all-reduce synchronization.  
   * **Kubeflow Katib** manages AutoML workloads—hyperparameter optimization and neural architecture search. Coordinates multiple training jobs with different configurations.  
 * **KServe** provides a standardized distributed generative and predictive AI inference platform for scalable, multi-framework deployment on Kubernetes.  
@@ -122,16 +122,16 @@ A reference table that maps each challenge to the solutions that address it. All
 | Gang Scheduling | Workload API \+ GangScheduling feature gate (alpha, K8s 1.35+) | Armada, Coscheduling plugin, KAI, Kueue, Slinky, Volcano, YuniKorn | Kubeflow Trainer | Both | Essential for distributed training |
 | Resource Fairness | ResourceQuota (limited) | Armada, KAI, Kueue, Slinky, Volcano, YuniKorn | \- | Both | Hierarchical quotas require external tools |
 | Queue Management | \- | Armada, KAI, Kueue, Slinky, Volcano, YuniKorn  | Airflow, Flyte | Both | Core capability of batch schedulers |
-| Preemption | PriorityClass (pod-level) | KAI, Kueue, Slinky, Volcano | \- | Both | Job-level preemption needs external tools |
-| Priority Scheduling | PriorityClass | All batch schedulers | \- | Both | Job-level priority in batch schedulers |
-| Reservation & Backfill | \- | Slinky, Volcano, YuniKorn | \- | Training | Advanced feature in some schedulers |
-| Topology Awareness (Node) | Topology Manager (NUMA), DRA CPU Driver (CPU topology) | KAI, Kueue, Slinky, Volcano | \- | Both | GPU interconnect awareness varies |
-| Topology Awareness (Cluster) | Topology Spread Constraints, DRANET (network DRA Driver) (limited) | KAI, Kueue, Slinky, Volcano | \- | Both | Network topology awareness is emerging |
+| Preemption | PriorityClass (pod-level) | KAI, Kueue, Slinky, Volcano | KubeRay, Kubeflow Trainer, Kubernetes | Both | Job-level preemption needs external tools |
+| Priority Scheduling | PriorityClass | All batch schedulers | KubeRay, Kubeflow Trainer, Kubernetes | Both | Job-level priority in batch schedulers |
+| Reservation & Backfill | \- | Slinky, Volcano, YuniKorn | KubeRay, Kubeflow Trainer, Kubernetes | Training | Advanced feature in some schedulers |
+| Topology Awareness (Node) | Topology Manager (NUMA), DRA CPU Driver (CPU topology) | KAI, Kueue, Slinky, Volcano | KubeRay, Kubeflow Trainer, Kubernetes | Both | GPU interconnect awareness varies |
+| Topology Awareness (Cluster) | Topology Spread Constraints, DRANET (network DRA Driver) (limited) | KAI, Kueue, Slinky, Volcano | KubeRay, Kubeflow Trainer, Kubernetes | Both | Network topology awareness is emerging |
 | Resource Heterogeneity | Node selectors, labels | All batch schedulers | \- | Both | Standard Kubernetes features usually sufficient |
 | GPU Sharing | DRA (GA, K8s 1.34+) | KAI | HAMi, KubeRay, Volcano | Both | MIG requires DRA or vendor tools |
 | Scalability | Cluster Autoscaler, Karpenter | Armada, KAI, Kueue, Slinky, Volcano | interLink | Both | Large-scale scheduling is challenging |
 | I/O Bottlenecks | PersistentVolumes | \- | Fluid | Both | Storage and caching solutions |
-| Fault Tolerance | \- | Slinky,  | Kubeflow (elastic training) | Training | Framework-dependent |
+| Fault Tolerance | \- | Slinky,  | Kubeflow Trainer | Training | Framework-dependent |
 | Elasticity | HPA, VPA | KAI, Slinky, Volcano | Kubeflow Trainer | Both | PyTorch Elastic, etc. |
 | Budget/Cost | \- | Limited support | Flyte (spot/interruptible tasks) | Both | Emerging area  |
 | Inference request scheduling | Pod-level metrics | Dynamo Router , llm-d-inference scheduler  | Kubernetes | Inference | Emerging area  |
