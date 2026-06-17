@@ -44,6 +44,14 @@ This paper examines challenges related to the underlying resources and infrastru
 
 This section outlines scheduling challenges related to hardware resources and infrastructure—where and how jobs run. While many examples reference training workloads, these challenges apply equally to multi-node inference deployments, such as model-parallel or disaggregated serving architectures.
 
+* [Topology Awareness](#topology-awareness)
+* [Resource Heterogeneity](#resource-heterogeneity)
+* [GPU Utilization and Sharing](#gpu-utilization-and-sharing)
+* [Scalability](#scalability)
+* [I/O Bottlenecks](#io-bottlenecks)
+* [Fault Tolerance and Elasticity](#fault-tolerance-and-elasticity)
+* [Budget and Cost Constraints](#budget-and-cost-constraints)
+
 ## Topology Awareness
 
 Hardware topology significantly impacts AI workload performance. Two different challenges require different solutions:

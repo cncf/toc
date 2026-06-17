@@ -72,6 +72,12 @@ If you are new to Kubernetes scheduling, you may find these resources helpful:
 
 AI and machine learning projects follow a lifecycle with distinct stages. Each stage has different resource requirements and scheduling characteristics.
 
+* [Data Preparation](#data-preparation)
+* [Model Development](#model-development)
+* [Model Training](#model-training)
+* [Model Inference](#model-inference)
+* [Emerging Patterns](#emerging-patterns)
+
 ### Data Preparation
 
 Data preparation transforms raw data into a format suitable for model training. This includes:

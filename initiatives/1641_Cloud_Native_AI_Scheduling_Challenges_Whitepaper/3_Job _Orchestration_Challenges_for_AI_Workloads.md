@@ -42,6 +42,13 @@ This paper examines the specific job orchestration challenges that arise when ru
 
 This section outlines the scheduling challenges related to job orchestration—how jobs are admitted, ordered, and coordinated.
 
+* [Gang Scheduling](#gang-scheduling)
+* [Resource Fairness and Quota Management](#resource-fairness-and-quota-management)
+* [Queue Management](#queue-management)
+* [Preemption](#preemption)
+* [Priority Scheduling](#priority-scheduling)
+* [Resource Reservation and Backfill](#resource-reservation-and-backfill)
+
 ## Gang Scheduling
 
 * **Problem:** Distributed training jobs require all workers to run simultaneously. If a job needs 8 GPUs and only 6 are available, the default Kubernetes scheduler will start 6 pods and leave 2 pending. Those 6 GPUs sit idle—the job cannot make progress, and other jobs cannot use those resources. Worse, this can cause deadlock: multiple partial jobs hold resources while waiting for more, and none can complete.  
@@ -50,7 +57,7 @@ This section outlines the scheduling challenges related to job orchestration—h
   * **Distributed training:** Workers use collective communication (all-reduce) that requires every participant. A partial allocation is useless.  
   * **Multi-pod inference:** Model-parallel deployments and disaggregated serving architectures require all components (e.g., prefill and decode workers) to be running before the system can serve requests.  
   * **Distributed data preparation:** Parallel jobs that must complete together to produce consistent output benefit from all-or-nothing scheduling.  
-* **Current state:** Kubernetes-native batch schedulers that support gang scheduling include the coscheduling plugin (via PodGroups), Armada, KAI Scheduler, and Volcano. Native gang scheduling with the Workloads API h[as been implemented in Kubernetes 1.35 as an alpha feature](https://kubernetes.io/docs/concepts/workloads/workload-api/), with a goal to reach beta in Kubernetes 1.36.
+* **Current state:** Kubernetes-native batch schedulers that support gang scheduling include the coscheduling plugin (via PodGroups), Armada, KAI Scheduler, and Volcano. Native gang scheduling with the Workloads API has been implemented in Kubernetes 1.35 as an alpha feature](https://kubernetes.io/docs/concepts/workloads/workload-api/), with a goal to reach beta in Kubernetes 1.36.
 
 ## Resource Fairness and Quota Management
 
