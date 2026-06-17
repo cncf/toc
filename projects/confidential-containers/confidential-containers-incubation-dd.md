@@ -29,7 +29,7 @@ Kevin Wang, Faseela K, and Lin Sun conducted the due diligence of Confidential C
 
 - **Publish a public maintainer and team-membership list**: Maintainer and functional-role assignments are managed through private GitHub teams referenced in `CODEOWNERS`, so they are not publicly readable. The TOC reviewers recommend publishing this membership through declarative configuration using a tool such as [cilium/team-manager](https://github.com/cilium/team-manager) or [CLOWarden](https://github.com/cncf/clowarden).
 - **State vendor neutrality explicitly in governance**: Vendor neutrality is enforced through the two-seat-per-organization Steering Committee limit, but the governance documents do not state it as a principle. The reviewers recommend adding a vendor-neutrality clause before graduation.
-- **Move governance and community docs into a community repository**: With 10+ active non-fork repositories, the reviewers suggest a dedicated community repository to hold governance and community documentation.
+- **State governance scope across the org**: The `confidential-containers/confidential-containers` repository serves as the de-facto community repository, but the governance does not explicitly state that it applies to all repositories under the `confidential-containers` GitHub organization. The reviewers recommend adding a short scope statement to `governance.md` so contributors landing in a subproject repository can tell which document governs it.
 - **Document subproject governance details**: The subproject removal process, per-subproject maturity status, and a public per-subproject maintainer list are not yet documented and should be completed before graduation.
 - **Integrate with the official CNCF calendar**: Weekly community meetings are documented in a public Google Doc; adding them to the official CNCF calendar would make them easier to find.
 - **Keep the contributing guide current**: The contributing guide has not been updated since 2024 and should be reviewed periodically to match the current state of the project.
@@ -102,9 +102,9 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [x] **Clear and discoverable project governance documentation.**
 
   <!-- (TOC Evaluation goes here) -->
-  The [project governance doc](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md) is maintained in the main repository.
+  The [project governance doc](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md) is maintained in the main repository, which serves as the de-facto community repository for the org.
 
-  Since CoCo has 10+ active non-fork repos, TOC reviewers suggest to consider creating a community repository and maintain governance and community relevant docs there.
+  With 10+ active non-fork subproject repositories under the org, the TOC reviewers recommend stating the scope of the governance explicitly in `governance.md` (for example, that it applies to all repositories under the `confidential-containers` GitHub organization unless a subproject documents an explicit deviation), so contributors landing in a subproject repository can tell which document governs it.
 
 - [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
 
@@ -148,12 +148,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 - [ ] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
 
   <!-- (TOC Evaluation goes here) -->
-  Subproject leadership and contribution follow the organization-level [governance](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md).
-
-  The TOC reviewers note that the following subproject governance details are not yet documented and recommend completing them before graduation:
-  - The subproject removal process.
-  - The maturity status of individual subprojects.
-  - A public per-subproject maintainer list.
+  The org-level [governance](https://github.com/confidential-containers/confidential-containers/blob/main/governance.md) refers to subprojects as "projects" (Trustee, guest-components, cloud-api-adaptor, operator, td-shim, etc.), and documents Maintainer onboarding and removal for each, which covers subproject leadership and contribution. Still missing before graduation: how to add or retire a subproject, the maturity status of each, and a public per-subproject maintainer list.
 
 ### Required
 
