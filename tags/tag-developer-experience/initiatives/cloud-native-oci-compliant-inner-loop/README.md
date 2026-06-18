@@ -83,7 +83,7 @@ Define the "Handoff" patterns for how artifacts transition into production cloud
 
 #### 6. Real-World Deployment Considerations
 Ensure the approach accounts for:
-* Air-gapped and regulated environments
+* Air-gapped
 * Enterprise security and compliance requirements
 * Regulated environments
 * Hybrid and multi-platform infrastructure
