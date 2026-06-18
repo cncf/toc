@@ -18,8 +18,6 @@ Authors:
 # Table of Contents
 
 - [Metadata](#metadata)
-- [Security links](#security-links)
-- [Software Bill of Materials](#software-bill-of-materials)
 - [Overview](#overview)
   - [Background](#background)
   - [Actors](#actors)
@@ -31,6 +29,7 @@ Authors:
 - [Project Compliance](#project-compliance)
 - [Secure Development Practices](#secure-development-practices)
   - [Development pipeline](#development-pipeline)
+  - [Software Bill of Materials](#software-bill-of-materials)
   - [Communication Channels](#communication-channels)
   - [Ecosystem](#ecosystem)
 - [Security issue resolution](#security-issue-resolution)
@@ -74,59 +73,15 @@ Authors:
   </tbody>
 </table>
 
-# Security links
-
-- Kubeflow Spark Operator security policy: https://github.com/kubeflow/spark-operator/blob/master/SECURITY.md
-- Kubeflow Notebooks security policy: https://github.com/kubeflow/notebooks/blob/master/SECURITY.md
-- Kubeflow Trainer security policy: https://github.com/kubeflow/trainer/blob/master/SECURITY.md
-- Kubeflow Katib security policy: https://github.com/kubeflow/katib/blob/master/SECURITY.md
-- Kubeflow Model Registry security policy: https://github.com/kubeflow/model-registry/blob/main/SECURITY.md
-- Kubeflow Pipelines security policy: https://github.com/kubeflow/pipelines/blob/master/SECURITY.md
-
-# Software Bill of Materials
-
-The package versions for each Kubeflow project can be found in the appropriate repositories:
-
-- Kubeflow Spark Operator
-  - Go modules: https://github.com/kubeflow/spark-operator/blob/master/go.mod
-  - FOSSA report: https://app.fossa.com/reports/b1c3b2c0-a1bf-4572-b3b2-8455729c8cf9
-- Kubeflow Notebooks
-  - Go modules: https://github.com/kubeflow/notebooks/blob/notebooks-v1/components/notebook-controller/go.mod
-  - FOSSA report: https://app.fossa.com/reports/8720a333-0c53-4a2d-a3c9-92a2435d4d7c
-- Kubeflow Trainer
-  - Go modules: https://github.com/kubeflow/trainer/blob/master/go.mod
-  - Python packages: https://github.com/kubeflow/sdk/blob/main/pyproject.toml
-  - FOSSA report: https://app.fossa.com/reports/bb8e2d41-254a-4af3-9044-e7f484c34dd1
-- Kubeflow Katib
-  - Go modules: https://github.com/kubeflow/katib/blob/master/go.mod
-  - Python packages: https://github.com/kubeflow/katib/blob/master/sdk/python/v1beta1/setup.py
-  - FOSSA report: https://app.fossa.com/reports/9762748b-b1fb-43ed-84d1-bee58e61e619
-- Kubeflow Model Registry
-  - Go modules: https://github.com/kubeflow/model-registry/blob/main/go.mod
-  - Python packages: https://github.com/kubeflow/model-registry/blob/main/clients/python/pyproject.toml
-  - FOSSA report: https://app.fossa.com/reports/0559a384-a6ce-4a37-b286-fcc47c962790
-- Kubeflow Pipelines
-  - Go modules: https://github.com/kubeflow/pipelines/blob/master/go.mod
-  - Python packages: https://github.com/kubeflow/pipelines/blob/master/sdk/python/requirements.txt
-  - FOSSA report: https://app.fossa.com/reports/295e1511-cf5e-405c-abc3-eddac2ef03ae
-
-All Kubeflow container images can be found here: https://github.com/orgs/kubeflow/packages
-
-The SBOMs for any released Kubeflow container image can be accessed using the following command:
-
-```
-docker sbom ghcr.io/kubeflow/trainer/trainer-controller-manager:v2.0.0-rc.0
-```
-
 # Overview
 
-[Kubeflow](https://www.kubeflow.org/) consists of multiple open source subprojects that run on
+[Kubeflow](https://www.kubeflow.org/) consists of multiple open source projects that run on
 Kubernetes and cover every stage of the [AI lifecycle](https://www.kubeflow.org/docs/started/architecture/#kubeflow-projects-in-the-ai-lifecycle).
 Each project can be used independently or composed into an end-to-end AI platform.
 
-Kubeflow is a control plane that orchestrates user-supplied AI workloads on Kubernetes, so its
-security model builds on, and inherits, the security boundary of the underlying cluster. Kubeflow
-aims to provide the following security properties:
+Kubeflow subprojects have a control plane that orchestrates user-supplied AI workloads on Kubernetes,
+so its security model builds on, and inherits, the security boundary of the underlying cluster.
+Kubeflow aims to provide the following security properties:
 
 - **Authenticated and authorized access**: access to Kubeflow APIs is mediated by Kubernetes RBAC,
   and access to Kubeflow web interfaces is authenticated and authorized at the Istio ingress gateway
@@ -458,6 +413,41 @@ practices and is following the OpenSSF Best Practices. Kubeflow projects achieve
   - https://github.com/kubeflow/pipelines/blob/master/RELEASE.md
   - https://github.com/kubeflow/model-registry/blob/main/RELEASE.md
 
+## Software Bill of Materials
+
+The package versions for each Kubeflow project can be found in the appropriate repositories:
+
+- Kubeflow Spark Operator
+  - Go modules: https://github.com/kubeflow/spark-operator/blob/master/go.mod
+  - FOSSA report: https://app.fossa.com/reports/b1c3b2c0-a1bf-4572-b3b2-8455729c8cf9
+- Kubeflow Notebooks
+  - Go modules: https://github.com/kubeflow/notebooks/blob/notebooks-v1/components/notebook-controller/go.mod
+  - FOSSA report: https://app.fossa.com/reports/8720a333-0c53-4a2d-a3c9-92a2435d4d7c
+- Kubeflow Trainer
+  - Go modules: https://github.com/kubeflow/trainer/blob/master/go.mod
+  - Python packages: https://github.com/kubeflow/sdk/blob/main/pyproject.toml
+  - FOSSA report: https://app.fossa.com/reports/bb8e2d41-254a-4af3-9044-e7f484c34dd1
+- Kubeflow Katib
+  - Go modules: https://github.com/kubeflow/katib/blob/master/go.mod
+  - Python packages: https://github.com/kubeflow/katib/blob/master/sdk/python/v1beta1/setup.py
+  - FOSSA report: https://app.fossa.com/reports/9762748b-b1fb-43ed-84d1-bee58e61e619
+- Kubeflow Model Registry
+  - Go modules: https://github.com/kubeflow/model-registry/blob/main/go.mod
+  - Python packages: https://github.com/kubeflow/model-registry/blob/main/clients/python/pyproject.toml
+  - FOSSA report: https://app.fossa.com/reports/0559a384-a6ce-4a37-b286-fcc47c962790
+- Kubeflow Pipelines
+  - Go modules: https://github.com/kubeflow/pipelines/blob/master/go.mod
+  - Python packages: https://github.com/kubeflow/pipelines/blob/master/sdk/python/requirements.txt
+  - FOSSA report: https://app.fossa.com/reports/295e1511-cf5e-405c-abc3-eddac2ef03ae
+
+All Kubeflow container images can be found here: https://github.com/orgs/kubeflow/packages
+
+The SBOMs for any released Kubeflow container image can be accessed using the following command:
+
+```
+docker sbom ghcr.io/kubeflow/trainer/trainer-controller-manager:v2.0.0-rc.0
+```
+
 ## Communication Channels
 
 ### Internal
@@ -524,6 +514,13 @@ the reports to avoid excessive disclosure of vulnerabilities.
 
 # Appendix
 
+- _Security Policies_: each Kubeflow project documents its security policy in a `SECURITY.md` file:
+  - https://github.com/kubeflow/spark-operator/blob/master/SECURITY.md
+  - https://github.com/kubeflow/notebooks/blob/master/SECURITY.md
+  - https://github.com/kubeflow/trainer/blob/master/SECURITY.md
+  - https://github.com/kubeflow/katib/blob/master/SECURITY.md
+  - https://github.com/kubeflow/model-registry/blob/main/SECURITY.md
+  - https://github.com/kubeflow/pipelines/blob/master/SECURITY.md
 - _Known Issues Over Time_: Issues are tracked in GitHub Issues, and vulnerabilities are tracked
   and disclosed through GitHub Security Advisories for each Kubeflow project. Maintainers triage
   reported vulnerabilities, release patches for supported versions, and publish advisories as
