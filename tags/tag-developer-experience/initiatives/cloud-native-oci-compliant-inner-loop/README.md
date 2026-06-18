@@ -26,7 +26,7 @@ Focus on inner loop development which incorporates everything an AI engineer doe
 ### Overview and Intent
 AI developers today frequently work in fragmented local environments that are disconnected from cloud native operational workflows. While emerging standards like ModelPack and OCI-aligned AI artifact initiatives provide the “packaging” foundations, there is no unified interoperability specification that defines how these artifacts must be structured, secured, and described to move seamlessly from a developers environments into a Kubernetes-based production system.
 
-The goal of this initiative is to define a minimal Interoperability Specification (a “Compliance Profile”) for AI Artifacts. Rather than rebuilding the OCI layer structure, this initiative defines the **Standardized Metadata Contract** that must exist on top of packaging formats like **ModelPack**. This ensures that any <a href="https://github.com/cncf/foundation/blob/main/style-guide.md#1-cloud-native-and-open-source" target="_blank">“Cloud Native Ready”</a> AI artifact contains the mandatory identity, security, and runtime information required that enables a cohesive developer inner loop and GitOps-driven delivery.
+The goal of this initiative is to define a minimal Interoperability Specification (a “Compliance Profile”) for AI Artifacts. Rather than rebuilding the OCI layer structure, this initiative defines the **Standardized Metadata Contract** that must exist on top of packaging formats like **ModelPack**. This ensures that any ["Cloud-Native Ready"](https://github.com/cncf/foundation/blob/main/style-guide.md#1-cloud-native-and-open-source) AI artifact contains the mandatory identity, security, and runtime information required that enables a cohesive developer inner loop and GitOps-driven delivery.
 
 This initiative intentionally builds on existing OCI-aligned packaging efforts rather than redefining artifact storage or layer mechanics.
 
@@ -45,7 +45,7 @@ The initiative is intended to encourage ecosystem alignment and workflow interop
 Define a structured, minimal specification for AI artifacts to be considered “Cloud Native Interoperable”. This does not define OCI layering but specifies the mandatory metadata:
 * **Annotation Conventions:** Standardize keys for runtime frameworks (e.g., vllm), hardware accelerators (e.g., nvidia-gpu), and lifecycle status.
 * **Agentic Assets:** Standardizing the packaging of “skills”, prompt templates and workflow definitions. 
-  * To ensure interoperability, the internal format for skills will align with the <a href="https://agentskills.io/home" target="_blank">agentskills.io</a> community standard. 
+  * To ensure interoperability, the internal format for skills will align with the ["agentskills.io"] (https://agentskills.io/home) community standard. 
   * The spec defines how these standardized skills are encapsulated into the OCI layers for consistent distribution and discovery.
   * The initiative may leverage Skill DLC as the primary reference for demonstrating how these assets are dynamically loaded and managed.
 * Interface Definitions: Define the "Ingredient List” for the different classes of artifacts (Models, RAG contexts, and Agentic Assets).
@@ -59,7 +59,7 @@ Define how artifacts describe themselves and their dependencies to enable cross-
 * **Relationship Mapping:** Defining minimal relationships to metadata conventions between related artifacts (e.g., model → skill → pipeline) within the OCI manifest.
 * **Dependencies & Compatibility:** A schema for declaring software dependencies and infrastructure requirements (e.g., specific CUDA versions or vRAM minimums) to ensure cross-runtime interoperability.
 * **Large Binary Asset Optimization:** Establishing best practices and metadata conventions for the efficient handling of large-scale binary artifacts (multi-GB model weights) within OCI registries, focusing on registry compatibility and layer deduplication. 
-* **Alignment with CNCF:** Build on existing efforts (e.g., <a href="https://modelpack.org/" target="_blank">ModelPack</a>, <a href="https://kitops.org/docs/modelkit/intro/" target="_blank">ModelKit</a>, <a href="https://github.com/redhat-ai-services/modelcar-catalog" target="_blank">ModelCar</a>)
+* **Alignment with CNCF:** Build on existing efforts (e.g., ["ModelPack"] (https://modelpack.org/), ["ModelKit"] (https://kitops.org/docs/modelkit/intro/), ["ModelCar"] (https://github.com/redhat-ai-services/modelcar-catalog)
 
 #### 3. Supply Chain Security and Transparency
 Define the mandatory “Trust Profile” for AI artifacts to ensure they are verifiable before entering production:
@@ -78,7 +78,7 @@ Define the operational patterns that allow the specification to be utilized in a
 #### 5. GitOps and Kubernetes Integration Patterns
 Define the "Handoff" patterns for how artifacts transition into production cloud native systems.
 * **GitOps Delivery Patterns:** Reference architectures for pulling compliant artifacts into Flux or Argo CD workflows.
-* **Runtime Integration:** Standardized patterns for the seamless deployment of artifacts into serving platforms (e.g., <a href="https://kserve.github.io/website/" target="_blank">KServe</a>, <a href="https://github.com/vllm-project/vllm" target="_blank">vLLM</a>) and registration into model registries (e.g., Kubeflow Model Registry).
+* **Runtime Integration:** Standardized patterns for the seamless deployment of artifacts into serving platforms (e.g., ["KServe"] (https://kserve.github.io/website), [vLLM](https://github.com/vllm-project/vllm), and registration into model registries (e.g., Kubeflow Model Registry).
 * **Enterprise Requirements:** Ensuring the promotion spec accounts for air-gapped, regulated, and hybrid-cloud infrastructure constraints.
 
 #### 6. Real-World Deployment Considerations
