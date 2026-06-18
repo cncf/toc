@@ -120,15 +120,37 @@ docker sbom ghcr.io/kubeflow/trainer/trainer-controller-manager:v2.0.0-rc.0
 
 # Overview
 
-[Kubeflow](https://www.kubeflow.org/) is the foundation of tools for AI Platforms on Kubernetes.
+[Kubeflow](https://www.kubeflow.org/) consists of multiple open source subprojects that run on
+Kubernetes and cover every stage of the [AI lifecycle](https://www.kubeflow.org/docs/started/architecture/#kubeflow-projects-in-the-ai-lifecycle).
+Each project can be used independently or composed into an end-to-end AI platform.
 
-AI platform teams can build on top of Kubeflow by using each project independently or deploying the
-entire AI reference platform to meet their specific needs. The Kubeflow AI reference platform is
-composable, modular, portable, and scalable, backed by an ecosystem of Kubernetes-native
-projects that cover every stage of the [AI lifecycle](https://www.kubeflow.org/docs/started/architecture/#kubeflow-projects-in-the-ai-lifecycle).
+Kubeflow is a control plane that orchestrates user-supplied AI workloads on Kubernetes, so its
+security model builds on, and inherits, the security boundary of the underlying cluster. Kubeflow
+aims to provide the following security properties:
 
-Whether you’re an AI practitioner, a platform administrator, or a team of developers, Kubeflow
-offers modular, scalable, and extensible tools to support your AI use cases.
+- **Authenticated and authorized access**: access to Kubeflow APIs is mediated by Kubernetes RBAC,
+  and access to Kubeflow web interfaces is authenticated and authorized at the Istio ingress gateway
+  together with OAuth2 Proxy. Kubeflow does not introduce an authorization path that bypasses
+  Kubernetes RBAC.
+- **Tenant isolation**: workloads and resources are isolated per Kubernetes namespace using RBAC
+  and, where configured, network policies, so one tenant cannot read or control another tenant's
+  resources without an explicit grant.
+- **Least-privilege control plane**: Kubeflow controllers run under scoped service accounts, and
+  admission webhooks validate user-submitted resources before they are admitted.
+
+These properties rely on the following trust assumptions: the underlying Kubernetes cluster and its
+components are correctly operated; cluster administrators correctly configure the primitives
+Kubeflow depends on (RBAC, namespaces, network policies, Pod Security Admission, the Istio gateway,
+and the identity provider); and operators trust the container images and user-supplied code they
+choose to run.
+
+When these assumptions do not hold, the corresponding guarantees no longer apply. If RBAC or
+namespace isolation is misconfigured, tenant isolation can break; if the ingress gateway or identity
+provider is bypassed or misconfigured, the web-interface access controls no longer hold. Kubeflow
+executes user-supplied code and does not sandbox it beyond the isolation Kubernetes provides, so
+protecting the cluster and other tenants from a malicious or compromised workload relies on the
+Kubernetes mechanisms (RBAC, namespace isolation, Pod Security Admission, network policies, and
+resource quotas) that the administrator configures.
 
 Please refer to [the official documentation](https://www.kubeflow.org/docs/) for more information.
 
