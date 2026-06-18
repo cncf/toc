@@ -16,7 +16,7 @@ Focus on inner loop development which incorporates everything an AI engineer doe
 
 ## Deliverable(s) or exit criteria
 
-* An technical POC showing <10 min “idea-to-inference” path for cloud native agent development on a developer environment.
+* A technical POC showing <10 min “idea-to-inference” path for cloud native agent development on a developer environment.
 * Clearly documented standards for OCI artefact standardization across runtimes and registries.
 * Specification / procedure to achieve MOF Class III compliant model distributions via any OCI registry.
 * Standardised process for leveraging model signing with artefacts-level provenance to support a verified end-to-end CI/CD reference pipeline including outer loop for AI engineering.
@@ -47,7 +47,7 @@ Define a structured, minimal specification for AI artifacts to be considered “
 * **Agentic Assets:** Standardizing the packaging of “skills”, prompt templates and workflow definitions. 
   * To ensure interoperability, the internal format for skills will align with the ["agentskills.io"] (https://agentskills.io/home) community standard. 
   * The spec defines how these standardized skills are encapsulated into the OCI layers for consistent distribution and discovery.
-  * The initiative may leverage Skill DLC as the primary reference for demonstrating how these assets are dynamically loaded and managed.
+  * The initiative may leverage ["Skill DLC"] (https://agentskills.io/home) as the primary reference for demonstrating how these assets are dynamically loaded and managed.
 * Interface Definitions: Define the "Ingredient List” for the different classes of artifacts (Models, RAG contexts, and Agentic Assets).
 
 This includes defining how artifacts relate to and compose with one another.
@@ -63,9 +63,9 @@ Define how artifacts describe themselves and their dependencies to enable cross-
 
 #### 3. Supply Chain Security and Transparency
 Define the mandatory “Trust Profile” for AI artifacts to ensure they are verifiable before entering production:
-* **Cryptographic Identity:** Standardize artifact signing and verification using Sigstore and Notary v2 at the point of creation on a developer's machine.
+* **Cryptographic Identity:** Standardize artifact signing and verification at the point of creation on a developer's machine, leveraging established frameworks like Sigstore and Notary v2 (Notation), while exploring emerging zero-trust identity protocols such as OpenPubkey to enable seamless OIDC-bound signing.
 * **Transparency Manifests:** Mandatory requirements for SBOM (Software Bill of Materials) generation and attachment for all artifact layers.
-* **Provenance Metadata:** Defining the "Hardened Provenance" requirements to ensure the journey from local experimentation to a secure registry is immutable and documented.
+* **Provenance Metadata:** Defining "Hardened Provenance" requirements to ensure the journey from local experimentation to an enterprise registry is immutable and documented. This includes reference patterns for utilizing local, ephemeral OCI registries during the developer inner loop, allowing artifact manifests to be generated, signed, and verified via Sigstore or Notary v2 entirely on the local machine before entering external CI/CD pipelines.
 
 The goal is to ensure artifacts are trusted and verifiable before entering CI/CD pipelines.
 
@@ -77,7 +77,7 @@ Define the operational patterns that allow the specification to be utilized in a
 
 #### 5. GitOps and Kubernetes Integration Patterns
 Define the "Handoff" patterns for how artifacts transition into production cloud native systems.
-* **GitOps Delivery Patterns:** Reference architectures for pulling compliant artifacts into Flux or Argo CD workflows.
+* **GitOps Delivery Patterns:** Reference architectures for pulling compliant artifacts into Flux or Argo CD workflows. This includes standardizing K8s Init Container patterns (leveraging tooling like the ["KitOps init container"] (https://github.com/kitops-ml/kitops)) to pull, cryptographically verify signatures, and unpack specified artifact layers into a shared volume before the main inference or serving runtime boots.
 * **Runtime Integration:** Standardized patterns for the seamless deployment of artifacts into serving platforms (e.g., ["KServe"] (https://kserve.github.io/website), [vLLM](https://github.com/vllm-project/vllm), and registration into model registries (e.g., Kubeflow Model Registry).
 * **Enterprise Requirements:** Ensuring the promotion spec accounts for air-gapped, regulated, and hybrid-cloud infrastructure constraints.
 
@@ -93,8 +93,8 @@ This ensures the solution is practical and broadly applicable.
 
 #### 7. Ecosystem Collaboration
 This initiative will be developed in collaboration with:
-* ModelPack and related OCI-aligned initiatives
-* CNCF projects
+* Related OCI-aligned initiatives
+* CNCF projects, like ModelPack
 * LF AI & Data communities
 * OpenSSF and supply chain security initiatives
 * Kubernetes AI and platform engineering communities
@@ -111,5 +111,5 @@ The intent is to align efforts across communities rather than define a solution 
 * **A Published Interoperability Spec:** A validated specification that existing tools can adopt to ensure cloud native readiness.
 * **Cross-Tool Portability:** Demonstrated ability for an artifact built by one tool to be verified and deployed by a different runtime.
 * **The "10-Minute Flow":** A successful reference implementation demonstrating the journey from a local idea to a running inference service on Kubernetes.
-* **Ecosystem Alignment:** Broad adoption of the "Compliance Profile" metadata across CNCF and LF AI & Data communities.
+* ** (Stetch Goal) Ecosystem Alignment:** Broad adoption of the "Compliance Profile" metadata across CNCF and LF AI & Data communities.
 
