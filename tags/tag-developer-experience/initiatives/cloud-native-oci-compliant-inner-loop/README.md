@@ -24,7 +24,7 @@ Focus on inner loop development which incorporates everything an AI engineer doe
 ## Project Scope & Intent - Cloud Native AI Developer Workflow Interoperability
 
 ### Overview and Intent
-AI developers today frequently work in fragmented local environments that are disconnected from cloud native operational workflows. While emerging standards like ModelPack and OCI-aligned AI artifact initiatives provide the “packaging” foundations, there is no unified interoperability specification that defines how these artifacts must be structured, secured, and described to move seamlessly from a developers laptop into a Kubernetes-based production system.
+AI developers today frequently work in fragmented local environments that are disconnected from cloud native operational workflows. While emerging standards like ModelPack and OCI-aligned AI artifact initiatives provide the “packaging” foundations, there is no unified interoperability specification that defines how these artifacts must be structured, secured, and described to move seamlessly from a developers environments into a Kubernetes-based production system.
 
 The goal of this initiative is to define a minimal Interoperability Specification (a “Compliance Profile”) for AI Artifacts. Rather than rebuilding the OCI layer structure, this initiative defines the **Standardized Metadata Contract** that must exist on top of packaging formats like **ModelPack**. This ensures that any <a href="https://github.com/cncf/foundation/blob/main/style-guide.md#1-cloud-native-and-open-source" target="_blank">“Cloud Native Ready”</a> AI artifact contains the mandatory identity, security, and runtime information required that enables a cohesive developer inner loop and GitOps-driven delivery.
 
@@ -36,7 +36,7 @@ This initiative defines the **Interoperability Layer** for AI artifacts, bridgin
 Within this scope, the initiative will explore and document:
 * **An Interoperability Profile Spec:** A set of mandatory annotation conventions and metadata requirements (the “Manifest Contract”).
 * **Compliance & Trust Requirements:** Standards for signing, SBOMs, and openness classification.
-* **Workflow Reference Patterns:** Validating the spec through “Laptop-to-Cluster” GitOps and runtime integration.
+* **Workflow Reference Patterns:** Validating the spec through “Local Environment-to-Cluster” GitOps and runtime integration.
 
 The initiative is intended to encourage ecosystem alignment and workflow interoperability rather than define new standalone packaging specifications or runtime standards.
 
@@ -70,7 +70,7 @@ Define the mandatory “Trust Profile” for AI artifacts to ensure they are ver
 The goal is to ensure artifacts are trusted and verifiable before entering CI/CD pipelines.
 
 #### 4. Developer Inner-Loop & Workflow Interoperability
-Define the operational patterns that allow the specification to be utilized in a portable "laptop-to-cluster" journey.
+Define the operational patterns that allow the specification to be utilized in a portable "local environment-to-cluster" journey.
 * **Workflow Consistency:** Documenting how existing OCI-aligned tools (ModelPack, ModelKit, ModelCar) can produce artifacts that adhere to this initiative's compliance spec.
 * **Local Execution Patterns:** Reference patterns for running specified artifacts in local, container-based environments to ensure high-fidelity parity with remote clusters.
 * **Rapid Iteration Flow:** Validation of the spec through a reference implementation targeting a sub-10-minute "idea-to-inference" experience.
