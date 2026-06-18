@@ -5,6 +5,15 @@ This document is a Kubeflow security self-assessment.
 Authors:
 
 - Kubeflow Community
+- Alex (@droctothorpe)
+- Andrey Velichkevich (@andreyvelich)
+- Francisco Javier Arceo (@franciscojavierarceo)
+- Humair Khan (@HumairAK)
+- Julius von Kohout (@juliusvonkohout)
+- Manabu McCloskey (@nabuskey)
+- Matteo Mortari (@tarilabs)
+- Mathew Wicks (@thesuperzapper)
+- Vara Bonthu (@vara-bonthu)
 
 # Table of Contents
 
