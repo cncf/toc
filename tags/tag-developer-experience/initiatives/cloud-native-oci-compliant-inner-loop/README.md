@@ -16,7 +16,7 @@ Focus on inner loop development which incorporates everything an AI engineer doe
 
 ## Deliverable(s) or exit criteria
 
-* An technical POC showing <10 min “idea-to-inference” path for cloud native agent development on a developer laptop.
+* An technical POC showing <10 min “idea-to-inference” path for cloud native agent development on a developer environment.
 * Clearly documented standards for OCI artefact standardization across runtimes and registries.
 * Specification / procedure to achieve MOF Class III compliant model distributions via any OCI registry.
 * Standardised process for leveraging model signing with artefacts-level provenance to support a verified end-to-end CI/CD reference pipeline including outer loop for AI engineering.
