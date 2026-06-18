@@ -6,7 +6,7 @@ Integrating the AI developer inner loop into an end-to-end CI/CD process leverag
 
 ## Initiative description
 
-Focus on the developer inner loop, everything an AI engineer does on a laptop/desktop before code or models ever reach CI/CD in a cloud native environment:
+Focus on inner loop development which incorporates everything an AI engineer does on a local environment before code or models ever reach CI/CD in a cloud native environment:
 
 * Local container workspaces: Reference inner loop workflow using desktop tooling such as Podman Desktop / Podman AI Lab for root-less, GPU-aware experimentation, including template images for PyTorch/LLM stacks and volume-mounted datasets. ​
 * Unified model build & run CLI: Hardening inference on developer machine and agentic frameworks to leverage container-based tooling so engineers can easily spin-up inference, RAG and multi-agent services locally with one command.
