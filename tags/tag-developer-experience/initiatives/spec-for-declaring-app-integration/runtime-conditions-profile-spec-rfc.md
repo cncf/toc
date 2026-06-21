@@ -2,141 +2,104 @@
 
 ## Status
 
-**Draft — Request for Comments**
+**Draft - Request for Comments**
 
-This document is an early working draft of the Runtime Conditions Profile specification.
+This document defines the core Runtime Conditions Profile format.
 
-It is intentionally not marked with a version and is being published solely to solicit early feedback from the community.
+First-party extension drafts define common integration vocabulary separately:
 
-This draft is expected to evolve significantly based on review and discussion before a stable version is tagged.
-
-## Request for Feedback
-
-The authors are particularly interested in feedback on:
-
-- Core Condition model structure
-- Extension model design
-- Validation behavior and layering
-- Namespacing approach
-- Overall scope boundaries
-
-Early architectural feedback is strongly encouraged.
+- `https://runtimeconditions.io/extensions/common-integrations:v1alpha1`
+- `https://runtimeconditions.io/extensions/env-configuration:v1alpha1`
 
 ---
 
 # 1. Purpose
 
-The Runtime Conditions Profile provides a **portable declaration of required external runtime capabilities** needed for an application workload to function successfully.
+A Runtime Conditions Profile declares the external runtime integrations required by one application workload.
 
-These capabilities may include:
-
-- HTTP services
-- Relational databases
-- Caches
-- Vendor-defined integration services
-
-The Runtime Conditions Profile:
-
-- **SHOULD be generated automatically when possible**
-- **MAY be authored manually when automated generation is not feasible**
-- **MUST remain valid regardless of generation method**
-- **MUST remain implementation-neutral**
-- **MUST remain infrastructure-agnostic**
-
-The profile defines **requirements**, not implementations.
+The profile describes requirements. It does not describe implementations, provisioning actions, deployment topology, credentials, secret values, or concrete target-environment values.
 
 ---
 
 # 2. Scope
 
-This specification defines a portable format for describing the external capabilities that an application workload depends on in order to function properly. These dependencies represent integrations with services that exist outside the workload itself, such as HTTP APIs, databases, caches, and message systems.
+This specification defines:
 
-The Runtime Conditions Profile models each dependency as an independent  requirement that describes the expected interface characteristics needed to interact with an external system. The specification focuses on describing what capabilities must be present, without describing how those capabilities are implemented or fulfilled.
+- The Runtime Conditions Profile document shape
+- Workload identity fields
+- Profile metadata labels
+- The core Condition object shape
+- Extension declaration and resolution rules
+- Extension definition structure
+- Validation layers
+- Conformance requirements
 
-This specification is limited to externally satisfied integrations and does not attempt to describe internal execution behavior, infrastructure configuration, deployment topology, or platform-specific provisioning. It also does not require or depend on any upstream observation system, although such systems may be used to generate Runtime Conditions Profiles.
+This specification does not define concrete Condition vocabulary. Condition kinds, interface types, field values, and type-specific fields are defined by extensions.
 
----
+Concerns specifically beyond the scope of this specification include:
 
-# 3. Core Design Principles
-
-## 3.1 Declarative
-
-Profiles MUST be declarative documents describing what is required, not how to fulfill it.
-
-A Runtime Conditions Profile MUST be associated with a uniquely identifiable
-workload and SHOULD correspond to a specific version of that workload. The profile version SHOULD align with the workload version.
-
-A Runtime Conditions Profile MUST describe exactly one workload identity
-and MUST NOT represent multiple unrelated workloads within a single profile.
-
-## 3.2 Portable
-
-Profiles SHOULD be portable across environments and platforms when expressed using only core specification vocabulary.
-
-Profiles that use extension-defined vocabulary MAY introduce platform-specific or vendor-specific semantics. Such profiles remain portable to the extent that the required extensions are available.
-
-## 3.3 Implementation-Neutral
-
-Profiles MUST describe required capabilities without prescribing how those capabilities are implemented or provisioned.
-
-Core specification vocabulary MUST remain vendor-neutral and MUST NOT encode assumptions about specific infrastructure implementations.
-
-Vendor-specific or platform-specific identifiers MAY be used only when introduced through declared extensions.
-
-Profiles MUST NOT encode:
-
-- Infrastructure configuration details
+- Infrastructure provisioning behavior
+- Platform-specific resource models
 - Deployment topology
-- Resource sizing
-- Geographic placement
-- Provider-specific provisioning instructions
-
-## 3.4 Extensible
-
-Profiles MAY include extension-defined vocabulary to describe capabilities beyond those defined in the core specification.
-
-Profiles that use extension-defined vocabulary MUST identify the extensions on which that vocabulary depends.
-
-Use of extensions MUST NOT alter or redefine the meaning of core specification vocabulary.
-
-## 3.5 Deterministically Validatable
-
-Profiles MUST adhere to the structural and semantic validation rules defined by the core specification.
-
-Profiles that reference extension-defined vocabulary MUST also adhere to the validation rules defined by those extensions.
+- Runtime configuration values
+- Secret material
+- Internal workload behavior
+- Observability or code-analysis mechanisms used to generate a profile
 
 ---
 
-# 4. Runtime Conditions Profile Structure
+# 3. Profile Document
 
-A Runtime Conditions Profile defines a collection of independent runtime Conditions.
+Profiles MAY be serialized as YAML or JSON.
 
-Examples in this specification are expressed using YAML for readability. The data model defined by this specification is serialization-neutral and MAY be represented using YAML, JSON, or other compatible formats.
+Serialized profiles are invalid if:
 
-## Top-Level Structure
+- A mapping contains duplicate keys
+- A required field is missing
+- A required field is present with `null`
+- A field has a type other than the type defined by this specification
+
+Optional fields SHOULD be omitted when unused.
+
+## 3.1 Complete Profile Example
 
 ```yaml
-## Top-Level Structure
-
 apiVersion: runtimeconditions.io/v1alpha1
 kind: RuntimeConditionsProfile
 
 metadata:
-  name: example-profile
+  name: checkout-service
+  labels:
+    owner.example.com/team: payments
+    lifecycle.example.com/stage: production
 
 workload:
-  uri: https://github.com/example-org/example-service
+  uri: https://github.com/example-org/checkout-service
   version: v1.2.3
 
 extensions:
-  - core
-  - aws.runtime/v1alpha1
+  - https://runtimeconditions.io/extensions/common-integrations:v1alpha1
+  - https://runtimeconditions.io/extensions/env-configuration:v1alpha1
 
 conditions:
   - name: primary-db
     kind: datastore
     interface:
       type: relational
+      engine: postgres
+    configuration:
+      env:
+        - property: hostname
+          name: POSTGRES_HOST
+        - property: port
+          name: POSTGRES_PORT
+        - property: database
+          name: POSTGRES_DATABASE
+        - property: username
+          name: POSTGRES_USERNAME
+        - property: password
+          name: POSTGRES_PASSWORD
+          sensitive: true
 
   - name: payments-api
     kind: api
@@ -145,535 +108,452 @@ conditions:
       operations:
         - method: POST
           path: /charge
+    configuration:
+      env:
+        - property: baseUrl
+          name: PAYMENTS_API_URL
+        - property: token
+          name: PAYMENTS_API_TOKEN
+          sensitive: true
 ```
 
----
+## 3.2 Top-Level Fields
 
-# 5. Condition Model
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `apiVersion` | string | YES | Runtime Conditions Profile API version |
+| `kind` | string | YES | Document kind |
+| `metadata` | object | YES | Profile metadata |
+| `workload` | object | YES | Workload identity |
+| `extensions` | array | YES | Extension identifiers required by the profile |
+| `conditions` | array | YES | Runtime Conditions declared by the workload |
 
-Each Condition represents an **independent required runtime dependency**.
+`apiVersion` MUST be:
 
-## Condition Fields
+```text
+runtimeconditions.io/v1alpha1
+```
 
+`kind` MUST be:
 
-| Field       | Required | Description                                       |
-| ----------- | -------- | ------------------------------------------------- |
-| `kind`      | YES      | Required capability classification                |
-| `interface` | YES      | Interface definition required for matching        |
-| `name`      | NO       | Unique identifier within profile                  |
-| `optional`  | NO       | Whether the Condition is optional. Defaults to `false` |
+```text
+RuntimeConditionsProfile
+```
 
+`extensions` MAY be empty if and only if the profile uses no extension-defined vocabulary.
 
-## Optional Conditions
+`conditions` MAY be empty if and only if the profile is intended to explicitly declare that the workload has no external runtime integration requirements.
 
-The `optional` field is a boolean that indicates whether a Condition is optional.
-
-When `optional` is omitted, it MUST be understood as `false`, meaning the Condition is required. It MAY be defined explicitly, but only setting `optional: true` changes downstream behavior.
-
-The logic for determining what makes a Condition optional is beyond the scope of this specification. It is the responsibility of both the developer and the platform team to decide how optional integration Conditions are handled.
-
----
-
-# 6. Core Condition Kinds
-
-The core specification defines a set of **capability classes**, referred to as **Kinds**, that represent common categories of externally satisfied runtime dependencies.
-
-Each Condition MUST declare exactly one `kind`.
-
-Kinds represent **broad capability families**, not specific technologies.
-
-The following core kinds are defined:
-
-- `api` — External service integrations such as APIs
-- `datastore` — Persistent data storage systems
-- `cache` — Volatile data storage optimized for fast access
-
-These kinds are intentionally broad so that multiple interaction models or implementation families can be expressed within the same capability class through the `interface` block.
-
----
-
-# 7. Interface Model
-
-Each Condition MUST define an `interface` block describing how the workload interacts with the declared capability.
-
-The `interface` block defines:
-
-- The **interaction model**
-- The **matching characteristics**
-- Any **additional details required for fulfillment matching**
-
-## Interface Structure
+## 3.3 Metadata
 
 ```yaml
-interface:
-  type: <interface-type>
+metadata:
+  name: checkout-service
+  labels:
+    owner.example.com/team: payments
+    lifecycle.example.com/stage: production
 ```
 
-The `type` field identifies the interaction model associated with the declared `kind`.
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `name` | string | YES | Human-readable profile name |
+| `labels` | object | NO | Machine-readable profile and workload classification labels |
 
-Additional fields MAY be defined within `interface` depending on the declared `kind` and `interface.type`.
+`metadata.name` MUST be a non-empty string.
 
-Interface definitions are validated based on:
+`metadata.labels`, when present, MUST be a string-to-string mapping.
 
-- The declared `kind`
-- The declared `interface.type`
-- Core validation rules
-- Extension validation rules, when applicable
+Label keys MUST be non-empty strings.
 
----
+Label values MUST be strings.
 
-# 8. Core Interface Types
+Label keys SHOULD be namespaced:
 
-This section describes the **structure and purpose** of core interface types. The set of currently supported interface types is defined in the validation section.
+```text
+<namespace>/<name>
+```
 
----
+Examples:
 
-## 8.1 API Interface
+- `compliance.example.com/hipaa`
+- `owner.example.com/team`
+- `lifecycle.example.com/stage`
+- `risk.example.com/criticality`
 
-API interfaces describe callable external services such as APIs.
+The `runtimeconditions.io/` label namespace is reserved for the Runtime Conditions core specification and first-party Runtime Conditions extensions.
 
-API interfaces typically define:
+Extensions MAY document label key conventions. Label keys are metadata. They are not Condition vocabulary and do not participate in extension resolution unless a future version of this specification defines otherwise.
 
-- Request methods
-- Request paths
-- Optional request schemas
-- Optional response schemas
-- An optional reference to an external API specification document
+Labels MAY be used for selection, filtering, policy, ownership, reporting, and lifecycle workflows.
 
-Example:
+Labels MUST NOT define runtime dependency requirements or change the meaning of Conditions.
+
+Labels MUST NOT contain secrets, protected data, personal data, customer data, or concrete target-environment values.
+
+## 3.4 Workload
 
 ```yaml
-kind: api
-interface:
-  type: http
-  spec:
-    format: openapi
-    uri: https://github.com/example-org/example-service/openapi.yaml
-    version: ^1.2.0
-  operations:
-    - method: POST
-      path: /charge
-      requestBodySchema:
-        amount: integer
-        currency: string
-      responseSchema:
-        id: string
-        status: string
+workload:
+  uri: https://github.com/example-org/checkout-service
+  version: v1.2.3
 ```
 
-### API Interface Fields
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `uri` | string | YES | Stable workload identifier |
+| `version` | string | NO | Workload version described by the profile |
 
+`workload.uri` MUST be a non-empty string.
 
-| Field        | Required | Description                                         |
-| ------------ | -------- | --------------------------------------------------- |
-| `type`       | YES      | Identifies the API interaction model                |
-| `spec`       | NO       | Reference to an external API specification document |
-| `operations` | NO       | Explicit list of operations the workload depends on |
+`workload.version`, when present, MUST be a non-empty string.
 
+A Runtime Conditions Profile MUST describe exactly one workload identity.
 
-Allowed values for `interface.type` are defined in Section 9.2.
+---
 
-At least one of `spec` or `operations` MUST be present. Both MAY be declared together. When both are present and disagree, the `operations` declaration takes precedence over `spec`.
+# 4. Condition Model
 
-### API Specification Fields
+Each Condition represents one external runtime dependency requirement.
 
-The `spec` block references an external API specification document describing the API the workload integrates with.
+## 4.1 Condition Fields
+
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `name` | string | NO | Unique Condition name within the profile |
+| `optional` | boolean | NO | Whether the Condition is optional. Defaults to `false` |
+| `kind` | string | YES | Extension-defined integration classification |
+| `interface` | object | YES | Workload-facing interface requirement |
+
+Condition shape:
 
 ```yaml
-spec:
-  format: openapi
-  uri: https://github.com/example-org/example-service/openapi.yaml
-  version: ^1.2.0
+conditions:
+  - name: primary-db
+    optional: false
+    kind: datastore
+    interface:
+      type: relational
 ```
 
+`conditions[].name`, when present, MUST be a non-empty string and MUST be unique within the profile.
 
-| Field     | Required | Description                                            |
-| --------- | -------- | ------------------------------------------------------ |
-| `format`  | YES      | API specification format. Only `openapi` is currently supported  |
-| `uri`     | YES      | Location of the external specification document        |
-| `version` | NO       | Required version of the referenced document, as an exact version or version constraint |
+`conditions[].optional`, when omitted, MUST be interpreted as `false`.
 
+`conditions[].kind` MUST be a non-empty string and MUST be defined by exactly one resolved extension.
 
-Only the OpenAPI specification is currently supported. Other API specification formats exist and MAY be supported in future versions.
+`conditions[].interface` MUST be an object.
 
-### Version Constraint Syntax
+Extensions MAY define additional Condition fields.
 
-`interface.spec.version` declares which version of the referenced specification document the workload requires. It accepts either an exact version or a version constraint expression, using the operators commonly found in dependency manifests such as `package.json`.
+## 4.2 Interface Fields
 
-Versions MUST follow Semantic Versioning, expressed as `MAJOR.MINOR.PATCH`.
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `type` | string | YES | Extension-defined interface type for the declared `kind` |
 
-The following constraint operators are supported:
+`conditions[].interface.type` MUST be a non-empty string and MUST be defined by exactly one resolved extension for the declared `kind`.
 
+Extensions MAY define additional `interface` fields.
 
-| Syntax     | Name                | Meaning                                          |
-| ---------- | ------------------- | ------------------------------------------------ |
-| `1.2.3`    | Exact               | Matches only `1.2.3`                             |
-| `=1.2.3`   | Exact               | Equivalent to `1.2.3`                            |
-| `>1.2.3`   | Greater than        | Matches any version higher than `1.2.3`          |
-| `>=1.2.3`  | Minimum             | Matches `1.2.3` and any higher version           |
-| `<1.2.3`   | Less than           | Matches any version lower than `1.2.3`           |
-| `<=1.2.3`  | Maximum             | Matches `1.2.3` and any lower version            |
-| `^1.2.3`   | Compatible (caret)  | Matches `>=1.2.3` and `<2.0.0` (no major change) |
-| `~1.2.3`   | Approximate (tilde) | Matches `>=1.2.3` and `<1.3.0` (no minor change) |
+---
 
+# 5. Extensions
 
-When `version` is omitted, no version constraint is applied and any version of the referenced document is acceptable.
+Profiles that use extension-defined vocabulary MUST declare the required extensions.
 
-Validation rules:
+First-party extensions are extensions. They are not core vocabulary and are not implicit.
 
-- If `version` is present, it MUST be a valid Semantic Versioning version or a supported constraint expression
-- Constraint operators MUST be drawn from the supported set above
+Implementations MAY bundle support for first-party extensions, but generated profiles MUST still declare the vocabulary they use.
 
-### Operation Fields
+## 5.1 Extension Identifiers
 
+Extension identifiers MUST have this form:
 
-| Field               | Required | Description         |
-| ------------------- | -------- | ------------------- |
-| `method`            | YES      | HTTP method         |
-| `path`              | YES      | Request path        |
-| `requestBodySchema` | NO       | Minimum required request body fields and their types |
-| `responseSchema`    | NO       | Minimum required response fields and their types     |
-
-
-### Schema Fields
-
-`requestBodySchema` and `responseSchema` describe the data structures an operation depends on. Each is expressed as a map whose keys are field names and whose values declare the JSON Schema type of each field.
-
-The declared fields represent the **minimum set of fields that MUST be present** in the external API. The external service MAY expose additional fields beyond those declared; only the declared fields participate in matching.
-
-Because the structure is expressed using field names and JSON Schema types rather than a specific API specification format, a Condition can be matched programmatically against any specification the external service publishes — including, but not limited to, the OpenAPI document referenced through `interface.spec`.
-
-A type declaration is one of:
-
-- A JSON Schema type keyword: `string`, `number`, `integer`, `boolean`, or `null`
-- A nested object, declared by mapping field names to further type declarations
-- An array, declared as a single-element list containing the element type declaration
-
-Example:
-
-```yaml
-operations:
-  - method: POST
-    path: /charge
-    requestBodySchema:
-      amount: integer
-      currency: string
-      customer:
-        id: string
-        email: string
-      lineItems:
-        - sku: string
-          quantity: integer
-    responseSchema:
-      id: string
-      status: string
-      paid: boolean
+```text
+<uri>:<version>
 ```
 
-### Validation Expectations
+The version delimiter is the final colon in the identifier. The extension URI is everything before that delimiter. The version is everything after that delimiter.
 
-- At least one of `spec` or `operations` MUST be present
-- If `operations` is present, it MUST be non-empty
-- `method` MUST be a valid HTTP method
-- `path` MUST be a non-empty string
-- If present, `requestBodySchema` and `responseSchema` MUST be maps whose fields declare supported JSON Schema types
-- Declared schema fields represent the minimum required set of fields and MAY be a subset of the fields exposed by the external API
-- If `spec` is present, `spec.format` and `spec.uri` MUST be present
-- `spec.format` MUST be `openapi`
-- If `spec.version` is present, it MUST be a valid semantic version or supported version constraint expression
+The extension URI MUST be an absolute HTTP or HTTPS URI.
 
----
+The version MUST be a non-empty string.
 
-## 8.2 Datastore Interface
+This specification does not define the syntax or semantics of extension versions. Version interpretation is defined by the extension author and the Adapter.
 
-Datastore interfaces describe persistent storage systems.
+Examples:
 
-Datastore interfaces identify the storage model used by the workload and MAY include additional matching details about the datastore engine.
+- `https://runtimeconditions.io/extensions/common-integrations:v1alpha1`
+- `https://runtimeconditions.io/extensions/env-configuration:v1alpha1`
+- `https://extensions.example.com/runtimeconditions/aws-object-store:2026.06.0`
 
-Example:
+Extension identifiers are case-sensitive.
 
-```yaml
-kind: datastore
-interface:
-  type: relational
-  engine: postgres
-```
-
-### Datastore Interface Fields
-
-
-| Field    | Required | Description               |
-| -------- | -------- | ------------------------- |
-| `type`   | YES      | Datastore interface type  |
-| `engine` | NO       | Specific datastore engine |
-
-
-If `engine` is provided, it MUST be valid for the declared datastore type.
-
-Allowed values for `interface.type` and `engine` are defined in Section 9.2.
-
----
-
-## 8.3 Cache Interface
-
-Cache interfaces describe volatile key/value storage systems.
-
-Example:
-
-```yaml
-kind: cache
-interface:
-  type: key_value
-  engine: redis
-```
-
-### Cache Interface Fields
-
-
-| Field    | Required | Description             |
-| -------- | -------- | ----------------------- |
-| `type`   | YES      | Cache interface type    |
-| `engine` | NO       | Specific caching engine |
-
-
-If `engine` is provided, it MUST be valid for the declared cache type.
-
-Allowed values for `interface.type` and `engine` are defined in Section 9.2.
-
----
-
-# 9. Core Validation Rules
-
-Validation ensures that Conditions are structurally correct and semantically consistent.
-
-Validation occurs in multiple phases.
-
----
-
-## 9.1 Structural Validation
-
-A Condition is invalid if:
-
-- `kind` is missing
-- `interface` is missing
-- `interface.type` is missing
-
-If a `name` field is provided, it MUST be unique within the profile.
-
----
-
-## 9.2 Kind-to-Interface Type Validation
-
-Each `kind` supports a defined set of valid `interface.type` values.
-
-### API
-
-Allowed interface types:
-
-- `http`
-
-Additional validation rules:
-
-- At least one of `spec` or `operations` MUST be present
-- If `operations` is present, it MUST NOT be empty
-- If `spec` is present, `spec.format` and `spec.uri` MUST be present
-- `spec.format` MUST be `openapi`
-- If `spec.version` is present, it MUST be a valid semantic version or supported version constraint expression
-
-Allowed HTTP Methods:
-
-- GET
-- HEAD
-- POST
-- PUT
-- PATCH
-- DELETE
-- OPTIONS
-- TRACE
-
----
-
-### Datastore
-
-Allowed interface types:
-
-- `relational`
-- `document`
-
-Allowed `engine` values for `type: relational`:
-
-- `postgres`
-- `mysql`
-- `mariadb`
-- `sqlserver`
-- `oracle`
-- `sqlite`
-
-Allowed `engine` values for `type: document`:
-
-- `mongodb`
-- `couchbase`
-
-Additional validation rules:
-
-- `engine` is OPTIONAL
-- If `engine` is present, it MUST be valid for the declared datastore type
-
----
-
-### Cache
-
-Allowed interface types:
-
-- `key_value`
-
-Allowed `engine` values for `type: key_value`:
-
-- `redis`
-- `memcached`
-
-Additional validation rules:
-
-- `engine` is OPTIONAL
-- If `engine` is present, it MUST be valid for the declared cache type
-
----
-
-## 9.3 Invalid Condition Examples
-
-Invalid datastore engine for relational type:
-
-```yaml
-kind: datastore
-interface:
-  type: relational
-  engine: mongodb
-```
-
-Invalid interface type for cache:
-
-```yaml
-kind: cache
-interface:
-  type: relational
-```
-
-Invalid api definition:
-
-```yaml
-kind: api
-interface:
-  type: http
-  operations: []
-```
-
----
-
-# 10. Extension Model
-
-The Runtime Conditions Profile supports extension-defined vocabulary.
-
-Extensions allow:
-
-- New kinds
-- New interface types
-- New interface fields
-- Additional validation rules
-- Additional allowed values for existing fields where semantically compatible
-
-Extensions MUST NOT redefine core semantics incompatibly.
-
----
-
-# 11. Extension Declaration
-
-Profiles that reference extension-defined vocabulary MUST identify those extensions.
+## 5.2 Extension Declarations
 
 ```yaml
 extensions:
-  - core
-  - aws.runtime/v1alpha1
-  - redis.compat/v1
+  - https://runtimeconditions.io/extensions/common-integrations:v1alpha1
+  - https://runtimeconditions.io/extensions/env-configuration:v1alpha1
 ```
+
+The `extensions` array MUST NOT contain duplicate extension identifiers.
+
+Each `extensions` item MUST be a valid extension identifier.
+
+Declared extensions MAY depend on other extensions.
+
+Declared extensions and transitive dependencies form the resolved extension set.
+
+Dependency resolution MUST be deterministic and MUST NOT depend on declaration order.
+
+A profile is invalid if:
+
+- A declared extension cannot be resolved
+- A transitive dependency cannot be resolved
+- Extension dependency resolution contains a cycle
+- The resolved extension set contains a vocabulary definition conflict
 
 ---
 
-# 12. Extension Definition Structure
+# 6. Extension Definitions
 
 Extensions are defined as independent artifacts.
 
+## 6.1 Extension Definition Fields
+
 ```yaml
 apiVersion: runtimeconditions.io/v1alpha1
-kind: ValidationExtensionDefinition
+kind: RuntimeConditionsExtensionDefinition
 
 metadata:
-  name: aws.runtime
+  uri: https://runtimeconditions.io/extensions/common-integrations
   version: v1alpha1
 
 spec:
+  kinds: []
+```
 
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `apiVersion` | string | YES | Runtime Conditions API version |
+| `kind` | string | YES | MUST be `RuntimeConditionsExtensionDefinition` |
+| `metadata` | object | YES | Extension identity |
+| `spec` | object | YES | Extension vocabulary, dependencies, and validation schemas |
+
+`metadata.uri` MUST identify the extension URI and MUST be an absolute HTTP or HTTPS URI.
+
+`metadata.version` MUST identify the extension version.
+
+`<metadata.uri>:<metadata.version>` MUST be a valid extension identifier.
+
+## 6.2 Extension Spec Fields
+
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `dependencies` | array | NO | Exact extension identifiers required by this extension |
+| `kinds` | array | NO | Condition kinds defined by this extension |
+| `interfaceTypes` | array | NO | Interface types defined by this extension |
+| `conditionFields` | array | NO | Condition-level fields defined by this extension |
+| `interfaceFields` | array | NO | Interface-level fields defined by this extension |
+| `fieldValues` | array | NO | Field values defined by this extension |
+| `schemas` | array | NO | JSON Schema validation schemas defined by this extension |
+
+An extension MUST define at least one vocabulary item or validation schema.
+
+Each `dependencies` item MUST be an exact extension identifier.
+
+## 6.3 Vocabulary Definition Fields
+
+Each `kinds` entry MUST include:
+
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `name` | string | YES | Condition kind defined by the extension |
+
+Each `interfaceTypes` entry MUST include:
+
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `name` | string | YES | Interface type defined by the extension |
+| `targetKind` | string | YES | Condition kind for which the interface type is valid |
+
+Each `conditionFields` entry MUST include:
+
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `name` | string | YES | Condition-level field defined by the extension |
+| `appliesToKinds` | array | NO | Kinds to which the field applies |
+| `appliesToInterfaceTypes` | array | NO | Interface types to which the field applies |
+| `appliesToAllKinds` | boolean | NO | Whether the field may apply to all Conditions. Defaults to `false` |
+
+Each `conditionFields` entry MUST declare either `appliesToKinds` or `appliesToAllKinds: true`.
+
+Each `interfaceFields` entry MUST include:
+
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `name` | string | YES | Interface-level field defined by the extension |
+| `targetKind` | string | YES | Condition kind for which the field is valid |
+| `targetType` | string | YES | Interface type for which the field is valid |
+
+Each `fieldValues` entry MUST include:
+
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `field` | string | YES | Field path whose values are being defined |
+| `targetKind` | string | YES | Condition kind scope |
+| `targetType` | string | NO | Interface type scope |
+| `values` | array | YES | Non-empty list of defined values |
+
+Each `fieldValues.values` entry MUST be unique within that `fieldValues` entry.
+
+Each `schemas` entry MUST include:
+
+| Field | Type | Required | Description |
+| ----- | ---- | -------- | ----------- |
+| `id` | string | YES | Schema identifier unique within the extension |
+| `description` | string | YES | Human-readable summary |
+| `appliesToKind` | string | NO | Condition kind scope |
+| `appliesToInterfaceType` | string | NO | Interface type scope |
+| `schema` | object | YES | JSON Schema 2020-12 schema |
+
+Each `schemas[].schema` object MUST be a valid JSON Schema using the JSON Schema 2020-12 dialect.
+
+Each extension schema validates a Condition object after the profile has been converted to the JSON data model.
+
+A schema applies to a Condition when all declared scope fields match the Condition. Omitted scope fields do not restrict applicability.
+
+## 6.4 Extension Definition Example
+
+```yaml
+apiVersion: runtimeconditions.io/v1alpha1
+kind: RuntimeConditionsExtensionDefinition
+
+metadata:
+  uri: https://aws.example.com/runtimeconditions/object-store
+  version: v1alpha1
+
+spec:
   kinds:
     - name: aws.object_store
 
   interfaceTypes:
-    - name: object_store
+    - name: aws.s3
+      targetKind: aws.object_store
 
-  typeExtensions:
-    - targetKind: cache
-      targetType: key_value
-      addEngines:
-        - valkey
+  interfaceFields:
+    - name: bucketClass
+      targetKind: aws.object_store
+      targetType: aws.s3
 
-  validationRules:
-    - id: cache-valkey
-      appliesToKind: cache
-      rule: engine in ["redis","memcached","valkey"]
+  fieldValues:
+    - field: interface.bucketClass
+      targetKind: aws.object_store
+      targetType: aws.s3
+      values:
+        - standard
+        - archive
+
+  schemas:
+    - id: aws-s3-interface
+      appliesToKind: aws.object_store
+      appliesToInterfaceType: aws.s3
+      description: Validates the aws.s3 interface shape.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        required:
+          - kind
+          - interface
+        properties:
+          kind:
+            const: aws.object_store
+          interface:
+            type: object
+            required:
+              - type
+            properties:
+              type:
+                const: aws.s3
+              bucketClass:
+                enum:
+                  - standard
+                  - archive
+            additionalProperties: true
 ```
 
 ---
 
-# 13. Extension Capabilities
+# 7. Extension Vocabulary Rules
 
-Extensions MAY:
+Extensions MAY define:
 
+- New Condition kinds
+- New interface types
+- New Condition fields
+- New interface fields
+- New field values
+- JSON Schema validation schemas
 
-| Action             | Description                               |
-| ------------------ | ----------------------------------------- |
-| Add Kind           | Introduce new namespaced kind             |
-| Add Interface Type | Define new interface types                |
-| Add Fields         | Extend interface schema                   |
-| Add Rules          | Add semantic validation                   |
-| Add Allowed Values | Extend allowed values for existing fields |
+Extensions MUST NOT:
 
+- Redefine core fields
+- Change core field meaning
+- Define additional top-level profile fields
+- Define additional fields within `metadata` or `workload`
+- Encode secrets or concrete target-environment values
 
----
+Core-reserved top-level fields:
 
-# 14. Extension Compatibility Rules
+- `apiVersion`
+- `kind`
+- `metadata`
+- `workload`
+- `extensions`
+- `conditions`
 
-Extensions MUST:
+Core-reserved Condition fields:
 
-- Use namespaced identifiers where they introduce new vocabulary
-- Preserve core semantics
-- Not redefine core kinds incompatibly
-- Not invalidate core-valid documents
+- `name`
+- `optional`
+- `kind`
+- `interface`
 
-Extensions MAY add new allowed values for existing fields only where those values are semantically compatible with the core meaning of the declared `kind` and `interface.type`.
+Core-reserved interface field:
 
----
+- `type`
 
-# 15. Namespacing Requirements
+## 7.1 Vocabulary Definition Scope
 
-Extension-defined vocabulary MUST use namespaced identifiers to avoid collisions with core or other extension-defined elements.
+Vocabulary definition scope is determined by:
+
+- Vocabulary category
+- Field path, for field values
+- Target Condition `kind`, when applicable
+- Target `interface.type`, when applicable
+
+A profile is invalid if the resolved extension set contains more than one definition for the same vocabulary item in the same scope.
+
+Two definitions conflict even when they are identical.
+
+An extension that uses vocabulary defined by another extension MUST declare a dependency on that extension. It MUST NOT redefine that vocabulary in the same definition scope.
+
+An extension MAY define vocabulary with overlapping purpose when it uses a distinct name or definition scope.
+
+## 7.2 Namespacing
+
+Extension-defined vocabulary SHOULD use namespaced identifiers when the vocabulary is vendor-specific, platform-specific, experimental, or likely to conflict.
 
 Namespacing applies to:
 
-- Extension-defined `kind` values
-- Extension-defined `interface.type` values
-- Extension-defined field names (when applicable)
+- `kind` values
+- `interface.type` values
+- Condition field names
+- Interface field names
+- Field values that are not intended to be shared vocabulary
 
-Namespacing typically uses a prefix that identifies the originating organization or vendor.
-
-Examples of valid namespaced identifiers:
+Examples:
 
 ```yaml
 kind: aws.object_store
@@ -687,40 +567,196 @@ interface:
   type: acme.soap
 ```
 
-Values defined within existing fields, such as `engine`, do not require namespacing unless necessary to prevent
-collisions.
+Unqualified vocabulary MAY be used when it resolves to exactly one definition in the resolved extension set.
 
 ---
 
-# 16. Unknown Extension Handling
+# 8. Validation
 
-Profiles MAY reference extension-defined vocabulary through the `extensions` declaration.
-
-If a profile references extension-defined vocabulary that cannot be resolved through its declared extensions, the profile MUST be considered invalid.
-
-This includes cases where:
-
-- A `kind` value is not defined in the core specification or in any declared extension
-- An `interface.type` value is not defined in the core specification or in any declared extension
-- A field defined by an extension is used without the corresponding extension being declared
-- A declared extension cannot be located or resolved during validation
-
-Validation systems MUST reject Conditions that rely on unknown or unresolved extension-defined vocabulary.
-
----
-
-# 17. Validation Layers
-
-Validation occurs in the following order:
+Validation occurs in this order:
 
 1. Core structural validation
-2. Core semantic validation
-3. Extension resolution
-4. Extension validation
+2. Extension declaration resolution
+3. Extension dependency resolution
+4. Vocabulary definition and conflict validation
+5. Extension JSON Schema validation
+
+## 8.1 Structural Validation
+
+A profile is structurally invalid if:
+
+- `apiVersion` is missing or is not `runtimeconditions.io/v1alpha1`
+- `kind` is missing or is not `RuntimeConditionsProfile`
+- `metadata` is missing or is not an object
+- `metadata.name` is missing or is not a non-empty string
+- `metadata.labels` is present and is not a string-to-string mapping
+- `workload` is missing or is not an object
+- `workload.uri` is missing or is not a non-empty string
+- `workload.version` is present and is not a non-empty string
+- `extensions` is missing or is not an array
+- `conditions` is missing or is not an array
+- Any required field is present with `null`
+- Any mapping contains duplicate keys
+
+A Condition is structurally invalid if:
+
+- It is not an object
+- `kind` is missing or is not a non-empty string
+- `interface` is missing or is not an object
+- `interface.type` is missing or is not a non-empty string
+- `name` is present and is not a non-empty string
+- `optional` is present and is not a boolean
+
+Condition names, when present, MUST be unique within the profile.
+
+## 8.2 Vocabulary Validation
+
+A profile is invalid if:
+
+- A Condition `kind` is not defined by exactly one resolved extension
+- An `interface.type` is not defined by exactly one resolved extension for the declared `kind`
+- An extension-defined Condition field is not defined by exactly one resolved extension for its scope
+- An extension-defined interface field is not defined by exactly one resolved extension for its scope
+- An extension-defined field value is not defined by exactly one resolved extension for its scope
+- Any resolved extension dependency is missing
+- Resolved extensions contain a dependency cycle
+- Resolved extensions contain a vocabulary definition conflict
+- Any applicable extension JSON Schema validation fails
+
+## 8.3 Validity Levels
+
+Validators SHOULD distinguish:
+
+| Level | Description |
+| ----- | ----------- |
+| **Structural validity** | The document satisfies the core shape and type rules |
+| **Extension-resolved validity** | All extensions resolve and all vocabulary has exactly one definition in scope |
+| **Semantic validity** | The profile satisfies all applicable extension JSON Schema validations |
+
+A core-only profile with an empty `conditions` array can be structurally valid.
+
+A profile with non-empty `conditions` is not extension-resolved valid unless every Condition kind, interface type, extension-defined field, and extension-defined value resolves to exactly one definition.
+
+## 8.4 Validator Diagnostics
+
+Validation errors SHOULD identify:
+
+- Error category
+- Location within the profile
+- Offending field or value
+- Relevant extension, when applicable
+- Expected valid type or vocabulary, when practical
+
+Suggested error categories:
+
+- `structural`
+- `unknown-extension`
+- `extension-dependency`
+- `unresolved-vocabulary`
+- `vocabulary-conflict`
+- `semantic`
 
 ---
 
-# 18. Example: Core-Only Profile
+# 9. Conformance
+
+## 9.1 Profile Conformance
+
+A conforming profile MUST:
+
+- Satisfy core structural requirements
+- Declare all extensions required to interpret its vocabulary
+- Avoid unresolved vocabulary
+- Avoid vocabulary definition conflicts
+- Satisfy all semantic validation schemas for resolved extensions
+- Avoid secret values and concrete target-environment values
+
+## 9.2 Extension Conformance
+
+A conforming extension MUST:
+
+- Use a valid extension identifier
+- Provide a valid extension definition artifact
+- Identify all vocabulary it defines
+- Declare exact-version dependencies on vocabulary defined by other extensions
+- Avoid redefining vocabulary defined by another resolved extension
+- Respect core field placement and reserved-name rules
+- Express semantic validation with JSON Schema 2020-12 schemas
+
+## 9.3 Generator Conformance
+
+A conforming generator MUST emit structurally valid profiles.
+
+A conforming generator MUST NOT emit secret values or concrete target-environment values.
+
+A conforming generator SHOULD fail before emitting a profile with unresolved vocabulary, missing extensions, dependency errors, or known vocabulary conflicts.
+
+## 9.4 Validator Conformance
+
+A conforming validator MUST implement the validation layers in Section 8.
+
+A conforming validator MUST reject structurally invalid profiles, unresolved extensions, dependency cycles, vocabulary conflicts, unresolved vocabulary, and JSON Schema validation failures.
+
+## 9.5 Adapter Conformance
+
+An Adapter consumes a Runtime Conditions Profile for a target platform, catalog, policy system, or deployment workflow.
+
+A conforming Adapter MUST locate declared extension definitions and transitive extension dependencies before interpreting extension-defined vocabulary.
+
+A conforming Adapter MUST NOT treat a structurally valid but extension-unresolved profile as semantically valid.
+
+A conforming Adapter MUST preserve the distinction between profile requirements and target-environment fulfillment choices.
+
+A conforming Adapter MAY map valid Conditions to platform resources, services, policies, configuration inputs, or deployment workflow steps. Such mappings are outside the profile data model.
+
+---
+
+# 10. Examples
+
+## 10.1 Core-Only Structural Profile
+
+```yaml
+apiVersion: runtimeconditions.io/v1alpha1
+kind: RuntimeConditionsProfile
+
+metadata:
+  name: structural-profile
+  labels:
+    owner.example.com/team: platform
+
+workload:
+  uri: https://github.com/example-org/example-service
+  version: v1.2.3
+
+extensions: []
+
+conditions: []
+```
+
+## 10.2 Unresolved Conditions
+
+This profile is structurally valid but not extension-resolved valid.
+
+```yaml
+apiVersion: runtimeconditions.io/v1alpha1
+kind: RuntimeConditionsProfile
+
+metadata:
+  name: unresolved-profile
+
+workload:
+  uri: https://github.com/example-org/example-service
+
+extensions: []
+
+conditions:
+  - name: primary-db
+    kind: relational-database
+    interface:
+      type: connection
+```
+
+## 10.3 Extension-Backed Profile
 
 ```yaml
 apiVersion: runtimeconditions.io/v1alpha1
@@ -728,27 +764,26 @@ kind: RuntimeConditionsProfile
 
 metadata:
   name: checkout-service
+  labels:
+    owner.example.com/team: payments
+    lifecycle.example.com/stage: production
 
 workload:
   uri: https://github.com/example-org/checkout-service
   version: v1.2.3
 
 extensions:
-  - core
+  - https://runtimeconditions.io/extensions/common-integrations:v1alpha1
 
 conditions:
-
-  - kind: datastore
+  - name: primary-db
+    kind: datastore
     interface:
       type: relational
       engine: postgres
 
-  - kind: cache
-    interface:
-      type: key_value
-      engine: redis
-
-  - kind: api
+  - name: payments-api
+    kind: api
     interface:
       type: http
       operations:
@@ -756,42 +791,73 @@ conditions:
           path: /charge
 ```
 
----
-
-# 19. Example: AWS Extension Profile
+## 10.4 Extension-Backed Profile With Configuration
 
 ```yaml
 apiVersion: runtimeconditions.io/v1alpha1
 kind: RuntimeConditionsProfile
 
 metadata:
-  name: storage-enabled
+  name: checkout-service
+  labels:
+    owner.example.com/team: payments
 
 workload:
-  uri: https://github.com/example-org/storage-service
-  version: v1.4.0
+  uri: https://github.com/example-org/checkout-service
+  version: v1.2.3
 
 extensions:
-  - core
-  - aws.runtime/v1alpha1
+  - https://runtimeconditions.io/extensions/common-integrations:v1alpha1
+  - https://runtimeconditions.io/extensions/env-configuration:v1alpha1
 
 conditions:
-
-  - kind: aws.object_store
+  - name: primary-db
+    kind: datastore
     interface:
-      type: aws.s3
+      type: relational
+      engine: postgres
+    configuration:
+      env:
+        - property: hostname
+          name: POSTGRES_HOST
+        - property: port
+          name: POSTGRES_PORT
+        - property: database
+          name: POSTGRES_DATABASE
+        - property: username
+          name: POSTGRES_USERNAME
+        - property: password
+          name: POSTGRES_PASSWORD
+          sensitive: true
+
+  - name: request-cache
+    kind: cache
+    interface:
+      type: key_value
+      engine: redis
+    configuration:
+      alternatives:
+        - env:
+            - property: url
+              name: REDIS_URL
+        - env:
+            - property: hostname
+              name: REDIS_HOST
+            - property: port
+              name: REDIS_PORT
+
+  - name: payments-api
+    kind: api
+    interface:
+      type: http
+      operations:
+        - method: POST
+          path: /charge
+    configuration:
+      env:
+        - property: baseUrl
+          name: PAYMENTS_API_URL
+        - property: token
+          name: PAYMENTS_API_TOKEN
+          sensitive: true
 ```
-
----
-
-# 20. Summary
-
-The Runtime Conditions Profile defines:
-
-- A portable dependency declaration format
-- A structured interface typing model
-- Deterministic validation behavior
-- A declarative extension mechanism
-- Vendor-neutral core semantics
-
-This provides a foundation for reliable downstream capability matching while preserving ecosystem flexibility.
