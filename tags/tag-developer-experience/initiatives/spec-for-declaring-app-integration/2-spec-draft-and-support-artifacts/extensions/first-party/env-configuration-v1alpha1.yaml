@@ -1,0 +1,351 @@
+apiVersion: runtimeconditions.io/v1alpha1
+kind: RuntimeConditionsExtensionDefinition
+
+metadata:
+  uri: https://runtimeconditions.io/extensions/env-configuration
+  version: v1alpha1
+
+spec:
+  dependencies:
+    - https://runtimeconditions.io/extensions/common-integrations:v1alpha1
+
+  conditionFields:
+    - name: configuration
+      appliesToAllKinds: true
+
+  fieldValues:
+    - field: configuration.env[].property
+      targetKind: api
+      targetType: http
+      values:
+        - url
+        - baseUrl
+        - hostname
+        - port
+        - scheme
+        - username
+        - password
+        - token
+        - tls
+    - field: configuration.alternatives[].env[].property
+      targetKind: api
+      targetType: http
+      values:
+        - url
+        - baseUrl
+        - hostname
+        - port
+        - scheme
+        - username
+        - password
+        - token
+        - tls
+    - field: configuration.env[].property
+      targetKind: datastore
+      targetType: relational
+      values:
+        - url
+        - hostname
+        - port
+        - scheme
+        - username
+        - password
+        - database
+        - tls
+    - field: configuration.alternatives[].env[].property
+      targetKind: datastore
+      targetType: relational
+      values:
+        - url
+        - hostname
+        - port
+        - scheme
+        - username
+        - password
+        - database
+        - tls
+    - field: configuration.env[].property
+      targetKind: datastore
+      targetType: document
+      values:
+        - url
+        - hostname
+        - port
+        - scheme
+        - username
+        - password
+        - database
+        - tls
+    - field: configuration.alternatives[].env[].property
+      targetKind: datastore
+      targetType: document
+      values:
+        - url
+        - hostname
+        - port
+        - scheme
+        - username
+        - password
+        - database
+        - tls
+    - field: configuration.env[].property
+      targetKind: cache
+      targetType: key_value
+      values:
+        - url
+        - hostname
+        - port
+        - scheme
+        - username
+        - password
+        - database
+        - token
+        - tls
+    - field: configuration.alternatives[].env[].property
+      targetKind: cache
+      targetType: key_value
+      values:
+        - url
+        - hostname
+        - port
+        - scheme
+        - username
+        - password
+        - database
+        - token
+        - tls
+
+  schemas:
+    - id: configuration-shape
+      description: Validates the environment configuration field shape.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        properties:
+          configuration:
+            type: object
+            oneOf:
+              - required:
+                  - env
+                properties:
+                  env:
+                    $ref: '#/$defs/envList'
+                additionalProperties: false
+              - required:
+                  - alternatives
+                properties:
+                  alternatives:
+                    type: array
+                    minItems: 2
+                    items:
+                      type: object
+                      required:
+                        - env
+                      properties:
+                        env:
+                          $ref: '#/$defs/envList'
+                      additionalProperties: false
+                additionalProperties: false
+        additionalProperties: true
+        $defs:
+          envList:
+            type: array
+            minItems: 1
+            uniqueItems: true
+            items:
+              $ref: '#/$defs/envInput'
+          envInput:
+            type: object
+            required:
+              - property
+              - name
+            properties:
+              property:
+                type: string
+                minLength: 1
+              name:
+                type: string
+                pattern: '^[A-Za-z_][A-Za-z0-9_]*$'
+              sensitive:
+                type: boolean
+              required:
+                type: boolean
+            additionalProperties: false
+
+    - id: configuration-properties-api-http
+      appliesToKind: api
+      appliesToInterfaceType: http
+      description: Validates allowed environment configuration properties for HTTP API integrations.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        properties:
+          configuration:
+            $ref: '#/$defs/configuration'
+        additionalProperties: true
+        $defs:
+          allowedProperty:
+            enum:
+              - url
+              - baseUrl
+              - hostname
+              - port
+              - scheme
+              - username
+              - password
+              - token
+              - tls
+          configuration:
+            type: object
+            properties:
+              env:
+                type: array
+                items:
+                  $ref: '#/$defs/envInput'
+              alternatives:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    env:
+                      type: array
+                      items:
+                        $ref: '#/$defs/envInput'
+          envInput:
+            type: object
+            properties:
+              property:
+                $ref: '#/$defs/allowedProperty'
+
+    - id: configuration-properties-datastore-relational
+      appliesToKind: datastore
+      appliesToInterfaceType: relational
+      description: Validates allowed environment configuration properties for relational datastore integrations.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        properties:
+          configuration:
+            $ref: '#/$defs/configuration'
+        additionalProperties: true
+        $defs:
+          allowedProperty:
+            enum:
+              - url
+              - hostname
+              - port
+              - scheme
+              - username
+              - password
+              - database
+              - tls
+          configuration:
+            type: object
+            properties:
+              env:
+                type: array
+                items:
+                  $ref: '#/$defs/envInput'
+              alternatives:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    env:
+                      type: array
+                      items:
+                        $ref: '#/$defs/envInput'
+          envInput:
+            type: object
+            properties:
+              property:
+                $ref: '#/$defs/allowedProperty'
+
+    - id: configuration-properties-datastore-document
+      appliesToKind: datastore
+      appliesToInterfaceType: document
+      description: Validates allowed environment configuration properties for document datastore integrations.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        properties:
+          configuration:
+            $ref: '#/$defs/configuration'
+        additionalProperties: true
+        $defs:
+          allowedProperty:
+            enum:
+              - url
+              - hostname
+              - port
+              - scheme
+              - username
+              - password
+              - database
+              - tls
+          configuration:
+            type: object
+            properties:
+              env:
+                type: array
+                items:
+                  $ref: '#/$defs/envInput'
+              alternatives:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    env:
+                      type: array
+                      items:
+                        $ref: '#/$defs/envInput'
+          envInput:
+            type: object
+            properties:
+              property:
+                $ref: '#/$defs/allowedProperty'
+
+    - id: configuration-properties-cache-key-value
+      appliesToKind: cache
+      appliesToInterfaceType: key_value
+      description: Validates allowed environment configuration properties for key/value cache integrations.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        properties:
+          configuration:
+            $ref: '#/$defs/configuration'
+        additionalProperties: true
+        $defs:
+          allowedProperty:
+            enum:
+              - url
+              - hostname
+              - port
+              - scheme
+              - username
+              - password
+              - database
+              - token
+              - tls
+          configuration:
+            type: object
+            properties:
+              env:
+                type: array
+                items:
+                  $ref: '#/$defs/envInput'
+              alternatives:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    env:
+                      type: array
+                      items:
+                        $ref: '#/$defs/envInput'
+          envInput:
+            type: object
+            properties:
+              property:
+                $ref: '#/$defs/allowedProperty'
