@@ -164,7 +164,24 @@ The actors for each Kubeflow project are explained in the following sections:
 
 ![spark-operator](images/spark-operator.png)
 
-- Spark Operator controller: A controller that watches for events of SparkApplication CRDs and acts on the watch events. It includes a submission runner that runs Spark submit for submissions received from the controller, and a Spark pod monitor that watches for Spark pods and sends pod status updates to the controller.
+Spark Operator manages three Custom Resource Definitions (CRDs):
+
+- **SparkApplication** (v1beta2): Represents a single Spark job. Users declare their Spark
+  configuration (image, main class, driver/executor resource specs, volumes, secrets) and the
+  operator handles submission and lifecycle management.
+
+- **ScheduledSparkApplication** (v1beta2): Extends SparkApplication with cron-based scheduling.
+  The controller creates SparkApplication resources at user-defined intervals based on a cron
+  expression. Note: scheduled jobs continue executing until the ScheduledSparkApplication CR is
+  explicitly deleted, even if the creating user's RBAC access is subsequently revoked.
+
+- **SparkConnect** (v1alpha1): Represents a persistent Spark Connect session (interactive Spark
+  server endpoint). The controller manages the server pod, associated services, configmaps, and
+  executor pods for the session.
+
+Components:
+
+- Spark Operator controller: A controller that watches for events of all three CRDs above and acts on the watch events. It includes a submission runner that runs Spark submit for submissions received from the controller, and a Spark pod monitor that watches for Spark pods and sends pod status updates to the controller.
   - The submission runner is not a separate service: it is the controller itself executing
     `spark-submit` as a subprocess, and user-supplied fields from the SparkApplication CRD are
     passed to it as CLI arguments. The controller is a trusted component, which here means that its
