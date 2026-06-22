@@ -165,6 +165,14 @@ The actors for each Kubeflow project are explained in the following sections:
 ![spark-operator](images/spark-operator.png)
 
 - Spark Operator controller: A controller that watches for events of SparkApplication CRDs and acts on the watch events. It includes a submission runner that runs Spark submit for submissions received from the controller, and a Spark pod monitor that watches for Spark pods and sends pod status updates to the controller.
+  - The submission runner is not a separate service: it is the controller itself executing
+    `spark-submit` as a subprocess, and user-supplied fields from the SparkApplication CRD are
+    passed to it as CLI arguments. The controller is a trusted component, which here means that its
+    image is built and deployed by the operator and has not been tampered with, that user-supplied
+    CRD fields have been validated by the admission webhooks before the controller processes them,
+    and that cluster-level policies (Pod Security Admission, NetworkPolicy, ResourceQuota) constrain
+    the resulting pods. The Spark Operator itself does not sandbox or restrict what a SparkApplication
+    can request; enforcing those limits is the operator's (cluster administrator's) responsibility.
 
 - Spark Mutating Webhook: a Mutating Admission Webhook that handles customizations for Spark driver
   and executor Pods based on the annotations on the Pods added by the controller.
@@ -292,6 +300,28 @@ Detailed information can be found here in the official
 - Security and Access Control: Spark Operator leverages Kubernetes RBAC for Spark drivers and
   executors. This allows administrators to define who can create, modify, or delete SparkApplications
   and associated pods within the specific namespaces, enabling proper multi-tenant isolation.
+
+- Security compartments and blast radius: the Spark Operator's components run in separate trust
+  compartments, each bounded by its own Kubernetes service account and RBAC:
+  - The **Spark Operator controller** (including the in-process submission runner) is the most
+    privileged component, since it creates driver pods and reconciles SparkApplications across the
+    namespaces it watches. If it is compromised, the blast radius is the set of namespaces it is
+    granted access to: an attacker could disrupt orchestration (a denial of service by failing to
+    submit or reconcile jobs) and read or write the SparkApplications and pods in those namespaces,
+    but it does not by itself grant access to unrelated namespaces the controller is not authorized
+    for.
+  - The **admission webhooks** can only validate and mutate the resources submitted to them; a
+    compromise there could weaken input validation for new SparkApplications/pods (and, because the
+    webhooks are fail-closed, taking them down blocks new submissions — a DoS), but it does not give
+    access to existing workloads' data.
+  - The **driver and executor pods** run user code and are isolated per namespace by RBAC,
+    NetworkPolicy, and Pod Security Admission; a compromised workload is confined to its tenant's
+    namespace and the permissions of its own service account.
+
+  Note that these compartments are only isolated to the extent the operator configures Kubernetes to
+  enforce it. If the controller's service account is granted cluster-wide or cross-namespace
+  permissions, a compromise of the controller effectively breaks isolation between the namespaces it
+  can reach, so the controller's RBAC should be scoped to the smallest set of namespaces required.
 
 ### Kubeflow Notebooks
 
