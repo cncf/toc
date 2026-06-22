@@ -87,9 +87,15 @@ Kubeflow aims to provide the following security properties:
   and access to Kubeflow web interfaces is authenticated and authorized at the Istio ingress gateway
   together with OAuth2 Proxy. Kubeflow does not introduce an authorization path that bypasses
   Kubernetes RBAC.
-- **Tenant isolation**: workloads and resources are isolated per Kubernetes namespace using RBAC
-  and, where configured, network policies, so one tenant cannot read or control another tenant's
-  resources without an explicit grant.
+- **Tenant isolation**: Kubeflow's control-plane components (controllers, admission webhooks, and
+  API servers, such as the Katib experiment and suggestion controllers) are shared, trusted services
+  operated by the platform administrator, not by end users. End users — including multiple, mutually
+  untrusted tenants — interact with Kubeflow only by creating namespaced custom resources (for
+  example, `Experiment`, `TrainJob`, or `SparkApplication`) in the namespaces they are granted
+  access to. Kubernetes namespaces, RBAC, and, where configured, network policies isolate each
+  tenant, so one tenant cannot read or control another tenant's resources or workloads without an
+  explicit grant. See the [Kubeflow Platform multi-user architecture](https://github.com/kubeflow/community-distribution#architecture)
+  for how this isolation is composed into an end-to-end platform.
 - **Least-privilege control plane**: Kubeflow controllers run under scoped service accounts, and
   admission webhooks validate user-submitted resources before they are admitted.
 
