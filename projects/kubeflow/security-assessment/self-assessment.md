@@ -174,8 +174,29 @@ The actors for each Kubeflow project are explained in the following sections:
     the resulting pods. The Spark Operator itself does not sandbox or restrict what a SparkApplication
     can request; enforcing those limits is the operator's (cluster administrator's) responsibility.
 
-- Spark Mutating Webhook: a Mutating Admission Webhook that handles customizations for Spark driver
-  and executor Pods based on the annotations on the Pods added by the controller.
+- Admission webhooks: the Spark Operator registers several validating and mutating admission
+  webhooks. The validating webhooks check resource specs, while the mutating webhooks set defaults
+  and inject pod-level configuration:
+  - ValidatingWebhook for `SparkApplication` — validates naming, spec consistency, and (optionally)
+    ResourceQuota usage.
+  - ValidatingWebhook for `ScheduledSparkApplication` — validates scheduled job specs.
+  - ValidatingWebhook for `SparkConnect` — validates SparkConnect specs.
+  - MutatingWebhook for `SparkApplication` — sets default values on the CRD.
+  - MutatingWebhook for `ScheduledSparkApplication` — sets default values on the CRD.
+  - MutatingWebhook for `SparkConnect` — sets default values on the CRD.
+  - MutatingWebhook for Pods (`SparkPodDefaulter`) — mutates the Spark driver and executor Pods,
+    injecting volumes, environment variables, sidecars, and security contexts based on the
+    `SparkApplication` spec.
+
+  The Pod mutating webhook is the most security-relevant endpoint: based on user-supplied
+  `SparkApplication` fields it can inject `hostNetwork`, `hostPath` volumes, `privileged` security
+  contexts, and arbitrary sidecars into pods. The webhooks intentionally do **not** restrict these
+  capabilities (container images, `hostPath`, privileged containers, etc.); enforcing such limits is
+  delegated to cluster-level Pod Security Admission, NetworkPolicy, and ResourceQuota, which the
+  operator is responsible for configuring. By default the webhooks are configured with
+  `failurePolicy: Fail` (fail-closed), so if the webhook server is unavailable no SparkApplications
+  or Spark pods can be created — secure by default, at the cost of an availability dependency on the
+  webhook server. This policy is configurable via the Helm chart.
 
 Detailed information can be found here in the official
 [Kubeflow Spark Operator docs](https://www.kubeflow.org/docs/components/spark-operator/overview/#architecture).
