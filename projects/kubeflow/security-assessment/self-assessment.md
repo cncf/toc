@@ -94,16 +94,27 @@ Kubeflow aims to provide the following security properties:
   example, `Experiment`, `TrainJob`, or `SparkApplication`) in the namespaces they are granted
   access to. Kubernetes namespaces, RBAC, and, where configured, network policies isolate each
   tenant, so one tenant cannot read or control another tenant's resources or workloads without an
-  explicit grant. See the [Kubeflow Platform multi-user architecture](https://github.com/kubeflow/community-distribution#architecture)
+  explicit grant. See the [Kubeflow Community Distribution architecture](https://github.com/kubeflow/community-distribution#architecture)
   for how this isolation is composed into an end-to-end platform.
 - **Least-privilege control plane**: Kubeflow controllers run under scoped service accounts, and
   admission webhooks validate user-submitted resources before they are admitted.
 
-These properties rely on the following trust assumptions: the underlying Kubernetes cluster and its
-components are correctly operated; cluster administrators correctly configure the primitives
-Kubeflow depends on (RBAC, namespaces, network policies, Pod Security Admission, the Istio gateway,
-and the identity provider); and operators trust the container images and user-supplied code they
-choose to run.
+These properties rely on the following trust assumptions and operator responsibilities. The
+Kubeflow control-plane components are trusted services that the platform administrator (operator)
+runs in dedicated system namespaces; end users neither run them nor have access to them. The
+operator is responsible for:
+
+- deploying, hardening, and protecting the control-plane components from compromise;
+- configuring the Kubernetes primitives Kubeflow depends on (RBAC, namespaces, network policies,
+  the Istio ingress gateway, and the identity provider);
+- enforcing pod-level isolation for workloads — the reference [Kubeflow Community Distribution](https://github.com/kubeflow/community-distribution#architecture)
+  applies Pod Security Standards `restricted` (falling back to `baseline` where a workload requires
+  it) together with network policies by default, and standalone installations of individual Kubeflow
+  projects are expected to apply the same `restricted`-by-default baseline;
+- trusting the container images and user-supplied code they choose to run.
+
+The control plane further assumes that the underlying Kubernetes cluster and its components (API
+server, etcd, kubelet, container runtime, scheduler, and CNI) are correctly operated.
 
 When these assumptions do not hold, the corresponding guarantees no longer apply. If RBAC or
 namespace isolation is misconfigured, tenant isolation can break; if the ingress gateway or identity
@@ -111,7 +122,12 @@ provider is bypassed or misconfigured, the web-interface access controls no long
 executes user-supplied code and does not sandbox it beyond the isolation Kubernetes provides, so
 protecting the cluster and other tenants from a malicious or compromised workload relies on the
 Kubernetes mechanisms (RBAC, namespace isolation, Pod Security Admission, network policies, and
-resource quotas) that the administrator configures.
+resource quotas) that the operator configures. If a control-plane component itself is compromised,
+the blast radius is bounded by its service account: an attacker can disrupt orchestration for the
+resources that component manages — for example, a denial of service by failing to reconcile or
+schedule jobs — and can read or write the namespaced resources that component is authorized to
+access, but least-privilege, namespace-scoped RBAC means a single compromised controller does not by
+itself grant access to unrelated tenants' data.
 
 Please refer to [the official documentation](https://www.kubeflow.org/docs/) for more information.
 
