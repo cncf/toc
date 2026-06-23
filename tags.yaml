@@ -73,8 +73,12 @@ tags: # Technical Advisory Groups
       slack: C08KGCXB458
       mailing_list: https://lists.cncf.io/g/cncf-tag-developer-experience/
       toc_liaison:
-        - github: kgamanji
-          name: Katie Gamanji
+        - github: salaboy
+          name: Mauricio Salatino
+        - github: abebars
+          name: Ahmed Bebars
+        - github: jrsapi
+          name: Joseph Sandoval
     # tag_subprojects:
     #   - dir: developer-experience-sub-foo
     #     name: Developer Experience-sub-foo
@@ -173,10 +177,12 @@ tags: # Technical Advisory Groups
       slack: C08KBH3RA1K
       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure
       toc_liaison:
-        - github: rochaporto
-          name: Ricardo Rocha
-        - github: angellk
-          name: Karena Angell
+        - github: brandtkeller
+          name: Brandt Keller
+        - github: kfaseela
+          name: Faseela K
+        - github: chira001
+          name: Alex Chircop
     # tag_subprojects:
     #   - dir: infrastructure-sub-foo
     #     name: Infrastructure-sub-foo
@@ -258,6 +264,14 @@ tags: # Technical Advisory Groups
       slack: C08KGDENK34
       mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience
       toc_liaison:
+        - github: chadbeaudin
+          name: Chad Beaudin
+        - github: kfaseela
+          name: Faseela K
+        - github: salaboy
+          name: Mauricio Salatino
+        - github: mfahlandt
+          name: Mario Fahlandt
         - github: jeremyrickard
           name: Jeremy Rickard
     tag_subprojects:
@@ -385,10 +399,10 @@ tags: # Technical Advisory Groups
       slack: C08JZ9YLAA3
       mailing_list: https://lists.cncf.io/g/cncf-tag-security-and-compliance
       toc_liaison:
-        - github: kfaseela
-          name: Faseela K
-        - github: jeremyrickard
-          name: Jeremy Rickard
+        - github: angellk
+          name: Karena Angell
+        - github: mfahlandt
+          name: Mario Fahlandt
     tag_subprojects:
       - dir: security-assessments
         name: Security Assessments
@@ -529,8 +543,12 @@ tags: # Technical Advisory Groups
       toc_liaison:
         - github: chira001
           name: Alex Chircop
-        - github: kevin-wangzefeng
-          name: Kevin Wang
+        - github: jeremyrickard
+          name: Jeremy Rickard
+        - github: jrsapi
+          name: Joseph Sandoval
+        - github: chadbeaudin
+          name: Chad Beaudin
     tag_subprojects:
       - dir: batch
         name: Batch
@@ -561,9 +579,6 @@ tags: # Technical Advisory Groups
           slack: C02Q5DFF3MM
           slack_channel: "#batch-wg"
           mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation
-          toc_liaison:
-            - github: rochaporto
-              name: Ricardo Rocha
         landscape_url: https://bsi-landscape.netlify.app/
         landscape_preview_image: ./landscape/batch-landscape-preview.png
     tag_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atag%2Fworkloads-foundation%20label%3Akind%2Finitiative
@@ -684,6 +699,10 @@ toc_subprojects: # TOC SubProjects
       toc_liaison:
         - github: angellk
           name: Karena Angell
+        - github: brandtkeller
+          name: Brandt Keller
         - github: kevin-wangzefeng
           name: Kevin Wang
+        - github: abebars
+          name: Ahmed Bebars
     subproject_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atoc%2Fproject-reviews-subproject%20label%3Akind%2Finitiative

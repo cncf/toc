@@ -32,6 +32,20 @@ Note: TOC Alternates are non-voting members of the TOC
 
 Election [schedule](operations/election-schedule.md)
 
+## TAG / TCG Liaisons
+
+* **Karena Angell** ([@angellk](https://github.com/angellk)) — TAG Security and Compliance, TOC Project Reviews Subproject
+* **Brandt Keller** ([@brandtkeller](https://github.com/brandtkeller)) — TAG Infrastructure, TOC Project Reviews Subproject, TCG Platform Engineering
+* **Faseela K** ([@kfaseela](https://github.com/kfaseela)) — TAG Infrastructure, TAG Operational Resilience, TCG Environmental Sustainability
+* **Alex Chircop** ([@chira001](https://github.com/chira001)) — TAG Workloads Foundation, TAG Infrastructure, TCG Platform Engineering
+* **Kevin Wang** ([@kevin-wangzefeng](https://github.com/kevin-wangzefeng)) — TOC Project Reviews Subproject, TCG Artificial Intelligence, TCG Environmental Sustainability
+* **Mauricio Salatino** ([@salaboy](https://github.com/salaboy)) — TAG Developer Experience, TAG Operational Resilience, TCG Artificial Intelligence
+* **Mario Fahlandt** ([@mfahlandt](https://github.com/mfahlandt)) — TAG Security and Compliance, TAG Operational Resilience, TCG Software Supply Chain Security
+* **Chad Beaudin** ([@chadbeaudin](https://github.com/chadbeaudin)) — TAG Operational Resilience, TAG Workloads Foundation
+* **Ahmed Bebars** ([@abebars](https://github.com/abebars)) — TAG Developer Experience, TOC Project Reviews Subproject
+* **Jeremy Rickard** ([@jeremyrickard](https://github.com/jeremyrickard)) — TAG Workloads Foundation, TAG Operational Resilience
+* **Joseph Sandoval** ([@jrsapi](https://github.com/jrsapi)) — TAG Developer Experience, TAG Workloads Foundation
+
 ## Projects
 
 See the [current CNCF projects](https://www.cncf.io/projects/) and a description of project maturity levels (Sandbox, Incubating, Graduated).
