@@ -25,7 +25,9 @@ Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 ## Contact
 - Slack: [Tag TAG Developer Experience Slack](https://cloud-native.slack.com/archives/C08KGCXB458)
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-developer-experience/)
-- TOC Liaison: Katie Gamanji (**[@kgamanji](https://github.com/kgamanji)**)
+- TOC Liaison: Mauricio Salatino (**[@salaboy](https://github.com/salaboy)**)
+- TOC Liaison: Ahmed Bebars (**[@abebars](https://github.com/abebars)**)
+- TOC Liaison: Joseph Sandoval (**[@jrsapi](https://github.com/jrsapi)**)
 
 ## Subprojects
 ## Initiatives

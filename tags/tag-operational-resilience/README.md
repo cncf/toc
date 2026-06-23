@@ -24,6 +24,10 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 ## Contact
 - Slack: [Tag TAG Operational Resilience Slack](https://cloud-native.slack.com/archives/C08KGDENK34)
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-operational-resilience)
+- TOC Liaison: Chad Beaudin (**[@chadbeaudin](https://github.com/chadbeaudin)**)
+- TOC Liaison: Faseela K (**[@kfaseela](https://github.com/kfaseela)**)
+- TOC Liaison: Mauricio Salatino (**[@salaboy](https://github.com/salaboy)**)
+- TOC Liaison: Mario Fahlandt (**[@mfahlandt](https://github.com/mfahlandt)**)
 - TOC Liaison: Jeremy Rickard (**[@jeremyrickard](https://github.com/jeremyrickard)**)
 
 ## Subprojects
