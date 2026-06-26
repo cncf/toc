@@ -97,7 +97,7 @@ This light-weight triage/evaluation must cover the list below (it is not exhaust
   * link to security.md, scan for a process to report issues
   * link to (scorecard: scan for branch protection, token permissions, SAST, and CI best practices in results) or link to other evidence of repo hardening
   * link to security report resolution process and roles
-  * link to completed or PR filed self-assessment
+  * link to completed self-assessment in `cncf/toc` under `projects/<project>/security-assessment/self-assessment.md`
   * link to best practices badge, confirm it is "passing" and 100% complete 
 * Ecosystem
   * link to adopters file

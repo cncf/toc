@@ -235,7 +235,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 <!-- (TOC Evaluation goes here) --> 
 
-- [ ] **Document Security Self-Assessment.**
+- [ ] **Document Security Self-Assessment.** The completed self-assessment must be available in `cncf/toc` under `projects/<project>/security-assessment/self-assessment.md`.
 
 <!-- (TOC Evaluation goes here) --> 
 
