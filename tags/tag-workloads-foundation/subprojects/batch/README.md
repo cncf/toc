@@ -21,7 +21,6 @@ The cloud-native batch scheduling ecosystem is fragmented — different projects
 ## 💬 Contact
 - [#batch-wg](https://cloud-native.slack.com/archives/C02Q5DFF3MM) on cloud-native.slack.com
 - 📧 [Mailing List](https://lists.cncf.io/g/cncf-tag-workloads-foundation)
-- 🔗 TOC Liaison: Ricardo Rocha (**[@rochaporto](https://github.com/rochaporto)**)
 
 ## 🗺️ Landscape
 [![Batch Landscape Preview](./landscape/batch-landscape-preview.png)](./landscape/index.md)

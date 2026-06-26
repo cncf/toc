@@ -27,7 +27,9 @@ To define and advance practices and standards for fundamental cloud native workl
 - Slack: [Tag TAG Workloads Foundation Slack](https://cloud-native.slack.com/archives/C08K71W9HAS)
 - [Mailing List](https://lists.cncf.io/g/cncf-tag-workloads-foundation)
 - TOC Liaison: Alex Chircop (**[@chira001](https://github.com/chira001)**)
-- TOC Liaison: Kevin Wang (**[@kevin-wangzefeng](https://github.com/kevin-wangzefeng)**)
+- TOC Liaison: Jeremy Rickard (**[@jeremyrickard](https://github.com/jeremyrickard)**)
+- TOC Liaison: Joseph Sandoval (**[@jrsapi](https://github.com/jrsapi)**)
+- TOC Liaison: Chad Beaudin (**[@chadbeaudin](https://github.com/chadbeaudin)**)
 
 ## Subprojects
 ### Batch
