@@ -4,6 +4,11 @@ https://github.com/cncf/toc/issues/1797
 
 Spec that lists integration dependencies needed for an application to run successfully, e.g. DBs, message bus, etc.
 
+## Current artifacts
+
+- `1-research-summary.md` - research summary for existing application dependency and integration specifications.
+- `2-spec-draft-and-support-artifacts/` - Runtime Conditions Profile draft, extension definitions, complete profile examples, and short review notes.
+
 ## Initiative description
 
 One of the common things we hear in software development is that if we package an application a certain way, it can run anywhere. While that may be true in terms of executing the command that runs it, it doesn’t guarantee that the application won’t exit 1 within a few milliseconds when it can’t connect to a database or cache, or start throwing 500s when it tries to call to a peer service that hasn’t been deployed. Yes, it can run, but can it run successfully?
