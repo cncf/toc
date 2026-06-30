@@ -76,8 +76,8 @@ body:
       #### Mailing lists
       - [ ] Remove from staff list of [maintainer emails list](https://docs.google.com/spreadsheets/d/1qfPpAO5pcZFPsSXJ0OPtkvtS4BuawC33j0d-5_p6YFg/edit?gid=262035321#gid=262035321&fvid=2120158369)
       - [ ] Archive (lock) maintainers mailing list (groups.io)
-      - [ ] Remove mailing list from maintainers@ mailing group
-      - [ ] Remove from cncf-`maturity-level` -projects@cncf.io  (google groups)
+      - [ ] Remove mailing list from maintainers@cncf.io  (google groups) mailing group
+
       #### Send emails
       - [ ] Remove project (logo) from all slide decks (contact pr@cncf.io)
       - [ ] Remove project (logo) from event sites (contact events@cncf.io)
@@ -86,6 +86,7 @@ body:
       #### Other:
       - [ ] Remove from maintainers & project from service desk
       - [ ] Check with LF IT for any CI/CD or other infrastructure the needs to be removed
+      - [ ] Revoke maintainer access to Copilot - check if the maintainers are listed on other projects for Copilot access
 
       </details>
       
