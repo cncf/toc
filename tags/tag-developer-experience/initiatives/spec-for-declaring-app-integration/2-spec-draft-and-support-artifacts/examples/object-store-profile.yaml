@@ -1,0 +1,34 @@
+apiVersion: runtimeconditions.io/v1alpha1
+kind: RuntimeConditionsProfile
+
+metadata:
+  name: audit-logger
+  labels:
+    owner.example.com/team: platform
+
+workload:
+  uri: https://github.com/example-org/audit-logger
+  version: v0.4.0
+
+extensions:
+  - https://aws.example.com/runtimeconditions/object-store:v1alpha1
+
+conditions:
+  - name: audit-log-store
+    kind: aws.object_store
+    interface:
+      type: aws.s3
+      bucketClass: standard
+    configuration:
+      env:
+        - property: bucket
+          name: AUDIT_LOG_BUCKET
+        - property: region
+          name: AWS_REGION
+        - property: accessKeyId
+          name: AWS_ACCESS_KEY_ID
+          sensitive: true
+        - property: secretAccessKey
+          name: AWS_SECRET_ACCESS_KEY
+          sensitive: true
+

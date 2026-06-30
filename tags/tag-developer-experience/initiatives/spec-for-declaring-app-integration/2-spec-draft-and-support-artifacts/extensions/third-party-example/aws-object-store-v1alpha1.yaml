@@ -1,0 +1,118 @@
+apiVersion: runtimeconditions.io/v1alpha1
+kind: RuntimeConditionsExtensionDefinition
+
+metadata:
+  uri: https://aws.example.com/runtimeconditions/object-store
+  version: v1alpha1
+
+spec:
+  dependencies:
+    - https://runtimeconditions.io/extensions/common-integrations:v1alpha1
+    - https://runtimeconditions.io/extensions/env-configuration:v1alpha1
+
+  kinds:
+    - name: aws.object_store
+
+  interfaceTypes:
+    - name: aws.s3
+      targetKind: aws.object_store
+
+  interfaceFields:
+    - name: bucketClass
+      targetKind: aws.object_store
+      targetType: aws.s3
+
+  fieldValues:
+    - field: interface.bucketClass
+      targetKind: aws.object_store
+      targetType: aws.s3
+      values:
+        - standard
+        - archive
+    - field: configuration.env[].property
+      targetKind: aws.object_store
+      targetType: aws.s3
+      values:
+        - bucket
+        - region
+        - accessKeyId
+        - secretAccessKey
+        - sessionToken
+    - field: configuration.alternatives[].env[].property
+      targetKind: aws.object_store
+      targetType: aws.s3
+      values:
+        - bucket
+        - region
+        - accessKeyId
+        - secretAccessKey
+        - sessionToken
+
+  schemas:
+    - id: aws-s3-interface
+      appliesToKind: aws.object_store
+      appliesToInterfaceType: aws.s3
+      description: Validates the aws.s3 interface shape.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        required:
+          - kind
+          - interface
+        properties:
+          kind:
+            const: aws.object_store
+          interface:
+            type: object
+            required:
+              - type
+            properties:
+              type:
+                const: aws.s3
+              bucketClass:
+                enum:
+                  - standard
+                  - archive
+            additionalProperties: true
+        additionalProperties: true
+
+    - id: aws-s3-configuration-properties
+      appliesToKind: aws.object_store
+      appliesToInterfaceType: aws.s3
+      description: Validates allowed environment configuration properties for AWS S3 integrations.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        properties:
+          configuration:
+            $ref: '#/$defs/configuration'
+        additionalProperties: true
+        $defs:
+          allowedProperty:
+            enum:
+              - bucket
+              - region
+              - accessKeyId
+              - secretAccessKey
+              - sessionToken
+          configuration:
+            type: object
+            properties:
+              env:
+                type: array
+                items:
+                  $ref: '#/$defs/envInput'
+              alternatives:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    env:
+                      type: array
+                      items:
+                        $ref: '#/$defs/envInput'
+          envInput:
+            type: object
+            properties:
+              property:
+                $ref: '#/$defs/allowedProperty'

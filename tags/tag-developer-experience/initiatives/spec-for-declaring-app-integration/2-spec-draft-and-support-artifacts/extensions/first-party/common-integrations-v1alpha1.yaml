@@ -1,0 +1,254 @@
+apiVersion: runtimeconditions.io/v1alpha1
+kind: RuntimeConditionsExtensionDefinition
+
+metadata:
+  uri: https://runtimeconditions.io/extensions/common-integrations
+  version: v1alpha1
+
+spec:
+  kinds:
+    - name: api
+    - name: datastore
+    - name: cache
+
+  interfaceTypes:
+    - name: http
+      targetKind: api
+    - name: relational
+      targetKind: datastore
+    - name: document
+      targetKind: datastore
+    - name: key_value
+      targetKind: cache
+
+  interfaceFields:
+    - name: spec
+      targetKind: api
+      targetType: http
+    - name: operations
+      targetKind: api
+      targetType: http
+    - name: engine
+      targetKind: datastore
+      targetType: relational
+    - name: engine
+      targetKind: datastore
+      targetType: document
+    - name: engine
+      targetKind: cache
+      targetType: key_value
+
+  fieldValues:
+    - field: interface.spec.format
+      targetKind: api
+      targetType: http
+      values:
+        - openapi
+    - field: interface.operations[].method
+      targetKind: api
+      targetType: http
+      values:
+        - GET
+        - HEAD
+        - POST
+        - PUT
+        - PATCH
+        - DELETE
+        - OPTIONS
+        - TRACE
+    - field: interface.engine
+      targetKind: datastore
+      targetType: relational
+      values:
+        - postgres
+        - mysql
+        - mariadb
+        - sqlserver
+        - oracle
+        - sqlite
+    - field: interface.engine
+      targetKind: datastore
+      targetType: document
+      values:
+        - mongodb
+        - couchbase
+    - field: interface.engine
+      targetKind: cache
+      targetType: key_value
+      values:
+        - redis
+        - memcached
+
+  schemas:
+    - id: api-http-interface
+      appliesToKind: api
+      appliesToInterfaceType: http
+      description: Validates HTTP API integration conditions.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        required:
+          - kind
+          - interface
+        properties:
+          kind:
+            const: api
+          interface:
+            type: object
+            required:
+              - type
+            properties:
+              type:
+                const: http
+              spec:
+                type: object
+                required:
+                  - format
+                  - uri
+                properties:
+                  format:
+                    const: openapi
+                  uri:
+                    type: string
+                    minLength: 1
+                  version:
+                    type: string
+                    pattern: '^(?:=?[0-9]+\.[0-9]+\.[0-9]+|[<>]=?[0-9]+\.[0-9]+\.[0-9]+|\^[0-9]+\.[0-9]+\.[0-9]+|~[0-9]+\.[0-9]+\.[0-9]+)$'
+                additionalProperties: false
+              operations:
+                type: array
+                minItems: 1
+                items:
+                  type: object
+                  required:
+                    - method
+                    - path
+                  properties:
+                    method:
+                      enum:
+                        - GET
+                        - HEAD
+                        - POST
+                        - PUT
+                        - PATCH
+                        - DELETE
+                        - OPTIONS
+                        - TRACE
+                    path:
+                      type: string
+                      minLength: 1
+                    requestBodySchema:
+                      $ref: '#/$defs/simpleSchema'
+                    responseSchema:
+                      $ref: '#/$defs/simpleSchema'
+                  additionalProperties: false
+            anyOf:
+              - required:
+                  - spec
+              - required:
+                  - operations
+            additionalProperties: true
+        additionalProperties: true
+        $defs:
+          simpleSchema:
+            oneOf:
+              - type: string
+                enum:
+                  - string
+                  - number
+                  - integer
+                  - boolean
+                  - "null"
+              - type: object
+                additionalProperties:
+                  $ref: '#/$defs/simpleSchema'
+              - type: array
+                minItems: 1
+                maxItems: 1
+                items:
+                  $ref: '#/$defs/simpleSchema'
+
+    - id: datastore-relational-interface
+      appliesToKind: datastore
+      appliesToInterfaceType: relational
+      description: Validates relational datastore integration conditions.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        required:
+          - kind
+          - interface
+        properties:
+          kind:
+            const: datastore
+          interface:
+            type: object
+            required:
+              - type
+            properties:
+              type:
+                const: relational
+              engine:
+                enum:
+                  - postgres
+                  - mysql
+                  - mariadb
+                  - sqlserver
+                  - oracle
+                  - sqlite
+            additionalProperties: true
+        additionalProperties: true
+
+    - id: datastore-document-interface
+      appliesToKind: datastore
+      appliesToInterfaceType: document
+      description: Validates document datastore integration conditions.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        required:
+          - kind
+          - interface
+        properties:
+          kind:
+            const: datastore
+          interface:
+            type: object
+            required:
+              - type
+            properties:
+              type:
+                const: document
+              engine:
+                enum:
+                  - mongodb
+                  - couchbase
+            additionalProperties: true
+        additionalProperties: true
+
+    - id: cache-key-value-interface
+      appliesToKind: cache
+      appliesToInterfaceType: key_value
+      description: Validates key/value cache integration conditions.
+      schema:
+        $schema: https://json-schema.org/draft/2020-12/schema
+        type: object
+        required:
+          - kind
+          - interface
+        properties:
+          kind:
+            const: cache
+          interface:
+            type: object
+            required:
+              - type
+            properties:
+              type:
+                const: key_value
+              engine:
+                enum:
+                  - redis
+                  - memcached
+            additionalProperties: true
+        additionalProperties: true

@@ -1,0 +1,74 @@
+apiVersion: runtimeconditions.io/v1alpha1
+kind: RuntimeConditionsProfile
+
+metadata:
+  name: checkout-service
+  labels:
+    owner.example.com/team: payments
+    lifecycle.example.com/stage: production
+
+workload:
+  uri: https://github.com/example-org/checkout-service
+  version: v1.2.3
+
+extensions:
+  - https://runtimeconditions.io/extensions/common-integrations:v1alpha1
+  - https://runtimeconditions.io/extensions/env-configuration:v1alpha1
+
+conditions:
+  - name: primary-db
+    kind: datastore
+    interface:
+      type: relational
+      engine: postgres
+    configuration:
+      env:
+        - property: hostname
+          name: POSTGRES_HOST
+        - property: port
+          name: POSTGRES_PORT
+        - property: database
+          name: POSTGRES_DATABASE
+        - property: username
+          name: POSTGRES_USERNAME
+        - property: password
+          name: POSTGRES_PASSWORD
+          sensitive: true
+
+  - name: request-cache
+    kind: cache
+    interface:
+      type: key_value
+      engine: redis
+    configuration:
+      alternatives:
+        - env:
+            - property: url
+              name: REDIS_URL
+        - env:
+            - property: hostname
+              name: REDIS_HOST
+            - property: port
+              name: REDIS_PORT
+
+  - name: payments-api
+    kind: api
+    interface:
+      type: http
+      operations:
+        - method: POST
+          path: /charge
+          requestBodySchema:
+            amount: number
+            currency: string
+            paymentMethodToken: string
+          responseSchema:
+            chargeId: string
+            status: string
+    configuration:
+      env:
+        - property: baseUrl
+          name: PAYMENTS_API_URL
+        - property: token
+          name: PAYMENTS_API_TOKEN
+          sensitive: true
