@@ -43,6 +43,14 @@ implemented in an easier way.
 
 ## On-Demand vs. Continuously Reconciled
 
+These are two paradigms in lifecycle management that are fundamental opposites. On the one side, you have changes that are triggered by a person or external system, the other is where the system itself can reconcile any changes by observing a source. The first can be done through a portal, CLI, or scripts, while the other requires that you install and maintain a set of agents whose behavior is defined by configuration or policy.
+
+When you manage infrastructure with on-demand solutions like scripts, either manually run or through an automation pipeline, one of the benefits is that you get immediate feedback. With a reconciliation process, you rely on eventual consistency, which requires all changes to happen at the source. The GitOps principles call this the “desired state” and it should always be what the system tries to adhere to. This means that a continuously reconciled system is self-healing, while any on-demand model has no such guarantee.
+
+On-demand operations can also be more complex than a continuously reconciled one. Managing imperative pipelines and scripts can quickly grow out of proportion, putting cognitive load on the operator. The agents, Kubernetes controllers or operators, are usually singletons used for specific parts of the operation. This can result in a more stable architecture, with fewer variables and less bespoke solutions.
+
+You might think of them in different terms like “push versus pull” or “pipelines” versus controllers. Neither is wrong, and they both have their benefits and disadvantages. You can also opt for a hybrid approach, where certain parts of the system are reconciled continuously, while others are not.
+
 ## DSL vs. Programming Language
 
 ## Stateful vs. Stateless
