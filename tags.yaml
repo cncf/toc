@@ -624,27 +624,27 @@ toc_subprojects: # TOC SubProjects
     subproject_initiatives: https://github.com/cncf/toc/issues?q=state%3Aopen%20label%3Atoc%2Fcontributor-strategy-and-advocacy-subproject%20label%3Akind%2Finitiative
   - dir: mentoring-subproject # Mentoring SubProject
     name: Mentoring SubProject
-    mission_statement: Foo-Baz-Bar
+    mission_statement: Provide a community-governed home for CNCF mentorship programs and help CNCF projects grow sustainable contributor pathways through experienced mentorship.
     charter_link: charter.md
     label: mentoring-subproject
     leadership:
       chairs:
+        - github: bupd
+          lfx_id: bupd
+          name: Prasanth Baskar
+          company: 8gears
+          email: bupdprasanth@gmail.com
         - github: nate-double-u
           lfx_id: natewaddington
           name: Nate Waddington
           company: The Linux Foundation
           email: nwaddington@linuxfoundation.org
-  #      - github: foo
-  #        lfx_id: baz
-  #        name: Foo Baz Bar
-  #        company: Foo Baz Bar co.
-  #        email: me@foobazbar.org
-  #    tech_leads:
-  #      - github: foo
-  #        lfx_id: baz
-  #        name: Foo Baz Bar
-  #        company: Foo Baz Bar co.
-  #        email: me@foobazbar.org
+      tech_leads:
+        - github: Cali0707
+          lfx_id: Cali0707
+          name: Calum Murray
+          company: Red Hat
+          email: cmurray@redhat.com
   #      - github: foo
   #        lfx_id: baz
   #        name: Foo Baz Bar
