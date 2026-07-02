@@ -3,13 +3,16 @@
 <!-- THIS FILE IS AUTO-GENERATED FROM /tags.yaml -->
 
 ## Mission Statement
-Foo-Baz-Bar
+Provide a community-governed home for CNCF mentorship programs and help CNCF projects grow sustainable contributor pathways through experienced mentorship.
 
 [Charter](./charter.md)
 
 ## Leadership
 ### Chairs
+- Prasanth Baskar (**[@bupd](https://github.com/bupd)**), 8gears
 - Nate Waddington (**[@nate-double-u](https://github.com/nate-double-u)**), The Linux Foundation
+### Tech Leads
+- Calum Murray (**[@Cali0707](https://github.com/Cali0707)**), Red Hat
 
 ## Meetings
 - **Mentoring SubProject Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/toc-mentoring-subproject?view=list) | [Recordings](https://www.youtube.com/@CNCFTOCMentoringSubProject)
