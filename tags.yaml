@@ -519,8 +519,8 @@ tags: # Technical Advisory Groups
         - github: pmady
           lfx_id:
           name: Pavan Madduri
-          company:
-          email:
+          company: W.W.Grainger
+          email: pavanmadduri27@gmail.com
           term:
             start: "2026-07-07"
             end: "2028-07-06"
