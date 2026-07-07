@@ -152,11 +152,11 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
-        - github: MukeshA39
+        - github: mesutoezdil
           lfx_id:
           name: Mesut Özdil
           company:
-          email:
+          email: mesudozdil@gmail.com
           term:
             start: "2026-07-07"
             end: "2028-07-06"
