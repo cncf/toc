@@ -54,8 +54,8 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-02"
-            end: "2026-06-30"
+            start: "2026-07-07"
+            end: "2028-07-06"
         - github: cloudmelon
           lfx_id:
           name: Mélony QIN
@@ -64,6 +64,14 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
+        - github: stmcginnis
+          lfx_id:
+          name: Sean McGinnis
+          company:
+          email:
+          term:
+            start: "2026-07-07"
+            end: "2028-07-06"
     meetings:
       - description: TAG Developer Experience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list # Calendar from PCC
@@ -144,22 +152,22 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
-        - github: bschaatsbergen
+        - github: MukeshA39
           lfx_id:
-          name: Bruno Schaatsbergen
+          name: Mesut Özdil
           company:
           email:
           term:
-            start: "2025-07-02"
-            end: "2026-06-30"
-        - github: nicholasjackson
+            start: "2026-07-07"
+            end: "2028-07-06"
+        - github: thschue
           lfx_id:
-          name: Nicholas Jackson
+          name: Thomas Schuetz
           company:
           email:
           term:
-            start: "2025-07-02"
-            end: "2026-06-30"
+            start: "2026-07-07"
+            end: "2028-07-06"
         - github: hzxuzhonghu
           lfx_id:
           name: Zhonghu Xu
@@ -231,14 +239,30 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
-        - github: raffaelespazzoli
+        - github: chadmcrowell
           lfx_id:
-          name: Raffaele Spazzoli
+          name: Chad Crowell
           company:
           email:
           term:
-            start: "2025-07-02"
-            end: "2026-06-30"
+            start: "2026-07-07"
+            end: "2028-07-06"
+        - github: didiViking
+          lfx_id:
+          name: Diana Todea
+          company:
+          email:
+          term:
+            start: "2026-07-07"
+            end: "2028-07-06"
+        - github: nikimanoledaki
+          lfx_id:
+          name: Niki Manoledaki
+          company:
+          email:
+          term:
+            start: "2026-07-07"
+            end: "2028-07-06"
         - github: halcyondude
           lfx_id: halcyondude
           name: Matt Young
@@ -342,30 +366,14 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
-        - github: brandtkeller
+        - github: arewm
           lfx_id:
-          name: Brandt Keller
-          company: Defense Unicorns
-          email: brandt.keller@defenseunicorns.com
+          name: Andrew McNamara
+          company:
+          email:
           term:
-            start: "2025-07-02"
-            end: "2026-06-30"
-        - github: eddie-knight
-          lfx_id: eddieknight
-          name: Eddie Knight
-          company: Sonatype
-          email: eknight@sonatype.com
-          term:
-            start: "2025-07-01"
-            end: "2026-06-30"
-        - github: jpower432
-          lfx_id:
-          name: Jennifer Power
-          company: Red Hat
-          email: barnabel.jennifer@gmail.com
-          term:
-            start: "2025-07-02"
-            end: "2026-06-30"
+            start: "2026-07-07"
+            end: "2028-07-06"
         - github: JustinCappos
           lfx_id:
           name: Justin Cappos
@@ -374,22 +382,38 @@ tags: # Technical Advisory Groups
           term:
             start: "2025-07-02"
             end: "2027-06-30"
-        - github: mlieberman85
+        - github: zigmax
           lfx_id:
-          name: Michael Lieberman
-          company: Kusari
-          email: mlieberman85@gmail.com
+          name: Maxime Coquerel
+          company:
+          email:
           term:
-            start: "2025-07-02"
-            end: "2026-06-30"
+            start: "2026-07-07"
+            end: "2028-07-06"
+        - github: sherine-k
+          lfx_id:
+          name: Sherine Khoury
+          company:
+          email:
+          term:
+            start: "2026-07-07"
+            end: "2028-07-06"
+        - github: realshuting
+          lfx_id:
+          name: Shuting Zhao
+          company:
+          email:
+          term:
+            start: "2026-07-07"
+            end: "2028-07-06"
         - github: y-tabata
           lfx_id:
           name: Yoshiyuki Tabata
           company: Hitachi
           email: yoshiyuki.tabata.jy@hitachi.com
           term:
-            start: "2025-07-02"
-            end: "2026-06-30"
+            start: "2026-07-07"
+            end: "2028-07-06"
     meetings:
       - description: TAG Security and Compliance Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list
@@ -492,14 +516,14 @@ tags: # Technical Advisory Groups
             start: "2025-07-01"
             end: "2027-06-30"
       tech_leads:
-        - github: kad
+        - github: pmady
           lfx_id:
-          name: Alexander D. Kanevskiy
+          name: Pavan Madduri
           company:
           email:
           term:
-            start: "2025-07-02"
-            end: "2026-06-30"
+            start: "2026-07-07"
+            end: "2028-07-06"
         - github: RainbowMango
           lfx_id:
           name: Hongcai Ren
@@ -530,8 +554,8 @@ tags: # Technical Advisory Groups
           company:
           email:
           term:
-            start: "2025-07-02"
-            end: "2026-06-30"
+            start: "2026-07-07"
+            end: "2028-07-06"
     meetings:
       - description: TAG Workloads Foundation Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list
