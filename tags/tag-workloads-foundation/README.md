@@ -14,11 +14,11 @@ To define and advance practices and standards for fundamental cloud native workl
 - Paco Xu (**[@pacoxu](https://github.com/pacoxu)**) (Term: 2025-07-01 - 2027-06-30)
 - Yuan Tang (**[@terrytangyuan](https://github.com/terrytangyuan)**) (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Alexander D. Kanevskiy (**[@kad](https://github.com/kad)**) (Term: 2025-07-02 - 2026-06-30)
+- Pavan Madduri (**[@pmady](https://github.com/pmady)**) (Term: 2026-07-07 - 2028-07-06)
 - Hongcai Ren (**[@RainbowMango](https://github.com/RainbowMango)**) (Term: 2025-07-02 - 2027-06-30)
 - Kante Yin (**[@kerthcet](https://github.com/kerthcet)**) (Term: 2025-07-02 - 2027-06-30)
 - Rajas Kakodkar (**[@rajaskakodkar](https://github.com/rajaskakodkar)**) (Term: 2025-07-02 - 2027-06-30)
-- Stephen Rust (**[@srust](https://github.com/srust)**) (Term: 2025-07-02 - 2026-06-30)
+- Stephen Rust (**[@srust](https://github.com/srust)**) (Term: 2026-07-07 - 2028-07-06)
 
 ## Meetings
 - **TAG Workloads Foundation Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGWorkloadsFoundation) | [Meeting Notes and Agenda](https://notes.cncf.io/s/1aNdplhtl)

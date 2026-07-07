@@ -14,12 +14,12 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - John Kjell (**[@jkjell](https://github.com/jkjell)**), Control-Plane.io (Term: 2025-07-02 - 2027-06-30)
 - Marina Moore (**[@mnm678](https://github.com/mnm678)**), Edera (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Brandt Keller (**[@brandtkeller](https://github.com/brandtkeller)**), Defense Unicorns (Term: 2025-07-02 - 2026-06-30)
-- Eddie Knight (**[@eddie-knight](https://github.com/eddie-knight)**), Sonatype (Term: 2025-07-01 - 2026-06-30)
-- Jennifer Power (**[@jpower432](https://github.com/jpower432)**), Red Hat (Term: 2025-07-02 - 2026-06-30)
+- Andrew McNamara (**[@arewm](https://github.com/arewm)**) (Term: 2026-07-07 - 2028-07-06)
 - Justin Cappos (**[@JustinCappos](https://github.com/JustinCappos)**), New York University (Term: 2025-07-02 - 2027-06-30)
-- Michael Lieberman (**[@mlieberman85](https://github.com/mlieberman85)**), Kusari (Term: 2025-07-02 - 2026-06-30)
-- Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**), Hitachi (Term: 2025-07-02 - 2026-06-30)
+- Maxime Coquerel (**[@zigmax](https://github.com/zigmax)**) (Term: 2026-07-07 - 2028-07-06)
+- Sherine Khoury (**[@sherine-k](https://github.com/sherine-k)**) (Term: 2026-07-07 - 2028-07-06)
+- Shuting Zhao (**[@realshuting](https://github.com/realshuting)**) (Term: 2026-07-07 - 2028-07-06)
+- Yoshiyuki Tabata (**[@y-tabata](https://github.com/y-tabata)**), Hitachi (Term: 2026-07-07 - 2028-07-06)
 
 ## Meetings
 - **TAG Security and Compliance Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGSecurityandCompliance) | [Meeting Notes and Agenda](https://docs.google.com/document/d/1M4bPKmjothdFFnhV3ox7uiur50faDDh909UlEpdk5JQ/edit?tab=t.0)

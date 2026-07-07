@@ -16,8 +16,9 @@ Databases, Microservices, Streaming, Messaging, API Management, Dev Frameworks.
 ### Tech Leads
 - Joshua Bezaleel Abednego (**[@joshuabezaleel](https://github.com/joshuabezaleel)**) (Term: 2025-07-02 - 2027-06-30)
 - Julien Semaan (**[@julsemaan](https://github.com/julsemaan)**) (Term: 2025-07-02 - 2027-06-30)
-- Kevin Dubois (**[@kdubois](https://github.com/kdubois)**) (Term: 2025-07-02 - 2026-06-30)
+- Kevin Dubois (**[@kdubois](https://github.com/kdubois)**) (Term: 2026-07-07 - 2028-07-06)
 - Mélony QIN (**[@cloudmelon](https://github.com/cloudmelon)**) (Term: 2025-07-02 - 2027-06-30)
+- Sean McGinnis (**[@stmcginnis](https://github.com/stmcginnis)**) (Term: 2026-07-07 - 2028-07-06)
 
 ## Meetings
 - **TAG Developer Experience Meetings**: [Calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-developer-experience?view=list) | [Recordings](https://www.youtube.com/@CNCFTAGDeveloperExperience) | [Meeting Notes and Agenda](https://docs.google.com/document/d/1dRS0DUzp3TY-u-iKmCdk_fuGZHaYfI4_TG1A6Ponxws/edit?usp=sharing)

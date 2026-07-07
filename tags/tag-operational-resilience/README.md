@@ -14,7 +14,9 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 - Carol Valencia (**[@krol3](https://github.com/krol3)**) (Term: 2026-06-09 - 2028-06-30)
 - Saiyam Pathak (**[@saiyam1814](https://github.com/saiyam1814)**) (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Raffaele Spazzoli (**[@raffaelespazzoli](https://github.com/raffaelespazzoli)**) (Term: 2025-07-02 - 2026-06-30)
+- Chad Crowell (**[@chadmcrowell](https://github.com/chadmcrowell)**) (Term: 2026-07-07 - 2028-07-06)
+- Diana Todea (**[@didiViking](https://github.com/didiViking)**) (Term: 2026-07-07 - 2028-07-06)
+- Niki Manoledaki (**[@nikimanoledaki](https://github.com/nikimanoledaki)**) (Term: 2026-07-07 - 2028-07-06)
 - Matt Young (**[@halcyondude](https://github.com/halcyondude)**) (Term: 2025-07-02 - 2027-06-30)
 - Nabarun Pal (**[@palnabarun](https://github.com/palnabarun)**), Broadcom (Term: 2025-07-02 - 2027-06-30)
 
