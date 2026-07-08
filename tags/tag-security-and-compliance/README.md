@@ -14,7 +14,7 @@ Security hygiene, Policy-as-code, Compliance, Auditing, Threat Modeling, Secure 
 - John Kjell (**[@jkjell](https://github.com/jkjell)**), Control-Plane.io (Term: 2025-07-02 - 2027-06-30)
 - Marina Moore (**[@mnm678](https://github.com/mnm678)**), Edera (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
-- Andrew McNamara (**[@arewm](https://github.com/arewm)**) (Term: 2026-07-07 - 2028-07-06)
+- Andrew McNamara (**[@arewm](https://github.com/arewm)**), Red Hat (Term: 2026-07-07 - 2028-07-06)
 - Justin Cappos (**[@JustinCappos](https://github.com/JustinCappos)**), New York University (Term: 2025-07-02 - 2027-06-30)
 - Maxime Coquerel (**[@zigmax](https://github.com/zigmax)**) (Term: 2026-07-07 - 2028-07-06)
 - Sherine Khoury (**[@sherine-k](https://github.com/sherine-k)**) (Term: 2026-07-07 - 2028-07-06)
