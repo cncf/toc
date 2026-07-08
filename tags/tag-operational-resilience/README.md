@@ -15,8 +15,8 @@ Observability, Management, Business Continuity, Resource Optimization, Cost Effi
 - Saiyam Pathak (**[@saiyam1814](https://github.com/saiyam1814)**) (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
 - Chad Crowell (**[@chadmcrowell](https://github.com/chadmcrowell)**) (Term: 2026-07-07 - 2028-07-06)
-- Diana Todea (**[@didiViking](https://github.com/didiViking)**) (Term: 2026-07-07 - 2028-07-06)
-- Niki Manoledaki (**[@nikimanoledaki](https://github.com/nikimanoledaki)**) (Term: 2026-07-07 - 2028-07-06)
+- Diana Todea (**[@didiViking](https://github.com/didiViking)**), VictoriaMetrics (Term: 2026-07-07 - 2028-07-06)
+- Niki Manoledaki (**[@nikimanoledaki](https://github.com/nikimanoledaki)**), Grafana Labs (Term: 2026-07-07 - 2028-07-06)
 - Matt Young (**[@halcyondude](https://github.com/halcyondude)**) (Term: 2025-07-02 - 2027-06-30)
 - Nabarun Pal (**[@palnabarun](https://github.com/palnabarun)**), Broadcom (Term: 2025-07-02 - 2027-06-30)
 
