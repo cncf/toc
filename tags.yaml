@@ -250,16 +250,16 @@ tags: # Technical Advisory Groups
         - github: didiViking
           lfx_id:
           name: Diana Todea
-          company:
+          company: VictoriaMetrics
           email:
           term:
             start: "2026-07-07"
             end: "2028-07-06"
         - github: nikimanoledaki
-          lfx_id:
+          lfx_id: https://openprofile.dev/profile/nixkim
           name: Niki Manoledaki
-          company:
-          email:
+          company: Grafana Labs
+          email: hello@nikimanoledaki.com
           term:
             start: "2026-07-07"
             end: "2028-07-06"
