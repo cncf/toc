@@ -369,7 +369,7 @@ tags: # Technical Advisory Groups
         - github: arewm
           lfx_id:
           name: Andrew McNamara
-          company:
+          company: Red Hat
           email:
           term:
             start: "2026-07-07"
@@ -401,7 +401,7 @@ tags: # Technical Advisory Groups
         - github: realshuting
           lfx_id:
           name: Shuting Zhao
-          company:
+          company: Nirmata
           email:
           term:
             start: "2026-07-07"
