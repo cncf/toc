@@ -52,13 +52,13 @@ The kcp architecture is composed of several key primitives that work together to
 
 #### kcp Server Components
 
-* **Workspaces**: The primary user-facing unit of tenancy and isolation. From a user's perspective, a Workspace is a fully-isolated, Kubernetes-like cluster with its own unique API endpoint, CustomResourceDefinitions (CRDs), and RBAC policies.
+* **Workspaces**: The primary user-facing unit of tenancy and isolation. From a user's perspective, a Workspace is a fully-isolated, Kubernetes-like cluster with its own unique API endpoint, CustomResourceDefinitions (CRDs), and RBAC policies. Workspaces are organized in a nested tree structure and uniquely identified via their path. A workspace is accessed using a kubeconfig pointing its url path to the unique workspace path and supplying standard Kubernetes authentication and authorization payload. All Kubernetes Authentication and Authorization mechanisms can be configured individually on a per workspace basis.
 
 * **Logical Clusters**: The underlying implementation construct for a Workspace. A logical cluster is a logical partition within the kcp data store (etcd), ensuring that objects from different workspaces are stored in disjoint key prefixes, which is the primary mechanism for enforcing isolation. The goal is to make creating a logical cluster as cheap and fast as creating a Kubernetes namespace.
 
 * **Virtual Workspaces**: Endpoints that provide a Kubernetes-like API interface, but are not backed by a logical cluster for storage. They provide a computed "view" of certain resources across logical clusters. The exact semantics depend on the virtual workspace implementation, different virtual workspace endpoints provide different views according to their role. Access to virtual workspace endpoint is guarded by RBAC.
 
-* **Shards**: A running instance of the kcp server process. Each shard hosts a set of logical clusters, and a full kcp installation can be composed of many shards to achieve horizontal scalability.
+* **Shards**: A running instance of the kcp server process. Each shard hosts a set of logical clusters, and a full kcp installation can be composed of many shards to achieve horizontal scalability. Shards are started with bootstrap credentials to self-register and authenticate at a coordinating rootshard. Traffic between shards is kept at a minimum with only scheduling of logicalclusters requiring shard to shard communication. To authenticate these requests, each shard is provided with a client certificate during startup. In the case of malfunctioning shards, the functionality of functioning shards is not affected.
 
 #### kcp kubectl Plugin (CLI)
 
@@ -76,7 +76,7 @@ kcp provides a set of plugins for `kubectl`, the Kubernetes command line client.
 
 kcp provides resources dedicated to managing available APIs in a Workspace.
 
-* **APIExport**: Allows a service provider in one workspace to publish an API for consumption by other workspaces.
+* **APIExport**: Allows a service provider in one workspace to publish an API for consumption by other workspaces. Multiple providers can publish an API with the same Group, Version, and Kind (GVR) identifiers. Internally a hash is used to uniquely identify and store each export. On the consumer side, only one of these APIs can be bound in order to keep compatibility with the Kubernetes ressource model. Binding a second API with the same GVR will be rejected.
 
 * **APIBinding**: Allows a service consumer in one workspace to bind to an APIExport from another workspace, making the published API available in the local workspace.
 
