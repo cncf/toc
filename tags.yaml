@@ -163,7 +163,7 @@ tags: # Technical Advisory Groups
         - github: thschue
           lfx_id:
           name: Thomas Schuetz
-          company:
+          company: TSC Labs
           email:
           term:
             start: "2026-07-07"
