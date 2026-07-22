@@ -6,7 +6,14 @@ on:
 
 jobs:
   create-tech-review:
-    if: github.event.label.name == 'review/tech'
+    # Only spawn a Tech Review companion issue when 'review/tech' is applied to
+    # something that is NOT itself a Tech Review request. Without this guard,
+    # opening an issue from .github/ISSUE_TEMPLATE/tech-review.yml (which applies
+    # 'review/tech' on creation) causes this workflow to create a duplicate
+    # [Tech Review]: issue. See #2246 / #2247 for a real occurrence.
+    if: >-
+      github.event.label.name == 'review/tech' &&
+      !startsWith(github.event.issue.title, '[Tech Review]')
     runs-on: ubuntu-latest
     permissions:
       issues: write
