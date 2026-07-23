@@ -51,6 +51,11 @@ On-demand operations can also be more complex than a continuously reconciled one
 
 In different terms, this can be described as “push versus pull” or “pipelines” versus "controllers". Neither model is wrong, and both have their benefits and disadvantages. There is also the option to go for a hybrid approach, where certain parts of the system are reconciled continuously, while others are not.
 
+_The remaining sections below (DSL vs. Programming Language, Stateful vs.
+Stateless, Trade-offs, Pattern Maturity) are still in progress, drafted
+collaboratively outside this repo. Tracked in
+[#1631](https://github.com/cncf/toc/issues/1631)._
+
 ## DSL vs. Programming Language
 
 ## Stateful vs. Stateless
