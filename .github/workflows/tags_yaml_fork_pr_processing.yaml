@@ -27,6 +27,11 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}  # Ensure branch checkout
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+          # Safe here: the job never executes fork-provided code. It resets the
+          # working tree to origin/main before running generator/readme_app.go,
+          # only carrying over tags.yaml (data) from the fork. See:
+          # https://gh.io/securely-using-pull_request_target
+          allow-unsafe-pr-checkout: true
 
       - name: Set up Go
         uses: actions/setup-go@v4
