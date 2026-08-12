@@ -282,8 +282,8 @@ tags: # Technical Advisory Groups
     meetings:
       - description: TAG Operational Resilience Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-operational-resilience?view=list # Calendar link from PCC
-        recordings_url: https://www.youtube.com/@TAGOperationalResilience
-        meeting_notes_url: https://notes.cncf.io/s/oWHc3r0r7
+        recordings_url: https://www.youtube.com/@cncfTAGOperationalResilience
+        meeting_notes_url: https://notes.cncf.io/archive/PCPgM-CMR0aBLhSQlQjD0w
     contact:
       slack: C08KGDENK34
       mailing_list: https://lists.cncf.io/g/cncf-tag-operational-resilience
