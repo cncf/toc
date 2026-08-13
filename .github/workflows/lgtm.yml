@@ -1,0 +1,126 @@
+# =============================================================================
+# LGTM & Approve merge gate
+# =============================================================================
+#
+# A Prow-style, CODEOWNERS-driven review gate. Two independent sign-offs are
+# required before the `lgtm/approved` commit status turns green:
+#
+#   /lgtm     – a code owner (not the PR author) says the change looks good.
+#   /approve  – a *different* code owner (not the author) authorises the merge.
+#
+# `/remove-lgtm` and `/remove-approve` revoke a sign-off. Pushing a new commit
+# automatically clears both. All the logic lives in
+# `.github/actions/lgtm-core/index.js`.
+#
+# -----------------------------------------------------------------------------
+# Configuration — GitHub repository *variables* (Settings ▸ Secrets and
+# variables ▸ Actions ▸ Variables). All are optional; the defaults below apply
+# when a variable is unset.
+# -----------------------------------------------------------------------------
+#
+#   LGTM_GATE_ENABLED   (default: true)
+#       Master on/off switch for enforcement.
+#       - "true"  → the `lgtm/approved` status reflects real review state
+#                   (red until the requirements below are met).
+#       - "false" → the status is ALWAYS green. Use this to roll the gate out
+#                   in "observe only" mode, or to disable it in an emergency,
+#                   without editing branch protection.
+#
+#   LGTM_OWNERSHIP_MODE (default: coverage)
+#       How ownership is judged. Currently "coverage" is implemented: the union
+#       of every signer's owned paths must cover *every* changed file in the PR.
+#
+#   LGTM_MIN            (default: 1)
+#       Minimum number of valid `/lgtm` sign-offs required.
+#
+#   APPROVE_MIN         (default: 1)
+#       Minimum number of valid `/approve` sign-offs required. The `/approve`
+#       signer(s) must be different people from the `/lgtm` signer(s).
+#
+# -----------------------------------------------------------------------------
+# Secrets & permissions
+# -----------------------------------------------------------------------------
+#   secrets.SLASH_COMMANDS_PAT
+#       A token with organization "Members: Read" (to resolve CODEOWNERS teams)
+#       plus pull-request, issue and commit-status write access. If org read is
+#       denied the workflow fails loudly rather than silently miscounting.
+#
+# -----------------------------------------------------------------------------
+# Enabling enforcement (one-time, manual)
+# -----------------------------------------------------------------------------
+#   Add `lgtm/approved` as a *required status check* in the branch protection
+#   rule for the default branch. Recommended rollout: ship with
+#   LGTM_GATE_ENABLED=false, watch a few PRs, then set it to true and add the
+#   required check.
+#
+# Security note: this workflow runs with `issue_comment` / `pull_request_target`
+# privileges. It only ever checks out the trusted BASE repository (never PR head
+# code) and reads CODEOWNERS from the base commit, so a PR cannot self-authorise
+# by editing CODEOWNERS or the gate logic.
+# =============================================================================
+
+name: LGTM & Approve Gate
+
+on:
+  issue_comment:
+    types: [created, edited]
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  statuses: write
+
+# Serialise per-PR so concurrent commands don't clobber the sticky state comment.
+concurrency:
+  group: lgtm-${{ github.event.issue.number || github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  # Handle /lgtm, /approve and their removals.
+  comment:
+    if: >-
+      github.event_name == 'issue_comment' &&
+      github.event.issue.pull_request &&
+      github.event.comment.user.type != 'Bot' &&
+      startsWith(github.event.comment.body, '/')
+    runs-on: ubuntu-latest
+    steps:
+      # Checks out the trusted base repository (default ref — never PR head),
+      # so we can `require` our own gate logic.
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/github-script@v7
+        env:
+          LGTM_GATE_ENABLED: ${{ vars.LGTM_GATE_ENABLED }}
+          LGTM_OWNERSHIP_MODE: ${{ vars.LGTM_OWNERSHIP_MODE }}
+          LGTM_MIN: ${{ vars.LGTM_MIN }}
+          APPROVE_MIN: ${{ vars.APPROVE_MIN }}
+        with:
+          github-token: ${{ secrets.SLASH_COMMANDS_PAT }}
+          script: |
+            const lgtm = require('./.github/actions/lgtm-core/index.js')
+            await lgtm.handleComment({ github, context, core })
+
+  # Initialise the gate on open/reopen and reset it when new commits land.
+  lifecycle:
+    if: github.event_name == 'pull_request_target'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/github-script@v7
+        env:
+          LGTM_GATE_ENABLED: ${{ vars.LGTM_GATE_ENABLED }}
+          LGTM_OWNERSHIP_MODE: ${{ vars.LGTM_OWNERSHIP_MODE }}
+          LGTM_MIN: ${{ vars.LGTM_MIN }}
+          APPROVE_MIN: ${{ vars.APPROVE_MIN }}
+        with:
+          github-token: ${{ secrets.SLASH_COMMANDS_PAT }}
+          script: |
+            const lgtm = require('./.github/actions/lgtm-core/index.js')
+            await lgtm.handleLifecycle({ github, context, core })

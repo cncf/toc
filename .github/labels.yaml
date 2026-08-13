@@ -5,6 +5,9 @@ definitionRequired: true
 
 
 labels:
+- name: approved
+  description: A code owner has approved this PR (see the LGTM & Approve Gate)
+  color: 0e8a16
 - name: contribution-agreement/signed
   description: Contributor has signed the required contribution agreement
   color: 0e8a16
@@ -143,6 +146,9 @@ labels:
 - name: level/sandbox
   description: Item related to a sandbox level project or the sandbox criteria/process itself
   color: e884e1
+- name: lgtm
+  description: A code owner has LGTM’d this PR (see the LGTM & Approve Gate)
+  color: 2da44e
 - name: needs-group
   description: Indicates an issue or PR that has not been assigned a group (toc or tag/foo label applied)
   color: FBCA04
