@@ -39,10 +39,11 @@ const STATE_RE = /<!--\s*lgtm-state:\s*(\{[\s\S]*?\})\s*-->/;
 // Only these exact commands are actioned (anchored, nothing else on the line).
 const COMMAND_RE = /^\/(lgtm|approve|remove-lgtm|remove-approve)\s*$/i;
 
-// Label colours/descriptions used if the labels do not yet exist.
+// Label colours/descriptions used only if the labels do not yet exist.
+// Keep these in sync with the canonical definitions in .github/labels.yaml.
 const LABEL_DEFS = {
-  [LGTM_LABEL]: { color: 'c2e0c6', description: 'A code owner has LGTM’d this PR' },
-  [APPROVED_LABEL]: { color: '0e8a16', description: 'A code owner has approved this PR' },
+  [LGTM_LABEL]: { color: '2da44e', description: 'A code owner has LGTM’d this PR (see the LGTM & Approve Gate)' },
+  [APPROVED_LABEL]: { color: '0e8a16', description: 'A code owner has approved this PR (see the LGTM & Approve Gate)' },
 };
 
 // Candidate locations for the CODEOWNERS file, in GitHub’s resolution order.
@@ -58,12 +59,18 @@ function readConfig() {
     const n = parseInt(v, 10);
     return Number.isFinite(n) && n > 0 ? n : dflt;
   };
-  return {
+  const cfg = {
     gateEnabled: bool(process.env.LGTM_GATE_ENABLED, true),
     ownershipMode: (process.env.LGTM_OWNERSHIP_MODE || 'coverage').toLowerCase(),
     lgtmMin: int(process.env.LGTM_MIN, 1),
     approveMin: int(process.env.APPROVE_MIN, 1),
   };
+  // Only "coverage" is implemented. Fail loudly rather than silently ignoring an
+  // unsupported value so the variable never looks supported when it isn't.
+  if (cfg.ownershipMode !== 'coverage') {
+    throw new Error(`Unsupported LGTM_OWNERSHIP_MODE: ${cfg.ownershipMode} (supported: coverage)`);
+  }
+  return cfg;
 }
 
 // ---------------------------------------------------------------------------
@@ -288,7 +295,8 @@ async function findStickyComment(github, owner, repo, issue_number) {
     issue_number,
     per_page: 100,
   });
-  return comments.find((c) => STATE_RE.test(c.body || '')) || null;
+  // If duplicates ever exist, keep the newest so we don't leave a stale status.
+  return comments.filter((c) => STATE_RE.test(c.body || '')).pop() || null;
 }
 
 async function readState(github, owner, repo, issue_number) {

@@ -81,11 +81,18 @@ concurrency:
 jobs:
   # Handle /lgtm, /approve and their removals.
   comment:
+    # Coarse pre-filter to avoid spinning up a run for unrelated slash commands
+    # (e.g. /assign, /retest). The JS parser does the strict, anchored matching.
     if: >-
       github.event_name == 'issue_comment' &&
       github.event.issue.pull_request &&
       github.event.comment.user.type != 'Bot' &&
-      startsWith(github.event.comment.body, '/')
+      (
+        startsWith(github.event.comment.body, '/lgtm') ||
+        startsWith(github.event.comment.body, '/approve') ||
+        startsWith(github.event.comment.body, '/remove-lgtm') ||
+        startsWith(github.event.comment.body, '/remove-approve')
+      )
     runs-on: ubuntu-latest
     steps:
       # Checks out the trusted base repository (default ref — never PR head),
