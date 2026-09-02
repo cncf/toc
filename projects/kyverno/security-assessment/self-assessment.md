@@ -2,7 +2,7 @@
 
 [Self-assessment source](https://github.com/cncf/toc/blob/main/projects/kyverno/security-assessment/self-assessment.md)
 
-| Completed:                  | *tbd* |
+| Completed:                  | September 02, 2026 |
 | :-------------------------- | :---- |
 | **Security reviewer(s)**:   | <!-- cspell:disable --> Andrew Martin, John Kinsella, Wesley Steehouwer (@dutchshark), Robert Ficcaglia, Tom Cope, Giovanni Baggio, Justin Cappos |
 | **Project security lead**:  | <!-- cspell:disable --> Jim Bugwadia, Shuting Zhao |
@@ -76,14 +76,14 @@ Additionally, Kyverno has been extended with new policy types (`ValidatingPolicy
 
 Kubernetes has a declarative configuration management system that allows users to specify the desired state of resources, in which controllers continuously reconcile with the current system state. For flexibility, and to address a wide set of use cases, Kubernetes provides [several configuration options][google-search-k8s-api] for each resource.
 
-[google-search-k8s-api]: https://www.google.com/url?q=https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.34/&sa=D&source=docs&ust=1772478640469573&usg=AOvVaw0ovpqALGHS1xQdKiFR1aI2
+[google-search-k8s-api]: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.34/
 
 While this is powerful, it also creates a few challenges:
 
 1. Only a small subset of Kubernetes controller configuration options are commonly used, and configuration details may be overlooked. For example, a developer may not know how to properly configure a pod’s Security Context.
 2. The wide range of possible configurations also increases managerial overhead, as it can result in a lack of standardization.
 3. Kubernetes configurations are not secure by default (e.g. no default network policy, Pod Security Standards, open RBAC). Security and best practices need to be configured for workloads and users.
-4. A Kubernetes resource's configuration may be shared across organizational roles (DevSecOps) and chances of misconfigurations, or lack of proper configuration, increase as if is no clear resource ownership between teams. Whether developers, operators, or security engineers are responsible for more _advanced_ configuration settings may not be obvious.
+4. A Kubernetes resource's configuration may be shared across organizational roles (DevSecOps) and chances of misconfigurations, or lack of proper configuration, increase as there is no clear resource ownership between teams. Whether developers, operators, or security engineers are responsible for more _advanced_ configuration settings may not be obvious.
 
 ### Goals
 
@@ -101,8 +101,6 @@ Kyverno also does not replace Kubernetes' built-in policy controls like Validati
 
 ## Self-assessment use
 
-The joint assessment is initially created by the project team and then collaboratively developed with the [security reviewers](https://tag-security.cncf.io/community/assessments/guide/security-reviewer/) as part of the project’s TAG-Security Security Assessment (TSSA) Process. Information about the TAG-Security Review can be found in the [CNCF TAG-Security Review Process Guide](https://tag-security.cncf.io/community/assessments/guide/).
-
 This document does not intend to provide a security audit of Kyverno and is not intended to be used in lieu of a security audit. This document provides users of Kyverno with a security focused understanding of Kyverno and when taken with the [self-assessment](https://tag-security.cncf.io/community/assessments/guide/self-assessment/) provide the community with the TAG-Security Review of the project. Both of these documents may be used and references as part of a security audit.
 
 ## Project Design
@@ -111,7 +109,7 @@ This document does not intend to provide a security audit of Kyverno and is not 
 
 The following diagram shows the logical architecture for Kyverno. Each major component is described below:
 
-![Kyverno Logical Architecture](images/kyverno-architecture.png)
+![Kyverno Logical Architecture](images/kyverno-architecture-2.png)
 
 Kyverno consists of four main controllers that work together to provide comprehensive policy management capabilities. Each controller handles specific aspects of policy processing, from admission control to background operations and cleanup tasks.
 
@@ -136,19 +134,19 @@ Kyverno consists of four main controllers that work together to provide comprehe
 #### Reports Controller
 
 * Responsible for the creation and reconciliation of the final `PolicyReport` and `ClusterPolicyReport` custom resources.
-* Performs background scans and generates, processes, and converts `EphemeralReport` and `ClusterEphemeralReport` intermediary resources into the final [`PolicyReport` and `ClusterPolicyReport`](https://www.google.com/url?q=https://kyverno.io/docs/guides/reports/&sa=D&source=docs&ust=1772479820731712&usg=AOvVaw0x3H-5xnPZyX2hPSq-vpC1) (Kubernetes YAML) resources.
+* Performs background scans and generates, processes, and converts `EphemeralReport` and `ClusterEphemeralReport` intermediary resources into the final [`PolicyReport` and `ClusterPolicyReport`](https://kyverno.io/docs/guides/reports/) (Kubernetes YAML) resources.
 
 #### Background Controller
 
 * Processes generate and mutate-existing rules of the `Policy` or `ClusterPolicy`, and the mutate-existing functionality of the `MutatingPolicy` and `GeneratingPolicy`.
-  * The [admission controller][#admission-controller] creates a temporary update request, which is queued, and processed by the background controller.
+  * The [admission controller](#admission-controller) creates a temporary update request, which is queued, and processed by the background controller.
   * This uses standard Kubernetes mechanisms like informers, to process queued jobs. Circuit breakers will prevent from creating too many queued jobs.
   * Conflicting mutations e.g., mutations that cancel each other's changes, can exist and will produce changes until limited by circuit breakers.
   * There is no ordering across mutations. Kubernetes throttling mechanism and Kyverno circuit breakers will kick in when mutating rules are conflicting.
   * Once circuit breakers kick in further mutation changes will fail until there is human intervention to resolve the situation.
 * Processes policy add, update, and delete events.
 * Processes and generates UpdateRequest intermediary resources to generate or mutate the final resource.
-* Generates `EphemeralReport` and `ClusterEphemeralReport` intermediary resources for further processing by the [Reports Controller][#reports-controller].
+* Generates `EphemeralReport` and `ClusterEphemeralReport` intermediary resources for further processing by the [Reports Controller](#reports-controller).
 * Does not run with wildcard roles by default, need explicit RBAC for resources managed
   * <https://kyverno.io/docs/installation/customization/#customizing-permissions>
 
@@ -225,11 +223,11 @@ Kyverno operates as a webhook admission controller and a CLI application.
 
 * **Background Mutation**: mutation of existing resources. Achieved via mutate subrule in `ClusterPolicy`/`Policy` and `MutatingPolicy`, it is reconciled across existing resources to perform mutations.
 
-* **Resource Generation and Sync**: generation of new resources based on flexible triggers. Achieve via generate subrule in `ClusterPolicy`/`Policy` and `GeneratingPolicy` to create or sync related resources with optional synchronization. There are no user configurable templates, and the circuit breaker throttles excess resource generation.
+* **Resource Generation and Sync**: generation of new resources based on flexible triggers. Achieved via generate subrule in `ClusterPolicy`/`Policy` and `GeneratingPolicy` to create or sync related resources with optional synchronization. There are no user configurable templates, and the circuit breaker throttles excess resource generation.
 
-* **Resource Cleanup**: deleting of resources based on match conditions and cron schedules. Achieve via `CleanupPolicy`/`ClusterCleanupPolicy` and `DeletingPolicy`/`NamespacedDeletingPolicy` to safely delete matched resources. `DeletingPolicy` logs are persisted in Kubernetes, and for `CleanupPolicy`, the deletion record is tracked via metrics: <https://kyverno.io/docs/monitoring/dpol-cleanup-deleted-objects/> and <https://main.kyverno.io/docs/monitoring/cleanup-errors/>
+* **Resource Cleanup**: deleting of resources based on match conditions and cron schedules. Achieved via `CleanupPolicy`/`ClusterCleanupPolicy` and `DeletingPolicy`/`NamespacedDeletingPolicy` to safely delete matched resources. `DeletingPolicy` logs are persisted in Kubernetes, and for `CleanupPolicy`, the deletion record is tracked via metrics: <https://kyverno.io/docs/monitoring/dpol-cleanup-deleted-objects/> and <https://main.kyverno.io/docs/monitoring/cleanup-errors/>
 
-* **Policy Reporting**: reporting of policy violations and other statuses. Achieve via `PolicyReport`/`ClusterPolicyReport` generated from admission and background scanning evaluations for Kyverno policies, Kubernetes `ValidatingAdmissionPolicies` and `MutatingAdmissionPolicies`.
+* **Policy Reporting**: reporting of policy violations and other statuses. Achieved via `PolicyReport`/`ClusterPolicyReport` generated from admission and background scanning evaluations for Kyverno policies, Kubernetes `ValidatingAdmissionPolicies` and `MutatingAdmissionPolicies`.
 
 * **Monitoring and Tracing**: expose metrics to monitor and observe the operation of Kyverno, and generate distributed tracing to introspect the internal operations of Kyverno.
 
@@ -245,11 +243,11 @@ Kyverno operates as a webhook admission controller and a CLI application.
 
 * **Auto-generate MutatingAdmissionPolicies and ValidatingAdmissionPolicies**: auto-generate Kubernetes `ValidatingAdmissionPolicy` and `MutatingAdmissionPolicy` based on configured Kyverno `ValidatingPolicy` and `MutatingPolicy`.
 
-* **JMESPath**: supported in `ClusterPolicy`/`Policy`, to perform complex selections of fields and values and also manipulation thereof by using one or more filters. These are bound to [2MB (default)](https://github.com/kyverno/kyverno/pull/14846) to prevent unbounded memory consumption through context variables, for e.g. exponential string amplification in JMESPath.
+* **JMESPath**: supported in `ClusterPolicy`/`Policy`, to perform complex selections of fields and values and also manipulation thereof by using one or more filters. These are bound to [2MB (default)](https://github.com/kyverno/kyverno/pull/14846) to prevent unbounded memory consumption through context variables, e.g. exponential string amplification in JMESPath.
 
 * **CEL Libraries**: enhance Kubernetes’ CEL environment with libraries enabling complex policy logic and advanced features. Classic admission validation and CEL MutatingPolicy enforce RuntimeCELCostBudget, currently ValidatingPolicy and ImageValidatingPolicy do not pass the budget. Issue tracking to align budget behaviour upstream: <https://github.com/kyverno/kyverno/issues/14495>
 
-* **Dynamic Webhook Management**: register and manage webhook configurations dynamically for the resources which are the subject of the configured policies. When auto-config is used, Kyverno always reverts updates from other services. If the auto-config process fails, policies remain in ”not-ready” status.  Kyverno configures the webhook based on the user-defined policies i.e., Kyverno will only receive requests for resources that are defined in “match” statements in policies.
+* **Dynamic Webhook Management**: register and manage webhook configurations dynamically for the resources which are the subject of the configured policies. When auto-config is used, Kyverno always reverts updates from other services. If the auto-config process fails, policies remain in `not-ready` status.  Kyverno configures the webhook based on the user-defined policies i.e., Kyverno will only receive requests for resources that are defined in `match` statements in policies.
 
 * **Certificate Renewer**: manage and renew certificates as Kubernetes Secrets for webhook registration. Users are free to create certificates with any mechanism including cert-manager, and Kyverno will consume that from a secret. See details at <https://kyverno.io/docs/installation/customization/#custom-certificates>.
 
@@ -279,7 +277,7 @@ Kyverno operates as a webhook admission controller and a CLI application.
 
 * **Supply Chain Security**: the Kyverno project follows best practices for supply chain security [Kyverno and SLSA 3][kyverno-slsa].
 
-[kyverno-slsa]: https://kyverno.io/blog/2023/02/01/kyverno-and-slsa-3/
+[kyverno-slsa]: https://kyverno.io/blog/2023/02/01/slsa-3/
 
 * **Minimal Permissions**: as an admission controller, Kyverno has visibility into all changes. The project default installation uses fine-grained permissions on common resources and additional permissions are required to mutate and generate sensitive resources ([RBAC Configuration][kyverno-install-rbac]).
 
@@ -314,9 +312,9 @@ All code is maintained in [Git](https://github.com/kyverno/kyverno/) and changes
 
 ### Artifacts
 
-The [Kyverno container images](https://github.com/orgs/kyverno/packages) are hosted in GitHub Container Registry (GHCR). Container images are signed using Sigstore Cosign (https://main.kyverno.io/docs/security/#verifying-kyverno-container-images.)
+The [Kyverno container images](https://github.com/orgs/kyverno/packages) are hosted in GitHub Container Registry (GHCR). Container images are signed using Sigstore Cosign (https://main.kyverno.io/docs/security/#verifying-kyverno-container-images).
 
-The [Kyverno Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) is hosted in ArtifactHub. There is a pending issue to to sign the Helm Chart using Sigstore Cosign (https://github.com/kyverno/kyverno/issues/2758).
+The [Kyverno Helm chart](https://artifacthub.io/packages/helm/kyverno/kyverno) is hosted in ArtifactHub. There is a pending issue to sign the Helm Chart using Sigstore Cosign (https://github.com/kyverno/kyverno/issues/2758).
 
 The [Kyverno installation YAMLs](https://github.com/kyverno/kyverno/blob/main/config/install-latest-testing.yaml) are hosted in the GitHub repository.
 
@@ -360,7 +358,7 @@ A detailed comparison is available at: https://neonmirrors.net/post/2021-02/kube
 
 ### Existing Audits
 
-* Third‑party security audit (CNCF, Ada Logics, Nov 2023\)
-  * Reference: [Kyverno completes third‑party security audit](https://kyverno.io/blog/2023/11/28/kyverno-completes-third-party-security-audit/)
-* Fuzzing security audit (CNCF, Ada Logics, Sep 2023\)
-  * Reference: [Kyverno completes fuzzing security audi](https://kyverno.io/blog/2023/09/06/kyverno-completes-fuzzing-security-audit/)t
+* Third‑party security audit (CNCF, Ada Logics, Nov 2023)
+  * Reference: [Kyverno completes third‑party security audit](https://kyverno.io/blog/2023/11/28/2023-security-audit/)
+* Fuzzing security audit (CNCF, Ada Logics, Sep 2023)
+  * Reference: [Kyverno completes fuzzing security audit](https://kyverno.io/blog/2023/09/06/fuzzing-audit/)
