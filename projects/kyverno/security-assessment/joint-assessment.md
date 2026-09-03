@@ -2,7 +2,7 @@
 
 **Completed:** TBD
 
-**Security reviewers:** Andrew Martin, John Kinsella, Wesley Steehouwer (@dutchshark), Robert Ficcaglia, Tom Cope, Giovanni Baggio, Justin Cappos
+**Security reviewers:** Andrew Martin, John Kinsella, Wesley Steehouwer (@dutchshark), Robert Ficcaglia, Tom Cope (@copethomas), Giovanni Baggio, Sam Holmes (@sholmes222), Justin Cappos
 
 **Project security lead:** Jim Bugwadia, Shuting Zhao
 
@@ -98,6 +98,7 @@ Tracked in [kyverno/kyverno#15335](https://github.com/kyverno/kyverno/issues/153
 2. Establish automated security advisory review and threat model update process
 3. Consider threat model refresh against SLSA 1.0 specification (currently documented against v0.1)
 4. Document and provide examples for secure configuration in high-security environments (e.g., air-gapped clusters, restricted networks)
+   * Partially covered by [End User Threat Model and Hardening Guide](https://kyverno.io/blog/controlplane-threat-model/assets/kyverno-end-user-threat-model-and-hardening-guide.pdf)  
 5. Implement periodic security advisory backtesting against threat model to ensure completeness of coverage
 
 ## Acknowledgments

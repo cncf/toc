@@ -4,7 +4,7 @@
 
 | Completed:                  | September 02, 2026 |
 | :-------------------------- | :---- |
-| **Security reviewer(s)**:   | <!-- cspell:disable --> Andrew Martin, John Kinsella, Wesley Steehouwer (@dutchshark), Robert Ficcaglia, Tom Cope, Giovanni Baggio, Justin Cappos |
+| **Security reviewer(s)**:   | <!-- cspell:disable --> Andrew Martin, John Kinsella, Wesley Steehouwer (@dutchshark), Robert Ficcaglia, Tom Cope(@copethomas), Giovanni Baggio, Sam Holmes (@sholmes222), Justin Cappos |
 | **Project security lead**:  | <!-- cspell:disable --> Jim Bugwadia, Shuting Zhao |
 | **Source code**:            | <https://github.com/kyverno/kyverno> |
 | **Web site**:               | <https://kyverno.io/> |
@@ -297,6 +297,29 @@ A threat model for admission controllers is published and maintained by the Kube
 The Kyverno security document references this threat model and discusses mitigations and best practices:
 
 <https://main.kyverno.io/docs/security/#threat-model>
+
+[ControlPlane](https://control-plane.io/) have performed a further threat model of deploying Kyverno in production Kubernetes
+environments, targeting version v1.17.1. The analysis covers the following core open source
+Kyverno controllers and components:
+- Admission controller: the webhook that validates and mutates resources at admission
+time
+- Background controller: scans existing cluster resources against configured policies
+- Reports controller: generates PolicyReport and ClusterPolicyReport resources
+- Cleanup controller: deletes resources based on policy-defined criteria and schedules
+- Image verification: Cosign and Sigstore integration for supply chain security at admission
+time
+
+Security considerations focused on deployment architecture, configuration, and operational
+practices that influence the security posture of Kyverno installations. In particular, we examine:
+- Kubernetes Role-Based Access Control (RBAC) considerations for Kyverno components
+and policy resources
+- Policy supply chain integrity, including signing and verification of policy bundles
+- Network isolation and multi-tenant security considerations
+- Security considerations related to PolicyException management and lifecycle
+- Image verification configuration and enforcement
+
+* [Link to Threat model](https://kyverno.io/blog/controlplane-threat-model/assets/kyverno-end-user-threat-model-and-hardening-guide.pdf)
+* [Link to Bog Post](https://kyverno.io/blog/2026/07/29/controlplane-threat-model/)
 
 ## Project compliance
 
