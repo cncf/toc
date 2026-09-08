@@ -4,8 +4,7 @@ title: '[Gov. Review]:'
 labels:
   - needs-triage
   - kind/review
-  - review/governance 
-  - sub/project-reviews
+  - review/governance
 body:
   - type: input
     id: name

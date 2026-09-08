@@ -348,8 +348,7 @@ _Note: that a contributor ladder is NOT required, but it is a good idea._
   maintainer?_
 - _Does each role have qualifications, duties, and powers defined?_
 
-_If the project does not have one, suggest that Project Reviews could help them
-create one._
+_If the project does not have one, suggest that the project's TAG or assigned reviewers could help them create one._
 
 **Clearly defined and discoverable process to submit issues or changes.**
 <br>
