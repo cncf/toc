@@ -52,12 +52,12 @@ _The project has been adopted by the following organizations in a testing and in
 ### Required
 
 
-- [ ] **Complete a [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
+- [ ] **Complete a [General Technical Review (GTR)](https://github.com/cncf/toc/blob/main/operations/project-reviews/general-technical-questions.md).**
   - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Complete a [Governance Review](../toc_subprojects/project-reviews-subproject/governance-review-template.md).**
+- [ ] **Complete a [Governance Review](https://github.com/cncf/toc/blob/main/operations/project-reviews/governance-review-template.md).**
   - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) -->
@@ -81,11 +81,11 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 ## Governance and Maintainers
 
-Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject if completed as a suggested item prior to application.
+Note: this section may be augmented by the completion of a Governance Review if completed as a suggested item prior to application.
 
 ### Suggested
 
-- [ ] **Complete a Governance Review with the Project Reviews subproject**
+- [ ] **Complete a Governance Review**
 
 <!-- (Project assertion goes here) --> 
 
@@ -157,7 +157,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Contributors and Community
 
-Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
+Note: this section may be augmented by the completion of a Governance Review.
 
 ### Required
 
