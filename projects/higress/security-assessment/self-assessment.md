@@ -23,9 +23,6 @@
 | Helm defaults | [`helm/core/values.yaml`](https://github.com/higress-group/higress/blob/main/helm/core/values.yaml) |
 | OpenSSF Best Practices | [Passing](https://www.bestpractices.dev/projects/12667), verified 2026-08-04 |
 
-This is the project-maintained working copy. For formal Due Diligence, a vetted
-snapshot must be archived at the path above in `cncf/toc`. The reviewer should
-freeze evidence links to the reviewed revision when that snapshot is archived.
 
 ## Overview
 
@@ -149,6 +146,22 @@ reviewers an initial view of security boundaries, practices, and known gaps.
   request metadata depending on operator configuration.
 - External service registries, Redis, certificate issuers, identity providers,
   OCI registries, and AI/model providers.
+
+### Who configures and enforces security controls
+
+The [operator guide](https://github.com/higress-group/community/blob/db86b75/docs/security-operator-responsibilities.md)
+lists the actions required from the people running Higress. This guide is
+proposed in the community repository and is awaiting merge.
+
+Kubernetes enforces the RBAC permissions and container resource limits chosen
+by operators. Higress and Envoy apply the routes and request policies they
+configure. Operators must review custom resources, plugin settings, and image
+sources before deployment. Configuration validation does not establish that a
+policy is safe or that an image is trustworthy. For example, a valid route can
+still point to the wrong backend, and a loaded plugin can still be malicious.
+Operators must select trusted images and use their deployment tooling to check
+signatures or attestations where available; they must not assume Higress checks
+these automatically.
 
 ### Threat Model
 
