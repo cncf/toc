@@ -50,7 +50,7 @@ jobs:
 
             // Mirrors labels declared in .github/ISSUE_TEMPLATE/gov-review.yml
             const LABELS_GOV_REVIEW = [
-              'needs-triage', 'kind/review', 'review/governance', 'sub/project-reviews'
+              'needs-triage', 'kind/review', 'review/governance'
             ];
 
             const COMMENT_MARKERS = {

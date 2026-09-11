@@ -7,7 +7,7 @@ v1.0
 **Depending on CNCF maturity application level, not every section may be answered by the reviewing TAG and the TAG review should take no more than an hour of a reviewer's time to complete.**
 
 [gtrq]: general-technical-questions.md
-[pr]: project-reviews.md
+[pr]: tag-project-reviews.md
 
 ---
 

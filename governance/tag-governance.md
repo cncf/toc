@@ -145,8 +145,8 @@ TAG charter PR, and the TAG is formed after the vote is passed.
   with any role membership requirements and lifecycle.
 - MUST maintain TAG “[metadata]” - a list of leads, subprojects, and
   initiatives.
-- Where applicable, MUST participate in Project Reviews & Contributor Strategy
-  TOC subproject.
+- Where applicable, MUST participate in project governance and technical reviews,
+  Contributor Strategy, and other TOC-requested project support activities.
 - If applicable, MUST document services provided to other TAGs or projects.
 - MUST hold at least one regularly scheduled *public* monthly meeting, recorded
   and uploaded to YouTube.
