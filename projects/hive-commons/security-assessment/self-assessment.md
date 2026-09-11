@@ -19,7 +19,7 @@ application ([cncf/sandbox#516](https://github.com/cncf/sandbox/issues/516)).
 > | "If I deploy this, what should I worry about?" | New section [If you deploy this, what should you worry about?](#if-you-deploy-this-what-should-you-worry-about) — the attack path stated plainly, a concern/mitigation/non-mitigation table, the three settings that determine exposure, and the worst realistic outcome. |
 > | "Have you red teamed `ioscan`? Is this perfect defense or partial mitigation?" | Answered: **no red-teaming exists.** Efficacy is now described as unmeasured and partial, with the containment credited to the network deny rules instead. Evaluation tracked in [#6685](https://github.com/hivecommons/hive/issues/6685). |
 > | "What is redaction for? What about base64-encoded exfiltration?" | Log scrubbing re-scoped as log hygiene, explicitly **not** an exfiltration control. Running the question against the canary path found a real gap — the egress check is substring-only — now filed as [#6686](https://github.com/hivecommons/hive/issues/6686) and recorded as a known weakness. |
-> | "Get an OpenSSF passing badge." | Agreed; being pursued in [#6684](https://github.com/hivecommons/hive/issues/6684). Most passing criteria already met. |
+> | "Get an OpenSSF passing badge." | **Already held, and this document was wrong to imply otherwise.** [Project 14261](https://www.bestpractices.dev/projects/14261) reached **passing** (100%) on 2026-08-27 — four days before the review — and `README.md` was displaying it throughout. The badge entry has since been corrected: 70 URLs in its criteria justifications still pointed at the pre-migration `kubestellar` org. Tracked in [#6684](https://github.com/hivecommons/hive/issues/6684). |
 > | "This is a huge risk. Why not mitigate it?" | Half was mitigated: the roster went from **one maintainer to three**, across three affiliations, with a documented security-response process. The unmitigated half — unenforced code ownership — is now stated as the largest remaining process risk, with scoped enforcement tracked in [#6687](https://github.com/hivecommons/hive/issues/6687). |
 > | "Looks like AI generated this — you should know the answer." | The "Case studies: not applicable" claim was simply **wrong**: `ADOPTERS.md` lists seven adopters, three in production, one running at ACMM L5/L6 across 43 repositories. Replaced with the real table. |
 > | "Go through the open questions and figure them out." | The open-questions section is gone. Every item was run down against the repository and answered in [Questions resolved since first review](#questions-resolved-since-first-review) — including two answers that are "no." |
@@ -402,18 +402,15 @@ project-level compliance signals:
   (`scorecard.yml`, via a SHA-pinned reusable workflow in
   `hivecommons/infra`); results publish to the repository's code-scanning
   alerts. No specific score floor is gated in CI at present.
-- **OpenSSF Best Practices Badge**: **not yet held — and being pursued.** At
-  first review of this assessment the project had not registered, and
-  TAG-Security's feedback was that a passing badge is achievable
-  low-hanging fruit whose criteria are things the project should be doing
-  anyway. The maintainers agree; registration and criteria completion are
-  tracked in [#6684](https://github.com/hivecommons/hive/issues/6684), and
-  this document will carry the badge ID and level once awarded rather than a
-  promise. The substantive prerequisites — OSI license, public VCS, private
-  vulnerability reporting, documented contribution process, automated test
-  suite in CI, static analysis, and no known unpatched vulnerabilities — are
-  already satisfied; what is missing is the registration and self-certification
-  itself.
+- **OpenSSF Best Practices Badge**: **held at the passing level** —
+  [project 14261](https://www.bestpractices.dev/projects/14261), 100% of the
+  passing criteria, awarded 2026-08-27 and not lapsed since. Silver (15%) and
+  gold (22%) are not claimed. TAG-Security's feedback at first review was that
+  a passing badge is achievable low-hanging fruit whose criteria are things
+  the project should be doing anyway; that was correct, and the badge had in
+  fact already been awarded four days before the review was written. See the
+  "Open SSF best practices" section for why this document twice said
+  otherwise.
 - **DCO (Developer Certificate of Origin)**: enforced for human contributors
   via `copilot-dco.yml` and is a stated policy requirement for agent-authored
   commits (`git commit -s`) per `security-model.md` Layer 5 — described there
@@ -710,20 +707,26 @@ repository's code-scanning alerts. This assessment deliberately does not
 freeze a numeric score into the text — it moves independently of this
 document — and a reviewer should pull the current result.
 
-**OpenSSF Best Practices Badge: not yet held, and now being pursued.** The
-first revision of this document recorded this as "not yet assessed whether
-this is planned," which was an evasion; TAG-Security review called it out,
-and the answer is that the project had simply not done it. It is planned, and
-tracked in [#6684](https://github.com/hivecommons/hive/issues/6684). The
-passing-level criteria are largely met already — OSI-approved license
-(Apache-2.0), public version-controlled source, documented contribution
-process, private vulnerability reporting via GitHub Security Advisories, an
-automated test suite gating every PR, static analysis in CI, digest-pinned
-dependencies, and no known unpatched vulnerabilities — so the outstanding
-work is registration and self-certification rather than engineering. When the
-badge is awarded this section will carry its ID and level; until then it
-carries the issue number, because a tracked commitment is worth more to a
-reviewer than a claim.
+**OpenSSF Best Practices Badge: held at the passing level.** The project is
+registered as [project 14261](https://www.bestpractices.dev/projects/14261)
+and reached **passing** (100% of the passing criteria) on **2026-08-27**; it
+has not lapsed since. The badge is displayed in `README.md` and its live
+status is available from `https://www.bestpractices.dev/projects/14261/badge`.
+Silver and gold are not claimed. The badge is self-certified, as the
+programme intends, so its value to a reviewer is not the graphic but the
+per-criterion written justifications behind it, each linking to the specific
+file, workflow or policy that satisfies it — those can be checked rather than
+taken on trust.
+
+Two earlier revisions of this section were wrong about this, in opposite
+directions, and both errors are worth recording. The first said the badge was
+"not yet assessed whether this is planned," which was an evasion rather than
+an answer; TAG-Security review called it out. The correction then overshot by
+describing the badge as not yet held and merely "being pursued" — but it had
+in fact been awarded on 2026-08-27, four days before that review. In both
+cases this document was written from itself rather than re-derived from
+observable state, which is the same defect that left the maintainer count
+stale. The badge status above is taken from the programme's public API.
 
 ### Case studies
 
@@ -808,9 +811,10 @@ repository and answered below. Where the answer is "no," it says no.
   compromise.
 
 - **Does the project intend to pursue the OpenSSF Best Practices Badge?**
-  Resolved: **yes.** It had not been considered before review; it is now
-  tracked in [#6684](https://github.com/hivecommons/hive/issues/6684), with
-  most passing criteria already satisfied.
+  Resolved: **it already holds it.** [Project 14261](https://www.bestpractices.dev/projects/14261)
+  reached the passing level on 2026-08-27, before this question was asked.
+  The question survived in this document only because the document was being
+  written from itself rather than checked against the programme's API.
 
 - **What is the current OpenSSF Scorecard result?** Intentionally not frozen
   into this document — the workflow runs weekly and on every push to `v4`,
