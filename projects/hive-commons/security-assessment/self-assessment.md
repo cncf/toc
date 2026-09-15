@@ -26,6 +26,20 @@ application ([cncf/sandbox#516](https://github.com/cncf/sandbox/issues/516)).
 >
 > Net effect: five issues filed ([#6684](https://github.com/hivecommons/hive/issues/6684), [#6685](https://github.com/hivecommons/hive/issues/6685), [#6686](https://github.com/hivecommons/hive/issues/6686), [#6687](https://github.com/hivecommons/hive/issues/6687), [#6688](https://github.com/hivecommons/hive/issues/6688)), one previously-undetected defect found, and several claims corrected against the repository rather than restated.
 
+> **Revision 3 — second TAG-Security review (same PR).** Six further
+> questions, mostly about the parts of the trust model the document had
+> described by control rather than by consequence:
+>
+> | Review point | Change |
+> |---|---|
+> | "Where are GitHub tokens and inference keys stored? What is compromised if an operator is? What threatens install/update?" | New [Credentials: where they live and what falls with them](#credentials-where-they-live-and-what-falls-with-them) — a storage table, a blast-radius table per actor, and the supply-chain facts for install/upgrade. |
+> | "How does hive authenticate a contributor/relay?" | New [Contributor relay authentication](#contributor-relay-authentication). |
+> | "Were threats identified on the hub↔spoke interface?" | New [Hub ↔ spoke interface](#hub--spoke-interface) with a threat table. One finding: hub→spoke config pushes rely on TLS alone and are not independently signed — filed as [#7082](https://github.com/hivecommons/hive/issues/7082). |
+> | "What would `fail_mode: closed` and canaries-on by default cost? Are they partial mitigations? Plans?" | The document's own framing was wrong: `open` **redacts** and continues, it does not pass injection through. Corrected in three places. Defaults plan tracked in [#7083](https://github.com/hivecommons/hive/issues/7083). |
+> | "The red-team section duplicates `ioscan-red-team.md`." | Cut to a summary that links out. |
+> | "The image bundles every CLI backend — by design?" | Yes; stated as a tradeoff with its cost and the roadmap under [Security relevant components](#security-relevant-components). |
+> | "Some sections are dense." | Long paragraphs in the critical-components and weaknesses sections broken up or replaced with tables; a stale "no adversarial testing has occurred" answer in the appendix corrected. |
+
 It complements, and deliberately does not duplicate, three existing security
 documents in the Hive repository:
 
@@ -107,7 +121,9 @@ obey.
   that reaches agent prompts.
 - **Contributors via ClankeR relay** — external contributors who donate
   compute by running an agent against a hive's queue over a relay protocol
-  (see [contributor-relay.md](https://github.com/hivecommons/hive/blob/v4/src/docs/contributor-relay.md)).
+  (see [contributor-relay.md](https://github.com/hivecommons/hive/blob/v4/src/docs/contributor-relay.md) and
+  [Contributor relay authentication](#contributor-relay-authentication)
+  below). Their machines are outside Hive's trust boundary.
 - **Hub operators / SaaS platform operators** — run the central hub that
   coordinates registered spokes and, for hosted spokes, provisions
   infrastructure and injects GitHub App credentials.
@@ -137,6 +153,98 @@ obey.
 - Registered spokes heartbeat operational telemetry (no credentials) to a
   central hub; the hub can push configuration (including GitHub App
   credentials for hub-provisioned hives) back to a spoke.
+
+### Credentials: where they live and what falls with them
+
+The Actors list names the credentials; this section says where each one is
+stored and what an attacker gets by compromising each actor. Paths are for the
+hub-provisioned ("hosted") deployment, which is the highest-exposure shape;
+self-hosted spokes store the same material wherever the operator's
+`hive.yaml` points.
+
+| Credential | Hosted spoke | Hub | Self-hosted spoke |
+|---|---|---|---|
+| GitHub App private key | Projected from the `hive-secrets` Kubernetes Secret as a whole-volume mount, mode **0440** with the pod `fsGroup`. A spoke receives **only its own** App key — an earlier design rendered every fleet key into every spoke and was removed (audit finding N1, CWE-200; `saas_provision.go`, "AdditionalAppKeys"). | One **0600** file per cluster, keyed by cluster ID; never rendered into any spoke manifest. | `github.key_file` in `hive.yaml`, or env; operator-managed. |
+| Inference / model API keys | Same `hive-secrets` Secret. Keys entered in the dashboard are written back through a scoped `hive-secrets-writer` Role, not by the hive process's own identity. | Not held for spokes. | `hive.yaml` / env. |
+| Hub master secret (`HIVE_HUB_SECRET`) | **Never leaves the hub.** The spoke receives only domain-separated sub-keys derived from it (`src/pkg/keyderive`): a per-hive heartbeat bearer, a session-verification key, and the SSO **public** key. | Hub only. | n/a |
+| Dashboard auth token | Generated per hive at provision time; in `hive-secrets` and `hive.yaml`. | n/a | `hive.yaml`. |
+| Per-agent GitHub tokens | Minted from the App key inside the spoke, mode-tiered (Layer 5), written to per-UID token files the other agents cannot read. | n/a | Same. |
+
+**Blast radius by compromised actor**
+
+| Compromised | Attacker obtains | Attacker does *not* obtain |
+|---|---|---|
+| A **spoke** (operator, pod, or an agent that escapes its UID) | That spoke's App installation scope — the repositories it governs — its dashboard token, and its inference keys. | Other tenants' App keys; the hub master; the ability to mint an admin session or an SSO-as-any-owner token (those signing keys are hub-only; the spoke holds only the public half). |
+| A **contributor relay** | A 55-minute scoped GitHub token for the task it was assigned, re-minted while the task is live. | Any hive-side credential; merge capability (relay output enters at the PR-review gate like any external PR). |
+| The **hub** | Everything: the hub provisions spokes and pushes configuration and App credentials to them over the heartbeat lane. | — |
+
+The last row is the important asymmetry, and the reason the [hub ↔ spoke
+interface](#hub--spoke-interface) gets its own section: **the hub is the
+highest-value asset in the system**, and a hub compromise is fleet-wide.
+
+**Install and upgrade.** The threats an operator faces while installing or
+updating are supply-chain threats, and the current facts are:
+
+- Base images are pinned by digest (`src/Dockerfile:8,64,92`: `golang@sha256:…`,
+  `node@sha256:…`). CLI backends are pinned by version; where upstream
+  publishes a checksum the build verifies a per-arch SHA-256 and hard-fails on
+  mismatch (Goose, muse). All npm CLI installs run with `--ignore-scripts`.
+- Upgrades are **pull-based**. A spoke learns its target from the hub and
+  patches its *own* Deployment through a namespaced ServiceAccount whose Role
+  is `get`/`patch` on that one Deployment (`src/pkg/hub/spoke/self_upgrade.go`).
+  The hub does not need cluster credentials to a spoke's cluster to upgrade it,
+  and a spoke cannot reach anything but itself.
+- Gap: SBOM/provenance attestations are **off** on image builds (#3760, see
+  Metadata). The supply chain is pinned but not attestable end-to-end; SBOMs
+  ship out-of-band as release assets.
+
+### Hub ↔ spoke interface
+
+Registered spokes heartbeat to a hub; the hub answers with configuration and,
+for hosted spokes, credentials. The two directions are not equally protected.
+
+| Direction | What is sent | How it is authenticated |
+|---|---|---|
+| **Spoke → hub** (heartbeat) | Operational telemetry: agent states, queue depth, version, health. **Never credentials.** | A **per-hive derived bearer** (`keyderive.PerHiveKey`, bound to trust domain and hive ID), verified against every live master generation so the master can rotate without a flag day (`src/pkg/hub/hub_keys.go`, `verifyHeartbeatBearerAcrossGenerations`). The fleet-wide shared bearer lane of earlier releases is **deleted**. |
+| **Hub → spoke** (heartbeat response) | Configuration deltas; for hosted spokes, the spoke's GitHub App credentials and authorized-user list. | **TLS to the spoke's configured hub URL — and nothing else.** The response body is not signed and is not bound to a hive ID or sequence number. |
+| **Hub-minted tokens** (SSO, delegation, session cookies) | Identity assertions the spoke must verify. | **Ed25519**; the spoke holds only the public key (`HIVE_SSO_PUBLIC_KEY`, `src/pkg/delegation/token.go`). A spoke without a key fails closed (503). |
+
+Threats identified on this interface:
+
+| Threat | Status |
+|---|---|
+| **Hub compromise → fleet-wide credential and config push** | Real and unmitigated by design of the lane; bounded only by hub hardening and by each spoke holding its own App key alone. Stated as the system's highest-value target. |
+| **Spoke impersonation** to the hub | Bounded. One leaked bearer authenticates one hive; the hub will not accept it for another hive ID, and rotation retires it within the dual-generation window. |
+| **Replay, rollback, or mis-delivery of a pushed configuration** (a TLS-terminating middlebox, a misconfigured `HIVE_HUB_URL`, a captured response replayed to a different hive) | **Open.** Filed as [#7082](https://github.com/hivecommons/hive/issues/7082): sign the response with the hub's existing Ed25519 key and bind it to `hive_id` plus a monotonic sequence, rolling out log-only before enforcing. |
+| **Telemetry disclosure** | Low. Heartbeats carry no secrets; the hub-side view is admin-gated. |
+
+### Contributor relay authentication
+
+The ClankeR relay lets a contributor lend their own AI CLI subscription to a
+hive from their own machine. That machine is outside the trust boundary, so
+the design authenticates the *contributor* and scopes what the relay can do
+rather than trusting the relay's output:
+
+- **Registration.** A contributor registers once against a GitHub identity.
+  The hive issues a registration token and stores **only its SHA-256 hash**
+  in the contributor profile (`api_contribute.go`, `sha256Hex(token)`); the
+  profile file is 0600 because it also carries PII. The plaintext is shown
+  once and lives in the contributor's `~/.config/hive/contributor.env`.
+- **Connection.** The relay presents the token as a bearer on
+  `wss://<hive>/api/contribute/ws`; the hive hashes it and compares in
+  constant time (`contributorProfileFromRegistrationToken`).
+- **Authorization.** Every contributor has a **trust tier** with per-tier
+  rate limits and model admission
+  ([contributor-trust-and-roles.md](https://github.com/hivecommons/hive/blob/v4/src/docs/contributor-trust-and-roles.md)).
+- **Per-task credential.** The hub mints a **55-minute** GitHub token scoped
+  to the assigned task and re-mints it while the task is live; the lease is
+  fenced to that contributor identity and abandoned after 30 minutes without
+  progress or a 4-hour backstop.
+
+Weaknesses, stated: the registration token is a long-lived bearer with no
+expiry or rotation today; and a malicious relay can submit a malicious pull
+request — which is why relay output enters at exactly the same review gate as
+any external contributor's PR and is never merge-eligible on its own.
 
 ### Goals
 
@@ -208,9 +316,16 @@ control removes it; the controls bound the consequences.
    trusted collaborators collapses most of the untrusted-input surface. The
    threat model above is substantially a *public-repository* threat model.
 3. **Whether you enabled `ioscan.canaries` and `fail_mode: closed`.** Both
-   default to the permissive setting. The defaults favor availability; a
-   security-sensitive deployment should change them and accept that a
-   scanner outage then becomes a scheduling outage.
+   default off. Be precise about what the defaults do: `fail_mode: open`
+   **redacts** a Critical finding and continues the kick — it does not pass
+   the injection through; `closed` blocks the kick and writes an
+   `ioscan_fail_closed` audit entry. The cost of `closed` is that every
+   Critical false positive becomes a stalled queue item needing an operator.
+   Canaries add a per-kick marker and an egress scan. Both are partial
+   mitigations (see below); a security-sensitive deployment should enable
+   both. The project's plan is to make canaries the default everywhere and
+   `closed` the default at ACMM ≥ L5, where agents can merge
+   ([#7083](https://github.com/hivecommons/hive/issues/7083)).
 
 **What we would tell a new operator.** Start at L1–L3 on a repository you
 would not mind an agent filing a bad issue on. Read the attribution trailers
@@ -286,38 +401,28 @@ repository writes:
    bounded number of passes with a byte budget, because the body being
    decoded is attacker-influenced.
 
-   **How well does it work? Measured: a partial mitigation, and a narrow one**
-   — see [ioscan-red-team.md](https://github.com/hivecommons/hive/blob/v4/src/docs/ioscan-red-team.md) for the corpus, the
-   methodology and the full per-case table. Against 43 adversarial payloads
-   across six technique families, the shipped deterministic rules **withheld
-   42% from the agent; 58% reached it verbatim** — 40% because no rule fired,
-   and a further 19% because a rule fired but the input block policy does not
-   block at that severity (`blockedInput` requires Critical, or Injection at
-   High+, so every Medium finding is recorded and the raw text is still
-   injected). A findings count is therefore **not** a count of attacks
-   stopped.
-   Detection is strongly uneven by family: Unicode steganography 8/8 blocked —
-   the one place the design beats a regex, because hidden characters are
-   themselves a High finding — against paraphrased instruction override 2/10
-   and split-payload 0/4. The last is structural: each untrusted segment
-   (title, body, each comment) is scanned separately, so a phrase split across
-   two comments is never a single string for any rule to match. The cost side
-   is real too: **2 of 6 benign controls were redacted**, including an issue
-   *reporting* a prompt-injection bug.
-   A prospective user should assume a determined, encoding-aware attacker
-   defeats it — that is now a measurement rather than a caution. What `ioscan`
-   reliably does is (a) raise the cost of the *casual* injection attempt, (b)
-   normalize away an entire class of invisible-character and homoglyph tricks
-   deterministically, and (c) produce an auditable record that something was
-   withheld. What contains the *consequence* of a successful injection is not
-   `ioscan` at all: it is the hard-denied PR-create/merge relays and the
-   mode-tiered token scope, neither of which the model can argue with — and
-   that containment is now verified across all four ACMM modes by
-   `TestRedTeamContainmentHoldsForEveryMode` on every test run rather than
-   asserted here. Operators should size their trust accordingly. The
-   evaluation's own limits are stated in it: the optional LLM classifier is
-   default-off and its contribution remains unmeasured, and the corpus covers
-   the input path only.
+   **How well does it work? Measured: a partial, uneven mitigation.**
+   [ioscan-red-team.md](https://github.com/hivecommons/hive/blob/v4/src/docs/ioscan-red-team.md) runs a 43-payload adversarial
+   corpus across six technique families against the shipped rules and
+   publishes the per-case table. The headline:
+
+   | | |
+   |---|---|
+   | Withheld from the agent | **42%** |
+   | Reached the agent verbatim | **58%** — 40% no rule fired; 19% a rule fired below the blocking severity |
+   | Strongest family | Unicode steganography, 8/8 blocked |
+   | Weakest families | Paraphrased instruction override 2/10; split-payload 0/4 (segments are scanned separately) |
+   | False positives | 2 of 6 benign controls redacted |
+
+   Read it as: `ioscan` raises the cost of a *casual* injection, removes an
+   entire class of invisible-character tricks deterministically, and leaves
+   an audit record — and a determined, encoding-aware attacker gets through.
+   What contains the *consequence* is not `ioscan`: it is the hard-denied
+   PR-create/merge relays and mode-tiered token scope, which the model cannot
+   argue with, and which `TestRedTeamContainmentHoldsForEveryMode` verifies
+   across all four ACMM modes on every test run. The optional LLM classifier
+   is default-off and its contribution is unmeasured; the corpus covers the
+   input path only.
 
    **Exfiltration detection (`ioscan.canaries`, default off).** A per-agent
    `HIVE-CANARY-<48 hex>` token is planted in the agent's prompt, and the
@@ -410,6 +515,19 @@ repository writes:
   inspection at all. An operator who needs
   a hard guarantee against credential egress should not rely on any of these
   and should scope the credentials themselves.
+- **One image, every backend — a stated tradeoff.** The spoke image bundles
+  every supported CLI backend (Copilot, Codex, Claude Code, Goose, Antigravity,
+  muse, …) on one Node base, so an operator can assign backends per agent
+  role by configuration and a hosted spoke can switch backends when a
+  provider degrades, without an image rebuild. The cost is a large surface in
+  one image and no per-agent kernel boundary (weakness #2,
+  [#2804](https://github.com/hivecommons/hive/issues/2804)). Mitigations:
+  non-root UIDs per agent, `--ignore-scripts`, version/digest pinning with
+  per-arch checksums where upstream publishes them, and the MITM proxy as the
+  egress boundary regardless of which CLI is talking. The contributor path
+  already ships a separate, slimmer `Dockerfile.contributor`; the roadmap for
+  the resident spoke is per-backend image variants selected from the ACMM
+  pack, so a Copilot-only hive does not carry the others.
 - **Ed25519-only session/SSO verification** (`security-model.md` "Sessions
   and SSO are Ed25519-only") — the legacy HMAC session-cookie lane and
   fleet-wide shared heartbeat bearer were both removed in v4; a spoke
@@ -469,7 +587,7 @@ project-level compliance signals:
 
 ### Development pipeline
 
-- **Language and structure**: Go (`src/`, `go 1.25.6` per `src/go.mod:3`) for
+- **Language and structure**: Go (`src/`, `go 1.26.6` per `src/go.mod:3`) for
   the core dashboard/hub/proxy/scheduler/agent-orchestration code; a JS
   dashboard UI served inline (no separate SPA build step); Python/Shell for
   the deterministic pre-kick pipeline (45 scripts, indexed in
@@ -607,10 +725,11 @@ because a self-assessment that only lists strengths is not credible:
    agent's prompt (`security-threat-model.md` "Trust boundaries": *"Public
    issue authors can place arbitrary text in titles, labels, bodies, and
    comments that Hive may include in a kick"*). `ioscan`'s deterministic
-   rules and optional semantic classifier reduce this materially, but the
+   rules and optional semantic classifier reduce this materially. The
    **default `ioscan.fail_mode` is `open`** (`ioscan.md:11` — *"open (default)
-   redacts"*), meaning a scanner outage, timeout, or classifier failure fails
-   toward continuing to process input rather than halting it. The semantic
+   redacts"*): a Critical finding is redacted and the kick continues, rather
+   than the kick being blocked. The redaction itself is deterministic and does
+   not depend on any model call. The semantic
    (LLM-judge) classifier layer is explicitly **fail-open on errors/timeouts
    by design** (`ioscan.md:26`, ADR-0008: *"Classifier failures and budget
    exhaustion fail open"*) so a reviewer outage cannot itself become a
@@ -847,16 +966,17 @@ repository and answered below. Where the answer is "no," it says no.
   wrong on a schedule.
 
 - **Has any informal security review or adversarial testing occurred?**
-  Resolved: **no, and this is the most significant "no" in the list.** There
-  is no red-team exercise, no adversarial evaluation, and no measured
-  detection rate for `ioscan` anywhere in the repository — the search for one
-  returned only the phrase used in unrelated design documents. The hardening
-  work referenced by issue number throughout `security-threat-model.md` is
-  maintainer-identified and maintainer-fixed, which is not the same thing as
-  adversarial review. A red-team evaluation of the injection path is tracked
-  in [#6685](https://github.com/hivecommons/hive/issues/6685). Until it
-  exists, every efficacy claim about `ioscan` in this document should be read
-  as unvalidated by design rather than validated by silence.
+  Resolved — and the answer changed between revisions. At first review the
+  honest answer was **no**: no red-team exercise and no measured detection
+  rate for `ioscan` existed anywhere in the repository. That gap was tracked
+  in [#6685](https://github.com/hivecommons/hive/issues/6685) and closed by
+  [ioscan-red-team.md](https://github.com/hivecommons/hive/blob/v4/src/docs/ioscan-red-team.md): a 43-payload adversarial corpus
+  whose result (42% withheld, 58% reached the agent) is quoted above and
+  whose containment claim is verified in CI. What still has **not** occurred
+  is an *external* review: no third-party audit or penetration test, and the
+  red-team corpus was written by the maintainers. Efficacy claims about
+  `ioscan` in this document are now measured rather than asserted, but
+  measured by the people who built it.
 
 - **Will CODEOWNERS enforcement be enabled?** Resolved: the live `v4` branch
   protection currently requires **no** pull-request reviews at all, and
