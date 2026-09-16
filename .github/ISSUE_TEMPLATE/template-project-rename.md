@@ -26,7 +26,7 @@ This template outlines the administrative steps required when a CNCF project is 
 - [ ] Invite the new GH org to CNCF GHE account
 
 ### Website
-- [ ] aquier new web domain
+- [ ] Acquire new web domain
 
 ### Formation team
 - [ ] Request Formation team to:
@@ -68,7 +68,6 @@ This template outlines the administrative steps required when a CNCF project is 
 - [ ] Replace artwork in [cncf/artwork](https://github.com/cncf/artwork)
 - [ ] Replace old artwork with new artwork
 - [ ] Change the artwork hyperlink in the landscape entry
-
 
 ### Communications
 - [ ] Rename Slack channels
