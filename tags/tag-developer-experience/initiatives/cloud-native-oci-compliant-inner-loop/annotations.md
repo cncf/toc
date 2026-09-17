@@ -36,7 +36,7 @@ requirement" column below, not just the ones that spell it out.
 | `org.cncf.ai.lifecycle.status` | MUST | `experimental`, `validated`, `deprecated`, `product-ready` | Maturity/promotion status, separate from structural conformance — an artifact can be fully compliant and still `experimental`. | Informational; a GitOps policy could gate on this. |
 | `org.cncf.ai.model.mof.class` | MUST | `I`, `II`, `III` | LF AI & Data Model Openness Framework class claimed for this artifact (see Unit of conformance above for what "this artifact" means). | Needs `mof.components` present and consistent with the claimed class; may also need a resolvable MOF-generated model/data card. |
 | `org.cncf.ai.model.mof.version` | MUST when `mof.class` is set | MOF spec version, e.g. `1.0` | Which MOF spec version the class/components were derived from. | Informational. |
-| `org.cncf.ai.model.mof.components` | MUST when `mof.class` is set | Comma-separated list, values drawn from the MOF spec's own component vocabulary — no free-text synonyms | Which MOF components are present. | Values need to be checked against the fixed MOF vocabulary, not accepted as arbitrary strings. |
+| `org.cncf.ai.model.mof.components` | MUST when `mof.class` is set | Comma-separated list drawn from: `datasets`, `data-preprocessing-code`, `model-architecture`, `final-model-parameters`, `intermediate-model-parameters`, `model-metadata`, `training-code`, `inference-code`, `evaluation-code`, `evaluation-data`, `evaluation-results`, `supporting-libraries-and-tools`, `model-card`, `data-card`, `technical-report`, `research-paper`, `sample-model-outputs`, `model-openness-config-file` | Which MOF components are present. `model-openness-config-file` is always required, regardless of class. | Values must match the fixed MOF vocabulary. The config file itself must also be resolvable. |
 | `org.cncf.ai.security.signing.framework` | MUST | `sigstore`, `notation` (Notary v2/TUF-based) | Framework used to sign the artifact. | The signature itself must be resolvable and verify against the artifact digest — the annotation by itself isn't enough. |
 | `org.cncf.ai.security.sbom.format` | MUST | `spdx`, `cyclonedx` | Format of the attached SBOM. Bumped from SHOULD to MUST to line up with the README calling this "Required Trust Metadata." | SBOM must be resolvable (e.g. via OCI referrers) and tied to this artifact's digest. |
 | `org.cncf.ai.security.provenance.type` | MUST | `slsa-v1.0`, `in-toto` | Type of provenance attestation. Bumped to MUST for the same reason as SBOM format. | Attestation must be resolvable with a subject digest matching this artifact. |
@@ -58,9 +58,10 @@ new `org.cncf.ai.*` keys for the same thing:
 
 ## Open questions
 
-1. **MOF component vocabulary** — needs to be pinned to a specific published MOF version
-   instead of paraphrased here; someone should confirm the exact list against the LF AI & Data
-   source document.
+1. ~~**MOF component vocabulary**~~ — **Addressed.** Confirmed in review
+   ([PR #2299 review](https://github.com/cncf/toc/pull/2299#pullrequestreview-5180176016) by
+   @caldeirav); the full enumerated list now appears in the `mof.components` row of the
+   Annotation table above, including the `model-openness-config-file` requirement.
 2. **Signing framework list** — the README's supply chain security section also mentions
    OpenPubkey and other emerging zero-trust identity protocols. Do those get added as enum
    values, or are they explicitly out of scope for v1?
@@ -69,3 +70,9 @@ new `org.cncf.ai.*` keys for the same thing:
    metadata work.
 4. **Worked example** — this table should get run through a full example manifest end to end
    (build, sign, push, GitOps pull, KServe deploy) before it's locked in.
+5. **Per-component licensing** — raised in review
+   ([PR #2299 review](https://github.com/cncf/toc/pull/2299#pullrequestreview-5180176016) by
+   @caldeirav): should the profile handle multi-license clarity at the component level, since
+   MOF components each have a recommended open license and that mapping already lives in the
+   Model Openness Configuration File? Needs a decision on whether that's surfaced as its own
+   annotation or left entirely to the config file.
