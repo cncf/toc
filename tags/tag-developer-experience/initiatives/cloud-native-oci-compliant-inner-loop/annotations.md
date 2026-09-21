@@ -24,23 +24,23 @@ One thing worth calling out: annotations that assert something about security or
 (signing, SBOM, provenance, MOF class) are pointers, not proof. Just having the key/value pair
 set doesn't mean the underlying evidence exists. Conformance means the referenced artifact is
 actually there, tied to the correct digest, and resolvable — e.g. via an OCI referrer/subject
-relationship or an attached attestation. That expectation applies to every row in the "Evidence
-requirement" column below, not just the ones that explicitly define the resource.
+relationship or an attached attestation. That expectation applies wherever the Description below
+calls for something to be resolvable, not just the annotation itself being present.
 
 ## Annotation table
 
-| Key | Requirement | Values | Description | Evidence requirement |
-|---|---|---|---|---|
-| `org.cncf.ai.interop.profile.version` | MUST | Semantic version (e.g. `1.0.0`) | Which version of this profile the manifest conforms to. Not the same as the artifact's own version — see `org.opencontainers.image.version` below. | Informational; informs a validator which spec version to check against. |
-| `org.cncf.ai.artifact.type` | MUST | `model` (only valid value in v1); future versions may add `skill`, `rag-context`, `workflow` | Type of AI artifact the manifest represents. | Informational. |
-| `org.cncf.ai.lifecycle.status` | MUST | `experimental`, `validated`, `deprecated`, `product-ready` | Maturity/promotion status, separate from structural conformance — an artifact can be fully compliant and still `experimental`. | Informational; a GitOps policy could gate on this. |
-| `org.cncf.ai.model.mof.class` | MUST | `I`, `II`, `III` | LF AI & Data Model Openness Framework class claimed for this artifact (see Unit of conformance above for what "this artifact" means). | Needs `mof.components` present and consistent with the claimed class; may also need a resolvable MOF-generated model/data card. |
-| `org.cncf.ai.model.mof.version` | MUST | MOF spec version, e.g. `1.0` | Which MOF spec version the class/components were derived from. | Informational. |
-| `org.cncf.ai.model.mof.components` | MUST | Comma-separated list drawn from: `datasets`, `data-preprocessing-code`, `model-architecture`, `final-model-parameters`, `intermediate-model-parameters`, `model-metadata`, `training-code`, `inference-code`, `evaluation-code`, `evaluation-data`, `evaluation-results`, `supporting-libraries-and-tools`, `model-card`, `data-card`, `technical-report`, `research-paper`, `sample-model-outputs`, `model-openness-config-file` | Which MOF components are present. `model-openness-config-file` is always required, regardless of class. | Values must match the fixed MOF vocabulary. The config file itself must also be resolvable. |
-| `org.cncf.ai.security.signing.framework` | MUST | `sigstore`, `notation` (Notary v2/TUF-based) | Framework used to sign the artifact. | The signature itself must be resolvable and verify against the artifact digest — the annotation by itself isn't enough. |
-| `org.cncf.ai.security.sbom.format` | MUST | `spdx`, `cyclonedx` | Format of the attached SBOM. | SBOM must be resolvable (e.g. via OCI referrers) and tied to this artifact's digest. |
-| `org.cncf.ai.security.provenance.type` | MUST | `slsa-v1.0`, `in-toto` | Type of provenance attestation. | Attestation must be resolvable with a subject digest matching this artifact. |
-| `org.cncf.ai.packaging.format` | SHOULD | `modelpack` | Packaging format of the assembled content. Omit if not defined. | Informational. |
+| Key | Requirement | Values | Description |
+|---|---|---|---|
+| `org.cncf.ai.interop.profile.version` | MUST | Semantic version (e.g. `1.0.0`) | Which version of this profile the manifest conforms to. Not the same as the artifact's own version — see `org.opencontainers.image.version` below. |
+| `org.cncf.ai.artifact.type` | MUST | `model` (only valid value in v1); future versions may add `skill`, `rag-context`, `workflow` | Type of AI artifact the manifest represents. |
+| `org.cncf.ai.lifecycle.status` | MUST | `experimental`, `validated`, `deprecated`, `product-ready` | Maturity/promotion status, separate from structural conformance — an artifact can be fully compliant and still `experimental`. A GitOps policy could gate promotion on this value. |
+| `org.cncf.ai.model.mof.class` | MUST | `I`, `II`, `III` | LF AI & Data Model Openness Framework class claimed for this artifact (see Unit of conformance above for what "this artifact" means). Requires `mof.components` to be present and consistent with the claimed class, and may require a resolvable MOF-generated model/data card. |
+| `org.cncf.ai.model.mof.version` | MUST | MOF spec version, e.g. `1.0` | Which MOF spec version the class/components were derived from. |
+| `org.cncf.ai.model.mof.components` | MUST | Comma-separated list drawn from: `datasets`, `data-preprocessing-code`, `model-architecture`, `final-model-parameters`, `intermediate-model-parameters`, `model-metadata`, `training-code`, `inference-code`, `evaluation-code`, `evaluation-data`, `evaluation-results`, `supporting-libraries-and-tools`, `model-card`, `data-card`, `technical-report`, `research-paper`, `sample-model-outputs`, `model-openness-config-file` | Which MOF components are present. `model-openness-config-file` is always required regardless of class and must itself be resolvable; other values must match the vocabulary listed. |
+| `org.cncf.ai.security.signing.framework` | MUST | `sigstore`, `notation` (Notary v2/TUF-based) | Framework used to sign the artifact. The signature must be resolvable and verify against the artifact digest — the annotation alone isn't enough. |
+| `org.cncf.ai.security.sbom.format` | MUST | `spdx`, `cyclonedx` | Format of the attached SBOM, which must be resolvable (e.g. via OCI referrers) and tied to this artifact's digest. |
+| `org.cncf.ai.security.provenance.type` | MUST | `slsa-v1.0`, `in-toto` | Type of provenance attestation, which must be resolvable with a subject digest matching this artifact. |
+| `org.cncf.ai.packaging.format` | SHOULD | `modelpack` | Packaging format of the assembled content. Omit if not defined. |
 
 ## Reused OCI annotations (not redefined)
 
