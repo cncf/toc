@@ -2,6 +2,10 @@
 # Mirrors the catch-all rule in .github/CODEOWNERS. Teams are not supported here, so members
 # are listed by username; regenerate with `gh api orgs/cncf/teams/<team>/members`.
 #
+# Deliberately not mirrored: the CODEOWNERS glob `/projects/*/security-assessment`. Prow OWNERS
+# are per directory, and one file per project is not sustainable; those paths bubble up to this
+# file. CODEOWNERS still requests the security leads' review through GitHub.
+#
 # approvers: /approve (and /lgtm). @cncf/cncf-projects + @cncf/cncf-toc-voters
 approvers:
   - abebars

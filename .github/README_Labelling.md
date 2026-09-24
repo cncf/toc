@@ -18,7 +18,10 @@ Write a command at the start of a line in a normal issue or PR comment.
   placed on separate lines of the same comment.
 - Format is `/command value [value ...]`. Values are case-insensitive.
 - Commands inside code blocks or blockquotes are ignored.
-- Every command has a `/remove-<command> value` form.
+- Every label command (`/kind`, `/triage`, `/tag`, `/label`, and so on) has a
+  `/remove-<command> value` form. The built-in commands use their own inverse: `/unassign`,
+  `/uncc`, `/lgtm cancel`, `/approve cancel`, `/hold cancel` (or `/unhold`), `/reopen`,
+  `/milestone clear`.
 - A command only applies labels that already exist in the repository. If one is missing, run
   the label-sync job (Actions -> Prow -> Run workflow).
 
@@ -123,8 +126,11 @@ one of them gets that label when opened or updated, which in turn clears `needs-
 ## 3) Review and Merge
 
 Review authority comes from the `OWNERS` files (root and per directory), which mirror
-[`.github/CODEOWNERS`](CODEOWNERS). `.github/CODEOWNERS` remains the source for GitHub's own
-required-review protections; the `OWNERS` files decide who may use the commands below.
+[`.github/CODEOWNERS`](CODEOWNERS) at the directory level. `.github/CODEOWNERS` remains the
+source for GitHub's own required-review protections; the `OWNERS` files decide who may use the
+commands below. Path-glob CODEOWNERS rules such as `/projects/*/security-assessment` are not
+mirrored: those paths fall back to the root `OWNERS` for `/approve`, while GitHub still requests
+the CODEOWNERS team's review.
 
 | Command | Who | Effect |
 |---|---|---|
