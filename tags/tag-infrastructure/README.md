@@ -16,6 +16,7 @@ Data, Storage, Network, DNS, Compute, Service Mesh, Infrastructure-as-Code, Edge
 ### Tech Leads
 - Alexa Griffith (**[@alexagriffith](https://github.com/alexagriffith)**) (Term: 2025-07-02 - 2027-06-30)
 - Antonio Ojea (**[@aojea](https://github.com/aojea)**) (Term: 2025-07-02 - 2027-06-30)
+- Josh Gavant (**[@joshgav](https://github.com/joshgav)**) (Term: 2026-09-23 - 2028-07-06)
 - Mesut Özdil (**[@mesutoezdil](https://github.com/mesutoezdil)**) (Term: 2026-07-07 - 2028-07-06)
 - Thomas Schuetz (**[@thschue](https://github.com/thschue)**), TSC Labs (Term: 2026-07-07 - 2028-07-06)
 - Zhonghu Xu (**[@hzxuzhonghu](https://github.com/hzxuzhonghu)**) (Term: 2025-07-02 - 2027-06-30)
