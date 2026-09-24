@@ -285,6 +285,8 @@ labels:
       color: 6E7781
     - name: gitvote/passed
       color: 6E7781
+    - name: gitvote/failed
+      color: 6E7781
 
 require_matching_label:
   - regexp: ^kind/
