@@ -1,0 +1,3 @@
+# Applies the subproject label to PRs touching this directory. Approvers come from the root OWNERS.
+labels:
+  - sub/project-reviews

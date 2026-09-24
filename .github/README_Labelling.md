@@ -1,130 +1,148 @@
 # TOC Labeling Guide
 
-This repository has two labeling paths:
+Labeling and review chat-ops in this repository are handled by
+[cncf/prow-github-actions](https://github.com/cncf/prow-github-actions), configured in
+[`.github/prow.yaml`](prow.yaml) and driven by [`.github/workflows/prow.yml`](workflows/prow.yml).
+
+There are three labeling paths:
 
 1. **Slash commands in comments** (manual, explicit)
-2. **Automatic labeling** (event and file-path based)
+2. **Automatic labeling** (`needs-*` rules and OWNERS-based path labels)
+3. **Review and merge commands** (`/lgtm`, `/approve`, `/hold`)
 
 ## 1) Slash Commands in Comments
 
-Use slash commands in a normal issue/PR comment to apply or remove labels.
+Write a command at the start of a line in a normal issue or PR comment.
 
-- Command must be on the **first line** of the comment.
-- Format is usually `/command value` (or `/command` for commands with no argument).
-- Commands are processed for issue comments and PR conversation comments.
+- A command must start a line; one mentioned mid-sentence is ignored. Several commands may be
+  placed on separate lines of the same comment.
+- Format is `/command value [value ...]`. Values are case-insensitive.
+- Commands inside code blocks or blockquotes are ignored.
+- Every command has a `/remove-<command> value` form.
+- A command only applies labels that already exist in the repository. If one is missing, run
+  the label-sync job (Actions -> Prow -> Run workflow).
 
-### Valid commands
+### Core triage/grouping
 
-#### Core triage/grouping
+| Command | Values | Notes |
+|---|---|---|
+| `/kind <value>` | `dd`, `docs`, `election`, `enhancement`, `initiative`, `meeting`, `moving-levels`, `publication`, `review`, `subproject` | stacks; clears `needs-kind` |
+| `/triage <value>` | `valid`, `needs-information`, `duplicate`, `not-planned` | exclusive; clears `needs-triage` |
+| `/tag <value>` | `developer-experience`, `infrastructure`, `operational-resilience`, `security-and-compliance`, `workloads-foundation` | stacks; clears `needs-group` |
+| `/sub <value>` | `contributor-strategy-and-advocacy`, `mentoring`, `project-reviews` | stacks; clears `needs-group` |
+| `/label toc` | | plain `toc` label; clears `needs-group` |
+| `/pub <value>` | `blog`, `tech-paper` | exclusive |
+| `/level <value>` | `archived`, `graduation`, `incubation`, `sandbox` | exclusive |
+| `/review <value>` | `governance`, `health`, `security`, `tech` | stacks |
 
-- `/kind <value>`
-  - values: `dd`, `docs`, `enhancement`, `initiative`, `meeting`, `publication`, `review`, `subproject`
-- `/triage <value>`
-  - values: `valid`, `needs-information`, `duplicate`, `not-planned`
-- `/tag <value>`
-  - values: `developer-experience`, `infrastructure`, `operational-resilience`, `security-and-compliance`, `workloads-foundation`
-- `/sub <value>`
-  - values: `contributor-strategy-and-advocacy`, `mentoring`, `project-reviews`
-- `/pub <value>`
-  - values: `blog`, `tech-paper`
-  - applying one removes any other `pub/*` label (mutually exclusive)
-- `/toc`
-- `/level <value>`
-  - values: `archived`, `graduation`, `incubation`, `sandbox`
-  - applying one removes any other `level/*` label (mutually exclusive)
+### DD lifecycle
 
-#### DD lifecycle
+Labels in these families are `dd-<stage>/<value>` (for example `dd-status/in-progress`).
 
-- `/dd/triage <value>`
-  - values: `needs-triage`, `needs-adopters`, `needs-more-information`, `needs-security-assessment`
-- `/dd/status <value>`
-  - values: `ready-for-assignment`, `in-progress`, `in-comment-period`, `in-voting`, `complete`, `waiting`
-- `/dd/adopters <value>`
-  - values: `not-started`, `in-progress`, `complete`
-- `/dd/gov-review <value>`
-  - values: `not-started`, `in-progress`, `complete`
-- `/dd/tech-review <value>`
-  - values: `not-started`, `in-progress`, `complete`
-- `/dd/sec-review <value>`
-  - values: `not-started`, `in-progress`, `complete`
+| Command | Values | Notes |
+|---|---|---|
+| `/dd-triage <value>` | `needs-adopters`, `needs-more-information`, `needs-security-assessment` | stacks |
+| `/dd-status <value>` | `ready-for-assignment`, `in-progress`, `in-comment-period`, `in-voting`, `complete`, `waiting` | exclusive |
+| `/dd-adopters <value>` | `not-started`, `in-progress`, `complete` | exclusive |
+| `/dd-gov-review <value>` | `not-started`, `in-progress`, `complete` | exclusive |
+| `/dd-tech-review <value>` | `not-started`, `in-progress`, `complete` | exclusive |
+| `/dd-sec-review <value>` | `not-started`, `in-progress`, `complete` | exclusive |
 
-#### Initiatives and votes
+When a DD moves to `ready-for-assignment`, the assigning TOC member should also clear any
+`dd-triage/*` labels (`/remove-dd-triage <value>`) and set the four review trackers to
+`not-started` (`/dd-adopters not-started`, `/dd-gov-review not-started`, and so on) in the
+same comment. `dd/needs-triage` is applied with `/label dd/needs-triage` when a DD application
+arrives and removed with `/remove-label dd/needs-triage` once triage is done.
 
-- `/toc/initiative <value>`
-  - values: `AI`
-- `/init <value>`
-  - values: `not-started`, `in-progress`, `complete`, `stale`
-- `/vote <value>`
-  - values: `open`, `closed`, `nomination`
-- `/help`
+### Initiatives and votes
 
-#### Remove commands
+| Command | Values | Notes |
+|---|---|---|
+| `/toc-initiative <value>` | `AI` | label is `toc-initiative/<value>` |
+| `/init <value>` | `not-started`, `in-progress`, `complete`, `stale` | exclusive |
+| `/vote <value>` | `nomination`, `open`, `closed` | exclusive |
+| `/help` | | adds `help wanted` |
+| `/good-first-issue` | | adds `good first issue` and `help wanted` |
 
-- `/remove-kind <value>`
-- `/remove-triage <value>`
-- `/remove-tag <value>`
-- `/remove-sub <value>`
-- `/remove-pub <value>`
-- `/remove-toc`
-- `/remove-toc/initiative <value>`
-- `/remove-init <value>`
-- `/remove-vote`
-- `/remove-dd/triage <value>`
-- `/remove-review <value>`
-- `/remove-level <value>`
-- `/remove-help`
+### Other built-in commands
 
-## 2) Automatic Labeling (Overview)
+| Command | Who | Description |
+|---|---|---|
+| `/assign [@user ...]`, `/unassign [@user ...]` | anyone | assign or unassign (yourself if no user given) |
+| `/cc [@user ...]`, `/uncc [@user ...]` | anyone | request or dismiss a review |
+| `/auto-cc` | anyone, PRs only | request reviewers from the OWNERS files of the changed files |
+| `/close [not-planned]`, `/reopen` | collaborators or the author | close or reopen |
+| `/retitle <title>` | collaborators | rename the issue or PR |
+| `/milestone <name>`, `/milestone clear` | collaborators | set or clear the milestone |
+| `/lock [reason]` | collaborators | lock the conversation |
+| `/remove <label> ...` | collaborators | remove any label by name |
+| `/check-required-labels` | anyone | re-evaluate the `needs-*` rules |
+| `/retest`, `/test all`, `/test <workflow>` | reviewers, PRs only | re-run GitHub Actions runs on the head commit |
+| `/ok-to-test` | reviewers (not the author) | approve held workflow runs on a first-time contributor's fork PR |
 
-Automatic labeling runs from GitHub Actions and handles broad classification without requiring manual `/` commands.
+The full command reference is in the
+[prow-github-actions docs](https://github.com/cncf/prow-github-actions/blob/main/docs/commands.md).
 
-At a high level it does the following:
-
-- Applies labels when issues/PRs are opened or edited.
-- Uses changed file paths in PRs to infer group labels (for example, TOC/TAG/subproject areas).
-- Maintains helper labels like `needs-kind`, `needs-triage`, and `needs-group` when required categories are missing.
-- Keeps label state clean by removing/replacing mutually exclusive labels in both command-driven and state-driven flows.
+## 2) Automatic Labeling
 
 ### `needs-*` helper labels
 
-These labels are added automatically when a required category is absent, and removed automatically when the corresponding label is present — whether applied via a `/` command, the GitHub UI, or a file-path rule.
+These are added when a required category is absent and removed as soon as a matching label
+arrives, whether via a `/` command, the GitHub UI, or an OWNERS path label. Removing a
+`needs-*` label by hand while the category is still missing re-adds it.
 
 | Helper label | Removed when |
 |---|---|
-| `needs-triage` | Any `triage/*` label is present |
 | `needs-kind` | Any `kind/*` label is present |
+| `needs-triage` | Any `triage/*` label is present |
 | `needs-group` | Any `toc`, `tag/*`, or `sub/*` label is present |
-| `dd/needs-triage` | Any `dd/triage/*` label is present |
 
 ### Mutually exclusive label groups
 
-The following label groups enforce mutual exclusivity automatically. When a label in the group is applied (by any means), conflicting labels in the same group are removed.
+Families marked exclusive above (`triage`, `pub`, `level`, `init`, `vote`, `dd-status`,
+`dd-adopters`, `dd-gov-review`, `dd-tech-review`, `dd-sec-review`) replace any existing
+label of the same family when applied via their command. Labels applied through the GitHub
+UI are not de-duplicated.
 
-| Group | Labels |
+### Path labels (PR-based)
+
+`OWNERS` files in the directories below carry a `labels:` list. A PR touching files under
+one of them gets that label when opened or updated, which in turn clears `needs-group`.
+
+| Directory | Label applied |
 |---|---|
-| `contribution-agreement` | `contribution-agreement/signed` ↔ removes `contribution-agreement/unsigned` (and vice versa) |
-| `level/*` | `level/archived`, `level/graduation`, `level/incubation`, `level/sandbox` — applying one removes the others |
-| `pub/*` | `pub/blog`, `pub/tech-paper` — applying one removes the others |
-| `triage/*` | Enforced via `/triage` command |
-| `kind/*` | Enforced via `/kind` command |
-| `dd/status/*` | Enforced via `/dd/status` command |
-| `init/*` | Enforced via `/init` command |
-| `vote/open` + `vote/closed` | Enforced via `/vote` command |
+| `tags/tag-developer-experience/` | `tag/developer-experience` |
+| `tags/tag-infrastructure/` | `tag/infrastructure` |
+| `tags/tag-operational-resilience/` | `tag/operational-resilience` |
+| `tags/tag-security-and-compliance/` | `tag/security-and-compliance` |
+| `tags/tag-workloads-foundation/` | `tag/workloads-foundation` |
+| `toc_subprojects/contributor-strategy-and-advocacy-subproject/` | `sub/contributor-strategy-and-advocacy` |
+| `toc_subprojects/mentoring-subproject/` | `sub/mentoring` |
+| `toc_subprojects/project-reviews-subproject/` | `sub/project-reviews` |
 
-### File path rules (PR-based)
+## 3) Review and Merge
 
-When a PR modifies files in the paths below, `needs-group` is removed and the corresponding group label is applied automatically.
+Review authority comes from the `OWNERS` files (root and per directory), which mirror
+[`.github/CODEOWNERS`](CODEOWNERS). `.github/CODEOWNERS` remains the source for GitHub's own
+required-review protections; the `OWNERS` files decide who may use the commands below.
 
-| Path pattern | Label applied |
-|---|---|
-| `tags/*/charter.md` | `toc` |
-| `tags/tag-developer-experience/*` | `tag/developer-experience` |
-| `tags/tag-infrastructure/*` | `tag/infrastructure` |
-| `tags/tag-operational-resilience/*` | `tag/operational-resilience` |
-| `tags/tag-security-and-compliance/*` | `tag/security-and-compliance` |
-| `tags/tag-workloads-foundation/*` | `tag/workloads-foundation` |
-| `toc_subprojects/contributor-strategy-and-advocacy/*` | `sub/contributor-strategy-and-advocacy` |
-| `toc_subprojects/mentoring/*` | `sub/mentoring` |
-| `toc_subprojects/project-reviews/*` | `sub/project-reviews` |
+| Command | Who | Effect |
+|---|---|---|
+| `/lgtm` | an OWNERS reviewer or approver of a changed file, not the author | adds `lgtm`, bound to the current head commit; a new push removes it |
+| `/lgtm cancel` | same, or the author | removes `lgtm` |
+| `/approve` | an OWNERS approver of a changed file | records approval; `approved` is added once every changed file is covered |
+| `/approve cancel` | same | withdraws approval |
+| `/hold` | anyone | adds `do-not-merge/hold` |
+| `/hold cancel`, `/unhold` | anyone | removes the hold |
 
-In short: use `/` commands when you want explicit control, and rely on automatic labeling for baseline triage, path-based routing, and mutual exclusivity enforcement.
+A PR merges automatically (merge commit) once it carries `lgtm` and `approved`, has no
+`do-not-merge/*`, `needs-rebase` or `hold` label, and GitHub reports it mergeable
+(required reviews and checks satisfied). A bot comment starting with `[APPROVALNOTIFIER]`
+tracks who still needs to approve.
+
+## Maintaining labels
+
+Label names, colors and descriptions live in [`.github/prow.yaml`](prow.yaml). A push that
+changes that file runs the label-sync job, which creates missing labels and fixes drifted
+colors or descriptions. It never deletes or renames labels; do that in the repository's
+label settings.

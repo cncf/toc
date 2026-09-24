@@ -1,0 +1,17 @@
+# @cncf/tag-operational-resilience-leads own this TAG directory (see .github/CODEOWNERS). Root OWNERS still apply.
+approvers:
+  - alolita
+  - castrojo
+  - chadmcrowell
+  - didiViking
+  - halcyondude
+  - jeefy
+  - krol3
+  - krook
+  - mrbobbytables
+  - nikimanoledaki
+  - palnabarun
+  - riaankleinhans
+  - saiyam1814
+labels:
+  - tag/operational-resilience

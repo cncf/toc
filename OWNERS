@@ -1,0 +1,44 @@
+# https://github.com/cncf/prow-github-actions/blob/main/docs/commands.md#owners
+# Mirrors the catch-all rule in .github/CODEOWNERS. Teams are not supported here, so members
+# are listed by username; regenerate with `gh api orgs/cncf/teams/<team>/members`.
+#
+# approvers: /approve (and /lgtm). @cncf/cncf-projects + @cncf/cncf-toc-voters
+approvers:
+  - abebars
+  - angellk
+  - brandtkeller
+  - caniszczyk
+  - castrojo
+  - chadbeaudin
+  - chira001
+  - idvoretskyi
+  - jeefy
+  - jeremyrickard
+  - jrsapi
+  - kevin-wangzefeng
+  - kfaseela
+  - krook
+  - mfahlandt
+  - mrbobbytables
+  - nate-double-u
+  - riaankleinhans
+  - RobertKielty
+  - salaboy
+
+# reviewers: /lgtm and blunderbuss review requests. @cncf/cncf-toc (TOC + shadows)
+reviewers:
+  - abebars
+  - angellk
+  - brandtkeller
+  - chadbeaudin
+  - chira001
+  - jeremyrickard
+  - jrsapi
+  - kevin-wangzefeng
+  - kfaseela
+  - kgamanji
+  - mfahlandt
+  - mrbobbytables
+  - raravena80
+  - riaankleinhans
+  - salaboy

@@ -1,0 +1,7 @@
+# Initiative-specific approvers (see .github/CODEOWNERS). Parent OWNERS still apply.
+approvers:
+  - brandtkeller
+  - evankanderson
+  - halcyondude
+  - jpower432
+  - krol3

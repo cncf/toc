@@ -1,0 +1,319 @@
+# prow-github-actions configuration for cncf/toc.
+# Reference: https://github.com/cncf/prow-github-actions/blob/main/docs/configuration.md
+#
+# Every key under `labels` is a /<key> command (and a /remove-<key> form) once it is listed in
+# `prow-commands` in .github/workflows/prow.yml. The label-sync job (Actions -> Prow -> Run
+# workflow) creates and recolors every label described here; it never deletes or renames.
+#
+# Prow labels are always <key>/<value>, so the former dd/<stage>/<value> and
+# toc/initiative/<value> families are flattened to dd-<stage>/<value> and toc-initiative/<value>.
+
+labels:
+  kind:
+    - name: dd
+      color: 8250DF
+      description: Project DD or item related to the DD process
+    - name: docs
+      color: 8250DF
+      description: Docs related changes or updates
+    - name: election
+      color: 8250DF
+      description: Election related item
+    - name: enhancement
+      color: 8250DF
+      description: General items related to enhancements or improvements.
+    - name: initiative
+      color: 8250DF
+      description: An initiative or an item related to imitative processes
+    - name: meeting
+      color: 8250DF
+      description: Item related to a meeting
+    - name: moving-levels
+      color: 8250DF
+      description: Item related to a project moving between maturity levels
+    - name: publication
+      color: 8250DF
+      description: Item related to a publication (blog, tech-paper, etc.)
+    - name: review
+      color: 8250DF
+      description: Item related to a governance, tech, or other review
+    - name: subproject
+      color: 8250DF
+      description: Item related to a subproject or subproject related process
+
+  triage:
+    values:
+      - name: valid
+        color: 0e8a16
+        description: Issue or PR is valid with enough information to be actionable
+      - name: needs-information
+        color: b60205
+        description: Needs additional information provided before it can be worked on
+      - name: duplicate
+        color: ebf84a
+        description: Duplicate issue or PR, can be closed
+      - name: not-planned
+        color: D97706
+        description: Out of scope, or not planned to be worked on
+    exclusive: true
+
+  tag:
+    - name: developer-experience
+      color: 0E8A8A
+      description: TAG Developer Experience
+    - name: infrastructure
+      color: 0E8A8A
+      description: TAG Infrastructure
+    - name: operational-resilience
+      color: 0E8A8A
+      description: TAG Operational Resilience
+    - name: security-and-compliance
+      color: 0E8A8A
+      description: TAG Security and Compliance
+    - name: workloads-foundation
+      color: 0E8A8A
+      description: TAG Workloads Foundation
+
+  sub:
+    - name: contributor-strategy-and-advocacy
+      color: 1D76DB
+      description: TOC Contributor Strategy and Advocacy SubProject
+    - name: mentoring
+      color: 1D76DB
+      description: TOC Mentoring Subproject
+    - name: project-reviews
+      color: 1D76DB
+      description: TOC Project Review Subproject
+
+  pub:
+    values:
+      - name: blog
+        color: B57614
+        description: Blog post publication
+      - name: tech-paper
+        color: B57614
+        description: Technical paper / whitepaper publication
+    exclusive: true
+
+  level:
+    values:
+      - name: archived
+        color: d93f0b
+        description: Item related to an archived level project or the archive criteria/process itself
+      - name: graduation
+        color: 0052cc
+        description: Item related to a graduation level project or the graduation criteria/process itself
+      - name: incubation
+        color: ed0e81
+        description: Item related to an incubation level project or the incubation criteria/process itself
+      - name: sandbox
+        color: e884e1
+        description: Item related to a sandbox level project or the sandbox criteria/process itself
+    exclusive: true
+
+  review:
+    - name: governance
+      color: '5319e7'
+      description: Project Governance Review
+    - name: health
+      color: '5319e7'
+      description: Project Health Review
+    - name: security
+      color: '5319e7'
+      description: Project Security Review
+    - name: tech
+      color: '5319e7'
+      description: Project Tech Review
+
+  init:
+    values:
+      - name: not-started
+        color: D97706
+        description: Initiative has been accepted, but not started (in the backlog)
+      - name: in-progress
+        color: 1F6FEB
+        description: Initiative is in progress and actively being worked on
+      - name: complete
+        color: 2DA44E
+        description: Initiative has been completed
+      - name: stale
+        color: b60205
+        description: Initiative is no longer actively being worked on
+    exclusive: true
+
+  vote:
+    values:
+      - name: nomination
+        color: 6E7781
+        description: A nomination or call for nominations
+      - name: open
+        color: 6E7781
+        description: An election is open
+      - name: closed
+        color: 6E7781
+        description: An election that has been completed
+    exclusive: true
+
+  toc-initiative:
+    - name: AI
+      color: C13B8A
+      description: TOC Artificial Intelligence Initiative
+
+  dd-triage:
+    - name: needs-adopters
+      color: b60205
+      description: Additional adopters needed for DD application to be marked ready
+    - name: needs-more-information
+      color: b60205
+      description: Incomplete application, or question needs additional information
+    - name: needs-security-assessment
+      color: b60205
+      description: Security assessment must be completed before DD can proceed
+
+  dd-status:
+    values:
+      - name: ready-for-assignment
+        color: 9A6700
+        description: DD Prerequisites complete; ready to be assigned to a TOC member.
+      - name: in-progress
+        color: 1F6FEB
+        description: DD is in progress
+      - name: in-comment-period
+        color: 8250DF
+        description: DD is in the public comment period
+      - name: in-voting
+        color: 0969DA
+        description: DD is currently in voting
+      - name: complete
+        color: 2DA44E
+        description: DD has been completed
+      - name: waiting
+        color: B62324
+        description: DD has been paused and will pick up at a later date
+    exclusive: true
+
+  dd-adopters:
+    values:
+      - name: not-started
+        color: D97706
+        description: Adopter interviews have not yet been started
+      - name: in-progress
+        color: 1F6FEB
+        description: DD Adopter Interviews are in progress
+      - name: complete
+        color: 2DA44E
+        description: DD Adopter Interviews have been completed
+    exclusive: true
+
+  dd-gov-review:
+    values:
+      - name: not-started
+        color: D97706
+        description: Governance Review has not yet been started
+      - name: in-progress
+        color: 1F6FEB
+        description: DD Governance Review is in progress
+      - name: complete
+        color: 2DA44E
+        description: DD Governance Review has been completed
+    exclusive: true
+
+  dd-tech-review:
+    values:
+      - name: not-started
+        color: D97706
+        description: Tech Review has not yet been started
+      - name: in-progress
+        color: 1F6FEB
+        description: DD Tech Review is in progress
+      - name: complete
+        color: 2DA44E
+        description: DD Tech Review has been completed
+    exclusive: true
+
+  dd-sec-review:
+    values:
+      - name: not-started
+        color: D97706
+        description: Security Review has not yet been started
+      - name: in-progress
+        color: 1F6FEB
+        description: DD Security Review is in progress
+      - name: complete
+        color: 2DA44E
+        description: DD Security Review has been completed
+    exclusive: true
+
+  do-not-merge:
+    - name: hold
+      color: e11d21
+      description: Indicates that a PR should not merge because someone has issued a /hold command.
+    - name: work-in-progress
+      color: e11d21
+      description: Indicates that a PR should not merge because it is a work in progress.
+
+  # Plain labels applied verbatim by /label <name>. Also the catalogue entries for labels that
+  # are set by other tooling (gitvote, contribution-agreement bot, issue templates) so that
+  # label-sync keeps their colors and descriptions.
+  labels:
+    - name: toc
+      color: C13B8A
+      description: toc specific issue
+    - name: dd/needs-triage
+      color: FBCA04
+      description: DD application has not been reviewed
+    - name: needs-group
+      color: FBCA04
+      description: Indicates an issue or PR that has not been assigned a group (toc or tag/foo label applied)
+    - name: needs-kind
+      color: FBCA04
+      description: Indicates an issue or PR that is missing an issue type or kind (a kind/foo label)
+    - name: needs-triage
+      color: FBCA04
+      description: Indicates an issue or PR that has not been triaged yet (has a 'triage/foo' label applied)
+    - name: contribution-agreement/signed
+      color: 0e8a16
+      description: Contributor has signed the required contribution agreement
+    - name: contribution-agreement/unsigned
+      color: b60205
+      description: Contributor has not yet signed the required contribution agreement
+    - name: gitvote
+      color: 6E7781
+    - name: gitvote/open
+      color: 6E7781
+    - name: gitvote/closed
+      color: 6E7781
+    - name: gitvote/passed
+      color: 6E7781
+
+require_matching_label:
+  - regexp: ^kind/
+    missing_label: needs-kind
+    issues: true
+    prs: true
+  - regexp: ^triage/
+    missing_label: needs-triage
+    issues: true
+    prs: true
+  - regexp: ^(toc|tag/|sub/)
+    missing_label: needs-group
+    issues: true
+    prs: true
+
+# Merge gate. OWNERS files exist, so both lgtm and approved are required.
+tide:
+  labels: [lgtm, approved]
+  missing_labels: [do-not-merge/*, needs-rebase, hold]
+  merge_method: merge
+  merge_on_events: true
+
+hold:
+  label: do-not-merge/hold
+
+blunderbuss:
+  request_count: 2
+  ignore_drafts: true
+  ignore_authors: ['dependabot[bot]']
+
+lgtm:
+  bind_to_commit: true
