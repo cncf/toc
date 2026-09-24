@@ -125,6 +125,5 @@ When a PR modifies files in the paths below, `needs-group` is removed and the co
 | `tags/tag-workloads-foundation/*` | `tag/workloads-foundation` |
 | `toc_subprojects/contributor-strategy-and-advocacy/*` | `sub/contributor-strategy-and-advocacy` |
 | `toc_subprojects/mentoring/*` | `sub/mentoring` |
-| `toc_subprojects/project-reviews/*` | `sub/project-reviews` |
 
 In short: use `/` commands when you want explicit control, and rely on automatic labeling for baseline triage, path-based routing, and mutual exclusivity enforcement.

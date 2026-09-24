@@ -5,7 +5,6 @@ labels:
   - needs-triage
   - kind/initiative
   - review/tech
-  - sub/project-reviews
 body:
   - type: input
     id: name

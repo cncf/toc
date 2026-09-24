@@ -38,7 +38,7 @@ The TAG Security and Compliance will coordinate with various stakeholders within
 * **Other TAGs**: Coordination is essential as TAGs serve needs across projects and other TAGs.
 * **OpenSSF**: The OpenSSF focuses on securing the development, maintenance, release, and consumption of open source software.  As peer LF foundation, they provide guidance and best practices which may be recommended by the TAG.
 * Projects with substantial overlap or impact on this TAG’s mandate may be done in coordination with outside groups such as the OpenSSF, other TAGs, and others.
-* **TOC Subprojects**: TAG leadership participates in TOC Subprojects like Project Reviews and Contributor Strategy.
+* **TOC coordination**: TAG leadership participates in project governance and technical reviews, Contributor Strategy, and other TOC-requested project support activities.
 * **Community Groups**: Community Groups are encouraged to discuss initiative ideas and may submit applications for initiatives within a TAG.
 
 The TAG Security and Compliance will coordinate with various stakeholders outside the CNCF and LF ecosystems, such as:

@@ -179,9 +179,6 @@ labels:
 - name: sub/mentoring
   description: TOC Mentoring Subproject
   color: 1D76DB
-- name: sub/project-reviews
-  description: TOC Project Review Subproject
-  color: 1D76DB
 - name: tag/developer-experience
   description: TAG Developer Experience
   color: 0E8A8A
@@ -554,7 +551,6 @@ ruleset:
       - needs-group
       - sub/contributor-strategy-and-advocacy
       - sub/mentoring
-      - sub/project-reviews
   actions:
   - kind: remove-label
     spec:
@@ -916,14 +912,3 @@ ruleset:
   - kind: apply-label
     spec:
       label: sub/mentoring
-- name: sub-project-reviews-dir
-  kind: filePath
-  spec:
-    matchPath: "toc_subprojects/project-reviews/*"
-  actions:
-  - kind: remove-label
-    spec:
-      match: needs-group
-  - kind: apply-label
-    spec:
-      label: sub/project-reviews

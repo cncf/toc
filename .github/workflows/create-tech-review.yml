@@ -45,7 +45,7 @@ jobs:
             };
 
             const LABELS_TECH_REVIEW = [
-              'needs-triage', 'kind/initiative', 'review/tech', 'sub/project-reviews'
+              'needs-triage', 'kind/initiative', 'review/tech'
             ];
 
             const COMMENT_MARKERS = {
