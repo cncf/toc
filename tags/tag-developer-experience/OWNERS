@@ -1,0 +1,17 @@
+# @cncf/tag-developer-experience-leads own this TAG directory (see .github/CODEOWNERS). Root OWNERS still apply.
+approvers:
+  - castrojo
+  - cloudmelon
+  - danieloh30
+  - graz-dev
+  - jeefy
+  - joshuabezaleel
+  - julsemaan
+  - kdubois
+  - krook
+  - mrbobbytables
+  - riaankleinhans
+  - stmcginnis
+  - SwEngin
+labels:
+  - tag/developer-experience

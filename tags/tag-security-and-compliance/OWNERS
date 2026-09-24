@@ -1,0 +1,17 @@
+# @cncf/tag-security-compliance-leads own this TAG directory (see .github/CODEOWNERS). Root OWNERS still apply.
+approvers:
+  - arewm
+  - castrojo
+  - evankanderson
+  - jeefy
+  - jkjell
+  - JustinCappos
+  - krook
+  - mnm678
+  - mrbobbytables
+  - realshuting
+  - riaankleinhans
+  - sherine-k
+  - y-tabata
+labels:
+  - tag/security-and-compliance
