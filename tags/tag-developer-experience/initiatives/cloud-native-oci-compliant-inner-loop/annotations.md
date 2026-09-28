@@ -14,6 +14,11 @@ the bundle carries its own manifest, and how they relate to each other is handle
 under the README's "Relationship Metadata" work. So, `mof.class` and the other fields below
 always describe the single artifact the manifest is attached to, never a bundle.
 
+For local developer workflows (inner loop), tools pulling a standalone adapter artifact (e.g. via
+`podman` or `oras`) should resolve its base model dependency the same way — through an OCI
+referrer/subject relationship tied to the base model's digest — rather than expecting the adapter
+manifest to embed the base model's weights.
+
 ## Requirement levels and evidence
 
 - **MUST** — required for v1 conformance.
@@ -32,15 +37,15 @@ calls for something to be resolvable, not just the annotation itself being prese
 | Key | Requirement | Values | Description |
 |---|---|---|---|
 | `org.cncf.ai.interop.profile.version` | MUST | Semantic version (e.g. `1.0.0`) | Which version of this profile the manifest conforms to. Not the same as the artifact's own version — see `org.opencontainers.image.version` below. |
-| `org.cncf.ai.artifact.type` | MUST | `model` (only valid value in v1); future versions may add `skill`, `rag-context`, `workflow` | Type of AI artifact the manifest represents. |
+| `org.cncf.ai.artifact.type` | MUST | `model` (only valid value in v1); future versions may add `skill`, `rag-context`, `workflow`, `lora-adapter` | Type of AI artifact the manifest represents. |
 | `org.cncf.ai.lifecycle.status` | MUST | `experimental`, `validated`, `deprecated`, `product-ready` | Maturity/promotion status, separate from structural conformance — an artifact can be fully compliant and still `experimental`. A GitOps policy could gate promotion on this value. |
 | `org.cncf.ai.model.mof.class` | MUST | `I`, `II`, `III` | LF AI & Data Model Openness Framework class claimed for this artifact (see Unit of conformance above for what "this artifact" means). Requires `mof.components` to be present and consistent with the claimed class, and may require a resolvable MOF-generated model/data card. |
 | `org.cncf.ai.model.mof.version` | MUST | MOF spec version, e.g. `1.0` | Which MOF spec version the class/components were derived from. |
-| `org.cncf.ai.model.mof.components` | MUST | Comma-separated list drawn from: `datasets`, `data-preprocessing-code`, `model-architecture`, `final-model-parameters`, `intermediate-model-parameters`, `model-metadata`, `training-code`, `inference-code`, `evaluation-code`, `evaluation-data`, `evaluation-results`, `supporting-libraries-and-tools`, `model-card`, `data-card`, `technical-report`, `research-paper`, `sample-model-outputs`, `model-openness-config-file` | Which MOF components are present. `model-openness-config-file` is always required regardless of class and must itself be resolvable; other values must match the vocabulary listed. |
+| `org.cncf.ai.model.mof.components` | MUST | Comma-separated list drawn from: `datasets`, `data-preprocessing-code`, `model-architecture`, `final-model-parameters`, `intermediate-model-parameters`, `model-metadata`, `training-code`, `inference-code`, `evaluation-code`, `evaluation-data`, `evaluation-results`, `supporting-libraries-and-tools`, `model-card`, `data-card`, `technical-report`, `research-paper`, `sample-model-outputs`, `model-openness-config-file` | Which MOF components are present. `model-openness-config-file` is always required regardless of class and must itself be resolvable; other values must match the vocabulary listed. List items must be comma-separated with no surrounding whitespace (e.g. `datasets,model-card`) to avoid cross-tool parsing inconsistencies. |
 | `org.cncf.ai.security.signing.framework` | MUST | `sigstore`, `notation` (Notary v2/TUF-based) | Framework used to sign the artifact. The signature must be resolvable and verify against the artifact digest — the annotation alone isn't enough. |
 | `org.cncf.ai.security.sbom.format` | MUST | `spdx`, `cyclonedx` | Format of the attached SBOM, which must be resolvable (e.g. via OCI referrers) and tied to this artifact's digest. |
 | `org.cncf.ai.security.provenance.type` | MUST | `slsa-v1.0`, `in-toto` | Type of provenance attestation, which must be resolvable with a subject digest matching this artifact. |
-| `org.cncf.ai.packaging.format` | SHOULD | `modelpack` | Packaging format of the assembled content. Omit if not defined. |
+| `org.cncf.ai.packaging.format` | SHOULD | `modelpack` | Packaging format of the assembled OCI content (container/layer layout), not the weight serialization format — formats like `safetensors`, `gguf`, or `onnx` are a separate concern and out of scope for this key. Omit if not defined. |
 
 ## Reused OCI annotations (not redefined)
 
@@ -65,13 +70,18 @@ specification. These predefined keys should be reused wherever possible.
 2. **Signing framework list** — the README's supply chain security section also mentions
    OpenPubkey and other emerging zero-trust identity protocols. Do those get added as enum
    values, or are they explicitly out of scope for v1?
+   **TAG DevEx Position:** keep OpenPubkey out of the required enum for v1, but allow `sigstore`,
+   `notation`, and an extensible string format for other values. Sigstore already encompasses
+   keyless identity via OIDC/Fulcio, which covers most zero-trust developer use cases without
+   overcomplicating v1 verification logic in local runtimes.
 3. **Composite bundles** — how `mof.class` and trust metadata roll up when multiple compliant
    artifacts ship together isn't solved here; it's deferred to the README's relationship
    metadata work.
 4. **Reference implementation** — before this spec is finalized, it should be validated against
    a real model artifact starting from a local development environment, carried through the full
    local-to-cluster journey from the README: build the artifact, sign it, attach SBOM/provenance,
-   push to a registry, pull via GitOps, and deploy to KServe.
+   push to a registry, pull via GitOps, and deploy to KServe. This should also confirm that
+   `mof.class` validation logic is supported by local CLI tooling (e.g. `oras`, `podman-ai-lab`).
 5. **Per-component licensing** — raised in review
    ([PR #2299 review](https://github.com/cncf/toc/pull/2299#pullrequestreview-5180176016) by
    @caldeirav): should the profile handle multi-license clarity at the component level, since
