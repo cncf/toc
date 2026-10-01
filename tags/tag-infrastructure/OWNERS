@@ -1,0 +1,17 @@
+# @cncf/tag-infrastructure-leads own this TAG directory (see .github/CODEOWNERS). Root OWNERS still apply.
+approvers:
+  - alexagriffith
+  - aojea
+  - castrojo
+  - GenPage
+  - hzxuzhonghu
+  - jeefy
+  - kashifest
+  - krook
+  - mesutoezdil
+  - mrbobbytables
+  - riaankleinhans
+  - thschue
+  - xing-yang
+labels:
+  - tag/infrastructure

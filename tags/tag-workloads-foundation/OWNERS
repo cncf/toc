@@ -1,0 +1,16 @@
+# @cncf/tag-workloads-foundation-leads own this TAG directory (see .github/CODEOWNERS). Root OWNERS still apply.
+approvers:
+  - castrojo
+  - jeefy
+  - kerthcet
+  - krook
+  - mrbobbytables
+  - pacoxu
+  - pmady
+  - RainbowMango
+  - rajaskakodkar
+  - riaankleinhans
+  - srust
+  - terrytangyuan
+labels:
+  - tag/workloads-foundation

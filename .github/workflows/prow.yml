@@ -1,0 +1,72 @@
+name: Prow
+
+# Chat-ops, labeling and merge automation via cncf/prow-github-actions.
+# Configuration: .github/prow.yaml (label families, needs-* rules, merge gate).
+# Review routing: OWNERS files (root and per TAG / subproject directory).
+# Command reference for contributors: .github/README_Labelling.md
+# Upstream docs: https://github.com/cncf/prow-github-actions/blob/main/docs/installing.md
+
+on:
+  issues:
+    types: [opened, reopened, labeled, unlabeled]
+  issue_comment:
+    types: [created]
+  # pull_request_target, not pull_request: fork pull requests get a write token, so they can be
+  # labeled and merged too. This is safe because nothing here checks out or runs pull request
+  # code; the reusable workflow only checks out cncf/prow-github-actions itself.
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review, labeled, unlabeled]
+  pull_request_review:
+    types: [submitted, dismissed]
+  check_suite:
+    types: [completed]
+  # backstop for merges missed by the events above
+  schedule:
+    - cron: '0 * * * *'
+  # label-sync: run once after installing, then whenever .github/prow.yaml changes
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/prow.yaml]
+
+# the reusable workflow can use at most what is granted here
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  statuses: write
+  actions: write
+
+# One run per comment (commands are never collapsed); per event+action for everything else,
+# so a pending `synchronize` run can only be superseded by a newer `synchronize` run.
+# Never cancel a run that may be merging.
+concurrency:
+  group: prow-${{ github.event_name }}-${{ github.event.action }}-${{ github.event.comment.id || github.event.pull_request.number || github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  prow:
+    if: >-
+      github.repository == 'cncf/toc' &&
+      github.event_name != 'workflow_dispatch' && github.event_name != 'push'
+    uses: cncf/prow-github-actions/.github/workflows/prow.yml@v3.0.1
+    with:
+      # Every /<key> below must have a matching `labels.<key>` section in .github/prow.yaml,
+      # except the built-ins (/assign ... /ok-to-test). /remove-<key> forms come for free.
+      prow-commands: >-
+        /assign /unassign /cc /uncc /auto-cc
+        /approve /lgtm /hold /close /reopen /lock /retitle /milestone /remove
+        /label /help /good-first-issue /check-required-labels
+        /retest /test /ok-to-test
+        /kind /triage /tag /sub /pub /level /review /init /vote
+        /dd-triage /dd-status /dd-adopters /dd-gov-review /dd-tech-review /dd-sec-review
+        /toc-initiative
+      jobs: lgtm
+
+  label-sync:
+    if: >-
+      github.repository == 'cncf/toc' &&
+      (github.event_name == 'workflow_dispatch' || github.event_name == 'push')
+    uses: cncf/prow-github-actions/.github/workflows/prow.yml@v3.0.1
+    with:
+      jobs: label-sync

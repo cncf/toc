@@ -26,7 +26,7 @@ The technical direction of the ecosystem is problem-centric. We encourage and su
 ## TOC Alternates
 
 * **Katie Gamanji** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][alternate]
-* **Ricardo Aravena** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [GB-appointed][alternate]
+* **Ricardo Aravena** (term: 1 year - start date: 5/12/2026 - 5/12/2027) [TOC-appointed][alternate]
 
 Note: TOC Alternates are non-voting members of the TOC
 
