@@ -36,7 +36,7 @@ CNCF Graduated projects represent the pinnacle of project maturity within the Cl
 
 **Archived**:
 Archived projects are inactive or no longer recommended for use. This stage ensures the CNCF community focuses on active, impactful projects.
-Refer to the archive process (here)[https://github.com/cncf/toc/blob/main/process/archiving.md]
+Refer to the archive process [here](https://github.com/cncf/toc/blob/main/process/archiving.md)
 
 ---
 
