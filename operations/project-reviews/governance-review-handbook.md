@@ -29,7 +29,7 @@ The following is the process for initiating, executing and completing a governan
     * Open requests are labeled ['governance/review'](https://github.com/cncf/toc/issues?q=is%3Aissue%20state%3Aopen%20label%3Areview%2Fgovernance).
     * If the review is triggered by a matriculation application then the reviewer may open the issue themselves or may request the project do so.
 * A reviewer should comment on the governance issue to note that they are starting the review. A simple `/assign @githubname` is sufficient - the purpose is to notify readers.
-* The review must be based on a copy of the template at [github.com/cncf/toc/toc_subprojects/project-reviews-subproject/governance-review-template.md](https://github.com/cncf/toc/blob/main/toc_subprojects/project-reviews-subproject/governance-review-template.md). There are markdown comments in that template not shown in the rendered version in GitHub so be sure to copy the [raw](https://raw.githubusercontent.com/cncf/toc/refs/heads/main/toc_subprojects/project-reviews-subproject/governance-review-template.md) version.
+* The review must be based on a copy of the template at [github.com/cncf/toc/operations/project-reviews/governance-review-template.md](https://github.com/cncf/toc/blob/main/operations/project-reviews/governance-review-template.md). There are markdown comments in that template not shown in the rendered version in GitHub so be sure to copy the [raw](https://raw.githubusercontent.com/cncf/toc/refs/heads/main/operations/project-reviews/governance-review-template.md) version.
    * Reviewers can collaborate in any efficient way, such as by opening a page in [notes.cncf.io](https://notes.cncf.io) or sharing a Google Doc.
 
 ### Executing the Review
@@ -52,4 +52,4 @@ The following kinds of projects may impose a conflict of interest on reviewers, 
 * The reviewer has had personal conflicts with one or more leaders of the project
 * The reviewer has some other close personal relationship with one or more leaders of the project
 
-If you are assigned a project that triggers a conflict of interest, please alert one of the leads for the Project Reviews WG so that you can be re-assigned.
+If you are assigned a project that triggers a conflict of interest, please alert the TOC so that you can be re-assigned.

@@ -30,12 +30,12 @@ _[The TOC has found the project to have satisfied the criteria for $LEVEL/ The T
 ### Required
 
 
-- [ ] **Complete a [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
+- [ ] **Complete a [General Technical Review (GTR)](../project-reviews/general-technical-questions.md).**
   - This was most recently revised on DD-MMM-YYYY. The snapshot is available in this repo at `projects/$PROJECT/tech-review/YYYY-MM-DD.md` ($LINK).
 
 <!-- (Project assertion goes here) -->
 
-- [ ] **Complete a [Governance Review](../toc_subprojects/project-reviews-subproject/governance-review-template.md).**
+- [ ] **Complete a [Governance Review](../project-reviews/governance-review-template.md).**
   - This was most recently revised on DD-MMM-YYYY and can be discovered at $LINK.
 
 <!-- (Project assertion goes here) -->
@@ -59,11 +59,11 @@ Completion of this due diligence document, resolution of concerns raised, and pr
 
 ## Governance and Maintainers
 
-Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject if completed as a suggested item prior to application.
+Note: this section may be augmented by the completion of a Governance Review if completed as a suggested item prior to application.
 
 ### Suggested
 
-- [ ] **Complete a Governance Review with the Project Reviews subproject**
+- [ ] **Complete a Governance Review**
 
 <!-- (TOC Evaluation goes here) -->
 
@@ -131,7 +131,7 @@ Note: this section may be augmented by the completion of a Governance Review fro
 
 ## Contributors and Community
 
-Note: this section may be augmented by the completion of a Governance Review from the Project Reviews subproject.
+Note: this section may be augmented by the completion of a Governance Review.
 
 ### Suggested
 

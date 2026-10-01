@@ -74,7 +74,7 @@ Success is based on the effective establishment and operation of Subprojects and
 The TAG Infrastructure will coordinate with various stakeholders within the CNCF ecosystem:
 - CNCF Projects: The TAG provides services to projects and its work helps align projects within the CNCF ecosystem.This coordination ensures alignment across the foundation and provides pathways for community focuses to be supported
 - Other TAGs: Coordination is essential as TAGs serve needs across projects and other TAGs.
-- TOC Subprojects: TAG leadership participates in TOC Subprojects like Project Reviews and Contributor Strategy.
+- TOC coordination: TAG leadership participates in project governance and technical reviews, Contributor Strategy, and other TOC-requested project support activities.
 - Community Groups: Community Groups are encouraged to discuss initiative ideas and may submit applications for initiatives within a TAG.
 
 ## Alignment with the CNCF TOC Charter
