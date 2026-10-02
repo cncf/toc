@@ -7,7 +7,7 @@ application ([cncf/sandbox#516](https://github.com/cncf/sandbox/issues/516)).
 
 > **Scope:** This assessment covers **[hivecommons/hive](https://github.com/hivecommons/hive)** only — the AI agent orchestration system and its hub/spoke deployment. Hive was incubated as a subproject of KubeStellar and was transferred to its own vendor-neutral org, [hivecommons](https://github.com/hivecommons), on 2026-09-03; this assessment does **not** cover [KubeStellar Core](https://github.com/kubestellar/kubestellar) or [KubeStellar Console](https://github.com/kubestellar/console), which has its [own self-assessment](https://github.com/cncf/toc/blob/main/projects/kubestellar/sub-projects/console/security-assessment/self-assessment.md).
 >
-> **Canonical source:** this document is maintained in the Hive repository at [`src/docs/security-self-assessment.md`](https://github.com/hivecommons/hive/blob/v4/src/docs/security-self-assessment.md). Corrections should be made there and mirrored here.
+> **Canonical source:** this document is maintained in the Hive repository at [`src/docs/security-self-assessment.md`](https://github.com/hivecommons/hive/blob/v5/src/docs/security-self-assessment.md). Corrections should be made there and mirrored here.
 
 > **Revision 2 — changes made in response to TAG-Security review
 > ([cncf/toc#2286](https://github.com/cncf/toc/pull/2286)).** Seven review
@@ -17,7 +17,7 @@ application ([cncf/sandbox#516](https://github.com/cncf/sandbox/issues/516)).
 > | Review point | Change |
 > |---|---|
 > | "If I deploy this, what should I worry about?" | New section [If you deploy this, what should you worry about?](#if-you-deploy-this-what-should-you-worry-about) — the attack path stated plainly, a concern/mitigation/non-mitigation table, the three settings that determine exposure, and the worst realistic outcome. |
-> | "Have you red teamed `ioscan`? Is this perfect defense or partial mitigation?" | Answered, then **measured**: [ioscan-red-team.md](https://github.com/hivecommons/hive/blob/v4/src/docs/ioscan-red-team.md) runs a 43-payload adversarial corpus and publishes the result — **42% withheld, 58% reached the agent**, with the containment credited to the network deny rules and verified across all four ACMM modes on every test run ([#6685](https://github.com/hivecommons/hive/issues/6685)). |
+> | "Have you red teamed `ioscan`? Is this perfect defense or partial mitigation?" | Answered, then **measured**: [ioscan-red-team.md](https://github.com/hivecommons/hive/blob/v5/src/docs/ioscan-red-team.md) runs a 43-payload adversarial corpus and publishes the result — **42% withheld, 58% reached the agent**, with the containment credited to the network deny rules and verified across all four ACMM modes on every test run ([#6685](https://github.com/hivecommons/hive/issues/6685)). |
 > | "What is redaction for? What about base64-encoded exfiltration?" | Log scrubbing re-scoped as log hygiene, explicitly **not** an exfiltration control. Running the question against the canary path found a real gap — the egress check was substring-only — filed as [#6686](https://github.com/hivecommons/hive/issues/6686) and **since fixed**: the proxy now decodes and normalizes outbound bodies before matching canaries. |
 > | "Get an OpenSSF passing badge." | **Already held, and this document was wrong to imply otherwise.** [Project 14261](https://www.bestpractices.dev/projects/14261) reached **passing** (100%) on 2026-08-27 — four days before the review — and `README.md` was displaying it throughout. The badge entry has since been corrected: 70 URLs in its criteria justifications still pointed at the pre-migration `kubestellar` org. Tracked in [#6684](https://github.com/hivecommons/hive/issues/6684). |
 > | "This is a huge risk. Why not mitigate it?" | Half was mitigated: the roster went from **one maintainer to three**, across three affiliations, with a documented security-response process. The unmitigated half — unenforced code ownership — is now stated as the largest remaining process risk, with scoped CODEOWNERS added but branch protection still unenforced. |
@@ -34,7 +34,7 @@ application ([cncf/sandbox#516](https://github.com/cncf/sandbox/issues/516)).
 > |---|---|
 > | "Where are GitHub tokens and inference keys stored? What is compromised if an operator is? What threatens install/update?" | New [Credentials: where they live and what falls with them](#credentials-where-they-live-and-what-falls-with-them) — a storage table, a blast-radius table per actor, and the supply-chain facts for install/upgrade. |
 > | "How does hive authenticate a contributor/relay?" | New [Contributor relay authentication](#contributor-relay-authentication). |
-> | "Were threats identified on the hub↔spoke interface?" | New [Hub ↔ spoke interface](#hub--spoke-interface) with a threat table. One finding: hub→spoke config pushes rely on TLS alone and are not independently signed — filed as [#7082](https://github.com/hivecommons/hive/issues/7082). |
+> | "Were threats identified on the hub↔spoke interface?" | New [Hub ↔ spoke interface](#hub--spoke-interface) with a threat table. The finding that hub→spoke config pushes relied on TLS alone ([#7082](https://github.com/hivecommons/hive/issues/7082), closed 2026-09-15) is now **mitigated**: responses are Ed25519-signed, verified by the spoke, and bound to `hive_id` plus a monotonic `seq`; enforcement is opt-in with `HIVE_HEARTBEAT_VERIFY=enforce`, while the default logs failed signatures and still applies the response. |
 > | "What would `fail_mode: closed` and canaries-on by default cost? Are they partial mitigations? Plans?" | The document's own framing was wrong: `open` **redacts** and continues, it does not pass injection through. Corrected in three places. Defaults shipped in [#7095](https://github.com/hivecommons/hive/pull/7095) after being tracked in [#7083](https://github.com/hivecommons/hive/issues/7083). |
 > | "The red-team section duplicates `ioscan-red-team.md`." | Cut to a summary that links out. |
 > | "The image bundles every CLI backend — by design?" | Yes; stated as a tradeoff with its cost and the roadmap under [Security relevant components](#security-relevant-components). |
@@ -43,19 +43,19 @@ application ([cncf/sandbox#516](https://github.com/cncf/sandbox/issues/516)).
 It complements, and deliberately does not duplicate, three existing security
 documents in the Hive repository:
 
-- [security-threat-model.md](https://github.com/hivecommons/hive/blob/v4/src/docs/security-threat-model.md) — attacker-oriented
+- [security-threat-model.md](https://github.com/hivecommons/hive/blob/v5/src/docs/security-threat-model.md) — attacker-oriented
   view: assets, trust boundaries, threat actors, defense layers, residual
   risks.
-- [security-model.md](https://github.com/hivecommons/hive/blob/v4/src/docs/security-model.md) — operator/evaluator-oriented view:
+- [security-model.md](https://github.com/hivecommons/hive/blob/v5/src/docs/security-model.md) — operator/evaluator-oriented view:
   the seven enforcement layers (dashboard auth, spoke auth, credential
   isolation, sandboxing, GitHub blast-radius controls, hub↔spoke channel,
   hosted-platform isolation) with file/line evidence for each.
-- [security.md](https://github.com/hivecommons/hive/blob/v4/src/docs/security.md) — log-scrubbing and secret-redaction
+- [security.md](https://github.com/hivecommons/hive/blob/v5/src/docs/security.md) — log-scrubbing and secret-redaction
   implementation notes.
 
 Where this document repeats a claim from those pages, it cites the same
 evidence rather than re-deriving it. Sections below cite `path:line` against
-the Hive repository's `v4` branch (`src/` prefix; commit `327969b0` at time of
+the Hive repository's `v5` branch (`src/` prefix; commit `baa7dacc7` at time of
 writing) wherever a specific mechanism is asserted.
 
 ## Metadata
@@ -65,18 +65,18 @@ writing) wherever a specific mechanism is asserted.
 | Assessment Stage | Complete |
 | Software | [hivecommons/hive](https://github.com/hivecommons/hive) |
 | Security Provider | No — Hive is not itself a security product. It is an agent-orchestration platform whose core value proposition includes constraining the blast radius of the AI agents it runs; see [Overview](#overview) below. |
-| Languages | Go (core: dashboard, hub, proxy, scheduler, agent orchestration — `src/go.mod`); JavaScript (dashboard UI, served inline, no separate SPA build — see `dashboard/`); Shell/Python (deterministic pipeline scripts under `bin/`, indexed in [`bin/README.md`](https://github.com/hivecommons/hive/blob/v4/bin/README.md)) |
-| SBOM | Tagged releases publish standalone SPDX JSON SBOM release assets for `hive`, `hive-contributor`, and `hive-hub` (`hive-v<version>-sbom.spdx.json`, `hive-contributor-v<version>-sbom.spdx.json`, `hive-hub-v<version>-sbom.spdx.json`) generated by Syft against the already-published GHCR images; see [releases.md](https://github.com/hivecommons/hive/blob/v4/src/docs/releases.md#software-bill-of-materials-sbom). These are deliberately **out-of-band** files, not in-image attestations. `docker.yml` keeps `provenance: false`/`sbom: false` (`docker.yml:295,346,631,818`) because `build-push-action` attestations force an OCI image index and reintroduced the #3760 container-runtime crash loop. The guard in `src/scripts/check-no-image-attestations.sh` asserts the image builds keep plain manifests. |
+| Languages | Go (core: dashboard, hub, proxy, scheduler, agent orchestration — `src/go.mod`); JavaScript (dashboard UI, served inline, no separate SPA build — see `dashboard/`); Shell/Python (deterministic pipeline scripts under `bin/`, indexed in [`bin/README.md`](https://github.com/hivecommons/hive/blob/v5/bin/README.md)) |
+| SBOM | Tagged releases publish standalone SPDX JSON SBOM release assets for `hive`, `hive-contributor`, and `hive-hub` (`hive-v<version>-sbom.spdx.json`, `hive-contributor-v<version>-sbom.spdx.json`, `hive-hub-v<version>-sbom.spdx.json`) generated by Syft against the already-published GHCR images; see [releases.md](https://github.com/hivecommons/hive/blob/v5/src/docs/releases.md#software-bill-of-materials-sbom). These are deliberately **out-of-band** files, not in-image attestations. `docker.yml` keeps `provenance: false`/`sbom: false` (`docker.yml:295,346,631,818`) because `build-push-action` attestations force an OCI image index and reintroduced the #3760 container-runtime crash loop. The guard in `src/scripts/check-no-image-attestations.sh` asserts the image builds keep plain manifests. |
 | Security links | See table below |
 
 | Doc | URL |
 |---|---|
-| Security policy / vulnerability reporting | [SECURITY.md](https://github.com/hivecommons/hive/blob/v4/SECURITY.md) |
-| Threat model | [security-threat-model.md](https://github.com/hivecommons/hive/blob/v4/src/docs/security-threat-model.md) |
-| Security model (operator guide) | [security-model.md](https://github.com/hivecommons/hive/blob/v4/src/docs/security-model.md) |
-| Log scrubbing / secret redaction | [security.md](https://github.com/hivecommons/hive/blob/v4/src/docs/security.md) |
-| ADRs (architecture decision records) | [adr/README.md](https://github.com/hivecommons/hive/blob/v4/src/docs/adr/README.md) |
-| OpenSSF Scorecard workflow | [.github/workflows/scorecard.yml](https://github.com/hivecommons/hive/blob/v4/.github/workflows/scorecard.yml) |
+| Security policy / vulnerability reporting | [SECURITY.md](https://github.com/hivecommons/hive/blob/v5/SECURITY.md) |
+| Threat model | [security-threat-model.md](https://github.com/hivecommons/hive/blob/v5/src/docs/security-threat-model.md) |
+| Security model (operator guide) | [security-model.md](https://github.com/hivecommons/hive/blob/v5/src/docs/security-model.md) |
+| Log scrubbing / secret redaction | [security.md](https://github.com/hivecommons/hive/blob/v5/src/docs/security.md) |
+| ADRs (architecture decision records) | [adr/README.md](https://github.com/hivecommons/hive/blob/v5/src/docs/adr/README.md) |
+| OpenSSF Scorecard workflow | [.github/workflows/scorecard.yml](https://github.com/hivecommons/hive/blob/v5/.github/workflows/scorecard.yml) |
 
 ## Overview
 
@@ -103,7 +103,7 @@ issue, PR, comment, or label on a governed repository is potential agent
 input, and agents that reach the higher autonomy tiers can push code and open
 pull requests under real (scoped) GitHub credentials. The project's security
 posture is therefore built around the principle stated at the top of
-[security-model.md](https://github.com/hivecommons/hive/blob/v4/src/docs/security-model.md): *"if a human would give the same
+[security-model.md](https://github.com/hivecommons/hive/blob/v5/src/docs/security-model.md): *"if a human would give the same
 answer every time, it belongs in infrastructure, not in a prompt."* Enforcement
 is intended to sit in deterministic Go/shell code — a network proxy, a token
 scope, a file permission — rather than in an instruction the model is asked to
@@ -121,7 +121,7 @@ obey.
   that reaches agent prompts.
 - **Contributors via ClankeR relay** — external contributors who donate
   compute by running an agent against a hive's queue over a relay protocol
-  (see [contributor-relay.md](https://github.com/hivecommons/hive/blob/v4/src/docs/contributor-relay.md) and
+  (see [contributor-relay.md](https://github.com/hivecommons/hive/blob/v5/src/docs/contributor-relay.md) and
   [Contributor relay authentication](#contributor-relay-authentication)
   below). Their machines are outside Hive's trust boundary.
 - **Hub operators / SaaS platform operators** — run the central hub that
@@ -201,12 +201,16 @@ updating are supply-chain threats, and the current facts are:
 ### Hub ↔ spoke interface
 
 Registered spokes heartbeat to a hub; the hub answers with configuration and,
-for hosted spokes, credentials. The two directions are not equally protected.
+for hosted spokes, credentials. Both directions are now cryptographically
+authenticated (spoke→hub by a per-hive bearer, hub→spoke by an Ed25519
+signature verified by the spoke — [#7082](https://github.com/hivecommons/hive/issues/7082)), but heartbeat signature
+enforcement is opt-in (`HIVE_HEARTBEAT_VERIFY=enforce`) and the **trust** is still asymmetric: the hub is the root of trust that provisions and
+signs, and a compromised hub can sign a genuine malicious push.
 
 | Direction | What is sent | How it is authenticated |
 |---|---|---|
 | **Spoke → hub** (heartbeat) | Operational telemetry: agent states, queue depth, version, health. **Never credentials.** | A **per-hive derived bearer** (`keyderive.PerHiveKey`, bound to trust domain and hive ID), verified against every live master generation so the master can rotate without a flag day (`src/pkg/hub/hub_keys.go`, `verifyHeartbeatBearerAcrossGenerations`). The fleet-wide shared bearer lane of earlier releases is **deleted**. |
-| **Hub → spoke** (heartbeat response) | Configuration deltas; for hosted spokes, the spoke's GitHub App credentials and authorized-user list. | **TLS to the spoke's configured hub URL — and nothing else.** The response body is not signed and is not bound to a hive ID or sequence number. |
+| **Hub → spoke** (heartbeat response) | Configuration deltas; for hosted spokes, the spoke's GitHub App credentials and authorized-user list. | **TLS plus an independent Ed25519 signature** over the response body ([#7082](https://github.com/hivecommons/hive/issues/7082)). The hub signs each response with the **same** master-derived Ed25519 key it already uses for SSO/session tokens (`infoSSOEd25519Seed`); the spoke verifies with the public key it already holds (`HIVE_SSO_PUBLIC_KEY`) — no new key or distribution. The signed body is bound to `hive_id` (defeats cross-hive replay) and a per-hive monotonic `seq`/timestamp (defeats rollback replay). Spokes default to **log-only** (verify, log failures, still accept) and reject only under opt-in `HIVE_HEARTBEAT_VERIFY=enforce`, and only after they have accepted one valid signed response (**trust-on-first-signed**), so a spoke never hard-fails against a hub that has not yet shipped signing. See `src/pkg/spoke` and `src/pkg/hub/heartbeat_signing.go`. |
 | **Hub-minted tokens** (SSO, delegation, session cookies) | Identity assertions the spoke must verify. | **Ed25519**; the spoke holds only the public key (`HIVE_SSO_PUBLIC_KEY`, `src/pkg/delegation/token.go`). A spoke without a key fails closed (503). |
 
 Threats identified on this interface:
@@ -215,7 +219,7 @@ Threats identified on this interface:
 |---|---|
 | **Hub compromise → fleet-wide credential and config push** | Real and unmitigated by design of the lane; bounded only by hub hardening and by each spoke holding its own App key alone. Stated as the system's highest-value target. |
 | **Spoke impersonation** to the hub | Bounded. One leaked bearer authenticates one hive; the hub will not accept it for another hive ID, and rotation retires it within the dual-generation window. |
-| **Replay, rollback, or mis-delivery of a pushed configuration** (a TLS-terminating middlebox, a misconfigured `HIVE_HUB_URL`, a captured response replayed to a different hive) | **Open.** Filed as [#7082](https://github.com/hivecommons/hive/issues/7082): sign the response with the hub's existing Ed25519 key and bind it to `hive_id` plus a monotonic sequence, rolling out log-only before enforcing. |
+| **Replay, rollback, or mis-delivery of a pushed configuration** (a TLS-terminating middlebox, a misconfigured `HIVE_HUB_URL`, a captured response replayed to a different hive) | **Mitigated ([#7082](https://github.com/hivecommons/hive/issues/7082)).** The heartbeat response is now signed with the hub's existing Ed25519 key and bound to `hive_id` plus a monotonic `seq`/timestamp, so a middlebox or mis-pointed hub URL cannot forge config/credentials, a response captured for hive A cannot be replayed to hive B (`hive_id` binding), and an old response cannot roll config back (`seq` floor). Enforcement is opt-in (`HIVE_HEARTBEAT_VERIFY=enforce`); by default a failed signature is logged and the response is still applied, so deployed spokes are never bricked against an un-upgraded hub. The residual **hub-compromise** row above is unchanged: a genuine hub can still sign a genuine (malicious) push. |
 | **Telemetry disclosure** | Low. Heartbeats carry no secrets; the hub-side view is admin-gated. |
 
 ### Contributor relay authentication
@@ -235,7 +239,7 @@ rather than trusting the relay's output:
   constant time (`contributorProfileFromRegistrationToken`).
 - **Authorization.** Every contributor has a **trust tier** with per-tier
   rate limits and model admission
-  ([contributor-trust-and-roles.md](https://github.com/hivecommons/hive/blob/v4/src/docs/contributor-trust-and-roles.md)).
+  ([contributor-trust-and-roles.md](https://github.com/hivecommons/hive/blob/v5/src/docs/contributor-trust-and-roles.md)).
 - **Per-task credential.** The hub mints a **55-minute** GitHub token scoped
   to the assigned task and re-mints it while the task is live; the lease is
   fenced to that contributor identity and abandoned after 30 minutes without
@@ -405,7 +409,7 @@ repository writes:
    decoded is attacker-influenced.
 
    **How well does it work? Measured: a partial, uneven mitigation.**
-   [ioscan-red-team.md](https://github.com/hivecommons/hive/blob/v4/src/docs/ioscan-red-team.md) runs a 43-payload adversarial
+   [ioscan-red-team.md](https://github.com/hivecommons/hive/blob/v5/src/docs/ioscan-red-team.md) runs a 43-payload adversarial
    corpus across six technique families against the shipped rules and
    publishes the per-case table. The headline:
 
@@ -584,7 +588,7 @@ project-level compliance signals:
   assets, generated by Syft against the already-published GHCR images. They
   are intentionally not attached to image manifests; the container-runtime
   reason is explained under [Metadata](#metadata) and in
-  [releases.md](https://github.com/hivecommons/hive/blob/v4/src/docs/releases.md#software-bill-of-materials-sbom).
+  [releases.md](https://github.com/hivecommons/hive/blob/v5/src/docs/releases.md#software-bill-of-materials-sbom).
 
 ## Secure development practices
 
@@ -674,7 +678,7 @@ independent of any single cloud provider or AI vendor.
 
 Vulnerability reports are handled through **GitHub private vulnerability
 reporting** (Security tab → "Report a vulnerability"), not public issues, PRs,
-or discussions, per [`SECURITY.md`](https://github.com/hivecommons/hive/blob/v4/SECURITY.md).
+or discussions, per [`SECURITY.md`](https://github.com/hivecommons/hive/blob/v5/SECURITY.md).
 Reporters are asked for affected component/branch/commit, description and
 impact, reproduction steps, and any supporting logs/PoC/config.
 
@@ -682,7 +686,7 @@ impact, reproduction steps, and any supporting logs/PoC/config.
 within **5 business days** (`SECURITY.md` "What to Expect"), followed by
 investigation/confirmation, a coordinated fix and disclosure timeline, and
 optional reporter credit. Who performs that work is now documented:
-[`security-response.md`](https://github.com/hivecommons/hive/blob/v4/src/docs/security-response.md)
+[`security-response.md`](https://github.com/hivecommons/hive/blob/v5/src/docs/security-response.md)
 establishes that security response is a duty of the **Maintainer Committee**
 — there is no separate security team, the committee *is* the response team —
 and that any of the three maintainers can receive and triage a report, with
@@ -700,10 +704,10 @@ target is a commitment; private-report time-to-fix is not.
 ### Incident response
 
 A security-specific response process is documented in
-[`security-response.md`](https://github.com/hivecommons/hive/blob/v4/src/docs/security-response.md)
+[`security-response.md`](https://github.com/hivecommons/hive/blob/v5/src/docs/security-response.md)
 — who responds, how a report is triaged, and how disclosure is coordinated —
 distinct from
-[`docs/HUB_DISASTER_RECOVERY.md`](https://github.com/hivecommons/hive/blob/v4/docs/HUB_DISASTER_RECOVERY.md),
+[`docs/HUB_DISASTER_RECOVERY.md`](https://github.com/hivecommons/hive/blob/v5/docs/HUB_DISASTER_RECOVERY.md),
 which covers hub-level disaster recovery (backup/restore, spoke fleet
 recovery, operator communication) and is an operational rather than security
 runbook. The master-key rotation flow (`security-model.md` "Master key
@@ -806,7 +810,7 @@ because a self-assessment that only lists strengths is not credible:
 A secondary, narrower point worth surfacing alongside the three above: the
 **audit log's retention is size-triggered, not time-triggered** — rotation
 occurs at 5 MB with 3 backups retained
-(`src/pkg/dashboard/audit.go:23-24`, `auditMaxSizeMB = 5`,
+(`src/pkg/dashboard/audit.go:25-26`, `auditMaxSizeMB = 5`,
 `auditMaxBackups = 3`; a 90-day `auditMaxAgeDays` cap also applies but only
 prunes files already past the size-based rotation). On a busy hive with many
 audited actions per day, the effective lookback window this provides an
@@ -849,7 +853,7 @@ development, not externally reported vulnerabilities.
 
 ### Open SSF best practices
 
-An [OpenSSF Scorecard](https://github.com/hivecommons/hive/blob/v4/.github/workflows/scorecard.yml)
+An [OpenSSF Scorecard](https://github.com/hivecommons/hive/blob/v5/.github/workflows/scorecard.yml)
 workflow runs weekly and on the configured branch pushes, publishing to the
 repository's code-scanning alerts. This assessment deliberately does not
 freeze a numeric score into the text — it moves independently of this
@@ -878,7 +882,7 @@ stale. The badge status above is taken from the programme's public API.
 
 ### Case studies
 
-Hive maintains an [`ADOPTERS.md`](https://github.com/hivecommons/hive/blob/v4/ADOPTERS.md)
+Hive maintains an [`ADOPTERS.md`](https://github.com/hivecommons/hive/blob/v5/ADOPTERS.md)
 file with seven organizations, three of them at **Production** maturity.
 The security-relevant point is not the count but that these are deployments
 where the threat model in this document is live — real repositories, real
@@ -915,7 +919,7 @@ family and originated as a subproject of [KubeStellar](https://github.com/kubest
 (CNCF Sandbox), which remains its first production adopter. It interoperates
 with, but is not a vendor dependency of: GitHub/GitHub Enterprise, with GitLab/Gitea adapters not wired for production use, and multiple AI CLI
 backend vendors (Anthropic Claude Code, GitHub Copilot CLI, Google Gemini,
-Block Goose, IBM Bob). See [landscape.md](https://github.com/hivecommons/hive/blob/v4/src/docs/landscape.md)
+Block Goose, IBM Bob). See [landscape.md](https://github.com/hivecommons/hive/blob/v5/src/docs/landscape.md)
 for a maintained comparison against nearby agentic-orchestration tools.
 
 ## Questions resolved since first review
@@ -949,7 +953,7 @@ repository and answered below. Where the answer is "no," it says no.
 
 - **Does a security-specific incident-response runbook exist?** Resolved:
   **yes, and it did not when this document was first written.**
-  [`security-response.md`](https://github.com/hivecommons/hive/blob/v4/src/docs/security-response.md)
+  [`security-response.md`](https://github.com/hivecommons/hive/blob/v5/src/docs/security-response.md)
   documents who responds (the Maintainer Committee, which *is* the security
   team), how a report is triaged, and how disclosure is coordinated. It is
   distinct from the operational `HUB_DISASTER_RECOVERY.md`. Still missing: a
@@ -974,7 +978,7 @@ repository and answered below. Where the answer is "no," it says no.
   honest answer was **no**: no red-team exercise and no measured detection
   rate for `ioscan` existed anywhere in the repository. That gap was tracked
   in [#6685](https://github.com/hivecommons/hive/issues/6685) and closed by
-  [ioscan-red-team.md](https://github.com/hivecommons/hive/blob/v4/src/docs/ioscan-red-team.md): a 43-payload adversarial corpus
+  [ioscan-red-team.md](https://github.com/hivecommons/hive/blob/v5/src/docs/ioscan-red-team.md): a 43-payload adversarial corpus
   whose result (42% withheld, 58% reached the agent) is quoted above and
   whose containment claim is verified in CI. What still has **not** occurred
   is an *external* review: no third-party audit or penetration test, and the
@@ -982,7 +986,7 @@ repository and answered below. Where the answer is "no," it says no.
   `ioscan` in this document are now measured rather than asserted, but
   measured by the people who built it.
 
-- **Will CODEOWNERS enforcement be enabled?** Resolved: the live `v4` branch
+- **Will CODEOWNERS enforcement be enabled?** Resolved: the live `v5` branch
   protection currently requires **no** pull-request reviews at all, and
   enforcement was blocked on the fact that the project's own automation
   merges green PRs. The intended resolution is scoped enforcement over
