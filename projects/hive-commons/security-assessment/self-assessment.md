@@ -35,7 +35,7 @@ application ([cncf/sandbox#516](https://github.com/cncf/sandbox/issues/516)).
 > | "Where are GitHub tokens and inference keys stored? What is compromised if an operator is? What threatens install/update?" | New [Credentials: where they live and what falls with them](#credentials-where-they-live-and-what-falls-with-them) — a storage table, a blast-radius table per actor, and the supply-chain facts for install/upgrade. |
 > | "How does hive authenticate a contributor/relay?" | New [Contributor relay authentication](#contributor-relay-authentication). |
 > | "Were threats identified on the hub↔spoke interface?" | New [Hub ↔ spoke interface](#hub--spoke-interface) with a threat table. One finding: hub→spoke config pushes rely on TLS alone and are not independently signed — filed as [#7082](https://github.com/hivecommons/hive/issues/7082). |
-> | "What would `fail_mode: closed` and canaries-on by default cost? Are they partial mitigations? Plans?" | The document's own framing was wrong: `open` **redacts** and continues, it does not pass injection through. Corrected in three places. Defaults plan tracked in [#7083](https://github.com/hivecommons/hive/issues/7083). |
+> | "What would `fail_mode: closed` and canaries-on by default cost? Are they partial mitigations? Plans?" | The document's own framing was wrong: `open` **redacts** and continues, it does not pass injection through. Corrected in three places. Defaults shipped in [#7095](https://github.com/hivecommons/hive/pull/7095) after being tracked in [#7083](https://github.com/hivecommons/hive/issues/7083). |
 > | "The red-team section duplicates `ioscan-red-team.md`." | Cut to a summary that links out. |
 > | "The image bundles every CLI backend — by design?" | Yes; stated as a tradeoff with its cost and the roadmap under [Security relevant components](#security-relevant-components). |
 > | "Some sections are dense." | Long paragraphs in the critical-components and weaknesses sections broken up or replaced with tables; a stale "no adversarial testing has occurred" answer in the appendix corrected. |
@@ -301,7 +301,7 @@ control removes it; the controls bound the consequences.
 |---|---|---|
 | Attacker text talks an agent into **merging** malicious code | `PUT /pulls/{n}/merge` is **hard-denied for every ACMM mode** at the proxy (`rules.go:215-226`), as is the GraphQL merge mutation. The agent never holds a credential path to merge; `hive-merge` runs as Hive with a SHA-pinned eligibility binding. | `ioscan`. A sufficiently clever prompt defeats a scanner; it does not defeat a rule table the model never sees. |
 | Attacker text talks an agent into **opening a PR** with a backdoor | `POST /pulls` is likewise hard-denied for every mode. PR creation goes through `hive-open-pr` as the App bot, attribution-stamped and audit-logged. | Nothing prevents the *content* of a legitimately-created PR from being attacker-influenced. Review it like any other PR. |
-| Attacker exfiltrates your **secrets** via the agent | Mode-tiered tokens mean low-tier agents never hold code-write credentials. Optional `ioscan` canaries detect prompt contents echoed into outbound GitHub writes at the proxy, including base64/hex/URL-encoded, reversed and split spellings of the token. | Canaries are **default-off**, and their transform list is finite — an encoding it does not model still passes. `git-receive-pack` bodies are unscannable, and non-GitHub egress is tunneled without inspection. |
+| Attacker exfiltrates your **secrets** via the agent | Mode-tiered tokens mean low-tier agents never hold code-write credentials. `ioscan` canaries, which default on unless an operator sets `canaries: false`, detect prompt contents echoed into outbound GitHub writes at the proxy, including base64/hex/URL-encoded, reversed and split spellings of the token. | Canaries are not exhaustive: their transform list is finite, so an encoding it does not model still passes. `git-receive-pack` bodies are unscannable, and non-GitHub egress is tunneled without inspection. |
 | Agent burns your **inference budget** in a loop | Seven-day rolling token budget suppresses kicks on exhaustion. | Nothing caps the *rate* within budget. |
 | Compromised agent attacks **other agents** on the same spoke | Per-UID separation stops tmux attach and token-file reads. | Shared container/kernel. See weakness #2. |
 
@@ -315,17 +315,20 @@ control removes it; the controls bound the consequences.
 2. **Whether the governed repository is public.** A private repository with
    trusted collaborators collapses most of the untrusted-input surface. The
    threat model above is substantially a *public-repository* threat model.
-3. **Whether you enabled `ioscan.canaries` and `fail_mode: closed`.** Both
-   default off. Be precise about what the defaults do: `fail_mode: open`
+3. **Whether you accept or override the `ioscan` canary and fail-mode defaults.**
+   `ioscan.canaries` now defaults on everywhere (set `canaries: false` to opt
+   out). `ioscan.fail_mode` has a level-aware default: it stays `open` at
+   ACMM L1–L4, and resolves to `closed` at ACMM L5/L6 via the L5/L6 packs,
+   where agents can merge. An explicit per-hive `fail_mode` overrides the
+   level default either way. Be precise about what those modes do: `open`
    **redacts** a Critical finding and continues the kick — it does not pass
    the injection through; `closed` blocks the kick and writes an
    `ioscan_fail_closed` audit entry. The cost of `closed` is that every
-   Critical false positive becomes a stalled queue item needing an operator.
-   Canaries add a per-kick marker and an egress scan. Both are partial
-   mitigations (see below); a security-sensitive deployment should enable
-   both. The project's plan is to make canaries the default everywhere and
-   `closed` the default at ACMM ≥ L5, where agents can merge
-   ([#7083](https://github.com/hivecommons/hive/issues/7083)).
+   Critical false positive becomes a stalled queue item needing an operator;
+   that cost is now the default at L5/L6. Canaries add a per-kick marker and
+   an egress scan. Both are partial mitigations (see below), and the current
+   defaults shipped in [#7095](https://github.com/hivecommons/hive/pull/7095)
+   after being tracked in [#7083](https://github.com/hivecommons/hive/issues/7083).
 
 **What we would tell a new operator.** Start at L1–L3 on a repository you
 would not mind an agent filing a bad issue on. Read the attribution trailers
@@ -424,7 +427,7 @@ repository writes:
    is default-off and its contribution is unmeasured; the corpus covers the
    input path only.
 
-   **Exfiltration detection (`ioscan.canaries`, default off).** A per-agent
+   **Exfiltration detection (`ioscan.canaries`, default on unless opted out).** A per-agent
    `HIVE-CANARY-<48 hex>` token is planted in the agent's prompt, and the
    egress proxy scans outbound GitHub request bodies for it
    (`github_proxy.go:1179-1205`): a hit is positive evidence that prompt
@@ -726,9 +729,11 @@ because a self-assessment that only lists strengths is not credible:
    issue authors can place arbitrary text in titles, labels, bodies, and
    comments that Hive may include in a kick"*). `ioscan`'s deterministic
    rules and optional semantic classifier reduce this materially. The
-   **default `ioscan.fail_mode` is `open`** (`ioscan.md:11` — *"open (default)
-   redacts"*): a Critical finding is redacted and the kick continues, rather
-   than the kick being blocked. The redaction itself is deterministic and does
+   **default `ioscan.fail_mode` is level-aware** (`ioscan.md:10-11`): it is
+   `open` at ACMM L1–L4, where a Critical finding is redacted and the kick
+   continues, and `closed` at ACMM L5/L6 via the L5/L6 packs, where a Critical
+   finding blocks the kick. An explicit per-hive `fail_mode` overrides the
+   level default either way. The redaction itself is deterministic and does
    not depend on any model call. The semantic
    (LLM-judge) classifier layer is explicitly **fail-open on errors/timeouts
    by design** (`ioscan.md:26`, ADR-0008: *"Classifier failures and budget
