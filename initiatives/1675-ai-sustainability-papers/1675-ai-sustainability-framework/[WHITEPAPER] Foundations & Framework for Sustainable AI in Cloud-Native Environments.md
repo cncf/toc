@@ -153,12 +153,6 @@ Even as hardware becomes more efficient, overall demand can still rise due to in
 
 For Kubernetes environments, Kepler-based approaches are one practical path to connect workload operations to energy-aware optimization workflows.[^17] At the systems level, the IETF GREEN working group provides a standards-oriented framing for energy measurement and control in ICT systems.[^20]
 
-Compute placement is not the only lever. Three infrastructure layers also shape the footprint of AI workloads:
-
-* **Container runtime**: Large model-serving images and model weights increase pull time, registry storage, and network transfer. Smaller base images, separating weights from images, and lazy image loading reduce this overhead and shorten cold starts, which makes scale-to-zero practical for inference.
-* **Storage**: Datasets, checkpoints, embeddings, and model versions accumulate. Tiered storage, deduplication, and retention policies for checkpoints and artifacts limit storage growth and the hardware behind it.
-* **Network**: Moving training data and model weights across zones and regions consumes energy and adds latency. Co-locating data with compute, topology-aware scheduling, and caching weights near serving nodes reduce unnecessary data movement.
-
 ## Personas & Responsibilities in Sustainable AI {#personas-&-responsibilities-in-sustainable-ai}
 
 Sustainable AI is a shared responsibility across teams that build, operate, and govern AI systems. Clear role ownership helps ensure sustainability signals are measured consistently, optimization work is prioritized, and progress is tracked with operational KPIs.
