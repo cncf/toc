@@ -8,7 +8,7 @@
 
 </div>
 
-| TAG / Group Home: [https://tag-runtime.cncf.io/wgs/cnaiwg/](https://tag-runtime.cncf.io/wgs/cnaiwg/)  Authors (listed alphabetically): Adel Zaalouk Andrew Block, Red Hat Marisol Palmero Nimisha Mehta Payam Mohajeri Prateek Kumar Viktor Lu Vincent Caldeira, Red Hat | GitHub Issues: [CNCF TOC Issue 1675](https://github.com/cncf/toc/issues/1675) |
+| TAG / Group Home: [https://tag-runtime.cncf.io/wgs/cnaiwg/](https://tag-runtime.cncf.io/wgs/cnaiwg/)  Authors (listed alphabetically): Adel Zaalouk, Andrew Block, Marisol Palmero, Niki Manoledaki, Nimisha Mehta ,Payam Mohajeri, Prateek Kumar, Viktor Lu, Vincent Caldeira, | GitHub Issues: [CNCF TOC Issue 1675](https://github.com/cncf/toc/issues/1675) |
 | :---- | :---- |
 
 Table of Contents
@@ -47,7 +47,7 @@ AI workloads are becoming a structural driver of energy, water, and infrastructu
 
 At the same time, the computational intensity of AI systems continues to rise. The Stanford AI Index 2025 reports that training compute for notable AI models now doubles approximately every five months, while the power required for training increases annually. Although hardware efficiency continues to improve, these gains are currently outpaced by increases in model scale, training frequency, and deployment volume.[^5]
 
-The impact is global. The International Energy Agency projects that data-center electricity demand will nearly double to around 945 TWh by 2030, approaching 3% of global electricity consumption, with significant growth across North America, Europe, and Asia-Pacific.3
+The impact is global. The International Energy Agency projects that data-center electricity demand will nearly double to around 945 TWh by 2030, approaching 3% of global electricity consumption, with significant growth across North America, Europe, and Asia-Pacific.[^3]
 
 <div align="center">
 
@@ -102,7 +102,7 @@ Table 3 \- AI lifecycle sustainability mapping: drivers, levers, metrics
 | :---- | :---- | :---- | :---- |
 | Data collection and preparation | storage growth, preprocessing compute, repeated dataset copies | deduplicate datasets, tiered storage, efficient data formats, cache-aware pipelines | data processed per kWh |
 | Feature, prompt, and retrieval design | embedding generation, retrieval calls, long contexts, repeated prompts | prompt minimization, caching, batching, retrieval tuning, context limits | tokens per request |
-| Model selection and training/tuning | GPU/accelerator time, high-utilization clusters, long runs | right-size model, PEFT, distillation, early stopping, efficient dataloading | training kWh per run |
+| Model selection and training/tuning | GPU/accelerator time, high-utilization clusters, long runs | right-size model, PEFT, distillation, early stopping, efficient data loading | training kWh per run |
 | Evaluation and validation | large test suites, repeated runs, human-in-the-loop cycles | staged evaluation, sampling, automated gates, reuse artifacts | eval cost per release |
 | Deployment and serving | always-on replicas, peak provisioning, GPU fragmentation | autoscale to demand, request batching, quantization, model routing | energy per inference |
 | Monitoring, maintenance, and retraining | continual telemetry, drift detection, frequent retraining | trigger retraining by signals, incremental updates, lifecycle budgets | retrains per incident |
@@ -128,14 +128,14 @@ This taxonomy is intended as an operational lens: it highlights where sustainabi
 
 Where an AI system runs largely determines its sustainability profile. Deployment choices influence utilization (idle vs busy resources), cooling efficiency, the electricity grid mix, and how much data must move across networks. The same model can therefore have very different operational impacts depending on whether it is served on-device, on-prem, in a public cloud region, or across a hybrid footprint.
 
-Deployment decisions are also constrained by hardware reality. Some organizations operate older accelerators, while others lack accelerator capacity entirely and cannot obtain enough GPUs to meet demand. The AI Index 2025 highlights that cutting-edge AI increasingly requires compute and financial resources that are not available to academia, with leading models predominantly produced by industry.5 This access gap matters for sustainability: many efficiency strategies depend on having the right hardware and then keeping it highly utilized. The table below summarizes common environment trade-offs and the levers typically available in each setting.
+Deployment decisions are also constrained by hardware reality. Some organizations operate older accelerators, while others lack accelerator capacity entirely and cannot obtain enough GPUs to meet demand. The AI Index 2025 highlights that cutting-edge AI increasingly requires compute and financial resources that are not available to academia, with leading models predominantly produced by industry.[^5] This access gap matters for sustainability: many efficiency strategies depend on having the right hardware and then keeping it highly utilized. The table below summarizes common environment trade-offs and the levers typically available in each setting.
 
 Table 5 \- Environment trade-offs, levers, and hardware access
 
 | Environment | Common fit | Dominant sustainability drivers | Primary levers | Hardware access considerations |
 | :---- | :---- | :---- | :---- | :---- |
 | Public cloud | Elastic training/inference; burst capacity | Region energy mix; overprovisioning; data egress | Right-sizing; autoscaling; placement policies; energy telemetry | Access via rentals; quotas/capacity can constrain peaks |
-| Private / on-prem | Data control; predictable workloads | Utilization; cooling efficiency; upgrade cycles | Consolidation; scheduling; instrumentation; capacity management | May have older accelerators or no accelerators available 5 |
+| Private / on-prem | Data control; predictable workloads | Utilization; cooling efficiency; upgrade cycles | Consolidation; scheduling; instrumentation; capacity management | May have older accelerators or no accelerators available [^5] |
 | Hybrid / multi-cloud | Mixed constraints; placement flexibility | Telemetry consistency; duplicated data; sprawl | Standard metrics; placement rules; governance controls | Balances constraints; requires strong guardrails |
 | Edge / on-device | Low latency; local autonomy | Device power limits; model size; update cadence | Small models; quantization; hardware-aware inference | Reduces reliance on centralized accelerators; limits model scale |
 
@@ -147,9 +147,9 @@ To make sustainability improvements repeatable, teams typically run a simple ope
 4. **Act**: Autoscale, binpack, batch, or shift workloads.  
 5. **Report**: Sustainability KPIs and governance evidence; feed back into measurement.
 
-Even as hardware becomes more efficient, overall demand can still rise due to increased model scale and usage. The AI Index 2025 reports rapid improvements in hardware energy efficiency, while also noting that the power required for training has continued to increase.5 This reinforces why the deployment environment and the control plane matter: sustainability improvements depend on measuring the right signals and then using orchestration and scheduling to reduce idle capacity and unnecessary data movement.
+Even as hardware becomes more efficient, overall demand can still rise due to increased model scale and usage. The AI Index 2025 reports rapid improvements in hardware energy efficiency, while also noting that the power required for training has continued to increase.[^5] This reinforces why the deployment environment and the control plane matter: sustainability improvements depend on measuring the right signals and then using orchestration and scheduling to reduce idle capacity and unnecessary data movement.
 
-For Kubernetes environments, Kepler-based approaches are one practical path to connect workload operations to energy-aware optimization workflows.16 At the systems level, the IETF GREEN working group provides a standards-oriented framing for energy measurement and control in ICT systems.[^19]
+For Kubernetes environments, Kepler-based approaches are one practical path to connect workload operations to energy-aware optimization workflows.[^16] At the systems level, the IETF GREEN working group provides a standards-oriented framing for energy measurement and control in ICT systems.[^19]
 
 ## Personas & Responsibilities in Sustainable AI {#personas-&-responsibilities-in-sustainable-ai}
 
@@ -170,7 +170,7 @@ This table can be adapted per organization, but each persona should have at leas
 
 ## Organizational Context & Governance {#organizational-context-&-governance}
 
-Technology choices alone do not ensure sustainable AI outcomes. Incentives, ownership, measurement practices, and policy controls determine whether sustainability is treated as an operational requirement or an optional optimization. The AI Index 2025 notes that AI governance oversight is distributed across functions (no single department dominates), reinforcing the need for clear accountability and an operating model that spans technical and non-technical stakeholders.5 The table below summarizes governance levers that make sustainability measurable, enforceable, and continuously improved.
+Technology choices alone do not ensure sustainable AI outcomes. Incentives, ownership, measurement practices, and policy controls determine whether sustainability is treated as an operational requirement or an optional optimization. The AI Index 2025 notes that AI governance oversight is distributed across functions (no single department dominates), reinforcing the need for clear accountability and an operating model that spans technical and non-technical stakeholders.[^5] The table below summarizes governance levers that make sustainability measurable, enforceable, and continuously improved.
 
 Table 7 \- Governance levers for sustainable AI operations
 
@@ -185,13 +185,13 @@ Table 7 \- Governance levers for sustainable AI operations
 
 Workload placement can be optimized not only by location (region) but also by time. For flexible workloads (e.g., training, batch inference, retraining pipelines), organizations can dynamically shift execution to hours when grid electricity is cleaner or renewable availability is higher, using carbon-intensity forecasts and scheduling policies. This approach is already used in practice in large-scale “carbon-aware computing” initiatives and is increasingly supported by open tooling and forecast APIs.[^20] [^21] [^22]
 
-Governance is also shaped by regulation. The EU AI Act requires providers of certain systems to maintain technical documentation and related compliance evidence, and official guidance highlights documentation elements and lifecycle maintenance expectations.[^23] Regardless of jurisdiction, the control pattern is consistent: define sustainability metrics, measure them continuously, enforce policies through automation where possible, and retain evidence for review and audit.21
+Governance is also shaped by regulation. The EU AI Act requires providers of certain systems to maintain technical documentation and related compliance evidence, and official guidance highlights documentation elements and lifecycle maintenance expectations.[^23] Regardless of jurisdiction, the control pattern is consistent: define sustainability metrics, measure them continuously, enforce policies through automation where possible, and retain evidence for review and audit.[^21]
 
 # Conclusion {#conclusion}
 
-Sustainable AI in cloud native environments is primarily an operations and governance problem: AI demand is rising, and the infrastructure footprint depends on how systems are deployed, measured, and continuously optimized. Recent analyses show data-centre electricity demand growing rapidly and projected to increase substantially toward 2030, with AI as a major driver.3 At the same time, leading AI systems continue to increase compute requirements, reinforcing the need to treat sustainability as part of the platform control plane rather than an external reporting activity.5
+Sustainable AI in cloud native environments is primarily an operations and governance problem: AI demand is rising, and the infrastructure footprint depends on how systems are deployed, measured, and continuously optimized. Recent analyses show data-centre electricity demand growing rapidly and projected to increase substantially toward 2030, with AI as a major driver.[^3] At the same time, leading AI systems continue to increase compute requirements, reinforcing the need to treat sustainability as part of the platform control plane rather than an external reporting activity.[^5]
 
-To make sustainability actionable, telemetry must be used to trigger concrete optimization decisions. The CNCF ecosystem provides the primitives to measure and act (energy telemetry, cost signals, autoscaling, scheduling, and observability), but the goal is to close the loop between measurement and change.16 Actionable steps for sustainable cloud native AI:
+To make sustainability actionable, telemetry must be used to trigger concrete optimization decisions. The CNCF ecosystem provides the primitives to measure and act (energy telemetry, cost signals, autoscaling, scheduling, and observability), but the goal is to close the loop between measurement and change.[^16] Actionable steps for sustainable cloud native AI:
 
 1. Embed governance and evidence collection  
 2. Use telemetry to reduce footprint (not just observe it) and even increase handprint  
@@ -200,7 +200,7 @@ To make sustainability actionable, telemetry must be used to trigger concrete op
 5. Define a small set of operational sustainability KPIs  
 6. Instrument and standardize telemetry
 
-The practical outcome of this approach is a measurable loop: telemetry reveals waste (idle accelerators, oversized services, inefficient placement), and platform controls convert those insights into action (autoscaling, scheduling, placement, and time shifting). This makes sustainability improvements repeatable across teams and workloads, while aligning operational behavior with the growing scale of AI and evolving governance expectations.3 5 23  
+The practical outcome of this approach is a measurable loop: telemetry reveals waste (idle accelerators, oversized services, inefficient placement), and platform controls convert those insights into action (autoscaling, scheduling, placement, and time shifting). This makes sustainability improvements repeatable across teams and workloads, while aligning operational behavior with the growing scale of AI and evolving governance expectations.[^3] [^5] [^23]  
 <div align="center">
 
 ![][image3]
