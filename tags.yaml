@@ -568,7 +568,7 @@ tags: # Technical Advisory Groups
       - description: TAG Workloads Foundation Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-workloads-foundation?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGWorkloadsFoundation
-        meeting_notes_url: https://notes.cncf.io/s/1aNdplhtl
+        meeting_notes_url: https://notes.cncf.io/archive/s/1aNdplhtl
     contact:
       slack: C08K71W9HAS
       mailing_list: https://lists.cncf.io/g/cncf-tag-workloads-foundation
