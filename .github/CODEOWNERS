@@ -49,3 +49,4 @@ go.sum @cncf/cncf-projects
 
 # Initiatives may set up additional codeowners for their own subdirectories
 /tags/tag-security-and-compliance/initiatives/supply-chain-insights/ evankanderson halcyondude jpower432 krol3 brandtkeller
+/tags/tag-workloads-foundation/initiatives/distributed-agentic-systems/ pmady kerthcet caldeirav
