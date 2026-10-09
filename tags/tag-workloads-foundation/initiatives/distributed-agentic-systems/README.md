@@ -1,6 +1,7 @@
 # CNCF Distributed Agentic Systems Initiative
 
 Creation issue: [#1746](https://github.com/cncf/toc/issues/1746)
+Current release: none yet. Releases are recorded in [CHANGELOG.md](./CHANGELOG.md); v0.1.0 is targeted before KubeCon + CloudNativeCon Europe, March 2027.
 
 ## Description
 
