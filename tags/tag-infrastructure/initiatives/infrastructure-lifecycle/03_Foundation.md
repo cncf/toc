@@ -9,47 +9,122 @@ their state, while others are executed on demand.
 In the following sections, some of these patterns, as well as their benefits and
 potential drawbacks, are covered.
 
-## Cloud Provider / Infrastructure APIs
-The main prerequisite for Cloud Native Infrastructure Lifecycle Management is infrastructure
-Application Programming Interfaces (APIs) that provide a way to interact with the underlying
-infrastructure provider. These APIs can be provided at a certain granularity: while Virtualization
-Providers mainly support the core compute layer (compute, storage, network), Cloud Providers often
-expose the configuration of their services via their APIs.
+## Cloud Provider and Infrastructure APIs
 
-For many of the tools mentioned in this brief, SDKs and/or providers are authored either by the vendors
-themselves or by their community, which makes it easier for end-users to interact with them.
+An infrastructure API is the programmable interface through which resources are
+provisioned, changed, and removed. It is the prerequisite for every pattern in
+this brief, because it replaces manual consoles and ticket queues with an
+interface that tools can call directly and repeatably.
+
+These APIs exist at several layers. At the bottom is physical hardware. Above it,
+virtualization exposes core compute, storage, and network. Infrastructure as a
+service adds those same primitives together with identity, and managed services
+expose higher level products such as databases and queues. On top of all of this,
+cluster level APIs model whole Kubernetes clusters as resources. A distinction
+that runs through the rest of this brief is whether a resource lives inside a
+cluster or outside it, and the layer an API sits at usually decides which.
+
+The physical layer is the exception, because hardware has no native management API
+in the way a cloud service does. Provisioning tools reach it through out of band
+interfaces such as Redfish and IPMI exposed by the server's management controller,
+together with network boot, and build an API-like surface on top of those.
+
+Tools do not call these APIs directly. Each one integrates through a provider, a
+plugin that maps the tool's model onto a specific API. The providers and
+controllers described later all follow this shape, which is why support for a new
+platform usually means writing a provider rather than changing the tool.
+
+Several properties of these APIs shape the trade-offs discussed later. Operations
+are often asynchronous and only eventually consistent, so a resource reported as
+created may not yet be usable. Calls are rate limited and subject to quotas, and
+credentials carry a defined scope. These are the reasons the tools built on top
+need retries, backoff, and a way to wait for a resource to settle.
 
 ## Declarative vs. Imperative Configuration
 
-While these APIs, SDKs, and providers can be used directly in, e.g., HTTP requests, there are many things to take care of when delivering infrastructure. As an example,
-backend services for load balancers are often needed before a frontend can be deployed. Similarly, service accounts or IAM roles might be needed before compute resources can be created. Therefore, over
-time, some tools emerged that cover all of these infrastructure specifics and "hide" them from their users. They can be grouped into two major groups: those with a declarative and those with
-an imperative configuration.
+The two configuration models differ in what the user describes. Declarative
+configuration states the desired end result and leaves the tool to work out the
+steps that reach it. Imperative configuration states the steps themselves, as an
+ordered sequence of commands. The difference is the model, not the file format: a
+declarative desired state is often written in JSON, YAML, or HCL, but the format
+is incidental to the idea.
 
-In the Cloud Native world and in the Kubernetes space, declarative configuration is the
-standard. When writing declarative configuration, a certain desired state gets
-defined in a structured format (e.g. JSON, YAML, HCL). This approach requires some software
-that is able to translate this definition into instructions that are executed in the right
-order, and in a consistent way. The major benefit of this way of dealing with configuration
-is that the developer usually doesn't have to care about the implementation of the configuration
-itself, only about the desired state, while "someone else" (the author of the underlying software /
-provider) takes care of the implementation of certain API specifics.
+The models exist because calling infrastructure APIs by hand is awkward. Resources
+depend on each other, so a load balancer backend has to exist before the frontend
+that uses it, and an identity role before the compute that assumes it. A tool that
+understands these relationships removes that burden from the user.
 
-The alternative - imperative configuration - behaves a bit different. It can be seen as a sequence of 
-commands configuring the related infrastructure. While this way of configuration is more transparent
-and controllable, the end-user has to implement control mechanisms and failure-handling. In contrast
-to declarative configuration, some programming constructs - such as loops and conditionals - can be
-implemented in an easier way.
+Declarative configuration is the default in the cloud native world. It relies on
+an engine that compares the desired state against what currently exists and applies
+only the difference, usually as a plan step followed by an apply step. Two
+properties matter here and recur throughout the brief. An operation is idempotent
+when applying it repeatedly leaves the same result, so a run that changes nothing
+is safe. Convergence is the process of repeatedly moving the actual state toward
+the declared one. Because the user describes the destination rather than the
+route, the same configuration can be applied again without tracking what has
+already been done.
+
+Imperative configuration executes commands directly and in the order given. It is
+more transparent and gives finer control, and it expresses conditionals and loops
+naturally, because it runs in a normal flow of execution. The cost is that the
+user owns ordering, failure handling, and retries, and has to account for the
+current state of the system before acting.
+
+Declarative configuration has its own costs. Logic that is simple to write
+imperatively, such as a conditional or a loop, is often awkward to express. Because
+the engine acts implicitly, a failure can be harder to trace back to a cause, and
+the abstraction that hides API detail also hides where something went wrong.
+
+The two are not exclusive. The authoring language is independent of the model, so a
+desired state can be produced by a general purpose program rather than written by
+hand, a point the next section develops. Many declarative tools also provide escape
+hatches that run imperative steps for cases the declarative model cannot express,
+and physical provisioning commonly pairs a declarative description of the target
+host with an imperative workflow that powers it on, boots it, and writes the image.
 
 ## On-Demand vs. Continuously Reconciled
 
-These are two paradigms in lifecycle management that are fundamental opposites. On the one side, changes can be triggered by a person or external system, the other is where the system itself can reconcile any changes by observing a source. The first can be done through a portal, CLI, or scripts, while the other requires that you install and maintain a set of agents whose behavior is defined by configuration or policy.
+The two execution models differ in what causes a change to happen. In the on demand
+model, a change runs when a person or an external system triggers it, through a
+portal, a CLI, or a pipeline. In the continuously reconciled model, a running
+component watches a declared source of truth and acts on its own to keep the live
+system matching it.
 
-When infrastructure is managed with on-demand solutions like scripts, either manually or through an automation pipeline, one of the benefits gained is immediate feedback. With a reconciliation process, one can rely on eventual consistency, which requires all changes to happen at the source. The GitOps principles call this the “desired state” and it should always be what the system tries to adhere to. This means that a continuously reconciled system is self-healing, while any on-demand model has no such guarantee. However, with the right tools, the on-demand model can be idempotent and more flexible.
+Reconciliation works through a control loop. The component observes the current
+state, compares it against the desired state, acts to close any difference, and
+repeats. This loop is what makes a reconciled system self healing: when the live
+state drifts from the declared one, whether through a manual change or a failure,
+the next pass corrects it without anyone intervening.
 
-On-demand operations can also be more complex than a continuously reconciled one. Managing imperative pipelines and scripts can quickly grow out of proportion, putting cognitive load on the operator. The agents, Kubernetes controllers or operators, are usually singletons used for specific parts of the operation. This can result in a more stable architecture, with fewer variables and less bespoke solutions. It comes with it own sets of problems, like less granular control and debugging.
+The models trade immediacy against durability. On demand execution gives immediate
+feedback, since the result of a run is visible when it finishes, and with the right
+tooling a run is idempotent and flexible. Its weakness is that nothing watches the
+system afterward, so it drifts as reality diverges from the last applied intent.
+Reconciliation offers eventual consistency against a persistent desired state and
+holds the system there over time, at the cost of immediate feedback.
 
-In different terms, this can be described as “push versus pull” or “pipelines” versus "controllers". Neither model is wrong, and both have their benefits and disadvantages. There is also the option to go for a hybrid approach, where certain parts of the system are reconciled continuously, while others are not.
+Reconciliation also has a standing cost. The component that runs the loop is itself
+infrastructure with its own lifecycle to operate, upgrade, and secure, and it has
+to be bootstrapped by some other means first. There is no built in equivalent of a
+plan step that previews what a loop will do before it does it. And because the loop
+asserts ownership of the fields it manages, a change made directly against the live
+system is reverted on the next pass, and two components managing the same field will
+overwrite each other, which is why reconciled systems provide a way to pause a
+resource during an incident.
+
+The reconciliation model also assumes that resources can be created and destroyed
+through an API cheaply and quickly. That assumption holds for cloud resources and is
+weaker for physical hosts, where provisioning takes minutes to boot, image, and
+inspect, deletion means wiping and powering down rather than removing a record, and
+the pool of hardware is finite and discovered rather than requested on demand.
+
+The choice can also follow compliance rather than preference. Where a change must
+pass review and approval, an on demand model with an explicit trigger fits the
+control. Where a rule must hold continuously across every resource, such as a
+required access control, a reconciling component that keeps asserting it fits
+better. The distinction is sometimes framed as push versus pull, or pipelines
+versus controllers, and the two can be combined, with some parts of a system
+reconciled continuously and others changed on demand.
 
 _The remaining sections below (DSL vs. Programming Language, Stateful vs.
 Stateless, Trade-offs, Pattern Maturity) are still in progress, drafted
