@@ -44,8 +44,9 @@ jobs:
               ]
             };
 
+            // Mirrors labels declared in .github/ISSUE_TEMPLATE/tech-review.yml
             const LABELS_TECH_REVIEW = [
-              'needs-triage', 'kind/initiative', 'review/tech'
+              'needs-triage', 'kind/review', 'review/tech'
             ];
 
             const COMMENT_MARKERS = {

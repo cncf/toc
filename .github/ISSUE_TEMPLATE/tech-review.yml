@@ -3,14 +3,14 @@ description: Project technical review request
 title: '[Tech Review]:'
 labels:
   - needs-triage
-  - kind/initiative
+  - kind/review
   - review/tech
 body:
   - type: input
     id: name
     attributes:
       label: Project name
-      placeholder: Name of initiative
+      placeholder: Name of the project
     validations:
       required: true
   - type: input
@@ -40,4 +40,4 @@ body:
       label: Additional information
       value: >-
         Please provide any additional information that may help with the
-        governance review (e.g. links to design docs)
+        technical review (e.g. links to design docs)
