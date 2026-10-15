@@ -4,180 +4,171 @@
 
 <!-- This template provides the TOC with the outline for completing due diligence of a project to move levels. This universal template is designed to capture all criteria so the TOC may ensure prior level criteria do not regress. As part of completing the due diligence, the TOC member should update the template to convey the level the project applied for the criteria by bolding the level indicated where the criteria is relevant. -->
 
+**Date:** 2026-10-13 (updated from 2026-07-05)
+**Lead TOC member:** Chad Beaudin
+**Due diligence and adopter interviews:** Chad Beaudin, with Karena Angell assisting
+**Application:** [cncf/toc#1961](https://github.com/cncf/toc/issues/1961)
+**Project:** [cloudnative-pg/cloudnative-pg](https://github.com/cloudnative-pg/cloudnative-pg)
+**Website:** https://cloudnative-pg.io
+**Level:** Incubation (from Sandbox, accepted 2025-01-21)
+**Application filed:** 2025-11-11 by Gabriele Bartolini (EDB)
+**Project contacts:** Armando Ruocco, Floor Drees, Francesco Canovai, Gabriele Bartolini, Jonathan Gonzalez (emeritus), Leonardo Cecchi, Marco Nenciarini, Philippe Scorsolini (emeritus, Upbound)
+
+**Related documents:**
+- [OpenSSF Best Practices badge #9933](https://www.bestpractices.dev/projects/9933)
+- [TAG Data presentation (Sep 2024)](https://www.youtube.com/watch?v=Nsu5Em8Ig88)
+- [Security Self-Assessment (Gemara model)](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/.github/security-self-assessment.md)
+- [SECURITY-INSIGHTS.yml](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/SECURITY-INSIGHTS.yml)
+- [Governance restructuring PR #71](https://github.com/cloudnative-pg/governance/pull/71) -- merged governance restructuring changes
+- [Updated GOVERNANCE.md](https://github.com/cloudnative-pg/governance/blob/main/GOVERNANCE.md) -- current project governance, decision-making, subproject, security, and conduct model
+- [New CONTRIBUTOR_LADDER.md](https://github.com/cloudnative-pg/governance/blob/main/CONTRIBUTOR_LADDER.md) -- current contributor progression and maintainer lifecycle model
+- [Second adopter interview record](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n) -- TOC-private adopter verification evidence
+- [Incubation readiness epic #65](https://github.com/cloudnative-pg/governance/issues/65) -- tracks DD follow-up items
+
 ## Incubation Evaluation Summary for CloudNativePG
 
 ### Criteria Evaluation
 
-Karina Angell ([@angellk](https://github.com/angellk)) and Chad Beaudin ([@chadbeaudin](https://github.com/chadbeaudin)) conducted the due diligence of CloudNativePG, which applied for Incubation. The project has substantially completed the criteria that show its maturity at the Incubation level, pending the adopter interviews that are the current live stage of this DD.
+Lead TOC member Chad Beaudin, with Karena Angell assisting on due diligence and adopter interviews, evaluated CloudNativePG for Incubation level. The project meets required incubation criteria for technical maturity, documentation, ecosystem integration, and community engagement, and has a strong security posture. [PR #71](https://github.com/cloudnative-pg/governance/pull/71) has merged and significantly improves the governance model. Ratification, org-balanced voting, the non-EDB maintainer pathway, and Steering Committee formation remain open in project tracking as recommendations rather than required blockers.
 
-The following criteria implementations are noteworthy to call out: a mature engineering posture for a Sandbox project (public roadmap, documented architecture, a multi-version release process, signed artifacts, SBOMs, and provenance attestations); strong security fundamentals (a documented vulnerability-reporting path, a named Security Response Team, a completed Security Self-Assessment, and an OpenSSF Best Practices passing badge at 100%); and governance that is explicitly documented as vendor-neutral in direction with a complete and demonstrated maintainer-lifecycle process.
+**Notables:**
+- 4,818 active contributors, 1,790 contributing organizations (LFX)
+- 51 documented adopters spanning 7+ verticals and 10+ countries; 3 hyperscalers (Google Cloud, Microsoft Azure, IBM) build commercial products on CloudNativePG
+- OpenSSF Best Practices passing 100%, silver 87% (7 criteria remaining); security health score 91
+- Governance restructuring ([PR #71](https://github.com/cloudnative-pg/governance/pull/71)) delivered a federated subproject model, explicit Security Response Team language, updated contributor ladder, subproject maintainer committees, gitvote profiles, and clearer ownership mapping; org-balanced voting and Steering Committee formation remain tracked recommended follow-ups
+- No StatefulSets, no sidecars -- operator manages Pods and PVCs directly with LSN-based failover promotion and isolation-aware self-fencing
+- CNPG-I plugin interface separates extensibility from core, enabling external backup providers and authentication validators without core modifications
+- 96 releases across 16 minor versions; 3 concurrent release branches maintained with coordinated same-day patch releases and RC cycles
+- Supply chain security: cosign signatures, Sigstore bundles, SBOM, SLSA provenance attestation
+- SECURITY-INSIGHTS.yml v2.2.0 with Gemara-based self-assessment mapped to FINOS Common Cloud Controls
+- ROADMAP.md explicitly documents employer influence on prioritization
+- LFX Mentorship program documented with active participation; +27% contributors YoY, +33% orgs YoY
 
-No actions were identified that are blocking at the Incubation level. (An earlier draft review had flagged a missing Security Self-Assessment and single-organization governance concentration as blocking; on review against the actual Incubation criteria, the SSA is complete and the "maintainers from ≥2 organizations" / organization-balance-mechanism bars are graduation-stage requirements, not incubation ones — see the Governance note below.)
-
-The following recommendations are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability: provide the General Technical Review (GTR) and Governance Review links (or have the sponsors produce the GTR as part of this DD), replace the remaining placeholder dates/links in the application issue, and continue the tracked work toward an organization-balance mechanism ahead of any future graduation application.
+**Non-blocking recommendations:**
+1. Complete silver OpenSSF badge (7 criteria remaining -- accessibility, i18n, regression tests, secure design documentation, input validation documentation, hardening documentation, assurance case)
+2. Submit self-assessment to TAG Security in standard template format (current Gemara format is technically rigorous but may not satisfy TAG Security reviewers for graduation)
+3. Use project-domain emails in SECURITY-INSIGHTS.yml administrator contacts and goreleaser maintainer field (currently `@enterprisedb.com`; vendor-neutral security@cloudnative-pg.io already serves as primary security contact)
+4. Expand integration blueprints / reference examples for common CNCF ecosystem combinations, reflecting adopter feedback
 
 ### Adoption Evaluation
 
-_Pending._ The adopter interviews are the current live stage of this due diligence. The project publishes a [public adopters list](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/ADOPTERS.md) spanning cloud, finance, retail, telecom, public sector, and technology verticals. Per the DD process the sponsors will interview 5–7 adopters and record adopter-approved summaries in the `#### Adoption` section below before this DD advances to public comment.
+ADOPTERS.md lists 51 organizations across multiple verticals and geographies, updated as recently as June 2026. Adopters include hyperscalers building products on CNPG (Google Cloud with EDB Community 360, Microsoft Azure with DocumentDB Operator, IBM Cloud Pak), enterprises in production (Tesla, Ericsson, Novo Nordisk), government agencies (Netherlands Tax Administration, Turksat), and research institutions (Vera Rubin Observatory). The adopter list includes both end users and managed service providers building on the platform.
+
+Three adopter questionnaire responses have been submitted to date. Two TOC adopter interviews have been completed. Interview evidence supports production readiness, documentation quality, regular upgrade cadence, resilient upgrade/rollback expectations, Kubernetes-native HA, security posture, deep PostgreSQL expertise, and direct user contribution/design feedback.
+
+The second interview, recorded in the TOC-private [CloudNativePG adopter interview notes](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n), was with a large global technology vendor using CloudNativePG as an embedded Kubernetes operator for PostgreSQL within self-hosted product stacks on OpenShift and other Kubernetes platforms. The adopter uses CNPG primarily as a resilient metadata store, with some higher-cardinality relational-data use cases, and described multi-year use including pre-open-source downstream collaboration. The adopter highlighted CNPG's Kubernetes-native day-one/day-two operations, HA, security posture, PostgreSQL expertise, custom workload controller approach, and resilient upgrade/rollback expectations across stable/LTS releases. They acknowledged the single-vendor maintainer risk but have evaluated it, built internal competence, contribute design/code feedback, and have contingency options if the primary vendor stopped maintaining the project. Desired improvements included more day-to-day DBA maintenance/auditing transparency, data repatriation/migration support, and troubleshooting UI.
+
+At least one additional adopter interview is still required before a vote can proceed.
 
 ### Final Assessment
 
-_In progress._ The TOC's evaluation found no blocking items against the Incubation criteria. The DD can proceed through adopter interviews → internal TOC review → public comment once the GTR and Governance Review inputs are in place and the application-issue placeholders are resolved. The final assessment will be recorded after adopter interviews are complete.
+CloudNativePG is technically strong and has credible production adoption. [PR #71](https://github.com/cloudnative-pg/governance/pull/71) resolves part of the governance concern by restructuring technical authority into subproject committees and documenting security response roles. The DD should complete the remaining vote-readiness items, while tracking the open governance items as recommended follow-ups rather than required blockers.
+
+**Required before vote:**
+
+1. Additional TOC adopter interview (minimum 3 total; 2 completed, including the TOC-private [second interview record](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n))
+2. Public comment period
+3. TOC vote
+
+**Resolved verification item:**
+
+1. Website vendor-neutrality concern: verified against [CNCF vendor-neutrality guidance](https://contribute.cncf.io/maintainers/community/vendor-neutrality/). The homepage attribution link points to the EDB homepage, and the project [Commercial Support](https://cloudnative-pg.io/support/) page lists multiple vendors.
+
+**Recommended follow-ups:**
+
+1. Governance restructuring ratification ([governance#66](https://github.com/cloudnative-pg/governance/issues/66))
+2. Org-balanced voting implementation ([governance#68](https://github.com/cloudnative-pg/governance/issues/68))
+3. Non-EDB maintainer pathway formalization ([governance#69](https://github.com/cloudnative-pg/governance/issues/69))
+4. Steering Committee formation and first meeting with published minutes ([governance#70](https://github.com/cloudnative-pg/governance/issues/70))
+
+**Post-incubation:** 6-month progress update on org-balanced voting in practice, Steering Committee operation, external maintainer pathway progress, and LFX org dependency trend.
 
 ## Application Process Principles
 
 ### Suggested
 
-- [ ] **Engage with domain-specific TAG(s) to present the technical architecture of the project.**
-  - To be confirmed with the project during the DD kickoff; the project has an active public community presence (meetings, Slack, mailing list).
-
-<!-- (Project assertion goes here) -->
+- [x] **Engage with the domain specific TAG(s) to increase awareness through a presentation or completing a General Technical Review.**
+  - Presented to TAG Data on 25-Sept-2024. Recording: https://www.youtube.com/watch?v=Nsu5Em8Ig88
+  - **Status: Met** (via TAG Data presentation).
 
 ### Required
 
 - [ ] **Complete a [General Technical Review (GTR)](../project-reviews/general-technical-questions.md).**
-  - Not yet linked. The application issue #1961 leaves the GTR link as a `$LINK` placeholder. Recommend the project file a Technical Review request (TOC `tech-review.yml`), or the sponsors complete the GTR as part of this DD and commit the snapshot at `projects/cloudnative-pg/tech-review/YYYY-MM-DD.md`.
-
-<!-- (Project assertion goes here) -->
+  - No GTR on `cncf/toc` main branch. The TAG Data presentation covers technical architecture but is not a formal GTR.
+  - The application's architecture documentation (cloudnative-pg.io/documentation/current/architecture/, contribute/technical-architecture.md) provides GTR-equivalent coverage.
+  - **Status: Not formally completed. Application documentation substantively covers the same ground; DD lead assessment substitutes. Suggested/non-blocking.**
 
 - [ ] **Complete a [Governance Review](../project-reviews/governance-review-template.md).**
-  - Not yet linked. No governance-review artifact is referenced in the application issue. Recommend the project file a Governance Review request (TOC `gov-review.yml`).
-
-<!-- (Project assertion goes here) -->
+  - Not started with the Project Reviews subproject.
+  - DD lead conducted a governance assessment as part of this evaluation (see Governance Assessment section below).
+  - **Status: Not formally completed. DD lead assessment substitutes. Suggested/non-blocking.**
 
 - [x] **All project metadata and resources are [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/).**
-
-Project metadata and resources are hosted under the vendor-neutral `cloudnative-pg` GitHub organization and in the CNCF landscape. No vendor-neutrality issues were found in code or documentation during review.
-
-<!-- (TOC Evaluation goes here) -->
+  - Website: cloudnative-pg.io (not EDB-branded); GitHub org: cloudnative-pg; Releases: GitHub Releases; Documentation: cloudnative-pg.io via GitHub Pages; Slack: #cloudnativepg-users on CNCF Slack; Meetings: LFX Zoom + CNCF calendar; Governance: separate cloudnative-pg/governance repo.
+  - Website vendor-neutrality concern verified resolved 2026-10-13 against CNCF guidance: the homepage EDB logo is historical attribution linking to the EDB homepage, and the [Commercial Support](https://cloudnative-pg.io/support/) page lists multiple vendors.
+  - **Status: Met.**
 
 - [x] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**
-- Acknowledged as part of the project's Sandbox onboarding and this Incubation application. The exact Sandbox-acceptance date should be confirmed against the official vote record (the application body still carries a `DD-MMM-YYYY` placeholder).
-
-<!-- (TOC Evaluation goes here) -->
+  - Application references moving-level criteria. Accepted to Sandbox 2025-01-21.
+  - **Status: Met.**
 
 - [ ] **Due Diligence Review.**
-
-Completion of this due diligence document, resolution of concerns raised, and presentation for public comment satisfies the Due Diligence Review criteria. This document is that review, in progress.
+  - This document. In progress.
+  - **Status: In progress.**
 
 - [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
-
-The project maintains extensive [documentation](https://cloudnative-pg.io/documentation/) covering installation, configuration, operations, and end-user guides.
-
-<!-- (TOC Evaluation goes here) -->
+  - Installation/upgrade, Quickstart, Architecture, Use cases, Operator capability levels (all under cloudnative-pg.io/documentation/current/), plus the CNPG Playground (github.com/cloudnative-pg/cnpg-playground).
+  - **Status: Met.**
 
 ## Governance and Maintainers
 
 Note: this section may be augmented by the completion of a Governance Review if completed as a suggested item prior to application.
 
+### Governance Assessment (DD lead)
+
+CloudNativePG's governance is documented in a dedicated [governance repository](https://github.com/cloudnative-pg/governance), with the current model captured in [GOVERNANCE.md](https://github.com/cloudnative-pg/governance/blob/main/GOVERNANCE.md) and [CONTRIBUTOR_LADDER.md](https://github.com/cloudnative-pg/governance/blob/main/CONTRIBUTOR_LADDER.md). Following the TOC's triage recommendations, the project undertook a governance restructuring ([PR #71](https://github.com/cloudnative-pg/governance/pull/71)), transitioning from a flat maintainer-council model to a federated subproject model. This is meaningful progress; the org-balance and steering components are still tracked separately as recommended follow-ups.
+
+**Merged in PR #71:** 4 Subproject Maintainer Committees (Core Projects, Supply Chain, Community/Docs/Ecosystem, Extensibility), each with technical authority over its own repositories; a restructured contributor ladder (Community Participant, Contributor, Reviewer, Component Owner, Subproject Maintainer) with Steering Committee as a representative role rather than a rung; a named and defined Security Response Team; a per-subproject ownership model with generated `COMPONENT_OWNERS.md` / `CONTRIBUTORS.md`; and governance vote templates / gitvote profiles for amendments and maintainer-lifecycle actions.
+
+**Organizational concentration:** LFX organizational dependency is **71%** (not 90-100%). All 5 active top-level maintainers are EDB employees, but the project has 9 non-EDB authors contributing in the last 30 days and 10 formal contributors spanning 7 countries. PR #71 improves the governance structure and technical authority model; external maintainer elevation and org-balanced governance remain tracked follow-ups ([governance#68](https://github.com/cloudnative-pg/governance/issues/68), [#69](https://github.com/cloudnative-pg/governance/issues/69), [#70](https://github.com/cloudnative-pg/governance/issues/70)). Under the **incubation** criteria, single-organization concentration is **not a blocking item** (the "≥2 organizations" and org-balance-mechanism requirements are graduation-stage); it is recorded here as a graduation-readiness item that is already being addressed.
+
 ### Suggested
 
-- [ ] **Complete a Governance Review**
-
-Not completed/linked as of this review — see the Required Governance Review item above.
-
-<!-- (TOC Evaluation goes here) -->
+- [ ] **Complete a Governance Review** — not started with the Project Reviews subproject; DD lead assessment substitutes. **Status: Not formally completed.**
 
 - [x] **Governance has continuously been iterated upon by the project as a result of their experience applying it, with the governance history demonstrating evolution of maturity alongside the project's maturity evolution.**
+  - Adopted gitvote for public transparent votes; emeritus process exercised (Jonathan Gonzalez, Philippe Scorsolini); Component Owners tier added; [PR #71](https://github.com/cloudnative-pg/governance/pull/71) replaced the flat model with a federated subproject model. Org-balanced voting and Steering Committee formation remain tracked ([#68](https://github.com/cloudnative-pg/governance/issues/68), [#70](https://github.com/cloudnative-pg/governance/issues/70)).
+  - **Status: Met for incubation.**
 
-The project moved governance into a dedicated [`cloudnative-pg/governance`](https://github.com/cloudnative-pg/governance) repository and restructured into a Steering Committee plus subproject committees; the git history of that repo demonstrates iteration.
+- [x] **Clear and discoverable project governance documentation.** Governance repo with [GOVERNANCE.md](https://github.com/cloudnative-pg/governance/blob/main/GOVERNANCE.md) at root; every sub-project points to the canonical governance repo. **Status: Met.**
 
-<!-- (TOC Evaluation goes here) -->
+- [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.** Public developer meetings documented; gitvote active; maintainer/component-owner lists current; community meetings on LFX/CNCF calendar. **Status: Met.**
 
-- [x] **Clear and discoverable project governance documentation.**
+- [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.** Values include "Community over product/company," openness, fairness, inclusivity. Steering org caps / org-balanced voting remain open ([#70](https://github.com/cloudnative-pg/governance/issues/70), [#68](https://github.com/cloudnative-pg/governance/issues/68)) as recommended follow-ups. **Status: Met for incubation.**
 
-Governance is documented in [GOVERNANCE.md](https://github.com/cloudnative-pg/governance/blob/main/GOVERNANCE.md) in the dedicated governance repository.
+- [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.** [PR #71](https://github.com/cloudnative-pg/governance/pull/71) documents subproject decisions, public vote workflows, amendments, and maintainer-lifecycle actions; private mailing-list votes documented for security/conduct. Org-balanced voting remains open ([#68](https://github.com/cloudnative-pg/governance/issues/68)). **Status: Met for incubation.**
 
-<!-- (TOC Evaluation goes here) -->
+- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).** Subproject Maintainers voted by committee; Component Owners assigned by subproject maintainers; Contributors by simple majority; Steering Committee = one rep per subproject + elected Community Representatives via ranked-choice; removal documented for all tiers. **Status: Met.**
 
-- [x] **Governance is up to date with actual project activities, including any meetings, elections, leadership, or approval processes.**
+- [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).** All phases documented in [GOVERNANCE.md](https://github.com/cloudnative-pg/governance/blob/main/GOVERNANCE.md). **Status: Met.**
 
-The governance repo documents the current Steering Committee, Security Response Team, Infrastructure Team, and subproject committees; the roster matches the organization's team structure. The affiliation-update and election cadence should be confirmed with the project during DD.
+- [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.** 2 emeritus maintainers (Jonathan Gonzalez/EDB, Philippe Scorsolini/Upbound); lifecycle exercised for departures; ownership changes via public governance issues/PRs. Non-EDB maintainer pathway formalization tracked ([#69](https://github.com/cloudnative-pg/governance/issues/69)). **Status: Met for lifecycle usage; external pathway is a recommended follow-up.**
 
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Governance clearly documents [vendor-neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
-
-The governance documentation states the project's commitment to vendor-neutral direction.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
-
-[GOVERNANCE.md](https://github.com/cloudnative-pg/governance/blob/main/GOVERNANCE.md) documents the Steering Committee decision process, voting, and amendment procedures.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Document how role, function-based members, or sub-teams are assigned, onboarded, and removed for specific teams (example: Security Response Committee).**
-
-Role assignment and lifecycle for the Steering Committee, Security Response Team, Infrastructure Team, and the four subproject maintainer committees are documented in the governance repo and the [contributor ladder](https://github.com/cloudnative-pg/governance/blob/main/CONTRIBUTOR_LADDER.md).
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Document a complete maintainer lifecycle process (including roles, onboarding, offboarding, and emeritus status).**
-
-The [contributor ladder](https://github.com/cloudnative-pg/governance/blob/main/CONTRIBUTOR_LADDER.md) and [GOVERNANCE.md](https://github.com/cloudnative-pg/governance/blob/main/GOVERNANCE.md) define roles, onboarding, offboarding, and emeritus status.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Demonstrate usage of the maintainer lifecycle with outcomes, either through the addition or replacement of maintainers as project events have required.**
-
-The project restructured into a Steering Committee and subproject committees and documents the resulting roster. [MAINTAINERS.md](https://github.com/cloudnative-pg/governance/blob/main/MAINTAINERS.md) describes the current five-person seeding as "the starting point, not the intended end state," demonstrating active lifecycle management.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.**
-
-The governance repo documents four subproject maintainer committees with leadership and lifecycle.
-
-<!-- (TOC Evaluation goes here) -->
+- [x] **If the project has subprojects: subproject leadership, contribution, maturity status documented, including add/remove process.** 4 formally defined subprojects with per-subproject maintainer committees and dedicated files listing repositories/maintainers/components; MAINTAINERS.md restructured into per-subproject tables. Steering representation tracked ([#70](https://github.com/cloudnative-pg/governance/issues/70)). **Status: Met.**
 
 ### Required
 
-- [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.**
+- [x] **Document complete list of current maintainers, including names, contact information, domain of responsibility, and affiliation.** MAINTAINERS.md lists 5 active + 2 emeritus with names, GitHub handles, emails, affiliations. **Status: Met.**
 
-The complete maintainer list, with names, domains of responsibility, and affiliation, is in [MAINTAINERS.md](https://github.com/cloudnative-pg/governance/blob/main/MAINTAINERS.md).
+- [x] **A number of active maintainers which is appropriate to the size and scope of the project.** 5 active maintainers + 18 component owners for a project with 8,929 stars, 96 releases, 18 sub-components. **Status: Met.**
 
-> **Governance concentration — TOC note (not an Incubation blocker).**
-> As of this review, every maintainer across all governing bodies (Steering Committee, Security Response Team, Infrastructure Team, and all four subproject committees) is affiliated with EDB — currently 100% single-organization. Under the **Incubation** criteria this is **not a blocking item**: incubation requires vendor-neutral *direction*, affiliation transparency, and a working maintainer lifecycle, all of which are satisfied. The "maintainers from at least 2 organizations" and "organization-balance mechanism for governance decisions" criteria are **graduation-stage** Required items, not incubation ones.
-> The project is already tracking this work ahead of graduation:
-> - [cloudnative-pg/governance#68](https://github.com/cloudnative-pg/governance/issues/68) — implement organization-balanced voting (open)
-> - [cloudnative-pg/governance#69](https://github.com/cloudnative-pg/governance/issues/69) — formalize a non-EDB maintainer pathway (open)
-> - [cloudnative-pg/governance#81](https://github.com/cloudnative-pg/governance/pull/81) — draft org-balanced voting mechanism (open PR: Steering Committee capped at 2 seats per organization, per-subproject representation plus elected Community Representative seats, staggered terms, ranked-choice elections)
->
-> Recorded as a positive graduation-readiness signal.
+- [x] **Code and Doc ownership in GitHub and elsewhere matches documented governance roles.** Every project has GOVERNANCE.md pointing to the canonical repo; component owners have Write access to their repos; maintainers have Maintain/Admin. **Status: Met.**
 
-<!-- (TOC Evaluation goes here) -->
+- [x] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.** CODE_OF_CONDUCT.md references the CNCF CoC; enforcement documented (private maintainer mailing list; CNCF staff for maintainer-involved violations). **Status: Met.**
 
-- [x] **A number of active maintainers which is appropriate to the size and scope of the project.**
+- [x] **CNCF Code of Conduct is cross-linked from other governance documents.** Cross-linked from main repo CODE_OF_CONDUCT.md and governance docs. **Status: Met.**
 
-The project has an appropriate number of active maintainers for its scope: a five-member Steering Committee plus four subproject maintainer committees and a documented Component Owner ladder.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Code and Doc ownership in GitHub and elsewhere matches documented governance roles.**
-
-GitHub team/merge-approval structure aligns with the documented governance roles; to be spot-checked against OWNERS/CODEOWNERS during DD.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Document adoption and adherence to the CNCF Code of Conduct or the project's CoC which is based off the CNCF CoC and not in conflict with it.**
-
-The project adopts a Code of Conduct based on the CNCF CoC; path to be confirmed in the primary repo during DD.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **CNCF Code of Conduct is cross-linked from other governance documents.**
-
-CoC references appear in the governance/contributing documentation; cross-link completeness to be confirmed during DD.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **All subprojects, if any, are listed.**
-
-The four subproject committees are listed in the governance repo.
-
-<!-- (TOC Evaluation goes here) -->
+- [x] **All subprojects, if any, are listed.** All projects listed under the cloudnative-pg GitHub org; COMPONENT-OWNERS.md provides ownership mapping. **Status: Met.**
 
 ## Contributors and Community
 
@@ -185,95 +176,43 @@ Note: this section may be augmented by the completion of a Governance Review.
 
 ### Suggested
 
-- [x] **Contributor ladder with multiple roles for contributors.**
-
-The project documents a [contributor ladder](https://github.com/cloudnative-pg/governance/blob/main/CONTRIBUTOR_LADDER.md) with multiple roles.
-
-<!-- (TOC Evaluation goes here) -->
+- [x] **Contributor ladder with multiple roles for contributors.** Tiers: Community Participant, Contributor, Component Owner, Subproject Maintainer; Component Owner provides folder-scoped CODEOWNERS recognition; Steering Committee kept off the ladder as a representative role; separate [CONTRIBUTOR_LADDER.md](https://github.com/cloudnative-pg/governance/blob/main/CONTRIBUTOR_LADDER.md). **Status: Met.**
 
 ### Required
 
-- [x] **Clearly defined and discoverable process to submit issues or changes.**
+- [x] **Clearly defined and discoverable process to submit issues or changes.** CONTRIBUTING.md redirects to the governance repo's canonical CONTRIBUTING.md; separate contribute/ directory; DCO documented. **Status: Met.**
 
-[CONTRIBUTING.md](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/CONTRIBUTING.md) documents how to submit and manage issues and changes.
+- [x] **Project must have, and document, at least one public communications channel for users and/or contributors.** CNCF Slack: #cloudnativepg-users. **Status: Met.**
 
-<!-- (TOC Evaluation goes here) -->
+- [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.). List any non-public communications channels and what their special purpose is.** Public: CNCF Slack, GitHub Issues, GitHub Discussions. Non-public: security@cloudnative-pg.io (vulnerability reports), conduct@cloudnative-pg.io (CoC), maintainer mailing list (governance). **Status: Met.**
 
-- [x] **Project must have, and document, at least one public communications channel for users and/or contributors.**
+- [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.** LFX Zoom integration; CNCF calendar integration confirmed. **Status: Met.**
 
-Public communication channels (Slack, mailing list, community meetings) are documented on the [project website](https://cloudnative-pg.io/) and in the repository.
+- [x] **Documentation of how to contribute, with increasing detail as the project matures.** CONTRIBUTING.md, contribute/ (development environment, E2E testing, release procedure), DCO, LFX Mentorship program docs. **Status: Met.**
 
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **List and document all project communication channels, including subprojects (mail list/slack/etc.). List any non-public communications channels and what their special purpose is.**
-
-Public channels are documented; the Security Response path (`security@cloudnative-pg.io`) is the designated non-public channel for vulnerability reports.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Up-to-date public meeting schedulers and/or integration with CNCF calendar.**
-
-The project runs regular public community meetings; CNCF calendar integration to be confirmed during DD.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Documentation of how to contribute, with increasing detail as the project matures.**
-
-Contribution documentation is maintained in [CONTRIBUTING.md](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/CONTRIBUTING.md) and on the project website.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Demonstrate contributor activity and recruitment.**
-
-The project shows ongoing contribution and release activity. Recommend corroborating organizational contribution patterns via [LFX Insights](https://insights.linuxfoundation.org/) during DD.
-
-<!-- (TOC Evaluation goes here) -->
+- [x] **Demonstrate contributor activity and recruitment.** DevStats + LFX Insights: 4,818 active contributors, 1,790 contributing orgs; YoY +27% contributors, +33% orgs, +21% stars, +79% forks; LFX Mentorship active; 9 non-EDB authors in last 30 days. **Status: Met.**
 
 ## Engineering Principles
 
 ### Suggested
 
-- [x] **Roadmap change process is documented.**
+- [x] **Roadmap change process is documented.** ROADMAP.md documents the planning process (GitHub Projects + Milestones), explicit prioritization drivers, and an honest acknowledgment that employer priorities influence the roadmap. **Status: Met.**
 
-The project maintains a public [ROADMAP.md](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/ROADMAP.md).
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **History of regular, quality releases.**
-
-The project has a documented multi-version release process and a history of regular [releases](https://github.com/cloudnative-pg/cloudnative-pg/releases).
-
-<!-- (TOC Evaluation goes here) -->
+- [x] **History of regular, quality releases.** 96 releases across 16 minor versions; minor releases every 3-4 months; 3 concurrent release branches (N, N-1, N-2); coordinated same-day patch releases; RCs since v1.24.0; most recent v1.30.0 (2026-06-29) with coordinated v1.29.2/v1.28.4. **Status: Met.**
 
 ### Required
 
 - [x] **Document project goals and objectives that illustrate the project's differentiation in the Cloud Native landscape as well as outlines how this project fulfills an outstanding need and/or solves a problem differently. _This requirement may also be satisfied by completing a General Technical Review._**
-  - _If applicable_ a General Technical Review was not yet linked (`$LINK` placeholder in #1961). The [project documentation](https://cloudnative-pg.io/documentation/) describes CloudNativePG as a Kubernetes operator for managing PostgreSQL workloads, with its goals and differentiation documented.
+  - TAG Data presentation (Sept 2024) covers differentiation; website documents scope, use cases, operator capability levels; FAQ documents differentiation from other PostgreSQL operators. No formal GTR; application docs provide equivalent coverage.
+  - **Status: Met.**
 
-<!-- (TOC Evaluation goes here) -->
+- [x] **Document what the project does, and why it does it - including viable cloud native use cases.** Comprehensive documentation at cloudnative-pg.io; use cases and operator capability levels documented. **Status: Met.**
 
-- [x] **Document what the project does, and why it does it - including viable cloud native use cases.**
+- [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.** ROADMAP.md with a GitHub Projects board; Milestones for per-release planning. **Status: Met.**
 
-The project documentation covers its purpose and cloud native use cases for running PostgreSQL on Kubernetes.
+- [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._** Technical architecture (contribute/technical-architecture.md) and architecture/controller/container-image docs on the site. No formal GTR; application docs provide equivalent coverage. **Status: Met.**
 
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Document and maintain a public roadmap or other forward looking planning document or tracking mechanism.**
-
-A public [ROADMAP.md](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/ROADMAP.md) is maintained.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Document overview of project architecture and software design that demonstrates viable cloud native use cases, as part of the project's documentation. _This requirement may also be satisfied by completing a General Technical Review._**
-  - _If applicable_ a General Technical Review was not yet linked. Architecture and software design are documented in the [project documentation](https://cloudnative-pg.io/documentation/).
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Document the project's release process.**
-
-The release process is documented, including a multi-version release procedure with signed artifacts, SBOMs, and provenance.
-
-<!-- (TOC Evaluation goes here) -->
+- [x] **Document the project's release process.** contribute/release_procedure.md: trunk-based development, cherry-picked backports, feature freeze, ordered release execution, manual smoke testing, supply chain security (cosign, SBOM, SLSA), multi-artifact coordination (Helm, OLM, docs, Krew, API tagging). **Status: Met.**
 
 ## Security
 
@@ -281,43 +220,21 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 ### Suggested
 
-- [ ] **Complete a joint security assessment with TAG Security and Compliance**
-
-Not completed. SSA-only is acceptable at the Incubation level; a joint assessment with TAG Security and Compliance is a candidate for the graduation track.
-
-<!-- (TOC Evaluation goes here) -->
+- [ ] **Complete a joint security assessment with TAG Security and Compliance.**
+  - Not completed. The current self-assessment uses the Gemara model (technically rigorous) but a non-standard format; recommend also producing a TAG Security standard-format assessment for graduation. SSA-only is acceptable at incubation.
+  - **Status: Not completed (non-blocking at incubation).**
 
 ### Required
 
-- [x] **Clearly defined and discoverable process to report security issues.**
+- [x] **Clearly defined and discoverable process to report security issues.** SECURITY.md documents reporting to security@cloudnative-pg.io (private maintainer Google Group), with GitHub Security Advisories for disclosure. **Status: Met.**
 
-The [security policy](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/SECURITY.md) documents how to report security issues via `security@cloudnative-pg.io`.
+- [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)** 2FA enforced on the GitHub org (per OpenSSF badge); DCO required; branch protection on main; CodeQL + Snyk static analysis. **Status: Met.**
 
-<!-- (TOC Evaluation goes here) -->
+- [x] **Document assignment of security response roles and how reports are handled.** PR #71 added explicit Security Response Team documentation; MAINTAINERS.md lists its membership and triage role; GOVERNANCE.md documents closed meetings / private list for security matters; SECURITY-INSIGHTS.yml lists administrators and reporting metadata. The team is currently all-EDB, a consequence of the broader governance concentration to be addressed via the non-EDB maintainer pathway rather than a separate security blocker. **Status: Met.**
 
-- [x] **Enforcing Access Control Rules to secure the code base against attacks (Example: two factor authentication enforcement, and/or use of ACL tools.)**
+- [x] **Document Security Self-Assessment.** Present at [`.github/security-self-assessment.md`](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/.github/security-self-assessment.md), Gemara model v1.2.0 mapped to FINOS Common Cloud Controls Core v2025.10, with threat and capability catalogs; referenced from SECURITY-INSIGHTS.yml v2.2.0. Verified present. **Status: Met.**
 
-Access control follows the GitHub organization model with documented maintainer/merge-approval roles. 2FA enforcement to be confirmed during DD (TOC recommendation if undocumented).
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Document assignment of security response roles and how reports are handled.**
-
-The governance documentation defines a named Security Response Team and the handling process for reports.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Document Security Self-Assessment.**
-
-The project has completed a Security Self-Assessment, committed at [`.github/security-self-assessment.md`](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/.github/security-self-assessment.md) and referenced from the project's `SECURITY-INSIGHTS.yml`. Verified present during this review.
-
-<!-- (TOC Evaluation goes here) -->
-
-- [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.**
-
-The project holds a [passing OpenSSF Best Practices badge](https://www.bestpractices.dev/en/projects/9933) at 100% (187% tiered). Verified during this review.
-
-<!-- (TOC Evaluation goes here) -->
+- [x] **Achieve the Open Source Security Foundation (OpenSSF) Best Practices passing badge.** [Passing badge 100%](https://www.bestpractices.dev/en/projects/9933) (67/67, achieved 2025-01-29, badge #9933); silver 87% (7 criteria remaining). **Status: Met.**
 
 ## Ecosystem
 
@@ -327,44 +244,112 @@ N/A
 
 ### Required
 
-- [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)**
-
-A public [adopters list](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/ADOPTERS.md) is maintained.
-
-<!-- (TOC Evaluation goes here) -->
+- [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)** [ADOPTERS.md](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/ADOPTERS.md) lists 51 organizations across verticals and geographies, updated 2026-06-17. **Status: Met.**
 
 - [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
-
-To be validated during the pending adopter interviews.
+  - 3 questionnaire responses received; 2 TOC interviews completed. At least 1 more interview required to reach the 3-interview minimum.
+  - **Status: In progress (required before vote).**
 
 The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
 - [ ] **TOC verification of adopters.**
-
-Pending — refer to the Adoption portion of this document (adopter interviews are the live stage).
+  - Pending completion of the minimum adopter interviews — see the Adoption section.
+  - **Status: In progress (required before vote).**
 
 Refer to the Adoption portion of this document.
 
-- [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.**
-
-The project documents its integration with Kubernetes and related ecosystem components in the [project documentation](https://cloudnative-pg.io/documentation/).
-
-<!-- (TOC Evaluation goes here) -->
+- [x] **Clearly documented integrations and/or compatibility with other CNCF projects as well as non-CNCF projects.** Dedicated docs for Cilium (CNCF Graduated) and External Secrets Operator (CNCF Sandbox); additional integrations (Prometheus, cert-manager, VolumeSnapshots, Helm, OLM) documented. **Status: Met.** (Recommendation: expand the "CNCF Projects Integrations" section beyond Cilium/ESO.)
 
 #### Adoption
 
-_Pending adopter interviews. Adopter-approved summaries will be recorded here (anonymized to industry vertical where required) once the sponsors complete 5–7 interviews._
+Two TOC adopter interviews completed; a third is required before a vote.
 
-##### Adopter 1 - $COMPANY/$INDUSTRY
+##### Adopter 1 - European municipal IT provider / Public sector
 
-_To be completed after interview._
+Running CloudNativePG in production since mid-2023. Interview evidence supports production readiness, documentation quality, regular upgrade cadence, and Kubernetes-native HA.
 
-##### Adopter 2 - $COMPANY/$INDUSTRY
+##### Adopter 2 - Large global technology vendor / Technology
 
-_To be completed after interview._
+Recorded in the TOC-private [second adopter interview record](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n). Uses CNPG as an embedded operator (resilient metadata store, some relational workloads) across OpenShift and other Kubernetes platforms; multi-year use including pre-open-source collaboration. Acknowledged single-vendor maintainer risk but has evaluated it, built internal competence, and has contingency options. Desired improvements: day-to-day DBA maintenance/auditing transparency, data repatriation/migration support, troubleshooting UI.
 
-##### Adopter 3 - $COMPANY/$INDUSTRY
+##### Adopter 3 - Pending
 
-_To be completed after interview._
+Third interview to be scheduled from the available questionnaire respondents.
 
 <!-- Specification Project Considerations section intentionally omitted: CloudNativePG is a Kubernetes operator, not a specification project defining normative behavior for independent implementation. -->
+
+---
+
+## Appendix A — Technical Assessment
+
+### Architecture
+
+CloudNativePG is a Kubernetes operator built in Go that manages the full lifecycle of PostgreSQL clusters.
+
+**Core design decisions:** No StatefulSets (operator manages Pods and PVCs directly, enabling LSN-based promotion rather than ordinal index); no sidecars (an Instance Manager Go binary runs as PID 1, eliminating Patroni/repmgr/Stolon dependencies); immutable, non-root, read-only-root-filesystem application containers.
+
+**High availability:** Single-primary / multiple hot-standby via native streaming replication; three auto-managed Services (`-rw`, `-ro`, `-r`); LSN-based failover promotion with per-cluster Lease mutex to prevent split-brain; isolation-aware liveness probes (primary self-fences on full network partition); synchronous replication (priority `first` and quorum `any`); PodDisruptionBudgets; `pg_rewind` reintegration.
+
+**Cross-cluster / DR:** Replica clusters across Kubernetes clusters via WAL shipping or streaming; controlled switchover or emergency failover; authority explicitly scoped to a single Kubernetes cluster (honest design boundary).
+
+**Backup and PITR:** WAL archiving to object stores (S3, Azure Blob, GCS, MinIO) via the Barman Cloud CNPG-I plugin; full backups via CNPG-I and VolumeSnapshots; PITR with parallel WAL fetching; bootstrap modes `initdb`/`recovery`/`pg_basebackup`.
+
+**Extensibility:** The CNPG-I plugin interface adds functionality (backup providers, auth validators) without modifying the core operator.
+
+**Additional CRDs:** `Backup`, `ScheduledBackup`, `Database`, `DatabaseRole`, `Pooler` (PgBouncer), `Publication`, `Subscription`, `ImageCatalog`, `ClusterImageCatalog`. **Monitoring:** Prometheus exporter (port 9187), Grafana dashboards, JSON-structured logging.
+
+### Technical Strengths
+
+1. No-StatefulSet / no-sidecar architecture with Mermaid diagrams and source-reference tables
+2. LSN-based failover with Lease-based split-brain prevention
+3. Isolation-aware self-fencing on network partition
+4. CNPG-I plugin interface for ecosystem extensibility
+5. CSI volume snapshot integration for near-instant cloning
+6. Supply chain security (cosign, Sigstore, SBOM, SLSA)
+7. E2E test suite including failure/chaos scenarios
+8. 80%+ code coverage (per OpenSSF badge)
+9. Level 5 "Auto Pilot" Operator Capability
+10. Regular KubeCon presence 2022-2026 (incl. HSBC, GEICO)
+
+### Sub-projects and Ecosystem
+
+The cloudnative-pg GitHub org contains 34 repositories, including the core operator, cnpg-i / cnpg-i-machinery (plugin interface + framework), plugin-barman-cloud, plugin-pvc-backup, barman-cloud, machinery, api, governance, charts, docs, website, artifacts, cnpg-playground, container-image repos (postgres/postgis/extensions/trunk/pgbouncer/pgcrash), grafana-dashboards, ciclops, chaos-testing, daggerverse, community-operators, and postgres-keycloak-oauth-validator.
+
+### CNCF Ecosystem Integrations
+
+Dedicated docs: Cilium (CNCF Graduated) — CiliumNetworkPolicy for pod-to-pod security; External Secrets Operator (CNCF Sandbox) — automated password rotation + external KMS push with reload labels. Additional (documented, no dedicated page): Prometheus (metrics exporter on 9187), cert-manager (TLS), Kubernetes VolumeSnapshots (CSI backup), Helm, OLM. Recommendation: expand the "CNCF Projects Integrations" section beyond Cilium/ESO.
+
+## Appendix B — Security Assessment
+
+**Security documentation:** SECURITY.md (reporting to security@cloudnative-pg.io, GitHub Security Advisories); SECURITY-INSIGHTS.yml v2.2.0 (last reviewed 2026-02-25); Security Self-Assessment at `.github/security-self-assessment.md` (Gemara v1.2.0 → FINOS CCC Core v2025.10, threat + capability catalogs; non-standard format); Security Response Team named in governance and listed in MAINTAINERS.md.
+
+**OpenSSF Best Practices:** passing 100% (67/67, 2025-01-29, badge #9933); silver 87% (7 remaining: accessibility, i18n, regression tests, secure design docs, input validation docs, hardening docs, assurance case).
+
+**Access control:** GitHub-org 2FA enforcement; DCO; branch protection; CodeQL + Snyk. **Supply chain:** cosign, Sigstore bundles, SBOM, SLSA provenance, Renovate dependency updates.
+
+## Appendix C — Adopter Assessment
+
+**ADOPTERS.md:** 51 organizations (updated 2026-06-17) across cloud/infra (EDB, Google Cloud, Microsoft Azure, IBM, Akamai, Nutanix), automotive (Tesla), telecom (Ericsson, Turksat), healthcare/pharma (Novo Nordisk), financial services (PZU, GEICO Tech, Alpcot, Rootline), government (Netherlands Tax Administration, GARR), science (Vera Rubin Observatory), and MSPs (Clastix, Tembo, OptimaData, Enix, Aenix, Syself, Giant Swarm, Bitnami/VMware). Hyperscalers Google Cloud, Microsoft, and IBM build commercial products on CNPG.
+
+**Questionnaire status:** 5-7 adopters requested (triage 2026-07-03); 3 responses received; 2 TOC interviews completed; at least 1 more required before a vote.
+
+**Community endorsements:** 4 GitHub endorsements — Matteo Bianchi (@mbianchidev), Ian Stanton (@ianstanton), @zoe-tek, Jerome Petazzoni (@jpetazzo).
+
+## Appendix D — Gaps Table
+
+| Criteria | Status | Severity | Notes |
+|----------|--------|----------|-------|
+| TOC adopter verification | In progress | **Required** (blocking) | 3 questionnaire responses; 2 interviews done (incl. TOC-private second record); at least 1 remains |
+| Website vendor neutrality | Complete | Resolved | Homepage EDB logo links to EDB homepage (historical attribution); Commercial Support page lists multiple vendors |
+| Governance restructuring ratified | Not complete | Recommended / non-blocking | governance#66 open |
+| Org-balance mechanism | Not complete | Recommended / non-blocking | governance#68 open |
+| Non-EDB maintainer pathway | Not complete | Recommended / non-blocking | governance#69 open |
+| Steering Committee formed | Not complete | Recommended / non-blocking | governance#70 open; first meeting w/ minutes recommended |
+| Security response roles documented | Complete | Resolved | PR #71 added explicit Security Response Team docs |
+| Metadata email addresses | Not complete | Recommended / non-blocking | SECURITY-INSIGHTS.yml / goreleaser use `@enterprisedb.com`; primary security contact is vendor-neutral |
+| GTR | Not formal | Suggested / non-blocking | Application docs + TAG presentation provide equivalent coverage |
+| Governance Review | Not formal | Suggested / non-blocking | DD lead assessment substitutes |
+| TAG Security standard self-assessment | Non-standard format | Recommended / non-blocking | Gemara format rigorous; standard format may be needed for graduation |
+| OpenSSF silver badge | 87% complete | Recommended / non-blocking | 7 criteria remaining; primarily documentation |
+| CNCF integration blueprints | Partial | Recommended / non-blocking | Adopter requested more practical examples |
+| Day-two operational transparency / UX | Partial | Recommended / non-blocking | Adopter requested DBA maintenance/auditing visibility, data repatriation/migration, troubleshooting UI |
