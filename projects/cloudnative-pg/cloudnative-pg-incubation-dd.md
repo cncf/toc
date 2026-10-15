@@ -266,11 +266,19 @@ Two TOC adopter interviews completed; a third is required before a vote.
 
 ##### Adopter 1 - European municipal IT provider / Public sector
 
-Running CloudNativePG in production since mid-2023. Interview evidence supports production readiness, documentation quality, regular upgrade cadence, and Kubernetes-native HA.
+Running CloudNativePG in production since mid-2023, this adopter provides database-as-a-service for internal application teams and affiliated organizations. It selected CNPG after comparing PostgreSQL operators, citing documentation quality as the primary differentiator. A staged migration from a legacy database platform required data-type remapping but completed without rollback.
+
+CNPG standardizes previously manual database provisioning through reusable declarative configurations, reducing operational work and accelerating integration. Releases are evaluated through phased non-production and production environments during maintenance windows. The adopter contributes through testing, issue reports, and smaller pull requests, and described maintainer encouragement as a positive path to community participation.
+
+The adopter views maintainer concentration and issue-triage capacity as sustainability concerns, although it remains confident in the project's direction. It could migrate to another operator if required but lacks capacity to supply maintainers itself. Requested improvements include broader maintainer diversity, more cross-project integration blueprints, and a management layer for cross-cluster or multi-cloud switchovers.
 
 ##### Adopter 2 - Large global technology vendor / Technology
 
-Recorded in the TOC-private [second adopter interview record](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n). Uses CNPG as an embedded operator (resilient metadata store, some relational workloads) across OpenShift and other Kubernetes platforms; multi-year use including pre-open-source collaboration. Acknowledged single-vendor maintainer risk but has evaluated it, built internal competence, and has contingency options. Desired improvements: day-to-day DBA maintenance/auditing transparency, data repatriation/migration support, troubleshooting UI.
+Recorded in the TOC-private [second adopter interview record](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n). Uses CNPG as an embedded operator (resilient metadata store, some relational workloads) across OpenShift and other Kubernetes platforms; multi-year use includes pre-open-source downstream collaboration. Customer-operated product upgrades orchestrate the database lifecycle alongside the larger product, so the adopter depends on resilient stable/LTS releases with forward- and backward-compatible upgrade and rollback paths.
+
+The adopter highlighted CNPG's custom workload controller, high availability, security posture, and deep PostgreSQL expertise. Early collaboration contributed lessons around CRD/schema evolution, Operator Lifecycle Manager and Helm deployment complexity, and isolation of multiple operators on shared clusters. The adopter has built internal competence and participates through design and contribution feedback, while retaining several contingency options if the primary vendor stopped maintaining the project.
+
+Desired improvements include day-to-day DBA maintenance and auditing transparency, data repatriation and migration support, and a troubleshooting UI. The adopter reported positive collaboration with the community, while noting that its long-standing relationship with the project may not represent every user's experience.
 
 ##### Adopter 3 - Pending
 
