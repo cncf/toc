@@ -99,7 +99,7 @@ The TAG member assigned to complete the domain technical review references:
 * the [original General Technical Review questions][gtrq]
 * the project's presentation or the completed GTR questions
 * the [TAG Domain Technical Review template](tag-domain-technical-review-template.md)
-* TAG Security [self or joint assessment](https://tag-security.cncf.io/community/assessments/) (if applicable)
+* TAG Security [self](https://security-assessments.openssf.org/self-assessment/getting-started-self-assessment/) or [joint](https://security-assessments.openssf.org/joint-assessment/creating-document/) assessment (if applicable)
 
 ### Where is a review submitted?
 
