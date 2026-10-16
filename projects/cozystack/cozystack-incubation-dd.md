@@ -19,7 +19,7 @@ _The following criteria implementations are noteworthy to call out:_
 - The security documentation is candid, including explicit disclosure of where the project is not meeting its own remediation targets.
 - The sub-project model is documented with a packaged-versus-independent-tooling split, per-repository owners, published maturity status, and an accounting of forks and private repositories.
 - Governance was iterated during this due diligence rather than defended: an unfilled Directors role was removed, organization-wide default Code of Conduct/SECURITY.md files were added, and the subproject listings were reconciled between the application and `GOVERNANCE.md`.
-- The project proactively monitors its own dependency licensing rather than waiting to be asked: most of the outstanding license exceptions were self-identified and filed by the project itself, and it responded quickly as further gaps surfaced during this review (see below).
+- The project proactively monitors its own dependency licensing rather than waiting to be asked: three of the eight outstanding license exceptions were self-identified and filed without prompting, two of them early in this review (20-Jul-2026); that experience led the project to run a more thorough internal audit, which surfaced the remaining exceptions as the review progressed, including three covering independent tooling (`talos-meta-tool`, `terraform-provider-cozystack`, dashboard console assets) that isn't even part of the packaged distribution.
 - Adopter feedback is strongly positive on the integrated, easy-to-use stack: data sovereignty and freedom from vendor lock-in are recurring adoption drivers across interviews, and adopters describe the multi-tenancy model as more mature than anything they could have built themselves. The publicly documented adopter base in `ADOPTERS.md` independently spans the same themes at broader scale, including sovereign and public clouds, hosting providers, and GPU/educational environments.
 
 _The following actions were provided to the project that were considered blocking but have since been resolved:_
@@ -30,15 +30,25 @@ _The following actions were provided to the project that were considered blockin
 
 _One condition remains outstanding. This does not block this review or the TOC vote, but it does block the project's actual move to Incubation level and the associated benefits until resolved:_
 
-- **Five CNCF license exception requests filed, none yet approved**: [cncf/foundation#1465](https://github.com/cncf/foundation/issues/1465) (Percona MongoDB operator, Apache-2.0, with SSPL-1.0 deploy-time payload), [cncf/foundation#1466](https://github.com/cncf/foundation/issues/1466) (RabbitMQ operators + OpenBao Helm chart, MPL-2.0), [cncf/foundation#1539](https://github.com/cncf/foundation/issues/1539) (CABPT manifests + Talos Linux images, MPL-2.0), [cncf/foundation#1541](https://github.com/cncf/foundation/issues/1541) (`talm`/Sidero Labs Go libraries, MPL-2.0), and [cncf/foundation#1542](https://github.com/cncf/foundation/issues/1542) (LINSTOR server, GPL-3.0-only). All confirmed open with no decision as of 13-Oct-2026. Not blocking for this review or the TOC vote; blocked for the project's move to Incubation level and incubation-level benefits until all five are approved.
+- **Eight CNCF license exception requests filed, all still pending review**:
+  - Percona MongoDB operator (Apache-2.0) with SSPL-1.0 deploy-time payload ([cncf/foundation#1465](https://github.com/cncf/foundation/issues/1465))
+  - RabbitMQ operator manifests and OpenBao Helm chart, MPL-2.0 ([cncf/foundation#1466](https://github.com/cncf/foundation/issues/1466))
+  - Talos bootstrap provider (CABPT) manifests and Talos Linux images, MPL-2.0 ([cncf/foundation#1539](https://github.com/cncf/foundation/issues/1539))
+  - Sidero Labs Go libraries in `talm`, MPL-2.0 ([cncf/foundation#1541](https://github.com/cncf/foundation/issues/1541))
+  - LINSTOR server, GPL-3.0-only ([cncf/foundation#1542](https://github.com/cncf/foundation/issues/1542))
+  - Sidero Labs Go libraries in `talos-meta-tool`, MPL-2.0 ([cncf/foundation#1570](https://github.com/cncf/foundation/issues/1570))
+  - HashiCorp Terraform plugin libraries in `terraform-provider-cozystack`, MPL-2.0 ([cncf/foundation#1571](https://github.com/cncf/foundation/issues/1571))
+  - noVNC, Geist font and Simple Icons in the dashboard console, MPL-2.0/OFL-1.1/CC0-1.0 ([cncf/foundation#1572](https://github.com/cncf/foundation/issues/1572))
+
+  Not blocking for this review or the TOC vote; blocked for the project's move to Incubation level and incubation-level benefits until all eight are approved.
 
 _The following recommendations were provided to the project that are non-blocking in the TOC's assessment but should be completed by the project to ensure continued viability of the project:_
 
-- Carrying the vendor-neutrality commitment into `GOVERNANCE.md` ([cozystack/community#97](https://github.com/cozystack/community/issues/97)).
+- Carrying the vendor-neutrality commitment into `GOVERNANCE.md` ([cozystack/community#97](https://github.com/cozystack/community/issues/97)); tracked under [cozystack/cozystack#4934](https://github.com/cozystack/cozystack/pull/4934).
 - Broadening organizational representation among active maintainers: per [MAINTAINERS.md](https://github.com/cozystack/cozystack/blob/main/MAINTAINERS.md), Ænix holds 6 of 9 active maintainer seats (about 67%), below the 75% threshold that would trigger a mandatory practice period, but still worth active attention and recruitment effort from other organizations.
 - Publishing an API stability and deprecation policy.
-- Documenting the subproject add/remove process.
-- Minor DCO and CodeQL branch-protection refinements: neither check is among the required status checks on `main`, though both run automatically and are enforced by review convention rather than branch protection (non-blocking; the Charter's DCO requirement itself is met).
+- Documenting the subproject add/remove process; tracked under [cozystack/cozystack#4933](https://github.com/cozystack/cozystack/pull/4933).
+- Minor DCO and CodeQL branch-protection refinements: neither check was a required status check on `main`; now tracked under [cozystack/cozystack#4932](https://github.com/cozystack/cozystack/pull/4932).
 - Kamaji's upstream dependency concentration, noted for awareness based on adopter interviews (not a tracked DD item).
 
 _Non-blocking recommendations already completed during this review:_
@@ -71,7 +81,7 @@ Common areas for improvement reported by adopters:
 
 ### Final Assessment
 
-The TOC has found the project to have satisfied the criteria for Incubation. The blocking remediation raised during this review has been completed and independently verified. The project’s move to Incubation level, and the benefits that come with it, wait on approval of the five license exception requests the project filed with the CNCF Governing Board, all of which remain open.
+The TOC has found the project to have satisfied the criteria for Incubation. The blocking remediation raised during this review has been completed and independently verified. The project’s move to Incubation level, and the benefits that come with it, wait on approval of the eight license exception requests the project filed with the CNCF Governing Board, all of which remain open.
 
 ## Application Process Principles
 
@@ -152,7 +162,7 @@ Governance documents the maintainer lifecycle and decision-making process, and t
 
 - [ ] **Governance clearly documents [vendor-neutrality](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) of project direction.**
 
-[CODE_OF_CONDUCT.md](https://github.com/cozystack/cozystack/blob/main/CODE_OF_CONDUCT.md) contains a Vendor Neutrality Manifesto, but it's a statement of principles rather than a structural protection: `GOVERNANCE.md` has no vendor-neutrality statement or org-balance mechanism, with no cap on the proportion of the decision-making body affiliated to a single organization. Tracked in [cozystack/community#97](https://github.com/cozystack/community/issues/97).
+[CODE_OF_CONDUCT.md](https://github.com/cozystack/cozystack/blob/main/CODE_OF_CONDUCT.md) contains a Vendor Neutrality Manifesto, but it's a statement of principles rather than a structural protection: `GOVERNANCE.md` has no vendor-neutrality statement or org-balance mechanism, with no cap on the proportion of the decision-making body affiliated to a single organization. Tracked in [cozystack/community#97](https://github.com/cozystack/community/issues/97); in progress under [cozystack/cozystack#4934](https://github.com/cozystack/cozystack/pull/4934).
 
 - [x] **Document how the project makes decisions on leadership, contribution acceptance, requests to the CNCF, and changes to governance or project goals.**
 
@@ -176,7 +186,7 @@ Observation: Ænix holds 6 of 9 active maintainer seats (about 67%), and the gro
 
 Subprojects inherit the parent project's governance, contribution, and maintainer-lifecycle rules: `GOVERNANCE.md` states Cozystack maintainers are maintainers of every sub-project by default, with per-repo `CODEOWNERS` identifying day-to-day owners (e.g. [cozystack/local-ccm#4](https://github.com/cozystack/local-ccm/pull/4)), and maturity status (Stable) is published for each packaged sub-project. The subproject listings also differed between the application and `GOVERNANCE.md`; fixed via [cozystack/community#80](https://github.com/cozystack/community/issues/80) and verified independently.
 
-Missing: no documented process for adding or removing a subproject (see non-blocking recommendations in the Criteria Evaluation summary above).
+Missing: no documented process for adding or removing a subproject; in progress under [cozystack/cozystack#4933](https://github.com/cozystack/cozystack/pull/4933).
 
 ### Required
 
@@ -309,7 +319,7 @@ A self-assessment exists in-tree at [docs/security/self-assessment.md](https://g
 
 A branch ruleset requires reviewed PRs on the default branch, [.github/CODEOWNERS](https://github.com/cozystack/cozystack/blob/main/.github/CODEOWNERS) assigns per-path ownership, and CI was migrated from long-lived PATs to short-lived `cozystack-ci` GitHub App tokens ([#2351](https://github.com/cozystack/cozystack/pull/2351), [#2383](https://github.com/cozystack/cozystack/pull/2383)). [docs/release.md](https://github.com/cozystack/cozystack/blob/main/docs/release.md) also describes tag-protection rulesets restricting `v*` tag creation/deletion to the CI app. Org-wide 2FA enforcement was confirmed directly with the Cozystack maintainers.
 
-Observation: per [SECURITY.md](https://github.com/cozystack/cozystack/blob/main/SECURITY.md) and [docs/security/self-assessment.md](https://github.com/cozystack/cozystack/blob/main/docs/security/self-assessment.md)'s own disclosure, CodeQL and DCO are not among the required status checks on `main` (tracked as a non-blocking recommendation above).
+Observation: per [SECURITY.md](https://github.com/cozystack/cozystack/blob/main/SECURITY.md) and [docs/security/self-assessment.md](https://github.com/cozystack/cozystack/blob/main/docs/security/self-assessment.md)'s own disclosure, CodeQL and DCO are not among the required status checks on `main`; in progress under [cozystack/cozystack#4932](https://github.com/cozystack/cozystack/pull/4932).
 
 - [x] **Document assignment of security response roles and how reports are handled.**
 
