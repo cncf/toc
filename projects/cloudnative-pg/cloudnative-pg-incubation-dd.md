@@ -22,7 +22,6 @@
 - [Governance restructuring PR #71](https://github.com/cloudnative-pg/governance/pull/71) -- merged governance restructuring changes
 - [Updated GOVERNANCE.md](https://github.com/cloudnative-pg/governance/blob/main/GOVERNANCE.md) -- current project governance, decision-making, subproject, security, and conduct model
 - [New CONTRIBUTOR_LADDER.md](https://github.com/cloudnative-pg/governance/blob/main/CONTRIBUTOR_LADDER.md) -- current contributor progression and maintainer lifecycle model
-- [Second adopter interview record](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n) -- TOC-private adopter verification evidence
 - [Incubation readiness epic #65](https://github.com/cloudnative-pg/governance/issues/65) -- tracks DD follow-up items
 
 ## Incubation Evaluation Summary for CloudNativePG
@@ -54,21 +53,26 @@ Lead TOC member Chad Beaudin, with Karena Angell assisting on due diligence and 
 
 ADOPTERS.md lists 51 organizations across multiple verticals and geographies, updated as recently as June 2026. Adopters include hyperscalers building products on CNPG (Google Cloud with EDB Community 360, Microsoft Azure with DocumentDB Operator, IBM Cloud Pak), enterprises in production (Tesla, Ericsson, Novo Nordisk), government agencies (Netherlands Tax Administration, Turksat), and research institutions (Vera Rubin Observatory). The adopter list includes both end users and managed service providers building on the platform.
 
-Three adopter questionnaire responses have been submitted to date. Two TOC adopter interviews have been completed. Interview evidence supports production readiness, documentation quality, regular upgrade cadence, resilient upgrade/rollback expectations, Kubernetes-native HA, security posture, deep PostgreSQL expertise, and direct user contribution/design feedback.
+Three adopter questionnaire responses have been submitted to date, and three TOC adopter interviews have been completed; adopter verification is complete for the incubation DD. Interview evidence supports production readiness, documentation quality, regular upgrade cadence, resilient upgrade/rollback expectations, Kubernetes-native HA, security posture, deep PostgreSQL expertise, fleet-scale security patching via image catalogs, object-storage/snapshot backups with point-in-time recovery, and direct user contribution/design feedback.
 
-The second interview, recorded in the TOC-private [CloudNativePG adopter interview notes](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n), was with a large global technology vendor using CloudNativePG as an embedded Kubernetes operator for PostgreSQL within self-hosted product stacks on OpenShift and other Kubernetes platforms. The adopter uses CNPG primarily as a resilient metadata store, with some higher-cardinality relational-data use cases, and described multi-year use including pre-open-source downstream collaboration. The adopter highlighted CNPG's Kubernetes-native day-one/day-two operations, HA, security posture, PostgreSQL expertise, custom workload controller approach, and resilient upgrade/rollback expectations across stable/LTS releases. They acknowledged the single-vendor maintainer risk but have evaluated it, built internal competence, contribute design/code feedback, and have contingency options if the primary vendor stopped maintaining the project. Desired improvements included more day-to-day DBA maintenance/auditing transparency, data repatriation/migration support, and troubleshooting UI.
+The second interview, recorded in the TOC-private CloudNativePG adopter interview notes, was with a large global technology vendor using CloudNativePG as an embedded Kubernetes operator for PostgreSQL within self-hosted product stacks on OpenShift and other Kubernetes platforms. The adopter uses CNPG primarily as a resilient metadata store, with some higher-cardinality relational-data use cases, and described multi-year use including pre-open-source downstream collaboration. The adopter highlighted CNPG's Kubernetes-native day-one/day-two operations, HA, security posture, PostgreSQL expertise, custom workload controller approach, and resilient upgrade/rollback expectations across stable/LTS releases. They acknowledged the single-vendor maintainer risk but have evaluated it, built internal competence, contribute design/code feedback, and have contingency options if the primary vendor stopped maintaining the project. Desired improvements included more day-to-day DBA maintenance/auditing transparency, data repatriation/migration support, and troubleshooting UI.
 
-At least one additional adopter interview is still required before a vote can proceed.
+The third interview was with a large U.S. insurance / financial-services provider running a large fleet of CloudNativePG installations as part of a strategic open-source and Kubernetes investment. The adopter cited Kubernetes-native fleet operations — especially image catalogs that automatically rebuild PostgreSQL container and base images for security patching without per-server logins — as the primary benefit, alongside object-storage/snapshot backups with point-in-time recovery configured through CRDs, and is migrating its fleet to the newer extensible backup plugin architecture. It had performed a deliberate continuity risk analysis and views CNCF hosting as strategically valuable chiefly for protecting the project's intellectual property and trademarks against single-vendor relicensing risk, judging the platform production-ready and sustainable by the broader user base even under reduced vendor funding. The adopter is taking up subproject maintainer responsibility (extensions and playground subprojects), has reviewed the published governance restructuring proposal, and — consistent with the other interviews — flagged the AI-era surge in pull requests as the central governance challenge for critical database infrastructure.
+
+Adopter verification for the incubation DD is complete.
 
 ### Final Assessment
 
-CloudNativePG is technically strong and has credible production adoption. [PR #71](https://github.com/cloudnative-pg/governance/pull/71) resolves part of the governance concern by restructuring technical authority into subproject committees and documenting security response roles. The DD should complete the remaining vote-readiness items, while tracking the open governance items as recommended follow-ups rather than required blockers.
+CloudNativePG is technically strong and has credible production adoption, and adopter verification is complete. [PR #71](https://github.com/cloudnative-pg/governance/pull/71) resolves part of the governance concern by restructuring technical authority into subproject committees and documenting security response roles. The DD is ready to proceed to public comment and the TOC vote, with the open governance items tracked as recommended follow-ups rather than required blockers.
 
 **Required before vote:**
 
-1. Additional TOC adopter interview (minimum 3 total; 2 completed, including the TOC-private [second interview record](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n))
-2. Public comment period
-3. TOC vote
+1. Public comment period
+2. TOC vote
+
+**Complete:**
+
+1. TOC adopter verification — 3 adopter interviews completed (including the TOC-private second interview record).
 
 **Resolved verification item:**
 
@@ -112,9 +116,9 @@ CloudNativePG is technically strong and has credible production adoption. [PR #7
   - Application references moving-level criteria. Accepted to Sandbox 2025-01-21.
   - **Status: Met.**
 
-- [ ] **Due Diligence Review.**
-  - This document. In progress.
-  - **Status: In progress.**
+- [x] **Due Diligence Review.**
+  - This document. Adopter verification complete; ready for public comment / TOC vote.
+  - **Status: Complete for DD draft.**
 
 - [x] **Additional documentation as appropriate for project type, e.g.: installation documentation, end user documentation, reference implementation and/or code samples.**
   - Installation/upgrade, Quickstart, Architecture, Use cases, Operator capability levels (all under cloudnative-pg.io/documentation/current/), plus the CNPG Playground (github.com/cloudnative-pg/cnpg-playground).
@@ -246,15 +250,15 @@ N/A
 
 - [x] **Publicly documented list of adopters, which may indicate their adoption level (dev/trialing, prod, etc.)** [ADOPTERS.md](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/ADOPTERS.md) lists 51 organizations across verticals and geographies, updated 2026-06-17. **Status: Met.**
 
-- [ ] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
-  - 3 questionnaire responses received; 2 TOC interviews completed. At least 1 more interview required to reach the 3-interview minimum.
-  - **Status: In progress (required before vote).**
+- [x] **Used in appropriate capacity by at least 3 independent + indirect/direct adopters, (these are not required to be in the publicly documented list of adopters)**
+  - 3 questionnaire responses received; 3 TOC interviews completed.
+  - **Status: Met.**
 
 The project provided the TOC with a list of adopters for verification of use of the project at the level expected, i.e. production use for graduation, dev/test for incubation.
 
-- [ ] **TOC verification of adopters.**
-  - Pending completion of the minimum adopter interviews — see the Adoption section.
-  - **Status: In progress (required before vote).**
+- [x] **TOC verification of adopters.**
+  - Complete: 3 adopter interviews conducted — see the Adoption section.
+  - **Status: Met.**
 
 Refer to the Adoption portion of this document.
 
@@ -262,7 +266,7 @@ Refer to the Adoption portion of this document.
 
 #### Adoption
 
-Two TOC adopter interviews completed; a third is required before a vote.
+Three TOC adopter interviews completed; adopter verification is complete for the incubation DD.
 
 ##### Adopter 1 - European municipal IT provider / Public sector
 
@@ -274,15 +278,21 @@ The adopter views maintainer concentration and issue-triage capacity as sustaina
 
 ##### Adopter 2 - Large global technology vendor / Technology
 
-Recorded in the TOC-private [second adopter interview record](https://docs.google.com/document/d/10R2qG3HmVZeSUBMzqEscaVwdanvzBG-LvYb3VqWH7jA/edit?tab=t.fcw4kg9l1k9n). Uses CNPG as an embedded operator (resilient metadata store, some relational workloads) across OpenShift and other Kubernetes platforms; multi-year use includes pre-open-source downstream collaboration. Customer-operated product upgrades orchestrate the database lifecycle alongside the larger product, so the adopter depends on resilient stable/LTS releases with forward- and backward-compatible upgrade and rollback paths.
+Recorded in the TOC-private second adopter interview record. Uses CNPG as an embedded operator (resilient metadata store, some relational workloads) across OpenShift and other Kubernetes platforms; multi-year use includes pre-open-source downstream collaboration. Customer-operated product upgrades orchestrate the database lifecycle alongside the larger product, so the adopter depends on resilient stable/LTS releases with forward- and backward-compatible upgrade and rollback paths.
 
 The adopter highlighted CNPG's custom workload controller, high availability, security posture, and deep PostgreSQL expertise. Early collaboration contributed lessons around CRD/schema evolution, Operator Lifecycle Manager and Helm deployment complexity, and isolation of multiple operators on shared clusters. The adopter has built internal competence and participates through design and contribution feedback, while retaining several contingency options if the primary vendor stopped maintaining the project.
 
 Desired improvements include day-to-day DBA maintenance and auditing transparency, data repatriation and migration support, and a troubleshooting UI. The adopter reported positive collaboration with the community, while noting that its long-standing relationship with the project may not represent every user's experience.
 
-##### Adopter 3 - Pending
+##### Adopter 3 - Large U.S. insurance / financial-services provider / Financial services
 
-Third interview to be scheduled from the available questionnaire respondents.
+Operates a large fleet of CloudNativePG installations as part of an organization-wide strategic investment in open source and Kubernetes. The adopter is led in this area by a senior technical database specialist with a long PostgreSQL background, who engaged the project's community Slack within the first week despite finding the documentation high enough quality to work from directly. The team has built consistent, repeatable processes around CNPG across its fleet.
+
+The adopter identified the primary benefit as CNPG extending Kubernetes-native operational patterns to the database tier. In particular it cited image catalogs that automatically rebuild PostgreSQL container and base images when security patches are released, enabling fleet-wide patching without per-server logins — a capability the adopter contrasted favorably with traditional manual database patching. Backup and recovery are handled through object storage and volume snapshots configured via CRDs, with scheduled backups and point-in-time recovery (e.g., restoring to a precise timestamp). The adopter is actively migrating its fleet from the original built-in backup system to the newer extensible backup plugin architecture as part of normal lifecycle maintenance.
+
+On sustainability, the adopter had performed a deliberate risk analysis: it views CNCF hosting as strategically valuable primarily for protecting the project's intellectual property and trademarks against single-company relicensing ("rug pull") risk, citing comparable situations with other formerly-single-vendor open-source projects. It assessed that even if the backing organization reduced funding, the project is a stable, production-ready platform that other large users — including other large financial institutions it has spoken with directly — could collaborate to maintain, potentially at a slower feature pace. The adopter recognized the primary developer organization remains EDB and confirmed it has received and reviewed the published governance restructuring proposal, including the proposed division of labor into subproject groups.
+
+This adopter is becoming directly involved in project governance: it was invited to, and is taking up, subproject maintainer responsibility for the extensions and playground subprojects. It praised the playground subproject (a kind-based, multi-region, HA, Prometheus-monitored, backup-enabled production-like stack) as a strong tool for education, training, and demonstrations. Consistent with the other interviews, the adopter highlighted the AI-era surge in PRs — code generated quickly without deep database-internals understanding — as the central governance challenge, stressing the need to balance review throughput against the strict scrutiny critical database infrastructure requires to prevent corruption and data loss, while still cultivating and mentoring serious new contributors.
 
 <!-- Specification Project Considerations section intentionally omitted: CloudNativePG is a Kubernetes operator, not a specification project defining normative behavior for independent implementation. -->
 
@@ -339,7 +349,7 @@ Dedicated docs: Cilium (CNCF Graduated) — CiliumNetworkPolicy for pod-to-pod s
 
 **ADOPTERS.md:** 51 organizations (updated 2026-06-17) across cloud/infra (EDB, Google Cloud, Microsoft Azure, IBM, Akamai, Nutanix), automotive (Tesla), telecom (Ericsson, Turksat), healthcare/pharma (Novo Nordisk), financial services (PZU, GEICO Tech, Alpcot, Rootline), government (Netherlands Tax Administration, GARR), science (Vera Rubin Observatory), and MSPs (Clastix, Tembo, OptimaData, Enix, Aenix, Syself, Giant Swarm, Bitnami/VMware). Hyperscalers Google Cloud, Microsoft, and IBM build commercial products on CNPG.
 
-**Questionnaire status:** 5-7 adopters requested (triage 2026-07-03); 3 responses received; 2 TOC interviews completed; at least 1 more required before a vote.
+**Questionnaire status:** 5-7 adopters requested (triage 2026-07-03); 3 responses received; 3 TOC interviews completed; adopter verification complete for the incubation DD.
 
 **Community endorsements:** 4 GitHub endorsements — Matteo Bianchi (@mbianchidev), Ian Stanton (@ianstanton), @zoe-tek, Jerome Petazzoni (@jpetazzo).
 
@@ -347,7 +357,7 @@ Dedicated docs: Cilium (CNCF Graduated) — CiliumNetworkPolicy for pod-to-pod s
 
 | Criteria | Status | Severity | Notes |
 |----------|--------|----------|-------|
-| TOC adopter verification | In progress | **Required** (blocking) | 3 questionnaire responses; 2 interviews done (incl. TOC-private second record); at least 1 remains |
+| TOC adopter verification | Complete | Resolved | 3 questionnaire responses; 3 interviews done (incl. TOC-private second record) |
 | Website vendor neutrality | Complete | Resolved | Homepage EDB logo links to EDB homepage (historical attribution); Commercial Support page lists multiple vendors |
 | Governance restructuring ratified | Not complete | Recommended / non-blocking | governance#66 open |
 | Org-balance mechanism | Not complete | Recommended / non-blocking | governance#68 open |
