@@ -30,7 +30,11 @@ The ability to use Kubernetes to manage virtual machines and being an open sourc
 
 ### What is the current level of usage (pre-production, production) and scale?
 
-KubeVirt is used in production. There are 50-60 clusters, for a total of around 50,000 nodes. Each node can run around 8 VMs. Probably around 400,000 VMs. 
+KubeVirt is used in production.
+
+Follow-up clarification from NVIDIA:
+
+> We have about 50-60 clusters. Some of the largest clusters have about ~800 nodes and with 3500 VMs.
 
 ### What version is used and what is your update cadence with the project?
 

@@ -23,10 +23,10 @@ The following areas are noteworthy:
 
 - KubeVirt brings the Kubernetes operational model to virtual machines, allowing
   adopters to manage VM and container workloads together.
-- Red Hat IT has run production clusters since 2023. NVIDIA reported 50-60
-  production clusters and around 50,000 nodes supporting GeForce NOW at its
-  adopter interview. Swisscom uses KubeVirt for customer-facing Kubernetes
-  infrastructure.
+- Red Hat IT has run production clusters since 2023. NVIDIA reports 50-60
+  production clusters supporting GeForce NOW. Some of its largest clusters have
+  about 800 nodes and 3,500 VMs each. Swisscom uses KubeVirt for customer-facing
+  Kubernetes infrastructure.
 - The project has regular releases, a public roadmap, and a documented process
   for proposing and reviewing enhancements.
 - The documentation covers installation, development, and production operations.
@@ -790,10 +790,9 @@ The entire adopter interview can be found here:
 NVIDIA's GeForce NOW platform runs online gaming workloads in virtual machines.
 
 Alay Patel was interviewed by Jeremy Rickard on July 28, 2026. NVIDIA reported
-using KubeVirt for several years, since at least version 0.35. At the time of
-the interview, it reported 50-60 production clusters and around 50,000 nodes,
-with capacity for approximately eight VMs per node. NVIDIA estimated roughly
-400,000 VMs. These are adopter estimates rather than measured concurrent usage.
+using KubeVirt for several years, since at least version 0.35. In a follow-up,
+NVIDIA clarified that it has about 50-60 production clusters, with some of the
+largest having about 800 nodes and 3,500 VMs each.
 
 NVIDIA chose KubeVirt as an open-source way to manage VM workloads through
 Kubernetes. The team found the APIs and Kubernetes integrations especially useful
