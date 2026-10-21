@@ -77,7 +77,7 @@ We are looking for high-quality, high-velocity projects that fit ‘cloud native
 Identify projects that have a real shot at being a useful tool in the evolving box of cloud native technology. This is a mix of mature and early-stage projects.   Early stage may not have all the criteria we want: diverse contributor bases, formalized governance, interoperability, cloud native designs, quality bar, etc. 
 
 Some considerations:
-- Transparent, consistent technical and governance quality bar for [graduation](/process/graduation_criteria.adoc) from incubation
+- Transparent, consistent technical and governance quality bar for [graduation](process/graduation_criteria.md) from incubation
 - Has users, preferably in production; is a high quality, high-velocity project (for incubation and graduated projects). Sandbox level projects are targeted at earlier-stage projects to cultivate a community/technology
 - Has a committed and excited team that appears to understand the challenges ahead and wishes to meet them
 - Has a fundamentally sound design without obvious critical compromises that will inhibit potential widespread adoption
@@ -179,7 +179,7 @@ The Technical Oversight Committee has adopted these leadership principles to hel
 
 #### Guidance and Enforcement
 
-For additional guidance and information on how the Technical Leadership Principles are enforced and how projects can align with the principles, please refer to the [Technical Leadership Principles Guidance in the TOC's docs folder](docs/tech_leadership_principles_guidance.md).
+For additional guidance and information on how the Technical Leadership Principles are enforced and how projects can align with the principles, please refer to the [Technical Leadership Principles Guidance in the TOC's resources folder](resources/tech_leadership_principles_guidance.md).
 
 ### Principles
 
