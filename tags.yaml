@@ -518,7 +518,7 @@ tags: # Technical Advisory Groups
         - github: terrytangyuan
           lfx_id:
           name: Yuan Tang
-          company: "TensorScale AI"
+          company: "TensorScale"
           email: terrytangyuan@gmail.com
           term:
             start: "2025-07-01"
