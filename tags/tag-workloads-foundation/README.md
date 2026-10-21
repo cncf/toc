@@ -12,7 +12,7 @@ To define and advance practices and standards for fundamental cloud native workl
 ### Chairs
 - Marlow Warnicke (**[@catblade](https://github.com/catblade)**), NVIDIA (Term: 2026-06-09 - 2028-06-30)
 - Paco Xu (**[@pacoxu](https://github.com/pacoxu)**) (Term: 2025-07-01 - 2027-06-30)
-- Yuan Tang (**[@terrytangyuan](https://github.com/terrytangyuan)**) (Term: 2025-07-01 - 2027-06-30)
+- Yuan Tang (**[@terrytangyuan](https://github.com/terrytangyuan)**), TensorScale (Term: 2025-07-01 - 2027-06-30)
 ### Tech Leads
 - Pavan Madduri (**[@pmady](https://github.com/pmady)**), W.W.Grainger (Term: 2026-07-07 - 2028-07-06)
 - Hongcai Ren (**[@RainbowMango](https://github.com/RainbowMango)**) (Term: 2025-07-02 - 2027-06-30)
