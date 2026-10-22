@@ -96,12 +96,12 @@ The community is welcome to submit PRs to improve and add additional Guide Posts
 ### Security
 
 * The basics of security are underway
-  * Such as completion of a [self-assessment](https://github.com/cncf/tag-security/blob/main/assessments/guide/self-assessment.md)
+  * Such as completion of a [self-assessment](https://security-assessments.openssf.org/self-assessment/getting-started-self-assessment/)
 
 * A robust and mature security posture is being developed
   * Any of the following would assist in achieving this
     * Threat model
-    * [Joint review](https://github.com/cncf/tag-security/tree/main/assessments#components-of-the-security-review-package)
+    * [Joint review](https://security-assessments.openssf.org/joint-assessment/creating-document/)
     * [OpenSSF Best Practice Badge](https://bestpractices.coreinfrastructure.org/) [Passing level](https://bestpractices.coreinfrastructure.org/en/criteria/0) or [Silver](https://bestpractices.coreinfrastructure.org/en/criteria/1)
       * Note: Completion and maintenance of **an** OpenSSF Best Practice Badge is [a requirement for graduation](../.github/ISSUE_TEMPLATE/template-graduation-application.md#required-3)
       * The OpenSSF Best practices badging program provides a series of best practices for open source projects in increasing levels of maturity. While passing is the current criteria for Graduation projects, the current trends in industry are focusing on more secure projects and demonstrating a project's commitment to security through more advanced security checks and criteria, such as silver or gold best practices badging, can distinguish your project from the next.

@@ -104,7 +104,7 @@ If this is the case for your project, please mark it as not-applicable (N/A) and
 
 ### Security
 
-  * Please provide a link to the project’s cloud native [security self assessment](https://tag-security.cncf.io/community/assessments/).  
+  * Please provide a link to the project’s cloud native [security self assessment](https://security-assessments.openssf.org/self-assessment/getting-started-self-assessment/).  
   * Please review the [Cloud Native Security Tenets](https://github.com/cncf/contribute-site/blob/main/docs/community/tags/security-and-compliance/publications/secure-defaults-cloud-native-8.md) from TAG Security.  
     * How are you satisfying the tenets of cloud native security projects?
     * How do you recommend users alter security defaults in order to "loosen" the security of the project? Please link to any documentation the project has written concerning these use cases.  
