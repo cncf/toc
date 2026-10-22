@@ -53,7 +53,10 @@ Decisions are made by lazy consensus. Owners volunteer for streams; work that ha
 | [06_Governance_Observability_Security_and_Policy.md](./06_Governance_Observability_Security_and_Policy.md) | Stream 5 |
 | [07_Reference_Architecture.md](./07_Reference_Architecture.md) | End-to-end architecture and pattern catalogue |
 | [08_Gap_Analysis_and_Recommendations.md](./08_Gap_Analysis_and_Recommendations.md) | Gaps, standards proposals, upstream routing |
+| [use-cases/](./use-cases/) | Worked examples from running systems; template in [use-cases/TEMPLATE.md](./use-cases/TEMPLATE.md) |
 | [CHANGELOG.md](./CHANGELOG.md) | Versioned releases of the document |
+
+Chapter 07 is drafted by Aman Singh, who integrates the output of the stream chapters (confirmed at the October 22, 2026 session).
 
 ## Milestones
 
