@@ -284,6 +284,8 @@ It is anticipated that a minimum of three adopter interviews are required to app
 
 > **Reference Architecture or Case Study Substitution:** A project's inclusion in a published [TAB Reference Architecture](https://github.com/cncf/tab/blob/main/process/reference-architectures.md) or a published [CNCF Case Study](https://github.com/cncf/foundation/blob/main/policies-guidance/case-study-guidelines.md) may serve as a replacement for an individual adopter interview. Both represent validated, production-level adoption by the submitting organization and can provide equivalent signal to an adopter interview. When evaluating a Reference Architecture or Case Study, the TOC member should confirm that it demonstrates an independent organization's operational use of the project, rather than relying solely on the project team's or a vendor's account. It is at the TOC member's discretion who is leading the Due Diligence for Moving Levels to determine whether the Reference Architecture or Case Study meets the necessary standards and includes the requisite information the Due Diligence requires to determine whether the project meets the requirements of the level in process. Where it does, TOC members should note the Reference Architecture or Case Study in the adoption section of the Due Diligence in place of the interview summary it replaces.
 
+> **Refreshing Adopter Interviews for Graduation:** For projects moving from Incubation to Graduation, if considerable time has passed since Incubation (according to the TOC's judgement), the TOC should refresh the Adopter interviews. This may be done by reaching out to previous interviewees, by engaging a new group of adopters for interviews, or some combination thereof. If the time period between Incubation and Graduation is fairly recent, the TOC member(s) should exercise their judgement in choosing to pursue additional interviews. That decision should be recorded with justification in the adoption section of the template.
+
 #### Spec project adopter interviews
 
 For specification projects, the adopter interview process differs from standard software projects. Because the primary deliverable is a normative document rather than a single codebase, "adopters" are the independent implementations of the spec and the organizations behind them.
@@ -297,8 +299,6 @@ When interviewing spec project adopters, the TOC should prioritize implementers 
 - How does your implementation handle areas where the spec is ambiguous or silent?
 
 The goal is to assess whether the spec is implementable, adopted across organizations, and producing interoperable outcomes - not just whether one implementation has users.
-
-For projects moving from Incubation to Graduation, if considerable time has passed since Incubation (according to the TOC's judgement), the TOC should refresh the Adopter interviews. This may be done by reaching out to previous interviewees, by engaging a new group of adopters for interviews, or some combination thereof. If the time period between Incubation and Graduation is fairly recent, the TOC member(s) should exercise their judgement in choosing to pursue additional interviews. That decision should be recorded with justification in the adoption section of the template.
 
 #### Recording Responses
 
