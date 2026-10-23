@@ -6,7 +6,7 @@ If you're interested in contributing a project to CNCF, please see the full proj
 
 ## Contributing to Technical Advisory Groups and Working Groups
 
-There has been a call from CNCF’s Technical Oversight Committee (TOC) for contributions to [CNCF TAGs](https://github.com/cncf/toc/blob/main/tags/cncf-tags.md) and [working groups](https://github.com/cncf/toc#working-groups).
+There has been a call from CNCF’s Technical Oversight Committee (TOC) for contributions to [CNCF TAGs](https://github.com/cncf/toc#technical-advisory-groups) and [working groups](https://github.com/cncf/toc#working-groups).
 
 Possible ways to contribute:
 
