@@ -10,7 +10,7 @@ The objective is to refresh the existing [Cloud Native Security Controls Catalog
 
 The initiative meets weekly on Fridays at 17:30 UTC on the [TAG Security and Compliance calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list).
 
-* [Meeting notes](https://notes.cncf.io/64WPMKmDTOO2WnDI0av_Rw)
+* [Meeting notes](https://notes.cncf.io/archive/64WPMKmDTOO2WnDI0av_Rw)
 * [Slack channel](https://cloud-native.slack.com/archives/C09TLL22PK9)
 
 ## Planned Milestones
