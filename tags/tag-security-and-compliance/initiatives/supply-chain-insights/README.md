@@ -18,7 +18,7 @@ Provide a template for particpants wishing to run a scalable system to automate 
 
 This initiative is being led by Matt Young (@halcyondude), with TAG-SC support from Evan Anderson (@evankanderson).  The initiative meets weekly on Mondays at 1600GMT on the [TAG SC calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-security-and-compliance?view=list).
 
-* [Meeting notes](https://notes.cncf.io/cmBr4VUwS3qSHo3ABM6Tmw)
+* [Meeting notes](https://notes.cncf.io/archive/cmBr4VUwS3qSHo3ABM6Tmw)
 * [GitHub project](https://github.com/orgs/cncf/projects/80/views/4)
 
 ## Milestones
