@@ -46,7 +46,7 @@ _The following recommendations were provided to the project that are non-blockin
 
 - Carrying the vendor-neutrality commitment into `GOVERNANCE.md` ([cozystack/community#97](https://github.com/cozystack/community/issues/97)); tracked under [cozystack/cozystack#4934](https://github.com/cozystack/cozystack/pull/4934).
 - Broadening organizational representation among active maintainers: per [MAINTAINERS.md](https://github.com/cozystack/cozystack/blob/main/MAINTAINERS.md), Ænix holds 6 of 9 active maintainer seats (about 67%), below the 75% threshold that would trigger a mandatory practice period, but still worth active attention and recruitment effort from other organizations.
-- Publishing an API stability and deprecation policy.
+- Publishing an API stability and deprecation policy; tracked under [cozystack/community#112](https://github.com/cozystack/community/issues/112).
 - Documenting the subproject add/remove process; tracked under [cozystack/cozystack#4933](https://github.com/cozystack/cozystack/pull/4933).
 - Minor DCO and CodeQL branch-protection refinements: neither check was a required status check on `main`; now tracked under [cozystack/cozystack#4932](https://github.com/cozystack/cozystack/pull/4932).
 - Kamaji's upstream dependency concentration, noted for awareness based on adopter interviews (not a tracked DD item).
