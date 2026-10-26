@@ -55,7 +55,7 @@ The community is welcome to submit PRs to improve and add additional Guide Posts
   * Those contributions may begin path to maintainership
   * Identifying the types of requirements and activities to become and remain as a maintainer is a good start to begin creating a pipeline or ladder for contributors to consider maintainership and a critical step to begin succession planning
 
-* Engaging a [Technical Advisory Group](/tags/README.md) for feedback on the project relevant to the domain the project primarily functions within (Networking, Storage, App Delivery, etc.)
+* Engaging a [Technical Advisory Group](../README.md#technical-advisory-groups) for feedback on the project relevant to the domain the project primarily functions within (Networking, Storage, App Delivery, etc.)
   * TAGs are community members, other maintainers, and domain experts with an interest and experience in a particular domain area. They are an excellent resource for projects to become regularly acquainted with as they often produce educational material for adopters of projects to inform them of best practices and availability of projects and integrations to meet certain use cases. They can serve as a sounding board for ideas, features, and use cases
   * TAGs also support projects in navigating the moving levels process and often provide the TOC with domain specific context about a given project that supports the technical due diligence performed by the TOC
 
