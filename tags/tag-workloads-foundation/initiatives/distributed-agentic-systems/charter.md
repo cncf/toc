@@ -6,7 +6,7 @@ Adopted at the working session of September 24, 2026; amended October 8, 2026.
 
 ## Mission
 
-Establish cloud native principles and reference patterns for running distributed AI agent systems on Kubernetes, by operationalizing and extending the CNCF Cloud Native Agentic Standards. The initiative provides architectural guidance and identifies where standards are needed. It does not build new agent frameworks or runtimes.
+Establish cloud native principles and reference patterns for running distributed AI agent systems on Kubernetes, by operationalizing and extending the CNCF Cloud Native Agentic Standards. The initiative provides architectural guidance while identifying gaps in the existing cloud native ecosystem and where standards are needed. It does not build new agent frameworks or runtimes.
 
 ## Scope
 
@@ -20,7 +20,7 @@ Five workstreams, aligned one to one with the domains of the Cloud Native Agenti
 4. State, memory and persistence: short-term conversational state, long-term memory, vector storage operators, distributed state replication, garbage collection across dynamic agents.
 5. Governance, observability, security and policy: OpenTelemetry GenAI semantic conventions and spans, metrics, logs and traces, LLM cost, token and latency tracking, policy and compliance as code, verifiable per-call evidence.
 
-Single-cluster deployment is the baseline. Multi-cluster and geographically distributed deployment (cross-cluster discovery, state and routing) is treated as a first-class concern from the start.
+Single-cluster deployment is the baseline each stream writes against. Multi-cluster and geographically distributed deployment (cross-cluster discovery, state and routing) is covered within each stream where it applies, rather than in a separate chapter.
 
 ### Out of scope
 

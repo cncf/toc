@@ -5,7 +5,7 @@ Current release: none yet. Releases are recorded in [CHANGELOG.md](./CHANGELOG.m
 
 ## Description
 
-Enterprise AI is moving from single-model inference to distributed systems of collaborating agents: long-running, probabilistic loops with dynamic tool calls, persistent memory, and streaming transport. Cloud native patterns designed for stateless, deterministic microservices do not cover these workloads.
+Enterprise AI is evolving from chatbots and standalone model inference towards autonomous, collaborating agent systems: dynamic execution lifecycles (from sub-second tool calls to long-running loops), probabilistic control flow, dynamic tool calls, persistent memory, and streaming transport. Cloud native patterns primarily designed for stateless, deterministic microservices do not cover these workloads.
 
 This initiative operationalizes and extends the [CNCF Cloud Native Agentic Standards](https://www.cncf.io/blog/2026/03/23/cloud-native-agentic-standards/) for Kubernetes. The standards define the what; this initiative delivers the how: reference architectures and Kubernetes patterns that platform teams can run. The output is a versioned, living document maintained in this directory through pull requests, with tagged releases recorded in [CHANGELOG.md](./CHANGELOG.md) so each milestone is citable while the work continues.
 
@@ -63,8 +63,8 @@ Chapter 07 is drafted by Aman Singh, who integrates the output of the stream cha
 1. Working sessions 1 and 2 (September 24 and October 8, 2026): direction, terms of reference, workstreams and owners confirmed. Done.
 2. Stream outlines in this directory: October 22, 2026.
 3. First drafts of all streams: November 2026.
-4. Reference architecture first draft and document release v0.1: before KubeCon + CloudNativeCon Europe, March 2027.
-5. v1.0 release after community review, date to be set at the February 2027 session.
+4. Reference architecture and document release v0.1: before KubeCon + CloudNativeCon Europe, March 2027.
+5. The initiative closes with v0.1; CNCF TAG initiatives run for at most two quarters. Whether the work continues as a TAG working group for later releases is decided at the February 2027 session.
 
 ## Related efforts
 

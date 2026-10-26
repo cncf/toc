@@ -8,4 +8,4 @@ This document is released in tagged versions so that each milestone can be cited
 
 ## v0.1.0 (target: before KubeCon + CloudNativeCon Europe, March 2027)
 
-- First draft of all five streams and the reference architecture.
+- First release of all five streams and the reference architecture.
