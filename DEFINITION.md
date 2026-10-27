@@ -1,19 +1,23 @@
-# CNCF Cloud Native Definition v1.1 #
+# CNCF Cloud Native Definition v1.2 #
 
-*Approved by TOC/GB: 2024-02-26*
+*Proposed for TOC/GB review: 2026-10-27. v1.1 approved by TOC/GB: 2024-02-26.*
+
+*Translations below reflect earlier versions of this definition and will be updated after v1.2 is approved.*
 
 [العربية](#العربية) (Arabic) | [հայերեն](#հայերեն) (Armenian) | [中文版本](#中文版本) (Chinese) |  [עברית](#עברית) (Hebrew) | [日本語版](#日本語版) (Japanese) | [한국어](#한국어) (Korean) | [Deutsch](#deutsch) (German) | [Español](#español) (Spanish)  
 [Français](#français) (French) | [Polski](#polski) (Polish) | [Português Brasileiro](#português-brasileiro) (Portuguese-BR) | [Português de Portugal](#português-de-portugal) (Portuguese-PT) | [Русский](#русский) (Russian) | [Bahasa Indonesia](#bahasa-indonesia) (Indonesian) | [Türkçe](#türkçe) (Turkish) | [Български](#български) (Bulgarian) | [ไทย](#ไทย) (Thai) | [Magyar](#magyar) (Hungarian) | [Hindi](#हिन्दी) (Indian) | [Nederlands](#nederlands) (Dutch) | [Bengali](#বাংলা) (Bangladesh) | [正體中文版本](#正體中文版本) (Traditional Chinese) | [فارسی](#فارسی) (Persian) | മലയാളം (Malayalam) | [Қазақ](#қазақ) (Kazakh)
 
 ## Definition
 
-Cloud native practices empower organizations to develop, build, and deploy workloads in computing environments (public, private, hybrid cloud) to meet their organizational needs at scale in a programmatic and repeatable manner. It **is characterized by loosely coupled systems that interoperate in a manner that is secure, resilient, manageable, sustainable, and observable.**
+Cloud native practices empower organizations to develop, build, deploy, and operate workloads in computing environments (public, private, hybrid, and edge, on general-purpose or specialized hardware) to meet their organizational needs at scale in a programmatic and repeatable manner. It **is characterized by loosely coupled systems that interoperate in a manner that is secure, resilient, manageable, sustainable, efficient, and observable.**
 
-Cloud native technologies and architectures typically consist of some combination  of containers, service meshes, multi-tenancy, microservices, immutable infrastructure, serverless, and declarative APIs — this list is non-exhaustive.
+Cloud native technologies and architectures typically consist of some combination of containers, service meshes, multi-tenancy, microservices, immutable infrastructure, serverless, declarative APIs, and dynamic scheduling and allocation of shared resources. This list is non-exhaustive.
+
+These practices apply to everything an organization builds and runs: code, configuration, models, and data.
 
 ## Benefits of Cloud Native
 
-Combined with robust automation, cloud native practices allow organizations to make high-impact changes frequently, predictably, with minimal toil and clear separation of concerns.
+Combined with robust automation, cloud native practices allow organizations to make high-impact changes frequently, predictably, with minimal toil and clear separation of concerns, while making efficient use of scarce and costly resources.
 
 ## Focus of CNCF
 
