@@ -1,0 +1,5 @@
+# Initiative-specific approvers (see .github/CODEOWNERS). Parent OWNERS still apply.
+approvers:
+  - caldeirav
+  - kerthcet
+  - pmady
