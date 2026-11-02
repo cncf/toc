@@ -247,7 +247,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 ### Suggested
 
-- [ ] **Complete a [joint security assessment](https://tag-security.cncf.io/community/assessments/guide/#joint-assessment) with TAG Security and Compliance**
+- [ ] **Complete a [joint security assessment](https://security-assessments.openssf.org/joint-assessment/creating-document/) with TAG Security and Compliance**
 
 <!-- (Project assertion goes here) -->
 
@@ -269,7 +269,7 @@ Note: this section may be augmented by a joint-assessment performed by TAG Secur
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Document [Security Self-Assessment](https://tag-security.cncf.io/community/assessments/guide/self-assessment/).**
+- [ ] **Document [Security Self-Assessment](https://security-assessments.openssf.org/self-assessment/getting-started-self-assessment/).**
 
 <!-- (Project assertion goes here) --> 
 
