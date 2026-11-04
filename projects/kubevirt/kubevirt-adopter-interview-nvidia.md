@@ -16,7 +16,7 @@ The GeForce NOW Platform is a platform for running online games. Workloads for g
 
 ### Compared with other products in this space (proprietary and open), what drew you to the project?
 
-The scope of projects that solve for virtual machine management is somewhat limited. VMware offers a propietary product, but the organization was looking for an open source solution and wanted to leverage Kubernetes. The workloads must be in virtual machines and for that KubeVirt was perfect. 
+The scope of projects that solve for virtual machine management is somewhat limited. VMware offers a proprietary product, but the organization was looking for an open source solution and wanted to leverage Kubernetes. The workloads must be in virtual machines and for that KubeVirt was perfect. 
 
 ## Usage Scenario
 
