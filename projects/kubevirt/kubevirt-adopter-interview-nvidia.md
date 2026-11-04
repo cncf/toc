@@ -102,7 +102,7 @@ Openness of the commnity, the focus on perf and scale, as well as the API surfac
 
 ### Is there something you feel that holds the project back from reaching its ultimate potential?
 
-Reviewe and maintainer bandwidth are a bottleneck. There is also some work around evolving APIs, similar to how Kubernetes does with API conventions. 
+Reviewer and maintainer bandwidth are a bottleneck. There is also some work around evolving APIs, similar to how Kubernetes does with API conventions. 
 
 ### In your opinion, what can the project do better?
 
