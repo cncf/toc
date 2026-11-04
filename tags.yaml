@@ -188,7 +188,7 @@ tags: # Technical Advisory Groups
       - description: TAG Infrastructure Meetings
         tag_calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/tag-infrastructure?view=list
         recordings_url: https://www.youtube.com/@CNCFTAGInfrastructure
-        meeting_notes_url: https://notes.cncf.io/6iwUCAaIQ72QAKr4MTCnUQ
+        meeting_notes_url: https://notes.cncf.io/archive/6iwUCAaIQ72QAKr4MTCnUQ
     contact:
       slack: C08KBH3RA1K
       mailing_list: https://lists.cncf.io/g/cncf-tag-infrastructure
