@@ -39,7 +39,6 @@ By bridging the gap between isolated experimentation and collective intelligence
     - [survey results report (pdf)](assets/survey-results/survey%20results%20report.pdf)
     - [survey results report (html)](assets/survey-results/survey%20results%20report.html)
     - [survey results charts](assets/survey-results/charts)
-- [ ] **Interview Schedule and Notes**:
-- [ ] **Whitepaper**:
+- [X] [**Whitepaper**](WHITEPAPER.md) 
 - [X] **Events sessions**:
     - Applied to *Maintainer Track* at Kubecon NA 2026
