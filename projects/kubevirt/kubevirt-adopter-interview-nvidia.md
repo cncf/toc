@@ -70,7 +70,7 @@ Community is open, there are weekly calls.
 
 #### Governance
 
-There were instances where NVIDIA needed changes and the community supported changes, even though they were not related to other maintaner needs.
+There were instances where NVIDIA needed changes and the community supported changes, even though they were not related to other maintainer needs.
 
 #### Community growth potential
 
