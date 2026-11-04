@@ -2,6 +2,8 @@
 
 Open source projects have a lifecycle and there are times that projects become inactive due to a variety of reasons. There are also cases where a project may no longer want to be supported by the TOC, or the TOC may no longer wish to recommend the use of a project.
 
+This process applies to CNCF projects as a whole. Archiving an individual [sub-project](https://github.com/cncf/toc/blob/main/operations/dd-toc-guide.md#sub-projects) is a decision for the parent project's own governance and documented add/remove process, not a TOC vote under this process.
+
 ## Triggering a Review to Archive 
 
 CNCF TOC may also look at a variety of signals, including but not limited to:
