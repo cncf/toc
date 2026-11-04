@@ -45,7 +45,7 @@ The TOC has found Open Cluster Management to have satisfied the criteria for Inc
 
 ### Required
 
-- [x] **Complete a [General Technical Review (GTR)](../toc_subprojects/project-reviews-subproject/general-technical-questions.md).**
+- [x] **Complete a [General Technical Review (GTR)](../../operations/project-reviews/general-technical-questions.md).**
 
 <!-- (TOC Evaluation goes here) -->
 The project maintainers have published a [self-authored General Technical Review](https://github.com/open-cluster-management-io/community/blob/main/cncf/GTR.md), which is under review by the Project Reviews subproject ([cncf/toc#2173](https://github.com/cncf/toc/issues/2173)). The TOC reviewers suggest completing the review after this due diligence. This follow-up is non-blocking for Incubation.
