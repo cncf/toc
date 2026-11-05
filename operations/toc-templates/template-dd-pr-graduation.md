@@ -46,7 +46,7 @@ _[The TOC has found the project to have satisfied the criteria for $LEVEL/ The T
 
 <!-- (TOC Evaluation goes here) -->
 
-- [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**
+- [ ] **Review and acknowledgement of expectations for [Sandbox](https://github.com/cncf/sandbox/) projects and requirements for moving forward through the CNCF Maturity levels.**
    - [ ] Met during Project's application on DD-MMM-YYYY.
 
 <!-- (TOC Evaluation goes here) -->
