@@ -1,6 +1,6 @@
 # AI-Assisted Development in CNCF Projects: Findings from Maintainers
 
-***Authors:** Graziano Casto, Sonali Srivastava, Hélia Barroso, Alessandro Pomponio*
+**Authors:** Graziano Casto, Sonali Srivastava, Hélia Barroso, Alessandro Pomponio
 
 ## Executive Summary
 
@@ -14,12 +14,12 @@ This whitepaper is purely descriptive. It reports what maintainers do and what t
 
 ### **Key findings at a glance**
 
-* **Low-effort contributions are the top concern.** 77% of respondents (143 of 185\) name the high volume of low-effort issues or pull requests as a concern, closely followed by increased reviewer or maintainer workload at 71% (131).  
-* **Individual use is widespread but project-level use is narrow.** 71% of respondents (132) use an AI assistant inside their editor or command line, while 33% (61) say their project does not integrate AI into shared workflows at all. Where projects do integrate it, code review is by far the most common place.  
-* **Governance lags behind use.** 57% of respondents (106) are not aware of any AI policy that applies to their project, and 56% (103) say their projects do not mention AI use in their documentation or governance.  
-* **Most respondents want disclosure.** 76% of respondents (140) think AI-assisted contributions should be disclosed in pull requests, always (99) or in some cases (41).   
-* **Where AI is proving effective.** Maintainers report AI being particularly helpful for triaging issues, understanding unfamiliar code, and first-pass reviews. Large refactors, debugging, and security testing benefit most from AI when tests and conformance suites can act as guardrails.  
-* **Contributors are still verified manually.** Maintainers assess whether contributors understand and can support their changes through review discussions, probing questions, and other manual checks. None reported having a reliable automated way to distinguish human contributors from automated accounts.  
+* **Low-effort contributions are the top concern.** 77% of respondents (143 of 185\) name the high volume of low-effort issues or pull requests as a concern, closely followed by increased reviewer or maintainer workload at 71% (131).
+* **Individual use is widespread but project-level use is narrow.** 71% of respondents (132) use an AI assistant inside their editor or command line, while 33% (61) say their project does not integrate AI into shared workflows at all. Where projects do integrate it, code review is by far the most common place.
+* **Governance lags behind use.** 57% of respondents (106) are not aware of any AI policy that applies to their project, and 56% (103) say their projects do not mention AI use in their documentation or governance.
+* **Most respondents want disclosure.** 76% of respondents (140) think AI-assisted contributions should be disclosed in pull requests, always (99) or in some cases (41).
+* **Where AI is proving effective.** Maintainers report AI being particularly helpful for triaging issues, understanding unfamiliar code, and first-pass reviews. Large refactors, debugging, and security testing benefit most from AI when tests and conformance suites can act as guardrails.
+* **Contributors are still verified manually.** Maintainers assess whether contributors understand and can support their changes through review discussions, probing questions, and other manual checks. None reported having a reliable automated way to distinguish human contributors from automated accounts.
 * **The contributor ladder is under pressure.** Maintainers agree that attitude and intent to own the code matter more than how contributors generate code, but several report that fewer people want to become maintainers as human interaction in reviews declines.
 
 ## Part I. Context
@@ -50,9 +50,9 @@ Maintainers can use this guide to see which problems other projects have already
 
 A few terms appear throughout the guide, and we use them in a specific way.
 
-* **AI-assisted** work is work where a person directs the tool, reviews the output, and takes ownership of the result.  
-* **AI-generated** work is output submitted with little or no human review.  
-* An **automated account** is a GitHub account that submits issues or pull requests with no person in the loop.  
+* **AI-assisted** work is work where a person directs the tool, reviews the output, and takes ownership of the result.
+* **AI-generated** work is output submitted with little or no human review.
+* An **automated account** is a GitHub account that submits issues or pull requests with no person in the loop.
 * A **low-effort contribution** is one whose review cost is out of proportion to its value, whatever tool produced it. Low-effort contributions existed long before AI, and several maintainers pointed this out.
 
 #### How to read this guide
@@ -71,7 +71,7 @@ The survey was open from March 25 to May 18, 2026, and asked 15 questions about 
 
 Most respondents are experienced contributors. 62% (114) have been contributing to CNCF projects for more than two years, 17% (32) for one to two years, 9% (17) for six months to a year, and 12% (22) for less than six months. Most describe their role as code-centric, and a smaller group works mainly on documentation, release, or community tasks.
 
-![](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-2-1-respondent-tenure.png)
+![Respondent tenure in the CNCF community](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-2-1-respondent-tenure.png)
 *FIGURE 2.1 Respondent tenure.*
 
 The anonymized raw answers, the survey results report, and the original charts are published in the initiative folder of the [`cncf/toc`](https://github.com/cncf/toc/tree/main/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/survey-results) repository.
@@ -92,7 +92,7 @@ Survey respondents and interview participants were recruited mainly through the 
 
 **Clustering by project.** Respondents could name several projects, which gives 226 project mentions in total. 53 projects were named by two or more respondents, and together they account for 73% of all mentions (164 of 226). 27 projects were named by three or more respondents. Kubernetes (19), Argo (8), OpenTelemetry (8), and Jaeger (5) lead the list, but the clustering is spread across many projects. The other 62 projects appear only once. Several answers from the same project can reflect one team's shared context rather than independent views, and projects where the initiative members had contacts are overrepresented.
 
-![](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-2-2-projects-by-mention-count.png)
+![Projects by number of respondent mentions](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-2-2-projects-by-mention-count.png)
 *FIGURE 2.2 Projects by number of respondents.*
 
 **Clustering in the interviews.** Some projects are represented by more than one voice. kcp, for example, appears through two interviewees, and several participants were referred to us by people we had already interviewed. Findings that rest mainly on one project's voices are flagged in the chapters that follow.
@@ -113,17 +113,17 @@ Most people who answered the survey use AI in their own work, usually inside the
 
 We asked the respondents how they use AI in their own work and where their project uses it as a shared tool. The two figures below show the answers side by side.
 
-![](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-3-1-individual-ai-use.png)
-*FIGURE 3.1 How respondents use AI in their own work.* 
+![How respondents use AI in their own work](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-3-1-individual-ai-use.png)
+*FIGURE 3.1 How respondents use AI in their own work.*
 
-![](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-3-2-project-ai-integration.png)
-*FIGURE 3.2 Where projects integrate AI as a shared utility.* 
+![Where projects integrate AI as a shared utility](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-3-2-project-ai-integration.png)
+*FIGURE 3.2 Where projects integrate AI as a shared utility.*
 
 Together, the two figures show a gap. Individual use is widespread, and the in-editor assistant has become the default way people work with AI. Project-level use is much narrower: code review is the only shared integration that a majority of respondents report, and a third say their project has no shared AI integration at all. In most projects, AI is something individual contributors and maintainers bring with them, and the project as a whole has not yet decided what to do about it.
 
 #### Tools, briefly
 
-The tool question was free text. After normalizing the answers into tool families, the most common were Claude (named by 60% of the 171 people who answered the question) and GitHub Copilot (49%), followed at a distance by ChatGPT, Gemini, OpenAI Codex, and Cursor, each named by around one respondent in nine. The more interesting finding is that people rarely stick to one tool: 58% of those who answered (100 of 171\) named two or more tool families. Maintainers in the interviews described the same pattern, choosing tools depending on task, cost, or region. 
+The tool question was free text. After normalizing the answers into tool families, the most common were Claude (named by 60% of the 171 people who answered the question) and GitHub Copilot (49%), followed at a distance by ChatGPT, Gemini, OpenAI Codex, and Cursor, each named by around one respondent in nine. The more interesting finding is that people rarely stick to one tool: 58% of those who answered (100 of 171\) named two or more tool families. Maintainers in the interviews described the same pattern, choosing tools depending on task, cost, or region.
 
 #### A wide spread of practice
 
@@ -147,7 +147,7 @@ These differences matter for everything that follows. A practice that works well
 
 Maintainers who report successful use of AI describe gains that are concrete and, in some cases, substantial. The benefits are most consistent when something outside the model can validate its work, such as a test suite, and when the task is focused on reading and understanding rather than decision-making.
 
-![](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-4-1-most-helpful-areas.png)
+![Areas where AI is most helpful](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-4-1-most-helpful-areas.png)
 *FIGURE 4.1 Areas where AI has been most helpful.*
 
 The survey shows that respondents see value across the core of development work, with CI/CD and community tasks well behind. The interviews add detail on where that value comes from.
@@ -186,7 +186,7 @@ AI-based review tools and triage workflows came up often enough that they have t
 
 The kcp project found a more unconventional use for AI. The team built an isolated local environment that outputs a low-privilege kubeconfig and handed it to a model with instructions to escalate privileges and break tenant isolation. The setup is now part of the repository as a pen-test scenario. A maintainer explained why it worked:
 
-*That was a big win, because LLMs don't stop like a human pen tester. They keep going until they find a way to do what they were tasked to do, given that they have enough tokens.* 
+*That was a big win, because LLMs don't stop like a human pen tester. They keep going until they find a way to do what they were tasked to do, given that they have enough tokens.*
 
 #### A wider pool of contributors
 
@@ -196,18 +196,18 @@ The kcp project found a more unconventional use for AI. The team built an isolat
 
 While the examples above show clear benefits, maintainers were also candid about AI's current limitations.
 
-* **Low-level and specialized code.** At Kairos, models fail on firmware and low-level system tasks. *Mauro Morales* described models that "*come back super confident it's done and it doesn't even compile*."  
-* **Correct doesn't always mean optimal.** *Mauro* also noted that a model will solve a problem without telling you whether the solution is the most efficient one, which matters in a project where every bit of memory and disk space counts.  
-* **Missing edge cases.** A maintainer observed that AI-generated code often looks correct but is wrong in the details, because edge cases the author would normally reason about are simply not considered.  
-* **More code than the problem needs.** Some maintainers described AI that tends to "*over complicate many things, write more code than it really needs and overwriting everything by default, so it requires a lot of baby sitting*." Another maintainer named the same issue, making changes more minimal and maintainable, as his biggest unsolved problem.  
+* **Low-level and specialized code.** At Kairos, models fail on firmware and low-level system tasks. *Mauro Morales* described models that "*come back super confident it's done and it doesn't even compile*."
+* **Correct doesn't always mean optimal.** *Mauro* also noted that a model will solve a problem without telling you whether the solution is the most efficient one, which matters in a project where every bit of memory and disk space counts.
+* **Missing edge cases.** A maintainer observed that AI-generated code often looks correct but is wrong in the details, because edge cases the author would normally reason about are simply not considered.
+* **More code than the problem needs.** Some maintainers described AI that tends to "*over complicate many things, write more code than it really needs and overwriting everything by default, so it requires a lot of baby sitting*." Another maintainer named the same issue, making changes more minimal and maintainable, as his biggest unsolved problem.
 * **Inconsistent judgment.** Mauro Morales and other survey respondents noted that agent harnesses differ in how critical they are: given the same request, one may push back with “that is not the best idea”, while another implements it without comment, and which one does better depends on the task.
 
 ### Chapter 5\. Where the cost lands
 
 The concerns respondents raised most often were about the growing maintenance burden created by an increasing volume of contributions. Much of that burden falls on the maintainers responsible for reviewing, triaging, and responding to them. The interviews show what that burden looks like day to day, and why it is larger than the survey alone suggests.
 
-![](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-5-1-biggest-concerns.png)
-*FIGURE 5.1 Biggest concerns about AI in CNCF projects.* 
+![Biggest concerns about AI in CNCF projects](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-5-1-biggest-concerns.png)
+*FIGURE 5.1 Biggest concerns about AI in CNCF projects.*
 
 #### Volume and its shape
 
@@ -223,11 +223,11 @@ We asked interviewees to estimate what share of recent AI-assisted contributions
 
 Maintainers in different projects described the same signals independently of each other.
 
-* **Descriptions out of proportion to the change.** An OPA project maintainer pointed to very long, overly descriptive pull request descriptions for small and uninteresting changes. Another maintainer described AI-created issues that are "*over verbose to the point that they are unreadable.*"  
-* **Superficial contributions.** *Christoph Mewes* described blind dependency bumps and fixes produced by asking a model to find and fix security issues, many of which were wrong.  
-* **Outdated patterns.** On the OPA project, deprecated imports and heavy use of generic functions in Rego code are a common sign.  
-* **AI-written replies to review comments.** Several maintainers described feedback being pasted into a model and the model's answer being posted back.  
-* **Abandonment.** Contributors disappear after submitting, and pull requests sit with unanswered review comments until they are closed.  
+* **Descriptions out of proportion to the change.** An OPA project maintainer pointed to very long, overly descriptive pull request descriptions for small and uninteresting changes. Another maintainer described AI-created issues that are "*over verbose to the point that they are unreadable.*"
+* **Superficial contributions.** *Christoph Mewes* described blind dependency bumps and fixes produced by asking a model to find and fix security issues, many of which were wrong.
+* **Outdated patterns.** On the OPA project, deprecated imports and heavy use of generic functions in Rego code are a common sign.
+* **AI-written replies to review comments.** Several maintainers described feedback being pasted into a model and the model's answer being posted back.
+* **Abandonment.** Contributors disappear after submitting, and pull requests sit with unanswered review comments until they are closed.
 * **Contributions used for advertising.** A maintainer of OpenFeature saw a pull request that contained advertisements.
 
 #### The regeneration loop
@@ -240,7 +240,7 @@ One pattern turns a single pull request into a heavy cost. A maintainer leaves f
 
 > *It is demoralizing to some degree as a maintainer, because you feel like you get all these people that don't really care, they're not putting effort into it, but you are. \- Joshua Jones*
 
-He added that even feeling demoralizing, as maintainers are getting through it and trying to find ways to cope, since AI contributions are not going to go away. 
+He added that even feeling demoralizing, as maintainers are getting through it and trying to find ways to cope, since AI contributions are not going to go away.
 
 #### Documentation is harder to review than code
 
@@ -268,7 +268,7 @@ Some of the tools that projects built to welcome newcomers are being worn down. 
 
 For small teams, the main damage is to motivation rather than capacity. A maintainer of  k8up put it clearly:
 
-*We only have a handful of volunteer maintainers, who get easily overwhelmed by many issues/PRs and frustrated with even a small number of low-effort ones. So it's been primarily a team motivation issue, not so much an actual denial-of-service.- k8up maintainer*
+> *We only have a handful of volunteer maintainers, who get easily overwhelmed by many issues/PRs and frustrated with even a small number of low-effort ones. So it's been primarily a team motivation issue, not so much an actual denial-of-service.- k8up maintainer*
 
 Maintainers also described the social side of closing pull requests. A maintainer of kcp reported hostile reactions to rejections, although less often than at first. *Bailey Hayes* described the fear of discouraging a genuine newcomer every time the team closes a low-effort pull request.
 
@@ -276,14 +276,14 @@ Maintainers also described the social side of closing pull requests. A maintaine
 
 The survey offered a hint that the problem is bigger than it looks. When we asked how reviewers handle pull requests from new contributors that appear to be AI-generated, the most common answer was that they follow the usual review process.
 
-![](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-5-2-reviewer-handling.png)
-*FIGURE 5.2 How reviewers handle AI-generated pull requests from new contributors.* 
+![How reviewers handle AI-generated pull requests from new contributors](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-5-2-reviewer-handling.png)
+*FIGURE 5.2 How reviewers handle AI-generated pull requests from new contributors.*
 
 The interviews suggest that "the usual process" now hides a large added cost. Several interviewees told us their review standards had not changed, and in the same conversation described extra rounds of review, profile checks, and time spent working out whether a real person was behind a change. The process is the same on paper, but it takes much more time and effort than it used to.
 
 ## Part III. Practices reported by maintainers
 
-Each chapter in this part covers one area of maintainer work and follows the same structure: the situation maintainers describe, the practices they have adopted, the trade-offs they report, and the points where they disagree. Everything is presented as maintainers described it, as examples of what projects do and not as recommendations. 
+Each chapter in this part covers one area of maintainer work and follows the same structure: the situation maintainers describe, the practices they have adopted, the trade-offs they report, and the points where they disagree. Everything is presented as maintainers described it, as examples of what projects do and not as recommendations.
 
 ### Chapter 6\. Contributing with AI in your own maintainer work
 
@@ -303,7 +303,7 @@ Many CNCF maintainers now write a large share of their own code with AI, and sev
 
 **Using more than one reviewer.** *Eric* also uses several AI tools rather than one, including a different assistant in CI, because each catches things the others miss. He compared it to having another layer of developers look at the code. A maintainer of OpenFeature described a similar habit, using an agent to act as a rubber duck while they work:
 
-*Now I am writing this form while I have an agent doing some rubber-ducking for a bug fix for potential edge cases that I might have forgotten during the implementation.* 
+*Now I am writing this form while I have an agent doing some rubber-ducking for a bug fix for potential edge cases that I might have forgotten during the implementation.*
 
 **Letting tests carry the judgment.** As described in *Chapter 4*, maintainers of the OPA project, and Kairos lean on conformance suites and large test matrices so that the model's output is checked by something other than the model. Maintainers without that kind of tooling reported more trouble. *Joshua Jones* of OpenFGA told us that his team, which works on a security-sensitive project, still writes much of its code by hand, because larger AI-generated changes tended to go off track even under a disciplined, spec-driven workflow.
 
@@ -317,7 +317,7 @@ Many CNCF maintainers now write a large share of their own code with AI, and sev
 
 **Less learning.** A maintainer of kcp uses AI to trace errors through logs, and pointed out what that costs:
 
-*By doing this tracing myself in the past, I got to know the code base better, and that's the problem that I see with using AI for this, because you are maybe getting to a goal faster, but you're missing out on everything in between that you're learning about the code base.* 
+*By doing this tracing myself in the past, I got to know the code base better, and that's the problem that I see with using AI for this, because you are maybe getting to a goal faster, but you're missing out on everything in between that you're learning about the code base.*
 
 **Prompt bloat.** *Mauro Morales* described prompts that grow to thousands of tokens because models do not internalize a project's best practices unless they are spelled out every time. This makes AI use less efficient and harder to keep consistent.
 
@@ -351,7 +351,7 @@ The rollout took time:
 
 **Community operations.** wasmCloud now publishes AI transcriptions and summaries of its community meetings, with links to the existing documentation. *Bailey Hayes* reported that this has improved how well the documentation site is indexed and how much it is used.
 
-**Keeping documentation in step with code, deliberately by hand.** Fluent keeps code and documentation in separate repositories, and *Eric Schabell* asks that pull requests link code changes to the matching documentation updates. About once a week he pulls the recent commits into his fork and asks an AI assistant to identify documentation gaps. 
+**Keeping documentation in step with code, deliberately by hand.** Fluent keeps code and documentation in separate repositories, and *Eric Schabell* asks that pull requests link code changes to the matching documentation updates. About once a week he pulls the recent commits into his fork and asks an AI assistant to identify documentation gaps.
 
 This could be automated fully, but he chooses not to, because each situation is slightly different and the weekly checkpoint keeps him aware of what is changing in the project. He also resists vendor tools that promise fully automated documentation, because he wants to catch errors himself. Through this careful documentation work he has twice found features in the code that were only partially implemented.
 
@@ -419,7 +419,7 @@ A Cilium maintainer described a similar approach, pointing new contributors to t
 
 **AI to review AI.** A maintainer of kai-scheduler uses AI assistants to summarize long AI-generated issues and pull requests and to find the questionable parts, while still reading all the code himself:
 
-> *In the end I have to always read through all the code because it will uncover things, but AI helps me do that faster and get a better understanding of the change.* 
+> *In the end I have to always read through all the code because it will uncover things, but AI helps me do that faster and get a better understanding of the change.*
 
 #### Closing with care
 
@@ -477,7 +477,7 @@ A maintainer of HAMi agreed that AI significantly lowers the barrier to understa
 
 **AI as neutral.** Another maintainer sees AI as helpful to both sides and neutral for the path itself:
 
-*The road is always through human connection that comes from talking to people and communicating with them. AI just helps getting started with code changes.* 
+*The road is always through human connection that comes from talking to people and communicating with them. AI just helps getting started with code changes.*
 
 **AI as harmful.** A Cilium maintainer took the strongest position we heard, writing that AI "*encourages patterns of contribution which misunderstand open source and destroy community,*" and that they would veto maintainer nominations for contributors who rely heavily on generative AI.
 
@@ -511,7 +511,7 @@ This was one of the clearest splits in the interviews. *Pablo Baeyens* thinks AI
 
 *Pablo Baeyens* made a related point about OpenTelemetry: the growing moderation work makes established roles less attractive to the kind of person the project used to attract.
 
-**Forking instead of waiting.** *Mangirdas Judeikis* of kcp raised a structural risk. When a contribution waits weeks for review, AI now makes it easy to fork the project, add the feature, and run the fork independently. He described doing exactly that himself with different open source project:
+**Forking instead of waiting.** *Mangirdas Judeikis* of kcp raised a structural risk. When a contribution waits weeks for review, AI now makes it easy to fork the project, add the feature, and run the fork independently. He described doing exactly that himself with different a open source project:
 
 *Honestly, after 3 weeks of open pr with no feedback, I lost interest. I forked it, I added my feature, I ran it off my branch. \- Mangirdas Judeikis*
 
@@ -551,7 +551,7 @@ The same maintainer noted that AI tools can easily be given access to arbitrary 
 
 #### Legal and intellectual property
 
-Legal risk depends heavily on a project's history. OpenTofu is the clearest example: because it forked a codebase whose license later changed, it cannot rule out the possibility that AI models may reproduce code added to the original project after the fork. To reduce the risk of unintentionally incorporating code covered by the newer license, the project restricts AI use accordingly. 
+Legal risk depends heavily on a project's history. OpenTofu is the clearest example: because it forked a codebase whose license later changed, it cannot rule out the possibility that AI models may reproduce code added to the original project after the fork. To reduce the risk of unintentionally incorporating code covered by the newer license, the project restricts AI use accordingly.
 
 Others framed the issue in terms of governance and risk. One maintainer pointed out that organizations building products on CNCF projects have compliance obligations, and unvetted AI-generated contributions that introduce vulnerabilities can affect the entire ecosystem. *Pablo Baeyens* argued that intellectual property implications are one reason the CNCF should provide foundation-level guidance on AI contributions. A survey respondent described a project considering an entirely different approach: accepting issues from the community while limiting AI tool use to maintainers, allowing the project to retain attribution and the legal protections that come with its own tool agreements.
 
@@ -577,8 +577,8 @@ He uses these moments to remind contributors that the due diligence is theirs.
 
 Most respondents do not know of an AI policy that applies to their project, and most say their projects do not mention AI in their documentation. Among the projects that do have rules, the approaches vary a lot, and they tend to follow the pressures each project faces.
 
-![](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-11-1-policy-landscape.png)
-*FIGURE 11.1 Policy awareness, project disclosure, and stated stance.* 
+![Policy awareness, project disclosure, and stated stance](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-11-1-policy-landscape.png)
+*FIGURE 11.1 Policy awareness, project disclosure, and stated stance.*
 
 Where a stance exists, it is usually permissive. Only 4 respondents describe AI as prohibited in their project, and 10 describe it as limited to specific tools.
 
@@ -591,7 +591,7 @@ The projects we spoke with fall into five broad approaches. The table links each
 | No formal policy | Existing review and DCO apply | Fluent; wasmCloud (informal maintainer agreement) | None published |
 | Human accountability | AI allowed; a human is the sole author, understands the change, and can defend it | Trickster, kcp | [Trickster CONTRIBUTING, AI section](https://github.com/trickstercache/trickster/blob/b3e628249433bd86ae052f391caac507eeb3e3d7/CONTRIBUTING.md?plain=1#L19), [Trickster PR template](https://github.com/trickstercache/trickster/blob/b3e628249433bd86ae052f391caac507eeb3e3d7/.github/pull_request_template.md); [kcp contributing guide, AI section](https://github.com/kcp-dev/kcp/blob/ec4b44cf31a1c4bcb6d8a50726f798f0f4956214/docs/content/contributing/index.md?plain=1#L25) |
 | Disclosure plus human voice | AI-assisted code allowed; PR text and discussion human-written; tools disclosed | OpenTelemetry | [OpenTelemetry GenAI policy](https://github.com/open-telemetry/community/blob/fb57b3c9f16bff2bde9174030b2fe2a607c2768c/policies/genai.md), [Collector AGENTS.md](https://github.com/open-telemetry/opentelemetry-collector/blob/78b98e74fdfd6cf55ee7ce7e1ebd842e8389bb51/AGENTS.md), [opentelemetry.io PR template](https://github.com/open-telemetry/opentelemetry.io/blob/09bba5d336b5b8d93e4e94530cbe51cdb83bd7d7/.github/PULL_REQUEST_TEMPLATE.md) |
-| Agent instructions as policy | Rules encoded in AGENTS.md or agent hooks | OPA, Kairos  | [OPA AI Guidelines](https://github.com/open-policy-agent/opa/blob/a31eb820e4500721c68a730e1feb1f76faefcf07/docs/docs/contrib-code.md?plain=1#L193), [OPA AGENTS.md](https://github.com/open-policy-agent/opa/blob/a31eb820e4500721c68a730e1feb1f76faefcf07/AGENTS.md); [Kairos AGENTS.md](https://github.com/kairos-io/kairos/blob/89f89c94bf65afe0353ac1cda7c3bd9f95afa338/AGENTS.md?plain=1#L28);  |
+| Agent instructions as policy | Rules encoded in AGENTS.md or agent hooks | OPA, Kairos | [OPA AI Guidelines](https://github.com/open-policy-agent/opa/blob/a31eb820e4500721c68a730e1feb1f76faefcf07/docs/docs/contrib-code.md?plain=1#L193), [OPA AGENTS.md](https://github.com/open-policy-agent/opa/blob/a31eb820e4500721c68a730e1feb1f76faefcf07/AGENTS.md); [Kairos AGENTS.md](https://github.com/kairos-io/kairos/blob/89f89c94bf65afe0353ac1cda7c3bd9f95afa338/AGENTS.md?plain=1#L28) |
 | Scoped restriction | AI limited by repository and role for legal reasons | OpenTofu | [OpenTofu note on copyright](https://github.com/opentofu/opentofu/blob/57a763514d1df275a443cbdd695f75b701b73a30/contributing/DEVELOPING.md#a-note-on-copyright), [OpenTofu repository classification](https://github.com/opentofu/org/blob/f2f358d18747f407b62b2b0a1498bace76cc58b8/REPOS.md) |
 
 Links pin the repository state as of September 30, 2026\.
@@ -606,8 +606,8 @@ The approaches overlap. OPA has both an `AGENTS.md` file and a written set of AI
 
 The survey shows strong support for disclosure.
 
-![](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-11-2-disclosure-support.png)
-*FIGURE 11.2 Should AI-assisted contributions require disclosure in pull requests?* 
+![Support for requiring disclosure of AI-assisted contributions](/tags/tag-developer-experience/initiatives/state-of-ai-assisted-development/assets/whitepaper-assets/figure-11-2-disclosure-support.png)
+*FIGURE 11.2 Should AI-assisted contributions require disclosure in pull requests?*
 
 The interviews add nuance to that number. Several maintainers support disclosure but object to how it is often implemented. *Bailey Hayes* is against AI attribution in commit trailers:
 
@@ -669,7 +669,7 @@ Some of the most interesting points in the interviews were about things neither 
 
 **How ready is a repository for agents?** Another maintainer suggested a question we did not ask, and answered it for his own project: "*How I would rate the project in terms of AI agent friendliness \- 4/10.*" A maintainer named the same issue as his biggest unsolved problem:
 
-*For me, the biggest unsolved problem is how to transform a pre-AI-era project into an AI-era project. The project I'm currently maintaining has clear shortcomings when it comes to adapting to AI tools.* 
+*For me, the biggest unsolved problem is how to transform a pre-AI-era project into an AI-era project. The project I'm currently maintaining has clear shortcomings when it comes to adapting to AI tools.*
 
 What makes a project easy or hard for agents to work in, and whether that is something projects should invest in, is an open question.
 
