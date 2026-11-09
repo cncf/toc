@@ -66,11 +66,13 @@ kcp provides a set of plugins for `kubectl`, the Kubernetes command line client.
 
 ##### kcp Components
 
-* **kcp**: The `kcp` binary provides the means to run a kcp shard (see above). It can either be launched completely standalone and then embeds a "mini" front-proxy, virtual-workspaces and a cache-server to run a fully functional kcp instance, or be run just to serve API endpoints and run controller loops.
+All components listed here are trusted, provider-operated parts of the control plane. They authenticate to each other exclusively via mutual TLS with client certificates issued from provider-controlled CAs (see [Component Trust and Authentication](#component-trust-and-authentication)). The trust boundary of kcp lies between tenants and the API endpoints exposed by the front-proxy and shards.
 
-* **cache-server**: The cache server provides a shared Kubernetes-like API layer that all shards connect to and cache objects relevant to other shards (e.g. `APIExports`) so that shards do not need to directly interact with each other.
+* **kcp**: The `kcp` binary runs a kcp shard (see above), serving the Kubernetes-like API endpoints and running the controller loops.
 
-* **kcp-front-proxy**: An intelligent API gateway that sits in front of all shards. It is aware of all logical clusters and the shards they reside on, and it routes incoming user requests to the correct shard.
+* **cache-server**: The cache server provides a shared Kubernetes-like API layer that all shards connect to and cache objects relevant to other shards (e.g. `APIExports`) so that shards do not need to directly interact with each other. It is only meant to be used by shards, never by tenants or operators, and only accepts x509 client certificates carrying a dedicated group.
+
+* **kcp-front-proxy**: An intelligent API gateway that sits in front of all shards. It is aware of all logical clusters and the shards they reside on, and it routes incoming user requests to the correct shard. The front-proxy terminates TLS and authenticates end users itself using the standard Kubernetes authentication strategies (client certificates, token file, service accounts, OIDC). It then forwards the authenticated identity to the shard via request headers over a mutual TLS connection.
 
 #### API Management
 
@@ -130,6 +132,14 @@ The central security feature of kcp is the logical isolation provided by Workspa
 #### Authentication and Authorization
 
 kcp uses the standard Kubernetes API server authentication and authorization mechanisms. It extends Kubernetes RBAC to operate within the context of Workspaces, allowing for fine-grained control over who can do what within each isolated environment.
+
+#### Component Trust and Authentication
+
+All server-side components of kcp (front-proxy, shards, virtual workspaces, cache-server and etcd) are fully trusted and operated by the service provider. Tenants never interact with the cache-server or etcd and only reach shards through authenticated API endpoints. Communication between components is secured as follows:
+
+* **Front-proxy to shards:** The front-proxy authenticates end users and forwards their identity to the shard in `X-Remote-User`, `X-Remote-Group` and `X-Remote-Extra-*` headers, using the Kubernetes request-header authentication mechanism (same as Kubernetes API aggregation layer). Shards only honor these headers when the request is made over mutual TLS with a client certificate that chains to the configured request-header CA. To prevent privilege escalation through the proxy, the front-proxy drops privileged groups (e.g `system:masters`) from forwarded identities by default.
+* **Shards to peer components:** Each shard is provisioned with a client certificate and kubeconfigs that it uses to authenticate against the cache-server, the front-proxy and peer shards. These credentials carry administrative privileges and must be protected accordingly by the deployer.
+* **Cache-server:** Only accepts x509 client certificates with the `system:masters` group and supports no other authentication or authorization method, since it is designed to be used by shards exclusively.
 
 #### Virtual Workspace Isolation
 
