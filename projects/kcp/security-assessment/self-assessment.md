@@ -109,6 +109,7 @@ kcp provides resources dedicated to managing available APIs in a Workspace.
 * kcp does not manage the data plane or physical infrastructure of downstream clusters (e.g., nodes, CNI, storage). It is purely a control plane.
 * kcp is not a cluster provisioning tool; it doesn't define what kind of APIs are offered (which could include a cluster provisioning API, but that is not part of the core kcp efforts).
 * kcp's logical clusters cannot be used as dedicated control planes for Kubernetes clusters.
+* kcp provides logical isolation between tenants at the API and storage layer. It does not protect against hardware-level side-channel attacks (e.g. cache timing or speculative execution) or resource interference between processes sharing the same physical host. Tenants do not execute code on kcp itself. Fair sharing of API server capacity between tenants on a shard relies on standard Kubernetes mechanisms such as API Priority and Fairness.
 
 ## Self-assessment Use
 
