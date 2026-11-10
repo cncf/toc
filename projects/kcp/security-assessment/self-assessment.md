@@ -54,7 +54,7 @@ The kcp architecture is composed of several key primitives that work together to
 
 * **Workspaces**: The primary user-facing unit of tenancy and isolation. From a user's perspective, a Workspace is a fully-isolated, Kubernetes-like cluster with its own unique API endpoint, CustomResourceDefinitions (CRDs), and RBAC policies. Workspaces are organized in a nested tree structure and uniquely identified via their path. A workspace is accessed using a kubeconfig pointing its url path to the unique workspace path and supplying standard Kubernetes authentication and authorization payload. All Kubernetes Authentication and Authorization mechanisms can be configured individually on a per workspace basis.
 
-* **Logical Clusters**: The underlying implementation construct for a Workspace. A logical cluster is a logical partition within the kcp data store (etcd), ensuring that objects from different workspaces are stored in disjoint key prefixes, which is the primary mechanism for enforcing isolation. The goal is to make creating a logical cluster as cheap and fast as creating a Kubernetes namespace.
+* **Logical Clusters**: The underlying implementation construct for a Workspace. A logical cluster is a logical partition within the kcp data store (etcd), ensuring that objects from different workspaces are stored in disjoint key prefixes. This segregates tenant data at rest; requests crossing workspace boundaries are refused by the per-request authorizer chain described in [Workspace Isolation](#workspace-isolation). The goal is to make creating a logical cluster as cheap and fast as creating a Kubernetes namespace.
 
 * **Virtual Workspaces**: Endpoints that provide a Kubernetes-like API interface, but are not backed by a logical cluster for storage. They provide a computed "view" of certain resources across logical clusters. The exact semantics depend on the virtual workspace implementation, different virtual workspace endpoints provide different views according to their role. Access to virtual workspace endpoint is guarded by RBAC.
 
@@ -82,7 +82,7 @@ kcp provides resources dedicated to managing available APIs in a Workspace.
 
 * **APIBinding**: Allows a service consumer in one workspace to bind to an APIExport from another workspace, making the published API available in the local workspace.
 
- The ability to bind APIs across workspaces (a security boundary) is guarded by RBAC checks.
+ Binding APIs across workspaces (a security boundary) is enforced at admission time on the consumer's shard: creating an APIBinding triggers a SubjectAccessReview requiring the requesting user to hold the `bind` verb on the referenced APIExport in the provider's workspace.
 
 ### Actions
 
@@ -92,7 +92,7 @@ kcp provides resources dedicated to managing available APIs in a Workspace.
 
 * **API Request Routing**: The front-proxy routes all standard client traffic to the appropriate shard based on the workspace path in the request URL.
 
-* **Administrative Wildcard Requests**: A privileged "wildcard" endpoint allows global administrators to list resources across all logical clusters on a specific shard, bypassing standard workspace isolation for operational purposes.
+* **Administrative Wildcard Requests**: A privileged "wildcard" endpoint allows global administrators to list resources across all logical clusters on a specific shard, bypassing standard workspace isolation for operational purposes (see [Administrative Wildcard Requests](#administrative-wildcard-requests) under Security Functions for its guard).
 
 ### Goals
 
@@ -105,6 +105,10 @@ kcp provides resources dedicated to managing available APIs in a Workspace.
 * **Strict Workspace Isolation:** Ensure that tenants in one Workspace cannot see, access, or affect resources in another Workspace unless explicitly authorized. This is the core security boundary of the system.
 * **Scoped Permissions:** The permissions granted to a component on both the kcp server and the physical cluster must be limited to the minimum required for its function (Principle of Least Privilege).
 * **Standard Kubernetes Auth:** Leverage and extend Kubernetes authentication and authorization (RBAC) mechanisms for access control to the kcp server and within Workspaces.
+
+#### Attacker Model
+
+The security goals above are evaluated against two assumed adversaries: an authenticated tenant trying to read, modify, or escalate into workspaces they were not granted access to and a malicious API provider whose APIExport has been bound by consumers, trying to access consumer resources beyond what those consumers accepted. The provider-operated control plane components (front-proxy, shards, cache-server, etcd, and virtual workspace implementations) are trusted and inside the trust boundary; their compromise, and compromise of the infrastructure they run on, is out of scope (see [Component Trust and Authentication](#component-trust-and-authentication)).
 
 ### Non-goals
 
@@ -127,7 +131,7 @@ In general, kcp is a project; therefore, we do not list all the features here, o
 
 #### Workspace Isolation
 
-The central security feature of kcp is the logical isolation provided by Workspaces. All API requests are scoped to a Workspace, and the system's authentication and authorization layers ensures that a user's credentials are only valid for the Workspaces they have been granted access to. This prevents cross-tenant data leakage and interference.
+The central security feature of kcp is the logical isolation provided by Workspaces. The target workspace is derived from the request's URL path and is treated as untrusted input: the front-proxy only resolves the path and routes to the owning shard, it makes no authorization decision. Enforcement happens on the shard, where every request passes a fixed [authorizer chain](https://docs.kcp.io/kcp/latest/concepts/authorization/authorizers/). Within that chain, the workspace content authorizer refuses any request whose user has not been granted the `access` verb via RBAC inside the target workspace - a user with valid credentials who changes the path to a workspace they have no access to is denied by the shard. Identities originating from other workspaces are additionally downgraded to `system:anonymous` plus a `system:cluster:<logical-cluster-id>` group, so RBAC bindings in one workspace never match foreign users by name. The disjoint etcd key prefixes of logical clusters segregate tenant data at rest, but the authorizer chain is what refuses a request.
 
 #### Authentication and Authorization
 
@@ -138,12 +142,12 @@ kcp uses the standard Kubernetes API server authentication and authorization mec
 All server-side components of kcp (front-proxy, shards, virtual workspaces, cache-server and etcd) are fully trusted and operated by the service provider. Tenants never interact with the cache-server or etcd and only reach shards through authenticated API endpoints. Communication between components is secured as follows:
 
 * **Front-proxy to shards:** The front-proxy authenticates end users and forwards their identity to the shard in `X-Remote-User`, `X-Remote-Group` and `X-Remote-Extra-*` headers, using the Kubernetes request-header authentication mechanism (same as Kubernetes API aggregation layer). Shards only honor these headers when the request is made over mutual TLS with a client certificate that chains to the configured request-header CA. To prevent privilege escalation through the proxy, the front-proxy drops privileged groups (e.g `system:masters`) from forwarded identities by default.
-* **Shards to peer components:** Each shard is provisioned with a client certificate and kubeconfigs that it uses to authenticate against the cache-server, the front-proxy and peer shards. These credentials carry administrative privileges and must be protected accordingly by the deployer.
+* **Shards to peer components:** Each shard is provisioned with a client certificate and kubeconfigs that it uses to authenticate against the cache-server, the front-proxy and peer shards. These credentials carry administrative privileges and must be protected accordingly by the deployer. Shards are inside the trust boundary by design.
 * **Cache-server:** Only accepts x509 client certificates with the `system:masters` group and supports no other authentication or authorization method, since it is designed to be used by shards exclusively.
 
 #### Virtual Workspace Isolation
 
-Given the broad permissions that virtual workspace components need to create various computed views across all available resources on a kcp shard, they often have to run with administrative permissions. It is therefore critical that virtual workspace implementations properly isolate requests from each other and use proper impersonation and/or enhanced authN/authZ checks for validating requests.
+Given the broad permissions that virtual workspace components need to create various computed views across all available resources on a kcp shard, they often have to run with administrative permissions. Isolation is enforced per implementation rather than centrally: every virtual workspace implementation must register its own authorizer with the shared virtual workspace framework. Requests it does not positively admit are refused. The security requirements for virtual workspace implementations - both those shipped with kcp and those built by platform operators - are documented in a dedicated [developer checklist](https://docs.kcp.io/kcp/latest/developers/virtual-workspaces/).
 
 ### Security Relevant
 
@@ -153,15 +157,23 @@ kcp allows administrators to control which APIs are available within a Workspace
 
 #### APIExport Identity
 
-To prevent data leakage when multiple tenants consume APIs with the same name (e.g., widgets.example.com) from different providers, each APIExport is associated with a unique cryptographic identity. A hash of this identity is used as part of the etcd storage path for all resources created via that export, ensuring complete data segregation.
+To prevent data leakage when multiple tenants consume APIs with the same name (e.g., widgets.example.com) from different providers, each APIExport is associated with a unique cryptographic identity. A hash of this identity is used as part of the etcd storage path for all resources created via that export, segregating data at rest. The identity is also part of the request path: wildcard requests must name the identity hash in the URL (`<resource>:<identityHash>`), and permission claims on another provider's API must reference its identity hash explicitly, so requests are always resolved against one specific provider's resources and can never return another provider's objects.
 
 #### Permission Claims
 
-The APIExport/APIBinding model includes an explicit consent mechanism called PermissionClaims. An API provider must declare any access it needs to resources (like ConfigMaps or Secrets) in a consumer's workspace. The consumer must then explicitly review and accept these claims in their APIBinding for the access to be granted.
+The APIExport/APIBinding model includes an explicit consent mechanism called PermissionClaims. An API provider must declare any access it needs to resources (like ConfigMaps or Secrets) in a consumer's workspace. The consumer must then explicitly review and accept these claims in their APIBinding for the access to be granted. Claims are enforced at request time by the APIExport virtual workspace's bound-API authorizer (see [Virtual Workspace Isolation](#virtual-workspace-isolation)), which refuses provider access to any resource not defined by the export or not covered by an accepted claim. The allowed operations are the intersection of the verbs declared in the claim and the verbs accepted in the APIBinding, and consumers can further restrict a provider's access to a subset of objects via selectors.
 
 #### Maximal Permission Policy
 
-An APIExport can define a maximalPermissionPolicy using standard RBAC rules. This policy acts as an upper bound on the permissions that any user from a consuming workspace can have on the exported API's resources, allowing the provider to enforce security constraints.
+An APIExport can define a maximalPermissionPolicy using standard RBAC rules. This policy acts as an upper bound on the permissions that any user from a consuming workspace can have on the exported API's resources, allowing the provider to enforce security constraints. The policy is evaluated on every request to a bound resource by the maximal permission policy authorizer, part of the fixed "gate" group of each shard's authorizer chain: it checks the request against the RBAC of the provider's workspace, with the user name and groups prefixed by `apis.kcp.io:binding:` to avoid collisions with the provider's local RBAC. Because gate authorizers always run after any granting authorizer, neither RBAC in the consuming workspace nor an authorization webhook can exceed the policy.
+
+#### Impersonation
+
+kcp inherits Kubernetes [user impersonation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#user-impersonation); Like Kubernetes, it requires the `impersonate` verb, evaluated against the workspace's RBAC. Because some global groups carry installation-wide power, every shard additionally runs an impersonation gatekeeper filter that assigns privilege levels to special groups (e.g. `system:masters`, `system:kcp:logical-cluster-admin`, `system:kcp:admin`) and refuses any request impersonating a group more privileged than those the requester already holds - regardless of RBAC grants inside a workspace.
+
+#### Administrative Wildcard Requests
+
+The wildcard endpoint (`/clusters/*`) lists resources across all logical clusters of a shard and thereby intentionally bypasses workspace isolation. It is only served when talking to a shard directly and requires membership in the `system:masters` group. The front-proxy does not route wildcard requests and strips privileged groups from forwarded identities, so the endpoint is unreachable for tenants. Its use can be recorded via standard Kubernetes audit logging on the shard.
 
 ## Project Compliance
 
@@ -195,7 +207,7 @@ kcp includes automated checks as part of its continuous integration (CI) process
 
 #### Integration Tests
 
-kcp's upstream continuous integration (CI) tests will automatically run integration tests against proposed changes. Users are not required to run these tests locally, but they may.
+kcp's upstream continuous integration (CI) tests will automatically run integration tests against proposed changes. Users are not required to run these tests locally, but they may. The end-to-end suite includes dedicated authorizer tests exercising requests that must be refused (negative cases). Security fixes land together with regression tests pinned to the fixed behavior; Published advisories are covered in their respective tests (e.g. [impersonation](https://github.com/kcp-dev/kcp/blob/main/test/e2e/authorizer/impersonate_test.go), [APIExport virtual workspace](https://github.com/kcp-dev/kcp/blob/main/test/e2e/virtual/apiexport/authorizer_test.go)).
 
 ### Communication Channels
 
@@ -267,8 +279,8 @@ There is a template for incident response for reference [here](https://github.co
 
 ### Known Issues over Time
 
-* [GHSA-c7xh-gjv4-4jgv](https://github.com/kcp-dev/kcp/security/advisories/GHSA-c7xh-gjv4-4jgv):  Impersonation allows access to global administrative groups
-* [GHSA-w2rr-38wv-8rrp](https://github.com/kcp-dev/kcp/security/advisories/GHSA-w2rr-38wv-8rrp):  Unauthorized creation and deletion of objects in arbitrary workspaces through APIExport Virtual Workspace
+* [GHSA-c7xh-gjv4-4jgv](https://github.com/kcp-dev/kcp/security/advisories/GHSA-c7xh-gjv4-4jgv): Impersonation allows access to global administrative groups. Fixed in kcp 0.26.1 by the impersonation gatekeeper described in [Impersonation](#impersonation), with an e2e regression test pinned to the fix.
+* [GHSA-w2rr-38wv-8rrp](https://github.com/kcp-dev/kcp/security/advisories/GHSA-w2rr-38wv-8rrp): Unauthorized creation and deletion of objects in arbitrary workspaces through APIExport Virtual Workspace. Fixed in kcp 0.26.3/0.27.0 by the bound-API authorizer described in [Virtual Workspace Isolation](#virtual-workspace-isolation), with an e2e regression test pinned to the fix.
 
 ### OpenSSF Best Practices
 
