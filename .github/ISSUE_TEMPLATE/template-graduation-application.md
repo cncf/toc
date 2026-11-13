@@ -66,7 +66,7 @@ _The project has been adopted by the following organizations in a testing and in
 
 <!-- (Project assertion goes here) --> 
 
-- [ ] **Review and acknowledgement of expectations for [Sandbox](sandbox.cncf.io) projects and requirements for moving forward through the CNCF Maturity levels.**		
+- [ ] **Review and acknowledgement of expectations for [Sandbox](https://github.com/cncf/sandbox/) projects and requirements for moving forward through the CNCF Maturity levels.**		
    - [ ] Met during Project's application on DD-MMM-YYYY.
 
 <!-- (Project assertion goes here) --> 

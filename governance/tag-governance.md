@@ -25,11 +25,11 @@ different purposes or have different scopes:
 
 - [CNCF Technical Group Governance](#cncf-technical-group-governance)
 - [Keywords](#keywords)
-- [Technical Advisory Group (TAG)](#technical-advisory-groups-\(tags\))
+- [Technical Advisory Group (TAG)](#technical-advisory-groups-tags)
   - [Goals](#goals)
   - [Formation](#formation)
   - [Requirements](#requirements)
-  - [Roles, Terms, and Elections](#roles,-terms,-and-elections)
+  - [Roles, Terms, and Elections](#roles-terms-and-elections)
     - [Chair](#chair)
       - [Requirements](#requirements-1)
       - [Duties](#duties)
@@ -45,7 +45,7 @@ different purposes or have different scopes:
   - [Goals](#goals-1)
   - [Formation](#formation-1)
   - [Requirements](#requirements-3)
-  - [Roles, Terms, and Elections](#roles,-terms,-and-elections-1)
+  - [Roles, Terms, and Elections](#roles-terms-and-elections-1)
     - [Subproject Leads](#subproject-leads)
       - [Requirements](#requirements-4)
       - [Duties](#duties-2)
@@ -589,6 +589,8 @@ discussion-oriented groups.
 Additionally, it is likely that future TAGs and subprojects will likely start as
 community groups. 
 
+### Rules & Guidelines
+
 A community group applying to become a TAG or subproject:
 
 - MUST have completed numerous initiatives and cover a gap in the currently
@@ -625,7 +627,7 @@ meetings, promoting the group, and coordinating the creation of initiatives.
 - SHOULD remain active and responsive in their role.
 
 
-[Community Group Organizer Requirements]: https://github.com/cncf/communitygroups/blob/main/organizer_roles.md
+[Community Group Organizer Requirements]: https://github.com/cncf/communitygroups/blob/main/organizers.md
 
 
 #### Duties
