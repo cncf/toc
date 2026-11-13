@@ -41,6 +41,8 @@ The initiative is coordinated by Pavan Madduri (@pmady), with Kante Yin (@kerthc
 
 Decisions are made by lazy consensus. Owners volunteer for streams; work that has not moved by the following session can be reassigned. Contributions go in through pull requests to this directory and are reviewed by the approvers listed in [OWNERS](./OWNERS). Content is vendor neutral; the rules are in the terms of reference in [charter.md](./charter.md).
 
+Stream owners and contributors can start with the [stream planning guide](./stream-plans/README.md), which provides a 45–60 minute onboarding exercise, a common template, and starter plans for all five streams. Plans develop through biweekly walkthroughs into lightweight delivery records; technical guidance stays in the chapter files. The guide also proposes a shared reference scenario and rotating deeper walkthroughs for community review.
+
 ## Document structure
 
 | File | Content |
@@ -54,6 +56,7 @@ Decisions are made by lazy consensus. Owners volunteer for streams; work that ha
 | [07_Reference_Architecture.md](./07_Reference_Architecture.md) | End-to-end architecture and pattern catalogue |
 | [08_Gap_Analysis_and_Recommendations.md](./08_Gap_Analysis_and_Recommendations.md) | Gaps, standards proposals, upstream routing |
 | [use-cases/](./use-cases/) | Worked examples from running systems; template in [use-cases/TEMPLATE.md](./use-cases/TEMPLATE.md) |
+| [stream-plans/](./stream-plans/) | Team onboarding, stream plans, milestones, and walkthrough guidance |
 | [CHANGELOG.md](./CHANGELOG.md) | Versioned releases of the document |
 
 Chapter 07 is drafted by Aman Singh, who integrates the output of the stream chapters (confirmed at the October 22, 2026 session).
