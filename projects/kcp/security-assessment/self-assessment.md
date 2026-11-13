@@ -1,0 +1,287 @@
+# kcp Security Self-Assessment
+
+This document is intended to aid the project's maintainers, contributors, and users understand the project's security status and help identify points of improvement.
+
+## Table of Contents
+
+* [Metadata](#metadata)
+  * [Security links](#security-links)
+* [Overview](#overview)
+  * [Background](#background)
+  * [Actors](#actors)
+  * [Actions](#actions)
+  * [Goals](#goals)
+  * [Non-goals](#non-goals)
+* [Self-assessment use](#self-assessment-use)
+* [Security functions and features](#security-functions-and-features)
+* [Project compliance](#project-compliance)
+* [Secure development practices](#secure-development-practices)
+* [Security issue resolution](#security-issue-resolution)
+  * [Incident Response](#incident-response)
+* [Appendix](#appendix)
+
+## Metadata
+
+|                   |                                                  |
+|-------------------|--------------------------------------------------|
+| Assessment Stage  | Complete                                         |
+| Software          | [kcp](https://kcp.io)                            |
+| Security Provider | No                                               |
+| Languages         | Go                                               |
+| SBOM              | kcp does not currently generate SBOMs on release |
+| Security links    | See below                                        |
+
+### Security links
+
+| Doc                       | url                                                          |
+|---------------------------|--------------------------------------------------------------|
+| Reporting security issues | [here](https://github.com/kcp-dev/kcp/security)              |
+| Security process          | [here](https://github.com/kcp-dev/kcp/blob/main/SECURITY.md) |
+
+## Overview
+
+kcp is an open-source, Kubernetes-like control plane designed for multi-cluster and multi-tenant environments. It provides a control plane that is not tied to a specific set of hardware, allowing users and services to manage APIs across a group of "logical clusters". kcp is specifically NOT a control plane for managing container workloads but higher level abstractions, which in turn might be run on separate Kubernetes clusters.
+
+### Background
+
+The kcp project began as an experiment to add the concept of "logical clusters" to the Kubernetes API server, effectively decoupling the powerful control plane from its traditional role in container orchestration. The project is built upon upstream Kubernetes code but is not a fork, with a strong commitment to maintaining 100% compatibility with the Kubernetes API machinery and ecosystem tooling. This allows kcp to provide a generic, horizontally scalable control plane for use cases beyond containers.
+
+### Actors
+
+The kcp architecture is composed of several key primitives that work together to provide a scalable, multi-tenant control plane.
+
+#### kcp Server Components
+
+* **Workspaces**: The primary user-facing unit of tenancy and isolation. From a user's perspective, a Workspace is a fully-isolated, Kubernetes-like cluster with its own unique API endpoint, CustomResourceDefinitions (CRDs), and RBAC policies. Workspaces are organized in a nested tree structure and uniquely identified via their path. A workspace is accessed using a kubeconfig pointing its url path to the unique workspace path and supplying standard Kubernetes authentication and authorization payload. All Kubernetes Authentication and Authorization mechanisms can be configured individually on a per workspace basis.
+
+* **Logical Clusters**: The underlying implementation construct for a Workspace. A logical cluster is a logical partition within the kcp data store (etcd), ensuring that objects from different workspaces are stored in disjoint key prefixes. This segregates tenant data at rest; requests crossing workspace boundaries are refused by the per-request authorizer chain described in [Workspace Isolation](#workspace-isolation). The goal is to make creating a logical cluster as cheap and fast as creating a Kubernetes namespace.
+
+* **Virtual Workspaces**: Endpoints that provide a Kubernetes-like API interface, but are not backed by a logical cluster for storage. They provide a computed "view" of certain resources across logical clusters. The exact semantics depend on the virtual workspace implementation, different virtual workspace endpoints provide different views according to their role. Access to virtual workspace endpoint is guarded by RBAC.
+
+* **Shards**: A running instance of the kcp server process. Each shard hosts a set of logical clusters, and a full kcp installation can be composed of many shards to achieve horizontal scalability. Shards are started with bootstrap credentials to self-register and authenticate at a coordinating rootshard. Traffic between shards is kept at a minimum with only scheduling of logicalclusters requiring shard to shard communication. To authenticate these requests, each shard is provided with a client certificate during startup. In the case of malfunctioning shards, the functionality of functioning shards is not affected.
+
+#### kcp kubectl Plugin (CLI)
+
+kcp provides a set of plugins for `kubectl`, the Kubernetes command line client. These plugins interact with kcp through its Kubernetes-like APIs and offer command line tooling for interacting with the unique features of kcp (see above for some of them). All of the interactions are executed via Kubernetes client libraries and use the client credentials passed to `kubectl` (e.g. via the `KUBECONFIG` environment variable).
+
+##### kcp Components
+
+All components listed here are trusted, provider-operated parts of the control plane. They authenticate to each other exclusively via mutual TLS with client certificates issued from provider-controlled CAs (see [Component Trust and Authentication](#component-trust-and-authentication)). The trust boundary of kcp lies between tenants and the API endpoints exposed by the front-proxy and shards.
+
+* **kcp**: The `kcp` binary runs a kcp shard (see above), serving the Kubernetes-like API endpoints and running the controller loops.
+
+* **cache-server**: The cache server provides a shared Kubernetes-like API layer that all shards connect to and cache objects relevant to other shards (e.g. `APIExports`) so that shards do not need to directly interact with each other. It is only meant to be used by shards, never by tenants or operators, and only accepts x509 client certificates carrying a dedicated group.
+
+* **kcp-front-proxy**: An intelligent API gateway that sits in front of all shards. It is aware of all logical clusters and the shards they reside on, and it routes incoming user requests to the correct shard. The front-proxy terminates TLS and authenticates end users itself using the standard Kubernetes authentication strategies (client certificates, token file, service accounts, OIDC). It then forwards the authenticated identity to the shard via request headers over a mutual TLS connection.
+
+#### API Management
+
+kcp provides resources dedicated to managing available APIs in a Workspace.
+
+* **APIExport**: Allows a service provider in one workspace to publish an API for consumption by other workspaces. Multiple providers can publish an API with the same Group, Version, and Kind (GVR) identifiers. Internally a hash is used to uniquely identify and store each export. On the consumer side, only one of these APIs can be bound in order to keep compatibility with the Kubernetes ressource model. Binding a second API with the same GVR will be rejected.
+
+* **APIBinding**: Allows a service consumer in one workspace to bind to an APIExport from another workspace, making the published API available in the local workspace.
+
+ Binding APIs across workspaces (a security boundary) is enforced at admission time on the consumer's shard: creating an APIBinding triggers a SubjectAccessReview requiring the requesting user to hold the `bind` verb on the referenced APIExport in the provider's workspace.
+
+### Actions
+
+* **Workspace Management**: Users can create, list, and navigate between workspaces, each providing an isolated API endpoint.
+
+* **API Sharing**: Service providers can securely offer APIs across workspace boundaries using a declarative APIExport and APIBinding model.
+
+* **API Request Routing**: The front-proxy routes all standard client traffic to the appropriate shard based on the workspace path in the request URL.
+
+* **Administrative Wildcard Requests**: A privileged "wildcard" endpoint allows global administrators to list resources across all logical clusters on a specific shard, bypassing standard workspace isolation for operational purposes (see [Administrative Wildcard Requests](#administrative-wildcard-requests) under Security Functions for its guard).
+
+### Goals
+
+* Provide a scalable, multi-tenant control plane that can serve hundreds or thousands of isolated tenants.
+* Enable service providers to offer Kubernetes-like APIs that can be consumed by consumers across multiple isolated tenants.
+* Maintain a high degree of compatibility with the standard Kubernetes API and toolchain (e.g., kubectl, client-go, multicluster-runtime).
+
+#### Security Goals
+
+* **Strict Workspace Isolation:** Ensure that tenants in one Workspace cannot see, access, or affect resources in another Workspace unless explicitly authorized. This is the core security boundary of the system.
+* **Scoped Permissions:** The permissions granted to a component on both the kcp server and the physical cluster must be limited to the minimum required for its function (Principle of Least Privilege).
+* **Standard Kubernetes Auth:** Leverage and extend Kubernetes authentication and authorization (RBAC) mechanisms for access control to the kcp server and within Workspaces.
+
+#### Attacker Model
+
+The security goals above are evaluated against two assumed adversaries: an authenticated tenant trying to read, modify, or escalate into workspaces they were not granted access to and a malicious API provider whose APIExport has been bound by consumers, trying to access consumer resources beyond what those consumers accepted. The provider-operated control plane components (front-proxy, shards, cache-server, etcd, and virtual workspace implementations) are trusted and inside the trust boundary; their compromise, and compromise of the infrastructure they run on, is out of scope (see [Component Trust and Authentication](#component-trust-and-authentication)).
+
+### Non-goals
+
+* kcp does not manage the data plane or physical infrastructure of downstream clusters (e.g., nodes, CNI, storage). It is purely a control plane.
+* kcp is not a cluster provisioning tool; it doesn't define what kind of APIs are offered (which could include a cluster provisioning API, but that is not part of the core kcp efforts).
+* kcp's logical clusters cannot be used as dedicated control planes for Kubernetes clusters.
+* kcp provides logical isolation between tenants at the API and storage layer. It does not protect against hardware-level side-channel attacks (e.g. cache timing or speculative execution) or resource interference between processes sharing the same physical host. Tenants do not execute code on kcp itself. Fair sharing of API server capacity between tenants on a shard relies on standard Kubernetes mechanisms such as API Priority and Fairness.
+
+## Self-assessment Use
+
+This self-assessment is not intended to provide a security audit of kcp or function as an independent assessment or attestation of kcp's security health.
+
+This document provides kcp users with an initial understanding of kcp's security, where to find existing security documentation, kcp's plans for security, and a general overview of kcp's security practices, both for the development of kcp and its operational security.
+
+## Security Functions and Features
+
+In general, kcp is a project; therefore, we do not list all the features here, only the "non-functional" security features.
+
+### Critical
+
+#### Workspace Isolation
+
+The central security feature of kcp is the logical isolation provided by Workspaces. The target workspace is derived from the request's URL path and is treated as untrusted input: the front-proxy only resolves the path and routes to the owning shard, it makes no authorization decision. Enforcement happens on the shard, where every request passes a fixed [authorizer chain](https://docs.kcp.io/kcp/latest/concepts/authorization/authorizers/). Within that chain, the workspace content authorizer refuses any request whose user has not been granted the `access` verb via RBAC inside the target workspace - a user with valid credentials who changes the path to a workspace they have no access to is denied by the shard. Identities originating from other workspaces are additionally downgraded to `system:anonymous` plus a `system:cluster:<logical-cluster-id>` group, so RBAC bindings in one workspace never match foreign users by name. The disjoint etcd key prefixes of logical clusters segregate tenant data at rest, but the authorizer chain is what refuses a request.
+
+#### Authentication and Authorization
+
+kcp uses the standard Kubernetes API server authentication and authorization mechanisms. It extends Kubernetes RBAC to operate within the context of Workspaces, allowing for fine-grained control over who can do what within each isolated environment.
+
+#### Component Trust and Authentication
+
+All server-side components of kcp (front-proxy, shards, virtual workspaces, cache-server and etcd) are fully trusted and operated by the service provider. Tenants never interact with the cache-server or etcd and only reach shards through authenticated API endpoints. Communication between components is secured as follows:
+
+* **Front-proxy to shards:** The front-proxy authenticates end users and forwards their identity to the shard in `X-Remote-User`, `X-Remote-Group` and `X-Remote-Extra-*` headers, using the Kubernetes request-header authentication mechanism (same as Kubernetes API aggregation layer). Shards only honor these headers when the request is made over mutual TLS with a client certificate that chains to the configured request-header CA. To prevent privilege escalation through the proxy, the front-proxy drops privileged groups (e.g `system:masters`) from forwarded identities by default.
+* **Shards to peer components:** Each shard is provisioned with a client certificate and kubeconfigs that it uses to authenticate against the cache-server, the front-proxy and peer shards. These credentials carry administrative privileges and must be protected accordingly by the deployer. Shards are inside the trust boundary by design.
+* **Cache-server:** Only accepts x509 client certificates with the `system:masters` group and supports no other authentication or authorization method, since it is designed to be used by shards exclusively.
+
+#### Virtual Workspace Isolation
+
+Given the broad permissions that virtual workspace components need to create various computed views across all available resources on a kcp shard, they often have to run with administrative permissions. Isolation is enforced per implementation rather than centrally: every virtual workspace implementation must register its own authorizer with the shared virtual workspace framework. Requests it does not positively admit are refused. The security requirements for virtual workspace implementations - both those shipped with kcp and those built by platform operators - are documented in a dedicated [developer checklist](https://docs.kcp.io/kcp/latest/developers/virtual-workspaces/).
+
+### Security Relevant
+
+#### API Scoping (APIExport/APIBinding)
+
+kcp allows administrators to control which APIs are available within a Workspace. An APIExport object makes an API available for consumption, and an APIBinding object makes it accessible within a specific Workspace. This mechanism can be used to limit the attack surface available to tenants.
+
+#### APIExport Identity
+
+To prevent data leakage when multiple tenants consume APIs with the same name (e.g., widgets.example.com) from different providers, each APIExport is associated with a unique cryptographic identity. A hash of this identity is used as part of the etcd storage path for all resources created via that export, segregating data at rest. The identity is also part of the request path: wildcard requests must name the identity hash in the URL (`<resource>:<identityHash>`), and permission claims on another provider's API must reference its identity hash explicitly, so requests are always resolved against one specific provider's resources and can never return another provider's objects.
+
+#### Permission Claims
+
+The APIExport/APIBinding model includes an explicit consent mechanism called PermissionClaims. An API provider must declare any access it needs to resources (like ConfigMaps or Secrets) in a consumer's workspace. The consumer must then explicitly review and accept these claims in their APIBinding for the access to be granted. Claims are enforced at request time by the APIExport virtual workspace's bound-API authorizer (see [Virtual Workspace Isolation](#virtual-workspace-isolation)), which refuses provider access to any resource not defined by the export or not covered by an accepted claim. The allowed operations are the intersection of the verbs declared in the claim and the verbs accepted in the APIBinding, and consumers can further restrict a provider's access to a subset of objects via selectors.
+
+#### Maximal Permission Policy
+
+An APIExport can define a maximalPermissionPolicy using standard RBAC rules. This policy acts as an upper bound on the permissions that any user from a consuming workspace can have on the exported API's resources, allowing the provider to enforce security constraints. The policy is evaluated on every request to a bound resource by the maximal permission policy authorizer, part of the fixed "gate" group of each shard's authorizer chain: it checks the request against the RBAC of the provider's workspace, with the user name and groups prefixed by `apis.kcp.io:binding:` to avoid collisions with the provider's local RBAC. Because gate authorizers always run after any granting authorizer, neither RBAC in the consuming workspace nor an authorization webhook can exceed the policy.
+
+#### Impersonation
+
+kcp inherits Kubernetes [user impersonation](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#user-impersonation); Like Kubernetes, it requires the `impersonate` verb, evaluated against the workspace's RBAC. Because some global groups carry installation-wide power, every shard additionally runs an impersonation gatekeeper filter that assigns privilege levels to special groups (e.g. `system:masters`, `system:kcp:logical-cluster-admin`, `system:kcp:admin`) and refuses any request impersonating a group more privileged than those the requester already holds - regardless of RBAC grants inside a workspace.
+
+#### Administrative Wildcard Requests
+
+The wildcard endpoint (`/clusters/*`) lists resources across all logical clusters of a shard and thereby intentionally bypasses workspace isolation. It is only served when talking to a shard directly and requires membership in the `system:masters` group. The front-proxy does not route wildcard requests and strips privileged groups from forwarded identities, so the endpoint is unreachable for tenants. Its use can be recorded via standard Kubernetes audit logging on the shard.
+
+## Project Compliance
+
+The project has no written record of complying with a well known security standard like FIPS.
+
+## Secure Development Practices
+
+### Development Pipeline
+
+kcp's development pipeline uses [prow](https://docs.prow.k8s.io/docs/overview/) and thus ensures the software is tested for being robust, reliable, and secure. It involves several stages of reviews by project maintainers and automated testing flows.
+
+#### Contributor Requirements
+
+Contributors to kcp are required to [sign their commits](https://docs.kcp.io/kcp/latest/contributing/getting-started/#developer-certificate-of-origin-dco), adhering to the Developer Certificate of Origin (DCO). Contributors use the Signed-off-by line in commit messages to signal their adherence to these requirements.
+
+Contributors can start by forking the repository on GitHub, reading the installation document for build and test instructions, and playing with the project.
+
+#### Container Images
+
+The container images used in kcp are built by [automatic pipelines](https://github.com/kcp-dev/infra/blob/main/prow/jobs/kcp-dev/kcp/kcp-postsubmits.yaml) and not individual contributors.
+
+#### Reviewers
+
+A project maintainer or code reviewer (called approver) reviews a commit before it is merged. This practice helps catch potential security issues early in the development process.
+
+Maintainers or reviewers cannot merge their own code without a second review.
+
+#### Automated Checks
+
+kcp includes automated checks as part of its continuous integration (CI) process. The project has checks for dangerous workflow patterns and scans for known vulnerabilities in its dependencies.
+
+#### Integration Tests
+
+kcp's upstream continuous integration (CI) tests will automatically run integration tests against proposed changes. Users are not required to run these tests locally, but they may. The end-to-end suite includes dedicated authorizer tests exercising requests that must be refused (negative cases). Security fixes land together with regression tests pinned to the fixed behavior; Published advisories are covered in their respective tests (e.g. [impersonation](https://github.com/kcp-dev/kcp/blob/main/test/e2e/authorizer/impersonate_test.go), [APIExport virtual workspace](https://github.com/kcp-dev/kcp/blob/main/test/e2e/virtual/apiexport/authorizer_test.go)).
+
+### Communication Channels
+
+  kcp Communication Channels
+
+#### Internal Communication
+
+* Slack: The kcp-dev Slack channel in the [Kubernetes slack](https://communityinviter.com/apps/kubernetes/community)
+ or [issues](https://github.com/kcp-dev/kcp/issues)
+* Security topics: [kcp-dev-private](https://groups.google.com/g/kcp-dev-private) Google Group
+
+#### Inbound Communication
+
+Users or prospective users communicate with the kcp team through Slack or GitHub issues and pull requests. GitHub is a platform that hosts the kcp project's codebase and provides features for tracking changes, managing versions, and collaborating on code. Users can submit pull requests to report issues, propose changes, or contribute to the project.
+
+* GitHub: [issues](https://github.com/kcp-dev/kcp/issues)
+* Slack: [#kcp-users](https://app.slack.com/client/T09NY5SBT/C021U8WSAFK)
+
+#### Outbound Communication
+
+* Mailing list: [kcp-users](https://groups.google.com/g/kcp-users)
+* Website and blog: [kcp.io](https://kcp.io/)
+
+##### Community Meetings
+
+kcp [community meetings](https://docs.google.com/document/d/1PrEhbmq1WfxFv1fTikDBZzXEIJkUWVHdqDFxaY1Ply4/) are held on Google Meet every other week on Thursday at 17:00 CET. Meeting events can also be found on [community.cncf.io](https://community.cncf.io/kcp/).
+
+Community members are encouraged to join and add to the discussion via the community meeting notes document (linked above).
+
+## Security Issue Resolution
+
+For a complete list of closed security issues, please refer to [this link](https://github.com/kcp-dev/kcp/security/advisories).
+
+### Responsible Disclosures Process
+
+In case of suspected security issues, incidents, or vulnerabilities, both external and internal to the project, kcp has a responsible disclosure process in place. The process is designed to handle security vulnerabilities quickly and sometimes privately. The primary goal of this process is to reduce the time users are vulnerable to publicly known exploits.
+
+#### Vulnerability Response Process
+
+Maintainers provide a [Security Response Team](https://github.com/kcp-dev/kcp/blob/main/MAINTAINERS.md#security-response-team) that organizes the entire response, including internal communication and external disclosure.
+
+#### Reporting Security Vulnerabilities
+
+Security vulnerability reports are handled via GitHub's security issue reporting feature, available [here](https://github.com/kcp-dev/kcp/security). The Security Response Team triage and respond to security issues reported privately through the tool.
+
+Please see the complete [security release process](https://github.com/kcp-dev/kcp/blob/main/SECURITY.md) for further details.
+
+#### Private Disclosure Processes
+
+If a security vulnerability or any security-related issues are found, they should not be filed as a public or a GitHub issue. Instead, the report should be reported via the security issue reporting feature.
+
+#### Public Disclosure Processes
+
+If a publicly disclosed security vulnerability is known, it should be reported immediately via the security issue reporting feature to inform the Security Response Team. This will initiate the patch, release, and communication process.
+
+### Patch, Release, and Public Communication
+
+For each vulnerability, a member of the Security Response Team will send disclosure messages to the rest of the community. The leading team member is chosen based on availability at the time of a security report.
+
+### Patching/Update Availability
+
+Once the vulnerability has been confirmed and the relevant parties have been notified, the next step is to make a patch or update available. This involves releasing a new version of the software that addresses the vulnerability. The patch or update is then made available to all users, who can update their systems to the latest version to protect against the vulnerability. Communication is sent out via email, Slack and the GitHub security issue disclosure feature.
+
+### Incident Response
+
+There is a template for incident response for reference [here](https://github.com/cncf/tag-security/blob/main/community/resources/project-resources/templates/incident-response.md)
+
+## Appendix
+
+### Known Issues over Time
+
+* [GHSA-c7xh-gjv4-4jgv](https://github.com/kcp-dev/kcp/security/advisories/GHSA-c7xh-gjv4-4jgv): Impersonation allows access to global administrative groups. Fixed in kcp 0.26.1 by the impersonation gatekeeper described in [Impersonation](#impersonation), with an e2e regression test pinned to the fix.
+* [GHSA-w2rr-38wv-8rrp](https://github.com/kcp-dev/kcp/security/advisories/GHSA-w2rr-38wv-8rrp): Unauthorized creation and deletion of objects in arbitrary workspaces through APIExport Virtual Workspace. Fixed in kcp 0.26.3/0.27.0 by the bound-API authorizer described in [Virtual Workspace Isolation](#virtual-workspace-isolation), with an e2e regression test pinned to the fix.
+
+### OpenSSF Best Practices
+
+The kcp project is continuously improving its practices based on the OpenSSF recommendations, see [Scorecard Results](https://securityscorecards.dev/viewer/?uri=github.com/kcp-dev/kcp) and [Best Practices Badge](https://www.bestpractices.dev/en/projects/8119).
