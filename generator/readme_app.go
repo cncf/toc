@@ -56,7 +56,7 @@ type Person struct {
 type Leadership struct {
 	Chairs          []Person `yaml:"chairs"`
 	TechLeads       []Person `yaml:"tech_leads"`
-	SubprojectLeads []Person `yaml:"Subpproject Leads"`
+	SubprojectLeads []Person `yaml:"subproject_leads,omitempty"`
 }
 
 // Meeting struct to hold meeting data.
