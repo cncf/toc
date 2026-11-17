@@ -35,9 +35,12 @@ Data locality offers significant performance gains and cost savings, particularl
 
 A notable solution for addressing data locality issues is Fluid², a CNCF project. Fluid offers significant performance gains and cost savings, particularly for machine learning workloads. It enables connecting to remote storage and supports local and/or distributed caching using Kubernetes-native approaches, significantly simplifying data locality management and accelerating AI workloads. Many of these benefits are enabled by Fluid runtimes, such as Alluxio, an open-source data orchestration and distributed caching system.
 
+Another Kubernetes-native solution in this space is the Kubeflow Data Cache³, a feature of Kubeflow, a CNCF project. Built for distributed AI/ML training, it provides a scalable, distributed in-memory cache between remote object storage and the compute tier. A dataset is partitioned and loaded once across a cluster of cache nodes, then streamed to training workers over the Apache Arrow Flight protocol for efficient columnar transfer to GPU nodes. It integrates with Kubeflow Trainer through the TrainJob API so distributed training workloads can consume the cache directly. Upcoming work adds OptimizationJob API support to share a single cached dataset across the parallel trials of a hyperparameter optimization experiment. By reusing cached data across epochs and across concurrent jobs, it eliminates redundant downloads and preprocessing, keeping data adjacent to compute and improving GPU utilization.
+
 ---
 
 ## References
 
 1. https://www.alluxio.io/blog/data-caching-strategies-for-data-analytics-and-ai-dataai-summit-2023-session-recap/
 2. https://fluid-cloudnative.github.io/
+3. https://trainer.kubeflow.org/en/latest/user-guides/data-cache.html
