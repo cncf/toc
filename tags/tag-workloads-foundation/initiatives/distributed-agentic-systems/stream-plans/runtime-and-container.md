@@ -3,11 +3,11 @@
 Technical chapter: [Chapter 04](../04_Runtime_and_Container_Abstraction.md)
 Stream owner: Srikanth Rao, as recorded in the [initiative README](../README.md#workstreams)
 Team: to identify; no additional contributors confirmed here
-Status: forming
-Last updated: 2026-11-05
+Status: drafting
+Last updated: 2026-11-17
 Next walkthrough: to agree
 
-**Starter draft for team review.** Questions and outputs below are suggestions based on the chapter outline, not agreed assignments or conclusions. Use the [planning guide](./README.md) and [full template](./TEMPLATE.md) to develop this plan in 45–60 minutes.
+**First draft for team review.** Questions and outputs below are suggestions based on the [chapter outline](../04_Runtime_and_Container_Abstraction.md), not agreed assignments or conclusions. Use the [planning guide](./README.md) and [full template](./TEMPLATE.md) to develop this plan in 45–60 minutes.
 
 ## 1. Purpose and intended outcome
 
@@ -46,7 +46,9 @@ Proposed minimum useful outcome for v0.1: deployment and isolation decision guid
 | Source / project | Relevant section or capability | Why it matters / question informed | Version / date and evidence limitations |
 |---|---|---|---|
 | [Cloud Native Agentic Standards](https://www.cncf.io/blog/2026/03/23/cloud-native-agentic-standards/) | General container practices; security runtime isolation | Baseline to reference rather than repeat | Published March 23, 2026; agent-specific lifecycle extensions need evidence |
-| [Chapter 04 outline](../04_Runtime_and_Container_Abstraction.md) | Workload, sandbox, scaling, and scheduling candidates | Starting inventory including Agent Sandbox, kagent, HPA, Kueue, and DRA | Select primary sources and versions; inclusion is not endorsement or validation |
+| [Agent Sandbox](https://agent-sandbox.sigs.k8s.io/) | Sandbox CRD for stateful, singleton workloads; SandboxTemplate, SandboxClaim, SandboxWarmPool; isolation via RuntimeClass | Reference point for the workload-modeling question in the [chapter outline](../04_Runtime_and_Container_Abstraction.md#modeling-agents-as-kubernetes-workloads) | Kubernetes SIG Apps project; v1beta1 API, documentation current as of November 2026; an implementation of a pattern, not a recommendation |
+| [kagent](https://kagent.dev/docs/kagent/latest/) | Declarative AgentTemplate, Harness, and Agent model; running Sessions; 1.0 executes on Agent Substrate with suspend/resume | Reference point for the framework-CRD model, with the 0.x Deployment-based model as contrast | LF project; 1.0.x release documentation; the API changed significantly across versions, so pin versions during investigation |
+| [Chapter 04 outline](../04_Runtime_and_Container_Abstraction.md) | Workload, sandbox, scaling, and scheduling candidates | First-draft outline including Agent Sandbox, kagent, HPA, Kueue, and DRA | Select primary sources and versions; inclusion is not endorsement or validation |
 
 ## 5. Milestones and substantive work
 
@@ -61,15 +63,15 @@ Create issues for substantive work once scoped; keep detailed tasks in those iss
 
 ## 6. Current biweekly walkthrough — to schedule
 
-- Changes or findings: none recorded in this starter.
-- Suggested material: replace a specialist agent Pod during the [shared reference scenario](./README.md#proposed-shared-reference-scenario); identify lifecycle, identity, and state transitions.
+- Changes or findings: none recorded yet.
+- Suggested material: model the coordinator and specialist agents from the [shared reference scenario](./README.md#proposed-shared-reference-scenario) as workloads (core objects versus a sandbox CRD such as Agent Sandbox, or a framework CRD such as kagent); replace the specialist Pod and identify lifecycle, identity, and state transitions.
 - Feedback needed: what can restart automatically, and what requires task-level recovery logic?
 - Blocker / help needed: confirm contributor and state/governance review coverage.
 - Next output, contributor, and checkpoint: agree at kickoff; link meeting notes, issues, and PRs here.
 
 ## 7. Findings and integration — develop progressively
 
-No findings established here. Use the [template's findings table and handoff prompts](./TEMPLATE.md#7-findings-and-integration--develop-progressively). Link workload boundaries, lifecycle flows, and isolation decisions to [chapter 07](../07_Reference_Architecture.md). Document evidenced limitations before proposing APIs or other upstream work in [chapter 08](../08_Gap_Analysis_and_Recommendations.md).
+No findings established here. The [chapter outline](../04_Runtime_and_Container_Abstraction.md) lists Agent Sandbox and kagent as starting reference points for the workload-modeling comparison; no comparison or recommendation is made until the team investigates. Use the [template's findings table and handoff prompts](./TEMPLATE.md#7-findings-and-integration--develop-progressively). Link workload boundaries, lifecycle flows, and isolation decisions to [chapter 07](../07_Reference_Architecture.md). Document evidenced limitations before proposing APIs or other upstream work in [chapter 08](../08_Gap_Analysis_and_Recommendations.md).
 
 ## 8. Review and readiness — use later
 
