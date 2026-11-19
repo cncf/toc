@@ -4,23 +4,25 @@ Technical chapter: [Chapter 02](../02_Protocol_and_Communication_Interoperabilit
 Stream owner: Moeez Khan (@MuhammadMoeezKhan), Independent; volunteered in `#initiative-distributed-agentic-systems` on November 5, 2026, lazy consensus to November 9
 Team: Moeez Khan (@MuhammadMoeezKhan), owner, confirmed; Aman Singh (@amansinghoriginal), contributor, confirmed; three contributor seats open (see section 2)
 Status: scoping
-Last updated: 2026-11-18
+Last updated: 2026-11-19
 Next walkthrough: November 19, 2026 session
 
 ## 1. Purpose and intended outcome
 
-Platform teams increasingly run agents and tools that speak MCP and A2A inside Kubernetes, and some also carry payment authorization (AP2) or call models through a common interface (Open Responses). Kubernetes already tells a caller where an endpoint is. It does not tell the caller what that endpoint can do, whether its contract is still the one the caller validated against, or what happened when a call failed partway. This chapter helps platform engineers, gateway and runtime implementers, and protocol maintainers decide:
+On Kubernetes, agents call tools over MCP and other agents over A2A, and some of those calls carry payment authorization as AP2 mandates. Agents may also reach models through a provider-neutral interface such as Open Responses. Kubernetes already tells a caller where an endpoint is. It does not tell the caller what that endpoint can do, how the two sides authenticate and authorize each other, whether its contract is still the one the caller validated against, or what happened when a call failed partway. This chapter helps platform engineers, gateway and runtime implementers, and protocol maintainers decide:
 
+- which protocol fits which interaction (using a tool, delegating a task to another agent, carrying payment authorization, calling a model), and when one flow combines them;
 - where agent and tool capabilities are registered and discovered in a cluster, and how they stay current;
 - where payload schemas and protocol versions are validated (caller, gateway, or server), and at what cost;
-- which guarantees each protocol actually provides, and which the platform must add, especially for failures and outcomes that are uncertain after a lost response.
+- which guarantees each protocol actually provides, and which the platform must add, especially for failures and outcomes that are uncertain after a lost response;
+- what each protocol specifies for authentication and authorization, and what the platform must add (enforcement is led by chapter 06).
 
-What differs from distributed systems generally: capabilities are described for a model and discovered at runtime; contracts change while clients are connected; interactions can be long-running tasks with interrupted states; capability metadata is mostly self-declared by the server; and a lost response to a side-effecting call leaves an outcome the caller cannot infer.
+What differs from distributed systems generally: capabilities are described for a model and discovered at runtime (a model reads a tool's description and input schema to decide whether to call it); contracts change while clients are connected (a tool server changes a tool's input schema after a client cached the tool list, or an agent updates its Agent Card while callers still use a cached copy); interactions can be long-running tasks with interrupted states (an A2A task waiting for input or authorization); capability metadata is mostly self-declared by the server; and a lost response to a side-effecting call leaves an outcome the caller cannot infer (the tool placed the order, but the reply never arrived).
 
 Minimum useful outcome for v0.1, within about 1.5 pages:
 
-1. A responsibility comparison of MCP, A2A and AP2, plus a note on Open Responses, with pinned versions: what each specifies for discovery, contract and schema, version negotiation, authentication, long-running work, and failure representation, and where each contract stops.
-2. Discovery and validation patterns for a single cluster, with their failure behavior, walked through the shared reference scenario.
+1. A responsibility comparison of MCP, A2A and AP2, plus a note on Open Responses, with pinned versions: what each specifies for discovery, contract and schema, version negotiation, authentication and authorization, long-running work, and failure representation, and where each contract stops.
+2. Discovery and validation patterns for a single cluster, with their failure behavior, walked through the shared reference scenario, which is also the chapter's one simple example of the protocols used together.
 3. A short list of evidence-backed interoperability gaps for chapter 08.
 
 The chapter does not design protocols. It describes what the specifications define and what a Kubernetes platform needs to support them natively.
@@ -31,7 +33,7 @@ The chapter does not design protocols. It describes what the specifications defi
 |---|---|---|---|
 | Moeez Khan (@MuhammadMoeezKhan) | MCP specification and client/server behavior under failure: lost responses, retries, partial results | Owner; scope, MCP column, failure representation, drafting, coordination | Confirmed |
 | Open seat | A2A implementation experience | A2A column of the responsibility comparison (Agent Card discovery, task states, errors); review | Open |
-| Open seat | Gateway, transport, or streaming (ideally shared with chapter 03) | Transport, streaming, and session row; boundary with chapter 03 | Open |
+| Open seat | Transport and streaming in MCP and A2A (reviewed with the chapter 03 owner) | Transport, streaming, and reconnection row: what each specification says; gateway behavior stays in chapter 03 | Open |
 | Aman Singh (@amansinghoriginal) | Event-driven execution; chapter 07 owner | Events, notifications, and long-running work; boundary between chapters 02 and 07 | Confirmed |
 | Open seat | AP2 or agent payments; registries and naming (MCP Registry, ANS, IETF DAWN) | AP2 column; discovery and naming patterns | Open |
 
