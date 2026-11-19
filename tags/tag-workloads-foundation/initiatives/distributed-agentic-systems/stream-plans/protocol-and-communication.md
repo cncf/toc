@@ -2,9 +2,9 @@
 
 Technical chapter: [Chapter 02](../02_Protocol_and_Communication_Interoperability.md)
 Stream owner: Moeez Khan (@MuhammadMoeezKhan), Independent; volunteered in `#initiative-distributed-agentic-systems` on November 5, 2026, lazy consensus to November 9
-Team: Moeez Khan (@MuhammadMoeezKhan), owner, confirmed; contributor seats open (see section 2)
+Team: Moeez Khan (@MuhammadMoeezKhan), owner, confirmed; Aman Singh (@amansinghoriginal), contributor, confirmed; three contributor seats open (see section 2)
 Status: scoping
-Last updated: 2026-11-15
+Last updated: 2026-11-18
 Next walkthrough: November 19, 2026 session
 
 ## 1. Purpose and intended outcome
@@ -32,7 +32,7 @@ The chapter does not design protocols. It describes what the specifications defi
 | Moeez Khan (@MuhammadMoeezKhan) | MCP specification and client/server behavior under failure: lost responses, retries, partial results | Owner; scope, MCP column, failure representation, drafting, coordination | Confirmed |
 | Open seat | A2A implementation experience | A2A column of the responsibility comparison (Agent Card discovery, task states, errors); review | Open |
 | Open seat | Gateway, transport, or streaming (ideally shared with chapter 03) | Transport, streaming, and session row; boundary with chapter 03 | Open |
-| Open seat | Event-driven execution (ideally shared with chapter 07) | Event and notification row; component roles for chapter 07 | Open |
+| Aman Singh (@amansinghoriginal) | Event-driven execution; chapter 07 owner | Events, notifications, and long-running work; boundary between chapters 02 and 07 | Confirmed |
 | Open seat | AP2 or agent payments; registries and naming (MCP Registry, ANS, IETF DAWN) | AP2 column; discovery and naming patterns | Open |
 
 - Missing expertise or perspectives: A2A implementation experience; AP2 or agent-payments practice; registry and naming (MCP Registry, ANS, IETF DAWN); and practitioners running MCP or A2A in production on Kubernetes. Cross-stream reviewers from gateway, runtime, state, and governance.
